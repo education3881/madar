@@ -1,0 +1,299 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import { getCollection, render } from 'astro:content';
+import { withBase } from '../../lib/urls';
+
+export async function getStaticPaths() {
+  const all = await getCollection('articles', ({ data }) => data.approved !== false);
+  return all.map((piece) => ({
+    params: { slug: piece.id },
+    props: { piece },
+  }));
+}
+
+const { piece } = Astro.props;
+const { Content } = await render(piece);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// "Draft — pending source verification" pill if any source carries the
+// PLACEHOLDER marker the Editor flagged for the curated pieces.
+const sourcesAreProvisional = piece.data.sources.some((s: { title: string; url: string }) =>
+  /PLACEHOLDER SOURCE/i.test(s.title)
+);
+
+// Resolve the Still SVG path. We rely on the Designer's convention: the SVG
+// lives at /stills/<slug>.svg. If hero.src is explicitly set, prefer that.
+const stillSrc = withBase(piece.data.hero?.src ?? `/stills/${piece.id}.svg`);
+const stillAlt = piece.data.hero?.alt ?? '';
+const stillCaption = piece.data.hero?.caption ?? `سكون · The Still`;
+
+// Roughly count words to render a "X min" read estimate in the byline.
+// Note: we can't easily read the raw markdown body at runtime, so we approximate.
+// (For v0.1 the byline doesn't need to be load-bearing.)
+
+const fieldLabel = {
+  curated: 'Curated',
+  short: 'Field Note',
+  essay: 'Essay',
+}[piece.data.type as 'curated' | 'short' | 'essay'] ?? 'Piece';
+---
+
+<Base
+  title={`${piece.data.title} — Madār`}
+  description={piece.data.dek}
+  lang="en"
+  ogImage={piece.data.hero?.src ? withBase(piece.data.hero.src) : undefined}
+  noHeader={true}
+>
+  <SiteHeader lang="en" variant="article" />
+
+  <article class="article container">
+
+    {/* ============== TITLE BLOCK ============== */}
+    <header class="title-block">
+      <div class="title-block__meta">
+        <p class="kicker">
+          {fieldLabel} · {piece.data.type === 'curated' ? 'Curated' : 'Editorial'}
+        </p>
+        <p class="kicker-meta">
+          <span>By The Editors</span><br />
+          <span>{dateFormatter.format(piece.data.date)}</span><br />
+          <span>{piece.data.country} · {piece.data.region}</span><br />
+          <span>{piece.data.themes.slice(0, 2).join(' · ')}</span>
+        </p>
+        {sourcesAreProvisional && (
+          <p class="title-block__draft">
+            <span class="pill">Draft — pending source verification</span>
+          </p>
+        )}
+      </div>
+      <div class="title-block__title">
+        <h1 class="title">{piece.data.title}</h1>
+        {piece.data.dek && <p class="dek">{piece.data.dek}</p>}
+      </div>
+    </header>
+
+    {/* ============== BODY ============== */}
+    <div class="body-grid">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main body-main--dropcap">
+        <Content />
+      </div>
+      <aside class="body-right marginalia">
+        <h4>Field reference</h4>
+        <p>{piece.data.country} · {piece.data.region}</p>
+        <p>Level · {piece.data.level}</p>
+        <p>Themes · {piece.data.themes.join(', ')}</p>
+        {piece.data.contains_composites && (
+          <>
+            <h4>Composite figures</h4>
+            <p>This piece uses a composite character marked with † on first appearance. See the footnote above the sources list.</p>
+          </>
+        )}
+        {sourcesAreProvisional && (
+          <>
+            <h4>Editorial status</h4>
+            <p>One or more sources are placeholder citations. The Editor will replace these with verified ministry-document titles, dates, and URLs in the QA window.</p>
+          </>
+        )}
+      </aside>
+    </div>
+
+    {/* ============== THE STILL ============== */}
+    <figure class="still" aria-label={stillAlt}>
+      <div class="still__field">
+        <img src={stillSrc} alt={stillAlt} loading="lazy" decoding="async" />
+      </div>
+      <figcaption class="still__colophon">
+        <span><span class="still__num">{stillCaption}</span></span>
+        <span>Made in-house for Madār · 2026</span>
+      </figcaption>
+    </figure>
+
+    {/* ============== SOURCES + FOOTER ============== */}
+    <footer class="article__footer">
+      <div class="body-grid">
+        <aside class="body-left" aria-hidden="true"></aside>
+        <div class="body-main">
+          <h2 class="subhead">Sources</h2>
+          <ol class="sources">
+            {piece.data.sources.map((s) => (
+              <li>
+                {/^https?:\/\/example\.com\//.test(s.url) ? (
+                  <span class="sources__title">{s.title}</span>
+                ) : (
+                  <a href={s.url} rel="noopener noreferrer">{s.title}</a>
+                )}
+              </li>
+            ))}
+          </ol>
+          {sourcesAreProvisional && (
+            <p class="sources__note muted small">
+              Placeholder URLs marked above will be replaced with the verified primary-source URL in the Editor's next QA pass.
+            </p>
+          )}
+        </div>
+        <aside class="body-right" aria-hidden="true"></aside>
+      </div>
+    </footer>
+
+  </article>
+</Base>
+
+<style>
+  .article {
+    padding-block: var(--space-lg) var(--space-2xl);
+  }
+
+  /* ---------- Title block ---------- */
+  .title-block {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 3rem;
+    padding-block: 3rem 2rem;
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .title-block__meta .kicker-meta {
+    margin-block-start: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink);
+    opacity: 0.7;
+    line-height: 1.7;
+  }
+  .title-block__draft { margin-block-start: 1rem; }
+  .title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--fs-display);
+    line-height: var(--lh-display);
+    letter-spacing: var(--tr-display);
+    margin: 0 0 1.25rem;
+    max-width: 22ch;
+  }
+  .title em { font-style: italic; font-weight: 500; }
+  .dek {
+    font-family: var(--font-body);
+    font-size: var(--fs-dek);
+    line-height: var(--lh-dek);
+    font-style: italic;
+    color: var(--color-ink);
+    opacity: 0.82;
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  /* ---------- Body ---------- */
+  .body-grid { margin-block-start: 2.5rem; }
+
+  .body-main :global(p) {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    margin: 0 0 1.25rem;
+    color: var(--color-ink);
+  }
+  /* Drop cap on the first paragraph only (and only when the body uses the modifier). */
+  .body-main--dropcap :global(> p:first-of-type::first-letter) {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 5.1em;
+    line-height: 0.85;
+    float: left;
+    padding: 0.06em 0.12em 0 0;
+    color: var(--color-ink);
+    font-style: normal;
+  }
+  /* Keep drop cap from grabbing the dagger / bold marker. */
+  .body-main :global(p strong:first-child) { font-weight: 600; }
+
+  .body-main :global(h2) {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    letter-spacing: var(--tr-h2);
+    margin-block: 2.75rem 1.25rem;
+    color: var(--color-ink);
+  }
+  .body-main :global(h2)::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: var(--color-ink);
+    margin-block-end: 0.85rem;
+  }
+  .body-main :global(blockquote) {
+    margin-block: 2.5rem;
+    margin-inline-start: -2rem;
+    padding: 1.25rem 1.5rem;
+    border-inline-start: 2px solid var(--color-orange);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--fs-pullquote);
+    line-height: 1.18;
+    letter-spacing: var(--tr-pullquote);
+    color: var(--color-ink);
+    max-width: 34ch;
+  }
+  .body-main :global(blockquote p) { font-family: inherit; font-size: inherit; line-height: inherit; }
+  .body-main :global(hr) {
+    border: none;
+    border-block-start: 1px solid var(--color-rule);
+    margin-block: var(--space-xl);
+    width: 50%;
+  }
+  /* The dagger footnote at the end of Piece A sits in an emphasized paragraph */
+  .body-main :global(em) { font-style: italic; }
+  .body-main :global(p > em:only-child) {
+    display: block;
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: var(--fs-marginalia);
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin-block-start: 1.5rem;
+    max-width: 65ch;
+  }
+  /* Arabic inline phrases — let them inherit the body font; Arabic glyphs
+     are caught by the system fallback stack via the Amiri-loading <link>
+     in Base.astro. (No selector needed.) */
+
+  /* ---------- Sources ---------- */
+  .article__footer {
+    margin-block-start: var(--space-xl);
+    padding-block-start: var(--space-lg);
+    border-block-start: 1px solid var(--color-rule);
+  }
+  .sources {
+    list-style: decimal;
+    padding-inline-start: 1.5em;
+    margin-block-start: 0;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .sources li { margin-block-end: 0.6rem; }
+  .sources a { color: var(--color-ink); }
+  .sources__title { color: var(--color-ink); opacity: 0.85; }
+  .sources__note { margin-block-start: 1.25rem; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .title-block { grid-template-columns: 1fr; gap: 1.25rem; }
+    .body-main :global(blockquote) { margin-inline-start: 0; }
+  }
+  @media (max-width: 720px) {
+    .title { font-size: clamp(34px, 8vw, 48px); }
+    .body-main--dropcap :global(> p:first-of-type::first-letter) { font-size: 4em; }
+  }
+</style>

@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madār · مدار — Issue 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #0E1B2C;
+    --orange: #D94F2A;
+    --sage: #7A8471;
+    --sand: #E8E2D0;
+    --rule: rgba(14,27,44,0.18);
+    --rule-soft: rgba(14,27,44,0.08);
+    --display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, serif;
+    --body: "Newsreader", "GT Sectra Text", Charter, Georgia, serif;
+    --mono: "JetBrains Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --arabic: "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", serif;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- Slim top utility bar — issue, date, lang ---------- */
+  .top-bar {
+    border-bottom: 1px solid var(--rule-soft);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.78;
+  }
+  .top-bar__inner {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .top-bar__right { display: flex; gap: 1.25rem; align-items: center; }
+  .top-bar__lang a { color: var(--ink); opacity: 0.6; }
+  .top-bar__lang a.is-active { color: var(--orange); opacity: 1; font-weight: 500; }
+  .top-bar__lang span { opacity: 0.3; }
+
+  /* ---------- Masthead — bilingual wordmark inlined ---------- */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+  .masthead__inner {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  /* The wordmark SVG is sized to 120px tall here — large but not overbearing */
+  .masthead__wordmark {
+    width: auto;
+    height: 120px;
+    color: var(--ink);
+    display: block;
+  }
+  /* The ticked rule directly under the wordmark (the macron motif) */
+  .masthead__rule {
+    height: 1px;
+    background: var(--ink);
+    width: 120px;
+    position: relative;
+  }
+  .masthead__rule::before, .masthead__rule::after {
+    content: ''; position: absolute; top: -4px; width: 1px; height: 9px; background: var(--ink);
+  }
+  .masthead__rule::before { left: 0; }
+  .masthead__rule::after { right: 0; }
+  /* Bilingual tagline — set in marginalia register but slightly larger */
+  .masthead__tagline {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.78;
+    line-height: 1.8;
+    max-width: 38ch;
+  }
+  .masthead__tagline-ar {
+    margin-top: 0.4rem;
+    font-family: var(--arabic);
+    font-size: 17px;
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 1.6;
+    direction: rtl;
+    color: var(--ink);
+    opacity: 0.85;
+  }
+  .wordmark-note {
+    max-width: 1280px; margin: 0.75rem auto 0; padding-inline: 2rem;
+    text-align: center; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em;
+    color: var(--sage); text-transform: uppercase;
+  }
+
+  /* ---------- Section · This week ---------- */
+  .section {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 3.5rem 2rem;
+  }
+  .section__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .section__kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+  }
+  .section__kicker-ar {
+    font-family: var(--arabic);
+    font-size: 16px;
+    color: var(--ink);
+    opacity: 0.7;
+    margin-left: 0.85rem;
+  }
+  .section__meta {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.62;
+  }
+
+  /* ============================================================
+     PIECE CARDS — editorial hierarchy (v0.2)
+     One LEAD piece (substantial real estate, wide Still, generous
+     headline) + a secondary register of TWO pieces (smaller Still
+     thumbnails, tighter type, labelled "Also this issue").
+     ============================================================ */
+
+  /* ---------- LEAD PIECE ---------- */
+  .lead {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .lead__thumb {
+    aspect-ratio: 8 / 5;
+    overflow: hidden;
+    display: block;
+    background: var(--sand);
+    border-radius: 1px;
+  }
+  .lead__thumb svg { width: 100%; height: 100%; display: block; }
+  .lead__body { display: flex; flex-direction: column; gap: 1rem; padding-top: 0.25rem; }
+  .lead__label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .lead__label::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 1px;
+    background: var(--orange);
+    opacity: 0.85;
+  }
+  .lead__meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .lead__type { color: var(--ink); opacity: 0.85; font-weight: 500; }
+  .lead__country { color: var(--ink); opacity: 0.55; }
+  .lead__title {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.02;
+    letter-spacing: -0.018em;
+    margin: 0;
+  }
+  .lead__title em { font-style: italic; font-weight: 500; }
+  .lead__title a { color: var(--ink); }
+  .lead__dek {
+    font-family: var(--body);
+    font-size: 19px;
+    line-height: 1.5;
+    font-style: italic;
+    color: var(--ink);
+    opacity: 0.82;
+    margin: 0;
+    max-width: 38ch;
+  }
+  .lead__byline {
+    margin-top: 0.5rem;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--sage);
+    line-height: 1.6;
+  }
+  .lead__read {
+    margin-top: 0.5rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 2px;
+  }
+
+  /* ---------- SECONDARY REGISTER ---------- */
+  .also {
+    border-top: 1px solid var(--rule);
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+  }
+  .also__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .also__label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.75;
+    font-weight: 500;
+  }
+  .also__label-ar {
+    font-family: var(--arabic);
+    font-size: 16px;
+    color: var(--ink);
+    opacity: 0.6;
+    margin-left: 0.85rem;
+  }
+  .also__meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.55;
+  }
+  .also__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .secondary { display: grid; grid-template-columns: 5fr 7fr; gap: 1.25rem; align-items: start; }
+  .secondary__thumb {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    display: block;
+    background: var(--sand);
+    border-radius: 1px;
+  }
+  .secondary__thumb svg { width: 100%; height: 100%; display: block; }
+  .secondary__body { display: flex; flex-direction: column; gap: 0.5rem; }
+  .secondary__meta {
+    display: flex;
+    gap: 0.75rem;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .secondary__type { color: var(--orange); font-weight: 500; }
+  .secondary__country { color: var(--ink); opacity: 0.6; }
+  .secondary__title {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.12;
+    letter-spacing: -0.008em;
+    margin: 0;
+  }
+  .secondary__title em { font-style: italic; font-weight: 500; }
+  .secondary__title a { color: var(--ink); }
+  .secondary__dek {
+    font-family: var(--body);
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    color: var(--ink);
+    opacity: 0.72;
+    margin: 0;
+  }
+  .secondary__byline {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.06em;
+    color: var(--sage);
+    line-height: 1.6;
+    margin-top: 0.2rem;
+  }
+
+  /* ---------- Macron divider — the section break ---------- */
+  .macron-divider {
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .macron-divider__rule {
+    height: 1px;
+    background: var(--ink);
+    width: 80px;
+    position: relative;
+    opacity: 0.85;
+  }
+  .macron-divider__rule::before, .macron-divider__rule::after {
+    content: ''; position: absolute; top: -4px; width: 1px; height: 9px; background: var(--ink);
+  }
+  .macron-divider__rule::before { left: 0; }
+  .macron-divider__rule::after  { right: 0; }
+
+  /* ---------- About Madār mini-block ---------- */
+  .about {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 3rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 3rem;
+  }
+  .about__label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .about__label-ar { font-family: var(--arabic); font-size: 18px; color: var(--ink); opacity: 0.75; margin-top: 0.3rem; }
+  .about__body { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .about__body p {
+    font-family: var(--body);
+    font-size: 17.5px;
+    line-height: 1.65;
+    margin: 0 0 1rem;
+    color: var(--ink);
+    opacity: 0.92;
+    max-width: 50ch;
+  }
+  .about__body .ar p {
+    font-family: var(--arabic);
+    font-size: 18.5px;
+    line-height: 1.95;
+    direction: rtl;
+    text-align: right;
+  }
+  .about__more {
+    margin-top: 1rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 2px;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    border-top: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .footer__inner {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 2.5rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    gap: 3rem;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+  .footer__inner h6 {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+  }
+  .footer__inner p, .footer__inner li { margin: 0 0 0.35rem; }
+  .footer__inner ul { list-style: none; padding: 0; margin: 0; }
+  .footer__inner ul a { opacity: 0.78; }
+  .footer__inner ul a:hover { opacity: 1; color: var(--orange); }
+  .footer__issue { color: var(--orange); font-weight: 500; }
+  .footer__lang { display: flex; gap: 0.6rem; align-items: center; }
+  .footer__lang a { opacity: 0.65; }
+  .footer__lang a.is-active { color: var(--orange); opacity: 1; font-weight: 500; }
+  .footer__lang span { opacity: 0.3; }
+
+  .footer__strip {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem 1.5rem;
+    border-top: 1px solid var(--rule-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.65;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .lead { grid-template-columns: 1fr; gap: 1.5rem; }
+    .lead__title { font-size: 44px; }
+    .also__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about { grid-template-columns: 1fr; gap: 1.5rem; }
+    .about__body { grid-template-columns: 1fr; gap: 2rem; }
+    .footer__inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  }
+  @media (max-width: 720px) {
+    html { font-size: 16px; }
+    .top-bar__inner { padding: 0.6rem 1.25rem; }
+    .masthead { padding: 2.5rem 0 2rem; }
+    .masthead__wordmark { height: 88px; }
+    .masthead__tagline { font-size: 11px; }
+    .section { padding: 2.5rem 1.25rem; }
+    .section__head { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+    .lead__title { font-size: 34px; }
+    .lead__dek { font-size: 16px; }
+    .secondary { grid-template-columns: 1fr; gap: 1rem; }
+    .secondary__title { font-size: 20px; }
+    .about { padding: 2rem 1.25rem 3rem; }
+    .footer__inner { grid-template-columns: 1fr; gap: 1.75rem; padding: 2rem 1.25rem; }
+    .footer__strip { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1rem 1.25rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== TOP UTILITY BAR ============== -->
+<div class="top-bar">
+  <div class="top-bar__inner">
+    <div class="top-bar__left">Issue 01 · May 2026 <span lang="ar" dir="rtl">· مدار</span></div>
+    <div class="top-bar__right">
+      <!-- "A research instrument" was retired here (2026-05-25):
+           the phrase from the Field Atlas pitch language reads
+           as manifesto-stance-asserting in the masthead context.
+           Issue 01 already runs on the left — the right side is
+           left clean by intention. -->
+      <div class="top-bar__lang">
+        <a href="#" class="is-active" lang="en">EN</a>
+        <span>·</span>
+        <a href="#" lang="ar" dir="rtl">عربي</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============== MASTHEAD — bilingual wordmark inlined ============== -->
+<header class="masthead">
+  <div class="masthead__inner">
+
+    <!-- ============== INLINED WORDMARK · v0.3 ==============
+         Outlines extracted from /design-assets/wordmark/madar-wordmark.svg.
+         The Latin run "Madar" is set in Newsreader (Google Fonts, SIL OFL);
+         the Arabic run "مدار" is set in Amiri (Google Fonts, SIL OFL),
+         shaped correctly with mim-initial + dal-final + alif-isolated +
+         ra-isolated. All glyphs are <path>/<rect> geometry extracted via
+         fontTools — no <text> elements, no runtime font dependency.
+         The wordmark inherits its ink colour from the surrounding `color`. -->
+    <!-- Madār · مدار · bilingual wordmark, v0.3 — outlines extracted from real fonts. -->
+    <!--
+      Madār · مدار · bilingual wordmark, v0.3
+      ----------------------------------------------------------------------
+      v0.3 (2026-05-25): Glyph outlines extracted directly from the open-source
+      Newsreader (Latin, Google Fonts, SIL OFL) and Amiri (Arabic Naskh,
+      Google Fonts, SIL OFL) font files using fontTools. The marks ARE the
+      typefaces, not hand-drafted approximations of them.
+
+      The macron over the second a and the alif-madda over the alif are drawn
+      as deliberately strengthened slabs on top of the extracted outlines —
+      the brand's smallest repeatable typographic event. Both slabs sit at
+      the same y-coordinate so the two scripts share a single horizontal reading.
+
+      Arabic shaping for مدار:
+        م → initial form (U+FEE3) — connects left to dal
+        د → final form  (U+FEAA) — receives mim from its right
+        ا → isolated   (U+FE8D)  — dal does not join left
+        ر → isolated   (U+FEAD)  — alif does not join left
+
+      Layout: viewBox 520×120. Latin run starts at x=110, Arabic run ends
+      at x=410. The two scripts are visually balanced around a hairline at
+      x=300. Equal optical weight, equal baseline at y=92.
+      ----------------------------------------------------------------------
+    -->
+    <svg class="masthead__wordmark" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 520 120"
+         role="img"
+         aria-label="Madār — مدار"
+         preserveAspectRatio="xMidYMid meet"
+         fill="currentColor">
+
+      <title>Madār · مدار</title>
+      <desc>Madār bilingual wordmark. Latin set in Newsreader, Arabic set in Amiri, outlines extracted from the font files. The macron over ā and the alif-madda above the alif are drawn as heavier slabs — the brand's typographic signature.</desc>
+
+      <!-- ============== Latin: Madār ==============
+           Newsreader Regular outlines. Baseline y=92, scale 0.030.
+           Five glyphs: M a d a r. The second a is overlaid with a heavy macron slab. -->
+      <g id="latin">
+        <path transform="translate(110.00,92) scale(0.03,-0.03)" d="M1738 101 1900 50V0H1407V50L1569 101L1492 1209L1506 1206L983 -16H907L381 1195L395 1197L327 101L489 50V0H60V50L219 101L305 1245L135 1302V1352H500L994 195H971L1467 1352H1816V1302L1652 1250Z"/>
+        <path transform="translate(169.74,92) scale(0.03,-0.03)" d="M652 563 657 482Q531 456 451.0 429.0Q371 402 327.5 373.5Q284 345 267.5 312.0Q251 279 251 239Q251 171 292.0 134.5Q333 98 397 98Q448 98 489.5 122.0Q531 146 556.0 185.5Q581 225 581 271V631Q581 710 542.0 754.5Q503 799 411 799Q376 799 334.5 790.5Q293 782 255 764L310 815Q306 784 300.0 755.5Q294 727 286.5 704.5Q279 682 267 668Q251 647 226.5 638.5Q202 630 175 630Q139 630 119.0 646.0Q99 662 99 686Q99 718 130.0 753.5Q161 789 214.0 821.0Q267 853 333.5 873.0Q400 893 472 893Q567 893 625.0 864.5Q683 836 709.5 782.0Q736 728 736 649V190Q736 157 745.5 136.0Q755 115 774.0 104.5Q793 94 821 94Q844 94 870.0 102.0Q896 110 922 123V70Q880 25 832.5 4.0Q785 -17 744 -17Q694 -17 657.5 6.0Q621 29 602.0 73.0Q583 117 583 180L589 188Q576 126 539.5 79.5Q503 33 450.0 6.5Q397 -20 334 -20Q225 -20 157.0 38.5Q89 97 89 207Q89 266 113.0 314.5Q137 363 198.0 405.0Q259 447 369.5 485.5Q480 524 652 563Z"/>
+        <path transform="translate(198.31,92) scale(0.03,-0.03)" d="M785 608Q785 696 726.0 752.5Q667 809 547 809Q454 809 389.0 764.5Q324 720 290.5 638.0Q257 556 257 444Q257 332 293.0 255.0Q329 178 394.5 139.0Q460 100 548 100Q627 100 700.5 124.5Q774 149 845 200V135Q766 86 712.0 55.0Q658 24 618.5 8.0Q579 -8 546.0 -14.0Q513 -20 478 -20Q349 -20 260.0 32.5Q171 85 126.0 179.0Q81 273 81 397Q81 515 119.0 608.0Q157 701 224.5 766.5Q292 832 380.0 866.5Q468 901 567 901Q619 901 667.5 892.5Q716 884 766.5 866.5Q817 849 874 819L785 763V1248Q773 1261 750.0 1274.5Q727 1288 699.0 1301.0Q671 1314 642 1326V1354L927 1430H950L939 1261V157Q948 148 964.5 138.0Q981 128 1001.0 118.0Q1021 108 1040.5 101.0Q1060 94 1076 91V59L832 -17H809L785 147Z"/>
+        <path transform="translate(232.67,92) scale(0.03,-0.03)" d="M652 563 657 482Q531 456 451.0 429.0Q371 402 327.5 373.5Q284 345 267.5 312.0Q251 279 251 239Q251 171 292.0 134.5Q333 98 397 98Q448 98 489.5 122.0Q531 146 556.0 185.5Q581 225 581 271V631Q581 710 542.0 754.5Q503 799 411 799Q376 799 334.5 790.5Q293 782 255 764L310 815Q306 784 300.0 755.5Q294 727 286.5 704.5Q279 682 267 668Q251 647 226.5 638.5Q202 630 175 630Q139 630 119.0 646.0Q99 662 99 686Q99 718 130.0 753.5Q161 789 214.0 821.0Q267 853 333.5 873.0Q400 893 472 893Q567 893 625.0 864.5Q683 836 709.5 782.0Q736 728 736 649V190Q736 157 745.5 136.0Q755 115 774.0 104.5Q793 94 821 94Q844 94 870.0 102.0Q896 110 922 123V70Q880 25 832.5 4.0Q785 -17 744 -17Q694 -17 657.5 6.0Q621 29 602.0 73.0Q583 117 583 180L589 188Q576 126 539.5 79.5Q503 33 450.0 6.5Q397 -20 334 -20Q225 -20 157.0 38.5Q89 97 89 207Q89 266 113.0 314.5Q137 363 198.0 405.0Q259 447 369.5 485.5Q480 524 652 563Z"/>
+        <path transform="translate(261.24,92) scale(0.03,-0.03)" d="M664 895Q714 895 738.5 870.0Q763 845 763 804Q763 756 736.0 727.5Q709 699 663 699Q637 699 610.5 706.5Q584 714 556.0 721.0Q528 728 496 728Q473 728 446.0 722.0Q419 716 392.0 704.5Q365 693 344 677L320 712Q384 761 435.0 795.5Q486 830 528.0 852.0Q570 874 603.5 884.5Q637 895 664 895ZM367 713V94L527 47V0H57V47L212 94V690Q199 703 177.0 715.0Q155 727 125.0 740.5Q95 754 58 768V796L325 902H349Z"/>
+      </g>
+
+      <!-- The macron over the second a — heavier slab than the font's own diacritic,
+           wider than the bowl, so it reads as a brand event. -->
+      <rect x="234.09" y="24" width="27.49" height="4.5"/>
+
+      <!-- ============== Hairline divider ============== -->
+      <line x1="300" y1="34" x2="300" y2="100" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
+
+      <!-- ============== Arabic: مدار ==============
+           Amiri Regular outlines. Baseline y=92, scale 0.065.
+           Four glyphs in shaped order: mim-initial → dal-final → alif-isolated → ra-isolated.
+           (The cursive run for the word "orbit" — typographically correct.) -->
+      <g id="arabic">
+        <path transform="translate(384.71,92) scale(0.065,-0.065)" d="M233 318Q301 316 326 152Q328 141 323 135L268 66Q261 56 249 59Q172 81 113 131Q66 0 0 0Q-7 0 -15 21Q-31 71 -16 85Q-10 90 0 90Q46 91 88 146Q102 165 153 256Q188 318 233 318ZM161 220Q196 186 251 174Q252 217 222 231Q192 245 161 220Z"/>
+        <path transform="translate(354.10,92) scale(0.065,-0.065)" d="M471 90Q487 85 491 64Q496 40 490 20Q484 0 471 0Q406 4 382 109Q378 126 376.0 134.5Q374 143 374 143Q371 151 368 142Q336 57 288 38Q227 13 120 20Q37 26 77 151Q82 166 92 167Q102 168 106 154Q115 125 133 121Q230 100 308 131Q346 146 359 187Q360 193 345 294Q338 344 334.0 375.5Q330 407 328 418Q325 440 331 452Q339 469 345.0 481.5Q351 494 354 502Q357 510 364 509Q372 507 373 499Q385 394 398.5 310.5Q412 227 426 165Q441 97 471 90Z"/>
+        <path transform="translate(339.99,92) scale(0.065,-0.065)" d="M89 670Q110 719 116 672L139 427Q177 96 130 7Q123 -5 119 1Q115 6 115 18Q117 102 103 207Q103 211 82 397L60 578Q58 598 64 612Z"/>
+        <path transform="translate(314.06,92) scale(0.065,-0.065)" d="M246 279Q247 283 249 284Q254 286 264 276Q303 236 322 169Q342 100 336 35Q324 -53 266 -127Q208 -202 114 -226Q90 -233 66 -225Q8 -205 -28.5 -190.5Q-65 -176 -79 -167Q-83 -164 -83 -161Q-83 -157 -80 -154Q-77 -151 -71 -153Q-36 -163 -7.0 -166.5Q22 -170 47 -167Q72 -164 100.5 -152.5Q129 -141 161 -120Q256 -59 300 24Q304 30 302 40Q287 93 224 171Q221 176 222 179Z"/>
+      </g>
+
+      <!-- The alif-madda slab over the alif — the Arabic match for the Latin macron.
+           Same y-coordinate and height, so the two slabs share one horizontal axis. -->
+      <rect x="334.48" y="24" width="26.30" height="4.5"/>
+
+      <!-- ============== Baseline ticked rule — the macron motif echoed below the mark ============== -->
+      <g id="baseline-rule">
+        <line x1="240" y1="110" x2="296" y2="110" stroke="currentColor" stroke-width="0.9"/>
+        <line x1="240" y1="106" x2="240" y2="114" stroke="currentColor" stroke-width="0.9"/>
+        <line x1="296" y1="106" x2="296" y2="114" stroke="currentColor" stroke-width="0.9"/>
+      </g>
+
+    </svg>
+
+    <!-- Bilingual tagline. Marginalia register, equal weight in both scripts.
+         Editor-approved as of 2026-05-25. The previous "places others don't
+         look" formulation was retired because it asserted geography-as-
+         protest in a register the new editorial line avoids. The pair
+         below is the production tagline. -->
+    <div class="masthead__tagline">
+      Education, written slowly, in two languages
+      <div class="masthead__tagline-ar" lang="ar" dir="rtl">التعليم، بتأنٍّ، بلغتين</div>
+    </div>
+
+  </div>
+</header>
+<div class="wordmark-note">[ Wordmark v0.3 — outlines extracted directly from Newsreader (Latin, SIL OFL) and Amiri (Arabic Naskh, SIL OFL) via fontTools. The mark IS the typeface; no commission required. ]</div>
+
+<!-- ============== THIS WEEK ============== -->
+<section class="section">
+  <div class="section__head">
+    <div>
+      <span class="section__kicker">This week</span>
+      <span class="section__kicker-ar" lang="ar" dir="rtl">هذا الأسبوع</span>
+    </div>
+    <div class="section__meta">Issue 01 · 2026 · 05 · 25 · three pieces</div>
+  </div>
+
+  <!-- ============================================================
+       LEAD PIECE — Sierra Leone (the issue's editorial centre)
+       Selected because it is the fully editorial Field Note, the
+       strongest single statement of the publication's voice, and the
+       piece that most clearly demonstrates Madār's reporting register
+       (a teacher, a town, a number that flatters the country).
+       ============================================================ -->
+  <article class="lead">
+
+    <a href="../article-01-sierra-leone-ece/index.html" class="lead__thumb"
+       aria-label="Read this issue's lead — The teacher in Bo who still uses last term's chalk">
+      <!-- Lead Still — Sierra Leone. Wide-canvas miniature of the chalkboard
+           composition: dawn-warm atmosphere with a continuous-line drawing
+           of a chalkboard on an easel, a stick of chalk, last term's
+           half-erased arithmetic. -->
+      <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="L1-ground" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FAFAF7"/>
+            <stop offset="60%" stop-color="#F4EFE0"/>
+            <stop offset="100%" stop-color="#E8E2D0"/>
+          </linearGradient>
+          <radialGradient id="L1-dawn" cx="72%" cy="32%" r="60%">
+            <stop offset="0%" stop-color="#F4B58A" stop-opacity="0.55"/>
+            <stop offset="35%" stop-color="#E08A5C" stop-opacity="0.28"/>
+            <stop offset="70%" stop-color="#D94F2A" stop-opacity="0.06"/>
+            <stop offset="100%" stop-color="#D94F2A" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="L1-floor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7A8471" stop-opacity="0"/>
+            <stop offset="55%" stop-color="#5F6A57" stop-opacity="0.32"/>
+            <stop offset="100%" stop-color="#3A4136" stop-opacity="0.42"/>
+          </linearGradient>
+          <filter id="L1-soft"><feGaussianBlur stdDeviation="14"/></filter>
+          <filter id="L1-softer"><feGaussianBlur stdDeviation="28"/></filter>
+          <filter id="L1-grain"><feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.06  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.40 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+        </defs>
+        <rect width="800" height="500" fill="url(#L1-ground)"/>
+        <ellipse cx="600" cy="150" rx="360" ry="170" fill="url(#L1-dawn)" filter="url(#L1-softer)"/>
+        <path d="M -20,390 C 140,372 280,382 440,376 S 700,366 820,378 L 820,520 L -20,520 Z"
+              fill="url(#L1-floor)" filter="url(#L1-soft)"/>
+        <ellipse cx="640" cy="190" rx="120" ry="40" fill="#E68A55" opacity="0.30" filter="url(#L1-softer)"/>
+
+        <!-- Easel legs -->
+        <path d="M 252,448 C 256,392 264,332 278,250 C 280,242 282,234 286,228"
+              stroke="#0E1B2C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.88"/>
+        <path d="M 548,448 C 542,392 530,332 516,250 C 514,242 512,234 508,230"
+              stroke="#0E1B2C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.88"/>
+        <path d="M 400,448 C 398,412 394,360 388,300 C 386,278 384,244 380,218"
+              stroke="#0E1B2C" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- crossbar -->
+        <path d="M 232,296 C 312,290 392,288 480,290 C 528,291 560,292 568,294
+                 L 568,300 C 488,300 392,301 312,300 C 268,300 240,300 232,300 Z"
+              stroke="#0E1B2C" stroke-width="1.4" fill="#0E1B2C" fill-opacity="0.18"
+              stroke-linejoin="round" opacity="0.85"/>
+
+        <!-- board frame -->
+        <path d="M 260,110 C 332,106 412,102 488,103 C 540,104 580,106 588,110
+                 C 590,150 588,200 586,238 C 584,260 580,282 578,292
+                 C 504,294 408,294 332,294 C 288,294 256,293 256,292
+                 C 254,250 254,200 256,156 C 257,140 258,124 260,110 Z"
+              stroke="#0E1B2C" stroke-width="1.8" fill="#1F2A33" fill-opacity="0.65"
+              stroke-linejoin="round" opacity="0.92"/>
+
+        <!-- board interior darkness -->
+        <path d="M 272,122 C 348,118 432,116 504,118 C 540,119 568,122 574,124
+                 C 576,160 574,202 570,238 C 568,256 566,272 564,278
+                 C 500,280 408,280 332,280 C 290,280 268,279 266,278
+                 C 264,238 264,196 266,156 Z"
+              fill="#0E1B2C" opacity="0.28"/>
+
+        <!-- Chalk strokes — arithmetic + erased ghost + tally + the date -->
+        <g stroke="#F2E6C8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.78">
+          <path d="M 296,160 L 296,184" stroke-width="1.2"/>
+          <path d="M 308,160 C 314,160 318,164 318,166 C 318,172 308,176 306,184 L 318,184" stroke-width="1.2"/>
+          <path d="M 296,200 L 308,200 M 302,194 L 302,206" stroke-width="1.0"/>
+          <path d="M 326,212 C 332,212 336,216 336,220 C 336,224 330,226 324,226 C 330,226 338,228 338,234
+                   C 338,240 330,242 324,242" stroke-width="1.2"/>
+          <path d="M 348,214 L 360,214 L 354,242" stroke-width="0.8" opacity="0.46"/>
+          <path d="M 296,250 L 360,250" stroke-width="1.0" opacity="0.62"/>
+        </g>
+        <!-- eraser sweep -->
+        <path d="M 320,222 C 380,218 440,228 500,224 C 540,222 560,224 568,222"
+              stroke="#F2E6C8" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.10"/>
+        <!-- date cursive -->
+        <path d="M 412,170 C 420,162 428,170 428,180 C 428,186 422,190 420,184
+                 M 444,170 C 450,168 456,174 456,180 M 472,172 L 472,194 M 488,174 L 488,192 L 482,192"
+              stroke="#F2E6C8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.72"/>
+        <!-- tally -->
+        <g stroke="#F2E6C8" stroke-width="1.0" stroke-linecap="round" opacity="0.55" fill="none">
+          <path d="M 488,256 L 488,272"/>
+          <path d="M 494,256 L 494,272"/>
+          <path d="M 500,256 L 500,272"/>
+          <path d="M 506,256 L 506,272"/>
+          <path d="M 486,272 L 508,258"/>
+        </g>
+
+        <!-- chalk stick on rail -->
+        <path d="M 466,294 C 482,290 494,289 504,289 C 510,289 514,290 516,292
+                 C 514,294 506,296 498,296 C 484,296 470,296 462,296
+                 C 460,296 460,295 462,294 Z"
+              stroke="#0E1B2C" stroke-width="1.0" fill="#F2E6C8" fill-opacity="0.85"
+              stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+
+        <!-- ground shadow -->
+        <ellipse cx="320" cy="460" rx="200" ry="10" fill="#3A4136" opacity="0.32" filter="url(#L1-soft)"/>
+
+        <!-- a few chalk-dust specks -->
+        <g opacity="0.55">
+          <circle cx="600" cy="320" r="1.8" fill="#D94F2A" opacity="0.45"/>
+          <circle cx="620" cy="334" r="1.4" fill="#D94F2A" opacity="0.38"/>
+          <circle cx="650" cy="328" r="1.4" fill="#D94F2A" opacity="0.32"/>
+        </g>
+
+        <rect width="800" height="500" filter="url(#L1-grain)" opacity="0.55"/>
+      </svg>
+    </a>
+
+    <div class="lead__body">
+      <span class="lead__label">Read this issue's lead</span>
+      <div class="lead__meta">
+        <span class="lead__type">Field Note 01 · Editorial</span>
+        <span class="lead__country">Sierra Leone</span>
+      </div>
+      <h2 class="lead__title">
+        <a href="../article-01-sierra-leone-ece/index.html">
+          The teacher in Bo who still uses <em>last term's chalk.</em>
+        </a>
+      </h2>
+      <p class="lead__dek">In 2018, six of seventeen districts reported any publicly-funded early-childhood provision. By 2024, thirteen did. The averages flatter the country; the chalk-rail in a classroom in Bo does not.</p>
+      <div class="lead__byline">By The Editors · 14 min read · Hero: cartography</div>
+      <a class="lead__read" href="../article-01-sierra-leone-ece/index.html">Read the lead piece →</a>
+    </div>
+
+  </article>
+
+  <!-- ============================================================
+       SECONDARY REGISTER — the two other pieces this issue.
+       Smaller Still thumbnails, tighter type, labelled "Also this
+       issue / More from Issue 01" in marginalia register.
+       ============================================================ -->
+  <section class="also">
+    <div class="also__head">
+      <div>
+        <span class="also__label">Also this issue</span>
+        <span class="also__label-ar" lang="ar" dir="rtl">من هذا العدد أيضاً</span>
+      </div>
+      <div class="also__meta">Two pieces · Issue 01</div>
+    </div>
+
+    <div class="also__grid">
+
+      <!-- =============== SECONDARY · Jordan =============== -->
+      <article class="secondary">
+        <a href="../article-02-jordan-textbook/index.html" class="secondary__thumb"
+           aria-label="Also this issue — The civics page that changed three times">
+          <!-- Jordan miniature — layered strata with an open textbook drawn as
+               continuous line; one orange line marks the sentence that changed. -->
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="t2-ground" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F5EFDE"/>
+                <stop offset="100%" stop-color="#E8E2D0"/>
+              </linearGradient>
+              <linearGradient id="t2-deep" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0E1B2C" stop-opacity="0"/>
+                <stop offset="60%" stop-color="#1F2A33" stop-opacity="0.32"/>
+                <stop offset="100%" stop-color="#3A4136" stop-opacity="0.55"/>
+              </linearGradient>
+              <linearGradient id="t2-middle" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#E8E2D0" stop-opacity="0"/>
+                <stop offset="60%" stop-color="#E2D6B6" stop-opacity="0.62"/>
+                <stop offset="100%" stop-color="#C9B98F" stop-opacity="0.42"/>
+              </linearGradient>
+              <linearGradient id="t2-upper" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#F2D6BA" stop-opacity="0.42"/>
+                <stop offset="100%" stop-color="#D94F2A" stop-opacity="0.10"/>
+              </linearGradient>
+              <radialGradient id="t2-bloom" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3A4136" stop-opacity="0.32"/>
+                <stop offset="100%" stop-color="#3A4136" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="t2-soft"><feGaussianBlur stdDeviation="6"/></filter>
+              <filter id="t2-grain"><feTurbulence type="fractalNoise" baseFrequency="0.92" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.06  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.40 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+            </defs>
+            <rect width="360" height="240" fill="url(#t2-ground)"/>
+            <!-- deep stratum -->
+            <path d="M -10,150 C 60,134 130,144 200,138 S 320,132 380,140 L 380,260 L -10,260 Z"
+                  fill="url(#t2-deep)" filter="url(#t2-soft)"/>
+            <ellipse cx="80" cy="180" rx="42" ry="26" fill="url(#t2-bloom)" filter="url(#t2-soft)"/>
+            <ellipse cx="280" cy="172" rx="48" ry="30" fill="url(#t2-bloom)" filter="url(#t2-soft)"/>
+            <!-- middle sand wash -->
+            <path d="M -10,80 C 60,72 140,92 220,84 S 320,68 380,76 L 380,200 C 320,210 220,200 160,202 S 60,210 -10,200 Z"
+                  fill="url(#t2-middle)" filter="url(#t2-soft)"/>
+            <!-- upper warm drift -->
+            <path d="M -10,18 C 60,12 140,32 220,26 S 320,14 380,18 L 380,98 C 320,108 220,98 160,102 S 60,108 -10,100 Z"
+                  fill="url(#t2-upper)" filter="url(#t2-soft)" opacity="0.7"/>
+
+            <!-- Ghost versions of the textbook (faintest) -->
+            <g stroke="#0E1B2C" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.22">
+              <path stroke-width="0.7" d="M 70,108 C 96,102 132,100 168,102 C 198,104 220,108 240,114 L 240,118
+                                            C 222,114 198,110 168,108 C 132,106 96,110 70,116 L 70,108 Z
+                                            M 240,114 C 260,110 290,106 320,106 S 360,110 374,116"/>
+            </g>
+            <g stroke="#0E1B2C" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.36">
+              <path stroke-width="1.0" d="M 70,126 C 96,120 132,118 168,120 C 198,122 220,128 240,134 L 240,138
+                                            C 222,132 198,128 168,126 C 132,124 96,128 70,134 L 70,126 Z
+                                            M 240,134 C 260,128 290,124 320,124 S 360,128 374,134"/>
+            </g>
+
+            <!-- Current textbook (heaviest) -->
+            <path stroke="#0E1B2C" stroke-width="1.8" fill="#FAFAF7" fill-opacity="0.55"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.95"
+                  d="M 64,148 C 92,140 130,136 168,138 C 200,140 222,146 242,152 L 242,160
+                     C 222,154 200,150 168,148 C 130,146 92,150 64,158 L 64,148 Z"/>
+            <path stroke="#0E1B2C" stroke-width="1.8" fill="#FAFAF7" fill-opacity="0.55"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.95"
+                  d="M 242,152 C 264,146 300,142 330,142 C 354,142 372,146 378,150
+                     C 372,154 354,158 332,158 C 300,158 264,158 242,160 Z"/>
+            <!-- lifted corner -->
+            <path stroke="#0E1B2C" stroke-width="1.4" fill="#F5EFDE" fill-opacity="0.78"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.95"
+                  d="M 348,144 C 358,134 370,128 380,128 C 386,128 388,130 388,132
+                     C 388,140 380,150 372,156 L 366,152 C 362,146 358,142 348,144 Z"/>
+            <!-- spine -->
+            <path d="M 242,152 L 242,168" stroke="#0E1B2C" stroke-width="1.0" fill="none" stroke-linecap="round" opacity="0.62"/>
+            <!-- binding curve -->
+            <path d="M 70,158 C 130,172 200,176 242,178 C 290,180 340,176 378,168"
+                  stroke="#0E1B2C" stroke-width="1.0" fill="none" stroke-linecap="round" opacity="0.65"/>
+
+            <!-- text-lines, with one orange "sentence that changed" -->
+            <g stroke="#0E1B2C" fill="none" stroke-linecap="round" opacity="0.55">
+              <path d="M 78,144 L 130,143" stroke-width="0.5"/>
+              <path d="M 78,148 L 152,147" stroke-width="0.5"/>
+              <path d="M 78,152 L 140,151" stroke-width="0.5"/>
+              <path d="M 254,144 L 310,143" stroke-width="0.5"/>
+              <path d="M 254,148 L 320,147" stroke="#D94F2A" stroke-width="1.0" opacity="0.88"/>
+              <path d="M 254,152 L 304,151" stroke-width="0.5"/>
+            </g>
+            <!-- three orange margin ticks -->
+            <g opacity="0.78">
+              <path d="M 332,138 L 338,136" stroke="#D94F2A" stroke-width="1.0" stroke-linecap="round"/>
+              <path d="M 332,150 L 338,148" stroke="#D94F2A" stroke-width="1.0" stroke-linecap="round"/>
+              <path d="M 332,162 L 338,160" stroke="#D94F2A" stroke-width="1.0" stroke-linecap="round"/>
+            </g>
+            <!-- book shadow -->
+            <ellipse cx="220" cy="184" rx="160" ry="6" fill="#0E1B2C" opacity="0.20" filter="url(#t2-soft)"/>
+            <rect width="360" height="240" filter="url(#t2-grain)" opacity="0.55"/>
+          </svg>
+        </a>
+        <div class="secondary__body">
+          <div class="secondary__meta">
+            <span class="secondary__type">Field Note 02 · Editorial</span>
+            <span class="secondary__country">Jordan</span>
+          </div>
+          <h3 class="secondary__title">
+            <a href="../article-02-jordan-textbook/index.html">The civics page <em>that changed three times.</em></a>
+          </h3>
+          <p class="secondary__dek">A single page of a Grade 7 civics textbook has been rewritten three times in eleven years. The three versions answer the same question — what is a citizen — in three different countries.</p>
+          <div class="secondary__byline">By The Editors · 11 min · Hero: object documentation</div>
+        </div>
+      </article>
+
+      <!-- =============== SECONDARY · Colombia =============== -->
+      <article class="secondary">
+        <a href="../article-03-colombia-escuela-nueva/index.html" class="secondary__thumb"
+           aria-label="Also this issue — Escuela Nueva at fifty">
+          <!-- Colombia miniature — interlocking earth pools with a continuous-line
+               rural schoolhouse beneath Andean foothills. -->
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="t3-ground" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F4EBD6"/>
+                <stop offset="100%" stop-color="#E5D5B0"/>
+              </linearGradient>
+              <radialGradient id="t3-terra" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#D06A4A" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#A23E22" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="t3-ochre" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#D9B26F" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#8C6431" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="t3-sage" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#8B9683" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#3F4B3E" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="t3-rose" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#C68E80" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#7A4A42" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="t3-light" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#F2D9B0" stop-opacity="0"/>
+                <stop offset="55%" stop-color="#F6E0AC" stop-opacity="0.62"/>
+                <stop offset="100%" stop-color="#F2D9B0" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="t3-mountain" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#5F6A57" stop-opacity="0.42"/>
+                <stop offset="100%" stop-color="#3A4136" stop-opacity="0.62"/>
+              </linearGradient>
+              <filter id="t3-soft"><feGaussianBlur stdDeviation="7"/></filter>
+              <filter id="t3-grain"><feTurbulence type="fractalNoise" baseFrequency="0.92" numOctaves="2" seed="13"/><feColorMatrix values="0 0 0 0 0.06  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.40 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+            </defs>
+            <rect width="360" height="240" fill="url(#t3-ground)"/>
+
+            <!-- distant mountain band -->
+            <path d="M -10,128 C 30,100 60,90 100,98 C 140,108 170,80 220,86
+                     C 260,92 300,76 340,88 C 360,94 380,80 380,90
+                     L 380,260 L -10,260 Z"
+                  fill="url(#t3-mountain)" filter="url(#t3-soft)"/>
+            <!-- closer foothill -->
+            <path d="M -10,158 C 60,150 130,154 200,152 S 320,158 380,154 L 380,260 L -10,260 Z"
+                  fill="#5F6A57" opacity="0.34" filter="url(#t3-soft)"/>
+
+            <!-- pools (smaller scale) -->
+            <ellipse cx="70"  cy="90" rx="80" ry="50" fill="url(#t3-terra)" filter="url(#t3-soft)"/>
+            <ellipse cx="160" cy="80" rx="90" ry="60" fill="url(#t3-ochre)" filter="url(#t3-soft)"/>
+            <ellipse cx="250" cy="92" rx="80" ry="56" fill="url(#t3-sage)" filter="url(#t3-soft)"/>
+            <ellipse cx="120" cy="140" rx="70" ry="46" fill="url(#t3-rose)" filter="url(#t3-soft)"/>
+            <ellipse cx="220" cy="148" rx="80" ry="50" fill="url(#t3-sage)" filter="url(#t3-soft)" opacity="0.85"/>
+            <ellipse cx="320" cy="128" rx="64" ry="50" fill="url(#t3-ochre)" filter="url(#t3-soft)" opacity="0.88"/>
+
+            <rect x="0" y="160" width="360" height="14" fill="url(#t3-light)" filter="url(#t3-soft)" opacity="0.75"/>
+
+            <!-- mountain peaks -->
+            <path d="M 124,128 L 142,90 L 162,124 L 174,100 L 192,128 L 214,82 L 238,124 L 256,98 L 276,128"
+                  stroke="#0E1B2C" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+
+            <!-- schoolhouse -->
+            <path d="M 156,180 L 156,160 L 180,138 L 204,160 L 222,160 L 222,180 L 156,180 Z"
+                  stroke="#0E1B2C" stroke-width="1.4" fill="#F5EFDE" fill-opacity="0.62"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <!-- cupola -->
+            <path d="M 177,138 L 177,132 L 184,132 L 184,138" stroke="#0E1B2C" stroke-width="0.9"
+                  fill="#F5EFDE" fill-opacity="0.78" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+            <!-- door -->
+            <path d="M 184,180 L 184,168 C 184,165 187,164 189,164 C 191,164 194,165 194,168 L 194,180"
+                  stroke="#0E1B2C" stroke-width="0.9" fill="#0E1B2C" fill-opacity="0.32"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+            <!-- windows -->
+            <path d="M 162,170 L 162,178 L 175,178 L 175,170 Z M 162,174 L 175,174 M 168,170 L 168,178"
+                  stroke="#0E1B2C" stroke-width="0.7" fill="#FAFAF7" fill-opacity="0.45"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.88"/>
+            <path d="M 202,170 L 202,178 L 215,178 L 215,170 Z M 202,174 L 215,174 M 208,170 L 208,178"
+                  stroke="#0E1B2C" stroke-width="0.7" fill="#FAFAF7" fill-opacity="0.45"
+                  stroke-linecap="round" stroke-linejoin="round" opacity="0.88"/>
+            <!-- flagpole + orange flag -->
+            <path d="M 144,180 L 144,144" stroke="#0E1B2C" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.78"/>
+            <path d="M 144,144 L 154,148 L 144,152 Z" stroke="#0E1B2C" stroke-width="0.5"
+                  fill="#D94F2A" fill-opacity="0.78" stroke-linejoin="round" opacity="0.88"/>
+            <!-- child + footpath -->
+            <path d="M 260,190 C 244,186 224,182 210,180" stroke="#0E1B2C" stroke-width="0.6"
+                  fill="none" stroke-linecap="round" opacity="0.42" stroke-dasharray="1.5 2.5"/>
+            <circle cx="252" cy="180" r="1.6" fill="none" stroke="#0E1B2C" stroke-width="0.7" opacity="0.85"/>
+            <path d="M 252,182 L 252,190 M 252,186 L 249,190 M 252,186 L 255,190"
+                  stroke="#0E1B2C" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+            <!-- shadow -->
+            <ellipse cx="190" cy="184" rx="40" ry="2" fill="#0E1B2C" opacity="0.32" filter="url(#t3-soft)"/>
+
+            <rect width="360" height="240" filter="url(#t3-grain)" opacity="0.55"/>
+          </svg>
+        </a>
+        <div class="secondary__body">
+          <div class="secondary__meta">
+            <span class="secondary__type">Curated 01 · Curated</span>
+            <span class="secondary__country">Colombia</span>
+          </div>
+          <h3 class="secondary__title">
+            <a href="../article-03-colombia-escuela-nueva/index.html">Escuela Nueva <em>at fifty.</em></a>
+          </h3>
+          <p class="secondary__dek">A 2025 statement from a Colombian rural teachers' association marks half a century of the multi-grade model — and corrects, gently, several things the international press has been saying about it.</p>
+          <div class="secondary__byline">Curated by The Editors · 9 min · Hero: isotype + small map</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</section>
+
+<!-- Macron divider -->
+<div class="macron-divider"><div class="macron-divider__rule" aria-hidden="true"></div></div>
+
+<!-- ============== ABOUT MADĀR — mini-block ============== -->
+<section class="about">
+  <div>
+    <div class="about__label">About</div>
+    <div class="about__label-ar" lang="ar" dir="rtl">عن مدار</div>
+  </div>
+
+  <div class="about__body">
+    <div class="en">
+      <p>Madār is a slow-cadence editorial publication on early childhood and K-12 education, written in English and Arabic. We publish two kinds of pieces: <em>field notes</em> we report ourselves, and <em>curated readings</em> of one carefully-chosen source worth listening to. Two to three pieces an issue. One issue a month. A research instrument, not a magazine.</p>
+      <p><a href="#" class="about__more">Read the About page →</a></p>
+    </div>
+    <div class="ar" lang="ar" dir="rtl">
+      <p>«مدار» مجلّةٌ تحريريّةٌ بطيئةُ الإيقاع تَتناولُ التعليمَ في مرحلتَيِ الطفولةِ المبكّرةِ والتعليمِ العامّ، تَصدرُ بالعربيّةِ والإنجليزيّة. نَنشرُ نوعَين من المواد: <em>تقاريرَ ميدانيّة</em> نَكتبُها بأنفسنا، و<em>قراءاتٍ مختاَرة</em> لمصدرٍ واحدٍ يَستحقّ الإصغاء. قطعتان أو ثلاث في كلّ عدد. عددٌ واحدٌ كلّ شهر. أداةُ بحثٍ، لا مجلّةً.</p>
+      <p><a href="#" class="about__more" lang="ar" dir="rtl">اقرأ صفحةَ «عن مدار» ←</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="footer__inner">
+
+    <div>
+      <h6>Madār <span lang="ar" dir="rtl">مدار</span></h6>
+      <p class="footer__issue">Issue 01 · 2026 · 05 · 25</p>
+      <p>A research instrument on early childhood and K-12 education, written slowly, in two languages.</p>
+    </div>
+
+    <div>
+      <h6>Read</h6>
+      <ul>
+        <li><a href="#">About Madār</a></li>
+        <li><a href="#">Issue archive</a></li>
+        <li><a href="#">By region</a></li>
+        <li><a href="#">By theme</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h6>Follow</h6>
+      <ul>
+        <li><a href="#">Newsletter (monthly)</a></li>
+        <li><a href="#">RSS</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Contact the editors</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h6>Language</h6>
+      <div class="footer__lang">
+        <a href="#" class="is-active" lang="en">EN</a>
+        <span>·</span>
+        <a href="#" lang="ar" dir="rtl">عربي</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__strip">
+    <span>© 2026 Madār <span lang="ar" dir="rtl">مدار</span> · All rights reserved</span>
+    <span>Made with care · Zero ads · Reader-supported</span>
+  </div>
+</footer>
+
+</body>
+</html>

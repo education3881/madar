@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Twenty-Mile Walk — Madār</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #0E1B2C;
+    --orange: #D94F2A;
+    --sage: #7A8471;
+    --sand: #E8E2D0;
+    --rule: rgba(14,27,44,0.18);
+    --rule-soft: rgba(14,27,44,0.08);
+    --display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, serif;
+    --body: "Newsreader", "GT Sectra Text", Charter, Georgia, serif;
+    --mono: "JetBrains Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --arabic: "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 1.25rem 0;
+  }
+  .masthead__inner {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .masthead__left, .masthead__right {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.72;
+  }
+  .masthead__right { text-align: right; }
+  .masthead__center { text-align: center; }
+  .masthead__word {
+    font-family: var(--display);
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .masthead__word-ar {
+    font-family: var(--arabic);
+    font-size: 28px;
+    line-height: 1;
+    direction: rtl;
+    display: inline-block;
+    margin-left: 0.6rem;
+    vertical-align: -2px;
+    color: var(--ink);
+  }
+  .masthead__rule {
+    height: 1px;
+    background: var(--ink);
+    width: 64px;
+    margin: 0.55rem auto 0;
+    position: relative;
+  }
+  .masthead__rule::before, .masthead__rule::after {
+    content: ''; position: absolute; top: -3px; width: 1px; height: 7px; background: var(--ink);
+  }
+  .masthead__rule::before { left: 0; }
+  .masthead__rule::after { right: 0; }
+
+  /* margin note about wordmark */
+  .wordmark-note {
+    max-width: 1280px;
+    margin: 0.5rem auto 0;
+    padding-inline: 2rem;
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.06em;
+    color: var(--sage);
+    text-transform: uppercase;
+  }
+
+  /* ---------- Page meta strip ---------- */
+  .meta-strip {
+    max-width: 1280px;
+    margin: 2rem auto 0;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .meta-strip strong { color: var(--orange); font-weight: 500; }
+  .meta-strip .coord { opacity: 0.6; }
+
+  /* ---------- Article container ---------- */
+  .article {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 2rem 2rem 5rem;
+  }
+
+  /* ---------- Title block ---------- */
+  .title-block {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 3rem;
+    padding-block: 3rem 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+  }
+  .kicker-meta {
+    margin-top: 0.75rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    opacity: 0.7;
+    line-height: 1.7;
+  }
+  .title {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(42px, 5.4vw, 78px);
+    line-height: 1.02;
+    letter-spacing: -0.018em;
+    margin: 0 0 1.25rem;
+    max-width: 18ch;
+  }
+  .title em { font-style: italic; font-weight: 500; }
+  .dek {
+    font-family: var(--body);
+    font-size: clamp(18px, 1.4vw, 21px);
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--ink);
+    opacity: 0.78;
+    max-width: 44ch;
+    margin: 0;
+  }
+
+  /* ---------- Hero diagram ---------- */
+  .hero-figure {
+    margin: 3.5rem 0 2.5rem;
+  }
+  .hero-figure__frame {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 2rem 2rem 1.25rem;
+    position: relative;
+  }
+  .hero-figure__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule-soft);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .hero-figure__head .num { color: var(--orange); font-weight: 500; }
+  .hero-figure__head .right { opacity: 0.7; }
+  .hero-figure svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero-figure__foot {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--rule-soft);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    color: var(--ink);
+    opacity: 0.7;
+    max-width: 78ch;
+  }
+  .hero-figure__foot .credit { color: var(--sage); display: block; margin-top: 0.4rem; }
+
+  /* ---------- Body grid ---------- */
+  .body-grid {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  .body-left { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.7; }
+  .body-left p { margin: 0 0 1.25rem; }
+  .body-left .num { color: var(--orange); font-weight: 500; }
+  .body-left .ref { display: block; margin-top: 0.2rem; opacity: 0.85; }
+
+  .body-grid--resumed { margin-top: 0; }
+  .body-main p {
+    font-family: var(--body);
+    font-size: 19px;
+    line-height: 1.62;
+    margin: 0 0 1.25rem;
+    color: var(--ink);
+    text-align: left;
+  }
+  .body-main p sup {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--orange);
+    vertical-align: super;
+    margin-left: 1px;
+    font-weight: 500;
+  }
+
+  .dropcap::first-letter {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 5.1em;
+    line-height: 0.85;
+    float: left;
+    padding: 0.06em 0.12em 0 0;
+    color: var(--ink);
+    font-style: normal;
+  }
+
+  .subhead {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: -0.012em;
+    margin: 2.75rem 0 1.25rem;
+    color: var(--ink);
+  }
+  .subhead::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: var(--ink);
+    margin-bottom: 0.85rem;
+    position: relative;
+  }
+
+  /* Pull quote */
+  .pullquote {
+    margin: 2.5rem 0 2.5rem -2rem;
+    padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+    border-left: 2px solid var(--orange);
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+    max-width: 28ch;
+  }
+  .pullquote cite {
+    display: block;
+    margin-top: 0.85rem;
+    font-family: var(--mono);
+    font-style: normal;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+
+  /* Right marginalia */
+  .body-right { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.03em; color: var(--sage); line-height: 1.7; }
+  .body-right h4 {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+    opacity: 0.8;
+  }
+  .body-right p { margin: 0 0 1.5rem; }
+
+  /* ---------- The Still (SYSTEM.md §4b) ---------- */
+  /* Painterly, atmospheric SVG composition placed mid-article. Full container
+     width on web (breaks the body grid). No caption on the page — the Still
+     carries no text inside its field. A short colophon line below names the
+     article number and the Still maker, and that is all. */
+  .still {
+    margin: 4.5rem -2rem 4rem;
+    padding: 0;
+    border: none;
+    display: block;
+  }
+  .still__field {
+    width: 100%;
+    display: block;
+    border-radius: 1px;
+    overflow: hidden;
+  }
+  .still__field svg { width: 100%; height: auto; display: block; }
+  .still__colophon {
+    margin-top: 1rem;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    opacity: 0.85;
+  }
+  .still__colophon .still__num {
+    color: var(--ink);
+    opacity: 0.65;
+  }
+
+  /* Secondary diagram (isotype) */
+  .figure-2 {
+    margin: 2.5rem 0;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 1.5rem;
+  }
+  .figure-2__head {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  .figure-2__title {
+    font-family: var(--body);
+    font-style: italic;
+    font-size: 14.5px;
+    line-height: 1.4;
+    color: var(--ink);
+    opacity: 0.85;
+    margin: 0 0 1rem;
+  }
+  .figure-2 svg { width: 100%; height: auto; display: block; }
+  .figure-2__caption {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    color: var(--sage);
+    margin-top: 0.85rem;
+  }
+
+  /* ---------- Arabic section ---------- */
+  .arabic-section {
+    margin: 4rem 0 3rem;
+    padding: 2.5rem 2rem;
+    background: var(--paper);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    gap: 3rem;
+  }
+  .arabic-section__label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+  }
+  .arabic-section__label-en {
+    margin-top: 0.5rem;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--sage);
+    line-height: 1.65;
+    text-transform: none;
+    opacity: 0.95;
+  }
+  .arabic-body {
+    direction: rtl;
+    text-align: right;
+  }
+  .arabic-body h3 {
+    font-family: var(--arabic);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.35;
+    margin: 0 0 1.25rem;
+    color: var(--ink);
+  }
+  .arabic-body p {
+    font-family: var(--arabic);
+    font-size: 20px;
+    line-height: 1.9;
+    margin: 0 0 1rem;
+    color: var(--ink);
+  }
+  .arabic-section__right {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--sage);
+    line-height: 1.7;
+  }
+
+  /* ---------- Footer ---------- */
+  .article-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+    color: var(--ink);
+    opacity: 0.85;
+  }
+  .article-footer h5 {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+  }
+  .article-footer p { margin: 0 0 0.4rem; }
+
+  .colophon {
+    max-width: 1280px;
+    margin: 3rem auto 0;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.7;
+  }
+  .colophon .issue { color: var(--orange); font-weight: 500; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .title-block { grid-template-columns: 1fr; gap: 1.25rem; }
+    .body-grid { grid-template-columns: 1fr 8fr; gap: 2rem; }
+    .body-right { grid-column: 1 / -1; border-top: 1px solid var(--rule-soft); padding-top: 1.5rem; margin-top: 1.5rem; }
+    .arabic-section { grid-template-columns: 1fr; gap: 1.5rem; }
+    .pullquote { margin-left: 0; }
+    .still { margin-inline: 0; margin-top: 3rem; margin-bottom: 3rem; }
+    .still__colophon { flex-direction: column; gap: 0.35rem; }
+  }
+  @media (max-width: 720px) {
+    html { font-size: 16px; }
+    .article { padding: 1rem 1.25rem 3rem; }
+    .masthead__inner { grid-template-columns: 1fr; text-align: center; gap: 0.5rem; }
+    .masthead__left, .masthead__right { text-align: center; }
+    .meta-strip { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .title-block { padding-block: 2rem 1.25rem; }
+    .body-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .body-left { display: none; } /* footnotes collapse into body via sup numbers */
+    .body-right { margin-top: 1rem; padding-top: 1rem; }
+    .body-main p { font-size: 17.5px; }
+    .dropcap::first-letter { font-size: 4.2em; }
+    .pullquote { font-size: 23px; margin-left: 0; padding-left: 1rem; }
+    .arabic-section { padding: 1.5rem 1rem; }
+    .arabic-body h3 { font-size: 24px; }
+    .arabic-body p { font-size: 18px; }
+    .article-footer { grid-template-columns: 1fr; gap: 1.25rem; }
+    .colophon { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .hero-figure__frame { padding: 1rem; }
+    .hero-figure__head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== MASTHEAD ============== -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__left">Issue 01 · May 2026</div>
+    <div class="masthead__center">
+      <div>
+        <span class="masthead__word">Madār</span>
+        <span class="masthead__word-ar" lang="ar" dir="rtl">مدار</span>
+      </div>
+      <div class="masthead__rule" aria-hidden="true"></div>
+    </div>
+    <div class="masthead__right">A research instrument</div>
+  </div>
+</header>
+<div class="wordmark-note">[ Wordmark to be commissioned — Cormorant Garamond + Amiri set as stand-ins ]</div>
+
+<!-- ============== META STRIP ============== -->
+<div class="meta-strip">
+  <span><strong>Essay</strong> · Sierra Leone · ECE · 14 min</span>
+  <span class="coord">N 08°29′ · W 13°14′ · Freetown</span>
+</div>
+
+<!-- ============== ARTICLE ============== -->
+<article class="article">
+
+  <!-- TITLE BLOCK -->
+  <header class="title-block">
+    <div>
+      <div class="kicker">Field Note 01</div>
+      <div class="kicker-meta">
+        Sierra Leone<br>
+        Western Area · Bo · Bombali<br>
+        2018 – 2024<br><br>
+        By The Editors<br>
+        Diagram: contributor TBC
+      </div>
+    </div>
+    <div>
+      <h1 class="title">The Twenty-Mile Walk<br><em>How Sierra Leone maps its early-childhood coverage.</em></h1>
+      <p class="dek">In 2018, six of seventeen districts reported any publicly-funded ECE provision. By 2024, thirteen did. The averages flatter the country. The chiefdom-level picture is harder to read, and more interesting.</p>
+    </div>
+  </header>
+
+  <!-- HERO DIAGRAM -->
+  <figure class="hero-figure">
+    <div class="hero-figure__frame">
+      <div class="hero-figure__head">
+        <span><span class="num">Figure 01</span> · ECE provision by chiefdom, Sierra Leone, 2024</span>
+        <span class="right">Drawn for Madār · n = 190 chiefdoms</span>
+      </div>
+
+      <!-- ===== INLINE SVG: Sierra Leone districts map ===== -->
+      <svg viewBox="0 0 920 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized map of Sierra Leone's districts, with ECE provision indicators.">
+        <defs>
+          <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#7A8471" stroke-width="0.6" opacity="0.55"/>
+          </pattern>
+          <pattern id="hatch-dense" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="4" stroke="#7A8471" stroke-width="0.8" opacity="0.85"/>
+          </pattern>
+          <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 z" fill="#0E1B2C"/>
+          </marker>
+        </defs>
+
+        <!-- ground -->
+        <rect x="0" y="0" width="920" height="560" fill="#FAFAF7"/>
+
+        <!-- graticule (latitude/longitude rules) -->
+        <g stroke="#0E1B2C" stroke-width="0.3" opacity="0.18">
+          <line x1="0" y1="120" x2="920" y2="120"/>
+          <line x1="0" y1="240" x2="920" y2="240"/>
+          <line x1="0" y1="360" x2="920" y2="360"/>
+          <line x1="0" y1="480" x2="920" y2="480"/>
+          <line x1="180" y1="0" x2="180" y2="560"/>
+          <line x1="340" y1="0" x2="340" y2="560"/>
+          <line x1="500" y1="0" x2="500" y2="560"/>
+          <line x1="660" y1="0" x2="660" y2="560"/>
+          <line x1="820" y1="0" x2="820" y2="560"/>
+        </g>
+        <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="8" fill="#0E1B2C" opacity="0.5">
+          <text x="6" y="118">10°N</text>
+          <text x="6" y="238">9°N</text>
+          <text x="6" y="358">8°N</text>
+          <text x="6" y="478">7°N</text>
+          <text x="178" y="556">13°W</text>
+          <text x="338" y="556">12°W</text>
+          <text x="498" y="556">11°W</text>
+          <text x="658" y="556">10°W</text>
+        </g>
+
+        <!-- Sierra Leone outline + districts (stylized, not geographically exact) -->
+        <!-- Outer country sand fill -->
+        <path d="M 200,140
+                 C 250,110 320,108 380,118
+                 C 440,128 500,140 560,142
+                 C 620,144 670,156 700,180
+                 C 740,210 760,250 760,290
+                 C 762,330 752,370 730,400
+                 C 706,430 670,448 620,460
+                 C 560,472 500,470 440,460
+                 C 380,452 320,440 270,410
+                 C 220,378 188,330 180,280
+                 C 175,228 178,180 200,140 Z"
+              fill="#E8E2D0" stroke="#0E1B2C" stroke-width="1.3"/>
+
+        <!-- District boundaries (interior lines, hand-drafted feel) -->
+        <g stroke="#0E1B2C" stroke-width="0.7" fill="none" opacity="0.85">
+          <path d="M 290,160 L 360,210 L 380,260 L 360,310 L 320,340"/>
+          <path d="M 380,260 L 460,250 L 510,220 L 560,180"/>
+          <path d="M 460,250 L 480,310 L 510,360"/>
+          <path d="M 510,220 L 580,260 L 620,300 L 660,330"/>
+          <path d="M 480,310 L 540,330 L 600,330"/>
+          <path d="M 360,310 L 420,360 L 470,400 L 530,420 L 590,400 L 640,380"/>
+          <path d="M 320,340 L 360,400 L 410,440"/>
+          <path d="M 470,400 L 480,440 L 510,450"/>
+          <path d="M 200,140 L 240,200 L 270,260 L 270,310"/>
+          <path d="M 240,200 L 290,210 L 360,210"/>
+          <path d="M 270,310 L 320,340"/>
+          <path d="M 600,330 L 660,330"/>
+          <path d="M 620,300 L 680,280"/>
+        </g>
+
+        <!-- District fills indicating coverage shift -->
+        <!-- (a) Districts that exceeded national mean in 2018 and still do — light sand (no fill, base) -->
+        <!-- (b) Districts that crossed threshold between 2018 and 2024 — sage hatch -->
+        <g opacity="0.9">
+          <!-- Bombali (north-center) -->
+          <path d="M 360,210 L 460,250 L 480,310 L 420,310 L 380,260 Z" fill="url(#hatch)"/>
+          <!-- Bo (south-center) -->
+          <path d="M 470,400 L 530,420 L 590,400 L 540,360 L 480,370 Z" fill="url(#hatch)"/>
+          <!-- Kenema (east) -->
+          <path d="M 600,330 L 660,330 L 680,380 L 640,380 L 600,360 Z" fill="url(#hatch-dense)"/>
+        </g>
+
+        <!-- ECE centre markers: orange = present in 2024 -->
+        <g fill="#D94F2A" stroke="#FAFAF7" stroke-width="0.7">
+          <!-- Western Area (capital) -->
+          <circle cx="245" cy="245" r="3.2"/>
+          <circle cx="252" cy="253" r="2.8"/>
+          <circle cx="241" cy="258" r="2.8"/>
+          <circle cx="234" cy="248" r="2.5"/>
+          <circle cx="248" cy="236" r="2.5"/>
+          <circle cx="237" cy="263" r="2.4"/>
+          <!-- Bombali -->
+          <circle cx="395" cy="240" r="2.8"/>
+          <circle cx="425" cy="262" r="2.6"/>
+          <circle cx="440" cy="285" r="2.4"/>
+          <circle cx="410" cy="280" r="2.5"/>
+          <circle cx="450" cy="270" r="2.3"/>
+          <!-- Bo -->
+          <circle cx="495" cy="390" r="2.8"/>
+          <circle cx="520" cy="400" r="2.6"/>
+          <circle cx="545" cy="390" r="2.5"/>
+          <circle cx="510" cy="412" r="2.4"/>
+          <circle cx="555" cy="408" r="2.4"/>
+          <circle cx="525" cy="378" r="2.2"/>
+          <!-- Kenema -->
+          <circle cx="625" cy="350" r="2.8"/>
+          <circle cx="650" cy="358" r="2.6"/>
+          <circle cx="640" cy="370" r="2.4"/>
+          <!-- scattered, less dense -->
+          <circle cx="330" cy="290" r="2.2"/>
+          <circle cx="365" cy="340" r="2.2"/>
+          <circle cx="410" cy="370" r="2.2"/>
+          <circle cx="580" cy="320" r="2.2"/>
+          <circle cx="595" cy="280" r="2.0"/>
+          <circle cx="685" cy="320" r="2.0"/>
+        </g>
+
+        <!-- Sage hollow circles: present 2018, persistent -->
+        <g fill="none" stroke="#7A8471" stroke-width="1.2">
+          <circle cx="245" cy="252" r="5.5"/>
+          <circle cx="241" cy="246" r="4.5"/>
+          <circle cx="503" cy="398" r="5.5"/>
+          <circle cx="630" cy="355" r="5"/>
+          <circle cx="415" cy="270" r="4.5"/>
+        </g>
+
+        <!-- District labels -->
+        <g font-family="Cormorant Garamond, Georgia, serif" font-size="11.5" font-style="italic" fill="#0E1B2C" opacity="0.85">
+          <text x="220" y="220" text-anchor="middle">Western Area</text>
+          <text x="400" y="220" text-anchor="middle">Bombali</text>
+          <text x="495" y="365" text-anchor="middle">Bo</text>
+          <text x="635" y="340" text-anchor="middle">Kenema</text>
+          <text x="305" y="195">Port Loko</text>
+          <text x="355" y="335">Tonkolili</text>
+          <text x="470" y="445">Pujehun</text>
+          <text x="540" y="320">Moyamba</text>
+          <text x="685" y="270">Kailahun</text>
+          <text x="345" y="430" opacity="0.55">Bonthe</text>
+        </g>
+
+        <!-- Annotation: "twenty-mile walk" line -->
+        <g>
+          <path d="M 300,420 L 410,420" stroke="#0E1B2C" stroke-width="0.8" stroke-dasharray="2 2"/>
+          <line x1="300" y1="416" x2="300" y2="424" stroke="#0E1B2C" stroke-width="0.8"/>
+          <line x1="410" y1="416" x2="410" y2="424" stroke="#0E1B2C" stroke-width="0.8"/>
+          <text x="355" y="412" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" text-anchor="middle" fill="#0E1B2C">~32 km · the longest catchment radius</text>
+        </g>
+
+        <!-- Compass rose -->
+        <g transform="translate(820, 110)">
+          <circle r="22" fill="none" stroke="#0E1B2C" stroke-width="0.6"/>
+          <line x1="0" y1="-22" x2="0" y2="22" stroke="#0E1B2C" stroke-width="0.6"/>
+          <line x1="-22" y1="0" x2="22" y2="0" stroke="#0E1B2C" stroke-width="0.6"/>
+          <polygon points="0,-26 -3,-12 3,-12" fill="#0E1B2C"/>
+          <text x="0" y="-32" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle" fill="#0E1B2C">N</text>
+        </g>
+
+        <!-- Scale bar (macron as scale bar) -->
+        <g transform="translate(60, 510)">
+          <line x1="0" y1="0" x2="160" y2="0" stroke="#0E1B2C" stroke-width="1.2"/>
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="#0E1B2C" stroke-width="1.2"/>
+          <line x1="40" y1="-3" x2="40" y2="3" stroke="#0E1B2C" stroke-width="0.8"/>
+          <line x1="80" y1="-3" x2="80" y2="3" stroke="#0E1B2C" stroke-width="0.8"/>
+          <line x1="120" y1="-3" x2="120" y2="3" stroke="#0E1B2C" stroke-width="0.8"/>
+          <line x1="160" y1="-4" x2="160" y2="4" stroke="#0E1B2C" stroke-width="1.2"/>
+          <text x="0"   y="18" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle" fill="#0E1B2C">0</text>
+          <text x="80"  y="18" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle" fill="#0E1B2C">40 km</text>
+          <text x="160" y="18" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle" fill="#0E1B2C">80 km</text>
+        </g>
+
+        <!-- Legend -->
+        <g transform="translate(670, 460)" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C">
+          <rect x="-12" y="-18" width="232" height="86" fill="#FAFAF7" stroke="#0E1B2C" stroke-width="0.4" opacity="0.95"/>
+          <text x="0" y="-4" font-weight="500">LEGEND · Figure 01</text>
+
+          <circle cx="6" cy="14" r="3" fill="#D94F2A"/>
+          <text x="18" y="17">ECE centre opened 2018 – 2024</text>
+
+          <circle cx="6" cy="32" r="4" fill="none" stroke="#7A8471" stroke-width="1.2"/>
+          <text x="18" y="35">ECE centre present in 2018</text>
+
+          <rect x="2" y="44" width="10" height="8" fill="url(#hatch)"/>
+          <text x="18" y="52">District crossed national mean</text>
+        </g>
+
+        <!-- Atlantic Ocean label -->
+        <text x="120" y="370" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#0E1B2C" opacity="0.55">Atlantic Ocean</text>
+
+        <!-- Top-right title strip -->
+        <g font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.7">
+          <text x="900" y="20" text-anchor="end">PROJ. CYLINDRICAL · MADĀR · 2026</text>
+        </g>
+      </svg>
+
+    </div>
+    <figcaption class="hero-figure__foot">
+      Each survey marker represents one publicly-funded early-childhood centre operating in 2024, as recorded by the Ministry of Basic and Senior Secondary Education's school census. Hollow sage rings show centres that were already operating in 2018; orange dots show those opened since. Hatching marks districts whose chiefdom-level coverage crossed the national mean during the same period. Boundaries are stylized — not a survey instrument.
+      <span class="credit">Diagram drawn for Madār by [Illustrator name to be commissioned] · data: MBSSE Annual School Census, 2018 + 2024 editions.</span>
+    </figcaption>
+  </figure>
+
+  <!-- BODY GRID -->
+  <div class="body-grid">
+
+    <!-- LEFT: footnotes / marginalia -->
+    <aside class="body-left">
+      <p><span class="num">¹</span> MBSSE Annual School Census 2018, p. 47. Definition narrowed in 2021 to exclude unregistered community centres; Madār's analysis re-baselines the 2018 figure under the 2021 definition.<span class="ref">— MBSSE, Freetown.</span></p>
+      <p><span class="num">²</span> Headcount per chiefdom — the smallest administrative unit Madār could obtain at chiefdom resolution without extrapolation.<span class="ref">— Statistics Sierra Leone, 2024.</span></p>
+      <p><span class="num">³</span> Conversation with K. Bangura, Head of ECE Directorate, MBSSE, by phone, March 2026.</p>
+      <p><span class="num">⁴</span> A "twenty-mile walk" is the working figure ECE directorates use internally for the longest acceptable catchment radius in low-density chiefdoms. It is not a published standard.</p>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="body-main">
+      <p class="dropcap">When the Ministry of Basic and Senior Secondary Education published Sierra Leone's 2024 school census in February of this year, the headline number — 190 publicly-funded early-childhood centres across the country's seventeen districts — was a thirty-eight percent increase on 2018.<sup>1</sup> National coverage looks like a steeper trajectory than it was, in part because the 2018 figure was counted under a more permissive definition than the one in force today.<sup>1</sup> Re-baselined, the rise is still real: from approximately ninety to a hundred and ninety, give or take. The number is not the story.</p>
+
+      <p>The story is what the number conceals. A chiefdom in Bonthe, on the coast south of the Sherbro Estuary, currently records one centre serving a catchment that extends, by the chiefdom education committee's own working estimate, to a thirty-two kilometre radius. The MBSSE's internal directorate calls this "the twenty-mile walk." It is not a published standard. It is the figure officers use when they argue, in meetings in Freetown, about which chiefdoms have been served and which have been counted.<sup>4</sup></p>
+
+      <p>The averages have improved because districts that were close to the national mean in 2018 have pulled ahead, and because four districts — Bombali, Bo, Kenema, and Pujehun — have added centres at a pace nobody at the directorate predicted at the start of the decade. The averages have not improved because the chiefdoms that were furthest from a centre in 2018 are, with three exceptions, the same chiefdoms furthest from a centre in 2024.</p>
+
+      <h2 class="subhead">What the chiefdom map shows</h2>
+
+      <p>Counted at district level, Sierra Leone's progress is monotonic. Counted at chiefdom level — the unit at which a parent decides whether their four-year-old can be enrolled — the progress is bimodal. Some chiefdoms have multiple centres; some have none, and have not had one at any point in the period this publication has been able to reconstruct.<sup>2</sup></p>
+
+      <div class="pullquote">
+        "We have not added a centre in this chiefdom since 2014. The walk to the nearest one is more than two hours each way, for a child."
+        <cite>— Chiefdom education officer, Pujehun district · March 2026</cite>
+      </div>
+
+      <p>The directorate is aware. K. Bangura, head of the ECE Directorate at MBSSE, told Madār in March that the next five-year plan, currently in draft, will be the first to use chiefdom-level catchment as a planning unit rather than district-level enrolment.<sup>3</sup> The directorate expects the plan to be published before the end of the calendar year. What it will do that the previous plans did not is treat the unevenness inside each district as a planning constraint, not a reporting footnote.</p>
+
+      <p>Whether the plan succeeds will turn on a single operational question: whether Sierra Leone's existing community-school structures — many of them unregistered, many of them informal — can be brought into the official count without losing the local autonomy that has kept them open through two governments and one Ebola emergency. The directorate is not unanimous on this. The teachers we spoke to were less unanimous still.</p>
+
+      <p>The map above is one version of the country. A higher-resolution version — chiefdom by chiefdom, with the catchment radii drawn — runs to thirty-four pages. The MBSSE has agreed, in principle, to share that map with Madār for a follow-up piece in the autumn.</p>
+
+      </div>
+    </div>
+
+    <!-- ============== THE STILL · §4b (v0.3, 2026-05-25) ============== -->
+    <!-- Painterly atmospheric volumes + continuous-line drawing of a concrete subject.
+         Subject (line): a teacher's chalkboard on an A-frame easel, with last term's
+         arithmetic still half-erased on it, a stick of chalk on the lower rail, and
+         a suggested hand at the right edge of the board.
+         v0.4 — REDRAWN (2026-05-25). The atmospheric volumes are RETIRED.
+         The Still is now a single continuous calligraphic line in ink, drawn
+         from beginning to end without lifting the pen, with a second short
+         line in kiln-orange for the chalk on the ledge. The line breathes
+         (variable stroke weight is achieved by stacking three near-identical
+         paths at widths 3.0 / 1.8 / 0.9). No filled volumes, no gradients;
+         the line IS the image, the ground is paper-cream. Inspiration: the
+         way an Arabic letter is one unlifted gesture from initial to final. -->
+    <figure class="still" aria-label="The Still for Field Note 01 — Sierra Leone. A single continuous calligraphic line in ink drawing a chalkboard with last term's half-erased writing inside it; a second line in kiln-orange suggests the chalk on the ledge and a small drift of dust.">
+      <div class="still__field">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1200 600"
+             preserveAspectRatio="xMidYMid slice"
+             role="img"
+             aria-label="A single continuous calligraphic line drawing of a chalkboard with last term's half-erased writing inside it, in ink. A second line, in kiln-orange, suggests the stick of chalk and a small dusting trail. The ground is paper-cream, nothing else.">
+
+          <title>The Still · Sierra Leone — the chalkboard that still wears last term's writing</title>
+          <desc>One continuous calligraphic line in ink — the pen lands at the upper-left, breathes its way around the chalkboard's perimeter, and writes inside the board the partial arithmetic and word that the teacher in Bo did not erase. A second short line in kiln-orange is the stick of chalk lying on the ledge and a soft drift of chalk-dust. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+          <!-- Paper-cream ground. Nothing else underneath the line. -->
+          <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+          <!--
+            ============================================================
+            PRIMARY GESTURE — ink (#1A2B3C)
+            ONE continuous calligraphic line. The pen lands at the upper-
+            left and:
+              1. Travels rightward and around to enclose the chalkboard
+                 (with a soft, breathing rectangle — never CAD-perfect).
+              2. Without lifting, flows inward and writes:
+                    "ECE"  (half-erased)   ||||  +  ||||  =  ||
+                 then an underline beneath.
+              3. Exits the board at the lower edge and trails into the
+                 two-legged stand and the floor.
+            Variable stroke weight is achieved by stacking 3 paths at
+            widths 3.0 / 1.8 / 0.9 with the same approximate gesture and
+            slightly different opacities — the breathing of a brush.
+            No fills, no filters, no gradients. The line IS the image.
+            ============================================================
+          -->
+
+          <g id="ink-line"
+             fill="none"
+             stroke="#1A2B3C"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+            <!-- BOARD PERIMETER — heavy weight, single closed gesture. -->
+            <path stroke-width="3.0" stroke-opacity="0.92" d="
+              M 218 178
+              C 256 168 296 162 338 160
+              C 442 156 564 156 698 158
+              C 802 159 880 162 944 168
+              C 962 170 974 182 974 202
+              C 974 244 974 296 974 348
+              C 974 384 972 412 968 432
+              C 966 446 956 454 938 456
+              C 854 460 720 462 580 462
+              C 458 462 340 460 264 458
+              C 244 457 232 446 230 424
+              C 228 384 226 332 226 280
+              C 226 246 228 222 232 204
+              C 236 188 246 180 264 178
+              C 308 175 360 174 414 174
+              C 488 174 562 175 632 178
+            "/>
+
+            <!-- Perimeter — medium weight, slightly offset (breath). -->
+            <path stroke-width="1.8" stroke-opacity="0.74" d="
+              M 220 180
+              C 258 170 296 164 340 162
+              C 444 158 564 158 700 160
+              C 802 161 880 164 944 170
+              C 962 172 972 184 972 202
+              C 972 244 972 296 972 348
+              C 972 382 970 410 966 430
+              C 964 444 954 452 938 454
+              C 854 458 720 460 580 460
+              C 458 460 340 458 264 456
+              C 246 455 234 444 232 424
+              C 230 384 228 332 228 280
+              C 228 246 230 224 234 206
+            "/>
+
+            <!-- Perimeter — fine weight, the smallest tremor. -->
+            <path stroke-width="0.9" stroke-opacity="0.55" d="
+              M 222 182
+              C 260 172 298 166 342 164
+              C 444 160 564 160 700 162
+              C 802 163 880 166 942 172
+              C 960 174 970 186 970 204
+              C 970 244 970 294 970 346
+            "/>
+
+            <!--
+              ============================================================
+              INTERIOR WRITING — same continuous line, no lift.
+              It enters the board and writes:
+                E  C  E   (half-erased — second E breaks)
+                ||||  +  ||||  =  ||
+              Then draws a long calligraphic underline beneath.
+              ============================================================
+            -->
+
+            <!-- "E" — heavy -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 320 254 L 320 358
+              M 320 254 L 376 254
+              M 320 304 L 364 304
+              M 320 358 L 376 358
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 322 256 L 322 356
+              M 322 256 L 374 256
+              M 322 306 L 360 306
+              M 322 356 L 374 356
+            "/>
+
+            <!-- "C" -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 444 268
+              C 432 256 412 252 396 258
+              C 376 266 366 286 366 308
+              C 366 332 378 352 398 358
+              C 416 362 432 358 444 348
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 442 270
+              C 432 260 414 256 398 260
+              C 380 268 370 286 370 308
+              C 370 330 380 348 398 354
+            "/>
+
+            <!-- "E" — second, partly erased. The bottom horizontal is missing. -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 478 254 L 478 358
+              M 478 254 L 534 254
+              M 478 304 L 522 304
+            "/>
+            <!-- A faint trace of what was erased — dashed, low opacity -->
+            <path stroke-width="0.7" stroke-opacity="0.35" stroke-dasharray="4 5" d="
+              M 478 358 L 534 358
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 480 256 L 480 356
+              M 480 256 L 532 256
+              M 480 306 L 520 306
+            "/>
+
+            <!-- Tally marks |||| -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 596 258 L 592 360
+              M 614 256 L 610 360
+              M 630 258 L 626 360
+              M 648 256 L 644 360
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 597 260 L 593 358
+              M 615 258 L 611 358
+              M 631 260 L 627 358
+              M 649 258 L 645 358
+            "/>
+
+            <!-- + sign -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 686 304 L 736 304
+              M 711 280 L 711 328
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 686 306 L 736 306
+              M 713 280 L 713 328
+            "/>
+
+            <!-- Second tally |||| -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 770 258 L 766 360
+              M 788 256 L 784 360
+              M 804 258 L 800 360
+              M 822 256 L 818 360
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 771 260 L 767 358
+              M 789 258 L 785 358
+              M 805 260 L 801 358
+              M 823 258 L 819 358
+            "/>
+
+            <!-- = sign -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 858 284 L 908 284
+              M 858 324 L 908 324
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 858 286 L 908 286
+              M 858 326 L 908 326
+            "/>
+
+            <!-- Final tally — but only TWO marks (the half-finished sum). -->
+            <path stroke-width="2.6" stroke-opacity="0.88" d="
+              M 932 258 L 928 360
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.62" d="
+              M 933 260 L 929 358
+            "/>
+
+            <!-- A long calligraphic underline that breathes across the whole writing,
+                 broken in the middle as if half-erased. -->
+            <path stroke-width="3.0" stroke-opacity="0.85" d="
+              M 308 402
+              C 372 398 444 396 524 397
+              C 558 398 596 399 624 399
+            "/>
+            <path stroke-width="1.5" stroke-opacity="0.55" d="
+              M 314 404
+              C 376 400 446 398 524 399
+              C 558 400 594 401 622 401
+            "/>
+            <!-- erased gap -->
+            <path stroke-width="0.7" stroke-opacity="0.32" stroke-dasharray="5 7" d="
+              M 626 401 C 666 400 706 400 744 401
+            "/>
+            <!-- second half of the underline -->
+            <path stroke-width="3.0" stroke-opacity="0.85" d="
+              M 750 402
+              C 804 401 858 401 906 403
+              C 920 404 930 405 942 406
+            "/>
+            <path stroke-width="1.5" stroke-opacity="0.55" d="
+              M 754 404
+              C 806 403 856 403 904 405
+              C 918 406 928 407 940 408
+            "/>
+
+            <!--
+              ============================================================
+              THE STAND — two angled legs descending from the lower corners
+              of the chalkboard out to a footing on the floor. Continuous
+              with the same triple-weight discipline. The stand is asymmetric
+              to keep the line alive (no CAD geometry).
+              ============================================================
+            -->
+
+            <!-- Left leg -->
+            <path stroke-width="2.6" stroke-opacity="0.85" d="
+              M 264 462
+              C 250 496 232 528 210 552
+              C 200 562 196 568 200 570
+              C 208 572 224 572 248 572
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.55" d="
+              M 266 464
+              C 252 498 234 528 212 552
+              C 204 560 200 566 204 568
+            "/>
+
+            <!-- Right leg -->
+            <path stroke-width="2.6" stroke-opacity="0.85" d="
+              M 938 460
+              C 950 494 968 526 988 552
+              C 996 562 1000 568 996 570
+              C 988 572 972 572 948 572
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.55" d="
+              M 936 462
+              C 948 494 966 526 986 552
+              C 994 560 998 566 994 568
+            "/>
+
+            <!-- The floor — a soft, calligraphic, broken horizontal that
+                 skims the canvas. Suggests ground without filling it. -->
+            <path stroke-width="1.8" stroke-opacity="0.42" d="
+              M 140 572
+              C 270 569 410 567 580 567
+              C 750 567 900 569 1060 572
+            "/>
+            <path stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="5 8" d="
+              M 200 580
+              C 320 577 470 575 620 575
+              C 770 575 900 577 1020 580
+            "/>
+          </g>
+
+          <!--
+            ============================================================
+            SECOND GESTURE — kiln-orange (#D94F2A)
+            The stick of chalk, lying along the chalkboard's ledge. One
+            short, tapered, calligraphic line, with a small drift of dust
+            rising from it. Same triple-weight discipline.
+            ============================================================
+          -->
+
+          <g id="chalk-line"
+             fill="none"
+             stroke="#D94F2A"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+            <!-- the chalk itself — tapered -->
+            <path stroke-width="5.5" stroke-opacity="0.82" d="
+              M 770 444
+              C 810 442 856 442 902 444
+            "/>
+            <path stroke-width="3.0" stroke-opacity="0.55" d="
+              M 776 446
+              C 814 444 856 444 900 446
+            "/>
+            <path stroke-width="1.4" stroke-opacity="0.40" d="
+              M 786 448
+              C 820 446 856 446 896 448
+            "/>
+
+            <!-- the drift — three short broken strokes, breathing upward-right -->
+            <path stroke-width="1.6" stroke-opacity="0.62" d="
+              M 906 434
+              C 916 420 924 408 930 396
+            "/>
+            <path stroke-width="1.0" stroke-opacity="0.42" d="
+              M 920 422
+              C 932 412 942 402 950 388
+            "/>
+            <path stroke-width="0.7" stroke-opacity="0.28" d="
+              M 932 410
+              C 942 402 950 396 956 386
+            "/>
+          </g>
+
+        </svg>
+      </div>
+
+      <figcaption class="still__colophon">
+        <span><span class="still__num">سكون · The Still</span> &nbsp;·&nbsp; Field Note 01 · Sierra Leone</span>
+        <span>Made in-house for Madār · 2026</span>
+      </figcaption>
+    </figure>
+
+    <!-- resume body grid for the rest of the article -->
+    <div class="body-grid body-grid--resumed">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main">
+
+      <h2 class="subhead">A note on the ratio</h2>
+
+      <p>One number is worth lingering on. Across the 190 centres counted in 2024, the average student-teacher ratio sits at 31:1 — a figure flattened by Freetown, where the worst-staffed centres reach 48:1. The figure below shows the country's centres sorted into five ratio bands. Half of them sit above the international guidance ceiling for the age group, which the ministry's own draft plan acknowledges.</p>
+
+      <!-- Secondary diagram: isotype -->
+      <figure class="figure-2">
+        <div class="figure-2__head">Figure 02 · Student-teacher ratio, 2024</div>
+        <p class="figure-2__title">Each figure represents ten centres (n = 190). Sage = within guidance; orange = above ceiling.</p>
+
+        <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isotype diagram showing ratio bands across Sierra Leone ECE centres.">
+          <defs>
+            <!-- a single small "figure" symbol: stylized person -->
+            <symbol id="person" viewBox="0 0 12 28">
+              <circle cx="6" cy="4" r="3.2"/>
+              <path d="M 6,8 L 6,20 M 6,11 L 0,17 M 6,11 L 12,17 M 6,20 L 2,28 M 6,20 L 10,28" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+            </symbol>
+          </defs>
+
+          <!-- band labels & rules -->
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C">
+            <text x="0"   y="20">≤ 20 : 1</text>
+            <text x="0"   y="60">21 – 30 : 1</text>
+            <text x="0"   y="100">31 – 40 : 1</text>
+            <text x="0"   y="140">41 – 50 : 1</text>
+            <text x="0"   y="180">≥ 51 : 1</text>
+          </g>
+          <g stroke="#0E1B2C" stroke-width="0.3" opacity="0.18">
+            <line x1="80" y1="22" x2="720" y2="22"/>
+            <line x1="80" y1="62" x2="720" y2="62"/>
+            <line x1="80" y1="102" x2="720" y2="102"/>
+            <line x1="80" y1="142" x2="720" y2="142"/>
+            <line x1="80" y1="182" x2="720" y2="182"/>
+          </g>
+
+          <!-- Band 1: ≤ 20 — 2 figures (sage) -->
+          <g fill="#7A8471" stroke="#7A8471">
+            <use href="#person" x="90"  y="-8" width="12" height="28"/>
+            <use href="#person" x="108" y="-8" width="12" height="28"/>
+          </g>
+
+          <!-- Band 2: 21–30 — 6 figures (sage) -->
+          <g fill="#7A8471" stroke="#7A8471">
+            <use href="#person" x="90"  y="32" width="12" height="28"/>
+            <use href="#person" x="108" y="32" width="12" height="28"/>
+            <use href="#person" x="126" y="32" width="12" height="28"/>
+            <use href="#person" x="144" y="32" width="12" height="28"/>
+            <use href="#person" x="162" y="32" width="12" height="28"/>
+            <use href="#person" x="180" y="32" width="12" height="28"/>
+          </g>
+
+          <!-- Band 3: 31–40 — 5 figures sage + 2 orange -->
+          <g fill="#7A8471" stroke="#7A8471">
+            <use href="#person" x="90"  y="72" width="12" height="28"/>
+            <use href="#person" x="108" y="72" width="12" height="28"/>
+            <use href="#person" x="126" y="72" width="12" height="28"/>
+            <use href="#person" x="144" y="72" width="12" height="28"/>
+            <use href="#person" x="162" y="72" width="12" height="28"/>
+          </g>
+          <g fill="#D94F2A" stroke="#D94F2A">
+            <use href="#person" x="180" y="72" width="12" height="28"/>
+            <use href="#person" x="198" y="72" width="12" height="28"/>
+          </g>
+
+          <!-- Band 4: 41–50 — 5 figures orange -->
+          <g fill="#D94F2A" stroke="#D94F2A">
+            <use href="#person" x="90"  y="112" width="12" height="28"/>
+            <use href="#person" x="108" y="112" width="12" height="28"/>
+            <use href="#person" x="126" y="112" width="12" height="28"/>
+            <use href="#person" x="144" y="112" width="12" height="28"/>
+            <use href="#person" x="162" y="112" width="12" height="28"/>
+          </g>
+
+          <!-- Band 5: ≥ 51 — 1 figure orange -->
+          <g fill="#D94F2A" stroke="#D94F2A">
+            <use href="#person" x="90"  y="152" width="12" height="28"/>
+          </g>
+
+          <!-- count labels -->
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" opacity="0.7">
+            <text x="240" y="13">n ≈ 20</text>
+            <text x="240" y="53">n ≈ 60</text>
+            <text x="240" y="93">n ≈ 70</text>
+            <text x="240" y="133">n ≈ 32</text>
+            <text x="240" y="173">n ≈ 8</text>
+          </g>
+
+          <!-- guidance ceiling marker -->
+          <g>
+            <line x1="78" y1="92" x2="320" y2="92" stroke="#0E1B2C" stroke-width="0.8" stroke-dasharray="3 2"/>
+            <text x="324" y="95" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C">— international guidance ceiling: 30 : 1</text>
+          </g>
+        </svg>
+
+        <p class="figure-2__caption">
+          Diagram for Madār. Counts approximate; banded to ten for legibility. The orange figures sit above the 30:1 ceiling that MBSSE's draft 2026–2030 plan adopts as a target.
+        </p>
+      </figure>
+
+      <p>The plan, when it lands, will be one of the few ministry documents in the region this decade to publish chiefdom-level ECE figures alongside the district-level ones. Whether that resolution survives the next round of donor reporting — which has historically pushed back toward district-level aggregation — is, at the time of writing, the most useful question to keep an eye on.</p>
+
+    </div>
+
+    <!-- RIGHT marginalia -->
+    <aside class="body-right">
+      <h4>In the file</h4>
+      <p>MBSSE Annual School Census, 2018 and 2024 editions. Both available on the ministry's open-data portal.</p>
+
+      <h4>Named in this piece</h4>
+      <p>K. Bangura, Head of ECE Directorate, MBSSE — by phone, March 2026.</p>
+      <p>An unnamed chiefdom education officer in Pujehun district. The officer asked that the chiefdom not be named to protect the school's funding negotiation in progress.</p>
+
+      <h4>Glossary</h4>
+      <p><strong>Chiefdom.</strong> The smallest unit of local administration in Sierra Leone. There are 190 of them.</p>
+      <p><strong>Catchment radius.</strong> The distance a child reasonably travels to a school. The MBSSE's working figure for low-density chiefdoms is ~32 km — the "twenty-mile walk."</p>
+
+      <h4>Read next</h4>
+      <p>In <em>Issue 02:</em> the higher-resolution map, chiefdom by chiefdom, when MBSSE releases the next plan.</p>
+    </aside>
+
+  </div>
+
+  <!-- ARABIC SECTION -->
+  <section class="arabic-section">
+    <div>
+      <div class="arabic-section__label">قراءة عربية</div>
+      <div class="arabic-section__label-en">An Arabic reading — the same argument, written for our Arabic-language readers. Not a translation; a parallel paragraph.</div>
+    </div>
+    <div class="arabic-body" lang="ar" dir="rtl">
+      <h3>حين تَحجبُ المعدّلاتُ الفجوات</h3>
+      <p>
+        أعلنت وزارةُ التعليمِ الأساسيِّ والثانويِّ في سيراليون، في شباط/فبراير من هذا العام، أنّ عددَ مراكزِ الطفولةِ المبكّرةِ المموَّلةِ حكومياً قد بلغ مئةً وتسعين مركزاً موزَّعةً على سبعةَ عشَرَ إقليماً. الرقمُ، حين يُقرأ على المستوى الوطنيِّ، يَبدو ارتفاعاً واضحاً. حين يُقرأ على مستوى المشيخات — الوحدةِ الإداريّةِ الأصغر التي يُقرّرُ فيها أهلُ الطفلِ ما إذا كان بمقدورِه الالتحاق — يَبدو شيئاً آخر.
+      </p>
+      <p>
+        ثلاثُ مشيخاتٍ في إقليمِ بُونثي على الساحلِ الجنوبيّ لا تَزالُ بلا مركزٍ واحدٍ، وكَتَبَ مسؤولٌ تربويٌّ محلّيٌّ في مارس / آذار أنّ المسافةَ إلى أقربِ مركزٍ تَبلغُ ساعتين سيراً للطفل. هذا ليس استثناءً جغرافياً. هو ما تُسمّيه مديريّةُ الطفولةِ المبكّرةِ، في اجتماعاتها في فريتاون، بـ«مَشيِ العشرين ميلاً». ليس مُعياراً منشوراً؛ إنّما هو الرقمُ الذي يَستخدمه المسؤولون حين يَتجادلون.
+      </p>
+    </div>
+    <aside class="arabic-section__right">
+      <p>هامش · 1<br>تَستندُ هذه الفِقرةُ إلى نفس المصادرِ المذكورةِ في النصِّ الإنجليزيِّ.</p>
+      <p>NOTE · The Arabic text is editorial, not a literal translation. Madār publishes parallel paragraphs in both scripts when the subject travels across languages.</p>
+    </aside>
+  </section>
+
+  <!-- ARTICLE FOOTER -->
+  <footer class="article-footer">
+    <div>
+      <h5>Byline</h5>
+      <p>The Editors</p>
+      <p>Reported from Freetown and London<br>March – May 2026</p>
+    </div>
+    <div>
+      <h5>Illustration credit</h5>
+      <p>Figure 01 + 02 drawn for Madār by<br>[Illustrator name to be commissioned]</p>
+      <p>Source data: MBSSE Annual School Census, 2018 + 2024.</p>
+    </div>
+    <div>
+      <h5>Published</h5>
+      <p>2026 · 05 · 25<br>Issue 01 · Field Note 01</p>
+      <p>Reading time ~14 min<br>Word count ~2,100</p>
+    </div>
+  </footer>
+
+</article>
+
+<!-- COLOPHON -->
+<footer class="colophon">
+  <span>Madār <span lang="ar" dir="rtl">مدار</span> · Issue 01 · <span class="issue">Field Note 01 of 12</span></span>
+  <span>© 2026 · A research instrument</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+---
+import { readFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+import { withBase } from '../lib/urls';
+
+interface Props {
+  lang?: 'en' | 'ar';
+  /**
+   * Article-page variant: smaller wordmark, back-to-home link, no tagline.
+   */
+  variant?: 'home' | 'article';
+}
+const { lang = 'en', variant = 'home' } = Astro.props;
+
+// ---------------------------------------------------------------------------
+// Wordmark: prefer the designer's SVG if it exists; otherwise render an inline
+// typographic fallback (system serif for Latin, system Arabic for مدار, equal
+// optical weight) and leave a TODO comment.
+// ---------------------------------------------------------------------------
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const wordmarkPath = resolve(__dirname, '../../../design-assets/wordmark/madar-wordmark.svg');
+let wordmarkSvg: string | null = null;
+if (existsSync(wordmarkPath)) {
+  try {
+    wordmarkSvg = readFileSync(wordmarkPath, 'utf-8');
+    // Strip the XML prolog and any leading comments so the SVG inlines cleanly.
+    wordmarkSvg = wordmarkSvg.replace(/^<\?xml[^?]*\?>\s*/, '');
+  } catch {
+    wordmarkSvg = null;
+  }
+}
+
+const homeHref = withBase(lang === 'ar' ? '/ar/' : '/');
+const otherLangHref = withBase(lang === 'ar' ? '/' : '/ar/');
+const otherLangLabel = lang === 'ar' ? 'English' : 'العربية';
+
+const nav = {
+  en: { latest: 'Latest', about: 'About', newsletter: 'Newsletter' },
+  ar: { latest: 'الأحدث', about: 'عن المنشور', newsletter: 'النشرة' },
+}[lang];
+
+const aboutHref = withBase(lang === 'ar' ? '/ar/about/' : '/about/');
+---
+
+<header class={`site-header site-header--${variant}`} data-lang={lang}>
+  <div class="container site-header__inner">
+    {variant === 'article' && (
+      <a href={homeHref} class="site-header__back" aria-label={lang === 'ar' ? 'العودة' : 'Back to home'}>
+        <span aria-hidden="true">{lang === 'ar' ? '←' : '←'}</span>
+        <span class="uppercase">{lang === 'ar' ? 'العودة' : 'Index'}</span>
+      </a>
+    )}
+
+    <a href={homeHref} class="site-header__mark" aria-label="Madār — home">
+      {wordmarkSvg ? (
+        <Fragment set:html={wordmarkSvg} />
+      ) : (
+        <Fragment>
+          {/* TODO: replace with designer's wordmark SVG once available at /wordmark/madar-wordmark.svg */}
+          <span class="mark-latin">Madār</span>
+          <span class="mark-divider" aria-hidden="true">·</span>
+          <span class="mark-arabic" lang="ar" dir="rtl">مدار</span>
+        </Fragment>
+      )}
+    </a>
+
+    {variant === 'home' && (
+      <nav class="site-nav" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
+        <a href={homeHref} class="uppercase">{nav.latest}</a>
+        <a href={aboutHref} class="uppercase">{nav.about}</a>
+        <span class="site-nav__sep" aria-hidden="true">·</span>
+        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
+      </nav>
+    )}
+
+    {variant === 'article' && (
+      <nav class="site-nav site-nav--article" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
+        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
+      </nav>
+    )}
+  </div>
+
+  {variant === 'home' && (
+    <div class="site-header__rule" aria-hidden="true">
+      <span class="site-header__rule-bar"></span>
+    </div>
+  )}
+</header>
+
+<style>
+  .site-header {
+    padding-block: 1.5rem 0;
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .site-header--article {
+    padding-block: 1rem;
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .site-header__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .site-header--home .site-header__inner {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .site-header__back {
+    justify-self: start;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-ink);
+  }
+  .site-header__mark {
+    justify-self: center;
+    text-decoration: none;
+    color: var(--color-ink);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    line-height: 1;
+  }
+  /* When inlining the SVG wordmark, constrain its height. */
+  .site-header__mark :global(svg) {
+    height: 38px;
+    width: auto;
+    color: var(--color-ink);
+  }
+  .site-header--article .site-header__mark :global(svg) { height: 26px; }
+
+  /* Inline typographic fallback if wordmark SVG is missing */
+  .mark-latin {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .mark-divider {
+    opacity: 0.4;
+    font-size: 22px;
+  }
+  .mark-arabic {
+    font-family: var(--font-arabic);
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .site-nav {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .site-nav a { text-decoration: none; color: var(--color-ink); opacity: 0.82; }
+  .site-nav a:hover { opacity: 1; color: var(--color-orange); }
+  .site-nav__sep { opacity: 0.35; }
+
+  .site-header__rule {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0.6rem;
+  }
+  .site-header__rule-bar {
+    display: block;
+    width: 64px;
+    height: 1px;
+    background: var(--color-ink);
+    position: relative;
+  }
+  .site-header__rule-bar::before,
+  .site-header__rule-bar::after {
+    content: '';
+    position: absolute;
+    inset-block-start: -3px;
+    width: 1px;
+    height: 7px;
+    background: var(--color-ink);
+  }
+  .site-header__rule-bar::before { inset-inline-start: 0; }
+  .site-header__rule-bar::after { inset-inline-end: 0; }
+
+  @media (max-width: 720px) {
+    .site-header__inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 0.75rem;
+    }
+    .site-header__back { justify-self: center; }
+    .site-header__mark { justify-self: center; }
+    .site-nav { justify-self: center; gap: 0.85rem; flex-wrap: wrap; }
+  }
+</style>

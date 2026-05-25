@@ -1,0 +1,328 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { readFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+import { withBase } from '../../lib/urls';
+
+// ---------------------------------------------------------------------------
+// Pieces — the Arabic home draws on:
+//   (1) the Arabic content collection (articles-ar) when populated, and
+//   (2) the English collection to surface any pieces that carry Arabic
+//       inline-blocks readers can preview here.
+// For v0.1, (1) is empty and (2) gives us Piece B (Jordan).
+// ---------------------------------------------------------------------------
+const arPieces = await getCollection('articles-ar', ({ data }) => data.approved !== false);
+const enPieces = await getCollection('articles', ({ data }) => data.approved !== false);
+
+const sortedAr = arPieces.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const sortedEn = enPieces.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const dateFormatterAr = new Intl.DateTimeFormat('ar-EG', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Inline wordmark (same approach as the English home)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const wordmarkPath = resolve(__dirname, '../../../public/wordmark/madar-wordmark.svg');
+let wordmarkSvg: string | null = null;
+if (existsSync(wordmarkPath)) {
+  try {
+    wordmarkSvg = readFileSync(wordmarkPath, 'utf-8')
+      .replace(/^<\?xml[^?]*\?>\s*/, '')
+      .replace(/<!--[\s\S]*?-->/g, '');
+  } catch {
+    wordmarkSvg = null;
+  }
+}
+
+// Arabic phrases the Editor explicitly excerpts in Piece B — surface them on
+// the Arabic home so an Arabic-first reader sees the publication speaking in
+// its second register even before the Arabic collection is populated.
+const jordan = sortedEn.find((p) => p.id === '2026-05-25-jordan-double-shift');
+const jordanExcerpts = jordan
+  ? [
+      { ar: 'تآكل المباني', en: 'building fatigue' },
+      { ar: 'دوام الترتيب المؤقت', en: 'the permanence of the temporary arrangement' },
+    ]
+  : [];
+---
+
+<Base title="مدار — التعليم، بتأنٍّ، بلغتين" lang="ar" noHeader={true}>
+
+  {/* ============== TOP UTILITY BAR ============== */}
+  <div class="top-bar">
+    <div class="top-bar__inner container">
+      <div class="top-bar__left">
+        <span lang="ar" dir="rtl">العدد ٠١ · مايو ٢٠٢٦ · مدار</span>
+      </div>
+      <div class="top-bar__right">
+        <span class="top-bar__lang">
+          <a href={withBase('/')} lang="en">EN</a>
+          <span aria-hidden="true">·</span>
+          <a href={withBase('/ar/')} class="is-active" lang="ar" dir="rtl">عربي</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  {/* ============== MASTHEAD ============== */}
+  <header class="masthead">
+    <div class="masthead__inner container">
+      <a href={withBase('/ar/')} class="masthead__mark" aria-label="مدار — الرئيسية">
+        {wordmarkSvg ? (
+          <Fragment set:html={wordmarkSvg} />
+        ) : (
+          <span class="masthead__fallback" lang="ar" dir="rtl">مدار</span>
+        )}
+      </a>
+
+      <div class="masthead__rule" aria-hidden="true"></div>
+
+      <p class="masthead__tagline" lang="ar" dir="rtl">
+        التعليم، بتأنٍّ، بلغتين
+      </p>
+    </div>
+  </header>
+
+  {/* ============== ARABIC PIECES (when present) ============== */}
+  <section class="section container">
+    <div class="section__head">
+      <span class="section__kicker" lang="ar" dir="rtl">الأحدث</span>
+      <span class="section__meta">Issue 01 · 2026 · 05 · 25</span>
+    </div>
+
+    {sortedAr.length === 0 && (
+      <div class="placeholder">
+        <p lang="ar" dir="rtl" class="placeholder__lead">
+          لم يصدر بعد عددٌ عربيٌّ مكتمل. حتى ذلك الحين، يمكنك قراءة المقالات الإنجليزية على
+          <a href={withBase('/')}>الصفحة الإنجليزية</a>.
+        </p>
+        <p lang="ar" dir="rtl" class="muted">
+          القطعةُ الثانيةُ في العدد الأول — عن نظام الدوامَين في المدارس الأردنية — تحملُ مقاطعَ
+          عربيةً مقتبسةً من مذكّرة الوزارة، وقد جُمعت هنا للقارئ العربيّ ريثما تكتمل النسخةُ الكاملة.
+        </p>
+      </div>
+    )}
+
+    {sortedAr.length > 0 && (
+      <ul class="piece-list">
+        {sortedAr.map((piece) => (
+          <li class="piece">
+            <a href={withBase(`/ar/articles/${piece.id}/`)} class="piece__link">
+              <span class="piece__meta">
+                <span class="piece__country" lang="ar" dir="rtl">{piece.data.country}</span>
+                <span class="piece__date">{dateFormatterAr.format(piece.data.date)}</span>
+              </span>
+              <h2 class="piece__title" lang="ar" dir="rtl">{piece.data.title}</h2>
+              {piece.data.dek && <p class="piece__dek" lang="ar" dir="rtl">{piece.data.dek}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  {/* ============== ARABIC EXCERPTS FROM JORDAN PIECE ============== */}
+  {jordanExcerpts.length > 0 && (
+    <section class="excerpts container">
+      <div class="excerpts__head">
+        <p class="kicker">From the issue</p>
+        <p class="excerpts__lead" lang="ar" dir="rtl">
+          مقاطعُ عربيّةٌ مقتبسةٌ من القطعة الأردنية في العدد الأول — لقراءة النصّ كاملاً
+          <a href={withBase(`/articles/${jordan!.id}/`)}>اقرأ المقالة بالإنجليزية</a>.
+        </p>
+      </div>
+      <ul class="excerpts__list">
+        {jordanExcerpts.map((ex) => (
+          <li class="excerpt">
+            <p class="excerpt__ar" lang="ar" dir="rtl">{ex.ar}</p>
+            <p class="excerpt__en">— {ex.en}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {/* ============== ABOUT MINI ============== */}
+  <section class="about container">
+    <div class="about__head">
+      <p class="about__label" lang="ar" dir="rtl">عن مدار</p>
+    </div>
+    <div class="about__body" lang="ar" dir="rtl">
+      <p>
+        «مدار» مجلّةٌ تحريريّةٌ بطيئةُ الإيقاع تَتناولُ التعليمَ في مرحلتَيِ الطفولةِ
+        المبكّرةِ والتعليمِ العامّ، تَصدرُ بالعربيّةِ والإنجليزيّة. ننشرُ نوعَين من
+        المواد: <em>تقاريرَ ميدانيّة</em> نَكتبُها بأنفسنا، و<em>قراءاتٍ مختاَرة</em>
+        لمصدرٍ واحدٍ يَستحقّ الإصغاء. أداةُ بحثٍ، لا مجلّةً.
+      </p>
+      <p>
+        نكتبُ من مدارٍ واحدٍ بلغتَين، ولكلٍّ منهما وزنُها الخاصّ.
+      </p>
+    </div>
+  </section>
+
+</Base>
+
+<style>
+  .top-bar {
+    border-block-end: 1px solid var(--color-rule-soft);
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .top-bar__inner {
+    padding-block: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .top-bar__lang a { text-decoration: none; color: var(--color-ink); opacity: 0.6; }
+  .top-bar__lang a.is-active { color: var(--color-orange); opacity: 1; font-weight: 500; }
+  .top-bar__lang span { opacity: 0.35; }
+
+  .masthead {
+    border-block-end: 1px solid var(--color-rule);
+    padding-block: 4rem 3rem;
+    text-align: center;
+  }
+  .masthead__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .masthead__mark { display: inline-block; text-decoration: none; color: var(--color-ink); }
+  .masthead__mark :global(svg) { width: auto; height: 120px; color: var(--color-ink); display: block; }
+  .masthead__fallback {
+    font-family: var(--font-arabic-display); font-size: 72px; font-weight: 500; line-height: 1;
+  }
+  .masthead__rule { height: 1px; background: var(--color-ink); width: 120px; position: relative; }
+  .masthead__rule::before, .masthead__rule::after {
+    content: ''; position: absolute; inset-block-start: -4px; width: 1px; height: 9px; background: var(--color-ink);
+  }
+  .masthead__rule::before { inset-inline-start: 0; }
+  .masthead__rule::after  { inset-inline-end: 0; }
+  .masthead__tagline {
+    margin: 0;
+    font-family: var(--font-arabic);
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--color-ink);
+    opacity: 0.85;
+    max-width: 42ch;
+  }
+
+  .section { padding-block: 3.5rem; }
+  .section__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-block-end: 2rem;
+  }
+  .section__kicker {
+    font-family: var(--font-arabic-display);
+    font-size: 22px;
+    color: var(--color-orange);
+    font-weight: 500;
+  }
+  .section__meta {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.62;
+  }
+
+  .placeholder { padding-block: var(--space-md); }
+  .placeholder__lead {
+    font-family: var(--font-arabic);
+    font-size: 19px;
+    line-height: 1.9;
+    color: var(--color-ink);
+  }
+  .placeholder__lead a {
+    color: var(--color-orange);
+    text-decoration-color: var(--color-orange);
+  }
+
+  .piece-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 2rem; }
+  .piece__link { display: block; text-decoration: none; color: var(--color-ink); }
+  .piece__meta {
+    display: flex; justify-content: space-between; gap: 1rem;
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--color-orange);
+  }
+  .piece__title { margin-block: 0.5rem 0; font-family: var(--font-arabic-display); font-size: 28px; line-height: 1.4; }
+  .piece__dek { margin-block-start: 0.5rem; font-family: var(--font-arabic); font-size: 17px; line-height: 1.85; opacity: 0.82; }
+
+  /* Arabic excerpts block — when sortedAr is empty but English Jordan piece exists */
+  .excerpts {
+    padding-block: 2.5rem 3.5rem;
+    border-block-start: 1px solid var(--color-rule);
+  }
+  .excerpts__head { margin-block-end: 1.5rem; }
+  .excerpts__lead {
+    font-family: var(--font-arabic);
+    font-size: 17.5px;
+    line-height: 1.85;
+    margin: 0.5rem 0 0;
+    color: var(--color-ink);
+    opacity: 0.85;
+  }
+  .excerpts__lead a {
+    color: var(--color-orange);
+    text-decoration-color: var(--color-orange);
+  }
+  .excerpts__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.5rem; }
+  .excerpt {
+    padding: 1.25rem 1.5rem;
+    border-inline-end: 2px solid var(--color-orange);
+    background: rgba(232, 226, 208, 0.25);
+  }
+  .excerpt__ar {
+    margin: 0;
+    font-family: var(--font-arabic-display);
+    font-size: 28px;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+  .excerpt__en {
+    margin: 0.5rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-sage);
+  }
+
+  .about { padding-block: 3rem 4rem; }
+  .about__label {
+    font-family: var(--font-arabic-display);
+    font-size: 22px;
+    color: var(--color-orange);
+    margin: 0 0 0.85rem;
+  }
+  .about__body p {
+    font-family: var(--font-arabic);
+    font-size: 18.5px;
+    line-height: 1.95;
+    margin: 0 0 1rem;
+    max-width: 52ch;
+  }
+
+  @media (max-width: 720px) {
+    .masthead { padding-block: 2.5rem 2rem; }
+    .masthead__mark :global(svg) { height: 88px; }
+    .masthead__fallback { font-size: 50px; }
+    .section { padding-block: 2.5rem; }
+  }
+</style>

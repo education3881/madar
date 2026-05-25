@@ -1,0 +1,144 @@
+---
+import { withBase } from '../lib/urls';
+
+interface Props {
+  lang?: 'en' | 'ar';
+}
+const { lang = 'en' } = Astro.props;
+const year = new Date().getFullYear();
+
+const copy = {
+  en: {
+    issue: 'Issue 01 · 2026',
+    rights: `© ${year} Madār — an editorial publication, independently operated.`,
+    closing: 'Made in spite of, not because of.',
+    rss: 'RSS',
+    contact: 'Contact',
+    aboutLabel: 'About',
+    aboutHref: withBase('/about/'),
+    homeHref: withBase('/'),
+    otherLangHref: withBase('/ar/'),
+    otherLangLabel: 'العربية',
+    rssHref: withBase('/rss.xml'),
+  },
+  ar: {
+    issue: 'العدد ٠١ · ٢٠٢٦',
+    rights: `© ${year} مدار — منشور تحريري مستقل.`,
+    closing: 'صُنع رغمًا عن الظروف، لا بفضلها.',
+    rss: 'RSS',
+    contact: 'اتصل',
+    aboutLabel: 'عن المنشور',
+    aboutHref: withBase('/ar/about/'),
+    homeHref: withBase('/ar/'),
+    otherLangHref: withBase('/'),
+    otherLangLabel: 'English',
+    rssHref: withBase('/rss.xml'),
+  },
+}[lang];
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+
+    <div class="site-footer__cell site-footer__cell--issue">
+      <p class="kicker">{copy.issue}</p>
+      <p class="site-footer__closing">{copy.closing}</p>
+    </div>
+
+    <div class="site-footer__cell site-footer__cell--mark">
+      <a href={copy.homeHref} class="site-footer__mark" aria-label="Madār — home">
+        <span class="mark-latin">Madār</span>
+        <span aria-hidden="true" class="mark-divider">·</span>
+        <span class="mark-arabic" lang="ar" dir="rtl">مدار</span>
+      </a>
+      <p class="site-footer__rights mono sage">{copy.rights}</p>
+    </div>
+
+    <div class="site-footer__cell site-footer__cell--nav">
+      <ul class="site-footer__links">
+        <li><a href={copy.aboutHref} class="uppercase">{copy.aboutLabel}</a></li>
+        <li><a href={copy.otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{copy.otherLangLabel}</a></li>
+        <li><a href={copy.rssHref} class="uppercase">{copy.rss}</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-block-start: 4rem;
+    padding-block: 2rem 3rem;
+    border-block-start: 1px solid var(--color-rule);
+  }
+  .site-footer__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .site-footer__cell--issue { justify-self: start; }
+  .site-footer__cell--mark { justify-self: center; text-align: center; }
+  .site-footer__cell--nav   { justify-self: end; }
+
+  .site-footer__closing {
+    margin-block-start: 0.5rem;
+    max-width: 22ch;
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--color-muted);
+  }
+
+  .site-footer__mark {
+    text-decoration: none;
+    color: var(--color-ink);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .mark-latin {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+  .mark-divider { opacity: 0.35; }
+  .mark-arabic {
+    font-family: var(--font-arabic);
+    font-size: 20px;
+    line-height: 1;
+  }
+  .site-footer__rights {
+    margin-block-start: 0.75rem;
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    line-height: 1.55;
+  }
+
+  .site-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+  [dir="rtl"] .site-footer__links { align-items: flex-start; }
+  .site-footer__links a { text-decoration: none; color: var(--color-ink); opacity: 0.78; }
+  .site-footer__links a:hover { opacity: 1; color: var(--color-orange); }
+
+  @media (max-width: 720px) {
+    .site-footer__inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .site-footer__cell--issue,
+    .site-footer__cell--mark,
+    .site-footer__cell--nav { justify-self: center; }
+    .site-footer__links { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    [dir="rtl"] .site-footer__links { align-items: center; }
+  }
+</style>

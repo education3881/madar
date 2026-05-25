@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madār — Mood Board 02: Field Atlas</title>
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #0E1B2C;
+    --orange: #D94F2A;
+    --sage: #7A8471;
+    --sand: #E8E2D0;
+    --rule: rgba(14,27,44,0.15);
+    --display: "GT Sectra", "Domaine Display", "Charter", Georgia, serif;
+    --body: "GT Sectra Text", Charter, Georgia, serif;
+    --sans: "Söhne", "Inter", system-ui, sans-serif;
+    --mono: "ABC Diatype Mono", "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --arabic: "Greta Arabic", "Adelle Arabic", "Geeza Pro", "Damascus", "Al Nile", serif;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1080px; margin-inline: auto; padding: 4rem 3rem; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+  .label { font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--orange); font-weight: 500; }
+  .meta { font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; color: var(--ink); opacity: 0.7; }
+
+  /* Top bar with grid coordinates */
+  .top { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 1rem; border-bottom: 1px solid var(--rule); margin-bottom: 5rem; }
+  .top__num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; }
+  .top__name { font-family: var(--sans); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+  .top__coord { font-family: var(--mono); font-size: 11px; opacity: 0.6; }
+
+  /* Wordmark with cartographic macron */
+  .hero { padding-block: 3rem; text-align: center; }
+  .hero__wordmark-wrap { position: relative; display: inline-block; }
+  .hero__wordmark {
+    font-family: var(--display);
+    font-size: clamp(120px, 18vw, 220px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    color: var(--ink);
+  }
+  .hero__scalebar {
+    margin: 2rem auto 1.5rem;
+    width: 220px;
+    height: 16px;
+    position: relative;
+  }
+  .hero__scalebar::before, .hero__scalebar::after {
+    content: ''; position: absolute; top: 0; bottom: 0; width: 1.5px; background: var(--ink);
+  }
+  .hero__scalebar::before { left: 0; }
+  .hero__scalebar::after  { right: 0; }
+  .hero__scalebar span {
+    position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; background: var(--ink);
+  }
+  .hero__scaletext { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; opacity: 0.6; }
+  .hero__arabic {
+    font-family: var(--arabic);
+    font-size: clamp(120px, 18vw, 220px);
+    line-height: 1;
+    direction: rtl;
+    color: var(--ink);
+    margin-top: 1rem;
+  }
+  .hero__sub { font-family: var(--mono); font-size: 12px; margin-top: 2rem; opacity: 0.7; letter-spacing: 0.04em; }
+
+  /* Palette as map legend */
+  .palette { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-block: 2rem; }
+  .swatch { padding: 1.25rem 1rem; min-height: 110px; display: flex; flex-direction: column; justify-content: flex-end; font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; }
+  .swatch[data-on="dark"] { color: var(--paper); }
+  .swatch[data-on="light"] { color: var(--ink); }
+  .swatch span { display: block; font-weight: 500; }
+  .swatch em { font-style: normal; opacity: 0.75; margin-top: 0.25rem; display: block; }
+
+  /* Typography specimen */
+  .specimen { padding-block: 2rem; }
+  .specimen__display {
+    font-family: var(--display);
+    font-size: clamp(48px, 6vw, 84px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin: 1rem 0;
+    max-width: 16ch;
+  }
+  .specimen__display-ar {
+    font-family: var(--arabic);
+    font-size: clamp(48px, 6vw, 84px);
+    line-height: 1.2;
+    direction: rtl;
+    margin: 1rem 0;
+    max-width: 16ch;
+  }
+  .specimen__body { font-family: var(--body); font-size: 18px; line-height: 1.6; max-width: 35rem; margin-block-start: 1.5rem; }
+  .specimen__body-ar { font-family: var(--arabic); font-size: 19px; line-height: 1.85; direction: rtl; max-width: 35rem; margin-block-start: 1.5rem; }
+
+  /* Hero treatment — diagrammatic mockup */
+  .diagram-mock {
+    margin-block: 3rem;
+    padding: 3rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+  }
+  .diagram-mock__title { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); opacity: 0.7; margin-bottom: 1rem; }
+  .diagram-mock__chart {
+    background: var(--sand);
+    height: 280px;
+    position: relative;
+    padding: 1.5rem;
+    overflow: hidden;
+  }
+  .bars { display: flex; align-items: flex-end; gap: 8px; height: 100%; }
+  .bars > div { flex: 1; background: var(--sage); position: relative; }
+  .bars > div.x { background: var(--orange); }
+  .bars__label { position: absolute; bottom: -22px; left: 0; right: 0; text-align: center; font-family: var(--mono); font-size: 9px; letter-spacing: 0.04em; color: var(--ink); opacity: 0.7; }
+  .diagram-mock__caption { font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; opacity: 0.7; margin-top: 2.5rem; max-width: 50ch; line-height: 1.6; }
+
+  /* Sample article opener */
+  .article-mock { padding-block: 2rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-block: 2rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; }
+  .article-mock__meta { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; opacity: 0.7; }
+  .article-mock__meta strong { color: var(--orange); font-weight: 500; }
+  .article-mock__title { font-family: var(--display); font-size: clamp(36px, 4.5vw, 56px); line-height: 1.05; letter-spacing: -0.02em; font-weight: 400; margin: 0 0 1rem; }
+  .article-mock__dek { font-family: var(--body); font-style: italic; font-size: 19px; line-height: 1.45; opacity: 0.75; max-width: 40ch; }
+
+  .footer { text-align: center; padding-block: 3rem 1rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; opacity: 0.6; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="top">
+    <span class="top__num">02 / 03</span>
+    <span class="top__name">Field Atlas</span>
+    <span class="top__coord">N 24°27' · E 54°37'</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero__wordmark-wrap">
+      <div class="hero__wordmark">Madār</div>
+    </div>
+    <div class="hero__scalebar"><span></span></div>
+    <div class="hero__scaletext">— THE MACRON AS SCALE BAR —</div>
+    <div class="hero__arabic">مدار</div>
+    <p class="hero__sub">a research instrument · est. 2026</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <p class="label">Palette · map legend</p>
+    <div class="palette">
+      <div class="swatch" data-on="light" style="background:#FAFAF7"><span>#FAFAF7</span><em>warm white</em></div>
+      <div class="swatch" data-on="dark"  style="background:#0E1B2C"><span>#0E1B2C</span><em>navy ink</em></div>
+      <div class="swatch" data-on="dark"  style="background:#D94F2A"><span>#D94F2A</span><em>survey orange</em></div>
+      <div class="swatch" data-on="dark"  style="background:#7A8471"><span>#7A8471</span><em>topo sage</em></div>
+      <div class="swatch" data-on="light" style="background:#E8E2D0"><span>#E8E2D0</span><em>sand</em></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="specimen">
+    <p class="label">Display — Latin (GT Sectra family)</p>
+    <div class="specimen__display">ECE provision in Sierra Leone, 2018–2024.</div>
+    <p class="label">Display — Arabic (Greta Arabic family)</p>
+    <div class="specimen__display-ar">رياضُ أطفالٍ في فريتاون، ٢٠٢٤.</div>
+  </section>
+
+  <section class="specimen">
+    <p class="label">Body — long-form</p>
+    <p class="specimen__body">Of Sierra Leone's seventeen administrative districts, thirteen now report at least one publicly-funded early-childhood centre per chiefdom. Six did so in 2018. The trajectory is steeper than national reporting suggests — and the unevenness inside each district matters more than the district average.</p>
+    <p class="specimen__body-ar">من أصل سبعة عشر إقليماً إدارياً في سيراليون، تُفيد ثلاثة عشر إقليماً اليوم بوجود مركزٍ تعليميٍّ مبكّرٍ مموَّلٍ حكومياً واحدٍ على الأقل في كلِّ مشيخة.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <p class="label">Hero treatment — commissioned diagram</p>
+    <div class="diagram-mock">
+      <p class="diagram-mock__title">Figure 1 · ECE centres per chiefdom, Sierra Leone, 2024 (n=190)</p>
+      <div class="diagram-mock__chart">
+        <div class="bars">
+          <div style="height:18%"></div><div style="height:28%"></div><div style="height:34%"></div>
+          <div style="height:42%"></div><div style="height:55%"></div><div style="height:48%"></div>
+          <div class="x" style="height:72%"></div><div style="height:61%"></div><div style="height:54%"></div>
+          <div style="height:38%"></div><div style="height:44%"></div><div style="height:52%"></div>
+          <div style="height:67%"></div><div style="height:58%"></div><div style="height:46%"></div>
+          <div class="x" style="height:79%"></div><div style="height:64%"></div>
+        </div>
+      </div>
+      <p class="diagram-mock__caption">Diagram drawn for Madār by [contributor name], from data published by the Ministry of Basic and Senior Secondary Education. Marker orange indicates districts where coverage was below the national mean in 2018 and now exceeds it. Each piece opens on a custom map, diagram, isotype, or data drawing — credited like a photograph.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Sample article opener</p>
+    <div class="article-mock">
+      <div class="article-mock__meta">
+        <strong>ESSAY</strong><br>
+        Sierra Leone · May 2026 · 12 min read<br><br>
+        Theme: access · ECE · government-led
+      </div>
+      <div>
+        <h2 class="article-mock__title">Where Sierra Leone's kindergartens are, and where they aren't.</h2>
+        <p class="article-mock__dek">A chiefdom-level map of early-childhood provision, drawn for Madār — and what the gaps tell us about the next five years.</p>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer">MADĀR · BOARD 02 / 03 · FIELD ATLAS</p>
+
+</div>
+</body>
+</html>

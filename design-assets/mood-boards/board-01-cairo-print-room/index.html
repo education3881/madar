@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madār — Mood Board 01: Cairo Print Room</title>
+<style>
+  :root {
+    --paper: #F2EBDC;
+    --ink: #1A1A1A;
+    --red: #9B2C2C;
+    --green: #2C4A3E;
+    --ochre: #C9B896;
+    --rule: rgba(26,26,26,0.18);
+    --display: "Plantin MT Pro", "Lyon Display", "Charter", Georgia, "Iowan Old Style", serif;
+    --body: "Tiempos Text", "Lyon Text", Charter, Georgia, serif;
+    --sans: "Söhne", "Inter", system-ui, sans-serif;
+    --arabic: "29LT Zarid", "Naskh", "Geeza Pro", "Damascus", "Al Nile", serif;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .container { max-width: 1080px; margin-inline: auto; padding: 4rem 3rem; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+  .uppercase { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: var(--ink); opacity: 0.65; }
+  .label { font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); font-weight: 500; }
+
+  /* Title strip */
+  .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4rem; }
+  .top__num { font-family: var(--display); font-size: 14px; font-weight: 500; }
+  .top__name { font-family: var(--sans); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.7; }
+
+  /* The wordmark hero */
+  .hero { padding-block: 5rem 4rem; text-align: center; }
+  .hero__wordmark {
+    font-family: var(--display);
+    font-size: clamp(120px, 18vw, 220px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 0.9;
+    color: var(--ink);
+  }
+  .hero__arabic {
+    font-family: var(--arabic);
+    font-size: clamp(140px, 20vw, 240px);
+    font-weight: 500;
+    line-height: 1;
+    direction: rtl;
+    color: var(--ink);
+    margin-top: 1rem;
+  }
+  .hero__caption {
+    font-family: var(--display); font-style: italic; font-size: 18px; color: var(--ink); opacity: 0.8;
+    max-width: 38ch; margin: 2.5rem auto 0; line-height: 1.4;
+  }
+
+  /* Palette */
+  .palette { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-block: 2rem; }
+  .swatch { aspect-ratio: 1 / 1.3; display: flex; flex-direction: column; justify-content: flex-end; padding: 1rem; font-family: var(--sans); font-size: 11px; letter-spacing: 0.05em; }
+  .swatch[data-on="dark"] { color: var(--paper); }
+  .swatch[data-on="light"] { color: var(--ink); }
+  .swatch span { display: block; font-weight: 500; }
+  .swatch em { font-style: normal; opacity: 0.75; margin-top: 0.25rem; display: block; }
+
+  /* Typography specimen */
+  .specimen { padding-block: 2rem; }
+  .specimen__display {
+    font-family: var(--display);
+    font-size: clamp(48px, 6vw, 84px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin: 1rem 0;
+    max-width: 16ch;
+  }
+  .specimen__display-ar {
+    font-family: var(--arabic);
+    font-size: clamp(48px, 6vw, 84px);
+    line-height: 1.2;
+    direction: rtl;
+    margin: 1rem 0;
+    max-width: 16ch;
+  }
+  .specimen__body {
+    font-family: var(--body);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 35rem;
+    margin-block-start: 1.5rem;
+  }
+  .specimen__body-ar {
+    font-family: var(--arabic);
+    font-size: 19px;
+    line-height: 1.85;
+    direction: rtl;
+    max-width: 35rem;
+    margin-block-start: 1.5rem;
+  }
+
+  /* Hero treatment mockup */
+  .mock {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4rem 3rem;
+    margin-block: 3rem;
+    position: relative;
+  }
+  .mock__kicker { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .mock__quote {
+    font-family: var(--display);
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: var(--paper);
+    max-width: 22ch;
+    margin: 0;
+  }
+  .mock__rule { width: 80px; height: 2px; background: var(--red); margin-block: 2rem; }
+  .mock__quote-ar {
+    font-family: var(--arabic);
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.3;
+    direction: rtl;
+    color: var(--paper);
+    max-width: 22ch;
+  }
+  .mock__cite { font-family: var(--sans); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ochre); margin-top: 2rem; }
+
+  /* Sample article opener */
+  .article-mock {
+    padding-block: 2rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-block: 2rem;
+  }
+  .article-mock__kicker { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .article-mock__title { font-family: var(--display); font-size: clamp(40px, 5vw, 64px); line-height: 1; letter-spacing: -0.02em; font-weight: 500; margin: 0 0 1rem; max-width: 18ch; }
+  .article-mock__dek { font-family: var(--display); font-style: italic; font-size: 20px; line-height: 1.4; color: var(--ink); opacity: 0.75; max-width: 38ch; margin-bottom: 1.5rem; }
+  .article-mock__byline { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; }
+
+  /* Footer */
+  .footer { text-align: center; padding-block: 3rem 1rem; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="top">
+    <span class="top__num">Mood board 01 / 03</span>
+    <span class="top__name">Cairo Print Room</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero__wordmark">Madār</div>
+    <div class="hero__arabic">مدار</div>
+    <p class="hero__caption">A publication that looks like it was printed on a state press in 1968 — and recovered.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <p class="label">Palette</p>
+    <div class="palette">
+      <div class="swatch" data-on="light" style="background:#F2EBDC"><span>#F2EBDC</span><em>Newsprint cream</em></div>
+      <div class="swatch" data-on="dark"  style="background:#1A1A1A"><span>#1A1A1A</span><em>Soft black ink</em></div>
+      <div class="swatch" data-on="dark"  style="background:#9B2C2C"><span>#9B2C2C</span><em>Cairo red</em></div>
+      <div class="swatch" data-on="dark"  style="background:#2C4A3E"><span>#2C4A3E</span><em>Bottle green</em></div>
+      <div class="swatch" data-on="light" style="background:#C9B896"><span>#C9B896</span><em>Muted ochre</em></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="specimen">
+    <p class="label">Display — Latin</p>
+    <div class="specimen__display">The school in Bo where the kindergarteners learn in Mende first.</div>
+    <p class="label">Display — Arabic</p>
+    <div class="specimen__display-ar">حضانة في رأس الخيمة، صيف ٢٠٢٤.</div>
+  </section>
+
+  <section class="specimen">
+    <p class="label">Body — running text</p>
+    <p class="specimen__body">In a converted shipping container in Freetown's eastern suburbs, a teacher named Mariama Sesay runs a kindergarten that costs SLE 800 a month. She has thirty-one children and no electricity until four in the afternoon, when the diesel generator next door starts up for the welder. She teaches in Mende, then in Krio, and only after lunch in English.</p>
+    <p class="specimen__body-ar">في حاوية شحن مُحوَّلة في الضواحي الشرقية لفريتاون، تُدير معلّمةٌ اسمها مريامة سيساي روضةً تكلفتها ٨٠٠ ليون شهرياً. لديها واحدٌ وثلاثون طفلاً، ولا كهرباء حتى الرابعة عصراً.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <p class="label">Hero treatment — pull-quote spread</p>
+    <div class="mock">
+      <p class="mock__kicker">From the first issue · Beirut, 2026</p>
+      <p class="mock__quote">A primer is the first book a child meets and the first text a serious reader expects on entering an unfamiliar subject.</p>
+      <div class="mock__rule"></div>
+      <p class="mock__quote-ar">الكتاب الأول الذي يلتقيه الطفل، والنصّ الأول الذي ينتظره القارئ الجادّ في موضوعٍ جديد.</p>
+      <p class="mock__cite">— Editorial, Issue 01</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Sample article opener</p>
+    <div class="article-mock">
+      <p class="article-mock__kicker">Essay · Sierra Leone · May 2026</p>
+      <h2 class="article-mock__title">What a state textbook printed in 1971 still teaches.</h2>
+      <p class="article-mock__dek">A primer from the Ministry of Education's archive in Freetown shows what a national curriculum did before, and could do again.</p>
+      <p class="article-mock__byline">By The Editors</p>
+    </div>
+  </section>
+
+  <p class="footer">Madār · mood board 01 of 03 · Cairo Print Room</p>
+
+</div>
+</body>
+</html>

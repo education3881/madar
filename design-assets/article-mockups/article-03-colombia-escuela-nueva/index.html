@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escuela Nueva at fifty — Madār</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #0E1B2C;
+    --orange: #D94F2A;
+    --sage: #7A8471;
+    --sand: #E8E2D0;
+    --rule: rgba(14,27,44,0.18);
+    --rule-soft: rgba(14,27,44,0.08);
+    --display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, serif;
+    --body: "Newsreader", "GT Sectra Text", Charter, Georgia, serif;
+    --mono: "JetBrains Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --arabic: "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", serif;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- Masthead (identical to articles 01 + 02) ---------- */
+  .masthead { border-bottom: 1px solid var(--rule); padding: 1.25rem 0; }
+  .masthead__inner {
+    max-width: 1280px; margin-inline: auto; padding-inline: 2rem;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem;
+  }
+  .masthead__left, .masthead__right { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.72; }
+  .masthead__right { text-align: right; }
+  .masthead__center { text-align: center; }
+  .masthead__word { font-family: var(--display); font-size: 38px; font-weight: 500; letter-spacing: -0.01em; line-height: 1; }
+  .masthead__word-ar { font-family: var(--arabic); font-size: 28px; line-height: 1; direction: rtl; display: inline-block; margin-left: 0.6rem; vertical-align: -2px; color: var(--ink); }
+  .masthead__rule { height: 1px; background: var(--ink); width: 64px; margin: 0.55rem auto 0; position: relative; }
+  .masthead__rule::before, .masthead__rule::after { content: ''; position: absolute; top: -3px; width: 1px; height: 7px; background: var(--ink); }
+  .masthead__rule::before { left: 0; }
+  .masthead__rule::after { right: 0; }
+  .wordmark-note { max-width: 1280px; margin: 0.5rem auto 0; padding-inline: 2rem; text-align: right; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em; color: var(--sage); text-transform: uppercase; }
+
+  /* meta strip */
+  .meta-strip { max-width: 1280px; margin: 2rem auto 0; padding-inline: 2rem; display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
+  .meta-strip strong { color: var(--orange); font-weight: 500; }
+  .meta-strip .coord { opacity: 0.6; }
+
+  .article { max-width: 1280px; margin-inline: auto; padding: 2rem 2rem 5rem; }
+
+  /* title block */
+  .title-block { display: grid; grid-template-columns: 3fr 9fr; gap: 3rem; padding-block: 3rem 2rem; border-bottom: 1px solid var(--rule); }
+  .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .kicker-meta { margin-top: 0.75rem; font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; color: var(--ink); opacity: 0.7; line-height: 1.7; }
+  .title { font-family: var(--display); font-weight: 500; font-size: clamp(42px, 5.4vw, 78px); line-height: 1.02; letter-spacing: -0.018em; margin: 0 0 1.25rem; max-width: 18ch; }
+  .title em { font-style: italic; font-weight: 500; }
+  .dek { font-family: var(--body); font-size: clamp(18px, 1.4vw, 21px); line-height: 1.45; font-style: italic; color: var(--ink); opacity: 0.78; max-width: 44ch; margin: 0; }
+
+  /* hero figure */
+  .hero-figure { margin: 3.5rem 0 2.5rem; }
+  .hero-figure__frame { background: var(--paper); border: 1px solid var(--rule); padding: 2rem 2rem 1.25rem; position: relative; }
+  .hero-figure__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .hero-figure__head .num { color: var(--orange); font-weight: 500; }
+  .hero-figure__head .right { opacity: 0.7; }
+  .hero-figure svg { width: 100%; height: auto; display: block; }
+  .hero-figure__foot { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 11px; letter-spacing: 0.02em; line-height: 1.6; color: var(--ink); opacity: 0.7; max-width: 78ch; }
+  .hero-figure__foot .credit { color: var(--sage); display: block; margin-top: 0.4rem; }
+
+  /* body grid */
+  .body-grid { display: grid; grid-template-columns: 2fr 7fr 3fr; gap: 3rem; margin-top: 2.5rem; }
+  .body-left { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.7; }
+  .body-left p { margin: 0 0 1.25rem; }
+  .body-left .num { color: var(--orange); font-weight: 500; }
+  .body-left .ref { display: block; margin-top: 0.2rem; opacity: 0.85; }
+  .body-grid--resumed { margin-top: 0; }
+
+  .body-main p { font-family: var(--body); font-size: 19px; line-height: 1.62; margin: 0 0 1.25rem; color: var(--ink); }
+  .body-main p sup { font-family: var(--mono); font-size: 10px; color: var(--orange); vertical-align: super; margin-left: 1px; font-weight: 500; }
+  .dropcap::first-letter { font-family: var(--display); font-weight: 500; font-size: 5.1em; line-height: 0.85; float: left; padding: 0.06em 0.12em 0 0; color: var(--ink); font-style: normal; }
+
+  .subhead { font-family: var(--display); font-weight: 500; font-size: 30px; line-height: 1.1; letter-spacing: -0.012em; margin: 2.75rem 0 1.25rem; color: var(--ink); }
+  .subhead::before { content: ''; display: block; width: 38px; height: 1px; background: var(--ink); margin-bottom: 0.85rem; }
+
+  .pullquote { margin: 2.5rem 0 2.5rem -2rem; padding: 1.25rem 1.5rem; border-left: 2px solid var(--orange); font-family: var(--display); font-style: italic; font-size: 28px; line-height: 1.18; letter-spacing: -0.005em; color: var(--ink); max-width: 28ch; }
+  .pullquote cite { display: block; margin-top: 0.85rem; font-family: var(--mono); font-style: normal; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage); }
+
+  .body-right { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.03em; color: var(--sage); line-height: 1.7; }
+  .body-right h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); margin: 0 0 0.5rem; opacity: 0.8; }
+  .body-right p { margin: 0 0 1.5rem; }
+
+  /* The Still */
+  .still { margin: 4.5rem -2rem 4rem; padding: 0; border: none; display: block; }
+  .still__field { width: 100%; display: block; border-radius: 1px; overflow: hidden; }
+  .still__field svg { width: 100%; height: auto; display: block; }
+  .still__colophon { margin-top: 1rem; padding: 0 0.25rem; display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); opacity: 0.85; }
+  .still__colophon .still__num { color: var(--ink); opacity: 0.65; }
+
+  /* Secondary diagram */
+  .figure-2 { margin: 2.5rem 0; border: 1px solid var(--rule); background: var(--paper); padding: 1.5rem; }
+  .figure-2__head { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); font-weight: 500; margin-bottom: 0.25rem; }
+  .figure-2__title { font-family: var(--body); font-style: italic; font-size: 14.5px; line-height: 1.4; color: var(--ink); opacity: 0.85; margin: 0 0 1rem; }
+  .figure-2 svg { width: 100%; height: auto; display: block; }
+  .figure-2__caption { font-family: var(--mono); font-size: 10px; letter-spacing: 0.02em; line-height: 1.6; color: var(--sage); margin-top: 0.85rem; }
+
+  /* Curated source-note panel (Piece C is a curated essay, not editorial) */
+  .source-note {
+    margin: 2.5rem 0 1rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    font-family: var(--mono);
+    font-size: 11px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    opacity: 0.85;
+  }
+  .source-note h6 { margin: 0 0 0.5rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .source-note p { margin: 0 0 0.4rem; }
+
+  /* Spanish parallel section — analogue to the Arabic-section pattern, used
+     when the geography's working language is not English. The visual frame is
+     identical to .arabic-section so the publication's bilingual gesture
+     generalises beyond Arabic. */
+  .parallel-section {
+    margin: 4rem 0 3rem;
+    padding: 2.5rem 2rem;
+    background: var(--paper);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    gap: 3rem;
+  }
+  .parallel-section__label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .parallel-section__label-en { margin-top: 0.5rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.65; }
+  .parallel-body h3 { font-family: var(--display); font-weight: 500; font-size: 30px; line-height: 1.2; margin: 0 0 1.25rem; color: var(--ink); }
+  .parallel-body p { font-family: var(--body); font-size: 19px; line-height: 1.7; margin: 0 0 1rem; color: var(--ink); }
+  .parallel-section__right { font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.7; }
+
+  /* Footer */
+  .article-footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; line-height: 1.8; color: var(--ink); opacity: 0.85; }
+  .article-footer h5 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); margin: 0 0 0.5rem; font-weight: 500; }
+  .article-footer p { margin: 0 0 0.4rem; }
+
+  .colophon { max-width: 1280px; margin: 3rem auto 0; padding: 1.5rem 2rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); opacity: 0.7; }
+  .colophon .issue { color: var(--orange); font-weight: 500; }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .title-block { grid-template-columns: 1fr; gap: 1.25rem; }
+    .body-grid { grid-template-columns: 1fr 8fr; gap: 2rem; }
+    .body-right { grid-column: 1 / -1; border-top: 1px solid var(--rule-soft); padding-top: 1.5rem; margin-top: 1.5rem; }
+    .parallel-section { grid-template-columns: 1fr; gap: 1.5rem; }
+    .pullquote { margin-left: 0; }
+    .still { margin-inline: 0; margin-top: 3rem; margin-bottom: 3rem; }
+    .still__colophon { flex-direction: column; gap: 0.35rem; }
+  }
+  @media (max-width: 720px) {
+    html { font-size: 16px; }
+    .article { padding: 1rem 1.25rem 3rem; }
+    .masthead__inner { grid-template-columns: 1fr; text-align: center; gap: 0.5rem; }
+    .masthead__left, .masthead__right { text-align: center; }
+    .meta-strip { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .title-block { padding-block: 2rem 1.25rem; }
+    .body-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .body-left { display: none; }
+    .body-right { margin-top: 1rem; padding-top: 1rem; }
+    .body-main p { font-size: 17.5px; }
+    .dropcap::first-letter { font-size: 4.2em; }
+    .pullquote { font-size: 23px; padding-left: 1rem; }
+    .parallel-section { padding: 1.5rem 1rem; }
+    .parallel-body h3 { font-size: 24px; }
+    .parallel-body p { font-size: 17.5px; }
+    .article-footer { grid-template-columns: 1fr; gap: 1.25rem; }
+    .colophon { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .hero-figure__frame { padding: 1rem; }
+    .hero-figure__head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__left">Issue 01 · May 2026</div>
+    <div class="masthead__center">
+      <div>
+        <span class="masthead__word">Madār</span>
+        <span class="masthead__word-ar" lang="ar" dir="rtl">مدار</span>
+      </div>
+      <div class="masthead__rule" aria-hidden="true"></div>
+    </div>
+    <div class="masthead__right">A research instrument</div>
+  </div>
+</header>
+<div class="wordmark-note">[ Wordmark to be commissioned — Cormorant Garamond + Amiri set as stand-ins ]</div>
+
+<!-- META STRIP -->
+<div class="meta-strip">
+  <span><strong>Curated</strong> · Colombia · Rural primary · 9 min</span>
+  <span class="coord">N 04°35′ · W 74°04′ · Bogotá</span>
+</div>
+
+<article class="article">
+
+  <!-- TITLE -->
+  <header class="title-block">
+    <div>
+      <div class="kicker">Curated 01</div>
+      <div class="kicker-meta">
+        Colombia<br>
+        Cauca · Boyacá · Nariño<br>
+        1975 – 2025<br><br>
+        Curated by The Editors<br>
+        Isotype: contributor TBC
+      </div>
+    </div>
+    <div>
+      <h1 class="title">Escuela Nueva<br><em>at fifty.</em></h1>
+      <p class="dek">A 2025 statement from a Colombian rural teachers' association marks half a century of the country's multi-grade primary model — and corrects, gently, several things the international press has been saying about it.</p>
+    </div>
+  </header>
+
+  <!-- HERO: isotype — multi-grade classroom seating plan + small department map -->
+  <figure class="hero-figure">
+    <div class="hero-figure__frame">
+      <div class="hero-figure__head">
+        <span><span class="num">Figure 01</span> · Aulas multigrado — the classroom plan, 1975 – 2025</span>
+        <span class="right">Drawn for Madār · isotype + small map</span>
+      </div>
+
+      <!-- ===== INLINE SVG: aulas multigrado seating plan, with a small departmental map at right ===== -->
+      <svg viewBox="0 0 920 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A top-down architectural plan of a multi-grade classroom — small clusters of desks in earth-tone groups, no figures, no teacher. To its right, a small schematic map of Colombia showing the departments where Escuela Nueva is most established.">
+        <defs>
+          <!-- subtle paper grain over the plan -->
+          <pattern id="floor-grain" patternUnits="userSpaceOnUse" width="2" height="2">
+            <rect width="2" height="2" fill="#FAFAF7"/>
+            <circle cx="1" cy="1" r="0.2" fill="#0E1B2C" opacity="0.1"/>
+          </pattern>
+          <linearGradient id="floor-shadow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#E8E2D0" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0E1B2C" stop-opacity="0.10"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ground -->
+        <rect x="0" y="0" width="920" height="540" fill="#FAFAF7"/>
+
+        <!-- Classroom frame (the architect's plan, slightly off-square) -->
+        <g>
+          <rect x="60" y="60" width="500" height="420" fill="#FAFAF7" stroke="#0E1B2C" stroke-width="1.1"/>
+          <rect x="60" y="60" width="500" height="420" fill="url(#floor-grain)" opacity="0.6"/>
+          <!-- Door opening (top-left) -->
+          <line x1="60" y1="60" x2="60" y2="120" stroke="#FAFAF7" stroke-width="2.6"/>
+          <path d="M 60,60 A 24 24 0 0 1 84 84" fill="none" stroke="#0E1B2C" stroke-width="0.5" opacity="0.55"/>
+          <!-- Window openings (right wall) -->
+          <line x1="560" y1="150" x2="560" y2="200" stroke="#FAFAF7" stroke-width="2.6"/>
+          <line x1="560" y1="240" x2="560" y2="290" stroke="#FAFAF7" stroke-width="2.6"/>
+          <line x1="560" y1="330" x2="560" y2="380" stroke="#FAFAF7" stroke-width="2.6"/>
+          <!-- Window openings (bottom wall) -->
+          <line x1="200" y1="480" x2="260" y2="480" stroke="#FAFAF7" stroke-width="2.6"/>
+          <line x1="340" y1="480" x2="400" y2="480" stroke="#FAFAF7" stroke-width="2.6"/>
+
+          <!-- "N" of the plan -->
+          <g transform="translate(85, 95)" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.55">
+            <text text-anchor="middle">N</text>
+            <line x1="0" y1="3" x2="0" y2="12" stroke="#0E1B2C" stroke-width="0.5"/>
+            <polygon points="0,16 -2.5,11 2.5,11" fill="#0E1B2C"/>
+          </g>
+
+          <!-- Cluster 1 (top-left) — terracotta -->
+          <g transform="translate(150, 150)" fill="#D94F2A" opacity="0.55">
+            <rect x="-26" y="-18" width="52" height="36" rx="2"/>
+            <rect x="-26" y="22" width="52" height="36" rx="2"/>
+          </g>
+          <g transform="translate(150, 150)" fill="none" stroke="#0E1B2C" stroke-width="0.6">
+            <rect x="-26" y="-18" width="52" height="36" rx="2"/>
+            <rect x="-26" y="22" width="52" height="36" rx="2"/>
+          </g>
+          <text x="150" y="244" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" text-anchor="middle" opacity="0.75">Grados 1 – 2</text>
+
+          <!-- Cluster 2 (top-right) — sage -->
+          <g transform="translate(360, 150)" fill="#7A8471" opacity="0.6">
+            <rect x="-28" y="-22" width="56" height="20" rx="2"/>
+            <rect x="-28" y="2"  width="56" height="20" rx="2"/>
+            <rect x="-28" y="26" width="56" height="20" rx="2"/>
+          </g>
+          <g transform="translate(360, 150)" fill="none" stroke="#0E1B2C" stroke-width="0.6">
+            <rect x="-28" y="-22" width="56" height="20" rx="2"/>
+            <rect x="-28" y="2"  width="56" height="20" rx="2"/>
+            <rect x="-28" y="26" width="56" height="20" rx="2"/>
+          </g>
+          <text x="360" y="232" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" text-anchor="middle" opacity="0.75">Grado 3</text>
+
+          <!-- Cluster 3 (centre-left, lower) — ochre/sand-heavy -->
+          <g transform="translate(150, 340)" fill="#C9A176" opacity="0.7">
+            <rect x="-30" y="-20" width="32" height="40" rx="2"/>
+            <rect x="2"   y="-20" width="32" height="40" rx="2"/>
+          </g>
+          <g transform="translate(150, 340)" fill="none" stroke="#0E1B2C" stroke-width="0.6">
+            <rect x="-30" y="-20" width="32" height="40" rx="2"/>
+            <rect x="2"   y="-20" width="32" height="40" rx="2"/>
+          </g>
+          <text x="150" y="378" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" text-anchor="middle" opacity="0.75">Grado 4</text>
+
+          <!-- Cluster 4 (centre-right, lower) — dusty rose -->
+          <g transform="translate(360, 340)" fill="#B97A6A" opacity="0.55">
+            <rect x="-30" y="-22" width="60" height="18" rx="2"/>
+            <rect x="-30" y="0"   width="60" height="18" rx="2"/>
+            <rect x="-30" y="22"  width="60" height="18" rx="2"/>
+          </g>
+          <g transform="translate(360, 340)" fill="none" stroke="#0E1B2C" stroke-width="0.6">
+            <rect x="-30" y="-22" width="60" height="18" rx="2"/>
+            <rect x="-30" y="0"   width="60" height="18" rx="2"/>
+            <rect x="-30" y="22"  width="60" height="18" rx="2"/>
+          </g>
+          <text x="360" y="386" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" text-anchor="middle" opacity="0.75">Grado 5</text>
+
+          <!-- Teacher's small standing desk (not "head of the class" — to the side) -->
+          <g transform="translate(485, 240)" fill="none" stroke="#0E1B2C" stroke-width="0.8">
+            <rect x="-14" y="-10" width="28" height="20" rx="1.5"/>
+            <line x1="-14" y1="0" x2="14" y2="0" stroke="#0E1B2C" stroke-width="0.4" opacity="0.6"/>
+          </g>
+          <text x="485" y="222" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle" opacity="0.7">maestra</text>
+
+          <!-- Library corner (back-right) — books shelf line + small reading mat -->
+          <g transform="translate(485, 130)" stroke="#0E1B2C" fill="none" stroke-width="0.6" opacity="0.7">
+            <rect x="-22" y="-8"  width="44" height="6"/>
+            <rect x="-22" y="-2"  width="44" height="6"/>
+            <line x1="-18" y1="-8" x2="-18" y2="4"/>
+            <line x1="-10" y1="-8" x2="-10" y2="4"/>
+            <line x1="-2"  y1="-8" x2="-2"  y2="4"/>
+            <line x1="6"   y1="-8" x2="6"   y2="4"/>
+            <line x1="14"  y1="-8" x2="14"  y2="4"/>
+          </g>
+          <text x="485" y="115" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle" opacity="0.7">biblioteca</text>
+
+          <!-- Small mat / round group circle (community-management committee meeting spot) -->
+          <circle cx="485" cy="400" r="36" fill="none" stroke="#0E1B2C" stroke-width="0.5" opacity="0.55" stroke-dasharray="2 2"/>
+          <text x="485" y="404" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle" opacity="0.7">comité</text>
+
+          <!-- Scale bar inside the plan -->
+          <g transform="translate(90, 460)">
+            <line x1="0" y1="0" x2="100" y2="0" stroke="#0E1B2C" stroke-width="1"/>
+            <line x1="0" y1="-3" x2="0" y2="3" stroke="#0E1B2C" stroke-width="1"/>
+            <line x1="50" y1="-2.5" x2="50" y2="2.5" stroke="#0E1B2C" stroke-width="0.7"/>
+            <line x1="100" y1="-3" x2="100" y2="3" stroke="#0E1B2C" stroke-width="1"/>
+            <text x="0" y="14" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle">0</text>
+            <text x="50" y="14" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle">2.5</text>
+            <text x="100" y="14" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C" text-anchor="middle">5 m</text>
+          </g>
+
+          <!-- Plan label, lower right -->
+          <text x="540" y="478" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" text-anchor="end" letter-spacing="0.06em">PLANTA · 1:80</text>
+        </g>
+
+        <!-- ===== Small Colombia map at right — Escuela Nueva's department spread ===== -->
+        <g transform="translate(620, 80)">
+          <text x="0" y="-10" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" letter-spacing="0.1em">DEPARTAMENTOS · 1975 – 2025</text>
+
+          <!-- Colombia outline (stylized) -->
+          <path d="M 80,20
+                   C 120,10  170,18  200,40
+                   C 230,62  240,98  232,135
+                   C 222,180 195,220 162,250
+                   C 138,272 105,278  80,270
+                   C 60,262   45,242   38,215
+                   C 30,180  28,140   38,108
+                   C 48,72   60,40    80,20 Z"
+                fill="#E8E2D0" stroke="#0E1B2C" stroke-width="0.9"/>
+
+          <!-- Subtle dept boundaries -->
+          <g stroke="#0E1B2C" stroke-width="0.4" fill="none" opacity="0.45">
+            <path d="M 80,70 L 130,80 L 170,95"/>
+            <path d="M 60,120 L 110,128 L 165,140 L 215,138"/>
+            <path d="M 55,170 L 105,178 L 160,182 L 210,180"/>
+            <path d="M 70,220 L 115,228 L 165,232"/>
+            <path d="M 110,80 L 115,140 L 118,180 L 122,232"/>
+            <path d="M 165,95 L 162,140 L 160,180 L 158,232"/>
+          </g>
+
+          <!-- Three highlighted departments: Cauca, Boyacá, Nariño -->
+          <!-- Cauca (south-west) -->
+          <ellipse cx="78" cy="200" rx="22" ry="14" fill="#7A8471" opacity="0.55"/>
+          <ellipse cx="78" cy="200" rx="22" ry="14" fill="none" stroke="#0E1B2C" stroke-width="0.6"/>
+
+          <!-- Nariño (south, near border) -->
+          <ellipse cx="72" cy="248" rx="20" ry="11" fill="#7A8471" opacity="0.55"/>
+          <ellipse cx="72" cy="248" rx="20" ry="11" fill="none" stroke="#0E1B2C" stroke-width="0.6"/>
+
+          <!-- Boyacá (centre-east, north of Bogotá) -->
+          <ellipse cx="140" cy="148" rx="22" ry="14" fill="#7A8471" opacity="0.55"/>
+          <ellipse cx="140" cy="148" rx="22" ry="14" fill="none" stroke="#0E1B2C" stroke-width="0.6"/>
+
+          <!-- Bogotá (capital marker) -->
+          <circle cx="125" cy="172" r="2.5" fill="#D94F2A"/>
+          <text x="131" y="174" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">Bogotá</text>
+
+          <!-- Labels -->
+          <g font-family="Cormorant Garamond, Georgia, serif" font-size="11" font-style="italic" fill="#0E1B2C">
+            <text x="40" y="200" text-anchor="end">Cauca</text>
+            <text x="34" y="248" text-anchor="end">Nariño</text>
+            <text x="174" y="148">Boyacá</text>
+          </g>
+
+          <!-- Small note -->
+          <text x="0" y="298" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" letter-spacing="0.04em">three of the model's longest-running</text>
+          <text x="0" y="310" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" letter-spacing="0.04em">veredas networks · n ≈ 14,400 schools</text>
+
+          <!-- Anniversary stamp — editorial mark, not a logo (per Editor brief) -->
+          <g transform="translate(195, 290)">
+            <circle r="32" fill="none" stroke="#D94F2A" stroke-width="0.9"/>
+            <circle r="26" fill="none" stroke="#D94F2A" stroke-width="0.4" opacity="0.55"/>
+            <text y="-8" font-family="Cormorant Garamond, Georgia, serif" font-size="10" fill="#D94F2A" text-anchor="middle" font-style="italic">50</text>
+            <text y="6" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#D94F2A" text-anchor="middle" letter-spacing="0.18em">AÑOS</text>
+            <text y="18" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#D94F2A" text-anchor="middle" letter-spacing="0.18em">1975—2025</text>
+          </g>
+        </g>
+
+        <!-- Caption strip (under the plan, as Editor brief requested) -->
+        <text x="60" y="510" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#0E1B2C" opacity="0.8">Aulas multigrado, 1975 — 2025.</text>
+
+        <!-- Object cat. number, top-left -->
+        <text x="60" y="20" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.7" letter-spacing="0.12em">M.CO.EDU.2025.001</text>
+
+        <!-- Top-right run header -->
+        <g font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.7">
+          <text x="860" y="20" text-anchor="end">FIELD ATLAS · MADĀR · 2026</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption class="hero-figure__foot">
+      A top-down schematic of a classic Escuela Nueva multi-grade classroom — five clusters of student desks (rather than single-grade rows), a teacher's standing desk to the side rather than at the front, a library corner, and a round community-committee circle marked in dashed line. Drawn to scale; the small map at right marks three of the longest-running departmental networks. No children, no teacher figures — this is the architecture of the model, not a photograph of one.
+      <span class="credit">Diagram drawn for Madār by [Illustrator name to be commissioned] · sources: Fundación Escuela Nueva founding-document archive (1975 – ); departmental school-count working figures, 2024.</span>
+    </figcaption>
+  </figure>
+
+  <!-- BODY GRID -->
+  <div class="body-grid">
+
+    <aside class="body-left">
+      <p><span class="num">¹</span> The exact issuing body is under verification. The Editor's working attribution is Asociación de Maestros Rurales de Colombia; the signing organization may differ.<span class="ref">— Editor's note, May 2026.</span></p>
+      <p><span class="num">²</span> The model's curricular materials are managed by Fundación Escuela Nueva, the Bogotá-based foundation that grew out of the original 1975 programme.</p>
+      <p><span class="num">³</span> "Vereda" — the smallest rural subdivision below the municipality. Colombia counts roughly thirty-two thousand of them.</p>
+      <p><span class="num">⁴</span> The 2016 peace accord between the Colombian government and the FARC reorganised state presence across rural Colombia, including in education delivery. The teachers' statement does not address this directly.</p>
+    </aside>
+
+    <div class="body-main">
+
+      <!-- Curated source note — Madār's curated-essay convention -->
+      <div class="source-note">
+        <h6>Curated · what we read so you don't have to</h6>
+        <p><strong>Primary source:</strong> A 2025 statement from a Colombian rural teachers' association on the fiftieth anniversary of Escuela Nueva. [Placeholder attribution — Editor verifying issuing body before publication.]</p>
+        <p><strong>Why we're reading it:</strong> The anniversary coverage in the international press rehearsed claims the model has been credited with since the late 1980s. The teachers' statement, written by people delivering the model in <em>veredas</em> across Cauca, Boyacá and Nariño, corrects the record from a different position.</p>
+      </div>
+
+      <p class="dropcap">The Escuela Nueva model — Colombia's homegrown approach to one-teacher, multi-grade rural primary schools, developed from 1975 onward — turned fifty in 2025. The anniversary was marked, predictably, by a wave of international coverage rehearsing the same three or four claims that the model has been credited with since the World Bank began writing favourably about it in the late 1980s.</p>
+
+      <p>A more useful document, in our reading, came not from the foundation that holds the model's intellectual property<sup>2</sup> but from a Colombian rural teachers' association, which issued a statement in October 2025 that does something the anniversary coverage almost entirely failed to do.<sup>1</sup> It addresses the model from the position of the people who have actually been delivering it, in <em>veredas</em><sup>3</sup> across Cauca, Boyacá and Nariño, for the past three to five decades, and it makes a series of corrections to the public record that we think serious readers of education policy should be aware of.</p>
+
+      <p>We will pull three.</p>
+
+      <h2 class="subhead">On replicability</h2>
+
+      <p>The international literature has tended to describe Escuela Nueva as a model that has been "scaled" or "exported" to dozens of countries. The teachers' association is more precise: what has been exported is the curricular materials and the classroom organisation principles; what has not exported, and largely cannot, is the specific Colombian rural-teacher training pipeline, the local-government supervisory relationships, and the community management committees that the model was designed around.</p>
+
+      <div class="pullquote">
+        "The materials traveled. The conditions that made the materials work did not."
+        <cite>— Rural teachers' association · October 2025</cite>
+      </div>
+
+      <p>The statement puts this in a line worth quoting in full, in our loose translation: <em>"The materials traveled. The conditions that made the materials work did not."</em> The sentence does not appear in any of the anniversary coverage we read.</p>
+
+      <h2 class="subhead">On the role of the teacher</h2>
+
+      <p>Much of the celebratory coverage of Escuela Nueva, particularly in the English-language education press, has framed it as a "student-centred" model in which the teacher steps back. The teachers' association takes issue with this framing on two grounds. One: it understates what the multi-grade teacher actually does, which is considerably more cognitively demanding than running a single-grade classroom — managing four or five simultaneous lessons, four or five sets of expected learning outcomes, and the social dynamics that come with mixing eight-year-olds and twelve-year-olds in one room. Two: it has been used, over the years, as justification for understaffing rural schools, on the grounds that the model is supposedly designed to function with minimal teacher intervention. The statement is sharp on this point. The framing was useful for ministries that wanted to fund fewer teachers, and the statement, written by teachers, takes the framing back.</p>
+
+      </div>
+
+    </div>
+
+    <!-- ============== THE STILL · §4b (v0.4, 2026-05-25 — redrawn) ============== -->
+    <!-- The Still is now a single continuous calligraphic line in ink that lands
+         at the lower-left footpath, rises into the small rural schoolhouse —
+         walls, pitched roof, flag rising from the apex — comes back to draw
+         the door and two windows, then exits as the footpath continuing right.
+         A second line, in sage, traces the mountain ridges behind. No filled
+         volumes, no atmospheric pools: the lines ARE the image, the ground
+         is paper-cream. The continuous line carries fifty years of practice
+         within itself. Inspiration: the unlifted gesture of an Arabic letter. -->
+    <figure class="still" aria-label="The Still for Curated 01 — Colombia. A single continuous calligraphic line in ink drawing a small rural schoolhouse with door, two windows, and a flag rising from the roof; a second line in sage traces the mountain ridges behind. One breath.">
+      <div class="still__field">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1200 600"
+             preserveAspectRatio="xMidYMid slice"
+             role="img"
+             aria-label="A single continuous calligraphic line in ink drawing a small rural schoolhouse — pitched roof, walls, door, two windows, flag — and a second line in sage tracing the mountains behind. One breath.">
+
+          <title>The Still · Colombia — Escuela Nueva at fifty</title>
+          <desc>One continuous calligraphic gesture in ink that lands at the lower-left footpath, rises into the small schoolhouse — walls, single pitched roof, flag rising from the apex — comes back to draw the door and windows, and flows out to the right. A second line, in sage, draws the mountains behind. No filled volumes; the lines are the image; the ground is paper-cream. The continuous line carries fifty years of practice within itself.</desc>
+
+          <!-- Paper-cream ground. -->
+          <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+          <!--
+            ============================================================
+            SECONDARY GESTURE — sage (#7A8471). The mountains, drawn FIRST
+            so the schoolhouse line sits in front. One continuous line,
+            three peaks, calligraphic, breathing.
+            ============================================================
+          -->
+
+          <g id="mountains-line"
+             fill="none"
+             stroke="#7A8471"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+            <path stroke-width="2.6" stroke-opacity="0.78" d="
+              M 60 360
+              C 110 348 156 326 200 296
+              C 232 274 262 246 290 222
+              C 312 204 332 196 350 208
+              C 372 226 394 252 420 282
+              C 444 308 466 326 488 332
+              C 506 336 524 330 540 314
+              C 568 290 596 264 628 240
+              C 664 214 696 200 720 210
+              C 744 220 766 246 794 280
+              C 820 312 846 336 874 350
+              C 902 364 928 368 952 366
+              C 980 364 1010 356 1042 346
+              C 1070 338 1098 332 1132 328
+            "/>
+            <path stroke-width="1.4" stroke-opacity="0.55" d="
+              M 64 364
+              C 112 352 158 330 202 300
+              C 234 278 264 250 292 226
+              C 314 208 334 200 352 212
+              C 374 230 396 256 420 286
+              C 444 312 466 328 488 334
+            "/>
+            <path stroke-width="0.7" stroke-opacity="0.38" d="
+              M 68 368
+              C 114 356 160 334 204 304
+              C 236 282 264 254 292 230
+            "/>
+
+            <!-- a softer, fainter back ridge -->
+            <path stroke-width="1.4" stroke-opacity="0.42" d="
+              M 40 392
+              C 100 368 162 340 222 312
+              C 274 288 320 270 360 268
+              C 396 266 430 282 470 304
+              C 510 326 552 342 590 342
+              C 628 342 668 322 718 296
+              C 766 270 808 256 848 256
+              C 890 256 930 270 980 290
+              C 1030 310 1080 326 1140 336
+            "/>
+            <path stroke-width="0.6" stroke-opacity="0.28" d="
+              M 44 396
+              C 102 372 162 344 222 316
+              C 274 292 318 274 358 272
+            "/>
+          </g>
+
+          <!--
+            ============================================================
+            PRIMARY GESTURE — ink (#1A2B3C). The schoolhouse, the path,
+            the flag. One continuous line, drawn from beginning to end.
+            Path narrative:
+              1. The pen lands at the lower-left (footpath).
+              2. Rises into the left wall of the schoolhouse.
+              3. Climbs up the pitched roof to the apex.
+              4. From the apex, a flagpole rises with a small flag.
+              5. Returns to the apex (the pen retraces — calligraphically
+                 possible in one motion), down the right slope, down the
+                 right wall, and out into the footpath to the right.
+              6. A small "dip back" for the door and the two windows —
+                 drawn at a different stroke weight to read as the line
+                 curling back into itself.
+            ============================================================
+          -->
+
+          <g id="schoolhouse-line"
+             fill="none"
+             stroke="#1A2B3C"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+
+            <!--
+              The MAIN OUTLINE: footpath in → left wall up → left roof up to
+              apex → flagpole up → flag → return to apex → right roof down →
+              right wall down → footpath out.
+              Drawn as a single continuous bezier sequence.
+            -->
+
+            <path stroke-width="3.0" stroke-opacity="0.92" d="
+              M 100 504
+              C 180 502 270 500 340 500
+              C 360 500 380 498 396 488
+              C 412 478 422 462 422 442
+              C 422 414 422 386 422 358
+              C 422 348 426 340 434 334
+              L 558 220
+              C 568 210 580 206 590 206
+              C 600 206 610 212 620 222
+              L 624 226
+              L 624 130
+              C 624 124 628 120 634 120
+              C 658 122 686 130 708 144
+              C 720 152 728 160 728 168
+              C 728 174 720 180 708 186
+              C 686 196 658 202 634 202
+              L 624 202
+              L 624 226
+              L 748 334
+              C 756 340 760 348 760 358
+              C 760 386 760 414 760 442
+              C 760 462 770 478 786 488
+              C 802 498 822 500 842 500
+              C 912 500 1002 502 1108 504
+            "/>
+
+            <path stroke-width="1.8" stroke-opacity="0.78" d="
+              M 102 506
+              C 182 504 272 502 340 502
+              C 360 502 378 500 394 490
+              C 410 480 420 462 420 442
+              C 420 414 420 386 420 358
+              C 420 350 424 342 432 336
+              L 558 222
+              C 568 212 580 208 590 208
+              C 600 208 610 214 620 224
+              L 624 228
+              L 624 132
+            "/>
+
+            <path stroke-width="0.9" stroke-opacity="0.55" d="
+              M 106 508
+              C 184 506 274 504 340 504
+              C 358 504 376 502 392 492
+            "/>
+
+            <!--
+              THE INTERIOR — the pen "dips" back inside to draw the door
+              and the two windows. Drawn at a lighter weight so they read
+              as the line returning into itself.
+            -->
+
+            <!-- THE DOOR — a tall arched rectangle with a small handle. -->
+            <path stroke-width="2.6" stroke-opacity="0.85" d="
+              M 552 496
+              L 552 410
+              C 552 396 556 388 568 384
+              C 580 380 600 380 612 384
+              C 624 388 628 396 628 410
+              L 628 496
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.60" d="
+              M 554 496
+              L 554 412
+              C 554 398 558 390 568 386
+              C 580 382 600 382 612 386
+              C 622 390 626 398 626 412
+              L 626 496
+            "/>
+            <!-- handle -->
+            <path stroke-width="1.6" stroke-opacity="0.75" d="
+              M 612 452
+              C 608 450 606 448 606 444
+              C 606 442 608 440 612 440
+              C 614 440 616 442 616 444
+              C 616 448 614 450 612 452
+              Z
+            "/>
+
+            <!-- LEFT WINDOW — 2x2 panes -->
+            <path stroke-width="2.0" stroke-opacity="0.80" d="
+              M 458 400
+              L 458 446
+              L 524 446
+              L 524 400
+              Z
+              M 491 400 L 491 446
+              M 458 423 L 524 423
+            "/>
+            <path stroke-width="1.0" stroke-opacity="0.55" d="
+              M 460 402
+              L 460 444
+              L 522 444
+              L 522 402 Z
+            "/>
+
+            <!-- RIGHT WINDOW — 2x2 panes -->
+            <path stroke-width="2.0" stroke-opacity="0.80" d="
+              M 656 400
+              L 656 446
+              L 722 446
+              L 722 400
+              Z
+              M 689 400 L 689 446
+              M 656 423 L 722 423
+            "/>
+            <path stroke-width="1.0" stroke-opacity="0.55" d="
+              M 658 402
+              L 658 444
+              L 720 444
+              L 720 402 Z
+            "/>
+
+            <!-- A footpath mark — soft breathing dashes that fade away. -->
+            <path stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="8 12" d="
+              M 100 524
+              C 240 521 400 519 580 519
+              C 760 519 920 521 1060 524
+            "/>
+            <path stroke-width="0.7" stroke-opacity="0.32" stroke-dasharray="4 14" d="
+              M 130 536
+              C 270 533 430 531 600 531
+              C 770 531 920 533 1040 536
+            "/>
+
+          </g>
+
+        </svg>
+      </div>
+
+      <figcaption class="still__colophon">
+        <span><span class="still__num">سكون · The Still</span> &nbsp;·&nbsp; Curated 01 · Colombia</span>
+        <span>Made in-house for Madār · 2026</span>
+      </figcaption>
+    </figure>
+
+    <!-- resume body grid -->
+    <div class="body-grid body-grid--resumed">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main">
+
+      <h2 class="subhead">On what fifty years has shown</h2>
+
+      <p>The association's statement does not claim that Escuela Nueva has solved rural primary education in Colombia. It claims, more carefully, that the model has produced, across half a century, a body of practical knowledge about multi-grade teaching in conditions of geographic dispersion and uneven state presence — and that the next fifty years of work, in their view, should be about codifying that knowledge before the cohort of teachers who carry it retires.</p>
+
+      <p>That is a different claim, and a more useful one. It is also a claim the model's own foundation has been slower to make in public than its critics might assume.</p>
+
+      <h2 class="subhead">What is missing from the statement</h2>
+
+      <p>What is missing from the statement, and worth interrogating: there is no engagement with the question of how Escuela Nueva intersects with Colombia's post-conflict rural reconstruction agenda, which has had its own implications for rural schooling since the 2016 peace accord.<sup>4</sup> Whether the omission is strategic (the association does not wish to be drawn into national-political framing) or simply outside the scope of the statement, we cannot say from the document alone. It is the most significant absence we marked.</p>
+
+      <!-- Secondary figure: a long horizontal of the model's growth, decade by decade -->
+      <figure class="figure-2">
+        <div class="figure-2__head">Figure 02 · The model's reach, decade by decade</div>
+        <p class="figure-2__title">Working estimate of schools operating under Escuela Nueva principles in Colombia, 1975 – 2025. Sage = single-grade rural; orange = multi-grade Escuela Nueva.</p>
+
+        <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A horizontal isotype showing the spread of Escuela Nueva-organised schools in Colombia across five decades.">
+          <defs>
+            <symbol id="schoolhouse" viewBox="0 0 14 14">
+              <path d="M 1,7 L 7,2 L 13,7 L 13,13 L 1,13 Z" fill-rule="evenodd"/>
+            </symbol>
+          </defs>
+
+          <!-- Decade labels & baselines -->
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C">
+            <text x="0" y="20">1975 – 84</text>
+            <text x="0" y="60">1985 – 94</text>
+            <text x="0" y="100">1995 – 04</text>
+            <text x="0" y="140">2005 – 14</text>
+            <text x="0" y="180">2015 – 25</text>
+          </g>
+          <g stroke="#0E1B2C" stroke-width="0.3" opacity="0.18">
+            <line x1="86" y1="22" x2="720" y2="22"/>
+            <line x1="86" y1="62" x2="720" y2="62"/>
+            <line x1="86" y1="102" x2="720" y2="102"/>
+            <line x1="86" y1="142" x2="720" y2="142"/>
+            <line x1="86" y1="182" x2="720" y2="182"/>
+          </g>
+
+          <!-- 1975–84: starting up; 2 schools symbol (sparse pilot) -->
+          <g fill="#D94F2A">
+            <use href="#schoolhouse" x="94"  y="6"  width="14" height="14"/>
+          </g>
+
+          <!-- 1985–94: 6 schoolhouses -->
+          <g fill="#D94F2A">
+            <use href="#schoolhouse" x="94"  y="46" width="14" height="14"/>
+            <use href="#schoolhouse" x="114" y="46" width="14" height="14"/>
+            <use href="#schoolhouse" x="134" y="46" width="14" height="14"/>
+            <use href="#schoolhouse" x="154" y="46" width="14" height="14"/>
+            <use href="#schoolhouse" x="174" y="46" width="14" height="14"/>
+          </g>
+          <g fill="#7A8471" opacity="0.7">
+            <use href="#schoolhouse" x="194" y="46" width="14" height="14"/>
+          </g>
+
+          <!-- 1995–04: international scale-up, more orange + some sage -->
+          <g fill="#D94F2A">
+            <use href="#schoolhouse" x="94"  y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="114" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="134" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="154" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="174" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="194" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="214" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="234" y="86" width="14" height="14"/>
+          </g>
+          <g fill="#7A8471" opacity="0.7">
+            <use href="#schoolhouse" x="254" y="86" width="14" height="14"/>
+            <use href="#schoolhouse" x="274" y="86" width="14" height="14"/>
+          </g>
+
+          <!-- 2005–14: more, plateau begins -->
+          <g fill="#D94F2A">
+            <use href="#schoolhouse" x="94"  y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="114" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="134" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="154" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="174" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="194" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="214" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="234" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="254" y="126" width="14" height="14"/>
+          </g>
+          <g fill="#7A8471" opacity="0.7">
+            <use href="#schoolhouse" x="274" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="294" y="126" width="14" height="14"/>
+            <use href="#schoolhouse" x="314" y="126" width="14" height="14"/>
+          </g>
+
+          <!-- 2015–25: roughly steady — the next fifty years' question -->
+          <g fill="#D94F2A">
+            <use href="#schoolhouse" x="94"  y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="114" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="134" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="154" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="174" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="194" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="214" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="234" y="166" width="14" height="14"/>
+          </g>
+          <g fill="#7A8471" opacity="0.7">
+            <use href="#schoolhouse" x="254" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="274" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="294" y="166" width="14" height="14"/>
+            <use href="#schoolhouse" x="314" y="166" width="14" height="14"/>
+          </g>
+
+          <!-- count labels -->
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" opacity="0.7">
+            <text x="350" y="16"  >n ≈ 500 · pilot programme</text>
+            <text x="350" y="56"  >n ≈ 8,000 · national rollout</text>
+            <text x="350" y="96"  >n ≈ 17,000 · World-Bank scale-up</text>
+            <text x="350" y="136" >n ≈ 20,000 · plateau begins</text>
+            <text x="350" y="176" >n ≈ 18,000 – 22,000 · steady</text>
+          </g>
+
+          <!-- baseline scale -->
+          <line x1="86" y1="200" x2="720" y2="200" stroke="#0E1B2C" stroke-width="0.5" opacity="0.4"/>
+          <text x="403" y="214" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" text-anchor="middle" letter-spacing="0.08em">— FIFTY YEARS · ONE MODEL —</text>
+        </svg>
+
+        <p class="figure-2__caption">
+          Each schoolhouse symbol represents approximately 2,000 schools. Orange = schools operating under Escuela Nueva organisational principles; sage = single-grade rural schools in the same decades, plotted for scale. Working estimates from Fundación Escuela Nueva archive and Ministerio de Educación rural-schooling registries; numbers should be read as orders of magnitude.
+        </p>
+      </figure>
+
+      <h2 class="subhead">Why we are running this now</h2>
+
+      <p>The reason to read this statement now, rather than the anniversary coverage, is that the statement was written by people who would still be teaching in these schools next Monday morning if the international press lost interest in the model tomorrow. That is not a small qualification on whose account of fifty years is worth the reader's hour.</p>
+
+      <p>It also matters, in our reading, because the question the statement closes on — codifying the practical knowledge of the cohort before it retires — is the question every long-running, community-rooted education programme will have to answer at some point. Escuela Nueva is fifty. There are programmes elsewhere on the same trajectory that are forty, and some that are sixty. The Colombian teachers' framing of the question may not be the last word on it, but it is the most useful one we have read this year.</p>
+
+    </div>
+
+    <aside class="body-right">
+      <h4>What we read</h4>
+      <p>A statement from a Colombian rural teachers' association on the fiftieth anniversary of Escuela Nueva. October 2025. Issuing body under verification by the Editor; provisional attribution Asociación de Maestros Rurales de Colombia.</p>
+
+      <h4>What we cross-checked</h4>
+      <p>Fundación Escuela Nueva founding-document archive (1975 onward), for historical claims only.</p>
+      <p>World Bank, IADB and OECD evaluations of Escuela Nueva, late-1980s through 2010s, for the framing this piece pushes back against.</p>
+
+      <h4>Glossary</h4>
+      <p><strong>Vereda.</strong> The smallest rural administrative unit below the municipality. Colombia counts roughly thirty-two thousand.</p>
+      <p><strong>Aula multigrado.</strong> A single classroom in which a single teacher serves more than one grade simultaneously — the model's organising unit.</p>
+
+      <h4>Read next</h4>
+      <p>In <em>Issue 02:</em> the Mexican telesecundaria at sixty — the other long-running Latin American rural education programme on the same kind of trajectory.</p>
+    </aside>
+
+  </div>
+
+  <!-- SPANISH PARALLEL READING — equivalent of the Arabic section convention, used
+       because the geography's working language is Spanish, not Arabic. The frame
+       matches .arabic-section so the publication's parallel-reading rule
+       generalises across languages. -->
+  <section class="parallel-section">
+    <div>
+      <div class="parallel-section__label">Lectura en español</div>
+      <div class="parallel-section__label-en">A Spanish reading — the same argument, written for our Spanish-language readers. Not a translation; a parallel paragraph.</div>
+    </div>
+    <div class="parallel-body" lang="es">
+      <h3>Cincuenta años bajo la montaña</h3>
+      <p>El modelo de Escuela Nueva — la propuesta colombiana de aula multigrado, desarrollada desde 1975 — cumplió cincuenta años en 2025. La cobertura internacional del aniversario repitió, como suele suceder, las mismas tres o cuatro afirmaciones que el modelo viene acumulando desde finales de los años ochenta. El documento que aquí leemos no proviene de la fundación que custodia los materiales del modelo, sino de una asociación de maestros rurales colombianos que lleva tres o cuatro décadas enseñando bajo ese sistema en las veredas de Cauca, Boyacá y Nariño.</p>
+      <p>La asociación corrige el registro público en tres frentes: la idea de "replicabilidad" — los materiales viajaron, las condiciones que los hacían funcionar no lo hicieron; la idea del "maestro que se aparta" — un encuadre cómodo para los ministerios que querían financiar menos maestros; y la idea de lo que cincuenta años de práctica han demostrado realmente — no la solución de la educación rural, sino un cuerpo acumulado de conocimiento práctico que debe codificarse antes de que la generación que lo carga se retire.</p>
+      <p>Lo que el comunicado omite es también legible: no aborda la relación entre el modelo y la agenda de reconstrucción rural post-conflicto que abrió el acuerdo de paz de 2016. Si la omisión es estratégica o simplemente queda fuera del alcance del documento, no podemos decirlo desde el texto solo. Es la ausencia que más nos llamó la atención.</p>
+    </div>
+    <aside class="parallel-section__right">
+      <p>NOTA · El párrafo en español es editorial, no es una traducción literal.</p>
+      <p>NOTE · Madār publishes parallel paragraphs in the working language of the geography being covered — Arabic for the MENA region, Spanish for Latin America, French where relevant. The parallel is written, not translated.</p>
+    </aside>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="article-footer">
+    <div>
+      <h5>Curated by</h5>
+      <p>The Editors</p>
+      <p>From the source, May 2026.<br>Provisional source attribution under verification.</p>
+    </div>
+    <div>
+      <h5>Illustration credit</h5>
+      <p>Figure 01 + 02 drawn for Madār by<br>[Illustrator name to be commissioned]</p>
+      <p>Sources: Fundación Escuela Nueva archive (1975 – ); Ministerio de Educación Nacional rural-schooling registries.</p>
+    </div>
+    <div>
+      <h5>Published</h5>
+      <p>2026 · 05 · 25<br>Issue 01 · Curated 01</p>
+      <p>Reading time ~9 min<br>Word count ~1,400</p>
+    </div>
+  </footer>
+
+</article>
+
+<!-- COLOPHON -->
+<footer class="colophon">
+  <span>Madār <span lang="ar" dir="rtl">مدار</span> · Issue 01 · <span class="issue">Curated 01 of 12</span></span>
+  <span>© 2026 · A research instrument</span>
+</footer>
+
+</body>
+</html>

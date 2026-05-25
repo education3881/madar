@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Civics Page That Changed Three Times — Madār</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #0E1B2C;
+    --orange: #D94F2A;
+    --sage: #7A8471;
+    --sand: #E8E2D0;
+    --rule: rgba(14,27,44,0.18);
+    --rule-soft: rgba(14,27,44,0.08);
+    --display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, serif;
+    --body: "Newsreader", "GT Sectra Text", Charter, Georgia, serif;
+    --mono: "JetBrains Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --arabic: "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", serif;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- Masthead (identical to article 01) ---------- */
+  .masthead { border-bottom: 1px solid var(--rule); padding: 1.25rem 0; }
+  .masthead__inner {
+    max-width: 1280px; margin-inline: auto; padding-inline: 2rem;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem;
+  }
+  .masthead__left, .masthead__right { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.72; }
+  .masthead__right { text-align: right; }
+  .masthead__center { text-align: center; }
+  .masthead__word { font-family: var(--display); font-size: 38px; font-weight: 500; letter-spacing: -0.01em; line-height: 1; }
+  .masthead__word-ar { font-family: var(--arabic); font-size: 28px; line-height: 1; direction: rtl; display: inline-block; margin-left: 0.6rem; vertical-align: -2px; color: var(--ink); }
+  .masthead__rule { height: 1px; background: var(--ink); width: 64px; margin: 0.55rem auto 0; position: relative; }
+  .masthead__rule::before, .masthead__rule::after { content: ''; position: absolute; top: -3px; width: 1px; height: 7px; background: var(--ink); }
+  .masthead__rule::before { left: 0; }
+  .masthead__rule::after { right: 0; }
+  .wordmark-note { max-width: 1280px; margin: 0.5rem auto 0; padding-inline: 2rem; text-align: right; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em; color: var(--sage); text-transform: uppercase; }
+
+  /* meta strip */
+  .meta-strip { max-width: 1280px; margin: 2rem auto 0; padding-inline: 2rem; display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
+  .meta-strip strong { color: var(--orange); font-weight: 500; }
+  .meta-strip .coord { opacity: 0.6; }
+
+  .article { max-width: 1280px; margin-inline: auto; padding: 2rem 2rem 5rem; }
+
+  /* ---------- Title block ---------- */
+  .title-block { display: grid; grid-template-columns: 3fr 9fr; gap: 3rem; padding-block: 3rem 2rem; border-bottom: 1px solid var(--rule); }
+  .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .kicker-meta { margin-top: 0.75rem; font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; color: var(--ink); opacity: 0.7; line-height: 1.7; }
+  .title { font-family: var(--display); font-weight: 500; font-size: clamp(42px, 5.4vw, 78px); line-height: 1.02; letter-spacing: -0.018em; margin: 0 0 1.25rem; max-width: 18ch; }
+  .title em { font-style: italic; font-weight: 500; }
+  .dek { font-family: var(--body); font-size: clamp(18px, 1.4vw, 21px); line-height: 1.45; font-style: italic; color: var(--ink); opacity: 0.78; max-width: 44ch; margin: 0; }
+
+  /* ---------- Hero figure (museum-specimen style) ---------- */
+  .hero-figure { margin: 3.5rem 0 2.5rem; }
+  .hero-figure__frame { background: var(--paper); border: 1px solid var(--rule); padding: 2rem 2rem 1.25rem; position: relative; }
+  .hero-figure__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .hero-figure__head .num { color: var(--orange); font-weight: 500; }
+  .hero-figure__head .right { opacity: 0.7; }
+  .hero-figure svg { width: 100%; height: auto; display: block; }
+  .hero-figure__foot { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 11px; letter-spacing: 0.02em; line-height: 1.6; color: var(--ink); opacity: 0.7; max-width: 78ch; }
+  .hero-figure__foot .credit { color: var(--sage); display: block; margin-top: 0.4rem; }
+
+  /* Object record (museum label) */
+  .object-record {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--rule-soft);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  .object-record h6 { margin: 0 0 0.25rem; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .object-record p { margin: 0; opacity: 0.85; }
+
+  /* ---------- Body grid ---------- */
+  .body-grid { display: grid; grid-template-columns: 2fr 7fr 3fr; gap: 3rem; margin-top: 2.5rem; }
+  .body-left { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.7; }
+  .body-left p { margin: 0 0 1.25rem; }
+  .body-left .num { color: var(--orange); font-weight: 500; }
+  .body-left .ref { display: block; margin-top: 0.2rem; opacity: 0.85; }
+
+  .body-main p { font-family: var(--body); font-size: 19px; line-height: 1.62; margin: 0 0 1.25rem; color: var(--ink); }
+  .body-main p sup { font-family: var(--mono); font-size: 10px; color: var(--orange); vertical-align: super; margin-left: 1px; font-weight: 500; }
+  .dropcap::first-letter { font-family: var(--display); font-weight: 500; font-size: 5.1em; line-height: 0.85; float: left; padding: 0.06em 0.12em 0 0; color: var(--ink); font-style: normal; }
+
+  .subhead { font-family: var(--display); font-weight: 500; font-size: 30px; line-height: 1.1; letter-spacing: -0.012em; margin: 2.75rem 0 1.25rem; color: var(--ink); }
+  .subhead::before { content: ''; display: block; width: 38px; height: 1px; background: var(--ink); margin-bottom: 0.85rem; }
+
+  .pullquote { margin: 2.5rem 0 2.5rem -2rem; padding: 1.25rem 1.5rem; border-left: 2px solid var(--orange); font-family: var(--display); font-style: italic; font-size: 28px; line-height: 1.18; letter-spacing: -0.005em; color: var(--ink); max-width: 28ch; }
+  .pullquote cite { display: block; margin-top: 0.85rem; font-family: var(--mono); font-style: normal; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage); }
+
+  .body-right { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.03em; color: var(--sage); line-height: 1.7; }
+  .body-right h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); margin: 0 0 0.5rem; opacity: 0.8; }
+  .body-right p { margin: 0 0 1.5rem; }
+
+  /* ---------- The Still (SYSTEM.md §4b) ---------- */
+  /* Painterly, atmospheric SVG composition placed mid-article. Full container
+     width on web (breaks the body grid). No caption text on the page — a short
+     colophon line below names the article number and the Still maker. */
+  .still {
+    margin: 4.5rem -2rem 4rem;
+    padding: 0;
+    border: none;
+    display: block;
+  }
+  .still__field {
+    width: 100%;
+    display: block;
+    border-radius: 1px;
+    overflow: hidden;
+  }
+  .still__field svg { width: 100%; height: auto; display: block; }
+  .still__colophon {
+    margin-top: 1rem;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    opacity: 0.85;
+  }
+  .still__colophon .still__num {
+    color: var(--ink);
+    opacity: 0.65;
+  }
+  .body-grid--resumed { margin-top: 0; }
+
+  /* Secondary diagram (page comparison) */
+  .figure-2 { margin: 2.5rem 0; border: 1px solid var(--rule); background: var(--paper); padding: 1.5rem; }
+  .figure-2__head { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); font-weight: 500; margin-bottom: 0.25rem; }
+  .figure-2__title { font-family: var(--body); font-style: italic; font-size: 14.5px; line-height: 1.4; color: var(--ink); opacity: 0.85; margin: 0 0 1rem; }
+  .figure-2 svg { width: 100%; height: auto; display: block; }
+  .figure-2__caption { font-family: var(--mono); font-size: 10px; letter-spacing: 0.02em; line-height: 1.6; color: var(--sage); margin-top: 0.85rem; }
+
+  /* Arabic section */
+  .arabic-section { margin: 4rem 0 3rem; padding: 2.5rem 2rem; background: var(--paper); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 2fr 7fr 3fr; gap: 3rem; }
+  .arabic-section__label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); font-weight: 500; }
+  .arabic-section__label-en { margin-top: 0.5rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.65; }
+  .arabic-body { direction: rtl; text-align: right; }
+  .arabic-body h3 { font-family: var(--arabic); font-weight: 700; font-size: 30px; line-height: 1.35; margin: 0 0 1.25rem; color: var(--ink); }
+  .arabic-body p { font-family: var(--arabic); font-size: 20px; line-height: 1.9; margin: 0 0 1rem; color: var(--ink); }
+  .arabic-body .pullquote-ar { font-family: var(--arabic); font-size: 24px; line-height: 1.6; border-right: 2px solid var(--orange); border-left: none; padding: 0.5rem 1.25rem 0.5rem 0; margin: 1.25rem 0; font-style: normal; max-width: 32ch; color: var(--ink); }
+  .arabic-section__right { font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; color: var(--sage); line-height: 1.7; }
+
+  /* Footer */
+  .article-footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; line-height: 1.8; color: var(--ink); opacity: 0.85; }
+  .article-footer h5 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); margin: 0 0 0.5rem; font-weight: 500; }
+  .article-footer p { margin: 0 0 0.4rem; }
+
+  .colophon { max-width: 1280px; margin: 3rem auto 0; padding: 1.5rem 2rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); opacity: 0.7; }
+  .colophon .issue { color: var(--orange); font-weight: 500; }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .title-block { grid-template-columns: 1fr; gap: 1.25rem; }
+    .body-grid { grid-template-columns: 1fr 8fr; gap: 2rem; }
+    .body-right { grid-column: 1 / -1; border-top: 1px solid var(--rule-soft); padding-top: 1.5rem; margin-top: 1.5rem; }
+    .arabic-section { grid-template-columns: 1fr; gap: 1.5rem; }
+    .pullquote { margin-left: 0; }
+    .object-record { grid-template-columns: repeat(2, 1fr); }
+    .still { margin-inline: 0; margin-top: 3rem; margin-bottom: 3rem; }
+    .still__colophon { flex-direction: column; gap: 0.35rem; }
+  }
+  @media (max-width: 720px) {
+    html { font-size: 16px; }
+    .article { padding: 1rem 1.25rem 3rem; }
+    .masthead__inner { grid-template-columns: 1fr; text-align: center; gap: 0.5rem; }
+    .masthead__left, .masthead__right { text-align: center; }
+    .meta-strip { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .title-block { padding-block: 2rem 1.25rem; }
+    .body-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .body-left { display: none; }
+    .body-right { margin-top: 1rem; padding-top: 1rem; }
+    .body-main p { font-size: 17.5px; }
+    .dropcap::first-letter { font-size: 4.2em; }
+    .pullquote { font-size: 23px; padding-left: 1rem; }
+    .arabic-section { padding: 1.5rem 1rem; }
+    .arabic-body h3 { font-size: 24px; }
+    .arabic-body p { font-size: 18px; }
+    .article-footer { grid-template-columns: 1fr; gap: 1.25rem; }
+    .colophon { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding-inline: 1.25rem; }
+    .object-record { grid-template-columns: 1fr 1fr; }
+    .hero-figure__frame { padding: 1rem; }
+    .hero-figure__head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__left">Issue 01 · May 2026</div>
+    <div class="masthead__center">
+      <div>
+        <span class="masthead__word">Madār</span>
+        <span class="masthead__word-ar" lang="ar" dir="rtl">مدار</span>
+      </div>
+      <div class="masthead__rule" aria-hidden="true"></div>
+    </div>
+    <div class="masthead__right">A research instrument</div>
+  </div>
+</header>
+<div class="wordmark-note">[ Wordmark to be commissioned — Cormorant Garamond + Amiri set as stand-ins ]</div>
+
+<!-- META STRIP -->
+<div class="meta-strip">
+  <span><strong>Field Note 02</strong> · Jordan · K-12 curriculum · 11 min</span>
+  <span class="coord">N 31°57′ · E 35°56′ · Amman</span>
+</div>
+
+<article class="article">
+
+  <!-- TITLE -->
+  <header class="title-block">
+    <div>
+      <div class="kicker">Field Note 02</div>
+      <div class="kicker-meta">
+        Jordan<br>
+        Amman · Irbid<br>
+        2014 – 2025<br><br>
+        By The Editors<br>
+        Object documentation: contributor TBC
+      </div>
+    </div>
+    <div>
+      <h1 class="title">The Civics Page<br><em>That changed three times.</em></h1>
+      <p class="dek">A single page of Jordan's Grade 7 civics textbook has been rewritten three times in eleven years. The three versions answer the same question — what is a citizen — in three different countries.</p>
+    </div>
+  </header>
+
+  <!-- HERO: museum-specimen object documentation -->
+  <figure class="hero-figure">
+    <div class="hero-figure__frame">
+      <div class="hero-figure__head">
+        <span><span class="num">Object 01</span> · Grade 7 civics textbook, 2018 edition</span>
+        <span class="right">Photographed for Madār · object documentation</span>
+      </div>
+
+      <!-- ===== INLINE SVG: museum specimen of a textbook on neutral ground with ruled scale ===== -->
+      <svg viewBox="0 0 920 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A single textbook photographed on a neutral ground with a fine ruled scale, labelled as a museum object.">
+        <defs>
+          <!-- subtle paper grain on the textbook cover -->
+          <pattern id="cover-grain" patternUnits="userSpaceOnUse" width="3" height="3">
+            <rect width="3" height="3" fill="#0E1B2C"/>
+            <circle cx="1.5" cy="1.5" r="0.3" fill="#1B2A3E"/>
+          </pattern>
+          <!-- shadow gradient -->
+          <linearGradient id="ground-shadow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#E8E2D0" stop-opacity="0.0"/>
+            <stop offset="100%" stop-color="#0E1B2C" stop-opacity="0.18"/>
+          </linearGradient>
+          <linearGradient id="object-shadow" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0E1B2C" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#0E1B2C" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Neutral ground -->
+        <rect x="0" y="0" width="920" height="540" fill="#FAFAF7"/>
+
+        <!-- Slight tonal ground band suggesting a flat surface -->
+        <rect x="0" y="380" width="920" height="160" fill="url(#ground-shadow)" opacity="0.55"/>
+
+        <!-- Centered label rule -->
+        <g stroke="#0E1B2C" stroke-width="0.3" opacity="0.16">
+          <line x1="80" y1="80" x2="840" y2="80"/>
+          <line x1="80" y1="460" x2="840" y2="460"/>
+          <line x1="80" y1="80" x2="80" y2="460"/>
+          <line x1="840" y1="80" x2="840" y2="460"/>
+        </g>
+
+        <!-- Cast shadow under the book -->
+        <ellipse cx="465" cy="395" rx="220" ry="14" fill="#0E1B2C" opacity="0.13"/>
+
+        <!-- ===== Textbook (front cover + slight spine) ===== -->
+        <!-- Spine (back edge sliver) -->
+        <path d="M 290,140 L 305,128 L 305,400 L 290,388 Z" fill="#1B2A3E"/>
+        <!-- Front cover -->
+        <g>
+          <rect x="290" y="140" width="350" height="248" fill="#0E1B2C"/>
+          <!-- subtle vignette -->
+          <rect x="290" y="140" width="350" height="248" fill="url(#object-shadow)" opacity="0.7"/>
+          <!-- Cover frame -->
+          <rect x="305" y="156" width="320" height="216" fill="none" stroke="#FAFAF7" stroke-width="0.6" opacity="0.55"/>
+          <!-- Coat-of-arms-shaped placeholder (abstract) -->
+          <g transform="translate(465, 200)">
+            <circle r="22" fill="none" stroke="#D94F2A" stroke-width="1.4"/>
+            <path d="M -10,-8 L 10,-8 L 14,0 L 10,8 L -10,8 L -14,0 Z" fill="none" stroke="#FAFAF7" stroke-width="0.6"/>
+          </g>
+          <!-- Arabic title on cover -->
+          <text x="465" y="270" font-family="Amiri, serif" font-size="22" font-weight="700" fill="#FAFAF7" text-anchor="middle" direction="rtl">التربية الوطنية</text>
+          <text x="465" y="295" font-family="Amiri, serif" font-size="14" fill="#FAFAF7" text-anchor="middle" opacity="0.8" direction="rtl">للصف السابع · ٢٠١٨</text>
+          <!-- Ministry stamp -->
+          <text x="465" y="345" font-family="JetBrains Mono, monospace" font-size="8" fill="#FAFAF7" text-anchor="middle" letter-spacing="0.2em" opacity="0.7">MINISTRY OF EDUCATION · HASHEMITE KINGDOM OF JORDAN</text>
+          <!-- small page-edge highlight -->
+          <line x1="640" y1="142" x2="640" y2="388" stroke="#FAFAF7" stroke-width="1" opacity="0.4"/>
+          <line x1="641" y1="143" x2="641" y2="387" stroke="#0E1B2C" stroke-width="0.4"/>
+          <line x1="642" y1="143" x2="642" y2="387" stroke="#FAFAF7" stroke-width="0.4" opacity="0.25"/>
+        </g>
+
+        <!-- Page-block edge (suggests thickness) -->
+        <g>
+          <rect x="640" y="143" width="6" height="245" fill="#E8E2D0"/>
+          <line x1="640" y1="143" x2="640" y2="388" stroke="#0E1B2C" stroke-width="0.5" opacity="0.5"/>
+          <line x1="646" y1="143" x2="646" y2="388" stroke="#0E1B2C" stroke-width="0.5" opacity="0.3"/>
+          <!-- pages striations -->
+          <g stroke="#0E1B2C" stroke-width="0.25" opacity="0.4">
+            <line x1="640" y1="160" x2="646" y2="160"/>
+            <line x1="640" y1="180" x2="646" y2="180"/>
+            <line x1="640" y1="200" x2="646" y2="200"/>
+            <line x1="640" y1="220" x2="646" y2="220"/>
+            <line x1="640" y1="240" x2="646" y2="240"/>
+            <line x1="640" y1="260" x2="646" y2="260"/>
+            <line x1="640" y1="280" x2="646" y2="280"/>
+            <line x1="640" y1="300" x2="646" y2="300"/>
+            <line x1="640" y1="320" x2="646" y2="320"/>
+            <line x1="640" y1="340" x2="646" y2="340"/>
+            <line x1="640" y1="360" x2="646" y2="360"/>
+          </g>
+        </g>
+
+        <!-- ===== Dimensional callouts (museum-instrument style) ===== -->
+        <!-- Height callout (right side) -->
+        <g stroke="#0E1B2C" stroke-width="0.6" fill="none">
+          <line x1="685" y1="140" x2="700" y2="140"/>
+          <line x1="685" y1="388" x2="700" y2="388"/>
+          <line x1="693" y1="140" x2="693" y2="388"/>
+          <polygon points="693,140 690,148 696,148" fill="#0E1B2C"/>
+          <polygon points="693,388 690,380 696,380" fill="#0E1B2C"/>
+        </g>
+        <text x="705" y="268" font-family="JetBrains Mono, monospace" font-size="10" fill="#0E1B2C">240 mm</text>
+
+        <!-- Width callout (top) -->
+        <g stroke="#0E1B2C" stroke-width="0.6" fill="none">
+          <line x1="290" y1="125" x2="290" y2="110"/>
+          <line x1="646" y1="125" x2="646" y2="110"/>
+          <line x1="290" y1="117" x2="646" y2="117"/>
+          <polygon points="290,117 298,114 298,120" fill="#0E1B2C"/>
+          <polygon points="646,117 638,114 638,120" fill="#0E1B2C"/>
+        </g>
+        <text x="468" y="105" font-family="JetBrains Mono, monospace" font-size="10" fill="#0E1B2C" text-anchor="middle">175 mm</text>
+
+        <!-- ===== Scale bar across bottom — the macron-as-scale gesture ===== -->
+        <g transform="translate(220, 450)">
+          <line x1="0" y1="0" x2="500" y2="0" stroke="#0E1B2C" stroke-width="1.2"/>
+          <!-- tick marks every 50 -->
+          <g stroke="#0E1B2C" stroke-width="1.2">
+            <line x1="0"   y1="-5" x2="0"   y2="5"/>
+            <line x1="500" y1="-5" x2="500" y2="5"/>
+          </g>
+          <g stroke="#0E1B2C" stroke-width="0.7">
+            <line x1="50"  y1="-3" x2="50"  y2="3"/>
+            <line x1="100" y1="-3" x2="100" y2="3"/>
+            <line x1="150" y1="-3" x2="150" y2="3"/>
+            <line x1="200" y1="-3" x2="200" y2="3"/>
+            <line x1="250" y1="-4" x2="250" y2="4"/>
+            <line x1="300" y1="-3" x2="300" y2="3"/>
+            <line x1="350" y1="-3" x2="350" y2="3"/>
+            <line x1="400" y1="-3" x2="400" y2="3"/>
+            <line x1="450" y1="-3" x2="450" y2="3"/>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" text-anchor="middle">
+            <text x="0"   y="16">0</text>
+            <text x="100" y="16">50</text>
+            <text x="250" y="16">125 mm</text>
+            <text x="400" y="16">200</text>
+            <text x="500" y="16">250</text>
+          </g>
+        </g>
+
+        <!-- ===== Pointer + leader to the page being discussed ===== -->
+        <g stroke="#D94F2A" stroke-width="1" fill="none">
+          <line x1="465" y1="290" x2="465" y2="320"/>
+          <circle cx="465" cy="320" r="3" fill="#D94F2A" stroke="none"/>
+          <path d="M 465,320 L 465,420 L 770,420" stroke-dasharray="2 2"/>
+        </g>
+        <text x="775" y="423" font-family="JetBrains Mono, monospace" font-size="9" fill="#D94F2A">→ p. 42</text>
+
+        <!-- ===== Top-right run header ===== -->
+        <g font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.7">
+          <text x="840" y="20" text-anchor="end">OBJECT RECORD · MADĀR · 2026</text>
+        </g>
+
+        <!-- ===== Object catalogue number ===== -->
+        <text x="80" y="20" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0E1B2C" opacity="0.7" letter-spacing="0.12em">M.JO.CIV.2018.001</text>
+        <text x="80" y="510" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" letter-spacing="0.04em">scale bar · 1:1 reproduction · units in millimetres</text>
+      </svg>
+
+      <!-- Object record (museum label) -->
+      <div class="object-record" aria-label="Object record">
+        <div>
+          <h6>Object</h6>
+          <p>Grade 7 Civics<br><span lang="ar" dir="rtl">التربية الوطنية</span></p>
+        </div>
+        <div>
+          <h6>Edition</h6>
+          <p>2018 · 1st revised printing</p>
+        </div>
+        <div>
+          <h6>Publisher</h6>
+          <p>National Centre for Curriculum Development, Amman</p>
+        </div>
+        <div>
+          <h6>Dimensions</h6>
+          <p>240 × 175 × 12 mm<br>184 pages · paperback</p>
+        </div>
+      </div>
+
+    </div>
+    <figcaption class="hero-figure__foot">
+      One physical copy of the Grade 7 civics textbook in use in Jordanian public schools between 2018 and 2022. Photographed on a neutral ground with a millimetre scale. The orange marker points to page 42 — the page of this study. Two other editions (2014, 2023) sit on the same desk in Madār's working file; their pages 42 are the subject of Figure 02, below.
+      <span class="credit">Object documentation for Madār by [Photographer name to be commissioned] · object on loan from a private collection, Amman, May 2026.</span>
+    </figcaption>
+  </figure>
+
+  <!-- BODY GRID -->
+  <div class="body-grid">
+
+    <aside class="body-left">
+      <p><span class="num">¹</span> The 2014 edition opens the chapter with: <em>"The citizen is the one who carries the duties of the Kingdom."</em><span class="ref">— Grade 7 Civics, 2014, p. 42.</span></p>
+      <p><span class="num">²</span> The 2018 edition opens the same chapter with: <em>"The citizen is the one who participates in the public life of the Kingdom."</em><span class="ref">— Grade 7 Civics, 2018, p. 42.</span></p>
+      <p><span class="num">³</span> The 2023 edition opens the chapter with: <em>"The citizen is the one who knows their rights, their duties, and the institutions through which both are practised."</em><span class="ref">— Grade 7 Civics, 2023, p. 42.</span></p>
+      <p><span class="num">⁴</span> Conversation with R. Khoury, curriculum specialist, NCCD, Amman, by video, April 2026.</p>
+    </aside>
+
+    <div class="body-main">
+      <p class="dropcap">Three copies of the same textbook sit on the desk in front of us. They look almost identical — the same Ministry of Education shield, the same dimensions to the millimetre, the same modest cover stock that has been the house style of Jordan's National Centre for Curriculum Development (NCCD) for at least twenty years. The differences are inside. Specifically, they are on page 42, which in all three editions opens the chapter titled, in Arabic, <em>"What is a citizen?"</em></p>
+
+      <p>The 2014 edition opens the chapter with one sentence: <em>"The citizen is the one who carries the duties of the Kingdom."</em><sup>1</sup> Duties first. The chapter that follows runs to nine pages and lists those duties: military service for men, taxation, civic order. Rights appear later in the book, in a different chapter, structured as a closing list.</p>
+
+      <p>The 2018 edition opens with a sentence the curriculum specialists rewrote during a six-month consultation that included, unusually, two rounds of feedback from a sample of Grade 7 teachers in Irbid and Zarqa.<sup>4</sup> <em>"The citizen is the one who participates in the public life of the Kingdom."</em><sup>2</sup> Participation moves to the front. Duties remain. The chapter is no longer than the 2014 version, but it has been reorganized: rights and duties share the same opening pages, the language of "participation" carries the chapter's argument, and one new paragraph names the National Centre for Human Rights — a body that did not appear in the 2014 chapter at all.</p>
+
+      <h2 class="subhead">The 2023 sentence</h2>
+
+      <p>The 2023 edition's opening sentence is longer than its predecessors and more specific: <em>"The citizen is the one who knows their rights, their duties, and the institutions through which both are practised."</em><sup>3</sup> The chapter that follows it is fourteen pages — five longer than 2014. The new pages do not add new duties. They add named institutions: the National Centre for Human Rights, the Independent Election Commission, the Royal Hashemite Court's office of complaints, the municipal councils. Each is given a paragraph. Each paragraph ends with a working URL.</p>
+
+      <div class="pullquote">
+        "Civics in Jordan used to be a list of duties. It is becoming a map of institutions. The change is not rhetorical."
+        <cite>— R. Khoury, NCCD · Amman, April 2026</cite>
+      </div>
+
+      <p>R. Khoury, a curriculum specialist at the NCCD who worked on the 2018 and 2023 revisions, told Madār in April that the shift between editions was deliberate and incremental.<sup>4</sup> "Civics in Jordan used to be a list of duties," she said. "It is becoming a map of institutions. The change is not rhetorical."</p>
+
+      <p>Whether the change reaches classrooms is a separate question. Two Grade 7 teachers in Amman who agreed to speak to us on background reported that the 2023 edition is in use, but that the 2014 framing — duties first — remains the dominant teaching frame, in part because the available teacher training has not kept pace with the textbook revision cycle. One of them said it more directly: <em>"The book changed in 2023. The lesson plan I inherited from my predecessor did not."</em></p>
+
+      </div>
+    </div>
+
+    <!-- ============== THE STILL · §4b (v0.4, 2026-05-25 — redrawn) ============== -->
+    <!-- The Still is now THREE continuous calligraphic lines in three colours,
+         each drawing the same open textbook page in a slightly offset position.
+         The viewer sees three editions of one continuous gesture — the same page
+         changed three times — encoded as a palimpsest of ink, sage, and orange.
+         No filled volumes, no atmospheric strata, no gradients: the lines ARE
+         the image, the ground is paper-cream. This is the Still that earns the
+         multi-line, multi-colour move (Vini's invitation, 2026-05-25).
+         Inspiration: the way an Arabic letter flows from initial to final form
+         as one unlifted gesture — repeated three times here, in three colours. -->
+    <figure class="still" aria-label="The Still for Field Note 02 — Jordan. Three continuous calligraphic lines, in three colours (ink, sage, kiln-orange), drawing the same open textbook page in three slightly offset positions — three editions of the same gesture, encoding the civics page that changed three times.">
+      <div class="still__field">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1200 600"
+             preserveAspectRatio="xMidYMid slice"
+             role="img"
+             aria-label="Three continuous calligraphic lines, in three colours, drawing the same open textbook page in slightly offset positions — three editions of the same gesture, encoding the civics page that changed three times.">
+
+          <title>The Still · Jordan — the civics page that changed three times</title>
+          <desc>Three continuous lines drawn from beginning to end without lifting the pen, each one rendering the same open textbook page in slightly different positions and ink colours. The viewer sees three editions of one continuous gesture, layered as a palimpsest — the page changed three times. No filled volumes; the lines are the image; the ground is paper-cream.</desc>
+
+          <!-- Paper-cream ground. -->
+          <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+          <!--
+            ============================================================
+            THREE CONTINUOUS GESTURES OF THE SAME OPEN TEXTBOOK PAGE.
+            Each gesture draws:
+               1) the spine of an open book (a soft vertical kink)
+               2) the left page outline
+               3) the right page outline
+               4) ruled writing lines on the left page (short horizontal strokes)
+               5) ruled writing lines on the right page
+               6) a small marginal mark (the change-mark)
+            Each gesture is one path. The three layers are offset by ~10px
+            in x and ~6px in y, creating the palimpsest of three editions.
+            Colours: ink (first / oldest edition), sage (second edition),
+            kiln-orange (third / current edition). Variable stroke weight
+            by stacking each gesture at widths 2.4 / 1.4 / 0.7.
+            ============================================================
+          -->
+
+          <!-- EDITION 1 — ink. Oldest, deepest in the stack. -->
+          <g id="edition-1"
+             fill="none"
+             stroke="#1A2B3C"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             transform="translate(0,0)">
+
+            <path stroke-width="2.6" stroke-opacity="0.85" d="
+              M 240 188
+              C 264 184 304 180 360 178
+              C 442 175 540 174 600 174
+              L 600 178
+              C 658 174 754 175 836 178
+              C 892 180 932 184 956 188
+              C 962 189 966 196 962 202
+              C 950 222 942 248 938 282
+              C 932 326 932 366 936 408
+              C 940 442 948 466 960 480
+              C 964 484 962 490 956 492
+              C 928 500 880 506 824 510
+              C 750 514 668 514 600 510
+              L 600 506
+              C 532 514 450 514 376 510
+              C 320 506 272 500 244 492
+              C 238 490 236 484 240 480
+              C 252 466 260 442 264 408
+              C 268 366 268 326 262 282
+              C 258 248 250 222 238 202
+              C 234 196 234 190 240 188 Z
+            "/>
+            <path stroke-width="1.4" stroke-opacity="0.62" d="
+              M 244 192
+              C 268 188 308 184 362 182
+              C 444 179 540 178 598 178
+              L 598 182
+              C 660 178 754 179 834 182
+              C 888 184 928 188 952 192
+              C 958 193 962 200 958 206
+              C 946 226 938 252 934 286
+              C 928 328 928 366 932 408
+              C 936 442 944 466 956 480
+              C 960 484 958 488 952 490
+              C 924 498 876 504 822 508
+            "/>
+            <path stroke-width="0.7" stroke-opacity="0.42" d="
+              M 248 196
+              C 270 192 310 188 364 186
+              C 446 183 540 182 598 182
+            "/>
+
+            <!-- ruled writing — left page (long calligraphic horizontal strokes) -->
+            <path stroke-width="1.6" stroke-opacity="0.70" d="
+              M 288 248 C 336 246 432 244 540 246
+              M 288 282 C 340 280 432 278 540 280
+              M 288 316 C 336 314 410 312 502 314
+              M 288 350 C 340 348 432 346 540 348
+              M 288 384 C 332 382 414 380 502 382
+              M 288 418 C 340 416 420 414 510 416
+              M 288 452 C 338 450 414 448 494 450
+            "/>
+            <path stroke-width="0.8" stroke-opacity="0.45" d="
+              M 290 250 C 338 248 432 246 540 248
+              M 290 284 C 342 282 432 280 540 282
+              M 290 318 C 338 316 410 314 502 316
+              M 290 352 C 342 350 432 348 540 350
+              M 290 386 C 334 384 414 382 502 384
+              M 290 420 C 342 418 420 416 510 418
+            "/>
+            <!-- ruled writing — right page -->
+            <path stroke-width="1.6" stroke-opacity="0.70" d="
+              M 658 248 C 706 246 802 244 910 246
+              M 658 282 C 710 280 802 278 910 280
+              M 658 316 C 706 314 780 312 872 314
+              M 658 350 C 710 348 802 346 910 348
+              M 658 384 C 702 382 784 380 872 382
+              M 658 418 C 710 416 790 414 880 416
+              M 658 452 C 708 450 784 448 864 450
+            "/>
+            <path stroke-width="0.8" stroke-opacity="0.45" d="
+              M 660 250 C 708 248 802 246 910 248
+              M 660 284 C 712 282 802 280 910 282
+              M 660 318 C 708 316 780 314 872 316
+              M 660 352 C 712 350 802 348 910 350
+              M 660 386 C 704 384 784 382 872 384
+              M 660 420 C 712 418 790 416 880 418
+            "/>
+
+            <!-- the marginal change-mark (a small calligraphic notation) -->
+            <path stroke-width="2.0" stroke-opacity="0.80" d="
+              M 545 310 C 558 304 568 298 574 290
+              M 545 326 C 562 332 572 340 576 350
+            "/>
+          </g>
+
+          <!-- EDITION 2 — sage. Offset slightly right and down. -->
+          <g id="edition-2"
+             fill="none"
+             stroke="#7A8471"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             transform="translate(14,8)">
+
+            <path stroke-width="2.6" stroke-opacity="0.75" d="
+              M 240 188
+              C 268 184 308 180 362 178
+              C 444 175 540 174 600 174
+              L 600 178
+              C 658 174 752 175 834 178
+              C 888 180 928 184 952 188
+              C 958 189 962 196 958 202
+              C 946 222 938 248 934 282
+              C 928 326 928 366 932 408
+              C 936 442 944 466 956 480
+              C 960 484 958 490 952 492
+              C 924 500 876 506 822 510
+              C 750 514 668 514 600 510
+              L 600 506
+              C 532 514 450 514 376 510
+              C 320 506 272 500 244 492
+              C 238 490 236 484 240 480
+              C 252 466 260 442 264 408
+              C 268 366 268 326 262 282
+              C 258 248 250 222 238 202
+              C 234 196 234 190 240 188 Z
+            "/>
+            <path stroke-width="1.4" stroke-opacity="0.55" d="
+              M 244 192
+              C 268 188 308 184 362 182
+              C 444 179 540 178 598 178
+              L 598 182
+              C 660 178 754 179 832 182
+              C 886 184 926 188 950 192
+            "/>
+
+            <path stroke-width="1.5" stroke-opacity="0.60" d="
+              M 290 250 C 338 248 434 246 542 248
+              M 290 284 C 342 282 434 280 542 282
+              M 290 318 C 338 316 412 314 504 316
+              M 290 352 C 342 350 434 348 542 350
+              M 290 386 C 334 384 414 382 502 384
+              M 290 420 C 342 418 422 416 512 418
+              M 290 454 C 340 452 414 450 494 452
+            "/>
+            <path stroke-width="1.5" stroke-opacity="0.60" d="
+              M 660 250 C 708 248 804 246 912 248
+              M 660 284 C 712 282 804 280 912 282
+              M 660 318 C 708 316 782 314 874 316
+              M 660 352 C 712 350 804 348 912 350
+              M 660 386 C 704 384 786 382 874 384
+              M 660 420 C 712 418 792 416 882 418
+              M 660 454 C 708 452 784 450 866 452
+            "/>
+
+            <!-- marginal change-mark — second edition, different position -->
+            <path stroke-width="2.0" stroke-opacity="0.72" d="
+              M 622 232 C 632 228 640 222 644 214
+              M 622 248 C 638 254 646 262 650 270
+            "/>
+          </g>
+
+          <!-- EDITION 3 — kiln-orange. The newest, top of the palimpsest. -->
+          <g id="edition-3"
+             fill="none"
+             stroke="#D94F2A"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             transform="translate(28,16)">
+
+            <path stroke-width="2.4" stroke-opacity="0.70" d="
+              M 240 188
+              C 264 184 304 180 360 178
+              C 442 175 540 174 600 174
+              L 600 178
+              C 658 174 754 175 836 178
+              C 892 180 932 184 956 188
+              C 962 189 966 196 962 202
+              C 950 222 942 248 938 282
+              C 932 326 932 366 936 408
+              C 940 442 948 466 960 480
+              C 964 484 962 490 956 492
+              C 928 500 880 506 824 510
+              C 750 514 668 514 600 510
+              L 600 506
+              C 532 514 450 514 376 510
+              C 320 506 272 500 244 492
+              C 238 490 236 484 240 480
+              C 252 466 260 442 264 408
+              C 268 366 268 326 262 282
+              C 258 248 250 222 238 202
+              C 234 196 234 190 240 188 Z
+            "/>
+            <path stroke-width="1.3" stroke-opacity="0.52" d="
+              M 244 192
+              C 268 188 308 184 362 182
+              C 444 179 540 178 598 178
+              L 598 182
+              C 660 178 754 179 834 182
+            "/>
+
+            <path stroke-width="1.4" stroke-opacity="0.55" d="
+              M 290 250 C 338 248 434 246 542 248
+              M 290 284 C 342 282 434 280 542 282
+              M 290 318 C 338 316 412 314 504 316
+              M 290 352 C 342 350 434 348 542 350
+              M 290 386 C 334 384 414 382 502 384
+              M 290 420 C 342 418 422 416 512 418
+              M 290 454 C 340 452 414 450 494 452
+            "/>
+            <path stroke-width="1.4" stroke-opacity="0.55" d="
+              M 660 250 C 708 248 804 246 912 248
+              M 660 284 C 712 282 804 280 912 282
+              M 660 318 C 708 316 782 314 874 316
+              M 660 352 C 712 350 804 348 912 350
+              M 660 386 C 704 384 786 382 874 384
+              M 660 420 C 712 418 792 416 882 418
+              M 660 454 C 708 452 784 450 866 452
+            "/>
+
+            <!-- marginal change-mark — third edition. A small calligraphic
+                 flourish in orange, looping back over previous marks. -->
+            <path stroke-width="2.0" stroke-opacity="0.78" d="
+              M 552 380 C 568 374 580 366 588 354
+              C 596 342 600 332 596 322
+              M 552 396 C 572 402 588 412 596 426
+            "/>
+          </g>
+
+        </svg>
+      </div>
+
+      <figcaption class="still__colophon">
+        <span><span class="still__num">سكون · The Still</span> &nbsp;·&nbsp; Field Note 02 · Jordan</span>
+        <span>Made in-house for Madār · 2026</span>
+      </figcaption>
+    </figure>
+
+    <!-- resume body grid for the rest of the article -->
+    <div class="body-grid body-grid--resumed">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main">
+
+      <h2 class="subhead">Three pages 42, side by side</h2>
+
+      <p>Below, the three editions' page 42 are reproduced as line diagrams — the layout, the headers, the position of the opening sentence and the diagrams the page carries. The cover and the binding are nearly identical across editions; the page is where the country's working answer to a single question has actually moved.</p>
+
+      <!-- Figure 02: three side-by-side page diagrams -->
+      <figure class="figure-2">
+        <div class="figure-2__head">Figure 02 · Page 42 across three editions</div>
+        <p class="figure-2__title">Schematic of layout — header position, opening sentence position, and number of named institutions on the page.</p>
+
+        <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three diagrammatic representations of page 42 across the 2014, 2018, and 2023 editions.">
+          <!-- 2014 page -->
+          <g transform="translate(40, 30)">
+            <rect x="0" y="0" width="180" height="290" fill="#FAFAF7" stroke="#0E1B2C" stroke-width="0.8"/>
+            <text x="90" y="-8" font-family="JetBrains Mono, monospace" font-size="10" fill="#0E1B2C" text-anchor="middle">2014</text>
+            <!-- header band -->
+            <rect x="14" y="14" width="152" height="14" fill="#0E1B2C"/>
+            <!-- opening sentence -->
+            <rect x="14" y="40" width="120" height="6" fill="#0E1B2C" opacity="0.75"/>
+            <rect x="14" y="50" width="100" height="6" fill="#0E1B2C" opacity="0.55"/>
+            <!-- body lines -->
+            <g fill="#0E1B2C" opacity="0.35">
+              <rect x="14" y="70" width="152" height="3"/>
+              <rect x="14" y="78" width="152" height="3"/>
+              <rect x="14" y="86" width="142" height="3"/>
+              <rect x="14" y="94" width="152" height="3"/>
+              <rect x="14" y="102" width="120" height="3"/>
+              <rect x="14" y="114" width="152" height="3"/>
+              <rect x="14" y="122" width="148" height="3"/>
+              <rect x="14" y="130" width="100" height="3"/>
+              <rect x="14" y="146" width="152" height="3"/>
+              <rect x="14" y="154" width="138" height="3"/>
+              <rect x="14" y="162" width="152" height="3"/>
+              <rect x="14" y="174" width="60" height="3"/>
+            </g>
+            <!-- "duties" marker -->
+            <circle cx="22" cy="48" r="3.5" fill="#D94F2A"/>
+            <text x="30" y="51" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">opens: "duties"</text>
+            <!-- folio -->
+            <text x="90" y="280" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" text-anchor="middle">— 42 —</text>
+            <!-- institutions count -->
+            <text x="14" y="240" font-family="JetBrains Mono, monospace" font-size="9" fill="#7A8471">named inst. on page: 0</text>
+          </g>
+
+          <!-- 2018 page -->
+          <g transform="translate(280, 30)">
+            <rect x="0" y="0" width="180" height="290" fill="#FAFAF7" stroke="#0E1B2C" stroke-width="0.8"/>
+            <text x="90" y="-8" font-family="JetBrains Mono, monospace" font-size="10" fill="#0E1B2C" text-anchor="middle">2018</text>
+            <rect x="14" y="14" width="152" height="14" fill="#0E1B2C"/>
+            <rect x="14" y="40" width="140" height="6" fill="#0E1B2C" opacity="0.75"/>
+            <rect x="14" y="50" width="120" height="6" fill="#0E1B2C" opacity="0.55"/>
+            <g fill="#0E1B2C" opacity="0.35">
+              <rect x="14" y="70" width="152" height="3"/>
+              <rect x="14" y="78" width="152" height="3"/>
+              <rect x="14" y="86" width="148" height="3"/>
+              <rect x="14" y="94" width="152" height="3"/>
+              <rect x="14" y="102" width="130" height="3"/>
+              <rect x="14" y="114" width="152" height="3"/>
+              <rect x="14" y="122" width="138" height="3"/>
+              <rect x="14" y="130" width="148" height="3"/>
+              <rect x="14" y="142" width="152" height="3"/>
+            </g>
+            <!-- pull-out box (new in 2018) -->
+            <rect x="14" y="156" width="152" height="40" fill="none" stroke="#7A8471" stroke-width="0.8"/>
+            <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">National Centre for</text>
+            <text x="20" y="180" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">Human Rights</text>
+            <g fill="#0E1B2C" opacity="0.35">
+              <rect x="14" y="210" width="152" height="3"/>
+              <rect x="14" y="218" width="100" height="3"/>
+            </g>
+            <circle cx="22" cy="48" r="3.5" fill="#D94F2A"/>
+            <text x="30" y="51" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">opens: "participates"</text>
+            <text x="90" y="280" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" text-anchor="middle">— 42 —</text>
+            <text x="14" y="240" font-family="JetBrains Mono, monospace" font-size="9" fill="#7A8471">named inst. on page: 1</text>
+          </g>
+
+          <!-- 2023 page -->
+          <g transform="translate(520, 30)">
+            <rect x="0" y="0" width="180" height="290" fill="#FAFAF7" stroke="#0E1B2C" stroke-width="0.8"/>
+            <text x="90" y="-8" font-family="JetBrains Mono, monospace" font-size="10" fill="#0E1B2C" text-anchor="middle">2023</text>
+            <rect x="14" y="14" width="152" height="14" fill="#0E1B2C"/>
+            <rect x="14" y="40" width="150" height="6" fill="#0E1B2C" opacity="0.75"/>
+            <rect x="14" y="50" width="138" height="6" fill="#0E1B2C" opacity="0.55"/>
+            <rect x="14" y="60" width="92"  height="6" fill="#0E1B2C" opacity="0.4"/>
+            <g fill="#0E1B2C" opacity="0.35">
+              <rect x="14" y="78" width="152" height="3"/>
+              <rect x="14" y="86" width="148" height="3"/>
+              <rect x="14" y="94" width="152" height="3"/>
+            </g>
+            <!-- institution blocks (4 named) -->
+            <g>
+              <rect x="14" y="108" width="72" height="22" fill="none" stroke="#7A8471" stroke-width="0.7"/>
+              <text x="18" y="118" font-family="JetBrains Mono, monospace" font-size="7" fill="#0E1B2C">NCHR</text>
+              <text x="18" y="126" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#0E1B2C" opacity="0.6">human rights</text>
+              <rect x="94" y="108" width="72" height="22" fill="none" stroke="#7A8471" stroke-width="0.7"/>
+              <text x="98" y="118" font-family="JetBrains Mono, monospace" font-size="7" fill="#0E1B2C">IEC</text>
+              <text x="98" y="126" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#0E1B2C" opacity="0.6">elections</text>
+              <rect x="14" y="136" width="72" height="22" fill="none" stroke="#7A8471" stroke-width="0.7"/>
+              <text x="18" y="146" font-family="JetBrains Mono, monospace" font-size="7" fill="#0E1B2C">RHCO</text>
+              <text x="18" y="154" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#0E1B2C" opacity="0.6">complaints</text>
+              <rect x="94" y="136" width="72" height="22" fill="none" stroke="#7A8471" stroke-width="0.7"/>
+              <text x="98" y="146" font-family="JetBrains Mono, monospace" font-size="7" fill="#0E1B2C">MUNI</text>
+              <text x="98" y="154" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#0E1B2C" opacity="0.6">municipal</text>
+            </g>
+            <g fill="#0E1B2C" opacity="0.35">
+              <rect x="14" y="172" width="152" height="3"/>
+              <rect x="14" y="180" width="148" height="3"/>
+              <rect x="14" y="188" width="80" height="3"/>
+            </g>
+            <circle cx="22" cy="48" r="3.5" fill="#D94F2A"/>
+            <text x="30" y="51" font-family="JetBrains Mono, monospace" font-size="8" fill="#0E1B2C">opens: "knows rights..."</text>
+            <text x="90" y="280" font-family="JetBrains Mono, monospace" font-size="9" fill="#0E1B2C" text-anchor="middle">— 42 —</text>
+            <text x="14" y="240" font-family="JetBrains Mono, monospace" font-size="9" fill="#7A8471">named inst. on page: 4</text>
+          </g>
+
+          <!-- baseline rule -->
+          <line x1="40" y1="340" x2="700" y2="340" stroke="#0E1B2C" stroke-width="0.5" opacity="0.4"/>
+          <text x="370" y="354" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#7A8471" text-anchor="middle" letter-spacing="0.08em">— ELEVEN YEARS · ONE PAGE —</text>
+        </svg>
+
+        <p class="figure-2__caption">
+          Schematic of page 42 across the three editions held in Madār's working file. Header band, body type, named institutions, and folio are drawn to scale. The orange marker indicates the opening sentence of the chapter; the sage outlines indicate institutional callouts new to each edition.
+        </p>
+      </figure>
+
+      <h2 class="subhead">What to watch</h2>
+
+      <p>The fourth edition of the textbook is, according to NCCD's published revision cycle, scheduled for 2027. Madār has asked to see the draft chapter on citizenship when one exists. Three things are worth watching when it does. First, whether "duties" returns to the opening sentence, as it would if the political conjuncture changes. Second, whether the named institutions on page 42 multiply or thin out — the count is the most legible single signal of where the curriculum sits on the spectrum between civic literacy and civic participation. Third, whether the teacher-training cycle catches up. Three editions of a textbook are only three editions of a country if the people teaching from them have been brought along.</p>
+
+    </div>
+
+    <aside class="body-right">
+      <h4>In the file</h4>
+      <p>Three physical copies, Grade 7 Civics, NCCD, editions of 2014, 2018, 2023. On loan from a private collection in Amman, May 2026.</p>
+
+      <h4>Named in this piece</h4>
+      <p>R. Khoury, curriculum specialist, National Centre for Curriculum Development. Video interview, April 2026.</p>
+      <p>Two Grade 7 teachers in Amman, on background, who asked not to be named while they remain in service.</p>
+
+      <h4>NCCD</h4>
+      <p>National Centre for Curriculum Development — Jordan's curriculum body since 2017, when it absorbed the previous textbook unit at the Ministry of Education.</p>
+
+      <h4>Read next</h4>
+      <p>In <em>Issue 02:</em> the same study, but the Grade 7 history textbook — which has been revised twice in the same period, on a different schedule.</p>
+    </aside>
+
+  </div>
+
+  <!-- ARABIC SECTION -->
+  <section class="arabic-section">
+    <div>
+      <div class="arabic-section__label">قراءة عربية</div>
+      <div class="arabic-section__label-en">An Arabic reading — the same argument, written for our Arabic-language readers. Not a translation; a parallel paragraph.</div>
+    </div>
+    <div class="arabic-body" lang="ar" dir="rtl">
+      <h3>صفحةٌ واحدة، ثلاثُ بلدان</h3>
+      <p>
+        على المكتبِ ثلاثُ نُسخٍ من كتابٍ مدرسيٍّ واحد: التربيةُ الوطنيّةُ للصفِّ السابع، طبعاتُ الأعوامِ 2014 و2018 و2023. الغلافُ شبه نفسِه. القياساتُ متطابقة. الفارقُ في الداخل، وبالتحديدِ في الصفحةِ الثانيةِ والأربعين، التي يَفتتحُ بها الفصلُ سؤالاً واحداً: «ما المواطنُ؟»
+      </p>
+      <p>
+        في طبعةِ 2014 تَقولُ الجملةُ الأولى: «المواطنُ هو من يَحملُ واجباتِ المملكة». في 2018: «المواطنُ هو من يُشاركُ في الحياةِ العامّةِ في المملكة». في 2023: «المواطنُ هو من يَعرفُ حقوقَه وواجباتِه والمؤسّساتِ التي تُمارَسُ من خلالها».
+      </p>
+      <blockquote class="pullquote-ar">
+        «التربيةُ المدنيّةُ في الأردنِّ كانت قائمةَ واجبات. هي تتحوّلُ إلى خارطةِ مؤسّسات.»
+      </blockquote>
+      <p>
+        قالت رنا الخوري، المتخصّصةُ في تطويرِ المناهجِ بالمركزِ الوطنيّ لتطويرِ المناهج، لـ«مدار» في نيسان / أبريل: «التغييرُ ليس بلاغياً. هو هيكليّ.» المسألةُ، كما تَطرحُها على المعلّمين الذين تعرفُهم في إربد والزرقاء، ليست ما تَكتبُه الوزارةُ في الكتاب، بل ما يَصلُ من الكتابِ إلى الفصلِ المدرسيِّ، وما يَبقى في خِطّةِ الدرسِ التي يُورِّثُها معلّمٌ لمن يَخلفُه.
+      </p>
+    </div>
+    <aside class="arabic-section__right">
+      <p>هامش<br>الفِقرةُ العربيّةُ مكتوبةٌ تحريرياً ولا تُعدُّ ترجمةً حرفيّة.</p>
+      <p>NOTE · Madār publishes parallel Arabic paragraphs on pieces about Arabic-speaking geographies. The pull-quote here is the Arabic-language version of the body quote above; the wording is the journalist's, not a back-translation.</p>
+    </aside>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="article-footer">
+    <div>
+      <h5>Byline</h5>
+      <p>The Editors</p>
+      <p>Reported from Amman<br>April – May 2026</p>
+    </div>
+    <div>
+      <h5>Object documentation</h5>
+      <p>Object 01 + Figure 02<br>documented for Madār by<br>[Photographer / illustrator name to be commissioned]</p>
+      <p>Specimen on loan from a private collection, Amman.</p>
+    </div>
+    <div>
+      <h5>Published</h5>
+      <p>2026 · 05 · 25<br>Issue 01 · Field Note 02</p>
+      <p>Reading time ~11 min<br>Word count ~1,700</p>
+    </div>
+  </footer>
+
+</article>
+
+<!-- COLOPHON -->
+<footer class="colophon">
+  <span>Madār <span lang="ar" dir="rtl">مدار</span> · Issue 01 · <span class="issue">Field Note 02 of 12</span></span>
+  <span>© 2026 · A research instrument</span>
+</footer>
+
+</body>
+</html>

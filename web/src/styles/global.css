@@ -1,0 +1,439 @@
+/*
+ * Madār — global stylesheet
+ * Direction 02 · Field Atlas — codifies design-assets/design-system/SYSTEM.md
+ *
+ * Five-token palette. Two type families (Latin + Arabic) plus mono.
+ * Logical properties throughout (margin-inline-start, etc.) so RTL works
+ * without override CSS. A `[dir="rtl"]` block at the bottom holds the
+ * small Arabic-specific adjustments.
+ *
+ * Fonts loaded via <link> in Base.astro:
+ *   - Cormorant Garamond  (Latin display — Sectra-spirit stand-in)
+ *   - Newsreader          (Latin body)
+ *   - JetBrains Mono      (captions, marginalia, kickers, mono numerals)
+ *   - Amiri               (Arabic Naskh body + display)
+ *   - Cairo               (Arabic display alternate; used sparingly on the masthead)
+ */
+
+/* ===================================================================== */
+/* TOKENS                                                                 */
+/* ===================================================================== */
+
+:root {
+  /* ---------- Color (five tokens · SYSTEM.md §1) ---------- */
+  --color-paper:  #FAFAF7;
+  --color-ink:    #0E1B2C;
+  --color-orange: #D94F2A;
+  --color-sage:   #7A8471;
+  --color-sand:   #E8E2D0;
+
+  /* Derived rule tokens — same hue family as ink, used at calibrated opacities. */
+  --color-rule:       rgba(14, 27, 44, 0.18);
+  --color-rule-soft:  rgba(14, 27, 44, 0.08);
+  --color-muted:      rgba(14, 27, 44, 0.62);
+
+  /* ---------- Type families ---------- */
+  --font-display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, "Times New Roman", serif;
+  --font-body:    "Newsreader", "GT Sectra Text", "Charter", Georgia, "Times New Roman", serif;
+  --font-mono:    "JetBrains Mono", "IBM Plex Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-arabic:       "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", "Noto Naskh Arabic", serif;
+  --font-arabic-display: "Cairo", "Greta Arabic", "Amiri", "Geeza Pro", serif;
+
+  /* ---------- Type scale · desktop (SYSTEM.md §2) ---------- */
+  /* Step values are floors; clamp() handles the up-scaling on wider screens. */
+  --fs-display:   clamp(42px, 5.4vw, 78px);   /* Article title (hero)        */
+  --fs-h1:        clamp(36px, 4.2vw, 60px);   /* Section opener / cover      */
+  --fs-h2:        clamp(24px, 2.2vw, 30px);   /* In-article subhead          */
+  --fs-dek:       clamp(17px, 1.4vw, 21px);   /* One-sentence subhead        */
+  --fs-body:      19px;                       /* Long-form reading           */
+  --fs-pullquote: clamp(22px, 2.0vw, 28px);   /* Pull-quote (once per piece) */
+  --fs-caption:   11px;                       /* JetBrains Mono captions     */
+  --fs-marginalia:10.5px;                     /* Footnotes / source notes    */
+  --fs-kicker:    10.5px;                     /* Uppercase mono labels       */
+
+  /* ---------- Leading / tracking ---------- */
+  --lh-display: 1.02;
+  --lh-h1:      1.05;
+  --lh-h2:      1.10;
+  --lh-dek:     1.45;
+  --lh-body:    1.62;
+  --lh-caption: 1.60;
+
+  --tr-display:   -0.018em;
+  --tr-h2:        -0.012em;
+  --tr-pullquote: -0.005em;
+  --tr-kicker:    0.14em;
+  --tr-caption:   0.02em;
+
+  /* ---------- Grid (SYSTEM.md §3) ---------- */
+  --container-max: 1280px;
+  --container-pad: 2rem;
+  --measure:       40rem;       /* ~640px reading column                       */
+  --col-gap:       3rem;        /* desktop grid gutter (24px ×). visual gutter. */
+
+  /* ---------- Spacing — 8px baseline ---------- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 5rem;
+
+  /* ---------- Misc ---------- */
+  --line-strong: 1.2px;   /* hairline rule, the macron motif at full strength */
+  --line-soft:   0.6px;
+}
+
+/* ===================================================================== */
+/* RESET / BASE                                                           */
+/* ===================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+@media (min-width: 1100px) { html { font-size: 18px; } }
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: var(--lh-body);
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg { max-width: 100%; height: auto; display: block; }
+
+a {
+  color: var(--color-ink);
+  text-decoration-color: var(--color-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+a:hover { text-decoration-color: var(--color-orange); }
+a:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  margin-block: 0;
+  letter-spacing: var(--tr-h2);
+  line-height: var(--lh-h2);
+}
+h1 { font-size: var(--fs-h1); letter-spacing: var(--tr-display); line-height: var(--lh-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: 1.15rem; }
+
+p { margin-block: 0 1em; }
+
+hr.rule {
+  border: none;
+  border-block-start: 1px solid var(--color-rule);
+  margin-block: var(--space-lg);
+}
+
+/* ===================================================================== */
+/* LAYOUT PRIMITIVES                                                      */
+/* ===================================================================== */
+
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.measure { max-width: var(--measure); }
+
+/* The 3-rail article grid: left footnote rail · main column · right source rail.
+   2 / 7 / 3 ratio on desktop, collapses below 1024px. */
+.body-grid {
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+  gap: var(--col-gap);
+}
+.body-grid--resumed { margin-block-start: 0; }
+
+/* ===================================================================== */
+/* UTILITIES                                                              */
+/* ===================================================================== */
+
+.muted { color: var(--color-muted); }
+
+.small { font-size: 0.875rem; }
+
+.uppercase {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-kicker);
+  font-size: var(--fs-kicker);
+  font-weight: 500;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  letter-spacing: var(--tr-caption);
+  line-height: var(--lh-caption);
+}
+
+.sage { color: var(--color-sage); }
+.orange { color: var(--color-orange); }
+
+/* Skip link — accessibility */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: -100px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+  z-index: 100;
+}
+.skip-link:focus { inset-block-start: 0; }
+
+/* ===================================================================== */
+/* SIGNATURE COMPONENTS                                                   */
+/* ===================================================================== */
+
+/* ---- Kicker (orange uppercase mono, the survey marker) ---- */
+.kicker {
+  font-family: var(--font-mono);
+  font-size: var(--fs-kicker);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  font-weight: 500;
+}
+
+/* ---- Subhead with macron rule (SYSTEM.md §5 — the macron echoes under every H2) ---- */
+.subhead {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+  margin-block: 2.75rem 1.25rem;
+  color: var(--color-ink);
+}
+.subhead::before {
+  content: '';
+  display: block;
+  width: 38px;
+  height: 1px;
+  background: var(--color-ink);
+  margin-block-end: 0.85rem;
+}
+
+/* ---- Pullquote (one per piece; the only orange typographic event in the body) ---- */
+.pullquote {
+  margin-block: 2.5rem;
+  margin-inline-start: -2rem;
+  padding: 1.25rem 1.5rem;
+  border-inline-start: 2px solid var(--color-orange);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-pullquote);
+  line-height: 1.18;
+  letter-spacing: var(--tr-pullquote);
+  color: var(--color-ink);
+  max-width: 32ch;
+}
+.pullquote cite {
+  display: block;
+  margin-block-start: 0.85rem;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: var(--fs-marginalia);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+}
+
+/* ---- The Still (SYSTEM.md §4b) ---------------------------------------
+   Full-width painterly composition placed mid-article.
+   Breaks the body grid. No caption rail; a short mono colophon below.
+*/
+.still {
+  margin: 4.5rem -2rem 4rem;
+  padding: 0;
+  border: none;
+  display: block;
+}
+.still__field {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-radius: 1px;
+}
+.still__field svg { width: 100%; height: auto; display: block; }
+.still__colophon {
+  margin-block-start: 1rem;
+  padding-inline: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  opacity: 0.85;
+}
+.still__colophon .still__num { color: var(--color-ink); opacity: 0.65; }
+@media (min-width: 1400px) {
+  /* Optional bleed-to-edge on wider viewports */
+  .still { margin-inline: -4rem; }
+}
+
+/* ---- Pill: a small status marker (e.g., "DRAFT — sources pending") ---- */
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+/* ---- Marginalia rail (right) ---- */
+.marginalia {
+  font-family: var(--font-mono);
+  font-size: var(--fs-marginalia);
+  letter-spacing: 0.03em;
+  color: var(--color-sage);
+  line-height: 1.7;
+}
+.marginalia h4 {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin: 0 0 0.5rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.marginalia p { margin: 0 0 1.5rem; }
+
+/* ===================================================================== */
+/* RTL — Arabic-specific adjustments                                      */
+/* ===================================================================== */
+
+[dir="rtl"] {
+  font-family: var(--font-arabic);
+  line-height: 1.9;
+}
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] .title,
+[dir="rtl"] .subhead {
+  font-family: var(--font-arabic-display);
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+[dir="rtl"] .subhead::before {
+  /* the macron rule sits on the right when reading RTL */
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+[dir="rtl"] .pullquote {
+  margin-inline-start: 0;
+  margin-inline-end: -2rem;
+  border-inline-start: none;
+  border-inline-end: 2px solid var(--color-orange);
+  font-family: var(--font-arabic-display);
+  font-style: normal;
+}
+[dir="rtl"] .uppercase,
+[dir="rtl"] .kicker,
+[dir="rtl"] .mono {
+  /* Mono / uppercase Latin labels stay Latin even on the Arabic page;
+     the publication's labels are bilingual but the field-note codes are roman. */
+  font-family: var(--font-mono);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE COLLAPSE                                                    */
+/* ===================================================================== */
+
+@media (max-width: 1024px) {
+  .body-grid {
+    grid-template-columns: 1fr 8fr;
+    gap: 2rem;
+  }
+  .body-grid > .marginalia,
+  .body-grid > .body-right {
+    grid-column: 1 / -1;
+    border-block-start: 1px solid var(--color-rule-soft);
+    padding-block-start: 1.5rem;
+    margin-block-start: 1.5rem;
+  }
+  .pullquote { margin-inline-start: 0; }
+  [dir="rtl"] .pullquote { margin-inline-end: 0; }
+  .still { margin-inline: 0; }
+  .still__colophon { flex-direction: column; gap: 0.35rem; }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --container-pad: 1.25rem;
+    --fs-body: 17.5px;
+  }
+  html { font-size: 16px; }
+  .body-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .body-grid > .body-left { display: none; } /* footnotes collapse into body via sup numbers */
+  .pullquote {
+    font-size: 23px;
+    padding-inline: 1rem;
+  }
+}
+
+/* ===================================================================== */
+/* PRINT-LOOK SUBTLE GRAIN (optional, very light)                         */
+/* ===================================================================== */
+
+/* A barely-there grain on the page ground. SVG data-URI so no extra request;
+   noscript-safe; respected by users who prefer reduced motion implicitly. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { display: none; }
+}
+
+/* Make sure interactive content sits above the grain layer. */
+.skip-link,
+.site-header,
+.site-footer,
+main { position: relative; z-index: 1; }
