@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="Three continuous calligraphic lines, in three colours, drawing the same open textbook page in slightly offset positions — three editions of the same gesture, encoding the civics page that changed three times.">
+
+  <title>The Still · Jordan — the civics page that changed three times</title>
+  <desc>Three continuous lines drawn from beginning to end without lifting the pen, each one rendering the same open textbook page in slightly different positions and ink colours. The viewer sees three editions of one continuous gesture, layered as a palimpsest — the page changed three times. No filled volumes; the lines are the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    THREE CONTINUOUS GESTURES OF THE SAME OPEN TEXTBOOK PAGE.
+    Each gesture draws:
+       1) the spine of an open book (a soft vertical kink)
+       2) the left page outline
+       3) the right page outline
+       4) ruled writing lines on the left page (short horizontal strokes)
+       5) ruled writing lines on the right page
+       6) a small marginal mark (the change-mark)
+    Each gesture is one path. The three layers are offset by ~10px
+    in x and ~6px in y, creating the palimpsest of three editions.
+    Colours: ink (first / oldest edition), sage (second edition),
+    kiln-orange (third / current edition). Variable stroke weight
+    by stacking each gesture at widths 2.4 / 1.4 / 0.7.
+    ============================================================
+  -->
+
+  <!-- EDITION 1 — ink. Oldest, deepest in the stack. -->
+  <g id="edition-1"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     transform="translate(0,0)">
+
+    <path stroke-width="2.6" stroke-opacity="0.85" d="
+      M 240 188
+      C 264 184 304 180 360 178
+      C 442 175 540 174 600 174
+      L 600 178
+      C 658 174 754 175 836 178
+      C 892 180 932 184 956 188
+      C 962 189 966 196 962 202
+      C 950 222 942 248 938 282
+      C 932 326 932 366 936 408
+      C 940 442 948 466 960 480
+      C 964 484 962 490 956 492
+      C 928 500 880 506 824 510
+      C 750 514 668 514 600 510
+      L 600 506
+      C 532 514 450 514 376 510
+      C 320 506 272 500 244 492
+      C 238 490 236 484 240 480
+      C 252 466 260 442 264 408
+      C 268 366 268 326 262 282
+      C 258 248 250 222 238 202
+      C 234 196 234 190 240 188 Z
+    "/>
+    <path stroke-width="1.4" stroke-opacity="0.62" d="
+      M 244 192
+      C 268 188 308 184 362 182
+      C 444 179 540 178 598 178
+      L 598 182
+      C 660 178 754 179 834 182
+      C 888 184 928 188 952 192
+      C 958 193 962 200 958 206
+      C 946 226 938 252 934 286
+      C 928 328 928 366 932 408
+      C 936 442 944 466 956 480
+      C 960 484 958 488 952 490
+      C 924 498 876 504 822 508
+    "/>
+    <path stroke-width="0.7" stroke-opacity="0.42" d="
+      M 248 196
+      C 270 192 310 188 364 186
+      C 446 183 540 182 598 182
+    "/>
+
+    <!-- ruled writing — left page (long calligraphic horizontal strokes) -->
+    <path stroke-width="1.6" stroke-opacity="0.70" d="
+      M 288 248 C 336 246 432 244 540 246
+      M 288 282 C 340 280 432 278 540 280
+      M 288 316 C 336 314 410 312 502 314
+      M 288 350 C 340 348 432 346 540 348
+      M 288 384 C 332 382 414 380 502 382
+      M 288 418 C 340 416 420 414 510 416
+      M 288 452 C 338 450 414 448 494 450
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.45" d="
+      M 290 250 C 338 248 432 246 540 248
+      M 290 284 C 342 282 432 280 540 282
+      M 290 318 C 338 316 410 314 502 316
+      M 290 352 C 342 350 432 348 540 350
+      M 290 386 C 334 384 414 382 502 384
+      M 290 420 C 342 418 420 416 510 418
+    "/>
+    <!-- ruled writing — right page -->
+    <path stroke-width="1.6" stroke-opacity="0.70" d="
+      M 658 248 C 706 246 802 244 910 246
+      M 658 282 C 710 280 802 278 910 280
+      M 658 316 C 706 314 780 312 872 314
+      M 658 350 C 710 348 802 346 910 348
+      M 658 384 C 702 382 784 380 872 382
+      M 658 418 C 710 416 790 414 880 416
+      M 658 452 C 708 450 784 448 864 450
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.45" d="
+      M 660 250 C 708 248 802 246 910 248
+      M 660 284 C 712 282 802 280 910 282
+      M 660 318 C 708 316 780 314 872 316
+      M 660 352 C 712 350 802 348 910 350
+      M 660 386 C 704 384 784 382 872 384
+      M 660 420 C 712 418 790 416 880 418
+    "/>
+
+    <!-- the marginal change-mark (a small calligraphic notation) -->
+    <path stroke-width="2.0" stroke-opacity="0.80" d="
+      M 545 310 C 558 304 568 298 574 290
+      M 545 326 C 562 332 572 340 576 350
+    "/>
+  </g>
+
+  <!-- EDITION 2 — sage. Offset slightly right and down. -->
+  <g id="edition-2"
+     fill="none"
+     stroke="#7A8471"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     transform="translate(14,8)">
+
+    <path stroke-width="2.6" stroke-opacity="0.75" d="
+      M 240 188
+      C 268 184 308 180 362 178
+      C 444 175 540 174 600 174
+      L 600 178
+      C 658 174 752 175 834 178
+      C 888 180 928 184 952 188
+      C 958 189 962 196 958 202
+      C 946 222 938 248 934 282
+      C 928 326 928 366 932 408
+      C 936 442 944 466 956 480
+      C 960 484 958 490 952 492
+      C 924 500 876 506 822 510
+      C 750 514 668 514 600 510
+      L 600 506
+      C 532 514 450 514 376 510
+      C 320 506 272 500 244 492
+      C 238 490 236 484 240 480
+      C 252 466 260 442 264 408
+      C 268 366 268 326 262 282
+      C 258 248 250 222 238 202
+      C 234 196 234 190 240 188 Z
+    "/>
+    <path stroke-width="1.4" stroke-opacity="0.55" d="
+      M 244 192
+      C 268 188 308 184 362 182
+      C 444 179 540 178 598 178
+      L 598 182
+      C 660 178 754 179 832 182
+      C 886 184 926 188 950 192
+    "/>
+
+    <path stroke-width="1.5" stroke-opacity="0.60" d="
+      M 290 250 C 338 248 434 246 542 248
+      M 290 284 C 342 282 434 280 542 282
+      M 290 318 C 338 316 412 314 504 316
+      M 290 352 C 342 350 434 348 542 350
+      M 290 386 C 334 384 414 382 502 384
+      M 290 420 C 342 418 422 416 512 418
+      M 290 454 C 340 452 414 450 494 452
+    "/>
+    <path stroke-width="1.5" stroke-opacity="0.60" d="
+      M 660 250 C 708 248 804 246 912 248
+      M 660 284 C 712 282 804 280 912 282
+      M 660 318 C 708 316 782 314 874 316
+      M 660 352 C 712 350 804 348 912 350
+      M 660 386 C 704 384 786 382 874 384
+      M 660 420 C 712 418 792 416 882 418
+      M 660 454 C 708 452 784 450 866 452
+    "/>
+
+    <!-- marginal change-mark — second edition, different position -->
+    <path stroke-width="2.0" stroke-opacity="0.72" d="
+      M 622 232 C 632 228 640 222 644 214
+      M 622 248 C 638 254 646 262 650 270
+    "/>
+  </g>
+
+  <!-- EDITION 3 — kiln-orange. The newest, top of the palimpsest. -->
+  <g id="edition-3"
+     fill="none"
+     stroke="#D94F2A"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     transform="translate(28,16)">
+
+    <path stroke-width="2.4" stroke-opacity="0.70" d="
+      M 240 188
+      C 264 184 304 180 360 178
+      C 442 175 540 174 600 174
+      L 600 178
+      C 658 174 754 175 836 178
+      C 892 180 932 184 956 188
+      C 962 189 966 196 962 202
+      C 950 222 942 248 938 282
+      C 932 326 932 366 936 408
+      C 940 442 948 466 960 480
+      C 964 484 962 490 956 492
+      C 928 500 880 506 824 510
+      C 750 514 668 514 600 510
+      L 600 506
+      C 532 514 450 514 376 510
+      C 320 506 272 500 244 492
+      C 238 490 236 484 240 480
+      C 252 466 260 442 264 408
+      C 268 366 268 326 262 282
+      C 258 248 250 222 238 202
+      C 234 196 234 190 240 188 Z
+    "/>
+    <path stroke-width="1.3" stroke-opacity="0.52" d="
+      M 244 192
+      C 268 188 308 184 362 182
+      C 444 179 540 178 598 178
+      L 598 182
+      C 660 178 754 179 834 182
+    "/>
+
+    <path stroke-width="1.4" stroke-opacity="0.55" d="
+      M 290 250 C 338 248 434 246 542 248
+      M 290 284 C 342 282 434 280 542 282
+      M 290 318 C 338 316 412 314 504 316
+      M 290 352 C 342 350 434 348 542 350
+      M 290 386 C 334 384 414 382 502 384
+      M 290 420 C 342 418 422 416 512 418
+      M 290 454 C 340 452 414 450 494 452
+    "/>
+    <path stroke-width="1.4" stroke-opacity="0.55" d="
+      M 660 250 C 708 248 804 246 912 248
+      M 660 284 C 712 282 804 280 912 282
+      M 660 318 C 708 316 782 314 874 316
+      M 660 352 C 712 350 804 348 912 350
+      M 660 386 C 704 384 786 382 874 384
+      M 660 420 C 712 418 792 416 882 418
+      M 660 454 C 708 452 784 450 866 452
+    "/>
+
+    <!-- marginal change-mark — third edition. A small calligraphic
+         flourish in orange, looping back over previous marks. -->
+    <path stroke-width="2.0" stroke-opacity="0.78" d="
+      M 552 380 C 568 374 580 366 588 354
+      C 596 342 600 332 596 322
+      M 552 396 C 572 402 588 412 596 426
+    "/>
+  </g>
+
+</svg>
