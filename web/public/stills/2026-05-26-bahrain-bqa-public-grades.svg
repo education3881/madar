@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A regulated grid of pale ink verticals — a school facade at midday — with a single strong horizontal slab passing through the middle. Two small kiln-orange accents on the slab read as marks on a public ledger. The macron motif is echoed in a ticked baseline rule below.">
+
+  <title>The Still · Bahrain — the regulatory line</title>
+  <desc>An atmospheric composition for Curated 02 — Bahrain. A grid of pale verticals like a school facade, with a single strong horizontal slab — the publication's macron motif read as a regulatory line. Two small kiln-orange accents stand for the named verdicts inscribed on it.</desc>
+
+  <!-- Sand ground. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!--
+    ============================================================
+    THE FACADE — thirty-six pale vertical strokes evenly paced
+    across the canvas. Each is one ink hairline, varied in
+    opacity, slight in tremor at the foot. The facade is the
+    school day repeated. The pacing is the year.
+    ============================================================
+  -->
+  <g id="facade"
+     stroke="#0E1B2C"
+     stroke-linecap="round"
+     fill="none">
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 80 90 L 80 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 110 90 L 110 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 140 90 L 140 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 170 90 L 170 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 200 90 L 200 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 230 90 L 230 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.14" d="M 260 90 L 260 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 290 90 L 290 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 320 90 L 320 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.26" d="M 350 90 L 350 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 380 90 L 380 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 410 90 L 410 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 440 90 L 440 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 470 90 L 470 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 500 90 L 500 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 530 90 L 530 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 560 90 L 560 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.26" d="M 590 90 L 590 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 620 90 L 620 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 650 90 L 650 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 680 90 L 680 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 710 90 L 710 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 740 90 L 740 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 770 90 L 770 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 800 90 L 800 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 830 90 L 830 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 860 90 L 860 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 890 90 L 890 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 920 90 L 920 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 950 90 L 950 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 980 90 L 980 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 1010 90 L 1010 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 1040 90 L 1040 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 1070 90 L 1070 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 1100 90 L 1100 510"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 1130 90 L 1130 510"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE REGULATORY LINE — one strong horizontal slab passing
+    through the centre of the facade. This is the publication's
+    macron motif at its largest scale, read as a single act of
+    public visibility. Slab terminals carry the ticked stems of
+    the macron, echoing the wordmark.
+    ============================================================
+  -->
+  <g id="slab" fill="#0E1B2C">
+    <rect x="120" y="293" width="960" height="9"/>
+    <!-- Left terminal: small upward tick (the [ of the macron). -->
+    <rect x="120" y="280" width="2" height="35"/>
+    <!-- Right terminal: small upward tick (the ] of the macron). -->
+    <rect x="1078" y="280" width="2" height="35"/>
+  </g>
+
+  <!--
+    ============================================================
+    TWO KILN-ORANGE ACCENTS ON THE SLAB.
+    These are the named verdicts inscribed on the ledger — not
+    decorative. Restraint is the brand. The accents project up
+    from the slab a short distance and stop. They are the only
+    warm marks on the page.
+    ============================================================
+  -->
+  <g id="accents" fill="#D94F2A">
+    <rect x="408" y="270" width="2.5" height="22"/>
+    <rect x="784" y="270" width="2.5" height="22"/>
+  </g>
+
+  <!--
+    ============================================================
+    BASELINE TICKED RULE — the macron motif echoed below the mark.
+    Same proportions as the wordmark's baseline rule, scaled to
+    the canvas. Reads as the publication's signature gesture.
+    ============================================================
+  -->
+  <g id="baseline" stroke="#0E1B2C" stroke-width="1.3" stroke-linecap="square">
+    <line x1="540" y1="558" x2="660" y2="558"/>
+    <line x1="540" y1="552" x2="540" y2="566"/>
+    <line x1="660" y1="552" x2="660" y2="566"/>
+  </g>
+
+</svg>
