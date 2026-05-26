@@ -25,31 +25,37 @@ const dateFormatterAr = new Intl.DateTimeFormat('ar-EG', {
   day: 'numeric',
 });
 
-// Inline wordmark (same approach as the English home)
+// Inline wordmark — try multiple candidate paths so a difference in how
+// Astro resolves import.meta.url between EN and AR pages doesn't silently
+// fall back to the typographic mark.
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const wordmarkPath = resolve(__dirname, '../../../public/wordmark/madar-wordmark.svg');
-let wordmarkSvg: string | null = null;
-if (existsSync(wordmarkPath)) {
-  try {
-    wordmarkSvg = readFileSync(wordmarkPath, 'utf-8')
-      .replace(/^<\?xml[^?]*\?>\s*/, '')
-      .replace(/<!--[\s\S]*?-->/g, '');
-  } catch {
-    wordmarkSvg = null;
+function loadWordmark(): string | null {
+  const candidates = [
+    resolve(__dirname, '../../../public/wordmark/madar-wordmark.svg'),
+    resolve(__dirname, '../../public/wordmark/madar-wordmark.svg'),
+    resolve(__dirname, '../../../../design-assets/wordmark/madar-wordmark.svg'),
+    resolve(__dirname, '../../../design-assets/wordmark/madar-wordmark.svg'),
+  ];
+  for (const p of candidates) {
+    if (existsSync(p)) {
+      try {
+        return readFileSync(p, 'utf-8')
+          .replace(/^<\?xml[^?]*\?>\s*/, '')
+          .replace(/<!--[\s\S]*?-->/g, '');
+      } catch { /* try next */ }
+    }
   }
+  return null;
 }
+const wordmarkSvg = loadWordmark();
 
-// Arabic phrases the Editor explicitly excerpts in Piece B — surface them on
-// the Arabic home so an Arabic-first reader sees the publication speaking in
-// its second register even before the Arabic collection is populated.
-const jordan = sortedEn.find((p) => p.id === '2026-05-25-jordan-double-shift');
-const jordanExcerpts = jordan
-  ? [
-      { ar: 'تآكل المباني', en: 'building fatigue' },
-      { ar: 'دوام الترتيب المؤقت', en: 'the permanence of the temporary arrangement' },
-    ]
-  : [];
+// The Arabic home page's "from-the-issue" excerpts block previously surfaced
+// excerpts from the Jordan piece (Issue 01, secondary). That piece was parked
+// by the Editor on 2026-05-26 over source verification. The excerpt block is
+// retired with it; the Arabic home renders the placeholder + about until the
+// Arabic collection is populated. See /content-drafts/parked/2026-05-25-jordan-double-shift/parked.md.
+const issueExcerpts: { ar: string; en: string }[] = [];
 ---
 
 <Base title="مدار — التعليم، بتأنٍّ، بلغتين" lang="ar" noHeader={true}>
@@ -103,8 +109,7 @@ const jordanExcerpts = jordan
           <a href={withBase('/')}>الصفحة الإنجليزية</a>.
         </p>
         <p lang="ar" dir="rtl" class="muted">
-          القطعةُ الثانيةُ في العدد الأول — عن نظام الدوامَين في المدارس الأردنية — تحملُ مقاطعَ
-          عربيةً مقتبسةً من مذكّرة الوزارة، وقد جُمعت هنا للقارئ العربيّ ريثما تكتمل النسخةُ الكاملة.
+          النسخةُ العربيّةُ من العددِ الأوّل قيدُ الإعداد. سَتظهرُ هنا حالَ اكتمالِها.
         </p>
       </div>
     )}
@@ -127,26 +132,9 @@ const jordanExcerpts = jordan
     )}
   </section>
 
-  {/* ============== ARABIC EXCERPTS FROM JORDAN PIECE ============== */}
-  {jordanExcerpts.length > 0 && (
-    <section class="excerpts container">
-      <div class="excerpts__head">
-        <p class="kicker">From the issue</p>
-        <p class="excerpts__lead" lang="ar" dir="rtl">
-          مقاطعُ عربيّةٌ مقتبسةٌ من القطعة الأردنية في العدد الأول — لقراءة النصّ كاملاً
-          <a href={withBase(`/articles/${jordan!.id}/`)}>اقرأ المقالة بالإنجليزية</a>.
-        </p>
-      </div>
-      <ul class="excerpts__list">
-        {jordanExcerpts.map((ex) => (
-          <li class="excerpt">
-            <p class="excerpt__ar" lang="ar" dir="rtl">{ex.ar}</p>
-            <p class="excerpt__en">— {ex.en}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  {/* The from-the-issue Arabic excerpts block was retired on 2026-05-26 when
+       the source piece (Jordan double-shift) was parked. The block returns
+       when an Arabic-first piece is added to the articles-ar collection. */}
 
   {/* ============== ABOUT MINI ============== */}
   <section class="about container">

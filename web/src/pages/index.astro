@@ -2,6 +2,40 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
+import { readFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+
+// ---------------------------------------------------------------------------
+// Inline the wordmark SVG at build time. The SVG uses fill="currentColor" so
+// when inlined it inherits .masthead__mark's color (var(--color-ink)). Loading
+// it via <img src> as we did previously made it (a) dependent on a separate
+// network round-trip, (b) stuck at the SVG's default black instead of the
+// theme ink, and (c) silently fail if the file is missing — no typographic
+// fallback was visible. Inlining + CSS-only fallback fixes all three.
+// ---------------------------------------------------------------------------
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+function loadWordmark(): string | null {
+  // Prefer /web/public (what the Astro build actually ships); fall back to the
+  // canonical /design-assets master copy if /public hasn't been synced yet.
+  const candidates = [
+    resolve(__dirname, '../../public/wordmark/madar-wordmark.svg'),
+    resolve(__dirname, '../../../design-assets/wordmark/madar-wordmark.svg'),
+  ];
+  for (const p of candidates) {
+    if (existsSync(p)) {
+      try {
+        let svg = readFileSync(p, 'utf-8');
+        svg = svg.replace(/^<\?xml[^?]*\?>\s*/, '');
+        return svg;
+      } catch { /* fall through */ }
+    }
+  }
+  return null;
+}
+const wordmarkSvg = loadWordmark();
 
 // ---------------------------------------------------------------------------
 // Pieces — only those approved appear in the latest list.
@@ -72,7 +106,16 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
   <header class="masthead">
     <div class="masthead__inner container">
       <a href={withBase('/')} class="masthead__mark" aria-label="Madār — home">
-        <img src={withBase('/wordmark/madar-wordmark.svg')} alt="Madār مدار" class="masthead__wordmark" />
+        {wordmarkSvg ? (
+          <Fragment set:html={wordmarkSvg} />
+        ) : (
+          <Fragment>
+            {/* Typographic fallback — visible if the SVG ever fails to load. */}
+            <span class="masthead__mark-latin">Madār</span>
+            <span class="masthead__mark-divider" aria-hidden="true">·</span>
+            <span class="masthead__mark-arabic" lang="ar" dir="rtl">مدار</span>
+          </Fragment>
+        )}
       </a>
 
       <div class="masthead__rule" aria-hidden="true"></div>
@@ -273,11 +316,38 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     align-items: center;
     gap: 1.4rem;
   }
-  .masthead__mark { display: inline-block; text-decoration: none; color: var(--color-ink); }
-  .masthead__wordmark {
+  .masthead__mark {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--color-ink);
+    line-height: 1;
+  }
+  /* Inlined SVG wordmark — inherits currentColor (var(--color-ink)). */
+  .masthead__mark :global(svg) {
     width: auto;
     height: 120px;
     display: block;
+    color: var(--color-ink);
+  }
+  /* Typographic fallback (visible only if SVG fails to inline) */
+  .masthead__mark-latin {
+    font-family: var(--font-display);
+    font-size: 88px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+  }
+  .masthead__mark-divider {
+    font-family: var(--font-display);
+    font-size: 60px;
+    opacity: 0.4;
+  }
+  .masthead__mark-arabic {
+    font-family: var(--font-arabic-display);
+    font-size: 76px;
+    line-height: 1;
   }
 
   .masthead__rule {
@@ -649,7 +719,10 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
   }
   @media (max-width: 720px) {
     .masthead { padding-block: 2.5rem 2rem; }
-    .masthead__wordmark { height: 88px; }
+    .masthead__mark :global(svg) { height: 78px; }
+    .masthead__mark-latin { font-size: 56px; }
+    .masthead__mark-divider { font-size: 38px; }
+    .masthead__mark-arabic { font-size: 50px; }
     .section { padding-block: 2.5rem; }
     .section__head { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
     .lead__title { font-size: 34px; }
