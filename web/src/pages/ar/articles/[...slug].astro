@@ -1,0 +1,272 @@
+---
+import Base from '../../../layouts/Base.astro';
+import SiteHeader from '../../../components/SiteHeader.astro';
+import { getCollection, render } from 'astro:content';
+import { withBase } from '../../../lib/urls';
+
+export async function getStaticPaths() {
+  const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
+  return all.map((piece) => ({
+    params: { slug: piece.id },
+    props: { piece },
+  }));
+}
+
+const { piece } = Astro.props;
+const { Content } = await render(piece);
+
+const dateFormatter = new Intl.DateTimeFormat('ar-EG', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Mirror the EN dynamic route's provisional-source pill behaviour, just in case
+// an Arabic piece is ever published with a placeholder source.
+const sourcesAreProvisional = piece.data.sources.some((s: { title: string; url: string }) =>
+  /PLACEHOLDER SOURCE/i.test(s.title)
+);
+
+const stillSrc = withBase(piece.data.hero?.src ?? `/stills/${piece.id}.svg`);
+const stillAlt = piece.data.hero?.alt ?? '';
+const stillCaption = piece.data.hero?.caption ?? 'سكون · The Still';
+
+const fieldLabelAr = {
+  curated: 'قراءة مختارة',
+  short: 'تقرير ميداني',
+  essay: 'مقالة',
+}[piece.data.type as 'curated' | 'short' | 'essay'] ?? 'مقالة';
+
+// English counterpart link if the AR piece declares one in frontmatter.
+const englishHref = piece.data.englishVersion
+  ? withBase(`/articles/${piece.data.englishVersion}/`)
+  : null;
+---
+
+<Base
+  title={`${piece.data.title} — مدار`}
+  description={piece.data.dek}
+  lang="ar"
+  ogImage={piece.data.hero?.src ? withBase(piece.data.hero.src) : undefined}
+  noHeader={true}
+>
+  <SiteHeader lang="ar" variant="article" />
+
+  <article class="article container" lang="ar" dir="rtl">
+
+    {/* ============== TITLE BLOCK ============== */}
+    <header class="title-block">
+      <div class="title-block__meta">
+        <p class="kicker">{fieldLabelAr}</p>
+        <p class="kicker-meta">
+          <span>هيئة التحرير</span><br />
+          <span>{dateFormatter.format(piece.data.date)}</span><br />
+          <span>{piece.data.country} · {piece.data.region}</span><br />
+          <span>{piece.data.themes.slice(0, 2).join(' · ')}</span>
+        </p>
+        {englishHref && (
+          <p class="kicker-meta">
+            <a href={englishHref} hreflang="en" class="cross-lang">English version ↗</a>
+          </p>
+        )}
+      </div>
+      <div class="title-block__title">
+        <h1 class="title">{piece.data.title}</h1>
+        {piece.data.dek && <p class="dek">{piece.data.dek}</p>}
+      </div>
+    </header>
+
+    {/* ============== BODY ============== */}
+    <div class="body-grid">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main">
+        <Content />
+      </div>
+      <aside class="body-right marginalia">
+        <h4>المرجع الميداني</h4>
+        <p>{piece.data.country} · {piece.data.region}</p>
+        <p>المرحلة · {piece.data.level}</p>
+        <p>المحاور · {piece.data.themes.join('، ')}</p>
+        {piece.data.contains_composites && (
+          <>
+            <h4>شخصيات مركَّبة</h4>
+            <p>تستخدم هذه المقالة شخصيةً مركَّبة موسومةً بـ † عند أول ظهور. انظر الحاشية فوق قائمة المصادر.</p>
+          </>
+        )}
+      </aside>
+    </div>
+
+    {/* ============== THE STILL ============== */}
+    <figure class="still" aria-label={stillAlt}>
+      <div class="still__field">
+        <img src={stillSrc} alt={stillAlt} loading="lazy" decoding="async" />
+      </div>
+      <figcaption class="still__colophon">
+        <span><span class="still__num">{stillCaption}</span></span>
+        <span>صُنع داخليًّا لِمدار · 2026</span>
+      </figcaption>
+    </figure>
+
+    {/* ============== SOURCES + FOOTER ============== */}
+    <footer class="article__footer">
+      <div class="body-grid">
+        <aside class="body-left" aria-hidden="true"></aside>
+        <div class="body-main">
+          <h2 class="subhead">المصادر</h2>
+          <ol class="sources">
+            {piece.data.sources.map((s) => (
+              <li>
+                <a href={s.url} rel="noopener noreferrer">{s.title}</a>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <aside class="body-right" aria-hidden="true"></aside>
+      </div>
+    </footer>
+
+  </article>
+</Base>
+
+<style>
+  .article {
+    padding-block: var(--space-lg) var(--space-2xl);
+  }
+
+  /* Title block — Arabic register */
+  .title-block {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 3rem;
+    padding-block: 3rem 2rem;
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .kicker {
+    font-family: var(--font-arabic-display);
+    font-size: 18px;
+    color: var(--color-orange);
+    margin: 0;
+  }
+  .title-block__meta .kicker-meta {
+    margin-block-start: 0.75rem;
+    font-family: var(--font-arabic);
+    font-size: 13px;
+    color: var(--color-ink);
+    opacity: 0.78;
+    line-height: 1.85;
+  }
+  .cross-lang {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+  }
+  .title {
+    font-family: var(--font-arabic-display);
+    font-weight: 500;
+    font-size: clamp(34px, 5.5vw, 56px);
+    line-height: 1.35;
+    letter-spacing: 0;
+    margin: 0 0 1.25rem;
+    max-width: 24ch;
+  }
+  .dek {
+    font-family: var(--font-arabic);
+    font-size: 19.5px;
+    line-height: 1.9;
+    font-style: normal;
+    color: var(--color-ink);
+    opacity: 0.85;
+    max-width: 52ch;
+    margin: 0;
+  }
+
+  /* Body */
+  .body-grid { margin-block-start: 2.5rem; }
+  .body-main :global(p) {
+    font-family: var(--font-arabic);
+    font-size: 19px;
+    line-height: 1.95;
+    margin: 0 0 1.25rem;
+    color: var(--color-ink);
+  }
+  .body-main :global(h2) {
+    font-family: var(--font-arabic-display);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.45;
+    margin-block: 2.75rem 1.25rem;
+    color: var(--color-ink);
+  }
+  .body-main :global(h2)::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: var(--color-ink);
+    margin-block-end: 0.85rem;
+  }
+  .body-main :global(blockquote) {
+    margin-block: 2.5rem;
+    margin-inline-end: -2rem;
+    padding: 1.25rem 1.5rem;
+    border-inline-end: 2px solid var(--color-orange);
+    font-family: var(--font-arabic-display);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--color-ink);
+    max-width: 38ch;
+  }
+  .body-main :global(blockquote p) { font-family: inherit; font-size: inherit; line-height: inherit; }
+  .body-main :global(hr) {
+    border: none;
+    border-block-start: 1px solid var(--color-rule);
+    margin-block: var(--space-xl);
+    width: 50%;
+  }
+  .body-main :global(em) { font-style: italic; }
+  .body-main :global(p > em:only-child) {
+    display: block;
+    font-family: var(--font-arabic);
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--color-muted);
+    margin-block-start: 1.5rem;
+    max-width: 65ch;
+  }
+
+  /* Sources */
+  .article__footer {
+    margin-block-start: var(--space-xl);
+    padding-block-start: var(--space-lg);
+    border-block-start: 1px solid var(--color-rule);
+  }
+  .subhead {
+    font-family: var(--font-arabic-display);
+    font-weight: 500;
+    font-size: 26px;
+    margin-block: 0 1rem;
+    color: var(--color-ink);
+  }
+  .sources {
+    list-style: arabic-indic;
+    padding-inline-start: 1.75em;
+    margin-block-start: 0;
+    font-family: var(--font-arabic);
+    font-size: 16.5px;
+    line-height: 1.75;
+  }
+  .sources li { margin-block-end: 0.6rem; }
+  .sources a { color: var(--color-ink); }
+
+  @media (max-width: 1024px) {
+    .title-block { grid-template-columns: 1fr; gap: 1.25rem; }
+    .body-main :global(blockquote) { margin-inline-end: 0; }
+  }
+  @media (max-width: 720px) {
+    .title { font-size: clamp(28px, 8vw, 42px); }
+  }
+</style>

@@ -7,6 +7,7 @@ region: MENA
 level: Both
 themes: [government-led programs, access, value of teachers]
 type: curated
+arabicVersion: 2026-05-26-bahrain-bqa-public-grades
 sources:
   - title: "Education and Training Quality Authority (BQA) — Performance Report of Education and Training Institutions for the Academic Year 2024-2025 (announcement, 6 September 2025)"
     url: "https://www.bqa.gov.bh/education-and-training-quality-authority-issues-the-performance-report-of-education-and-training-institutions-for-the-academic-year-2024-2025/"

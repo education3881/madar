@@ -42,6 +42,11 @@ const fieldLabel = {
   short: 'Field Note',
   essay: 'Essay',
 }[piece.data.type as 'curated' | 'short' | 'essay'] ?? 'Piece';
+
+// Arabic counterpart link if the EN piece declares one in frontmatter.
+const arabicHref = piece.data.arabicVersion
+  ? withBase(`/ar/articles/${piece.data.arabicVersion}/`)
+  : null;
 ---
 
 <Base
@@ -70,6 +75,11 @@ const fieldLabel = {
         {sourcesAreProvisional && (
           <p class="title-block__draft">
             <span class="pill">Draft — pending source verification</span>
+          </p>
+        )}
+        {arabicHref && (
+          <p class="kicker-meta">
+            <a href={arabicHref} hreflang="ar" lang="ar" dir="rtl" class="cross-lang">النسخة العربية ↗</a>
           </p>
         )}
       </div>
@@ -169,6 +179,15 @@ const fieldLabel = {
     line-height: 1.7;
   }
   .title-block__draft { margin-block-start: 1rem; }
+  .cross-lang {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-orange);
+  }
   .title {
     font-family: var(--font-display);
     font-weight: 500;

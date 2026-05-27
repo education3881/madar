@@ -8,6 +8,7 @@ level: K-12
 themes: [value of teachers, ECE access, government-led programs]
 type: short
 contains_composites: true
+arabicVersion: 2026-05-25-bo-teacher-chalk
 sources:
   - title: "Ministry of Basic and Senior Secondary Education, Free Quality School Education (FQSE) — programme description and goals"
     url: "https://mbsse.gov.sl/fqse/"

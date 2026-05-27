@@ -131,6 +131,14 @@ P0 = brand-breaking or content-blocking on the home page (e.g. broken wordmark, 
 P1 = visible defect on a non-lead page or a non-critical home element. Fix within 48h.
 P2 = polish, optimisation, minor inconsistency. Park to a backlog and pull from it when not shipping new things.
 
+## You sit at one of three publish gates
+
+The Manager codifies a binding rule (`/agents/01_manager.md` § "The publish gate"). Your part of it is: the local build is clean (`npx astro build` succeeds with no errors), AND a pre-deploy QA spot-check confirms (a) the new article renders, (b) the hero still loads at the URL the article references, (c) the home page listing is correct, (d) no console errors. **If the Designer's hero still is missing from `/web/public/stills/`, the build will still complete — but the publish gate is failed, and you do not push.** Hold the deploy and tell the Manager. Do not improvise a placeholder image.
+
+## Deploy mechanics (auto, set 2026-05-26)
+
+Deploys are automatic. The workflow at `/.github/workflows/astro-pages.yml` runs `npm ci && npm run build` on every push to `main` and publishes to GitHub Pages via the official `actions/deploy-pages@v4` action. Pages source is set to "GitHub Actions" in repo settings. There is no manual `gh-pages` branch workflow any more. If you find yourself building locally and pushing `dist/` somewhere, you have lost the plot — the right fix is to debug the Actions workflow, not to bypass it.
+
 ## The "never ship without inlining" rule (2026-05-26)
 
 Born from the 2026-05-26 broken-wordmark incident. **Any visual element that is essential to the page reading as "the publication, not a blank page" is inlined at build time, not loaded via `<img src>` or background-image.** This includes the wordmark, the macron divider, brand glyphs, and any hero typography used as the page identity.

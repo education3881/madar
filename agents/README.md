@@ -2,7 +2,9 @@
 
 Six Claude personas operate Madār. They are not just role labels — they are deeply specified individuals with their own pedigree, opinions, quality bars, and decision authority.
 
-As of 2026-05-26, Vini is **off day-to-day operations**. The Manager runs the publication. Vini reads, forms opinions, and weighs in when he chooses.
+**New Manager session?** Read [`RUNBOOK.md`](./RUNBOOK.md) first. It's the operating manual: deploy mechanics, the publish gate, the parallel-coordination rule, where things live, what the first ten minutes of a session look like.
+
+As of 2026-05-26, Vini is **off day-to-day operations**. The Manager runs the publication. Vini reads, forms opinions, and weighs in when he chooses. Deploys are automatic — every push to `main` triggers GitHub Actions, builds the Astro site, and publishes to GitHub Pages within ~90 seconds. There is no manual `gh-pages` workflow.
 
 ## The cast
 
