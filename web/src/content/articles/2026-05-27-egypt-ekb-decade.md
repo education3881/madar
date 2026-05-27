@@ -7,6 +7,7 @@ region: MENA
 level: Both
 themes: [government-led programs, AI-readiness, access, language and heritage preservation]
 type: curated
+arabicVersion: 2026-05-27-egypt-ekb-decade
 sources:
   - title: "UNESCO — Case Study of the Egyptian Knowledge Bank (EKB), Gateways Initiative (case-study page; full report at unesdoc)"
     url: "https://www.unesco.org/en/learning-platforms-gateway/case-study-egyptian-knowledge-bank-ekb"
