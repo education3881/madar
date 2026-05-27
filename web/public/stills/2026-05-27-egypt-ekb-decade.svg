@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A field of pale horizontal ink rules accumulated across the canvas — a decade of access, sedimented year by year. A stronger ink slab at the foundation reads as the 2016 act that started it. A second strong slab near the top, shorter and bolder, reads as the 2025 AI tier laid on top of the accumulation. A single kiln-orange tick on the upper slab marks the named integration point. The macron motif sits at baseline, the publication's signature.">
+
+  <title>The Still · Egypt — a decade as accumulation, with a new line laid on top</title>
+  <desc>An atmospheric composition for Curated 03 — Egypt. A stratification of pale horizontal rules across the canvas reads as the slow accumulation of public knowledge over ten years. A stronger ink slab below the strata is the 2016 foundation. A shorter, bolder slab above is the 2025 AI tier — the new front door. A single kiln-orange accent marks where that door opens. Composition rhymes with the Bahrain still (Curated 02) but transposed: where Bahrain reads as a school facade cut by a regulatory line, Egypt reads as years of strata held between a foundation and a new ledger.</desc>
+
+  <!-- Sand ground — matching Bahrain's Curated register. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!--
+    ============================================================
+    THE STRATA — fourteen pale horizontal rules accumulated
+    across the canvas. Each is one ink hairline, varied in
+    opacity and length so the field breathes rather than
+    rigidifying into a grid. The strata are a decade of access,
+    sedimented year by year. They begin near the foundation
+    slab and rise toward the AI slab; the negative space at
+    top and bottom is the work the publication is willing to
+    leave for the reader.
+    ============================================================
+  -->
+  <g id="strata"
+     stroke="#0E1B2C"
+     stroke-linecap="round"
+     fill="none">
+    <!-- Lower strata — closer to the foundation, longer reach. -->
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 140 470 L 1062 470"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 178 452 L 1050 452"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 150 434 L 1078 434"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 192 416 L 1032 416"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 160 398 L 1066 398"/>
+    <!-- Middle strata — the most populated band; the platform's mature years. -->
+    <path stroke-width="1.0" stroke-opacity="0.24" d="M 138 378 L 1086 378"/>
+    <path stroke-width="1.0" stroke-opacity="0.18" d="M 184 360 L 1042 360"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 152 342 L 1072 342"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 196 324 L 1024 324"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 162 306 L 1058 306"/>
+    <!-- Upper strata — sparser, drawing the eye toward the AI slab. -->
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 144 288 L 1076 288"/>
+    <path stroke-width="1.0" stroke-opacity="0.16" d="M 188 270 L 1036 270"/>
+    <path stroke-width="1.0" stroke-opacity="0.20" d="M 156 252 L 1064 252"/>
+    <path stroke-width="1.0" stroke-opacity="0.14" d="M 200 234 L 1018 234"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE FOUNDATION SLAB — the 2016 act that started it. Strong,
+    long, anchored to the lower band of the canvas. This is the
+    base on which the decade sits. Its terminals carry the
+    ticked stems of the macron at small scale, echoing the
+    wordmark — the same gesture Bahrain's slab uses for its
+    regulatory line.
+    ============================================================
+  -->
+  <g id="foundation" fill="#0E1B2C">
+    <rect x="120" y="498" width="960" height="7"/>
+    <!-- Left terminal: small upward tick. -->
+    <rect x="120" y="486" width="2" height="30"/>
+    <!-- Right terminal: small upward tick. -->
+    <rect x="1078" y="486" width="2" height="30"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE AI SLAB — the 2025 layer, laid on top of the strata.
+    Shorter than the foundation (the new tier serves a narrower
+    cohort, per the piece's reading), bolder in weight (the
+    register-shift the piece names). No macron terminals here;
+    the AI slab is not the publication's signature gesture,
+    it's the moment the piece is observing.
+    ============================================================
+  -->
+  <g id="ai-slab" fill="#0E1B2C">
+    <rect x="312" y="194" width="576" height="10"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE INTEGRATION ACCENT — one kiln-orange upright tick
+    rising from the right portion of the AI slab. This is the
+    only warm mark on the page. It is the named integration
+    point (Scopus AI / ScienceDirect AI / Reaxys) — a single
+    door, not a constellation of features. Restraint is the
+    brand.
+    ============================================================
+  -->
+  <g id="accent" fill="#D94F2A">
+    <rect x="788" y="170" width="2.5" height="26"/>
+  </g>
+
+  <!--
+    ============================================================
+    BASELINE MACRON — the publication's signature gesture,
+    same proportions and placement as Bo (Field Note 01) and
+    Bahrain (Curated 02). It ties the issue together visually.
+    ============================================================
+  -->
+  <g id="baseline" stroke="#0E1B2C" stroke-width="1.3" stroke-linecap="square">
+    <line x1="540" y1="558" x2="660" y2="558"/>
+    <line x1="540" y1="552" x2="540" y2="566"/>
+    <line x1="660" y1="552" x2="660" y2="566"/>
+  </g>
+
+</svg>
