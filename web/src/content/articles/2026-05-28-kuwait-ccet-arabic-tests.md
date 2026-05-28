@@ -1,7 +1,7 @@
 ---
 title: "The test, in Arabic"
 slug: 2026-05-28-kuwait-ccet-arabic-tests
-dek: "For most of the twentieth century, an Arabic-speaking child suspected of dyslexia had no nationally standardised Arabic-language assessment to be tested with. A Kuwaiti charity, founded in 1984 by a group of mothers, has produced four of them."
+dek: "A Kuwaiti charity, founded in 1984 by a group of mothers, has produced the only nationally standardised Arabic-language assessments for specific learning differences in children."
 date: 2026-05-28
 country: Kuwait
 region: MENA

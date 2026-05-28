@@ -1,7 +1,7 @@
 ---
 title: "Four languages, three phases, sixty days"
 slug: 2026-05-28-ghana-cbe-curriculum
-dek: "Ghana introduced a new national curriculum in 2019. For seven years, the parallel curriculum used by out-of-school children was not updated. The revised version launched on the 31st of March 2026, in four Ghanaian languages, with eleven more on the target list."
+dek: "Ghana's revised Complementary Basic Education curriculum launched on 31 March 2026, closing a seven-year gap with the national curriculum. Four Ghanaian languages built; eleven still on the list."
 date: 2026-05-28
 country: Ghana
 region: Africa
