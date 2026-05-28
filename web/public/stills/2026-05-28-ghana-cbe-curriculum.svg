@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition built on a sand-coloured ground. On the left, four solid ink rectangles in a horizontal row — the four Ghanaian languages in which the new curriculum has been produced. At the right edge of the canvas, a fainter row of eleven thinner rectangles — the eleven languages still to come on the Agency's target list. A single kiln-orange rectangle marks the Day-5 assessment in the weekly structure. The macron motif at baseline closes the composition.">
+
+  <title>The Still · Ghana — four built, eleven on the list</title>
+  <desc>An atmospheric composition for Curated 07 — Ghana. A small ink rectangle is the visual unit — a single language curriculum. The units cluster into two regimes: four solid rectangles on the left, representing the four Ghanaian languages (Dagaari, Dagbani, Asante Twi, Ewe) in which the revised Complementary Basic Education curriculum has been produced; and a longer row of fainter, thinner rectangles at the right edge of the canvas, representing the eleven additional languages on the Agency's stated target of fifteen. Between them, a five-unit weekly rhythm marker, with one of the five — the Day-5 assessment day — in kiln-orange. The composition argues that what has been built is whole, but the work is not finished.</desc>
+
+  <!-- Sand ground -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!--
+    ============================================================
+    THE FOUR BUILT — four solid ink rectangles, on the left.
+    These are the four Ghanaian languages now in production:
+    Dagaari, Dagbani, Asante Twi, Ewe.
+    Unit: 64 × 90. Gap: 24. Starting at x=150, y=200.
+    ============================================================
+  -->
+  <g id="four-built" fill="#0E1B2C" fill-opacity="0.86">
+    <rect x="150" y="200" width="64" height="180"/>
+    <rect x="238" y="200" width="64" height="180"/>
+    <rect x="326" y="200" width="64" height="180"/>
+    <rect x="414" y="200" width="64" height="180"/>
+  </g>
+
+  <!-- Labels under the four built -->
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.85">
+    <text x="182" y="404" text-anchor="middle">DAGAARE</text>
+    <text x="270" y="404" text-anchor="middle">DAGBANI</text>
+    <text x="358" y="404" text-anchor="middle">TWI</text>
+    <text x="446" y="404" text-anchor="middle">EWE</text>
+  </g>
+
+  <!--
+    ============================================================
+    THE WEEKLY RHYTHM — five-unit row at the bottom centre,
+    with the fifth (Day-5 assessment) in kiln-orange.
+    Unit: 28 × 28. Starting at x=540, y=260.
+    ============================================================
+  -->
+  <g id="weekly" fill="#0E1B2C" fill-opacity="0.86">
+    <rect x="540" y="260" width="28" height="28"/>
+    <rect x="578" y="260" width="28" height="28"/>
+    <rect x="616" y="260" width="28" height="28"/>
+    <rect x="654" y="260" width="28" height="28"/>
+  </g>
+  <!-- Day 5 in kiln-orange -->
+  <rect x="692" y="260" width="28" height="28" fill="#D94F2A" fill-opacity="0.92"/>
+
+  <!-- Label under the weekly rhythm -->
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.85">
+    <text x="630" y="316" text-anchor="middle">WEEK · DAYS 1–4 · DAY 5 ASSESSMENT</text>
+  </g>
+
+  <!--
+    ============================================================
+    THE ELEVEN STILL TO COME — a vertical column of eleven
+    thinner, paler rectangles at the right edge of the canvas.
+    Unit: 36 × 14. Starting at x=970, y=160.
+    ============================================================
+  -->
+  <g id="eleven-pending" fill="#0E1B2C" fill-opacity="0.30">
+    <rect x="970" y="160" width="36" height="14"/>
+    <rect x="970" y="184" width="36" height="14"/>
+    <rect x="970" y="208" width="36" height="14"/>
+    <rect x="970" y="232" width="36" height="14"/>
+    <rect x="970" y="256" width="36" height="14"/>
+    <rect x="970" y="280" width="36" height="14"/>
+    <rect x="970" y="304" width="36" height="14"/>
+    <rect x="970" y="328" width="36" height="14"/>
+    <rect x="970" y="352" width="36" height="14"/>
+    <rect x="970" y="376" width="36" height="14"/>
+    <rect x="970" y="400" width="36" height="14"/>
+  </g>
+
+  <!-- Hairline rule to the left of the eleven pending — the macron motif at the boundary between built and unbuilt -->
+  <line x1="940" y1="290" x2="960" y2="290" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <!-- Label for the eleven pending -->
+  <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.85">
+    <text x="988" y="436" text-anchor="middle">·11·</text>
+    <text x="988" y="450" text-anchor="middle">PENDING</text>
+  </g>
+
+  <!-- Macron motif — the publication's signature, at baseline -->
+  <line x1="540" y1="555" x2="660" y2="555" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <text x="150" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 07 · GHANA</text>
+  <text x="1050" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>

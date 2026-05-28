@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition built on a sand-coloured ground. A horizontal field of small ink rectangles, mostly upright like books on a shelf, with several scattered or rotated at irregular angles — the collection in mid-recovery. A single kiln-orange rectangle in the upper third marks the reopened reading room. The macron motif at baseline closes the composition.">
+
+  <title>The Still · Iraq — the shelves, recovered</title>
+  <desc>An atmospheric composition for Curated 06 — Iraq. A small ink rectangle is the visual unit — a single book on a library shelf. The units appear as a long horizontal field across the canvas: most upright in a disciplined row, several at rotated angles or fallen, representing the catalogue in mid-recovery after the 2014-17 fire. A single kiln-orange rectangle in the upper third marks the reopened reading room, the institutional anchor that returned in February 2022. The composition argues recovery as accumulation of what stands, not erasure of what fell.</desc>
+
+  <!-- Sand ground -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!-- The reopened reading room — single kiln-orange rectangle in the upper third -->
+  <rect x="540" y="140" width="120" height="22" fill="#D94F2A" fill-opacity="0.92"/>
+
+  <!-- Hairline rule below the reading room — the macron at the boundary between institutional return and shelf-level recovery -->
+  <line x1="150" y1="200" x2="1050" y2="200" stroke="#0E1B2C" stroke-width="1" stroke-opacity="0.55"/>
+
+  <!--
+    ============================================================
+    THE STACKS — the rebuilt shelves.
+    A long horizontal field of small vertical rectangles
+    (books standing on a shelf), mostly upright but with
+    several rotated/fallen. Three baseline rows.
+    Unit: 6 × 28 upright. Spacing varied between 11 and 14.
+    ============================================================
+  -->
+
+  <!-- Shelf 1 — upper row, mostly intact -->
+  <g id="shelf-1" fill="#0E1B2C" fill-opacity="0.86">
+    <rect x="160" y="260" width="6" height="28"/>
+    <rect x="172" y="260" width="6" height="28"/>
+    <rect x="184" y="260" width="6" height="28"/>
+    <rect x="196" y="260" width="6" height="28"/>
+    <rect x="208" y="260" width="6" height="28"/>
+    <rect x="220" y="260" width="6" height="28"/>
+    <rect x="232" y="260" width="6" height="28"/>
+    <rect x="244" y="260" width="6" height="28"/>
+    <rect x="256" y="260" width="6" height="28"/>
+    <rect x="268" y="260" width="6" height="28"/>
+    <rect x="280" y="260" width="6" height="28"/>
+    <rect x="292" y="260" width="6" height="28"/>
+    <rect x="304" y="260" width="6" height="28"/>
+    <rect x="316" y="260" width="6" height="28"/>
+    <rect x="328" y="260" width="6" height="28"/>
+
+    <!-- Gap — three books missing -->
+
+    <rect x="382" y="260" width="6" height="28"/>
+    <rect x="394" y="260" width="6" height="28"/>
+    <rect x="406" y="260" width="6" height="28"/>
+    <rect x="418" y="260" width="6" height="28"/>
+    <rect x="430" y="260" width="6" height="28"/>
+    <rect x="442" y="260" width="6" height="28"/>
+    <rect x="454" y="260" width="6" height="28"/>
+    <rect x="466" y="260" width="6" height="28"/>
+    <rect x="478" y="260" width="6" height="28"/>
+    <rect x="490" y="260" width="6" height="28"/>
+    <rect x="502" y="260" width="6" height="28"/>
+    <rect x="514" y="260" width="6" height="28"/>
+    <rect x="526" y="260" width="6" height="28"/>
+    <rect x="538" y="260" width="6" height="28"/>
+    <rect x="550" y="260" width="6" height="28"/>
+    <rect x="562" y="260" width="6" height="28"/>
+    <rect x="574" y="260" width="6" height="28"/>
+    <rect x="586" y="260" width="6" height="28"/>
+    <rect x="598" y="260" width="6" height="28"/>
+    <rect x="610" y="260" width="6" height="28"/>
+    <rect x="622" y="260" width="6" height="28"/>
+    <rect x="634" y="260" width="6" height="28"/>
+    <rect x="646" y="260" width="6" height="28"/>
+    <rect x="658" y="260" width="6" height="28"/>
+    <rect x="670" y="260" width="6" height="28"/>
+    <rect x="682" y="260" width="6" height="28"/>
+    <rect x="694" y="260" width="6" height="28"/>
+    <rect x="706" y="260" width="6" height="28"/>
+    <rect x="718" y="260" width="6" height="28"/>
+    <rect x="730" y="260" width="6" height="28"/>
+    <rect x="742" y="260" width="6" height="28"/>
+    <rect x="754" y="260" width="6" height="28"/>
+    <rect x="766" y="260" width="6" height="28"/>
+    <rect x="778" y="260" width="6" height="28"/>
+    <rect x="790" y="260" width="6" height="28"/>
+    <rect x="802" y="260" width="6" height="28"/>
+    <rect x="814" y="260" width="6" height="28"/>
+    <rect x="826" y="260" width="6" height="28"/>
+    <rect x="838" y="260" width="6" height="28"/>
+    <rect x="850" y="260" width="6" height="28"/>
+    <rect x="862" y="260" width="6" height="28"/>
+    <rect x="874" y="260" width="6" height="28"/>
+    <rect x="886" y="260" width="6" height="28"/>
+    <rect x="898" y="260" width="6" height="28"/>
+    <rect x="910" y="260" width="6" height="28"/>
+    <rect x="922" y="260" width="6" height="28"/>
+    <rect x="934" y="260" width="6" height="28"/>
+    <rect x="946" y="260" width="6" height="28"/>
+    <rect x="958" y="260" width="6" height="28"/>
+    <rect x="970" y="260" width="6" height="28"/>
+    <rect x="982" y="260" width="6" height="28"/>
+    <rect x="994" y="260" width="6" height="28"/>
+    <rect x="1006" y="260" width="6" height="28"/>
+    <rect x="1018" y="260" width="6" height="28"/>
+    <rect x="1030" y="260" width="6" height="28"/>
+  </g>
+
+  <!-- Shelf 1 baseline -->
+  <line x1="150" y1="295" x2="1050" y2="295" stroke="#0E1B2C" stroke-width="0.6" stroke-opacity="0.45"/>
+
+  <!-- Scattered/fallen volumes — between shelves 1 and 2, the books that did not survive intact -->
+  <g id="scatter" fill="#0E1B2C" fill-opacity="0.55">
+    <rect x="340" y="310" width="6" height="28" transform="rotate(-72 343 324)"/>
+    <rect x="348" y="316" width="6" height="28" transform="rotate(48 351 330)"/>
+    <rect x="356" y="312" width="6" height="28" transform="rotate(-22 359 326)"/>
+  </g>
+
+  <!-- Shelf 2 — middle row -->
+  <g id="shelf-2" fill="#0E1B2C" fill-opacity="0.86">
+    <rect x="160" y="360" width="6" height="28"/>
+    <rect x="172" y="360" width="6" height="28"/>
+    <rect x="184" y="360" width="6" height="28"/>
+    <rect x="196" y="360" width="6" height="28"/>
+    <rect x="208" y="360" width="6" height="28"/>
+    <rect x="220" y="360" width="6" height="28"/>
+    <rect x="232" y="360" width="6" height="28"/>
+    <rect x="244" y="360" width="6" height="28"/>
+    <rect x="256" y="360" width="6" height="28"/>
+    <rect x="268" y="360" width="6" height="28"/>
+    <rect x="280" y="360" width="6" height="28"/>
+    <rect x="292" y="360" width="6" height="28"/>
+    <rect x="304" y="360" width="6" height="28"/>
+    <rect x="316" y="360" width="6" height="28"/>
+    <rect x="328" y="360" width="6" height="28"/>
+    <rect x="340" y="360" width="6" height="28"/>
+    <rect x="352" y="360" width="6" height="28"/>
+    <rect x="364" y="360" width="6" height="28"/>
+    <rect x="376" y="360" width="6" height="28"/>
+    <rect x="388" y="360" width="6" height="28"/>
+    <rect x="400" y="360" width="6" height="28"/>
+    <rect x="412" y="360" width="6" height="28"/>
+
+    <!-- Gap — two missing -->
+
+    <rect x="448" y="360" width="6" height="28"/>
+    <rect x="460" y="360" width="6" height="28"/>
+    <rect x="472" y="360" width="6" height="28"/>
+    <rect x="484" y="360" width="6" height="28"/>
+    <rect x="496" y="360" width="6" height="28"/>
+    <rect x="508" y="360" width="6" height="28"/>
+    <rect x="520" y="360" width="6" height="28"/>
+    <rect x="532" y="360" width="6" height="28"/>
+    <rect x="544" y="360" width="6" height="28"/>
+    <rect x="556" y="360" width="6" height="28"/>
+    <rect x="568" y="360" width="6" height="28"/>
+    <rect x="580" y="360" width="6" height="28"/>
+    <rect x="592" y="360" width="6" height="28"/>
+    <rect x="604" y="360" width="6" height="28"/>
+    <rect x="616" y="360" width="6" height="28"/>
+    <rect x="628" y="360" width="6" height="28"/>
+    <rect x="640" y="360" width="6" height="28"/>
+    <rect x="652" y="360" width="6" height="28"/>
+    <rect x="664" y="360" width="6" height="28"/>
+    <rect x="676" y="360" width="6" height="28"/>
+    <rect x="688" y="360" width="6" height="28"/>
+    <rect x="700" y="360" width="6" height="28"/>
+    <rect x="712" y="360" width="6" height="28"/>
+    <rect x="724" y="360" width="6" height="28"/>
+    <rect x="736" y="360" width="6" height="28"/>
+    <rect x="748" y="360" width="6" height="28"/>
+    <rect x="760" y="360" width="6" height="28"/>
+    <rect x="772" y="360" width="6" height="28"/>
+    <rect x="784" y="360" width="6" height="28"/>
+    <rect x="796" y="360" width="6" height="28"/>
+    <rect x="808" y="360" width="6" height="28"/>
+    <rect x="820" y="360" width="6" height="28"/>
+    <rect x="832" y="360" width="6" height="28"/>
+    <rect x="844" y="360" width="6" height="28"/>
+    <rect x="856" y="360" width="6" height="28"/>
+    <rect x="868" y="360" width="6" height="28"/>
+    <rect x="880" y="360" width="6" height="28"/>
+    <rect x="892" y="360" width="6" height="28"/>
+    <rect x="904" y="360" width="6" height="28"/>
+    <rect x="916" y="360" width="6" height="28"/>
+    <rect x="928" y="360" width="6" height="28"/>
+    <rect x="940" y="360" width="6" height="28"/>
+    <rect x="952" y="360" width="6" height="28"/>
+    <rect x="964" y="360" width="6" height="28"/>
+    <rect x="976" y="360" width="6" height="28"/>
+    <rect x="988" y="360" width="6" height="28"/>
+    <rect x="1000" y="360" width="6" height="28"/>
+    <rect x="1012" y="360" width="6" height="28"/>
+    <rect x="1024" y="360" width="6" height="28"/>
+    <rect x="1036" y="360" width="6" height="28"/>
+  </g>
+
+  <!-- Shelf 2 baseline -->
+  <line x1="150" y1="395" x2="1050" y2="395" stroke="#0E1B2C" stroke-width="0.6" stroke-opacity="0.45"/>
+
+  <!-- Shelf 3 — lower row, sparser (recent acquisitions) -->
+  <g id="shelf-3" fill="#0E1B2C" fill-opacity="0.55">
+    <rect x="160" y="460" width="6" height="28"/>
+    <rect x="172" y="460" width="6" height="28"/>
+    <rect x="184" y="460" width="6" height="28"/>
+    <rect x="196" y="460" width="6" height="28"/>
+    <rect x="208" y="460" width="6" height="28"/>
+    <rect x="220" y="460" width="6" height="28"/>
+    <rect x="232" y="460" width="6" height="28"/>
+    <rect x="244" y="460" width="6" height="28"/>
+    <rect x="256" y="460" width="6" height="28"/>
+    <rect x="268" y="460" width="6" height="28"/>
+    <rect x="280" y="460" width="6" height="28"/>
+    <rect x="292" y="460" width="6" height="28"/>
+    <rect x="304" y="460" width="6" height="28"/>
+    <rect x="316" y="460" width="6" height="28"/>
+    <rect x="328" y="460" width="6" height="28"/>
+    <rect x="340" y="460" width="6" height="28"/>
+    <rect x="352" y="460" width="6" height="28"/>
+    <rect x="364" y="460" width="6" height="28"/>
+    <rect x="376" y="460" width="6" height="28"/>
+    <rect x="388" y="460" width="6" height="28"/>
+    <rect x="400" y="460" width="6" height="28"/>
+    <rect x="412" y="460" width="6" height="28"/>
+    <rect x="424" y="460" width="6" height="28"/>
+    <rect x="436" y="460" width="6" height="28"/>
+    <rect x="448" y="460" width="6" height="28"/>
+    <rect x="460" y="460" width="6" height="28"/>
+    <rect x="472" y="460" width="6" height="28"/>
+    <rect x="484" y="460" width="6" height="28"/>
+    <rect x="496" y="460" width="6" height="28"/>
+    <rect x="508" y="460" width="6" height="28"/>
+    <rect x="520" y="460" width="6" height="28"/>
+    <rect x="532" y="460" width="6" height="28"/>
+    <rect x="544" y="460" width="6" height="28"/>
+    <rect x="556" y="460" width="6" height="28"/>
+    <rect x="568" y="460" width="6" height="28"/>
+    <rect x="580" y="460" width="6" height="28"/>
+    <rect x="592" y="460" width="6" height="28"/>
+    <rect x="604" y="460" width="6" height="28"/>
+    <rect x="616" y="460" width="6" height="28"/>
+    <rect x="628" y="460" width="6" height="28"/>
+    <rect x="640" y="460" width="6" height="28"/>
+    <rect x="652" y="460" width="6" height="28"/>
+    <rect x="664" y="460" width="6" height="28"/>
+    <rect x="676" y="460" width="6" height="28"/>
+    <rect x="688" y="460" width="6" height="28"/>
+    <rect x="700" y="460" width="6" height="28"/>
+    <rect x="712" y="460" width="6" height="28"/>
+    <rect x="724" y="460" width="6" height="28"/>
+    <rect x="736" y="460" width="6" height="28"/>
+    <rect x="748" y="460" width="6" height="28"/>
+  </g>
+
+  <!-- Shelf 3 baseline -->
+  <line x1="150" y1="495" x2="1050" y2="495" stroke="#0E1B2C" stroke-width="0.6" stroke-opacity="0.45"/>
+
+  <!-- Macron motif — the publication's signature, at baseline -->
+  <line x1="540" y1="555" x2="660" y2="555" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <text x="150" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 06 · IRAQ</text>
+  <text x="1050" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>

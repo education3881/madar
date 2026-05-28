@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition built on a sand-coloured ground. On the left, four horizontal bands of small ink rectangles stack vertically — each band one of the Centre's standardised tests, internally textured as a row of assessment items. Below the four bands, a single kiln-orange rectangle marks where assessment hands off to remediation. The macron motif at baseline closes the composition.">
+
+  <title>The Still · Kuwait — the four-test battery, the one moment of teaching</title>
+  <desc>An atmospheric composition for Curated 05 — Kuwait. A small ink rectangle is the visual unit — a single assessment item. The units cluster into four discrete horizontal bands on the left third, each band one of the Centre's four standardised tests for children aged seven to eleven: phonological processing, orthographic processing and morphological awareness, reading and spelling, working memory. A single kiln-orange rectangle below the four bands marks remediation: the hand-off from assessment to teaching. The composition is a visual cousin to Egypt (Curated 03, sedimentation) and UAE (Curated 04, redistribution), but argues calibration — the same unit, taken four times, each time differently.</desc>
+
+  <!-- Sand ground — shared register with Bahrain (Curated 02), Egypt (Curated 03), UAE (Curated 04). -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!--
+    ============================================================
+    THE FOUR BANDS — the four standardised tests.
+    Each band: a horizontal row of small ink rectangles, internally
+    textured. The bands stack vertically on the left third of the canvas.
+    Unit: 16 × 5, gap-x 12. Each band 16 units wide. Band gap-y 38.
+    Starting at x=150, y=120.
+    ============================================================
+  -->
+  <g id="bands" fill="#0E1B2C" fill-opacity="0.86">
+
+    <!-- Band 1 — Test of Phonological Processing -->
+    <rect x="150" y="120" width="16" height="5"/>
+    <rect x="178" y="120" width="16" height="5"/>
+    <rect x="206" y="120" width="16" height="5"/>
+    <rect x="234" y="120" width="16" height="5"/>
+    <rect x="262" y="120" width="16" height="5"/>
+    <rect x="290" y="120" width="16" height="5"/>
+    <rect x="318" y="120" width="16" height="5"/>
+    <rect x="346" y="120" width="16" height="5"/>
+    <rect x="374" y="120" width="16" height="5"/>
+    <rect x="402" y="120" width="16" height="5"/>
+    <rect x="430" y="120" width="16" height="5"/>
+    <rect x="458" y="120" width="16" height="5"/>
+
+    <!-- Band 2 — Test of Orthographic Processing and Morphological Awareness -->
+    <rect x="150" y="158" width="16" height="5"/>
+    <rect x="178" y="158" width="16" height="5"/>
+    <rect x="206" y="158" width="16" height="5"/>
+    <rect x="234" y="158" width="16" height="5"/>
+    <rect x="262" y="158" width="16" height="5"/>
+    <rect x="290" y="158" width="16" height="5"/>
+    <rect x="318" y="158" width="16" height="5"/>
+    <rect x="346" y="158" width="16" height="5"/>
+    <rect x="374" y="158" width="16" height="5"/>
+    <rect x="402" y="158" width="16" height="5"/>
+    <rect x="430" y="158" width="16" height="5"/>
+    <rect x="458" y="158" width="16" height="5"/>
+
+    <!-- Band 3 — Test of Reading and Spelling -->
+    <rect x="150" y="196" width="16" height="5"/>
+    <rect x="178" y="196" width="16" height="5"/>
+    <rect x="206" y="196" width="16" height="5"/>
+    <rect x="234" y="196" width="16" height="5"/>
+    <rect x="262" y="196" width="16" height="5"/>
+    <rect x="290" y="196" width="16" height="5"/>
+    <rect x="318" y="196" width="16" height="5"/>
+    <rect x="346" y="196" width="16" height="5"/>
+    <rect x="374" y="196" width="16" height="5"/>
+    <rect x="402" y="196" width="16" height="5"/>
+    <rect x="430" y="196" width="16" height="5"/>
+    <rect x="458" y="196" width="16" height="5"/>
+
+    <!-- Band 4 — Test of Working Memory -->
+    <rect x="150" y="234" width="16" height="5"/>
+    <rect x="178" y="234" width="16" height="5"/>
+    <rect x="206" y="234" width="16" height="5"/>
+    <rect x="234" y="234" width="16" height="5"/>
+    <rect x="262" y="234" width="16" height="5"/>
+    <rect x="290" y="234" width="16" height="5"/>
+    <rect x="318" y="234" width="16" height="5"/>
+    <rect x="346" y="234" width="16" height="5"/>
+    <rect x="374" y="234" width="16" height="5"/>
+    <rect x="402" y="234" width="16" height="5"/>
+    <rect x="430" y="234" width="16" height="5"/>
+    <rect x="458" y="234" width="16" height="5"/>
+  </g>
+
+  <!-- Hairline rule below the bands — the macron at the assessment-teaching boundary -->
+  <line x1="150" y1="305" x2="474" y2="305" stroke="#0E1B2C" stroke-width="1" stroke-opacity="0.55"/>
+
+  <!-- The remediation moment — single kiln-orange rectangle in the lower third -->
+  <rect x="290" y="345" width="40" height="14" fill="#D94F2A" fill-opacity="0.92"/>
+
+  <!-- The wider field — sparse scatter of muted units in the right two thirds, representing the longitudinal record being built across years -->
+  <g id="field" fill="#0E1B2C" fill-opacity="0.22">
+    <rect x="640" y="142" width="16" height="5"/>
+    <rect x="700" y="178" width="16" height="5"/>
+    <rect x="754" y="156" width="16" height="5"/>
+    <rect x="810" y="200" width="16" height="5"/>
+    <rect x="870" y="172" width="16" height="5"/>
+    <rect x="932" y="220" width="16" height="5"/>
+    <rect x="990" y="190" width="16" height="5"/>
+    <rect x="668" y="240" width="16" height="5"/>
+    <rect x="724" y="266" width="16" height="5"/>
+    <rect x="788" y="288" width="16" height="5"/>
+    <rect x="852" y="252" width="16" height="5"/>
+    <rect x="910" y="304" width="16" height="5"/>
+    <rect x="976" y="276" width="16" height="5"/>
+    <rect x="1036" y="248" width="16" height="5"/>
+    <rect x="696" y="332" width="16" height="5"/>
+    <rect x="758" y="318" width="16" height="5"/>
+    <rect x="824" y="360" width="16" height="5"/>
+    <rect x="886" y="340" width="16" height="5"/>
+    <rect x="948" y="376" width="16" height="5"/>
+    <rect x="1008" y="350" width="16" height="5"/>
+    <rect x="672" y="410" width="16" height="5"/>
+    <rect x="736" y="396" width="16" height="5"/>
+    <rect x="802" y="426" width="16" height="5"/>
+    <rect x="864" y="410" width="16" height="5"/>
+    <rect x="928" y="442" width="16" height="5"/>
+    <rect x="992" y="416" width="16" height="5"/>
+    <rect x="1052" y="396" width="16" height="5"/>
+  </g>
+
+  <!-- Macron motif — the publication's signature, at baseline -->
+  <line x1="540" y1="555" x2="660" y2="555" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <!-- Kicker text — JetBrains Mono style, sparingly used -->
+  <text x="150" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 05 · KUWAIT</text>
+  <text x="1050" y="552" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>
