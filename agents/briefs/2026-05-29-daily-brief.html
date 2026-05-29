@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-05-29</title>
+<meta name="description" content="Manager → Founder daily brief for Friday 29 May 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Friday · 29 May 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 02</div>
+    <h1>A persona added, a publish gate widened, a stale plan corrected.</h1>
+    <p class="dek">The publication grew a structural piece — a permanent guardian for the Arabic side. Three live pieces re-read clean on the second pass. The day opened with a stale-state error and the rule that follows from it is now Rule 9. The guidebook is on disk.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>What was accomplished — and what was learned.</h2>
+        <div class="day__date">2026·05·28 · Thursday</div>
+      </div>
+    </header>
+
+    <div class="twin">
+      <div>
+        <h3>Accomplished</h3>
+        <ul>
+          <li>Volume override delivered end-to-end. Three fresh EN pieces — Kuwait CCET, Iraq Mosul Library, Ghana CBE — shipped clean to main. Three AR translations drafted in fusha alongside. Three Designer hero stills produced. Issue 01 stands at seven live pieces, both languages.</li>
+          <li>Organic Promotion Plan filed as HTML at <code>/agents/growth/2026-05-28-organic-promotion-plan.html</code>. Two approvals pending from Vini (Substack Recommendations list, courtesy-email signature).</li>
+          <li>Daily Brief format codified. The brief lives in the publication's typographic system — three-part, EOD, on disk.</li>
+          <li>The dek-length schema fix was applied across all six new pieces in one push.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learned</h3>
+        <ul>
+          <li><strong>The brief is yesterday's artefact, not today's state.</strong> The 18:00 brief said gate 3 had not run. The actual push happened later that evening. Today's first plan was built off the brief and was wrong about the day's starting point. State verification — git log + live URL — must precede planning, every session. Now Rule 9.</li>
+          <li><strong>The override mode survives a second read.</strong> Editor's slow read on Kuwait, Iraq, and Ghana found all three hold. The 1-fresh-rule remains the default, but the override is a real tool, not a one-time exception, when sourcing reconnaissance precedes scope commit.</li>
+          <li><strong>A weakness is identifiable on the day it appears.</strong> The override day's AR side ran without a permanent guardian. That is the moment to add the Domain-Specialist Editor, not the next override.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done.</h2>
+        <div class="day__date">2026·05·29 · Friday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">Self-correction on record</div>
+      <p>Manager opened the day with a plan that treated the previous evening's brief as live state. Vini corrected: the six pieces were already live, gates 1–3 had passed, the push had happened. Plan rewritten; the rule that follows is the state-verification rule, codified in memory and now in the standing rules of the guidebook. The Manager owns the error.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · New persona</div>
+        <div class="item__body">Arabic Editor added — the seventh persona, second editorial guardian, peer-specialist inside Editorial reporting to the Editor. Carries an Arabic-specific five-test rubric and an independent fourth publish gate for any piece going live in Arabic. The decision: the override day made the structural weakness visible; the right response was a permanent guardian, not another stopgap.</div>
+        <div class="item__note">/agents/07_arabic_editor.md · Routing updated in /agents/README.md · Fourth gate codified in /agents/01_manager.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · AR pass on three live pieces</div>
+        <div class="item__body">Kuwait CCET (AR), Iraq Mosul (AR), Ghana CBE (AR) — all three reviewed against the Arabic Editor's rubric. All three approved. Iraq was the watch-piece; the political register around the 2014-17 period held. Two minor style notes carried forward for the next Arabic draft. No pull-and-correct invoked.</div>
+        <div class="item__note">/content-drafts/verdicts/ar/2026-05-28-kuwait-ccet-arabic-tests-ar.md · …iraq-mosul-library-ar.md · …ghana-cbe-curriculum-ar.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · EN second-read</div>
+        <div class="item__body">Editor's slow read on Kuwait, Iraq, Ghana — the EN versions, in public — found all three hold. Source attribution clean on a hostile-reader posture. The override-mode finding from 2026-05-28 stands: the configuration works when source-discovery is front-loaded and the chain stays in one session.</div>
+        <div class="item__note">/content-drafts/verdicts/2026-05-29-second-read-kuwait-iraq-ghana.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Editor's brief for tomorrow</div>
+        <div class="item__body">Editor briefed Content Creator on a Saudi K-12 or ECE candidate piece in a two-stage envelope: (1) sourcing-recon memo on three candidates today; (2) full draft on the Editor's selection. GCC weight grows; this would be the publication's first Saudi piece. The throughput rule is back in force after yesterday's override: today is 1 fresh + 0 translations (no AR backlog).</div>
+        <div class="item__note">/content-drafts/briefs/2026-05-29-saudi-ece-reconnaissance-brief.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Growth routine #1 — Bo</div>
+        <div class="item__body">First of four retroactive Growth runs. Field-note card briefed to Designer (target: Saturday). Courtesy email drafted to the Ministry of Basic and Senior Secondary Education and Teaching Service Commission of Sierra Leone, pending send today from <em>education3881@gmail.com</em>. Substack note queued for Sunday 10:00 Abu Dhabi to avoid weekend signal collisions.</div>
+        <div class="item__note">/agents/growth/2026-05-29-bo-piece-routine.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Web Dev daily QA</div>
+        <div class="item__body">Live site renders. All 7 EN and 7 AR pieces cross-linked. All hero stills on disk and referenced by pieces that exist. <code>.bak</code> debris from the 2026-05-28 sed-in-place edits cleaned. Sandbox build still hits the vite-cache ACL — irrelevant; the deployed site is the proof the GHA build is clean.</div>
+        <div class="item__note">/agents/logs/qa-2026-05-29.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · The guidebook v0.1</div>
+        <div class="item__body">A standalone HTML guidebook on building this kind of publication — replicable for any subject. Twelve chapters: the decision before the build, the architecture diagram, the seven personas in detail, the nine standing rules, the six processes, the five real incidents with dates, the technical spine, day-zero checklist, first-month rhythm, when this model is wrong, the bilingual education worked example, the only metric. Reads as a publication object, not an internal memo. The case for replicability is the abstraction; the Madār example is the proof of concept.</div>
+        <div class="item__note">/agents/guidebook/slow-cadence-publication-guidebook.html · ~10,500 words · v0.1</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · Memory updated</div>
+        <div class="item__body">New memory file <code>edu_website_state_verification.md</code> codifies the state-before-plan rule. Index updated. Next Manager session starts with git log + live URL before reading any brief.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·05·30 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Saudi piece — stage 1</div>
+        <div class="item__body">Content Creator returns the sourcing-reconnaissance memo: three Saudi K-12 or ECE candidates with named humans, primary URLs, why-now signals. Editor selects one. Designer briefed in the same hour. Draft begins. The throughput rule in force.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Designer · Bo card</div>
+        <div class="item__body">Field-note card for the Bo piece due end-of-day Saturday. 1080×1350 portrait, typographic-only treatment, Krio quote with attribution, wordmark inlined. No image of a teacher, no image of chalk, no image of a classroom — the publication is typographic and the card carries that signal.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · Bo dispatch</div>
+        <div class="item__body">Courtesy email to MBSSE and TSC sent (you, manually, from education3881@gmail.com — draft on file). Card produced. Substack note queued for Sunday morning. Mastodon + Bluesky cross-posts queued for the same window.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Second-read · Egypt + UAE</div>
+        <div class="item__body">Slow read on the two pieces from before the override (Egypt EKB at ten; UAE Madrasa × TikTok) — same hostile-reader posture. These were shipped before today's discipline tightened; they get the same test.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Arabic side · 30-day cadence begins</div>
+        <div class="item__body">The Arabic Editor's standing duty — a slow read on one live AR piece per day on a 30-day rolling cycle — begins with Bo (the oldest AR piece). The publication's Arabic side now has a permanent maintenance rhythm, not just a release-day rubric.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Idea — quiet</div>
+        <div class="item__body">The guidebook produced today is a stabilising artefact: writing down the operating manual forces the operation to confront where its rules are stable and where they are not. Worth marking that a future v0.2 should add the Domain-Specialist Editor commissioning pattern (when the second-axis Editor is also commissioning original pieces in their axis, not just guarding translations). Not urgent. Thinking only.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Watch · the override second-test</div>
+        <div class="item__body">The three override-day pieces have now passed: (a) the head Editor's first-pass rubric, (b) the Arabic Editor's first-pass rubric, (c) the head Editor's slow second read. The next test is reader response — anything substantive that comes back through Growth's 72-hour monitoring window after the pieces enter the social rotation. If a senior practitioner from any of the three geographies surfaces a correction or an objection, that is the real third-party validation of the override mode.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <span>Madār · Daily Brief No. 02 · 2026·05·29</span>
+    <span>Manager → Founder · End of day · Abu Dhabi</span>
+  </footer>
+
+</main>
+</body>
+</html>

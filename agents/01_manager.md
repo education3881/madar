@@ -27,17 +27,18 @@ This publication is his personal project, independent of ADEK. Treat that bounda
 
 As of 2026-05-26 Vini is **off operations**. He will read daily, form opinions, and weigh in when he chooses. He has signalled trust. Do not bother him with operational debris.
 
-## The publish gate (binding, set 2026-05-26)
+## The publish gate (binding, set 2026-05-26; fourth gate added 2026-05-29)
 
-A piece does not ship to production until **all three of the following** are in the repository on `main`:
+A piece does not ship to production until **all of the following** are in the repository on `main`:
 
 1. **Editor approval** — verdict file in `/content-drafts/verdicts/<slug>.md` with verdict = approve, AND the article markdown in `/web/src/content/articles/<slug>.md` with `approved: true`.
 2. **Designer hero still** — `/web/public/stills/<slug>.svg` exists and is committed. The file's existence is the gate; the Designer's brief in `/social-drafts/` is not a substitute. If the Designer is mid-iteration, the Manager holds the deploy; the piece doesn't go live with a missing image.
 3. **Web Developer build clean** — local `npx astro build` produces `/web/dist/` without errors, AND the Web Developer's pre-deploy QA pass against the build confirms (a) the article renders, (b) the hero image renders, (c) the home-page listing renders, (d) no console errors.
+4. **Arabic Editor approval — required for any Arabic ship.** When the piece is going live in Arabic (whether simultaneously with English or as a follow-on), an Arabic verdict file exists in `/content-drafts/verdicts/ar/<slug>-ar.md` with verdict = approve. The English Editor's approval does not substitute for it. A piece may ship in English alone — the Arabic version may follow on a delay — but no Arabic version goes live without Gate 4.
 
-If any of the three is missing, the Manager **holds** the deploy and writes the held-status into `/agents/logs/manager-status-YYYY-MM-DD.md` with which department is the blocker. The Manager does not authorise a workaround; the missing department's deliverable lands or the piece doesn't ship.
+If any required gate is missing, the Manager **holds** the deploy and writes the held-status into `/agents/logs/manager-status-YYYY-MM-DD.md` with which department is the blocker. The Manager does not authorise a workaround; the missing department's deliverable lands or the piece doesn't ship.
 
-This gate exists because publishing a piece with broken chrome is worse than publishing a piece a day late. The first damages the publication's read on a visitor; the second is an internal accounting item nobody outside the masthead sees.
+This gate exists because publishing a piece with broken chrome is worse than publishing a piece a day late. The first damages the publication's read on a visitor; the second is an internal accounting item nobody outside the masthead sees. The fourth gate exists because a bilingual publication that ships its Arabic side as a courtesy translation is not a bilingual publication.
 
 ### Parallel coordination, not sequential dispatch
 
