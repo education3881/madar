@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-05-30</title>
+<meta name="description" content="Manager → Founder daily brief for Saturday 30 May 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Saturday · 30 May 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 03</div>
+    <h1>The day a verdict-only day was the right day.</h1>
+    <p class="dek">Issue 01's quality-debt loop closes: the two override-mode pieces re-read clean on the second pass. The Saudi reconnaissance opens — three candidates assessed, none cleared the in-session draft bar. Stage 2 deferred to tomorrow. The publication shipped no new piece, and the calendar holds at seven. The discipline tightening from 2026-05-28 holds.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>What was accomplished — and what was learned.</h2>
+        <div class="day__date">2026·05·29 · Friday</div>
+      </div>
+    </header>
+
+    <div class="twin">
+      <div>
+        <h3>Accomplished</h3>
+        <ul>
+          <li>Arabic Editor added — the seventh persona, second editorial guardian, with a fourth publish gate that binds. Round 2 pushed Bo name (×6) and Madrasa name (×3) corrections; full-pass summary on all seven AR pieces filed.</li>
+          <li>EN slow-read on Kuwait, Iraq, Ghana — all three hold under hostile-reader posture. Override-mode finding validated at the rubric level on both languages.</li>
+          <li>Saudi reconnaissance brief commissioned. Slow-cadence publication guidebook v0.1 (~10,500 words) on disk. Bo growth routine #1 in motion. Web Dev daily QA clean.</li>
+          <li>Memory codified: state verification rule (git + live URL before plan) is now Rule 9.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learned</h3>
+        <ul>
+          <li><strong>The override mode now stands at 5/5 under hostile-reader test.</strong> Today's slow-read on Egypt EKB and UAE Madrasa × TikTok closed Issue 01's quality-debt loop. The override mode survives the full slate. The 1-fresh-rule default holds; the override is a real tool, not a one-time exception.</li>
+          <li><strong>A verdict-only day is the right day when sourcing is thin.</strong> The Saudi recon turned up one candidate (kindergarten 17→90 arc) with strong topic-fit but only one named human deep on the operational tier. The 2026-05-29 brief explicitly set the bar: Stage 2 begins today only if the candidate clears all five tests in-session. It did not. The discipline tightening of 2026-05-28 held; shame is in pushing thin sourcing, not in a verdict-only day.</li>
+          <li><strong>The Arabic Editor's flag closes by source verification, not by retroactive edit.</strong> The carried-forward flag on the Shawki 2015 Egypt quote was settled by opening the AUC News primary URL today and confirming the quote is EN-original. No retroactive edit to a published piece. The flag closes cleanly; the next Egypt piece carries forward the carried-style notes only.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done.</h2>
+        <div class="day__date">2026·05·30 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State-verification rule held</div>
+      <p>Manager opened the day with Rule 9 — git log + repo + live URL before any plan. Found: 7 EN + 7 AR live, all gates clean, no in-flight drafts, Saudi recon brief on disk (dated 2026-05-29) but Stage 1 unstarted. Yesterday's brief had flagged today's two threads; today's plan was built off verified state, not off yesterday's brief.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Editor slow-read on the two override-mode pieces</div>
+        <div class="item__body">Hostile-reader test on Egypt EKB at ten and UAE Madrasa × TikTok. Both <strong>hold</strong>. Shawki 2015 quote verified EN-original at AUC News — Arabic Editor's source-language flag closes. UAE Madrasa piece holds with one carry-forward note (an editorial-calendar follow-up if the partnership produces public viewer-demographic data within ~12 months — not a correction). The override-mode finding now stands at 5/5 under hostile-reader test across Issue 01's full slate. Issue 01 ships into Issue 02 with no outstanding quality-debt backlog.</div>
+        <div class="item__note">/content-drafts/verdicts/2026-05-30-second-read-egypt-uae.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Saudi sourcing-recon memo (Stage 1)</div>
+        <div class="item__body">Three candidates assessed against the 2026-05-29 brief's five-test rubric. <strong>Candidate A:</strong> the 17→90 kindergarten enrollment arc — strong topic, primary URLs resolved, Al-Benyan verbatim quotes at HCI 2025 on the broader Human Capability frame, but the specific 17→90 claim is reported speech via SPA/Argaam and the operational-tier voice (a Saudi kindergarten administrator or teacher quoted verbatim at a primary URL) is not yet located. <strong>Candidate B:</strong> Invest in Education Forum 2025 / Madares platform — sources clean, named-quoted Al-Benyan at MoE-controlled primary, but this would be the third consecutive piece in the "Arabic K-12 platform partners with foreign capital / external layer" envelope after Egypt and UAE. Repetition, not range. Park. <strong>Candidate C:</strong> PISA 2022 institutional response — named-human apparatus not located; dignity risk structurally hard to manage. Park.</div>
+        <div class="item__note">/content-drafts/briefs/2026-05-30-saudi-recon-memo.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Editor's verdict — Stage 2 not triggered</div>
+        <div class="item__body">The brief's Stage 2 trigger ("only if at least one candidate clears all five tests in-session") is not met. Candidate A is strong but one named human deep. Carry to 2026-05-31 with a follow-up sourcing commission: locate one named ECE administrator or teacher in Riyadh, Jeddah, or a regional centre, quoted verbatim at a primary Arabic-language URL. The Arabic Editor verifies before draft. <strong>Today: no new piece enters drafts/. Calendar holds at 7. Throughput rule honoured.</strong></div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Manager · publish gate (verdict-only day)</div>
+        <div class="item__body">Four substantive gates (EN editor / AR editor / designer / web dev) are N/A — no new piece under /web/. Editorial-trail-only commit: three files in content-drafts/ plus the manager gate log and this daily brief. The sandbox cannot remove .git/index.lock from the mounted volume (same ACL class as the vite-cache issue noted 2026-05-28/29); the commit and push will run from Vini's Mac terminal at end of day. Commands are in the gate log.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-05-30.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Editor's brief for tomorrow</div>
+        <div class="item__body">Brief on disk for 2026-05-31: Saudi sourcing follow-up to close the named-human gap on Candidate A. If located, draft begins. If not located by mid-week, the candidate parks and the GCC structural gap is acknowledged with a different framing (a Saudi-voiced Arabic-original piece commissioned through the Arabic Editor, where the named-human apparatus may be more reachable in AR primaries than in EN reporting).</div>
+        <div class="item__note">/content-drafts/briefs/2026-05-30-saudi-recon-and-slow-read-brief.md (today's brief; tomorrow's brief carries the follow-up commission)</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·05·31 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Saudi piece — sourcing follow-up</div>
+        <div class="item__body">Content Creator's first task: locate one named ECE administrator or teacher in Riyadh, Jeddah, or a regional centre, quoted verbatim at a primary Arabic-language URL on the kindergarten 17→90 expansion. The Arabic Editor verifies. If located by mid-day, Stage 2 draft begins. If not, candidate parks and the angle shifts to a Saudi-voiced Arabic-original commissioned through the Arabic Editor on a different ECE thread (the 0-6 National Curriculum implementation, the Virtual Kindergarten 2019 founding, or the Teachers Institute reform pathway).</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Arabic side · 30-day cadence continues</div>
+        <div class="item__body">The Arabic Editor's standing duty — one live AR piece re-read per day on a 30-day rolling cycle. Tomorrow's piece: Bahrain BQA (AR), the second-oldest AR piece in the rotation after Bo.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · Bo card + dispatch</div>
+        <div class="item__body">Designer's field-note card for the Bo piece due end-of-day. Substack note queued for Sunday 10:00 Abu Dhabi window. The courtesy email to MBSSE / TSC was drafted yesterday; pending Vini's send from education3881@gmail.com.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Watch · reader response window</div>
+        <div class="item__body">All seven Issue 01 pieces are now past their first-pass rubric, AR first-pass rubric, and the head Editor's hostile-reader slow read. The real third-party validation remains reader response. Growth's 72-hour monitoring window watches for substantive replies from senior practitioners in any of the seven geographies — that is the test the publication cannot self-administer.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Idea — quiet</div>
+        <div class="item__body">A pattern is now visible: three of the seven Issue 01 pieces sit in the "Arabic K-12 platform partners with foreign capital / external layer" envelope (Egypt EKB × Elsevier, UAE Madrasa × TikTok, and Saudi Madares × private capital was the temptation today). The temptation should be read as a signal that the source apparatus is over-indexed on press-release-shaped public records. Issue 02's editorial slate should deliberately seek pieces with a different source shape — a longitudinal teacher voice, a community-led story, a single document worth reading slowly. The Sierra Leone anchor and ECE-early-years targets in the calendar already lean this way. Worth marking that the temptation toward the platform-partnership envelope is the kind of pattern an editorial calendar is for. Not urgent. Thinking only.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <span>Madār · Daily Brief No. 03 · 2026·05·30</span>
+    <span>Manager → Founder · End of day · Abu Dhabi</span>
+  </footer>
+
+</main>
+</body>
+</html>
