@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition on sand ground. A single struck match runs diagonally up from lower right. At its tip, a small kiln-orange flame. Below the match, a long sand-tone shadow widens downward toward the baseline — the shadow is larger than the light, suggesting the heat is travelling further than the small flame implies. A faint horizontal ink rule a third of the way down marks the moment of the strike.">
+
+  <title>The Still · Qatar — Spark, and the hand that holds the match</title>
+  <desc>An atmospheric composition for Curated 08 — Qatar. A single struck match, drawn in fine ink line, climbs from the lower right of the field. A small kiln-orange flame sits at its tip, the only colour event in the composition. Below the match, a long shadow widens toward the lower baseline, drawn in muted ink at low opacity, suggesting that the heat is reaching further than the small light alone would imply. A faint horizontal ink rule crosses the upper third of the field — the moment-of-strike, drawn as the threshold at which a spark becomes a flame, the moment at which a slogan becomes an institution.</desc>
+
+  <!-- Sand ground -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!-- The moment-of-strike rule, upper third -->
+  <line x1="160" y1="180" x2="1040" y2="180" stroke="#0E1B2C" stroke-width="0.6" stroke-opacity="0.32"/>
+
+  <!-- The long shadow — widens downward from below the match -->
+  <path d="M 870 360 L 920 360 L 1000 560 L 760 560 Z" fill="#0E1B2C" fill-opacity="0.08"/>
+  <path d="M 880 360 L 910 360 L 970 560 L 800 560 Z" fill="#0E1B2C" fill-opacity="0.06"/>
+
+  <!-- The match — stick, diagonal from lower right to upper-left, drawn as a single fine line with a slightly thicker head end -->
+  <g id="match">
+    <!-- the stick -->
+    <line x1="990" y1="445" x2="780" y2="280" stroke="#0E1B2C" stroke-width="2.4" stroke-linecap="round" stroke-opacity="0.92"/>
+    <!-- the head (small ellipse at the lit end) -->
+    <ellipse cx="780" cy="280" rx="10" ry="6" fill="#0E1B2C" fill-opacity="0.92" transform="rotate(-38 780 280)"/>
+  </g>
+
+  <!-- The flame — single kiln-orange shape, only colour event -->
+  <g id="flame">
+    <!-- the larger flame body, teardrop -->
+    <path d="M 778 268 C 762 244, 768 220, 782 196 C 794 220, 808 240, 794 268 Z" fill="#D94F2A" fill-opacity="0.92"/>
+    <!-- the inner brighter core -->
+    <path d="M 784 252 C 776 240, 778 226, 786 212 C 792 226, 798 240, 790 252 Z" fill="#D94F2A" fill-opacity="0.62"/>
+  </g>
+
+  <!-- Sparse scatter of small ink ticks below the rule — the field of what the spark might reach, suggested at low opacity. Reads as a small constellation rather than an explicit grid. -->
+  <g id="field" fill="#0E1B2C" fill-opacity="0.18">
+    <rect x="220" y="232" width="10" height="3"/>
+    <rect x="278" y="258" width="10" height="3"/>
+    <rect x="332" y="240" width="10" height="3"/>
+    <rect x="396" y="276" width="10" height="3"/>
+    <rect x="172" y="296" width="10" height="3"/>
+    <rect x="238" y="310" width="10" height="3"/>
+    <rect x="306" y="336" width="10" height="3"/>
+    <rect x="374" y="320" width="10" height="3"/>
+    <rect x="442" y="354" width="10" height="3"/>
+    <rect x="190" y="378" width="10" height="3"/>
+    <rect x="270" y="402" width="10" height="3"/>
+    <rect x="344" y="386" width="10" height="3"/>
+    <rect x="418" y="416" width="10" height="3"/>
+    <rect x="490" y="394" width="10" height="3"/>
+    <rect x="560" y="430" width="10" height="3"/>
+    <rect x="624" y="412" width="10" height="3"/>
+    <rect x="180" y="452" width="10" height="3"/>
+    <rect x="262" y="468" width="10" height="3"/>
+    <rect x="340" y="446" width="10" height="3"/>
+    <rect x="412" y="478" width="10" height="3"/>
+    <rect x="492" y="462" width="10" height="3"/>
+    <rect x="568" y="492" width="10" height="3"/>
+    <rect x="646" y="476" width="10" height="3"/>
+    <rect x="232" y="510" width="10" height="3"/>
+    <rect x="318" y="528" width="10" height="3"/>
+    <rect x="402" y="506" width="10" height="3"/>
+    <rect x="488" y="534" width="10" height="3"/>
+    <rect x="572" y="520" width="10" height="3"/>
+    <rect x="654" y="540" width="10" height="3"/>
+  </g>
+
+  <!-- Macron motif at baseline -->
+  <line x1="540" y1="572" x2="660" y2="572" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <!-- Kicker text -->
+  <text x="150" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 08 · QATAR</text>
+  <text x="1050" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>

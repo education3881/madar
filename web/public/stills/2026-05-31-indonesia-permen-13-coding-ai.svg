@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition on sand ground. Three horizontal ink rules of equal weight stack at unequal intervals down the field — the visual rhythm of a regulation page. Between the second and third rule, a single small kiln-orange glyph: two crossing strokes that read as both an addition sign and a small handshake. The composition is the place where one regulation introduces something new by saying it joins what was already there.">
+
+  <title>The Still · Indonesia — The minister insists: not a new curriculum</title>
+  <desc>An atmospheric composition for Curated 09 — Indonesia. Three horizontal ink rules of equal weight, stacked at unequal intervals, evoke a regulation page with its lines of articles. The first rule sits at one fifth from the top; the second at one half; the third at three quarters. Between the second and third rule, a single small kiln-orange glyph — two crossing strokes that read as an addition sign rotated slightly, or as a handshake folded to its simplest form — marks the place where two earlier curricula are being held together by a third regulation. A sparse scatter of small ink ticks distributes across the field at low opacity, the visual texture of a working document rather than a finished page.</desc>
+
+  <!-- Sand ground -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!-- The three rules — equal weight, unequal interval -->
+  <line x1="150" y1="120" x2="1050" y2="120" stroke="#0E1B2C" stroke-width="1" stroke-opacity="0.85"/>
+  <line x1="150" y1="300" x2="1050" y2="300" stroke="#0E1B2C" stroke-width="1" stroke-opacity="0.85"/>
+  <line x1="150" y1="450" x2="1050" y2="450" stroke="#0E1B2C" stroke-width="1" stroke-opacity="0.85"/>
+
+  <!-- Small caption-like ink ticks above and below the rules, suggesting the body text of a regulation page at low opacity -->
+  <g id="lines-above-rule-1" fill="#0E1B2C" fill-opacity="0.18">
+    <rect x="180" y="82" width="60" height="3"/>
+    <rect x="252" y="82" width="40" height="3"/>
+    <rect x="304" y="82" width="80" height="3"/>
+    <rect x="396" y="82" width="50" height="3"/>
+    <rect x="458" y="82" width="34" height="3"/>
+    <rect x="504" y="82" width="70" height="3"/>
+    <rect x="586" y="82" width="46" height="3"/>
+  </g>
+  <g id="lines-between-1-2" fill="#0E1B2C" fill-opacity="0.18">
+    <rect x="180" y="148" width="44" height="3"/>
+    <rect x="236" y="148" width="80" height="3"/>
+    <rect x="328" y="148" width="56" height="3"/>
+    <rect x="396" y="148" width="36" height="3"/>
+    <rect x="444" y="148" width="64" height="3"/>
+    <rect x="520" y="148" width="40" height="3"/>
+    <rect x="572" y="148" width="76" height="3"/>
+    <rect x="660" y="148" width="48" height="3"/>
+    <rect x="180" y="174" width="68" height="3"/>
+    <rect x="260" y="174" width="44" height="3"/>
+    <rect x="316" y="174" width="56" height="3"/>
+    <rect x="384" y="174" width="80" height="3"/>
+    <rect x="476" y="174" width="38" height="3"/>
+    <rect x="526" y="174" width="62" height="3"/>
+    <rect x="180" y="200" width="40" height="3"/>
+    <rect x="232" y="200" width="86" height="3"/>
+    <rect x="330" y="200" width="48" height="3"/>
+    <rect x="390" y="200" width="58" height="3"/>
+    <rect x="460" y="200" width="70" height="3"/>
+    <rect x="180" y="226" width="76" height="3"/>
+    <rect x="268" y="226" width="42" height="3"/>
+    <rect x="322" y="226" width="60" height="3"/>
+    <rect x="394" y="226" width="50" height="3"/>
+    <rect x="180" y="252" width="54" height="3"/>
+    <rect x="246" y="252" width="80" height="3"/>
+    <rect x="338" y="252" width="44" height="3"/>
+    <rect x="394" y="252" width="64" height="3"/>
+    <rect x="470" y="252" width="38" height="3"/>
+  </g>
+  <g id="lines-between-2-3" fill="#0E1B2C" fill-opacity="0.18">
+    <rect x="180" y="328" width="68" height="3"/>
+    <rect x="260" y="328" width="40" height="3"/>
+    <rect x="312" y="328" width="72" height="3"/>
+    <rect x="396" y="328" width="50" height="3"/>
+    <rect x="458" y="328" width="62" height="3"/>
+    <rect x="532" y="328" width="36" height="3"/>
+    <rect x="580" y="328" width="58" height="3"/>
+    <rect x="180" y="354" width="42" height="3"/>
+    <rect x="234" y="354" width="74" height="3"/>
+    <rect x="320" y="354" width="48" height="3"/>
+    <rect x="380" y="354" width="56" height="3"/>
+    <rect x="448" y="354" width="44" height="3"/>
+    <rect x="504" y="354" width="78" height="3"/>
+    <rect x="180" y="380" width="60" height="3"/>
+    <rect x="252" y="380" width="46" height="3"/>
+    <rect x="310" y="380" width="56" height="3"/>
+    <rect x="378" y="380" width="82" height="3"/>
+    <rect x="472" y="380" width="40" height="3"/>
+    <rect x="180" y="406" width="52" height="3"/>
+    <rect x="244" y="406" width="68" height="3"/>
+    <rect x="324" y="406" width="44" height="3"/>
+    <rect x="380" y="406" width="60" height="3"/>
+    <rect x="452" y="406" width="56" height="3"/>
+  </g>
+  <g id="lines-below-rule-3" fill="#0E1B2C" fill-opacity="0.18">
+    <rect x="180" y="478" width="44" height="3"/>
+    <rect x="236" y="478" width="60" height="3"/>
+    <rect x="308" y="478" width="76" height="3"/>
+    <rect x="396" y="478" width="40" height="3"/>
+    <rect x="448" y="478" width="56" height="3"/>
+    <rect x="180" y="504" width="80" height="3"/>
+    <rect x="272" y="504" width="44" height="3"/>
+    <rect x="328" y="504" width="60" height="3"/>
+    <rect x="400" y="504" width="38" height="3"/>
+  </g>
+
+  <!-- The kiln-orange glyph — two crossing strokes between rule 2 and rule 3 -->
+  <g id="orange-glyph">
+    <!-- stroke A — from lower left to upper right -->
+    <line x1="780" y1="396" x2="848" y2="354" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" stroke-opacity="0.95"/>
+    <!-- stroke B — from upper left to lower right -->
+    <line x1="780" y1="354" x2="848" y2="396" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" stroke-opacity="0.95"/>
+  </g>
+
+  <!-- Macron motif at baseline -->
+  <line x1="540" y1="572" x2="660" y2="572" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <!-- Kicker text -->
+  <text x="150" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 09 · INDONESIA</text>
+  <text x="1050" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>

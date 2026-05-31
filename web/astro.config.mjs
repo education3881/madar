@@ -21,5 +21,10 @@ export default defineConfig({
     build: {
       cssCodeSplit: false,
     },
+    // Allow overriding the vite dependency cache directory via env var so the
+    // build can run in sandboxed environments where node_modules/.vite is
+    // not writable. Production deploys (GitHub Actions) leave this unset and
+    // vite uses its default location.
+    cacheDir: process.env.VITE_CACHE_DIR || undefined,
   },
 });

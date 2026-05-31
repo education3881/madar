@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import SiteHeader from '../../../components/SiteHeader.astro';
+import ShareRail from '../../../components/ShareRail.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../../lib/urls';
 
@@ -41,6 +42,9 @@ const fieldLabelAr = {
 const englishHref = piece.data.englishVersion
   ? withBase(`/articles/${piece.data.englishVersion}/`)
   : null;
+
+// Canonical share URL — absolute, includes base path. Used by the ShareRail.
+const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Base
@@ -124,6 +128,13 @@ const englishHref = piece.data.englishVersion
         <aside class="body-right" aria-hidden="true"></aside>
       </div>
     </footer>
+
+    {/* ============== SHARE CONTROLS ==============
+        Same component as the EN page, lang="ar" — applies Arabic labels
+        and Arabic display register on the kickers. Mirroring of the side
+        rail to the right margin is handled by the parent <html dir="rtl">
+        through CSS logical properties (inset-inline-start). */}
+    <ShareRail title={piece.data.title} url={shareUrl} lang="ar" />
 
   </article>
 </Base>

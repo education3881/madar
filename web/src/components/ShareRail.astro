@@ -1,0 +1,387 @@
+---
+// ShareRail.astro — Madār share controls.
+//
+// Two modes rendered from the same source of truth:
+//   1. Sticky side rail (desktop ≥1024px). Pinned in the article's
+//      left margin (or right margin in RTL). Vertical stack of four
+//      monoline SVG glyphs in the brand palette, with the kicker "Share"
+//      label rotated vertically.
+//   2. Inline horizontal strip (mobile / below 1024px). Sits at the
+//      end of the piece, below the Sources block, before the colophon.
+//      Horizontal row of four glyphs with a "Share this piece" kicker.
+//
+// Networks (per the publication's posture):
+//   - WhatsApp        (single most-used share channel across MENA)
+//   - X / Twitter     (international education-policy conversation)
+//   - Copy link       (quiet, no-account share — the educator's choice)
+//   - Email           (the ministry forward)
+//
+// No platform brand colour is used; every glyph is monoline in --color-ink,
+// hover state shifts to --color-orange. This matches the brand-chrome rule:
+// the publication's typographic system stays intact across all chrome.
+//
+// All glyphs are inlined SVG (not <img>), so currentColor inheritance works
+// and there is no missing-asset failure mode. The component takes no external
+// asset dependency.
+//
+// Copy-link behaviour: uses navigator.clipboard.writeText, with a small
+// inline confirmation pill ("Link copied") that fades after 1.6s. Falls
+// back to a visible URL alert if clipboard API is unavailable.
+
+interface Props {
+  title: string;
+  url: string;
+  lang?: 'en' | 'ar';
+}
+
+const { title, url, lang = 'en' } = Astro.props;
+
+// Pre-encode the various share-target URLs. The dynamic-route pages pass in
+// `url` already-absolute (Astro.site + pathname); we only need to URL-encode
+// the components going into the share intents.
+const encodedTitle = encodeURIComponent(title);
+const encodedUrl = encodeURIComponent(url);
+
+const links = {
+  whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+  x:        `https://x.com/intent/post?text=${encodedTitle}&url=${encodedUrl}`,
+  email:    `mailto:?subject=${encodedTitle}&body=${encodedUrl}`,
+};
+
+const labels = {
+  en: {
+    share: 'Share',
+    inline: 'Share this piece',
+    whatsapp: 'Share on WhatsApp',
+    x: 'Share on X',
+    copy: 'Copy link',
+    copied: 'Link copied',
+    email: 'Share by email',
+  },
+  ar: {
+    share: 'مشاركة',
+    inline: 'شارِك هذه القراءة',
+    whatsapp: 'مشاركة على واتساب',
+    x: 'مشاركة على إكس',
+    copy: 'نسخ الرابط',
+    copied: 'نُسخ الرابط',
+    email: 'مشاركة بالبريد',
+  },
+}[lang];
+---
+
+{/* ============================================================
+    Sticky side rail — desktop only (≥1024px)
+    ============================================================ */}
+<aside class="share-rail" aria-label={labels.share} data-share-rail data-share-url={url}>
+  <div class="share-rail__inner">
+    <span class="share-rail__kicker" aria-hidden="true">{labels.share}</span>
+    <a
+      class="share-rail__btn"
+      href={links.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={labels.whatsapp}
+    >
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.5 20.5 5 16.4a8.5 8.5 0 1 1 3.1 3l-4.6 1.1Z"/>
+        <path d="M8.4 9.6c.4 1.3 1 2.4 1.9 3.4.9.9 2 1.5 3.3 1.8l1-1.2c.2-.3.5-.3.8-.2l2.4.9c.3.1.5.4.5.7v.6c0 1-.7 1.8-1.7 1.9-3.6.4-7-1-9.5-3.5-2.5-2.5-3.9-5.9-3.5-9.5.1-1 .9-1.7 1.9-1.7h.6c.3 0 .6.2.7.5l.9 2.4c.1.3 0 .6-.2.8l-1.1 1Z"/>
+      </svg>
+    </a>
+    <a
+      class="share-rail__btn"
+      href={links.x}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={labels.x}
+    >
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 5 19 19"/>
+        <path d="M19 5 5 19"/>
+      </svg>
+    </a>
+    <button
+      class="share-rail__btn share-rail__btn--copy"
+      type="button"
+      data-share-copy
+      aria-label={labels.copy}
+    >
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.5 14.5 14.5 9.5"/>
+        <path d="M11 6.5 13 4.5a4 4 0 0 1 5.7 5.7l-2 2"/>
+        <path d="M13 17.5l-2 2a4 4 0 0 1-5.7-5.7l2-2"/>
+      </svg>
+      <span class="share-rail__toast" data-share-toast aria-live="polite">{labels.copied}</span>
+    </button>
+    <a
+      class="share-rail__btn"
+      href={links.email}
+      aria-label={labels.email}
+    >
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="6" width="18" height="12" rx="0.5"/>
+        <path d="M3.5 7 12 13l8.5-6"/>
+      </svg>
+    </a>
+  </div>
+</aside>
+
+{/* ============================================================
+    Inline strip — mobile (<1024px) at the end of the article
+    ============================================================ */}
+<section class="share-inline" aria-label={labels.inline} data-share-inline>
+  <p class="share-inline__kicker">{labels.inline}</p>
+  <div class="share-inline__btns">
+    <a class="share-inline__btn" href={links.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={labels.whatsapp}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.5 20.5 5 16.4a8.5 8.5 0 1 1 3.1 3l-4.6 1.1Z"/>
+        <path d="M8.4 9.6c.4 1.3 1 2.4 1.9 3.4.9.9 2 1.5 3.3 1.8l1-1.2c.2-.3.5-.3.8-.2l2.4.9c.3.1.5.4.5.7v.6c0 1-.7 1.8-1.7 1.9-3.6.4-7-1-9.5-3.5-2.5-2.5-3.9-5.9-3.5-9.5.1-1 .9-1.7 1.9-1.7h.6c.3 0 .6.2.7.5l.9 2.4c.1.3 0 .6-.2.8l-1.1 1Z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a class="share-inline__btn" href={links.x} target="_blank" rel="noopener noreferrer" aria-label={labels.x}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 5 19 19"/>
+        <path d="M19 5 5 19"/>
+      </svg>
+      <span>X</span>
+    </a>
+    <button class="share-inline__btn" type="button" data-share-copy aria-label={labels.copy}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.5 14.5 14.5 9.5"/>
+        <path d="M11 6.5 13 4.5a4 4 0 0 1 5.7 5.7l-2 2"/>
+        <path d="M13 17.5l-2 2a4 4 0 0 1-5.7-5.7l2-2"/>
+      </svg>
+      <span data-share-copy-label>{labels.copy}</span>
+    </button>
+    <a class="share-inline__btn" href={links.email} aria-label={labels.email}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="6" width="18" height="12" rx="0.5"/>
+        <path d="M3.5 7 12 13l8.5-6"/>
+      </svg>
+      <span>Email</span>
+    </a>
+  </div>
+</section>
+
+<script is:inline define:vars={{ copiedLabel: labels.copied, copyLabel: labels.copy }}>
+  // Copy-link behaviour for both the side rail and the inline strip.
+  // Uses navigator.clipboard.writeText where available; falls back to a
+  // legacy execCommand approach inside a temporary textarea.
+  (function () {
+    const buttons = document.querySelectorAll('[data-share-copy]');
+    const rail = document.querySelector('[data-share-rail]');
+    const railUrl = rail ? rail.getAttribute('data-share-url') : '';
+    const url = railUrl || window.location.href;
+
+    function copy(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+      }
+      // Fallback for non-secure contexts / older browsers
+      const t = document.createElement('textarea');
+      t.value = text;
+      t.setAttribute('readonly', '');
+      t.style.position = 'absolute';
+      t.style.left = '-9999px';
+      document.body.appendChild(t);
+      t.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(t);
+      return Promise.resolve();
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        copy(url).then(() => {
+          // Side-rail toast
+          const toast = btn.querySelector('[data-share-toast]');
+          if (toast) {
+            toast.classList.add('is-visible');
+            setTimeout(() => toast.classList.remove('is-visible'), 1600);
+          }
+          // Inline strip label swap
+          const label = btn.querySelector('[data-share-copy-label]');
+          if (label) {
+            label.textContent = copiedLabel;
+            setTimeout(() => { label.textContent = copyLabel; }, 1600);
+          }
+        });
+      });
+    });
+  })();
+</script>
+
+<style>
+  /* ===================================================================
+     STICKY SIDE RAIL — desktop ≥1024px
+     The rail floats in the article's left margin (or right in RTL).
+     position: sticky inside an aside that lives in the page flow.
+     =================================================================== */
+  .share-rail {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-start: 1.25rem;
+    z-index: 50;
+    pointer-events: none;
+  }
+  @media (min-width: 1024px) {
+    .share-rail { display: block; }
+  }
+
+  .share-rail__inner {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.5rem;
+    background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+  }
+
+  .share-rail__kicker {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-sage);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-block: 0.35rem;
+    margin-block-end: 0.15rem;
+  }
+
+  .share-rail__btn {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-ink);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.15s ease, background 0.15s ease;
+    border-radius: 2px;
+  }
+  .share-rail__btn:hover,
+  .share-rail__btn:focus-visible {
+    color: var(--color-orange);
+    background: var(--color-sand);
+    outline: none;
+  }
+  .share-rail__btn:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 2px;
+  }
+
+  /* Copy-link toast that floats out beside the button */
+  .share-rail__toast {
+    position: absolute;
+    inset-inline-start: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-paper);
+    background: var(--color-ink);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.18s ease;
+  }
+  .share-rail__toast.is-visible { opacity: 1; }
+
+  /* In Arabic / RTL the toast should appear on the other side. */
+  :global([dir="rtl"]) .share-rail__toast {
+    inset-inline-start: auto;
+    inset-inline-end: calc(100% + 0.5rem);
+  }
+
+  /* ===================================================================
+     INLINE STRIP — mobile / below 1024px
+     Sits at the end of the article, before the colophon.
+     =================================================================== */
+  .share-inline {
+    display: block;
+    margin-block: var(--space-xl) 0;
+    padding-block-start: var(--space-lg);
+    border-block-start: 1px solid var(--color-rule);
+  }
+  @media (min-width: 1024px) {
+    .share-inline { display: none; }
+  }
+
+  .share-inline__kicker {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    margin-block: 0 0.85rem;
+  }
+
+  .share-inline__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .share-inline__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .share-inline__btn:hover,
+  .share-inline__btn:focus-visible {
+    color: var(--color-orange);
+    border-color: var(--color-orange);
+    outline: none;
+  }
+  .share-inline__btn:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 2px;
+  }
+
+  /* In the Arabic article view, the inline kicker should use the Arabic
+     display register for the heading rather than mono — but the button
+     labels stay in the mono register to preserve visual rhythm with the
+     EN strip. The Arabic page wraps the component in dir="rtl" so logical
+     properties take care of layout. */
+  :global([dir="rtl"]) .share-inline__kicker {
+    font-family: var(--font-arabic-display);
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--color-orange);
+  }
+  :global([dir="rtl"]) .share-rail__kicker {
+    font-family: var(--font-arabic-display);
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--color-sage);
+  }
+</style>

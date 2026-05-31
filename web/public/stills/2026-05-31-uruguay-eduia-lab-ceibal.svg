@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A composition on sand ground. Nineteen small ink rectangles in a horizontal row across the lower third of the field, each one slightly different in height — an irregular wooden picket fence read as the years of an institution. The second-from-right rectangle (year 18, the year of the EduIA Lab launch) is taller than the others; a single kiln-orange seed-shape sits above it, drawn as if it has just risen from the year and is about to drop into the next.">
+
+  <title>The Still · Uruguay — Nineteen years of teaching the teachers</title>
+  <desc>An atmospheric composition for Curated 10 — Uruguay. Nineteen small ink rectangles in a horizontal row, each rectangle one year of the institution's life from 2007 to 2026. The rectangles are of slightly different heights, suggesting an irregular wooden picket fence — the unevenness of an institution that has compounded across very different administrations. The second from the right (year 18, the year of the EduIA Lab launch in March 2025) is taller than the others; a single kiln-orange seed-shape, the only colour event in the composition, sits above it, drawn as if it has just risen up out of the year and is about to drop into the next, the institution's next bet. The composition is the form of what compounds when an institution does one thing — train its teachers — across two decades.</desc>
+
+  <!-- Sand ground -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!-- Faint baseline rule that the years grow up from -->
+  <line x1="180" y1="430" x2="1020" y2="430" stroke="#0E1B2C" stroke-width="0.6" stroke-opacity="0.4"/>
+
+  <!--
+    Nineteen rectangles. Spacing: x starts at 200, step 42, width 24.
+    Heights vary in an irregular pattern but average ~60. Year 18 (index 17, 0-based) is taller (95).
+  -->
+  <g id="years" fill="#0E1B2C" fill-opacity="0.86">
+    <rect x="200" y="370" width="24" height="60"/>      <!-- 2007 / year 1 -->
+    <rect x="242" y="378" width="24" height="52"/>      <!-- 2008 / year 2 -->
+    <rect x="284" y="362" width="24" height="68"/>      <!-- 2009 / year 3 -->
+    <rect x="326" y="372" width="24" height="58"/>      <!-- 2010 / year 4 -->
+    <rect x="368" y="384" width="24" height="46"/>      <!-- 2011 / year 5 -->
+    <rect x="410" y="368" width="24" height="62"/>      <!-- 2012 / year 6 -->
+    <rect x="452" y="376" width="24" height="54"/>      <!-- 2013 / year 7 -->
+    <rect x="494" y="364" width="24" height="66"/>      <!-- 2014 / year 8 -->
+    <rect x="536" y="380" width="24" height="50"/>      <!-- 2015 / year 9 -->
+    <rect x="578" y="370" width="24" height="60"/>      <!-- 2016 / year 10 -->
+    <rect x="620" y="358" width="24" height="72"/>      <!-- 2017 / year 11 -->
+    <rect x="662" y="376" width="24" height="54"/>      <!-- 2018 / year 12 -->
+    <rect x="704" y="366" width="24" height="64"/>      <!-- 2019 / year 13 — renamed to Computational Thinking + AI -->
+    <rect x="746" y="380" width="24" height="50"/>      <!-- 2020 / year 14 -->
+    <rect x="788" y="372" width="24" height="58"/>      <!-- 2021 / year 15 -->
+    <rect x="830" y="362" width="24" height="68"/>      <!-- 2022 / year 16 -->
+    <rect x="872" y="378" width="24" height="52"/>      <!-- 2023 / year 17 — 80k AI training milestone -->
+    <rect x="914" y="335" width="24" height="95"/>      <!-- 2024 / year 18 — TALLER, EduIA Lab eve -->
+    <rect x="956" y="368" width="24" height="62"/>      <!-- 2025 / year 19 — EduIA Lab launch -->
+  </g>
+
+  <!-- The kiln-orange seed-shape, sitting above year 18 — the next bet -->
+  <g id="seed">
+    <ellipse cx="926" cy="298" rx="9" ry="14" fill="#D94F2A" fill-opacity="0.92"/>
+    <!-- a faint stem connecting seed to the year's top edge -->
+    <line x1="926" y1="312" x2="926" y2="335" stroke="#D94F2A" stroke-width="1" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- Year-marker hairline ticks below each rectangle, in muted ink -->
+  <g id="ticks" stroke="#0E1B2C" stroke-width="0.5" stroke-opacity="0.4">
+    <line x1="212" y1="432" x2="212" y2="438"/>
+    <line x1="254" y1="432" x2="254" y2="438"/>
+    <line x1="296" y1="432" x2="296" y2="438"/>
+    <line x1="338" y1="432" x2="338" y2="438"/>
+    <line x1="380" y1="432" x2="380" y2="438"/>
+    <line x1="422" y1="432" x2="422" y2="438"/>
+    <line x1="464" y1="432" x2="464" y2="438"/>
+    <line x1="506" y1="432" x2="506" y2="438"/>
+    <line x1="548" y1="432" x2="548" y2="438"/>
+    <line x1="590" y1="432" x2="590" y2="438"/>
+    <line x1="632" y1="432" x2="632" y2="438"/>
+    <line x1="674" y1="432" x2="674" y2="438"/>
+    <line x1="716" y1="432" x2="716" y2="438"/>
+    <line x1="758" y1="432" x2="758" y2="438"/>
+    <line x1="800" y1="432" x2="800" y2="438"/>
+    <line x1="842" y1="432" x2="842" y2="438"/>
+    <line x1="884" y1="432" x2="884" y2="438"/>
+    <line x1="926" y1="432" x2="926" y2="438"/>
+    <line x1="968" y1="432" x2="968" y2="438"/>
+  </g>
+
+  <!-- Small year labels under the first, middle, and last ticks -->
+  <text x="212" y="458" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.65" text-anchor="middle">2007</text>
+  <text x="590" y="458" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.65" text-anchor="middle">2016</text>
+  <text x="968" y="458" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#7A8471" fill-opacity="0.65" text-anchor="middle">2025</text>
+
+  <!-- Macron motif at baseline -->
+  <line x1="540" y1="572" x2="660" y2="572" stroke="#0E1B2C" stroke-width="1.2" stroke-opacity="0.78"/>
+
+  <!-- Kicker text -->
+  <text x="150" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">CURATED · 10 · URUGUAY</text>
+  <text x="1050" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78" text-anchor="end">سكون</text>
+
+</svg>

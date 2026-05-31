@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
+import ShareRail from '../../components/ShareRail.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
 
@@ -47,6 +48,9 @@ const fieldLabel = {
 const arabicHref = piece.data.arabicVersion
   ? withBase(`/ar/articles/${piece.data.arabicVersion}/`)
   : null;
+
+// Canonical share URL — absolute, includes base path. Used by the ShareRail.
+const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Base
@@ -152,6 +156,14 @@ const arabicHref = piece.data.arabicVersion
         <aside class="body-right" aria-hidden="true"></aside>
       </div>
     </footer>
+
+    {/* ============== SHARE CONTROLS ==============
+        Renders two modes from one component:
+          - sticky side rail (fixed-positioned, desktop ≥1024px)
+          - inline horizontal strip (mobile, below 1024px), placed at the
+            end of the piece below the Sources footer.
+        Both share the same URL + title source-of-truth. */}
+    <ShareRail title={piece.data.title} url={shareUrl} lang="en" />
 
   </article>
 </Base>
