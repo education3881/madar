@@ -13,6 +13,7 @@ themes:
   - value of teachers
   - access
 type: curated
+arabicVersion: 2026-05-31-indonesia-permen-13-coding-ai
 sources:
   - title: "Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) — official press release, 'Permendikdasmen Nomor 13 Tahun 2025, Menguatkan Arah Kebijakan melalui Pembelajaran Mendalam,' dated 23 July 2025. Includes verbatim quotes from Minister Abdul Mu'ti during the 22 July 2025 webinar; full elaboration by Toni Toharudin, Head of the Body for Standards, Curriculum and Educational Assessment (BSKAP), on the eight dimensions of the graduate profile, the coding-and-AI elective from grades 5–12, and the phased start in grades 5, 7 and 10."
     url: "https://www.kemendikdasmen.go.id/siaran-pers/13278-permendikdasmen-nomor-13-tahun-2025-menguatkan-arah-kebijakan-melalui-pembelajaran-mendalam"

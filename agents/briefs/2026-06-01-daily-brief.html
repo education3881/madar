@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-01</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 01 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 01 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 05</div>
+    <h1>Growth takes the wheel. AR closes the gap.</h1>
+    <p class="dek">The publication's first Growth-led day. Three packets are ready — a 25-minute Substack launch checklist, a re-curated Instagram opening grid against the ten-piece catalogue, and a list of twenty community members worth quiet following. AR closes its three-piece catch-up. No fresh research today, by design.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>What was accomplished — and what was learned.</h2>
+        <div class="day__date">2026·05·31 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="twin">
+      <div>
+        <h3>Accomplished</h3>
+        <ul>
+          <li>Three fresh pieces shipped via override-mode protocol — Qatar (<em>Spark, and the hand that holds the match</em>), Indonesia (<em>The minister insists: not a new curriculum</em>), Uruguay (<em>Nineteen years of teaching the teachers</em>). All three cleared the Editor's five-test rubric in writing.</li>
+          <li>Share rail component shipped — single source of truth, two rendering modes (sticky desktop side rail, inline mobile strip), wired into both EN and AR article layouts. Logical-property RTL handling. No platform brand colours; brand-palette monoline.</li>
+          <li>Three hero stills in the established compositional register — Qatar's struck match, Indonesia's regulation-page rules, Uruguay's nineteen-year compounding rectangles.</li>
+          <li>Publish gate ran in writing — three gates × three pieces, all ✓. Pushed to <span class="mono">main</span> Sunday evening; GitHub Actions deployed clean.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learned</h3>
+        <ul>
+          <li><strong>Override-mode now has two clean instances</strong> (28 May Kuwait/Iraq/Ghana; 31 May Qatar/Indonesia/Uruguay). The protocol — source-recon on N candidates before drafting any — is the reproducible variable, not the heroics. Memorialised in [[edu-website-override-finding]].</li>
+          <li><strong>Feature work travels safely alongside content in override sessions</strong> when the feature is bounded and the content shape is the spine. The share rail proved this Sunday; the rule is "bounded feature, not new architecture."</li>
+          <li><strong>The AR side is now visibly one day behind</strong> — by deliberate design (translation is a different unit of work) but worth being seen-and-named. Today closes that gap.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done.</h2>
+        <div class="day__date">2026·06·01 · Monday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State-verification rule held</div>
+      <p>Session opened with git log + repo + live URL before any plan. Found: 10 EN + 7 AR live at <span class="mono">9f9aaf4</span>, tree clean. The 5/31 override-mode push was deployed and live as of Sunday evening. Today's plan was built off the deploy state, not the brief.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Growth's Issue 01 Substack send-ready packet</div>
+        <div class="item__body">The 2026-05-26 setup brief assumed a catalogue of two pieces. The catalogue is now ten. Refreshed packet supplies all the copy required to send the first newsletter, in a single document Vini opens once: three Issue-01 options for the Editor to choose between (Growth's pick: <em>Founding restraint</em>, Sierra Leone + Bahrain), a bilingual welcome email, the Issue 01 post copy, and a 25-minute terminal-by-terminal checklist. When you sit down for ~25 minutes with that document open, the publication launches.</div>
+        <div class="item__note">/social-drafts/2026-06-01-growth-issue-01-send-packet.md · awaiting Editor sign-off on Option A vs B vs C</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Growth's Instagram opening grid v2 (9 tiles)</div>
+        <div class="item__body">Re-curated against the full ten-piece catalogue, not just Sierra Leone + Bahrain. Three rows: top reads as the three founding pieces (Sierra Leone / Bahrain / Egypt), middle as the publication speaking as itself (UAE Madrasa / wordmark / Iraq Mosul), bottom as the publication's range (Ghana / quiet-rule divider / Uruguay). Three posts a week (Mon / Wed / Fri 09:00 Gulf), three weeks, posted in reverse so Tile 1 lands top-left. Captions drafted, hashtags pre-audited, every caption under the 220-character bar. Designer brief for the two new tiles (wordmark + macron-rule divider) queued separately.</div>
+        <div class="item__note">/social-drafts/2026-06-01-growth-instagram-opening-grid-v2.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · Growth's engagement list v1 (twenty)</div>
+        <div class="item__body">The persona-named week-one deliverable that has not been produced until today. Twenty entries, structured 6/5/4/5 across researchers / journalists / policy-and-multilateral / institutions. Each entry: name + role + institution + why + reference + channel. Where a person's social handle hasn't been verified, the entry flags "TO VERIFY AT ENGAGEMENT TIME" — the publication's sourcing discipline applied to its own contact list. Engagement cadence binds: follow on day one, read for two months, engage only after they have engaged with us first. Re-curate every two months.</div>
+        <div class="item__note">/social-drafts/2026-06-01-growth-engagement-list-v1.md · the one Growth artefact where your eye is genuinely useful, when convenient</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Shipped · AR companions for the 5/31 trio</div>
+        <div class="item__body">Indonesia (<em>الوزير يُؤَكِّد: ليس منهجًا جديدًا</em>), Qatar (<em>الشرارةُ، والذي يَحملُ عودَ الثَّقاب</em>), Uruguay (<em>تسعةَ عَشَرَ عامًا من تعليم المُعَلِّمين</em>). Fusha-analytic register, named-human transliterations cross-checked for internal consistency, source URLs verified against the EN frontmatter, every Spanish/Indonesian quote preserved letter-for-letter with AR gloss alongside. Each EN file's frontmatter updated with <code>arabicVersion:</code> pointing back to the AR slug — the article layout will surface the "Read in the other language" link on both sides when the build deploys.</div>
+        <div class="item__note">/web/src/content/articles-ar/2026-05-31-{indonesia,qatar,uruguay}-*.md · Arabic Editor verdict at /content-drafts/verdicts/ar/2026-06-01-indonesia-qatar-uruguay-ar.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Standing · Publish-gate checklist (in writing)</div>
+        <div class="item__body">Four gates × three AR pieces, explicit and ticked. <strong>Gate 1</strong> Arabic Editor verdict on file, <code>approved: true</code> on each AR article — all ✓. <strong>Gate 2</strong> hero stills on disk (AR layouts reuse the EN stills) — all ✓. <strong>Gate 3</strong> <code>astro build</code> clean — 22 routes emitted, all 10 EN + all 10 AR + about + RSS. <strong>Gate 4</strong> Arabic Editor full-pass with named-human transliteration list — ✓. Gate-pass memo at <code>/agents/logs/manager-publish-gate-2026-06-01.md</code>.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Deferred · the push</div>
+        <div class="item__body">Same sandbox-FUSE boundary on the stale <code>.git/index.lock</code> that has been present since the 28th. The publish-gate documentation is in writing; the working tree is in known-clean editorial state; the push command below is one block. The first three lines fix the boundary in 0.4s of your terminal time.</div>
+      </div>
+
+    </div>
+
+    <div class="push-block">
+      <div class="kicker">For Vini · the push</div>
+      <p>Run this in your terminal from the repo root:</p>
+      <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madār — 2026-06-01: Growth packets (Issue 01 send-ready / IG grid v2 / engagement list); AR companions for Qatar / Indonesia / Uruguay; publish gate; daily brief"
+git push origin main</code>
+      <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions picks up on push to main and deploys to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. The build typically completes in ~90 seconds.</p>
+    </div>
+  </article>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·02 · Tuesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">First · Editor's verdict on Issue 01 options</div>
+        <div class="item__body">Editor reads Growth's three Issue 01 options (Founding restraint / Public-good infrastructure at ten / GCC arc) and picks one in writing. Verdict file at <code>/content-drafts/verdicts/2026-06-02-issue-01-composition.md</code>. Once the through-line is locked, the Issue 01 post copy in Growth's packet is final and Vini can launch the moment 25 minutes opens up.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Second · Designer brief for the two new IG tiles</div>
+        <div class="item__body">Tile 5 (wordmark on paper) and Tile 8 (macron-rule divider). The other seven tiles reuse the published stills — Designer's job there is the 1080×1080 PNG export, not new conceptual work. Brief lives at <code>/social-drafts/2026-06-02-designer-instagram-assets.md</code> and the Manager files it alongside the Editor brief.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Third · Saudi sourcing follow-up</div>
+        <div class="item__body">Carried from the 2026-05-30 recon memo and still open. Candidate A — the 17→90 kindergarten arc — needs at least one named operational human on Arabic-language primary URLs before Stage 2 can be triggered. Editor pushes a fresh hour of WebSearch reconnaissance against MOE Saudi + Ministry of Human Resources databases.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Optional · your read on the engagement list</div>
+        <div class="item__body">Growth's list of twenty positions the publication socially. The proportions (30 / 25 / 20 / 25 across research / press / policy / institutional) are Growth's call, but if a category feels off or you'd flag a Vini-known person we missed, the list is a tighter object than the Issue 01 packet for a five-minute read.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · no fresh research</div>
+        <div class="item__body">Override-mode ran clean four days ago and yesterday; source-discovery is finite; the next fresh batch earns itself by passing the same reconnaissance bar. Tomorrow is editorial-judgment, design, and the Substack launch window if you take it. The publication's tempo is its posture; we hold it.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·01</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

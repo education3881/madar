@@ -13,6 +13,7 @@ themes:
   - national identity
   - value of teachers
 type: curated
+arabicVersion: 2026-05-31-qatar-humanity-spark-strategy
 sources:
   - title: "Government Communications Office of Qatar — 'HE Prime Minister and Minister of Foreign Affairs launches Education Strategy 2024-2030.' Press release dated 3 September 2024. Includes verbatim quotes from HE Buthaina bint Ali Al Jabr Al Nuaimi, Minister of Education and Higher Education at the time of launch; the slogan 'Igniting the Spark of Learning'; the figure of early childhood education enrolment at 44% with a 2030 target to double; the announcement of four new STEM schools by 2026 for over 2,000 students; the 'My School is My Community' programme."
     url: "https://www.gco.gov.qa/en/top-news/he-prime-minister-and-minister-of-foreign-affairs-launches-education-strategy-2024-2030/"

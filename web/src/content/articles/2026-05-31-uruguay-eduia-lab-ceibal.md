@@ -13,6 +13,7 @@ themes:
   - access
   - sustainability
 type: curated
+arabicVersion: 2026-05-31-uruguay-eduia-lab-ceibal
 sources:
   - title: "TeleSemana — 'EduIA Lab: después del Plan Ceibal, Uruguay apuesta por la educación y el desarrollo de la inteligencia artificial,' dated 31 March 2025. Reports the launch of the EduIA Lab as a regional AI-in-education laboratory; the financial backing of the World Bank, the Inter-American Development Bank (BID) and the IDRC-Canada; verbatim quotes from Fiorella Haim, President of Ceibal, and President Yamandú Orsi; the 18-year Plan Ceibal milestone; the 205,000 unique students and 10,000+ teachers who have passed through the Pensamiento Computacional e Inteligencia Artificial programme; and the 300+ formative offerings the institution publishes each year."
     url: "https://www.telesemana.com/blog/2025/03/31/eduia-lab-despues-del-plan-ceibal-uruguay-apuesta-por-la-educacion-y-el-desarrollo-de-la-inteligencia-artificial/"
