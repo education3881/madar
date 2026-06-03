@@ -33,7 +33,7 @@ Run a QA pass on the live product every run: clean build, no broken brand chrome
 Every run logs at least one knowledge increment that makes the writers and editors smarter, not just busier: a sourcing-method note, a region/topic primer, a verified primary-source index entry, a style or transliteration ruling. These accumulate in `/agents/guidebook`. The test: **the team should be measurably more capable each week than the week before.**
 
 ### 5. Brief
-Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel. This is the founder's daily window into the operation.
+Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel. This is the founder's daily window into the operation. **Every brief carries a Statistics panel** (placed between Today and Tomorrow): run `python3 agents/tools/madar_stats.py --log` to regenerate it deterministically from article frontmatter, and paste the HTML panel in. The script also appends a dated snapshot to `/agents/stats/history.jsonl` so week-over-week deltas accumulate. The panel reports: EN/AR piece counts, AR/EN parity, countries covered, breakdown by region and by theme, pieces-per-ISO-week cadence, and the traffic line. **Traffic honesty:** the site carries no third-party tracker (privacy posture), so visitor analytics are not collected — say so plainly. The privacy-clean traffic signals (Substack opens / return rate / country, and attributable inbound shares) switch on when Issue 01 sends and are populated in the weekly review, not invented in the daily.
 
 ---
 
