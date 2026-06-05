@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-05</title>
+<meta name="description" content="Manager → Founder daily brief for Friday 05 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Friday · 05 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 08</div>
+    <h1>The oldest open item is closed, and a stalled push is recovered.</h1>
+    <p class="dek">Two things needed naming honestly today. First: yesterday's full day of work — the sitemap, the Saudi park, the guidebook — was produced but never pushed, so it has been sitting on disk, not on the live site. It is recovered in today's single push. Second: the nine Instagram tiles, on deck across two runs and flagged as a possible execution gap, are now rendered and verified — the grid is send-ready, and the method is banked so it never stalls for the same reason again. Plus a verified Issue 02 candidate from the African anchor. Build clean, parity 10/10.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A complete day's work — that never reached the live site.</h2>
+        <div class="day__date">2026·06·04 · Thursday</div>
+      </div>
+    </header>
+
+    <div class="twin">
+      <div>
+        <h3>What was produced</h3>
+        <ul>
+          <li>sitemap.xml + robots.txt with bilingual <span class="mono">hreflang</span> alternates across all 23 routes.</li>
+          <li>Saudi Arabic-original pass ran in full → clean park (no source cleared the bar).</li>
+          <li>Guidebook increment: Saudi ECE source index + transliteration ruling.</li>
+          <li>Publish gate run in writing; Brief No. 07 written.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What I found this morning</h3>
+        <ul>
+          <li><strong>None of it was pushed.</strong> Local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">8c3627c</span> — the 2026-06-03 commit. The 06-04 files are untracked on disk; the live site has no sitemap yet.</li>
+          <li>Plain reading: the brief was staged but the push didn't run. Not a content failure — a delivery gap. It is folded into today's push, named here rather than buried.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·05 · Friday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State-verification rule held</div>
+      <p>Opened on <span class="mono">git</span> + the live repo before any plan, per the standing rule. That is exactly how the un-pushed 06-04 day was caught: the brief said "staged," but local <span class="mono">main</span> sat at <span class="mono">8c3627c</span> with seven untracked files. Planned off the deploy state, not off yesterday's brief. The recurring <span class="mono">node_modules/.vite</span> FUSE boundary blocked the in-place build again — routed around via the /tmp copy, not fought.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the nine IG opening-grid tiles, rendered</div>
+        <div class="item__body">The oldest open item on the board — "on deck" since 03 June, slipped on 04 June, and flagged in the weekly signals as a possible <em>image-rendering capability gap</em>. It is not a gap. All nine 1080×1080 tiles are rendered and verified on a 3×3 contact sheet: seven published stills centred on paper (padded 1:1, not cropped, per the brief) plus the two new tiles — the wordmark on paper (Tile 5) and the macron-rule divider (Tile 8). The grid is now <strong>send-ready</strong>; posting is Vini's 25-minute action whenever a window opens.</div>
+        <div class="item__note">/design-assets/instagram/opening-grid/tile-01…09.png · /agents/logs/designer-2026-06-05-ig-opening-grid.md · /social-drafts/2026-06-05-growth-opening-grid-ready.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Issue 02 Sierra Leone candidate, verified on the record</div>
+        <div class="item__body">Source-reconnaissance, not a draft. Identified and verified a strong secondary-slot candidate from the African anchor: <strong>Sierra Leone's first-ever National Digital Learning Strategy (NDLS) 2025–2030</strong>, MBSSE + TSC, published 1 January 2025 — a primary government strategy with a downloadable PDF and a citable evidence-library record. It closes a loop with the Bo anchor piece (the field-level chalk shortage; the NDLS is the policy-level answer). A concrete operational corroborator exists too (the Nov-2025 GIS teacher preference-matching algorithm). <strong>Unpark conditions are the same bar as Saudi:</strong> one named operational voice datelined 2024+ before any commission — drafted to a source, never a slot.</div>
+        <div class="item__note">/content-drafts/verdicts/2026-06-05-sierra-leone-ndls-issue02-recon.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build clean, sitemap valid, parity intact</div>
+        <div class="item__body">Full QA pass via the /tmp route-around: <strong>23 pages, no errors</strong>. sitemap.xml + robots.txt confirmed at the dist root; sitemap <strong>validates as XML</strong> — 23 <span class="mono">&lt;url&gt;</span> entries, <strong>66 hreflang alternates</strong> wiring each EN page to its AR twin and back. Brand chrome intact: <strong>zero</strong> <span class="mono">&lt;img&gt;</span> wordmarks, inline SVG on home. <span class="mono">/madar/</span> base path correct; EN/AR parity 10/10; zero orphan or placeholder strings.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-05.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the rendering method, banked</div>
+        <div class="item__body">The IG tiles slipped twice because rendering <em>read</em> like a missing capability. Banked the method so it never does again: our stills are pure line-art SVG (no fonts) and the wordmark is path-based, so <span class="mono">cairosvg</span> + Pillow render both deterministically — no headless browser needed — with the exact pad-to-1:1 recipe and the must-look contact-sheet verification step. This directly retires the weekly's "image-rendering bottleneck" watch signal.</div>
+        <div class="item__note">/agents/guidebook/2026-06-05-rendering-stills-to-png.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document</div>
+        <div class="item__body">Written in the site's look and feel, with the standing statistics panel below, and staged for the single push that folds in both 06-04 and 06-05.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-05</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 6 · Africa 2 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 10 · access 9 · value of teachers 7 · AI-readiness 5 · language and heritage preservation 4</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-05-31</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·06 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Standing · two send-ready launches, both yours</div>
+        <div class="item__body">Issue 01 (send packet final) and the Instagram opening grid (tiles + captions final) are now both one Vini-action away. Independent of each other; neither blocks the other. Growth flips to return-rate measurement the moment either goes live — and once today's push lands, the sitemap means search engines find the archive in parallel.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · the NDLS named-voice check</div>
+        <div class="item__body">Next concrete step on the Sierra Leone Issue 02 candidate: fetch the full NDLS PDF and the GIS-algorithm record, and write the named-operational-voice availability finding. No drafting until that clears the 2024+ dateline bar.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly signal · wire @astrojs/sitemap</div>
+        <div class="item__body">Today's sitemap is still the hand-built static file and will drift as articles are added. Carried to the Sunday weekly review: replace it with the official integration so it regenerates per build. A one-time route, not a recurring edit.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi stays parked</div>
+        <div class="item__body">Unchanged. No GCC piece manufactured to fill the slot. Unpark conditions on record: one named operational voice datelined 2024+, or a data-led piece anchored on GASTAT 2025. The piece arrives when its source does.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push (folds in two days)</div>
+    <p>This single push lands both the un-pushed 06-04 work and today's. Run it from the repo root:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madār — 2026-06-05: nine IG opening-grid tiles (grid send-ready); Issue 02 Sierra Leone NDLS recon; render-method guidebook; publish gate; brief 08 — also lands 06-04 sitemap.xml + robots.txt + Saudi park + ECE source-index"
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. The only live-site change is the addition of <span class="mono">/sitemap.xml</span> and <span class="mono">/robots.txt</span> at the root (carried from 06-04, validated again today). Everything else — tiles, memos, guidebook, brief — is repo-only and does not alter the deploy surface. After deploy, the sitemap can be submitted to Google Search Console / Bing whenever you want the archive indexed.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·05</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

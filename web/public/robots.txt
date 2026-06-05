@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://education3881.github.io/madar/sitemap.xml
