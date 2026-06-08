@@ -85,3 +85,17 @@ One of these, then the draft can be written to full source:
 Until then: **drafting may proceed on the Tier-1 spine only** — the equity problem, the 2,341-teacher cohort, Marian Abu's classroom-tier account, the matching criteria, the female tiebreaker (with the 70%-male figure), and the limits attributed to the audit — with every Tier-2/3/4 item left as a clearly-marked `[[TRACE]]` placeholder the Editor will not pass to `approved: true`. That is genuine forward motion, not a slot-filler: the piece is measurably closer to clearing, and the one thing standing between it and a full draft is now named to a single Vini action.
 
 — Content Creator dossier, relayed by the Manager · 2026-06-07
+
+---
+
+## ADDENDUM — RESOLVED 2026-06-08: every quarantined item traced to the primary
+
+The wall this dossier hit was a **`bash`-egress** wall, not an open-web wall. On 2026-06-08 the EdTech Hub primary pages were opened in full with the sanctioned `WebSearch` + `web_fetch` tools (see `/agents/guidebook/2026-06-08-egress-wall-is-bash-only-use-web-tools.md`). No settings change was needed.
+
+- **TIER 2 — cleared.** 64% (PPTR>100), 54% (matched to preferred), 7% (>5 km from preferred), 100% (selected passed the licensing exam) all appear verbatim under "Immediate Impact" in the EdTech Hub webinar summary (20 Nov 2025).
+- **TIER 3 — resolved to the primary.** EdTech Hub states a flat **57%** to disadvantaged districts; the "56% + 53%" is a disaggregated secondary cut. The draft uses 57%.
+- **TIER 4 — cleared.** Lans Keifala (Chairman, TSC) and Gregory Elacqua (Principal Economist, IDB) confirmed as named speakers. Marian Abu's quotes taken directly from the 4 Dec 2024 conversation, including the school-ID failure and ~14%-affected figure.
+
+**Status: drafted, Editor-approved (5/5), AR composed + Arabic-Editor-approved, hero still on disk. Shipped 2026-06-08.**
+
+— Manager · 2026-06-08

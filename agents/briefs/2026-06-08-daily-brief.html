@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-07</title>
+<meta name="description" content="Manager → Founder daily brief for Sunday 07 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 08 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 11</div>
+    <h1>The wall came down — and the Sierra Leone piece shipped.</h1>
+    <p class="dek">Yesterday's dossier concluded the load-bearing figures couldn't be traced from here, and named an allowlist step in Settings as the unblock. That was half right: the wall is real for the sandbox shell, but <strong>not</strong> for the sanctioned web tools, which opened the EdTech Hub primary in full this morning. Every quarantined figure — 64%, 57%, 54%, 7%, the 100% pass rate — and both held names (Lans Keifala, Gregory Elacqua) traced to source. The piece cleared all five Editor tests, the Arabic was composed and its transliterations verified, the hero still is on disk, the build is clean at 11/11 parity. <strong>Madār's eleventh piece is live.</strong> No allowlist action is needed. Three days of work — 06-06, 06-07 and today — fold into the one push below.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The dossier found the wall. Today we walked around it.</h2>
+        <div class="day__date">2026·06·07 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">The gap, named plainly</div>
+      <p>Origin <span class="mono">main</span> still sits at <span class="mono">8231af0</span> (06-05). <strong>Two full days — 06-06 and 06-07 — ran, produced their five functions and Briefs 09 and 10, and were never pushed.</strong> The founder's one action hasn't run since 06-05, so both days sit uncommitted on disk. Nothing was lost. Until today the deploy surface hadn't changed, so the live site was never stale — only the working record was. <strong>That changes with this push:</strong> it lands the first new article since 06-05, so today's commit actually updates the live site, and it folds all three days into one.</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What 06-07 produced (now staged)</h3>
+        <ul>
+          <li>The Sierra Leone research dossier — spine corroborated, three figures + two names quarantined to the primary, the "57% vs 56%/53%" discrepancy flagged.</li>
+          <li>The egress-sourcing guidebook method; the Search Console / Bing sitemap-submission packet; QA clean; Brief No. 10.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What carried into today</h3>
+        <ul>
+          <li>The dossier's open question — <em>can the seven figures actually be traced from here?</em> Answered today: yes, through the web tools, no settings change.</li>
+          <li>The whole un-pushed 06-06 + 06-07 set, picked up and folded into today's single commit.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·08 · Monday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State-verification rule held</div>
+      <p>Opened on <span class="mono">git</span> + the live deploy before any plan. Local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">8231af0</span> (06-05); the 06-06 and 06-07 work is uncommitted, not deployed — named above, not buried. The recurring <span class="mono">node_modules/.vite</span> FUSE boundary blocked the in-place build again; routed around via a /tmp copy — and when <span class="mono">rsync</span> silently dropped files from the mount, switched to <span class="mono">cp -a</span> for <span class="mono">node_modules</span>. Routed around, not fought.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Sierra Leone TSC teacher-matching — drafted to full source and SHIPPED (EN + AR)</div>
+        <div class="item__body">The block that held this piece since 06-05 fell in the first hour: the egress wall is a <strong>bash-only</strong> boundary, and <span class="mono">WebSearch</span> + <span class="mono">web_fetch</span> opened the EdTech Hub primary in full. Every quarantined number traced — <strong>2,341</strong> recruited, <strong>100%</strong> passed the licensing exam, <strong>64%</strong> to schools with PPTR&gt;100, <strong>57%</strong> to disadvantaged districts (the primary's flat figure — the "56%/53%" is a disaggregated secondary cut), <strong>54%</strong> matched to a preferred school, <strong>7%</strong> placed beyond 5&nbsp;km. The ~1,180-word piece holds the gains and the limits in one breath, anchored by Marian Abu in her own words — including her self-critical detail that schools without an ID number are invisible to the algorithm (~14% of deployees affected, "left worse off than before"). The Bo loop is closed in the open; the IDB / Latin-America bridge is the closing lens. Editor verdict: <strong>5/5</strong>. Arabic composed (not translated) and transliterations verified. <span class="mono">approved: true</span> on both.</div>
+        <div class="item__note">/web/src/content/articles{,-ar}/2026-06-08-sierra-leone-tsc-teacher-matching.md · verdict + Arabic-Editor sign-off + publish gate logged</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · clean build, parity 11/11, sitemap repaired</div>
+        <div class="item__body">Full QA via the /tmp route-around: <strong>25 pages, no errors.</strong> EN/AR slug parity exact (<span class="mono">diff</span> clean, <strong>11 = 11</strong>); every slug has its hero still (11/11); the brand wordmark stays inlined SVG (the <span class="mono">&lt;img&gt;</span> hits are editorial hero stills, by design). Caught and fixed a real gap: the <strong>hand-built <span class="mono">sitemap.xml</span> was stale</strong> — it doesn't auto-pick-up new pages — so the two new URLs were added by hand with their hreflang alternates. It now validates as XML at <strong>25 <span class="mono">&lt;url&gt;</span></strong>; robots.txt at root.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-08.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · launch packet + the topical cluster (the real SEO asset)</div>
+        <div class="item__body">With the piece live, banked the highest-return, zero-tracker lever: a genuine three-node <strong>cluster</strong> no other outlet has assembled — the Bo field note (the classroom), this piece (the system that placed her), and Uruguay/Ceibal (the cross-regional rhyme, in-body). Queued a bidirectional "related" cross-link among the three for the Web Developer — a return-rate lever, not a reach lever. Shipped send-ready distribution copy in EN <em>and</em> AR (Arabic is a distribution advantage, not a cost) and an Instagram pull-quote tile from Marian Abu's most honest line. Lead with return, not raw counts; no tracker.</div>
+        <div class="item__note">/agents/growth/2026-06-08-sierra-leone-matching-launch-packet.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the egress wall is bash-only — and the fix is the web tools</div>
+        <div class="item__body">Logged the method that unblocked the day, which <strong>corrects yesterday's operative conclusion</strong>: a blocked <span class="mono">curl</span> is a statement about <span class="mono">bash</span>, not about the open web. The sanctioned <span class="mono">WebSearch</span> + <span class="mono">web_fetch</span> reach hosts the shell cannot — with one mechanic: <span class="mono">WebSearch</span> first to put a URL in the provenance set, then <span class="mono">web_fetch</span> the canonical URL. First move, not last resort; cheaper than asking the founder to change a setting. <strong>The 06-07 allowlist request is withdrawn.</strong></div>
+        <div class="item__note">/agents/guidebook/2026-06-08-egress-wall-is-bash-only-use-web-tools.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document</div>
+        <div class="item__body">Written in the site's look and feel; the statistics panel below regenerated deterministically from frontmatter (<span class="mono">madar_stats.py --log</span>, snapshot appended to history); staged for the single push that folds in the un-pushed 06-06 and 06-07 days.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-08</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">11</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">11</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 6 · Africa 3 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 11 · access 10 · value of teachers 8 · AI-readiness 5 · language and heritage preservation 4</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-08</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·09 · Tuesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · Issue 02 advances; pick the next fresh candidate</div>
+        <div class="item__body">Issue 02 now has its anchor mechanism-read live. Next: source-reconnaissance on the next fresh candidate <em>before</em> any scope commit (the override-mode discipline), holding throughput to one fresh + N translations. Today proved the bar is real and reachable — corroborated spine, figures traced, inconvenient half kept in.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · wire the cluster, then submit the sitemap</div>
+        <div class="item__body">Hand the Web Developer the bidirectional cross-link among Bo ↔ the matching piece ↔ Uruguay/Ceibal. The one-time Search Console / Bing sitemap submission stays a ~5-minute Vini action whenever a window opens — the bilingual surface (now 25 URLs) indexing the Arabic pages <em>as</em> Arabic is the point.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · two send-ready launches, both yours</div>
+        <div class="item__body">Issue 01 (send packet final) and the Instagram opening grid (tiles + captions final) are each one Vini-action away; independent, neither blocks the other. Growth flips to return-rate measurement the moment either goes live.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · carries to Sun 14 June</div>
+        <div class="item__body">Two evidenced items for <span class="mono">madar-weekly-review</span>: the <span class="mono">@astrojs/sitemap</span> migration (the hand-built file needed hand-editing again today — second time on a ship), and whether the recurring source-recon load justifies a dedicated <strong>Researcher</strong> persona. The host-allowlist item is dropped — resolved by method, not infrastructure.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi stays parked</div>
+        <div class="item__body">Unchanged. No GCC piece manufactured to fill a slot. The Sierra Leone discipline — corroborated spine, figures traced to the primary, the inconvenient half kept in — is the same bar that keeps Saudi parked until its source arrives.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push (folds in three days, and updates the live site)</div>
+    <p>This commit lands Madār's eleventh piece (EN + AR) <strong>and</strong> catches the repo up with the un-pushed 06-06 and 06-07 days. Run it from the repo root:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-08: Sierra Leone TSC teacher-matching SHIPPED (EN+AR, all figures traced to primary, Editor 5/5, AR composed+verified, hero still, sitemap patched to 25 urls); egress-wall-is-bash-only guidebook method (withdraws allowlist ask); Growth launch packet + topical cluster; brief 11 — also lands the un-pushed 06-06 (commission, source index, brief 09) and 06-07 (dossier, egress method, SC packet, brief 10) days"
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. <strong>This push updates the live site</strong> — eleventh piece, EN + AR. No allowlist action needed; the egress wall was bash-only and the web tools reached the sources.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·08</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

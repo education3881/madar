@@ -1,6 +1,6 @@
 ---
 title: "The algorithm that decides who teaches in Bo"
-dek: "Sierra Leone built a matching algorithm to send teachers to the schools that need them most. It placed more of them more fairly than randomness ever did — and it still cannot conjure teachers who do not exist."
+dek: "Sierra Leone built an algorithm to send teachers where they're needed most. It placed more of them, more fairly than chance ever did — yet cannot conjure teachers who don't exist."
 date: 2026-06-08
 country: Sierra Leone
 region: Africa
@@ -31,7 +31,7 @@ approved: true
 
 We began with a teacher in Bo who rations a tin of chalk across an eleven-week term. The question we left unasked in that first piece was the one a ministry has to answer every recruitment cycle: who decided she would be standing in *that* classroom, in the second city, and not in a better-resourced school nearer the capital? For most of Sierra Leone's recent history the honest answer was *nobody in particular* — and that, it turns out, was the problem worth fixing.
 
-Sierra Leone has one of the highest pupil-to-qualified-teacher ratios in West Africa. The figure is not evenly bad; it is unevenly bad, which is worse. In urban centres the ratio runs around 44 children to one qualified teacher. In rural areas it rises to 76 to one. The schools that most need a trained teacher are, with grim reliability, the schools that teachers least want to be posted to — far from a market, far from family, far from the things that make a low salary survivable. No amount of recruiting fixes a distribution problem if the new teachers simply pool where teachers already are.
+Sierra Leone has one of the highest pupil-to-qualified-teacher ratios in West Africa. The figure is not evenly bad; it is unevenly bad, which is worse. In urban centres the ratio runs around 44 children to one qualified teacher. In rural areas it rises to 76 to one. The schools that most need a trained teacher are, with grim reliability, the schools that teachers least want to be posted to — far from a market, far from family, far from the things that make a low salary survivable. No amount of recruiting fixes a distribution problem if the new teachers simply pool where teachers already are. What changed is that the Commission stopped leaving that distribution to chance — and the first full recruitment cycle to run on its fix, in 2024/25, has now reported what the decision bought, which is why it is worth reading the machine closely rather than taking the headline on faith.
 
 How the Teaching Service Commission used to place them is described, without flinching, by the person who ran the process. "In 2019, we recruited 2,000 teachers and assigned them to schools randomly," Marian Abu, the TSC's Director of Teacher Management, told EdTech Hub in a conversation published in December 2024. "This led to a lot of backlash from parliamentarians and the general public, as we could not justify our decision." In 2020 the Commission asked the World Bank to help it build a recruitment portal to take the randomness out; it added 5,000 teachers that way. "While the portal improved the process," Abu said, "it did not fully address all deployment challenges. That is when we introduced the algorithm."
 
