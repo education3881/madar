@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-06-07</title>
+<meta name="description" content="CEO weekly strategic review for the week ending Sunday 07 June 2026: traffic & statistics, quality retrospective, knowledge consolidation, team-expansion decision." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1; -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-top: 1.6rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+  .kicker { font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); font-weight: 500; }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead { padding-block: 1.75rem 0.75rem; border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem; }
+  .masthead__brand { font-family: var(--font-display); font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); text-align: right; }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 2.5rem; }
+  .lede h1 { max-width: 18ch; margin-bottom: 0.6rem; }
+  .dek { font-size: var(--fs-dek); color: var(--color-muted); max-width: 62ch; }
+
+  .summary { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-orange); background: rgba(232,226,208,0.28); padding: 1.5rem 1.75rem; margin-bottom: 3rem; }
+  .summary h2 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+  .summary p { margin-bottom: 0.7em; }
+  .summary p:last-child { margin-bottom: 0; }
+
+  section.block { padding-block: 1.5rem 0.5rem; border-top: 1px solid var(--color-rule); margin-top: 2.5rem; }
+  .block__num { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.4rem; }
+  .block h2 { margin-bottom: 0.4rem; }
+  .block__dek { color: var(--color-muted); margin-bottom: 1.2rem; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-sage); border-bottom: 1px solid var(--color-rule); }
+  td .n { font-family: var(--font-mono); }
+
+  .statgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0 1.4rem; }
+  .stat { background: var(--color-paper); padding: 1rem 1.1rem; }
+  .stat__n { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+  .stat__l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-sage); margin-top: 0.4rem; }
+  @media (max-width: 720px) { .statgrid { grid-template-columns: repeat(2, 1fr); } }
+
+  .callout { border: 1px solid var(--color-rule); padding: 1rem 1.25rem; margin: 1.2rem 0; background: rgba(217,79,42,0.05); }
+  .callout .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-orange); }
+  .verdict { font-family: var(--font-display); font-size: 1.3rem; color: var(--color-ink); margin: 0.3rem 0; }
+
+  .pushblock { margin: 1rem 0 0; background: var(--color-ink); color: #EDE9DF; border-radius: 4px; padding: 1.1rem 1.25rem; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4em; }
+  footer.colophon { margin: 4rem 0 2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-rule); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; color: var(--color-sage); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><em>weekly review</em></div>
+    <div class="masthead__date">CEO · strategic review<strong>Sunday 07 June 2026</strong></div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Week ending 2026-06-07 · Issue 02 week</div>
+    <h1>The week we built the runway and held the slot.</h1>
+    <p class="dek">Zero fresh articles by deliberate choice; the discoverability spine shipped, the rendering bottleneck dissolved, and Issue 02's anchor was commissioned on externally verified sourcing. The one thing the operation cannot do for itself is now the only thing standing between us and our first real numbers.</p>
+  </section>
+
+  <section class="summary">
+    <h2>For the founder, in six lines</h2>
+    <p><strong>What changed.</strong> No new piece shipped this week — on purpose (Saudi parked, Sierra Leone still in draft; quality over slot). What did ship: the sitemap + robots discoverability spine went live, the nine Instagram opening-grid tiles were finally rendered (the "Designer can't render PNGs" worry turned out to be a one-time method, now banked), and the Sierra Leone Issue 02 anchor was commissioned on sourcing re-verified by independent search.</p>
+    <p><strong>What I decided.</strong> No new persona this week — the only live expansion signal (rendering) resolved to a method, not a gap. I codified a sitemap-drift prevention rule into the RUNBOOK, consolidated four research notes into a durable guidebook index with four reusable rulings, and named this week's growth bet. Today's daily run also advanced the Sierra Leone anchor from commission to a full Content Creator dossier.</p>
+    <p><strong>What needs your eye — two one-time unblocks.</strong> <em>(1) Issue 01 has been "send-ready" for six days; every privacy-clean metric — open rate, return rate, country — stays dark until you send it.</em> <em>(2) The Sierra Leone piece's seven hard figures live in PDFs on hosts outside the network allowlist, so they cannot be traced to source until those hosts are allowlisted (Settings → Capabilities).</em> Both are one founder action each; both are detailed below. Everything else is the operation's job.</p>
+  </section>
+
+  <!-- 1 -->
+  <section class="block">
+    <div class="block__num">Section 01</div>
+    <h2>Traffic, growth &amp; statistics</h2>
+    <p class="block__dek">Privacy-clean signals only. No third-party tracker exists on the site by design, so there are no visitor counts — and none are invented here.</p>
+
+    <div class="statgrid">
+      <div class="stat"><div class="stat__n">10 / 10</div><div class="stat__l">EN / AR articles</div></div>
+      <div class="stat"><div class="stat__n">100%</div><div class="stat__l">AR / EN parity</div></div>
+      <div class="stat"><div class="stat__n">10</div><div class="stat__l">countries · 4 regions</div></div>
+      <div class="stat"><div class="stat__n">0</div><div class="stat__l">fresh pieces this week</div></div>
+    </div>
+
+    <h3>Content growth &amp; week-over-week drift</h3>
+    <p>The content snapshot is <strong>flat across the entire week</strong>: 10 EN / 10 AR, 100% parity, latest piece still dated 2026-05-31. The <span class="mono">history.jsonl</span> deltas instrument (now six daily snapshots, 06-03 → 06-07) confirms zero movement in counts, region mix (MENA 6, Africa 2, Asia 1, LatAm 1), or theme distribution. That flatness is <strong>not drift or neglect — it is the quality-over-slot rule working</strong>: Saudi stayed parked rather than be manufactured to fill a slot, and Sierra Leone is correctly held at <em>commissioned, not approved</em> pending the Content Creator's dossier. The pipeline advanced (recon, assets, infrastructure) even though the article count did not. One honest caveat for next week: the deltas instrument only began logging 06-03, so this is the first review with a real week-over-week baseline to compare against.</p>
+
+    <h3>The week's growth actions</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Action</th><th>Lever</th></tr></thead>
+      <tbody>
+        <tr><td class="n">06-04 → 05</td><td><span class="n">sitemap.xml</span> + <span class="n">robots.txt</span> shipped live (23 URLs, 66 hreflang alternates, validated)</td><td>Discoverability for the whole bilingual archive at once</td></tr>
+        <tr><td class="n">06-05</td><td>Nine IG opening-grid tiles rendered to PNG (1080², on-brand, contact-sheet checked)</td><td>IG launch asset — now send-ready</td></tr>
+        <tr><td class="n">06-06</td><td>Sierra Leone distribution angle banked at commission: bidirectional cross-link with Uruguay/Ceibal + labelled engagement-list segment</td><td>Return-rate / topical-cluster, no tracker</td></tr>
+        <tr><td class="n">06-07</td><td>Search Console + Bing sitemap-submission packet prepared, send-ready (one founder action, ~5 min)</td><td>Bilingual crawl — Arabic indexed as Arabic</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Substack &amp; launch-readiness</h3>
+    <p>Substack is <strong>not live</strong>, so there is nothing yet to report on opens, return rate, reply rate, or country distribution. The blocker is not readiness — it is the send. <strong>The Issue 01 send packet has been send-ready since 2026-06-01</strong>; the IG opening grid is send-ready as of 06-05. Both are one founder-action each and neither blocks the other. <strong>Attributable inbound shares: none, by construction</strong> — nothing has been distributed to X / Bluesky / LinkedIn yet, so there is no published URL for a manual search to find. That surface switches on the day Issue 01 sends; I have not manufactured a number to fill it.</p>
+
+    <div class="callout">
+      <div class="tag">The week's single growth bet</div>
+      <p class="verdict">Convert "send-ready" into "sent."</p>
+      <p>Issue 01 has sat send-ready for six days. Until it goes out, return rate — the metric the charter says we lead with — does not exist. The bet for the coming week is the send itself; next week's review reads the first open / return / country numbers as its result. This is the one item that genuinely needs Vini: the operation cannot send on his behalf. Optional same-window action: submit <span class="mono">.../madar/sitemap.xml</span> to Google Search Console + Bing so the archive is crawled as a bilingual set.</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="block">
+    <div class="block__num">Section 02</div>
+    <h2>Quality retrospective</h2>
+    <p class="block__dek">Publish gates run in writing, every run. Clean week on the live product.</p>
+    <p>Publish gates were logged in writing on <span class="mono">06-01, 06-04, 06-05, 06-06</span> and each held. The live product stayed clean throughout: EN/AR slug parity exact (10 = 10, <span class="mono">diff</span>-verified), zero <span class="mono">&lt;img&gt;</span> wordmarks (brand chrome inlined), every slug carries its hero still, and the sitemap validates as XML. <strong>No near-miss reached production this week</strong> — the only deploy-surface change since 06-05 was the additive sitemap/robots pair, already validated.</p>
+    <p><strong>Recurring friction (environmental, already routed):</strong> the <span class="mono">node_modules/.vite</span> EPERM/FUSE boundary blocks in-place builds every run; it is routed around via /tmp, not fought, and is documented. Not a quality defect in the product.</p>
+    <p><strong>The one codifiable pattern</strong> is the hand-built <span class="mono">sitemap.xml</span>: it is correct today and silently wrong the next time an article is added or parked. That is a latent drift defect, not a live one — caught before it bit. I have <strong>codified a prevention rule into the RUNBOOK</strong>: artefacts that must mirror the article set (sitemap, hreflang, archive indices) must be build-generated, never hand-maintained, and the action of record is to wire <span class="mono">@astrojs/sitemap</span> (carried from the 06-04 weekly signal). Until that lands, the static sitemap is re-validated against parity in every gate.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="block">
+    <div class="block__num">Section 03</div>
+    <h2>Knowledge consolidation</h2>
+    <p class="block__dek">Four loose increments this week, no duplicates — consolidated into a durable index with reusable rulings.</p>
+    <p>The week produced four research increments: the <strong>Saudi ECE source index</strong> (06-04), the <strong>render-stills-to-PNG method</strong> (06-05), the <strong>Sierra Leone TSC source index</strong> (06-06), and the <strong>egress-boundary sourcing method</strong> (06-07). They are distinct and durable — there were no duplicates to prune. Consolidation took two forms: I created <span class="mono">agents/guidebook/INDEX.md</span> as a single entry point cataloguing all durable working knowledge, and I lifted the transferable rulings out of their country-specific notes so they bind generally:</p>
+    <ul>
+      <li><strong>Operational-not-ceremonial voice.</strong> When a strategy PDF is the candidate, the unpark hinges on the person who <em>runs</em> the mechanism (datelined 2024+), not the one who announced it. This is exactly why Sierra Leone cleared and Saudi did not.</li>
+      <li><strong>Tiered sourcing asymmetry.</strong> Government flagship programs over-document the minister and the target, under-document the classroom — in both languages. Plan for it from day one; consider a data-led inversion before abandoning a candidate.</li>
+      <li><strong>Render is a method, not a gap.</strong> Confirm an asset class isn't just an un-banked recipe before escalating it to a capability gap — the lesson that directly informs Section 04.</li>
+      <li><strong>Egress-boundary sourcing.</strong> When the primary host is outside the allowlist, search corroborates the spine but cannot trace a figure — quarantine untraceable numbers as <span class="mono">[[TRACE]]</span> up front; never let them reach a draft. This surfaced today on the Sierra Leone dossier and converts to a one-time founder unblock (see §1 and the push follow-up): allowlist the source hosts. It is the sourcing-side twin of the <span class="mono">@astrojs/sitemap</span> item — infrastructural, not editorial.</li>
+    </ul>
+    <p>The durable HTML manual was not revised this week; nothing changed in the <em>replicable</em> model, only in Madār's own working knowledge. The team is measurably faster on Sierra Leone and Saudi topics than a week ago: the next writer starts from a checked index, not a blank source hunt.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="block">
+    <div class="block__num">Section 04</div>
+    <h2>Team-expansion decision</h2>
+    <p class="block__dek">Restraint applies to the org chart as much as to the publication.</p>
+    <div class="callout">
+      <p class="verdict">Decision: no new persona this week. Team stays at seven.</p>
+    </div>
+    <p>The expansion ladder runs Researcher → Social/Video → Data/SEO analyst → second-language editor. Reviewing each against this week's evidence:</p>
+    <ul>
+      <li><strong>Social/Video (rendering):</strong> the only signal that was actually raised — the IG tiles "on deck" across two runs (flagged 06-04). It <em>resolved on 06-05</em>: the tiles rendered via a one-time <span class="mono">cairosvg</span> method, now banked. The gap was not recurring once the method was found. This is the restraint test passing — <strong>do not add.</strong></li>
+      <li><strong>Researcher:</strong> the Editor does carry real recon load (Saudi twice, Sierra Leone). But that is the slow-cadence model working as designed, not saturation — and the load is being compounded into the guidebook so it isn't re-run. Zero fresh pieces this week came from deliberate holding, not a recon ceiling. Adding a Researcher now would manufacture throughput pressure against our own quality-over-slot rule. <strong>Not yet.</strong></li>
+      <li><strong>Data/SEO analyst:</strong> premature — there is no traffic surface to analyse until Substack sends. <strong>Not yet.</strong></li>
+      <li><strong>Second-language editor:</strong> only EN/AR exist; no third language is on the roadmap. <strong>No.</strong></li>
+    </ul>
+    <p><strong>The watch signal to re-test next week:</strong> if the Sierra Leone piece — and the next strategy-PDF candidate after it — repeatedly stall in <em>recon</em> rather than <em>drafting</em>, the Researcher rung becomes live. Today it is not.</p>
+  </section>
+
+  <!-- push -->
+  <section class="block">
+    <div class="block__num">For Vini</div>
+    <h2>The single push</h2>
+    <p class="block__dek">This stages the weekly review + the carried 06-06 daily work (commission brief, designer memo, growth note, guidebook index, RUNBOOK rule, stats). The site deploy surface is unchanged.</p>
+    <div class="pushblock">cd "/Users/vini/Documents/Claude/Projects/Educational Website" && rm -f .git/index.lock && git add -A && git commit -m "Madār — 2026-06-07 weekly review: traffic/stats + quality retro + guidebook INDEX consolidation + sitemap-drift RUNBOOK rule; team held at 7; growth bet = send Issue 01" && git push origin main</div>
+    <p class="muted" style="margin-top:1rem;font-size:0.92rem;">After the push, the two one-time unblocks that move the operation forward: <strong>(1)</strong> send Issue 01 — it lights up every growth metric (optionally submit the sitemap to Search Console / Bing, packet ready); <strong>(2)</strong> allowlist the Sierra Leone source hosts (<span class="mono">edtechhub.org</span>, <span class="mono">docs.edtechhub.org</span>, <span class="mono">documents1.worldbank.org</span>, <span class="mono">doi.org</span>) in Settings → Capabilities, so the anchor piece can be drafted to full traceable source. Everything else is the operation's job.</p>
+  </section>
+
+  <footer class="colophon">
+    Madār · CEO weekly review · 2026-06-07 · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>

@@ -91,6 +91,10 @@ That is the only terminal text the Manager should ever ask Vini to paste. If you
 - **Letting the QA pass slip.** The Web Developer runs the QA checklist daily and within 30 minutes of every deploy. It is not optional.
 - **Asking Vini to "approve" content.** He has stepped out of editorial decisions. The Editor approves; the Manager backs the Editor; Vini reads.
 
+## Prevention rules from the weekly review (codified)
+
+- **Generated artefacts that must mirror the article set are build-generated, never hand-maintained (codified 2026-06-07).** A hand-built `sitemap.xml` or any hand-kept list of slugs/hreflang pairs is a *drift defect waiting to happen*: it is correct the day it is written and silently wrong the next time an article is added or parked. Anything that must equal "the current set of articles" (sitemap, hreflang alternates, archive indices) must be generated from the content collection at build time. Action of record: replace the static `sitemap.xml` with the `@astrojs/sitemap` integration (carried since the 2026-06-04 weekly signal; FUSE boundary on `node_modules/.vite` means the install/build runs via the /tmp route-around or a clean Web-Developer checkout). Until that lands, the static sitemap must be re-validated against EN/AR parity in every publish gate.
+
 ## Closing the session
 
 End-of-day every session, the Manager writes `/agents/logs/manager-status-<today>.md` with: what shipped, what was held and why, what is queued for tomorrow. Keep it under one screen. Honest, not promotional.

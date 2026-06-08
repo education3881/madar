@@ -27,7 +27,7 @@ Theme balance: one GCC piece, one Sierra Leone (anchor) follow-up, one ECE/early
 | Slot | Type | Geography | Provisional angle |
 |---|---|---|---|
 | Lead | editorial / short | UAE or Saudi | ECE workforce policy — to be briefed week of 2026-06-01 |
-| Secondary | curated | Sierra Leone | a single TSC or Education OS document worth reading slowly |
+| Secondary | curated | Sierra Leone | **DOSSIER COMPLETE / DRAFT-BLOCKED ON SOURCE-ACCESS (2026-06-07):** research dossier delivered (`/content-drafts/dossiers/2026-06-07-sierra-leone-tsc-teacher-matching-dossier.md`). Spine corroborated independently (2,341 teachers; Marian Abu, Dir. Teacher Management; partnership; female tiebreaker w/ 70%-male figure). **Quarantined pending primary:** 64%/54%/7% figures, the "57% vs 56%+53%" disadvantaged-district discrepancy, and the Keifala/Elacqua attributions — the technical report (DOI .1115) sits on egress-blocked hosts. Unblock = allowlist `edtechhub.org` + `docs.edtechhub.org` + `documents1.worldbank.org` (one Vini action; carried to Sunday weekly). Draft may proceed on Tier-1 spine with `[[TRACE]]` placeholders; no `approved: true` until figures trace. Brief: `/content-drafts/briefs/2026-06-06-sierra-leone-tsc-matching-brief.md`. Drafts to source, not to slot. |
 | Secondary | curated | Egypt or Lebanon | mother-tongue / language-of-instruction debate at primary |
 
 ## Standing rules

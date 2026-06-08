@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-06</title>
+<meta name="description" content="Manager → Founder daily brief for Saturday 06 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Saturday · 06 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 09</div>
+    <h1>The Sierra Leone piece is commissioned — and the sourcing is independently verified.</h1>
+    <p class="dek">The candidate that cleared its unpark bar yesterday is, today, a fully briefed commission. The angle sharpened to the machine itself: the algorithm that decides which teacher gets sent to a school like the one in Bo. Before committing a single department, the sourcing was re-checked from outside the brief — Marian Abu of the Teaching Service Commission, the EdTech Hub record, the 2024 figures — all real, all named, all datelined. Designer, Web Developer, Arabic Editor and Growth were dispatched in the same hour. Drafting waits on the dossier, not on a slot. Build clean, parity 10/10, sitemap live.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Two send-ready launches, and a candidate that cleared its bar.</h2>
+        <div class="day__date">2026·06·05 · Friday</div>
+      </div>
+    </header>
+
+    <div class="twin">
+      <div>
+        <h3>What shipped and pushed</h3>
+        <ul>
+          <li>The nine IG opening-grid tiles rendered and verified — grid send-ready.</li>
+          <li>sitemap.xml + robots.txt reached the live site (the 06-04 work, folded into one push).</li>
+          <li>Render-method guidebook banked; Brief No. 08 staged and pushed.</li>
+          <li>Local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">8231af0</span>. Clean.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What carried into today</h3>
+        <ul>
+          <li>The Sierra Leone named-voice finding — written end of 06-05, left untracked on disk. Picked up and folded into today's push.</li>
+          <li>Its verdict: the unpark bar cleared. A named TSC operational director on the record, datelined Dec 2024 — the tier the Saudi candidate never reached.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·06 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State-verification rule held</div>
+      <p>Opened on <span class="mono">git</span> + the live deploy before any plan, per the standing rule. Local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">8231af0</span>; yesterday's push is live; no missed day. The recurring <span class="mono">node_modules/.vite</span> FUSE boundary blocked the in-place build again — routed around via the /tmp copy, not fought. And before any department was committed to the Sierra Leone piece, the sourcing was re-verified <em>from outside the brief</em>: an independent web search confirms Marian Abu, the TSC algorithm, and the EdTech Hub record are real. We do not commission on a brief's say-so alone.</p>
+    </div>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Sierra Leone Issue 02 — commissioned, brief written, dispatched in parallel</div>
+        <div class="item__body">The candidate that cleared its bar yesterday is now a full commission. The angle moved to its strongest form: <strong>the algorithm is the piece, the NDLS is the backdrop</strong> — the GIS preference-matching system the Teaching Service Commission ran across its 2024/25 cycle to decide who gets posted to under-resourced schools. It closes the Bo loop precisely: the field note (a teacher rationing chalk) meets the machine that does the placing. The Editor's brief locks the spine — the <em>gains-and-limits balance</em> (2,341 teachers, 54% matched to preference, female-teacher tiebreaker — beside too-few-passing-the-exam and TMIS data gaps), Marian Abu anchoring, the Latin-America bridge as the closing lens. Designer, Web Developer, Arabic Editor and Growth all briefed the same hour, per the RUNBOOK. <strong>Drafting waits on the dossier, not a slot.</strong></div>
+        <div class="item__note">/content-drafts/briefs/2026-06-06-sierra-leone-tsc-matching-brief.md · /agents/memos/2026-06-06-manager-to-designer-sierra-leone-hero.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build clean, parity 10/10, sitemap live and valid</div>
+        <div class="item__body">Full QA via the /tmp route-around: <strong>23 pages, no errors</strong>. EN/AR slug parity exact (<span class="mono">diff</span> clean, 10 = 10); <strong>zero</strong> <span class="mono">&lt;img&gt;</span> wordmarks; every slug has its hero still. The 8 "placeholder" grep hits are all intentional — the guard logic that <em>detects</em> placeholder sources, plus known font/wordmark stand-ins — no real orphans. sitemap.xml validates as XML in <span class="mono">dist</span> (23 <span class="mono">&lt;url&gt;</span>, 66 hreflang alternates); robots.txt at the root.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-06.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the cross-regional bridge, banked as a distribution asset</div>
+        <div class="item__body">The Sierra Leone piece reaches Africa <em>and</em> Latin America (the IDB comparative frame) and back to our Uruguay/Ceibal coverage — exactly the "why follow Madār" argument. Queued the highest-return, no-tracker levers: a bidirectional internal cross-link with the Uruguay piece (a real topical cluster for search), a labelled "teacher-deployment / matching" engagement-list segment (quiet posture — engage only after they engage), and the one-time Search Console / Bing sitemap submission for whenever a window opens. Issue 01 and the IG grid stay one Vini-action each.</div>
+        <div class="item__note">/agents/growth/2026-06-06-sierra-leone-latam-bridge-distribution.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the TSC source index, banked</div>
+        <div class="item__body">Logged a verified primary-source index for the Sierra Leone topic (companion to the Saudi index): institutions, named voices with proposed transliterations for the Arabic Editor to verify, the hard figures with a "source from the technical report, not the blog summary" rule, the mandatory counter-texture, and the transferable lesson — <strong>when a strategy PDF is the candidate, the unpark hinges on the person who runs the mechanism, datelined 2024+, not the person who announced it.</strong> The team drafts faster on this topic now, and Test 1 is pre-cleared at the index level.</div>
+        <div class="item__note">/agents/guidebook/2026-06-06-sierra-leone-tsc-source-index.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document</div>
+        <div class="item__body">Written in the site's look and feel, statistics panel below regenerated deterministically from frontmatter, staged for the single push that also folds in the carried-forward 06-05 finding.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-06</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 6 · Africa 2 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 10 · access 9 · value of teachers 7 · AI-readiness 5 · language and heritage preservation 4</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-05-31</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·07 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Weekly review · the Sunday cadence runs</div>
+        <div class="item__body">Tomorrow is the weekly (<span class="mono">madar-weekly-review</span>, Sun 09:00 Asia/Dubai): traffic read, quality retrospective, knowledge consolidation, and the team-expansion decision. Two items go in with evidence — whether the recurring source-recon-before-drafting load justifies a dedicated <strong>Researcher</strong> persona, and the <span class="mono">@astrojs/sitemap</span> integration to replace the hand-built static file before it drifts.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · the Sierra Leone dossier, then the draft</div>
+        <div class="item__body">Content Creator's next step on the commissioned piece: the research dossier in envelope format — every figure traced to the technical report (DOI .1115), not the blog summary; every URL re-checked live. Then the draft. Then the Editor's five-test verdict. No <span class="mono">approved: true</span> until it clears all five; Designer's hero still and a clean build gate it the rest of the way.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · two send-ready launches, both yours</div>
+        <div class="item__body">Issue 01 (send packet final) and the Instagram opening grid (tiles + captions final) are each one Vini-action away. Independent; neither blocks the other. Growth flips to return-rate measurement the moment either goes live.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi stays parked</div>
+        <div class="item__body">Unchanged. No GCC piece manufactured to fill the slot. Unpark conditions on record: one named operational voice datelined 2024+, or a data-led piece anchored on GASTAT 2025. The piece arrives when its source does — the Sierra Leone unpark is the proof the bar is real, not a way of saying no forever.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push</div>
+    <p>Repo-only today — no change to the live-site deploy surface. Run it from the repo root:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madār — 2026-06-06: Sierra Leone TSC teacher-matching commissioned (brief + Designer/Web/Growth dispatch); source-index guidebook; sourcing externally verified; QA clean; brief 09 — also lands carried-forward 06-05 named-voice finding"
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. Today's push is editorial workflow only — a commission brief, memos, a guidebook entry, logs and the brief — so the deploy rebuilds the unchanged site. No new article ships until its draft clears the five tests and its hero still is on disk. Whenever you want the archive indexed, submit <span class="mono">/sitemap.xml</span> to Google Search Console / Bing.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·06</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
