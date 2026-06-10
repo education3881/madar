@@ -1,0 +1,118 @@
+---
+/**
+ * RelatedReading — editor-curated "continue reading" rail.
+ *
+ * Renders a small set of links to other Madār pieces in the SAME language
+ * collection, resolved from frontmatter `related: [<slug>, ...]`.
+ *
+ * Design intent (Growth / return-rate lever, per the Charter): keep a reader
+ * inside the publication after a piece ends, by surfacing the editorial cluster
+ * a piece belongs to — never an algorithmic "you may also like".
+ *
+ * Robustness: any related slug that does not resolve to an *approved, existing*
+ * piece is filtered out. If none resolve, the component renders nothing — so a
+ * parked or renamed piece can never break the build or leave a dead link.
+ */
+import { getCollection } from 'astro:content';
+import { withBase } from '../lib/urls';
+
+interface Props {
+  slugs?: string[];
+  lang: 'en' | 'ar';
+}
+
+const { slugs = [], lang } = Astro.props;
+
+const collectionName = lang === 'ar' ? 'articles-ar' : 'articles';
+const all = await getCollection(collectionName, ({ data }) => data.approved !== false);
+const byId = new Map(all.map((p) => [p.id, p]));
+
+const items = slugs.map((s) => byId.get(s)).filter(Boolean);
+
+const base = lang === 'ar' ? '/ar/articles/' : '/articles/';
+const heading = lang === 'ar' ? 'اقرأ أيضًا' : 'Related reading';
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+---
+
+{items.length > 0 && (
+  <nav class="related" aria-label={heading} lang={lang} dir={dir}>
+    <div class="body-grid">
+      <aside class="body-left" aria-hidden="true"></aside>
+      <div class="body-main">
+        <h2 class="related__head">{heading}</h2>
+        <ul class="related__list">
+          {items.map((p) => (
+            <li class="related__item">
+              <a href={withBase(`${base}${p.id}/`)} class="related__link">
+                <span class="related__title">{p.data.title}</span>
+                <span class="related__meta">{p.data.country} · {p.data.region}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <aside class="body-right" aria-hidden="true"></aside>
+    </div>
+  </nav>
+)}
+
+<style>
+  .related {
+    margin-block-start: var(--space-xl);
+    padding-block-start: var(--space-lg);
+    border-block-start: 1px solid var(--color-rule);
+  }
+  .related__head {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    margin: 0 0 1rem;
+  }
+  .related[dir='rtl'] .related__head {
+    font-family: var(--font-arabic-display);
+    font-size: 20px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .related__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related__item {
+    border-block-start: 1px solid var(--color-rule-soft, rgba(14, 27, 44, 0.08));
+  }
+  .related__item:first-child { border-block-start: none; }
+  .related__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-block: 0.9rem;
+    text-decoration: none;
+    color: var(--color-ink);
+  }
+  .related__link:hover .related__title { text-decoration: underline; text-decoration-color: var(--color-orange); }
+  .related__title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+  .related[dir='rtl'] .related__title {
+    font-family: var(--font-arabic-display);
+    line-height: 1.5;
+  }
+  .related__meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-muted, rgba(14, 27, 44, 0.62));
+  }
+  .related[dir='rtl'] .related__meta {
+    font-family: var(--font-arabic);
+    letter-spacing: 0;
+    font-size: 13px;
+  }
+</style>

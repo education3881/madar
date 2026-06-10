@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import SiteHeader from '../../../components/SiteHeader.astro';
 import ShareRail from '../../../components/ShareRail.astro';
+import RelatedReading from '../../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../../lib/urls';
 
@@ -135,6 +136,11 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
         rail to the right margin is handled by the parent <html dir="rtl">
         through CSS logical properties (inset-inline-start). */}
     <ShareRail title={piece.data.title} url={shareUrl} lang="ar" />
+
+    {/* ============== RELATED READING ==============
+        نفس مكوّن RelatedReading، lang="ar" — يَحلّ المقالات المرتبطة من
+        مجموعة المقالات العربية ويُخفي ما لا يُحَلّ. */}
+    <RelatedReading slugs={piece.data.related} lang="ar" />
 
   </article>
 </Base>

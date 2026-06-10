@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import ShareRail from '../../components/ShareRail.astro';
+import RelatedReading from '../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
 
@@ -164,6 +165,11 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
             end of the piece below the Sources footer.
         Both share the same URL + title source-of-truth. */}
     <ShareRail title={piece.data.title} url={shareUrl} lang="en" />
+
+    {/* ============== RELATED READING ==============
+        Editor-curated cluster rail (return-rate lever). Renders nothing
+        unless frontmatter declares resolvable `related` slugs. */}
+    <RelatedReading slugs={piece.data.related} lang="en" />
 
   </article>
 </Base>

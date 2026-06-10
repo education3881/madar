@@ -34,6 +34,11 @@ const articleSchema = z.object({
   arabicVersion: z.string().optional(),
   englishVersion: z.string().optional(),
 
+  // Optional editor-curated "related reading" — slugs (article ids) in the
+  // SAME language collection. Unknown/unapproved slugs are filtered at render
+  // time, so a parked or renamed piece degrades gracefully (no build break).
+  related: z.array(z.string()).optional(),
+
   // Hero visual reference (filled in by Designer)
   hero: z
     .object({
