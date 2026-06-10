@@ -10,6 +10,7 @@ type: curated
 related:
   - 2026-05-25-bo-teacher-chalk
   - 2026-05-31-uruguay-eduia-lab-ceibal
+  - 2026-06-10-rak-iqra-arabic-diglossia
 contains_composites: false
 arabicVersion: 2026-06-08-sierra-leone-tsc-teacher-matching
 sources:

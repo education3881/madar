@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-10</title>
+<meta name="description" content="Manager → Founder daily brief for Wednesday 10 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Wednesday · 10 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 13</div>
+    <h1>The twelfth piece is the first one about our own language.</h1>
+    <p class="dek">The diglossia piece went from commission-ready to shipped in one clean run: both open gates from yesterday's recon were resolved <em>before drafting</em> — the operational voice was found on the record (the Al Qasimi Foundation manager who runs the Iqra rollout, datelined 22 May), and the figures were traced to the strongest tier that exists (the J-PAL evaluator herself, named and quoted, since the standalone report is not yet public — a ruling the Editor made in writing and the guidebook now carries). EN and AR shipped together, 12 = 12, build clean at 27 pages. One thing to name plainly: <strong>your push of brief No. 12's block landed this morning at 08:24 — mid-run</strong> — and its <span class="mono">git add -A</span> swept in the two new article files while the hero still, sitemap and verdicts were still being written. The articles are therefore already deploying <em>without their hero image</em>. Nobody did anything wrong; it is a race between two right actions. But the completion push below is <strong>time-sensitive</strong> — it is the one that puts the still on the live page.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The work landed in the tree — and stayed there.</h2>
+        <div class="day__date">2026·06·09 · Tuesday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — the gap, named (and then it moved)</div>
+      <p>Opened on <span class="mono">git</span> + the live site, per the standing rule. At open: local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">cb4bd90</span> (2026-06-08), with <strong>all of yesterday's run uncommitted</strong> in the working tree — the 06-09 push hadn't happened, and the live site still showed eleven pieces and no rail. The run proceeded on that basis. Then, at 08:24, <strong>your push of brief No. 12's block landed mid-run</strong> as commit <span class="mono">feb98b1</span> — closing yesterday's gap, shipping the rail and the recon bank, and (because <span class="mono">git add -A</span> takes the tree as it stands) also sweeping in the two just-written Iqra article files <em>ahead of their hero still</em>. End state at close: the final article text is exactly what <span class="mono">feb98b1</span> carries (verified — no drift), and the twelve remaining files below complete the ship.</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What 06-09 banked (in this push)</h3>
+        <ul>
+          <li>The related-reading rail — editor-curated cluster cross-link, EN + AR, graceful on non-cluster pages; gate-passed on its own yesterday.</li>
+          <li>The diglossia commission brief + three-tier source index, with two gates left deliberately open: trace the figures past the press, and find an operational voice — or park.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What that demanded of today</h3>
+        <ul>
+          <li>Resolve both gates <em>before</em> any drafting (the override-finding order: source-recon precedes scope commit) — then draft, compose the AR, and run the full publish gate.</li>
+          <li>Name the missed push in the brief rather than burying it in a bigger commit message.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·10 · Wednesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the Iqra/diglossia piece shipped, EN + AR — both gates cleared on the record</div>
+        <div class="item__body"><strong>"The language children speak, and the one they must read"</strong> — the first GCC anchor of Issue 02 and the first Madār piece about Arabic itself. The two gates from yesterday's recon were resolved before drafting. <em>The operational voice:</em> Hanadi Mohammed, education and community development manager at the Al Qasimi Foundation — the person who runs the Iqra rollout — on the record in The National (22 May 2026) with classroom-level mechanism detail, alongside the foundation's executive director and the J-PAL MENA evaluator. The bar that parked Saudi was cleared here without bending. <em>The figures:</em> traced to the evaluator-on-record tier (see Research, below) and attributed in-text throughout; the 2024–25 J-PAL cycle is fenced from the ~2020 study <em>in print</em>. The inconvenient half is in the body, not a footnote: the live "non-deficit" dispute (the child's vernacular is a competence, not a defect — the piece holds the tension rather than resolving it), the modest absolute effect (four percentiles, and it says so), trial-not-system scale, and the unanswered Cairo-classroom-of-50 transfer question. Editor 5/5 in writing; Arabic Editor approved with six named-human renderings verified; the AR is composed, not translated — and for this piece the AR is the <em>primary</em> surface, not the echo.</div>
+        <div class="item__note">web/src/content/articles{,-ar}/2026-06-10-rak-iqra-arabic-diglossia.md · verdicts EN + AR filed · hero still on disk · rail: ↔ Sierra Leone matching ↔ Bo (reciprocal, both languages)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · publish gate run in writing; build clean at 27 pages; parity 12 = 12</div>
+        <div class="item__body">Full gate logged before staging: Editor + Arabic Editor verdicts on file, stills 12/12, <span class="mono">astro build</span> clean via the /tmp route-around — <strong>27 pages, 0 errors</strong> (25 → 27). Spot-checked in built HTML: hero resolves; the new piece's rail links resolve EN + AR; the Sierra Leone pair now point back; EN↔AR cross-links resolve both directions; both deks under the 200-char schema cap (checked at write time, not discovered at build); no <span class="mono">[[TRACE]]</span> markers anywhere in output; sitemap hand-updated to 27 URLs with hreflang alternates.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-10.md · the hand-built sitemap is at 27 and holding, but the @astrojs/sitemap migration stays on the weekly agenda — it is now two hand-edits past its last audit</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · launch packet — the Arabic-as-distribution-advantage thesis gets its first true test case</div>
+        <div class="item__body">This piece is the one the charter's "Arabic is a distribution advantage, not a translation cost" line has been waiting for: the natural audience searches this topic in Arabic, and the open Arabic web on diglossia-and-early-reading is thin. The packet banks send-ready copy (EN one-line + AR-lead hook), an IG tile brief for the Designer (the Husseiny pull-quote — "Pedagogy matters." / «البيداغوجيا مهمة» — both languages, no figures), and names the piece a candidate Issue 02 <em>lead</em>. The rail cluster is now four nodes (Bo ↔ matching ↔ Uruguay ↔ Iqra); the specific signal to watch once Search Console is live is the AR page's search arrival — that is the thesis's measurement, return-rate posture unchanged, zero trackers.</div>
+        <div class="item__note">/agents/growth/2026-06-10-iqra-diglossia-launch-packet.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the evaluator-on-record trace tier (a new durable sourcing ruling)</div>
+        <div class="item__body">Today's hard sourcing call, banked as a rule: the standalone 2024–25 J-PAL report is <strong>not yet public</strong>, so the press-vs-primary dichotomy didn't fit. The ruling defines a tier between them — a figure may run without the primary PDF only when the <em>evaluator</em> is on the record by name describing the finding, the <em>operator</em> confirms separately by name, the trial design is stated falsifiably, every figure carries in-text attribution, and a follow-up is logged to re-verify against the report when it publishes. All five held for Iqra. "Three newspapers said so" still never clears; "no PDF, so park" is no longer the reflex when something categorically better than paraphrase exists. Generalises the 06-08 (primary-not-blog) and 06-09 (same-name-trap) rulings into a complete trace-tier checklist for future verdicts.</div>
+        <div class="item__note">/agents/guidebook/2026-06-10-evaluator-on-record-trace-tier.md · INDEX consolidation stays with the Sunday weekly, per process</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document</div>
+        <div class="item__body">Written in the site's look and feel; statistics regenerated deterministically below (<span class="mono">madar_stats.py --log</span>, snapshot appended to history). The latest-piece date moves to 2026-06-10 — the pipeline advanced by a shipped piece today, and the count says so.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-10</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 7 · Africa 3 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 12 · access 10 · value of teachers 8 · AI-readiness 5 · language and heritage preservation 5</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-10</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·11 · Thursday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · next-candidate recon, and the Arabic-language cluster</div>
+        <div class="item__body">Throughput discipline means tomorrow is a recon-or-translate day unless a candidate is already commission-ready (none is). Two natural moves: reconnoitre the next Issue 02 candidate (the calendar still owes Asia or LatAm balance after two MENA-region anchors), and curate the <em>Arabic-language cluster</em> on the rail — Kuwait CCET ↔ UAE Madrasa ↔ the new Iqra piece is now an honest three-node cluster that exists in the catalogue, one <span class="mono">related:</span> edit per page.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing follow-up · the J-PAL report, when it publishes</div>
+        <div class="item__body">Logged in the verdict and the guidebook ruling: when the foundation/J-PAL 2024–25 results report goes public, add it to the piece's <span class="mono">sources:</span> and re-verify each figure against it. A cheap weekly check, not a daily one.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · two send-ready launches, both one Vini-action away</div>
+        <div class="item__body">Unchanged: Issue 01 (send packet final) and the Instagram opening grid (tiles + captions final). The new Husseiny tile brief joins the Issue 02 grid queue. Growth flips to return-rate measurement the moment either launch goes live.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · carries to Sun 14 June</div>
+        <div class="item__body">Three evidenced items now stand: the <span class="mono">@astrojs/sitemap</span> migration (two hand-edits past its last audit); the Researcher-persona signal — today is a <em>counter</em>-signal worth recording honestly (recon did not displace the ship; the same run did both, because yesterday's recon was banked properly); and guidebook INDEX consolidation (two new rulings since the 06-07 pass).</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi stays parked</div>
+        <div class="item__body">Unchanged — and today sharpened the contrast that justifies it: the same operational-voice bar that Saudi could not clear is the one Iqra cleared on the record. The bar is the product.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — time-sensitive: it puts the hero still on the live article</div>
+    <p>Your 08:24 push (<span class="mono" style="color: rgba(250,250,247,0.85);">feb98b1</span>) already deployed the rail and the Iqra article text — but it raced ahead of the hero still, so the live Iqra pages currently reference an image that 404s. This commit completes the ship: the still, the reciprocal rail links, sitemap 27, both verdicts, gate + status logs, growth packet, guidebook ruling, and brief No. 13. Run it from the repo root <strong>when you see this</strong>:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-10: complete the Iqra/diglossia ship — hero still, reciprocal rail links (Sierra Leone pair), sitemap 27; Editor + Arabic-Editor verdicts, publish gate, evaluator-on-record guidebook ruling, growth launch packet, brief 13 (fixes the hero-still 404 the 08:24 mid-run push left on the live Iqra pages)"
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. After ~90s the twelfth piece is whole in both languages — hero in place, rail reciprocal, sitemap current.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·10</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
