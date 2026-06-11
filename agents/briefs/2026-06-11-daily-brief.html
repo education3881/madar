@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-11</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 11 June 2026. Yesterday, today, tomorrow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 11 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 14</div>
+    <h1>A day spent making the catalogue worth wandering, and choosing the thirteenth piece carefully.</h1>
+    <p class="dek">No fresh piece today — by design, not by slip. The day after a ship is a recon-or-translate day, and this one delivered both halves of what yesterday queued: the <strong>Arabic-language rail cluster</strong> now exists (Kuwait's tests ↔ Madrasa's library ↔ Iqra's trial, reciprocal, both languages — three pieces about Arabic itself that until this morning didn't know about each other), and the <strong>next fresh candidate is recon'd and banked</strong>: Korea's AI digital textbooks — the first national system to adopt AI textbooks at scale <em>and then un-decide them by statute</em>, eighteen months start to finish. It completes a triptych the catalogue has been quietly building: Uruguay built the lab first, Indonesia made it an elective, Korea made it a mandate and paid to reverse it. Two gates stand open before any drafting, the same two that gated Iqra — a named operational voice, and a figure trace past the press tier. One more thing worth your eye: the <strong>Husseiny quote tile is rendered</strong> — the first Issue 02 grid asset, and the first time the brand's own fonts have rendered inside the sandbox, both scripts. The capability gap that delayed the opening grid in early June is now closed permanently, and the method is in the guidebook.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The race resolved cleanly. The twelfth piece is whole.</h2>
+        <div class="day__date">2026·06·10 · Wednesday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — no gap to name today</div>
+      <p>Opened on <span class="mono">git</span> per the standing rule: local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">8595e71</span>, tree clean. Your completion push landed yesterday at 11:55 — the hero-still 404 that the 08:24 mid-run race left on the live Iqra pages is closed, the site is current at 27 pages, and for the first time in four briefs there is no push gap, no race residue, and no missed day to report. (The push-race lesson itself — pathspecs or a push-window convention — stays queued for Sunday's weekly, where process changes belong.)</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What 06-10 left standing</h3>
+        <ul>
+          <li>The Iqra/diglossia piece live and whole in both languages — hero in place, rail reciprocal with the Sierra Leone pair, sitemap at 27.</li>
+          <li>Two queued moves for today: curate the Arabic-language cluster the catalogue already contained, and recon the next Issue 02 candidate toward Asia/LatAm balance.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What that demanded of today</h3>
+        <ul>
+          <li>Execute the rail curation as the Editor framed it — an honest cluster, one <span class="mono">related:</span> edit per page — and verify reciprocity in the built output, not just the frontmatter.</li>
+          <li>Run the recon in the override-finding order: source map first, gates named in writing, no scope commit until they clear.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·11 · Thursday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the Arabic-language rail cluster — three pieces about Arabic now hold hands</div>
+        <div class="item__body">Kuwait's standardised tests <em>in</em> Arabic, Madrasa's STEM library <em>for</em> Arabic, Iqra's trial <em>about</em> Arabic — the catalogue has carried this cluster since May without surfacing it. Six frontmatter edits later it is reciprocal in both languages. One editorial call worth your eye, made and logged in the gate: <strong>Iqra's rail swaps Bo out</strong> for the Kuwait + Madrasa pair — rails stay at three, editor-curated; Bo remains one hop away via the Sierra Leone matching node, whose rail is untouched. A reader who arrives at any Arabic-language piece now has the other two one click away — in Arabic, where that reader most likely lives.</div>
+        <div class="item__note">6 files · build-verified: all 12 rail hrefs resolve, EN + AR · the AR reader's path: «اقرأ أيضًا»</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the thirteenth piece, chosen and gated — Korea's AI textbooks, adoption to statutory reversal</div>
+        <div class="item__body"><strong>The recon is banked; the drafting is not started; that order is the point.</strong> The arc: September 2024, Korea's education ministry approves 76 AI-driven textbook titles; March 2025, they enter classrooms; one semester of documented friction (inaccuracies, privacy, screen-time, heavier teacher workload — not lighter); 3 June 2025, a president elected having campaigned against them; 4 August 2025, the National Assembly narrows the legal definition of "textbook" to exclude them. The 2026 state is the story: adoption discretionary at ~30% of schools, early-complying schools defunded mid-subscription, publishers stranded. The piece is NOT "AI failed" — it is what a reversal costs, who pays it, and what it means that a democracy could execute one at all. The inconvenient half runs <em>backwards</em> here: the steelman of the program (process failure ≠ concept failure; Korean teachers were simultaneously leading voluntary AI adoption elsewhere in the same system). Two gates open before drafting, exactly as Iqra's were: a named operational voice (the Rest of World record names a parent organiser and a policy researcher, but not yet the person who <em>ran</em> it), and a figure trace — the spend figures disagree across press tiers ($850M vs ₩1T vs $580M, likely different scopes), which is itself a finding. Vietnam's tuition-free 2025–26 (23.2M students) is banked as the carried second candidate.</div>
+        <div class="item__note">content-drafts/briefs/2026-06-11-korea-aidt-reversal-brief.md · the triptych: Uruguay (lab-first) ↔ Indonesia (elective-first) ↔ Korea (mandate-first, reversed)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the Husseiny tile — rendered, bilingual, ship-ready</div>
+        <div class="item__body">The most shareable honest line in the Iqra record — «البيداغوجيا مهمة.» / "Pedagogy matters. How children are taught can make a significant difference." — is now a 1080×1080 tile: Amiri carrying the Arabic large (the lead surface, per the launch packet), Cormorant Garamond underneath, named attribution, no figures, wordmark in the corner. First asset of the Issue 02 grid queue. The render method closed a standing capability gap (next item) — and the tile was verified the only way type can be: by looking at it. Arabic shaping, mirrored guillemets, diacritics — correct.</div>
+        <div class="item__note">design-assets/instagram/issue-02-grid/2026-06-11-tile-husseiny-quote.png + reproducible HTML source · joins the send-ready queue behind the opening grid</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · gate run in writing; build clean at 27 pages; nothing ships unverified</div>
+        <div class="item__body">No new piece today, so the gate's scope was the rail curation and the staged bank: <span class="mono">astro build</span> clean via the /tmp route-around — <strong>27 pages, 0 errors</strong>; every rail link on all six edited pages resolves to a built page (scripted check, 12/12, both languages); sitemap steady at 27 with no hand-edit needed (no page-set change — the first push since the migration flag was raised that didn't touch the hand-built file); parity 12 = 12; brand chrome inlined. The Korean name renderings in the new brief are flagged for the Arabic Editor <em>before</em> any AR ships — the named-human rule reaches recon documents too.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-11.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · two increments — the Korea source map, and the font that finally rendered</div>
+        <div class="item__body"><em>First:</em> the Korea AIDT source index — primary surfaces named (the ministry's own English briefings, the Assembly amendment, KERIS as operator of record), named humans tiered, and a new trap documented: <strong>same-figure-different-scope</strong> — two spend numbers that look like corroboration but measure different things. The fence rule is the same as ever: state the scope in print, next to the number. <em>Second:</em> the brand-fonts ruling — GitHub release downloads are newly egress-blocked, npm's @fontsource packages are the route-around, and Arabic text must never be rendered through cairosvg (it cannot shape script — Chromium can). Every future text-bearing brand asset, both scripts, is unblocked by that one page.</div>
+        <div class="item__note">/agents/guidebook/2026-06-11-korea-aidt-source-index.md · /agents/guidebook/2026-06-11-brand-fonts-via-npm-fontsource.md · INDEX consolidation: Sunday, now four rulings deep</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document</div>
+        <div class="item__body">Written in the site's look and feel; statistics regenerated deterministically below (<span class="mono">madar_stats.py --log</span>, snapshot appended to history). The piece count holds at 12 = 12 — today the pipeline advanced by a curated catalogue and a gated candidate, and the brief says so rather than dressing it up.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-11</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 7 · Africa 3 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 12 · access 10 · value of teachers 8 · AI-readiness 5 · language and heritage preservation 5</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-10</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>What is on deck.</h2>
+        <div class="day__date">2026·06·12 · Friday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · close Korea's two gates — or park it and start Vietnam</div>
+        <div class="item__body">The Korea Herald and Korea Times archives are the likeliest surface for the named operational voice (a teacher or principal who taught with an AIDT, or a named KERIS/ministry implementation official). The figure trace runs through the ministry's own briefings and the Assembly record. Both clear → Korea drafts. Either fails → Korea parks exactly as Saudi did, and the Vietnam recon begins. The bar does not bend for a good story arc — that is the lesson the catalogue keeps teaching.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · caption copy for the Husseiny tile</div>
+        <div class="item__body">The tile is rendered; the grid queue wants its caption pair (EN + AR-lead) so the asset is send-ready the moment the opening grid launches. Small, concrete, one packet edit.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · two send-ready launches, both one Vini-action away</div>
+        <div class="item__body">Unchanged: Issue 01 (send packet final) and the Instagram opening grid (tiles + captions final). The Issue 02 grid now has its first asset queued behind them. Growth flips to return-rate measurement the moment either launch goes live.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · carries to Sun 14 June</div>
+        <div class="item__body">Four items now stand: the <span class="mono">@astrojs/sitemap</span> migration (today needed no hand-edit, but the file is still hand-built); the Researcher-persona signal — today is a <em>pro</em> signal worth recording honestly (a full recon consumed the fresh-piece slot; with a Researcher the rail work could have run alongside a translation); guidebook INDEX consolidation (four rulings since 06-07); and the egress-allowlist ask (edtechhub.org / documents1.worldbank.org — still the one Vini action that unblocks the Sierra Leone figures).</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi stays parked</div>
+        <div class="item__body">Unchanged. The Korea brief inherits its bar: no operational voice, no draft — the park is the proof the bar is real.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one copy-paste block</div>
+    <p>Nothing time-sensitive today: the live site is whole, and this push lands the rail cluster, the Korea recon bank, the Husseiny tile, two guidebook rulings, the gate + status logs, and brief No. 14. Run it from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-11: Arabic-language rail cluster (Kuwait <-> Madrasa <-> Iqra, EN+AR, build-verified); Korea AIDT recon banked (brief + source index, two gates open, Vietnam carried); Husseiny IG tile rendered (first Issue 02 grid asset) + brand-fonts-via-npm guidebook ruling; publish gate, manager status, brief 14"
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>. After ~90s the three Arabic-language pieces point to each other on the live site, both languages.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·11</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

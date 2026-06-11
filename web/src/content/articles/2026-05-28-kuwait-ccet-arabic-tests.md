@@ -14,6 +14,9 @@ themes:
   - language and heritage preservation
   - value of teachers
 type: curated
+related:
+  - 2026-06-10-rak-iqra-arabic-diglossia
+  - 2026-05-27-uae-madrasa-tiktok
 arabicVersion: 2026-05-28-kuwait-ccet-arabic-tests
 sources:
   - title: "International Dyslexia Association — 'The Center for Child Evaluation & Teaching (CCET): An IDA Global Partner in the Heart of Arabia!' by Dr. Gad Elbeheri, February 2013. Includes named founding figure (Mrs. Faten Al Bader), USD 1M Multi-sensory Structured Arabic Language Programme detail, four-test battery enumeration, Charles Haynes (Massachusetts General Hospital) technical assistance."

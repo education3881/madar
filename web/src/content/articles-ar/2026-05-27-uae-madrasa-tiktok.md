@@ -7,6 +7,9 @@ region: MENA
 level: K-12
 themes: [language and heritage preservation, AI-readiness, government-led programs, access]
 type: curated
+related:
+  - 2026-06-10-rak-iqra-arabic-diglossia
+  - 2026-05-28-kuwait-ccet-arabic-tests
 englishVersion: 2026-05-27-uae-madrasa-tiktok
 sources:
   - title: "مدرسة — الصفحة الرئيسية لِلمنصة (ثنائية اللغة عربي/إنجليزي؛ توصيفٌ ذاتي كَمنصة فيديو حرة لِمواد العلوم باللغة العربية، تحت مبادرات محمد بن راشد آل مكتوم العالمية)"

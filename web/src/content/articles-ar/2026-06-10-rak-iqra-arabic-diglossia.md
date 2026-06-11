@@ -8,8 +8,9 @@ level: Both
 themes: [language and heritage preservation, ECE access, government-led programs]
 type: curated
 related:
+  - 2026-05-28-kuwait-ccet-arabic-tests
+  - 2026-05-27-uae-madrasa-tiktok
   - 2026-06-08-sierra-leone-tsc-teacher-matching
-  - 2026-05-25-bo-teacher-chalk
 contains_composites: false
 englishVersion: 2026-06-10-rak-iqra-arabic-diglossia
 sources:
