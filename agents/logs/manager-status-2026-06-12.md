@@ -1,0 +1,19 @@
+# Manager status — 2026-06-12 (Friday)
+
+**State at open:** local `main` = origin `main` = `3d909a5` (2026-06-11), tree clean except yesterday's untracked founder-request memo — the 06-11 push landed same-day. Live site current at 27 pages (verified via origin parity; direct fetch egress-blocked, standing rule). No missed day.
+
+**Shipped (in repo, staged for push):**
+- **Content (a):** the Korea gate pass ran exactly as queued. **Gate 1 (figure trace): CLOSED** — the same-figure-different-scope trap resolved with scopes fenced (₩533.3B = 2024 project allocation, Korea Herald 08-04; ₩1T = teacher training 2024–26, World Bank corroborates the Korea Times scope; $850M aggregator figure dropped as conflation). **Gate 2 (named operational voice): DID NOT CLEAR** — Korea Herald's teacher and publisher voices are anonymous; Rest of World's named humans are advocacy/policy, not operational. **Editor verdict: PARK, pre-draft.** Un-park condition: one named in-school/in-agency voice. The figure fence survives the park as a banked asset. **Vietnam tuition-free 2025–26 recon opened** (brief: Tier-1 surfaces named — Politburo decision, MOET guidance, Assembly budget line; two gates named before any drafting; "tuition-free ≠ fee-free" trap fenced).
+- **Growth (c):** Husseiny tile caption pair, EN + AR — figures only from the approved article, no new transliterations, posture rules binding. The tile is now fully send-ready in the Issue 02 queue.
+- **Research-to-learn (d):** guidebook ruling — **the URL-binding migration-cost clock** (what copies your URL into storage you don't control; migrate before the next binding fires or pay twice; GitHub Pages cutover specifics verified against GitHub Docs).
+- **Founder ask, delivered on deadline:** the **custom-domain decision memo** (`/agents/memos/2026-06-12-domain-decision-memo.md` + one-page version in brief No. 15). Recommendation: **BUY NOW**, before Search Console and Issue 01 fire — both bind to a URL; migration cost is at lifetime minimum (27 URLs, ~0 inbound links, no SC property). Technical sequence ~90 min + DNS/cert wait; no hardcoded base in src (verified today); fold the `@astrojs/sitemap` migration into the same move. Purchase is Vini's action (paid infra = escalation list). Weekly (Sun 14) ratifies.
+- **Quality (b):** gate run in writing; /tmp route-around build clean — **27 pages, 0 errors**; all article hrefs resolve incl. canonical/hreflang absolute set (scripted, 0 misses); sitemap 27 untouched; parity 12 = 12; no TRACE in output; chrome inlined.
+- **Brief (e):** No. 15 with regenerated stats panel; history snapshot appended.
+
+**Held:** Saudi parked (unchanged). Korea parked (today, pre-draft — the second proof in a week that the bar is real). No fresh piece today: the content slot was consumed by the gate pass + park decision + Vietnam opening, and the founder's memo took the joint Manager/WebDev/Growth capacity. Named plainly: this is the second consecutive day the fresh-piece slot went to recon-class work.
+
+**Queued for tomorrow (2026-06-13):** Vietnam Tier-1 recon (locate the Politburo conclusion text, MOET implementation guidance, the compensation budget line; name the operational-voice candidates). Weekly prep: assemble the four carried items + the domain ratification.
+
+**For the weekly (Sun 2026-06-14):** (1) ratify the domain decision + schedule the cutover (fold `@astrojs/sitemap` in); (2) Researcher-persona signal — **third consecutive pro signal**, now acute: two recon-class workloads in one day (Korea archive pass + domain research) consumed the entire content capacity; (3) guidebook INDEX consolidation (five rulings since 06-07); (4) egress-allowlist ask (edtechhub.org / documents1.worldbank.org) — still the one Vini action unblocking the Sierra Leone quarantined figures.
+
+**Push:** single commit staged — see brief No. 15.

@@ -30,6 +30,20 @@ A verified map of the AIDT arc (Sept 2024 approval → March 2025 classrooms →
 - **$580M** private publisher investment — single-tier press figure; needs a named source or industry filing.
 - **76 approved titles (Sept 2024)** and **~30% adoption (2025–26)** — ministry-traceable; do not cite from aggregators.
 
+### RESOLVED 2026-06-12 (archive pass) — scopes now fenced
+
+| Figure | Scope | Citable surface |
+|---|---|---|
+| ₩533.3B (~$385M) | Project allocation, **2024 alone** | Korea Herald 2025-08-04, Choi Jeong-yoon byline (koreaherald.com/article/10546695) |
+| ₩1T (~$0.74B) | **Teacher training only, 2024–2026** ("approximately $0.74 billion for three years (2024–2026) specifically for teacher training") | World Bank EduTech blog 2024-10-30, Asim/Kim/Aedo — corroborates the Korea Times scope |
+| ~$850M | Aggregator conflation of the above two — **dropped, not citable** | — |
+| ₩800B | Industry's own "estimated" total private investment, unnamed — citable only AS an industry claim | Korea Herald 2025-08-04 |
+| ~30% | School-level adoption, 2025–26 | Korea Herald 2025-08-04; KERIS remains the preferred primary if reachable |
+
+Also banked from the same pass: the amendment's definitional language as quoted in English — textbooks narrowed to "printed books and e-books," excluding "learning support software using intelligent information technology" (Korea Herald rendering; quote the Korean statute directly at draft). Pilot scope confirmed: EN+math grades 3–4 elementary; EN+math+CS middle/high, first semester 2025.
+
+**Gate 2 (named operational voice) did NOT clear in the English-language archive** — Korea Herald's teacher and publisher voices are anonymous. → **PARKED 2026-06-12**, un-park condition in `/content-drafts/verdicts/2026-06-12-korea-aidt-reversal.md`.
+
 ## Method note (what this adds to the team)
 
 Second application of the **evaluator-on-record trace tier** (2026-06-10 ruling), now extended to *fiscal* figures: where the primary budget document is unreachable, a named official stating a figure falsifiably on the record clears; an unnamed "estimated" in three outlets does not. Korea also adds the inverse of the same-name trap (2026-06-09): here the trap is **same-figure-different-scope** — two spend numbers that look like corroboration but measure different things. The fence rule is identical: state the scope in print, next to the number.
