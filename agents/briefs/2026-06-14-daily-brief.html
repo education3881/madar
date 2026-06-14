@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-14</title>
+<meta name="description" content="Manager → Founder daily brief for Sunday 14 June 2026. A clean recovery from Saturday's missed run: Vietnam clears recon, the orphaned Issues-page work ships, the weekly review carries the ratifications." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Sunday · 14 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 16</div>
+    <h1>Saturday was a missed day. Today is the clean recovery — and Vietnam clears the gate that Korea couldn't.</h1>
+    <p class="dek">Plain first, because you value it plain: <strong>2026-06-13 had no run.</strong> No commit reached origin between Friday and now, and no brief was written for Saturday. The standing rule answers it exactly — a missed day earns <em>one clean recovery day, never a forced double-batch</em> — so today does not cram two days into one; it recovers honestly. Three things define the recovery. <strong>Vietnam cleared recon to PROCEED</strong> — the new Researcher persona's first real commission, with the annual-cost figure gate <em>closed</em> and the operational-voice gate named openly as still ajar. <strong>A batch of finished work was sitting orphaned in the tree</strong> — Friday's Issues-page prototype, the coordination memos, the Researcher RUNBOOK wiring — never pushed; today folds every file of it into one push so nothing is lost. And <strong>today is the weekly-review day</strong>: the daily run scaffolds and trials; the ratifications — the Researcher, the domain, the Issues page — belong to the weekly, and they are queued for it.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A missed run — named, not papered over.</h2>
+        <div class="day__date">2026·06·13 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — and the gap is real</div>
+      <p>Opened on <span class="mono">git</span> per the standing rule: local <span class="mono">main</span> = origin <span class="mono">main</span> = <span class="mono">1038147</span> — Friday's "brief 15" commit. <span class="mono">git fetch</span> confirms <strong>nothing has reached origin since the 12th</strong>: Saturday produced no commit and no brief. This is a missed day, not a quiet one — the failure mode the charter names (the operation waiting to be opened), and the reason the scheduled cadence exists. The cause is almost certainly an unlaunched app on the weekend; the guard is the schedule itself, and that goes to today's weekly to confirm. Live site current at 27 pages via origin parity (the sandbox still can't fetch the live URL — egress wall; git is the truth, the brief is the artefact).</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What was left in the tree, unpushed</h3>
+        <ul>
+          <li>Friday's <strong>Issues-page work</strong> — the full prototype in site look-and-feel, the Designer's per-issue visual-language proposal, the cross-department coordination memo — sitting uncommitted on top of <span class="mono">1038147</span>.</li>
+          <li>The <strong>RUNBOOK Researcher-wiring</strong> and the codified push-race rule, also uncommitted. Finished work, orphaned by the missed push.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What that demanded of today</h3>
+        <ul>
+          <li>Recover cleanly: advance the pipeline once, fold the orphaned work into one push, run the gate — <em>not</em> force a double-batch to "catch up."</li>
+          <li>Put the org-chart and infrastructure ratifications where they belong — the weekly review, today — with a first-commission result to point to, not a hypothetical.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>What was done — the five standing functions.</h2>
+        <div class="day__date">2026·06·14 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Vietnam clears recon — PROCEED — and it is the Researcher's first real job</div>
+        <div class="item__body">The piece Korea's park left a chair for. <strong>Gate 1, the figure trace: closed.</strong> The instrument is two-stage and must be named as two — a Politburo decision (28 Feb 2025) <em>then</em> National Assembly <strong>Resolution 217/2025/QH15</strong> (passed 26 Jun 2025, 440 of 441 votes), applied from the 2025–26 school year, covering preschool through grade 12: public-school students fully exempt, private-school families given state support capped at the public rate. The annual cost — <strong>~VND 30,600 billion, ~US$1.2 billion</strong> — is on the record from the Education Minister and corroborated; the first-year and proposal-stage figures are single-stream and stay out unless re-confirmed. The central trap is fenced in advance and is the story's spine: <strong>tuition-free is not fee-free</strong> — tuition is a small capped monthly fee (~US$2–25); health insurance, the "parents' fund," meals, uniforms, textbooks and transport remain, documented with concrete Ho Chi Minh City figures in Tuoi Tre. <strong>Gate 2, the named operational voice: open.</strong> Only the official tier is named so far — Minister <span lang="vi">Nguyễn Kim Sơn</span>, NA Chairman <span lang="vi">Trần Thanh Mẫn</span>; no principal, provincial-department official or named parent yet (the parents in the open press are anonymous). The Editor's commission call: proceed on the official voices + the documented fee structure, with an optional pass to land one named operational voice before draft. Full diacritics flagged to the Arabic Editor for transliteration. Quality-over-slot held: <strong>no fresh draft forced on a recovery day.</strong></div>
+        <div class="item__note">content-drafts/recon/2026-06-14-vietnam-tuition-free.md · guidebook/2026-06-14-vietnam-tuition-free-source-index.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · gate run in writing; structural QA clean; nothing site-facing ships today</div>
+        <div class="item__body">No <span class="mono">web/</span> file changes today — but the gate ran anyway, because the repo must be deploy-clean as staged, every day. Deterministic structural pass: parity <strong>12 = 12</strong> (basenames identical), <strong>12 hero stills on disk</strong> matching all 12 articles (push-race invariant holds — no <span class="mono">web/</span> change to disturb it), brand chrome inlined (no <span class="mono">&lt;img&gt;</span> wordmark/glyph), sitemap steady at <strong>27</strong> with reciprocal <span class="mono">en/ar/x-default</span> hreflang. The cold <span class="mono">astro build</span> was <em>not</em> run — <span class="mono">node_modules</span> absent plus the standing FUSE boundary; cold-build verification is a Web-Developer clean-checkout job, carried to the weekly. Re-flagged, not newly broken: the hardcoded "Issue 01" label in <span class="mono">index.astro</span> + <span class="mono">SiteFooter.astro</span> — the known drift defect the Issues-page spec already fixes.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-14.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the next post is now fully wired — verified URL, explicit sequence</div>
+        <div class="item__body">On a recovery day with no fresh ship, the honest growth move is <strong>distribution readiness, not reach-chasing</strong>. The send-ready Husseiny tile (Issue 02 grid, asset 01) now has its bio-link target <em>verified against the live sitemap</em> — <span class="mono">/madar/articles/2026-06-10-rak-iqra-arabic-diglossia/</span>, hreflang-correct both ways — so the post is a single publish when its slot opens. The sequence rule is written down: it goes after the Issue 01 opening grid finishes its Mon/Wed/Fri run, never interleaved; Growth never posts, you do. Asset 02 is named for the Designer — the Sierra Leone teacher-matching piece, a second region for the grid. No tile precedes its article, so Vietnam waits for the draft.</div>
+        <div class="item__note">social-drafts/2026-06-14-growth-issue02-sequence-and-link.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the Vietnam source index — banked and indexed under the Researcher</div>
+        <div class="item__body">The recon produced a durable asset, not just a recommendation: a verified primary/secondary source index — instrument, scope, the fee-structure evidence, the fiscal line with its gate status, and the named voices with full diacritics — added to Section 1 of the guidebook INDEX, which now belongs to the Researcher persona. A writer can start the Vietnam piece from a checked index rather than cold reconnaissance — exactly the compounding the function exists to produce. The index marks honestly which figures are closed and which single-stream numbers stay out.</div>
+        <div class="item__note">/agents/guidebook/2026-06-14-vietnam-tuition-free-source-index.md · INDEX Section 1, Researcher-owned</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Recovered · Friday's orphaned Issues-page work, folded into this push</div>
+        <div class="item__body">The work that never reached origin is not re-done — it is carried in. This push lands the full <strong>Issues-page prototype</strong> (site look-and-feel, real catalogue), the Designer's <strong>per-issue visual-language</strong> proposal (each issue a ground + a motif + a numeral whose colour carries time — <em>orange always means now</em>), the cross-department <strong>coordination memo</strong>, and the <strong>RUNBOOK Researcher-wiring</strong> + codified push-race rule. All of it stays specced-not-started: it builds after the domain cutover and after your read, never straddling either. Today simply makes sure it exists on origin.</div>
+        <div class="item__note">design-assets/issues-page/2026-06-12-issues-page-prototype.html · memos/2026-06-12-issue-transition-coordination.md · memos/2026-06-12-designer-issue-visual-language.md · agents/RUNBOOK.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — recovery named, statistics regenerated</div>
+        <div class="item__body">Statistics regenerated deterministically below (<span class="mono">madar_stats.py --log</span>, 06-14 snapshot appended to <span class="mono">history.jsonl</span>). The count holds at 12 = 12 — today the pipeline advanced by a recon that <em>cleared</em>, the catalogue's quality bar held on a recovery day, and a batch of orphaned work came home. The brief says exactly that, and names Saturday plainly.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-14</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 7 · Africa 3 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 12 · access 10 · value of teachers 8 · AI-readiness 5 · language and heritage preservation 5</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-10</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>On deck — and the weekly, today.</h2>
+        <div class="day__date">weekly: 2026·06·14 Sun · next daily: 2026·06·15 Mon</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Weekly review · today, separately — the venue for every ratification</div>
+        <div class="item__body">The daily run scaffolds and trials; the weekly decides. It carries: <strong>(1)</strong> ratify the <strong>Researcher</strong> addition — now with a first-commission result (Vietnam, PROCEED) to judge, not a hypothesis; <strong>(2)</strong> ratify the <strong>domain decision</strong> and schedule the cutover, folding <span class="mono">@astrojs/sitemap</span> in; <strong>(3)</strong> ratify the <strong>Issues-page</strong> spec, sequencing (after cutover), and your four questions; <strong>(4)</strong> a <strong>cold-build verification</strong> on a clean Web-Developer checkout; <strong>(5)</strong> the 06-13 missed day — confirm the schedule is the guard. The egress host-allowlist ask is <em>retired as resolved</em> and does not carry.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · Vietnam — commission, with one optional voice pass</div>
+        <div class="item__body">Cleared to PROCEED. The draft starts from a checked index. The one open question the Editor flagged: whether to spend a short pass trying to land a named operational voice (a principal or provincial-department official, on the record, full diacritics) before drafting, or to anchor on the official tier + the documented fee structure and run. Either way, the figure fence is set and the tuition-free ≠ fee-free spine is non-negotiable.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · three send-ready launches, all waiting on Vini-actions</div>
+        <div class="item__body">Issue 01 (send packet final), the Instagram opening grid (tiles + captions final), and the Husseiny tile (rendered, captioned, link now verified) queued behind them. None blocks the others — but the domain memo argues all three should fire <em>after</em> the cutover, which is one more reason the cutover shouldn't wait past the weekly.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Held · Saudi and Korea, parked side by side</div>
+        <div class="item__body">Both wait on the same species of gate Vietnam is one pass from clearing: a named human who was <em>in the room</em>. Their source indices survive the park as durable reference and un-park instantly if a named operational voice surfaces. Two parks in a catalogue of twelve is not a failure rate — it is the published pieces' warranty.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one copy-paste block</div>
+    <p>Nothing site-facing today. <strong>One push carries two runs:</strong> this daily (Vietnam recon PROCEED + source index, the INDEX row, the Issue-02 link/sequence packet, the gate + status logs, brief No. 16, and Friday's orphaned Issues-page work) <strong>and today's weekly review</strong>, which ran alongside it and added the Researcher as the eighth persona (<span class="mono">08_researcher.md</span>, expansion-ladder rung 1), with the RUNBOOK wiring and guidebook consolidation. Both runs have finished writing — safe to stage as one. Run it from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-14: clean recovery from the 06-13 missed run + weekly review. Vietnam tuition-free clears recon (PROCEED; figure gate closed, voice gate open) — Researcher's first commission; source index + guidebook INDEX row. Weekly: Researcher added as 8th persona (08_researcher.md, expansion rung 1) + RUNBOOK wiring + guidebook consolidation + weekly report. Folds in Friday's orphaned Issues-page work (prototype + per-issue visual language + coordination memo). Growth: Issue-02 bio-link verified + posting sequence. Publish gate, manager status, brief 16."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a> — nothing in this push changes the site itself. What it protects is that no finished work stays orphaned in the tree a second day.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·14</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

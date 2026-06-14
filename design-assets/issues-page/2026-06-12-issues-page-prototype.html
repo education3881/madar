@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Issues · Madār — PROTOTYPE 2026-06-12</title>
+<meta name="description" content="Prototype of the Issues page: current issue above the fold, previous issues as eras. For founder discussion 2026-06-13. Not site code." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" />
+<style>
+  :root {
+    --paper:  #FAFAF7;
+    --ink:    #0E1B2C;
+    --orange: #D94F2A;
+    --sage:   #7A8471;
+    --sand:   #E8E2D0;
+    --rule:      rgba(14, 27, 44, 0.18);
+    --rule-soft: rgba(14, 27, 44, 0.08);
+    --muted:     rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --font-ar:      "Amiri", serif;
+    --container-max: 1100px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--font-body); font-size: 18px; line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  a { color: var(--ink); text-decoration-color: var(--rule); }
+  a:hover { text-decoration-color: var(--orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--sage); }
+
+  /* ── proto banner ─────────────────────────────── */
+  .proto {
+    background: var(--ink); color: var(--paper);
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 0.5rem 2rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .proto span:first-child { color: var(--orange); }
+
+  /* ── masthead (site register) ─────────────────── */
+  .masthead {
+    padding-block: 1.75rem 0.75rem; border-bottom: 1px solid var(--rule);
+    display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem;
+  }
+  .masthead__brand { font-family: var(--font-display); font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+  .masthead__brand .macron { color: var(--orange); }
+  .masthead__nav { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); }
+  .masthead__nav strong { color: var(--ink); font-weight: 500; }
+
+  /* ── page lede ────────────────────────────────── */
+  .lede { padding-block: 3rem 2.5rem; }
+  .lede h1 { font-size: clamp(34px, 4vw, 54px); letter-spacing: -0.018em; line-height: 1.04; max-width: 24ch; }
+  .lede h1 .ar { font-family: var(--font-ar); font-size: 0.85em; color: var(--muted); }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic; font-size: clamp(17px, 1.4vw, 20px);
+    line-height: 1.45; color: var(--muted); max-width: 38rem; margin-top: 0.6rem;
+  }
+
+  /* ── issue blocks ─────────────────────────────── */
+  .issue {
+    border-top: 1px solid var(--ink);
+    padding: 2.25rem 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  .issue--current { background: var(--paper); }
+  .issue--closed  { background: var(--sand); }
+
+  .issue__head { display: grid; grid-template-columns: auto 1fr auto; gap: 2rem; align-items: start; margin-bottom: 1.75rem; }
+  .issue__numeral {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: clamp(64px, 7vw, 96px); line-height: 0.9; letter-spacing: -0.02em;
+  }
+  .issue--current .issue__numeral { color: var(--orange); }
+  .issue--closed  .issue__numeral { color: var(--ink); }
+  .issue__numeral small {
+    display: block; font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage); margin-top: 0.5rem;
+  }
+  .issue__title h2 { font-size: clamp(26px, 2.6vw, 36px); letter-spacing: -0.016em; max-width: 26ch; }
+  .issue__title .theme {
+    font-family: var(--font-display); font-style: italic; color: var(--muted);
+    font-size: 1.05rem; margin-top: 0.5rem; max-width: 40rem;
+  }
+  .issue__meta {
+    text-align: right; font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); line-height: 2;
+    white-space: nowrap;
+  }
+  .issue__meta .state-open { color: var(--orange); font-weight: 500; }
+  .issue__meta .ar { font-family: var(--font-ar); font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--muted); }
+
+  /* the motif strip — each issue's geometric gesture */
+  .motif { height: 28px; margin-bottom: 1.75rem; }
+  .motif svg { width: 100%; height: 100%; display: block; }
+
+  /* piece grid */
+  .pieces { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+  @media (max-width: 820px) { .pieces { grid-template-columns: 1fr; } }
+  .piece {
+    display: grid; grid-template-columns: 64px 1fr; gap: 1rem;
+    padding: 0.9rem 0; border-bottom: 1px solid var(--rule-soft);
+    align-items: center;
+  }
+  .piece:last-child, .piece:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--rule-soft); }
+  .piece__thumb {
+    width: 64px; height: 40px; border: 1px solid var(--rule);
+    overflow: hidden; display: grid; place-items: center;
+  }
+  .piece__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .issue--closed .piece__thumb { background: var(--sand); }
+  .issue--current .piece__thumb { background: var(--paper); }
+  .piece__title { font-family: var(--font-display); font-size: 1.16rem; line-height: 1.18; letter-spacing: -0.008em; }
+  .piece__meta { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage); margin-top: 0.25rem; }
+
+  .issue__foot {
+    margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule-soft);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage);
+  }
+  .issue__foot a { color: var(--ink); }
+
+  /* open-issue note (current issue still filling) */
+  .filling {
+    grid-column: 1 / -1;
+    font-family: var(--font-mono); font-size: 11px; color: var(--sage); letter-spacing: 0.04em;
+    padding: 0.9rem 0 0.2rem; line-height: 1.7;
+  }
+  .filling .dot { color: var(--orange); }
+
+  /* ── annotations for the discussion ───────────── */
+  .notes { border-top: 1px solid var(--ink); padding-block: 2rem 1rem; }
+  .notes h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .notes ol { margin: 0; padding-inline-start: 1.25rem; max-width: 46rem; }
+  .notes li { margin-bottom: 0.8rem; font-size: 0.95rem; line-height: 1.6; }
+  .notes li::marker { font-family: var(--font-mono); color: var(--orange); font-size: 0.8rem; }
+  .notes .q { font-style: italic; color: var(--muted); }
+
+  footer {
+    margin-top: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--rule);
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+
+<div class="proto">
+  <span>Prototype — not site code</span>
+  <span>Issues page · for founder discussion 2026-06-13 · Designer + Web Developer + Manager</span>
+</div>
+
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:var(--font-ar);">مدار</span></div>
+    <nav class="masthead__nav">Articles · About · <strong>Issues</strong> · <span lang="ar" dir="rtl" style="font-family:var(--font-ar); font-size:14px; text-transform:none; letter-spacing:0;">الأعداد</span></nav>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Issues · The publication in volumes</div>
+    <h1>One orbit at a time. <span class="ar" lang="ar" dir="rtl">مدارٌ بعد مدار</span></h1>
+    <p class="dek">Madār publishes in issues — slow, bound collections, each with its own ground and its own gesture. The current issue is open below; the issues before it stand on the shelf, complete.</p>
+  </section>
+
+  <!-- ═══════════ CURRENT ISSUE — Issue 02, paper era, orange numeral ═══════════ -->
+  <article class="issue issue--current">
+    <div class="issue__head">
+      <div class="issue__numeral">02<small>Current · open</small></div>
+      <div class="issue__title">
+        <h2>The instrument in use</h2>
+        <p class="theme">Systems that let someone else mark their homework: an algorithm audited in Sierra Leone, a reading trial measured in Ras al-Khaimah — and the pieces still clearing the gate.</p>
+      </div>
+      <div class="issue__meta">
+        June 2026 · <span class="state-open">open</span><br />
+        2 pieces · EN + AR<br />
+        <span class="ar" lang="ar" dir="rtl">العدد الثاني · مفتوح</span>
+      </div>
+    </div>
+
+    <!-- Issue 02 motif: the thread — two nodes, one connecting line -->
+    <div class="motif" aria-hidden="true">
+      <svg viewBox="0 0 1000 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <line x1="0" y1="14" x2="1000" y2="14" stroke="#7A8471" stroke-width="1" opacity="0.5"/>
+        <circle cx="330" cy="14" r="4" fill="#D94F2A"/>
+        <circle cx="670" cy="14" r="4" fill="none" stroke="#0E1B2C" stroke-width="1.5"/>
+        <path d="M 334 14 Q 500 2 666 14" stroke="#0E1B2C" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="pieces">
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-06-08-sierra-leone-tsc-teacher-matching.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The algorithm that decides who teaches in Bo</a></div>
+          <div class="piece__meta">Sierra Leone · curated · 2026·06·08</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-06-10-rak-iqra-arabic-diglossia.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The language children speak, and the one they must read</a></div>
+          <div class="piece__meta">United Arab Emirates · curated · 2026·06·10</div>
+        </div>
+      </div>
+      <div class="filling"><span class="dot">●</span> This issue is open — pieces join as they clear the editorial gate. Published slowly, on purpose.</div>
+    </div>
+
+    <div class="issue__foot">
+      <span>Issue 02 · June 2026 · paper ground · the thread</span>
+      <a href="#">Read the current issue →</a>
+    </div>
+  </article>
+
+  <!-- ═══════════ CLOSED ISSUE — Issue 01, sand era, ink numeral ═══════════ -->
+  <article class="issue issue--closed">
+    <div class="issue__head">
+      <div class="issue__numeral">01<small>May 2026 · closed</small></div>
+      <div class="issue__title">
+        <h2>The founding survey</h2>
+        <p class="theme">Ten dispatches from ten countries: what governments actually do when they say "education" — graded in public in Bahrain, shipped through a knowledge bank in Egypt, taught with last term's chalk in Bo.</p>
+      </div>
+      <div class="issue__meta">
+        May 2026 · complete<br />
+        10 pieces · EN + AR<br />
+        <span class="ar" lang="ar" dir="rtl">العدد الأول · مكتمل</span>
+      </div>
+    </div>
+
+    <!-- Issue 01 motif: the horizon — a single field-survey rule with a station mark -->
+    <div class="motif" aria-hidden="true">
+      <svg viewBox="0 0 1000 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <line x1="0" y1="18" x2="1000" y2="18" stroke="#0E1B2C" stroke-width="1"/>
+        <line x1="500" y1="6" x2="500" y2="18" stroke="#0E1B2C" stroke-width="1"/>
+        <line x1="250" y1="12" x2="250" y2="18" stroke="#7A8471" stroke-width="1"/>
+        <line x1="750" y1="12" x2="750" y2="18" stroke="#7A8471" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="pieces">
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-25-bo-teacher-chalk.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The teacher in Bo who still uses last term's chalk</a></div>
+          <div class="piece__meta">Sierra Leone · short · 2026·05·25</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-26-bahrain-bqa-public-grades.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">Bahrain grades its schools, by name, in public</a></div>
+          <div class="piece__meta">Bahrain · curated · 2026·05·26</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-27-egypt-ekb-decade.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">Egypt's Knowledge Bank at ten, and what it now ships through the front door</a></div>
+          <div class="piece__meta">Egypt · curated · 2026·05·27</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-27-uae-madrasa-tiktok.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The Arabic STEM library that decided to live inside the algorithm</a></div>
+          <div class="piece__meta">United Arab Emirates · curated · 2026·05·27</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-28-ghana-cbe-curriculum.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">Four languages, three phases, sixty days</a></div>
+          <div class="piece__meta">Ghana · curated · 2026·05·28</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-28-iraq-mosul-library.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The library reopened on a Saturday in February</a></div>
+          <div class="piece__meta">Iraq · curated · 2026·05·28</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-28-kuwait-ccet-arabic-tests.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The test, in Arabic</a></div>
+          <div class="piece__meta">Kuwait · curated · 2026·05·28</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-31-indonesia-permen-13-coding-ai.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">The minister insists: not a new curriculum</a></div>
+          <div class="piece__meta">Indonesia · curated · 2026·05·31</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-31-qatar-humanity-spark-strategy.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">Spark, and the hand that holds the match</a></div>
+          <div class="piece__meta">Qatar · curated · 2026·05·31</div>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="piece__thumb"><img src="../../web/public/stills/2026-05-31-uruguay-eduia-lab-ceibal.svg" alt="" /></div>
+        <div>
+          <div class="piece__title"><a href="#">Nineteen years of teaching the teachers</a></div>
+          <div class="piece__meta">Uruguay · curated · 2026·05·31</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="issue__foot">
+      <span>Issue 01 · May 2026 · sand ground · the horizon</span>
+      <a href="#">Read Issue 01 →</a>
+    </div>
+  </article>
+
+  <!-- ═══════════ DISCUSSION NOTES (stripped before any implementation) ═══════════ -->
+  <section class="notes">
+    <h3>Prototype notes — for the 2026-06-13 discussion · stripped before implementation</h3>
+    <ol>
+      <li><strong>Orange means now.</strong> The current issue's numeral is the only orange numeral on the page — the same survey-marker semantics the design system gives orange on diagrams. When the Editor closes Issue 02, the numeral flips to ink and the block's ground flips to its era color. The page itself shows time. <span class="q">Does this match how you imagined "current vs. previous"?</span></li>
+      <li><strong>The grounds are your observation, adopted.</strong> Issue 01's block stands on sand (#E8E2D0) because its nine stills do; Issue 02 stands on paper (#FAFAF7) because its stills do. The drift you noticed becomes the system. Phase 2 (a pre-approved "ground ladder" — stone, clay — for Issues 03+) is in the Designer's memo; her recommendation is to hold until Issue 04 exists. <span class="q">Deployment-only, or open the ladder?</span></li>
+      <li><strong>Each issue gets one motif, never reused</strong> — Issue 01: the horizon (field-survey rule); Issue 02: the thread (two nodes, one line — matching, bridging). The motif lives on the issue divider here and the issue's grid tiles on Instagram, so the social grid and the site age together.</li>
+      <li><strong>Thumbnails are the real stills</strong>, referenced from <span class="mono">/web/public/stills/</span> — open this file from inside the repo folder to see them. In production they're build-resolved.</li>
+      <li><strong>Implementation is specced, not started:</strong> an <span class="mono">issue</span> field in the article schema (24 frontmatter backfills), an <span class="mono">/issues/</span> + <span class="mono">/ar/issues/</span> page pair iterating the collection (never naming slugs), and the homepage's hardcoded "Issue 01" label replaced by the derived value — that label is currently drift-prone hand-text. Sequencing is binding: this lands <em>after</em> the domain cutover, never straddling it. <span class="q">Naming check: "Issues" / «الأعداد» — or "Editions"?</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>Prototype · Designer + Web Developer + Manager · 2026·06·12</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

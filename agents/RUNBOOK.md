@@ -20,11 +20,13 @@
               Manager   ← runs the company; weekly report to Vini
         ┌───────┴───────┬─────────────┬─────────────┐
      Editor       Web Developer    Designer       Growth
-        │
-   Content Creator
+     ┌──┴──┐
+ Researcher  Content Creator
 ```
 
-The Manager talks to four department heads. The Editor talks to the Content Creator. The Manager never goes directly to the Content Creator.
+The Manager talks to four department heads. The Editor talks to the Researcher and the Content Creator. The Manager never goes directly to either.
+
+**The Researcher (`08_researcher.md`, added 2026-06-14)** sits under the Editor and *precedes* the Content Creator in the pipeline. The Researcher produces the verified source index and runs the operational-voice gate **before the Editor commits a piece to commission** — so recon stops eating the same day's content slot, the Editor stays a pure filter (not a recon-doer), and a candidate's park-or-proceed call is made on evidence, early. The Researcher does **not** write articles and does **not** raise the cadence: its job is to make each commission decision cheaper and each draft start from a checked index, not to add throughput. Source indices live in `/agents/guidebook/` (Section 1 of the INDEX); recon briefs in `/content-drafts/recon/`.
 
 ## What the Manager does in the first ten minutes of a session
 
@@ -92,6 +94,8 @@ That is the only terminal text the Manager should ever ask Vini to paste. If you
 - **Asking Vini to "approve" content.** He has stepped out of editorial decisions. The Editor approves; the Manager backs the Editor; Vini reads.
 
 ## Prevention rules from the weekly review (codified)
+
+- **An article's assets ship in the SAME commit as its text — never in a follow-up (codified 2026-06-14).** On 2026-06-10 a founder push (`feb98b1`) landed mid-run, and its `git add -A` swept the two finished Iqra article files to origin *ahead of* the hero still, sitemap and reciprocal rails — leaving the live Iqra pages referencing a hero still that 404'd until the completion commit caught up. A piece is never partially shippable: the invariant is *no article live without its hero still*. Two binding behaviours close this: (1) **write the hero still and any article-bound asset to disk immediately after the article text, before composing any push block** — never leave assets for a "completion commit"; (2) **re-check `git fetch origin && git log origin/main -1` right before composing the push block** — a founder push can land at any moment (briefs land ~08:00–08:30; agent runs overlap), and if origin has moved, stage so that no commit can leave the live site referencing an asset that isn't yet on origin. The push block stays a single `git add -A` line for Vini's convenience; the *ordering of writes within the run* is what protects the invariant, not pathspec gymnastics in the block. (Memory: `edu-website-push-race`.)
 
 - **Generated artefacts that must mirror the article set are build-generated, never hand-maintained (codified 2026-06-07).** A hand-built `sitemap.xml` or any hand-kept list of slugs/hreflang pairs is a *drift defect waiting to happen*: it is correct the day it is written and silently wrong the next time an article is added or parked. Anything that must equal "the current set of articles" (sitemap, hreflang alternates, archive indices) must be generated from the content collection at build time. Action of record: replace the static `sitemap.xml` with the `@astrojs/sitemap` integration (carried since the 2026-06-04 weekly signal; FUSE boundary on `node_modules/.vite` means the install/build runs via the /tmp route-around or a clean Web-Developer checkout). Until that lands, the static sitemap must be re-validated against EN/AR parity in every publish gate.
 

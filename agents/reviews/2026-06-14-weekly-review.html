@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-06-14</title>
+<meta name="description" content="CEO weekly strategic review for the week ending Sunday 14 June 2026: traffic & statistics, quality retrospective, knowledge consolidation, and the first deliberate team-expansion decision — the Researcher." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1; -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-top: 1.6rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+  .kicker { font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); font-weight: 500; }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead { padding-block: 1.75rem 0.75rem; border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem; }
+  .masthead__brand { font-family: var(--font-display); font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); text-align: right; }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 2.5rem; }
+  .lede h1 { max-width: 20ch; margin-bottom: 0.6rem; }
+  .dek { font-size: var(--fs-dek); color: var(--color-muted); max-width: 64ch; }
+
+  .summary { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-orange); background: rgba(232,226,208,0.28); padding: 1.5rem 1.75rem; margin-bottom: 3rem; }
+  .summary h2 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+  .summary p { margin-bottom: 0.7em; }
+  .summary p:last-child { margin-bottom: 0; }
+
+  section.block { padding-block: 1.5rem 0.5rem; border-top: 1px solid var(--color-rule); margin-top: 2.5rem; }
+  .block__num { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.4rem; }
+  .block h2 { margin-bottom: 0.4rem; }
+  .block__dek { color: var(--color-muted); margin-bottom: 1.2rem; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-sage); border-bottom: 1px solid var(--color-rule); }
+  td .n { font-family: var(--font-mono); }
+  .delta-up { color: var(--color-orange); font-family: var(--font-mono); font-size: 0.85em; }
+
+  .statgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0 1.4rem; }
+  .stat { background: var(--color-paper); padding: 1rem 1.1rem; }
+  .stat__n { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+  .stat__l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-sage); margin-top: 0.4rem; }
+  @media (max-width: 720px) { .statgrid { grid-template-columns: repeat(2, 1fr); } }
+
+  .callout { border: 1px solid var(--color-rule); padding: 1rem 1.25rem; margin: 1.2rem 0; background: rgba(217,79,42,0.05); }
+  .callout .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-orange); }
+  .verdict { font-family: var(--font-display); font-size: 1.3rem; color: var(--color-ink); margin: 0.3rem 0; }
+
+  .pushblock { margin: 1rem 0 0; background: var(--color-ink); color: #EDE9DF; border-radius: 4px; padding: 1.1rem 1.25rem; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4em; }
+  footer.colophon { margin: 4rem 0 2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-rule); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; color: var(--color-sage); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><em>weekly review</em></div>
+    <div class="masthead__date">CEO · strategic review<strong>Sunday 14 June 2026</strong></div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Week ending 2026-06-14 · Issue 02 week 2</div>
+    <h1>Two pieces shipped, the bar held twice, and the team grows for the first time.</h1>
+    <p class="dek">After a week of holding the slot, the pipeline moved: two fresh bilingual pieces shipped clean, two strong candidates parked at the sourcing bar, and the recon load that produced both finally crossed the line from "the model breathing" into a standing role. This week I make the first hire.</p>
+  </section>
+
+  <section class="summary">
+    <h2>For the founder, in six lines</h2>
+    <p><strong>What changed.</strong> The content engine moved after last week's deliberate zero: two fresh pieces shipped with full EN/AR parity — Sierra Leone teacher-matching (06-08) and the Ras Al Khaimah Arabic-diglossia / IQRA piece (06-10) — plus the related-reading rails and an Arabic-language rail cluster for discoverability. Two candidates parked at the sourcing bar (Korea AIDT, 06-12; Saudi still held) — the quality gate holding twice in one week is the system working, not failing. Your two same-deadline asks landed on time: the custom-domain decision memo and the Issues-page / issue-transition prototype.</p>
+    <p><strong>What I decided.</strong> Three things. (1) <strong>I am adding the first new persona — a Researcher.</strong> Source-reconnaissance has become a recurring, distinct workstream (three source indices in seven days) and on 06-12 it consumed a whole day's content capacity; the watch signal I pre-registered last week fired exactly as written. The role is scoped to recon, explicitly <em>not</em> to throughput. (2) I ratify the domain memo's recommendation — <strong>buy now, before anything binds</strong> — and folded the standing sitemap migration into the same cutover. (3) I codified the push-race / asset-ordering defect into the RUNBOOK and consolidated six guidebook increments — including retiring a stale "founder must allowlist hosts" ask that was already resolved.</p>
+    <p><strong>What needs your eye — and a correction.</strong> <em>(1) The single highest-leverage action is now the domain purchase</em> — it's paid infra, so it's yours, and it unblocks Search Console <em>and</em> the Issue 01 send onto a clean URL. Sending Issue 01 first, onto <span class="mono">…github.io/madar</span>, would have bound the newsletter to a throwaway address — so holding it (13 days now) turned out correct, not late. <em>(2) Correction: the egress-allowlist ask carried in recent briefs is dead</em> — those figures were traced via the web tools on 06-08; please disregard it. <em>(3) Cadence note: Saturday 06-13 had no daily brief</em> — one missed run, flagged honestly below. Everything else is the operation's job.</p>
+  </section>
+
+  <!-- 1 -->
+  <section class="block">
+    <div class="block__num">Section 01</div>
+    <h2>Traffic, growth &amp; statistics</h2>
+    <p class="block__dek">Privacy-clean signals only. No third-party tracker exists on the site by design, so there are no visitor counts — and none are invented here.</p>
+
+    <div class="statgrid">
+      <div class="stat"><div class="stat__n">12 / 12</div><div class="stat__l">EN / AR articles &nbsp;<span class="delta-up">+2 / +2</span></div></div>
+      <div class="stat"><div class="stat__n">100%</div><div class="stat__l">AR / EN parity (held)</div></div>
+      <div class="stat"><div class="stat__n">10</div><div class="stat__l">countries · 4 regions</div></div>
+      <div class="stat"><div class="stat__n">2</div><div class="stat__l">fresh pieces this week</div></div>
+    </div>
+
+    <h3>Content growth &amp; week-over-week drift</h3>
+    <p>The content snapshot moved this week, where last week's was deliberately flat: <strong>10 → 12 EN, 10 → 12 AR, parity held at 100%</strong> (the <span class="mono">diff</span>-verified invariant never broke across two ships). The <span class="mono">history.jsonl</span> instrument — now twelve daily snapshots — shows the two additions cleanly: MENA 6 → 7 and Africa 2 → 3, with the new pieces giving Sierra Leone and the UAE their second articles each (country count steady at 10; depth, not spread, this week). Theme drift is healthy and on-strategy: <em>language &amp; heritage preservation</em> 4 → 5 and <em>ECE access</em> 1 → 2, both pulled up by the RAK diglossia piece — exactly the GCC-weighted, identity-and-early-literacy spine the editorial line favours. Cadence by ISO week now reads <span class="mono">W22 = 10 · W23 = 0 · W24 = 2</span>: the W23 zero is last week's held slot, and W24's two are this week's clean ships. The slow-cadence model is doing precisely what it says — a quiet week, then a verified two.</p>
+
+    <h3>The week's growth actions</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Action</th><th>Lever</th></tr></thead>
+      <tbody>
+        <tr><td class="n">06-08</td><td>Sierra Leone matching launch packet + bidirectional cross-link cluster (Bo ↔ matching ↔ Uruguay)</td><td>Topical-cluster return-rate, no tracker</td></tr>
+        <tr><td class="n">06-09</td><td>Related-reading rail shipped site-wide (editor-curated, graceful on non-cluster pages, EN+AR)</td><td>On-site retention / internal discoverability</td></tr>
+        <tr><td class="n">06-10</td><td>IQRA/diglossia launch packet; sitemap to 27 URLs with hreflang alternates</td><td>Bilingual crawl + cluster depth</td></tr>
+        <tr><td class="n">06-11</td><td>First Issue 02 grid asset rendered — the Husseiny quote tile (first <em>text-bearing</em> tile, Arabic shaped correctly via Chromium)</td><td>IG craft — unlocks every future text/social card</td></tr>
+        <tr><td class="n">06-12</td><td>Husseiny caption pair (EN+AR) send-ready; domain decision memo delivered</td><td>Distribution-ready + the URL-binding unblock</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Substack &amp; launch-readiness — and last week's bet, read honestly</h3>
+    <p>Substack is <strong>still not live</strong>; opens, return rate, reply rate and country distribution remain dark. <strong>Last week's single growth bet was "convert send-ready to sent" — and it did not fire.</strong> Issue 01 has now been send-ready for thirteen days. I am not going to dress that up — but I am going to report what changed underneath it, because it changes the verdict: this week's URL-binding analysis (the 06-12 guidebook ruling) established that a Substack send <em>permanently binds the newsletter's from-address and archive links to whatever URL exists at first send.</em> Sending Issue 01 onto <span class="mono">education3881.github.io/madar</span> would have paid the migration twice — once in redirects, once in reader confusion and re-registration. <strong>So the delay, which read as a liability last week, was retroactively the correct call.</strong> The send was waiting on a decision we hadn't yet made: the domain. That decision is now made (Section 04's sibling, the domain ratification below), and it re-sequences the send behind the cutover. <strong>Attributable inbound shares: none, by construction</strong> — nothing has been distributed to X / Bluesky / LinkedIn, so there is no published URL for a manual search to find. That surface switches on after the cutover + first send; no number is manufactured to fill it now.</p>
+
+    <div class="callout">
+      <div class="tag">The week's single growth bet</div>
+      <p class="verdict">Execute the domain cutover — it is the one action that unblocks everything downstream.</p>
+      <p>The domain is now the gating node: Search Console registration and the Issue 01 send both bind to a URL, and both should bind to the <em>real</em> one. The bet for the coming week is the cutover itself (buy → verify → DNS → config → fold in <span class="mono">@astrojs/sitemap</span> → HTTPS → then register Search Console + send Issue 01 onto the clean domain). Next week's review reads its result: a live custom domain, the sitemap submitted, and — finally — the first privacy-clean Substack numbers. The single founder action inside it is the purchase (paid infra is yours by design); the cutover work is the Web Developer's.</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="block">
+    <div class="block__num">Section 02</div>
+    <h2>Quality retrospective</h2>
+    <p class="block__dek">Publish gates run in writing, every run. Two clean ships, two clean parks, one process defect codified.</p>
+    <p>Publish gates were logged in writing on <span class="mono">06-08, 06-09, 06-10, 06-11, 06-12</span> and each held. Both fresh ships cleared the full apparatus — Editor five-test verdict, Arabic-Editor pass with named-human transliteration sign-off, hero still on disk, clean build, QA spot-check — and EN/AR parity stayed exact through both (11 = 11, then 12 = 12, <span class="mono">diff</span>-verified). The two parks (Korea at the named-operational-voice gate; Saudi unchanged) are the quality bar working, not a defect: each parked on a specific, single un-park condition, with its figure-fences banked as durable assets.</p>
+    <p><strong>The one defect that reached production — and the rule that now prevents it.</strong> On 06-10 a founder push (<span class="mono">feb98b1</span>) landed mid-run; its <span class="mono">git add -A</span> swept the two finished IQRA article files to origin <em>ahead of</em> their hero still, leaving the live IQRA pages referencing a still that 404'd until the completion commit caught up. This is a genuine near-miss that briefly bit production — the invariant "no article live without its hero" was momentarily violated. The 06-10 gate caught and corrected it the same run, but it was previously only in memory, not in the operating rules. <strong>I have codified it into the RUNBOOK:</strong> an article's assets ship in the <em>same</em> commit as its text (write the still to disk immediately after the article, never as a follow-up), and the run re-checks <span class="mono">git fetch origin</span> right before composing the push block, because a founder push can land at any moment. The push block stays a single line for your convenience — the fix is the ordering of writes within the run, not pathspec gymnastics.</p>
+    <p><strong>Carried environmental friction (not a product defect):</strong> the <span class="mono">node_modules/.vite</span> FUSE boundary still blocks in-place builds every run; routed around via /tmp, documented, not fought. <strong>Standing infra item:</strong> the hand-built <span class="mono">sitemap.xml</span> remains hand-maintained — it held this week (no hand-edit needed after the page-set stabilised at 27), but the <span class="mono">@astrojs/sitemap</span> migration is now <em>folded into the domain cutover</em> so the URL-set change happens once, not twice. <strong>Cadence note, reported plainly:</strong> Saturday 2026-06-13 produced no daily brief — one missed run in the week. Per the charter a missed day earns one clean recovery, never a forced double-batch; the operation resumes on the normal cadence, and this review is the week's accountability for it.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="block">
+    <div class="block__num">Section 03</div>
+    <h2>Knowledge consolidation</h2>
+    <p class="block__dek">Six increments banked since the last consolidation; merged, pruned, and one stale founder ask retired.</p>
+    <p>The week produced six research increments, now consolidated into the guidebook <span class="mono">INDEX.md</span>: the <strong>egress-wall-is-bash-only</strong> finding (06-08), the <strong>Arabic-diglossia source index</strong> (06-09), the <strong>evaluator-on-record trace tier</strong> (06-10), the <strong>brand-fonts-via-npm</strong> render method (06-11), the <strong>Korea AIDT source index</strong> (06-11), and the <strong>URL-binding migration playbook</strong> (06-12). The headline is that the team's source discipline hardened from a single rule ("source the report, not the blog") into a four-part framework:</p>
+    <ul>
+      <li><strong>The evaluator-on-record trace tier</strong> — the load-bearing new ruling. A figure may run without the primary report in hand only when five conditions hold (named evaluator on record + named operator confirmation + falsifiable design + in-text attribution + a logged follow-up). It is what let the IQRA piece ship honestly before J-PAL's report published, without loosening the bar — a named evaluator describing her own randomised trial <em>is</em> a primary source.</li>
+      <li><strong>"A program name is not a citation"</strong> — I merged the two near-duplicate rulings (the two-studies-same-name trap from IQRA, the same-figure-different-scope trap from Korea) into one rule: pin every figure to its report, cycle, and scope; state the discriminator in print next to the number.</li>
+      <li><strong>The blocked-tool-is-not-the-unreachable-resource rule</strong> — a failed <span class="mono">curl</span> is a statement about <span class="mono">bash</span>, not the open web; exhaust the web tools first.</li>
+      <li><strong>The text-bearing render rule</strong> — line-art via cairosvg, but <em>any real text, especially Arabic,</em> via Playwright/Chromium (which shapes Arabic correctly), fonts from npm not GitHub releases.</li>
+    </ul>
+    <p><strong>The pruning that matters most:</strong> I retired the "founder must allowlist <span class="mono">edtechhub.org</span> / <span class="mono">documents1.worldbank.org</span>" ask. The 06-07 note that raised it was superseded on 06-08, when the same figures traced in full via the web tools and the Sierra Leone piece shipped — yet the ask was erroneously re-listed as a live Vini action in the 06-12 status. It is now corrected at the source of record. The team is measurably more capable than a week ago: three of the four catalogued source indices now carry a closed figure-trace, and the Researcher (Section 04) inherits a clean, current Section 1.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="block">
+    <div class="block__num">Section 04</div>
+    <h2>Team-expansion decision</h2>
+    <p class="block__dek">The first deliberate hire since the founding seven. Decided against the ladder, with the trigger documented.</p>
+    <div class="callout">
+      <p class="verdict">Decision: add the <strong>Researcher</strong> (persona 08). Team grows from seven to eight.</p>
+    </div>
+    <p>For three weeks I have held the team at seven and recorded why. This week the first rung of the expansion ladder — Researcher — meets the charter's two-part bar (<em>recurring gap</em> AND <em>genuine saturation</em>), and the watch signal I pre-registered in last week's review fired exactly as written. Setting a test and then moving the goalposts when it triggers is the failure mode of indecision; I committed to the test, so I act.</p>
+    <p><strong>The trigger, on the evidence:</strong></p>
+    <ul>
+      <li><strong>The gap is recurring and has become a distinct workstream.</strong> Three verified source indices were banked in seven days (Sierra Leone, Arabic diglossia, Korea), each a multi-hour artefact with its own method — the operational-voice gate, the evaluator-on-record trace tier, the same-name and same-scope fences. When a body of method that specific accumulates around one activity, the activity has become a role, not a task.</li>
+      <li><strong>The pre-registered signal fired.</strong> Last week's review said: re-test if "the next strategy-PDF candidate after Sierra Leone repeatedly stalls in recon rather than drafting." Korea was exactly that candidate, and it stalled in a heavy archive pass and then parked at the voice gate. Vietnam is now in recon behind it. Two consecutive strategy-PDF candidates routing through deep reconnaissance is the pattern the rung exists for.</li>
+      <li><strong>The Editor is the bottleneck the charter names.</strong> The charter's primary trigger is "the Editor repeatedly bottlenecked doing recon before drafting." That is met independent of any throughput question — and on 06-12, two recon-class workloads in one day consumed the entire content capacity.</li>
+    </ul>
+    <p><strong>The honest counter-argument, and why I add anyway.</strong> Part of 06-12's saturation was inflated by two one-off founder asks (the domain memo and the Issues-page work) landing the same day as Korea recon — so I do not lean on saturation alone. I lean on the recurring-gap half, which is three weeks old and independent of any single day's founder burst. And I lean on the charter's deeper logic: the Researcher <em>protects</em> quality-over-slot rather than threatening it. Its job is to make the park-or-proceed call earlier and on better evidence, so the Editor stays a pure filter and recon stops eating the same day's content slot. It is the "recon precedes scope commitment" discipline — already proven in the override-mode finding — made into a standing function. <strong>The role is scoped to reconnaissance, explicitly not to throughput: adding it does not raise the cadence.</strong></p>
+    <p><strong>What I did to wire it in:</strong> scaffolded <span class="mono">/agents/08_researcher.md</span> in the house persona format (reports to the Editor; produces the source index + the operational-voice gate call <em>before</em> the Editor commits a piece to commission; does not write drafts or render verdicts); updated the RUNBOOK routing diagram (Editor → {Researcher, Content Creator}); handed it ownership of Section 1 of the guidebook INDEX; and briefed its first week — take over the live Vietnam recon, run the operational-voice gate on the next candidate before commission, and bank one durable ruling. <strong>The rungs below it stay closed:</strong> Social/Video (render resolved to a method, not a gap), Data/SEO analyst (premature until there is a traffic surface — re-test after the domain cutover + first send), second-language editor (no third language on the roadmap).</p>
+  </section>
+
+  <!-- domain ratification -->
+  <section class="block">
+    <div class="block__num">Ratification</div>
+    <h2>The domain decision — ratified</h2>
+    <p class="block__dek">The 06-11 founder ask, decided here as the weekly directed.</p>
+    <p>I ratify the 06-12 memo's recommendation: <strong>buy a custom domain now, before Search Console and before the Issue 01 send.</strong> The reasoning is sequencing, not vanity — both pending launches bind permanently to whatever URL exists when they fire, the site is 18 days old with effectively zero inbound links, and migration cost is at its lifetime minimum this week and steps up the moment either launch fires. The cutover is specced and verified (no hardcoded <span class="mono">/madar</span> base anywhere in <span class="mono">src</span>; ~90 min of Web-Developer work plus DNS/cert wait), and the standing <span class="mono">@astrojs/sitemap</span> migration is folded into the same move so the URL-set changes once. <strong>The purchase is your action</strong> (paid infra sits on the escalation list by design); registrar candidates in the memo, in preference order, are <span class="mono">madar.education</span>, <span class="mono">madar.pub</span>, <span class="mono">madarmag.com</span>, <span class="mono">readmadar.com</span>, via Cloudflare Registrar or Porkbun (~USD 15/yr for the common TLDs). Once you've bought, the operation does the rest.</p>
+  </section>
+
+  <!-- push -->
+  <section class="block">
+    <div class="block__num">For Vini</div>
+    <h2>The single push</h2>
+    <p class="block__dek">This stages the weekly review + the new Researcher persona + the RUNBOOK rule + the guidebook consolidation, plus the uncommitted 06-12 issue-transition work (coordination memo, designer visual-language note, Issues-page prototype) that landed after Friday's push block. The site deploy surface is unchanged.</p>
+    <div class="pushblock">cd "/Users/vini/Documents/Claude/Projects/Educational Website" && rm -f .git/index.lock && git add -A && git commit -m "Madar — 2026-06-14 weekly review: +2 fresh pieces (Sierra Leone matching, RAK Iqra), bar held twice; ADD Researcher (persona 08, team 7->8); push-race/asset-ordering RUNBOOK rule; guidebook consolidation (6 increments, egress-allowlist ask retired); domain decision ratified = buy now; growth bet = domain cutover" && git push origin main</div>
+    <p class="muted" style="margin-top:1rem;font-size:0.92rem;">After the push, the one founder action that moves everything: <strong>buy the domain</strong> (candidates and registrars in the ratification above) — it unblocks Search Console <em>and</em> the Issue 01 send onto a clean URL, and the operation does the cutover from there. Two cleanups so you don't spend effort where none is needed: the <strong>egress-allowlist ask is retired</strong> (already resolved — disregard it), and <strong>Issue 01 is deliberately sequenced behind the domain</strong> (don't send it onto the github.io URL). Everything else is the operation's job.</p>
+  </section>
+
+  <footer class="colophon">
+    Madār · CEO weekly review · 2026-06-14 · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>
