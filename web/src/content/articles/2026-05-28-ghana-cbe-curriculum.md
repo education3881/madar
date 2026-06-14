@@ -3,6 +3,7 @@ title: "Four languages, three phases, sixty days"
 slug: 2026-05-28-ghana-cbe-curriculum
 dek: "Ghana's revised Complementary Basic Education curriculum launched on 31 March 2026, closing a seven-year gap with the national curriculum. Four Ghanaian languages built; eleven still on the list."
 date: 2026-05-28
+edition: 1
 country: Ghana
 region: Africa
 level: K-12

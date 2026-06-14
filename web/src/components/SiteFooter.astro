@@ -16,6 +16,8 @@ const copy = {
     contact: 'Contact',
     aboutLabel: 'About',
     aboutHref: withBase('/about/'),
+    editionsLabel: 'Editions',
+    editionsHref: withBase('/editions/'),
     homeHref: withBase('/'),
     otherLangHref: withBase('/ar/'),
     otherLangLabel: 'العربية',
@@ -29,6 +31,8 @@ const copy = {
     contact: 'اتصل',
     aboutLabel: 'عن المنشور',
     aboutHref: withBase('/ar/about/'),
+    editionsLabel: 'الإصدارات',
+    editionsHref: withBase('/ar/editions/'),
     homeHref: withBase('/ar/'),
     otherLangHref: withBase('/'),
     otherLangLabel: 'English',
@@ -56,6 +60,7 @@ const copy = {
 
     <div class="site-footer__cell site-footer__cell--nav">
       <ul class="site-footer__links">
+        <li><a href={copy.editionsHref} class="uppercase">{copy.editionsLabel}</a></li>
         <li><a href={copy.aboutHref} class="uppercase">{copy.aboutLabel}</a></li>
         <li><a href={copy.otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{copy.otherLangLabel}</a></li>
         <li><a href={copy.rssHref} class="uppercase">{copy.rss}</a></li>

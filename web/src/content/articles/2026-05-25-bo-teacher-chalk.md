@@ -2,6 +2,7 @@
 title: "The teacher in Bo who still uses last term's chalk"
 dek: "Sierra Leone's free education policy turned ten in 2026, and the question of what it actually paid for has narrowed to a single line item: the people standing in front of the children."
 date: 2026-05-25
+edition: 1
 country: Sierra Leone
 region: Africa
 level: K-12

@@ -3,6 +3,7 @@ title: "Spark, and the hand that holds the match"
 slug: 2026-05-31-qatar-humanity-spark-strategy
 dek: "Qatar launched a six-year education strategy in September 2024 and inherited it under a new minister two months later. What does its rhetoric of 'spark' and 'humanity' commit the state to?"
 date: 2026-05-31
+edition: 1
 country: Qatar
 region: MENA
 level: Both

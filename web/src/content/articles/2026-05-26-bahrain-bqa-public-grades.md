@@ -2,6 +2,7 @@
 title: "Bahrain grades its schools, by name, in public"
 dek: "The 2024–2025 BQA Performance Report — published last September, the first ever to include independent kindergartens — is a small document making a large posture."
 date: 2026-05-26
+edition: 1
 country: Bahrain
 region: MENA
 level: Both

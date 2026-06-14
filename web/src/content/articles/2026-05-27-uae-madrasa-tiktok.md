@@ -2,6 +2,7 @@
 title: "The Arabic STEM library that decided to live inside the algorithm"
 dek: "In May 2025 the UAE's free Arabic-language K-12 STEM platform pushed its catalogue into TikTok's STEM Feed. The trade is legible; the downstream questions are not."
 date: 2026-05-27
+edition: 1
 country: United Arab Emirates
 region: MENA
 level: K-12

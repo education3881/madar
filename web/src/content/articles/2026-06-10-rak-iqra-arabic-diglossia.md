@@ -2,6 +2,7 @@
 title: "The language children speak, and the one they must read"
 dek: "Every Arabic-speaking child learns to read in a tongue nobody speaks at home. A trial in Ras al-Khaimah measured what bridging that gap is worth."
 date: 2026-06-10
+edition: 2
 country: United Arab Emirates
 region: MENA
 level: Both

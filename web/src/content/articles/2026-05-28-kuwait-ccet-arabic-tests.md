@@ -3,6 +3,7 @@ title: "The test, in Arabic"
 slug: 2026-05-28-kuwait-ccet-arabic-tests
 dek: "A Kuwaiti charity, founded in 1984 by a group of mothers, has produced the only nationally standardised Arabic-language assessments for specific learning differences in children."
 date: 2026-05-28
+edition: 1
 country: Kuwait
 region: MENA
 level: K-12

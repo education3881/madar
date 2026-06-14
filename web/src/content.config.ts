@@ -20,6 +20,10 @@ const articleSchema = z.object({
   // Editorial format
   type: z.enum(['curated', 'short', 'essay']),
 
+  // Edition number (monthly issue). Optional so non-edition drafts never break
+  // the build; backfilled across the published corpus.
+  edition: z.number().int().positive().optional(),
+
   // Sources — at least one is required by /docs/30_quality_bar.md
   sources: z
     .array(

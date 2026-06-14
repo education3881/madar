@@ -2,6 +2,7 @@
 title: "The algorithm that decides who teaches in Bo"
 dek: "Sierra Leone built an algorithm to send teachers where they're needed most. It placed more of them, more fairly than chance ever did — yet cannot conjure teachers who don't exist."
 date: 2026-06-08
+edition: 2
 country: Sierra Leone
 region: Africa
 level: K-12

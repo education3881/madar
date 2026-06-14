@@ -38,11 +38,12 @@ const otherLangHref = withBase(lang === 'ar' ? '/' : '/ar/');
 const otherLangLabel = lang === 'ar' ? 'English' : 'العربية';
 
 const nav = {
-  en: { latest: 'Latest', about: 'About', newsletter: 'Newsletter' },
-  ar: { latest: 'الأحدث', about: 'عن المنشور', newsletter: 'النشرة' },
+  en: { latest: 'Latest', editions: 'Editions', about: 'About', newsletter: 'Newsletter' },
+  ar: { latest: 'الأحدث', editions: 'الإصدارات', about: 'عن المنشور', newsletter: 'النشرة' },
 }[lang];
 
 const aboutHref = withBase(lang === 'ar' ? '/ar/about/' : '/about/');
+const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
 ---
 
 <header class={`site-header site-header--${variant}`} data-lang={lang}>
@@ -70,6 +71,7 @@ const aboutHref = withBase(lang === 'ar' ? '/ar/about/' : '/about/');
     {variant === 'home' && (
       <nav class="site-nav" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
         <a href={homeHref} class="uppercase">{nav.latest}</a>
+        <a href={editionsHref} class="uppercase">{nav.editions}</a>
         <a href={aboutHref} class="uppercase">{nav.about}</a>
         <span class="site-nav__sep" aria-hidden="true">·</span>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
@@ -78,6 +80,7 @@ const aboutHref = withBase(lang === 'ar' ? '/ar/about/' : '/about/');
 
     {variant === 'article' && (
       <nav class="site-nav site-nav--article" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
+        <a href={editionsHref} class="uppercase">{nav.editions}</a>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
       </nav>
     )}

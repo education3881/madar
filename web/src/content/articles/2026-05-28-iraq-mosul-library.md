@@ -3,6 +3,7 @@ title: "The library reopened on a Saturday in February"
 slug: 2026-05-28-iraq-mosul-library
 dek: "Mosul University's Central Library, bombarded and burned during the city's occupation by Islamic State, reopened on 19 February 2022 with forty per cent more students than before."
 date: 2026-05-28
+edition: 1
 country: Iraq
 region: MENA
 level: K-12

@@ -3,6 +3,7 @@ title: "Nineteen years of teaching the teachers"
 slug: 2026-05-31-uruguay-eduia-lab-ceibal
 dek: "Plan Ceibal turned eighteen in early 2025 and, the same month, opened a regional AI-in-education laboratory. What it has built since 2007, slowly, is now legible."
 date: 2026-05-31
+edition: 1
 country: Uruguay
 region: LatAm-Caribbean
 level: Both

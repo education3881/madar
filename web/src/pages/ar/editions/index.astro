@@ -1,0 +1,222 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../../lib/urls';
+import { editions } from '../../../lib/editions';
+
+// ---------------------------------------------------------------------------
+// Editions index (AR, RTL) — mirror of the English page over the Arabic
+// collection. Article body pages are untouched.
+// ---------------------------------------------------------------------------
+const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
+
+const dateFormatter = new Intl.DateTimeFormat('ar-EG', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Group pieces by edition number.
+const byEdition = new Map<number, typeof all>();
+for (const piece of all) {
+  const n = piece.data.edition;
+  if (n == null) continue;
+  if (!byEdition.has(n)) byEdition.set(n, []);
+  byEdition.get(n)!.push(piece);
+}
+
+// Render order: current edition first, then closed editions by descending number.
+const ordered = [...editions].sort((a, b) => {
+  if (a.status === 'current' && b.status !== 'current') return -1;
+  if (b.status === 'current' && a.status !== 'current') return 1;
+  return b.number - a.number;
+});
+
+const blocks = ordered.map((e) => {
+  const pieces = (byEdition.get(e.number) ?? [])
+    .slice()
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  return { e, pieces };
+});
+---
+
+<Base title="الإصدارات · مدار" lang="ar">
+  <article class="editions container">
+    <header class="editions__head">
+      <p class="kicker" lang="ar" dir="rtl">الأرشيف</p>
+      <h1 class="editions__title" lang="ar" dir="rtl">الإصدارات</h1>
+      <p class="editions__intro measure" lang="ar" dir="rtl">
+        تَصدرُ «مدار» في إصداراتٍ شهريّة. يَجمعُ كلُّ إصدارٍ موادَّ العددِ تحت سؤالٍ
+        تحريريٍّ واحد، باللغتَين.
+      </p>
+    </header>
+
+    {blocks.map(({ e, pieces }) => (
+      <section
+        class="edition"
+        data-motif={e.motif}
+        style={`--ed-ground:${e.ground};--ed-accent:${e.accent};`}
+      >
+        <div class="edition__masthead">
+          <span class="edition__numeral" aria-hidden="true">
+            {String(e.number).padStart(2, '0')}
+          </span>
+          <div class="edition__framing">
+            <div class="edition__kickerline">
+              <span class="edition__period">{e.periodAr}</span>
+              {e.status === 'current' && (
+                <span class="edition__tag" lang="ar" dir="rtl">العدد الحالي</span>
+              )}
+            </div>
+            <p class="edition__theme" lang="ar" dir="rtl">{e.themeAr}</p>
+            {e.motif === 'horizon' ? (
+              <svg class="edition__motif" width="84" height="12" viewBox="0 0 84 12" aria-hidden="true">
+                <line x1="2" y1="6" x2="82" y2="6" stroke="currentColor" stroke-width="1" />
+                <line x1="2" y1="1" x2="2" y2="11" stroke="currentColor" stroke-width="1" />
+                <line x1="82" y1="1" x2="82" y2="11" stroke="currentColor" stroke-width="1" />
+              </svg>
+            ) : (
+              <svg class="edition__motif" width="84" height="12" viewBox="0 0 84 12" aria-hidden="true">
+                <circle cx="6" cy="6" r="3.5" fill="none" stroke="currentColor" stroke-width="1" />
+                <line x1="9.5" y1="6" x2="74.5" y2="6" stroke="currentColor" stroke-width="1" />
+                <circle cx="78" cy="6" r="3.5" fill="none" stroke="currentColor" stroke-width="1" />
+              </svg>
+            )}
+          </div>
+        </div>
+
+        {pieces.length > 0 ? (
+          <ul class="edition__pieces">
+            {pieces.map((piece) => {
+              const href = withBase(`/ar/articles/${piece.id}/`);
+              return (
+                <li class="piece">
+                  <a href={href} class="piece__link">
+                    <span class="piece__meta">
+                      <span class="piece__country" lang="ar" dir="rtl">{piece.data.country}</span>
+                      <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+                    </span>
+                    <h2 class="piece__title" lang="ar" dir="rtl">{piece.data.title}</h2>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p class="edition__empty muted" lang="ar" dir="rtl">لا توجد موادُّ في هذا الإصدار بعد.</p>
+        )}
+      </section>
+    ))}
+  </article>
+</Base>
+
+<style>
+  .editions { padding-block: var(--space-lg) var(--space-2xl); }
+  .editions__head {
+    padding-block: var(--space-xl) var(--space-lg);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--space-xl);
+  }
+  .editions__title { margin-block-start: var(--space-sm); }
+  .editions__intro {
+    margin-block-start: var(--space-md);
+    font-family: var(--font-arabic);
+    font-size: 18.5px;
+    line-height: 1.95;
+    color: var(--color-muted);
+  }
+
+  /* ---- Themed edition block ---- */
+  .edition {
+    background: var(--ed-ground);
+    border: 1px solid var(--color-rule-soft);
+    border-radius: 2px;
+    padding: 2.5rem 2.5rem 2rem;
+    margin-block-end: 2.5rem;
+    color: var(--color-ink);
+  }
+  .edition__masthead {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding-block-end: 1.75rem;
+    margin-block-end: 1.5rem;
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .edition__numeral {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(64px, 9vw, 108px);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    color: var(--ed-accent);
+  }
+  .edition__framing { display: flex; flex-direction: column; gap: 0.85rem; }
+  .edition__kickerline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .edition__period {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--ed-accent);
+    font-weight: 500;
+  }
+  .edition__tag {
+    font-family: var(--font-arabic);
+    font-size: 13px;
+    color: var(--ed-accent);
+    border: 1px solid var(--ed-accent);
+    border-radius: 2px;
+    padding: 0.2rem 0.6rem;
+    font-weight: 500;
+  }
+  .edition__theme {
+    margin: 0;
+    font-family: var(--font-arabic-display);
+    font-weight: 500;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.4;
+    max-width: 44ch;
+  }
+  .edition__motif { color: var(--ed-accent); height: 12px; width: 84px; }
+
+  .edition__pieces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 3rem;
+  }
+  .piece__link { display: block; text-decoration: none; color: var(--color-ink); }
+  .piece__meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .piece__country { color: var(--ed-accent); font-weight: 500; }
+  .piece__date { color: var(--color-ink); opacity: 0.55; }
+  .piece__title {
+    margin-block: 0.5rem 0;
+    font-family: var(--font-arabic-display);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.45;
+  }
+  .piece__link:hover .piece__title { color: var(--ed-accent); }
+  .edition__empty { margin: 0; }
+
+  @media (max-width: 720px) {
+    .edition { padding: 1.75rem 1.5rem; }
+    .edition__masthead { grid-template-columns: 1fr; gap: 1rem; }
+    .edition__pieces { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+</style>

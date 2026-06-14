@@ -15,6 +15,23 @@
 
 ## Verdict
 
-**PASS for staging.** Nothing site-facing changes; structural QA is clean; the staged docs (RUNBOOK wiring, Issues-page memos/prototype, recon, guidebook row, brief 16) carry no deploy risk. Cold-build verification deferred to the Web Developer's next clean checkout (carried item, folds into the domain cutover).
+**PASS for staging** (first run, daily/weekly). Nothing site-facing changed; structural QA clean.
 
 — Manager · 2026-06-14
+
+---
+
+## Second gate — the Editions feature (founder-directed, same day)
+
+After the first push landed (`692e3a4`), Vini authorised building the **Editions** feature now (see `memos/2026-06-14-editions-decisions-and-palette.md`). This is a **site-facing** change, so the gate ran a real cold build.
+
+1. **Cold build — PASS.** `node_modules` install + `astro build` via the /tmp route-around: **29 pages, 0 errors** (27 baseline + `/editions/` + `/ar/editions/`). The FUSE boundary was routed around, not fought.
+2. **Schema + backfill** — `edition` field optional (no break risk); backfill verified 10 + 2 EN, 10 + 2 AR; build passed schema validation. Parity holds **12 = 12**.
+3. **Rendered content verified in built output** — both edition pages: numerals 01/02, May/June periods, both theme lines, "Current"/«العدد الحالي» tag on Edition 02 only, all 12 piece links per language, per-edition accents (`#2F6F6A` current / `#D94F2A` Edition 01) + grounds present via inline custom properties. Nav link resolves on interior pages.
+4. **Sitemap** — updated by hand to **29** URLs incl. the two editions entries with reciprocal hreflang; valid XML (the build-generated sitemap migration is still carried).
+5. **Sandbox hygiene** — `.fuse_hidden*` FUSE leftovers from rewriting 24 frontmatters added to `.gitignore` so `git add -A` cannot sweep them. Stray `.git/index.lock` present (sandbox can't unlink — `Operation not permitted`); the push block clears it on Vini's side.
+6. **Sign-offs still pending before this is "done":** Editor on EN theme lines; **Arabic Editor on all AR strings** (الإصدارات / periods / theme lines / «العدد الحالي» / empty-state) — drafted, flagged in `editions.ts`. The AR word for "placement" («الإسناد») is explicitly queued for the Arabic Editor's ruling.
+
+**Verdict: PASS for staging** — the build is clean and the pages render correctly. Caveat logged honestly: AR strings are draft-pending-AR-Editor, and the homepage still frames everything as "Issue 01" (deliberately out of scope; teed up for Vini's editorial call on whether the homepage becomes current-edition-only).
+
+— Manager · 2026-06-14 (second gate)

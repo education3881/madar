@@ -3,6 +3,7 @@ title: "The minister insists: not a new curriculum"
 slug: 2026-05-31-indonesia-permen-13-coding-ai
 dek: "Indonesia's education ministry added Coding and AI as electives in 59,000 schools this academic year — and went to unusual lengths to say it had not."
 date: 2026-05-31
+edition: 1
 country: Indonesia
 region: Asia
 level: K-12

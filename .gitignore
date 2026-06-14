@@ -26,3 +26,7 @@ yarn-error.log*
 *.tmp
 *.swp
 .git.broken-*/
+
+# FUSE filesystem leftovers (sandbox edits over a FUSE mount create these;
+# they are not real files and must never be committed)
+**/.fuse_hidden*

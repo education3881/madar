@@ -2,6 +2,7 @@
 title: "Egypt's Knowledge Bank at ten, and what it now ships through the front door"
 dek: "The EKB launched in 2016 as a redistribution of access. In June 2025 it began routing the country's research tier through one foreign publisher's AI stack. Both facts deserve to be read together."
 date: 2026-05-27
+edition: 1
 country: Egypt
 region: MENA
 level: Both
