@@ -35,3 +35,21 @@ After the first push landed (`692e3a4`), Vini authorised building the **Editions
 **Verdict: PASS for staging** — the build is clean and the pages render correctly. Caveat logged honestly: AR strings are draft-pending-AR-Editor, and the homepage still frames everything as "Issue 01" (deliberately out of scope; teed up for Vini's editorial call on whether the homepage becomes current-edition-only).
 
 — Manager · 2026-06-14 (second gate)
+
+---
+
+## Third gate — edition covers + homepage rebuild (founder-directed, 2026-06-15)
+
+Vini approved the cover art direction and asked that the homepage mirror the editions organisation (current edition in its colours, with a browse link) and that **every edition carry an elaborate art cover**.
+
+1. **Cover art — DONE.** Two complete SVG covers authored in the brand's line-art register: Edition 02 = astrolabe + 12-point woven thread-rosette, pine on paper; Edition 01 = surveyor's compass rose + horizon, terracotta on sand. Siblings in structure (frame, ticked azimuth ring, wordmark, bottom motif), distinct in instrument + palette — "different look, same style." Text-bearing but inlined into pages so brand fonts resolve. Files: `web/public/covers/edition-0{1,2}.svg`.
+2. **Cold build — PASS.** 29 pages, 0 errors. Parity 12 = 12.
+3. **Editions pages** — each block now inlines its cover above the masthead (`inlineCover()` via `process.cwd()`), constrained to 320px. Verified: both covers inlined on EN + AR (`#2F6F6A` + `#D94F2A` present).
+4. **Homepage rebuilt (EN + AR)** — current edition is the hero, themed with its own ground/accent (no hardcoded orange), its cover inlined (~360px), pieces scoped to the current edition (lead = most recent), a "Previous editions" strip with cover thumbnails, and a "Browse all editions →" link. **Every hardcoded "Issue 01" is gone** (verified: 0 in built output anywhere, incl. the footer, which now derives the edition label from the registry). EN themeEn aligned to "deployment" to match the AR ruling + the cover.
+5. **AR** — homepage mirrored over `articles-ar`; labels «الإصدار الحالي» / «إصدارات سابقة» / «تصفّح كل الإصدارات». RTL-correct.
+
+**Open / honest caveats:** (a) no headless browser in the sandbox, so visual confirmation was by content-grep + the inline cover previews Vini approved in chat — final pixel check is the live deploy; (b) the AR theme strings carry the 2026-06-14 Arabic-Editor sign-off; the new UI labels are standard MSA and low-risk but a glance at the live AR home is worth it; (c) Edition 02 has 2 pieces, so the homepage is intentionally sparse — on-brand for a slow publication.
+
+**Verdict: PASS for staging.** Build clean at 29; covers + homepage verified in built output.
+
+— Manager · 2026-06-15 (third gate)

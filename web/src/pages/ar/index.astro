@@ -5,6 +5,8 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { withBase } from '../../lib/urls';
+import { currentEdition, editions } from '../../lib/editions';
+import { inlineCover } from '../../lib/inlineCover';
 
 // ---------------------------------------------------------------------------
 // Pieces — the Arabic home draws on:
@@ -56,6 +58,21 @@ const wordmarkSvg = loadWordmark();
 // retired with it; the Arabic home renders the placeholder + about until the
 // Arabic collection is populated. See /content-drafts/parked/2026-05-25-jordan-double-shift/parked.md.
 const issueExcerpts: { ar: string; en: string }[] = [];
+
+// ---------------------------------------------------------------------------
+// The Arabic home leads with the CURRENT edition. Scope the Arabic pieces to
+// that edition; surface previous (closed) editions in the strip below.
+// ---------------------------------------------------------------------------
+const editionPieces = sortedAr.filter((p) => p.data.edition === currentEdition.number);
+const edNum = String(currentEdition.number).padStart(2, '0');
+const edLabelAr = `الإصدار ${currentEdition.number}`;
+
+const previousEditions = editions
+  .filter((e) => e.status === 'closed')
+  .sort((a, b) => b.number - a.number);
+function editionPieceCount(n: number): number {
+  return sortedAr.filter((p) => p.data.edition === n).length;
+}
 ---
 
 <Base title="مدار — التعليم، بتأنٍّ، بلغتين" lang="ar" noHeader={true}>
@@ -64,7 +81,7 @@ const issueExcerpts: { ar: string; en: string }[] = [];
   <div class="top-bar">
     <div class="top-bar__inner container">
       <div class="top-bar__left">
-        <span lang="ar" dir="rtl">العدد ٠١ · مايو ٢٠٢٦ · مدار</span>
+        <span lang="ar" dir="rtl">{edLabelAr} · {currentEdition.periodAr} · مدار</span>
       </div>
       <div class="top-bar__right">
         <span class="top-bar__lang">
@@ -95,28 +112,38 @@ const issueExcerpts: { ar: string; en: string }[] = [];
     </div>
   </header>
 
-  {/* ============== ARABIC PIECES (when present) ============== */}
-  <section class="section container">
+  {/* ============== CURRENT EDITION ============== */}
+  <section
+    class="section container current-edition"
+    style={`--ed-ground:${currentEdition.ground};--ed-accent:${currentEdition.accent};`}
+  >
+    {inlineCover(currentEdition.cover) && (
+      <div class="current-edition__cover" set:html={inlineCover(currentEdition.cover)} />
+    )}
+
     <div class="section__head">
-      <span class="section__kicker" lang="ar" dir="rtl">الأحدث</span>
-      <span class="section__meta">Issue 01 · 2026 · 05 · 25</span>
+      <div class="section__head-left">
+        <span class="section__kicker" lang="ar" dir="rtl">الإصدار الحالي</span>
+        <p class="current-edition__theme" lang="ar" dir="rtl">{edLabelAr} — {currentEdition.themeAr}</p>
+      </div>
+      <span class="section__meta" lang="ar" dir="rtl">{edLabelAr} · {currentEdition.periodAr}</span>
     </div>
 
-    {sortedAr.length === 0 && (
+    {editionPieces.length === 0 && (
       <div class="placeholder">
         <p lang="ar" dir="rtl" class="placeholder__lead">
           لم يصدر بعد عددٌ عربيٌّ مكتمل. حتى ذلك الحين، يمكنك قراءة المقالات الإنجليزية على
           <a href={withBase('/')}>الصفحة الإنجليزية</a>.
         </p>
         <p lang="ar" dir="rtl" class="muted">
-          النسخةُ العربيّةُ من العددِ الأوّل قيدُ الإعداد. سَتظهرُ هنا حالَ اكتمالِها.
+          النسخةُ العربيّةُ من هذا الإصدار قيدُ الإعداد. سَتظهرُ هنا حالَ اكتمالِها.
         </p>
       </div>
     )}
 
-    {sortedAr.length > 0 && (
+    {editionPieces.length > 0 && (
       <ul class="piece-list">
-        {sortedAr.map((piece) => (
+        {editionPieces.map((piece) => (
           <li class="piece">
             <a href={withBase(`/ar/articles/${piece.id}/`)} class="piece__link">
               <span class="piece__meta">
@@ -135,6 +162,42 @@ const issueExcerpts: { ar: string; en: string }[] = [];
   {/* The from-the-issue Arabic excerpts block was retired on 2026-05-26 when
        the source piece (Jordan double-shift) was parked. The block returns
        when an Arabic-first piece is added to the articles-ar collection. */}
+
+  {/* ============== PREVIOUS EDITIONS STRIP ============== */}
+  {previousEditions.length > 0 && (
+    <section class="prev-editions container">
+      <div class="prev-editions__head">
+        <span class="prev-editions__label" lang="ar" dir="rtl">إصدارات سابقة</span>
+        <a class="prev-editions__browse" href={withBase('/ar/editions/')} lang="ar" dir="rtl">تصفّح كل الإصدارات ←</a>
+      </div>
+      <ul class="prev-editions__grid">
+        {previousEditions.map((ed) => {
+          const n = String(ed.number).padStart(2, '0');
+          const count = editionPieceCount(ed.number);
+          return (
+            <li class="prev-edition">
+              <a href={withBase('/ar/editions/')} class="prev-edition__link" aria-label={`الإصدار ${ed.number} — ${ed.periodAr}`}>
+                <span class="prev-edition__cover">
+                  <img
+                    src={withBase('/covers/' + ed.cover)}
+                    alt={`مدار — غلاف الإصدار ${ed.number}`}
+                    loading="lazy"
+                    width="160"
+                    height="207"
+                  />
+                </span>
+                <span class="prev-edition__meta" lang="ar" dir="rtl">
+                  <span class="prev-edition__num">الإصدار {ed.number}</span>
+                  <span class="prev-edition__period">{ed.periodAr}</span>
+                  <span class="prev-edition__count">{count} {count === 1 ? 'مادة' : 'مواد'}</span>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  )}
 
   {/* ============== ABOUT MINI ============== */}
   <section class="about container">
@@ -216,12 +279,44 @@ const issueExcerpts: { ar: string; en: string }[] = [];
     gap: 1rem;
     margin-block-end: 2rem;
   }
+  .section__head-left { display: flex; flex-direction: column; gap: 0.4rem; }
   .section__kicker {
     font-family: var(--font-arabic-display);
     font-size: 22px;
     color: var(--color-orange);
     font-weight: 500;
   }
+
+  /* ---------- Current edition (themed) ---------- */
+  .current-edition {
+    border-radius: 2px;
+    background:
+      linear-gradient(0deg,
+        color-mix(in srgb, var(--ed-ground) 55%, transparent),
+        color-mix(in srgb, var(--ed-ground) 55%, transparent));
+  }
+  .current-edition__cover {
+    max-width: 360px;
+    margin-inline: auto;
+    margin-block-end: 2.5rem;
+  }
+  .current-edition__cover :global(svg) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .current-edition .section__kicker { color: var(--ed-accent); }
+  .current-edition__theme {
+    margin: 0;
+    font-family: var(--font-arabic);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-ink);
+    opacity: 0.9;
+    max-width: 50ch;
+  }
+  .current-edition .piece__meta { color: var(--ed-accent); }
+  .current-edition .piece__link:hover .piece__title { color: var(--ed-accent); }
   .section__meta {
     font-family: var(--font-mono);
     font-size: 10.5px;
@@ -291,6 +386,80 @@ const issueExcerpts: { ar: string; en: string }[] = [];
     text-transform: uppercase;
     color: var(--color-sage);
   }
+
+  /* ---------- Previous editions strip ---------- */
+  .prev-editions {
+    padding-block: 2.5rem 1rem;
+    border-block-start: 1px solid var(--color-rule);
+    margin-block-start: 1.5rem;
+  }
+  .prev-editions__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-block-end: 1.75rem;
+  }
+  .prev-editions__label {
+    font-family: var(--font-arabic-display);
+    font-size: 20px;
+    color: var(--color-ink);
+    opacity: 0.85;
+    font-weight: 500;
+  }
+  .prev-editions__browse {
+    font-family: var(--font-arabic);
+    font-size: 15px;
+    color: var(--color-orange);
+    text-decoration: none;
+    border-block-end: 1px solid var(--color-orange);
+    padding-block-end: 2px;
+  }
+  .prev-editions__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+  }
+  .prev-edition__link {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--color-ink);
+  }
+  .prev-edition__cover {
+    flex: 0 0 auto;
+    display: block;
+    border: 1px solid var(--color-rule-soft);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--color-sand);
+  }
+  .prev-edition__cover img {
+    display: block;
+    width: 80px;
+    height: auto;
+  }
+  .prev-edition__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-family: var(--font-arabic);
+    font-size: 14px;
+    padding-block-start: 0.2rem;
+  }
+  .prev-edition__num {
+    font-size: 16px;
+    color: var(--color-ink);
+    font-weight: 500;
+    font-family: var(--font-arabic-display);
+  }
+  .prev-edition__period { color: var(--color-ink); opacity: 0.65; }
+  .prev-edition__count { color: var(--color-sage); }
+  .prev-edition__link:hover .prev-edition__num { color: var(--color-orange); }
 
   .about { padding-block: 3rem 4rem; }
   .about__label {

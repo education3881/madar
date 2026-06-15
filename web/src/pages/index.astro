@@ -2,6 +2,8 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
+import { currentEdition, editions } from '../lib/editions';
+import { inlineCover } from '../lib/inlineCover';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
@@ -44,17 +46,25 @@ const all = await getCollection('articles', ({ data }) => data.approved !== fals
 const sorted = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 // ---------------------------------------------------------------------------
-// Lead / secondary split for the editorial hierarchy on the home page.
-// For v0.1 we pin the lead by slug — Sierra Leone (Piece A) is the issue's
-// editorial centre — and treat the remaining approved pieces as the secondary
-// register. This keeps the design intent stable while we figure out the right
-// long-term lead-selection rule.
-// TODO: revisit lead-selection logic post-v0.1 (most-recent? Editor-flagged
-// `lead: true` in frontmatter? hand-curated weekly?).
+// The home page leads with the CURRENT edition. Scope the featured pieces to
+// that edition, lead with the most recent of them, and treat the rest as the
+// secondary register. Previous editions are surfaced in the strip below.
 // ---------------------------------------------------------------------------
-const LEAD_SLUG = '2026-05-25-bo-teacher-chalk';
-const lead = sorted.find((p) => p.id === LEAD_SLUG) ?? sorted[0];
-const secondary = sorted.filter((p) => p && p.id !== lead?.id);
+const editionPieces = sorted.filter((p) => p.data.edition === currentEdition.number);
+const lead = editionPieces[0];
+const secondary = editionPieces.filter((p) => p && p.id !== lead?.id);
+
+// Derived framing strings from the registry — no hardcoded issue label.
+const edNum = String(currentEdition.number).padStart(2, '0');
+const edLabel = `Edition ${edNum}`;
+
+// Previous (closed) editions, newest first, for the browse strip.
+const previousEditions = editions
+  .filter((e) => e.status === 'closed')
+  .sort((a, b) => b.number - a.number);
+function editionPieceCount(n: number): number {
+  return sorted.filter((p) => p.data.edition === n).length;
+}
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
@@ -62,7 +72,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   day: 'numeric',
 });
 
-const placeholder = sorted.length === 0;
+const placeholder = editionPieces.length === 0;
 
 // "Draft — pending source verification" pill flag per piece
 function hasProvisionalSources(p: typeof sorted[number]): boolean {
@@ -83,13 +93,13 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
 }
 ---
 
-<Base title="Madār · مدار — Issue 01" lang="en" noHeader={true}>
+<Base title={`Madār · مدار — Edition ${edNum}`} lang="en" noHeader={true}>
 
   {/* ============== TOP UTILITY BAR ============== */}
   <div class="top-bar">
     <div class="top-bar__inner container">
       <div class="top-bar__left">
-        Issue 01 · May 2026 <span lang="ar" dir="rtl">· مدار</span>
+        {edLabel} · {currentEdition.periodEn} <span lang="ar" dir="rtl">· مدار</span>
       </div>
       <div class="top-bar__right">
         <span class="top-bar__meta">A research instrument</span>
@@ -126,15 +136,23 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
       </p>
     </div>
   </header>
-  {/* ============== THIS WEEK ============== */}
-  <section class="section container">
+  {/* ============== CURRENT EDITION ============== */}
+  <section
+    class="section container current-edition"
+    style={`--ed-ground:${currentEdition.ground};--ed-accent:${currentEdition.accent};`}
+  >
+    {inlineCover(currentEdition.cover) && (
+      <div class="current-edition__cover" set:html={inlineCover(currentEdition.cover)} />
+    )}
+
     <div class="section__head">
       <div class="section__head-left">
-        <span class="section__kicker">This week</span>
-        <span class="section__kicker-ar" lang="ar" dir="rtl">هذا الأسبوع</span>
+        <span class="section__kicker">Current edition</span>
+        <span class="section__kicker-ar" lang="ar" dir="rtl">الإصدار الحالي</span>
+        <p class="current-edition__theme">{edLabel} — {currentEdition.themeEn}</p>
       </div>
       <div class="section__meta">
-        Issue 01 · 2026 · 05 · 25 · {sorted.length} piece{sorted.length === 1 ? '' : 's'}
+        {edLabel} · {currentEdition.periodEn} · {editionPieces.length} piece{editionPieces.length === 1 ? '' : 's'}
       </div>
     </div>
 
@@ -158,11 +176,11 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
       const articleHref = withBase(`/articles/${lead.id}/`);
       return (
         <article class="lead">
-          <a href={articleHref} class="lead__thumb" aria-label={`Read this issue's lead — ${lead.data.title}`}>
+          <a href={articleHref} class="lead__thumb" aria-label={`Read this edition's lead — ${lead.data.title}`}>
             <img src={thumb} alt={alt} width="800" height="500" loading="eager" decoding="async" />
           </a>
           <div class="lead__body">
-            <span class="lead__label">Read this issue's lead</span>
+            <span class="lead__label">Read this edition's lead</span>
             <div class="lead__meta">
               <span class="lead__type">{kicker}</span>
               <span class="lead__country">{lead.data.country}</span>
@@ -190,11 +208,11 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
       <section class="also">
         <div class="also__head">
           <div>
-            <span class="also__label">Also this issue</span>
-            <span class="also__label-ar" lang="ar" dir="rtl">من هذا العدد أيضاً</span>
+            <span class="also__label">Also this edition</span>
+            <span class="also__label-ar" lang="ar" dir="rtl">من هذا الإصدار أيضاً</span>
           </div>
           <div class="also__meta">
-            {secondary.length} piece{secondary.length === 1 ? '' : 's'} · Issue 01
+            {secondary.length} piece{secondary.length === 1 ? '' : 's'} · {edLabel}
           </div>
         </div>
 
@@ -208,7 +226,7 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
             const articleHref = withBase(`/articles/${piece.id}/`);
             return (
               <article class="secondary">
-                <a href={articleHref} class="secondary__thumb" aria-label={`Also this issue — ${piece.data.title}`}>
+                <a href={articleHref} class="secondary__thumb" aria-label={`Also this edition — ${piece.data.title}`}>
                   <img src={thumb} alt={alt} width="360" height="240" loading="lazy" decoding="async" />
                 </a>
                 <div class="secondary__body">
@@ -237,6 +255,42 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
       </section>
     )}
   </section>
+
+  {/* ============== PREVIOUS EDITIONS STRIP ============== */}
+  {previousEditions.length > 0 && (
+    <section class="prev-editions container">
+      <div class="prev-editions__head">
+        <span class="prev-editions__label">Previous editions</span>
+        <a class="prev-editions__browse" href={withBase('/editions/')}>Browse all editions →</a>
+      </div>
+      <ul class="prev-editions__grid">
+        {previousEditions.map((ed) => {
+          const n = String(ed.number).padStart(2, '0');
+          const count = editionPieceCount(ed.number);
+          return (
+            <li class="prev-edition">
+              <a href={withBase('/editions/')} class="prev-edition__link" aria-label={`Edition ${n} — ${ed.periodEn}`}>
+                <span class="prev-edition__cover">
+                  <img
+                    src={withBase('/covers/' + ed.cover)}
+                    alt={`Madār — Edition ${n} cover`}
+                    loading="lazy"
+                    width="160"
+                    height="207"
+                  />
+                </span>
+                <span class="prev-edition__meta">
+                  <span class="prev-edition__num">Edition {n}</span>
+                  <span class="prev-edition__period">{ed.periodEn}</span>
+                  <span class="prev-edition__count">{count} piece{count === 1 ? '' : 's'}</span>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  )}
 
   {/* ============== MACRON DIVIDER ============== */}
   <div class="macron-divider" aria-hidden="true">
@@ -420,6 +474,49 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     color: var(--color-ink);
     opacity: 0.62;
   }
+
+  /* ---------- Current edition (themed) ---------- */
+  .current-edition {
+    position: relative;
+    border-radius: 2px;
+    background:
+      linear-gradient(0deg,
+        color-mix(in srgb, var(--ed-ground) 55%, transparent),
+        color-mix(in srgb, var(--ed-ground) 55%, transparent));
+    padding-inline: var(--container-pad);
+  }
+  .current-edition__cover {
+    max-width: 360px;
+    margin-inline: auto;
+    margin-block-end: 2.5rem;
+  }
+  .current-edition__cover :global(svg) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .current-edition .section__kicker { color: var(--ed-accent); }
+  .current-edition__theme {
+    margin: 0.6rem 0 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    color: var(--color-ink);
+    opacity: 0.9;
+    max-width: 46ch;
+  }
+  /* Carry the edition accent through the lead's labels and rules. */
+  .current-edition .lead__label { color: var(--ed-accent); }
+  .current-edition .lead__label::before { background: var(--ed-accent); }
+  .current-edition .lead__title a:hover { color: var(--ed-accent); }
+  .current-edition .lead__read {
+    color: var(--ed-accent);
+    border-block-end-color: var(--ed-accent);
+  }
+  .current-edition .secondary__type { color: var(--ed-accent); }
+  .current-edition .secondary__title a:hover { color: var(--ed-accent); }
 
   .placeholder { padding-block: var(--space-lg); }
   .placeholder h2 { max-width: 28ch; margin-block-start: var(--space-sm); }
@@ -617,6 +714,87 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     line-height: 1.6;
     margin-block-start: 0.2rem;
   }
+
+  /* ---------- Previous editions strip ---------- */
+  .prev-editions {
+    padding-block: 2.5rem 1rem;
+    border-block-start: 1px solid var(--color-rule);
+    margin-block-start: 1.5rem;
+  }
+  .prev-editions__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-block-end: 1.75rem;
+  }
+  .prev-editions__label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-ink);
+    opacity: 0.75;
+    font-weight: 500;
+  }
+  .prev-editions__browse {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    font-weight: 500;
+    text-decoration: none;
+    border-block-end: 1px solid var(--color-orange);
+    padding-block-end: 2px;
+  }
+  .prev-editions__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+  }
+  .prev-edition__link {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--color-ink);
+  }
+  .prev-edition__cover {
+    flex: 0 0 auto;
+    display: block;
+    border: 1px solid var(--color-rule-soft);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--color-sand);
+  }
+  .prev-edition__cover img {
+    display: block;
+    width: 80px;
+    height: auto;
+  }
+  .prev-edition__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-block-start: 0.2rem;
+  }
+  .prev-edition__num {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--color-ink);
+    font-weight: 500;
+  }
+  .prev-edition__period { color: var(--color-ink); opacity: 0.65; }
+  .prev-edition__count { color: var(--color-sage); }
+  .prev-edition__link:hover .prev-edition__num { color: var(--color-orange); }
 
   /* ---------- Macron divider ---------- */
   .macron-divider {

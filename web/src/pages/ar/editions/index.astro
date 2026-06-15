@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../../lib/urls';
 import { editions } from '../../../lib/editions';
+import { inlineCover } from '../../../lib/inlineCover';
 
 // ---------------------------------------------------------------------------
 // Editions index (AR, RTL) — mirror of the English page over the Arabic
@@ -46,7 +47,7 @@ const blocks = ordered.map((e) => {
       <p class="kicker" lang="ar" dir="rtl">الأرشيف</p>
       <h1 class="editions__title" lang="ar" dir="rtl">الإصدارات</h1>
       <p class="editions__intro measure" lang="ar" dir="rtl">
-        تَصدرُ «مدار» في إصداراتٍ شهريّة. يَجمعُ كلُّ إصدارٍ موادَّ العددِ تحت سؤالٍ
+        تَصدرُ «مدار» في إصداراتٍ شهريّة. يَجمعُ كلُّ إصدارٍ موادَّه تحت سؤالٍ
         تحريريٍّ واحد، باللغتَين.
       </p>
     </header>
@@ -57,6 +58,9 @@ const blocks = ordered.map((e) => {
         data-motif={e.motif}
         style={`--ed-ground:${e.ground};--ed-accent:${e.accent};`}
       >
+        {inlineCover(e.cover) && (
+          <div class="edition__cover" set:html={inlineCover(e.cover)} />
+        )}
         <div class="edition__masthead">
           <span class="edition__numeral" aria-hidden="true">
             {String(e.number).padStart(2, '0')}
@@ -65,7 +69,7 @@ const blocks = ordered.map((e) => {
             <div class="edition__kickerline">
               <span class="edition__period">{e.periodAr}</span>
               {e.status === 'current' && (
-                <span class="edition__tag" lang="ar" dir="rtl">العدد الحالي</span>
+                <span class="edition__tag" lang="ar" dir="rtl">الإصدار الحالي</span>
               )}
             </div>
             <p class="edition__theme" lang="ar" dir="rtl">{e.themeAr}</p>
@@ -134,6 +138,16 @@ const blocks = ordered.map((e) => {
     padding: 2.5rem 2.5rem 2rem;
     margin-block-end: 2.5rem;
     color: var(--color-ink);
+  }
+  .edition__cover {
+    max-width: 320px;
+    margin-inline: auto;
+    margin-block-end: 2rem;
+  }
+  .edition__cover :global(svg) {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   .edition__masthead {
     display: grid;

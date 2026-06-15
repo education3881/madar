@@ -19,11 +19,15 @@ export interface Edition {
   accent: string;
   /** Motif key — 'horizon' (macron-style rule) or 'thread' (two joined nodes). */
   motif: string;
+  /** Cover SVG filename under /public/covers/ — inlined onto pages. */
+  cover: string;
   status: 'current' | 'closed';
 }
 
-// AR: pending AR-Editor sign-off — periodAr / themeAr strings below should be
-// verified by the Arabic Editor before this ships to readers.
+// AR: signed off by the Arabic Editor 2026-06-14. Rulings: "placement" → «التوزيع»
+// (deployment/matching), not «الإسناد» (which reads as attribution); «البيداغوجيا»
+// retained for consistency with the shipped Husseiny caption; the page uses «إصدار»
+// throughout (never «عدد»), per the founder's Editions/الإصدارات naming choice.
 export const editions: Edition[] = [
   {
     number: 1,
@@ -34,17 +38,19 @@ export const editions: Edition[] = [
     ground: '#E8E2D0',
     accent: '#D94F2A',
     motif: 'horizon',
+    cover: 'edition-01.svg',
     status: 'closed',
   },
   {
     number: 2,
     periodEn: 'June 2026',
     periodAr: 'يونيو ٢٠٢٦',
-    themeEn: 'The instrument in use — pedagogy and placement, measured.',
-    themeAr: 'الأداة في الاستخدام — البيداغوجيا والإسناد، بالقياس.',
+    themeEn: 'The instrument in use — pedagogy and deployment, measured.',
+    themeAr: 'الأداة في الاستخدام — البيداغوجيا والتوزيع، بالقياس.',
     ground: '#FAFAF7',
     accent: '#2F6F6A',
     motif: 'thread',
+    cover: 'edition-02.svg',
     status: 'current',
   },
 ];

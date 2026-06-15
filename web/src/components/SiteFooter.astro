@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../lib/urls';
+import { currentEdition } from '../lib/editions';
 
 interface Props {
   lang?: 'en' | 'ar';
@@ -7,9 +8,12 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const year = new Date().getFullYear();
 
+const edNum = String(currentEdition.number).padStart(2, '0');
+const edNumAr = currentEdition.number.toLocaleString('ar-EG', { minimumIntegerDigits: 2 });
+
 const copy = {
   en: {
-    issue: 'Issue 01 · 2026',
+    issue: `Edition ${edNum} · ${year}`,
     rights: `© ${year} Madār — an editorial publication, independently operated.`,
     closing: 'Made in spite of, not because of.',
     rss: 'RSS',
@@ -24,7 +28,7 @@ const copy = {
     rssHref: withBase('/rss.xml'),
   },
   ar: {
-    issue: 'العدد ٠١ · ٢٠٢٦',
+    issue: `الإصدار ${edNumAr} · ${year.toLocaleString('ar-EG', { useGrouping: false })}`,
     rights: `© ${year} مدار — منشور تحريري مستقل.`,
     closing: 'صُنع رغمًا عن الظروف، لا بفضلها.',
     rss: 'RSS',
