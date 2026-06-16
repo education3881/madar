@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://education3881.github.io/madar/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/"/>
   </url>
   <url>
     <loc>https://education3881.github.io/madar/ar/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/"/>
@@ -199,5 +199,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-10-rak-iqra-arabic-diglossia/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-10-rak-iqra-arabic-diglossia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-10-rak-iqra-arabic-diglossia/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/articles/2026-06-16-vietnam-tuition-free-public-school/</loc>
+    <lastmod>2026-06-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/ar/articles/2026-06-16-vietnam-tuition-free-public-school/</loc>
+    <lastmod>2026-06-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-16-vietnam-tuition-free-public-school/"/>
   </url>
 </urlset>

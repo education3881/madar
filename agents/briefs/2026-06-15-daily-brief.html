@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-15</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 15 June 2026. The founder shipped the editions home + covers himself; the Manager stayed out of web/ and ran the rest — Vietnam's voice gate closes, the cold-build myth is retired." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 15 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 17</div>
+    <h1>You shipped the editions home yourself. So today the Manager stayed out of the way — and ran everything around it.</h1>
+    <p class="dek">An unusual shape, named plainly because you value it plain. While this run was opening, <strong>you were editing the repo live</strong> — covers at 09:46, the footer rewired to the registry by 09:58, the Arabic home growing 187 lines. Three independent signals (file mtimes mid-run, a moving <span class="mono">git status</span>, your own changes appearing under me) said: <em>the founder is hands-on in <span class="mono">web/</span> right now.</em> The disciplined move was not to "also help" by editing the same files — that is exactly how finished work gets clobbered. So the Manager <strong>touched zero <span class="mono">web/</span> files</strong>, verified what you shipped, and spent the day on the four functions that don't collide. The result still advances the pipeline visibly: <strong>Vietnam's voice gate closed</strong>, the <strong>cold-build myth is retired</strong>, and your editions feature has a clean post-ship QA on record.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Editions shipped — with two doors left open.</h2>
+        <div class="day__date">2026·06·14 · Sunday</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — clean</div>
+      <p>Opened on <span class="mono">git</span> per the standing rule. <strong>No missed day</strong> — Saturday's gap (06-13) was already recovered on the 14th. The 14th itself ran twice: brief No. 16 (recovery + weekly), then a same-day founder-directed commit <span class="mono">9cd205e</span> that shipped the <strong>Editions feature</strong> (the <span class="mono">/editions/</span> + <span class="mono">/ar/editions/</span> pages and the registry). That commit closed honestly with <em>two doors open</em>: the Arabic strings were "draft pending Arabic-Editor sign-off," and the homepage label was "left for an editorial call." Both doors are what today walked through.</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What was settled</h3>
+        <ul>
+          <li>The editions <strong>pages + registry</strong> live; the per-edition look (ground + accent + motif) in place.</li>
+          <li>Vietnam banked as <strong>recon PROCEED</strong> — figure gate closed, one voice-gate door still ajar.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What it left for today</h3>
+        <ul>
+          <li>The two open doors: <strong>AR sign-off</strong> and the <strong>homepage "Issue 01" drift</strong> — the most-flagged defect in the catalogue.</li>
+          <li>The Editor's one optional pre-commission task on Vietnam: <strong>try to land a named operational voice.</strong></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>You closed both doors. The Manager did the rest.</h2>
+        <div class="day__date">2026·06·15 · Monday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Yours — shipped &amp; pushed · the editions home + covers (86c4478)</div>
+        <div class="item__body">You rebuilt the homepage (EN + AR) to <strong>lead with the current edition</strong> — its own colours, its own cover, a previous-editions strip, a browse link — and removed <em>every</em> hardcoded "Issue 01" (the footer now derives from the registry). You drew <strong>two line-art covers</strong> (Edition 01 compass-rose/terracotta, Edition 02 astrolabe/pine), added the <span class="mono">inlineCover</span> helper + a cover registry field, and landed the <strong>Arabic-Editor sign-off</strong> (التوزيع for "placement"; الإصدار الحالي). It is committed and on <span class="mono">origin/main</span> — already deploying. This is the biggest single advance to the site since launch, and it is entirely yours.</div>
+        <div class="item__note">86c4478 · HEAD = origin/main · 10 files, +568 / −41</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Vietnam — voice gate CLOSED; commission-ready</div>
+        <div class="item__body">The Editor's one open pre-commission task — <em>try to land a named operational voice</em> — cleared in a single targeted recon pass. Found and primary-traced: <strong>Principal Nguyễn Thị Vân Hồng</strong> of <strong>Chương Dương Secondary School, Hoàn Kiếm, Hanoi</strong>, on the record in <em>Tiền Phong</em> (3 Mar 2025). She gives the human mechanism the policy actually changes: ~10% of her pupils in hardship, ~1% who couldn't pay tuition <em>carried by teachers contributing ~VND 155,000/month per child</em> — and with the exemption, families "no longer feel indebted to teachers." Named, serving, operational — not an announcer. Traced <em>through</em> the machine-translation aggregators to the primary outlet, per the source-the-report-not-the-blog rule. With the figure gate already closed, <strong>both gates are now closed: Vietnam is commission-ready.</strong> No draft forced today — quality-over-slot, and not on a day you were live in the tree.</div>
+        <div class="item__note">guidebook/2026-06-14-vietnam-tuition-free-source-index.md (voice-gate update) · INDEX → COMMISSION-READY</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · your feature, post-ship QA — PASS, with one honest flag</div>
+        <div class="item__body">Ran a <strong>real <span class="mono">astro build</span></strong> of <span class="mono">86c4478</span> (the new sandbox route, below): <strong>clean, exit 0, 29 pages</strong> — covers serve and inline, EN "Edition 02" / AR «الإصدار الحالي», footer registry-derived, <strong>zero "Issue 01" in the build</strong>, parity 12 = 12, sitemap 29. One finding, <em>not</em> a regression and not urgent: the "Issue → Edition" rename reached the chrome but <strong>not the article content</strong> — the two Edition-02 pieces' hero alt + caption still read "Issue 02" / «العدد الثاني» (and surface on the homepage via alt text), and the founding Bo piece's body still says "this first issue." The caption scheme is itself split (10 pieces number by register, 2 by edition). Routed to Editor + Designer + Arabic-Editor as a content call (recommend: register-style for all, drops "Issue" entirely). Verified non-issue: Bahrain's «العدد ذاته» is the common noun "the same batch," correctly left alone.</div>
+        <div class="item__note">/agents/reviews/2026-06-15-editions-home-qa.md · /agents/logs/manager-publish-gate-2026-06-15.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the cold-build myth is retired</div>
+        <div class="item__body">For weeks the gates carried a caveat: "cold <span class="mono">astro build</span> not run — <span class="mono">node_modules</span> absent + the FUSE boundary; carried to the weekly." Half of that was simply wrong. <span class="mono">node_modules</span> is <em>present</em> on the mount (216 MB); the only real obstacle is FUSE's <span class="mono">unlink</span> ban. Build from a <strong>tmpfs copy with <span class="mono">VITE_CACHE_DIR</span> set</strong> (symlink <span class="mono">node_modules</span>, don't copy it) and the build runs clean — exit 0, 29 pages. <strong>Build verification is now a daily capability, not a weekly clean-checkout job.</strong> That is why this brief can assert your feature builds — it actually built it. Banked as a method note + INDEX row.</div>
+        <div class="item__note">/agents/guidebook/2026-06-15-astro-build-in-sandbox-vite-cache-route.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the edition is the return mechanism (+ terminology reset)</div>
+        <div class="item__body">The honest growth read of what you shipped: a slow publication's problem isn't the first open, it's the <strong>monthly comeback</strong> — and the Editions model is precisely a return-rate machine (a reason and a rhythm to come back, plus an archive that rewards a second visit). Reframed Growth around <em>repeat opens across editions</em>, not subscriber counts. Reset all Growth copy from "Issue / العدد" to "Edition / الإصدار" (the existing send packets still say "Issue" — they need the sweep before they go out), staged Edition-02 positioning, and the brand-correct Sierra Leone grid caption.</div>
+        <div class="item__note">/social-drafts/2026-06-15-growth-edition-as-return-mechanism.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 17. Statistics below regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 06-15 snapshot appended). The corpus count holds at 12 = 12 — today the pipeline advanced by <em>closing a gate</em> and <em>retiring a false blocker</em>, not by adding a row, and the brief says exactly that.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-15</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">10</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 7 · Africa 3 · Asia 1 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 12 · access 10 · value of teachers 8 · AI-readiness 5 · language and heritage preservation 5</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-10</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>On deck.</h2>
+        <div class="day__date">next daily: 2026·06·16 Tue · weekly: 2026·06·21 Sun</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · Vietnam — commission the draft</div>
+        <div class="item__body">Both gates closed; the writer starts from a checked index with a named operational voice in hand. Two routine pre-draft items: the Arabic Editor transliterates the new names/places (Nguyễn Thị Vân Hồng, Đinh Văn Tân, Chương Dương, Hoàn Kiếm, Hải Phòng); the USD conversion is recomputed and dated at publish. The "tuition-free ≠ fee-free" spine is non-negotiable, and the 155,000-VND teacher detail is attributed in-text to Tiền Phong, never our own voice.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality · the caption taxonomy — one decision, then a 30-minute fix</div>
+        <div class="item__body">The one live drift from today: unify the 12 captions. Recommend register-style for all (drop the edition number from the 2 June captions), which removes the word "Issue" from content entirely; the editions pages + homepage already carry the edition framing far better. Editor + Designer + Arabic-Editor call; build-verifiable via the new route. Not urgent — no broken render — but it's live, so it shouldn't sit past the weekly.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Standing · your queued actions, now "Edition"-correct</div>
+        <div class="item__body">The Edition-01 send packet, the Instagram opening grid, and the Husseiny tile are still send-ready — but they predate today and still say "Issue." Sweep each to "Edition / الإصدار" before sending (one find-replace per asset; flagged in the Growth packet). The domain cutover and Substack remain queued; the URL-binding clock still argues both should fire after the cutover.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · Sunday 2026-06-21</div>
+        <div class="item__body">Carries: the caption-taxonomy decision; ratify that the cold-build caveat is retired (it is — proven today); Vietnam draft status; and a note worth raising plainly — the operating model says you are "off-ops, push only," but in practice you do hands-on feature work (editions, covers). That's fine and good; the weekly should just make the working agreement match reality so a daily run knows when to stay out of <span class="mono">web/</span>.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one copy-paste block</div>
+    <p>Your editions/covers work is <strong>already committed and pushed</strong> (<span class="mono">86c4478</span>) — nothing to do there. This block carries <strong>only today's Manager deliverables</strong>: the Vietnam voice-gate update + INDEX, the sandbox build-method note, the post-ship QA review + gate, the Growth packet, the manager status, and this brief (No. 17). Explicit paths on purpose — <em>not</em> <span class="mono">git add -A</span> — so if you're still editing <span class="mono">web/</span> it stays yours and untouched. Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add agents/ social-drafts/
+git commit -m "Madar — 2026-06-15: Manager run alongside the founder's editions-home+covers ship (86c4478). Vietnam voice gate CLOSED (Principal Nguyễn Thị Vân Hồng, Tiền Phong 3 Mar 2025; primary-traced) — commission-ready. Post-ship QA of 86c4478: build clean (29 pages) + caption-taxonomy drift flagged to Editor/Designer/AR-Editor. Banked the sandbox build method (VITE_CACHE_DIR+tmpfs) — retires the cold-build caveat. Growth: edition-as-return + terminology reset. Gate, status, brief 17."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a> — this push changes nothing on the site (agents/ + drafts only). Your <span class="mono">86c4478</span> is what readers will see; worth a quick browser look to confirm the covers and the new home render as intended.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·15</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

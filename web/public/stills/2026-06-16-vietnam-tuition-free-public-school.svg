@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing of a household ledger column. A stack of cost entries — each a short item line with an amount mark at the right — stands in ink against a paper-cream ground. A single kiln-orange line strikes through only the top entry and closes on a small ring; every entry beneath it stands untouched, the column still long.">
+
+  <title>The Still · Vietnam — one line struck from a long column</title>
+  <desc>One continuous calligraphic line in ink renders a household's ledger of school costs: a faint vertical rule and a stack of entries, each a small lead tick, a horizontal item line, and a short amount mark to the right. A second gesture in kiln-orange — the only warm thing on the page — strikes through the single topmost entry and closes on a small ring, the waived fee. The seven entries below it remain standing in ink. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The ledger: a faint column rule and a stack of cost entries.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    The top entry is the one the orange will strike; it is drawn
+    here in full like the rest — the cancelling is the second
+    gesture's work, not a gap in the first.
+    ============================================================
+  -->
+
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE COLUMN RULE — the ledger's left edge, low and steady. -->
+    <path stroke-width="2" stroke-opacity="0.4" d="
+      M 540 150
+      C 538 250 539 350 540 452
+    "/>
+    <!-- THE BASELINE — the page's ruled foot. -->
+    <path stroke-width="2" stroke-opacity="0.42" d="
+      M 540 470
+      C 660 466 800 464 940 466
+      C 1000 467 1040 469 1066 472
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.22" stroke-dasharray="6 9" d="
+      M 560 484 C 700 480 860 479 980 482 C 1020 483 1044 485 1060 488
+    "/>
+
+    <!-- THE ENTRIES — eight cost lines stacked down the column.
+         Each: a lead tick, an item line of varying length, an amount mark.
+         Drawn at descending weight from front to back for breath. -->
+
+    <!-- entry 1 (struck by the orange) — tuition -->
+    <g stroke-width="3.4" stroke-opacity="0.9">
+      <path d="M 556 176 L 556.5 175.6"/>
+      <path d="M 572 178 C 640 174 712 175 784 177"/>
+      <path d="M 902 177 C 922 175 944 176 962 178"/>
+    </g>
+    <!-- entry 2 -->
+    <g stroke-width="3" stroke-opacity="0.9">
+      <path d="M 556 214 L 556.5 213.6"/>
+      <path d="M 572 216 C 648 212 730 213 812 215"/>
+      <path d="M 892 215 C 916 213 942 214 966 216"/>
+    </g>
+    <!-- entry 3 -->
+    <g stroke-width="3" stroke-opacity="0.88">
+      <path d="M 556 252 L 556.5 251.6"/>
+      <path d="M 572 254 C 636 250 704 251 770 253"/>
+      <path d="M 906 253 C 928 251 950 252 970 254"/>
+    </g>
+    <!-- entry 4 -->
+    <g stroke-width="2.8" stroke-opacity="0.86">
+      <path d="M 556 290 L 556.5 289.6"/>
+      <path d="M 572 292 C 656 288 744 289 828 291"/>
+      <path d="M 884 291 C 910 289 938 290 962 292"/>
+    </g>
+    <!-- entry 5 -->
+    <g stroke-width="2.6" stroke-opacity="0.84">
+      <path d="M 556 328 L 556.5 327.6"/>
+      <path d="M 572 330 C 640 326 712 327 782 329"/>
+      <path d="M 900 329 C 924 327 948 328 968 330"/>
+    </g>
+    <!-- entry 6 -->
+    <g stroke-width="2.4" stroke-opacity="0.8">
+      <path d="M 556 366 L 556.5 365.6"/>
+      <path d="M 572 368 C 652 364 736 365 818 367"/>
+      <path d="M 890 367 C 914 365 940 366 964 368"/>
+    </g>
+    <!-- entry 7 -->
+    <g stroke-width="2.2" stroke-opacity="0.74">
+      <path d="M 556 404 L 556.5 403.6"/>
+      <path d="M 572 406 C 636 402 704 403 772 405"/>
+      <path d="M 904 405 C 926 403 950 404 970 406"/>
+    </g>
+    <!-- entry 8 (faintest — the list runs on past the frame) -->
+    <g stroke-width="1.8" stroke-opacity="0.6">
+      <path d="M 556 442 L 556.5 441.6"/>
+      <path d="M 572 444 C 648 440 730 441 808 443"/>
+      <path d="M 894 443 C 918 441 944 442 966 444"/>
+    </g>
+    <!-- the column continues — a soft ellipsis below the last entry -->
+    <g stroke-width="2.2" stroke-opacity="0.34">
+      <path d="M 612 462 L 612.4 461.7"/>
+      <path d="M 636 462 L 636.4 461.7"/>
+      <path d="M 660 462 L 660.4 461.7"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The waiver. One tapered line strikes through the single top
+    entry and closes on a small ring at its end. The only warm
+    thing on the page; it cancels one line, not the column.
+    ============================================================
+  -->
+
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the strike-through across entry 1 -->
+    <path stroke-width="3.6" stroke-opacity="0.95" d="
+      M 548 184
+      C 636 173 730 175 818 172
+      C 850 171 872 173 888 176
+    "/>
+    <!-- the lift-off at the start of the stroke -->
+    <path stroke-width="1.6" stroke-opacity="0.5" d="
+      M 536 190 C 540 187 544 185 548 184
+    "/>
+    <!-- the landing ring — small, closed, at the struck line's end -->
+    <path stroke-width="2.6" stroke-opacity="0.9" d="
+      M 888 176
+      C 897 169 909 172 910 181
+      C 911 190 901 196 893 191
+      C 886 187 884 180 888 176
+      Z
+    "/>
+    <!-- a faint warmth where the lifted weight used to rest -->
+    <path stroke-width="0.9" stroke-opacity="0.28" stroke-dasharray="4 10" d="
+      M 572 198 C 660 194 752 195 838 197
+    "/>
+  </g>
+</svg>

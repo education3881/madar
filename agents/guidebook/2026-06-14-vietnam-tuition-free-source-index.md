@@ -75,7 +75,24 @@
 
 ## GAPS LOGGED
 
-- No NAMED on-record **operational** voice (school principal / provincial DOET official / named parent) located. RFA's parents are anonymous.
+- ~~No NAMED on-record **operational** voice located.~~ **CLOSED 2026-06-15** — a named, serving principal traced to a primary outlet (see Voice-gate update below). RFA's parents remain anonymous; we no longer depend on them.
 - Exact **central-vs-provincial budget split** not isolated in a verified primary source.
 - The **VND 22,500 bn** and **VND 31.4 tn** figures are single-stream / proposal-phase — gated OPEN.
-- Names needing Arabic transliteration verification by the Arabic Editor: **Nguyễn Kim Sơn**, **Trần Thanh Mẫn**, **Silvia Danailov** (non-Vietnamese), reporter **Mỹ Dung** (byline only).
+- Names needing Arabic transliteration verification by the Arabic Editor: **Nguyễn Kim Sơn**, **Trần Thanh Mẫn**, **Silvia Danailov** (non-Vietnamese), reporter **Mỹ Dung** (byline only), and (new, below) **Nguyễn Thị Vân Hồng**, **Đinh Văn Tân**, plus place names **Chương Dương**, **Hoàn Kiếm**, **Hải Phòng**.
+
+---
+
+## VOICE-GATE UPDATE — 2026-06-15 (one targeted recon pass)
+
+The Editor's one open pre-commission task on 2026-06-14 was to *try* to land a named operational voice before drafting. **It cleared.** A focused two-search pass via `WebSearch` (then name-traced to primary) surfaced a serving principal on the record about the exemption's effect on real families — exactly the operational tier the recon was missing.
+
+**14. PRIMARY OPERATIONAL VOICE — Principal Nguyễn Thị Vân Hồng** — *Tiền Phong* (Báo Tiền Phong), **3 Mar 2025**.
+   https://tienphong.vn/mien-hoc-phi-tu-nam-hoc-2025-2026-dam-bao-co-hoi-hoc-tap-cho-hoc-sinh-post1721961.tpo
+   *Who:* Principal (hiệu trưởng) of **Chương Dương Secondary School (THCS Chương Dương), Hoàn Kiếm District, Hanoi** — a serving school leader, not an announcer.
+   *What she gives (operational reality, on the record):* ~10% of her pupils are in financial hardship; ~1% (8–10 children) could not pay tuition and were carried by **teachers contributing ~VND 155,000/month per child** out of pocket. With the exemption, families "no longer feel indebted to teachers." This is the human mechanism the policy actually changes — and it doubles as named, sourced *counter-texture* (teachers were privately absorbing a fee the state has now lifted). **Tier T1-jr (primary VN press of record).**
+
+**15. BACKUP OPERATIONAL VOICE — former Principal Đinh Văn Tân**, Hà Sen Primary & Secondary School, **Hải Phòng** — surfaced in the same cluster (city tuition-support reception). *Caveat:* identified as **former** principal; usable as corroboration, not as the lead operational voice. Trace to its own primary outlet before any use.
+
+**Tracing note (method, applies the "source the report not the blog" rule):** both voices first appeared in T3 machine-translation aggregators (vietnam.vn) and a T3 careers blog. The quote was **name-traced to its T1-jr primary (Tiền Phong, dated)** before being banked — the aggregator is *not* cited. Per-draft, Test 1 still re-verifies the Tiền Phong URL renders the quote.
+
+**Gate status now:** figure gate **CLOSED** (annual cost ~VND 30,600 bn / ~US$1.2 bn; ~23 m students) · voice gate **CLOSED** (Nguyễn Thị Vân Hồng, named, serving, primary-traced). **Vietnam is commission-ready.** Remaining pre-draft items are routine: Arabic-Editor transliteration of the new names/places; recompute + date the USD conversion at publish; keep the VND 22,500 bn / 31.4 tn single-stream figures out unless re-confirmed.
