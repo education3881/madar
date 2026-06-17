@@ -6,7 +6,6 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { withBase } from '../../lib/urls';
 import { currentEdition, editions } from '../../lib/editions';
-import { inlineCover } from '../../lib/inlineCover';
 
 // ---------------------------------------------------------------------------
 // Pieces — the Arabic home draws on:
@@ -117,10 +116,6 @@ function editionPieceCount(n: number): number {
     class="section container current-edition"
     style={`--ed-ground:${currentEdition.ground};--ed-accent:${currentEdition.accent};`}
   >
-    {inlineCover(currentEdition.cover) && (
-      <div class="current-edition__cover" set:html={inlineCover(currentEdition.cover)} />
-    )}
-
     <div class="section__head">
       <div class="section__head-left">
         <span class="section__kicker" lang="ar" dir="rtl">الإصدار الحالي</span>
@@ -294,16 +289,6 @@ function editionPieceCount(n: number): number {
       linear-gradient(0deg,
         color-mix(in srgb, var(--ed-ground) 55%, transparent),
         color-mix(in srgb, var(--ed-ground) 55%, transparent));
-  }
-  .current-edition__cover {
-    max-width: 360px;
-    margin-inline: auto;
-    margin-block-end: 2.5rem;
-  }
-  .current-edition__cover :global(svg) {
-    width: 100%;
-    height: auto;
-    display: block;
   }
   .current-edition .section__kicker { color: var(--ed-accent); }
   .current-edition__theme {

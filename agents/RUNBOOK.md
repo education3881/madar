@@ -20,13 +20,17 @@
               Manager   ← runs the company; weekly report to Vini
         ┌───────┴───────┬─────────────┬─────────────┐
      Editor       Web Developer    Designer       Growth
-     ┌──┴──┐
- Researcher  Content Creator
+     ┌──┴───────────────┬──────────────────┐
+ Researcher   Content Creator ×2      Arabic Editor
+                                           │
+                                  Arabic Content Creator
 ```
 
-The Manager talks to four department heads. The Editor talks to the Researcher and the Content Creator. The Manager never goes directly to either.
+The Manager talks to four department heads. The Editor leads the Editorial Department: the **Researcher** and **two Content Creators** sit under the Editor, and the **Arabic Editor** (peer-specialist) leads the Arabic side with the **Arabic Content Creator** composing under them. The Manager never goes directly to any of them — editorial routing is always through the Editor.
 
 **The Researcher (`08_researcher.md`, added 2026-06-14)** sits under the Editor and *precedes* the Content Creator in the pipeline. The Researcher produces the verified source index and runs the operational-voice gate **before the Editor commits a piece to commission** — so recon stops eating the same day's content slot, the Editor stays a pure filter (not a recon-doer), and a candidate's park-or-proceed call is made on evidence, early. The Researcher does **not** write articles and does **not** raise the cadence: its job is to make each commission decision cheaper and each draft start from a checked index, not to add throughput. Source indices live in `/agents/guidebook/` (Section 1 of the INDEX); recon briefs in `/content-drafts/recon/`.
+
+**Content Creator II (`09_content_creator_2.md`) and the Arabic Content Creator (`10_arabic_content_creator.md`) — both added 2026-06-16 (founder-directed), for ratification at the 06-21 weekly.** They exist to sustain **1 piece/day, bilingual, at the full bar** during the Edition-02 sprint (`/content-drafts/_EDITION_02_SPRINT.md`). **Content Creator II** is a second drafting hand (peer to `06`, leaning non-MENA/comparative/reversal stories); CC1 and CC2 never draft the same piece, and the Editor assigns. **The Arabic Content Creator** *composes* the Arabic version so the **Arabic Editor becomes a pure verifier** (Gate 4) rather than composing and grading their own work — the same composition-vs-judgment split the English side adopted on 2026-05-26. Neither sets `approved: true`; the Editor and Arabic Editor remain the gates.
 
 ## What the Manager does in the first ten minutes of a session
 

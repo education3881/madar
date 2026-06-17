@@ -3,7 +3,6 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
 import { currentEdition, editions } from '../lib/editions';
-import { inlineCover } from '../lib/inlineCover';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
@@ -141,10 +140,6 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     class="section container current-edition"
     style={`--ed-ground:${currentEdition.ground};--ed-accent:${currentEdition.accent};`}
   >
-    {inlineCover(currentEdition.cover) && (
-      <div class="current-edition__cover" set:html={inlineCover(currentEdition.cover)} />
-    )}
-
     <div class="section__head">
       <div class="section__head-left">
         <span class="section__kicker">Current edition</span>
@@ -484,16 +479,6 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
         color-mix(in srgb, var(--ed-ground) 55%, transparent),
         color-mix(in srgb, var(--ed-ground) 55%, transparent));
     padding-inline: var(--container-pad);
-  }
-  .current-edition__cover {
-    max-width: 360px;
-    margin-inline: auto;
-    margin-block-end: 2.5rem;
-  }
-  .current-edition__cover :global(svg) {
-    width: 100%;
-    height: auto;
-    display: block;
   }
   .current-edition .section__kicker { color: var(--ed-accent); }
   .current-edition__theme {
