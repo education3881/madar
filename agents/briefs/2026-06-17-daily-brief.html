@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-17</title>
+<meta name="description" content="Manager → Founder daily brief for Wednesday 17 June 2026. South Korea shipped end to end (EN + AR, build-verified, 33 pages) — the AIDT reversal, un-parked the day after its voice gate closed; the publish gate caught a real schema defect before it shipped; and your uncommitted homepage edit is read, verified, and carried." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Wednesday · 17 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 19</div>
+    <h1>Sprint day one, delivered — Korea shipped whole, and your mid-run push completed.</h1>
+    <p class="dek">Your Edition-02 sprint directive landed mid-session as commit <span class="mono">a7d40b6</span> — team to ten, a day-by-day calendar, a recon bank four deep, and day one's piece already named: <strong>Korea</strong>. I ran day one to the letter. But that same <span class="mono">git&nbsp;add&nbsp;-A</span> pushed the Korea <em>text</em> live <strong>without its hero still or its Arabic companion</strong> — so origin has been sitting briefly broken (a 404'd hero, EN with no AR). Today's run <strong>completes and corrects it</strong>: the full gate-passed piece in both languages, the still, the sitemap — build-verified, 33 pages, parity 14 = 14. And the gate again earned its keep, catching a real schema defect before it reached you.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday → mid-run</div>
+      <div class="day__title">
+        <h2>You set the sprint — and pushed it live while the run was working.</h2>
+        <div class="day__date">2026·06·16 → 06·17 · the a7d40b6 push</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — and re-checked before staging</div>
+      <p>I opened on <span class="mono">7c8fa33</span> (Vietnam, deployed, clean). Partway through today's run <span class="mono">origin/main</span> moved under me to <strong><span class="mono">a7d40b6</span></strong> — your <strong>"Edition-02 sprint setup"</strong>: the team expanded to <strong>ten</strong> (a Content Creator II and an Arabic Content Creator), a sprint plan with a day-by-day calendar, a four-deep recon bank (Korea + Egypt + Philippines + Oman <em>proceed</em>; Saudi + Jordan <em>parked</em>), and the homepage cover-removal — all committed and live. <strong>The one snag, named honestly:</strong> that same <span class="mono">git add -A</span> swept an <em>early</em> copy of today's Korea text to the live site, but <strong>not its hero still and not its Arabic companion</strong> (neither existed yet). So since that push, origin has carried a Korea page whose hero still 404s, with no AR — the same "text lands ahead of its assets" race we hit on 06-10. No drama; today's push closes it, and I re-checked origin right before staging so nothing else is stranded.</p>
+    </div>
+
+    <div class="twin">
+      <div>
+        <h3>What you shipped (a7d40b6)</h3>
+        <ul>
+          <li><strong>The sprint:</strong> 1 piece/day, Edition 02 to ten by ~06-26; bar held, team resourced up; bilingual simultaneous.</li>
+          <li>Team to ten; recon bank four-deep; homepage covers now <span class="mono">/editions/</span>-only.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What it left incomplete</h3>
+        <ul>
+          <li>Korea <strong>EN text live without its still or AR</strong> — a 404'd hero and a parity break, live until this push.</li>
+          <li>Today's run supplies all three (full gate-passed EN, still, AR) — built together, verified coherent.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Korea, end to end — and a gate that caught a real defect.</h2>
+        <div class="day__date">2026·06·17 · Wednesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · shipped — "The textbook that stopped being one" (EN + AR)</div>
+        <div class="item__body">South Korea made AI digital textbooks the legally-designated material for several subjects in March 2025 — then, on 4 August, parliament rewrote the definition of "textbook" to leave them out, demoting them to optional "educational material." The spine is pure Madār and avoids the easy ending: <strong>this is not "AI failed in the classroom."</strong> The reversal was led by the teachers who <em>used</em> the tool — <strong>Kim Cha-myung</strong>, an elementary teacher in Gwangmyeong, who found it genuinely useful and still called the rollout rushed ("it should have been rolled out gradually after testing") — and it isn't even legally final: the publishers' constitutional complaint sits unruled at mid-2026. The durable take is the <strong>"two clocks"</strong>: mandating a tool is fast, earning a classroom's trust is slow. This <strong>un-parks the 06-12 candidate</strong> on the exact condition the Editor set (one named operational voice), closed by Sunday's voice-recon. <strong>Asia goes 2 → 3</strong>; it seats the AI-governance triptych — Uruguay (lab-first) ↔ Indonesia (elective-first) ↔ Korea (mandate-first, reversed).</div>
+        <div class="item__note">Sprint piece 4 of 10 · supersedes the early EN swept into <span class="mono">a7d40b6</span>, and adds the missing still + AR · Editor verdict (5 tests) + Arabic-Editor sign-off (the three-way "Lee" collision — President Jae-myung / Minister Ju-ho / teacher Hyun-joon — disambiguated by role) on record · figures re-verified live (MOE primary, Korea Herald, Korea Times, Rest of World)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · the gate caught a real schema defect before you saw it</div>
+        <div class="item__body">A <strong>real <span class="mono">astro build</span></strong> (the tmpfs route): <strong>clean, exit 0, 33 pages, parity 14 = 14.</strong> The defect it caught: <strong>both the EN and AR deks exceeded the 200-character schema cap</strong> — and the AR one was over by a margin invisible to the eye, because Arabic vowel marks (tashkeel) each count as a character. The build refused it; both deks were trimmed (the AR de-voweled in the dek only, body unchanged) and re-built clean. Also verified in the same build: your homepage cover-removal renders correctly, related rail resolves to Uruguay/Indonesia/Qatar, caption is register-style "Curated 12" with zero "Issue" drift, hero still on disk in the same commit as the text. <strong>This build is also the fix for the mid-run race</strong> — it puts the still and the AR on origin alongside the full EN, so the live 404'd hero and the EN-without-AR parity break close on this push.</div>
+        <div class="item__note">/agents/logs/manager-publish-gate-2026-06-17.md · /agents/logs/qa-2026-06-17.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the Korea packet — the most regulator-facing piece we've run</div>
+        <div class="item__body">Every education ministry is currently deciding how hard to push AI into classrooms; Korea is the first to have mandated it by law and reversed by law, so the piece is a natural-experiment others will cite. Distribution leads with the <strong>return mechanism</strong>, not volume: the "two clocks" frame is the rare take a policy reader hasn't seen, which is what earns a forward and a second visit. EN + AR send copy, the IG aphorism tile ("the law can make a tool compulsory; it cannot make it trusted"), and the specific search bet — the precision long-tail and the near-empty <strong>Arabic</strong> field for this topic. One quiet engagement-list touch to the AI/edtech-policy segment. No invented numbers — Substack isn't live.</div>
+        <div class="item__note">/agents/growth/2026-06-17-korea-aidt-launch-packet.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the tashkeel-counts rule, banked with a check</div>
+        <div class="item__body">Today's near-miss became a durable production rule so it never recurs: <strong>capped frontmatter strings count Unicode code points</strong>, so a fully-voweled Arabic dek blows the 200-char cap at ~150 visible characters. The ruling — keep the body voweled, the dek lightly voweled; count code points before staging, both languages — ships with a copy-paste check for the pre-stage routine. Also closed the loop on the Korea recon: its source index is flipped to <strong>SHIPPED</strong>, the figure-fence kept as durable reference, INDEX updated.</div>
+        <div class="item__note">/agents/guidebook/2026-06-17-arabic-dek-character-cap-includes-tashkeel.md · INDEX (Korea → SHIPPED; Section 2 row added)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 19. The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 06-17 snapshot appended). The corpus added a row that matters: 14 = 14, a twelfth country, and <strong>Asia now at 3</strong> — the AI-governance cluster has its third national case.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-17</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">14</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">14</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 7 · Africa 3 · Asia 3 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 14 · access 11 · value of teachers 10 · AI-readiness 6 · language and heritage preservation 5</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-17</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>On deck.</h2>
+        <div class="day__date">next daily: 2026·06·18 Thu · weekly: 2026·06·21 Sun</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · sprint piece 5 — Egypt (Thu 06-18, per your calendar)</div>
+        <div class="item__body">The sprint plan puts <strong>Egypt — NPDA / Arabic literacy</strong> next, recon already banked (figure guardrails set, named voice Naglaa Ragheb). It's the Arabic heartland, so it's the first piece <strong>AR-led by the new Arabic Content Creator</strong>, with the Arabic Editor now verifying rather than composing — the role split that exists to hold parity at 1/day. Then <strong>Philippines MTB-MLE</strong> (Fri, curated note, language-of-instruction cluster) and <strong>Oman</strong> (Sat, only if its figure re-derives and a named operator lands — else swap a wave-2 piece). Today's run stayed at one fresh + its AR, the sprint's stated rhythm.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality · the sitemap integration now blocks the sprint, not just a ship</div>
+        <div class="item__body">Fourth consecutive hand-patch (now 33 URLs). At <strong>one piece a day for a week</strong> this bites every single day, and a hand-kept URL list is exactly the kind of drift that breaks under pace. Your sprint plan already names it as the Web Developer's task — ship <span class="mono">@astrojs/sitemap</span> so the URL set generates from the content collection. This should land before piece 6, not wait for the weekly.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · reciprocal rails — two clusters, fold into the buffer day</div>
+        <div class="item__body">Vietnam → Egypt/Sierra Leone/Bo and now Korea → Uruguay/Indonesia/Qatar both point outward without pointing back. The AI-governance triptych only pays off as a retention surface bidirectionally. Your calendar's 06-25/26 buffer is the right home for a single both-languages pass — no need to interrupt a ship day for it.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · Sunday 2026-06-21 (+ piece 8 if wave-2 banks)</div>
+        <div class="item__body">Carries: ratify the two sprint hires (the <strong>Arabic Content Creator looks worth keeping permanently</strong> — compose-vs-verify is a structural quality gain; CC2 likely reverts to standby post-surge); the <span class="mono">@astrojs/sitemap</span> swap; the caption-taxonomy decision; and the <strong>push-race working agreement</strong> — today is the <em>second</em> time a founder push landed mid-run and stranded assets (06-10, now 06-17). Worth a one-line protocol: when you intend a mid-run push, it's cleanest to push <em>only</em> non-<span class="mono">web/</span> setup, or ping the run, so a half-built piece never goes live. Make the agreement match how you actually work.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one copy-paste block</div>
+    <p>One block, <span class="mono">git add -A</span> — it <strong>completes today's Korea piece</strong> (the full gate-passed EN, plus the hero still and the AR companion your mid-run push left out), updates the sitemap to 33, and stages the day's paperwork. It also carries a later uncommitted edit of yours still in the tree — the sprint plan's <em>"after the ten"</em> wind-down note. <strong>This push fixes the live site:</strong> the Korea hero stops 404'ing and EN/AR parity is restored. (Your homepage covers are already live from <span class="mono">a7d40b6</span>.) Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-17: complete + correct South Korea AIDT reversal (EN+AR), Edition 02 sprint piece 4 — 'the textbook that stopped being one'. Adds the hero still + AR companion + full gate-passed EN (supersedes the early EN swept into a7d40b6 without its assets), fixing the live 404'd hero + EN-without-AR parity break. Statutory reclassification, classroom-led (Kim Cha-myung, Rest of World), mandate-vs-trust; un-parks the 06-12 candidate on its voice gate (closed 06-16). Build-verified clean, 33 pages, parity 14=14; still + sitemap in the same commit. Gate caught & fixed a real defect (EN+AR deks over the 200-char cap; tashkeel counts). Growth packet; guidebook: tashkeel/dek cap rule + Korea source index -> SHIPPED. Carries founder's sprint 'after the ten' note. Status + brief 19."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a> within ~90s. Worth a quick look once it lands: the Korea piece at <span class="mono">/articles/2026-06-17-korea-aidt-reversal/</span> — the hero still should now render (it was 404'ing) — and its Arabic companion at <span class="mono">/ar/articles/2026-06-17-korea-aidt-reversal/</span>.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·17</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

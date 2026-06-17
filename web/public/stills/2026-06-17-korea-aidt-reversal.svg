@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing for South Korea. On one ruled shelf stand two things drawn in ink: an open printed book and a portrait tablet whose screen still shows faint lines of text. A second gesture in kiln-orange — the law's redrawn definition of a textbook — loops up and over the book to enclose it, then turns back and closes on a small ring just before the tablet, leaving the screen a hair's breadth outside the bracket. A faint dashed orange remnant marks where the boundary once reached further. The tablet is whole and still lit; it has not been erased, only left outside the line.">
+
+  <title>The Still · South Korea — the line redrawn to leave one thing out</title>
+  <desc>One continuous calligraphic line in ink renders an open printed book and a lit tablet side by side on a single ruled shelf. A second gesture in kiln-orange — the only warm thing on the page — sweeps up from the shelf, arcs over the book to enclose it, and instead of also enclosing the tablet turns inward and closes on a small ring short of it; a faint dashed orange line marks the withdrawn reach. The tablet keeps its screen lines. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The shelf, the open book, the lit tablet.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE SHELF — a steady ruled edge under both objects. -->
+    <path stroke-width="2" stroke-opacity="0.42" d="
+      M 150 470 C 420 466 800 465 1052 470
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.22" stroke-dasharray="6 9" d="
+      M 184 484 C 450 480 820 480 1018 486
+    "/>
+
+    <!-- THE OPEN BOOK (left) — spine low at centre, pages fanning up. -->
+    <g stroke-width="3" stroke-opacity="0.9">
+      <!-- left page surface, rising from spine to outer top -->
+      <path d="M 375 322 C 312 308 258 302 212 300"/>
+      <!-- left outer edge down to the base -->
+      <path d="M 212 300 C 210 350 211 410 214 450"/>
+      <!-- left base back to the spine foot -->
+      <path d="M 214 450 C 280 454 330 454 375 452"/>
+      <!-- right page surface -->
+      <path d="M 375 322 C 438 308 492 302 538 300"/>
+      <!-- right outer edge down to the base -->
+      <path d="M 538 300 C 540 350 539 410 536 450"/>
+      <!-- right base back to the spine foot -->
+      <path d="M 536 450 C 470 454 420 454 375 452"/>
+      <!-- the central fold -->
+      <path stroke-width="2.4" stroke-opacity="0.8" d="M 375 322 L 375 452"/>
+    </g>
+
+    <!-- the page text — short faint lines on each leaf -->
+    <g stroke-width="1.8" stroke-opacity="0.4">
+      <path d="M 252 336 C 290 333 330 334 356 336"/>
+      <path d="M 250 358 C 290 355 330 356 356 358"/>
+      <path d="M 256 380 C 292 377 328 378 352 380"/>
+      <path d="M 396 336 C 430 333 470 334 502 336"/>
+      <path d="M 396 358 C 430 355 470 356 500 358"/>
+      <path d="M 398 380 C 430 377 466 378 496 380"/>
+    </g>
+
+    <!-- THE TABLET (right) — portrait, standing on the shelf, screen lit. -->
+    <g stroke-width="3" stroke-opacity="0.9">
+      <path d="
+        M 800 236
+        L 918 236 Q 936 236 936 254
+        L 936 434 Q 936 452 918 452
+        L 800 452 Q 782 452 782 434
+        L 782 254 Q 782 236 800 236 Z
+      "/>
+    </g>
+    <!-- screen inset -->
+    <g stroke-width="2" stroke-opacity="0.7">
+      <path d="
+        M 812 262 L 906 262 Q 918 262 918 274
+        L 918 410 Q 918 422 906 422 L 812 422
+        Q 800 422 800 410 L 800 274 Q 800 262 812 262 Z
+      "/>
+    </g>
+    <!-- camera dot + home indicator -->
+    <g stroke-width="2.4" stroke-opacity="0.55">
+      <path d="M 858 248 L 858.4 247.7"/>
+      <path d="M 842 440 C 852 439 866 439 876 440"/>
+    </g>
+    <!-- screen text — the lit content, faint lines of varying length -->
+    <g stroke-width="1.8" stroke-opacity="0.46">
+      <path d="M 818 292 C 850 290 884 291 900 292"/>
+      <path d="M 818 318 C 846 316 876 317 894 318"/>
+      <path d="M 818 344 C 852 342 888 343 902 344"/>
+      <path d="M 818 370 C 840 368 866 369 882 370"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The redrawn definition. One line loops to enclose the book
+    and closes on a small ring just before the tablet — the
+    boundary that turned away. The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the bracket: up the left of the book, over the top, down the right, turning in -->
+    <path stroke-width="3.6" stroke-opacity="0.95" d="
+      M 176 472
+      C 166 388 178 312 226 262
+      C 292 192 470 192 542 258
+      C 572 286 578 326 568 358
+    "/>
+    <!-- the lift-off at the start of the stroke, by the shelf -->
+    <path stroke-width="1.6" stroke-opacity="0.5" d="
+      M 166 484 C 169 480 172 476 176 472
+    "/>
+    <!-- the closing ring — small, at the bracket's end, short of the tablet -->
+    <path stroke-width="2.6" stroke-opacity="0.9" d="
+      M 568 358
+      C 562 343 577 333 589 340
+      C 601 347 598 366 585 370
+      C 575 373 567 367 568 358
+      Z
+    "/>
+    <!-- the withdrawn reach — a faint dashed remnant pointing toward the tablet, stopping short -->
+    <path stroke-width="0.9" stroke-opacity="0.28" stroke-dasharray="4 10" d="
+      M 602 354 C 664 348 716 349 754 353
+    "/>
+  </g>
+</svg>

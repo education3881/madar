@@ -44,3 +44,10 @@ Fill slots 8–10 with margin. Target spread (corpus is MENA-heavy): **1 LatAm**
 - **Editor throughput** is the structural ceiling at 1/day — watch for it; if the Editor saturates, that is the Sunday weekly's next expansion signal (a managing/second editor), not a reason to thin the filter.
 - **Bank yield** — 2 of 6 parked today; keep reconning ahead so a park never stalls a ship day.
 - **AR parity** under bilingual-simultaneous is the second-tightest lane; the Arabic Content Creator exists to hold it.
+
+## After the ten — wind down to the slow pace (founder, 2026-06-16)
+
+This sprint is a **temporary acceleration, not the new baseline.** Vini: *"Let's complete this cycle and we come back later to the old pace."* Once Edition 02 reaches 10 verified pieces:
+- **Revert to the slow, verifiable cadence** (the [[edu-website-throughput]] baseline — roughly 2–3 pieces/edition, monthly, plus curated notes). Do **not** carry 1/day forward as an expectation.
+- **The two sprint hires are a weekly-review decision.** The **Arabic Content Creator** is likely worth **keeping permanently** even at slow pace — the compose-vs-verify split is a structural quality gain, not just throughput. **Content Creator II** may revert to standby once the surge ends. The 06-21 weekly ratifies (or dissolves) both and records the reasoning.
+- **Standing frame going forward (rule #11):** the goal is *memorable* content and an ever-rising bar — so the slow pace is not a step down, it's the mode in which each piece can be made unforgettable. Use the reclaimed time to deepen sourcing, craft, and the guidebook, not to fill slots.

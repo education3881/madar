@@ -1,5 +1,7 @@
 # Source index — Korea's AI digital textbooks (AIDT), adoption → statutory reversal
 
+> **STATUS: SHIPPED 2026-06-17** (EN + AR, build-verified, 33 pages). The 2026-06-12 park's single un-park condition — one named operational voice — was met by the 2026-06-16 voice-recon (**Kim Cha-myung**, elementary teacher, Gwangmyeong; *Rest of World*, 15 Oct 2025). All load-bearing figures re-verified live at draft via web tools (MOE English primary, Korea Herald 4 Aug 2025, Korea Times 10 Jun 2025, Rest of World). Companion: `2026-06-16-korea-aidt-voice-gate-closed.md`. This index remains the durable figure-fence of record.
+
 **Banked:** 2026-06-11 · **For:** Issue 02 next-fresh candidate (brief: `/content-drafts/briefs/2026-06-11-korea-aidt-reversal-brief.md`)
 **Status of Test 1 at the index level:** spine corroborated across independent reputable press + ministry surfaces; **all figures press-tier only** — every number below is `[[TRACE]]` until primary-traced.
 
