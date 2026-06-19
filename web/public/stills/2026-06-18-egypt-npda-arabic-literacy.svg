@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing for Egypt. On the left, low to the ground, a loose scatter of small spoken sound-marks — ticks, dots and short curves — gathers and rises toward the right, where it resolves into one fully-formed written word standing upright on the same ground line. A second gesture in kiln-orange arcs from the spoken marks up and over and down into the written word: the bridge between the language a child speaks and the language she must read. A faint dashed ink arc beneath it traces the sounds in transit across the span. The distance reads as a thing that can be crossed, not a wall.">
+
+  <title>The Still · Egypt — the bridge from the spoken to the written</title>
+  <desc>One continuous line in ink renders a low, loose scatter of small spoken sound-marks at the left that gather and rise toward a single fully-formed written word at the right, both standing on one faint ground line. A second gesture in kiln-orange — the only warm thing on the page — arcs from the spoken marks up and over and lands in the written word: the bridge between speech and script. A faint dashed ink arc beneath the bridge marks the sounds crossing. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The two banks: scattered spoken sound-marks (left) that
+    gather and rise into one written word (right). One ground line.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE GROUND — a single steady line both banks stand on. -->
+    <path stroke-width="2" stroke-opacity="0.40" d="
+      M 150 474 C 430 470 800 469 1052 474
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.20" stroke-dasharray="6 9" d="
+      M 188 488 C 470 484 820 484 1016 490
+    "/>
+
+    <!-- THE SPOKEN MARKS (left, near bank) — ʿāmmiyya: small, loose,
+         scattered low, growing a touch taller as they move right and
+         begin to gather toward the bridge. -->
+    <g stroke-opacity="0.88">
+      <path stroke-width="2.6" d="M 180 466 C 183 458 189 456 194 462"/>     <!-- small curve -->
+      <path stroke-width="2.6" d="M 210 468 L 210 454"/>                      <!-- short tick -->
+      <path stroke-width="2.6" d="M 236 460 L 236.4 459.7"/>                  <!-- dot -->
+      <path stroke-width="2.6" d="M 256 466 C 261 456 268 456 273 464"/>     <!-- curve -->
+      <path stroke-width="2.8" d="M 292 468 L 293 449"/>                      <!-- taller tick -->
+      <path stroke-width="2.6" d="M 318 456 L 318.4 455.7"/>                  <!-- dot -->
+      <path stroke-width="2.8" d="M 338 464 C 344 452 352 452 358 462"/>     <!-- curve, rising -->
+      <path stroke-width="3.0" d="M 372 466 L 374 442"/>                      <!-- tallest tick, at the bridge's foot -->
+    </g>
+
+    <!-- THE WRITTEN WORD (right, far bank) — fuṣḥā: one resolved,
+         upright calligraphic form on the same ground line. -->
+    <g stroke-opacity="0.92">
+      <!-- flowing baseline of the word -->
+      <path stroke-width="3.2" d="M 806 430 C 858 438 956 438 1002 428"/>
+      <!-- first ascender (alif-like), tall and certain -->
+      <path stroke-width="3.2" d="M 846 432 C 845 392 845 356 848 344"/>
+      <!-- a tooth/hump mid-word -->
+      <path stroke-width="3.0" d="M 892 434 C 894 410 900 402 912 402 C 922 402 926 410 926 432"/>
+      <!-- terminal flourish, the word's closing turn -->
+      <path stroke-width="3.2" d="M 1002 428 C 1016 426 1022 438 1014 449 C 1008 456 997 455 992 448"/>
+    </g>
+    <!-- the word's diacritics — one mark above, two below -->
+    <g stroke-width="2.4" stroke-opacity="0.6">
+      <path d="M 874 326 C 882 322 892 322 900 326"/>            <!-- fatha-like stroke above -->
+      <path d="M 916 452 L 916.4 451.7"/>                        <!-- dot below -->
+      <path d="M 936 452 L 936.4 451.7"/>                        <!-- dot below -->
+    </g>
+
+    <!-- THE SOUNDS IN TRANSIT — a faint dashed arc beneath the bridge,
+         the spoken marks crossing toward the written word. -->
+    <path stroke-width="1.1" stroke-opacity="0.30" stroke-dasharray="3 11" d="
+      M 378 440 C 470 330 560 282 632 282 C 726 282 812 344 868 422
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The bridge. One line lifts from the spoken marks, arcs over,
+    and lands in the written word — built from the vernacular,
+    toward the page. The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the span: from the near bank up over the apex and down into the word -->
+    <path stroke-width="3.6" stroke-opacity="0.95" d="
+      M 308 452
+      C 384 300 500 232 612 232
+      C 724 232 818 300 884 424
+    "/>
+    <!-- the lift-off at the start, rising out of the spoken marks -->
+    <path stroke-width="1.6" stroke-opacity="0.5" d="
+      M 380 440 C 360 446 330 450 308 452
+    "/>
+    <!-- two slender footings under the span — enough to read as a bridge, not an arc -->
+    <path stroke-width="1.3" stroke-opacity="0.42" d="M 470 286 L 470 470"/>
+    <path stroke-width="1.3" stroke-opacity="0.42" d="M 754 286 L 754 470"/>
+    <!-- the landing — a small resolution where the bridge enters the word -->
+    <path stroke-width="2.6" stroke-opacity="0.9" d="
+      M 884 424
+      C 876 412 884 400 896 401
+      C 906 402 909 414 902 421
+    "/>
+  </g>
+</svg>

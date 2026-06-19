@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://education3881.github.io/madar/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/"/>
   </url>
   <url>
     <loc>https://education3881.github.io/madar/ar/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/"/>
@@ -20,14 +20,14 @@
   </url>
   <url>
     <loc>https://education3881.github.io/madar/editions/</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/editions/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/editions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/editions/"/>
   </url>
   <url>
     <loc>https://education3881.github.io/madar/ar/editions/</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/editions/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/editions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/editions/"/>
@@ -227,5 +227,33 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-17-korea-aidt-reversal/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-17-korea-aidt-reversal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-17-korea-aidt-reversal/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/articles/2026-06-18-egypt-npda-arabic-literacy/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/ar/articles/2026-06-18-egypt-npda-arabic-literacy/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-18-egypt-npda-arabic-literacy/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/articles/2026-06-19-philippines-mtb-mle-reversal/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
+  </url>
+  <url>
+    <loc>https://education3881.github.io/madar/ar/articles/2026-06-19-philippines-mtb-mle-reversal/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://education3881.github.io/madar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://education3881.github.io/madar/ar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://education3881.github.io/madar/articles/2026-06-19-philippines-mtb-mle-reversal/"/>
   </url>
 </urlset>

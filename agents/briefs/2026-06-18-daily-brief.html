@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-18</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 18 June 2026. Egypt shipped end to end (EN + AR, build-verified, 35 pages, parity 15=15) — the diglossia reading-crisis at national scale, built on the measured-vs-announced discipline; the new Arabic compose/verify split ran for the first time; and the five-times-flagged sitemap finally has a recipe and a date rather than another flag." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 18 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 20</div>
+    <h1>Egypt, end to end — the number that was measured, beside the number that was announced.</h1>
+    <p class="dek">Sprint piece five is live in both languages: <strong>"The gap the size of a country"</strong> — Egypt's national answer to the same spoken-vs-written-Arabic gap our Ras al-Khaimah piece measured at emirate scale, now at a hundred million speakers. The spine is a discipline, not a result: the one figure an outside evaluator <em>checked</em> (180,000 students, +17%) set beside the figures the programme <em>announced</em> (half a million, then 1.3 million) — and the refusal to add them. It closes a loop we opened ourselves on the tenth. A clean run start to finish: state verified, no mid-run drama, build green at <strong>35 pages, parity 15 = 15</strong>, and the new Arabic compose/verify split ran for the first time exactly as designed.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Korea landed clean — and the push you ran completed it.</h2>
+        <div class="day__date">2026·06·17 · commit 555f586</div>
+      </div>
+    </header>
+
+    <div class="flag">
+      <div class="kicker">State verified before any plan — and no gap to name</div>
+      <p>I opened on <span class="mono">555f586</span> — your 06-17 push — with local <span class="mono">HEAD</span> equal to <span class="mono">origin/main</span> and a clean tree. Yesterday's run shipped Korea whole (the full gate-passed EN, the hero still, the Arabic companion) and your push <strong>fixed the live site</strong>: the Korea hero stopped 404'ing and EN/AR parity was restored. No missed day, nothing stranded, no mid-run founder push today. Unlike the tenth and the seventeenth, today's run had a quiet runway — which is the right backdrop for the Arabic-heartland piece. I re-checked <span class="mono">origin/main</span> again right before staging (the push-race habit): unmoved.</p>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Egypt shipped whole — and the split that holds Arabic parity ran for real.</h2>
+        <div class="day__date">2026·06·18 · Thursday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · shipped — "The gap the size of a country" (EN + AR)</div>
+        <div class="item__body">Egypt's National Programme for Developing Arabic Language Skills — a sixty-hour remedial course — is the national-scale answer to the diglossia gap: every Arabic-speaking child must learn to read <em>fuṣḥā</em>, a form no one speaks at home. What earns the piece its place is not the programme but the <strong>measurement</strong>. UNICEF's Innocenti office embedded a quasi-experimental study and reported a defensible, modest result — <strong>180,000 students, 980 schools, +17% literacy vs non-participants, single-letter illiteracy down from a third to under 2%</strong>. The piece sets that measured number against the much larger <em>announced</em> ones (half a million, then 1.3 million across 27 governorates) and refuses to add them — <strong>"a category error… it sums a number that survived an outside test with numbers that have not yet faced one."</strong> It closes the open question our 06-10 Iqra piece left in print (Egypt had "no equivalently evaluated national fix") and anchors the language-of-instruction cluster: Iqra ↔ Kuwait ↔ Egypt.</div>
+        <div class="item__note">Sprint piece 5 of 10 · Editor 5-test PASS + Arabic-Editor sign-off on record · named voice channel-attributed in print (Naglaa Ragheb, UNICEF feature — "the programme's testimony, not independent reporting") · the unverified Minister quote from recon was <strong>cut, not restored</strong> · figures re-verified live (Innocenti, UNICEF Egypt, MoETE, Egypt Today, World Bank)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the Arabic compose/verify split ran for the first time</div>
+        <div class="item__body">This is the Arabic heartland, so it was the first true test of the sprint's new role design: the <strong>Arabic Content Creator composed</strong> the AR natively (not translated), and the <strong>Arabic Editor verified only</strong> — names, register, the non-deficit frame — rather than composing and grading its own work. It held: the AR reads as native Arabic on a subject that <em>is</em> Arabic, and parity stayed at 1/day without the bottleneck the single Arabic seat used to be. This is the strongest evidence yet that the Arabic Content Creator is a keep-permanently hire (a 06-21 weekly call).</div>
+        <div class="item__note">/content-drafts/verdicts/ar/2026-06-18-egypt-npda-arabic-literacy.md · transliterations verified (نجلاء راغب, فيروز)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build green, and the sitemap finally has a recipe instead of a flag</div>
+        <div class="item__body">Real <span class="mono">astro build</span> via the tmpfs route: <strong>exit 0, 35 pages, parity 15 = 15</strong>, both Egypt pages generated, hero still in <span class="mono">dist/stills/</span>, related rail resolves (Iqra/Kuwait/Sierra Leone), wordmark inlined, deks under the code-point cap. The sitemap was hand-patched to 35 — but this is the <strong>fifth</strong> hand-patch, so I stopped flagging it and <strong>wrote the fix</strong>: a scoped <span class="mono">@astrojs/sitemap</span> integration memo with the exact i18n config (the wrinkle is preserving our per-URL hreflang alternates, which a naïve drop-in would lose), a verification checklist, and a fallback — scheduled for the 06-25/26 buffer, off the daily-ship critical path on purpose.</div>
+        <div class="item__note">/agents/logs/qa-2026-06-18.md · /agents/logs/manager-publish-gate-2026-06-18.md · /agents/memos/2026-06-18-astrojs-sitemap-integration-recipe.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the Arabic-first thesis gets its clearest case</div>
+        <div class="item__body">Every prior piece argued the AR companion is a primary surface, not an echo. This one <em>is</em> the argument: natively Arabic subject, composed in Arabic, for an Arabic-reading policy audience, on near-empty honest search ground. The packet leads the <strong>Arabic</strong> hook and copy (not the EN), targets the MENA foundational-literacy engagement segment — a different segment than Korea's AI-policy one, so no fatigue — and names the search bet (the open Arabic field for النبذة القومية / الازدواجية اللغوية). IG tile: the closing aphorism, both languages, no figures. No invented numbers — Substack isn't live.</div>
+        <div class="item__note">/agents/growth/2026-06-18-egypt-npda-launch-packet.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the measured-vs-announced rule, banked as ruling #9</div>
+        <div class="item__body">Today's spine became a durable, transferable discipline so the next government-flagship piece starts ahead: <strong>when one programme reports its scale through several bodies (an independent evaluator, its own comms, the government), they are different currencies — lead with the measured one, label the rest "programme-reported," and never sum across the seam.</strong> Companion sub-rule: <strong>date recirculated baselines</strong> (Egypt's "six-in-ten cannot read" is pre-programme learning-poverty data, not a 2025 result). It's the third dimension of the existing "a program name is not a citation" rule.</div>
+        <div class="item__note">/agents/guidebook/2026-06-18-measured-vs-announced-and-dating-recirculated-baselines.md · INDEX §2 + §3 ruling 9</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 20. The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 06-18 snapshot appended). Egypt is a <em>second</em> Egypt piece, so the honest read is: country count holds at <strong>12</strong> (no inflation), MENA rises to 8, and this ISO week reaches <strong>3</strong> pieces — the sprint's 1/day rhythm, visible in the cadence line.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-18</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">15</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">15</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">12</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 8 · Africa 3 · Asia 3 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 15 · access 12 · value of teachers 11 · AI-readiness 6 · language and heritage preservation 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 3</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-18</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>On deck.</h2>
+        <div class="day__date">next daily: 2026·06·19 Fri · weekly: 2026·06·21 Sun</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · sprint piece 6 — Philippines (Fri 06-19, per the calendar)</div>
+        <div class="item__body">The plan puts <strong>Philippines MTB-MLE</strong> next — the mother-tongue-based instruction reversal, a curated note recon-banked as "ready" on an expert-tier voice. It extends today's <strong>language-of-instruction cluster</strong> (now Egypt + Iqra + Kuwait) with a non-MENA case, and the recon flagged it for a second editorial read on sensitivity — so it routes to <strong>Content Creator II</strong> (the non-MENA/reversal lean) with the Editor's sensitivity pass built in. Oman (Sat) remains conditional on its figure re-derive and a named operator; if neither closes, a wave-2 piece swaps in.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality · sitemap integration — scheduled, not flagged</div>
+        <div class="item__body">The recipe is written and dated (06-25/26 buffer or any clean Web-Dev checkout). It deliberately does <em>not</em> land on a ship day: preserving our hreflang alternates needs verification against a production build, and a daily ship can't safely host a sitemap regression. Until then the hand-patch stays correct and parity-validated each gate. This is the honest sequencing — the fix is real and owned, just not rushed onto the critical path.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · reciprocal rails — the language-of-instruction cluster now needs its back-links</div>
+        <div class="item__body">Egypt → Iqra/Kuwait/Sierra Leone points outward; Iqra and Kuwait don't yet point back to Egypt. Same one-directional state as the AI-governance triptych. The 06-25/26 buffer is the right home for a single both-languages reciprocal pass across both clusters at once — no need to interrupt a ship day.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Weekly · Sunday 2026-06-21 (+ piece 8 if wave-2 banks)</div>
+        <div class="item__body">Carries: ratify the two sprint hires — today is strong evidence the <strong>Arabic Content Creator is a keep-permanently call</strong> (the compose/verify split visibly held on the hardest AR piece); the <span class="mono">@astrojs/sitemap</span> swap (now with a recipe); the caption-taxonomy decision; the push-race working agreement; and a wave-2 recon check so a parked candidate never stalls a ship day (Oman still conditional).</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one copy-paste block</div>
+    <p>One block, <span class="mono">git add -A</span> — it ships today's Egypt piece in both languages (EN + AR), the hero still, the sitemap at 35 URLs, and the day's paperwork (verdicts, gate, QA, growth, guidebook ruling #9, the sitemap memo). Build-verified clean before staging; <span class="mono">origin/main</span> re-checked right before this block (unmoved). Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-18: Egypt NPDA / Arabic literacy (EN+AR), Edition 02 sprint piece 5 — 'The gap the size of a country'. The diglossia reading-crisis at national scale; the measured (Innocenti 180k/+17%) vs announced (half-million->1.38m) discipline as the spine; non-deficit frame; named voice channel-attributed (Naglaa Ragheb), unverified minister quote cut. Build-verified clean, 35 pages, parity 15=15; hero still + sitemap (35 urls) in the same commit. First piece on the Arabic compose/verify split. Editor+AR verdicts, gate, QA on record; growth packet (Arabic-first); guidebook ruling #9 (measured-vs-announced + dating recirculated baselines); sitemap-integration recipe memo for the buffer. Status + brief 20."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a> within ~90s. Worth a look once it lands: the Egypt piece at <span class="mono">/articles/2026-06-18-egypt-npda-arabic-literacy/</span> and its Arabic companion at <span class="mono">/ar/articles/2026-06-18-egypt-npda-arabic-literacy/</span> — the AR is the lead surface for this one.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·18</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

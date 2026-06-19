@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing for the Philippines. An archipelago of many small, distinct ink marks — ticks, dots and short curves — is scattered across the field, each one a home language. A single continuous ink line threads among them from the left, undulating like a current, and gathers on the right into two firm parallel upright strokes standing on one faint horizon: the two languages now required in the early grades. Just off that new path stands a single mark in kiln-orange, joined to it only by a short broken line — the mother tongue, now optional: neither erased nor drawn in, still present on the page.">
+
+  <title>The Still · Philippines — many tongues, two required, one made optional</title>
+  <desc>One continuous line in ink threads through an archipelago of many small scattered marks — the country's many home languages — and resolves on the right into two firm parallel upright strokes standing on a faint horizon: the two languages now required from kindergarten to Grade 3. A single mark in kiln-orange, the only warm thing on the page, sits just off that resolved path, tied to it by a short dashed line that does not quite reach: the mother tongue, made optional — present but no longer on the path. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The archipelago of home languages (scattered marks), the
+    threading current (one continuous line), and the two firm
+    strokes it resolves into (the required languages).
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE HORIZON — a single faint line the whole scene sits on (the sea). -->
+    <path stroke-width="2" stroke-opacity="0.38" d="
+      M 150 478 C 470 474 800 474 1050 479
+    "/>
+    <path stroke-width="0.8" stroke-opacity="0.18" stroke-dasharray="6 9" d="
+      M 196 492 C 500 489 820 489 1010 495
+    "/>
+
+    <!-- THE ARCHIPELAGO — many small home-language marks, scattered,
+         each distinct: ticks, dots, short curves above the horizon. -->
+    <g stroke-opacity="0.86">
+      <path stroke-width="2.6" d="M 178 372 C 182 363 189 363 194 371"/>   <!-- curve -->
+      <path stroke-width="2.6" d="M 220 366 L 220 350"/>                    <!-- tick -->
+      <path stroke-width="2.6" d="M 258 392 L 258.4 391.7"/>               <!-- dot -->
+      <path stroke-width="2.6" d="M 296 360 C 301 350 309 350 314 360"/>   <!-- curve -->
+      <path stroke-width="2.6" d="M 340 374 L 340 358"/>                    <!-- tick -->
+      <path stroke-width="2.6" d="M 382 346 L 382.4 345.7"/>               <!-- dot -->
+      <path stroke-width="2.7" d="M 420 354 C 425 343 433 343 439 354"/>   <!-- curve -->
+      <path stroke-width="2.6" d="M 466 372 L 466 354"/>                    <!-- tick -->
+      <path stroke-width="2.6" d="M 506 330 L 506.4 329.7"/>               <!-- dot -->
+      <path stroke-width="2.7" d="M 548 386 C 553 376 561 376 566 386"/>   <!-- curve -->
+      <path stroke-width="2.6" d="M 592 360 L 592 343"/>                    <!-- tick -->
+      <path stroke-width="2.6" d="M 634 374 L 634.4 373.7"/>               <!-- dot -->
+      <path stroke-width="2.7" d="M 676 332 C 681 322 689 322 695 332"/>   <!-- curve -->
+      <path stroke-width="2.6" d="M 722 366 L 722 349"/>                    <!-- tick -->
+      <path stroke-width="2.6" d="M 766 348 L 766.4 347.7"/>               <!-- dot -->
+      <path stroke-width="2.7" d="M 806 380 C 811 370 819 370 824 380"/>   <!-- curve -->
+    </g>
+
+    <!-- THE THREADING CURRENT — one continuous line moving through the
+         archipelago, left to right, gathering toward the far bank. -->
+    <path stroke-width="2.2" stroke-opacity="0.55" d="
+      M 162 372
+      C 230 350 280 332 345 350
+      C 410 368 456 372 520 350
+      C 585 328 632 322 696 343
+      C 760 364 816 360 868 393
+      C 892 408 906 436 916 470
+    "/>
+
+    <!-- THE TWO FIRM STROKES (far bank) — the two languages now required,
+         upright and certain, standing on the horizon. -->
+    <g stroke-opacity="0.93">
+      <path stroke-width="3.4" d="M 922 470 C 920 404 920 336 925 300"/>   <!-- first, firm -->
+      <path stroke-width="3.4" d="M 968 471 C 966 396 966 320 971 284"/>   <!-- second, a touch taller -->
+      <!-- a small foot where the current resolves into the two strokes -->
+      <path stroke-width="2.4" stroke-opacity="0.7" d="M 905 468 C 920 462 952 462 974 469"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The mother tongue, made optional: one mark in the same glyph
+    vocabulary as the archipelago, set just off the resolved path,
+    tied to it by a short broken line that does not quite reach.
+    The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the optional mark — an island-curve and its dot, like the others but warm -->
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 1006 330 C 1012 318 1023 318 1029 330"/>
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 1017 350 L 1017.4 349.7"/>
+
+    <!-- the broken tie — optional: it reaches from the required strokes toward
+         the mark but stops short, neither joined nor severed. -->
+    <path stroke-width="1.6" stroke-opacity="0.6" stroke-dasharray="3 10" d="
+      M 980 312 C 994 318 1000 322 1006 328
+    "/>
+  </g>
+</svg>

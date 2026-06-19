@@ -1,6 +1,6 @@
 # SOURCE INDEX — Philippines: the mother-tongue (MTB-MLE) reversal
 
-**Compiled:** 2026-06-16 · **Status: PROCEED — as a clearly-labelled curated/explainer note** (upgrade to original if a classroom teacher is sourced). · **Region: Asia (spread).**
+**Compiled:** 2026-06-16 · **Status: SHIPPED 2026-06-19** (EN+AR, build-verified, 37 pages) — as a clearly-labelled curated/explainer note; statute triangulated and all figures re-verified live at draft (LawPhil + SC e-library + Rappler; OECD PISA; World Bank learning-poverty brief). **Arzadon dropped** (specific statement unverified live; the one direct quote is the collective teachers'-group line). **Upgrade path open:** original reporting if a named serving K–3 teacher/school head is landed (buffer / wave-2). · **Region: Asia (spread).**
 **Second-editorial-read flag:** genuinely contested language-of-instruction politics — frame as a policy dispute, not a verdict.
 **Subject:** The Philippines has legally dismantled its flagship mother-tongue-based multilingual education (MTB-MLE) policy — a contested reversal that rhymes with Madār's language-of-instruction thread (Arabic diglossia) and with the Korea policy-reversal frame.
 
