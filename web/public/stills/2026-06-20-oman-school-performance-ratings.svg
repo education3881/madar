@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing for Oman. A single faint horizontal rule runs the width of the page like a published list. Standing on it is a row of upright ink strokes that step down in measured stages from a tall, firm stroke on the left to a short one on the right — a scale of grades made visible, from the highest band down to the lowest. One continuous fine line links the tops of the strokes, descending from upper-left to lower-right. The shortest, lowest stroke, alone, is drawn in kiln-orange, with a small mark set beside it: the one school named at the bottom of the scale — set apart by being named rather than erased.">
+
+  <title>The Still · Oman — a public scale of grades, and the one named at its foot</title>
+  <desc>A single faint horizontal rule crosses the page like a published list. On it stand seven upright ink strokes that descend in even steps, tallest on the left to shortest on the right — a grading scale made visible, top band to bottom. A continuous fine line traces their descending tops. The lowest stroke is rendered in kiln-orange, the only warm thing on the page, with a small horizontal mark beside it like a name attached: the single school placed at the foot of the scale, named rather than erased. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The published list (one horizontal rule), the descending scale
+    of grades (a row of upright strokes stepping down), and the one
+    continuous line that traces their falling tops.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE PUBLISHED LIST — a single faint rule the whole scale stands on. -->
+    <path stroke-width="2" stroke-opacity="0.38" d="M 150 470 C 470 466 800 466 1050 471"/>
+    <path stroke-width="0.8" stroke-opacity="0.16" stroke-dasharray="6 9" d="M 196 484 C 500 481 820 481 1010 487"/>
+
+    <!-- a few faint ticks along the rule — entries on the list -->
+    <g stroke-width="1.4" stroke-opacity="0.18">
+      <path d="M 300 470 L 300 462"/>
+      <path d="M 466 470 L 466 462"/>
+      <path d="M 682 470 L 682 462"/>
+      <path d="M 844 470 L 844 462"/>
+    </g>
+
+    <!-- THE DESCENDING SCALE — upright strokes stepping down in even
+         stages, the highest band on the left to the lowest on the right. -->
+    <g stroke-opacity="0.9">
+      <path stroke-width="3.4" d="M 250 470 C 248 360 248 250 252 150"/>   <!-- outstanding, tall and firm -->
+      <path stroke-width="3.2" d="M 358 470 C 356 372 356 282 360 198"/>
+      <path stroke-width="3.1" d="M 466 470 C 464 384 464 310 468 246"/>
+      <path stroke-width="3.0" d="M 574 470 C 572 398 572 340 576 294"/>
+      <path stroke-width="2.9" d="M 682 470 C 680 414 680 372 684 342"/>
+      <path stroke-width="2.8" d="M 790 470 C 788 430 788 406 792 390"/>
+    </g>
+
+    <!-- THE CONTINUOUS CONTOUR — one line tracing the falling tops,
+         upper-left down to the foot of the scale. -->
+    <path stroke-width="2.2" stroke-opacity="0.5" d="
+      M 252 150
+      C 305 168 330 182 360 198
+      C 414 226 440 232 468 246
+      C 520 272 548 280 576 294
+      C 628 320 656 326 684 342
+      C 730 366 760 374 792 390
+      C 828 408 858 420 894 430
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The school named at the bottom of the scale: the lowest, shortest
+    stroke, with a small horizontal mark beside it — a name attached.
+    The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the lowest stroke — the named school, at the foot of the scale -->
+    <path stroke-width="3.4" stroke-opacity="0.96" d="M 898 470 C 896 452 896 440 900 430"/>
+
+    <!-- the name attached — a short horizontal mark set beside it -->
+    <path stroke-width="2.6" stroke-opacity="0.9" d="M 912 436 L 950 434"/>
+    <path stroke-width="2.4" stroke-opacity="0.55" d="M 912 446 L 940 444.5"/>
+  </g>
+</svg>

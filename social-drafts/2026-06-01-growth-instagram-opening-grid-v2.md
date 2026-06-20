@@ -117,7 +117,7 @@ Pieces deliberately **not** in the opening grid: Kuwait CCET, Indonesia Permen 1
 
 **Caption (EN, 175 chars):**
 
-> Madār is an editorial publication on early childhood and K-12 education, in two languages. Slow cadence — two to three pieces an issue, one issue a month.
+> Madār is an editorial publication on early childhood and K-12 education, in two languages. Slow cadence — two to three pieces an edition, one edition a month.
 >
 > education3881.github.io/madar/
 
@@ -217,7 +217,7 @@ Used across the grid above, organised so the Editor can audit at a glance:
 
 By the end of Week 3, the grid reads as designed when a visitor lands on the profile.
 
-After Week 3, cadence drops to **two posts per week** (Tuesday + Friday, 09:00 GST) and Growth proposes posts piece-by-piece against the catalogue and the next Issue's contents.
+After Week 3, cadence drops to **two posts per week** (Tuesday + Friday, 09:00 GST) and Growth proposes posts piece-by-piece against the catalogue and the next Edition's contents.
 
 ---
 

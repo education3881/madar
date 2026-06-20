@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-20</title>
+<meta name="description" content="Manager → Founder daily brief for Saturday 20 June 2026. Oman shipped end to end (EN + AR) — sprint piece 7 of 10: an Ofsted-style inspectorate that posts school verdicts by name, embraced at the moment England retreats from the single public grade. Yesterday's two-day push fired; the site is current. The conditional slot closed honestly — the disputed band tally withheld, the voice gap stated in print." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Saturday · 20 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 22</div>
+    <h1>Oman publishes its verdicts — as the model it copied backs away.</h1>
+    <p class="dek">Sprint piece seven is live in both languages: <strong>"The verdict, made public"</strong> — Oman has stood up an Ofsted-style inspectorate and begun posting school grades by name, including one government school placed at the very bottom of the scale. The discipline that earns it: Oman embraces the single public verdict at the exact moment <strong>England, its model, is retreating from it</strong> (one-word judgements scrapped in 2024), and where the second-hand tally of grade bands won't add up, we publish only what the portal shows and <strong>say so in print</strong>. Clean day: <strong>yesterday's two-day push fired</strong>, so Egypt and the Philippines are committed and deploying. The one thing for you is the usual one — today's push.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The two-day push fired — Egypt and the Philippines landed.</h2>
+        <div class="day__date">2026·06·19 → pushed · local HEAD = origin/main at 7259468</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">State · the lag closed, no gap to report</div>
+        <div class="item__body">The thing that needed your eye yesterday — the 06-18 push that never fired — is resolved: you ran the two-day block, and <span class="mono">origin/main</span> now sits at <span class="mono">7259468</span>, carrying both the Egypt NPDA and Philippines MTB-MLE pieces (EN + AR each), both hero stills, and the sitemap at 37. GitHub Actions deploys on push, so the live site moved from 33 to 37 pages. <strong>No missed day</strong>: 06-18 folded into 06-19's push, 06-19 ran, today ran. One honest caveat on method: I verify "current" from <span class="mono">git</span> (HEAD = origin, tree clean) rather than by fetching the live URL — the sandbox's egress wall blocks <span class="mono">education3881.github.io</span>, so I confirm the push landed and trust Actions, I don't curl the page. Flagging the inference, not hiding it.</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Oman shipped — and the conditional slot closed on honest terms.</h2>
+        <div class="day__date">2026·06·20 · Saturday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · shipped — "The verdict, made public" (EN + AR)</div>
+        <div class="item__body">Oman has built a national, external, standards-based school inspectorate (the OAAAQA system, rooted in the 2023 School Education Law and Vision 2040; launched Dec 2024, first public per-school results Jan 2026) and begun publishing verdicts on a public portal — <strong>including naming one government school at the bottom band, "needs rapid intervention"</strong> (al-Hassan bin Hashim, Seeb). That public naming of a failing government school is rare across the Gulf. The piece's elevation is the timing: Oman embraces the single public verdict <strong>just as its model, England's Ofsted, retreats from it</strong> — one-word judgements scrapped in September 2024 after a coroner found an inspection had contributed to a head teacher's death. The honest object isn't a grade on Oman; it's the fork every inspectorate faces — <em>does naming a school come with the means to mend it?</em></div>
+        <div class="item__note">Sprint piece 7 of 10 · the calendar's CONDITIONAL slot — it did <strong>not</strong> slip and was <strong>not</strong> forced: it closed via <strong>route 2</strong> (the source index's pre-sanctioned systems/transparency framing) · Editor 5-test PASS + Arabic-Editor sign-off · two sensitivities handled with care (a named failing school carried strictly as already-public fact; the Ruth Perry death as one sober, non-graphic sentence)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the figure gate closed by <em>subtraction</em> — ruling #11</div>
+        <div class="item__body">The recon banked Oman with the figure gate OPEN — the press band-tally (44 suitable / 3 good / 11 unsuitable / 1 rapid) <strong>sums to 59, not 58</strong>, and the OAAAQA portal that would settle it is unreachable from the sandbox. So that tally <strong>does not run</strong>. The piece publishes only the triangulated subset — the 58-school first-phase reach and the single named bottom-band school — and states the withholding in print: <em>"it would be a poor tribute to round the figures."</em> On a story whose whole merit is that a state showed its work, refusing to guess a number is the credibility signal, not a gap.</div>
+        <div class="item__note">/content-drafts/verdicts/2026-06-20-oman-school-performance-ratings.md · /content-drafts/verdicts/ar/…</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build green — defect caught and fixed</div>
+        <div class="item__body">Real <span class="mono">astro build</span> via the tmpfs route, exit 0. The schema check did its job: the <strong>EN dek came in at 211 code points</strong> (cap 200) → trimmed to 184; AR dek 152, both verified by code-point count (tashkeel included). Brand chrome clean — wordmark inline <span class="mono">&lt;svg&gt;</span>, hero still via <span class="mono">&lt;img&gt;</span> on the right <span class="mono">/madar/</span> base, identical to Korea + Bahrain (no regression). Related rails resolve (Bahrain BQA + Korea AIDT). Parity <strong>17 = 17</strong>; sitemap hand-patched to <strong>39 URLs</strong> (well-formed). Honest note: the full 39-page clean <em>exit</em> is wall-clock-bound by the 45s sandbox cap, so I verified Oman on a reduced-collection build (exit 0) after a cold run proved 30 corpus pages generate clean — content is sound; the integration fix stays buffer-scheduled (7th hand-patch).</div>
+        <div class="item__note">/agents/logs/qa-2026-06-20.md · /agents/logs/manager-publish-gate-2026-06-20.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · a third cluster opens — GCC public-accountability</div>
+        <div class="item__body">Oman pairs naturally with <strong>Bahrain</strong> (06-26 of Issue 01, which grades its schools by name): two Gulf states doing the same rare thing — publishing school verdicts the public can read by name. That's a new reading path alongside language-of-instruction and AI-governance, and a return-rate play (a reader who arrived on Bahrain now has a two-stop Gulf path). Today is Saturday, so <strong>no opening-grid IG slot</strong> — the Oman aphorism card is queued for Monday rather than posted off-cadence. Discoverability call: <strong>AR-first indexing</strong> (the Arabic field — Atheer, Oman Daily — is deeper than the EN one here), plus the niche EN long-tail that connects Oman to the Ofsted retreat. No invented numbers — Substack isn't live.</div>
+        <div class="item__note">/agents/growth/2026-06-20-oman-school-ratings-launch-packet.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #11 + two reusable frames</div>
+        <div class="item__body"><strong>Ruling #11 — the publishable-subset rule:</strong> when the primary surface is unreachable <em>and</em> the second-hand tallies don't reconcile, publish only the subset you can read, and say what you withheld — the fifth dimension of figure discipline (#4 read-it-right · #9 currency · #10 right-instrument · <strong>#11 publish-what-you-can-read</strong>). Two companion frames banked the same note: the <strong>adopt-as-the-model-retreats</strong> check (when a country imports another's instrument, ask what the source is doing with it <em>now</em>), and the <strong>route-2 conditional-closure</strong> pattern (how a candidate banked figure-OPEN + voice-GAP ships honestly). INDEX updated across §1/§2/§3; the Oman source index is now marked SHIPPED.</div>
+        <div class="item__note">/agents/guidebook/2026-06-20-publish-what-you-can-read.md · INDEX §1 (Oman row) + §2 + §3 ruling 11</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 22. The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 06-20 snapshot appended). Oman is a new country, so the honest read: country count rises to <strong>14</strong>, MENA to <strong>9</strong>, parity holds at <strong>100%</strong> (17 = 17), and ISO week 25 reaches <strong>5</strong> pieces — the sprint's 1/day rhythm, visible in the cadence line. Counts reflect what's on disk and about to ship; the live site catches up the moment the push fires.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-20</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">17</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">17</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">14</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 9 · Asia 4 · Africa 3 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 17 · access 14 · value of teachers 13 · language and heritage preservation 7 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-20</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Sunday is the weekly — and the sprint enters its last third.</h2>
+        <div class="day__date">weekly: 2026·06·21 Sun 09:00 · next daily: 2026·06·22 Mon</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Weekly · 2026-06-21 — ratify, then resource pieces 8–10</div>
+        <div class="item__body">The Sunday review's agenda is set: <strong>ratify the sprint hires</strong> (the Arabic Content Creator's keep-permanently case is now <strong>three</strong> clean bilingual pieces — Egypt, Philippines, Oman; CC II's surge role is the open question); the <strong>push-cadence</strong> question still stands even though today's push was clean (the pattern matters once Search Console and Substack bind to live URLs); the <span class="mono">@astrojs/sitemap</span> swap (now the 7th hand-patch); the new <strong>GCC-accountability cluster</strong> and reciprocal rails; caption taxonomy.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · wave-2 recon is the gating risk for 8–10</div>
+        <div class="item__body">Three pieces remain (8, 9, 10) across Mon–Wed with a buffer. The bank needs depth, and I did preliminary recon today to seed it: <strong>Brazil — Compromisso Nacional Criança Alfabetizada</strong> (literacy hit 59.2% by end of 2nd grade in 2024, +3.2pts; strong instrument and measured figure, but no named classroom voice surfaced yet — a LatAm rebalancer) and <strong>Kenya — CBC/CBE Grade 9 transition</strong> (live, contested, and unusually rich in <em>named</em> operator voices — principals and the TSC on record — an Africa-beyond-Sierra-Leone candidate). Both go to the Researcher to bank to commission-ready (gates pre-closed) so a park never stalls a ship day. Either could be piece 8.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality · buffer (06-25/26) — unchanged</div>
+        <div class="item__body">The <span class="mono">@astrojs/sitemap</span> integration (with a production hreflang check), a full-corpus clean-exit build to refresh the canonical page count, and the reciprocal back-links for all three clusters — language-of-instruction, AI-governance, and now <strong>GCC-accountability (Bahrain ⇄ Oman)</strong> — land together in the buffer sweep.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — one block, one ship-day</div>
+    <p>This <span class="mono">git add -A</span> lands the Oman piece (EN + AR), its hero still, the sitemap at 39 URLs, and the day's paperwork (Editor + Arabic-Editor verdicts, publish gate, QA, growth packet, guidebook ruling #11, the brief). Gate-GREEN and build-verified; <span class="mono">origin/main</span> re-checked right before this block (unmoved at 7259468). Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-20: Edition 02 sprint piece 7 — Oman school-performance ratings (EN+AR), 'The verdict, made public'. OAAAQA Ofsted-style external inspectorate; public per-school verdicts incl. one government school named at the bottom band (al-Hassan bin Hashim, Seeb); framed by the Ofsted single-verdict retreat (one-word judgements scrapped Sep 2024, Perry). Banked CONDITIONAL, closed via route 2: band-tally withheld (secondary 44/3/11/1=59!=58, portal unreachable -> guidebook ruling #11) + operator-voice gap stated in-piece. Build-verified (dek defect caught 211->184); parity 17=17; hero still + sitemap (39 urls) in this commit. Editor+AR verdicts, publish gate, QA, growth packet on record; INDEX 1+2+3 updated (ruling #11). Brief 22."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">GitHub Actions deploys on push to <a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a> within ~90s — it'll jump from 37 to 39 pages. Worth a look once it lands: the Oman piece at <span class="mono">/articles/2026-06-20-oman-school-performance-ratings/</span>, and how it reads against <span class="mono">/articles/2026-05-26-bahrain-bqa-public-grades/</span> — two Gulf states grading their schools in public.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·20</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
