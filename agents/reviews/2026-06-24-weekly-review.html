@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-06-24</title>
+<meta name="description" content="CEO weekly strategic review (the delayed 06-21 review, run 24 June 2026): five fresh bilingual ships and a rising figure-discipline bar; a three-day dark gap; the sprint-hire ratification; and a deliberate decision to add no new persona." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1; -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-top: 1.6rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+  .kicker { font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); font-weight: 500; }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead { padding-block: 1.75rem 0.75rem; border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem; }
+  .masthead__brand { font-family: var(--font-display); font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); text-align: right; }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 2.5rem; }
+  .lede h1 { max-width: 24ch; margin-bottom: 0.6rem; }
+  .dek { font-size: var(--fs-dek); color: var(--color-muted); max-width: 66ch; }
+
+  .summary { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-orange); background: rgba(232,226,208,0.28); padding: 1.5rem 1.75rem; margin-bottom: 3rem; }
+  .summary h2 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+  .summary p { margin-bottom: 0.7em; }
+  .summary p:last-child { margin-bottom: 0; }
+
+  section.block { padding-block: 1.5rem 0.5rem; border-top: 1px solid var(--color-rule); margin-top: 2.5rem; }
+  .block__num { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.4rem; }
+  .block h2 { margin-bottom: 0.4rem; }
+  .block__dek { color: var(--color-muted); margin-bottom: 1.2rem; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-sage); border-bottom: 1px solid var(--color-rule); }
+  td .n { font-family: var(--font-mono); }
+  .delta-up { color: var(--color-orange); font-family: var(--font-mono); font-size: 0.85em; }
+  .delta-flat { color: var(--color-sage); font-family: var(--font-mono); font-size: 0.85em; }
+
+  .statgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0 1.4rem; }
+  .stat { background: var(--color-paper); padding: 1rem 1.1rem; }
+  .stat__n { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+  .stat__l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-sage); margin-top: 0.4rem; }
+  @media (max-width: 720px) { .statgrid { grid-template-columns: repeat(2, 1fr); } }
+
+  .callout { border: 1px solid var(--color-rule); padding: 1rem 1.25rem; margin: 1.2rem 0; background: rgba(217,79,42,0.05); }
+  .callout .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-orange); }
+  .verdict { font-family: var(--font-display); font-size: 1.3rem; color: var(--color-ink); margin: 0.3rem 0; }
+
+  .flag { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-sage); padding: 0.9rem 1.2rem; margin: 1.2rem 0; background: rgba(122,132,113,0.07); }
+  .flag .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-sage); }
+
+  .pushblock { margin: 1rem 0 0; background: var(--color-ink); color: #EDE9DF; border-radius: 4px; padding: 1.1rem 1.25rem; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4em; }
+  footer.colophon { margin: 4rem 0 2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-rule); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; color: var(--color-sage); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><em>weekly review</em></div>
+    <div class="masthead__date">CEO · strategic review<strong>Wednesday 24 June 2026</strong></div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Period since 2026-06-14 · Issue 02 sprint · the 06-21 review, run late</div>
+    <h1>Five pieces shipped and the bar <em>rose</em> — then three dark days, and a resume already underway.</h1>
+    <p class="dek">Since the last review the sprint delivered five fresh bilingual pieces and hardened the figure-discipline rule four times over. Then 06-21 through 06-23 produced no runs — the app wasn't launched — and the Sunday review delayed with them. This is that review, run on Wednesday. As I write it, the recovery run has already banked the next piece. The story is not "stalled." It is "paused, and producing again."</p>
+  </section>
+
+  <section class="summary">
+    <h2>For the founder, in six lines</h2>
+    <p><strong>What changed.</strong> The sprint moved hard, then paused. Five fresh bilingual pieces shipped 06-16→06-20 — Vietnam, Korea, Egypt, Philippines, Oman — taking the corpus from <strong>12 → 17 EN/AR at 100% parity</strong> and completing Edition 02's language-of-instruction + evaluation spine. Edition 02 is now <strong>7 of 10</strong>. The quality bar didn't merely hold across five fast ships — it <em>rose</em>: three new figure-discipline rulings (#9 measured-vs-announced, #10 wrong-instrument, #11 publish-only-what-you-can-read), and a sixth dimension (#12) banked this morning. The Arabic compose/verify split (your 06-16 hire) held parity exact through every ship.</p>
+    <p><strong>The gap, plainly.</strong> <strong>06-21, 06-22 and 06-23 produced no daily runs</strong> — the app wasn't launched on those days, so the scheduled cadence delayed to the next open (this morning). The Sunday 06-21 weekly delayed into <em>this</em> memo. Pieces 8–10 did not ship on the original calendar. The cadence resumed the morning of 06-24 and the recovery run is already reconning ahead — it has <strong>banked Brazil / CNCA as the piece-8 candidate</strong>, filling the long-empty LatAm slot.</p>
+    <p><strong>What I decided.</strong> Four things. <strong>(1) The sprint: bar over date.</strong> The cadence is back; wave-2 recon is underway (Brazil banked, two slots to go); Edition 02 reaches ten <em>a few days behind the 06-26 target — roughly the turn of the month</em>. Forcing three un-reconned pieces into two days would break your own locked rule ("never force a weak piece — replace from the bank"). <strong>(2) Sprint hires ratified:</strong> the <strong>Arabic Content Creator is permanent</strong> (the compose-vs-verify split is a structural quality gain, not a throughput crutch); <strong>Content Creator II reverts to standby</strong> when the ten close. <strong>(3) No new persona this week</strong> — the Editor held at 1/day for five straight days and the wind-down removes the pressure; restraint applies to the org chart too. <strong>(4)</strong> Codified a dek-cap prevention rule and consolidated the guidebook (eight increments; the figure-discipline rule is now six-dimensional).</p>
+    <p><strong>What needs your eye.</strong> <em>(1) The 10-by-06-26 date you set slips a few days</em> — I'm flagging it, not asking permission; the bar is the reason, and the buffer absorbs part of it. <em>(2) The domain purchase is still the one founder action</em> — now carried two weeks; it gates Search Console <em>and</em> the Issue 01 send, and last week's growth bet (the cutover) could not fire without it. <em>(3) The push</em> — one block below; it carries this review <em>and</em> the recovery run's recon/QA, so the day lands in a single action. Everything else is the operation's job.</p>
+  </section>
+
+  <!-- 1 -->
+  <section class="block">
+    <div class="block__num">Section 01</div>
+    <h2>Traffic, growth &amp; statistics</h2>
+    <p class="block__dek">Privacy-clean signals only. No third-party tracker exists on the site by design, so there are no visitor counts — and none are invented here.</p>
+
+    <div class="statgrid">
+      <div class="stat"><div class="stat__n">17 / 17</div><div class="stat__l">EN / AR articles &nbsp;<span class="delta-up">+5 / +5</span></div></div>
+      <div class="stat"><div class="stat__n">100%</div><div class="stat__l">AR / EN parity (held ×5)</div></div>
+      <div class="stat"><div class="stat__n">14</div><div class="stat__l">countries · 4 regions &nbsp;<span class="delta-up">+4</span></div></div>
+      <div class="stat"><div class="stat__n">5</div><div class="stat__l">fresh pieces · all bilingual</div></div>
+    </div>
+
+    <h3>Content growth &amp; week-over-week drift</h3>
+    <p>Measured against the last review's snapshot (06-14): <strong>12 → 17 EN, 12 → 17 AR, parity held at 100%</strong> across all five ships (the <span class="mono">diff</span>-verified invariant never broke — 13=13 … 17=17). The five additions are Vietnam (06-16), Korea (06-17), Egypt's second piece (06-18), Philippines (06-19) and Oman (06-20). Regional drift is the sprint's deliberate correction of a MENA-heavy corpus: <strong>Asia 1 → 4</strong> (Vietnam, Korea, Philippines join Indonesia) and <strong>MENA 7 → 9</strong> (Egypt #2, Oman), with Africa (3) and LatAm-Caribbean (1) flat — country count <strong>10 → 14</strong>. Theme drift is on-strategy and tells you what the sprint was <em>about</em>: <em>value of teachers</em> <strong>8 → 13</strong> (every sprint piece carried a named operational voice or stated its absence), <em>language &amp; heritage preservation</em> <strong>5 → 7</strong> (the Egypt + Philippines language-of-instruction cluster, atop Vietnam and the earlier Iqra), and <em>AI-readiness</em> <strong>5 → 6</strong> (Korea AIDT). Cadence by ISO week reads <span class="mono">W24 = 2 · W25 = 5 · W26 = 0-so-far</span> — the W26 zero is the 06-21→23 pause, and the recovery run reopens it today.</p>
+
+    <h3>The period's growth actions</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Action</th><th>Lever</th></tr></thead>
+      <tbody>
+        <tr><td class="n">06-17</td><td>Korea AIDT launch packet (send-ready; mandate-vs-trust framing, classroom-led)</td><td>Cluster return-rate, no tracker</td></tr>
+        <tr><td class="n">06-18</td><td>Egypt NPDA launch packet — AR-led distribution (Arabic heartland, AR composed first)</td><td>Bilingual reach as a distribution advantage</td></tr>
+        <tr><td class="n">06-19</td><td>Philippines MTB-MLE launch packet (completes the language-of-instruction cluster)</td><td>Topical-cluster depth / internal discoverability</td></tr>
+        <tr><td class="n">06-20</td><td>Oman launch packet + the <span class="mono">opening-grid posting kit</span> (Mon/Wed/Fri IG schedule, send-ready)</td><td>Channel-ready craft — first full posting cadence</td></tr>
+      </tbody>
+    </table>
+    <p class="muted" style="font-size:0.9rem;">All four packets and the opening-grid kit are on record and send-ready; the kit sat un-pushed through the dark days and ships in this review's push. Nothing has yet been <em>posted</em> — see below.</p>
+
+    <h3>Substack, discoverability &amp; last week's bet — read honestly</h3>
+    <p>Substack is <strong>still not live</strong>; opens, return rate, reply rate and country distribution remain dark. <strong>Last week's single growth bet was "execute the domain cutover" — and it did not fire.</strong> The repo confirms it plainly: <span class="mono">astro.config.mjs</span> still points at <span class="mono">education3881.github.io/madar</span>, there is no <span class="mono">CNAME</span>, and the sitemap is still hand-patched (39 URLs, now its sixth consecutive hand-edit). The bet had two halves and neither landed: the <em>founder half</em> — the domain purchase — has not happened, and the <em>operation half</em> (folding in <span class="mono">@astrojs/sitemap</span>) was correctly scheduled for the buffer day, which the sprint and then the pause pushed out of reach. Two weeks running, the domain has been the bet and not moved; I won't dress that up. <strong>Attributable inbound shares: still none, by construction</strong> — nothing has been distributed, so there is no public URL for a manual X / Bluesky / LinkedIn search to find. No number is manufactured to fill that line. <strong>One honesty note on this run:</strong> I could not independently re-fetch the live site to confirm it survived the unattended pause (<span class="mono">github.io</span> is egress-blocked from here); the 06-20 publish gate was build-verified clean and deploys are automatic, so the live state is the 06-20 commit (<span class="mono">83f730e</span>) — reported as inference, not as a fresh check.</p>
+
+    <div class="callout">
+      <div class="tag">The period's single growth bet</div>
+      <p class="verdict">Ship the discoverability the operation owns — while the domain waits on you.</p>
+      <p>Rather than name the cutover a third time and watch it block on the purchase again, I split it. The bet for the coming week is the <em>operation-controlled half</em>: land the <span class="mono">@astrojs/sitemap</span> integration on the first buffer day (the recipe is fully specced in the 06-18 memo, with the i18n config that preserves per-URL <span class="mono">en/ar/x-default</span> hreflang alternates), <strong>retiring the six-ship hand-patch for good</strong>, and run an Edition-02 cluster pass so the completed edition's related-reading rails traverse end-to-end for a reader and a crawler alike. That is loop-step-four discoverability, entirely in the operation's hands. Next week's review reads it: integration shipped, alternates verified 1:1, hand-patch gone. The founder action that unblocks the <em>other</em> half — Search Console + the Issue 01 send onto a clean URL — remains the purchase.</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="block">
+    <div class="block__num">Section 02</div>
+    <h2>Quality retrospective</h2>
+    <p class="block__dek">Five ships, five publish gates in writing, all held. The gate did real work — it caught defects rather than letting them through. One recurring class is now codified upstream.</p>
+    <p>Publish gates were logged in writing on <span class="mono">06-16, 06-17, 06-18, 06-19, 06-20</span> and each held. All five fresh ships cleared the full apparatus — Editor five-test verdict, Arabic-Editor pass with named-human transliteration sign-off, hero still on disk, clean build, QA spot-check — and EN/AR parity stayed exact through every one. The gate earned its keep by <em>catching</em> defects pre-ship, not waving them by: Vietnam (a missing EN hero block; sitemap drift), Korea (EN+AR deks over the 200-char cap), Oman (EN dek 211 → trimmed to 184). That is the system working as designed.</p>
+    <p><strong>The recurring defect class — and the rule that now prevents it.</strong> The dek character-cap was breached <em>twice in four ships</em> — Korea (06-17, both deks over, with Arabic tashkeel each counting +1 toward the cap) and Oman (06-20, EN 211 → 184). Both were caught at the publish gate and fixed clean, but a defect found at the <em>last</em> gate is a defect that ate a build cycle: the cap belongs upstream. <strong>I have codified a prevention rule into the RUNBOOK:</strong> the Content Creator and Arabic Content Creator <em>code-point-count</em> the <span class="mono">dek</span> and <span class="mono">title</span> at compose time (tashkeel included — a fully-voweled AR dek fails at ~150 visible chars), and the Editor / Arabic Editor verdict carries an explicit <span class="mono">dek ≤200 ☐</span> checklist line. The publish gate stays the backstop; it should no longer be the first ruler.</p>
+    <p><strong>The near-miss that briefly reached production — and the existing rule that caught it.</strong> On 06-16 a founder push (<span class="mono">a7d40b6</span>) swept an early Korea EN draft to origin <em>ahead of</em> its hero still and AR companion — a live 404'd hero and an EN-without-AR parity break — the <strong>third instance</strong> of the push-race class. This time the asset-ordering rule codified in the 06-14 review did its job: the 06-17 run caught it and shipped the full gate-passed EN, the still and the AR in a single commit, restoring parity (14 = 14). The rule held; no new rule is needed; it is reinforced, not rewritten.</p>
+    <p><strong>Standing infra item:</strong> the hand-patched <span class="mono">sitemap.xml</span> is now at six consecutive ships — exactly the drift-defect-waiting-to-happen the 06-07 rule names. The <span class="mono">@astrojs/sitemap</span> migration is fully specced (06-18 memo) and is this period's growth bet, to finally retire it on the buffer day. <strong>Cadence honesty, reported plainly:</strong> <span class="mono">06-21, 06-22, 06-23</span> produced no daily runs — the app was not launched, and a closed app delays each scheduled run to the next open rather than dropping it, so the dailies in between were simply missed while the next open fired this weekly. Last week carried one missed day (06-13); this period carried three. The pattern is the cadence's dependence on the app being launched — a structural constraint outside the operation's control. It is flagged here as the one reliability risk the operation cannot close on its own; the durable fix is a server-side trigger, a founder/platform matter.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="block">
+    <div class="block__num">Section 03</div>
+    <h2>Knowledge consolidation</h2>
+    <p class="block__dek">Eight increments banked and merged; the figure-discipline rule went from four dimensions to six in one fortnight. The bar didn't just hold — it rose.</p>
+    <p>The daily runs banked eight research increments since the 06-14 consolidation and merged them into the guidebook <span class="mono">INDEX.md</span>; this weekly verified, pruned, and refreshed the index header and closing summary. The headline is that the load-bearing source-discipline rule (#4 — read a figure right) <strong>hardened into a six-dimension discipline</strong>, each new dimension drawn from a real ship:</p>
+    <ul>
+      <li><strong>#9 — measured-vs-announced</strong> (Egypt): the same programme reported through different bodies is in different currencies; lead with the independently-measured figure, label the rest <em>announced</em>, never sum across.</li>
+      <li><strong>#10 — the wrong-instrument figure</strong> (Philippines): a correctly-read number can still be the wrong instrument; match it to the policy's population, timing and mechanism before it carries adjudicating weight, or say in print it cannot.</li>
+      <li><strong>#11 — publish only what you can read</strong> (Oman): when the primary surface is unreachable and the second-hand tallies won't reconcile (59 ≠ 58), run only the triangulated subset and state the withholding — on a transparency story the disclosure <em>is</em> the credibility signal.</li>
+      <li><strong>#12 — who held the ruler</strong> (Brazil, banked this morning): a self-administered figure and an external-assessor figure are different currencies even for the same skill and year; tag every headline number by administration model and lead with the between-unit spread, not the mean.</li>
+    </ul>
+    <p><strong>The pruning this review did:</strong> folded the orphaned <span class="mono">2026-06-16-saudi-jordan-park-notes.md</span> (previously unreferenced anywhere in the index) into the Saudi ECE row, carrying Jordan with it — both remain parked on the same single un-park condition. Confirmed there were <em>no</em> duplicate rulings to merge: #9–#12 are deliberately filed as distinct dimensions of #4, cross-referenced, not collapsed, because they compound rather than repeat. Section 1 now holds <strong>eight source indices</strong> — six shipped and figure-traced (Sierra Leone, Iqra, Korea, Vietnam, Egypt, Philippines, Oman), Saudi/Jordan parked, and Brazil banked. The team-is-smarter test passes concretely: a writer opening any language-of-instruction or evaluation piece now starts from a closed index, and the figure-checklist a draft must clear is materially stricter than it was on 06-14.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="block">
+    <div class="block__num">Section 04</div>
+    <h2>Team-expansion decision</h2>
+    <p class="block__dek">Two calls: ratify the two sprint hires (the job the 06-21 review was meant to do), and decide whether the ladder advances. It does not — by design.</p>
+
+    <div class="callout">
+      <p class="verdict">Ratified: the <strong>Arabic Content Creator (10) is permanent</strong>; <strong>Content Creator II (09) reverts to standby</strong> after the ten. New persona this period: <strong>none</strong>. Team stays at ten.</p>
+    </div>
+
+    <p><strong>The sprint-hire ratification (your 06-16 directive said the 06-21 weekly would decide it; I decide it here).</strong> The <strong>Arabic Content Creator is kept permanently.</strong> Its reason for existing is structural, not seasonal: it <em>composes</em> the Arabic so the Arabic Editor becomes a pure verifier — the same compose-vs-judgment split the English side adopted on 2026-05-26, and a genuine quality gain rather than a throughput crutch. The evidence is clean: AR parity held at exactly 100% across all five bilingual-simultaneous ships, the tightest lane in the operation, with no near-miss. That split should survive the wind-down to slow cadence, where it makes each Arabic piece better, not merely faster. <strong>Content Creator II reverts to standby</strong> when Edition 02 closes at ten. It earned its keep in the surge (it drafted Egypt EN and Philippines), but a second drafting hand is a sprint instrument; the slow cadence does not need two, and your own 06-16 note anticipated exactly this. It re-activates for the next sprint without ceremony.</p>
+
+    <p><strong>The ladder decision: add no one.</strong> The charter names the next likely rung as a managing / second editor, with a specific trigger — "if the Editor saturates" as the structural ceiling at 1/day. <em>That signal did not fire conclusively.</em> The Editor filtered every one of five pieces on five consecutive days without a park backlog, a missed verdict, or a thinned read — the single non-parallelizable lane held at sprint tempo. And the sprint is <em>ending</em>: the founder-directed wind-down to slow cadence removes the throughput pressure entirely. Adding a second editor in the same week we revert to a slow pace would violate the charter's own bar — <em>recurring gap AND genuine saturation</em> — on both halves at once. Restraint applies to the org chart as much as to the publication, and the honest read is that the existing ten are the right shape for what comes next.</p>
+    <p>The watch signal, recorded so a future review can act on evidence rather than mood: <strong>re-open the second-editor question only if a future sprint sustains 1/day for more than one week with the Editor the demonstrated bottleneck</strong> (verdicts slipping, or reads visibly thinning under load). The rungs below stay closed for the stated reasons — Social/Video (render is a solved method, not a gap), Data/SEO analyst (premature until the domain cutover gives it a real traffic surface — re-test then), second-language editor (no third language on the roadmap).</p>
+  </section>
+
+  <!-- flags -->
+  <section class="block">
+    <div class="block__num">Carried</div>
+    <h2>Two items that stay on your desk</h2>
+    <div class="flag">
+      <div class="tag">Founder action · carried 2 weeks</div>
+      <p style="margin:0.3rem 0 0;"><strong>The domain purchase.</strong> It is the single highest-leverage action and it is yours (paid infra, by design). It gates Search Console registration and the Issue 01 send, and it blocked last week's growth bet from firing. Candidates in preference order from the 06-12 memo: <span class="mono">madar.education</span>, <span class="mono">madar.pub</span>, <span class="mono">madarmag.com</span>, <span class="mono">readmadar.com</span> (Cloudflare Registrar or Porkbun, ~USD 15/yr). Once bought, the operation does the cutover from there.</p>
+    </div>
+    <div class="flag">
+      <div class="tag">Expectation · the date you set</div>
+      <p style="margin:0.3rem 0 0;"><strong>Edition 02 reaches ten a few days behind 06-26 — about the turn of the month.</strong> Seven are live; Brazil is banked as piece 8; two candidates remain to recon and three pieces to draft at 1/day, full gate. The slip is the bar doing its job, not a stall — the recovery run is already moving. I am informing you, not asking; per the charter the call is the operation's, and the call is quality over date.</p>
+    </div>
+  </section>
+
+  <!-- push -->
+  <section class="block">
+    <div class="block__num">For Vini</div>
+    <h2>The single push</h2>
+    <p class="block__dek">This stages the weekly review, the dek-cap RUNBOOK rule, the guidebook consolidation and the sprint-tracker reconciliation — <em>and</em> the 06-24 recovery run's output that landed alongside it (the Brazil/CNCA recon index, the #12 ruling note, today's QA + publish-gate logs, and the un-pushed 06-20 opening-grid kit). The <span class="mono">git add -A</span> captures all of it in one action, so if a separate daily brief also appears, it ships in the same push. No live-site content is staged, so the deploy surface is unchanged.</p>
+    <div class="pushblock">cd "/Users/vini/Documents/Claude/Projects/Educational Website" && rm -f .git/index.lock && git add -A && git commit -m "Madar — 2026-06-24 weekly review (delayed 06-21): sprint 7/10, +5 fresh bilingual ships (Vietnam/Korea/Egypt/Philippines/Oman), bar ROSE (rulings #9-#12, figure-discipline now 6-dim); 06-21..23 dark (app not launched), cadence resumed 06-24 -> Brazil/CNCA banked as piece 8. RATIFY: Arabic Content Creator permanent, CC II -> standby after the ten; NO new persona (Editor held 1/day x5, wind-down removes pressure). Dek-cap RUNBOOK rule codified; guidebook consolidated (8 increments, saudi/jordan orphan folded). Growth bet = ship @astrojs/sitemap (retire 6-ship hand-patch) + Ed-02 cluster pass. Carries the 06-24 recovery recon/QA + un-pushed 06-20 growth kit. Domain purchase still the one founder action." && git push origin main</div>
+    <p class="muted" style="margin-top:1rem;font-size:0.92rem;">After the push, the one action that moves everything downstream: <strong>buy the domain</strong> (candidates above) — it unblocks Search Console <em>and</em> the Issue 01 send onto a clean URL, and the operation does the cutover from there. Everything else — the remaining two recon candidates, pieces 8–10, the sitemap integration — is the operation's job, resuming on the normal cadence.</p>
+  </section>
+
+  <footer class="colophon">
+    Madār · CEO weekly review · 2026-06-24 (the delayed 06-21) · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>

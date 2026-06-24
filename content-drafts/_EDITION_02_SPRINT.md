@@ -45,6 +45,18 @@ Fill slots 8–10 with margin. Target spread (corpus is MENA-heavy): **1 LatAm**
 - **Bank yield** — 2 of 6 parked today; keep reconning ahead so a park never stalls a ship day.
 - **AR parity** under bilingual-simultaneous is the second-tightest lane; the Arabic Content Creator exists to hold it.
 
+## Addendum — 2026-06-24 (weekly review): where the sprint actually stands
+
+**State, verified against git + stats + a live re-check (not the calendar above):** Edition 02 is at **7 live** (pieces 4–7 shipped on schedule: Korea 06-17, Egypt 06-18, Philippines 06-19, Oman 06-20 — all EN+AR, full gate, parity held). **The operation then paused 06-21 → 06-23** (no daily runs — the app was not launched on those days; pieces 8–10 did not ship). **The cadence resumed the morning of 06-24**, and the recovery daily run is **already reconning wave-2 in parallel with this review** — it has **banked the first slot-8 candidate: Brazil CNCA / Indicador Criança Alfabetizada (PROCEED)**, filling the long-standing LatAm corpus gap, with a new durable ruling (#12, self-administered-vs-external assessment) banked alongside. **So the bank is no longer empty: 1 of the 3 remaining slots is banked; 2 to go.**
+
+**Decision (Manager, holding the locked bar-over-slot stance):**
+1. **Cadence resumed (06-24).** Wave-2 recon is underway — **Brazil/CNCA banked** as piece 8; the next runs bank the remaining two: **1 Africa beyond Sierra Leone** (Kenya CBC / Rwanda / fresh Ghana) and **1 more GCC or a UAE-ECE/ADEK angle**, plus the standing voice-only re-recon on Oman/Saudi/Jordan. **No piece drafts until its candidate is banked gate-closed** (Brazil now clears that bar).
+2. **Then ship 8 → 9 → 10 at 1/day from the bank.** Bilingual-simultaneous, full gate, exactly as 4–7.
+3. **The 10-by-06-26 date slips to ~end of W26 (≈ 06-29/30).** This is deliberate: forcing three un-reconned pieces into two days would break the founder's own locked rule ("never force a weak piece — replace from the bank"). The buffer days (06-25/26) absorb part of the slip. **Bar over date.**
+4. **First buffer day also ships the `@astrojs/sitemap` integration** (memo 2026-06-18) — it is the operation-controlled half of the domain cutover and ends the now-6-ship hand-patch.
+
+When the ten are complete, the wind-down below takes effect.
+
 ## After the ten — wind down to the slow pace (founder, 2026-06-16)
 
 This sprint is a **temporary acceleration, not the new baseline.** Vini: *"Let's complete this cycle and we come back later to the old pace."* Once Edition 02 reaches 10 verified pieces:

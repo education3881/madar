@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-06-24</title>
+<meta name="description" content="Manager → Founder daily brief for Wednesday 24 June 2026. A recovery run after three dark days: the app was closed 06-21 through 06-23, so the Sunday weekly review and the sprint's ship-days did not run. Named plainly. Today rebuilt momentum without forcing a thin piece: Brazil's national literacy compact banked to PROCEED (the first Edition-02 Latin-America candidate), the live product re-verified green, the Instagram grid put back on cadence, and a new figure-discipline ruling logged. The sprint finish line needs an honest reset." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .twin {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 820px) { .twin { grid-template-columns: 1fr; gap: 1.75rem; } }
+  .twin h3 {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); font-weight: 500;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .twin ul { list-style: none; padding: 0; margin: 0; }
+  .twin li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    line-height: 1.5;
+  }
+  .twin li:last-child { border-bottom: none; }
+  .twin li::before {
+    content: '·'; color: var(--color-orange); font-weight: 700;
+    font-size: 1.4em; line-height: 1.1;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .memo {
+    background: var(--color-sand);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    border-inline-start: 3px solid var(--color-orange);
+    max-width: 46rem;
+  }
+  .memo h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    margin-bottom: 0.75rem;
+  }
+  .memo .memo__verdict {
+    font-family: var(--font-mono); font-size: 12px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .memo dl { margin: 1rem 0 0; }
+  .memo dt {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-sage); margin-top: 1.1rem;
+  }
+  .memo dd { margin: 0.3rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Wednesday · 24 June 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 23</div>
+    <h1>Three dark days, named — then a clean step back into motion.</h1>
+    <p class="dek">The honest headline first: <strong>the operation did not run on 06-21, 06-22 or 06-23</strong> — the app was closed, so the Sunday weekly review and three sprint ship-days simply didn't happen. Nothing was lost (the only loose thread was an uncommitted 06-20 growth file, swept in today), but it is the second reminder that this operation lives only when the app is open. Today I rebuilt momentum the way the rules demand — <strong>without forcing a thin piece</strong>: Brazil's national literacy compact is now <strong>banked to PROCEED</strong>, our first Edition-02 Latin-America candidate; the live product re-verified green; the Instagram grid is back on cadence; and a new figure-discipline ruling is logged. The one open strategic question — the <strong>sprint finish line</strong> — is being settled in parallel: the delayed 06-21 weekly review is <strong>recovering concurrently today</strong>, and has taken the call the math below argues for — a short, deliberate slip rather than three rushed pieces.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A gap, stated plainly: 06-21 to 06-23 did not run.</h2>
+        <div class="day__date">last run 2026·06·20 (Brief 22) · local HEAD = origin/main at 83f730e · 3 days dark</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">State · the missed days, owned</div>
+        <div class="item__body">The last run was Saturday <strong>06-20</strong> (Oman shipped, push fired — <span class="mono">origin/main</span> at <span class="mono">83f730e</span>). Then the operation went dark for three days: the <strong>Sunday 06-21 weekly review did not run</strong>, and neither did the <strong>06-22 and 06-23</strong> daily ship-days. The cause is the known one — the run only fires when the app is open, and it wasn't. I verified this isn't a phantom: <span class="mono">git log</span> shows nothing after 06-20, the tree carries no half-finished work from those dates, and the live site sits exactly where 06-20 left it. So this is a true gap, not a silent failure mid-task.</div>
+        <div class="item__note">CHARTER: "a day with no brief is a failed day." Three of them. Recorded, not rationalised.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">What the gap cost the sprint</div>
+        <div class="item__body">The 06-20 plan had the weekly on 06-21 and pieces 8–10 across 06-22/23/24, with 06-25/26 as buffer. All four of those working days are gone. <strong>Edition 02 stands at 7 live</strong> (Sierra Leone, IQRA, Vietnam, Korea, Egypt, Philippines, Oman) against a target of 10 — and the wave-2 bank that was meant to feed pieces 8–10 was never filled, because the days that would have filled it are the days that didn't run. That is the real damage, and it sets today's priority: <strong>rebuild the bank, don't fake the slots.</strong></div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">One loose thread, now tied</div>
+        <div class="item__body">The 06-20 run left a growth file — the opening-grid posting kit — written but never committed (it post-dated the push block). It was the only uncommitted artifact on disk. It's swept into today's push, and its schedule is reconciled below (the gap pushed one grid slot off-cadence).</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The recovery day — all five functions, no forced ship.</h2>
+        <div class="day__date">2026·06·24 · Wednesday · a clean recovery, the bar held</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Brazil banked to PROCEED — the first Edition-02 Latin-America candidate</div>
+        <div class="item__body">On a recovery day the rule is clear: <em>advance the pipeline, don't force a fresh ship.</em> So today's content work is recon done to commission-ready. The 06-20 brief had flagged <strong>Brazil — Compromisso Nacional Criança Alfabetizada</strong> as a preliminary idea with "no named voice yet." I closed it: the <strong>figure gate is shut</strong> (Decreto 11.556/2023 is the instrument; the measured Indicador Criança Alfabetizada runs <strong>56% → 59.2% → 66%</strong> across 2023–25, beating the 64% target, pinned to the INEP primary results PDF), and the <strong>voice gate is substantially shut</strong> at the system-operator tier — <strong>Eliana Estrela, Ceará's education secretary</strong>, on record in March 2026 describing the mechanism that <em>is</em> the national model (Ceará's two-decade Sobral/PAIC programme, scaled into the federal compact). It fills our weakest geography: Latin America is just <strong>1 of 17</strong> pieces today (Uruguay). Working title: <em>"The literacy target, made national."</em></div>
+        <div class="item__note">/content-drafts/recon/2026-06-24-brazil-crianca-alfabetizada-source-index.md · verdict: PROCEED · classroom-voice upgrade path logged · ready to draft as piece 8</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · live product re-verified green</div>
+        <div class="item__body">Real <span class="mono">astro build</span> via the tmpfs route: <strong>exit 0, 39 pages</strong>, no errors. Parity holds at <strong>17 = 17</strong> with identical EN/AR slug sets and zero gaps. Brand chrome clean — the wordmark is inline <span class="mono">&lt;svg&gt;</span> (3 refs on the homepage); the one grep hit for an <span class="mono">img&nbsp;src…glyph</span> is the Indonesia hero-still's <em>alt text</em> describing an ampersand glyph in the artwork, not a chrome regression. The "placeholder" hits are CSS class names, not stray content. Sitemap = <strong>39 URLs</strong>, matching the build and the live <span class="mono">83f730e</span> commit.</div>
+        <div class="item__note">/agents/logs/qa-2026-06-24.md · honest caveat: I confirm "live = current" from git (HEAD = origin) because the sandbox can't fetch education3881.github.io this run — flagging the inference, not hiding it.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the opening grid, put back on cadence</div>
+        <div class="item__body">The gap knocked the Mon/Wed/Fri opening grid out of order — the <strong>06-22 Uruguay tile</strong> slot passed unposted. Because the grid posts in reverse so Tile 1 lands top-left, I re-anchored the whole sequence forward one slot (Uruguay → today, the macron card → Fri, Ghana → Mon 06-29) rather than skip a tile and break the visual order. And I corrected a stale caption: the kit's Uruguay tile still said "Arabic version forthcoming" — but the parity check confirms <strong>Uruguay ships EN + AR</strong>, so that line is now <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">EN + عربي</span>. Posting stays manual; no invented metrics; the return-rate logic is the point — a half-bilingual, out-of-order grid is exactly the carelessness we sell against.</div>
+        <div class="item__note">/social-drafts/2026-06-24-opening-grid-schedule-reconciled.md · supersedes the dates in the swept-in 06-20 kit</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #12 — who held the ruler?</div>
+        <div class="item__body">Brazil paid for a durable rule. Its headline number (the state-administered Indicador, 66%) and the federal external exam (Saeb, ~49% comparable) <strong>disagree by ~7 points</strong> — not because the children differ but because the <em>administration model</em> does. <strong>Ruling #12, the self-administered-vs-external-assessment rule:</strong> tag every headline figure by who administered it (self-administered / externally-administered / programme-announced — ascending independence); when two disagree, print both, attribute each, and name the gap as the finding. It adds <strong>"administrator"</strong> as a fourth pin to rule #4 — the sixth dimension of our figure discipline.</div>
+        <div class="item__note">/agents/guidebook/2026-06-24-self-administered-vs-external-assessment.md · INDEX §1 (Brazil row) + §3 (ruling 12) + dated correction to the forward-dated 06-24 consolidation note</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 23. The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 06-24 snapshot appended). It tells the gap's story in numbers without my having to editorialise: the cadence line still reads <strong>latest 2026-06-20</strong>, and ISO week 26 carries <strong>zero</strong> pieces. Counts are unchanged from 06-20 (17 / 17 / 100% / 14) because today shipped no new page — by design.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-06-24</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">17</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">17</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">14</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 9 · Asia 4 · Africa 3 · LatAm-Caribbean 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 17 · access 14 · value of teachers 13 · language and heritage preservation 7 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-20</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Draft Brazil, recover the weekly, and reset the finish line.</h2>
+        <div class="day__date">next daily: 2026·06·25 Thu · the delayed 06-21 weekly: recovering concurrently today</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · piece 8 drafts from the bank</div>
+        <div class="item__body">Brazil is commission-ready, so tomorrow it goes through the normal path — Manager → Editor → Content Creator II, with the Arabic Content Creator composing AR and the Arabic Editor verifying the transliterations (Camilo Santana, Eliana Estrela, Ceará, Sobral). One open editorial call at commission: ship at the Estrela system-operator tier with the classroom-voice gap stated in print (route 2), or hold one cycle for a Sobral teacher's voice. My lean is to <strong>ship honest</strong> — the dossier supports it — but it's the Editor's verdict, not mine.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">The finish line · reset, ratified by the concurrent weekly</div>
+        <div class="item__body">Straight math. We have 7 live; the target is 10; the gap erased the weekly plus three ship-days. Realistically Brazil <strong>drafts and fully gates on 06-25</strong> (piece 8) and, once wave-2 recon banks two more, pieces 9–10 follow at 1/day — but forcing all three into 06-25/26 would push thin work into a buffer that no longer exists. The good news: the <strong>delayed weekly is running right now, in parallel with this daily</strong>, and has already made the call my math points to — <strong>the 10-by-06-26 date slips to ~end of W26 (≈ 06-29/30), bar over date</strong>, finishing the ten at full quality rather than rushing them by Friday. It also <strong>ratified the sprint hires</strong>: the Arabic Content Creator is now <strong>permanent</strong> (the compose-vs-verify split held AR parity at 100% across all five sprint ships), and Content Creator II reverts to standby once the ten close. Nothing here needs a decision from you — it's reported so you can see the reset and overrule it if you'd rather hold the original date.</div>
+        <div class="item__note">the delayed 06-21 weekly is recovering concurrently today (/agents/reviews/2026-06-24-weekly-review.html); it read this run's Brazil bank + ruling #12 and folded them in — both runs' outputs ride the same push below</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · the bank needs depth, fast</div>
+        <div class="item__body">A park can't be allowed to stall a ship day, so the Researcher's priority is wave-2 recon: <strong>Kenya — CBC/CBE Grade-9 transition</strong> (live, contested, unusually rich in named operator voices) as the Africa-beyond-Sierra-Leone candidate, plus a third to give slots 9–10 margin. The Brazil method note (ruling #12) travels straight into the Kenya read — the Kenyan competency assessment has the same self-administered-vs-external tension worth pinning early.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — internal artifacts only, no site change</div>
+    <p>Nothing in this push touches the published site. The single <span class="mono">git&nbsp;add&nbsp;-A</span> carries <strong>two coordinated runs at once</strong> — today's daily recovery (the Brazil recon dossier, ruling #12 + INDEX, the QA and publish-gate logs, the reconciled growth schedule and swept-in 06-20 kit, the stats snapshot, this brief) <strong>and the delayed 06-21 weekly review running concurrently</strong> (its <span class="mono">weekly-review.html</span>, the RUNBOOK hire-ratification, and the sprint-finish-line reset). All files are complete and the two runs agree. The build was verified green regardless (exit 0, 39 pages). <span class="mono">origin/main</span> re-checked right before this block — unmoved at <span class="mono">83f730e</span>. <strong>If the weekly hands you its own push block too, run either one — both sweep the same set.</strong> Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-06-24: recovery daily + delayed 06-21 weekly (run concurrently). After the 06-21..23 dark days (app closed; weekly + 3 ship-days missed, named in brief). No web/ delta. DAILY/CONTENT: banked Brazil Compromisso Nacional Crianca Alfabetizada / Indicador to PROCEED — figure gate closed (56->59.2->66% 2023-25 vs 64/80 targets, INEP primary), voice gate substantially closed (Eliana Estrela, Seduc-Ceara; Sobral/PAIC model); first Edition-02 LatAm candidate, piece-8 ready. RESEARCH: ruling #12 self-administered-vs-external-assessment (ICA 66% vs Saeb ~49%; 6th dimension of #4) + INDEX. QUALITY: real astro build exit 0 / 39 pages / parity 17=17 / brand chrome clean. GROWTH: opening-grid reconciled post-gap + Uruguay caption fixed (AR live) + swept-in orphaned 06-20 kit. WEEKLY (delayed 06-21, recovered today): ratified sprint hires (Arabic Content Creator permanent; CC II ->standby after the ten); reset Edition-02 finish line 06-26 -> ~06-29/30 (bar over date); RUNBOOK + sprint-doc addenda; weekly-review.html. Briefs 23 + weekly."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">No deploy effect expected — the live site stays at 39 pages (<a href="https://education3881.github.io/madar/" style="color: var(--color-paper); text-decoration-color: rgba(250,250,247,0.5);">education3881.github.io/madar</a>). The next visible change to the site will be Brazil, piece 8, after tomorrow's draft clears the Editor.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·06·24</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
