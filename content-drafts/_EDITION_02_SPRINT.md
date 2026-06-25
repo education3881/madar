@@ -57,6 +57,12 @@ Fill slots 8–10 with margin. Target spread (corpus is MENA-heavy): **1 LatAm**
 
 When the ten are complete, the wind-down below takes effect.
 
+## Addendum — 2026-06-25: piece 8 shipped (Brazil)
+
+**Edition 02 is now at 8 of 10 live.** Brazil — *"The literacy target, made national"* (Compromisso Nacional Criança Alfabetizada / Indicador) shipped EN+AR on 2026-06-25, full gate, build-verified (exit 0, 41 pages, parity 18=18). The first Ed02 Latin-America piece and only the corpus's 2nd LatAm piece — the most underrepresented region is now opened. Drafted 1/day from the bank exactly as 4–7; recon (banked 06-24) preceded drafting; figures re-verified live; voice seated at the system-operator tier (Eliana Estrela), not route-2. Paid for a figure-discipline refinement (#12b, comparability-is-not-independence).
+
+**Two slots remain (9, 10).** The gating dependency is the Researcher's **wave-2 recon**, which the dark days never filled: target **1 Africa-beyond-Sierra-Leone** (Kenya CBC/CBE Grade-9 transition is the lead candidate — live, contested, rich in named operator voices) + **1 more** (GCC fresh angle or a UAE-ECE/ADEK piece), plus the standing voice-only re-recon on Oman/Saudi/Jordan. **No draft until a candidate is banked gate-closed.** Finish line holds at ~end of W26 (≈06-29/30), bar over date. The 06-26 buffer day should also land the `@astrojs/sitemap` integration (now a 7th hand-patch) before any domain/Search-Console bind.
+
 ## After the ten — wind down to the slow pace (founder, 2026-06-16)
 
 This sprint is a **temporary acceleration, not the new baseline.** Vini: *"Let's complete this cycle and we come back later to the old pace."* Once Edition 02 reaches 10 verified pieces:

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous calligraphic line drawing for Brazil. A single faint horizontal rule runs the width of the page like a baseline of years. Standing on it are three upright ink strokes that rise in height from left to right — a literacy figure climbing across three years, the tallest at the right. One continuous fine line traces their ascending tops. Beneath that climb, a second and fainter line follows the same rising shape held lower: the external audit that reads below the headline. At the right edge, alone, a short kiln-orange bracket measures the vertical gap between the two lines — the seven points between the number a system reports on itself and the number reported from outside.">
+
+  <title>The Still · Brazil — a rising literacy figure, and the audit that reads below it</title>
+  <desc>A single faint horizontal rule crosses the page like a baseline of years. On it stand three upright ink strokes that grow taller from left to right — an annual literacy figure climbing across three years, the steepest gain into the last. A continuous fine line traces their ascending tops, lower-left up to upper-right. A second, fainter line shadows that climb just beneath it, the same rising shape held lower: an externally-administered measure that reads below the headline one. At the right edge a short kiln-orange bracket, the only warm thing on the page, measures the gap between the two lines — the seven points between a number a system reports on itself and the number reported from outside. No filled volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The baseline of years (one horizontal rule), the rising figure
+    (three upright strokes growing taller), and the one continuous
+    line that traces their ascending tops.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE BASELINE OF YEARS — a single faint rule the figure stands on. -->
+    <path stroke-width="2" stroke-opacity="0.38" d="M 230 470 C 540 466 860 466 1000 471"/>
+    <path stroke-width="0.8" stroke-opacity="0.16" stroke-dasharray="6 9" d="M 262 484 C 560 481 840 481 968 487"/>
+
+    <!-- three faint year-ticks on the rule — 2023 · 2024 · 2025 -->
+    <g stroke-width="1.4" stroke-opacity="0.18">
+      <path d="M 300 470 L 300 462"/>
+      <path d="M 600 470 L 600 462"/>
+      <path d="M 905 470 L 905 462"/>
+    </g>
+
+    <!-- THE RISING FIGURE — three upright strokes growing taller, left to
+         right; the annual literacy number climbing, the steepest step last. -->
+    <g stroke-opacity="0.9">
+      <path stroke-width="3.0" d="M 300 470 C 298 438 298 418 302 400"/>   <!-- 2023, the baseline year -->
+      <path stroke-width="3.2" d="M 600 470 C 598 422 598 384 602 350"/>   <!-- 2024 -->
+      <path stroke-width="3.5" d="M 905 470 C 903 392 903 300 907 235"/>   <!-- 2025, tallest, the steepest gain -->
+    </g>
+
+    <!-- THE ASCENDING CONTOUR — one line tracing the rising tops,
+         lower-left up to the height at the right. -->
+    <path stroke-width="2.3" stroke-opacity="0.55" d="
+      M 302 400
+      C 400 392 470 366 602 350
+      C 720 336 808 300 907 235
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    AUDIT SHADOW — ink, fainter (#1A2B3C, low opacity)
+    The externally-administered measure: the same rising shape held
+    lower, reading below the headline line.
+    ============================================================
+  -->
+  <g id="audit-shadow"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-opacity="0.26">
+    <path stroke-width="1.8" stroke-dasharray="2 7" d="
+      M 302 452
+      C 400 446 470 422 602 408
+      C 720 396 808 362 907 300
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The gap between the two lines at the right edge — a short caliper
+    bracket measuring the seven points between the self-reported
+    number and the audited one. The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the measured gap — a vertical bracket from the headline top down
+         to the audit line, with a short serif at each end -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="M 936 235 L 936 300"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 928 236 L 944 236"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 928 299 L 944 299"/>
+  </g>
+</svg>
