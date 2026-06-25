@@ -24,4 +24,9 @@
 
 **Finish line:** ~end of W26 (≈06-29/30), bar over date. Sprint at 8/10.
 
+## Founder-directed, mid-session (post-brief)
+Two founder prompts after the morning brief; both actioned:
+1. **Egypt/RAK similarity.** Vini flagged the Egypt NPDA (06-18) and RAK Iqra (06-10) pieces as too alike. Decision: **keep both** (the diptych is intended), **re-cut the Egyptian narrative build-up** so it no longer mirrors RAK's opening. Done: Egypt dek + first two paragraphs reframed to lead on **scale** (not the shared "child opens a book" tableau), the RAK link turned into the analytical hook, and the twin non-deficit aphorism de-duplicated. Rebuilt clean (exit 0, 41 pages, both Egypt pages; dek EN 181 / AR 147). Durable lesson banked as **ruling #13 (frame-sibling spacing)**. Carried, non-blocking: the two hero stills are still near-twins + the rail is one-way — a buffer-day cleanup.
+2. **Sudan.** Asked when we'd cover Sudan. Opened a **Researcher recon commission** (`content-drafts/recon/2026-06-25-sudan-recon-commission.md`) targeting **Edition 03** (not a sprint slot): angles led by exam/certification continuity and host-system integration, hard guardrail (education mechanism only, stay out of the war's geopolitics), explicit that a **park is an acceptable outcome**. Not pulled off the sprint; opens after pieces 9–10 are banked.
+
 — Manager · 2026-06-25
