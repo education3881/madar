@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-02</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 2 July 2026. Six dark days named plainly, then a disciplined recovery: Kenya banked as Edition-02 piece 9 (both gates closed at recon), the seven-times-deferred sitemap integration finally landed and build-verified, rails de-twinned, ruling #14 banked, and the delayed weekly review run in parallel. Nothing shipped thin; the finish line moves to ~07-04/05, bar over date." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 2 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 25</div>
+    <h1>Six dark days, one disciplined return.</h1>
+    <p class="dek">The operation did not run from <strong>26 June to 1 July</strong> — six days, the longest gap yet, and it swallowed the sprint's finish line and the Sunday weekly. That is named plainly, not dressed up. The return followed the recovery shape the (parallel-running, delayed) weekly codified today: verify state first, ship nothing thin, bank forward. So today: <strong>Kenya is banked as piece 9</strong> — 1.13 million fourteen-year-olds placed into pathways by one algorithm, and the same cohort carrying four different STEM numbers — with both gates closed at recon; the <strong>seven-times-deferred sitemap integration finally landed</strong>, build-verified; the Brazil rails now read both ways; and the guidebook gains ruling #14. Two slots became one. Finish line: ~07-04/05, bar over date.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Six days in which the operation did not exist.</h2>
+        <div class="day__date">2026·06·26 → 2026·07·01 · no runs · local HEAD = origin/main at f46d05b, unchanged since the 06-25 push</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">The gap, honestly</div>
+        <div class="item__body">No runs happened because the app was not launched — the same structural trigger as 06-13 (1 day) and 06-21→23 (3 days), now at <strong>6 days and escalating</strong>. Nothing shipped, nothing broke: the 06-25 Brazil push had landed cleanly, so the site sat current-but-frozen at 8 of 10. What the gap cost: pieces 9–10 (the ~06-29/30 finish line passed unmet), the 06-28 weekly review, and four grid days. What it did not cost: quality, parity, or trust — the tree came back clean, and per the standing rule this earns <strong>one clean recovery day, never a forced double-batch</strong>.</div>
+        <div class="item__note">for your eye, not your action: the operation only exists on days the app opens — the 1→3→6 trend is the one risk the operation cannot route around itself</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">The delayed weekly, running beside this brief</div>
+        <div class="item__body">The 06-28 weekly review fired today in parallel with this daily — first time two sessions have raced on the same tree. It consolidated the guidebook (#12b, #13 verified in place), folded the build-route refinements into the 06-15 method note, and <strong>codified the recovery-run shape into the RUNBOOK</strong> — verify from git not briefs, re-verify banked candidates before drafting, at most one piece, name the gap plainly. This daily followed that shape before the ink dried. Both runs' files go in tonight's single push; the race was verified settled (weekly complete and signed) before the push block below was composed.</div>
+        <div class="item__note">agents/reviews/2026-07-02-weekly-review.html · coordination note in qa-2026-07-02.md</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Kenya banked, the sitemap debt paid, the rails closed.</h2>
+        <div class="day__date">2026·07·02 · Thursday · recovery run · all five functions delivered · no ship, by rule</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Kenya — "The pathway, assigned at fourteen" → PROCEED (piece 9)</div>
+        <div class="item__body">The Africa-beyond-Sierra-Leone slot fills with the strongest candidate on the board: in January, Kenya's first CBC cohort — <strong>1,130,459</strong> learners — was placed into senior-school pathways (STEM / Social Sciences / Arts &amp; Sports) by a national algorithm reading a blended score: <strong>60% external KJSEA + 20% school-scored SBA + 20% KPSEA</strong> — the Brazil rulings' two axes sitting <em>inside one number</em>. The seam is that the cohort carries <strong>four different STEM figures at once</strong> — the target (60%), the assessed potential (59.09%), the choice (~53%), the placement (~50%) — and a fifth coming (arrival: TSC flags a <strong>58,590-teacher</strong> deficit). The state then published its own error bar: <strong>355,457</strong> placement reviews filed, 211,636 approved, and a second window opened. Voice gate closed at operator tier: <strong>Willy Kuria, KESSHA chairman</strong> (a serving principal), on record Jan–Feb 2026, plus the principals' collective demand to return placement to schools — the dispute carried, not adjudicated. Guardrails set: mechanism only, no electoral framing; the opinion-carried "30% reported" figure dropped unless independently re-sourced.</div>
+        <div class="item__note">content-drafts/recon/2026-07-02-kenya-cbe-grade10-source-index.md · draft tomorrow 07-03, bilingual-simultaneous, full gate; figures re-verified live at draft per the new recovery rule · slot 10 commission stays open (GCC/UAE-ECE + Oman/Saudi/Jordan voice re-recon)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · the hand-patch era ends at seven</div>
+        <div class="item__body">The <span class="mono">@astrojs/sitemap</span> integration — deferred since 06-04, hand-patched seven times — <strong>landed and build-verified</strong>: exit 0, 41 pages, <span class="mono">sitemap-index.xml</span> + <span class="mono">sitemap-0.xml</span> with <strong>41 URLs and 80 EN↔AR hreflang links</strong>, generated from the content collection at every build, so it can never drift from the article set again. robots.txt now advertises the index. One route-around: FUSE refuses to delete the old hand-patched file, so the legacy <span class="mono">/sitemap.xml</span> URL became a thin delegating stub — old bookmarks keep resolving, and a header comment forbids hand-patching it ever again. Also closed: the 06-25 carried item — <strong>Uruguay → Brazil and Egypt → Brazil back-links</strong> (EN + AR), so the LatAm and literacy-measurement rails read both ways. Rebuild after all changes: clean.</div>
+        <div class="item__note">qa-2026-07-02.md · honest caveats: generated sitemap drops x-default (minor, watch in Search Console); "live = current" inferred from HEAD = origin — egress to the live host blocked this run</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the submission packet points at the right sitemap now</div>
+        <div class="item__body">Quality's integration is Growth's asset: the bilingual discoverability surface (the hreflang pairs that tell search engines the Arabic pages are Arabic) is now structural, not hand-maintained. The <strong>Search Console packet refreshed</strong> — submission target updated to <span class="mono">sitemap-index.xml</span> — and stays honestly <em>decision-gated</em>: per the URL-binding ruling it fires after your domain call, not before, or we pay the migration twice. Grid note without varnish: the six dark days posted nothing; the queue is stocked (five unposted piece packets), the bottleneck is the posting action itself — handed to the weekly's growth-bet slot for w/c 07-06.</div>
+        <div class="item__note">agents/growth/2026-07-02-search-console-packet-refresh-sitemap-index.md · no invented metrics; no tracker, by design</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #14 — the pathway funnel</div>
+        <div class="item__body">Kenya's recon paid its toll on arrival: <strong>target · potential · choice · placement · arrival are five different numbers</strong>, owned by five different bodies (ministry, exams council, families, algorithm, teacher-service commission), and they must never be summed, swapped, or silently reconciled — the gaps <em>between</em> stages are usually the story. Any tracking/streaming piece anywhere (Germany, Singapore, now Kenya) needs the stage named before the figure is used. Filed as the fourth extension of ruling #4, alongside #12/#12b — which Kenya also stress-tests, being the first banked case where self-scored and external components are blended inside a single placement score.</div>
+        <div class="item__note">agents/guidebook/2026-07-02-pathway-funnel-five-numbers.md · INDEX §1 gains its tenth row (Kenya) + daily-run addendum after the weekly's consolidation</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · this document — statistics regenerated</div>
+        <div class="item__body">No. 25. The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 07-02 snapshot appended). It is unchanged from 06-25 — <strong>and that is the honest picture</strong>: a banked candidate, a retired hand-patch, and a new ruling are real work that no corpus statistic can show. The numbers move again when Kenya ships.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-02</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">18</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">18</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">15</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 9 · Asia 4 · Africa 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 18 · access 15 · value of teachers 14 · language and heritage preservation 7 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-06-25</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Kenya drafts; slot 10 closes behind it.</h2>
+        <div class="day__date">next daily: 2026·07·03 Fri · piece 9 drafts from the bank · finish ~07-04/05</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · piece 9 ships if it clears; slot 10 recon in parallel</div>
+        <div class="item__body">Kenya drafts tomorrow exactly as pieces 4–8 did: bilingual-simultaneous, full gate, every load-bearing figure re-verified live at draft (the KNEC 59.09% needs its primary release, not the press carry). Behind it, the Researcher closes the <strong>last slot</strong>: one GCC fresh angle or a UAE-ECE/ADEK piece, plus the standing voice-only re-recon on Oman/Saudi/Jordan — each un-parks on one named 2024+ operator. Kenyan proper nouns go to the Arabic Editor's transliteration table at draft, per standing.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality · watch the first Actions build with the integration</div>
+        <div class="item__body">Tonight's push is the first deploy where GitHub Actions builds the sitemap itself (<span class="mono">npm ci</span> picks up the new lockfile). Expected: identical output to the tmpfs verification. Tomorrow's run confirms the live <span class="mono">sitemap-index.xml</span> resolves — the one check the sandbox couldn't make today.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · grid restart plan lands with the Kenya packet</div>
+        <div class="item__body">Kenya's distribution packet composes at ship, and the w/c 07-06 grid restart (five stocked packets, Mon/Wed/Fri) gets its concrete schedule in the next weekly's growth-bet slot rather than as an improvised daily gesture.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · the push — a small one: your 21:33 push already carried the day's work</div>
+    <p><strong>The push race fired again (4th instance) — and the re-check caught it.</strong> While this brief was being written, a push landed at 21:33 (<span class="mono">0707e0b</span>) sweeping <strong>both runs' work</strong> — the weekly review, the Kenya recon bank, ruling #14, the sitemap integration, the rails, the QA + gate logs, the growth refresh — everything except the two files written after it: <strong>this brief and today's manager-status</strong>. So the deploy with the generated sitemap is already running, and what remains is the smallest push of the operation's life — the proof-of-work itself. <span class="mono">origin/main</span> re-checked at compose: <span class="mono">0707e0b</span>. Run from anywhere:</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-02 (tail): Brief 25 + manager status — the two files written after the 21:33 push. Completes the recovery-day record: Kenya banked PROCEED as piece 9 (draft 07-03), sitemap hand-patch retired at 7, ruling #14, rails de-twinned, delayed weekly folded. Finish ~07-04/05, bar over date."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Nothing site-visible is stranded — the 21:33 deploy carries the sitemap + rails; verify <span class="mono">…/madar/sitemap-index.xml</span> resolves once Actions finishes (~90s). Nothing here needs an editorial decision from you. The one standing decision that is yours remains the <strong>custom domain</strong> (memo of 06-12) — today's sitemap work completed the operation's half of that cutover.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·02</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
