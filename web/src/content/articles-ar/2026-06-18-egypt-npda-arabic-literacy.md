@@ -11,7 +11,7 @@ type: curated
 related:
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-05-28-kuwait-ccet-arabic-tests
-  - 2026-06-08-sierra-leone-tsc-teacher-matching
+  - 2026-06-25-brazil-crianca-alfabetizada
 contains_composites: false
 englishVersion: 2026-06-18-egypt-npda-arabic-literacy
 sources:

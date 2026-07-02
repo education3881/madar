@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-07-02</title>
+<meta name="description" content="CEO weekly strategic review (the delayed 06-28 review, run 2 July 2026): Brazil shipped piece 8 with the first defect-free gate; six dark days followed; the recovery-run shape is now a codified rule; no new persona." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1; -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-top: 1.6rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+  .kicker { font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); font-weight: 500; }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead { padding-block: 1.75rem 0.75rem; border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem; }
+  .masthead__brand { font-family: var(--font-display); font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); text-align: right; }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 2.5rem; }
+  .lede h1 { max-width: 26ch; margin-bottom: 0.6rem; }
+  .dek { font-size: var(--fs-dek); color: var(--color-muted); max-width: 66ch; }
+
+  .summary { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-orange); background: rgba(232,226,208,0.28); padding: 1.5rem 1.75rem; margin-bottom: 3rem; }
+  .summary h2 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+  .summary p { margin-bottom: 0.7em; }
+  .summary p:last-child { margin-bottom: 0; }
+
+  section.block { padding-block: 1.5rem 0.5rem; border-top: 1px solid var(--color-rule); margin-top: 2.5rem; }
+  .block__num { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.4rem; }
+  .block h2 { margin-bottom: 0.4rem; }
+  .block__dek { color: var(--color-muted); margin-bottom: 1.2rem; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-sage); border-bottom: 1px solid var(--color-rule); }
+  td .n { font-family: var(--font-mono); }
+  .delta-up { color: var(--color-orange); font-family: var(--font-mono); font-size: 0.85em; }
+  .delta-flat { color: var(--color-sage); font-family: var(--font-mono); font-size: 0.85em; }
+
+  .statgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0 1.4rem; }
+  .stat { background: var(--color-paper); padding: 1rem 1.1rem; }
+  .stat__n { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+  .stat__l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-sage); margin-top: 0.4rem; }
+  @media (max-width: 720px) { .statgrid { grid-template-columns: repeat(2, 1fr); } }
+
+  .callout { border: 1px solid var(--color-rule); padding: 1rem 1.25rem; margin: 1.2rem 0; background: rgba(217,79,42,0.05); }
+  .callout .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-orange); }
+  .verdict { font-family: var(--font-display); font-size: 1.3rem; color: var(--color-ink); margin: 0.3rem 0; }
+
+  .flag { border: 1px solid var(--color-rule); border-left: 3px solid var(--color-sage); padding: 0.9rem 1.2rem; margin: 1.2rem 0; background: rgba(122,132,113,0.07); }
+  .flag .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-sage); }
+
+  .pushblock { margin: 1rem 0 0; background: var(--color-ink); color: #EDE9DF; border-radius: 4px; padding: 1.1rem 1.25rem; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4em; }
+  footer.colophon { margin: 4rem 0 2rem; padding-top: 1.2rem; border-top: 1px solid var(--color-rule); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; color: var(--color-sage); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><em>weekly review</em></div>
+    <div class="masthead__date">CEO · strategic review<strong>Thursday 2 July 2026</strong></div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Period 2026-06-24 → 2026-07-01 · the 06-28 Sunday review, run Thursday</div>
+    <h1>Two days of work, six days of silence — and the resume is now a written rule.</h1>
+    <p class="dek">The period had exactly two operating days. They were good ones: Brazil shipped as Edition 02's piece 8 with the first publish gate of the sprint that had nothing to fix, and a founder-flagged duplication in the Egypt/RAK diptych was re-cut the same day and banked as a durable rule. Then 2026-06-26 through 2026-07-01 produced no runs at all — the longest dark gap yet. This review resumes the cadence, verifies the live site survived the pause with a fresh fetch (not an inference), and turns the twice-improvised recovery into a codified RUNBOOK rule. And the resume is running on two tracks as this is written: today's daily run is landing the sitemap integration in parallel — the growth bet firing while the review that carries it is still being typed.</p>
+  </section>
+
+  <section class="summary">
+    <h2>For the founder, in five lines</h2>
+    <p><strong>What changed.</strong> Brazil — <em>The literacy target, made national</em> — shipped 2026-06-25, EN+AR, full gate, parity exact at <strong>18 = 18</strong>. Edition 02 stands at <strong>8 of 10</strong>; LatAm doubles from 1 to 2 pieces; the corpus reaches 15 countries. Your Egypt/RAK duplication flag was executed the same day (both pieces re-cut, rebuilt clean) and paid a new commissioning rule: <strong>#13, frame-sibling spacing</strong> — clusters share the throughline, never the execution. A Sudan recon was commissioned for Edition 03. Then <strong>six dark days (06-26 → 07-01)</strong>: no daily runs, no ships, the Sunday review delayed into this one. The dark-gap pattern is escalating — 1 day (06-13), 3 days (06-21→23), now 6 — in the nine days since the last review, the operation ran on two. (Today makes a third: the concurrent daily run has already banked <strong>Kenya's Grade-10 transition as piece 9's candidate</strong> and is landing the sitemap integration — its own brief carries today's record.)</p>
+    <p><strong>What I decided.</strong> (1) <strong>The recovery run is now a codified RUNBOOK rule</strong>, not an improvisation: verify state from git + live site, re-verify banked candidates' freshness before drafting, ship at most one piece, state the gap plainly. (2) <strong>The growth bet carries rather than churns — and is firing today</strong>: the concurrent daily run is landing the <code>@astrojs/sitemap</code> integration and the cluster-rails pass as this review is written, so pieces 9 and 10 inherit a generated sitemap instead of becoming hand-patches 8 and 9. (3) <strong>No new persona.</strong> The ceiling this period was runtime, not capability — a persona adds zero runtime. Team stays at ten. (4) Guidebook consolidated: rulings #12b and #13 verified in place, the build-route method note folded to one drift-free recipe.</p>
+    <p><strong>What needs your eye.</strong> Two items, one of them only yours: <strong>(a) the dark-gap escalation.</strong> The scheduled cadence only fires when the app is open; six consecutive silent days is a founder/platform-side constraint the operation cannot close — either the app stays open on work mornings or a server-side trigger exists someday. I flag the pattern; I can't fix it from inside. <strong>(b) The domain purchase</strong> — carried a third week; it still gates Search Console, the Substack bind, and the Issue 01 send, in that order (the URL-binding clock). With the sitemap integration landing today, the purchase is the <em>only</em> remaining mover on the cutover. <strong>(c)</strong> The push — <strong>one push, at the end of today</strong>: a daily run is working in this same tree right now, so push once, after today's daily brief appears, and the single block below carries both runs' work. No mid-day pushes today.</p>
+  </section>
+
+  <!-- SECTION 01 -->
+  <section class="block">
+    <div class="block__num">Section 01</div>
+    <h2>Traffic, growth &amp; statistics</h2>
+    <p class="block__dek">Privacy-clean signals only. No third-party tracker exists on the site by design, so there are no visitor counts — and none are invented here.</p>
+
+    <div class="statgrid">
+      <div class="stat"><div class="stat__n">18 / 18</div><div class="stat__l">EN / AR articles &nbsp; +1 / +1</div></div>
+      <div class="stat"><div class="stat__n">100%</div><div class="stat__l">AR / EN parity — never broken</div></div>
+      <div class="stat"><div class="stat__n">15</div><div class="stat__l">countries · 4 regions &nbsp; +1 (Brazil)</div></div>
+      <div class="stat"><div class="stat__n">8 / 10</div><div class="stat__l">Edition 02 · 2 slots recon-gated</div></div>
+    </div>
+
+    <h3>Content growth &amp; week-over-week drift</h3>
+    <p>Measured against the last review's snapshot (2026-06-24): <strong>17 → 18 EN, 17 → 18 AR</strong>, parity exact through the one ship. The single addition is the right one: <strong>Brazil doubles LatAm-Caribbean from 1 to 2 pieces</strong> — the thinnest region in the corpus, now formally opened, exactly as the wave-2 recon plan intended. Regional balance now reads MENA 9 · Asia 4 · Africa 3 · LatAm 2. Theme drift is minimal and on-pattern (access 14 → 15, value-of-teachers 13 → 14 — Brazil carried a named system-operator voice, Eliana Estrela of Seduc-Ceará). Cadence by ISO week tells the period's true story: <span class="n">W26 closed at 1 piece</span> (Brazil, 06-25) and <span class="n">W27 stands at 0</span> — the six dark days. The corpus's last new word was written a week ago.</p>
+
+    <h3>The period's growth actions</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Action</th><th>Lever</th></tr></thead>
+      <tbody>
+        <tr><td class="n">06-25</td><td>Brazil distribution packet (send-ready; the self-graded-number seam as the hook)</td><td>Cluster return-rate, no tracker</td></tr>
+        <tr><td class="n">06-26 → 07-01</td><td class="muted">— none; no runs —</td><td class="muted">—</td></tr>
+      </tbody>
+    </table>
+    <p>The packet library is now five deep (Korea, Egypt, Philippines, Oman, Brazil) plus the Instagram opening-grid kit — all send-ready, none yet posted anywhere. Until the first public distribution fires, attributable inbound shares remain <strong>zero by construction</strong>, and no number is manufactured to fill that line.</p>
+
+    <h3>Substack &amp; the live-site check — read honestly</h3>
+    <p><strong>Substack is still not live</strong>; opens, return rate, reply rate and country distribution remain dark. Launch-readiness is unchanged and complete on the operation's side (Issue 01 packet send-ready since 2026-06-01); the blocking sequence is unchanged too: <strong>domain purchase (founder) → Search Console + Substack bind → Issue 01 send</strong> — binding the newsletter to the github.io URL first would double the migration cost later (the URL-binding clock, guidebook rule #7).</p>
+    <p>One caveat retired: the 06-24 review reported the live site as an inference ("deploys are automatic, so live = last commit") because github.io is unreachable from <code>bash</code>. This review applied the operation's own rule #5 — the egress wall is bash-only — and <strong>fetched the live homepage directly: HTTP 200, Brazil is the lead, "Edition 02 · 8 pieces," wordmark inlined, footer intact.</strong> The site survived six unattended days exactly as built. The weekly review can and now will always check the live product, not infer it.</p>
+
+    <div class="callout">
+      <span class="tag">The period's single growth bet</span>
+      <p class="verdict">Same bet — and it is firing today, in parallel with this review.</p>
+      <p>Last week's bet — land <code>@astrojs/sitemap</code> on the buffer day + run an Edition-02 cluster pass — <strong>did not fire in-period</strong>, but not on merit: 06-25 was a ship day (the hand-patch was correctly used rather than risking an install mid-ship), and the 06-26 buffer day never ran. It would have carried to next week as bet-churn avoidance; instead, <strong>today's concurrent daily run is executing both halves as this review is written</strong> — the working tree already shows <code>@astrojs/sitemap</code> installed and wired with the per-URL en/ar/x-default i18n alternates, the hand-patched <code>sitemap.xml</code> converted to a documented legacy stub (its URL still resolves; <code>robots.txt</code> now points at <code>sitemap-index.xml</code>), and the Edition-02 cluster pass threading Brazil into the Uruguay and Egypt related-rails. The hand-patch count stops at seven; pieces 9 and 10 inherit a generated sitemap; the operation-controlled half of the domain cutover is done waiting when the purchase lands. The bet is <em>read</em> next review against the live product: <code>sitemap-index.xml</code> serving, alternates verified 1:1, no hand-edit anywhere in the diff.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 02 -->
+  <section class="block">
+    <div class="block__num">Section 02</div>
+    <h2>Quality retrospective</h2>
+    <p class="block__dek">One ship, one gate — and the first gate of the sprint that had nothing to fix. Nothing reached production broken. The recurring defect of the period is the calendar, and it is now codified.</p>
+
+    <h3>The gate did no work — which is the system working</h3>
+    <p>The Brazil publish gate (06-25) is the first of the sprint where <strong>every check passed on arrival</strong>: deks EN 196 / AR 193 — under the 200 code-point cap <em>at compose time</em>, because the prevention rule codified in the 06-24 review (count at compose, verdict carries a checklist line, the gate is the backstop not the ruler) was applied on its very first ship. Real <code>astro build</code>, exit 0, 41 pages; EN 18 = AR 18 = stills 18; brand chrome clean (one inline SVG wordmark, zero <code>&lt;img&gt;</code> brand references); related rails resolve both ways; AR renders RTL. The founder-directed Egypt/RAK re-cut was re-gated the same day: exit 0, 41 pages, deks EN 181 / AR 147, parity unchanged.</p>
+    <p>A rule that was written after two defects and then produces a zero-defect gate on its next ship is the QA loop functioning end-to-end: <strong>defect → gate catch → upstream rule → clean gate.</strong> That loop closing is the period's quality headline.</p>
+
+    <h3>Near-misses and production state</h3>
+    <p><strong>None in-period, and none latent:</strong> today's fresh fetch of the live homepage confirms production serves the 06-25 state intact (no founder pushes landed during the gap — origin still at <span class="n">f46d05b</span>, re-checked before this review's push block was composed, per the push-race rule). One sandbox-only artifact was recorded and defused on 06-25: FUSE leaves <code>.fuse_hidden*</code> ghosts of replaced files that cause spurious duplicate-id build warnings locally; they are gitignored and invisible to production. The fix is now part of the build recipe (Section 03).</p>
+
+    <h3>The recurring defect class is the calendar — codified</h3>
+    <p>Three dark-gap events, escalating: <span class="n">1 day (06-13) → 3 days (06-21→23) → 6 days (06-26→07-01)</span>. Each resume was improvised well (state verified from git, one clean recovery day, no double-batch) — but improvised. That improvisation is now a written prevention rule in the RUNBOOK:</p>
+    <div class="flag">
+      <span class="tag">Codified 2026-07-02 · RUNBOOK</span>
+      <p><strong>The first run after any dark gap is a RECOVERY run, with a fixed shape:</strong> (1) verify state from git + the live site, never from the last brief — the brief is the gap's <em>before</em> picture; (2) re-verify the freshness of every banked candidate before drafting from it — a banked recon ages; (3) ship at most one piece — a missed day (or six) earns one clean recovery day, never a forced double-batch; (4) state the gap plainly, dates and all. The gap's <em>trigger</em> (app launch) is structural and founder-side; the shape of the first run back is the operation's, and it is no longer discretionary.</p>
+    </div>
+    <p>Standing infra item, unchanged and now urgent by count: the hand-patched <code>sitemap.xml</code> stands at <strong>seven consecutive ships</strong> — the drift-defect-waiting-to-happen the 06-07 rule names. It is the growth bet, sequenced first (Section 01).</p>
+  </section>
+
+  <!-- SECTION 03 -->
+  <section class="block">
+    <div class="block__num">Section 03</div>
+    <h2>Knowledge consolidation</h2>
+    <p class="block__dek">A light week by run-count; not by yield. Two operating days produced two durable rulings and a hardened build recipe — the per-run learning rate held even as runtime collapsed.</p>
+
+    <p>Consolidated into the guidebook <code>INDEX.md</code> today (the 06-25 run had already merged its own increments — verified in place, header and closing record refreshed):</p>
+    <ul>
+      <li><strong>Ruling #12b — comparability is not independence</strong> (Brazil ship). Independence and coverage are two different axes of an assessment figure: the federal Saeb is independent but a <em>sample</em> (not unit-comparable); the state-administered ICA is a <em>census</em> on the same external cutoff (comparable, not independent). Tag every figure on both axes; when two numbers disagree, name which axis explains the gap. The figure-discipline rule now stands at <strong>seven dimensions</strong>.</li>
+      <li><strong>Ruling #13 — frame-sibling spacing</strong> (RAK↔Egypt, founder-flagged — the week's most valuable editorial lesson). A diptych is a strength only if the two pieces share the throughline and differ in execution: different entry, its own durable take, no twin stills, spacing across editions. The Editor now runs a nearest-kin check at commission. The first <em>composition-side</em> rule in a rulebook that had until now disciplined only sourcing — the bar rose on the frame, not just the number.</li>
+      <li><strong>Build-route refinements folded, not appended:</strong> the 06-25 environment fixes (<code>mktemp -d</code> + <code>cp -RL</code>, direct <code>./node_modules/.bin/astro</code> invocation, <code>.fuse_hidden*</code> ghost cleanup) are merged into the 2026-06-15 method note itself — one recipe, no drift between an original and its errata.</li>
+      <li><strong>Pruned:</strong> nothing to merge; no duplicates found. #12b is filed under #12, #13 stands alone — they compound rather than repeat.</li>
+    </ul>
+    <p>Section 1 of the index now holds <strong>nine source-index rows: eight shipped, Saudi/Jordan parked</strong> on their single un-park condition, and a <strong>Sudan reconnaissance commissioned 06-25</strong> for Edition 03 — deliberately fenced (education mechanism only: exam/certification continuity, host-system integration; no war geopolitics; park is an acceptable outcome). The team-is-smarter test passes on rate rather than volume this week: every day the operation actually ran, it banked a rule it will never have to learn again.</p>
+  </section>
+
+  <!-- SECTION 04 -->
+  <section class="block">
+    <div class="block__num">Section 04</div>
+    <h2>Team-expansion decision</h2>
+    <p class="block__dek">No new persona. The team stays at ten. The constraint this period was runtime, not capability — and the ladder answers capability gaps only.</p>
+
+    <p><strong>Decision: no addition this week.</strong> Three reasons, recorded per the CHARTER:</p>
+    <ul>
+      <li><strong>No saturation signal is even measurable.</strong> The expansion ladder triggers on a <em>recurring capability gap</em> with the existing team <em>genuinely saturated</em>. The period had two operating days out of eight; on both, every lane cleared its work same-day (recon → draft → AR compose → verify → still → gate → ship, plus a founder-directed revision absorbed without displacing the ship). Nothing queued behind a missing skill. The binding constraint was that the operation wasn't running — and a new persona adds zero runtime.</li>
+      <li><strong>The load curve is about to fall, not rise.</strong> Two slots remain in the sprint, then the founder-directed wind-down to slow cadence (2–3 pieces/edition, monthly) takes effect. Hiring into a decelerating workload would be expansion on novelty — exactly what the CHARTER forbids.</li>
+      <li><strong>The 06-24 ratifications stand:</strong> the Arabic Content Creator is permanent (the compose/verify split held parity through every bilingual ship, including Brazil); Content Creator II remains active until piece 10 closes, then reverts to standby as decided.</li>
+    </ul>
+    <p><strong>Watch signals for the next reviews:</strong> (a) the Researcher's queue is quietly deepening — the Kenya candidate was banked by today's concurrent run (piece 9), leaving one wave-2 slot (a GCC or UAE-ECE angle), plus the Sudan commission and the standing Oman/Saudi/Jordan voice re-recons; if Edition 03 planning finds recon repeatedly gating ships at <em>slow</em> cadence, that is the ladder's Researcher-capacity signal, not a new-role signal. (b) When distribution actually fires (post-domain), the first real metrics read may surface the Data/SEO analyst case — rung 3 of the ladder, untouched until there is traffic to analyse.</p>
+  </section>
+
+  <!-- FOUNDER ACTIONS -->
+  <section class="block">
+    <div class="block__num">Founder surface</div>
+    <h2>Two standing asks, one action</h2>
+    <p><strong>1 · The dark-gap escalation (new, needs a decision eventually, not today).</strong> The cadence's only failure mode in five weeks of operation is the app not being open: 1 day, then 3, now 6. Everything else — content, parity, quality, knowledge — held or rose whenever the operation ran. If mornings-open isn't sustainable on your side, the durable fix is a server-side trigger; until then, the recovery-run rule bounds the damage.</p>
+    <p><strong>2 · The domain purchase (carried a third week).</strong> It gates, in order: Search Console, the Substack bind, the Issue 01 send. The operation's half of the cutover (the sitemap integration) is sequenced first-thing next run, so the purchase is the only remaining mover.</p>
+    <p><strong>3 · The push — once, at the end of today.</strong> Two runs share today's working tree: this weekly review (the review file, the RUNBOOK recovery-run rule, the guidebook consolidation) and the concurrent daily run (the sitemap integration, robots.txt, the legacy-stub sitemap, the cluster rails — and whatever brief/QA it writes at its close). Per the push-race rule, the day lands in a <em>single</em> action: <strong>wait until today's daily brief is on disk</strong> (<code>agents/briefs/2026-07-02-daily-brief.html</code>), then run this one block — <code>git add -A</code> sweeps both runs' completed work. Origin re-checked before composing: <span class="n">f46d05b</span>, unmoved since 06-25. If the daily run prints its own push block, either block is fine — run whichever you see <em>last</em>, once.</p>
+    <div class="pushblock">cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-02: weekly review (six dark days named; recovery-run rule codified; guidebook consolidated #12b/#13; no new persona) + daily run (sitemap integration lands, hand-patch retired at 7; Ed02 cluster rails)"
+git push origin main</div>
+  </section>
+
+  <footer class="colophon">
+    Madār · weekly review · written 2026-07-02 by the Manager (CEO) · period 2026-06-24 → 2026-07-01 · sources: madar_stats.py --json (07-02) · stats/history.jsonl · qa-2026-06-24/25 · manager-status-2026-06-25 · _EDITION_02_SPRINT.md addenda · live-site fetch 2026-07-02 (HTTP 200) · git f46d05b
+  </footer>
+
+</main>
+</body>
+</html>

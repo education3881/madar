@@ -37,6 +37,25 @@ Why each step:
 - **`cwd = /tmp/mbuild`** — `dist/` is created on tmpfs, so the post-generation `unlink` cleanup succeeds → exit 0.
 - The wordmark loader resolves `../../public/wordmark/…` first, so the copied `public/` satisfies it without the repo-root `design-assets/` fallback.
 
+## Refinement — 2026-06-25 (Brazil ship; folded in at the 2026-07-02 consolidation)
+
+Three environment drifts surfaced on a real build and their fixes are now part of the recipe:
+
+1. **`cp -a` into `/tmp` can fail** ("preserving times: Operation not permitted") and a stale `/tmp/mbuild` from a prior session can be un-clearable. Fix: **`B=$(mktemp -d)`** for a fresh build dir every run, and **`cp -RL`** (no archive/preserve flags) for the inputs.
+2. **Invoke the binary directly** — `./node_modules/.bin/astro build` — rather than `npx astro build`; `npx` may try to resolve/install a newer astro against the network and the FUSE boundary.
+3. **FUSE leaves `.fuse_hidden*` ghosts** of files replaced this session in the content dirs (the unlink-ban artifact). A build over a copy that includes them emits spurious `[WARN] Duplicate id … later items overwrite earlier`. They are gitignored and invisible to `git status`/`git add -A`, and the GitHub Actions clean checkout never sees them → production is unaffected. For a warning-free honest local build: **`find "$B/src" -name '.fuse_hidden*' -delete` after the tmpfs copy.**
+
+Updated core sequence:
+
+```bash
+SRC="/sessions/.../mnt/Educational Website/web"; B=$(mktemp -d)
+cp -RL "$SRC/src" "$SRC/public" "$SRC/astro.config.mjs" "$SRC/package.json" "$SRC/tsconfig.json" "$B/"
+find "$B/src" -name '.fuse_hidden*' -delete
+ln -s "$SRC/node_modules" "$B/node_modules"
+cd "$B" && VITE_CACHE_DIR=/tmp/vmad ./node_modules/.bin/astro build
+find dist -name '*.html' | wc -l
+```
+
 ## Why it matters / how to use it
 
 - **Build verification is now a daily capability, not a weekly clean-checkout job.** Any `web/` change — ours or founder-directed — can and should be build-verified the same run. The QA gate's "build clean" line can be a *real* build, not a structural proxy.

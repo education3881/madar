@@ -63,6 +63,17 @@ When the ten are complete, the wind-down below takes effect.
 
 **Two slots remain (9, 10).** The gating dependency is the Researcher's **wave-2 recon**, which the dark days never filled: target **1 Africa-beyond-Sierra-Leone** (Kenya CBC/CBE Grade-9 transition is the lead candidate — live, contested, rich in named operator voices) + **1 more** (GCC fresh angle or a UAE-ECE/ADEK piece), plus the standing voice-only re-recon on Oman/Saudi/Jordan. **No draft until a candidate is banked gate-closed.** Finish line holds at ~end of W26 (≈06-29/30), bar over date. The 06-26 buffer day should also land the `@astrojs/sitemap` integration (now a 7th hand-patch) before any domain/Search-Console bind.
 
+## Addendum — 2026-07-02: recovery run after six dark days; Kenya banked as piece 9
+
+**The gap, named plainly:** no runs 2026-06-26 → 2026-07-01 (six days — the app was not launched; this also missed the 06-28 weekly, which is running delayed today in parallel with this daily). The ~06-29/30 finish line was therefore missed. Nothing shipped, nothing broke: local = origin at f46d05b, live site unchanged since the 06-25 Brazil push.
+
+**Today (recovery shape per the new RUNBOOK rule):**
+1. **Kenya — CBE Grade-10 transition banked PROCEED** as piece 9 (`recon/2026-07-02-kenya-cbe-grade10-source-index.md`). Both gates closed at recon: figures pinned to KNEC/MoE/TSC (1,130,459 candidates; 60/20/20 placement formula; the four-STEM-numbers funnel; 355,457-review ledger), voice at operator tier (Willy Kuria, KESSHA chair, Jan–Feb 2026, plus the principals' collective position). Draft 2026-07-03, bilingual-simultaneous, full gate; figures re-verified live at draft per the recovery rule. Ruling #14 (pathway funnel) banked from this recon.
+2. **The 06-26 buffer chore finally landed:** `@astrojs/sitemap` shipped (build-verified: exit 0, 41 pages, `sitemap-index.xml` + `sitemap-0.xml`, 41 URLs, hreflang EN↔AR pairs). The hand-patch era ends at seven; the legacy `/sitemap.xml` URL is now a thin index stub delegating to the generated file (FUSE blocks deletion — routed around). robots.txt points to `sitemap-index.xml`.
+3. **Rails de-twinned both ways:** Uruguay→Brazil and Egypt→Brazil back-links added (EN+AR), so the LatAm and literacy-measurement rails read in both directions.
+
+**Slot 10 (last):** commission stays open — 1 GCC fresh angle or UAE-ECE/ADEK piece, plus the standing voice-only re-recon on Oman/Saudi/Jordan (each un-parks on one named 2024+ operator). Researcher to close it while Kenya drafts, keeping the bank ≥1 ahead. **New finish line: ~2026-07-04/05 — bar over date, as ratified.**
+
 ## After the ten — wind down to the slow pace (founder, 2026-06-16)
 
 This sprint is a **temporary acceleration, not the new baseline.** Vini: *"Let's complete this cycle and we come back later to the old pace."* Once Edition 02 reaches 10 verified pieces:
