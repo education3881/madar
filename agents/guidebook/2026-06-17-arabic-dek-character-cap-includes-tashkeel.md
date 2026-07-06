@@ -35,3 +35,8 @@ Run it with `SLUG=2026-06-17-korea-aidt-reversal`. Green = every dek ≤ 200. Ad
 ## Cross-refs
 - [[2026-06-15-astro-build-in-sandbox-vite-cache-route]] — the real build that surfaces this (a structural proxy would not have).
 - [[2026-06-16-sourcing-one-party-policy-reform-and-vietnamese-transliteration]] — the frontmatter-key-parity ruling; same family of lesson (frontmatter defects build clean or fail loud, but only a real build tells you which).
+
+---
+
+**Refinement — 2026-07-04 (Kenya ship):** the compose-time count must be run **on the saved file's frontmatter, not on a drafting scratch-string**. The Kenya AR dek was counted at 183 on the scratch draft, then composed longer (211) in the written file and caught only at the build gate (trimmed to 170). One-liner after every Write, against the file:
+`python3 -c "import re;print(len(re.search(r'^dek: \"(.*)\"', open('<file>').read(), re.M).group(1)))"`

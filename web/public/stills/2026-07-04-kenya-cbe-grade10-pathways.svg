@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Kenya. A broad stream of many fine parallel lines flows in from the left — a cohort of more than a million. At the centre the stream narrows to pass through a single upright gate drawn as two vertical strokes. Beyond it the lines fan out into three channels of unequal width — one wide rising, one middling level, one narrow falling — running to the right edge. Beneath the gate, the only warm mark on the page, a kiln-orange arc loops from beyond the gate back to before it: the review window, the state's own published correction, through which part of the stream passed twice.">
+
+  <title>The Still · Kenya — a cohort through a gate, and the loop that runs back through it</title>
+  <desc>Many fine ink lines enter from the left edge as one broad, loose band — a cohort. Moving right, the band tightens and converges toward a narrow opening at the centre of the page, marked by two firm vertical strokes with a slim gap between them: the gate, the placement instrument. Past the gate the lines separate into three bundles of unequal width. The widest bundle climbs gently toward the upper right; a middling bundle runs level to the right edge; a narrow pair falls away toward the lower right. Beneath the gate, a single kiln-orange arc — the only warm thing on the page — swings from just beyond the gate, down and back, re-entering just before it: the review loop, the published correction through which part of the stream passed twice. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The cohort-stream: many fine lines converging on the gate.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-stream-in"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE COHORT — fine parallel lines entering left, converging to the slit -->
+    <g stroke-width="1.5" stroke-opacity="0.55">
+      <path d="M 60 205 C 240 212 420 258 556 291"/>
+      <path d="M 60 235 C 250 240 430 268 556 294"/>
+      <path d="M 60 265 C 250 268 430 280 556 297"/>
+      <path d="M 60 295 C 260 296 440 298 556 300"/>
+      <path d="M 60 325 C 260 322 440 310 556 303"/>
+      <path d="M 60 355 C 250 348 430 320 556 306"/>
+      <path d="M 60 385 C 250 374 430 330 556 309"/>
+    </g>
+    <g stroke-width="1.1" stroke-opacity="0.34">
+      <path d="M 60 190 C 240 200 420 252 556 289"/>
+      <path d="M 60 250 C 250 254 430 274 556 295"/>
+      <path d="M 60 310 C 260 309 440 304 556 301"/>
+      <path d="M 60 370 C 250 361 430 325 556 307"/>
+      <path d="M 60 400 C 240 386 420 336 556 311"/>
+    </g>
+
+    <!-- THE GATE — two firm vertical strokes, a slim opening between them.
+         The heaviest marks on the page: the instrument itself. -->
+    <g stroke-opacity="0.92">
+      <path stroke-width="3.5" d="M 572 148 C 570 196 570 240 573 282"/>
+      <path stroke-width="3.5" d="M 573 318 C 570 360 570 404 572 452"/>
+    </g>
+    <!-- faint lintel and sill ticks — the gate is built, not grown -->
+    <g stroke-width="1.4" stroke-opacity="0.2">
+      <path d="M 562 148 L 584 148"/>
+      <path d="M 562 452 L 584 452"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    THE THREE CHANNELS — ink, diverging beyond the gate.
+    One wide (rising), one middling (level), one narrow (falling).
+    ============================================================
+  -->
+  <g id="ink-channels-out"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- widest bundle — six lines climbing to the upper right -->
+    <g stroke-width="1.6" stroke-opacity="0.6">
+      <path d="M 588 293 C 740 268 950 205 1140 158"/>
+      <path d="M 588 296 C 745 276 950 222 1140 182"/>
+      <path d="M 588 299 C 750 284 955 240 1140 206"/>
+      <path d="M 588 302 C 750 292 955 257 1140 230"/>
+    </g>
+    <g stroke-width="1.1" stroke-opacity="0.36">
+      <path d="M 588 291 C 738 260 945 190 1140 136"/>
+      <path d="M 588 304 C 752 299 958 272 1140 252"/>
+    </g>
+
+    <!-- middling bundle — four lines running level -->
+    <g stroke-width="1.5" stroke-opacity="0.55">
+      <path d="M 588 300 C 760 306 960 312 1140 316"/>
+      <path d="M 588 303 C 760 313 960 326 1140 334"/>
+      <path d="M 588 306 C 760 320 960 340 1140 352"/>
+    </g>
+    <g stroke-width="1.0" stroke-opacity="0.32">
+      <path d="M 588 308 C 758 326 958 352 1140 368"/>
+    </g>
+
+    <!-- narrow pair — falling away to the lower right -->
+    <g stroke-width="1.4" stroke-opacity="0.5">
+      <path d="M 588 309 C 740 348 950 412 1140 452"/>
+    </g>
+    <g stroke-width="1.0" stroke-opacity="0.3">
+      <path d="M 588 311 C 738 356 946 426 1140 470"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The review loop: one arc swinging from beyond the gate, down
+    and back, re-entering before it. The only warm thing on the
+    page — the state's own published correction.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the loop back through the gate -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="
+      M 668 328
+      C 690 400 640 486 573 486
+      C 508 486 462 408 486 330
+    "/>
+    <!-- a short serif where the loop rejoins the stream, before the gate -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 478 336 L 494 326"/>
+  </g>
+</svg>

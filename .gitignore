@@ -30,3 +30,8 @@ yarn-error.log*
 # FUSE filesystem leftovers (sandbox edits over a FUSE mount create these;
 # they are not real files and must never be committed)
 **/.fuse_hidden*
+
+# Sandbox rename-asides (FUSE refuses unlink, so stale build caches get
+# renamed aside instead of deleted; never commit them)
+**/.astro-stale*
+**/.vite-stale*

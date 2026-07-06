@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-06</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 6 July 2026. The deploy pipeline has been failing since 2 July — root-caused, fix proven, staged; the live site is 11 days stale and Kenya is publicly invisible until the push. Sunday was dark (daily + weekly); the delayed weekly ran today. Slot 10 probed three ways and honestly held. One push unblocks everything." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 30ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 6 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 27</div>
+    <h1>The deploys have been failing since 2 July. The fix is staged.</h1>
+    <p class="dek">The week's hardest finding, stated without varnish: <strong>every production deploy since your 07-02 evening push has silently failed</strong> — a lockfile desync kills the runner's <span class="mono">npm ci</span> before Astro ever runs — so the live site has served the <strong>25 June</strong> edition of itself for eleven days, and <strong>Kenya, shipped Saturday, is publicly a 404</strong>. The cause is proven both directions, the fix already sits in your working tree, and briefs 25–26's too-confident deploy claims are corrected on the record. Sunday was dark (daily <em>and</em> weekly — the delayed weekly ran this morning); slot 10 was probed three ways and honestly held. <strong>Your one push now repairs the pipeline and publishes two days of work at once.</strong></p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A cut-off investigation, then a dark Sunday.</h2>
+        <div class="day__date">2026·07·04 evening → 2026·07·05 · origin unmoved at 4f26638 · the 07-04 work still unpushed (20 paths)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">Saturday evening — the finding that almost got away</div>
+        <div class="item__body">A second same-day session opened Saturday ~19:50 and went straight to work: it noticed the live <span class="mono">robots.txt</span> still advertised the <em>old</em> sitemap, proved <span class="mono">sitemap-index.xml</span> 404s, ruled out the stale <span class="mono">gh-pages</span> branch, and reproduced the killer — <span class="mono">npm ci</span> against origin's lockfile dies with <span class="mono">EUSAGE</span> ("package.json and package-lock.json are not in sync"). <strong>The session was cut off before writing any of it to disk.</strong> It survived as session state only; today's first job was making it a record (<span class="mono">qa-2026-07-06.md</span>). Honest note: had the app not reopened, the operation's best finding of the week would have evaporated.</div>
+        <div class="item__note">the intra-day rerun correctly shipped nothing (1 fresh/day cap held); its whole value was the investigation</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Sunday 07-05 — fully dark</div>
+        <div class="item__body">No daily, and the <strong>weekly review missed its Sunday slot</strong> — fifth gap since 06-13 (1 → 3 → 6 → 1 → 1). The delayed weekly ran <em>this morning</em> (per the two prior precedents) and is on disk: one ship, one outage found, one honest hold; growth bet = the grid restart below; no team expansion. The push cost of the gap is now compounding visibly: <strong>Kenya has been finished and invisible for two days</strong> — not because the operation didn't run, but because the one action it cannot take is the push.</div>
+        <div class="item__note">agents/reviews/2026-07-06-weekly-review.html · next weekly on schedule: Sun 2026-07-12</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Root cause on the record, fix proven, parks re-tested.</h2>
+        <div class="day__date">2026·07·06 · Monday · all five functions + the delayed weekly · no ship (nothing banked — by rule, not by accident)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · P0 — the deploy outage, root-caused and pre-fixed</div>
+        <div class="item__body">Full anatomy in <span class="mono">qa-2026-07-06.md</span>: the 07-02 push committed <span class="mono">@astrojs/sitemap</span> with a lockfile that no longer matched <span class="mono">package.json</span>; Actions' <span class="mono">npm ci</span> hard-fails on desync; both 07-02 deploys died; the site froze at 06-25. <strong>Proof, both directions:</strong> origin's lockfile → <span class="mono">EUSAGE</span>; the working tree's lockfile (regenerated incidentally by Saturday's local install — the "+6 benign lines" that were actually the cure) → <span class="mono">npm ci</span> exit 0, 449 packages → <span class="mono">npm run build</span> exit 0, <strong>43 pages, 43-URL sitemap</strong> — the runner's exact sequence, green. <strong>Three corrections of record</strong> are filed with it: Brief 25's "the deploy is already running," Brief 26's "never at risk," and Brief 26's ambiguous 41-URL live check — each named, each explained. Three gates passed while production failed; none of them ran what the runner runs. Now one does.</div>
+        <div class="item__note">the outage window: 2026-07-02 21:33 → your next push · nothing was lost, only delayed — the artifact set on disk is complete and gate-passed</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · slot 10 — three probes, three honest holds</div>
+        <div class="item__body"><strong>Jordan</strong> (parked draft waiting since 05-25): EN + AR probes found the strong voices are all pre-2024 — the un-park condition (one named 2024+ operator) stands unmet; sharpest next window is Jordan's Term-1 press (late Aug), which points it at <strong>Edition 03</strong>. <strong>Saudi ECE:</strong> the mechanism story is live (GASTAT 2025: organized-learning-before-primary 64.03%, from 37.2% in 2017) but every voice is announcement-tier — park stands. <strong>GCC fresh:</strong> one lead found and <em>fenced</em> — a curriculum review circulating from an advocacy monitor; sourcing a spine from politically engaged monitors breaches the mechanism-only guardrail, so it is logged as what not to use. <strong>UAE-ECE/ADEK</strong> remains the open half of the commission, now carrying an explicit adjacency note for the Editor: the founder advises ADEK — any commission names that on the record and prefers system-level framing. Edition 02 holds at <strong>9 of 10, bar over slot</strong>; if nothing banks by 07-12, the close-at-nine question goes to that weekly.</div>
+        <div class="item__note">content-drafts/recon/2026-07-06-slot10-re-recon-jordan-saudi-gcc.md · no draft without a banked candidate — the rule that kept today honest</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the grid restart, made a 60-second action</div>
+        <div class="item__body">The delayed weekly's growth bet is concrete: <strong>Mon 07-06 Uruguay tile · Wed 07-08 macron card · Fri 07-10 Ghana tile</strong>, each mapped to its ready section of the 06-20 posting kit — captions EN/AR, stills, order, all pre-cleared. Success is 3/3 posted; if the week ends 0/3, the 07-12 weekly decides the <em>mechanism</em> (an operation-driven posting hook vs a five-minute founder ritual) instead of re-scheduling the same bet a third time. One dependency stated plainly: <strong>do not post links until your push lands</strong> — the pages the captions point at are stale or 404 until then. No metrics invented; the site's stale week saw no tracker because there is none, by design.</div>
+        <div class="item__note">social-drafts/2026-07-06-grid-restart-week-schedule.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #16 — verify the thing itself</div>
+        <div class="item__body">The outage pays its toll forward as the week's durable rule: <strong>a passing local build is not a passing deploy.</strong> Binding forms: when dependencies change, the gate runs <span class="mono">npm ci</span> from the committed lockfile (npm <em>install</em> tolerates — and silently repairs — the exact desync that kills npm <em>ci</em>); lockfiles are never hand-edited, only regenerated; live deploys are verified by a marker <em>only the new deploy can serve</em>, never an HTTP 200 or an ambiguous count. Filed as the third instance of a now-named meta-pattern — sitemap (06-07), dek-count (07-04), lockfile (07-06): <strong>verify the artifact in the environment that judges it, not through a proxy that is easier to reach.</strong></div>
+        <div class="item__note">agents/guidebook/2026-07-06-local-build-is-not-the-deploy.md · INDEX addendum links it beside #14/#15</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Brief · No. 27 — statistics honestly flat</div>
+        <div class="item__body">The panel below is regenerated deterministically (<span class="mono">madar_stats.py --log</span>, 07-06 snapshot appended) and is <strong>unchanged from Saturday</strong> — correct: nothing shipped since Kenya, and Kenya itself remains publicly invisible until the push. The corpus numbers move next when either slot 10 banks and ships, or Edition 02 closes at nine by decision.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-06</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">19</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">19</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">16</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 9 · Africa 4 · Asia 4 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 19 · access 16 · value of teachers 15 · language and heritage preservation 7 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-04</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Three live markers, two probes, one tile.</h2>
+        <div class="day__date">next daily: 2026·07·07 Tuesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Quality · verify the healing, not assume it</div>
+        <div class="item__body">Once your push lands, tomorrow's run reads the three unambiguous markers per ruling #16: <span class="mono">/articles/2026-07-04-kenya-cbe-grade10-pathways/</span> resolves (EN + AR), <span class="mono">/sitemap-index.xml</span> resolves at 43 URLs, and live <span class="mono">robots.txt</span> names <span class="mono">sitemap-index.xml</span>. If any fails <em>after</em> a push, the next suspect is runner-side and goes to you with the Actions tab as the one place to look.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · the two probes that can still close Edition 02</div>
+        <div class="item__body">UAE-ECE system-level angle (with the adjacency note in front of the Editor) and a Kuwait/Bahrain Arabic-press sweep — the two paths named by today's recon as still capable of banking slot 10 this week. No draft until one closes both gates.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · Monday tile</div>
+        <div class="item__body">Today is the grid restart's day one (Uruguay tile). The kit is a copy-paste; the caption's link waits on your push. 3/3 by Friday is the bet the 07-12 weekly reads back.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">For Vini · one push: it repairs the pipeline AND publishes two days of work</div>
+    <p><strong>This is the highest-leverage push since launch.</strong> It carries: the lockfile fix (deploys have failed since 07-02 — this heals the runner), the Kenya piece EN + AR with its still and verdicts (finished Saturday, publicly 404 since), the sitemap/robots corrections, rulings #15–#16, the slot-10 recon record, the grid schedule, the delayed weekly, briefs 26–27, and all QA/gate logs. <span class="mono">origin/main</span> re-checked at compose: still <span class="mono">4f26638</span> — no race. After you push, give Actions ~2 minutes, then the Kenya URL below should resolve; tomorrow's run verifies all three markers formally.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-04..06: Edition 02 piece 9 — Kenya CBE Grade-10 pathways (EN+AR, full gate) + deploy-pipeline fix (lockfile npm-ci desync since 07-02 — root-caused, fix proven; site was stale at 06-25). Rulings #15 (tansiq/tawjih + Kenya transliteration) + #16 (local build is not the deploy); slot-10 re-probe: Jordan/Saudi parks stand, GCC lead fenced, ADEK adjacency note filed; grid-restart week schedule; delayed weekly (07-05 slot); briefs 26-27; corrections of record in qa-2026-07-06."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Quick self-check you can do in the browser ~2 min after pushing: <span class="mono">…/madar/articles/2026-07-04-kenya-cbe-grade10-pathways/</span> loads, and <span class="mono">…/madar/sitemap-index.xml</span> stops 404-ing. Nothing here needs an editorial decision. The domain memo (06-12) stays the one open call — unchanged, and untouched by this outage.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·06</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

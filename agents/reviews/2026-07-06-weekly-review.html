@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-07-06 (delayed from 2026-07-05)</title>
+<style>
+  :root { --color-paper:#FAFAF7; --color-ink:#0E1B2C; --color-orange:#D94F2A; --color-sage:#7A8471; --color-sand:#E8E2D0; --color-rule:rgba(14,27,44,0.18); --color-rule-soft:rgba(14,27,44,0.08); --color-muted:rgba(14,27,44,0.62); --font-display:"Cormorant Garamond",Georgia,serif; --font-body:"Newsreader",Georgia,serif; --font-mono:"JetBrains Mono",ui-monospace,Menlo,monospace; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--color-paper); color:var(--color-ink); font-family:var(--font-body); font-size:17px; line-height:1.62; }
+  .container { max-width:900px; margin-inline:auto; padding:2rem; }
+  h1,h2 { font-family:var(--font-display); font-weight:500; letter-spacing:-0.015em; line-height:1.08; margin:0; }
+  h1 { font-size:clamp(30px,4vw,44px); }
+  h2 { font-size:clamp(20px,2vw,26px); margin-bottom:0.75rem; }
+  .kicker { font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-orange); }
+  .mono { font-family:var(--font-mono); font-size:10.5px; color:var(--color-sage); }
+  section { border-top:1px solid var(--color-ink); padding-block:1.5rem; margin-top:1rem; }
+  p { margin:0 0 0.9em; max-width:42rem; }
+  .flag { background:var(--color-sand); padding:1rem 1.25rem; border-inline-start:2px solid var(--color-orange); max-width:42rem; }
+  footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--color-rule); font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-sage); }
+</style>
+</head>
+<body>
+<main class="container">
+  <div class="kicker">Weekly Review · covering 2026-06-29 → 2026-07-05 · run 2026-07-06 (Sunday slot missed — the app was closed)</div>
+  <h1>One ship, one outage found, one honest hold.</h1>
+  <p style="font-family:var(--font-display); font-style:italic; color:var(--color-muted); font-size:19px;">The week produced exactly one piece — and the week's most valuable artifact may still be the outage it uncovered: production has been failing silently since 2 July while three local gates passed. Both the piece and the fix now wait on the same push.</p>
+
+  <section>
+    <h2>The week, read honestly</h2>
+    <p><strong>Shipped:</strong> Kenya — <em>"The pathway, assigned at fourteen"</em> (2026-07-04, EN+AR, full gate, Edition-02 piece 9 of 10) — the Africa-assessment slot, the four-STEM-numbers funnel, the correction-ledger read. The recovery rule earned its keep: live re-verification before drafting caught the firmed 51/38/11 split and TSC scrapping its two-subject rule — both post-recon developments.</p>
+    <p><strong>Dark:</strong> 06-29 → 07-01 fell in the previous review's window; this week added <strong>07-03</strong> (the Kenya draft day, slipped one day) and <strong>07-05</strong> (Sunday — daily AND this weekly missed; the weekly you are reading runs a day late). The 07-04 <em>evening</em> session was cut off mid-investigation — its finding survived in session state and is now on the record (below). Cadence trend: the operation exists only on days the app opens; unchanged, still structural, still named.</p>
+    <p><strong>Held:</strong> slot 10 did not bank — Jordan and Saudi parks re-tested (EN+AR probes) and stand on the same un-park condition (one named 2024+ operator); one GCC lead found and fenced (advocacy-monitor source). Bar over slot, as ratified; the close-at-nine-vs-hold question goes to the 07-12 review if nothing banks this week.</p>
+  </section>
+
+  <section>
+    <h2>Quality retrospective — the outage anatomy (the week's real lesson)</h2>
+    <p>The 07-02 push committed a lockfile out of sync with <span class="mono">package.json</span>; GitHub Actions runs <span class="mono">npm ci</span>, which hard-fails on desync; every deploy since 07-02 21:33 died at that step. The live site sat stale at the 06-25 deploy while briefs 25 and 26 asserted otherwise on ambiguous evidence — those assertions are corrected in <span class="mono">qa-2026-07-06.md</span>, plainly. Three gates passed while production failed because none of the three ran <em>what the runner runs</em>. That is now <strong>ruling #16</strong>: gates run <span class="mono">npm ci</span> when dependencies change; lockfiles are never hand-edited; live deploys are verified by markers only the new deploy can serve. The fix (a regenerated lockfile) was proven both directions this morning — origin's lockfile fails <span class="mono">npm ci</span>, the working tree's passes and builds 43 pages — and rides the pending push.</p>
+    <p>Meta-pattern, now named across three instances (sitemap 06-07, dek-count 07-04, lockfile 07-06): <strong>verify the thing itself, in the environment that judges it, never a proxy that is easier to reach.</strong></p>
+  </section>
+
+  <section>
+    <h2>Traffic & growth</h2>
+    <p>Nothing honest to read: the site carries no tracker by design, Substack is pre-launch, and the live site has been stale since 06-25 — any "traffic" this week saw a frozen archive. The <strong>growth bet for w/c 07-06</strong> is the grid restart, made concrete in <span class="mono">social-drafts/2026-07-06-grid-restart-week-schedule.md</span>: Uruguay (Mon 07-06) → macron card (Wed 07-08) → Ghana (Fri 07-10), each a 60-second copy-paste. Success = 3/3 posted; if 0/3, the 07-12 review decides the <em>mechanism</em> instead of re-scheduling the same bet a third time. Bio-link and Kenya tiles wait for the push to land the pages they point at.</p>
+  </section>
+
+  <section>
+    <h2>Knowledge consolidation</h2>
+    <p>Verified in place: <strong>#15</strong> (التنسيق/التوجيه register split + Kenya transliteration table — second banked case of AR out-precising the source language) and <strong>#16</strong> (above), both INDEX-linked; the Kenya source-index row moved PROCEED → SHIPPED with its post-recon updates recorded; the dek-cap ruling gained the count-the-file refinement. Section 1 stands at ten source indices; the figure discipline at seven dimensions + #14 now applied in print. No duplicates to merge; nothing pruned.</p>
+  </section>
+
+  <section>
+    <h2>Team decision</h2>
+    <p><strong>No expansion this week.</strong> The standing decisions are unchanged: Arabic Content Creator permanent; Content Creator II reverts to standby when Edition 02 closes (at ten, or at nine if the 07-12 review so decides). One capability gap logged, not yet a persona: the <em>posting mechanism</em> — Growth can stock queues indefinitely but cannot press "post"; if the grid bet fails 0/3 again, the answer is a mechanism decision (founder ritual or an operation-driven hook), not a new hire.</p>
+  </section>
+
+  <section>
+    <div class="flag">
+      <div class="kicker">For the founder — one action unblocks everything</div>
+      <p style="margin-top:0.5rem;"><strong>The push in Brief 27 is currently the single point through which everything visible flows:</strong> the Kenya piece (invisible since Saturday), the pipeline fix (production failing since 02 July), the corrected sitemap/robots, and this review. After it lands (~90s): Kenya resolves, <span class="mono">sitemap-index.xml</span> resolves, and the next run re-verifies all three markers. Nothing else this week needs your eye; the domain memo (06-12) remains the one open decision, unchanged.</p>
+    </div>
+  </section>
+
+  <footer>Manager · weekly review · run 2026-07-06 · Madār — made in spite of, not because of.</footer>
+</main>
+</body>
+</html>

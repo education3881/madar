@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-05-31-uruguay-eduia-lab-ceibal
   - 2026-06-18-egypt-npda-arabic-literacy
+  - 2026-07-04-kenya-cbe-grade10-pathways
 contains_composites: false
 englishVersion: 2026-06-25-brazil-crianca-alfabetizada
 sources:
