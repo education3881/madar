@@ -62,6 +62,17 @@ find dist -name '*.html' | wc -l
 - **Counting:** never `find <FUSE>/web/dist` for a page count — FUSE can't unlink, so stale HTML from old builds accumulates and inflates the count. Count the **tmpfs** `dist/`, or read the route list the build prints.
 - **In-place is acceptable for a quick check**: `VITE_CACHE_DIR=/tmp/vmad npm run build` from `web/` will *generate* every page (you can grep them) and only fail on the final `dist/` cleanup (exit 1, cosmetic). Use the tmpfs recipe when you need a clean exit code or an honest count.
 
+## Widening — 2026-07-04 (Kenya ship; written at the 2026-07-06 weekly consolidation)
+
+*(The 07-04 QA log recorded this as "banked to the guidebook", but the note was never written — the weekly caught the log-vs-artifact drift and writes it now.)*
+
+The FUSE `unlink` ban has **widened beyond the two known spots**: on the 07-04 build it bit *any* end-of-build unlink on the mount — `dist/_noop-middleware.mjs`, then `.astro/_noop-middleware.mjs` — **including files created in the same session**. Two consequences supersede parts of the text above:
+
+1. **The "in-place is acceptable for a quick check" paragraph (§ Why it matters, item 3) is retired.** An in-place build on the mount can no longer *complete* at all; the mounted tree cannot host a finishing build. The tmpfs clean-checkout recipe is the **only** honest local build.
+2. **`node_modules` may need restoring per-sandbox**: a package installed in one session's environment (e.g. `@astrojs/sitemap`, installed 07-02) can be absent from the next sandbox's `node_modules`. Restore with `npm install --cache /tmp/npm-cache` before building — and note the 07-06 finding: that same real `npm install` is what silently **repaired the hand-edited lockfile desync** that had been killing CI (ruling #16, `2026-07-06-local-build-is-not-the-deploy.md`). A real install is both the package restore *and* the lockfile truth-maker; never hand-edit the lock.
+3. Stale `.astro-stale-*` / `.vite-stale-*` rename-asides accumulate on the mount (FUSE blocks their deletion); they are gitignored as of 07-04 and swept by any clean checkout.
+
 ## Cross-refs
 - [[edu_website_sandbox_lock]] — the recurring FUSE/index.lock boundary this operationalises.
 - `2026-06-08-egress-wall-is-bash-only-use-web-tools.md` — same shape of lesson (a blocked *bash* operation is not an unreachable *capability*). The cold build was the build-side twin of that error.
+- `2026-07-06-local-build-is-not-the-deploy.md` — ruling #16; the deploy-side twin (a *passing* local build is not a passing deploy).

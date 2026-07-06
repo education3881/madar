@@ -61,6 +61,12 @@
     </div>
   </section>
 
+  <section>
+    <div class="kicker">Addendum — external verification (scheduled weekly session · 2026-07-06 ~12:05)</div>
+    <p style="margin-top:0.6rem;">The outage diagnosis above rested on local reproduction because that session's egress could not reach <span class="mono">api.github.com</span>. This second session (different egress path) reached the GitHub Actions API directly and <strong>confirms the diagnosis runner-side, closing the evidentiary gap:</strong> workflow <span class="mono">astro-pages.yml</span> ("Deploy Astro site to Pages", Node 20, <span class="mono">npm ci</span> → <span class="mono">npm run build</span> → Pages artifact) — run #35 (<span class="mono">4f26638</span>, 2026-07-02 23:11:47Z) <strong>failed at the "Run npm ci" step in ~1 second</strong> (23:11:59 → 23:12:00), build and deploy skipped; the 21:33 run (<span class="mono">0707e0b</span>) failed at the same step; <strong>last green deploy: <span class="mono">f46d05b</span>, 2026-06-25 17:05:12Z</strong> — exactly the state the live site serves today (confirmed: <span class="mono">/madar/sitemap.xml</span> still the hand-patched 41-URL file ending at Brazil; <span class="mono">sitemap-index.xml</span> and both Kenya pages 404).</p>
+    <p>This session also re-ran the two-direction reproduction independently: origin's lockfile → <span class="mono">npm ci</span> EUSAGE, <span class="mono">Missing: @types/ms@2.1.0 from lock file</span> (the hand-edited lock added <span class="mono">@types/debug</span>, which requires <span class="mono">@types/ms</span>, without its entry); the working tree's lockfile → clean, 545 packages. Root cause, fix, and runner behaviour now agree from two sessions and two vantage points. Also recorded here: the weekly attributable-inbound search (X/Bluesky/LinkedIn/web, run 2026-07-06) found <strong>no external shares of the publication URL</strong> — expected pre-distribution; baseline logged. The push block in Brief 27 is unchanged and remains the single action.</p>
+  </section>
+
   <footer>Manager · weekly review · run 2026-07-06 · Madār — made in spite of, not because of.</footer>
 </main>
 </body>

@@ -17,4 +17,8 @@
 - The 07-04 evening finding nearly evaporated with its session — the only reason it survived was the app reopening. Recovery-run rule already mandates state-verification; today adds the practical corollary: **findings are written to disk the moment they are proven, not at session end.** (Folded into ruling #16's filing.)
 - Egress: api.github.com unreachable (Actions history unverifiable sandbox-side); github.io reachable; git fetch flaky but succeeded — origin verified at `4f26638`.
 
+## 12:56 addendum — duplicate triggers, spent on verification
+
+The daily task re-fired twice after this run's files were written (12:05 and ~12:50). No day work was re-run — quality-over-slot applies to runs too; a second Brief 27 would be a defect, not output. The re-fires were spent verifying this record from outside the working tree: origin still `4f26638`; live `/madar/sitemap.xml` is the legacy 41-URL file ending at Brazil (06-25) and Kenya EN/AR are absent live — **P0 confirmed externally, not just from our own logs**; the 2026-07-06 stats snapshot exists exactly once (no duplicate append); Brief No. 27 verified intact with stats panel. One flag chased and cleared: the stale 07-04 `web/dist` holds only the legacy sitemap stub — expected, since the Actions-exact `/tmp` build this morning emitted `sitemap-index.xml` + 43 pages (build log, 11:56:37), and per ruling #16 the local dist is not the deploy. Push block unchanged.
+
 — Manager · 2026-07-06
