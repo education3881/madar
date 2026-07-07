@@ -1,0 +1,60 @@
+---
+title: "A chair, a paper, a date"
+dek: "Gaza's Tawjihi is mid-session as this piece publishes — 20 June to 8 July, one sitting open to three stranded cohorts at once. How an exam is administered when the furniture itself must be counted."
+date: 2026-07-07
+edition: 3
+country: Palestine
+region: MENA
+level: K-12
+themes: [government-led programs, access, value of teachers]
+type: curated
+related:
+  - 2026-05-28-iraq-mosul-library
+  - 2026-07-07-syria-certificate-recognition
+contains_composites: false
+arabicVersion: 2026-07-07-gaza-education-continuity
+sources:
+  - title: "UNRWA — Situation Report #203 on the Gaza Strip and the West Bank, including East Jerusalem (published 14 January 2026, reporting to 6 January: 220,950 students taught by 5,180 teachers in temporary learning spaces — about 34% of school-age children, Education Cluster partners including UNRWA; 296,028 children reached through UNRWA's digital self-learning programme with 7,665 teachers)"
+    url: "https://www.unrwa.org/resources/reports/unrwa-situation-report-203-situation-gaza-strip-and-west-bank-including-east-jerusalem"
+  - title: "UNRWA — Situation Report #228 (June 2026: the temporary-learning-space operation still running and still reported, six months on)"
+    url: "https://www.unrwa.org/resources/reports/unrwa-situation-report-228-humanitarian-crisis-gaza-strip-and-occupied-west-bank"
+  - title: "UNRWA — Keep Learning platform (the digital self-learning surface itself)"
+    url: "https://keeplearning.unrwa.org/en/"
+  - title: "UNRIC (UN Regional Information Centre) — UNRWA's education operation in Gaza (about 136,000 children enrolled in UNRWA's own temporary learning spaces by January 2026, against an expansion target of 335,000 — the UNRWA-only subset, kept distinct in this piece from the cluster-wide count)"
+    url: "https://unric.org/en/unrwa-continues-its-work-in-gaza-despite-a-ban-and-the-destruction-of-the-education-system/"
+  - title: "WAFA — Palestinian Ministry of Education announcement of the electronic general-secondary examination phases for Gaza (29 June 2025)"
+    url: "https://english.wafa.ps/Pages/Details/158570"
+  - title: "WAFA — announcement of the 2024-25 general secondary results (14 October 2025: the delayed session, sat electronically by Gaza's stranded candidates)"
+    url: "https://english.wafa.ps/Pages/Details/159615"
+  - title: "The Christian Science Monitor — 'In Gaza, an exam signals a return of hope' (22 September 2025: roughly 24,500 candidates sitting the delayed 2024-25 Tawjihi electronically, the first session since 2023)"
+    url: "https://www.csmonitor.com/World/Middle-East/2025/0922/gaza-palestine-tawjihi-exams-education-undp"
+  - title: "Euronews — 'Gaza students sit exams in tents as nearly all schools lie in ruins' (21 May 2026: the 20 June–8 July window; registration open to the 2023, 2024 and 2025 cohorts alongside current grade-11 completers; Mohammed Hamdan, director of education in central Gaza, and Louay Ballour, teacher at Fathi al-Balawi School, named and quoted; the UNICEF facilities estimate; some 658,000 children without in-person schooling for over two consecutive years)"
+    url: "https://www.euronews.com/2026/05/21/gaza-students-sit-exams-in-tents-as-nearly-all-schools-lie-in-ruins"
+  - title: "Euronews Arabic — the same report in its Arabic edition (20 May 2026: the operators' original Arabic wording; the central area hosting about a third of the Strip's general-secondary candidates)"
+    url: "https://arabic.euronews.com/2026/05/20/gaza-education-war-displaced-students-schools-crisis-tents-conflict"
+hero:
+  src: "/stills/2026-07-07-gaza-education-continuity.svg"
+  alt: "A continuous ink drawing for Gaza: a single faint canvas line drapes across the top of the page — a tent roof implied by one shallow curve and one slim pole, nothing more. Beneath it, on a plain ground line, stand the firmest marks on the page: an empty school chair drawn in profile, facing a small table on which an exam sheet is propped upright. Across the face of the sheet, the only warm marks on the page: a short kiln-orange line with a second, shorter one beginning beneath it — an answer, being written. The room holds only what the exam requires: a seat, a paper, a date being kept."
+  caption: "سكون · The Still · Curated 26 · Palestine"
+approved: true
+---
+
+As this piece is published, an examination is one day from its close. The Tawjihi — the general secondary examination sat across the Palestinian territories and in Jordan, the single credential that moves a Palestinian student into university — has been running in Gaza since 20 June and ends on 8 July. It is mid-session as these lines are written, and that is the point: the fact most worth recording about this examination is that it is occurring. Its register this year is unlike any in the exam's history: the Palestinian Ministry of Education opened registration not only to students who completed grade 11 in the current academic year, but to candidates from the 2023, 2024 and 2025 sessions who were never able to complete their graduation requirements. One sitting, in other words, is carrying what four sittings should have carried. The rest of this piece is about what it takes to hold that sitting — the halls, the furniture, the paper, the date — because in Gaza this month, exam administration is the visible form of an education system insisting it still exists.
+
+The man preparing part of it is Mohammed Hamdan, director of education in central Gaza, who told Euronews in May that the arrangements were being made under conditions he had not encountered before. The shortage he is working against has three named parts — school furniture, stationery, examination supplies — and his own account of meeting it is a procurement list: "We are working hard to provide the bare minimum of school furniture so that students can at least sit on a chair while taking their exams, in addition to securing some essential stationery and preparing exam halls at the minimum level needed to meet students' needs." His directorate's burden is compounded by geography: the central area, Hamdan noted, hosts on its own about a third of the Strip's general-secondary candidates, displacement having concentrated the register in the middle of the territory — so the halls, tents and repaired rooms that can be brought up to what he calls the minimum level must be found disproportionately in one district. A director enumerating chairs and stationery in the week before a national examination is not a detail; it is the mechanism, described by its operator.
+
+The ministry has been here once before, which is why the current session is a system rather than an improvisation. In June 2025 it announced the phases of an electronic examination for Gaza's stranded candidates, and that autumn roughly 24,500 of them sat the delayed 2024-25 Tawjihi on screens — the first session held since 2023 — with results announced on 14 October 2025. The number to hold onto there is not the candidate count but the date: results were published, on a named day, through the ministry's ordinary channels, and the certificate that followed was the ministry's ordinary certificate — the same credential a candidate in Ramallah earns, recognised by the same universities. Validity, in other words, was treated as the one non-negotiable term while every other term of the administration was renegotiated: the format could move to screens and the halls could move to tents, but the certificate could not become a Gaza-only paper without defeating the purpose of holding the exam at all. The ministry has, in effect, treated the credential as critical infrastructure: the first component of the system to be brought fully back online, ahead of almost everything else a school system is made of.
+
+Beneath the exam sits the schooling that feeds it, and that too has been rebuilt as process. A temporary learning space is a school reduced to its portable parts: a tent or a spared room, a teacher on a partner organisation's payroll, a fixed timetable. By the UN's mid-January reporting, Education Cluster partners including UNRWA were teaching 220,950 students in such spaces, with 5,180 teachers — about 34% of Gaza's school-age children. The count is not a snapshot that happened to be caught: the same figures held across four consecutive situation reports through December and January, which is what turns a number into a measure. The denominators need keeping straight, and this piece keeps them so: within that cluster-wide figure, UNRWA's own temporary learning spaces held about 136,000 children by January, against an expansion target of 335,000. The operation has been growing under the ceasefire in effect since October 2025, and it is still running and still counted in the agency's June reporting — an operation now old enough to have a trend line.
+
+The second layer is digital, and it is larger than the tents. UNRWA's self-learning programme — worksheets, lessons and basic literacy and numeracy materials served through its Keep Learning platform — had reached 296,028 children by the same reporting period, with 7,665 teachers attached. What the platform cannot supply is the physical text in a child's hands. "There are people who cannot imagine a student studying without even having notes or a textbook to follow," Hamdan said. "This is one of the biggest challenges we face." Louay Ballour, a teacher at Fathi al-Balawi School in central Gaza, told the same reporters the teaching conditions were the hardest he had seen in years, and located the work's floor precisely: "…we are trying by every possible means to continue the educational process, even inside tents, even if students have to sit on the ground during lessons." A teacher's measure of continuity — the lesson happens, seated or not — is the same measure the exam applies at scale: the session happens, furnished or barely.
+
+The physical ledger behind all of this can be stated once and left: UNICEF estimates that 91.8% of educational facilities in Gaza require complete reconstruction or major rehabilitation, and more than 740 schools are entirely out of service. The queue that the machinery answers to is counted differently — some 658,000 school-age children have now been without in-person schooling for more than two consecutive years — and it explains the design choice that most distinguishes this Tawjihi: the ministry chose to absorb three stranded cohorts in one sitting rather than sequence them across gentler years. That is a statement about how credential debt compounds. A lesson can be improvised and a classroom can wait, but a certificate is the one product of a school system that other institutions — universities, employers, scholarship boards — must be able to trust on sight, and every year a cohort goes uncertified, more of its members scatter beyond the register's reach. What remains of a school system when its plant fails is process: someone keeps the register, someone pays the teachers, someone prints the paper, someone holds the date. The date, this year, is the system.
+
+What to watch is mercifully concrete. The session closes on 8 July; the ministry has not yet announced when results will follow, and the distance between those two dates — against last October's precedent — will say how much of the exam's ordinary rhythm has been recovered. UNRWA's expansion target of 335,000 children in temporary learning spaces is a number the agency has put on its own record, checkable against each situation report. And the 2027 session carries the quietest indicator of all: how many cohorts it must absorb. This year's answer was four. The year that number returns to one, the mechanism in this piece will have worked its way out of the story.
+
+— *The Editors*
+
+<div dir="rtl" lang="ar">الامتحانُ أصغرُ غرفةٍ يملكُها نظامُ التعليم: موعدٌ وكرسيٌّ وورقةُ أسئلة. وفي هذه الغرفةِ تعقدُ غزّةُ مدرستَها هذا الصيف.</div>
+
+*An exam is the smallest room a school system owns: a date, a chair, a sheet of questions. This July, Gaza is holding school in it.*

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Sudan. Low exam desks stand along a single shared line that runs the width of the page — a scattered cluster to the left, then a wide empty interval, then a few more desks far to the right, every desk at exactly the same height. A faint vertical line wanders down through the interval: a border, crossed by the level line of desks. Above the interval, the only warm mark on the page, a small kiln-orange clock face drawn in one open stroke, its hands set at half past two — the hour moved so that every desk, on either side of the border, opens the same paper at the same moment.">
+
+  <title>The Still · Sudan — desks at one height across a border, and the clock set to half past two</title>
+  <desc>A single faint horizontal line crosses the whole page at one height: the hour. Standing on it are low desk-marks — a short top stroke and two small legs each. To the left, a loose cluster of seven: the sittings inside the country. Then a wide interval of empty paper, crossed only by a faint vertical line that wanders downward — a border. To the right of it, three more desks, drawn at the same weight and exactly the same height as the others, with a hairline fourth running off the page edge: the consulate halls abroad, equal entries in one register. Above the interval floats the only warm mark on the page: a small kiln-orange clock face, drawn in a single stroke that does not quite close, its two hands set at half past two — the adjusted hour at which every desk, on either side of the border, opens the same paper at once. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The hour-line: one faint rule at a single height, page-wide.
+    The desks: low marks standing on it, either side of a border.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE HOUR — a single shared line at one height, the width of the page -->
+    <path stroke-width="2" stroke-opacity="0.38" d="M 70 311 C 380 307 820 307 1130 312"/>
+    <path stroke-width="0.8" stroke-opacity="0.14" stroke-dasharray="6 9" d="M 96 326 C 400 323 800 323 1104 328"/>
+
+    <!-- THE BORDER — a faint vertical line wandering down through the interval -->
+    <path stroke-width="1.3" stroke-opacity="0.22" stroke-dasharray="9 12" d="M 636 84 C 616 176 650 262 626 352 C 612 408 640 478 628 546"/>
+
+    <!-- THE DESKS INSIDE — a loose cluster to the left, tops on the hour-line -->
+    <g stroke-width="2.6" stroke-opacity="0.78">
+      <path d="M 100 310 C 109 308 119 308 128 310"/>
+      <path d="M 104 310 C 103 320 103 330 105 339"/>
+      <path d="M 124 310 C 123 320 123 330 125 339"/>
+
+      <path d="M 210 310 C 219 308 229 308 238 310"/>
+      <path d="M 214 310 C 213 320 213 330 215 339"/>
+      <path d="M 234 310 C 233 320 233 330 235 339"/>
+
+      <path d="M 296 310 C 305 308 315 308 324 310"/>
+      <path d="M 300 310 C 299 320 299 330 301 339"/>
+      <path d="M 320 310 C 319 320 319 330 321 339"/>
+
+      <path d="M 398 310 C 407 308 417 308 426 310"/>
+      <path d="M 402 310 C 401 320 401 330 403 339"/>
+      <path d="M 422 310 C 421 320 421 330 423 339"/>
+
+      <path d="M 472 310 C 481 308 491 308 500 310"/>
+      <path d="M 476 310 C 475 320 475 330 477 339"/>
+      <path d="M 496 310 C 495 320 495 330 497 339"/>
+    </g>
+    <!-- two fainter desks in the same cluster — the row runs deeper than the page -->
+    <g stroke-width="1.6" stroke-opacity="0.4">
+      <path d="M 158 310 C 166 308 175 308 183 310"/>
+      <path d="M 161 310 C 160 320 160 329 162 337"/>
+      <path d="M 179 310 C 178 320 178 329 180 337"/>
+
+      <path d="M 350 310 C 358 308 367 308 375 310"/>
+      <path d="M 353 310 C 352 320 352 329 354 337"/>
+      <path d="M 371 310 C 370 320 370 329 372 337"/>
+    </g>
+
+    <!-- THE DESKS BEYOND — fewer, farther apart, same weight, same height:
+         equal entries in one register -->
+    <g stroke-width="2.6" stroke-opacity="0.78">
+      <path d="M 796 310 C 805 308 815 308 824 310"/>
+      <path d="M 800 310 C 799 320 799 330 801 339"/>
+      <path d="M 820 310 C 819 320 819 330 821 339"/>
+
+      <path d="M 918 310 C 927 308 937 308 946 310"/>
+      <path d="M 922 310 C 921 320 921 330 923 339"/>
+      <path d="M 942 310 C 941 320 941 330 943 339"/>
+
+      <path d="M 1054 310 C 1063 308 1073 308 1082 310"/>
+      <path d="M 1058 310 C 1057 320 1057 330 1059 339"/>
+      <path d="M 1078 310 C 1077 320 1077 330 1079 339"/>
+    </g>
+    <!-- a hairline desk running off the right edge — the register continues -->
+    <g stroke-width="1.2" stroke-opacity="0.24">
+      <path d="M 1142 310 C 1150 308 1159 308 1167 310"/>
+      <path d="M 1145 310 C 1144 320 1144 329 1146 337"/>
+      <path d="M 1163 310 C 1162 320 1162 329 1164 337"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The clock set to half past two: a small face drawn in one
+    open stroke above the border interval, hour hand between
+    two and three, minute hand straight down. The only warm
+    thing on the page — the hour the state moved.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the face — one stroke, not quite closed -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="
+      M 634 132
+      C 653 134 668 150 668 170
+      C 668 190 651 206 631 206
+      C 611 206 594 190 594 170
+      C 594 152 607 137 624 133
+    "/>
+    <!-- the hands — half past two -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 631 170 L 650 164"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 631 170 L 631 197"/>
+  </g>
+</svg>

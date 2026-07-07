@@ -9,7 +9,7 @@ const articleSchema = z.object({
 
   // Geography (validated against /docs/10_geo_scope.md by editorial process)
   country: z.string().min(1),
-  region: z.enum(['MENA', 'Africa', 'Asia', 'LatAm-Caribbean', 'Other']),
+  region: z.enum(['MENA', 'Africa', 'Asia', 'LatAm-Caribbean', 'Europe', 'N-America', 'Oceania', 'Other']),
 
   // Education level (per /docs/20_topics.md)
   level: z.enum(['ECE', 'K-12', 'Both']),

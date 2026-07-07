@@ -17,7 +17,8 @@ export interface Edition {
   ground: string;
   /** Accent colour for the numeral, kickers and rule. */
   accent: string;
-  /** Motif key — 'horizon' (macron-style rule) or 'thread' (two joined nodes). */
+  /** Motif key — 'horizon' (macron-style rule), 'thread' (two joined nodes), or
+   *  'throughline' (a continuous rule absorbing a shock). */
   motif: string;
   /** Cover SVG filename under /public/covers/ — inlined onto pages. */
   cover: string;
@@ -51,6 +52,18 @@ export const editions: Edition[] = [
     accent: '#2F6F6A',
     motif: 'thread',
     cover: 'edition-02.svg',
+    status: 'closed',
+  },
+  {
+    number: 3,
+    periodEn: 'July 2026',
+    periodAr: 'يوليو ٢٠٢٦',
+    themeEn: 'Continuity under disruption — how school systems keep their promises through war, disaster and collapse.',
+    themeAr: 'الاستمرارية رغم الاضطراب — كيف تُبقي الأنظمةُ التعليميةُ مدارسَها عاملةً في الحرب والكارثة والانهيار.',
+    ground: '#EAEEF1',
+    accent: '#2E4C63',
+    motif: 'throughline',
+    cover: 'edition-03.svg',
     status: 'current',
   },
 ];

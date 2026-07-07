@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Ukraine. A long ground line crosses the page. Above it, drawn faint, stands the outline of a schoolhouse — a gable and two walls, held in reserve rather than abandoned. Below the line the same classroom is drawn firm beneath a broad vault: rows of desks, a board on the wall — the school rebuilt one floor down, as infrastructure rather than refuge. Between surface and vault, the only warm mark on the page: a short kiln-orange stair descending from the ground line into the room — the passage the system built so that the lesson continues.">
+
+  <title>The Still · Ukraine — a school held faint above the ground line, drawn firm beneath it, and the stair between</title>
+  <desc>A single long ground line crosses the page. Above it, light and unfinished, the outline of a schoolhouse: two roof strokes meeting at a gable, two walls falling to the ground line — present, not erased, but drawn as if held in reserve. Below the line, directly beneath, the same classroom is drawn firm: a broad vault like a metro arch, a floor line, a small board on the left wall, two rows of desk strokes. The school has not closed; it has moved one floor down and been rebuilt as infrastructure. On the right, the only warm mark on the page: a kiln-orange stair stepping down from the ground line, through a doorway in the vault wall, into the room — the passage the system built so that the lesson continues. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The ground line; the faint schoolhouse above it; the firm
+    vaulted classroom below it. Triple-weight discipline;
+    no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE GROUND LINE — the surface, drawn once, page-wide. -->
+    <path stroke-width="2.2" stroke-opacity="0.5" d="M 70 272 C 420 268 780 268 1130 273"/>
+    <path stroke-width="0.8" stroke-opacity="0.14" stroke-dasharray="6 9" d="M 120 287 C 430 284 740 284 1050 288"/>
+
+    <!-- THE SCHOOL ABOVE — faint: gable and walls, held in reserve. -->
+    <g stroke-opacity="0.27">
+      <path stroke-width="2.3" d="M 446 198 C 480 158 518 132 552 128"/>
+      <path stroke-width="2.3" d="M 552 128 C 586 132 622 158 656 198"/>
+      <path stroke-width="2.1" d="M 452 200 C 451 224 451 248 453 270"/>
+      <path stroke-width="2.1" d="M 650 200 C 649 224 649 248 651 270"/>
+    </g>
+    <g stroke-width="1.4" stroke-opacity="0.16">
+      <path d="M 434 200 L 462 197"/>
+      <path d="M 640 197 L 668 200"/>
+    </g>
+
+    <!-- THE ROOM BELOW — firm: a broad vault, a floor, a doorway
+         left open in the right wall where the stair comes in. -->
+    <g stroke-opacity="0.85">
+      <path stroke-width="3.4" d="M 340 506 C 340 404 416 354 552 354 C 688 354 764 404 764 434"/>
+      <path stroke-width="3.4" d="M 764 486 C 764 494 764 500 764 506"/>
+    </g>
+    <path stroke-width="2.6" stroke-opacity="0.7" d="M 340 506 C 480 511 640 511 764 506"/>
+    <path stroke-width="1.4" stroke-opacity="0.28" d="M 756 434 L 772 434"/>
+
+    <!-- the board on the left wall — the room is for teaching -->
+    <g stroke-width="2.0" stroke-opacity="0.55">
+      <path d="M 372 398 L 404 396"/>
+      <path d="M 373 442 L 405 440"/>
+      <path d="M 371 398 C 370 412 370 428 372 442"/>
+      <path d="M 403 396 C 402 410 402 426 404 440"/>
+    </g>
+
+    <!-- two rows of desks, in section -->
+    <g stroke-width="2.4" stroke-opacity="0.6">
+      <path d="M 430 464 L 478 463"/>
+      <path d="M 504 464 L 552 463"/>
+      <path d="M 578 464 L 626 463"/>
+      <path d="M 652 464 L 700 463"/>
+    </g>
+    <g stroke-width="2.0" stroke-opacity="0.45">
+      <path d="M 456 487 L 502 486"/>
+      <path d="M 528 487 L 574 486"/>
+      <path d="M 600 487 L 646 486"/>
+      <path d="M 672 487 L 718 486"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The stair: stepping down from the ground line, through the
+    doorway in the vault wall, into the room. The only warm
+    thing on the page — the passage, built.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the descent, tread by tread -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="
+      M 920 274
+      L 878 276
+      L 878 314
+      L 840 316
+      L 840 354
+      L 802 356
+      L 802 394
+      L 774 396
+      L 774 452
+      L 750 454
+    "/>
+    <!-- a short tick at grade, where the stair begins -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 932 270 L 918 273"/>
+  </g>
+</svg>

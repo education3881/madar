@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Yemen. A single firm line — a salary — enters from the left at mid-page and stops abruptly, fraying into short falling dashes. Where it breaks, the line's height is carried on by a relay of overlapping horizontal strokes stacked like planks: a fine dashed stratum above, a row of short firm segments below, a faint sagging thread beneath them all. Holding the exact height of the lost line, one kiln-orange plank — the audited payment layer, the only warm mark on the page — ends in a small upright tick well before the right edge: a closing date. Beyond it the fainter strata run on alone, thinning toward the edge of the page.">
+
+  <title>The Still · Yemen — a payroll line that stops, and the layers that carry its height</title>
+  <desc>One firm ink line enters from the left edge at the middle of the page: the salary. Just left of centre it stops, its end fraying into three short dashes that fall away. From the break onward, the height of the lost line is held by a relay of horizontal strata drawn one above another like overlapping planks: above, a fine dashed line — help in kind, community and produce; below, a row of short firm segments with gaps between them — allowances decreed one governorate at a time; beneath them all, a faint thread that sags as it runs — the teacher's own labour, resold. At the exact height of the broken payroll runs the strongest mark on the right half of the page: a single kiln-orange plank, the audited payment layer, the only warm thing on the page. It ends at a small upright tick — a closing date — well before the right edge. Past the tick the orange does not resume; the fainter ink strata run on alone and thin toward the edge. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The salary line: one firm stroke entering left at mid-page,
+    stopping abruptly, fraying into falling dashes.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-payroll"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE SALARY — the firmest mark on the page, and it ends. -->
+    <path stroke-width="3.5" stroke-opacity="0.9" d="M 60 300 C 170 297 292 297 388 300"/>
+
+    <!-- the fray — the payroll's end, falling away in three dashes -->
+    <path stroke-width="2.4" stroke-opacity="0.5"  d="M 398 305 L 416 312"/>
+    <path stroke-width="1.8" stroke-opacity="0.32" d="M 424 317 L 438 324"/>
+    <path stroke-width="1.3" stroke-opacity="0.18" d="M 446 329 L 456 335"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE STRATA — ink, the relay of layers that carries the
+    height of the lost line: dashed above (help in kind),
+    short decree-segments below, a sagging thread beneath.
+    Firmer while the orange plank holds; thinner beyond it.
+    ============================================================
+  -->
+  <g id="ink-strata"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- STRATUM ONE — fine dashed line above: the in-kind layer -->
+    <path stroke-width="1.3" stroke-opacity="0.4" stroke-dasharray="11 15"
+          d="M 430 281 C 560 278 660 279 770 281"/>
+    <path stroke-width="1.1" stroke-opacity="0.24" stroke-dasharray="8 18"
+          d="M 786 281 C 900 283 1030 285 1140 288"/>
+
+    <!-- STRATUM TWO — short firm segments below: allowances by decree,
+         one governorate at a time, gaps between them -->
+    <g stroke-width="1.9" stroke-opacity="0.5">
+      <path d="M 432 320 C 456 319 480 319 502 320"/>
+      <path d="M 534 322 C 558 321 582 321 604 322"/>
+      <path d="M 636 320 C 660 319 684 319 706 320"/>
+      <path d="M 738 322 C 756 321 772 321 788 322"/>
+    </g>
+    <g stroke-width="1.5" stroke-opacity="0.3">
+      <path d="M 820 323 C 844 322 866 322 886 323"/>
+      <path d="M 916 324 C 938 323 958 323 976 324"/>
+      <path d="M 1006 325 C 1026 324 1044 324 1060 325"/>
+      <path d="M 1088 326 C 1104 325 1120 325 1134 326"/>
+    </g>
+
+    <!-- STRATUM THREE — the faint sagging thread beneath them all:
+         the teacher's own labour, resold by the hour -->
+    <path stroke-width="1.1" stroke-opacity="0.26"
+          d="M 430 344 C 560 352 700 358 820 356 C 930 354 1050 360 1140 364"/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The audited payment layer: one plank holding the exact
+    height of the broken payroll line, ending at a small
+    upright tick — a closing date — well before the right
+    edge. The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the plank — held at the payroll's own height -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="M 424 300 C 540 298 650 298 764 300"/>
+
+    <!-- the closing date — a small upright tick at its end -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 764 288 L 764 312"/>
+  </g>
+</svg>

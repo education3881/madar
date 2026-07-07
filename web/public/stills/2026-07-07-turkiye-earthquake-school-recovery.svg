@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Türkiye. Low courses of horizontal brick-strokes cross the page like a wall being relaid — dense and settled at the left, opening into sparse, newly laid strokes toward the right, where the coursework is still rising. A faint dotted line runs the width of the page at the height the wall once reached: the pre-quake datum. The new courses cross it and keep climbing. Above them, the only warm mark on the page: a taut kiln-orange string-line stretched between two pegs, set a hand's height above the old datum — the builder's line, fixed not where the wall used to stand, but where it must now end.">
+
+  <title>The Still · Türkiye — a wall relaid course by course, and the builder's line set above where it once stood</title>
+  <desc>A single faint rule crosses the lower page like ground. On it, courses of brick-strokes are being relaid: at the left the courses stack high and settled, their joints staggered; rightward each course runs shorter and fainter, ending in scattered, newly laid bricks — the work still moving. A faint dotted datum line runs the full width of the page at the height the wall reached before the earthquakes. On the left the new courses have already crossed it and keep climbing; on the right they have not yet reached it. Above everything, the only warm mark on the page: a kiln-orange string-line, taut between two small pegs, fixed a hand's height above the old datum — the builder's line, set not where the wall used to stand but where it must now end. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The ground rule; the courses of a wall being relaid, dense
+    at the left, sparse and unfinished toward the right; the
+    dotted pre-quake datum the new courses cross.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE GROUND — a single faint rule the wall stands on. -->
+    <path stroke-width="2" stroke-opacity="0.38" d="M 90 500 C 420 496 780 496 1110 501"/>
+    <path stroke-width="0.8" stroke-opacity="0.15" stroke-dasharray="6 9" d="M 130 514 C 440 511 750 511 1064 515"/>
+
+    <!-- THE COURSES — each course one broken line of bricks;
+         joints staggered course to course; every course higher
+         is shorter, lighter, newer. -->
+    <path stroke-width="3.0" stroke-opacity="0.72" stroke-dasharray="68 14" d="M 118 480 C 440 477 760 477 1082 481"/>
+    <path stroke-width="2.9" stroke-opacity="0.66" stroke-dasharray="68 14" stroke-dashoffset="41" d="M 118 454 C 430 451 740 451 1046 455"/>
+    <path stroke-width="2.7" stroke-opacity="0.60" stroke-dasharray="68 14" d="M 118 428 C 400 425 690 425 962 429"/>
+    <path stroke-width="2.6" stroke-opacity="0.53" stroke-dasharray="68 14" stroke-dashoffset="41" d="M 118 402 C 380 399 650 399 894 403"/>
+    <path stroke-width="2.4" stroke-opacity="0.46" stroke-dasharray="68 14" d="M 118 376 C 340 373 580 373 792 377"/>
+    <path stroke-width="2.2" stroke-opacity="0.38" stroke-dasharray="68 14" stroke-dashoffset="41" d="M 118 350 C 310 347 510 347 684 351"/>
+    <path stroke-width="2.0" stroke-opacity="0.30" stroke-dasharray="68 14" d="M 118 324 C 260 321 420 321 548 325"/>
+
+    <!-- BRICKS LAID AHEAD — single strokes past each course's end:
+         the work moving rightward, not yet a wall. -->
+    <g stroke-width="1.8" stroke-opacity="0.22">
+      <path d="M 1000 429 L 1064 428"/>
+      <path d="M 940 403 L 1002 402"/>
+      <path d="M 852 377 L 914 376"/>
+      <path d="M 736 351 L 796 350"/>
+      <path d="M 604 325 L 664 324"/>
+    </g>
+
+    <!-- THE PRE-QUAKE DATUM — a dotted line at the height the wall
+         reached before; the left courses have already crossed it. -->
+    <path stroke-width="1.5" stroke-opacity="0.32" stroke-dasharray="3 8" d="M 100 363 C 430 360 760 360 1100 363"/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The builder's string-line: taut between two pegs, fixed a
+    hand's height above the old datum — the finish line set
+    above the starting line. The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the string, taut -->
+    <path stroke-width="2.4" stroke-opacity="0.95" d="M 128 297 C 430 294 760 294 1072 297"/>
+
+    <!-- the two pegs -->
+    <path stroke-width="2.2" stroke-opacity="0.9" d="M 128 284 L 128 310"/>
+    <path stroke-width="2.2" stroke-opacity="0.9" d="M 1072 284 L 1072 310"/>
+  </g>
+</svg>

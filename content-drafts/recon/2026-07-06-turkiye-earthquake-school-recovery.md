@@ -1,0 +1,36 @@
+# Recon — Türkiye: earthquake-zone school recovery since Feb 2023
+**Date:** 2026-07-06 · **Researcher → Editor** · **Status: PROCEED**
+
+## 1. The instrument (official name, issuing body, date, link)
+- **MEB earthquake-region education investment programme** ("eğitim seferberliği" across the 11 quake provinces), Ministry of National Education (MEB). Plan release: "Deprem bölgesindeki toplam derslik sayısı 6 Şubat öncesine göre artacak", meb.gov.tr, 2024: https://www.meb.gov.tr/deprem-bolgesindeki-toplam-derslik-sayisi-6-subat-oncesine-gore-artacak/haber/32430/tr — 1,241 new schools, 19,784 new classrooms, 3,119 strengthened. Third-anniversary status release: https://www.meb.gov.tr/mebden-depremin-yasandigi-on-bir-ilde-egitim-seferberligi/haber/36256/tr
+- **Exam-continuity decisions, Feb–Jun 2023:** MEB limited 2023 LGS to 8th-grade first-semester curriculum and 2023 YKS excluded 12th-grade second-semester topics (MEB decision, carried on district MEB page: https://sultanhani.meb.gov.tr/www/deprem-sebebiyle-lgs-yks-sinav-konularinda-ve-deprem-bolgesinde-okula-devam-devamsizlik-durumlarinda-duzenleme/icerik/371); year-passing grade = the higher of the two semester grades for quake-affected students: https://www.meb.gov.tr/depremzede-ogrencilerin-sinif-gecme-notunda-iki-donemde-aldiklari-en-yuksek-puani-esas-alinacak/haber/29699/tr
+- **ÖSYM support package for 2023-YKS**, ÖSYM Presidency, 31.05.2023: transport + housing (KYK dorms) via AFAD coordination for displaced candidates assigned outside their residence; fee waivers for the 11 provinces + Gürün: https://www.osym.gov.tr/TR,25547/2023-yuksekogretim-kurumlari-sinavi-2023-yks--deprem-bolgesinden-sinava-basvuran-adaylara-ulasim-ve-barinma-destegi-31052023.html (YÖK added +25% placement quota at quake-zone state universities.)
+
+## 2. Figures (each labeled MEASURED or ANNOUNCED)
+- **~9,500 classrooms rendered unusable** across the 11 provinces — MEASURED (official MEB count, "resmi rakamlar") — Minister Yusuf Tekin, AA, 06.02.2025: https://www.aa.com.tr/tr/egitim/milli-egitim-bakani-tekinden-deprem-bolgesindeki-derslik-sayisi-hedefine-iliskin-aciklama/3473826
+- **7,500+ of the destroyed classrooms rebuilt and in service by 09.09.2024** (start of 2024-25 year; excludes strengthening/repairs) — MEASURED — same AA/Tekin URL
+- **Target: 24,000 additional classrooms by September 2026; ≥10% above pre-quake classroom stock in every one of the 11 provinces** — ANNOUNCED — same AA/Tekin URL
+- As of **06.02.2026** (3rd anniversary): **14,304 classrooms completed, 9,763 under construction; regional classroom stock to reach 137,505** — MEASURED (completed count) / ANNOUNCED (stock target) — Tekin via ANKA: https://ankahaber.net/haber/detay/bakan_tekin_deprem_bolgesinde_derslik_sayisi_137_bin_505e_cikacak_290813 ; cross-check MEB release haber/36256
+- **Hatay (hardest-hit province): 110 schools completed, 113 under construction as of 14.10.2024** (Provincial Directorate figures) — MEASURED — AA: https://www.aa.com.tr/tr/gundem/hatayda-depremde-hasar-aldigi-icin-yikilan-okulun-yerine-yenisi-yapildi-/3361226 ; by 2025-26 provincial reporting reached **199 new schools in service, 798 repairs completed, 70 in construction** — MEASURED (governorship/İl MEM figures, secondary carrier): https://www.istiklal.com.tr/genel/hatayda-deprem-sonrasi-199-yeni-okul-hizmete-acildi-1068551h
+- **2023 LGS/YKS scope limited to first-semester curriculum nationally; fees waived for 11 provinces; displaced candidates given transport + housing for exam weekend** — MEASURED (delivered arrangements) — MEB + ÖSYM URLs above
+
+## 3. Voice (2024+ named operator)
+- **Harun Tüysüz, Hatay Provincial Director of National Education (İl Milli Eğitim Müdürü)**, at the reopening of the rebuilt Ali Sayar Vocational and Technical Anatolian High School (16 classrooms, steel construction): "Hatay'da 113 okulumuzda çalışmalar devam ediyor. Bunların 13'ü yine Ahbap Derneğince yaptırılıyor. İnşallah önümüzdeki yılın sonuna kadar daha fazlasını bekliyoruz." [Work continues at 113 of our schools in Hatay… we expect even more by the end of next year] — Anadolu Agency, 14.10.2024: https://www.aa.com.tr/tr/gundem/hatayda-depremde-hasar-aldigi-icin-yikilan-okulun-yerine-yenisi-yapildi-/3361226 — QUALIFIES (directorate officer who runs the provincial mechanism)
+- Optional colour: school-level voices exist in AA provincial coverage of individual reopenings; harvest one at draft stage.
+
+## 4. Status as of 2026-07
+- Feb 2026 (3rd anniversary): MEB says classroom count already exceeds pre-quake levels in all 11 provinces (~+16% average per DHA-carried Tekin remarks: https://www.dha.com.tr/foto-galeri/bakan-tekin-deprem-bolgesinde-derslik-sayisini-yuzde-16-artirdik-2727188); full programme completion pledged for Sept 2026 — the pledge is checkable next season.
+- Container/temporary classroom wind-down: **no MEB-published wind-down count located.** Union statements (Eğitim Sen) claimed heavy container use in Hatay through 2024 — treat as disputed terrain, state the gap in-piece rather than adjudicating.
+- Exam accommodations were time-boxed to the 2023 cycle (curriculum scope, fee waivers); an LGS "deprem kontenjanı" (quota) reportedly persisted into 2025 — verify on meb.gov.tr before using.
+
+## 5. Proposed angle (the mechanism, no politics)
+A recovery programme that set its finish line above the starting line: MEB's target is not restoring the ~9,500 lost classrooms but ending with at least 10% more than existed before the quakes — rebuild-to-surplus as insurance against the next shock. The delivery ladder is documentable: 9,500 unusable (Feb 2023) → 7,500 rebuilt by Sept 2024 → 14,304 completed by Feb 2026 → 24,000 promised by Sept 2026. The second mechanism is exam continuity: rather than postponing standards, the system shrank the tested curriculum to what had actually been taught (first semester only, nationwide), waived fees, moved displaced candidates to exam centres with state-paid transport and dormitory housing, and adjusted grade-passing rules — the assessment calendar held. Hatay, where two-thirds of schooling was disrupted, is the stress test: 199 new schools in service against 70 still in construction. The story closes on what is not yet published: the container-classroom wind-down count.
+
+## 6. Risks / guardrail notes
+- Nearly all delivery figures are ministerial self-reporting (Tekin statements); no independent audit count exists — label every figure's source in-line; ERG's independent education monitoring can be cited as check, not spine.
+- Donor-built schools (Ahbap, Hugo Boss et al.) sit inside MEB completion counts — attribute construction financing carefully.
+- The April 2026 Kahramanmaraş school shooting is unrelated to quake recovery — keep clear separation; do not let imagery or adjacency imply linkage.
+- Avoid the ministry's own polemical framing ("algı değil resmi rakamlar"); report numbers, not the quarrel about numbers.
+
+## Verdict sought from Editor
+PROCEED — figures verified on MEB/ÖSYM releases and official minister statements with dates; qualifying 2024 operator voice (provincial education director, direct quote, AA). State the container-wind-down data gap in-piece.

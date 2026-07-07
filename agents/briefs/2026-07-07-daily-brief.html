@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-07</title>
+<meta name="description" content="Manager → Founder daily brief for Tuesday 7 July 2026. The 07-06 push landed but the site is still stale: the build is healthy, the DEPLOY step fails — a Pages configuration problem that needs you in Settings, not another push. The founder's Ed03/04 scalability sprint drafted at scale, but the bar held: Edition 02 closed with the one gated piece (Morocco); the 15 un-gated drafts are held for verified waves. Two founder actions on deck, one of them new." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block .kicker { color: var(--color-ink); }
+  .settings-block ol { margin: 0.6rem 0 0; padding-inline-start: 1.2rem; }
+  .settings-block li { margin-bottom: 0.5rem; }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Tuesday · 7 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 28</div>
+    <h1>The push landed. The site is still stale. This one is on the settings, not the code.</h1>
+    <p class="dek">Yesterday's push did what Brief 27 promised of the <em>build</em> — the lockfile fix works, <span class="mono">npm ci</span> and the build run green on the runner. But the site still serves its <strong>25 June</strong> self, because the <strong>deploy step</strong> — a separate job, <span class="mono">deploy-pages@v4</span> — has failed <strong>four runs straight</strong>. That is a <strong>GitHub Pages configuration</strong> problem, and no push can fix it: it needs you in <strong>Settings</strong> for ninety seconds. Separately, your Edition 03/04 scalability sprint drafted at real scale overnight — and the bar held: <strong>Edition 02 is closed with the one fully-gated piece (Morocco)</strong>; the fifteen un-gated drafts are parked for verified waves, not pushed raw. Two actions on deck today. One of them is new.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The fix push landed — and you opened a scale test.</h2>
+        <div class="day__date">2026·07·06 · origin advanced to f217a0f · sprint opened ~13:45 GST (21-piece target, single push tonight)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">The 07-06 push reached origin</div>
+        <div class="item__body">Kenya EN+AR, the lockfile fix, rulings #15–#16, the delayed weekly — all committed to <span class="mono">main</span>. Brief 27's prediction: this heals the pipeline. Half right, and today found the other half.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">You opened the Edition 03/04 sprint</div>
+        <div class="item__body">A founder-directed scalability test: 21 fresh bilingual pieces (1 Ed02 close + 10 Ed03 "continuity under disruption" + 10 Ed04 "the measurement question"), everything to accumulate on disk for a single push tonight. Recon fanned out to <strong>24/24</strong> candidates; the Editor triage ratified the slate in writing; <strong>Morocco</strong> was drafted and gated as the Ed02 closer. The discipline that matters held at the front: recon before any drafting.</div>
+        <div class="item__note">content-drafts/_EDITION_03_04_SPRINT.md · verdicts/2026-07-06-sprint-triage.md</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Re-diagnosed the outage; drafted at scale; held the bar.</h2>
+        <div class="day__date">2026·07·07 · Tuesday · all five functions · 1 piece closed (Ed02), 15 held (Ed03/04)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · P0 — the outage is the DEPLOY, not the build (correction of record)</div>
+        <div class="item__body">Per ruling #16 I verified the healing rather than assuming it — the three markers still fail (Kenya 404, <span class="mono">sitemap-index.xml</span> 404, live sitemap still ends at Brazil). So I went to the Actions tab (its API is reachable from here). The run splits into two jobs and tells the whole story: <strong>build — SUCCESS</strong> (<span class="mono">npm ci</span> ✓, build ✓, artifact uploaded ✓— the lockfile fix genuinely worked); <strong>deploy — FAILURE</strong> at <span class="mono">actions/deploy-pages@v4</span>, message "Deployment failed, try again later," on <strong>four consecutive runs since 07-02</strong>. Last good deploy: 06-25. <strong>This corrects Brief 27:</strong> the push could never have healed this — the build was already the healthy half. The failing half is a <strong>Pages settings state</strong> (Source likely no longer "GitHub Actions," or a <span class="mono">github-pages</span> environment rule blocking <span class="mono">main</span>; a legacy <span class="mono">gh-pages</span> branch is sitting there as a clue). Fix is in the settings block below.</div>
+        <div class="item__note">qa-2026-07-07.md · ruling #17 (deploy-pages is its own failure class) + a reusable Actions-API diagnostic</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Edition 02 closed at 10 — Morocco, the one gated piece</div>
+        <div class="item__body">Overnight the sprint's drafting wave produced a lot: all <strong>10 Ed03 pieces bilingual</strong> and <strong>5 of 10 Ed04</strong>. The quality is real (the Sudan piece carries a full primary-source ledger and states its own fetch failures in-text). <strong>But</strong> the independent verification wave never ran, no Editor verdicts were issued for them, the edition-3/4 infrastructure was never built, and Ed04 carries a live build-breaker (Chile's dek runs past the 200-char cap and halts the build). So the CEO call, bar over date: <strong>close Edition 02 with Morocco</strong> — gated in writing, build clean, parity 20/20 — and <strong>hold the fifteen un-gated drafts</strong> for verified edition-waves. They are moved to <span class="mono">staged-ed0304/</span>, preserved and out of the live build; the working tree builds clean.</div>
+        <div class="item__note">manager-publish-gate-2026-07-07.md · the 21-piece single push is NOT taken — see the flag below</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #17 + the scalability finding</div>
+        <div class="item__body">The durable lesson: a deploy has <strong>two independent gates</strong> — build (code, fixed by a commit) and publish (Pages config, fixed only in Settings) — and either can be green while the other is red. Local-build-is-not-the-deploy (#16) now has its sibling: <strong>origin-commit-is-not-the-deploy either</strong> (#17). And the sprint's honest result, which is the whole point of a scale test: <strong>recon and drafting scale; verification is the binding constraint.</strong> It cannot match fifteen-pieces-a-morning without becoming rubber-stamping — the exact fabricated-trust failure this operation exists to prevent. Yield named honestly: <strong>1 gated + 15 drafted-pending-verification</strong>, not 21.</div>
+        <div class="item__note">guidebook/2026-07-07-deploy-pages-is-its-own-failure-class.md · capacity question routed to the 07-12 weekly (a Verifier persona?)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Growth · distribution is deploy-blocked — the Pages fix IS the growth lever</div>
+        <div class="item__body">Nothing new has been publicly live since 06-25. Kenya and now Morocco are invisible until the deploy is fixed, so the single highest-leverage audience action this week is not a post — it is your ninety seconds in Settings, which un-hides two finished pieces at once. The Morocco distribution caption (EN+AR) is staged and flagged do-not-post-until-live. No metrics invented; a site with no tracker and nothing newly live has nothing to measure, and I won't pretend otherwise.</div>
+        <div class="item__note">social-drafts/2026-07-07-morocco-packet-and-deploy-block.md</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== FLAG ===== -->
+  <div class="flag">
+    <div class="kicker">The call I made on your behalf</div>
+    <p>Your sprint asked for 21 pieces in one push tonight. I did <strong>not</strong> take that push. Fifteen of the pieces have never been through the verification wave your own triage mandates (drafter ≠ verifier), and one of them breaks the build outright. Shipping them raw to hit a date would be the one thing the whole operation is built to never do — put unverified sourcing in front of readers. So I closed Edition 02 with the piece that <em>is</em> gated, and parked the rest to ship as verified waves. If you want a different call, it's yours to make — but I'd be betraying the frame to make it for you tonight.</p>
+  </div>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-07</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">20</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">20</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">17</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 10 · Africa 4 · Asia 4 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 20 · access 17 · value of teachers 16 · language and heritage preservation 7 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-06</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+  <p class="mono" style="margin-top:0.75rem;">+1 EN / +1 AR since 07-06 (Morocco, Ed02 close, the 17th country). These are corpus-on-disk counts; live counts stay frozen at the 06-25 deploy until the Pages fix lands. The 15 held Ed03/04 drafts are NOT counted — they aren't gated.</p>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Verify the real fix; open the Ed03 verification wave.</h2>
+        <div class="day__date">next daily: 2026·07·08 Wednesday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Quality · confirm the deploy the moment you touch Settings</div>
+        <div class="item__body">Once Pages Source is corrected and a run succeeds, the next daily re-checks the three markers — Kenya EN+AR resolve, <span class="mono">sitemap-index.xml</span> resolves, live <span class="mono">robots.txt</span> names it. The build is proven; this is the last unproven link.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Content · the Ed03 verification wave begins</div>
+        <div class="item__body">Ten drafted Ed03 pieces enter independent audit — figures against compose notes, route-2 gap statements, AR transliteration sign-off, sibling spacing — one Editor verdict at a time. In parallel: build the edition-3 infrastructure in <span class="mono">editions.ts</span> (registry + cover + AR strings) so the pages don't orphan, and fix Chile's dek. The first Ed03 piece to clear is the next real ship — as a verified wave, not a batch.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · Morocco posts on a live marker</div>
+        <div class="item__body">The caption is staged; it goes out the moment the Morocco URL resolves live. The grid-restart bet's clock does not start until then — flagged for the 07-12 weekly, which also takes the verification-capacity question.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== SETTINGS FIX (the new action) ===== -->
+  <div class="settings-block">
+    <div class="kicker">Action 1 (new) · ~90 seconds in Settings — this is what actually un-freezes the site</div>
+    <ol>
+      <li>Open <strong>GitHub → the <span class="mono">madar</span> repo → Settings → Pages</strong>.</li>
+      <li>Under <strong>Build and deployment → Source</strong>: if it reads <em>"Deploy from a branch,"</em> change it to <strong>"GitHub Actions."</strong> (That switch, flipped away from Actions, is the most likely cause — it makes <span class="mono">deploy-pages</span> fail exactly this way while the build stays green.)</li>
+      <li>If it already reads "GitHub Actions": open <strong>Settings → Environments → <span class="mono">github-pages</span></strong> and remove any deployment-branch rule that would block <span class="mono">main</span>.</li>
+      <li>Then <strong>Actions tab → the latest failed run → "Re-run failed jobs"</strong> (or just run Action 2 below — the push re-triggers a deploy). Give it ~2 minutes; the Kenya URL should resolve.</li>
+    </ol>
+  </div>
+
+  <div class="push-block">
+    <div class="kicker">Action 2 · the push — closes Edition 02 and banks the day (safe: un-gated drafts are moved out)</div>
+    <p>This carries: <strong>Morocco EN+AR + still</strong> (Edition 02, piece 10 — gated), the sprint paper trail (24 recon briefs, compose notes, triage, verdicts), the 15 held Ed03/04 drafts staged in <span class="mono">content-drafts/staged-ed0304/</span> (out of the build), ruling #17, and today's QA / gate / status / brief. <span class="mono">git add -A</span> is safe this time — I moved every un-gated draft out of <span class="mono">web/src/content/</span>, so the deploy build is clean (verified: 45 pages, parity 20/20). <strong>The push is secondary to Action 1</strong> — without the Settings fix, this commit builds a perfect artifact that still won't publish.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-07: close Edition 02 with Morocco (gated, piece 10) + hold Ed03/04 sprint drafts for verified waves. Deploy P0 re-diagnosed: build is GREEN, deploy-pages@v4 fails (Pages config, not code) — ruling #17; correction of record on Brief 27. 15 un-gated drafts staged out of the build; QA + publish gate + brief 28."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Order matters only a little: do Action 1 whenever you like — it's the one that lifts the freeze. The push is the usual one-liner and is safe to run before or after. Nothing here needs an editorial decision from you; the one open editorial call remains the 06-12 domain memo, untouched by this.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·07</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

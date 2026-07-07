@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Morocco. A single schoolhouse doorway — two upright jambs and a lintel — stands firm at the left of the page. The same doorway repeats toward the right in a tightening, fading row, each repetition smaller and lighter than the last, until the frames crowd toward the page's edge — one school become five thousand. A fine continuous line traces the descending tops of the lintels and runs on even where the row breaks. Midway along the row one slot stands empty, where a doorway should be. Beneath the gap, the only warm mark on the page: a shallow kiln-orange cup, open upward — the place the audit held open for the school it refused.">
+
+  <title>The Still · Morocco — a doorway repeated toward the edge of the page, and the slot held open</title>
+  <desc>A single faint horizontal rule crosses the page like a register. Standing on it, at the left, is one firm doorway drawn as two upright ink strokes and a lintel — the pilot school. The same doorway repeats rightward in a row that tightens and fades: each frame smaller, lighter, closer to the next, until the last few are hairline strokes crowding off the right edge — deployment at seven times the scale. One continuous fine line traces the descending lintel-tops, and keeps its course across a break in the row: midway, one slot is empty where a doorway should stand. Beneath that gap sits the only warm mark on the page, a shallow kiln-orange cup with a short serif at each rim, open upward — the audit's refusal, drawn as a place still held. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The register (one faint rule), and the row of doorways that
+    stands on it: firm and tall at the left, repeating rightward,
+    each repetition smaller and fainter — a model multiplied.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- THE REGISTER — a single faint rule the whole row stands on. -->
+    <path stroke-width="2" stroke-opacity="0.38" d="M 90 470 C 420 466 780 466 1120 471"/>
+    <path stroke-width="0.8" stroke-opacity="0.16" stroke-dasharray="6 9" d="M 128 484 C 430 481 760 481 1064 487"/>
+
+    <!-- three faint ticks on the rule — 2023-24 · 2024-25 · 2025-26 -->
+    <g stroke-width="1.4" stroke-opacity="0.18">
+      <path d="M 180 470 L 180 462"/>
+      <path d="M 506 470 L 506 462"/>
+      <path d="M 822 470 L 822 462"/>
+    </g>
+
+    <!-- THE FIRST DOORWAY — the pilot; the firmest marks on the page. -->
+    <g stroke-opacity="0.9">
+      <path stroke-width="3.5" d="M 142 470 C 140 415 140 305 143 260"/>
+      <path stroke-width="3.5" d="M 218 470 C 216 415 216 305 219 260"/>
+      <path stroke-width="3.2" d="M 130 260 C 158 257 202 257 230 260"/>
+    </g>
+
+    <!-- THE ROW — the same doorway, repeated toward the right;
+         spacing tightens, height falls, ink thins: scale, drawn. -->
+    <g stroke-opacity="0.8">
+      <path stroke-width="3.2" d="M 271 470 C 269 422 269 328 272 288"/>
+      <path stroke-width="3.2" d="M 337 470 C 335 422 335 328 338 288"/>
+      <path stroke-width="2.9" d="M 260 288 C 285 285 323 285 348 288"/>
+    </g>
+    <g stroke-opacity="0.72">
+      <path stroke-width="2.9" d="M 383 470 C 381 428 381 348 384 312"/>
+      <path stroke-width="2.9" d="M 441 470 C 439 428 439 348 442 312"/>
+      <path stroke-width="2.7" d="M 373 312 C 395 309 429 309 451 312"/>
+    </g>
+    <g stroke-opacity="0.64">
+      <path stroke-width="2.7" d="M 481 470 C 479 432 479 366 482 333"/>
+      <path stroke-width="2.7" d="M 531 470 C 529 432 529 366 532 333"/>
+      <path stroke-width="2.5" d="M 472 333 C 492 331 520 331 540 333"/>
+    </g>
+    <g stroke-opacity="0.57">
+      <path stroke-width="2.5" d="M 566 470 C 564 436 564 380 567 351"/>
+      <path stroke-width="2.5" d="M 610 470 C 608 436 608 380 611 351"/>
+      <path stroke-width="2.3" d="M 558 351 C 576 349 600 349 618 351"/>
+    </g>
+    <g stroke-opacity="0.5">
+      <path stroke-width="2.3" d="M 640 470 C 638 440 638 392 641 367"/>
+      <path stroke-width="2.3" d="M 678 470 C 676 440 676 392 679 367"/>
+      <path stroke-width="2.1" d="M 633 367 C 648 365 670 365 685 367"/>
+    </g>
+    <g stroke-opacity="0.44">
+      <path stroke-width="2.1" d="M 704 470 C 702 444 702 402 705 380"/>
+      <path stroke-width="2.1" d="M 737 470 C 735 444 735 402 738 380"/>
+      <path stroke-width="1.9" d="M 698 380 C 711 378 730 378 743 380"/>
+    </g>
+
+    <!-- (here the row breaks: the eighth slot stands empty) -->
+
+    <g stroke-opacity="0.34">
+      <path stroke-width="1.8" d="M 810 470 C 809 450 809 418 811 402"/>
+      <path stroke-width="1.8" d="M 834 470 C 833 450 833 418 835 402"/>
+      <path stroke-width="1.6" d="M 805 402 C 815 401 829 401 839 402"/>
+    </g>
+    <g stroke-opacity="0.3">
+      <path stroke-width="1.6" d="M 852 470 C 851 452 851 424 853 411"/>
+      <path stroke-width="1.6" d="M 874 470 C 873 452 873 424 875 411"/>
+      <path stroke-width="1.5" d="M 848 411 C 856 410 870 410 878 411"/>
+    </g>
+    <g stroke-opacity="0.26">
+      <path stroke-width="1.5" d="M 889 470 C 888 454 888 431 890 419"/>
+      <path stroke-width="1.5" d="M 907 470 C 906 454 906 431 908 419"/>
+      <path stroke-width="1.4" d="M 885 419 C 892 418 904 418 911 419"/>
+    </g>
+    <g stroke-opacity="0.22">
+      <path stroke-width="1.3" d="M 921 470 C 920 456 920 436 922 425"/>
+      <path stroke-width="1.3" d="M 937 470 C 936 456 936 436 938 425"/>
+      <path stroke-width="1.2" d="M 917 425 C 924 424 934 424 941 425"/>
+    </g>
+    <g stroke-opacity="0.19">
+      <path stroke-width="1.2" d="M 948 470 C 947 458 947 440 949 431"/>
+      <path stroke-width="1.2" d="M 964 470 C 963 458 963 440 965 431"/>
+      <path stroke-width="1.1" d="M 945 431 C 951 430 961 430 967 431"/>
+    </g>
+    <g stroke-opacity="0.16">
+      <path stroke-width="1.1" d="M 972 470 C 971 460 971 444 973 436"/>
+      <path stroke-width="1.1" d="M 986 470 C 985 460 985 444 987 436"/>
+      <path stroke-width="1.0" d="M 969 436 C 975 435 983 435 989 436"/>
+    </g>
+
+    <!-- THE CROWD AT THE EDGE — the row runs off the page:
+         hairline uprights, barely there, toward full coverage. -->
+    <g stroke-width="1.0">
+      <path stroke-opacity="0.13" d="M 1000 470 C 999 462 999 450 1001 442"/>
+      <path stroke-opacity="0.11" d="M 1016 470 C 1015 463 1015 452 1017 445"/>
+      <path stroke-opacity="0.09" d="M 1030 470 C 1029 464 1029 454 1031 448"/>
+      <path stroke-opacity="0.08" d="M 1042 470 C 1041 465 1041 456 1043 450"/>
+      <path stroke-opacity="0.07" d="M 1052 470 C 1051 466 1051 458 1053 453"/>
+    </g>
+
+    <!-- THE CONTINUOUS CONTOUR — one line tracing the falling
+         lintel-tops; it keeps its course across the empty slot. -->
+    <path stroke-width="2.0" stroke-opacity="0.4" d="
+      M 143 260
+      C 190 271 240 283 272 288
+      C 310 294 350 305 384 312
+      C 418 319 450 327 482 333
+      C 512 339 538 345 567 351
+      C 592 356 616 362 641 367
+      C 663 371 683 376 705 380
+      C 729 384 752 388 775 392
+      C 787 394 799 398 811 402
+      C 825 405 839 408 853 411
+      C 866 414 877 416 890 419
+      C 901 421 911 423 922 425
+      C 931 427 940 429 949 431
+      C 957 433 965 434 973 436
+      C 984 438 995 439 1005 441
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The empty eighth slot: beneath the gap in the row, a shallow
+    cup open upward, a short serif at each rim — the audit's
+    refusal, drawn as a place still held. The only warm thing
+    on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the cup beneath the missing doorway -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="M 757 482 C 761 500 789 500 793 482"/>
+
+    <!-- a short serif at each rim — the slot is held, not erased -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 752 479 L 761 483"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 789 483 L 798 479"/>
+  </g>
+</svg>

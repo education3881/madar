@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Syria. A drift of small paper sheets, drawn as tilted open rectangles, blows in from the left — a family's documents still in transit, the farthest ones faint at the page's edge. The sheets queue toward a firm registry counter standing right of centre, where the leading sheet lies flat. Above the queue, one unbroken fine line — the child — enters alongside the sheets, rises, passes clear over the counter without stopping, and runs on to the right edge of the page. On the leading sheet, the only warm mark on the page: a kiln-orange signature stroke — the parent's written pledge, standing in for every document still on its way.">
+
+  <title>The Still · Syria — a queue of papers at a counter, and the line that does not wait</title>
+  <desc>Small rectangular sheets enter from the left edge in a loose drift, each tilted at its own angle, the farthest smallest and faintest — documents in transit from other school systems. They advance along a faint dashed route toward a registry counter drawn as one firm horizontal surface on two upright legs, right of centre. The sheet at the head of the queue lies flat on the counter. Above all of this, a single continuous fine line — the child — enters at the left among the papers, rises as it travels, clears the counter in one unbroken arc without stopping, and runs off the right edge of the page. On the face of the flat leading sheet sits the only warm mark on the page: a kiln-orange cursive signature with a short underline — the parent's pledge, the one mark that lets the line pass while the rest of the paper catches up. No fills, no volumes; the line is the image; the ground is paper-cream.</desc>
+
+  <!-- Paper-cream ground. Nothing else underneath the line. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!--
+    ============================================================
+    PRIMARY GESTURE — ink (#1A2B3C)
+    The paper trail: tilted sheets drifting in from the left,
+    faint at the far edge, firmer as they near the counter.
+    Triple-weight discipline; no fills, no filters, no gradients.
+    ============================================================
+  -->
+  <g id="ink-sheets"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the route the documents travel — a hairline dashed drift -->
+    <path stroke-width="0.9" stroke-opacity="0.15" stroke-dasharray="5 10"
+          d="M 62 344 C 240 360 430 330 618 322 C 660 320 690 306 726 292"/>
+
+    <!-- THE DRIFT — sheets in transit, farthest faintest -->
+    <g stroke-width="1.1" stroke-opacity="0.14">
+      <path d="M 96 296 L 118 290 L 124 320 L 102 326 Z"/>
+    </g>
+    <g stroke-width="1.2" stroke-opacity="0.22">
+      <path d="M 176 332 L 202 328 L 207 364 L 181 368 Z"/>
+    </g>
+    <g stroke-width="1.4" stroke-opacity="0.32">
+      <path d="M 262 282 L 292 288 L 285 330 L 255 324 Z"/>
+    </g>
+    <g stroke-width="1.5" stroke-opacity="0.42">
+      <path d="M 356 336 L 388 332 L 393 376 L 361 380 Z"/>
+    </g>
+    <g stroke-width="1.7" stroke-opacity="0.55">
+      <path d="M 452 296 L 486 300 L 481 348 L 447 344 Z"/>
+    </g>
+    <g stroke-width="1.9" stroke-opacity="0.68">
+      <path d="M 548 338 L 584 336 L 587 388 L 551 390 Z"/>
+    </g>
+    <!-- the sheet at the head of the queue, upright before the counter -->
+    <g stroke-width="2.1" stroke-opacity="0.8">
+      <path d="M 626 320 L 664 318 L 667 372 L 629 374 Z"/>
+    </g>
+    <!-- THE LEADING SHEET — lying flat on the counter top -->
+    <g stroke-width="2.2" stroke-opacity="0.88">
+      <path d="M 700 272 L 756 268 L 768 278 L 712 282 Z"/>
+    </g>
+  </g>
+
+  <!--
+    ============================================================
+    THE COUNTER — the registry desk: the firmest marks on the
+    page. One worked surface, two upright legs, a faint ground.
+    ============================================================
+  -->
+  <g id="ink-counter"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- ground rule the counter stands on -->
+    <path stroke-width="2" stroke-opacity="0.3" d="M 120 472 C 440 468 800 468 1090 473"/>
+
+    <!-- the counter: top surface and two legs -->
+    <path stroke-width="3.5" stroke-opacity="0.92" d="M 676 282 C 712 278 760 278 800 282"/>
+    <path stroke-width="3.2" stroke-opacity="0.9" d="M 690 282 C 688 340 688 412 691 470"/>
+    <path stroke-width="3.2" stroke-opacity="0.9" d="M 788 282 C 786 340 786 412 789 470"/>
+    <!-- a faint shelf inside — the registry has depth -->
+    <path stroke-width="1.3" stroke-opacity="0.2" d="M 694 372 L 786 372"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE CHILD'S LINE — one continuous line that enters with the
+    papers, rises, clears the counter unbroken, and runs on.
+    ============================================================
+  -->
+  <g id="ink-child-line"
+     fill="none"
+     stroke="#1A2B3C"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <path stroke-width="2.6" stroke-opacity="0.82" d="
+      M 60 396
+      C 180 388 320 384 440 366
+      C 540 350 600 322 656 262
+      C 690 226 728 202 776 212
+      C 830 224 900 240 1000 240
+      C 1050 240 1100 238 1140 236
+    "/>
+    <!-- a faint second breath of the same line, just behind it -->
+    <path stroke-width="1.1" stroke-opacity="0.22" d="
+      M 60 412
+      C 180 404 330 398 448 380
+      C 546 364 606 336 660 280
+    "/>
+  </g>
+
+  <!--
+    ============================================================
+    SECOND GESTURE — kiln-orange (#C75B39)
+    The signature on the leading sheet: the parent's pledge,
+    the one mark that stands in for the missing file.
+    The only warm thing on the page.
+    ============================================================
+  -->
+  <g id="orange-line"
+     fill="none"
+     stroke="#C75B39"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- the pledge — a small cursive signature across the flat sheet -->
+    <path stroke-width="2.6" stroke-opacity="0.95" d="
+      M 712 277
+      C 718 271 722 271 724 275
+      C 726 279 730 279 734 274
+      C 738 269 744 270 746 274
+      C 748 277 753 276 758 273
+    "/>
+    <!-- the short underline every signature earns -->
+    <path stroke-width="2.2" stroke-opacity="0.9" d="M 716 281 L 752 279"/>
+  </g>
+</svg>
