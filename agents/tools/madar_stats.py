@@ -87,11 +87,16 @@ def build_snapshot():
     en, ar = load(EN_DIR), load(AR_DIR)
     en_approved = [a for a in en if str(a.get("approved")).lower() == "true"]
     ar_approved = [a for a in ar if str(a.get("approved")).lower() == "true"]
+    # Published statistics describe the LIVE corpus (approved !== false — the same
+    # gate the article routes use). Held drafts (approved:false) sit in the content
+    # dir but do not build/list/sitemap, so counting them would overstate the site.
+    # Breakdowns and cadence are therefore computed over the approved set; on-disk
+    # totals are retained in `articles` for provenance and the held-draft note.
     theme_counts = {}
-    for a in en:
+    for a in en_approved:
         for th in themes_of(a):
             theme_counts[th] = theme_counts.get(th, 0) + 1
-    dates = sorted([str(a.get("date")) for a in en if a.get("date")])
+    dates = sorted([str(a.get("date")) for a in en_approved if a.get("date")])
     # pieces per ISO week
     weeks = {}
     for d in dates:
@@ -108,11 +113,13 @@ def build_snapshot():
             "ar_total": len(ar),
             "en_approved": len(en_approved),
             "ar_approved": len(ar_approved),
-            "ar_parity_pct": round(100 * len(ar) / len(en)) if en else 0,
+            "held_en": len(en) - len(en_approved),
+            "held_ar": len(ar) - len(ar_approved),
+            "ar_parity_pct": round(100 * len(ar_approved) / len(en_approved)) if en_approved else 0,
         },
-        "by_region": tally(en, "region"),
-        "by_country": tally(en, "country"),
-        "by_type": tally(en, "type"),
+        "by_region": tally(en_approved, "region"),
+        "by_country": tally(en_approved, "country"),
+        "by_type": tally(en_approved, "type"),
         "by_theme": dict(sorted(theme_counts.items(), key=lambda kv: (-kv[1], kv[0]))),
         "cadence": {
             "first_piece": dates[0] if dates else None,
@@ -157,12 +164,18 @@ def html_panel(s):
     cad = s["cadence"]
     wk = cad["pieces_per_week"]
     wk_str = " · ".join(f"{k.split('-W')[1]} -> {v}" for k, v in wk.items())
+    held_note = ""
+    if a.get("held_en") or a.get("held_ar"):
+        held_note = (
+            f'\n    <div><span class="stats__k">On disk</span> {a["en_total"]} EN / {a["ar_total"]} AR '
+            f'&mdash; incl. {a["held_en"]} EN / {a["held_ar"]} AR held drafts (approved:false, not published)</div>'
+        )
     panel = (
         '<div class="stats">\n'
-        f'  <h3>Statistics &middot; as of {s["as_of"]}</h3>\n'
+        f'  <h3>Statistics &middot; as of {s["as_of"]} &middot; published (live) corpus</h3>\n'
         '  <div class="stats__grid">\n'
-        f'    <div class="stat"><span class="stat__n">{a["en_total"]}</span><span class="stat__l">English pieces</span></div>\n'
-        f'    <div class="stat"><span class="stat__n">{a["ar_total"]}</span><span class="stat__l">Arabic pieces</span></div>\n'
+        f'    <div class="stat"><span class="stat__n">{a["en_approved"]}</span><span class="stat__l">English pieces</span></div>\n'
+        f'    <div class="stat"><span class="stat__n">{a["ar_approved"]}</span><span class="stat__l">Arabic pieces</span></div>\n'
         f'    <div class="stat"><span class="stat__n">{a["ar_parity_pct"]}%</span><span class="stat__l">AR/EN parity</span></div>\n'
         f'    <div class="stat"><span class="stat__n">{len(s["by_country"])}</span><span class="stat__l">Countries covered</span></div>\n'
         '  </div>\n'
@@ -171,7 +184,8 @@ def html_panel(s):
         f'    <div><span class="stats__k">Top themes</span> {top_themes}</div>\n'
         f'    <div><span class="stats__k">Pieces per ISO week</span> {wk_str}</div>\n'
         f'    <div><span class="stats__k">Cadence</span> first {cad["first_piece"]} &middot; latest {cad["latest_piece"]}</div>\n'
-        '    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>\n'
+        '    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>'
+        f'{held_note}\n'
         '  </div>\n'
         '</div>'
     )

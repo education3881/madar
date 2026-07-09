@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-09</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 9 July 2026. The P0 is over: your Settings fix worked, the deploy went green, and the whole corpus is live and current — Edition 03's ten pieces among them, verified in place 10/10. The record needed correcting: Brief 28 planned to hold them, the push shipped them, and both facts are now on one page. 07-08 was dark; today reconciled the state, verified the Edition 04 flagship, fixed the stats tool so it can no longer overstate the site, and staged the Edition 03 launch." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block .kicker { color: var(--color-ink); }
+  .settings-block ol { margin: 0.6rem 0 0; padding-inline-start: 1.2rem; }
+  .settings-block li { margin-bottom: 0.5rem; }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 9 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 29</div>
+    <h1>The site is back. Edition 03 is live. The record needed correcting.</h1>
+    <p class="dek">Your ninety seconds in Settings did exactly what Brief 28 said they would: Pages Source flipped to GitHub Actions, the deploy went <strong>green</strong>, and the site — stale at 25 June for a week — is now <strong>fully current at 7 July</strong>. That includes <strong>Edition 03's ten pieces</strong>, which Brief 28 had planned to <em>hold</em> but the <span class="mono">git&nbsp;add&nbsp;-A</span> push shipped live. They were then verified in place, <strong>10 / 10</strong>, and they hold up. So today is a reconciliation: the plan said hold, the push shipped, the bar held anyway — and all three facts now sit on one page instead of contradicting each other across two. 8 July was dark. Today I fixed the record, verified Edition 04's flagship, and repaired the stats tool so it can never again report a corpus the site isn't serving.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The outage lifted and the edition went live — while the brief still said "held."</h2>
+        <div class="day__date">2026·07·07 evening → 07·08 (dark) · origin steady at 26b9877 · live site recovered</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">The P0 resolved — the deploy is green</div>
+        <div class="item__body">You flipped Pages Source to GitHub Actions (Brief 28, Action 1) and the deploy job cleared for the first time since 02 July. Actions <span class="mono">run 38</span> — build <em>and</em> deploy SUCCESS, 07-07 19:54Z. The live site, frozen at its 25 June self for a week, is current again. Ruling #17 is closed not by a code change but by the settings change it named. The build was always the healthy half; the half only you could reach is fixed.</div>
+        <div class="item__note">verified this run against the live sitemap + a live article render — not assumed (ruling #16)</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-shipped">Edition 03 shipped — and was verified in place, 10/10</div>
+        <div class="item__body">The same <span class="mono">git add -A</span> push carried the ten Ed03 "continuity under disruption" pieces live (they were <span class="mono">approved: true</span> on disk, not held as Brief 28 intended). On discovery you ruled <em>keep-live, verify-in-place</em>; three independent auditors then checked every figure against the research record and cleared all ten — figures traced, arithmetic reconciled, Gaza guardrails held, route-2 gap statements present. The fast-drafted batch survived real scrutiny. The gate record was written but never committed; it rides today's push.</div>
+        <div class="item__note">agents/logs/manager-publish-gate-2026-07-07-ed03.md (untracked → staged today)</div>
+      </div>
+      <div class="item">
+        <div class="item__label">08 July — a dark day, named</div>
+        <div class="item__body">No run, no commit, no brief on 07-08. The site was healthy and unattended, which is the good version of a gap — nothing broke — but it is still a missed day and belongs on the record. The last brief before this one is No. 28 (07-07).</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Reconciled the state, verified the flagship, fixed the instrument.</h2>
+        <div class="day__date">2026·07·09 · Thursday · all five functions · no new content shipped (paper trail + tooling)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · full state reconciliation — site healthy, corpus honest</div>
+        <div class="item__body">Established ground truth end to end: deploy green (run 38); live sitemap serves the full corpus through 07-07; <span class="mono">editions.ts</span> marks Ed03 current with all ten pieces grouped (no orphans); the five held Ed04 drafts correctly 404. Live render of the Sudan piece is clean — inlined wordmark, hero still, working related-reading. <strong>Published parity: 30 EN = 30 AR = 100%.</strong> Dek caps and related-refs both CLEAN. No defects; nothing to fix.</div>
+        <div class="item__note">qa-2026-07-09.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Edition 04 flagship verified (1 of 5 drafted)</div>
+        <div class="item__body">Per the sprint's own lesson — <em>verification, not drafting, is the binding constraint</em> — I audited the Ed04 flagship rather than drafting more. <strong>United States, "Two rulers, one word"</strong> (the NAEP honesty gap) clears the rubric: every figure traces to the recon ledger, the 49-point state spread reconciles against the 30-point Basic→Proficient distance, the Patrick Kelly quote is verbatim and correctly tiered, all three self-protecting cautions are present, and the zero-partisan guardrail holds — no party named, no motive ascribed. It stays <span class="mono">approved: false</span> until Ed04 ships as a complete wave. An Ed04 completion plan is on record.</div>
+        <div class="item__note">verdicts/2026-07-09-ed04-us-naep-verification.md · _EDITION_04_STATUS.md</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · the corpus has its own gate — and the tool now respects it</div>
+        <div class="item__body">The durable lesson from the premature-publish episode: <strong>a brief is a plan, the commit is fact, the sitemap is truth — verify the deployed state, never the narrative.</strong> The reliable hold is the <span class="mono">approved:false</span> flag, not a moved file (<span class="mono">git add -A</span> plus the sandbox boundary sweep directory moves back in). And I fixed the instrument that would have hidden this: <span class="mono">madar_stats.py</span> was counting every draft on disk, so it reported 35/31 as if published. It now leads with the <strong>live corpus</strong> and discloses held drafts on a separate line — it can no longer overstate the site.</div>
+        <div class="item__note">guidebook/2026-07-09-reconcile-deployed-corpus-vs-brief.md (+ INDEX) · madar_stats.py patched</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Growth · the Edition 03 launch is unblocked</div>
+        <div class="item__body">For the first time in a week, new work is publicly live — so the growth lever is real. Staged a single dignified Ed03 launch packet (the edition as one throughline, not ten posts; mechanism-only framing for the war/refugee pieces; the now-live Morocco caption carried forward). The concrete founder-action lever: <strong>resubmit the sitemap in Search Console</strong> — twelve URLs are new to the live crawl since the outage, and that one action surfaces two weeks of invisible work at once. No metrics invented; return rate, not raw counts, is the number that will matter once Substack opens.</div>
+        <div class="item__note">social-drafts/2026-07-09-edition-03-launch-packet.md</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== FLAG ===== -->
+  <div class="flag">
+    <div class="kicker">Correction of record · Brief 28</div>
+    <p>Brief 28 reported the corpus at <strong>20 EN / 20 AR</strong> and said the fifteen sprint drafts were held out of the build. That was the <em>plan</em>. The push that followed shipped the ten Edition 03 pieces live, so the true published corpus is <strong>30 EN / 30 AR</strong>, seventeen countries → twenty-seven. The five Edition 04 drafts <em>were</em> held correctly — because they carry the <span class="mono">approved:false</span> flag, which is the thing that actually holds a piece back. Ed03 didn't, so it shipped. The outcome was safe only because the verification then cleared it; I'm logging the mechanism so the next hold is a flag, not a sentence in a brief.</p>
+  </div>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-09 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 35 EN / 31 AR &mdash; incl. 5 EN / 1 AR held drafts (approved:false, not published)</div>
+  </div>
+  <p class="mono" style="margin-top:0.75rem;">+10 EN / +10 AR live since Brief 28 (Edition 03, verified in place). The panel now reports the published corpus and states the on-disk total separately — the fix that stops it overstating the site while drafts sit held. Live counts match the sitemap exactly.</p>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Build Edition 04 the disciplined way: verify, then draft to ten.</h2>
+        <div class="day__date">next daily: 2026·07·10 Friday</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · the Edition 04 verification wave continues</div>
+        <div class="item__body">Next runs take the remaining four drafted Ed04 pieces through the same independent audit — India (PARAKH / the Holistic Progress Card), Singapore (PSLE fine-ranking), New Zealand (the NCEA co-requisite), Chile (the census assessment's return) — one verdict at a time. Then draft from the reconned bench to reach ten. No piecemeal Ed04 publishing; it ships as a verified wave, like Ed03.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · resubmit the sitemap; then post Edition 03</div>
+        <div class="item__body">The one high-leverage action is the Search Console sitemap resubmission (surfaces the twelve new URLs). Then the Ed03 launch packet goes out on its slow cadence — the edition first, then one or two pieces a week, mechanism-only framing throughout. Morocco can post now; its URL is live.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Housekeeping · dedupe the staged clutter; the 07-12 weekly</div>
+        <div class="item__body">The redundant <span class="mono">staged-ed0304/</span> copies can be removed at a founder-side cleanup (bash deletes don't persist through the sandbox boundary). Sunday's weekly still carries the verification-capacity question the sprint raised — whether a dedicated Verifier persona is worth it — and the standing domain-migration decision.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · the push — banks the record; no live content changes (safe)</div>
+    <p>This carries the day's paper trail and the tool fix only: the Edition 03 verification gate log (written 07-07, finally committed), the Edition 04 us-naep verification verdict + completion-status memo, the Edition 03 launch packet, the guidebook reconciliation note + INDEX, the <span class="mono">madar_stats.py</span> honesty fix, and this brief. <strong>No <span class="mono">web/src</span> files change and no <span class="mono">approved</span> flags flip</strong> — the live site and its green deploy are untouched, so <span class="mono">git add -A</span> is safe and nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-09: reconcile the record after Ed03 went live (P0 resolved, deploy green; corpus 30/30, verified in place 10/10; 07-08 dark). Ed04 flagship us-naep verified + Ed04 status memo; madar_stats.py reports the live corpus (no longer overstates on-disk drafts); Ed03 launch packet; ruling — the approved-flag is the hold, not the brief; QA + brief 29."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">The one thing that still moves the needle for readers this week is the Search Console sitemap resubmission — thirty seconds, and the outage's twelve stranded URLs become discoverable. The push above is the usual one-liner.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·09</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
