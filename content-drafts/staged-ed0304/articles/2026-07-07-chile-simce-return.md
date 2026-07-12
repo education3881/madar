@@ -36,7 +36,7 @@ hero:
   src: "/stills/2026-07-07-chile-simce-return.svg"
   alt: "A continuous ink drawing for Chile: a recording instrument's trace crosses the page in a fine, regular wave, then breaks off — a blank interval where the pen was lifted, bridged only by a faint dotted line, the years not measured. From an open pivot at the upper right a firm pen arm reaches down and touches the paper, and the trace resumes: it dips, climbs back to its old level, and steadies. Where it resumes it is doubled — beneath the ink line runs the only warm mark on the page, a kiln-orange companion trace, the instrument now writing two things at once. Under the resumed line, three small ticks: three deliveries, on time."
   caption: "سكون · The Still · Curated 37 · Chile"
-approved: true
+approved: false
 ---
 
 On 6 March 2026, a few days before Chile's school year opened, the Agencia de Calidad de la Educación — the country's education quality agency — handed schools the results of the national tests their students had sat the previous November. Simce is a census, not a sample: when it runs, it reads every school in the measured grades. For the third year in a row, the reading arrived at the start of the school year it is meant to serve, early enough for a school to do something about it before the year hardens into its habits. And for the third year in a row, the folders held more than scores: alongside reading and mathematics came the Indicadores de Desarrollo Personal y Social — the census's wellbeing indicators — and the findings of the context questionnaires filled in around the tests. The instrument that came back from the pandemic is not quite the instrument that went in. It returns earlier in the year, and it returns carrying more.

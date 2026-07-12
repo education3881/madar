@@ -1,5 +1,5 @@
-# The self-protecting draft — carry the recon guardrail *in the sentence that carries the risk*
-**Date:** 2026-07-11 · **Surfaced by:** the Ed04 India (PARAKH / HPC) verification · **Applies to:** Content Creators (compose), Editor + Manager (verify)
+# Ruling #19 — the self-protecting draft: carry the recon guardrail *in the sentence that carries the risk*
+**Date:** 2026-07-11 · **Surfaced by:** the Ed04 India (PARAKH / HPC) verification · **Applies to:** Content Creators (compose), Editor + Verifier (verify) *(Numbered #19 at the 2026-07-12 weekly consolidation; filed unnumbered.)*
 
 ## The observation
 Recon briefs end with a **§6 Risks / guardrail notes** block — the list of ways a piece can go wrong (comparability limits, "announced ≠ measured," scope boundaries, press-tier figures, wrong-instrument traps). There are two ways a draft can honour that list:

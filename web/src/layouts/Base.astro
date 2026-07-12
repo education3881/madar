@@ -14,6 +14,15 @@ interface Props {
    * editorial masthead, e.g. an article page).
    */
   noHeader?: boolean;
+  /**
+   * Head-level hreflang pair (site-absolute paths WITHOUT the base prefix,
+   * e.g. { en: '/articles/slug/', ar: '/ar/articles/slug/' }).
+   * Only pass when BOTH language versions exist — a pair pointing at a
+   * missing page is worse than no pair. The sitemap already carries
+   * xhtml:link alternates; this adds the belt-and-suspenders head signal
+   * (Growth audit, 2026-07-11). x-default resolves to the EN page.
+   */
+  alternate?: { en: string; ar: string };
 }
 
 const {
@@ -22,10 +31,13 @@ const {
   lang = 'en',
   ogImage,
   noHeader = false,
+  alternate,
 } = Astro.props;
 
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const alternateEN = alternate ? new URL(withBase(alternate.en), Astro.site).href : null;
+const alternateAR = alternate ? new URL(withBase(alternate.ar), Astro.site).href : null;
 ---
 
 <!doctype html>
@@ -38,6 +50,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
 
     <link rel="canonical" href={canonicalURL.href} />
+    {alternateEN && alternateAR && (
+      <>
+        <link rel="alternate" hreflang="en" href={alternateEN} />
+        <link rel="alternate" hreflang="ar" href={alternateAR} />
+        <link rel="alternate" hreflang="x-default" href={alternateEN} />
+      </>
+    )}
     <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
 
     {/* Fonts — Cormorant Garamond + Newsreader (Latin), JetBrains Mono, Amiri + Cairo (Arabic).

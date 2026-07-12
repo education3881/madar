@@ -1,5 +1,5 @@
-# The brief states intent; the commit states fact — reconcile the deployed corpus, not the narrative
-**Date:** 2026-07-09 · **Manager** · surfaced by the Edition 03 premature-publish episode (07-07) and found on the 07-09 state check.
+# Ruling #18 — the brief states intent; the commit states fact — reconcile the deployed corpus, not the narrative
+**Date:** 2026-07-09 · **Manager** · surfaced by the Edition 03 premature-publish episode (07-07) and found on the 07-09 state check. *(Numbered #18 at the 2026-07-12 weekly consolidation; filed unnumbered.)*
 
 ## What happened
 Brief 28 (07-07) described a conservative plan: *close Edition 02 with Morocco (the one gated piece), hold all fifteen Ed03/04 sprint drafts out of the build, corpus stays 20 EN / 20 AR.* The push block under it used `git add -A`. But on disk the ten Ed03 pieces carried `approved: true` in **both** languages. So the founder's `git add -A` push swept them into the commit, the build rendered them, and the deploy (run 38, green) put **ten pieces live** — a corpus of **30 EN / 30 AR**, not 20/20. The brief's *narrative* said "held"; the repository's *state* said "shipped." The state is what readers got.

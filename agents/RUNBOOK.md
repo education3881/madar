@@ -20,15 +20,17 @@
               Manager   ← runs the company; weekly report to Vini
         ┌───────┴───────┬─────────────┬─────────────┐
      Editor       Web Developer    Designer       Growth
-     ┌──┴───────────────┬──────────────────┐
- Researcher   Content Creator ×2      Arabic Editor
-                                           │
-                                  Arabic Content Creator
+     ┌──┴──────────┬─────────────────┬─────────────┐
+ Researcher   Content Creator ×2   Verifier   Arabic Editor
+                                                   │
+                                          Arabic Content Creator
 ```
 
-The Manager talks to four department heads. The Editor leads the Editorial Department: the **Researcher** and **two Content Creators** sit under the Editor, and the **Arabic Editor** (peer-specialist) leads the Arabic side with the **Arabic Content Creator** composing under them. The Manager never goes directly to any of them — editorial routing is always through the Editor.
+The Manager talks to four department heads. The Editor leads the Editorial Department: the **Researcher**, **two Content Creators**, and the **Verifier** sit under the Editor, and the **Arabic Editor** (peer-specialist) leads the Arabic side with the **Arabic Content Creator** composing under them. The Manager never goes directly to any of them — editorial routing is always through the Editor.
 
 **The Researcher (`08_researcher.md`, added 2026-06-14)** sits under the Editor and *precedes* the Content Creator in the pipeline. The Researcher produces the verified source index and runs the operational-voice gate **before the Editor commits a piece to commission** — so recon stops eating the same day's content slot, the Editor stays a pure filter (not a recon-doer), and a candidate's park-or-proceed call is made on evidence, early. The Researcher does **not** write articles and does **not** raise the cadence: its job is to make each commission decision cheaper and each draft start from a checked index, not to add throughput. Source indices live in `/agents/guidebook/` (Section 1 of the INDEX); recon briefs in `/content-drafts/recon/`.
+
+**The Verifier (`11_verifier.md`, added 2026-07-12)** sits under the Editor and *follows* the Content Creator in the pipeline — the mirror of the Researcher, who precedes it. The Verifier runs the independent post-draft audit (figure trace against recon + primaries, guardrail carriage per ruling #19, schema caps, `related:` resolution, flag-state per ruling #18) and files a written verdict in `/content-drafts/verdicts/<date>-<slug>-verification.md`. **Drafter ≠ verifier is structural:** no piece flips `approved: true` in a wave without a Verifier verdict on file — the verdict gates the flip; the Editor's five-test verdict still gates the commission and the frame. The Verifier does **not** raise the cadence: one verdict per run is the working ceiling, and in wave mode drafting may not run more than three pieces ahead of the last verdict. Added at the 2026-07-12 weekly review after verification was named the binding constraint in three consecutive artifacts (qa-2026-07-07, the Ed04 status memo, manager-status-2026-07-11); trigger and restraint test recorded there.
 
 **Content Creator II (`09_content_creator_2.md`) and the Arabic Content Creator (`10_arabic_content_creator.md`) — both added 2026-06-16 (founder-directed); ratified in the 2026-06-24 weekly review.** They exist to sustain **1 piece/day, bilingual, at the full bar** during the Edition-02 sprint (`/content-drafts/_EDITION_02_SPRINT.md`). **Ratification (2026-06-24):** the **Arabic Content Creator is permanent** — the compose-vs-verify split is a structural quality gain (AR parity held 100% across all five sprint ships), not a throughput crutch, and it survives the wind-down to slow cadence. **Content Creator II reverts to standby** when Edition 02 closes at ten — a second drafting hand is a surge instrument, not a slow-pace need — and re-activates for the next sprint. Neither decision raises the standing cadence. **Content Creator II** is a second drafting hand (peer to `06`, leaning non-MENA/comparative/reversal stories); CC1 and CC2 never draft the same piece, and the Editor assigns. **The Arabic Content Creator** *composes* the Arabic version so the **Arabic Editor becomes a pure verifier** (Gate 4) rather than composing and grading their own work — the same composition-vs-judgment split the English side adopted on 2026-05-26. Neither sets `approved: true`; the Editor and Arabic Editor remain the gates.
 

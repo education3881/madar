@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Review · Madār · 2026-07-12</title>
+<meta name="description" content="Weekly strategic review covering 6–12 July 2026: the outage closed and stayed closed (three green deploys, verified), Edition 03 live at 30/30, Edition 04 held and 2/5 verified. Decisions: the Verifier joins as persona 11, CC II to standby, the grid gets a mechanism instead of a third re-schedule, and the domain is escalated as the single founder call." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --font-ar:      "Amiri", serif;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.15rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-orange);
+  }
+  header.masthead { padding: 3.2rem 0 1.6rem; border-bottom: 2px solid var(--color-ink); }
+  .brandline { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 2rem; }
+  .brandline .wordmark { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; letter-spacing: 0.01em; }
+  .brandline .wordmark .ar { font-family: var(--font-ar); font-size: 1.35rem; margin-inline-start: .45rem; }
+  .dek { font-size: clamp(17px, 1.4vw, 20px); color: var(--color-muted); max-width: 46em; margin-top: 1rem; }
+  .metaline { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 1.4rem; }
+  section { padding: 2.4rem 0 1.2rem; border-bottom: 1px solid var(--color-rule-soft); }
+  section .kicker { display: block; margin-bottom: .55rem; }
+  .lede { font-size: 1.06em; }
+  .founder-box {
+    margin: 2rem 0 0; padding: 1.5rem 1.6rem; background: #fff;
+    border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+  }
+  .founder-box h2 { margin-bottom: .6rem; }
+  .statgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0 1.4rem; }
+  .stat { background: #fff; padding: .95rem 1rem; }
+  .stat .num { font-family: var(--font-mono); font-size: 1.5rem; font-weight: 500; display: block; }
+  .stat .lbl { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--color-muted); }
+  .stat .num small { font-size: .8rem; color: var(--color-muted); }
+  table.plain { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: .92em; }
+  table.plain th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; text-align: left; color: var(--color-muted); padding: .45rem .6rem .45rem 0; border-bottom: 1px solid var(--color-rule); }
+  table.plain td { padding: .55rem .6rem .55rem 0; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  .verdict { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: .12rem .5rem; border: 1px solid var(--color-rule); white-space: nowrap; }
+  .verdict.good { color: #3e6b41; border-color: #3e6b41; }
+  .verdict.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .verdict.dark { color: var(--color-muted); }
+  .decision { margin: 1.3rem 0; padding: 1.2rem 1.4rem; background: #fff; border: 1px solid var(--color-rule-soft); }
+  .decision h3 { margin-bottom: .45rem; }
+  .decision .tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--color-sage); }
+  pre.push {
+    background: var(--color-ink); color: #F2EFE6; font-family: var(--font-mono);
+    font-size: 12.5px; line-height: 1.7; padding: 1.2rem 1.4rem; overflow-x: auto;
+    border-radius: 2px; margin: 1rem 0;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  pre.push .c { color: #8FA0B5; }
+  .caption-card { background: #fff; border: 1px dashed var(--color-rule); padding: 1rem 1.2rem; font-size: .92em; margin: .8rem 0 1.2rem; }
+  .caption-card .ar { font-family: var(--font-ar); direction: rtl; display: block; margin-top: .5rem; }
+  footer { padding: 2.2rem 0 3.4rem; font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); }
+  ul.tight { margin: 0 0 1em; padding-left: 1.2em; }
+  ul.tight li { margin-bottom: .5em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="brandline">
+        <span class="wordmark">Madār<span class="ar">مدار</span></span>
+        <span class="kicker">Weekly Review · No. 6</span>
+      </div>
+      <span class="kicker">Manager → Founder · Sunday 12 July 2026 · covering 2026-07-06 → 2026-07-12</span>
+      <h1>The outage closed. The bar held. The org rebalances toward verification.</h1>
+      <p class="dek">A week that began with a stale site and fifteen unverified drafts ends with three consecutive green deploys, Edition 03 live and verified in place at 30/30, and the honest bottleneck named and staffed: verification. One decision is escalated to you, and it is the same one as last month — the domain.</p>
+      <p class="metaline">HEAD == origin == <code>8d68575</code> at compose (your 16:33 push landed as this review started — caught by the re-check rule, 4th push-race instance) · your in-tree hreflang work found, build-verified, and carried · live site verified current · Actions runs 38 · 39 · 40 all green</p>
+    </header>
+
+    <div class="founder-box">
+      <h2>Founder summary — what changed, what I decided, what needs you</h2>
+      <p><strong>What changed.</strong> The two-week deploy saga is over and <em>stayed</em> over: your 07-07 Pages flip fixed the publish gate, and runs 38, 39, and 40 (the last one today, 16:33) are green end-to-end — re-verified via the Actions API and the live sitemap this afternoon. Edition 03 is live and verified in place, 10/10. The corpus stands at <strong>30 EN / 30 AR, 100% parity, 27 countries</strong>. Edition 04 ("the measurement question") is mid-build and correctly held: 5 drafted, <strong>3 independently verified</strong> — Singapore cleared this afternoon by the concurrent daily run while this review was composing — zero leaked.</p>
+      <p><strong>What I decided.</strong> Three things, detailed below: <strong>(1)</strong> the <strong>Verifier</strong> joins as persona 11 — verification was named the binding constraint in three consecutive artifacts, and the Manager doing line-audits personally violated our own routing rule; <strong>(2)</strong> <strong>Content Creator II reverts to standby</strong> now that Edition 02 is closed — capacity rebalances from drafting to verifying, matching the real constraint; <strong>(3)</strong> the Instagram grid gets a <strong>mechanism decision, not a third re-schedule</strong>: one tile per week now rides the Sunday push block as a 60-second copy-paste, and an operation-driven scheduler is on offer whenever you want to connect one.</p>
+      <p><strong>What needs your eye — one decision.</strong> The <strong>domain</strong> (memo of 06-12, unchanged). It is now the single blocker of the entire next growth stage: Search Console and Substack both bind a URL, and both stay deliberately parked until this call is made. This is the cleanest window there will ever be — today's inbound-link search again found <em>zero</em> external bindings to the github.io URL. Details in the growth section; "go + which name" in any daily note is enough.</p>
+    </div>
+
+    <section>
+      <span class="kicker">1 · Traffic, growth &amp; statistics</span>
+      <h2>Thirty pieces, two languages, zero trackers — and the first week the site was fully current since June</h2>
+
+      <div class="statgrid">
+        <div class="stat"><span class="num">30 / 30</span><span class="lbl">EN / AR live</span></div>
+        <div class="stat"><span class="num">100%</span><span class="lbl">AR parity</span></div>
+        <div class="stat"><span class="num">27</span><span class="lbl">Countries</span></div>
+        <div class="stat"><span class="num">3</span><span class="lbl">Editions shipped</span></div>
+        <div class="stat"><span class="num">5+1</span><span class="lbl">Held Ed04 drafts (EN+AR)</span></div>
+        <div class="stat"><span class="num">3 / 5</span><span class="lbl">Ed04 verified</span></div>
+      </div>
+
+      <p><strong>Week-over-week.</strong> The live corpus went <strong>19/19 (04 Jul) → 30/30 (12 Jul)</strong>: the Edition 03 wave (10 pieces) plus Morocco closing Edition 02 at ten. The W28 spike of 11 pieces in the cadence panel is the wave landing, not a new publishing speed — underlying fresh output this week was Morocco alone, and that is by design: this was a verification-and-recovery week, bar over slot. Region mix now: MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm 2. LatAm remains thinnest; the Ed04 slate (US, India, Singapore, New Zealand, Chile + an eight-country bench) deliberately pulls toward the Americas and Asia-Pacific, and introduces assessment/measurement as a theme cluster the corpus currently lacks.</p>
+
+      <p><strong>Traffic, honestly.</strong> The site carries no third-party tracker, by design — there are no visitor analytics and none are invented here. The privacy-clean signals: <strong>Substack is pre-launch</strong> (Issue 01 packet send-ready since 06-01; the send is blocked on the domain decision, because the from-address and every link in the issue bind a URL). The weekly <strong>attributable-inbound search</strong> (X/Bluesky/LinkedIn/web, run 2026-07-12) found <strong>zero external shares</strong> of the publication URL — identical to the 07-06 baseline, expected pre-distribution, and quietly useful: it means migrating the domain today costs nothing in link equity. The week's real reachability event is that the site is <em>current</em> at all: for roughly a third of its life the publication served a stale archive; it now serves 65 URLs (all 30 EN + 30 AR articles plus the listing pages) with the sitemap-index resolving and hreflang pairs intact (spot-audited on Morocco, 07-11). And the P2 that audit filed — head-level <code>hreflang</code> alternates — was <strong>implemented today by the concurrent daily run</strong> (Web-Developer function; its QA log documents the design: pairs emit only where both language versions exist, derived from frontmatter, not mechanical prefixing). This review independently build-verified it end-to-end — 65 pages, reciprocal EN↔AR pairs + x-default on both sides, zero held-piece leakage — and carries it in the push below, so the crawl surface is belt-and-suspenders before Search Console ever fires.</p>
+
+      <p><strong>Last week's bet, read back.</strong> The grid restart (Uruguay Mon · macron Wed · Ghana Fri) posted <strong>0 of 3</strong> — no tile appears on the grid and no posting action is on the record. The 07-06 review pre-committed: if 0/3, decide the <em>mechanism</em>, don't re-schedule. Decided below (Decision 2).</p>
+
+      <p><strong>This week's single bet.</strong> One tile — Uruguay, caption packaged under the push block below — rides <em>this</em> push as a 60-second copy-paste. Success by 07-19: the tile is live on the grid, <em>or</em> you connect the scheduler and the operation takes posting over entirely. If neither happens, the grid retires until the Substack era and Growth stops spending cycles on it — that result would itself be a clean answer.</p>
+    </section>
+
+    <section>
+      <span class="kicker">2 · Quality retrospective</span>
+      <h2>One near-miss reached production and survived; the defect family behind it is now closed at three layers</h2>
+
+      <table class="plain">
+        <tr><th>Date</th><th>Event</th><th>State</th></tr>
+        <tr><td>07-06</td><td>P0 build fix proven (lockfile resync, ruling #16) + Morocco composed under full gate</td><td><span class="verdict good">Shipped</span></td></tr>
+        <tr><td>07-07</td><td>P0 re-diagnosed — build green, <em>publish</em> failing (Pages config, ruling #17); 15 un-gated sprint drafts pulled from the build; <strong>Ed03 premature publish</strong>: flags said <code>approved:true</code>, Brief 28 said hold — <code>git add -A</code> shipped the wave</td><td><span class="verdict hold">Near-miss</span></td></tr>
+        <tr><td>07-08</td><td>Dark day (named in Brief 29)</td><td><span class="verdict dark">Dark</span></td></tr>
+        <tr><td>07-09</td><td>Outage resolved &amp; verified (run 38 green, site current); Ed03 verified in place 10/10; us-naep verdict; stats-panel honesty fix</td><td><span class="verdict good">Clean</span></td></tr>
+        <tr><td>07-10</td><td>Dark day (named in Brief 30)</td><td><span class="verdict dark">Dark</span></td></tr>
+        <tr><td>07-11</td><td>India verdict (2/5); stale duplicate carrying <code>approved:true</code> found outside the build path and defused; hreflang-in-head P2 filed</td><td><span class="verdict good">Clean</span></td></tr>
+        <tr><td>07-12</td><td>Your 16:33 push (run 40) green; this review; live marker re-verified. Concurrent daily run: Singapore verdict (Ed04 → 3/5), hreflang-in-head implemented + verified, staged-flag sweep completed, ruling #20 filed</td><td><span class="verdict good">Current</span></td></tr>
+      </table>
+
+      <p><strong>The near-miss, honestly.</strong> Edition 03 went live a day before its ship gate was formally run — the brief's narrative said "held," the repository's flags said "shipped," and the flags won. It survived because every piece in the wave had already passed the full publish gate at compose; nothing thin reached readers. But the mechanism was luck-shaped, and it is now closed as <strong>ruling #18</strong>: the <code>approved:</code> flag is the hold; state verification reads the deployed corpus, never the narrative. The week's three recurring defect classes all reduce to one family — <em>verifying a proxy instead of the thing itself</em> — and that family now has a named gate at each layer: build (<strong>#16</strong>, run what the runner runs), publish (<strong>#17</strong>, read the deploy job, not the push), corpus (<strong>#18</strong>, reconcile flags/sitemap/brief). #17 closed by resolution: your Settings flip, three green runs since.</p>
+
+      <p><strong>Prevention codified into the RUNBOOK this week:</strong> the Verifier wiring itself — no wave piece flips <code>approved:true</code> without an independent verification verdict on file (drafter ≠ verifier, structural), and in wave mode drafting may not run more than three pieces ahead of the last verdict. That converts the 07-07 class of near-miss (a pile of plausible, unaudited drafts sitting one <code>git add -A</code> from production) from a discipline into a mechanism. One hygiene item rides with it: <code>content-drafts/staged-ed0304/</code> still holds 15 redundant duplicates of now-live or now-held pieces. The flag-trap side of that risk is now fully defused — india-parakh was set <code>approved:false</code> on 07-11, and today's concurrent daily run swept the remaining four duplicates <code>true→false</code> (its QA log documents the sweep; this review's audit independently confirmed the flags; they ride this push) — but the clutter itself remains, so the optional cleanup line stays under the push block.</p>
+    </section>
+
+    <section>
+      <span class="kicker">3 · Knowledge consolidation</span>
+      <h2>The ruling series now runs #1–#19, and the week's lesson costs one sentence to state</h2>
+      <p>The week banked four increments, all method, no new source index — consolidated into the guidebook INDEX today:</p>
+      <ul class="tight">
+        <li><strong>#16 / #17 / #18 — the deploy-verification family, complete.</strong> #16 and #17 (filed mid-outage as addenda) received their proper Section-2 rows; #18 was numbered today. Three layers, one meta-pattern, fourth instance now on record: <em>verify the thing itself, in the environment that judges it.</em></li>
+        <li><strong>#19 — carry the guardrail in the sentence that carries the risk</strong> (numbered today). The compose-side gain of the week: India carried all four recon guardrails in-print and consequently cleared verification in a single pass. #19 is why the Verifier's workload is tractable: a self-fencing draft is cheap to audit.</li>
+        <li><strong>Pruned/merged:</strong> nothing collapsed — the #16→#18 family is deliberately kept as three distinct gates, cross-referenced; no duplicates found. Section 1 holds at ten source indices (Saudi/Jordan parked on the same un-park condition).</li>
+        <li><strong>Numbering hygiene:</strong> title lines of the two unnumbered notes patched in place; the series was gapless and dupe-free through #19 at consolidation — and the concurrent daily run promptly extended it to <strong>#20</strong> (<em>a 404 is an observation, not a verdict</em>: N-of-M re-fetch before declaring link-rot; born of the Singapore verification, where MOE's replatformed site flaked 2-of-3 before serving the cornerstone document verbatim). Filed after consolidation, correctly layered as a dated addendum; it enters next week's merge.</li>
+      </ul>
+      <p>The "measurably smarter" test, answered concretely: a draft composed under #19 verifies in one pass instead of two, and the word "live" no longer appears in any Madār brief until build, publish, and corpus have each been checked in the environment that judges them.</p>
+    </section>
+
+    <section>
+      <span class="kicker">4 · Team decision</span>
+      <h2>The Verifier joins as persona 11 — and Content Creator II stands down</h2>
+
+      <div class="decision">
+        <span class="tag">Decision 1 · Expansion — ADD</span>
+        <h3>Verifier (<code>agents/11_verifier.md</code>) — the mirror of the Researcher</h3>
+        <p>The CHARTER's test is a <em>recurring</em> gap plus a <em>genuinely saturated</em> team. Both are met and documented: verification was named the binding constraint in three consecutive artifacts (qa-07-07's fifteen un-gated drafts, one carrying a real build-breaker; the Ed04 status memo — "it does not compress"; manager-status-07-11's one-verdict-per-run ceiling), and the audits were being done by the Manager personally, in tension with our own rule that the Manager routes and backs, never adjudicates. The craft is distinct from the Researcher's (suspicion aimed at the source, pre-commission) and the Editor's (aimed at the frame, at verdict): the Verifier's suspicion is aimed at <strong>the draft's fidelity</strong> — to recon, to primaries, to #19's guardrail carriage — and drafter ≠ verifier is structural. Not a throughput lever: one verdict per run remains the ceiling; the persona exists to make the <code>approved:true</code> flip earned, not asserted. Wired into the RUNBOOK routing under the Editor; first week briefed: New Zealand → Chile (Singapore cleared this afternoon by the concurrent daily run, pre-Verifier — the last audit the Manager performs), one verdict per run, completing the five drafted Ed04 pieces, then pacing the bench-drafting wave. Revocable the day the wave model ends.</p>
+      </div>
+
+      <div class="decision">
+        <span class="tag">Decision 2 · Growth mechanism (per the 07-06 pre-commitment)</span>
+        <h3>The grid stops being re-scheduled: one tile a week rides the push, or the operation takes over posting</h3>
+        <p>0/3 twice is an answer, and the answer is that Mon/Wed/Fri founder-posting does not match reality — the one founder ritual that demonstrably happens is <strong>the push</strong>. So the mechanism, effective today: <strong>(a)</strong> grid cadence drops to <strong>one tile per week</strong>, packaged inline with the Sunday push block (caption + still path, zero files to open — see below); <strong>(b)</strong> standing offer: connect a posting scheduler the operation can drive (Postiz is already available in the operation's tool environment; one-time account connect, then Growth schedules the queue itself and your ritual returns to being just the push). If 07-19 arrives with neither a tile nor a connect, the grid retires until Substack exists and that experiment closes with a clean negative result.</p>
+      </div>
+
+      <div class="decision">
+        <span class="tag">Decision 3 · Capacity — REVERT</span>
+        <h3>Content Creator II to standby; recall at the Ed04 bench-drafting wave</h3>
+        <p>As ratified on 06-14 and restated on 07-06: CC II reverts to standby when Edition 02 closes. Edition 02 closed at ten with Morocco on 07-07. Drafting capacity is demonstrably not the constraint — an entire edition of drafts sat waiting on verification this week — so the roster rebalances toward the constraint instead: <strong>active team 10, roster 11</strong> (CC II on standby, Verifier active). Recall trigger: the Ed04 bench drafting wave (~5 pieces from the eight reconned candidates), which begins once the three remaining drafted pieces clear verification — and then runs under the new pacing rule, never more than three drafts ahead of the last verdict.</p>
+      </div>
+
+      <p><strong>Not added, and why:</strong> Social/Video and Data/SEO analyst remain parked — both presuppose a distribution surface (a posting mechanism that fires; a Search Console property with data), and both surfaces wait on Decisions 2 and the domain. Restraint recorded per the CHARTER: the org chart grows on evidence, and this week's evidence pointed at exactly one seat.</p>
+    </section>
+
+    <section>
+      <span class="kicker">The one founder decision</span>
+      <h2>The domain — same memo, cleaner window, now the single blocker</h2>
+      <p>The 06-12 memo stands unchanged: migrate before the next system binds the github.io URL. What changed since is that the window got <em>cleaner</em> — the corpus is current and verified at 30/30, no Search Console property exists yet, Substack is unbound, and today's inbound search confirmed <strong>zero external links</strong> to lose. Sequenced behind your go: purchase (Cloudflare or Porkbun; <code>madar.education</code> ~USD&nbsp;60–75/yr or <code>madarmag.com</code> ~USD&nbsp;12/yr — availability checked at the registrar in the moment), then the Web Developer executes the banked cutover playbook in one integration window (CNAME in the artifact, <code>site</code>/<code>base</code> flip, full QA pass), folding in the hreflang-head enhancement filed 07-11 so the crawl surface lands complete. Then — and only then — Search Console registers on the new domain and the Substack launch checklist unblocks. Until your call, both stay parked on purpose: every week of delay writes the old URL deeper into the systems we don't control, which is why this is the review's only escalation. <strong>"Go + which name" in any daily note is enough; "not yet" is also an answer — it just prices the next binding.</strong></p>
+    </section>
+
+    <section>
+      <span class="kicker">Your two minutes</span>
+      <h2>The push — and an optional sixty seconds</h2>
+      <p>One push carries <strong>two sessions' work</strong> — this weekly review (the Verifier persona + RUNBOOK wiring, the guidebook consolidation #16–#19, the ruling-file title patches) and today's concurrent daily run, which by design made no git writes (Singapore verification verdict → Ed04 3/5, the Ed04 status update, QA log, ruling #20, the hreflang-in-head implementation, the staged-flag sweep, and its brief if one lands before you push). The cross-session pieces were mutually verified before inclusion: this review <strong>independently built the daily's hreflang change in the Actions-exact /tmp environment — 65 pages, reciprocal EN↔AR pairs + x-default on both sides, zero held-piece leakage in the sitemap</strong> — and every flag change in the tree runs <code>true→false</code>, the safe direction; no <code>approved:true</code> flips anywhere in this push. The deploy this push triggers changes live page <em>heads</em> only; the live marker for the next run to confirm: <code>&lt;link rel="alternate" hreflang</code> in any article's source.</p>
+      <pre class="push"><span class="c"># Madār · weekly-review push · 2026-07-12</span>
+cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-12 weekly review + concurrent daily, one push: outage closed and verified (runs 38-40 green; corpus 30/30 current); Verifier hired as persona 11 + RUNBOOK wiring (drafter != verifier gates the approved flip; wave pacing <= 3 ahead); CC II to standby (Ed02 closed); guidebook consolidated (#16/#17 rows, 07-09/07-11 numbered #18/#19) + daily's ruling #20 (404-is-an-observation); Ed04 3/5 verified (Singapore verdict, MOE registers re-fetched live); hreflang-in-head implemented (daily) + independently build-verified (weekly: 65 pages, reciprocal pairs, no leakage); staged-flag sweep completed (4x true->false); grid mechanism decided (1 tile/wk rides the push, scheduler offered, retire-by-07-19 rule); domain decision escalated as the single founder call"
+git push origin main</pre>
+      <p style="margin-top:1.2rem;"><strong>Optional, 60 seconds — this week's one tile (Uruguay · Plan Ceibal):</strong> image at <code>design-assets/instagram/opening-grid/tile-09.png</code>; caption below is the posting kit's §1 text verbatim, with one substitution the kit itself prescribes (the Arabic version is now live, so "Arabic version forthcoming" becomes "EN + عربي" — re-verified against the 30/30 live parity today).</p>
+      <div class="caption-card">
+        Plan Ceibal turned eighteen in early 2025, and the same month opened a regional AI-in-education laboratory. The piece reads what nineteen years of teaching the teachers has built, slowly, in one country.<br /><br />
+        Read it — link in bio.<br />
+        EN + <span class="ar" style="display:inline; direction:rtl;">عربي</span><br /><br />
+        #aiineducation #plansieibal #curatedreading
+      </div>
+      <p><strong>Optional cleanup (anytime, 10 seconds — removes the 15 redundant staged duplicates, incl. the 07-11 flag-trap file):</strong></p>
+      <pre class="push">cd "/Users/vini/Documents/Claude/Projects/Educational Website" &amp;&amp; git rm -r -q content-drafts/staged-ed0304 &amp;&amp; git commit -m "Madar — remove redundant staged-ed0304 duplicates (Ed03 live; Ed04 canonical copies in web/src, held approved:false)" &amp;&amp; git push origin main</pre>
+    </section>
+
+    <footer>
+      Manager · weekly review No. 6 · run 2026-07-12 (Sunday, on schedule) · next weekly 2026-07-19<br />
+      Madār — made in spite of, not because of.
+    </footer>
+
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-12</title>
+<meta name="description" content="Manager → Founder daily brief for Sunday 12 July 2026. Edition 04 reaches three of five verified: Singapore — the exam that stopped ranking — clears audit, with every load-bearing MOE register re-fetched live. The verification method itself got sharper: a cornerstone source 404'd twice before serving, and the lesson is now a ruling. The hreflang head-pairs filed on 07-11 are implemented and build-verified. Two runs shared this Sunday — the weekly and the daily — and two days of work now ride on one push." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .settings-block .kicker { color: var(--color-ink); }
+  .settings-block ol { margin: 0.6rem 0 0; padding-inline-start: 1.2rem; }
+  .settings-block li { margin-bottom: 0.5rem; }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Sunday · 12 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 31</div>
+    <h1>Three of five. Singapore verified — at the source, not just the record.</h1>
+    <p class="dek">The Edition 04 verification wave reached its midpoint today: <strong>Singapore, "The score that stopped ranking,"</strong> clears independent audit — and this one went a step further than the first two. Because every load-bearing figure lives on a ministry web register, all four MOE registers were <strong>re-fetched live</strong> and the draft's verbatim quotes checked against the current text, down to the seven-point affiliation gap in the February 2025 parliamentary reply. Along the way the cornerstone 2016 source 404'd twice before serving — a trap the method now names (ruling #20). The hreflang head-pairs Growth filed on 07-11 are <strong>implemented and build-verified</strong> (65 pages, exit 0). Two runs shared this Sunday — the scheduled weekly and this daily — and two days of finished work now ride on a single push.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The work happened; the push didn't.</h2>
+        <div class="day__date">2026·07·11 · Brief 30 + India verified (2/5) · origin still at aa37be1 (07·09)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">11 July — produced in full, not yet pushed</div>
+        <div class="item__body">Saturday's run delivered everything Brief 30 reported — the India verification (2 of 5), the staged-India flag defusal, the guardrail-in-the-sentence ruling, the discoverability audit. What didn't happen was the push: <span class="mono">origin/main</span> still ends at <span class="mono">aa37be1</span> (07-09), so Briefs 30 and 31 both travel on your next one. Earlier today the weekly session banked the 07-11 work as local commit <span class="mono">8d68575</span> — the record is safe and sequenced; it just needs the wire.</div>
+        <div class="item__note">named plainly: 07-10 dark (already on record) · 07-11 worked-but-unpushed · nothing lost</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-shipped">The live site held steady throughout</div>
+        <div class="item__body">Verified this morning before planning anything: the live homepage serves Edition 03 in full (lead Chad + nine siblings), matching origin exactly — <strong>30 EN / 30 AR, 100% parity</strong>, deploy green since run 38. The gap between local and live is entirely un-pushed paper trail plus today's code change; no reader-facing drift.</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Verified Singapore live, shipped the hreflang, closed the staging trap.</h2>
+        <div class="day__date">2026·07·12 · Sunday · all five functions · one code change (build-verified) · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Edition 04 — Singapore verified (3 of 5), with a live upgrade to the method</div>
+        <div class="item__body"><strong>"The score that stopped ranking"</strong> — Singapore's deliberate blunting of the PSLE from 200+ T-score ranks to 29 possible scores, and where the precision resurfaced — clears the rubric. Because its evidence lives on MOE's own registers, verification re-fetched all four live rather than trusting the 07-06 recon snapshot: the 2016 design sentence ("29 possible PSLE Scores, compared to more than 200") <strong>verbatim</strong>; the 2025 results release (37,926 sat; 98.5%; the "2 to 3 schools" advice) <strong>verbatim</strong>; the affiliation gap (7 / 2 / 1 points by posting group; half the affiliated intake from non-affiliated primaries) <strong>verbatim</strong>; and the one interpretive number — the 2022 "1 in 10" balloting figure — reads at source exactly as the draft states it, base and vintage in the sentence. The recon's single open ask (the Straits-Times-via-STOMP citation form) is ruled and closed. Holds <span class="mono">approved: false</span> for the wave.</div>
+        <div class="item__note">verdicts/2026-07-12-ed04-singapore-psle-verification.md · _EDITION_04_STATUS.md → 3/5 · remaining: New Zealand, Chile</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the hreflang head-pairs — filed Saturday, shipped Sunday</div>
+        <div class="item__body">The one enhancement the post-outage audit filed is now code: every article page, both homepages and both editions pages emit <span class="mono">&lt;link rel="alternate" hreflang="en|ar" + x-default&gt;</span> triples in the <span class="mono">&lt;head&gt;</span> — reciprocal, absolute, derived from the same frontmatter pairs the in-body cross-links already trust (not mechanical prefixing; the About page correctly emits none, having no Arabic twin). Verified in the built output: <strong>30/30 EN and 30/30 AR</strong> article pages carry identical pair-triples. Belt-and-suspenders for Arabic-language search — our structural discoverability advantage — and it rides this push. The founder lever is unchanged and still the week's highest-return thirty seconds: <strong>resubmit the sitemap in Search Console</strong>.</div>
+        <div class="item__note">Base.astro + 6 templates · takes effect on the next deploy · sitemap alternates unchanged alongside</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build green with the change in it; the staging trap closed for good</div>
+        <div class="item__body">Full pass on today's state: <span class="mono">astro build</span> <strong>exit 0, 65 pages</strong> (30+30 articles, home ×2, editions ×2, about) with the hreflang change included; sitemap emitted; parity 30=30; all six Edition 04 hold-flags (<span class="mono">5 EN + 1 AR</span>) confirmed <span class="mono">approved: false</span> in <span class="mono">web/src</span>. And the hazard Brief 30 found on India turned out to be four-wide: the staged copies of <strong>us-naep, Singapore, New Zealand and Chile</strong> all carried the same latent <span class="mono">approved: true</span>. All four set to <span class="mono">false</span> today — the staging directory now agrees with the build tree everywhere, so the flag-is-the-hold rule has no contradicting copy left on disk.</div>
+        <div class="item__note">agents/logs/qa-2026-07-12.md · staged-ed0304/ still slated for founder-side cleanup</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #20 — a 404 is an observation, not a verdict</div>
+        <div class="item__body">The verification's best lesson came from its worst moment: the 2016 MOE press release — the only place the piece's cornerstone sentence exists — <strong>failed twice</strong> (one abort, one clean 404 from MOE's newly replatformed site) <strong>before serving the full document verbatim</strong> on the third attempt. Had the verdict been written on attempt two, we'd have declared link-rot and repointed to a paraphrase, silently weakening the piece's strongest evidence. Banked: N-of-M re-fetch before declaring rot; distinguish timeout / replatform-404 / stable-404; when a source domain visibly replatforms, re-resolve every ledger URL citing it at the next gate; quote-bearing URLs are irreplaceable-until-proven-otherwise. The sourcing-side sibling of "verify the thing itself" — with the sign flipped.</div>
+        <div class="item__note">guidebook/2026-07-12-a-404-is-an-observation-not-a-verdict.md (+ INDEX addendum)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Operations · two runs, one Sunday, no collisions</div>
+        <div class="item__body">The scheduled weekly review ran this morning and this daily ran alongside it — the weekly consolidated the guidebook (rulings #18/#19 given their index rows) and committed the 07-11 work locally mid-run. The daily detected the live <span class="mono">.git</span> lock, treated it as a working colleague rather than a stale artefact, and made <strong>no git writes at all</strong> — files only, with your push block carrying both days. Concurrency handled by routing around, which is the standing rule for this boundary.</div>
+        <div class="item__note">live lock ≠ stale lock · the push block below sweeps both runs' work in one commit</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== FLAG ===== -->
+  <div class="flag">
+    <div class="kicker">The shape of the wave · past its midpoint, and stronger for the slow part</div>
+    <p>Three verifications in four calendar days, each one cheaper than the last where it should be (the drafts are holding) and more expensive where it must be (Singapore got live re-fetches because its registers allow it). What's left of Edition 04 splits cleanly: <strong>two more audits</strong> (New Zealand, Chile — likely one per run), then the bench drafts toward ten under the throughput rule, then Arabic composition, stills, the registry entry, and one gate. The wave ships whole or not at all — the same bar that held through the outage, now with the staging directory unable to contradict it.</p>
+  </div>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-12 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 35 EN / 31 AR &mdash; incl. 5 EN / 1 AR held drafts (approved:false, not published)</div>
+  </div>
+  <p class="mono" style="margin-top:0.75rem;">No change to the live corpus — today's ship is verification, method, and one discoverability code change (head-level hreflang), which reaches readers at the next deploy. The panel reports the published corpus and states the on-disk total separately; live counts match the sitemap exactly. No visitor numbers exist to report: the site carries no tracker, by design.</p>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>New Zealand goes under audit; the bench warms up.</h2>
+        <div class="day__date">next run: 2026·07·13 Monday · madar-daily-operation (~08:00 Asia/Dubai)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · verify New Zealand, then Chile closes the drafted five</div>
+        <div class="item__body">The NCEA literacy/numeracy co-requisite — the standalone gate that outlived the qualification reform around it — takes the next verdict slot; NZQA's registers invite the same live re-fetch treatment Singapore got. Chile's SIMCE return follows. At five of five, drafting resumes from the reconned bench (Australia NAPLAN, England report cards, Netherlands doorstroomtoets, Japan CBT and siblings) — one fresh per day, recon before scope, no exceptions.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Pipeline · the Arabic and design tracks queue behind verification</div>
+        <div class="item__body">Four verified-or-pending EN drafts still lack Arabic (only us-naep has an AR companion, itself held); the Arabic Content Creator starts composition as verdicts land, with the Arabic Editor's transliteration pass to follow — Singapore adds Grace Chua, Mohamed Ashiq and Chan Chun Sing to the names table. The Designer's Ed04 stills batch (ten) and the <span class="mono">editions.ts</span> registry entry remain gate-side deliverables.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth · after the push: confirm the pairs on the live site</div>
+        <div class="item__body">Once your push deploys, one spot-check on a live article head confirms the hreflang triples in production; then the Search Console resubmission (still pending, still thirty seconds) hands the recrawler both the twelve outage-stranded URLs and the new bilingual head signal in one visit.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push carries two days — records + one safe code change</div>
+    <p>Local already holds Saturday's commit (<span class="mono">8d68575</span>, banked by today's weekly session). The block below adds today's: the Singapore verdict (3/5), ruling #20, the QA log, the four defused staging flags, the Ed04 status update, this brief — and the <strong>hreflang head-pairs in <span class="mono">web/src</span></strong> (Base.astro + six templates), which is build-verified (65 pages, exit 0) and flips <strong>no</strong> <span class="mono">approved</span> flags. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-12: Ed04 Singapore (PSLE ALs + FSBB) independently verified — 3 of 5, all four MOE registers re-fetched live, verbatim quotes confirmed, STOMP citation form ruled OK; hold for the wave. hreflang head-pairs implemented (Base.astro + 6 templates, 30/30 EN + 30/30 AR reciprocal triples, about correctly none) — build 65 pages exit 0, no approved flips. Staged-duplicate sweep completed (us-naep/sg/nz/chile true->false). Ruling #20 'a 404 is an observation, not a verdict' (+INDEX); QA log; Ed04 status 3/5; brief 31. Concurrent weekly ran same morning; daily made no git writes (live lock routed around)."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">After it lands: the deploy publishes the hreflang pairs, and the Search Console sitemap resubmission remains the one reader-facing lever — thirty seconds, twelve stranded URLs, now with a stronger bilingual signal waiting for the crawler.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·12</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -60,6 +60,9 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
   lang="en"
   ogImage={piece.data.hero?.src ? withBase(piece.data.hero.src) : undefined}
   noHeader={true}
+  alternate={piece.data.arabicVersion
+    ? { en: `/articles/${piece.id}/`, ar: `/ar/articles/${piece.data.arabicVersion}/` }
+    : undefined}
 >
   <SiteHeader lang="en" variant="article" />
 
