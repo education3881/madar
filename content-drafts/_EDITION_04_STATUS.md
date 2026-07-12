@@ -1,5 +1,6 @@
 # Edition 04 — "The measurement question" · status & completion plan
-**As of:** 2026-07-09 · **Manager** · Ed03 is shipped/live/gated; Ed04 is the next wave, mid-build and correctly held.
+**As of:** 2026-07-11 · **Manager** · Ed03 is shipped/live/gated; Ed04 is the next wave, mid-build and correctly held.
+**Verification progress:** 2 of 5 drafted pieces independently cleared — us-naep (07-09), india-parakh (07-11). Remaining: Singapore, New Zealand, Chile.
 
 ## The frame
 Ed04 asks what a score actually measures — how systems define, move, and defend the thresholds that turn a child's work into a label. It is the natural sequel to Ed03's continuity theme: Ed03 asked whether the certificate still gets issued; Ed04 asks whether the number on it means the same thing twice.
@@ -9,7 +10,7 @@ Ed04 asks what a score actually measures — how systems define, move, and defen
 | Piece | Country | Angle | Verified? |
 |---|---|---|---|
 | us-naep-honesty-gap | United States | "proficient" = 51 rulers, one word; NCES 2026-014 maps every state's bar to NAEP | **✓ 2026-07-09 (verdict on file)** |
-| india-parakh-hpc | India | PARAKH rebuilt survey (2.1M students; 60%→37% Class 3→9 maths) + the Holistic Progress Card | pending |
+| india-parakh-hpc | India | PARAKH rebuilt survey (2.1M students; 60%→37% Class 3→9 maths) + the Holistic Progress Card | **✓ 2026-07-11 (verdict on file)** |
 | singapore-psle-sbb | Singapore | PSLE stops fine-ranking (200+ → 29 scores); where precision resurfaced | pending |
 | nz-ncea-corequisite | New Zealand | the standalone literacy/numeracy co-requisite gate that outlived NCEA | pending |
 | chile-simce-return | Chile | census assessment returns from suspension carrying "more than scores" | pending (dek trimmed 201→189 at compose) |

@@ -38,7 +38,7 @@ hero:
   src: "/stills/2026-07-07-india-parakh-hpc.svg"
   alt: "A continuous ink drawing for India: from a small open circle at the centre of the page — the child — eight faint spokes radiate outward. On each spoke a firm short tick marks a reading at its own distance from the centre, and one fine continuous line links the readings into an irregular ring — a profile, not a rank — left open at a single spoke. There, just beyond the system's tick, sits the only warm mark on the page: a second, kiln-orange tick set slightly askew — the self-assessment the new card builds in, the child's own hand joining the measuring."
   caption: "سكون · The Still · Curated 29 · India"
-approved: true
+approved: false
 ---
 
 On 4 December 2024, a little over 2.1 million students sat the same exercise on the same day, in 74,229 schools across 781 districts of India — and the most consequential thing about the exercise was the change in what it asked. The PARAKH Rashtriya Sarvekshan, successor to the National Achievement Survey, reads the school system at Classes 3, 6 and 9, the joints where its redesigned stages meet, and its items read less like a syllabus checklist than like small demands on competence: put the numbers up to 99 in order; take a percentage or a fraction and make it work on a problem from ordinary life. Behind the changed question stands a changed questioner. PARAKH — Performance Assessment, Review and Analysis of Knowledge for Holistic Development — is the national assessment regulator India constituted in 2023 under NCERT, the centre its 2020 education policy mandated; its remit runs from the survey at the top of the system down to the report card in a child's schoolbag. In the two years since, it has redrawn both ends.
