@@ -1,6 +1,6 @@
 # Edition 04 — "The measurement question" · status & completion plan
-**As of:** 2026-07-12 · **Manager** · Ed03 is shipped/live/gated; Ed04 is the next wave, mid-build and correctly held.
-**Verification progress:** 3 of 5 drafted pieces independently cleared — us-naep (07-09), india-parakh (07-11), singapore-psle (07-12; all four MOE registers re-fetched live, STOMP citation form ruled OK). Remaining: New Zealand, Chile.
+**As of:** 2026-07-13 · **Manager** · Ed03 is shipped/live/gated; Ed04 is the next wave, mid-build and correctly held.
+**Verification progress:** 3 of 5 drafted pieces independently cleared — us-naep (07-09), india-parakh (07-11), singapore-psle (07-12; all four MOE registers re-fetched live, STOMP citation form ruled OK). **New Zealand (07-13, the Verifier's first verdict): FAIL, two items** — the 71.5→79.6 "revised" sentence (ruling #21, *a recount is not a revision*; one-clause fix applied same-run under Editor routing, mirrored to staging) and the closing line's results-calendar vintage (NZQA released AE1 Reading 23 Jun; Writing/Numeracy due **20 Jul** — re-cut at/after that date, before gate). NZ re-enters the queue **behind Chile** for a scoped re-check. Remaining: Chile (full verdict), then NZ (scoped re-check).
 
 ## The frame
 Ed04 asks what a score actually measures — how systems define, move, and defend the thresholds that turn a child's work into a label. It is the natural sequel to Ed03's continuity theme: Ed03 asked whether the certificate still gets issued; Ed04 asks whether the number on it means the same thing twice.
@@ -12,7 +12,7 @@ Ed04 asks what a score actually measures — how systems define, move, and defen
 | us-naep-honesty-gap | United States | "proficient" = 51 rulers, one word; NCES 2026-014 maps every state's bar to NAEP | **✓ 2026-07-09 (verdict on file)** |
 | india-parakh-hpc | India | PARAKH rebuilt survey (2.1M students; 60%→37% Class 3→9 maths) + the Holistic Progress Card | **✓ 2026-07-11 (verdict on file)** |
 | singapore-psle-sbb | Singapore | PSLE stops fine-ranking (200+ → 29 scores); where precision resurfaced | **✓ 2026-07-12 (verdict on file; live re-fetch)** |
-| nz-ncea-corequisite | New Zealand | the standalone literacy/numeracy co-requisite gate that outlived NCEA | pending |
+| nz-ncea-corequisite | New Zealand | the standalone literacy/numeracy co-requisite gate that outlived NCEA | **✗ 2026-07-13 FAIL, 2 items (verdict on file)** — item 1 fixed same-run; item 2 date-bound (NZQA 20 Jul); scoped re-check behind Chile |
 | chile-simce-return | Chile | census assessment returns from suspension carrying "more than scores" | pending (dek trimmed 201→189 at compose) |
 
 **Reconned, not drafted — the completion bench (≥5 needed to reach 10):**

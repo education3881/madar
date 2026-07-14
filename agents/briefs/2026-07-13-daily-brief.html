@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-13</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 13 July 2026. The Verifier's first verdict — and its first catch: New Zealand fails on two items, both fixable, one already fixed. A figure that was faithful to its source and still wrong about the record gives the guidebook ruling #21. A fifth staging flag trap — this one in the Arabic directory — found and defused. The Search Console preflight is complete; everything now waits on the domain word." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 13 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 32</div>
+    <h1>The Verifier's first verdict is a fail. That is the hire working.</h1>
+    <p class="dek">New Zealand — <strong>"The gate that outlived the qualification"</strong> — went under the eleventh persona's first audit today and <strong>did not clear: two items</strong>. Not because the draft invented anything — every figure traced to its source and the source said what the draft said — but because the live register behind the source says something the sentence didn't carry: the "revised" 2024 pass rate was a <em>ministry recount</em> the qualification authority's own annual series never adopted. One clause fixes it, and the clause is already in the tree. The second item has a date attached: NZQA publishes the very numbers the piece's closing line calls "due" on <strong>20 July</strong>, so the ending gets re-cut on the real data before the wave gates. Ed04 holds honestly at 3 of 5. Also today: a fifth staging flag trap found and defused — this one hiding in the Arabic directory the earlier sweeps never greped.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The push landed; the record is whole.</h2>
+        <div class="day__date">2026·07·12 · your 20:14 push (e5eecba) · deploy green · live site current</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">Two days of work reached the wire in one push</div>
+        <div class="item__body">Your Sunday-evening push carried the whole backlog — Saturday's India verdict and audit trail, Sunday's weekly review, the Singapore verdict (3/5), the hreflang head-pairs, the staged-flag sweep, briefs 30 and 31. Verified this morning before planning anything: <span class="mono">HEAD == origin/main == e5eecba</span>, working tree clean, and the live homepage serving the hreflang triples in its <span class="mono">&lt;head&gt;</span> — the deploy is not just green on the dashboard, its newest markup is observably in production. No missed day to name: 07-12 was a two-run Sunday, and both runs' work is live.</div>
+        <div class="item__note">state verified: git log + fetch + live fetch, per the standing rule — the brief is yesterday's artefact, not today's state</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>A fail that cost one clause, a trap that cost one grep, a preflight that closed.</h2>
+        <div class="day__date">2026·07·13 · Monday · all five functions · one prose fix + one flag defusal · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Edition 04 — New Zealand: FAIL, two items; the fix is already in</div>
+        <div class="item__body">The Verifier traced every load-bearing figure twice — against the recon, then against the live registers. Nearly everything held verbatim: the May-round arc (numeracy <strong>45.6 → 57.1</strong>, reading <strong>58.7 → 61.3</strong>, writing steady ~55) reconciled against NZQA's canonical per-round tables exactly as the recon ordered; the co-requisite cohort figures (<strong>69.5 → 73.8</strong>), both Jann Marshall quotes and the equity-disparity sentence all sit on the 27 March 2026 NZQA release character-for-character; the ministerial release's figures (19.8 → 34 in the poorest schools; $2.2m across 141 of them; 71.5 → 79.6) were confirmed via a full-text syndication mirror after Beehive's bot-wall refused the sandbox — ruling #20 applied, a non-serve read as an observation, not rot. <strong>The catch:</strong> the draft said the 2024 Level 1 rate "was later revised to 79.6" — but NZQA's own annual series, in the very release the draft cites two sentences earlier, still prints 71.5 as the standing 2024 figure. The 79.6 is the ministry's mid-2025 recount of the same cohort, not a restatement of the record. One clause now carries the fence in the sentence; the staging copy got the same edit. <strong>Item two is calendar-shaped:</strong> the piece closes on results "due mid-July" — NZQA released AE1 Reading on 23 June and publishes Writing/Numeracy on <strong>20 July</strong>, so the closing line gets re-cut on the real numbers before the gate. NZ re-enters the queue behind Chile for a scoped re-check; the verified count stays honestly at 3 of 5.</div>
+        <div class="item__note">verdicts/2026-07-13-ed04-nz-ncea-verification.md · drafter ≠ verifier · fix routed Editor → CC, same run · _EDITION_04_STATUS.md updated</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · the fifth flag trap — found where the sweeps stopped looking</div>
+        <div class="item__body">Today's sweep extended one directory past its predecessors and found the pattern's fifth instance: the staging duplicate of <strong>us-naep's Arabic draft</strong> — a held Edition 04 piece — still carried <span class="mono">approved: true</span>. The 07-11 and 07-12 sweeps had cleaned all five <em>English</em> staging copies; nobody had greped <span class="mono">articles-ar/</span>. Defused (<span class="mono">true → false</span>), and the sweep rule now names both directories so the class is closed structurally, not anecdotally. The rest of the pass was clean: <span class="mono">astro build</span> <strong>exit 0, 65 pages</strong>, zero held-piece leakage in the built output, parity 30=30, sitemap at 65 URLs, and the hreflang triples reciprocal on both sides of the Morocco pair in the build tree.</div>
+        <div class="item__note">agents/logs/qa-2026-07-13.md · the 20 remaining staged approved:true are Ed03 copies that agree with web/src — clutter, not traps</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · Search Console preflight: complete. The runway ends at one word.</div>
+        <div class="item__body">The last open P2 from the post-outage audit — head-level hreflang — was confirmed serving in production this morning (live homepage), with the per-article triples verified in the build output of the same deployed commit. That closes the preflight checklist entirely: sitemap resolving, hreflang pairs, semantic markup, 30=30 bilingual parity, zero trackers. <strong>Search Console, Substack Issue 01 (send-ready since 1 June), and the from-address now wait on exactly one decision — the domain</strong> — and yesterday's weekly already put that call on your desk with the migration cost still at zero. The Uruguay grid tile rode yesterday's push block; its success test (live by 07-19) is yours to run, and Growth spends no further cycles on it until the test reads out.</div>
+        <div class="item__note">agents/growth/2026-07-13-search-console-preflight-complete.md · "go + which name" in any daily note is enough</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn · ruling #21 — a recount is not a revision</div>
+        <div class="item__body">The week's first method gain comes from the verdict: <strong>two true figures can describe the same cohort at different vintages</strong> — the year-end snapshot the system of record keeps, and the later recount an actor announces. Before writing "revised," check whether the record's keeper adopted the number; if not, attribute the recount to its author and date in the sentence, and carry the register's standing figure alongside when the piece cites that register. Vintage now joins administration and coverage (#12/#12b) as the third axis every figure gets checked on — and this is the first defect class in the operation's history that recon-trace alone could never have caught: the recon was faithful, the draft was faithful to the recon, and the claim was still wrong about the record. Only the live re-fetch sees it. That is the argument for the Verifier's method, one day into the job.</div>
+        <div class="item__note">guidebook/2026-07-13-a-recount-is-not-a-revision.md (+ INDEX addendum) · rulings now #1–#21</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== FLAG ===== -->
+  <div class="flag">
+    <div class="kicker">Why a fail is the right result</div>
+    <p>Three verdicts in, the wave had cleared 3-for-3 and the audit risked looking like a formality. Today it declined a piece over one verb — "revised" — because a hostile competent reader with the register open would have caught the publication asserting a restatement the record never made. The cost of the catch was one clause and one day of queue position. The cost of not catching it would have been paid in the only currency Madār holds: being the publication whose numbers survive the reader who checks. The bar is not slowing the wave down; it is what the wave is for.</p>
+  </div>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-13 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 35 EN / 31 AR &mdash; incl. 5 EN / 1 AR held drafts (approved:false, not published)</div>
+  </div>
+  <p class="mono" style="margin-top:0.75rem;">No change to the live corpus — today's ship is a verdict, a one-clause fix inside a held draft, a defused staging flag, and records. Live counts match the sitemap exactly. No visitor numbers exist to report: the site carries no tracker, by design.</p>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Chile closes the drafted five; New Zealand waits its turn twice.</h2>
+        <div class="day__date">next run: 2026·07·14 Tuesday · madar-daily-operation (~08:00 Asia/Dubai)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label">Content · Chile SIMCE under full audit</div>
+        <div class="item__body">The census assessment that returned from suspension carrying "more than scores" takes the next verdict slot — the last full audit of the drafted five. Behind it, in order: New Zealand's scoped re-check (item 1 verification plus, on or after <strong>20 July</strong>, the closing-line re-cut on NZQA's actual Writing/Numeracy release), then bench drafting resumes toward ten — one fresh per day, recon before scope, the Verifier's queue pacing the whole edition at three-ahead maximum.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Pipeline · Arabic, stills, registry — the gate-side queue is unchanged</div>
+        <div class="item__body">Four EN drafts still lack Arabic companions (only us-naep has one, held); the Arabic Content Creator picks up as verdicts land, with NZ adding a Māori-terms transliteration question (te reo matatini, pāngarau — from Māori pronunciation, not English spelling) flagged in the verdict for the Arabic Editor. The Designer's batch of ten stills and the <span class="mono">editions.ts</span> registry entry remain gate-side deliverables, deliberately last.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Founder · one standing decision, zero new asks</div>
+        <div class="item__body">The domain call (memo of 06-12; escalated in yesterday's weekly) remains the single blocker of the next growth stage — Search Console, Substack, the from-address. Preflight finished today; the runway is fully built. "Go + which name" in any note and the operation binds everything in one run.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push — records + one clause inside a held draft</div>
+    <p>Everything below is paper trail plus two surgical changes: the one-clause recount fix inside the held NZ draft (both copies, still <span class="mono">approved: false</span>) and the defused Arabic staging flag (<span class="mono">true → false</span> — it makes the hold <em>safer</em>). Build verified clean with all of it in (65 pages, exit 0). <strong>No</strong> <span class="mono">approved</span> flips anywhere. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-13: Ed04 New Zealand (NCEA co-requisite) — the Verifier's first verdict: FAIL, two items. Item 1 (71.5->79.6 'revised' = ministry recount NZQA's series never adopted) fixed same-run, one clause, mirrored to staging — ruling #21 'a recount is not a revision' (+INDEX). Item 2 date-bound: closing line re-cut on NZQA's 20 Jul Writing/Numeracy release, before gate. Ed04 holds 3/5; NZ re-checks behind Chile. Beehive bot-walled -> verified via Scoop full-text mirror per #20. Fifth staging flag trap defused (us-naep AR true->false; sweep rule now covers articles-ar/). QA: build 65pp exit 0, zero leakage, parity 30=30. Growth: Search Console preflight complete — all waits on the domain call. Brief 32."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Optional, unchanged from the weekly: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>, 15 redundant files) and the Uruguay tile whose caption sits under yesterday's push block. Neither blocks anything above.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·13</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
