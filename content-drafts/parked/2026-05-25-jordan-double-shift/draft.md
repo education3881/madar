@@ -16,7 +16,7 @@ hero:
   src: "/stills/2026-05-25-jordan-double-shift.svg"
   alt: "An atmospheric composition for Field Note 02 — Jordan. Layered soft colour washes with a thin line that re-emerges across the field."
   caption: "سكون · The Still · Field Note 02 · Jordan"
-approved: true
+approved: false # defused 2026-07-15 (6th latent-flag instance, parked/ class) — see qa-2026-07-15
 ---
 
 **[PLACEHOLDER SOURCE — Editor to verify before publication.]** The primary source referenced below is described as a March 2025 progress note from Jordan's Ministry of Education on the double-shift school system. Editor to confirm the exact title, publication date, and URL before this piece runs. The framing in this draft holds regardless of which specific ministry document anchors it; what matters is that the source be an official Jordanian ministry communication, not an international agency summary of one.

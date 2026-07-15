@@ -16,7 +16,7 @@ hero:
   src: "/stills/2026-05-25-colombia-escuela-nueva.svg"
   alt: "An atmospheric composition for Curated 01 — Colombia. Overlapping pools of warm earth tones with a low horizontal of light, and a single flowing line that arcs out and returns."
   caption: "سكون · The Still · Curated 01 · Colombia"
-approved: true
+approved: false # defused 2026-07-15 (6th latent-flag instance, parked/ class) — see qa-2026-07-15
 ---
 
 **[PLACEHOLDER SOURCE — Editor to verify before publication.]** The primary source for this piece is described as a 2025 statement from a Colombian rural teachers' association on the fiftieth anniversary of the Escuela Nueva model. Editor to confirm the exact issuing body (we have provisionally named the Asociación de Maestros Rurales de Colombia; the actual signing organization may differ), the publication channel, and the date before this piece runs.
