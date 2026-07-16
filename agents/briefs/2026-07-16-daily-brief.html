@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-16</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 16 July 2026. The bench opens: Australia's NAPLAN proficiency reset drafted as Edition 04's sixth piece — a country that raised its bar, drew its own break-line, and then held still. Figures re-verified live before a word was composed; the mirror-verification route is now a named pattern. QA found and fixed a share-card defect that touched all 65 pages. No flips; the wave holds." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 16 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 34</div>
+    <h1>The bench opens with a country that moved its ruler up.</h1>
+    <p class="dek">Edition 04's sixth piece is drafted: <strong>Australia's NAPLAN proficiency reset</strong> — the cleanest going case of a system changing the ruler rather than the students, and then doing the harder thing: <em>holding it still</em> for three cycles. Every load-bearing figure was re-verified live before a word was composed — the 2025 ACARA release confirmed <strong>verbatim</strong> through a full-text mirror, both CEO quotes word-for-word — and the decimals that couldn't be re-traced to the primary today ride the Verifier's trace list, not the prose's authority. The slate stands <strong>6 drafted / 4 verified</strong>; no flags flip; the wave holds. QA's audit also caught something that touched all 65 pages: every share card's image URL was relative, which social scrapers read as no image at all. Found, fixed, build-verified.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Chile cleared, you pushed, the deploy went green.</h2>
+        <div class="day__date">2026·07·15 · your ~21:30 push (2c88013) · deploy run 43 green in 42s · no gap to name</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">A whole day, verified whole</div>
+        <div class="item__body">Wednesday ran on schedule and your evening push carried all of it — the Chile verdict that completed the drafted slate's verification (4 of 5, NZ date-bound), ruling #22, the sixth flag defusal, Brief 33 — and deploy run 43 went green forty-two seconds after your push landed. Verified this morning before planning anything: <span class="mono">HEAD == origin/main == 2c88013</span>, working tree clean, run 43 success for exactly that commit. For the first time since 07-12 there is no dark day to name in this section. The cadence is holding.</div>
+        <div class="item__note">state verified: git fetch + Actions API, per the standing rule — the brief is yesterday's artefact, not today's state</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>A raised bar, a drawn break-line, and a defect worth all 65 pages.</h2>
+        <div class="day__date">2026·07·16 · Thursday · all five functions · one bench draft + one template fix · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Edition 04 — Australia drafted. The slate is 6 / 4.</div>
+        <div class="item__body">"<strong>The bar, raised on purpose</strong>" (Curated 39, 1,282 words, dek 194 code points at compose). In February 2023 Australia retired a minimum standard nearly everyone cleared and set a four-level expectations bar validated by teacher panels — and one in three students stood below it overnight, which was the design. The piece's spine is the two honesty devices around the raise: ACARA broke its own time series <em>and said so</em>, and built the label <em>Developing</em> ("working towards," not "failing") to resist the misreading the press produced anyway. The second half is what stillness buys: three cycles without a walk-back, participation at 93.8% — the highest since 2017 — and 2025's first cohorts measured for <em>growth</em> on an unmoved scale. Inside Ed04 it is the natural mirror of us-naep: fifty-one rulers wearing one word there; one ruler, re-notched once, in public, here. The recon was ten days old, so the figure gate re-ran live before compose: the 2025 release confirmed verbatim (both Gniel quotes word-for-word), the 2026 calendar re-checked on ACARA's key-dates page — the national read lands <strong>August 2026</strong>, after our gate, and the piece says so in its own closing. Editor's five-test verdict: <strong>APPROVE for the wave</strong>, with a written trace list of the decimals the Verifier must re-trace on the primary before any flip. Held <span class="mono">approved: false</span>; mirrored to staging; zero leakage confirmed in the build.</div>
+        <div class="item__note">articles/2026-07-16-australia-naplan-reset.md · verdicts/2026-07-16-australia-naplan-reset.md · _EDITION_04_STATUS.md → 6 drafted / 4 verified · pacing: 2 unverified, ceiling 3</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · Section 1, row 11 — the ACARA/NAPLAN register map</div>
+        <div class="item__body">The source index banked from the drafting: ACARA's media releases are PDF-only and fetch binary here — the working route is a full-text syndicated mirror with the ACARA URL kept as citation of record, and with NZ/Beehive→Scoop and Chile/cned→curriculumnacional this is now the <strong>third banked instance</strong>: a named pattern, not an improvisation. Rounded figures in coverage corroborate but never replace the register's decimals; decimals ride the trace list. One trap documented before it could bite: ACARA's key-dates page interleaves <em>schools-list</em> update dates with NAPLAN dates — the "13 August 2026" on that page is a schools-list row; the national results row says only "August 2026." Read the row label, not the nearest date.</div>
+        <div class="item__note">guidebook/2026-07-16-acara-naplan-source-index.md · INDEX addendum · Section 1 now 11 indices</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · found and fixed: share cards were shipping without images</div>
+        <div class="item__body">The build ran clean twice today — <span class="mono">astro build</span> <strong>exit 0, 65 pages</strong>, zero held-piece leakage (the new Australia draft builds no page and sits in no sitemap), parity <strong>30 = 30</strong>, hreflang triples intact. The audit's real catch: <span class="mono">og:image</span> and <span class="mono">twitter:image</span> were emitted as <em>relative</em> URLs on every page. Social scrapers require absolute URLs — every share of every article to any platform with a link preview would have rendered textless-cardless, silently. One-line fix in Base.astro (resolve against the site origin, the same pattern the file already used for hreflang), rebuilt, verified absolute on article pages and the index. A defect nobody reported because its symptom lives on other people's platforms — exactly the class the daily audit exists to find.</div>
+        <div class="item__note">agents/logs/qa-2026-07-16.md · P0/P1: none · the legacy /sitemap.xml stub re-checked and confirmed deliberate (07-02 comment in file) — finding withdrawn honestly</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the fix is the action; the live check is named, not faked</div>
+        <div class="item__body">Today's concrete audience action is the share-card fix above — it repairs Madār's face on every platform a reader might paste a link into, all 65 pages at once, no tracker involved. On hreflang-in-production: the direct live-page fetch was unavailable this run (the fetch tool's provenance boundary — an environment constraint, logged as an observation per #20, not a site verdict), so the claim is made by lineage instead and labelled as such: the hreflang commit is an ancestor of the deployed HEAD, run 43 built exactly that tree, and today's local build of the same tree emits the triples deterministically. A direct head-check queues for the next run where the fetch path allows. The Uruguay tile rode your push last night; <strong>the retire-if-0 condition stands for Saturday</strong>. The domain call remains the single blocker of Search Console, Substack, and the from-address.</div>
+        <div class="item__note">verification by lineage: e5eecba (hreflang, 07-12) ⊂ 2c88013 (deployed, run 43 green) · grid decision: weekly, 07-19</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-16 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 36 EN / 31 AR &mdash; incl. 6 EN / 1 AR held drafts (approved:false, not published)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>The Verifier takes Australia. The bench keeps moving.</h2>
+        <div class="day__date">2026·07·17 · Friday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">Content · the Verifier's third full verdict</div>
+        <div class="item__body">Australia enters the verification queue with its trace list already written: the remote/cities and Year-9-writing decimals, the 2023 first-read set, the 2024 volumes, and one negative claim ("no state walked it back") that needs absence verified, not presence. One verdict per run is the working ceiling; drafter ≠ verifier is structural. If the verdict lands Friday, the bench has room for draft two at zero risk to the pacing rule.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Content · bench draft two, Editor's pick</div>
+        <div class="item__body">Netherlands (doorstroomtoets) leads the queue — it resolves the forward-reference us-naep's <span class="mono">related:</span> rail already carries — with Japan (assessment CBT) next on register recency. Recon re-verification precedes compose, per today's shape: a ten-day-old recon is a plan, not a fact.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Standing · the wave's other legs, and Saturday's decisions</div>
+        <div class="item__body">NZ's scoped re-check opens Monday (NZQA, 20 July). The AR batch question — whether the Arabic CC starts composing the wave's Arabic before the bench completes — is flagged for Saturday's weekly, alongside the grid's retire-if-0 read and the standing staged-ed0304 cleanup. Stills ×10 and the editions.ts registry entry remain gate-time work.</div>
+      </div>
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push — a held draft, its paper trail, and one template fix</div>
+    <p>Today's commit carries the Australia draft (held <span class="mono">approved: false</span> — it publishes nothing), its Editor verdict and source index, the logs and this brief, and one surgical code change: the Base.astro absolute-URL fix for share-card images, build-verified twice (65 pages, exit 0). <strong>No</strong> <span class="mono">approved</span> flips anywhere. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-16: Ed04 bench opens — Australia NAPLAN reset drafted ('The bar, raised on purpose', Curated 39; Editor five-test APPROVE-for-the-wave + Verifier trace list on file; held approved:false; slate 6 drafted / 4 verified, pacing 2 of 3). Figure gate re-run live before compose: 2025 ACARA release verbatim via full-text mirror — third banked instance of the #20 mirror route (Beehive/Scoop, cned/curriculumnacional, ACARA/Mirage); 2026 calendar re-verified (national results Aug 2026; key-dates '13 Aug' row is a schools-list trap, documented). Research: ACARA/NAPLAN source index = guidebook Section 1 row 11 (+INDEX). QA: build 65pp exit 0 x2, zero leakage, parity 30=30; P2 found+fixed — og:image/twitter:image were relative, every share card would drop its image; Base.astro now absolutizes against Astro.site (build-verified). Growth: hreflang-on-live verified by lineage (e5eecba ancestor of deployed 2c88013, run 43 green); live-fetch boundary named per #20. No approved flips. Brief 34."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Standing and unchanged: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>, now 16 redundant files) whenever convenient, and the domain word — still the single blocker of Search Console, Substack, and the from-address.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·16</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

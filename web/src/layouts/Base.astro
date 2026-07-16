@@ -38,6 +38,9 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const alternateEN = alternate ? new URL(withBase(alternate.en), Astro.site).href : null;
 const alternateAR = alternate ? new URL(withBase(alternate.ar), Astro.site).href : null;
+// og:image / twitter:image must be ABSOLUTE for social scrapers (Growth audit,
+// 2026-07-16). Callers pass base-prefixed paths; resolve against the site origin.
+const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).href : null;
 ---
 
 <!doctype html>
@@ -72,12 +75,12 @@ const alternateAR = alternate ? new URL(withBase(alternate.ar), Astro.site).href
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL.href} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImageAbs && <meta property="og:image" content={ogImageAbs} />}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    {ogImageAbs && <meta name="twitter:image" content={ogImageAbs} />}
 
     <meta name="robots" content="index, follow" />
     <meta name="color-scheme" content="light" />
