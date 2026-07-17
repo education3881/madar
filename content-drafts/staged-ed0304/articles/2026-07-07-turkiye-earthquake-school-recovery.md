@@ -38,7 +38,7 @@ hero:
   src: "/stills/2026-07-07-turkiye-earthquake-school-recovery.svg"
   alt: "A continuous ink drawing for Türkiye: low courses of horizontal brick-strokes cross the page like a wall being relaid — dense and settled at the left, opening into sparse, newly laid strokes toward the right, where the coursework is still rising. A faint dotted line runs the width of the page at the height the wall once reached: the pre-quake datum. The new courses cross it and keep climbing. Above them, the only warm mark on the page: a taut kiln-orange string-line stretched between two pegs, set a hand's height above the old datum — the builder's line, fixed not where the wall used to stand, but where it must now end."
   caption: "سكون · The Still · Curated 22 · Türkiye"
-approved: true
+approved: false
 ---
 
 The Ali Sayar Vocational and Technical Anatolian High School reopened in Hatay in October 2024: sixteen classrooms, steel-framed construction, a new building in place of one the earthquakes of 6 February 2023 had left unusable. Reopenings in Türkiye's earthquake provinces follow a script by now, and the script's most interesting line belonged to the man who runs schooling in the hardest-hit province. "Work continues at 113 of our schools in Hatay," Harun Tüysüz, the provincial director of national education, said at the ceremony. "Thirteen of them are again being built by the Ahbap Association. God willing, we expect even more by the end of next year." No ribbon-cutting rhetoric — a work-in-progress count and a delivery forecast. In this recovery, a reopening is a ledger entry, and the ledger, not any single building, is the mechanism worth studying.

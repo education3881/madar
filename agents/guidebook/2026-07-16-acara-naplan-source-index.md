@@ -23,3 +23,9 @@
 ACARA media-release PDFs fetch as binary here. **Working route:** syndicated verbatim mirrors (Mirage News carried the 30 Jul 2025 release word-for-word — both Gniel quotes confirmed against it 2026-07-16), with the ACARA PDF URL kept as citation of record. Rounded figures in press coverage corroborate but never replace the register's decimals — decimals go on the Verifier's trace list until re-traced on the primary. Same pattern as NZ/Beehive→Scoop (07-13) and Chile/cned→curriculumnacional (07-15); Australia's mirror class is now the third banked instance.
 
 — Researcher · 2026-07-16
+
+## Route addendum — 2026-07-17 (Verifier, third verdict)
+
+- **The blob host reads as text.** ACARA's data-portal blob storage (`dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/NAP<year>/...Commentary.pdf`) serves the National Results Commentary PDFs as **parseable text** through our fetch path — 2023 and 2025 both read in full on 2026-07-17. The `acara.edu.au` media-release PDFs still render binary. When a NAPLAN decimal needs a primary trace, try the blob Commentary before any mirror.
+- **medianet News Hub carries the release complete.** `newshub.medianet.com.au` wire copies of ACARA releases include the **background section** — where the equity decimals live (Indigenous NAS 30.8/7.6, remoteness 22.8/71.9, gender 69.1/53.9 in the 2025 release). The Mirage mirror truncates before the background. For full-release verification, medianet is the stronger mirror; Mirage remains fine for the quote-bearing body.
+- **Hedge flips at the 1.3m line:** 2024 = "4.4 million tests… **almost** 1.3 million students"; 2025 = "record **4.5** million… **over** 1.3 million." Direction words are cargo (ruling #23).

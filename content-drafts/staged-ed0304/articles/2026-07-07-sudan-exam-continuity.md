@@ -32,7 +32,7 @@ hero:
   src: "/stills/2026-07-07-sudan-exam-continuity.svg"
   alt: "A continuous ink drawing for Sudan: low exam desks stand along a single shared line that runs the width of the page — a scattered cluster to the left, then a wide empty interval, then a few more desks far to the right, every desk at exactly the same height. A faint vertical line wanders down through the interval: a border, crossed by the level line of desks. Above the interval, the only warm mark on the page, a small kiln-orange clock face drawn in one open stroke, its hands set at half past two — the hour moved so that every desk, on either side of the border, opens the same paper at the same moment."
   caption: "سكون · The Still · Curated 19 · Sudan"
-approved: true
+approved: false
 ---
 
 The first fact to learn about the Sudan School Certificate Examination, as it has run since the war began in April 2023, is what time it starts: half past two in the afternoon. The hour was not chosen for anyone's comfort — a paper that ends at five releases its candidates into early dark — but for a reason no peacetime timetable ever had to weigh: so that a candidate in a hall in Kassala and a candidate at a consulate school in Aswan, in another country, would open the same paper at the same moment. The examination itself is old machinery: supervised by the General Directorate for Evaluation and Examinations of the Federal Ministry of General Education, its results validated by the Sudan Examination Board, it has gated entry to Sudanese universities and the labour market for generations. Since December 2024, that machinery has run the exam three times without a functioning country around it. The mechanics, not the adversity, are the story.
