@@ -1,0 +1,61 @@
+---
+title: "The test that grades the advice"
+dek: "The Netherlands rebuilt its end-of-primary test to force schools to revise a child's track upward when the test outscores the teacher. The lever moves — but unevenly, by town and by class."
+date: 2026-07-07
+edition: 4
+country: Netherlands
+region: Europe
+level: K-12
+themes: [government-led programs, access, value of teachers]
+type: curated
+related:
+  - 2026-07-07-us-naep-honesty-gap
+  - 2026-07-07-singapore-psle-sbb
+  - 2026-06-20-oman-school-performance-ratings
+contains_composites: false
+arabicVersion: 2026-07-07-netherlands-doorstroomtoets
+sources:
+  - title: "Inspectie van het Onderwijs — Speech De Staat van het Onderwijs 2026, delivered by Inspector-General Alida Oppers, 15 April 2026 (the doorstroomtoets passage: in IJsselstein the school advice is revised in eight of ten cases when the test shows a higher advice; in a municipality like Stadskanaal, four of ten — 'terwijl bijstellen in zulke situaties wettelijk verplicht is, tenzij dat niet in het belang van de leerling is'; both over- and under-advising observed)"
+    url: "https://www.onderwijsinspectie.nl/onderwerpen/onderzoeken/staat-van-het-onderwijs/congres/speech-de-staat-van-het-onderwijs-2026"
+  - title: "PO-Raad — 'Rapportage doorstroomtoets 2026: verschillen tussen kansen en toetsen blijven', 23 June 2026 (schools revise much more often since 2024; the share of revisions is highest at the most advantaged intakes; equal mastery of reference levels can still yield different test advices between providers IEP and LiB; the share qualifying for revision ranges from under one in ten to more than half per municipality, highest where no local havo/vwo upper school exists; vice-chair Annet Dries: 'Jouw achtergrond mag niet bepalen of je toetsadvies wordt bijgesteld of niet')"
+    url: "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/toetsing/rapportage-doorstroomtoets-2026-verschillen-tussen"
+  - title: "PO-Raad themarapportage doorstroomtoets (DUO data — the annual sector report on the transition test: providers, reference levels, revision rates, schoolweging and regional breakdowns)"
+    url: "https://sectorrapportage.poraad.nl/p/Doorstroomtoets"
+  - title: "OCW in cijfers — Prestaties eindtoets / doorstroomtoets, primair onderwijs (DUO administrative data: 2024-25 cycle scale by approved test — LiB, IEP, ROUTE 8, DIA, AMN, DOE — and the parental-background gradient in advices)"
+    url: "https://www.ocwincijfers.nl/sectoren/primair-onderwijs/leerlingen/prestaties-eindtoets"
+  - title: "DUO — Schooladvies en doorstroomtoets (the statutory transition mechanism and dates: preliminary advice in January, the February test window, test advice by 15 March, mandatory upward revision, final advice by 24 March)"
+    url: "https://duo.nl/zakelijk/primair-onderwijs/leerlingenadministratie/schooladvies-en-doorstroomtoets/"
+  - title: "Ministerie van OCW — 'Tijdpad doorstroomtoets en overgang po-vo schooljaar 2025-2026 vastgesteld', 12 June 2025 (the fixed statutory timeline for the 2025-26 cycle)"
+    url: "https://www.nieuwsbrievenminocw.nl/actueel/nieuws/2025/06/12/tijdpad-doorstroomtoets-en-overgang-po-vo-schooljaar-2025---2026-vastgesteld"
+  - title: "PO-Raad — 'Kabinet wil in 2030 terug naar één doorstroomtoets' (the cabinet position to return to a single central test in 2029-2030; the parliamentary motion urging one provider already in 2027)"
+    url: "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/kabinet-wil-in-2030-terug-naar-een-doorstroomtoets"
+  - title: "Tweede Kamer — Motion (D66, SP, GroenLinks-PvdA, DENK, JA21) urging the state secretary to move to a single doorstroomtoets provider by 2027 (2025Z21893 / 2025D51746)"
+    url: "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2025Z21893&did=2025D51746"
+hero:
+  src: "/stills/2026-07-07-netherlands-doorstroomtoets.svg"
+  alt: "A continuous ink drawing for the Netherlands: a teacher's advice is drawn first as a short horizontal stroke set at mid-height on the left — a track already assigned. From the right, a second, firmer stroke arrives at a higher level: the test's reading. Between the two, the only warm mark on the page, a small kiln-orange arrow curves upward from the lower stroke to the higher one — the mandatory revision, the lever the law installed. But the arrow is drawn twice more, faint, further along the page: once completed, once halfway, once barely begun — the same lever pulled fully in one town and hardly at all in the next, the height reached depending on where along the page the child stands."
+  caption: "سكون · The Still · Curated 41 · Netherlands"
+approved: false
+---
+
+For most of its life the Dutch end-of-primary test was a verdict that arrived too late to matter. A child in group 8 — the last year of the basisschool, around age twelve — received a *schooladvies*, the teacher's recommendation for which track of secondary school to enter, and only afterward sat the national *eindtoets*. By the time the test result came back, the advice had usually hardened; the two secondary tracks that decide so much of a Dutch life, the vocational *vmbo* and the university-bound *havo/vwo*, had effectively been chosen. The test measured the child, and the child had already been sorted. In 2023 the Netherlands did something unusual with that arrangement. It did not raise the bar or lower it. It changed the test's job — from measuring the child to measuring the advice.
+
+The instrument is the *doorstroomtoets*, the "transition test," introduced under the Wet doorstroomtoetsen po and administered for the first time in February 2024. The reform's engineering is in its calendar and its one hard rule. Schools now issue a *preliminary* advice in January; then, in a single national window in the first half of February, every group-8 child sits an approved test; the result — the *toetsadvies* — must be back by 15 March. And here is the lever: if the test indicates a *higher* track than the teacher's preliminary advice, the school is legally required to revise the advice upward — to *bijstellen* — unless it can argue that doing so is not in the child's interest. The final advice is fixed by 24 March, in time for the national secondary-school application week at the end of the month. The old sequence put the test after the judgment. The new one puts the test *over* the judgment, with a statutory duty attached.
+
+The reform was aimed at a specific, long-documented failure. Dutch data had shown for years that *under-advising* — a teacher recommending a lower track than a child's measured ability warranted — fell hardest on children of less-educated parents; the background gradient in advices is visible in the government's own figures, where children of higher-educated and higher-income families receive *vwo* and *havo/vwo* recommendations markedly more often. The mandatory upward revision was designed as machinery against exactly this: a rule that would catch the bright child whom the school had quietly under-placed, and force the correction regardless of the teacher's expectation. It is a rare piece of policy that treats the professional judgment of the school not as the answer but as a hypothesis the test is there to check.
+
+By the plainest measure, the lever moves. Before the reform, roughly one in ten school advices were revised; since the duty took effect, schools revise far more often — the first cycle in 2023-24 pushed the share of all advices revised to around a quarter, and it has stayed near that level. Something that happened to one child in ten now happens to something closer to one in four. The scale is not small: the 2024-25 cycle covered about 164,000 pupils across six approved tests, the two largest being LiB and IEP. On its own terms — is the correction happening more? — the answer is yes, and by a wide margin. A verdict became a lever, and the lever is being pulled.
+
+Then the measuring institutions turned the ruler on the reform itself, and the second finding is the one that matters. On 15 April 2026, presenting *De Staat van het Onderwijs 2026*, Inspector-General Alida Oppers put two towns side by side. "In het Utrechtse IJsselstein," she said, "the school advice is revised in eight of ten cases when the transition test shows a higher advice. In a municipality like Stadskanaal that happens in four of ten cases — while revising in such situations is legally required, unless it is not in the pupil's interest." The same qualifying child, the same statutory duty, and twice the chance of the correction actually happening depending on which town she lives in. "That raises the question," Oppers went on, "why it plays out so differently in one region than in another." The inspectorate sees the duty honoured unevenly, and sees both over- and under-advising survive the reform meant to end them.
+
+The sector's own audit, published by the PO-Raad in June 2026 on the national DUO data, sharpens the same edge and adds a crueler wrinkle. The share of revisions is *highest*, it found, at the most advantaged intakes — the schools with the fewest disadvantaged pupils convert a qualifying test result into an actual upgrade most reliably of all. Where the advice is likeliest to be under-set — and the reform likeliest to be needed — the correction fires least. Whether the rule catches a child depends less on the child's score than on where she sits: her town, her school's social composition, the local supply of upper-track schools. In the island municipalities of Schiermonnikoog, Ameland and Vlieland, where no *havo/vwo* upper school exists locally, the share of children who qualify for an upward revision is the highest in the country — the geography of ambition, drawn by the geography of buildings. "Your background," the PO-Raad's vice-chair Annet Dries said flatly, "must not determine whether your test advice gets revised or not." Three cycles in, it still does.
+
+A second measurement problem grew inside the first, and it is the reason the Dutch story now bends back on itself. The reform did not commission one national test; it approved six, from different suppliers, and a market opened. Their scores do not sit on one scale — a LiB score and an IEP score are not the same kind of number and cannot be compared directly — and by 2026 the inspectorate and the sector council had both documented the consequence: two children with equivalent mastery of the national reference levels can receive *different* track advices depending on which test their school happened to buy. The precision the reform demanded of teachers was quietly undercut by the imprecision between the rulers themselves. Which is why the cabinet has now announced a return to a *single* central doorstroomtoets by 2029 or 2030, with a parliamentary motion pressing for one provider as early as 2027 — a quiet closing of the circle back toward something like the old Cito test the reform replaced, now asked to carry the new test's job.
+
+There is a discipline the whole episode teaches, and it belongs to Edition 4's question about what a score actually measures. Most assessment reform argues about the height of the bar. The Netherlands moved the bar's *target*: it pointed the ruler at the graders, not only the graded, and wrote into law that the professional's judgment could be overruled by the instrument. That is a genuinely ambitious idea, and the measured result is genuinely double-edged. The lever works — advices are revised far more often than before. And the lever is unevenly gripped — who benefits still tracks region and class, the correction reaching the already-advantaged first. A test that grades the advice will, if it is honest, also grade the system that administers it. The Dutch data did exactly that. It measured the reform, and found the old inequality standing a little further down the same page.
+
+— *The Editors*
+
+<div dir="rtl" lang="ar">صُنِعَ الاختبارُ ليصحّحَ حُكمَ المعلّم؛ فقاسَ، وهو يصحّح، المكانَ الذي يقفُ فيه الطفل. رافعةٌ واحدة، تُشَدُّ في بلدةٍ ولا تكادُ تُشَدُّ في الأخرى.</div>
+
+*The test was built to correct the teacher's judgment; in correcting it, it measured where the child was standing. One lever — pulled in one town, and barely pulled in the next.*
