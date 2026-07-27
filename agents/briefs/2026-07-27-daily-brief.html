@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-27</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 27 July 2026. Recovery run after a four-day dark gap (23–26 July). The delayed weekly review ran earlier today. Today's advance: the Verifier's fifth verdict — the Netherlands doorstroomtoets CLEARED, both Dutch government primaries re-fetched live and traced verbatim; Edition 04 is 7 drafted / 7 verified. Ruling #26 filed. Build clean, live sitemap re-audited — zero held-draft leak." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 27 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 38</div>
+    <h1>Back after four dark days — the Netherlands clears, seven of seven.</h1>
+    <p class="dek">Honest first: the app didn't open from Thursday 23 through Sunday 26 July — four dark days, and the Sunday weekly among them. Both are recovered today. The delayed weekly ran earlier this morning (its own file, folded into today's push); this daily then carried the pipeline one real step past where the weekly found it. The <strong>Netherlands doorstroomtoets</strong> passed the Verifier — both Dutch government primaries re-fetched <em>live</em> and traced word-for-word — so Edition 04's drafted slate is verified again, now <strong>seven of seven</strong>. Ruling <strong>#26</strong> filed. Build clean, live sitemap re-read: not one held draft leaking.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Four dark days, named — and the weekly that fell inside them.</h2>
+        <div class="day__date">2026·07·23 → 26 · Thu–Sun · no runs · last commit 7b44513 (22 Jul, Brief 37)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git + the live site — never from the last brief</div>
+        <div class="item__body">The board was clean at the seam: <span class="mono">HEAD == origin/main == 7b44513</span>, working tree carrying only this-morning's uncommitted work, and the live site re-fetched <strong>current</strong> — Editions 01–03 serving, the bilingual wordmark inline, and (the point that matters) <strong>zero held Ed04 slugs on the live surface</strong>. Nothing broke in the dark; the gap cost momentum, not correctness. Named plainly: 23–26 July went unrun because the app wasn't launched — four days — and Sunday 26 July's weekly review fell inside that window. This is the fourth dark gap on record (1 day, 3, 6, now 4); the recovery-run shape is no longer improvised, and this run follows it.</div>
+        <div class="item__note">git branch + log + fetch + status · live homepage &amp; sitemap re-fetched · gap = 4 days (07-23→26) incl. the Sun 07-26 weekly · recovery-rule discipline applied (RUNBOOK §prevention)</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-shipped">Recovered this morning · the delayed weekly review</div>
+        <div class="item__body">The 26 July weekly is no longer owed — it ran earlier today, covering the full 13–27 July fortnight (two cycles, since the 19 July weekly had also gone dark). Its four calls: <strong>(1) no new persona</strong> — the Verifier is doing exactly its job, nothing else is saturated; <strong>(2)</strong> a RUNBOOK <em>enforcement</em> addendum for the dek-cap defect, which recurred a third time on 07-22 (a rule that exists but isn't executed at the ruler it names — closed now at the hand-off); <strong>(3)</strong> the five Verifier rulings (#21–#25) consolidated into one seven-axes figure-integrity checklist at the top of the guidebook; <strong>(4)</strong> the week's growth bet — <em>stage Substack Issue 01 as the Edition-04-launch issue</em>, so distribution goes out the day the wave clears. It sits uncommitted on disk and rides today's push.</div>
+        <div class="item__note">agents/reviews/2026-07-27-weekly-review.html · covers 13–27 Jul · no approved flips · both founder-gated blockers (domain, Substack account) unchanged</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The Verifier's fifth verdict: cleared at the source.</h2>
+        <div class="day__date">2026·07·27 · Monday · recovery run · all five functions · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the Netherlands doorstroomtoets — VERIFIED, cleared</div>
+        <div class="item__body">The recovery run's content move is the highest-value, lowest-risk one available: the Verifier's independent audit of the one unverified draft — and the recovery rule (re-verify freshness live before relying on it) is exactly the audit's method. Both Dutch government primaries were re-fetched <em>this run</em> and traced verbatim. The Inspectorate's <em>Staat van het Onderwijs 2026</em> speech: "In het Utrechtse <strong>IJsselstein</strong> wordt in <strong>acht van de tien</strong> gevallen het schooladvies bijgesteld… in <strong>Stadskanaal</strong>… <strong>vier van de tien</strong>," plus the "wettelijk verplicht… tenzij dat niet in het belang van de leerling is" qualifier, the "waarom het in de ene regio zo anders uitpakt" line, and "zowel over- als onderadvisering" — every load-bearing phrase, word-for-word, speaker Inspector-General Oppers. The PO-Raad rapportage (23 Jun 2026), read in full: the &lt;1-in-10-to-&gt;half eligibility spread, Schiermonnikoog/Ameland/Vlieland, both Dries quotes, the IEP/LiB divergence, the cabinet's 2029/2030 plan and the 2027 motion. <strong>Verdict: CLEARED, no item failed.</strong> Edition 04 is now <strong>7 drafted / 7 verified</strong> — the drafted slate is complete again.</div>
+        <div class="item__note">content-drafts/verdicts/2026-07-27-netherlands-doorstroomtoets-verification.md · held approved:false (ships only in the wave) · one nuance flagged for the wave (the PO-Raad two-part schoolweging finding — the draft's conditional-rate framing is correct; a one-clause raw-rate acknowledgment is optional)</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · ruling #26 — a number you can see but cannot quote is not a citable figure</div>
+        <div class="item__body">The one open trace-list item was the exact 2026 revision rate. It lives only in the PO-Raad <em>themarapportage</em>, a client-side JavaScript dashboard — the fetch redirect-cancelled, and even resolved it renders the value in-browser, not as quotable text. This is the sourcing-side sibling of #20 (<em>a 404 is an observation</em>): #20 covers a walled source; #26 covers a reachable-but-unquotable one, where the temptation is "I can practically see the number, I'll just state it." The rule: a figure is citable only if it can be pasted verbatim out of a served text primary; a dashboard value is an observation that the number exists, never the citation. So the draft keeps the qualitative form with the denominator stated ("about one in ten → around a quarter… share of all advices"), and the recon's flagged ~22.5% stays a lead, not a printed number. The seven-axes checklist stands untouched — this extends the <em>method</em> family, not the figure-axes family.</div>
+        <div class="item__note">guidebook/2026-07-27-a-number-you-cannot-quote-is-not-a-citable-figure.md · INDEX Section-2 addendum · method family now #20 → #26</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build clean; live surface intact through the gap</div>
+        <div class="item__body">Full pass via the /tmp route-around (the sandbox <span class="mono">.git/index.lock</span> and vite-FUSE boundary held as ever — routed around, not fought): <span class="mono">astro build exit 0, 65 pages</span>, parity <strong>EN 30 = AR 30</strong>, held-draft leakage into <span class="mono">dist</span> <strong>zero</strong> (no doorstroomtoets, no naep, no naplan page or sitemap entry), wordmark inlined as SVG — no <span class="mono">&lt;img src&gt;</span> brand chrome. On-disk flag sweep matches the record exactly: 7 EN + 1 AR held <span class="mono">approved:false</span>, the rest live. Nothing degraded across the four dark days.</div>
+        <div class="item__note">agents/logs — build 65pp exit 0 · P0: none · P1: none · flag state = 7 EN / 1 AR held, unchanged · route-around: /tmp copy + symlinked node_modules + VITE_CACHE_DIR</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the live sitemap re-audited — the surface survived the gap</div>
+        <div class="item__body">The recovery-appropriate audience action: confirm the discoverability surface is still clean after four unattended days. The live <span class="mono">sitemap-0.xml</span> carries exactly <strong>65 URLs</strong> — 30 EN + 30 AR corpus + five structural pages (home, about, editions, and their Arabic pair) — matching the fresh build count-for-count, with <strong>zero held-draft leak</strong>. The surface serious readers and crawlers index is intact; nothing stale or orphaned surfaced in the dark. The weekly's growth bet now leads the distribution lane: stage Substack Issue 01 as the Ed04-launch issue so the publish→distribute lag (infinite since 25 May) collapses to zero the day the wave clears.</div>
+        <div class="item__note">live sitemap-0.xml re-fetched · 60 corpus + 5 structural · reciprocal hreflang · zero leak · return-not-reach framing · domain + Substack account: still the two founder-gated blockers, both named in the weekly</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-27 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 37 EN / 31 AR &mdash; incl. 7 EN / 1 AR held drafts (approved:false, not published)</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Back on the bench — three drafts to ten, and the AR wave to open.</h2>
+        <div class="day__date">2026·07·28 · Tuesday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">Content · resume bench drafting</div>
+        <div class="item__body">With the drafted slate verified 7/7, the constraint is back on the bench: three drafts remain to reach ten. <strong>England's report cards</strong> and <strong>Japan's assessment CBT</strong> lead the recon bench on register recency. Same discipline as today: re-verify the (now three-week-old) recon <em>live</em> before compose; per the new enforcement addendum, the hand-off to the Editor carries the recorded <span class="mono">dek NNN/200 · title NN/100</span> count or it comes back unread; per #26, no figure ships that can't be quoted from a served text primary. One fresh piece; not override-mode.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Growth → AR · open the two wave-prep lanes the weekly named</div>
+        <div class="item__body">Two things the weekly authorised can start now, both inside the operation's control: Growth <strong>drafts and stages Substack Issue 01</strong> as the Ed04-launch issue (bilingual, gate-linked, one-click-ready), and the Arabic Content Creator <strong>begins composing the wave's Arabic</strong> — six of the seven held drafts lack AR (only us-naep has one), so the AR queue is now the parallel critical path to the stills. Arabic Editor sign-off gates any AR; nothing flips.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Gate ledger · unchanged, and now with a full verified slate behind it</div>
+        <div class="item__body">To a complete wave: three more bench drafts, <strong>Arabic for six of seven</strong>, stills ×10 (Designer's batch), the <span class="mono">editions.ts</span> registry entry (the second gate that keeps held pieces from listing even if a flag slips), intra-wave <span class="mono">related:</span> slug reconciliation, and one last live re-fetch of every load-bearing register at the pre-ship sweep. The wave ships whole or not at all.</div>
+      </div>
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push — carries both the delayed weekly and today's daily</div>
+    <p>This commit sweeps up <strong>two runs</strong> that were stuck behind the sandbox lock: the delayed weekly review (its HTML, the seven-axes guidebook consolidation, the RUNBOOK dek-cap enforcement addendum, the stats snapshot) and today's daily (the Netherlands Verifier verdict, ruling #26 + INDEX addendum, the Ed04 status update to 7/7, Brief 38). <strong>No</strong> <span class="mono">approved</span> flips anywhere — Edition 04 still ships whole or not at all. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-27: recovery run after 4-day dark gap (07-23..26) + delayed weekly. Netherlands doorstroomtoets VERIFIED — the Verifier's fifth verdict: CLEARED, no item failed; both Dutch primaries re-fetched live and traced verbatim (Inspectorate speech: IJsselstein 8/10, Stadskanaal 4/10, the wettelijk-verplicht-tenzij qualifier, Oppers; PO-Raad rapportage 23 Jun 2026: <1-in-10 to >half eligibility spread, Schiermonnikoog/Ameland/Vlieland, both Dries quotes, IEP/LiB divergence, cabinet 2029/2030 + motion 2027). Ed04 = 7 drafted / 7 verified — drafted slate complete again. Ruling #26 'a number you can see but cannot quote is not a citable figure' (+INDEX): method sibling of #20; the exact revision rate lives only in a JS dashboard, so keep the qualitative form with denominator stated. QA: build 65pp exit 0, parity 30=30, zero held-leak, wordmark inline. Growth: live sitemap re-audited — 60 corpus + 5 structural, reciprocal hreflang, zero held-draft leak; surface intact through the gap. ALSO carries the delayed weekly review (13-27 Jul): no new persona; dek-cap enforcement addendum (3rd strike); seven-axes figure-integrity checklist consolidated (#21-#25); growth bet = stage Substack Issue 01 as the Ed04-launch issue. No approved flips. Brief 38."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Standing and unchanged: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>) whenever convenient, and the two founder-gated blockers the weekly flagged — the custom-domain word and whether the Substack publication exists under your account yet. Neither blocks content; both block distribution.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·27</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

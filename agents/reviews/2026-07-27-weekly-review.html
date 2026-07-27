@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-07-27</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .up { color: var(--color-sage); } .flat { color: var(--color-muted); }
+  .statgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-rule-soft); border: 1px solid var(--color-rule-soft); margin: 1.2rem 0; }
+  .statgrid .cell { background: var(--color-paper); padding: 1rem 1.1rem; }
+  .statgrid .cell .v { font-family: var(--font-mono); font-size: 1.6rem; font-variant-numeric: tabular-nums; display: block; }
+  .statgrid .cell .k { font-size: 0.8rem; color: var(--color-muted); }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); padding: 1.1rem 1.2rem; border-radius: 3px; overflow-x: auto; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; }
+  .flag { color: var(--color-orange); font-weight: 600; }
+  footer { padding: 2.5rem 0 3.5rem; color: var(--color-muted); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-orange); }
+</style>
+</head>
+<body>
+<main>
+<header class="masthead">
+  <div class="container">
+    <div class="kicker">Madār · Weekly Strategic Review</div>
+    <h1>The wave, still under the surface</h1>
+    <div class="sub">Monday 27 July 2026 · Manager/CEO · covering 13–27 July (two owed cycles — the 19 July weekly went dark) · Vini reads; his only action is the push</div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">For the founder — read this, skip the rest if pressed</div>
+    <div class="summary-box">
+      <h3>What changed, what I decided, what needs your eye</h3>
+      <p><strong>What changed.</strong> Fifteen days of real pipeline advance and <em>zero</em> live flips — all correct. Edition&nbsp;04 moved from 5&nbsp;drafted / 4&nbsp;verified to <strong>7&nbsp;drafted / 6&nbsp;verified</strong>, with the entire drafted slate independently cleared and the bench three pieces short of ten. The live corpus is unchanged at <span class="num">30&nbsp;EN / 30&nbsp;AR</span>, 100% parity, 27&nbsp;countries — because Ed04 ships as one gated wave, like Ed03, and is being held on purpose. Quality stayed green every run.</p>
+      <p><strong>What I decided.</strong> (1) <strong>No new persona</strong> — the Verifier (added 07-12) is doing exactly its job; nothing else is saturated. (2) Codified an <strong>enforcement addendum</strong> for the dek-cap defect, which recurred a third time. (3) Consolidated the Verifier's five rulings into a single <strong>seven-axes figure-integrity checklist</strong>. (4) Named the week's growth bet: <strong>stage Substack Issue&nbsp;01 as the Ed04-launch issue</strong> so distribution goes out the day the wave clears.</p>
+      <p><strong>What needs your eye.</strong> Two things, both unchanged and both founder-gated — the growth loop cannot advance until one of them moves: <span class="flag">(a) the custom-domain decision</span> (still the single founder call; it gates Search Console and the Substack URL binding), and <span class="flag">(b) whether the Substack publication exists under your account yet</span> — Issue&nbsp;01 has been send-ready since 1 June and cannot leave the building without the account. Neither blocks content; both block distribution.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">1 — Traffic, Growth &amp; Statistics</div>
+    <h2>Return, not reach — and the surface is still dark</h2>
+    <p class="lede">The honest read: the publication got measurably better this fortnight and reached no one new, because the one distribution surface that would let us <em>measure</em> return is still not live.</p>
+
+    <div class="statgrid">
+      <div class="cell"><span class="v">30 / 30</span><span class="k">EN / AR live &amp; approved (flat)</span></div>
+      <div class="cell"><span class="v">100%</span><span class="k">AR/EN parity (held)</span></div>
+      <div class="cell"><span class="v">27</span><span class="k">countries (flat)</span></div>
+      <div class="cell"><span class="v">7</span><span class="k">held EN drafts (Ed04 wave)</span></div>
+    </div>
+
+    <h3>Content snapshot, week over week</h3>
+    <table>
+      <thead><tr><th>Metric</th><th>07-12 (last review)</th><th>07-27 (today)</th><th>Δ</th></tr></thead>
+      <tbody>
+        <tr><td>EN total (approved + held)</td><td class="n">35</td><td class="n">37</td><td class="n up">+2 drafts</td></tr>
+        <tr><td>EN approved (live)</td><td class="n">30</td><td class="n">30</td><td class="n flat">0</td></tr>
+        <tr><td>AR approved (live)</td><td class="n">30</td><td class="n">30</td><td class="n flat">0</td></tr>
+        <tr><td>Held EN drafts</td><td class="n">5</td><td class="n">7</td><td class="n up">+2</td></tr>
+        <tr><td>Countries covered</td><td class="n">27</td><td class="n">27</td><td class="n flat">0</td></tr>
+        <tr><td>Regions (MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm 2)</td><td class="n">—</td><td class="n">—</td><td class="n flat">no drift</td></tr>
+      </tbody>
+    </table>
+    <p>The +2 EN drafts are Australia (NAPLAN reset, 07-16) and the Netherlands (doorstroomtoets, 07-22) — both <span class="pill hold">held approved:false</span>, both APPROVE-for-the-wave on file, both verified or in queue. No parity or region drift: the corpus is stable because every new piece is correctly parked for the Ed04 launch, not shipped piecemeal.</p>
+
+    <h3>Edition 04 — the actual work of the fortnight</h3>
+    <p>Ed04 asks what a score <em>measures</em> — how systems define, move and defend the thresholds that turn a child's work into a label. Progress since the last review:</p>
+    <ul>
+      <li><strong>Verification closed on the drafted slate.</strong> NZ's date-bound scoped re-check <span class="pill ok">CLEARED</span> on 07-21 once NZQA's 20 July release landed; Australia cleared 07-17. All six original drafts (US, India, Singapore, NZ, Chile, Australia) now carry verdicts on file.</li>
+      <li><strong>Bench drafting opened.</strong> Netherlands is bench draft&nbsp;1 (07-22); it resolves us-naep's forward <span class="num">related:</span> reference. Slate is now <strong>7&nbsp;drafted / 6&nbsp;verified</strong>, pacing 1 unverified — well under the ≤3 ceiling.</li>
+      <li><strong>Remaining to a complete wave:</strong> ~3 more bench drafts to reach ten (England report cards / Japan CBT lead), Arabic for five of six, ten stills, the <span class="num">editions.ts</span> registry entry (the second gate), and the written publish gate. Recommendation stands: <strong>hold the date, hold the bar</strong> — ship Ed04 as a verified wave, never a batch.</li>
+    </ul>
+
+    <h3>Privacy-clean traffic signals</h3>
+    <p>Per the charter's privacy posture, the site carries no third-party tracker, so visitor analytics are <em>not collected</em> — I will not invent them. Substack is <strong>pending launch</strong>, so there is no open-rate, return-rate, reply-rate or country distribution to report yet; the moment Issue&nbsp;01 sends, those become the lead metric here and raw counts stay the vanity metric they are. Attributable inbound (manual search of X / Bluesky / LinkedIn for the publication URL): none this fortnight — expected, since nothing new went live and no issue has gone out. The one durable growth asset shipped this window is discoverability hygiene: the <strong>live sitemap was audited 07-22</strong> (60 corpus + 5 structural URLs, reciprocal hreflang verified on the live article head, zero held-draft leak).</p>
+
+    <div class="bet">
+      <div class="kicker">The week's single growth bet</div>
+      <p style="margin-bottom:0.4rem;font-size:1.15rem;font-family:var(--font-display);"><strong>Stage Substack Issue&nbsp;01 as the Ed04-launch issue — bilingual, gate-linked, one-click-ready.</strong></p>
+      <p style="margin-bottom:0;">The publish→distribute lag has sat at infinity since 25 May: 30 verified bilingual pieces are live and none has ever been carried to a reader by us. Rather than send Issue&nbsp;01 into a quiet corpus, I'm binding it to the Ed04 wave — Growth drafts and stages the issue this week so that the moment the Ed04 gate passes, the newsletter goes out the <em>same day</em>, collapsing the lag to zero. This is entirely inside the operation's control (drafting/staging); it does not need the founder. <strong>Result read next week:</strong> is Issue&nbsp;01 staged and gate-linked, and are the two founder-gated unblockers (domain, account) resolved or still open?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">2 — Quality Retrospective</div>
+    <h2>Green all fortnight — and one defect that keeps coming back</h2>
+    <p>Every run in the window passed its QA gate: clean <span class="num">astro build</span> (65pp, exit 0), EN/AR parity 30=30, zero held-draft leak into the live corpus, brand chrome intact, deploy runs confirmed green via the Actions API (run&nbsp;44, 07-16). The Verifier delivered five clean verdicts (three FAIL-one-item, each fixed and re-cleared same-run; one two-item FAIL closed across two runs; one scoped re-check). The drafter≠verifier split is earning its keep: <strong>five of the seven figure-axes below were catchable only by live re-fetch of the primary</strong> — the recon and the draft were each internally faithful.</p>
+
+    <h3>The recurring defect class</h3>
+    <p>One pattern crossed the line from incident to <em>class</em>. The frontmatter <span class="num">dek</span> cap (200 code points) was breached a <strong>third</strong> time on 07-22 (Netherlands, 250→200), after Korea (06-17) and Oman (06-20). Every instance was caught at the build/gate and fixed same-run — the backstop works — but <strong>every instance was first measured at the backstop, never at compose</strong>, despite a prevention rule codified for exactly this on 06-24. A defect that recurs after codification is not a knowledge gap; it is an <em>execution</em> gap.</p>
+    <p><strong>Prevention rule codified into the RUNBOOK this week (enforcement addendum):</strong></p>
+    <ul>
+      <li>The draft hand-off to the Editor is <strong>incomplete without the recorded count</strong> — the drafter pastes <span class="num">dek: NNN/200 · title: NN/100 (code points, tashkeel +1 each)</span> into the verdict-request. A hand-off missing that line is <em>returned unread</em>, not verified-then-flagged.</li>
+      <li>The Verifier's trace list carries a <span class="num">dek/title within cap at compose: ☐</span> row, failed if the count line is absent — an unmeasured cap is an open item, exactly like an untraced figure.</li>
+    </ul>
+    <p>No near-miss reached production this fortnight; the held-draft flag-sweep caught its seventh latent <span class="num">approved:true</span> on staged copies (07-17, twenty Ed03 duplicates) and defused all of them — the <span class="num">#18</span> family stays closed on disk.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">3 — Knowledge Consolidation</div>
+    <h2>Five rulings, one checklist</h2>
+    <p>The daily runs filed cleanly all fortnight — every increment is already in the guidebook and named in the INDEX; a sweep confirmed <strong>zero un-indexed files and no duplicates</strong>. The consolidation value this week was <em>synthesis</em>, not cleanup.</p>
+    <p>The Verifier's five verdicts produced five rulings (<span class="num">#21–#25</span>), each a new "axis a figure travels with." Scattered across five daily addenda, they were five things to remember; gathered, they are one mental model. I've consolidated them — with the earlier <span class="num">#12/#12b</span> and <span class="num">#14</span> — into a single <strong>seven-axes figure-integrity checklist</strong> at the top of the guidebook INDEX:</p>
+    <table>
+      <thead><tr><th>#</th><th>Axis</th><th>The question a number must answer</th><th>Ruling</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td>Administration / coverage</td><td>Who ran it, over what population? (self-administered ≠ external; census ≠ sample)</td><td class="n">#12/#12b</td></tr>
+        <tr><td class="n">2</td><td>Funnel stage</td><td>Which stage — target, potential, choice, placed? Don't chain stages into a trend.</td><td class="n">#14</td></tr>
+        <tr><td class="n">3</td><td>Vintage</td><td>Did the system of record <em>adopt</em> it, or is it a later recount by another author?</td><td class="n">#21</td></tr>
+        <tr><td class="n">4</td><td>Scope</td><td>What does each qualifier govern? Don't split a shared one or narrow a broad one.</td><td class="n">#22</td></tr>
+        <tr><td class="n">5</td><td>Direction</td><td>Trace the hedge ("almost"/"over") to the same sentence that gave the value.</td><td class="n">#23</td></tr>
+        <tr><td class="n">6</td><td>Position</td><td>A series point carries its column and base note; never assert cross-year sameness.</td><td class="n">#24</td></tr>
+        <tr><td class="n">7</td><td>Condition</td><td>Write "out of ___" for every rate; match the draft's population to the source's.</td><td class="n">#25</td></tr>
+      </tbody>
+    </table>
+    <p>The unifying move — <strong>check at the context, not the figure</strong> — now sits in one place for the Verifier instead of seven. New reference also banked this fortnight: the <span class="num">2026-07-16-acara-naplan-source-index.md</span> (Australia), plus route notes (ACARA blob-host PDFs read as text; medianet News Hub carries complete releases). The team is measurably more capable than it was two weeks ago: it has a named, closed doctrine for the exact error class Edition 04 is <em>about</em>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">4 — Team-Expansion Decision</div>
+    <h2>Hold the org chart — restraint applies here too</h2>
+    <p><strong>Decision: no new persona this fortnight.</strong> The team stays at eleven.</p>
+    <p>The expansion ladder adds a role only when a capability gap is <em>recurring</em> and the existing team is <em>genuinely saturated</em>. Walking the candidate list against the fortnight's evidence:</p>
+    <ul>
+      <li><strong>Researcher</strong> — not warranted. The recon bench is well-stocked (seven reconned candidates on disk for the Ed04 completion set); the Editor is not parking pieces for sourcing-<em>time</em>. No bottleneck signal.</li>
+      <li><strong>Data/SEO analyst</strong> — premature. There is no traffic to analyse and no live discoverability surface to optimise until Substack launches. Adding this persona now would be adding a role with nothing to measure. This is the <em>next</em> likely add — but its trigger is "Issue 01 has sent and there is return data," which has not happened.</li>
+      <li><strong>Social/Video</strong> — not warranted. Growth has not saturated on a channel needing craft beyond stills + copy; the opening grid is riding one tile/week and under review for retirement.</li>
+      <li><strong>Second-language editor</strong> — not warranted. Still EN/AR only.</li>
+    </ul>
+    <p>The one binding constraint the Ed04 sprint exposed — <em>verification throughput</em> — was already answered by seating the <strong>Verifier (persona #11) on 07-12</strong>, and two weeks in it is performing exactly as designed: five verdicts, five rulings, pacing held under the ≤3-ahead ceiling. The right move is to let that decision mature, not to stack another persona on top of a gap that was just filled. Restraint recorded; re-evaluate when Substack return-data creates a real analytics surface.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">Housekeeping — the dark days, named plainly</div>
+    <h2>What didn't run</h2>
+    <p>Two dark gaps this fortnight, stated without dressing: <strong>18–20 July</strong> (three days, which swallowed the scheduled 19 July weekly review — this memo is that review, owed and now delivered), and <strong>23–26 July</strong> (four days). Both are launch-side: a closed app delays a run to the next launch rather than dropping it, and the founder's surface stays exactly one action. Per the codified recovery rule, the first run back verifies state from git + the live site (done: HEAD is <span class="num">7b44513</span>, working tree clean, corpus 30/30 confirmed), and nothing was force-batched to "catch up." No content was lost — only calendar days.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">The one action — Vini's push</div>
+    <h2>Land the week</h2>
+    <p>This review, the RUNBOOK enforcement addendum, and the guidebook consolidation are staged. One line lands them on <span class="num">main</span>:</p>
+    <pre>cd "/Users/vini/Documents/Claude/Projects/Educational Website" && rm -f .git/index.lock && git add -A && git commit -m "Madār — 2026-07-27 weekly review: Ed04 7-drafted/6-verified, corpus held 30/30; dek-cap enforcement addendum (3rd recurrence); seven-axes figure-integrity checklist consolidated; no new persona" && git push origin main</pre>
+    <p style="margin-top:1.2rem;color:var(--color-muted);font-size:0.95rem;">Nothing else is asked of you. Content held on purpose; distribution waits on the two founder-gated unblockers named at the top.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Madār · مدار — made in spite of, not because of.<br>
+    Weekly review · 2026-07-27 · Manager/CEO · autonomous run · palette #FAFAF7 / #0E1B2C / #D94F2A
+  </div>
+</footer>
+</main>
+</body>
+</html>
