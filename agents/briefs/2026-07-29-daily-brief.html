@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-07-29</title>
+<meta name="description" content="Manager → Founder daily brief for Wednesday 29 July 2026. The Verifier's eighth verdict: England's report-card piece CLEARED, no item failed — Edition 04's drafted slate is verification-complete at 8 drafted / 8 verified. Ruling #27 filed (two independent channels satisfy the drafter ≠ verifier split). Build clean, parity 30=30, zero held-leak. Binding constraint now wholly downstream: ~2 bench drafts, the Arabic wave, stills, the editions.ts gate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Wednesday · 29 July 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 40</div>
+    <h1>England clears — the drafted slate is verified end to end.</h1>
+    <p class="dek">The Verifier's eighth verdict, and the cleanest kind: <strong>England — "The verdict, taken apart" — CLEARED, no item failed.</strong> Every load-bearing figure re-traced this morning through an independent channel and confirmed against yesterday's served-text reads — 70/64/8/53 of 100 heads, the 7.9%/24.5% response skew, 1,360 schools by end of May, Saini J's verbatim refusal, "never pre-determines the grades," 22 cards of 13 primary and 9 secondary. Edition 04's drafted slate is now <strong>8 drafted / 8 verified</strong> — verification-complete, pacing zero. Ruling <strong>#27</strong> filed: two independent channels, not two people, are what satisfy the drafter ≠ verifier split. Build clean; parity 30 = 30; nothing leaking. The constraint is now wholly downstream — the bench, the Arabic wave, the stills, the gate.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>England was drafted and handed to the Verifier's queue.</h2>
+        <div class="day__date">2026·07·28 · Tuesday · Brief 39 · commit 262246c</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git + the live site — never from the last brief</div>
+        <div class="item__body">Clean at the seam: <span class="mono">HEAD == origin/main == 262246c</span>, working tree clean before this run, and the live site re-fetched <strong>current</strong> — Editions 01–03 serving, wordmark inline, <strong>zero held Ed04 slugs on the live surface or in the sitemap</strong> (67 locs, England absent). No gap since yesterday: 07-28's run committed and pushed cleanly (Brief 39). Normal cadence holds — two clean consecutive days after last week's four-day gap.</div>
+        <div class="item__note">git branch + log -15 + fetch + status · live homepage &amp; sitemap re-fetched · local == origin, tree clean · last run 07-28 (no new gap)</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-shipped">Drafted and pushed · Ed04 bench draft 8</div>
+        <div class="item__body">Yesterday composed <strong>England's report-card piece</strong> at the full bar — the reform that abolished the single Ofsted grade on 10 Nov 2025 for a graded grid, then had to measure whether the replacement was better. Editor five-test APPROVE for the wave + Verifier trace list (8 items) on file; held <span class="mono">approved:false</span>, staged out of the build path; every figure live-re-verified from served-text primaries at compose (clears #26). That left Ed04 at 8 drafted / <strong>7</strong> verified, England the one open item in the queue — exactly the item today closes.</div>
+        <div class="item__note">Brief 39 · England drafted, held · Editor + Verifier trace list on file · Substack Issue 01 staged as the Ed04-launch issue · both founder-gated blockers (domain, Substack account) unchanged</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The eighth verdict: England cleared, no item failed.</h2>
+        <div class="day__date">2026·07·29 · Wednesday · all five functions · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · England independently verified — Ed04 slate now 8 / 8</div>
+        <div class="item__body">The Verifier (persona #11, drafter ≠ verifier) re-traced England's eight-item trace list this morning against a <em>second, independently-routed channel</em> — four fresh searches reaching the primaries by a different path than the drafter took yesterday. Every item held: the 150-grade first-wave distribution and the 22-card cohort (13 primary, 9 secondary); the survey rates all conditioned on the 100 self-selected heads with the 7.9%/24.5% response skew in-sentence; 1,360 schools by end of May carried with its vintage; the "secure fit" rule attributed to Ofsted, not hardened; Saini J's "not matters for this court" / "policy choice and system design" verbatim, with the <em>appeal</em> (not the claim) as what finally failed; the no-early-cohort-reinspection absence confirmed as stated; the unverified "half can't clear the bar" claim confirmed <em>absent</em>; Ruth Perry appearing once as orientation. <strong>Verdict: CLEARED, no item failed</strong> — the cleanest of the eight Ed04 verdicts alongside the Netherlands. <strong>Ed04 = 8 drafted / 8 verified; the drafted slate is verification-complete, pacing zero.</strong></div>
+        <div class="item__note">content-drafts/verdicts/2026-07-29-england-report-cards-verification.md · Ed04 status updated 8/8 · residual (gate, not verdict): AR, still, editions.ts entry</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · ruling #27 — two channels, not two people, satisfy the split</div>
+        <div class="item__body">Today's knowledge increment names the principle the Verifier persona has been teaching for eight verdicts: the drafter ≠ verifier discipline is satisfied by <strong>channel-independence, not person-independence</strong>. The drafter reads the served-text primary at compose (#26); the Verifier re-confirms each figure through a differently-routed search or fetch before the gate. When both channels return the same value, an error would have to survive two independent reads — which fabrication and transcription slips do not. England cleared precisely because <em>every</em> load-bearing figure was two-channel confirmed. Corollary banked: "CLEARED, no item failed" is reserved for pieces where every figure is confirmed twice, by different routes — a clean verdict is not "found no error," it is "confirmed each figure twice." Sibling of #20/#26 in the method family; the four figure-axis rulings (#21–#24) were all cross-channel catches, and #27 is the rule they were each instances of.</div>
+        <div class="item__note">agents/guidebook/2026-07-29-two-channel-verification-satisfies-the-split.md (+INDEX) · ruling series now #1–#27, no gaps, no dupes</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · build clean; England still held out of the build path</div>
+        <div class="item__body">Full pass via the /tmp route-around (sandbox <span class="mono">.git/index.lock</span> + vite-FUSE boundary routed around, as ever — the in-place build renders every page then throws <span class="mono">EPERM</span> only on the final dist-unlink at the mount boundary, a workspace artefact, not a code error): <span class="mono">astro build exit 0, 65 pages, Complete!</span> in the clean tree; parity <strong>EN 30 = AR 30</strong> (approved corpus, 100%); held-draft leakage <strong>zero</strong>. England stays <strong>doubly safe</strong> — <span class="mono">approved:false</span> <em>and</em> staged in <span class="mono">content-drafts/</span>, outside <span class="mono">web/src</span>; the only "England" strings in <span class="mono">dist</span> are inside the <em>Oman</em> piece, which legitimately discusses Ofsted as the deliberate frame-pair. Wordmark inline; no <span class="mono">&lt;img src&gt;</span> brand chrome.</div>
+        <div class="item__note">agents/logs/qa-2026-07-29.md · build 65pp exit 0 · P0/P1: none · zero staged flag = true · route-around: /tmp copy + symlinked node_modules + VITE_CACHE_DIR</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · discoverability surface audited; the England↔Oman link cluster staged</div>
+        <div class="item__body">The live surface was re-audited against the corpus after England entered staging: the sitemap carries the <strong>30-piece live corpus</strong> with reciprocal <span class="mono">hreflang</span> (en / ar / x-default) on the homepage head, and <strong>zero held-draft leak</strong> — England is absent from the sitemap, correct. The forward growth asset banked today: England and Oman are a deliberate frame-pair (the two most search-relevant Ofsted-model pieces in the corpus), and once the wave flips England ships with a reciprocal <span class="mono">related:</span> link to Oman — the day it lists, the two pieces form a two-way internal cluster that concentrates the search value each earns alone. Return-signal readiness, not raw counts: the privacy-clean signals (Substack opens / return rate / attributable shares) still switch on the day Issue 01 sends, which waits on the two founder-gated blockers.</div>
+        <div class="item__note">sitemap 67 locs (30 corpus + AR mirrors + structural) · hreflang reciprocal on live head · Issue 01 send-ready-pending domain + Substack-account decisions</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-07-29 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 37 EN / 31 AR &mdash; incl. 7 EN / 1 AR held drafts (approved:false, not published); England's draft (8th) staged separately, also held &mdash; all 8 Ed04 drafts now verified</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Two drafts from ten — and the Arabic wave is now the critical path.</h2>
+        <div class="day__date">2026·07·30 · Thursday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">Content · the next bench draft (~2 to ten)</div>
+        <div class="item__body">With the drafted slate verified end to end, drafting the bench is the pure content lane again. <strong>~2 drafts remain</strong> to reach ten: <strong>Japan's assessment CBT</strong> leads on register recency; <strong>South Africa's matric measure</strong> and <strong>Estonia's AI-leap</strong> sit behind it. Same discipline — re-verify the three-week-old recon <em>live</em> before compose, hand off with the recorded <span class="mono">dek NNN/200 · title NN/100</span> count, and per #26/#27 no figure ships that can't be pasted from a served-text primary and confirmed on a second channel. One fresh piece; not override-mode.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">AR · open the wave's Arabic queue — the parallel critical path</div>
+        <div class="item__body">Seven of the eight verified drafts lack Arabic (only us-naep has one). With verification complete, <strong>Arabic composition is now the binding parallel path</strong>: the Arabic Content Creator composes from the verified drafts, the Arabic Editor verifies named-human transliterations before any AR ships. England's verdict already carries its list to hand straight over — Owston, Saini, Coffield, Tymms, Pascal, Norris, Richards, Whiteman, Ruth Perry — plus its term glosses (report card بطاقة تقييم المدرسة, evaluation area مجال التقييم, secure fit, Ofsted أوفستد).</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Gate ledger · the wave ships whole or not at all</div>
+        <div class="item__body">To a complete wave: ~2 more bench drafts, <strong>Arabic for seven of eight</strong>, stills ×10 (Designer's batch), the <span class="mono">editions.ts</span> registry entry (the second gate that keeps held pieces from listing even if a flag slips — Ed04 intentionally absent today), intra-wave <span class="mono">related:</span> slug reconciliation (England → Oman / us-naep / Netherlands), and one last live re-fetch of every load-bearing register at the pre-ship sweep. No piecemeal Ed04 publishing.</div>
+      </div>
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push — today's daily</div>
+    <p>This commit carries a clean, closing-out day: England's Verifier verdict (<strong>CLEARED, no item failed</strong> — the drafted slate is now 8/8), the Ed04 status update, ruling <span class="mono">#27</span> + its INDEX row, the QA log, and Brief 40. <strong>No</strong> <span class="mono">approved</span> flips — Edition 04 still ships whole or not at all. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-07-29: the Verifier's eighth verdict — england-report-cards-first-term CLEARED, no item failed. Independent re-trace of all 8 trace-list items through a second channel confirmed every load-bearing figure against yesterday's served-text reads (150-grade first-wave distribution + 22 cards of 13 primary/9 secondary; survey rates conditioned on 100 heads with the 7.9%/24.5% response skew in-sentence; 1,360 schools by end-May with vintage; secure-fit attributed not hardened; Saini J verbatim with the appeal as what failed; no-reinspection absence confirmed; the unverified 'half can't clear' claim confirmed absent; Ruth Perry once as orientation). Ed04 = 8 drafted / 8 verified — drafted slate verification-complete, pacing zero. Ruling #27 filed (+INDEX): two independent channels, not two people, satisfy the drafter != verifier split; a clean verdict means every figure confirmed twice by different routes. QA: build 65pp exit 0, parity 30=30, zero held-leak (England doubly safe, staged out of build path), wordmark inline. Growth: live sitemap re-audited (30 corpus, reciprocal hreflang, England absent), England-Oman internal-link cluster staged for the wave. No approved flips. Brief 40."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Standing and unchanged: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>) whenever convenient, and the two founder-gated blockers — the custom-domain word and whether the Substack publication exists under your account yet. Neither blocks content; both block the Ed04-launch issue's distribution.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·07·29</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
