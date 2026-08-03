@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-08-02</title>
+<meta name="description" content="Manager → Founder daily brief for Sunday 2 August 2026. Recovery run after a 3-day dark gap (07-30 / 07-31 / 08-01). The Arabic wave opens: australia-naplan-reset composed in Arabic — the first Ed04 AR of the wave and the opening move on the now-binding parallel path. Ruling #28 filed (English acronyms keep their Latin tag; an unheard name stays provisional). Build clean 65pp, parity 30=30, zero held-leak. Ed04 = 8 drafted / 8 verified / 2 of 8 AR." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Sunday · 2 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 41</div>
+    <h1>The Arabic wave opens — Australia composed, not translated.</h1>
+    <p class="dek">A recovery run, honestly named: <strong>three days went dark — 30, 31 July and 1 August</strong> — and this is the one clean day back, not a forced double-batch. With the drafted slate verified end to end (8/8) and Arabic named the binding parallel path, today makes the wave's <strong>first AR move</strong>: <strong>Australia's NAPLAN piece — "المسطرةُ التي رُفِعت عمدًا" — composed in Arabic at full register</strong>, every figure carried, held out of the build. Ruling <strong>#28</strong> filed: English acronyms keep their Latin tag (a bilingual-search asset), and a name you can spell but cannot hear stays <span class="mono">PROVISIONAL</span> until the pre-ship audit. Build clean 65pp; parity 30 = 30; nothing leaking. Ed04 now <strong>8 drafted / 8 verified / 2 of 8 in Arabic</strong>.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Three dark days — the operation didn't run.</h2>
+        <div class="day__date">2026·07·30 → 08·01 · Thu–Sat · no briefs · last commit 729d836 (07-29)</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git + the live site — never from the last brief</div>
+        <div class="item__body">Clean at the seam but with a gap named plainly: <span class="mono">HEAD == origin/main == 729d836</span> (Brief 40, 29 July), working tree clean, and the live site re-fetched <strong>current</strong> — the 30-piece corpus serving with reciprocal hreflang and <strong>zero held Ed04 slugs</strong> in the sitemap. But the last commit is 29 July: <strong>30 July, 31 July and 1 August produced no run and no brief</strong>. Per the standing rule, a missed day earns one clean recovery day — this one — never a forced double-batch. The proof-of-work contract is honest about the miss, and today closes it with real pipeline advance.</div>
+        <div class="item__note">git branch + log -15 + fetch + status · live sitemap re-fetched (65 locs, England/Australia absent) · local == origin == live · gap: 07-30, 07-31, 08-01 (3 days)</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Also due today — the weekly, on a separate clock</div>
+        <div class="item__body">Today is Sunday, so the separate <span class="mono">madar-weekly-review</span> task (traffic report, quality retrospective, knowledge consolidation, team-expansion decision) is due on its own cadence. This is the <em>daily</em> run; the weekly is flagged for its own session, not folded in here. If it does not fire, it is owed and should be named next run.</div>
+        <div class="item__note">last weekly: 2026-07-27 (delayed, covered 13–27 Jul) · next: due 2026-08-02</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Arabic composition begins — the binding path, moved.</h2>
+        <div class="day__date">2026·08·02 · Sunday · all five functions · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Australia's NAPLAN piece composed in Arabic — Ed04 now 2 of 8 in AR</div>
+        <div class="item__body">With verification complete, the constraint is the Arabic wave — so this run took its opening move. <strong>"المسطرةُ التي رُفِعت عمدًا"</strong> (The ruler raised on purpose) is the Arabic <em>composition</em> — not translation — of the verified Australia draft: the 2023 reset that retired the old floor for four plain labels and, overnight, stood one in three students below the bar; the stillness of three cycles that followed; the equity ledger the sharper ruler makes undeniable (30.8% vs 7.6% at Needs additional support; 22.8% vs 71.9% very-remote vs major-city; 69.1% vs 53.9% girls vs boys in Year 9 writing). Every load-bearing figure carried from the verified English; <em>Developing</em> rendered <span class="mono">نامٍ (يعمل نحو)</span>, never "fails," matching the piece's own anti-misreading design. Held <span class="mono">approved:false</span> in the build path beside us-naep's AR; it also closes the EN file's dangling <span class="mono">arabicVersion:</span> reference.</div>
+        <div class="item__note">web/src/content/articles-ar/2026-07-16-australia-naplan-reset.md (approved:false) + staged mirror · dek 172/200 · title 26/100 · Ed04 status updated 8 drafted / 8 verified / 2 of 8 AR</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · Arabic gate run in writing; one transliteration flagged, not shipped</div>
+        <div class="item__body">The Arabic Editor's transliteration pass ran on the two named humans: <strong>David de Carvalho → ديفيد دي كارفالو</strong> (CONFIRMED — Arabic-media-standard surname) and <strong>Stephen Gniel → ستيفن غنيل</strong> (<span class="mono">PROVISIONAL</span> — the surname's pronunciation is not confirmable from the served-text primaries; the ACARA PDFs print the name but do not voice it, so it is best-effort pending an audio check at the pre-ship sweep). Build via the /tmp route-around: <span class="mono">astro sync</span> exit 0, <span class="mono">astro build</span> 65 pages Complete!, dist parity <strong>30 EN / 30 AR</strong>, <strong>zero held-leak</strong> (0 Ed04 slugs in <span class="mono">dist</span>), wordmark inline. The new AR is correctly held out of the built output.</div>
+        <div class="item__note">agents/logs/qa-2026-08-02.md · astro sync 0 · build 65pp exit 0 · dist 30/30 · held-leak 0 · route-around: /tmp copy + symlinked node_modules + VITE_CACHE_DIR</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · ruling #28 — acronyms keep their Latin tag; unheard names stay provisional</div>
+        <div class="item__body">Today's knowledge increment names two conventions the AR wave will hit on every remaining piece. <strong>(a)</strong> An English-language institutional acronym (ACARA, NAPLAN, AERO, AARE) keeps its Latin tag beside an Arabic gloss on first mention — never transliterated into an Arabic initialism — so the Arabic edition stays <em>searchable in both scripts</em>, a bilingual-discoverability asset rather than a mirror. <strong>(b)</strong> A named human whose pronunciation can't be confirmed from a served-text or audio primary is rendered best-effort and flagged <span class="mono">PROVISIONAL</span> — the named-human sibling of #26: a name you can spell but cannot <em>hear</em> is not yet a verified transliteration. Sits beside #15 in the transliteration family.</div>
+        <div class="item__note">agents/guidebook/2026-08-02-arabic-composition-acronym-and-name-conventions.md (+INDEX) · ruling series now #1–#28, no gaps, no dupes</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · live sitemap re-audited; the bilingual "measurement" cluster staged</div>
+        <div class="item__body">The live surface was re-audited: the sitemap carries the <strong>30-piece corpus</strong> with reciprocal <span class="mono">hreflang</span> and <strong>zero held-draft leak</strong> (Australia's new AR is absent, correct). The forward asset banked today: Ed04's measurement pieces — <strong>us-naep ↔ australia ↔ nz-ncea ↔ oman</strong> — form an internal cluster, and composing Australia's Arabic <em>doubles it into a bilingual cluster</em>. The day the wave flips, the four pieces resolve reciprocally in <em>both</em> languages, concentrating the search value each "assessment reform" query earns alone. Return-signal readiness, not raw counts; the privacy-clean signals still switch on when Issue 01 sends.</div>
+        <div class="item__note">agents/growth/2026-08-02-measurement-cluster-and-sitemap-audit.md · sitemap 65 locs · hreflang reciprocal · Issue 01 send-ready-pending domain + Substack-account decisions</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-08-02 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 37 EN / 31 AR &mdash; incl. 7 EN / 1 AR held drafts (approved:false, not published); Australia AR added today (build path, held) + England's draft staged separately &mdash; Ed04 = 8 drafted / 8 verified / 2 of 8 AR</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>More Arabic — six pieces owed — and two drafts from ten.</h2>
+        <div class="day__date">2026·08·03 · Monday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">AR · the binding parallel path — six pieces still owed</div>
+        <div class="item__body">With Australia composed, <strong>six of eight verified drafts still lack Arabic</strong>: india-parakh, singapore-psle, nz-ncea, chile-simce, netherlands-doorstroomtoets, england-report-cards. Compose from the verified English at register (per #28), Arabic Editor verifies named-human transliterations before any AR ships, and flag any un-hearable name <span class="mono">PROVISIONAL</span>. Australia's <span class="mono">Gniel</span> flag carries forward to the pre-ship audit. Next likely: Singapore or Chile (bounded named-human sets).</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Content · the next bench draft (~2 to ten)</div>
+        <div class="item__body">The pure content lane remains open: <strong>~2 drafts</strong> to reach ten — <strong>Japan's assessment CBT</strong> leads on register recency; <strong>South Africa's matric measure</strong> and <strong>Estonia's AI-leap</strong> behind it. Re-verify the recon <em>live</em> before compose; no figure ships that can't be pasted from a served-text primary and confirmed on a second channel (#26/#27). One fresh piece; not override-mode.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Gate ledger · the wave ships whole or not at all</div>
+        <div class="item__body">To a complete wave: <strong>Arabic for six of eight</strong> + AR for the ~2 new pieces, ~2 more bench drafts, stills ×10 (Designer), the <span class="mono">editions.ts</span> registry entry (the second gate), intra-wave <span class="mono">related:</span> reconciliation (the bilingual measurement cluster), the <span class="mono">Gniel</span> transliteration resolved, and one last live re-fetch of every load-bearing register. No piecemeal Ed04 publishing.</div>
+      </div>
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push — today's daily</div>
+    <p>This commit carries a clean recovery day: the Australia NAPLAN Arabic composition (held <span class="mono">approved:false</span>, the wave's first AR move), the Ed04 status update, ruling <span class="mono">#28</span> + its INDEX row, the QA + Arabic-gate log, the growth note, and Brief 41. <strong>No</strong> <span class="mono">approved</span> flips — Edition 04 still ships whole or not at all. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar — 2026-08-02: the Arabic wave opens — australia-naplan-reset composed in Arabic (first Ed04 AR of the wave), held approved:false in the build path beside us-naep's AR. Full re-composition at register (not translation): every load-bearing figure carried (65% Strong/Exceeding 2023; 58.0% Y9 writing; 67.0->68.2 reading / 65.5->66.8 numeracy 2025; 93.8% participation; +20,000 Exceeding; equity 30.8/7.6, 22.8/71.9, 69.1/53.9; NAPLAN 2026 11-23 Mar, results Aug 2026); Developing rendered نامٍ (يعمل نحو), not fails. Arabic gate: de Carvalho CONFIRMED, Gniel PROVISIONAL (pronunciation not confirmable from served-text primaries — resolve at pre-ship audit). Closes the EN file's dangling arabicVersion. Ruling #28 filed (+INDEX): English institutional acronyms keep their Latin tag + Arabic gloss (bilingual-search asset); a name you can spell but cannot hear stays PROVISIONAL. QA: astro sync 0, build 65pp Complete!, dist parity 30 EN/30 AR, zero held-leak, dek 172/200, title 26/100. Growth: live sitemap re-audited (30 corpus, reciprocal hreflang, zero Ed04 leak); bilingual measurement cluster (us-naep/australia/nz-ncea/oman) staged for the wave. Ed04 = 8 drafted / 8 verified / 2 of 8 AR. Recovery run after 3-day dark gap (07-30..08-01). No approved flips. Brief 41."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Standing and unchanged: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>) whenever convenient; the two founder-gated blockers — the custom-domain word and whether the Substack publication exists under your account yet (neither blocks content; both block the Ed04-launch issue's distribution); and, this being Sunday, the separate weekly review is due on its own clock.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·08·02</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>
