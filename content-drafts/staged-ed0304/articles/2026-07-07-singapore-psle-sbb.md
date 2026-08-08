@@ -9,7 +9,7 @@ level: K-12
 themes: [government-led programs, access]
 type: curated
 related:
-  - 2026-07-07-south-africa-matric-measure
+  - 2026-07-07-netherlands-doorstroomtoets
   - 2026-06-17-korea-aidt-reversal
 contains_composites: false
 arabicVersion: 2026-07-07-singapore-psle-sbb

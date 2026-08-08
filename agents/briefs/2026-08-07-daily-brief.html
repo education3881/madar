@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-08-07</title>
+<meta name="description" content="Manager → Founder daily brief for Friday 7 August 2026. Ed04 Arabic wave advances: netherlands-doorstroomtoets composed in Arabic — 7 of 8, only England owed. Netherlands/doorstroomtoets source index + the Dutch name-routing convention filed. QA caught and cleared three orphan related: refs, reconciling the 7-piece measurement cluster ahead of the gate. Build clean 65pp, parity 30=30, zero held-leak." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Friday · 7 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 46</div>
+    <h1>The Netherlands composed in Arabic — one owed, and the cluster made whole.</h1>
+    <p class="dek">The binding constraint is still the Arabic wave, so the run took the next move. <strong>The Netherlands doorstroomtoets piece — "الاختبارُ الذي يَحكُمُ على المشورة" — composed in Arabic at full register</strong>, every figure carried, held out of the build; Ed04 is now <strong>7 of 8 in Arabic</strong>, with only <strong>England owed</strong>. The quality pass also caught something real: <strong>three dead <span class="mono">related:</span> references</strong> — one to a dropped bench piece, two with the wrong date-prefix — all repointed, so the 7-piece measurement cluster now resolves cleanly the day the wave flips. Yesterday's New Zealand-AR landed clean — <strong>no gap to name</strong>. Build clean 65pp; parity 30 = 30; nothing leaking; no <span class="mono">approved</span> flips.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>New Zealand's Arabic landed clean and pushed.</h2>
+        <div class="day__date">2026·08·06 · Thursday · one commit landed (4e953f4) · clean</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git — never from the last brief</div>
+        <div class="item__body"><span class="mono">HEAD == origin/main == 4e953f4</span>, dated 08-06, working tree clean, <span class="mono">git fetch</span> shows nothing ahead. Yesterday's New Zealand Arabic composition, the NZ/NCEA source index + the te reo Māori term-routing convention (guidebook row 13), the QA log and Brief 45 are all in history and on the live site. No dark day, no push gap; the record is current.</div>
+        <div class="item__note">git status clean · local == origin == 4e953f4 · no stranded work · no missed day</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-shipped">New Zealand's Arabic is in the record — Ed04 reached 6 of 8 AR</div>
+        <div class="item__body">The NZ NCEA composition ("البوّابةُ التي بقيت بعدَ المؤهِّل") is committed and held <span class="mono">approved:false</span> beside us-naep, Australia, India, Singapore and Chile. That work stands untouched; today extends the AR path one more piece, into Europe — the Netherlands.</div>
+        <div class="item__note">web/src/content/articles-ar/2026-07-07-nz-ncea-corequisite.md (held) · Ed04 = 8 drafted / 8 verified / 6 of 8 AR (before today)</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The Arabic path, one piece from complete — and the cluster reconciled.</h2>
+        <div class="day__date">2026·08·07 · Friday · all five functions · no approved flips</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · the Netherlands doorstroomtoets composed in Arabic — Ed04 now 7 of 8 in AR</div>
+        <div class="item__body"><strong>"الاختبارُ الذي يَحكُمُ على المشورة"</strong> (The test that grades the advice) is the Arabic <em>composition</em> — not translation — of the verified Netherlands draft: the reform that changed the test's job from measuring the child to measuring the teacher's advice, with a legal duty to revise a child's track <em>upward</em> when the test outscores the teacher. Every load-bearing figure carried at register — the statutory calendar (preliminary advice January, February test window, <em>toetsadvies</em> by 15 March, mandatory <em>bijstellen</em>, final advice by 24 March); the lever moving from ~1-in-10 revised to ~a quarter; the ~164,000-pupil / six-test 2024-25 scale; Oppers's IJsselstein 8/10 vs Stadskanaal 4/10; the PO-Raad finding that revisions fire <em>least</em> where most needed; Schiermonnikoog / Ameland / Vlieland; both Dries quotes; the six-provider comparability failure; and the cabinet's return to one central test by 2029-2030 with a 2027 motion. The two-rate trap (eligibility vs event-given-eligibility, #25) is carried in-sentence with "out of ___"; the un-quotable dashboard figure kept qualitative (#26). Held <span class="mono">approved:false</span>; closes the EN file's reciprocal <span class="mono">arabicVersion:</span> pair.</div>
+        <div class="item__note">web/src/content/articles-ar/2026-07-07-netherlands-doorstroomtoets.md (approved:false) + staged mirror · dek 163/200 · title 34/100 · Ed04 status → 8 drafted / 8 verified / 7 of 8 AR</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · Arabic gate; three orphan refs caught and cleared; build clean; nothing leaks</div>
+        <div class="item__body">The Arabic Editor's transliteration pass ran on the piece's <strong>two</strong> named humans — <strong>Alida Oppers → أليدا أوبِرس</strong> and <strong>Annet Dries → آنِت دريس</strong>, both <span class="mono">CONFIRMED</span>-by-convention (Dutch is phonemic and regular; routed by Dutch phonology, with the <span class="mono">ie</span>=long-i→ي rule named so درايس is never produced). Institutions kept + glossed per #28a. <strong>The QA pass then caught a real defect the build was silently swallowing:</strong> three <span class="mono">related:</span> references pointed nowhere — <em>singapore</em> → a <em>dropped</em> bench piece (south-africa-matric, cut when you locked scope at 8), and <em>india</em> → England and <em>nz</em> → Australia both carrying the <strong>wrong date-prefix</strong> (07-07 instead of 07-28 / 07-16). The <span class="mono">RelatedReading</span> component filters dead refs, so they never broke the build — but they would have rendered <em>empty</em> the day the wave shipped. All three repointed across build-path and staging; a full sweep now shows <strong>zero orphans</strong>. Build via the <span class="mono">/tmp</span> route-around: 65 pages Complete, dist parity <strong>30 EN / 30 AR</strong>, <strong>zero held-leak</strong> (all 8 Ed04 slugs absent from <span class="mono">dist</span> and sitemap).</div>
+        <div class="item__note">agents/logs/qa-2026-08-07.md · build 65pp exit 0 (x2, before + after ref fixes) · 3 orphan refs cleared · dist 30/30 · 0 Ed04 leak</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · Netherlands/doorstroomtoets source index + the Dutch name-routing convention</div>
+        <div class="item__body">Today banks two reusable things, both hanging off existing rulings (no new number). <strong>(1) A Netherlands source index (row 14):</strong> the corpus splits by institution-job, and the split <em>is</em> the discipline here — the <em>Inspectorate</em> speech is the only home of the 8/10-vs-4/10 event-rate pair; the <em>PO-Raad</em> news primary owns the eligibility spread and the equity finding; <em>DUO/OCW</em> own the statutory calendar and the six-test scale; the <em>themarapportage</em> dashboard is the origin case of #26 (a number you can see but cannot quote). <strong>(2) The Dutch name-routing convention</strong> (the fourth named routing under #28b, after India, Singapore's three, Chile's Spanish/Italian and NZ's te reo): a Dutch byline routes by Dutch phonology — with the <span class="mono">ie</span>→ي false-friend named, plus banked values for <span class="mono">oe / ij / ei / ui / g / ch</span> and the single-vs-double-consonant vowel-length cue — so the next Dutch, Flemish or Afrikaans byline routes without re-deriving it.</div>
+        <div class="item__note">agents/guidebook/2026-08-07-netherlands-doorstroomtoets-source-index-and-dutch-name-routing.md (+INDEX row 14 + addendum) · ruling series unchanged #1–#28</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the 7-piece measurement cluster reconciled and made wave-ready</div>
+        <div class="item__body">The built surface was re-audited: the sitemap carries its <strong>65 URLs</strong> with reciprocal <span class="mono">hreflang</span> and <strong>zero held-Ed04 leak</strong>. The concrete forward asset today is the <span class="mono">related:</span> reconciliation — a gate task <em>brought forward</em>. With the Netherlands composed, the internal "measurement question" cluster — <strong>us-naep ↔ australia ↔ india ↔ singapore ↔ chile ↔ nz ↔ netherlands</strong> — is now bilingual across <strong>seven</strong> spine pieces, and (with the three dead refs fixed) it will resolve <em>reciprocally in both languages</em> the moment the wave flips, instead of shipping with silently-broken internal links. That is the difference between a cluster that concentrates the search value each "assessment reform" query earns and one that leaks it. Return-signal readiness, not raw counts; no third-party tracker by design; distribution still waits on the two founder calls.</div>
+        <div class="item__note">sitemap 65 locs · hreflang reciprocal · measurement cluster 7-bilingual · 3 orphan related: refs fixed · Substack + custom domain remain founder-gated</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-08-07 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">27</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 5 · Asia 5 · Europe 3 · LatAm-Caribbean 2</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 30 · access 27 · value of teachers 22 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 11</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-07</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 37 EN / 37 AR &mdash; incl. 7 EN / 7 AR held drafts (approved:false, not published); Netherlands AR added today (build path, held) &mdash; Ed04 = 8 drafted / 8 verified / 7 of 8 AR</div>
+  </div>
+  </div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>One Arabic piece owed — then the second gate.</h2>
+        <div class="day__date">2026·08·08 · Saturday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">AR · the binding parallel path — one piece owed, England, held out of the build</div>
+        <div class="item__body">With the Netherlands composed, <strong>one of eight verified drafts still lacks Arabic</strong>: england-report-cards-first-term. It differs operationally from the six just done — its EN lives in <span class="mono">staged-ed0304/</span>, out of the build path entirely, so its AR is composed to staging too (not the build path) to preserve the double-safe hold. Named humans are standard-form (Saini J, Ruth Perry) — no <span class="mono">PROVISIONAL</span> risk expected. Australia's <span class="mono">Gniel</span> flag still carries forward to the pre-ship audit. One clean run puts the wave's Arabic at <strong>8 of 8</strong> — and the binding constraint moves off Arabic for the first time since 08-02.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Gate ledger · the wave ships whole or not at all (scope locked at 8)</div>
+        <div class="item__body">To a complete wave: <strong>Arabic for one of eight</strong> (England, to staging); <strong>stills ×10</strong> (Designer — none on disk yet; with AR one run from done, this becomes <em>the</em> critical-path item); the <span class="mono">editions.ts</span> registry entry (the second gate); the <span class="mono">Gniel</span> transliteration resolved at the pre-ship audio check; and one last live re-fetch of every load-bearing register. Intra-wave <span class="mono">related:</span> reconciliation is now <strong>done ahead of schedule</strong> (today's orphan sweep). No piecemeal Ed04 publishing.</div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Ed05 · planning stands up in parallel (founder standing instruction)</div>
+        <div class="item__body">Per the 08-02 decision, Ed05 recon is front-loaded so drafting can begin the day Ed04 pushes — plan file in history (<span class="mono">content-drafts/_EDITION_05_PLAN.md</span>, recommended frame "the teaching question"), awaiting your nod. Once Arabic reaches 8 of 8 and stills are the sole gate item, a run can advance one Ed05 recon candidate to <span class="mono">PROCEED</span> without pulling capacity off the finished AR path.</div>
+      </div>
+    </div>
+  </article>
+
+  <div class="push-block">
+    <div class="kicker">Action · one push</div>
+    <p>Today's work is one clean day: the Netherlands Arabic composition, the guidebook increment (Netherlands source index + the Dutch name-routing convention), <strong>a QA catch that cleared three dead <span class="mono">related:</span> references and reconciled the 7-piece measurement cluster</strong>, the QA log, and Brief 46. Everything is held <span class="mono">approved:false</span> — <strong>no</strong> <span class="mono">approved</span> flips, Edition 04 still ships whole or not at all. Nothing needs an editorial decision from you.</p>
+    <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-08-07: Ed04 Arabic wave -> netherlands-doorstroomtoets composed in Arabic (7 of 8, only England owed), held approved:false. Full re-composition at register: statutory calendar (Jan preliminary, Feb window, toetsadvies by 15 Mar, mandatory bijstellen, final by 24 Mar); lever ~1-in-10 to ~a quarter revised; ~164,000-pupil six-test 2024-25 scale; Oppers IJsselstein 8/10 vs Stadskanaal 4/10; PO-Raad revisions-fire-least-where-needed + Schiermonnikoog/Ameland/Vlieland + both Dries quotes; six-provider comparability failure; cabinet one-central-test 2029-2030 + 2027 motion. Two-rate trap (eligibility vs event-given-eligibility) carried in-sentence per 25; un-quotable dashboard figure kept qualitative per 26. Arabic gate (2 named humans, CONFIRMED-by-convention, routed by Dutch phonology): Alida Oppers, Annet Dries -- with the Dutch ie=long-i rule named so it is not read as a diphthong. QA CATCH: three orphan related: refs cleared -- singapore -> dropped bench south-africa-matric, plus india -> england and nz -> australia wrong date-prefix; all repointed across build-path and staging; zero orphans on re-sweep; the 7-piece measurement cluster is now wave-ready. Guidebook: Netherlands/doorstroomtoets source index (row 14) + the Dutch name-routing convention extending 28b (+INDEX addendum). QA: build 65pp Complete exit 0, dist parity 30 EN/30 AR, zero held-leak, dek 163/200, title 34/100, wordmark inline. Growth: sitemap re-audit; measurement cluster now 7-bilingual. Ed04 = 8 drafted / 8 verified / 7 of 8 AR. No approved flips. Brief 46."
+git push origin main</code>
+    <p style="font-size: 13.5px; color: rgba(250,250,247,0.7); margin-top: 0.85rem;">Standing and unchanged: the <span class="mono">staged-ed0304/</span> cleanup (<span class="mono">git rm -r</span>) whenever convenient; and the two founder-gated blockers — the custom-domain word and whether the Substack publication exists under your account yet (neither blocks content; both block the Ed04-launch issue's distribution). On the horizon: with Arabic <strong>one run</strong> from complete, <strong>the ×10 stills batch (Designer) is the one item that will stand between a finished wave and the gate</strong> — no action needed from you, just naming it early and plainly.</p>
+  </div>
+
+  <footer>
+    <div>Manager → Founder · Daily Brief · 2026·08·07</div>
+    <div>Madār · made in spite of, not because of.</div>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -9,7 +9,7 @@ level: K-12
 themes: [government-led programs, access, value of teachers]
 type: curated
 related:
-  - 2026-07-07-england-report-cards-first-term
+  - 2026-07-28-england-report-cards-first-term
   - 2026-06-25-brazil-crianca-alfabetizada
 contains_composites: false
 arabicVersion: 2026-07-07-india-parakh-hpc
