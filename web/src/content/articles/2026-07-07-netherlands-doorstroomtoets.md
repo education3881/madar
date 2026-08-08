@@ -35,7 +35,7 @@ hero:
   src: "/stills/2026-07-07-netherlands-doorstroomtoets.svg"
   alt: "A continuous ink drawing for the Netherlands: a teacher's advice is drawn first as a short horizontal stroke set at mid-height on the left — a track already assigned. From the right, a second, firmer stroke arrives at a higher level: the test's reading. Between the two, the only warm mark on the page, a small kiln-orange arrow curves upward from the lower stroke to the higher one — the mandatory revision, the lever the law installed. But the arrow is drawn twice more, faint, further along the page: once completed, once halfway, once barely begun — the same lever pulled fully in one town and hardly at all in the next, the height reached depending on where along the page the child stands."
   caption: "سكون · The Still · Curated 41 · Netherlands"
-approved: false
+approved: true
 ---
 
 For most of its life the Dutch end-of-primary test was a verdict that arrived too late to matter. A child in group 8 — the last year of the basisschool, around age twelve — received a *schooladvies*, the teacher's recommendation for which track of secondary school to enter, and only afterward sat the national *eindtoets*. By the time the test result came back, the advice had usually hardened; the two secondary tracks that decide so much of a Dutch life, the vocational *vmbo* and the university-bound *havo/vwo*, had effectively been chosen. The test measured the child, and the child had already been sorted. In 2023 the Netherlands did something unusual with that arrangement. It did not raise the bar or lower it. It changed the test's job — from measuring the child to measuring the advice.

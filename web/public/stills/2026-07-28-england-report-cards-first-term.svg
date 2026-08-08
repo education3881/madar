@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for the United Kingdom: where a single tall placard once stood bearing one word, the word has been lifted off and the placard divided into a grid of six panels, each a different depth of tone on one column — a scale of colours standing in for the scale of grades, most panels resting in the two calm middle bands, none at the darkest. Set a little apart, a second, smaller frame is turned back toward the grid, a measuring edge laid along it: the instrument that reads the instrument. The only warm mark on the page, a kiln-orange line, runs not down any single panel but along the seam between the grid and the small frame that measures it.">
+  <title>The Still · United Kingdom — one word lifted off, a scale of tones in its place, and the frame that reads the frame</title>
+  <desc>Paper-cream ground, pure line, no fills — tone carried by hatch density alone. A tall placard, its single word lifted off and drifting above, is divided into a column of six panels, each hatched to a different depth: most resting in the two calm middle bands, none at the darkest. Set a little apart, a second smaller frame turns back toward the grid with a measuring edge laid along it — the instrument that reads the instrument. A single kiln-orange line runs not down any panel but along the seam between the grid and the frame that measures it.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22">
+    <path stroke-width="1.4" stroke-dasharray="10 8" d="M 372 72 L 542 60 L 548 96 L 378 108 Z"/>
+    <path stroke-width="1" stroke-opacity="0.5" d="M 452 112 C 448 128 446 136 448 150"/>
+    <path stroke-width="1" stroke-opacity="0.5" d="M 470 110 C 468 126 468 134 470 148"/>
+  </g>
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3" stroke-opacity="0.8" d="M 445 500 L 445 560"/>
+    <path stroke-width="2" stroke-opacity="0.4" d="M 410 560 L 480 560"/>
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 330 150 L 560 150 L 560 500 L 330 500 Z"/>
+    <path stroke-width="1.0" stroke-opacity="0.40" d="M 334.0 182.3 L 356.0 204.3 M 334.0 160.3 L 378.0 204.3 M 349.7 154.0 L 400.0 204.3 M 371.7 154.0 L 422.0 204.3 M 393.7 154.0 L 444.0 204.3 M 415.7 154.0 L 466.0 204.3 M 437.7 154.0 L 488.0 204.3 M 459.7 154.0 L 510.0 204.3 M 481.7 154.0 L 532.0 204.3 M 503.7 154.0 L 554.0 204.3 M 525.7 154.0 L 556.0 184.3 M 547.7 154.0 L 556.0 162.3"/>
+    <path stroke-width="2.2" stroke-opacity="0.8" d="M 330 208.3 L 560 208.3"/>
+    <path stroke-width="1.0" stroke-opacity="0.55" d="M 334.0 250.7 L 346.0 262.7 M 334.0 238.7 L 358.0 262.7 M 334.0 226.7 L 370.0 262.7 M 334.0 214.7 L 382.0 262.7 M 343.7 212.3 L 394.0 262.7 M 355.7 212.3 L 406.0 262.7 M 367.7 212.3 L 418.0 262.7 M 379.7 212.3 L 430.0 262.7 M 391.7 212.3 L 442.0 262.7 M 403.7 212.3 L 454.0 262.7 M 415.7 212.3 L 466.0 262.7 M 427.7 212.3 L 478.0 262.7 M 439.7 212.3 L 490.0 262.7 M 451.7 212.3 L 502.0 262.7 M 463.7 212.3 L 514.0 262.7 M 475.7 212.3 L 526.0 262.7 M 487.7 212.3 L 538.0 262.7 M 499.7 212.3 L 550.0 262.7 M 511.7 212.3 L 556.0 256.7 M 523.7 212.3 L 556.0 244.7 M 535.7 212.3 L 556.0 232.7 M 547.7 212.3 L 556.0 220.7"/>
+    <path stroke-width="2.2" stroke-opacity="0.8" d="M 330 266.7 L 560 266.7"/>
+    <path stroke-width="1.0" stroke-opacity="0.55" d="M 334.0 321.0 L 334.0 321.0 M 334.0 311.0 L 344.0 321.0 M 334.0 301.0 L 354.0 321.0 M 334.0 291.0 L 364.0 321.0 M 334.0 281.0 L 374.0 321.0 M 334.0 271.0 L 384.0 321.0 M 343.7 270.7 L 394.0 321.0 M 353.7 270.7 L 404.0 321.0 M 363.7 270.7 L 414.0 321.0 M 373.7 270.7 L 424.0 321.0 M 383.7 270.7 L 434.0 321.0 M 393.7 270.7 L 444.0 321.0 M 403.7 270.7 L 454.0 321.0 M 413.7 270.7 L 464.0 321.0 M 423.7 270.7 L 474.0 321.0 M 433.7 270.7 L 484.0 321.0 M 443.7 270.7 L 494.0 321.0 M 453.7 270.7 L 504.0 321.0 M 463.7 270.7 L 514.0 321.0 M 473.7 270.7 L 524.0 321.0 M 483.7 270.7 L 534.0 321.0 M 493.7 270.7 L 544.0 321.0 M 503.7 270.7 L 554.0 321.0 M 513.7 270.7 L 556.0 313.0 M 523.7 270.7 L 556.0 303.0 M 533.7 270.7 L 556.0 293.0 M 543.7 270.7 L 556.0 283.0 M 553.7 270.7 L 556.0 273.0"/>
+    <path stroke-width="2.2" stroke-opacity="0.8" d="M 330 325.0 L 560 325.0"/>
+    <path stroke-width="1.0" stroke-opacity="0.40" d="M 334.0 379.3 L 334.0 379.3 M 334.0 366.3 L 347.0 379.3 M 334.0 353.3 L 360.0 379.3 M 334.0 340.3 L 373.0 379.3 M 335.7 329.0 L 386.0 379.3 M 348.7 329.0 L 399.0 379.3 M 361.7 329.0 L 412.0 379.3 M 374.7 329.0 L 425.0 379.3 M 387.7 329.0 L 438.0 379.3 M 400.7 329.0 L 451.0 379.3 M 413.7 329.0 L 464.0 379.3 M 426.7 329.0 L 477.0 379.3 M 439.7 329.0 L 490.0 379.3 M 452.7 329.0 L 503.0 379.3 M 465.7 329.0 L 516.0 379.3 M 478.7 329.0 L 529.0 379.3 M 491.7 329.0 L 542.0 379.3 M 504.7 329.0 L 555.0 379.3 M 517.7 329.0 L 556.0 367.3 M 530.7 329.0 L 556.0 354.3 M 543.7 329.0 L 556.0 341.3"/>
+    <path stroke-width="2.2" stroke-opacity="0.8" d="M 330 383.3 L 560 383.3"/>
+    <path stroke-width="1.0" stroke-opacity="0.40" d="M 334.0 437.7 L 334.0 437.7 M 334.0 421.7 L 350.0 437.7 M 334.0 405.7 L 366.0 437.7 M 334.0 389.7 L 382.0 437.7 M 347.7 387.3 L 398.0 437.7 M 363.7 387.3 L 414.0 437.7 M 379.7 387.3 L 430.0 437.7 M 395.7 387.3 L 446.0 437.7 M 411.7 387.3 L 462.0 437.7 M 427.7 387.3 L 478.0 437.7 M 443.7 387.3 L 494.0 437.7 M 459.7 387.3 L 510.0 437.7 M 475.7 387.3 L 526.0 437.7 M 491.7 387.3 L 542.0 437.7 M 507.7 387.3 L 556.0 435.7 M 523.7 387.3 L 556.0 419.7 M 539.7 387.3 L 556.0 403.7 M 555.7 387.3 L 556.0 387.7"/>
+    <path stroke-width="2.2" stroke-opacity="0.8" d="M 330 441.7 L 560 441.7"/>
+    <path stroke-width="1.0" stroke-opacity="0.40" d="M 334.0 496.0 L 334.0 496.0 M 334.0 472.0 L 358.0 496.0 M 334.0 448.0 L 382.0 496.0 M 355.7 445.7 L 406.0 496.0 M 379.7 445.7 L 430.0 496.0 M 403.7 445.7 L 454.0 496.0 M 427.7 445.7 L 478.0 496.0 M 451.7 445.7 L 502.0 496.0 M 475.7 445.7 L 526.0 496.0 M 499.7 445.7 L 550.0 496.0 M 523.7 445.7 L 556.0 478.0 M 547.7 445.7 L 556.0 454.0"/>
+  </g>
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.0" stroke-opacity="0.92" d="M 690.5 243.4 L 839.7 227.7 L 859.5 416.6 L 710.3 432.3 Z"/>
+    <path stroke-width="1.2" stroke-opacity="0.22" d="M 690.5 243.4 L 839.7 227.7 L 859.5 416.6 L 710.3 432.3 Z"/>
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 690.5 243.4 L 710.3 432.3"/>
+    <path stroke-width="1.6" stroke-opacity="0.7" d="M 692.5 262.3 L 678.5 263.7 M 694.5 281.2 L 680.5 282.6 M 696.4 300.0 L 682.5 301.5 M 698.4 318.9 L 684.5 320.4 M 700.4 337.8 L 686.5 339.3 M 702.4 356.7 L 688.5 358.2 M 704.4 375.6 L 690.5 377.1 M 706.4 394.5 L 692.4 396.0 M 708.4 413.4 L 694.4 414.9"/>
+    <path stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="3 7" d="M 692.5 283.4 L 566 320"/>
+  </g>
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="5" stroke-opacity="0.12" d="M 628 150 L 628 500"/>
+    <path stroke-width="2.8" stroke-opacity="0.96" d="M 628 150 L 628 500"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 628 150 l -10 0 M 628 150 l 10 0"/>
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 628 500 l -10 0 M 628 500 l 10 0"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for the Netherlands: the teacher's advice is drawn first as a short horizontal dash at mid-height on the left — a track assigned. From the right a second dash arrives firmer at a higher level: the test's reading. Between them, the only warm mark on the page, a small kiln-orange arrow curves upward from the lower dash to the higher — the mandatory upward revision, the lever fixed by law. But the arrow is drawn twice more, fainter, further into the page: once complete, once half-risen, once barely begun — the lever pulled fully in one town and hardly at all in another; the height reached rides on where the child stands.">
+  <title>The Still · Netherlands — the lever fixed by law, pulled fully in one town and hardly in another</title>
+  <desc>Paper-cream ground, pure line, no fills. A lower reference line carries the teacher's advice; a higher reference line carries the test's reading. Three kiln-orange arrows rise from the lower line toward the higher across the page — the mandatory upward revision. The first reaches the top fully; the second climbs only halfway; the third barely leaves the lower line — the same legal lever, gripping unevenly by town and class.</desc>
+
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- the two reference levels: lower = teacher's advice, upper = the test's higher track -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <!-- upper track (test reading) -->
+    <path stroke-width="1.4" stroke-opacity="0.30" stroke-dasharray="12 8" d="M 180 250 L 1020 250"/>
+    <!-- lower track (advice) -->
+    <path stroke-width="1.4" stroke-opacity="0.30" stroke-dasharray="12 8" d="M 180 372 L 1020 372"/>
+    <!-- firm short dashes: the assigned advice (lower) at each station, and the test's reading (upper) -->
+    <g stroke-opacity="0.9">
+      <path stroke-width="3.2" d="M 258 372 L 342 372"/>
+      <path stroke-width="3.2" d="M 558 372 L 642 372"/>
+      <path stroke-width="3.2" d="M 838 372 L 922 372"/>
+      <!-- the test's higher reading, firmest above the first station -->
+      <path stroke-width="3.4" d="M 258 250 L 342 250"/>
+      <path stroke-width="2.2" stroke-opacity="0.5" d="M 558 250 L 642 250"/>
+      <path stroke-width="2.2" stroke-opacity="0.5" d="M 838 250 L 922 250"/>
+    </g>
+    <!-- luminous companion on the firmest test dash -->
+    <path stroke-width="1.1" stroke-opacity="0.24" d="M 262 244 L 338 244"/>
+  </g>
+
+  <!-- SECOND GESTURE — kiln-orange (#C75B39): the mandatory revision, three arrows, uneven grip -->
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <!-- STATION 1 — complete: rises the full distance to the upper track -->
+    <path stroke-width="5" stroke-opacity="0.12" d="M 300 366 C 296 320 300 288 300 258"/>
+    <path stroke-width="2.8" stroke-opacity="0.96" d="M 300 366 C 296 320 300 288 300 258"/>
+    <path stroke-width="2.8" stroke-opacity="0.96" d="M 300 258 l -9 12 M 300 258 l 9 12"/>
+
+    <!-- STATION 2 — half-risen: reaches only the midline -->
+    <path stroke-width="2.4" stroke-opacity="0.62" d="M 600 366 C 597 340 600 324 600 312"/>
+    <path stroke-width="2.4" stroke-opacity="0.62" d="M 600 312 l -8 11 M 600 312 l 8 11"/>
+
+    <!-- STATION 3 — barely begun: hardly leaves the lower line -->
+    <path stroke-width="2.2" stroke-opacity="0.4" d="M 880 366 C 878 358 880 353 880 348"/>
+    <path stroke-width="2.2" stroke-opacity="0.4" d="M 880 348 l -7 10 M 880 348 l 7 10"/>
+  </g>
+</svg>

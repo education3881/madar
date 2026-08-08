@@ -1,0 +1,67 @@
+<svg viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Madār — Edition 04, August 2026 — cover</title>
+<desc>Line-art cover in warm ink on a stone ground: a field of upright measuring strokes stands at differing heights across a single sharp threshold rule, most gathered just below it, a few clearing it; one kiln-toned sightline arcs from a low stroke to rest on the threshold. The measurement question — what a score actually measures, and who sets the line.</desc>
+<style>
+.wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#1A1410}
+.ar{font-family:'Amiri',Georgia,serif;fill:#1A1410}
+.kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:3px}
+.th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#1A1410}
+.thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:2px}
+</style>
+<rect x="40" y="40" width="600" height="800" fill="#E9E5DB" stroke="#1A1410" stroke-width="1"/>
+<rect x="54" y="54" width="572" height="772" fill="none" stroke="#1A1410" stroke-width="0.5"/>
+<g stroke="#1A1410" stroke-width="0.7">
+<path d="M74 68 V80 M68 74 H80"/><path d="M606 68 V80 M600 74 H612"/>
+<path d="M74 800 V812 M68 806 H80"/><path d="M606 800 V812 M600 806 H612"/>
+</g>
+<text class="wm" x="340" y="120" text-anchor="middle" font-size="40">Madār</text>
+<text class="ar" x="340" y="150" text-anchor="middle" font-size="22" direction="rtl">مدار</text>
+<text class="kick" x="340" y="180" text-anchor="middle" font-size="12">EDITION 04 · AUGUST 2026</text>
+<line x1="300" y1="192" x2="380" y2="192" stroke="#9C5B3A" stroke-width="1"/>
+
+<!-- the measurement field: a threshold rule, a crowd of strokes at differing heights, the accent sightline -->
+<g>
+  <!-- faint reference guides -->
+  <g stroke="#1A1410" stroke-width="0.4" opacity="0.14">
+    <line x1="120" y1="612" x2="560" y2="612"/>
+    <line x1="120" y1="382" x2="560" y2="382"/>
+  </g>
+  <!-- the ground the strokes stand on -->
+  <line x1="120" y1="612" x2="560" y2="612" stroke="#1A1410" stroke-width="0.7" opacity="0.30"/>
+  <!-- THE THRESHOLD — a single sharp rule: the line one word draws -->
+  <line x1="150" y1="470" x2="560" y2="470" stroke="#1A1410" stroke-width="2" opacity="0.9"/>
+  <line x1="156" y1="464" x2="554" y2="464" stroke="#1A1410" stroke-width="0.6" opacity="0.24"/>
+
+  <!-- the crowd of measuring strokes, each notched at its own height; most just below the threshold, a few clearing it -->
+  <g stroke="#1A1410" stroke-width="1.4" stroke-linecap="round" opacity="0.55">
+    <line x1="176" y1="612" x2="176" y2="500"/><line x1="168" y1="500" x2="186" y2="500" stroke-width="1.6"/>
+    <line x1="212" y1="612" x2="212" y2="452"/><line x1="204" y1="452" x2="222" y2="452" stroke-width="1.6"/>
+    <line x1="248" y1="612" x2="248" y2="512"/><line x1="240" y1="512" x2="258" y2="512" stroke-width="1.6"/>
+    <line x1="284" y1="612" x2="284" y2="486"/><line x1="276" y1="486" x2="294" y2="486" stroke-width="1.6"/>
+    <line x1="320" y1="612" x2="320" y2="440"/><line x1="312" y1="440" x2="330" y2="440" stroke-width="1.6"/>
+    <line x1="356" y1="612" x2="356" y2="506"/><line x1="348" y1="506" x2="366" y2="506" stroke-width="1.6"/>
+    <line x1="392" y1="612" x2="392" y2="492"/><line x1="384" y1="492" x2="402" y2="492" stroke-width="1.6"/>
+    <line x1="428" y1="612" x2="428" y2="446"/><line x1="420" y1="446" x2="438" y2="446" stroke-width="1.6"/>
+    <line x1="464" y1="612" x2="464" y2="510"/><line x1="456" y1="510" x2="474" y2="510" stroke-width="1.6"/>
+    <line x1="500" y1="612" x2="500" y2="484"/><line x1="492" y1="484" x2="510" y2="484" stroke-width="1.6"/>
+    <line x1="536" y1="612" x2="536" y2="498"/><line x1="528" y1="498" x2="546" y2="498" stroke-width="1.6"/>
+  </g>
+  <!-- one firm stroke that clears the threshold -->
+  <g stroke="#1A1410" stroke-width="1.9" stroke-linecap="round" opacity="0.9">
+    <line x1="320" y1="612" x2="320" y2="410"/><line x1="310" y1="410" x2="330" y2="410" stroke-width="2.2"/>
+  </g>
+
+  <!-- THE ACCENT — a kiln sightline from a low stroke's notch, arcing to rest on the threshold -->
+  <path d="M248 512 C 300 430 380 452 458 470" fill="none" stroke="#9C5B3A" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="458" cy="470" r="5" fill="none" stroke="#9C5B3A" stroke-width="1.4"/>
+  <circle cx="248" cy="512" r="2.4" fill="#9C5B3A"/>
+</g>
+
+<text class="th" x="340" y="752" text-anchor="middle" font-size="21">The measurement question</text>
+<text class="thm" x="340" y="780" text-anchor="middle" font-size="11">DEFINE · MOVE · DEFEND</text>
+<g transform="translate(340,802)">
+<line x1="-34" y1="0" x2="-4" y2="0" stroke="#9C5B3A" stroke-width="1"/>
+<line x1="-4" y1="-6" x2="-4" y2="6" stroke="#9C5B3A" stroke-width="1"/>
+<line x1="4" y1="0" x2="34" y2="0" stroke="#9C5B3A" stroke-width="1"/>
+</g>
+</svg>

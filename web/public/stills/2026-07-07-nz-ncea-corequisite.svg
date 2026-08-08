@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for New Zealand: at the left, a school building drawn in light strokes is coming apart — its roofline broken into dashes, its walls thinning as they rise. At the centre stands the firmest mark on the page: a doorframe — two jambs, a lintel, and a raised sill a step above the ground — holding while the structure around it dissolves. To the right, the faintest dotted outline of a new building, not yet built, rises to the same height. Through the door runs the only warm mark on the page: a single kiln-orange line entering low from the left, stepping up over the raised sill, and carrying on at the higher level into the dotted outline — the path through the one fixed point both buildings share.">
+  <title>The Still · New Zealand — the doorway that held, the one fixed point two buildings share</title>
+  <desc>Paper-cream ground, pure line, no fills. On the left a school building drawn in light strokes dissolves — roofline broken to dashes, walls thinning as they rise. At the centre, the firmest mark on the page: a doorframe with two jambs, a lintel and a raised sill a step above the ground, holding while the structure around it comes apart. On the right, the dotted outline of a new building not yet built rises to the same height. A single kiln-orange line runs through the door — entering low from the left, stepping up over the raised sill, and carrying on at the higher level into the dotted outline.</desc>
+
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- ground -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2" stroke-opacity="0.30" d="M 110 470 L 1090 470"/>
+    <path stroke-width="0.8" stroke-opacity="0.12" stroke-dasharray="5 9" d="M 150 482 L 1050 482"/>
+  </g>
+
+  <!-- LEFT — the old building, light strokes, coming apart (walls thinning as they rise; roof in dashes) -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left wall, thinning upward -->
+    <path stroke-width="2.4" stroke-opacity="0.5" d="M 150 470 L 150 360"/>
+    <path stroke-width="1.6" stroke-opacity="0.32" d="M 150 360 L 150 300"/>
+    <path stroke-width="0.9" stroke-opacity="0.18" d="M 150 300 L 151 250"/>
+    <!-- right wall of old building (toward the door), thinning + breaking -->
+    <path stroke-width="2.2" stroke-opacity="0.42" d="M 430 470 L 430 372"/>
+    <path stroke-width="1.4" stroke-opacity="0.26" stroke-dasharray="10 8" d="M 430 372 L 431 288"/>
+    <!-- roofline broken into dashes, sagging -->
+    <path stroke-width="2" stroke-opacity="0.34" stroke-dasharray="13 10" d="M 150 250 C 250 214 340 214 431 246"/>
+    <!-- a couple of dissolving interior strokes -->
+    <path stroke-width="1.1" stroke-opacity="0.16" stroke-dasharray="6 12" d="M 232 470 L 232 330"/>
+    <path stroke-width="1" stroke-opacity="0.13" stroke-dasharray="5 13" d="M 330 470 L 330 300"/>
+    <path stroke-width="0.9" stroke-opacity="0.12" stroke-dasharray="4 14" d="M 190 400 L 410 400"/>
+  </g>
+
+  <!-- CENTRE — the doorframe: the firmest mark, holding. Two jambs, a lintel, a raised sill. -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <!-- jambs -->
+    <path stroke-width="4" stroke-opacity="0.97" d="M 548 470 L 548 250"/>
+    <path stroke-width="4" stroke-opacity="0.97" d="M 652 470 L 652 250"/>
+    <!-- lintel -->
+    <path stroke-width="4" stroke-opacity="0.97" d="M 540 250 L 660 250"/>
+    <!-- luminous companions -->
+    <path stroke-width="1.3" stroke-opacity="0.24" d="M 542 466 L 542 256"/>
+    <path stroke-width="1.3" stroke-opacity="0.24" d="M 658 466 L 658 256"/>
+    <!-- the raised sill — a step above the ground, spanning the opening -->
+    <path stroke-width="3.4" stroke-opacity="0.95" d="M 548 452 L 652 452"/>
+    <path stroke-width="2.4" stroke-opacity="0.7" d="M 548 452 L 548 470 M 652 452 L 652 470"/>
+  </g>
+
+  <!-- RIGHT — the new building, not yet built: faintest dotted outline, same height -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22">
+    <path stroke-width="1.4" stroke-dasharray="3 10" d="M 790 470 L 790 250"/>
+    <path stroke-width="1.4" stroke-dasharray="3 10" d="M 1050 470 L 1050 250"/>
+    <path stroke-width="1.4" stroke-dasharray="3 10" d="M 790 250 C 890 214 962 214 1050 250"/>
+    <path stroke-width="1.2" stroke-dasharray="3 12" d="M 900 470 L 900 268"/>
+  </g>
+
+  <!-- SECOND GESTURE — kiln-orange (#C75B39): the path through the door, stepping up over the raised sill -->
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <!-- soft echo -->
+    <path stroke-width="5" stroke-opacity="0.10" d="M 120 456 L 520 456 C 540 456 544 452 548 452 L 652 452 C 664 452 668 430 672 424 L 1060 424"/>
+    <!-- the line: enters low from the left, steps up over the sill, carries on at the higher level -->
+    <path stroke-width="2.8" stroke-opacity="0.96" d="
+      M 120 456
+      L 520 456
+      C 540 456 545 452 548 452
+      L 652 452
+      C 664 452 668 430 672 424
+      L 1060 424"/>
+    <!-- the step marked where it climbs the sill -->
+    <path stroke-width="2" stroke-opacity="0.55" d="M 652 452 L 652 424"/>
+  </g>
+</svg>

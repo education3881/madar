@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for India: from a small open circle at the centre of the page — the child — eight faint spokes radiate outward. On each spoke a firm short tick marks a reading at its own distance from the centre, and one fine continuous line links the readings into an irregular ring — a profile, not a rank — left open at a single spoke. There, just beyond the system's tick, sits the only warm mark on the page: a second, kiln-orange tick set slightly askew — the self-assessment the new card builds in, the child's own hand joining the measuring.">
+  <title>The Still · India — a profile, not a rank, with the child's own hand joining the measuring</title>
+  <desc>Paper-cream ground, pure line, no fills. A small open circle at the centre — the child. Eight faint spokes radiate out; each carries one firm tick at its own distance, and a single fine continuous line links the ticks into an irregular ring — a profile of a child, not a place in a rank. The ring is left open at one spoke. Just beyond the system's tick there, the only warm mark: a kiln-orange tick set slightly askew, the self-assessment the holistic card builds in.</desc>
+
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- faint construction ring: the underdrawing of a profile taken in the round -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <circle cx="600" cy="300" r="150" stroke-width="0.8" stroke-opacity="0.07" stroke-dasharray="2 10"/>
+    <circle cx="600" cy="300" r="210" stroke-width="0.8" stroke-opacity="0.05" stroke-dasharray="2 12"/>
+  </g>
+
+  <!-- eight faint spokes radiating from the child -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-width="1.1" stroke-opacity="0.20">
+    <path d="M 600 284 L 600 150"/>
+    <path d="M 611 289 L 745 155"/>
+    <path d="M 616 300 L 735 300"/>
+    <path d="M 611 311 L 759 459"/>
+    <path d="M 600 316 L 600 465"/>
+    <path d="M 589 311 L 501 399"/>
+    <path d="M 584 300 L 390 300"/>
+    <path d="M 589 289 L 473 173"/>
+  </g>
+
+  <!-- the child — a small open circle at the centre -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <circle cx="600" cy="300" r="15" stroke-width="2.6" stroke-opacity="0.9"/>
+    <circle cx="600" cy="300" r="22" stroke-width="0.9" stroke-opacity="0.28"/>
+  </g>
+
+  <!-- THE PROFILE — one fine continuous line through seven readings; left OPEN at the upper-left spoke -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2.2" stroke-opacity="0.85" d="
+      M 600 150
+      C 672 150 712 150 745 155
+      C 745 218 742 260 735 300
+      C 750 372 756 418 759 459
+      C 680 462 636 464 600 465
+      C 552 438 522 418 501 399
+      C 452 366 418 330 390 300"/>
+    <!-- luminous companion for the ring -->
+    <path stroke-width="0.9" stroke-opacity="0.22" d="
+      M 601 156 C 672 156 710 156 741 160
+      C 740 218 736 260 729 300
+      C 744 370 750 414 753 456
+      C 680 458 636 460 602 461"/>
+  </g>
+
+  <!-- the firm readings — one tick on each spoke, at its own distance -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" stroke-opacity="0.92">
+    <path d="M 589 150 L 611 150"/>
+    <path d="M 737 147 L 753 163"/>
+    <path d="M 735 289 L 735 311"/>
+    <path d="M 767 451 L 751 467"/>
+    <path d="M 589 465 L 611 465"/>
+    <path d="M 509 407 L 493 391"/>
+    <path d="M 390 289 L 390 311"/>
+    <!-- the system's tick on the open spoke -->
+    <path d="M 465 181 L 481 165"/>
+  </g>
+
+  <!-- SECOND GESTURE — kiln-orange (#C75B39): the child's own tick, just beyond the system's, set askew -->
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <!-- faint continuation of the open spoke, reaching past the system tick -->
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 473 173 L 452 152"/>
+    <!-- the self-assessment tick — slightly askew from the true perpendicular -->
+    <path stroke-width="3" stroke-opacity="0.96" d="M 442 166 L 466 144"/>
+    <!-- soft echo -->
+    <path stroke-width="6" stroke-opacity="0.12" d="M 443 165 L 465 145"/>
+    <!-- the open ring's two loose ends reaching toward this tick -->
+    <path stroke-width="2" stroke-opacity="0.5" stroke-dasharray="2 7" d="M 390 300 C 420 250 440 210 452 178"/>
+    <path stroke-width="2" stroke-opacity="0.5" stroke-dasharray="2 7" d="M 600 150 C 540 150 500 158 468 168"/>
+  </g>
+</svg>

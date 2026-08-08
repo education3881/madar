@@ -64,6 +64,18 @@ export const editions: Edition[] = [
     accent: '#2E4C63',
     motif: 'throughline',
     cover: 'edition-03.svg',
+    status: 'closed',
+  },
+  {
+    number: 4,
+    periodEn: 'August 2026',
+    periodAr: 'أغسطس ٢٠٢٦',
+    themeEn: 'The measurement question — what a score actually measures, and who defines, moves and defends the thresholds that turn a child’s work into a label.',
+    themeAr: 'سؤال القياس — ماذا تقيس الدرجةُ فعلًا، ومَن يحدِّد العتباتِ التي تحوِّل عملَ الطفل إلى تصنيف، ومَن يحرِّكها ومَن يدافع عنها.',
+    ground: '#E9E5DB',
+    accent: '#9C5B3A',
+    motif: 'horizon',
+    cover: 'edition-04.svg',
     status: 'current',
   },
 ];
