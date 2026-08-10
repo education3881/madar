@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-08-10</title>
+<meta name="description" content="Manager → Founder daily brief for Monday 10 August 2026. The 08-09 push gap named — Brief 48 and the weekly review ride today's block. Ed05 recon 2 filed: UAE teacher nationalization, the slate's first native-Arabic story, ADEK adjacency flagged for the founder's explicit nod. Guidebook row 19. Engagement list v2 executes the weekly bet. QA green: 81 pages, 38/38, all-approved." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 10 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 49</div>
+    <h1>Yesterday's work never left the building. Today's block carries both days.</h1>
+    <p class="dek">One honest fact first: <strong>the 08-09 push didn't happen</strong> — Brief 48, the weekly review, and the Ed05 opener sat staged overnight. Nothing was lost and nothing live went stale (the deployed surface is verified current); the push is your only action, and it simply waited a day. Meanwhile the operation kept moving: <strong>Ed05 recon 2 is on disk — the UAE's own teacher-nationalization story</strong>, the slate's first native-Arabic piece, built on the ADEK–Aldar compact read verbatim from the Abu Dhabi Media Office. Because it touches ADEK, <strong>commissioning it is explicitly your call</strong> — flagged per the standing rule, waiting on your nod.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>Two clean runs, one missing push.</h2>
+        <div class="day__date">2026·08·09 · Sunday · daily + weekly both ran · the push gap is named, not dressed up</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git + the live surface — never from the last brief</div>
+        <div class="item__body"><span class="mono">HEAD == origin/main == c6f2121</span> — but the tree is <em>not</em> clean: the whole 08-09 output is uncommitted. The daily run verified Edition 04 live in place (81 URLs, all eight pieces EN + AR) and opened the Ed05 bank with recon 1 (England's 6,500-teacher pledge). The weekly review consolidated the guidebook to 18 rows, codified the flag-sweep-inversion rule, held the team at eleven, and set the week's bet: <strong>put Edition 04 in front of its first twenty qualified readers</strong>. All of it is safe on disk; all of it rides today's block below — including the <span class="mono">staged-ed0304</span> cleanup the sandbox can't perform. A push gap costs nothing when the surface is already current; it would cost plenty the day a launch waits on it — which is why it gets named every time.</div>
+        <div class="item__note">Brief 48 + weekly review on disk, unpushed · live surface verified current · no work lost</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The bank's second entry is the one closest to home.</h2>
+        <div class="day__date">2026·08·10 · Monday · Ed05 recon 2 + weekly-bet execution + full QA</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Ed05 recon 2 — UAE: three rulers for one classroom</div>
+        <div class="item__body">The slate's first-class Arabic story, reconned from primaries: the UAE is nationalizing its teaching workforce through <strong>three simultaneous, differently-scoped targets</strong> — a federal count (1,000 Emiratis a year into education, 4,000 over four years), an emirate count (Dubai: 3,000 Emirati educators in private schools by 2033), and a subject mandate (social studies taught by Emiratis in all schools within three years). The anchor primary — the <strong>ADEK–Aldar compact of 20 May 2026 — was read verbatim from the Abu Dhabi Media Office</strong>: a "ninefold increase" in Emirati representation across Aldar-operated schools, <em>with no disclosed baseline</em>. A multiplier without a base is the edition's question in miniature: nationalizing <em>the count of what?</em> One trap already flagged: the widely-reported "300 hires / 100 new-to-sector teachers" figures are <strong>not in the release</strong> — coverage's numbers must find their own primary before they ride ours. <strong>Because this piece touches ADEK, the recon names the adjacency per the standing rule, and commission waits on your explicit nod</strong> — public sources only, but covering the employer is your call, not ours.</div>
+        <div class="item__note">content-drafts/recon/2026-08-10-ed05-uae-teacher-nationalization.md · PROCEED-recommend, two nods required (frame + adjacency) · Ed05 bank = 2 recons</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · guidebook row 19 — the pledge family gains its second shape</div>
+        <div class="item__body">Row 15 filed <em>a pledge is a scoped instrument</em>; row 19 files its sibling: <strong>a multiplier without a base is a scoped instrument missing its scope</strong> — "ninefold" is honest only as "ninefold on an undisclosed base," and the undisclosed base is itself reportable. The row banks the register map (Media Office · WAM · u.ae/Nafis · KHDA · adek.gov.ae), the clean-text fetch route with its official Arabic mirrors, and two composition assets: the <strong>version-drift discipline</strong> (official AR and EN editions are parallel compositions — trace each quote in the edition cited, never cross-attribute) and the routing family's cleanest mixed-origin byline yet — <strong>Sahar Cooper</strong>, Arabic given name restored (سحر) beside an Anglo surname by heard-vowel (كوبر), each part routed by its own origin.</div>
+        <div class="item__note">agents/guidebook/2026-08-10-uae-teacher-nationalization-source-index.md (+INDEX) · extends rows 15/#28b · rulings hold at #1–#28</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the weekly bet moves — engagement list v2, derived from the beat we now own</div>
+        <div class="item__body">The bet's first slice executed: the twenty-name list was <strong>re-derived from Edition 04's own source ecosystem</strong> — eight institutional measurers (NFER, ACARA, NZQA, PARAKH, Agencia de Calidad, PO-Raad, Ofqual, Datalab), six watchdogs and explainers (Schools Week, Full Fact, Tes, EdWeek, The 74), six assessment thinkers (Wiliam, Christodoulou, Oates, Schleicher, Sims, Hattie). Nobody is on it for reach; everyone is on it because Ed04 is about their work — and the list survives the turn into Ed05 (NFER, Sims and the watchdogs are already recon 1's registers). Handles are verified at follow time, never guessed on disk; the quiet-follow pass queues behind the founder-gated account surface, honestly stated.</div>
+        <div class="item__note">agents/growth/2026-08-10-engagement-list-v2-assessment-reform.md · bet slice 1 of 3 · read-back next Sunday</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · QA green — and the QA caught itself reading yesterday's evidence</div>
+        <div class="item__body">Full pass, post-flip mode: <strong>build 81 pages exit 0 · dist parity 38 = 38 · sitemap 81 URLs · every hero resolves on both surfaces · wordmark inline · hreflang triple in article heads · og:image absolute · zero <span class="mono">approved: false</span> in the build path</strong>. One process find worth its ink: the first build attempt silently never ran — a stale <span class="mono">/tmp</span> log from a prior session blocked the redirect, and the old log read like a fresh green. Caught because the output directory was missing; re-run clean with session-unique paths. Banked to the ledger: <em>a log you didn't watch being written is not evidence</em> — the #16 family, applied to our own tooling.</div>
+        <div class="item__note">qa-2026-08-10.md · all assertions pass · stale-log trap banked</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Open on your desk · four calls, two of them new</div>
+        <div class="item__body"><strong>1 — The Ed05 frame</strong> ("the teaching question," recommended 08-02; two recons banked on it, both re-point cheaply). <strong>2 — The ADEK-adjacency nod</strong>: recon 2 is ready for the Editor's five-test read, but covering an ADEK-touching story is your call to green-light. <strong>3 — The custom domain</strong> and <strong>4 — the Substack account</strong>: unchanged, in that order per the migration-clock rule; Issue 01 remains one-click-ready.</div>
+        <div class="item__note">none urgent · the operation proceeds on the slate either way (Egypt next needs no nod)</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-08-10 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">This push</span> no corpus change &middot; carries the unpushed 08-09 day (Brief 48 + weekly) &middot; +Ed05 recon 2 &middot; +guidebook row 19 &middot; engagement list v2 &middot; staged-ed0304 removed</div>
+  </div>
+</div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Recon 3 banks Egypt — and the grid tile rides the next push.</h2>
+        <div class="day__date">2026·08·11 · Tuesday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">Content · Ed05 recon 3 — Egypt's mass teacher-hiring drive</div>
+        <div class="item__body">Slate #5, the bank's second native-Arabic story and the one that needs no adjacency nod: Egypt's multi-year drive to absorb tens of thousands of teachers — a hiring count with its own scope questions (absorbed onto <em>which</em> contracts, against <em>which</em> vacancy baseline). Row 19's method note travels directly. If your frame nod lands meanwhile, the Editor's five-test read of recon 1 (England) is the commissioning step — drafting starts the day it clears.</div>
+        <div class="item__note">alternate: US alternative certification (#2) if Egypt sourcing runs thin</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Growth · bet slice 2 — the Ed04-era grid tile</div>
+        <div class="item__body">Stage the first measurement-cluster tile to ride the next push per the one-tile-a-week cadence; the URL sweep re-runs at the weekly against the 08-09 zero-mentions baseline.</div>
+        <div class="item__note">entirely in-control · no founder action needed</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== ACTION ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Action</div>
+      <div class="day__title">
+        <h2>One push — it carries both days.</h2>
+        <div class="day__date">Brief 48 + weekly review + Brief 49, one block</div>
+      </div>
+    </header>
+    <div class="stream">
+      <div class="item">
+        <div class="item__body">No corpus change — the live site is current and verified. This block carries the full unpushed 08-09 day (Brief 48, the weekly review, Ed05 recon 1, guidebook row 15, the RUNBOOK rule, the Issue 01 link sweep) plus today (Brief 49, Ed05 recon 2, guidebook row 19, engagement list v2, QA log) and the <span class="mono">staged-ed0304</span> deletion the sandbox cannot perform.</div>
+        <div class="item__body"><pre class="push"><code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git rm -r -q content-drafts/staged-ed0304
+git add -A
+git commit -m "Madar 2026-08-10: carries the unpushed 08-09 day (Brief 48 + weekly review: Ed04 verified live at 81 URLs, guidebook Section 1 consolidated to 18 rows, flag-sweep-inversion rule codified, team holds at 11, growth bet = first 20 qualified readers, Ed05 recon 1 England pledge-count) plus today: Ed05 recon 2 UAE teacher nationalization (ADEK-Aldar compact read in served text -- ninefold-without-base, social-studies-in-3-years, Dubai 3000-by-2033; ADEK adjacency flagged, commission waits on founder nod), guidebook row 19 (+INDEX; multiplier-without-base extends the pledge family; Sahar Cooper mixed-origin routing; AR version-drift discipline), engagement list v2 (assessment-reform beat, bet slice 1), QA green (build 81pp exit 0, parity 38/38, all-approved, heroes+wordmark+hreflang verified; stale-log trap banked). Removes staged-ed0304 mirror. Briefs 48+49."
+git push origin main</code></pre></div>
+        <div class="item__note">single-line ASCII commit message, no shell-hostile characters · deploy self-verifies after the push (Actions green, pages live)</div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    Manager → Founder · Daily Brief · 2026·08·10<br/>
+    Madār · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>

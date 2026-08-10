@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-08-09</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 999px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; padding: 1.2rem 1.4rem; border-radius: 2px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+  .footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 11.5px; color: var(--color-muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="kicker">Madār · مدار — Weekly Review</div>
+      <h1>The week the edition shipped</h1>
+      <div class="sub">Sunday 2026-08-09 · covers 2026-08-03 → 2026-08-09 · prepared by the Manager, autonomous run</div>
+    </header>
+
+    <section>
+      <div class="summary-box">
+        <h3>Founder summary — two minutes</h3>
+        <p><strong>What changed.</strong> <strong>Edition 04 — "The measurement question" — is live.</strong> The week ran the last six Arabic compositions (India → England, one a day, the wave closing 2026-08-08), then published the same day: all sixteen files flipped, eight bespoke hero stills drawn, the registry wired, England moved from staging into the build path. The corpus went <span class="num">30/30 → 38/38</span> (EN/AR, still <span class="num">100%</span> parity), <span class="num">27 → 35</span> countries, five → seven regions, and the deployed surface <span class="num">65 → 81</span> URLs. Saturday's run verified it <em>in place</em>: Actions runs 58–60 green, every Ed04 piece resolving EN + AR with reciprocal hreflang on the live sitemap. Your VALENCE page rode the same window; it was QA-audited — zero trackers, zero external scripts, privacy posture intact.</p>
+        <p><strong>What I decided.</strong> (1) <strong>No new persona</strong> — the team stays at eleven; the launch week is the evidence, not the exception (§4). (2) <strong>One new prevention rule codified</strong> into the RUNBOOK: after a wave flip, the flag sweep must invert its assertion or it passes vacuously (§2). (3) <strong>Guidebook Section 1 consolidated 13 → 18 rows</strong> — the week's five source indices are now proper rows and every Ed04 row now says LIVE, not "held" (§3). (4) The week's growth bet: put Edition 04 in front of its first qualified readers (§1).</p>
+        <p><strong>What needs your eye.</strong> The same two calls as the last three weeklies, now the <em>only</em> thing between a finished bilingual edition and its first readers: <strong>(a) the custom domain, (b) the Substack account</strong> — in that order, per the migration-clock rule. Issue 01 is <strong>one-click-ready</strong>: the pre-send link sweep completed 08-09, all eight gate-links verified against the deployed sitemap. Nothing else is asked of you beyond the push at the bottom, which also carries today's daily run and one housekeeping deletion the sandbox cannot perform.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">1 · Traffic, Growth &amp; Statistics</div>
+      <h2>The corpus grew 27% in one push — and the readers it's for haven't been invited yet</h2>
+
+      <table>
+        <tr><th>Signal</th><th>Last weekly (08-02)</th><th>This weekly (08-09)</th><th>Δ</th></tr>
+        <tr><td>Published corpus (EN / AR)</td><td class="n">30 / 30</td><td class="n">38 / 38</td><td class="n">+8 / +8</td></tr>
+        <tr><td>AR parity</td><td class="n">100%</td><td class="n">100%</td><td class="n">held</td></tr>
+        <tr><td>Countries covered</td><td class="n">27</td><td class="n">35</td><td class="n">+8</td></tr>
+        <tr><td>Regions</td><td class="n">5</td><td class="n">7</td><td class="n">+ Oceania, N-America</td></tr>
+        <tr><td>Deployed URLs (sitemap)</td><td class="n">65</td><td class="n">81</td><td class="n">+16</td></tr>
+        <tr><td>Editions shipped</td><td class="n">3</td><td class="n">4</td><td class="n">+1</td></tr>
+      </table>
+
+      <p>Region drift is exactly what the edition was designed to do: Asia <span class="num">5 → 7</span>, Europe <span class="num">3 → 5</span>, LatAm <span class="num">2 → 3</span>, and the first Oceania (Australia, New Zealand) and North America (United States) pieces — MENA's share of the corpus falls from half to <span class="num">15/38</span> without losing a single piece. Theme drift: <em>student wellbeing</em> enters the ledger (2 pieces). The eight new countries — Australia, Chile, India, Netherlands, New Zealand, Singapore, UK, US — arrive as one internally-linked bilingual cluster on a single question: <em>who measures the measurers</em>.</p>
+
+      <p><strong>Traffic honesty, as every week:</strong> the site carries no third-party tracker by design, so there are no visitor analytics to report and none are invented. The privacy-clean signals:</p>
+      <ul>
+        <li><strong>Substack — not live.</strong> Launch-readiness is now total on our side: Issue 01 (the Ed04-launch issue, bilingual) passed its pre-send link sweep on 08-09 — all <span class="num">8</span> gate-links resolve on the deployed sitemap with their AR mirrors and reciprocal hreflang; the Ed04 cover is live on /editions/. The two blockers are both founder calls: the <strong>custom domain</strong> (gates Search Console too) and the <strong>Substack account</strong>. Order matters — the 2026-06-12 migration-clock ruling: every external platform copies our URL into storage we don't control, so bind Substack <em>after</em> the domain, or pay the migration twice.</li>
+        <li><strong>Attributable inbound — baseline recorded.</strong> This review ran the manual sweep for the publication URL across indexed search: <strong>zero mentions</strong>. That is the honest pre-distribution baseline, recorded on purpose — it is what makes the Issue 01 send measurable when it happens.</li>
+      </ul>
+
+      <p><strong>Last week's bet, read:</strong> <em>"finish the Ed04 wave as one discoverability cluster."</em> <span class="pill ok">Landed</span> — and then some: the cluster didn't just reach gate-ready, it <em>shipped</em> as one surface on day one (8 pieces × 2 languages, reciprocal related-links and hreflang, live 08-08). The bet's second read — did either founder-gated unblocker move — is a no: domain and account both stand.</p>
+
+      <div class="bet">
+        <div class="kicker">The week's single growth bet</div>
+        <p style="margin:0"><strong>Put Edition 04 in front of its first twenty qualified readers.</strong> The engagement list was built in early June, before the measurement cluster existed. This week: re-derive the 20-name list around the people who actually work on assessment reform (the beat Ed04 now owns), begin the quiet-follow discipline, and stage the first Ed04-era grid tile to ride a push. Entirely in-control; needs no founder action. <strong>Result read next Sunday:</strong> list refreshed and logged, tile staged, and the weekly URL sweep re-run — any nonzero inbound gets attributed, a second zero gets recorded just as plainly.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">2 · Quality Retrospective</div>
+      <h2>Seven runs, seven gates, one P1 — caught at the right ruler</h2>
+
+      <p><strong>The week was fully lit:</strong> seven runs in seven days (08-03 → 08-09), every one closing its publish gate in writing — the first gap-free week since June. Zero held-leak on every build all week; the launch flip itself ran clean (16 files, one gate, in writing); and the post-publish run verified the deploy <em>in the judging environment</em> per rulings #16/#17 — Actions runs 58–60 green, live sitemap counted, all eight heroes resolving in built HTML.</p>
+
+      <p><strong>The week's one P1.</strong> England's Arabic dek was composed at <span class="num">204/200</span> code points — over the schema cap. It was caught <em>at compose</em>, trimmed to <span class="num">192/200</span> in the same run, while England still sat in staging; the build path never saw it. This is the cap's fifth strike overall, but the <strong>second consecutive catch at compose</strong> rather than at the build backstop — the 2026-07-27 enforcement addendum (the count line travels with the hand-off) working exactly at the ruler it names, twice in a row now.</p>
+
+      <p><strong>Decision: no re-legislation.</strong> A fix that has held on both of its live tests is left alone. The trigger for further action is named instead: if a cap overrun ever again <em>first surfaces at the build gate</em>, that is the signal to add a headroom budget (compose to ≤180) — and not before.</p>
+
+      <p><strong>One new rule was codified, from a subtler pattern.</strong> The launch inverted the QA logic: for six weeks the held-leak sweep asserted <em>zero held slugs in dist</em> — and the moment the wave flipped, that assertion would pass forever, vacuously, checking nothing. Saturday's run caught this by judgment and switched to the inverse assertion (zero <code style="font-family:var(--font-mono);font-size:0.85em">approved:false</code> in the build path, plus positive live-resolution checks on every new slug). That judgment is now a RUNBOOK rule: <em>a QA assertion is scoped to a corpus state; when the state changes, re-derive the assertion — don't re-run it.</em> Same family as #16/#17: verify the thing itself, in the environment <em>and state</em> that judges it.</p>
+
+      <p><strong>Near-misses reaching production: none.</strong> One sandbox boundary, routed not fought: deleting the now-redundant <code style="font-family:var(--font-mono);font-size:0.85em">staged-ed0304/</code> mirror is FUSE-blocked (EPERM), and every one of its 35 files is verified identical in the build path — so the deletion rides your push block below as a <code style="font-family:var(--font-mono);font-size:0.85em">git rm</code> line rather than a failed sandbox syscall.</p>
+    </section>
+
+    <section>
+      <div class="kicker">3 · Knowledge Consolidation</div>
+      <h2>Five indices become rows; six name-routings become one principle</h2>
+
+      <p>The guidebook's Section 1 (verified primary-source indices) was consolidated from <span class="num">13</span> to <span class="num">18</span> rows. The week's five source indices — Netherlands (row 14), England/DfE teacher workforce (row 15), and the three filed as daily addenda without row numbers: India (16), Singapore (17), Chile (18) — are now proper table rows, closing the same un-indexed-file gap the 08-02 review closed for ACARA and Ofsted. Every Ed04 row's status cell was flipped from "held" to <strong>LIVE 2026-08-08</strong>: per ruling #18 the table is again the deployed truth, and on any disagreement with the addenda ledger, the table wins.</p>
+
+      <p><strong>The week's compounding asset is the #28b routing family.</strong> Six named-routing conventions now hang off one ruling — India (attested convention), Singapore (three origins in one byline), Chile (Spanish-vs-Italian in one byline), New Zealand (te reo content-terms), Netherlands (Dutch phonology, the <em>ie</em> false friend), England (heard-vowel-not-letter, and a bench name routed by its own origin). The durable shape, now written down: <strong>route a name by its own origin, never by the country on the dateline</strong> — a byline's passport is not its phonology. An Arabic composer facing a Dutch, British, Chilean or Singaporean byline now has a filed convention where three weeks ago there was a judgment call.</p>
+
+      <p><strong>One new method note, no new numbered ruling.</strong> <em>A pledge is a scoped instrument</em> (row 15, opened by Ed05 recon 1 — the UK's 6,500-teacher pledge): a progress figure and its scope-definition-with-date are one citable pair; +4,654 in-scope and −1,900 whole-workforce can be simultaneously true, and quoting either without the other's existence is the error. It generalises to every target-carrying reform on the Ed05 slate. The ruling series holds at <strong>#1–#28</strong> for a second consecutive week — new terrain covered by existing axes is what a maturing checklist looks like. The Ed05 recon bank is open, per the front-loaded-recon cadence that made Ed04's throughput possible.</p>
+    </section>
+
+    <section>
+      <div class="kicker">4 · Team-Expansion Decision</div>
+      <h2>No new persona — the launch week is the evidence</h2>
+
+      <p><strong>The team stays at eleven.</strong> The decision is easier this week than most, because the week was the hardest test the roster has faced: six Arabic compositions in six days, a sixteen-file publish gate, eight hero stills, a registry rewire and a post-publish verification — executed at one clean run per day with zero missed days and one same-run-fixed P1. Nothing saturated.</p>
+
+      <ul>
+        <li><strong>Researcher</strong> — the watch signal (candidates parking for sourcing-<em>time</em>) did not fire; the front-loaded recon bank absorbed the load inside existing personas, and Ed05 recon 1 was filed the day after launch without displacing anything.</li>
+        <li><strong>Social/Video</strong> — Growth is not saturated on stills + copy; the channel surface (grid at one tile/week riding pushes) is deliberately small until distribution unblocks.</li>
+        <li><strong>Data/SEO analyst</strong> — still the <em>next likely rung</em>, and this week sharpened its trigger: the role activates when there is return-rate data to read, which arrives only after the domain lands and Issue 01 sends. Seating it now would be a persona with no instrument.</li>
+        <li><strong>Second-language editor</strong> — no third language is on any slate.</li>
+      </ul>
+
+      <p>Recorded per the charter: restraint applies to the org chart as much as to the publication. The next genuine capacity question arrives with distribution, not before it.</p>
+    </section>
+
+    <section>
+      <div class="kicker">The one action asked of you</div>
+      <h2>The push — carries this review, today's daily, and one cleanup</h2>
+      <p>Staged and riding this block: this weekly review; the guidebook consolidation (Section 1 → 18 rows) and the new RUNBOOK rule; today's daily run (Brief 48, the Ed05 recon-bank opener, the post-launch verification QA log, the Issue 01 link-sweep note); and the <code style="font-family:var(--font-mono);font-size:0.85em">staged-ed0304/</code> deletion the sandbox cannot perform. One line:</p>
+      <pre>cd "/Users/vini/Documents/Claude/Projects/Educational Website" && rm -f .git/index.lock && git rm -r -q content-drafts/staged-ed0304 && git add -A && git commit -m "Madar 2026-08-09 weekly review: Edition 04 verified live, corpus 38/38 across 35 countries and 81 URLs; guidebook Section 1 consolidated to 18 rows; RUNBOOK flag-sweep-inversion rule codified; no new persona, team holds at 11; growth bet = first 20 qualified readers; carries 08-09 daily (Ed05 recon 1, Brief 48) and removes staged-ed0304 mirror" && git push origin main</pre>
+      <p style="font-family:var(--font-mono);font-size:12px;color:var(--color-muted)">After it lands, Actions builds and deploys on its own (two gates, both verified green this week). And when you have ten minutes for the two calls — domain, then Substack — Issue 01 sends the same day.</p>
+    </section>
+
+    <div class="footer">Madār · مدار — weekly review, written by the operation for its founder · 2026-08-09 · made in spite of, not because of.</div>
+
+  </div>
+</main>
+</body>
+</html>
