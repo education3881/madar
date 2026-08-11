@@ -1,5 +1,26 @@
-# Edition 05 — planning memo (opened 2026-08-02)
+# Edition 05 — planning memo (opened 2026-08-02 · **frame SET by founder 2026-08-11**)
 **Trigger:** founder instruction, 2026-08-02 — "we should be thinking about next edition already, so you are not late." Ed04 is scope-locked at 8 and in completion (AR + stills + gate). Ed05 recon runs **in parallel** so drafting can begin the day Ed04 pushes.
+
+---
+
+## ⬥ FOUNDER DECISION — 2026-08-11 (supersedes the recommended frame below)
+
+**Edition 05 is fully about AFRICA — the publication's first geographically-focused edition.** Registered verbatim from the founder's instruction:
+
+1. **Scope: Africa, whole edition.** Working default: the continent entire, North Africa included (Egypt, Morocco, Tunisia count as Africa here regardless of the corpus's MENA region tag) — the founder can narrow this if intended otherwise.
+2. **Three mandated slots:**
+   - **Sierra Leone — one NEW piece** (the corpus's shipped TSC piece doesn't fill this; row `2026-06-06-sierra-leone-tsc-source-index.md` gives recon a head start).
+   - **Sudan — one NEW piece** (ditto: the shipped Ed03 exam-continuity piece doesn't fill it).
+   - **The best educational system in Africa — location to be determined by research**, not assumed. The recon must first choose the ruler honestly (learning outcomes? completion? improvement velocity?) and say which ruler crowns which country. Candidates to test on evidence, not to pre-anoint: Seychelles, Mauritius, Kenya, Rwanda, Tunisia/North Africa on outcomes data.
+3. **Editorial posture: positive.** The edition highlights **accomplishments, ideas, creative approaches** — builds, not laments. Not a negative-scenario edition. (This sharpens, not suspends, the quality bar: every accomplishment still clears the five tests and the figure axes; a verified win is worth more than an asserted one. The Ed03 lesson travels: even crisis stories were carried as continuity-achievements — here the achievement IS the frame.)
+
+**Disposition of the teaching-question bank (3 recons, filed 08-09/10/11):** the frame redirect was designed to be cheap, and it is —
+- **England pledge** + **UAE nationalization** recons re-bank for a future edition (the teaching question remains a strong future frame; source indices rows 15/19 are durable guidebook assets regardless). The **ADEK-adjacency nod is moot for Ed05** — the UAE piece is deferred with its slate.
+- **Egypt (recon 3) is African and carries over** — the register map (row 20) travels intact; the *angle* re-commissions under the positive frame (the 2025 transformation story — attendance recovery, curriculum reform, the Egyptian Baccalaureate — verified with our usual discipline) rather than the deficit-scrutiny angle it was reconned under. The Editor decides at commission whether Egypt takes a slate slot.
+
+**Slate skeleton (recon targets from 2026-08-12; ~10 reconned, gate to the best):** Sierra Leone (mandated, new angle), Sudan (mandated, positive/creative angle within the war's reality — honesty rule: the positive frame never denies context), best-system-in-Africa (research-first), Egypt carry-over (Editor's call), then candidates: Rwanda (recon banked 07-06, CBC), Kenya follow-up (row banked, Ed02 shipped), Morocco (écoles pionnières shipped — new angle only), Ghana, Botswana, Zambia/Tanzania (fee-free waves), Benin, Ethiopia. Balance to hold: regional spread across the continent (west/east/north/south), ≥2 native-Arabic-register stories (Sudan, Egypt, Morocco/Maghreb), and instrument variety (a system, a workforce idea, a curriculum bet, a financing move — not one story ten times).
+
+---
 
 ## The arc so far (why the frame matters)
 - **Ed03 — continuity:** does the certificate still get issued? (crisis, wartime, refugee, exam-continuity schooling)
