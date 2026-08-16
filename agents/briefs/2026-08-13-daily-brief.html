@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief · Madār · 2026-08-13</title>
+<meta name="description" content="Manager → Founder daily brief for Thursday 13 August 2026. Ed05 recon 5 — Sudan, mandated slot 2: a decade before the war closed half its schools, Sudan invented the classroom that doesn't need one. Guidebook row 22: a lineage claim is a figure. Growth: the Africa internal-link cluster pre-wired for Ed05. QA green. Note: the 08-12 block never pushed — today's push carries two days." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Thursday · 13 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 52</div>
+    <h1>Sudan built the classroom for this catastrophe a decade before it arrived.</h1>
+    <p class="dek">Your second mandated Africa slot has its angle. A decade before Sudan's war closed half the country's schools, Sudan invented the classroom that doesn't need one — <strong>e-Learning Sudan</strong>, 2014: a mathematics game on a solar-charged tablet, run by a trained neighbour, in villages that had no school to close. It was trialled rigorously, scaled into the global Can't Wait to Learn platform that kept ~125,000 children learning through <em>other countries'</em> wars — and when Sudan's own war came, the no-school classroom came home: 699 safe learning spaces since the start of 2024, sixty of them digital, reaching 12,660+ displaced children across eight states. The accomplishment is an idea the war has not managed to kill. One honesty note first: <strong>yesterday's block never pushed</strong> — today's push carries two days.</p>
+  </section>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The work is safe; the push didn't happen.</h2>
+        <div class="day__date">2026·08·12 · Wednesday · block staged, not pushed · live surface unaffected</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git + the live surface — never from the last brief</div>
+        <div class="item__body"><span class="mono">HEAD == origin/main == 232319c</span>, unchanged since 08-11. The 08-12 run completed all five functions — Brief 51, the Sierra Leone recon that opened the Africa slate, guidebook row 21, engagement slice 2, a green QA log — but the push block never ran, so all of it sits uncommitted in the working tree. Named plainly: a push gap, the second in a week (08-09 was the first). Nothing is lost and nothing live is stale — the live site serves Edition 04 current, and yesterday was staging-only by design. Today's block carries both days; the commit message below covers the two runs explicitly.</div>
+        <div class="item__note">live homepage re-fetched this run · Edition 04 serving · hreflang triple + inline wordmark verified · no index.lock</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The invention, the export, and the homecoming — held apart until the trace exists.</h2>
+        <div class="day__date">2026·08·13 · Thursday · Ed05 recon 5 + guidebook row 22 + Africa cluster pre-wire + full QA</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content · Ed05 recon 5 — Sudan: mandated slot 2, the positive angle found</div>
+        <div class="item__body">The hardest brief on the slate, and it holds your honesty rule without strain. Three verified builds in one story: <strong>the invention</strong> (e-Learning Sudan, 2014 — UNICEF, War Child Holland, Ahfad University and the Ministry of Education; math game + tablet + solar + community facilitator; subjects Arabic and mathematics, ages 7–9; peer-reviewed trial of record located), <strong>the export</strong> (the platform became Can't Wait to Learn, which in 2025 kept ~125,000 children learning in Ukraine, Uganda and Lebanon), and <strong>the homecoming</strong> (since the start of 2024: 699 safe learning spaces, 60 digital, 12,660+ children — 54% girls — across eight states; read in served text this run). The war rides in-frame, never denied: ~8m children deprived, half of schools closed, North Darfur 97% non-functional. Cleanly fenced off the shipped exam piece: that was the certification machine; this is the learning-delivery invention. And it's the slate's third native-Arabic story — the instrument itself teaches in Arabic.</div>
+        <div class="item__note">content-drafts/recon/2026-08-13-ed05-sudan-digital-learning.md · PROCEED-recommend with one gate named (below) · Ed05 bank = 5 recons; both mandated country slots now reconned</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research · guidebook row 22 — a lineage claim is a figure</div>
+        <div class="item__body">The recon surfaced a defect class the figure axes don't yet name, and it becomes today's increment: the tempting spine — "the wartime digital spaces run the platform Sudan invented" — is supported by place, technology and idea, but <strong>no source read this run states the identity</strong>, and one register points the other way (War Child's 2025 country list omits Sudan). The banked rule: <strong>a claim that instrument B descends from instrument A is a citable figure carrying its own provenance axes</strong> — same programme / formal successor / rebrand / independent parallel — and must be traced verbatim, exactly as a number is. Same place + same tech + same look ≠ same instrument. Until the trace exists, the draft carries the two builds side by side, joined by idea and geography, with the connection unasserted — and the honest version may be the better story. Where the scoped-instrument family (rows 15/19/20/21) scopes a <em>number</em>, the lineage rule scopes an <em>identity</em>; it generalises to Egypt's drive-vs-drive, Rwanda's CBC descent, and every "Phase II" on the slate.</div>
+        <div class="item__note">agents/guidebook/2026-08-13-sudan-digital-learning-source-index.md (+INDEX addendum) · rulings hold at #1–#28</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth · the Africa cluster, pre-wired for landing day</div>
+        <div class="item__body">Ed04's measurement cluster proved the pattern: internal linking built <em>at</em> integration, not after, is the corpus's cheapest discoverability asset. Today Growth audited the internal-link graph of the nine Africa-continent pieces already live and staged the Ed05 wiring plan: two orphan nodes found (Ghana and Egypt-EKB — early pieces with zero graph edges), two one-way edges (Chad→Bo, Morocco→Egypt-NPDA), and a per-piece plan that lands each Ed05 article with its inbound and outbound edges decided. On landing day the cluster goes from 9 nodes with 2 orphans to 13–14 nodes, zero orphans, all reciprocal — the first cluster to bridge three editions. No corpus change today; the edits ride Ed05 integration through the publish gate.</div>
+        <div class="item__note">agents/growth/2026-08-13-africa-cluster-prewire-audit.md · in-control step · no founder action needed</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality · QA green — full pass, no defects</div>
+        <div class="item__body">Post-flip mode, fresh build directory, session-unique log path: <strong>build 81 pages exit 0 · dist parity 38 = 38 · sitemap 81 URLs · zero <span class="mono">approved: false</span> in the build path · all 38 heroes resolve · wordmark inline · hreflang triple · zero orphaned <span class="mono">related:</span> refs (full EN+AR sweep)</strong>. Live surface verified independently of the build. Nothing enters the build path today — a staging-only day by design, so the live corpus is untouched by this block.</div>
+        <div class="item__note">agents/logs/qa-2026-08-13.md · all assertions pass · no defects filed</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-08-13 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">This push</span> no corpus change &middot; carries TWO days: 08-12 (recon 4 Sierra Leone, row 21, slice 2, QA, Brief 51) + 08-13 (recon 5 Sudan, row 22, cluster pre-wire, QA, Brief 52)</div>
+  </div>
+</div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>The best system in Africa — choose the ruler before the country.</h2>
+        <div class="day__date">2026·08·14 · Friday · on deck</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">Content · Ed05 (Africa) recon 6 — mandated slot 3, the research question</div>
+        <div class="item__body">Your third mandated slot is a question, not a country: the recon's first job is to choose the ruler honestly — learning outcomes, completion, improvement velocity — and say which ruler crowns which country. Seychelles, Mauritius, Kenya, Rwanda and North Africa on outcomes data all get tested on evidence; none pre-anointed. With recon 6 banked, all three mandated slots are reconned and the Editor can begin five-testing the bank for commission order.</div>
+        <div class="item__note">no nods pending · drafting opens when the Editor five-tests the first cleared recon</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Growth · quiet — the bet reads back Sunday</div>
+        <div class="item__body">Both engagement slices filed, tile 1 staged, cluster pre-wire banked; the weekly (Sunday 16 August) runs the URL sweep against the 08-09 zero-mentions baseline and reads the bet's first result honestly, zero or not.</div>
+        <div class="item__note">entirely in-control · founder calls unchanged: custom domain, Substack account</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== ACTION ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Action</div>
+      <div class="day__title">
+        <h2>One push — carrying two days; nothing live changes.</h2>
+        <div class="day__date">Briefs 51 + 52 · recons 4 + 5 · rows 21 + 22 · slice 2 + cluster pre-wire · 2 QA logs</div>
+      </div>
+    </header>
+    <div class="stream">
+      <div class="item">
+        <div class="item__body">No corpus change — the live site is current and verified. This block carries the full 08-12 day (Sierra Leone recon, row 21, engagement slice 2, QA log, Brief 51, the plan's scope-confirmation line) and the full 08-13 day (Sudan recon, row 22 with the lineage rule, the Africa cluster pre-wire, QA log, this brief).</div>
+        <div class="item__body"><pre class="push"><code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-08-13: carries the unpushed 08-12 day (Ed05 recon 4 Sierra Leone SLEIC outcomes fund -- EOF findings + Save the Children honest-miss + funder + completion registers read in served text; guidebook row 21 equivalent-years-carries-its-ruler; growth slice 2 Africa evidence beat; QA green; Brief 51) plus today: Ed05 recon 5 Sudan digital learning fills mandated slot 2 (e-Learning Sudan b.2014 four-partner build, CWTL export ~125k children Ukraine-Uganda-Lebanon 2025, wartime homecoming 699 safe learning spaces / 60 digital / 12660+ children 8 states, BRIDGE 2026-28 system register -- all read in served text; positive posture holds, war carried in-frame), guidebook row 22 (+INDEX; a lineage claim is a figure -- provenance axes, same-place-same-tech is not same-instrument), growth Africa cluster pre-wire audit (2 orphan nodes + 2 one-way edges found; Ed05 landing-day wiring staged), QA green (81pp exit 0, parity 38/38, all-approved, heroes+wordmark+hreflang+zero-orphan-refs verified). Brief 52."
+git push origin main</code></pre></div>
+        <div class="item__note">single-line ASCII commit message, no shell-hostile characters · deploy self-verifies after the push (Actions green, pages live)</div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    Manager → Founder · Daily Brief · 2026·08·13<br/>
+    Madār · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>

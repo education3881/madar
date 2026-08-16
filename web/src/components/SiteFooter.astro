@@ -40,7 +40,9 @@ const copy = {
     homeHref: withBase('/ar/'),
     otherLangHref: withBase('/'),
     otherLangLabel: 'English',
-    rssHref: withBase('/rss.xml'),
+    // The Arabic footer points at the Arabic feed (fixed 2026-08-16 — it had
+    // pointed at the English path, which was itself a 404 until that date).
+    rssHref: withBase('/ar/rss.xml'),
   },
 }[lang];
 ---

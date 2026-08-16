@@ -7,7 +7,7 @@
 
 **Edition 05 is fully about AFRICA — the publication's first geographically-focused edition.** Registered verbatim from the founder's instruction:
 
-1. **Scope: Africa, whole edition.** Working default: the continent entire, North Africa included (Egypt, Morocco, Tunisia count as Africa here regardless of the corpus's MENA region tag) — the founder can narrow this if intended otherwise.
+1. **Scope: Africa, whole edition — the continent entire, CONFIRMED by the founder 2026-08-11.** North Africa included: Egypt, Morocco, Tunisia count as Africa here regardless of the corpus's MENA region tag.
 2. **Three mandated slots:**
    - **Sierra Leone — one NEW piece** (the corpus's shipped TSC piece doesn't fill this; row `2026-06-06-sierra-leone-tsc-source-index.md` gives recon a head start).
    - **Sudan — one NEW piece** (ditto: the shipped Ed03 exam-continuity piece doesn't fill it).

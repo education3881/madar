@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-08-16</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 999px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  .flag { background: #FFF4F0; border: 1px solid var(--color-orange); padding: 1.1rem 1.4rem; margin: 1.3rem 0; border-radius: 2px; }
+  .flag .kicker { margin-bottom: 0.35rem; }
+  .rule-box { background: var(--color-sand); padding: 1.2rem 1.4rem; margin: 1.2rem 0; border-radius: 2px; }
+  .rule-box .kicker { color: var(--color-ink); opacity: 0.72; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; padding: 1.2rem 1.4rem; border-radius: 2px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+  .footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 11.5px; color: var(--color-muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="kicker">Madār · مدار — Weekly Review</div>
+      <h1>The week we kept a promise the footer had been printing for 83 days</h1>
+      <div class="sub">Sunday 2026-08-16 · covers 2026-08-10 → 2026-08-16 · prepared by the Manager, autonomous run</div>
+    </header>
+
+    <section>
+      <div class="summary-box">
+        <h3>Founder summary — two minutes</h3>
+
+        <p><strong>What changed.</strong> Four Ed05 recons banked (UAE 08-10, Egypt 08-11, Sierra&nbsp;Leone 08-12, Sudan 08-13), your Africa frame set on 2026-08-11 and absorbed cheaply — the two off-frame recons re-banked, Egypt carried over. Then the week stopped: <strong>no runs on 2026-08-14 or 2026-08-15</strong>, and nothing has been pushed since 2026-08-11. The published corpus is unchanged at <span class="num">38/38</span>, and this review does not dress that up. What it did instead of reporting a flat week twice: it went looking, and found that the <strong>RSS link in the site footer has pointed at a 404 since the day we launched</strong> — every page, both languages, 83 days, 34 QA passes. That is now fixed: Madār has <strong>real bilingual feeds</strong>, built and verified today.</p>
+
+        <p><strong>What I decided.</strong> (1) <strong>Shipped the feeds rather than staging another plan</strong> — EN + AR, dependency-free, build-verified, <span class="num">38</span> items each; it is this week's growth bet and it is already done (§1). (2) <strong>Two prevention rules codified</strong> into the RUNBOOK: the QA link sweep must cover site chrome, not just content links; and a push gap escalates with duration instead of quietly rolling forward (§2). (3) <strong>Ruling #29 filed</strong> — <em>a lineage claim is a figure</em> — the first new number in three weeks, promoted from the Sudan recon after it caught a draft spine (§3). (4) <strong>No new persona</strong>; the team holds at eleven for a third week, and I have written down the tripwire that would change that (§4). Also corrected: the Charter's roster line still said "Current team (7)" — four additions out of date, in the one document every session reads first.</p>
+
+        <p><strong>What needs your eye.</strong> The push at the bottom, which now carries <strong>five days</strong> of work (2026-08-12 → 2026-08-16). And the same two calls as the last four weeklies: <strong>(a) the custom domain, (b) the Substack account</strong>, in that order. One honest note on those: three consecutive growth bets have now been preparation stacked behind them — 35 vetted outreach targets we cannot follow, an Issue 01 that has been one-click-ready since 2026-08-09. The feeds are the first distribution channel that needed neither. There is a limit to how much readier the operation can get.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">1 · Traffic, Growth &amp; Statistics</div>
+      <h2>A flat week on the corpus — and the discovery that our one subscribe button was wired to nothing</h2>
+
+      <table>
+        <tr><th>Signal</th><th>Last weekly (2026-08-09)</th><th>This weekly (2026-08-16)</th><th>Δ</th></tr>
+        <tr><td>Published corpus (EN / AR)</td><td class="n">38 / 38</td><td class="n">38 / 38</td><td class="n">held</td></tr>
+        <tr><td>AR parity</td><td class="n">100%</td><td class="n">100%</td><td class="n">held</td></tr>
+        <tr><td>Countries covered</td><td class="n">35</td><td class="n">35</td><td class="n">held</td></tr>
+        <tr><td>Regions</td><td class="n">7</td><td class="n">7</td><td class="n">held</td></tr>
+        <tr><td>Deployed URLs (sitemap)</td><td class="n">81</td><td class="n">81</td><td class="n">held</td></tr>
+        <tr><td>Editions shipped</td><td class="n">4</td><td class="n">4</td><td class="n">held</td></tr>
+        <tr><td>Subscription surfaces</td><td class="n">0</td><td class="n">2</td><td class="n">+ EN feed, AR feed</td></tr>
+        <tr><td>Ed05 recons banked</td><td class="n">1</td><td class="n">5</td><td class="n">+4</td></tr>
+        <tr><td>Guidebook Section-1 rows</td><td class="n">18</td><td class="n">22</td><td class="n">+4</td></tr>
+      </table>
+
+      <p><strong>Zero content drift, and that is on plan — mostly.</strong> Every content row reads <em>held</em> because Edition 05 is in front-loaded reconnaissance, which by design does not touch the published corpus. Five candidates are now reconned against a slate of about ten; drafting begins when the bank is full. What is <em>not</em> on plan is that two of the week's seven days produced nothing at all (§2). Region and theme drift are therefore unchanged from last week: MENA <span class="num">15/38</span>, Asia <span class="num">7</span>, Africa <span class="num">5</span>, Europe <span class="num">5</span>, LatAm <span class="num">3</span>, Oceania <span class="num">2</span>, N-America <span class="num">1</span>. Worth noting for the Africa edition: the corpus already holds <strong>nine</strong> Africa-continent pieces once the North-African MENA-tagged pieces are counted in, per your scope line — Ed05 lands into an existing cluster, not an empty region.</p>
+
+      <p><strong>Traffic honesty, as every week:</strong> the site carries no third-party tracker by design, so there are no visitor analytics to report and none are invented. The privacy-clean signals:</p>
+      <ul>
+        <li><strong>Substack — still not live.</strong> Unchanged: Issue 01 passed its pre-send link sweep on 2026-08-09 and has been one-click-ready for seven days. Both blockers remain founder calls — the <strong>custom domain</strong> (which also gates Search Console) and the <strong>Substack account</strong>, in that order per the 2026-06-12 migration-clock ruling.</li>
+        <li><strong>Attributable inbound — swept again, second consecutive zero.</strong> The manual search for the publication URL returned <strong>no mentions</strong>. Recorded exactly as plainly as a nonzero would be. It is the correct number for a publication that has not yet been distributed, and it is what will make the first send measurable.</li>
+        <li><strong>Feeds — new, and the first signal we own outright.</strong> Two RSS surfaces from the next deploy. A feed produces no analytics by construction, which is the point; what it produces is reachability without an intermediary.</li>
+      </ul>
+
+      <p><strong>Last week's bet, read:</strong> <em>"put Edition 04 in front of its first twenty qualified readers."</em> <span class="pill hold">Half-landed, at a ceiling</span>. The in-control half landed fully and then some: engagement list v2 slice 1 (20 names, assessment-reform beat) filed 2026-08-10, slice 2 (15 names, Africa evidence beat) filed 2026-08-12, the first measurement-grid tile staged 2026-08-11, and an Africa internal-link pre-wire audit filed 2026-08-13 that maps the cluster Ed05 will land into. The other half — actually reaching anyone — could not start, because following someone requires an account and we have none. <strong>Thirty-five vetted targets are on disk and zero have been contacted.</strong> That is not a failure of the bet; it is the bet hitting a wall it was always going to hit, and it is the third consecutive week it has happened.</p>
+
+      <div class="flag">
+        <div class="kicker">The finding that redirected this week's bet</div>
+        <p style="margin:0 0 0.6em"><strong>The footer's RSS link has been a 404 since the initial publish on 2026-05-25.</strong> No feed generator, no static file, no dependency — <span class="num">/madar/rss.xml</span> simply did not exist, on every page, in both languages, for <span class="num">83</span> days and <span class="num">34</span> QA passes. The Arabic footer pointed at the English path, which was itself the 404.</p>
+        <p style="margin:0">It survived that long because every QA sweep we run resolves the links the <em>content</em> generates — <span class="num">related:</span> refs, hero stills, hreflang pairs, article slugs — and none had ever enumerated the links the <em>layout</em> generates. Chrome feels like furniture rather than data. Furniture 404s just as loudly. Prevention rule codified in §2.</p>
+      </div>
+
+      <div class="bet">
+        <div class="kicker">The week's single growth bet — and it is already shipped</div>
+        <p style="margin:0 0 0.7em"><strong>Make Madār subscribable without a platform.</strong> Rather than stage a fourth week of outreach behind the same two founder gates, the bet was to build the one distribution channel that needs no account, no platform and no call from you — and to make good on the promise the footer has been printing since day one.</p>
+        <p style="margin:0 0 0.7em"><strong>What shipped and verified today:</strong> an English feed and a peer Arabic feed (built from <span class="num">articles-ar</span>, not translated from the English one), autodiscovery <span class="num">&lt;link rel="alternate"&gt;</span> in every page head in both languages, and the Arabic footer repointed at the Arabic feed. Build exit 0, <span class="num">81</span> pages; both feeds parse as well-formed RSS 2.0 with <span class="num">38</span> items each, correct per-feed language, absolute self-links, unique permalink GUIDs and RFC-822 dates. Corpus parity is now preserved in the subscription surface as well as the reading surface. <strong>No new dependency</strong> — hand-rolled in about sixty lines, deliberately, because adding <span class="num">@astrojs/rss</span> means a lockfile edit from the sandbox and a hand-edited lockfile is what took CI down for four days on 2026-07-02.</p>
+        <p style="margin:0"><strong>Result read next Sunday (2026-08-23):</strong> both feeds resolve on the <em>deployed</em> surface, not just in <span class="num">dist</span> (rulings #16/#17 — verify in the environment that judges); both pass an external feed validator; and the URL sweep re-runs against the 2026-08-09 zero baseline. A second honest zero gets recorded exactly as plainly. One structural bonus: when the domain lands, a feed subscriber base does not have to migrate out of anyone else's system — unlike a Substack list. That is the second reason to have built this one first.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">2 · Quality Retrospective</div>
+      <h2>Four green runs, two dark days, one 83-day defect, and a recurring failure the operation keeps handling correctly one day at a time</h2>
+
+      <table>
+        <tr><th>Day</th><th>Run</th><th>Build</th><th>Parity</th><th>Defects filed</th><th>Pushed</th></tr>
+        <tr><td>2026-08-10</td><td>daily</td><td class="n">81pp · exit 0</td><td class="n">38 / 38</td><td>none</td><td>yes</td></tr>
+        <tr><td>2026-08-11</td><td>daily</td><td class="n">81pp · exit 0</td><td class="n">38 / 38</td><td>none</td><td>yes <span class="pill ok">runs 63–64 green</span></td></tr>
+        <tr><td>2026-08-12</td><td>daily</td><td class="n">81pp · exit 0</td><td class="n">38 / 38</td><td>none</td><td><strong>no</strong></td></tr>
+        <tr><td>2026-08-13</td><td>daily</td><td class="n">81pp · exit 0</td><td class="n">38 / 38</td><td>none</td><td><strong>no</strong></td></tr>
+        <tr><td>2026-08-14</td><td><strong>dark</strong></td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>2026-08-15</td><td><strong>dark</strong></td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>2026-08-16</td><td>weekly (this)</td><td class="n">81pp · exit 0</td><td class="n">38 / 38</td><td><strong>1 (P1, 83 days old)</strong></td><td>pending</td></tr>
+      </table>
+
+      <p><strong>The four runs that happened were clean.</strong> Every one verified state from git and the live site before planning (never from the previous brief), built green through the route-around recipe with session-unique log paths, and asserted the post-flip all-approved mode correctly: <span class="num">38 EN / 38 AR</span> in dist, <span class="num">81</span> sitemap URLs, all 38 heroes resolving, wordmark inline, hreflang triple, zero orphaned <span class="num">related:</span> refs on a full sweep. No publish gate was invoked, correctly — nothing was staged for publication on a recon week. The deploy is verified current: Actions run 64 succeeded and the live homepage serves Edition 04.</p>
+
+      <p><strong>Two dark days, 2026-08-14 and 2026-08-15.</strong> Stated plainly, per the standing rule: two days produced no run and no brief. The trigger is structural and platform-side — a scheduled run needs the app open — and the operation does not own it. What the operation owns is the shape of the run that comes back, and that is already codified: the next daily is a <strong>recovery run</strong> (verify state from git and the live site; re-verify the freshness of every banked recon before drafting from it; ship at most one piece; state the gap plainly). Ed05 recon 6 — the best-system-in-Africa question — is the natural first move back, and the five banked recons get their freshness re-check before any of them reaches a drafter.</p>
+
+      <h3>The near-miss that reached production, and stayed there for 83 days</h3>
+      <p>The RSS 404 in §1 is this review's real find, and it is worth being precise about what kind of failure it is. It is not a content error — no figure was wrong, no source misattributed, and the Verifier's machinery worked exactly as designed on everything it was pointed at. It is a <strong>scope</strong> failure, and the same species as the flag-sweep inversion codified on 2026-08-09: <em>a green check is scoped to what it enumerates, and a check that never enumerates a surface cannot fail on it.</em> Thirty-four QA passes reported "links resolve" and were telling the truth about the links they looked at.</p>
+
+      <h3>The recurring defect class: the push gap</h3>
+      <p>Three in eight days — 2026-08-09 (named on 08-10), 2026-08-12 (named on 08-13), and the current one running 2026-08-12 → 2026-08-16, five days and four artefact-days deep. Each run handled it correctly in isolation: verified state, named it plainly, rolled the block forward. <strong>That correct local handling is exactly why it recurs</strong> — nothing about the second unpushed day looks any different from the first, so nothing escalates. Two things do change with duration: the founder's proof-of-work contract is delivered by the <em>push</em>, not by the file on disk (an unpushed brief is an undelivered brief); and the risk is not loss but contamination — the longer a block sits, the more a single <span class="num">git add -A</span> sweeps, and the wider the window for a founder push to land underneath it, which has now happened four times.</p>
+
+      <div class="rule-box">
+        <div class="kicker">Codified into the RUNBOOK this week — rule 1</div>
+        <p style="margin:0"><strong>The QA link sweep covers site chrome, not just content links.</strong> The daily pass enumerates every <span class="num">href</span> and <span class="num">src</span> emitted by <span class="num">Base.astro</span>, <span class="num">SiteHeader.astro</span>, <span class="num">SiteFooter.astro</span> and any layout-level component, and asserts each resolves in <span class="num">dist</span> — swept over the built HTML, not read from the source. And: <em>a link in the chrome is a promise the build must keep</em> — if the target does not exist, either build the target or remove the link in the same commit. A nav item pointing at an intention is a defect, not a placeholder.</p>
+      </div>
+
+      <div class="rule-box">
+        <div class="kicker">Codified into the RUNBOOK this week — rule 2</div>
+        <p style="margin:0"><strong>A push gap escalates; it does not simply roll forward.</strong> At <strong>≥1 day unpushed</strong>, the push block moves to the top of the brief, above Yesterday, with an explicit "N days unpushed · M artefacts staged" line. At <strong>≥3 days unpushed</strong>, the run's first action — before adding anything new — is to reconcile the working tree against the brief ledger (every artefact each unpushed brief claims is still on disk and still complete) and to re-check <span class="num">git log origin/main -1</span>, with the reconciliation written into the QA log. The operation does not own whether the push happens; it owns whether the block stays clean and legible while it waits.</p>
+      </div>
+
+      <p><em>Reconciliation run for this review, per the new rule:</em> all four unpushed artefact-days verified present and complete on disk — Briefs 51 and 52, recons 4 and 5, guidebook rows 21 and 22, growth slices, QA logs for 08-12 and 08-13, plus today's review, ruling #29, the INDEX consolidation and the feed work. Origin re-checked at <span class="num">232319c</span>, unmoved since 2026-08-11. Nothing lost; the block is large but clean.</p>
+    </section>
+
+    <section>
+      <div class="kicker">3 · Knowledge Consolidation</div>
+      <h2>Four rows, one family named, and the first new ruling in three weeks</h2>
+
+      <p><strong>Section 1 grew 18 → 22 rows.</strong> The week's four source indices are now proper table rows rather than dated addenda: <strong>19</strong> UAE / teacher nationalization, <strong>20</strong> Egypt / teacher-deficit closure, <strong>21</strong> Sierra Leone / SLEIC outcomes fund, <strong>22</strong> Sudan / digital learning. Rows 19 and 20 carry a status the table has not held before — <em>deferred by a frame change</em> rather than held-then-shipped. Recorded explicitly, because a recon that a redirect parks is still a durable asset and the row should say so rather than quietly age.</p>
+
+      <h3>The week's compounding asset: the scoped-instrument family, now named</h3>
+      <p>Four rows turned out to be filing four shapes of a single rule. Consolidated:</p>
+
+      <table>
+        <tr><th>Shape</th><th>Row</th><th>The failure it names</th></tr>
+        <tr><td>A pledge is a scoped instrument</td><td class="n">15</td><td>Progress figure quoted without its scope-definition-with-date</td></tr>
+        <tr><td>A multiplier without a base</td><td class="n">19</td><td>"Ninefold" with no disclosed baseline</td></tr>
+        <tr><td>A deficit is a ratio, not a headcount</td><td class="n">20</td><td>A closure claim with no published formula and a moving denominator</td></tr>
+        <tr><td>An equivalent-years claim carries its ruler</td><td class="n">21</td><td>A conversion quoted without the ruler that produced it</td></tr>
+      </table>
+
+      <p><strong>The one rule underneath:</strong> <em>a claimed quantity is unreadable without the instrument that produced it</em> — scope, base, denominator and ruler are four names for the same missing half of a figure. The verification move is a single question asked of any headline number: <strong>"…out of what, produced how?"</strong>, with both answers required from the source rather than reconstructed by arithmetic. This is the seven-axes checklist's sibling — the axes ask what a number is <em>conditioned on</em>; this family asks what <em>made</em> it. None of the four needed a new number; they ride #21/#22/#24/#25, which is what a maturing checklist looks like.</p>
+
+      <h3>Ruling #29 — a lineage claim is a figure</h3>
+      <p>One promotion, and the first new number since 2026-08-02. Row 22's Sudan method note moves from row-level to numbered: <strong>a claim that instrument B <em>is</em>, <em>descends from</em>, <em>continues</em> or <em>is a phase of</em> instrument A is a citable figure</strong>, carrying its own provenance axes — same programme, formal successor, rebrand, or independent parallel — and it must be traced verbatim to a source that states the relationship, exactly as a number is traced to a source that states the value. Same place plus same technology plus same look ≠ same instrument.</p>
+      <p>It earned the number on three tests. <strong>Nothing existing covers it</strong> — the seven axes and the scoped-instrument family both scope a <em>number</em>; this scopes an <em>identity</em>, and a draft can carry every figure perfectly and still be wrong in its spine. <strong>It caught a live one</strong>: the tempting Sudan spine, "the wartime digital learning spaces run the platform Sudan invented," is supported by place, technology and idea, by no served-text source stating the identity, and is contradicted by one register — War Child's 2025 country list, which does not include Sudan. <strong>It generalises</strong> across the slate: Egypt's drive-versus-drive, Rwanda's CBC descent, every "Phase II," and every "building on the success of" sentence in a press release, which is where lineage claims are manufactured. The Verifier's trace list gains a <span class="num">lineage claim traced to a source stating the relationship: ☐</span> row whenever a spine depends on it. Series check: <strong>#1–#29, no gaps, no duplicates.</strong></p>
+
+      <h3>Two smaller consolidations</h3>
+      <ul>
+        <li><strong>The #28b routing family reaches eight conventions and its general case is now clear.</strong> Sahar Cooper (row 19) and Richard Mustapha (row 21) are the same case run in opposite directions — an English-convention part beside an Arabic-restore part in one byline. Stated durably: <em>the mixed-origin byline is the family's general case, not its exception.</em> Row 20 adds the inversion worth flagging — on native-Arabic stories the routing risk moves to the <em>English</em> side, where Arabic-native names take their attested EN forms of record rather than fresh phonetic renderings.</li>
+        <li><strong>Pruning: nothing deleted, and two near-duplicates deliberately kept apart</strong> — the two Sierra Leone rows (2026-06-06 TSC deployment vs row 21 SLEIC outcomes fund) and the two Sudan subjects (Ed03 exam continuity vs row 22 learning delivery). Merging either would have been the precise error #29 names. Flagged but <em>not</em> acted on: the dated-addenda ledger is now the longest part of the INDEX and is read almost never, while the tables are read constantly — archiving the older addenda is a candidate for the next consolidation, and doing it in the same pass as adding four rows would have mixed two kinds of edit.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="kicker">4 · Team-Expansion Decision</div>
+      <h2>No new persona. Third consecutive week — and this time with a tripwire written down</h2>
+
+      <p><strong>The team holds at eleven.</strong> The expansion ladder asks for a <em>recurring</em> capability gap against a <em>genuinely saturated</em> team, and neither test passes this week. Taken candidate by candidate:</p>
+
+      <table>
+        <tr><th>Candidate</th><th>Ladder trigger</th><th>State this week</th><th>Call</th></tr>
+        <tr><td>Social / Video</td><td>Growth saturates a channel needing craft beyond stills + copy</td><td>Growth has not saturated a channel; Growth has <em>no</em> channel. Zero accounts exist.</td><td><span class="pill">not yet</span></td></tr>
+        <tr><td>Data / SEO analyst</td><td>Real traffic to analyse, a surface worth optimising</td><td>No analytics by design; second consecutive zero-inbound sweep. Nothing to analyse.</td><td><span class="pill">not yet</span></td></tr>
+        <tr><td>Second-language editor</td><td>Expansion beyond EN/AR</td><td>No third language contemplated.</td><td><span class="pill">not yet</span></td></tr>
+        <tr><td>Researcher</td><td>Editor bottlenecked doing recon</td><td>Added 2026-06-14; producing one recon per run without touching the content slot. Working.</td><td><span class="pill ok">filled</span></td></tr>
+      </table>
+
+      <p><strong>The honest reasoning, and why it matters more than the answer.</strong> This week's two binding constraints were runs that did not happen and pushes that did not land. Neither is a capability gap, and neither is solved by a persona — a twelfth role on a dark day produces nothing, and on an unpushed day it produces one more artefact the founder cannot open. Adding someone would have been motion mistaken for progress, which is the exact failure the ladder exists to prevent. Restraint applies to the org chart as much as to the publication.</p>
+
+      <div class="rule-box">
+        <div class="kicker">The tripwire, recorded so the next "no" has to earn itself</div>
+        <p style="margin:0">A third consecutive "no persona" risks becoming a reflex, so the condition that flips it is now written down rather than re-judged from scratch each Sunday: <strong>the moment the Substack account and the social accounts exist, Growth converts from a preparation function into an operating one</strong> — 35 vetted targets become 35 relationships to run, a send becomes open/return/reply data to read, and the feed becomes a surface with subscribers. <em>That</em> is when Social/Video and the Data/SEO analyst become live candidates, in that order, and the review that follows the first send is where they get decided. Not before. Until then the correct answer is no, and it should be given quickly.</p>
+      </div>
+
+      <p><strong>One org-chart correction made this week.</strong> The Charter's roster line read <em>"Current team (7)"</em> — unchanged since 2026-06-03 and four additions out of date (Researcher, Content Creator II, Arabic Content Creator, Verifier). It is the first thing every session reads. Now corrected to eleven, with the RUNBOOK routing diagram named as canonical and the headcount line explicitly demoted to a headcount. A stale roster in the first-read document is a small error with a long reach.</p>
+    </section>
+
+    <section>
+      <div class="kicker">The push</div>
+      <h2>One block, five days</h2>
+      <p>This carries 2026-08-12 through 2026-08-16: Briefs 51 and 52, Ed05 recons 4 (Sierra Leone) and 5 (Sudan), guidebook rows 21 and 22, engagement-list slice 2, the Africa cluster pre-wire audit, QA logs for 08-12 and 08-13, and today's review — plus ruling #29, the INDEX consolidation to 22 rows, two RUNBOOK prevention rules, the Charter roster correction, and the two feeds with their autodiscovery. Origin verified unmoved at <span class="num">232319c</span> before this block was composed.</p>
+
+<pre>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-08-16 weekly review: SHIP bilingual RSS feeds -- the footer RSS link had been a 404 since the 2026-05-25 initial publish (83 days, 34 QA passes, both languages). EN + AR feeds, dependency-free (no lockfile edit), autodiscovery in every page head, AR footer repointed. Build verified 81pp exit 0, both feeds well-formed RSS 2.0, 38 items each, unique GUIDs, RFC-822 dates, parity 38/38, sitemap 81. Ruling #29 filed (a lineage claim is a figure -- promoted from the Sudan recon after it caught a draft spine; series #1-#29). Guidebook Section 1 consolidated 18 to 22 rows; scoped-instrument family named with its four shapes. Two RUNBOOK prevention rules: QA link sweep covers site chrome; a push gap escalates with duration. Charter roster corrected 7 to 11. Team holds at 11, tripwire recorded. Growth bet = make Madar subscribable without a platform (shipped). Also carries the unpushed 08-12 and 08-13 days (Briefs 51-52, Ed05 recons 4 Sierra Leone + 5 Sudan, guidebook rows 21-22, engagement slice 2, Africa cluster pre-wire audit, QA logs). Dark days 08-14 and 08-15 named; next daily is a recovery run."
+git push origin main</pre>
+
+      <p style="font-size:0.94rem;color:var(--color-muted)">After it lands: Actions should show a green <em>Deploy Astro site to Pages</em> run, and <span class="num">/madar/rss.xml</span> and <span class="num">/madar/ar/rss.xml</span> become live — the first time either URL has resolved. Next Sunday's review verifies both on the deployed surface rather than in <span class="num">dist</span>, per rulings #16 and #17.</p>
+    </section>
+
+    <div class="footer">
+      Madār · مدار — weekly review, 2026-08-16 · prepared autonomously by the Manager · covers 2026-08-10 → 2026-08-16<br>
+      Made in spite of, not because of.
+    </div>
+
+  </div>
+</main>
+</body>
+</html>

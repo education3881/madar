@@ -63,7 +63,7 @@ The publication grows by being worth returning to, not by volume. The loop, run 
 
 The team grows **gradually and deliberately**, decided in the weekly review — never on novelty. Add a persona only when a capability gap is *recurring* and the existing team is *genuinely saturated*.
 
-Current team (7): Manager/CEO, Editor (the filter), Content Creator, Arabic Editor, Web Developer, Designer, Growth.
+Current team (11, as of 2026-08-16): Manager/CEO, Editor (the filter), Researcher, Content Creator, Content Creator II, Verifier, Arabic Editor, Arabic Content Creator, Web Developer, Designer, Growth. The routing diagram in the RUNBOOK is canonical; this line is the headcount only. *(Corrected at the 2026-08-16 weekly review — it had read "(7)" since 2026-06-03, four additions out of date, in the one document every session reads first.)*
 
 Candidate future roles, in likely order of need:
 1. **Researcher** — a dedicated source-reconnaissance persona, if the Editor is repeatedly bottlenecked doing recon before drafting. (Watch signal: candidates parking for sourcing-time, not sourcing-quality.)

@@ -62,6 +62,24 @@ const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).href : null;
     )}
     <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
 
+    {/* Feed autodiscovery (added 2026-08-16). The reader's own language first,
+        then the peer feed — a feed reader offers both, which is the point of a
+        bilingual publication. Not a nav link: this is the signal readers and
+        aggregators look for in <head>, and its absence is why the footer's RSS
+        link had nothing behind it from 2026-05-25 to 2026-08-16. */}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={lang === 'ar' ? 'مدار · Madār — العربية' : 'Madār · مدار — English'}
+      href={withBase(lang === 'ar' ? '/ar/rss.xml' : '/rss.xml')}
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={lang === 'ar' ? 'Madār · مدار — English' : 'مدار · Madār — العربية'}
+      href={withBase(lang === 'ar' ? '/rss.xml' : '/ar/rss.xml')}
+    />
+
     {/* Fonts — Cormorant Garamond + Newsreader (Latin), JetBrains Mono, Amiri + Cairo (Arabic).
         Production stand-ins per SYSTEM.md §2; commissioned faces remain TODO. */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
