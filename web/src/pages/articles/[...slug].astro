@@ -52,13 +52,23 @@ const arabicHref = piece.data.arabicVersion
 
 // Canonical share URL — absolute, includes base path. Used by the ShareRail.
 const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// og:image must be a RASTER format (Growth audit, 2026-08-18). Our hero stills
+// are SVG, and no major social consumer renders SVG cards — Facebook, X,
+// LinkedIn and Slack all accept PNG/JPEG/WEBP/GIF only. An SVG og:image
+// resolves, passes every link check we run, and still shows the reader nothing.
+// `public/og/<slug>.png` is a 1200x600 render of the same still, generated from
+// public/stills/*.svg (sharp/librsvg). The SVG stays on-page; the PNG travels.
+const ogCard = piece.data.hero?.src
+  ? withBase(piece.data.hero.src.replace(/^\/stills\//, '/og/').replace(/\.svg$/, '.png'))
+  : undefined;
 ---
 
 <Base
   title={`${piece.data.title} — Madār`}
   description={piece.data.dek}
   lang="en"
-  ogImage={piece.data.hero?.src ? withBase(piece.data.hero.src) : undefined}
+  ogImage={ogCard}
   noHeader={true}
   alternate={piece.data.arabicVersion
     ? { en: `/articles/${piece.id}/`, ar: `/ar/articles/${piece.data.arabicVersion}/` }

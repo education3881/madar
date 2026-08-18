@@ -34,7 +34,9 @@ const copy = {
     rss: 'RSS',
     contact: 'اتصل',
     aboutLabel: 'عن المنشور',
-    aboutHref: withBase('/ar/about/'),
+    // See SiteHeader: /ar/about/ has never existed. Resolves to the Arabic
+    // home's About section until the standalone AR About page ships.
+    aboutHref: withBase('/ar/#about'),
     editionsLabel: 'الإصدارات',
     editionsHref: withBase('/ar/editions/'),
     homeHref: withBase('/ar/'),

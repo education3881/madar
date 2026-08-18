@@ -46,13 +46,19 @@ const englishHref = piece.data.englishVersion
 
 // Canonical share URL — absolute, includes base path. Used by the ShareRail.
 const shareUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// og:image must be a RASTER format — see the note on the EN article route.
+// SVG cards resolve and render nothing on every major social consumer.
+const ogCard = piece.data.hero?.src
+  ? withBase(piece.data.hero.src.replace(/^\/stills\//, '/og/').replace(/\.svg$/, '.png'))
+  : undefined;
 ---
 
 <Base
   title={`${piece.data.title} — مدار`}
   description={piece.data.dek}
   lang="ar"
-  ogImage={piece.data.hero?.src ? withBase(piece.data.hero.src) : undefined}
+  ogImage={ogCard}
   noHeader={true}
   alternate={piece.data.englishVersion
     ? { en: `/articles/${piece.data.englishVersion}/`, ar: `/ar/articles/${piece.id}/` }

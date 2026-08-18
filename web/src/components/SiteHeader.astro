@@ -42,7 +42,10 @@ const nav = {
   ar: { latest: 'الأحدث', editions: 'الإصدارات', about: 'عن المنشور', newsletter: 'النشرة' },
 }[lang];
 
-const aboutHref = withBase(lang === 'ar' ? '/ar/about/' : '/about/');
+// Arabic has no standalone About page yet (commissioned 2026-08-16); the AR
+// chrome resolves to the approved About section on the Arabic home rather than
+// to /ar/about/, which 404'd. Revert to '/ar/about/' when that page ships.
+const aboutHref = withBase(lang === 'ar' ? '/ar/#about' : '/about/');
 const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
 ---
 

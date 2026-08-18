@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-08-18</title>
+<meta name="description" content="Manager to Founder daily brief for Tuesday 18 August 2026. Yesterday&#39;s forward question — is the asset at the other end usable by the machine that fetches it — failed on its first application: every article&#39;s share card has been an SVG since 25 May, and no social platform renders SVG. Eighty-three days of shares with no image. Thirty-eight PNG cards rendered and wired, VALENCE given its own. Ed05 recon 8 fills the East Africa slot with Rwanda; ruling 32, a credit line is not an output line. Two days unpushed." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Tuesday · 18 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 55</div>
+    <h1>Every share of every piece, in both languages, has travelled without a picture since May.</h1>
+    <p class="dek">Yesterday I left a question on the table: the sweeps check that a link <em>resolves</em> and that a page is <em>reachable</em> — neither checks that the thing at the other end is usable by the machine that fetches it. I asked it this morning and it failed on the first surface I pointed it at. Every article's share card is its hero still, and every hero still is an <strong>SVG</strong> — a format <strong>no major social platform renders</strong>. The file exists, the URL is absolute, it has resolved on every QA pass we have ever run, and for <strong>eighty-three days</strong> a link to Madār pasted anywhere has arrived as a bare line of text. Our stills are the best thing we make and no reader who hadn't already visited has ever seen one. <strong>Thirty-eight PNG cards rendered and wired this morning, plus a bespoke one for VALENCE.</strong> On the editorial side, Ed05's last regional gap but one closes: <strong>Rwanda</strong>, and the most instructive kind of accomplishment — a government that put unqualified adults in front of children on purpose, wrote the debt down, and then paid it. <strong>Two days now unpushed; two defects are live on the site while you read this.</strong></p>
+  </section>
+
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">The push</div>
+      <div class="day__title">
+        <h2>2 days unpushed · 24 paths staged · two live defects waiting on one command.</h2>
+        <div class="day__date">2026·08·18 · block at the top, per the ≥1-day rule · origin re-checked immediately before composing</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">What is waiting, and what it costs to keep waiting</div>
+        <div class="item__body">Origin still sits at <span class="mono">47ac212</span> (16 August). Two complete days are on disk and undelivered: Sunday's weekly block and the whole of yesterday. Two consequences are <strong>live on the site right now</strong>, and both are already fixed on disk: the Arabic nav item <span lang="ar" dir="rtl">«عن مدار»</span> <strong>404s for every Arabic reader</strong>, and <strong>/valence/ is still an orphan</strong> — no sitemap entry, no inbound link, no card. Nothing is lost; I reconciled every artefact both unpushed briefs claim against the working tree, line by line, and the block is clean. But per the rule we wrote on Sunday, an unpushed brief is an <em>undelivered</em> brief — authorship isn't the contract, delivery is.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">One copy-paste block — this is your only action today</div>
+        <div class="item__body"><pre class="push"><code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-08-18: carries three staged days -- the 08-16 weekly block, the whole 08-17 day, and today. Two live defects clear on this push: the Arabic About nav 404 and the VALENCE orphan. Today: yesterday's forward question asked deliberately -- a sweep checks that a link resolves and that a page is reachable, neither checks that the asset at the other end is usable by the consumer that fetches it. Applied to og:image it failed on first contact. Every article in both languages has declared its hero still as the share card since the first publish on 25 May, and every still is an SVG, which no major social consumer renders -- Facebook, X, LinkedIn and Slack take PNG, JPEG, WEBP, GIF only. The file existed, the URL was absolute, it resolved on every QA pass we have run, and for 83 days every share arrived with no card image while the log recorded the image as present. The pages also declared twitter:card summary_large_image, promising a large image and delivering none. Fixed in-run: 38 PNG cards generated from the same stills at 1200x600 via sharp and librsvg, 452 KB total, roughly 10 KB each; both article routes now derive the card path from the still path with the reason in the source comment so the two cannot drift; new standing assertion that no og:image may end in .svg. VALENCE also gets its own bespoke card, a line-art lattice with one bond in kiln orange -- the item flagged yesterday as the highest-leverage one left. One rendering defect caught by looking at the output: letter-spacing broke the Arabic wordmark joins, tracking is never applied to Arabic. Also fixed: the brief template lost its main container wrapper on 08-16, so the last two briefs rendered edge to edge -- restored, and the brief is now on the checklist it was never on. Content: Ed05 recon 8 fills the East Africa slot with Rwanda -- the quality debt of an access expansion. Hiring criteria deliberately relaxed to staff a 22,000-classroom build, about 25,000 people entering under a category the system invented for them, then a weekend and holiday certification programme across all 30 districts with NESA examining, 24,000 certificates, and from September 2026 teacher training college goes from three years to five. Guidebook row 25 filed as ruling 32, a credit line is not an output line: the World Bank feature credits its project with over 22,000 classrooms while the same partnership's own progress note credits it with over 11,000, because the first carries the national total under a project heading. An attribution can be false while every underlying figure is correct, which is why none of the seven figure axes catch it. QA green: 82 pages, 82 sitemap URLs, parity 38/38, 150/150 related refs, 90/90 chrome targets, 76/76 hreflang, 39/39 og cards raster and resolving, both feeds well-formed at 38 items."
+git push origin main</code></pre></div>
+        <div class="item__note">The commit message is single-line ASCII and carries no <span class="mono">!</span> or <span class="mono">$</span> — zsh history and variable expansion broke this push twice in August.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A full day's work, complete and correct, that never reached you.</h2>
+        <div class="day__date">2026·08·17 · Brief 54 · written, not delivered</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">What was produced</div>
+        <div class="item__body">Ed05 recon 7 filled the Egypt carry-over with the <strong>Egyptian Baccalaureate</strong> and its 99% opt-in; <strong>ruling #31</strong> — a voluntary-uptake figure carries its counterfactual — followed from it. The chrome sweep ran green on its first daily outing, and running it exposed the orphan question that found VALENCE unlinked for nine days; that was fixed in-run, sitemap 81 → 82. All of it is on disk. None of it is on the site.</div>
+      </div>
+      <div class="item">
+        <div class="item__label">The honest gap</div>
+        <div class="item__body">No dark day and no lost work — but two days of proof-of-work now sit where you cannot open them, and the two defects yesterday's run identified are still live because the fix is still local. That is the whole of the gap, stated plainly.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The card that was never there, and the teachers Rwanda hired before it trained them.</h2>
+        <div class="day__date">2026·08·18 · Africa recon cadence, entry 8 · five standing functions</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality — the question, asked on purpose, answered on first contact</div>
+        <div class="item__body">Three days running now the sweep has found what the previous day's sweep could not structurally see. The difference today: the first two were tripped over, this one was <em>asked for</em>. The question I left in yesterday's brief was whether a resolving link goes somewhere <em>usable</em>. Pointed at <span class="mono">og:image</span>, it failed immediately.
+        <br/><br/>Every article, both languages, has declared its hero still as the share card since <strong>25 May</strong>. Every hero still is an <strong>SVG</strong>. <strong>Facebook, X, LinkedIn and Slack accept PNG, JPEG, WEBP and GIF — none accepts SVG.</strong> The image existed, the URL was absolute (an earlier Growth audit made it absolute precisely so scrapers could resolve it), and it passed every check we own, because "resolves" is a narrower question than "works." Aggravating detail: the pages also declare <span class="mono">twitter:card = summary_large_image</span> — a promise of a large image, kept with nothing.</div>
+        <div class="item__note">Fourth statement of one rule: <strong>a green check is scoped to what it enumerates.</strong> Flag-sweep inversion (08-09) · chrome 404 (08-16) · orphan page (08-17) · and today, an asset in a format its consumer cannot read.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth — thirty-eight cards, and VALENCE gets its own</div>
+        <div class="item__body">Rendered and wired in-run: <strong>38 PNG cards</strong> at <span class="mono">public/og/</span>, one per still, generated from the same SVGs — <strong>452 KB total, about 10 KB each</strong>, because line art compresses to almost nothing. Native <strong>1200×600</strong>, not padded to 630: X crops to 2:1 anyway, and padding put visible paper bars across the stills with a sand ground — so neither a crop nor a bar. Both article routes now <em>derive</em> the card path from the still path, with the reason written into the source comment, so the two can never drift apart.
+        <br/><br/>And <strong>VALENCE has a card</strong> — the item I flagged yesterday as the highest-leverage one left. A bespoke line-art still in the house palette: a lattice of elements, one bond in kiln orange. 11 KB, wired with dimensions, alt text and a Twitter image.</div>
+        <div class="item__note">One defect caught by <em>looking at the render</em>, per the standing rule: <span class="mono">letter-spacing</span> broke the Arabic wordmark's joins — <span lang="ar" dir="rtl">مدار</span> came out as four separate letters. Tracking is never applied to Arabic. Re-rendered, re-inspected at 3× zoom.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content — Ed05 recon 8 · Rwanda · the East Africa slot</div>
+        <div class="item__body">The slate's regional balance was West, North and continental with nothing from East or Southern Africa. Rwanda closes the first of those, and under the positive posture it turns out to be the most instructive accomplishment the edition has found — because the accomplishment is <strong>bookkeeping</strong>.
+        <br/><br/>Rwanda built classrooms faster than it could staff them. So it <strong>relaxed the hiring bar on purpose</strong>: secondary-school graduates with subject knowledge but no teacher training went into classrooms, and roughly <strong>25,000</strong> of them were carried on the payroll under a category the system invented for them — <em>uncertified</em> — with the training obligation written down beside the job. Then it discharged the obligation. From April 2024: four condensed college modules taught on <strong>weekends and public holidays</strong> so no lesson was lost, <strong>36 facilitators training 600 trainers across all 30 districts</strong>, peers teaching peers against observation checklists, <strong>childcare provided at the venue</strong> so mothers could attend, and an examination at the end, set by the assessment authority, that a teacher could fail. <strong>24,000 certificates.</strong> And from <strong>September 2026 — three weeks from now — teacher training college goes from three years to five</strong>, so the debt does not recur.
+        <br/><br/>The frame is <em>incur, disclose, retire</em>, and the question it puts to every system expanding access faster than it can staff it is not whether to take on quality debt — that is often unavoidable — but <strong>whether you write it down where someone can see it</strong>.</div>
+        <div class="item__note">Three gaps close before commission, named in the recon rather than papered over: the <strong>funnel</strong> (one number, 24,000, standing in for five — enrolled, sat, passed, certified, still uncertified), the <strong>denominator</strong> (24,000 out of what workforce?), and the date on one load-bearing page. Voice tier is unusually complete — a named primary teacher, quoted at length, with something at stake — and unusually <em>single-channel</em>: every voice reaches us through the funder's or the ministry's own publication. The recon says so.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn — guidebook row 25 · ruling #32</div>
+        <div class="item__body"><strong>A credit line is not an output line; an attribution is a figure.</strong> The World Bank's account of the programme says that under its project the ministry "completed construction of over <strong>22,000 classrooms</strong>." The <em>same partnership's own progress note</em> credits the project with "over <strong>11,000 classrooms</strong>." Both are true of different things — the national programme built ~22,505, financed by a government contribution <em>alongside</em> the loan — and a draft quoting the first sentence would credit a loan with twice what it built.
+        <br/><br/>Why it earns a number rather than a note: our seven figure axes all ask <strong>what the number counts</strong>. None asks <strong>whose number it is</strong>. An attribution can be false while every underlying figure is correct — right value, right population, right vintage, right scope, wrong agent. It passes every check we own.
+        <br/><br/>And it will recur, because of your own posture. <strong>Nobody claims credit for a failure.</strong> In a lament, attribution is contested downward; in an <em>accomplishment</em>, it is contested upward — ministry, financier, implementing agency and donor each hold a legitimate share and each writes the largest true sentence available to it. Not fabrication: correct figures orbiting an unstated denominator of credit. Every story on the Africa slate is co-financed.</div>
+        <div class="item__note">Series now #1–#32, no gaps, no duplicates. Also banked: the <strong>duration seam</strong> ("in less than one year" against a programme running April 2024 to at least October 2025, in waves) — name the clock or drop the duration; and <strong>#28b gains Kinyarwanda</strong> — names route by Kinyarwanda phonology, never by a French reading of a Latin spelling that only looks French.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality — a second regression, found in this document</div>
+        <div class="item__body">While copying yesterday's template I found that the brief lost its <span class="mono">&lt;main class="container"&gt;</span> wrapper on 16 August. <strong>Your last two briefs rendered edge-to-edge</strong> — no max width, no side margins — on a page whose stylesheet defines both. Restored today. The instructive part is the shape, which is the same one as everything else in this brief: <strong>the brief is a deliverable that nothing checks.</strong> It is now on the checklist.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality — the rest of the pass, green</div>
+        <div class="item__body">Build exit 0. <strong>82 pages · 82 sitemap URLs</strong> (yesterday's orphan detector, green on its first daily run). Parity <strong>38/38</strong>, slug parity both directions, zero held drafts. <strong>150/150</strong> <span class="mono">related:</span> refs · <strong>90/90</strong> chrome targets · <strong>76/76</strong> hreflang alternates · <strong>76/76</strong> hero assets present in both formats · <strong>39/39</strong> share cards raster and resolving · both feeds well-formed at 38 items · zero <span class="mono">&lt;img&gt;</span> wordmarks. Every sweep carries its anti-vacuity assertion: a check that finds nothing to check has failed, not passed.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-08-18 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Southern Africa, and whether our feeds are readable by anything but us.</h2>
+        <div class="day__date">2026·08·19 · Africa recon cadence, entry 9</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">Content — on deck</div>
+        <div class="item__body">One regional gap left. The bank now holds West (Sierra Leone), North (Egypt, twice), East (Rwanda) and one continental read; <strong>Southern Africa is the last empty quarter</strong>. Candidates to test on evidence rather than reputation: Botswana, Zambia and Namibia on the fee-free waves, South Africa on improvement velocity — it is the one system on the continent with a published, externally-administered gain series worth reading, and under a positive posture the gain is the story rather than the level. Recon stays one per run and does not touch the drafting rule.</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Quality — the next surface the sweep cannot see</div>
+        <div class="item__body">Same question, next asset: <strong>the feeds</strong>. Both are well-formed and carry 38 items, and nothing has ever checked that an item renders <em>legibly in a reader</em>, that Arabic items carry their direction, or that their links resolve from outside our own origin. Well-formed is to a feed what "resolves" was to the card.</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Waiting on you — still three, and the first two now cost more than they did</div>
+        <div class="item__body"><strong>The custom domain</strong> (memo filed 12 June — every day binds more URLs to the GitHub Pages path). <strong>Substack</strong> — until it exists Growth is preparation, not operation, and the traffic line above stays honest-but-empty. And <strong>VALENCE's placement</strong>: it now has a card, so what remains is genuinely yours — where it sits in the chrome, and whether it gets an Arabic edition, an Arabic entry point, or an explicit English-only note. One note in support of the first: a web search for the publication by name and URL this morning surfaced nothing of ours. That is what an unindexed site on a borrowed path looks like.</div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    Manager → Founder · Daily Brief · 2026·08·18<br/>
+    Madār · made in spite of, not because of.
+  </footer>
+
+</main>
+</body>
+</html>

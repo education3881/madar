@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-08-17</title>
+<meta name="description" content="Manager to Founder daily brief for Monday 17 August 2026. The site-chrome sweep codified on 08-16 ran green on its first day and exposed its own blind spot: VALENCE had been served for nine days with zero inbound links and no sitemap entry. Fixed in-run. Ed05 recon 7 fills the Egypt carry-over with the Egyptian Baccalaureate and its 99 percent opt-in; guidebook ruling 31, a voluntary-uptake figure carries its counterfactual. One day unpushed." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>
+    <div class="masthead__date">
+      Daily Brief · Manager → Founder
+      <strong>Monday · 17 August 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="kicker">Daily Brief · No. 54</div>
+    <h1>Yesterday's new rule found a 404. Today's found a page nobody could reach.</h1>
+    <p class="dek">The chrome sweep we codified on Sunday ran green on its first morning — 98 links, none broken. Running it exposed the question it cannot ask. <strong>A link sweep checks pages that are pointed at; it can never find a page that nothing points to.</strong> <em>VALENCE</em> — your 540 KB instrument, 58 elements and 378 bonds, live since 8 August — has been served for nine days with zero inbound links, no sitemap entry, no social card, and no way back into Madār from it. Google had no route to it; a share of it rendered as a bare URL. Fixed inside the run. On the editorial side, <strong>Egypt's carry-over slot came back with the best number the Africa edition has yet turned up: a voluntary certificate that 99% of families chose</strong> — which is either the most emphatic verdict a school system has ever received, or no verdict at all, and that question became today's thirty-first ruling. <strong>One honesty note first: Sunday's second push block never landed, so the Arabic About link is still 404ing for readers as you read this.</strong></p>
+  </section>
+
+  <!-- ===== THE PUSH — moved to the top per the >=1-day rule codified 2026-08-16 ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">The push</div>
+      <div class="day__title">
+        <h2>1 day unpushed · 15 artefacts staged · one of them is a live 404 fix.</h2>
+        <div class="day__date">2026·08·17 · block at the top, not the bottom · origin re-checked immediately before composing</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">Why this is the first thing you read today</div>
+        <div class="item__body">Sunday's rule says a push gap escalates rather than rolling forward: at one day or more, the block moves above <em>Yesterday</em> with the count stated. This is that. The reason it matters more than usual today is that <strong>the block contains a fix for a link that is broken on the live site right now</strong> — the Arabic nav item <span lang="ar" dir="rtl">عن مدار</span> points at <span class="mono">/madar/ar/about/</span>, a page that has never existed, and it will keep 404ing for every Arabic reader until this runs. The fix is written, built and verified; it is simply undelivered.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Ledger reconciliation — run at one day, though the rule only requires it at three</div>
+        <div class="item__body">The block carries a half-applied fix, so I reconciled it anyway rather than trusting it. Every artefact Sunday's weekly review claims is on disk and complete: all three component files carrying the About fix, the weekly review itself, Sunday's QA log, and the INDEX and RUNBOOK corrections. Both of Sunday's ruling files and recon 6 are intact. <strong>Nothing lost, nothing half-written.</strong> <span class="mono">git log origin/main -1</span> re-checked immediately before composing this block and unchanged at <span class="mono">47ac212</span> — the push race has landed under us four times, so that check is now reflex.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">One copy-paste block — this is your only action today</div>
+        <div class="item__body"><pre class="push"><code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-08-17: carries the unpushed 08-16 weekly block plus today. The 08-16 weekly review never pushed, so the Arabic About fix has been sitting on disk while the AR nav item 404s live -- that block goes up first here, unchanged and reconciled artefact by artefact against its own ledger. Today: the site-chrome link sweep codified on 08-16 ran green on its first daily run, 98 unique targets across seven pages, zero unresolved -- and running it exposed the question it structurally cannot ask. A link sweep checks pages that are pointed at, so it can never find a page that nothing points to. Found: /valence/ has been served since 08-08 with zero inbound links from anywhere on the site, no sitemap entry, no canonical, no social card, no feed autodiscovery, and no link back into Madar. Cause: it is served from web/public as a static file, and the sitemap integration enumerates the Astro route graph, which public files never enter. The tell had been in the QA numbers for nine days -- 82 built pages against 81 sitemap URLs, a difference of exactly one that no check compared. Fixed in-run: customPages in astro.config with the general rule written into the comment, plus canonical, full Open Graph and Twitter card, robots, feed autodiscovery, and three routes back into the publication styled in the page's own palette. Sitemap 81 to 82, matching the served page count exactly. Deliberately not done because it is an editorial call and not a QA fix: chrome placement, an og:image, and whether VALENCE gets an Arabic entry point -- all handed to the Designer. RUNBOOK gains the orphan sweep as a binding rule, third member of one family after the flag-sweep inversion of 08-09 and the chrome 404 of 08-16: a green check is scoped to what it enumerates. Content: Ed05 recon 7 fills the Egypt carry-over, re-angled positive per the 08-11 founder posture -- the Egyptian Baccalaureate, a second secondary certificate created by the law ratified 18 Aug 2025 with Article 37bis guaranteeing enrolment is optional, and a reported opt-in of about 95 percent in 2025-26 rising to 99 percent, order of 832000 students, for 2026-27. Seven registers mapped, six read in served text including the ministry's own and the joint-ministry announcement of 25 Jul 2025 that published which faculties each track opens two years before the first exams. Guidebook row 24 filed as ruling 31, a voluntary-uptake figure carries its counterfactual: a take-up rate is evidence of preference only if the unchosen option stayed genuinely available, otherwise it measures availability -- N percent enrolled, never N percent chose. Also banked: the announced instrument is not the enacted instrument, since the state's own register said replace in Jan 2025 and the bill said without abolishing in Jul 2025, both true of their own date; a new image wall, where the load-bearing mapping tables are published as JPEGs inside the release; the Al Manassa two-domain mirror; and two name routings for the Arabic Editor. QA green: build exit 0 both runs, 82 pages, parity 38/38, slug parity both directions, zero held drafts, 150 of 150 related refs resolving, 76 of 76 heroes, zero img wordmarks, hreflang reciprocal on all 76 article pages, both feeds well-formed at 38 items. Brief 54."
+git push origin main</code></pre></div>
+      </div>
+
+      <div class="item">
+        <div class="item__note">After it lands: the Arabic About link resolves for the first time since 25 May, and <span class="mono">/madar/valence/</span> becomes discoverable — sitemap entry, working social card, and three doors back into the publication. Actions should show a green <em>Deploy Astro site to Pages</em> run; next Sunday's review verifies all of it on the deployed surface rather than in <span class="mono">dist</span>, per rulings #16 and #17.</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== YESTERDAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A full day of work, delivered to disk instead of to you.</h2>
+        <div class="day__date">2026·08·16 · daily run pushed at 22:00 · weekly review did not</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">State, verified from git and the live surface — never from the last brief</div>
+        <div class="item__body"><span class="mono">HEAD == origin/main == 47ac212</span>, landed 16 August at 22:00. That was the big block, and it is fully delivered: three runs' work, both RSS feeds, rulings #29 and #30, the guidebook consolidation to 23 rows, and the Charter's roster correction. <strong>I verified the feeds on the live site, not in the build</strong> — <span class="mono">education3881.github.io/madar/rss.xml</span> returns 200 and serves 38 items. The deploy went through.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">What did not go through</div>
+        <div class="item__body">The weekly review ran the same evening and staged a <em>second</em>, smaller block — seven files — which never pushed. That block finishes the Arabic About fix that the 22:00 push caught mid-edit, and corrects two files that push carried in a pre-reconciliation state. <strong>Named plainly: yesterday's weekly review is authored but undelivered, and by the Charter's own standard a brief you cannot open has not reached you.</strong> It goes up first today, unchanged.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Worth keeping in view</div>
+        <div class="item__body">Sunday's review found that the footer's RSS link had pointed at a non-existent <span class="mono">/rss.xml</span> since the first publish — 83 days, 35 QA passes — and codified the chrome sweep in response. <strong>That new rule is what produced today's find.</strong> A rule that catches something on its second day is a rule worth having written.</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== TODAY ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The certificate almost everyone chose — and the page nobody could find.</h2>
+        <div class="day__date">2026·08·17 · five functions, all delivered · one defect found and fixed inside the run</div>
+      </div>
+    </header>
+
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Content — Ed05 recon 7: the Egypt carry-over, re-angled positive</div>
+        <div class="item__body">Your 11 August redirect kept Egypt in the Africa edition but re-pointed the angle from deficit-scrutiny to accomplishment. This is that re-angle, executed — and it is a <em>different instrument</em> from the teacher recon, so by ruling #30 the two do not merge.
+        <br/><br/>
+        On <strong>18 August 2025</strong> — almost exactly a year ago — Egypt ratified amendments creating the <strong>Egyptian Baccalaureate</strong> <span lang="ar" dir="rtl">(بكالوريا مصر)</span>, a second secondary-leaving certificate standing beside the 120-year-old Thanaweya Amma rather than replacing it. Seven subjects instead of 32. Four tracks. Two exam sittings a year with retakes, on a 700-point scale replacing a 320-point one. And <strong>Article 37bis, which guarantees that taking it is optional.</strong>
+        <br/><br/>
+        The reported opt-in: <strong>about 95% in the first year, and 99% — on the order of 832,000 students — for 2026-27.</strong>
+        <br/><br/>
+        That number is the piece, and it is the piece precisely because it cuts both ways. Near-unanimous take-up of a voluntary alternative is either the most emphatic verdict a school system has ever received from its own families, or it is not a verdict at all. Egypt's public record carries both readings: the ministry's, that it built a better track and families recognised it; and MP <strong>Freddy Elbaiady</strong>'s, filed after the minister met some 4,000 school directors on 31 August 2025 — <em>"This is not persuasion. This is coercion masquerading as awareness-raising"</em> — with his party alleging that students who preferred the old system were transferred to distant or less-equipped schools. <strong>We do not adjudicate that from here. We print the rate, the statutory guarantee, the allegation and the ministry's answer in one passage, and let the reader hold all three.</strong></div>
+        <div class="item__note">Seven registers mapped, <strong>six read in served text</strong> — including the ministry's own. The single most persuasive thing found: on <strong>25 July 2025</strong> the two ministries jointly published <em>which faculties and majors each baccalaureate track opens</em>, explicitly engineering parity with the old streams — two years before the first cohort sits its final exams. A system is only as real as the doors it opens, and Egypt published the door list in advance. That is the accomplishment your positive posture is for, and it is also what makes the 99% legible: families were choosing between two certificates whose university consequences had been published side by side. Verdict <strong>PROCEED-recommend</strong>; one draft-blocking item, which is the 99% itself — single register, body unread, and it needs the ministry's own count and an explicit denominator before the spine can be written.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research-to-learn — guidebook row 24, filed as ruling #31</div>
+        <div class="item__body"><strong>A voluntary-uptake figure carries its counterfactual.</strong> A participation, opt-in or take-up rate is evidence of <em>preference</em> only if the unchosen option remained genuinely available on comparable terms. Where the alternative was administratively disfavoured — not offered locally, thinly staffed, reached only by transfer, discouraged by officials carrying enrolment targets — the same percentage measures <strong>availability, not preference</strong>. Three things are stated before it rides: what the alternative was, who could still get it, on what terms. All three answered, and it may be written as a choice. Any unanswered, and it is written as a record: <em>"N% enrolled,"</em> never <em>"N% chose."</em>
+        <br/><br/>
+        Why it earns a number rather than a note: our seven figure axes all interrogate a <em>measurement</em> — who administered it, at what coverage, stage, vintage, scope, direction, series position. <strong>A take-up rate is not a measurement of children; it is a record of an administrative process, and its validity turns on a counterfactual none of the seven reach.</strong> It passes every check we have and still misleads. It is the mirror of #29: that one rejects a number whose <em>ruler</em> is unpublished, this one qualifies a number whose <em>alternative</em> is unexamined.</div>
+        <div class="item__note">Binding on our own copy, and not retroactively — Vietnam's fee waiver, Morocco's 626→4,626 and Poland's enrolment gain stay as shipped; every future one carries the clause. Poland is the instructive contrast: its gain came under a <em>mandate</em>, and no counterfactual is owed for a compulsory instrument. <strong>#31 attaches to the word "optional," wherever it appears.</strong> The Verifier's checklist gains one question — <em>what was the alternative, and to whom was it actually available?</em> Series now #1–#31, no gaps, no duplicates.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality — the chrome sweep passed, and then found nothing because it cannot</div>
+        <div class="item__body">Sunday's new rule, first daily run: <strong>98 unique targets across seven pages, zero unresolved.</strong> The Arabic About fix verified correct in the build. Everything else green — 82 pages, parity 38/38, slug parity in both directions, zero held drafts, 150 of 150 <span class="mono">related:</span> refs resolving, 76 of 76 hero stills, zero <span class="mono">&lt;img&gt;</span> wordmarks, hreflang reciprocal on all 76 article pages, both feeds well-formed at 38 items each. Both sweeps carry anti-vacuity assertions now, after Sunday's silent-pass trap: a check that finds nothing to check has failed, not passed.
+        <br/><br/>
+        Then I asked the converse, and it failed on its first run. <strong>82 built pages. 81 sitemap URLs.</strong> That difference of exactly one has been sitting in this log's own numbers since 8 August, and no check compared them.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth — VALENCE brought onto the map</div>
+        <div class="item__body">The missing one was <span class="mono">/madar/valence/</span> — your <em>Elements of Good Education</em>, 540 KB, 58 measurable elements and 378 verified bonds, live since 8 August. Its state for those nine days:
+        <br/><br/>
+        <strong>Zero inbound links from anywhere on the site</strong> (grepped across all 82 built pages). No sitemap entry. No canonical. No Open Graph or Twitter card — a share of it rendered as a bare URL. No feed autodiscovery. And <strong>zero links back into Madār</strong>, so a reader who did arrive had no route into the publication.
+        <br/><br/>
+        The cause is structural and worth knowing: VALENCE is served from <span class="mono">web/public/</span> as a static file, and the sitemap integration enumerates the <em>Astro route graph</em>, which <span class="mono">public/</span> files never enter. It was omitted silently. <span class="mono">robots.txt</span> points crawlers at the sitemap; the sitemap did not list it; nothing linked it. <strong>For nine days the only way to reach the most linkable asset Madār has was to be told the URL by a human.</strong>
+        <br/><br/>
+        Shipped today: <span class="mono">customPages</span> in the Astro config, with the general rule written into the comment so the next <span class="mono">public/</span> addition does not repeat it; canonical, full Open Graph and Twitter card, robots, and RSS autodiscovery on the page; and a discreet closing block — <em>"A Madār instrument"</em> with three routes back: Read Madār · Editions · <span lang="ar" dir="rtl">النسخة العربية</span> — styled in VALENCE's own palette rather than the site's, so it reads as part of the page. Rebuilt and verified: <strong>82 pages, 82 sitemap URLs.</strong></div>
+        <div class="item__note"><strong>Three things I deliberately did not do, because they are your call and the Designer's, not QA's.</strong> (1) No nav item — where VALENCE sits in the chrome is an editorial decision, and adding one unilaterally would be the exact mirror of Sunday's defect: a promise made in the chrome that nobody decided to make. (2) <strong>No <span class="mono">og:image</span></strong> — a share now carries a title and description but no card image, and one still would materially change how it travels. Highest-leverage item left, and it is the Designer's. (3) The Arabic question: VALENCE is bilingual Madār's only English-only surface. Arabic edition, Arabic entry point, or an explicit English-only note? Until you decide, the Arabic chrome does not link it.</div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">The pattern, stated because it is now the third time</div>
+        <div class="item__body">The <strong>flag-sweep inversion</strong> (9 August — an assertion that passed vacuously). The <strong>chrome 404</strong> (16 August — a check scoped to content that never enumerated the layout). And today's <strong>orphan page</strong> — a check that enumerates links can never find a page that has none. One sentence covers all three: <em>a green check is scoped to what it enumerates.</em> The counter-discipline is now standing, and it is a question rather than a checklist item — <strong>each run asks what the current sweep structurally cannot see.</strong> The cheapest instrument for today's blind spot turned out to cost one line: assert that served page count equals sitemap URL count, and name any difference. It is in the RUNBOOK.</div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===== STATISTICS ===== -->
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-08-17 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <!-- ===== TOMORROW ===== -->
+  <article class="day">
+    <header class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Rwanda, and the east-and-south balance Ed05 still owes.</h2>
+        <div class="day__date">2026·08·18 · Africa recon cadence, entry 8</div>
+      </div>
+    </header>
+
+    <div class="stream">
+      <div class="item">
+        <div class="item__label">Content — on deck</div>
+        <div class="item__body">All three of your mandated slots are now reconned (Sierra Leone, Sudan, best-system-in-Africa) and the Egypt carry-over is filled. What the slate still owes is <strong>regional balance</strong>: the bank is West, North and continental, with <em>nothing from East or Southern Africa</em>. Next is <strong>Rwanda</strong> — the competence-based curriculum, reconned lightly on 6 July and worth a proper source-recon under the positive posture — then a Southern African candidate. Recon stays one per run and does not touch the drafting throughput rule.</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Quality — the standing question</div>
+        <div class="item__body">Page count against sitemap count enters the daily checklist from tomorrow. The open question I will be asking next: <strong>the sweeps now check that links resolve and that pages are reachable — neither checks that a resolving link goes somewhere <em>correct</em>.</strong> A nav item pointing at the right-shaped wrong page passes both. I do not have a cheap instrument for that yet.</div>
+      </div>
+      <div class="item">
+        <div class="item__label">Waiting on you — unchanged, and now three</div>
+        <div class="item__body"><strong>The custom domain</strong> (memo filed 12 June; every day we wait binds more URLs to the GitHub Pages path). <strong>Substack</strong> — until it exists, Growth is preparation rather than operation, and the traffic line below stays honest-but-empty. And now <strong>VALENCE's placement</strong>: nav, <span class="mono">og:image</span>, and the Arabic question. None is urgent today; all three are yours.</div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    Manager → Founder · Daily Brief · 2026·08·17<br/>
+    Madār · made in spite of, not because of.
+  </footer>
+
+</body>
+</html>

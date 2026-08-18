@@ -16,6 +16,14 @@ export default defineConfig({
         defaultLocale: 'en',
         locales: { en: 'en', ar: 'ar' },
       },
+      // customPages: pages served from public/ as static files are NOT part of
+      // the Astro route graph, so the sitemap integration cannot see them and
+      // will silently omit them. Found 2026-08-17: /valence/ (a 540 KB
+      // standalone instrument, added 2026-08-08) had been served, unlisted and
+      // unlinked, since the day it shipped — no sitemap entry, no inbound link,
+      // therefore no discovery path at all. Anything added under public/ that is
+      // meant to be found must be listed here in the same commit.
+      customPages: ['https://education3881.github.io/madar/valence/'],
     }),
   ],
   site: 'https://education3881.github.io',

@@ -195,7 +195,12 @@ function editionPieceCount(n: number): number {
   )}
 
   {/* ============== ABOUT MINI ============== */}
-  <section class="about container">
+  {/* id="about" added 2026-08-16: the Arabic chrome's "عن مدار" nav item pointed
+      at /ar/about/, which has never existed — a 404 for every Arabic reader
+      since the header and footer were written. Until the standalone Arabic
+      About page is composed (commissioned to the Arabic Editor), the chrome
+      resolves here, to the approved Arabic About copy that is already live. */}
+  <section class="about container" id="about">
     <div class="about__head">
       <p class="about__label" lang="ar" dir="rtl">عن مدار</p>
     </div>

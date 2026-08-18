@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A line drawing for VALENCE: a constellation of small circles — the measurable elements of a young life — joined by thin ink bonds into a loose lattice. Most bonds are drawn in ink; a single bond, running through the centre of the lattice, is drawn in kiln orange, the one combination that carries.">
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- horizon rule, as on the stills -->
+  <line x1="160" y1="188" x2="1040" y2="188" stroke="#7A8471" stroke-opacity="0.28" stroke-width="1"/>
+
+  <g stroke="#0E1B2C" stroke-opacity="0.42" stroke-width="1" fill="none">
+    <!-- bonds -->
+    <line x1="268" y1="352" x2="352" y2="268"/>
+    <line x1="352" y1="268" x2="470" y2="300"/>
+    <line x1="470" y1="300" x2="556" y2="238"/>
+    <line x1="470" y1="300" x2="512" y2="410"/>
+    <line x1="512" y1="410" x2="392" y2="446"/>
+    <line x1="392" y1="446" x2="268" y2="352"/>
+    <line x1="556" y1="238" x2="676" y2="262"/>
+    <line x1="676" y1="262" x2="744" y2="360"/>
+    <line x1="744" y1="360" x2="646" y2="438"/>
+    <line x1="646" y1="438" x2="512" y2="410"/>
+    <line x1="744" y1="360" x2="864" y2="318"/>
+    <line x1="864" y1="318" x2="930" y2="404"/>
+    <line x1="864" y1="318" x2="820" y2="222"/>
+    <line x1="820" y1="222" x2="676" y2="262"/>
+    <line x1="352" y1="268" x2="300" y2="196"/>
+    <line x1="300" y1="196" x2="418" y2="176"/>
+    <line x1="418" y1="176" x2="556" y2="238"/>
+    <line x1="646" y1="438" x2="700" y2="518"/>
+    <line x1="392" y1="446" x2="330" y2="512"/>
+    <line x1="930" y1="404" x2="982" y2="300"/>
+  </g>
+
+  <!-- the one bond that carries -->
+  <line x1="470" y1="300" x2="744" y2="360" stroke="#D94F2A" stroke-width="2.4" stroke-linecap="round"/>
+
+  <g fill="#FAFAF7" stroke="#0E1B2C" stroke-width="1.6">
+    <circle cx="268" cy="352" r="9"/>
+    <circle cx="352" cy="268" r="7"/>
+    <circle cx="556" cy="238" r="8"/>
+    <circle cx="512" cy="410" r="7"/>
+    <circle cx="392" cy="446" r="9"/>
+    <circle cx="676" cy="262" r="7"/>
+    <circle cx="646" cy="438" r="8"/>
+    <circle cx="864" cy="318" r="9"/>
+    <circle cx="930" cy="404" r="6"/>
+    <circle cx="820" cy="222" r="6"/>
+    <circle cx="300" cy="196" r="6"/>
+    <circle cx="418" cy="176" r="7"/>
+    <circle cx="700" cy="518" r="6"/>
+    <circle cx="330" cy="512" r="6"/>
+    <circle cx="982" cy="300" r="7"/>
+  </g>
+
+  <!-- the two elements the carrying bond joins -->
+  <circle cx="470" cy="300" r="11" fill="#FAFAF7" stroke="#D94F2A" stroke-width="2.4"/>
+  <circle cx="744" cy="360" r="11" fill="#FAFAF7" stroke="#D94F2A" stroke-width="2.4"/>
+
+  <line x1="540" y1="570" x2="660" y2="570" stroke="#0E1B2C" stroke-width="1.4"/>
+  <text x="150" y="572" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#7A8471" fill-opacity="0.78">VALENCE · 58 ELEMENTS · 378 BONDS</text>
+  <!-- no letter-spacing on Arabic: tracking breaks the joins (مدار renders as م د ا ر) -->
+  <text x="1050" y="573" font-family="Amiri, serif" font-size="13" fill="#7A8471" fill-opacity="0.85" text-anchor="end">مدار</text>
+</svg>
