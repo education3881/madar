@@ -23,6 +23,22 @@ interface Props {
    * (Growth audit, 2026-07-11). x-default resolves to the EN page.
    */
   alternate?: { en: string; ar: string };
+  /**
+   * schema.org JSON-LD for this page, already built by the caller.
+   *
+   * Added 2026-08-23 (Growth). Until today NOT ONE of the 82 pages carried
+   * structured data. The head is otherwise strong — canonical, reciprocal
+   * hreflang, x-default, absolute raster og:image, twitter card, robots — but
+   * all of that describes the page's *identity*; none of it describes what the
+   * page IS. For this publication that gap is expensive in a specific way: our
+   * single differentiator is that every piece stands on named primary sources,
+   * and `schema.org/citation` is the field that makes that legible to a
+   * machine. We were shipping the evidence and hiding the bibliography.
+   *
+   * Passed in rather than assembled here so the layout stays presentational
+   * and each route describes its own content type.
+   */
+  jsonLd?: Record<string, unknown>;
 }
 
 const {
@@ -32,6 +48,7 @@ const {
   ogImage,
   noHeader = false,
   alternate,
+  jsonLd,
 } = Astro.props;
 
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -102,6 +119,13 @@ const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).href : null;
 
     <meta name="robots" content="index, follow" />
     <meta name="color-scheme" content="light" />
+
+    {jsonLd && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(jsonLd)}
+      />
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

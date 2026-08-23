@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { withBase } from '../../lib/urls';
 import { currentEdition, editions } from '../../lib/editions';
+import { countryAr } from '../../lib/i18n-geo';
 
 // ---------------------------------------------------------------------------
 // Pieces — the Arabic home draws on:
@@ -142,7 +143,7 @@ function editionPieceCount(n: number): number {
           <li class="piece">
             <a href={withBase(`/ar/articles/${piece.id}/`)} class="piece__link">
               <span class="piece__meta">
-                <span class="piece__country" lang="ar" dir="rtl">{piece.data.country}</span>
+                <span class="piece__country" lang="ar" dir="rtl">{countryAr(piece.data.country)}</span>
                 <span class="piece__date">{dateFormatterAr.format(piece.data.date)}</span>
               </span>
               <h2 class="piece__title" lang="ar" dir="rtl">{piece.data.title}</h2>

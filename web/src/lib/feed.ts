@@ -22,8 +22,10 @@ export interface FeedItem {
   path: string;
   description?: string;
   date: Date;
-  /** Country, used as the item category. */
+  /** Country, used as the item category — in the CHANNEL's language. */
   category?: string;
+  /** Site-absolute path of the raster share card, if one exists. */
+  cardPath?: string;
 }
 
 export interface FeedChannel {
@@ -56,6 +58,41 @@ function abs(site: URL | undefined, path: string): string {
   return new URL(path, site ?? 'https://education3881.github.io').href;
 }
 
+/** Right-to-left mark, U+200F. */
+const RLM = '‏';
+
+/**
+ * BIDIRECTIONAL TEXT IN A FEED (added 2026-08-23).
+ *
+ * "Well-formed" is to a feed what "resolves" was to the og:image — it says the
+ * document parses, not that a reader can read it. Two separate problems, and
+ * RSS 2.0 gives each a different lever:
+ *
+ *  - `<title>` is PLAIN TEXT by spec. No markup, so no `dir` attribute. A
+ *    reader drops the string into its own paragraph, whose base direction is
+ *    the reader's UI language — LTR for most subscribers. Under an LTR base,
+ *    trailing punctuation and runs of digits ("2026", "12,348") resolve to the
+ *    WRONG SIDE of an Arabic string. The only available lever is to prefix the
+ *    value with U+200F, which sets the paragraph base direction to RTL.
+ *
+ *  - `<description>` is HTML by universal convention, so it takes real markup:
+ *    a `<div dir="rtl" lang="ar">` wrapper, which is both stronger and more
+ *    explicit than a control character.
+ *
+ * 27 of our 38 Arabic deks mix Arabic with Latin or digits, and before today
+ * not one character of direction metadata appeared anywhere in either feed.
+ */
+function feedTitle(value: string, language: 'en' | 'ar'): string {
+  if (language !== 'ar') return esc(value);
+  return esc(value.startsWith(RLM) ? value : RLM + value);
+}
+
+function feedDescription(value: string, language: 'en' | 'ar'): string {
+  if (language !== 'ar') return esc(value);
+  // Escaped, then wrapped: the wrapper is markup we intend, the content is not.
+  return `&lt;div dir="rtl" lang="ar"&gt;${esc(value)}&lt;/div&gt;`;
+}
+
 export function renderFeed(channel: FeedChannel, site: URL | undefined): string {
   const items = [...channel.items]
     .sort((a, b) => b.date.getTime() - a.date.getTime())
@@ -63,11 +100,21 @@ export function renderFeed(channel: FeedChannel, site: URL | undefined): string 
       const link = abs(site, item.path);
       return [
         '    <item>',
-        `      <title>${esc(item.title)}</title>`,
+        `      <title>${feedTitle(item.title, channel.language)}</title>`,
         `      <link>${esc(link)}</link>`,
         `      <guid isPermaLink="true">${esc(link)}</guid>`,
-        item.description ? `      <description>${esc(item.description)}</description>` : null,
-        item.category ? `      <category>${esc(item.category)}</category>` : null,
+        item.description
+          ? `      <description>${feedDescription(item.description, channel.language)}</description>`
+          : null,
+        item.category
+          ? `      <category>${feedTitle(item.category, channel.language)}</category>`
+          : null,
+        // The share card, so an item carries its art into a reader. Only ever
+        // a raster path — the 2026-08-18 rule (no consumer renders SVG) binds
+        // the feed exactly as it binds og:image.
+        item.cardPath
+          ? `      <enclosure url="${esc(abs(site, item.cardPath))}" length="0" type="image/png" />`
+          : null,
         `      <pubDate>${rfc822(item.date)}</pubDate>`,
         '    </item>',
       ]

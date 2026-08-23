@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { withBase } from '../../../lib/urls';
 import { editions } from '../../../lib/editions';
 import { inlineCover } from '../../../lib/inlineCover';
+import { countryAr } from '../../../lib/i18n-geo';
 
 // ---------------------------------------------------------------------------
 // Editions index (AR, RTL) — mirror of the English page over the Arabic
@@ -103,7 +104,7 @@ const blocks = ordered.map((e) => {
                 <li class="piece">
                   <a href={href} class="piece__link">
                     <span class="piece__meta">
-                      <span class="piece__country" lang="ar" dir="rtl">{piece.data.country}</span>
+                      <span class="piece__country" lang="ar" dir="rtl">{countryAr(piece.data.country)}</span>
                       <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
                     </span>
                     <h2 class="piece__title" lang="ar" dir="rtl">{piece.data.title}</h2>

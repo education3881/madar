@@ -5,6 +5,11 @@ import ShareRail from '../../../components/ShareRail.astro';
 import RelatedReading from '../../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../../lib/urls';
+// Arabic display names for the schema's English controlled vocabularies.
+// The data stays English (one shared schema, one comparable vocabulary);
+// only what an Arabic reader SEES is translated. See lib/i18n-geo.ts.
+import { countryAr, regionAr, levelAr, themeAr } from '../../../lib/i18n-geo';
+import { articleJsonLd } from '../../../lib/structuredData';
 
 export async function getStaticPaths() {
   const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
@@ -63,6 +68,23 @@ const ogCard = piece.data.hero?.src
   alternate={piece.data.englishVersion
     ? { en: `/articles/${piece.data.englishVersion}/`, ar: `/ar/articles/${piece.id}/` }
     : undefined}
+  jsonLd={articleJsonLd({
+    title: piece.data.title,
+    dek: piece.data.dek,
+    path: withBase(`/ar/articles/${piece.id}/`),
+    date: piece.data.date,
+    lang: 'ar',
+    // The Arabic display name, not the schema's English key — the same
+    // ruling (#33) that fixed the visible chrome binds the machine-readable
+    // description of an Arabic page.
+    country: countryAr(piece.data.country),
+    themes: piece.data.themes.map(themeAr),
+    cardPath: ogCard,
+    sources: piece.data.sources,
+    translationPath: piece.data.englishVersion
+      ? withBase(`/articles/${piece.data.englishVersion}/`)
+      : undefined,
+  })}
 >
   <SiteHeader lang="ar" variant="article" />
 
@@ -75,12 +97,17 @@ const ogCard = piece.data.hero?.src
         <p class="kicker-meta">
           <span>هيئة التحرير</span><br />
           <span>{dateFormatter.format(piece.data.date)}</span><br />
-          <span>{piece.data.country} · {piece.data.region}</span><br />
-          <span>{piece.data.themes.slice(0, 2).join(' · ')}</span>
+          <span>{countryAr(piece.data.country)} · {regionAr(piece.data.region)}</span><br />
+          <span>{piece.data.themes.slice(0, 2).map(themeAr).join(' · ')}</span>
         </p>
         {englishHref && (
           <p class="kicker-meta">
-            <a href={englishHref} hreflang="en" class="cross-lang">English version ↗</a>
+            {/* Labelled in the TARGET language, which is the right convention
+                for a language switch — and the mirror of what the English page
+                does with «النسخة العربية». `lang="en"` added 2026-08-23 for the
+                same reason the English page carries `lang="ar"`: a screen
+                reader on an Arabic page must switch voice for this string. */}
+            <a href={englishHref} hreflang="en" lang="en" dir="ltr" class="cross-lang">English version ↗</a>
           </p>
         )}
       </div>
@@ -98,9 +125,9 @@ const ogCard = piece.data.hero?.src
       </div>
       <aside class="body-right marginalia">
         <h4>المرجع الميداني</h4>
-        <p>{piece.data.country} · {piece.data.region}</p>
-        <p>المرحلة · {piece.data.level}</p>
-        <p>المحاور · {piece.data.themes.join('، ')}</p>
+        <p>{countryAr(piece.data.country)} · {regionAr(piece.data.region)}</p>
+        <p>المرحلة · {levelAr(piece.data.level)}</p>
+        <p>المحاور · {piece.data.themes.map(themeAr).join('، ')}</p>
         {piece.data.contains_composites && (
           <>
             <h4>شخصيات مركَّبة</h4>

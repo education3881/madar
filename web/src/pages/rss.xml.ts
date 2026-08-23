@@ -25,6 +25,9 @@ export const GET: APIRoute = async (context) => {
         description: piece.data.dek,
         date: piece.data.date,
         category: piece.data.country,
+        cardPath: piece.data.hero?.src
+          ? withBase(piece.data.hero.src.replace(/^\/stills\//, '/og/').replace(/\.svg$/, '.png'))
+          : undefined,
       })),
     },
     context.site

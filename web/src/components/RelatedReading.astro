@@ -15,6 +15,7 @@
  */
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
+import { countryAr, regionAr } from '../lib/i18n-geo';
 
 interface Props {
   slugs?: string[];
@@ -32,6 +33,14 @@ const items = slugs.map((s) => byId.get(s)).filter(Boolean);
 const base = lang === 'ar' ? '/ar/articles/' : '/articles/';
 const heading = lang === 'ar' ? 'اقرأ أيضًا' : 'Related reading';
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+// The rail is rendered in BOTH languages by one component, so the meta line has
+// to know which one it is in. Before 2026-08-23 it did not, and the Arabic rail
+// printed "Sierra Leone · Africa" under an Arabic headline.
+const metaOf = (p: { data: { country: string; region: string } }) =>
+  lang === 'ar'
+    ? `${countryAr(p.data.country)} · ${regionAr(p.data.region)}`
+    : `${p.data.country} · ${p.data.region}`;
 ---
 
 {items.length > 0 && (
@@ -45,7 +54,7 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
             <li class="related__item">
               <a href={withBase(`${base}${p.id}/`)} class="related__link">
                 <span class="related__title">{p.data.title}</span>
-                <span class="related__meta">{p.data.country} · {p.data.region}</span>
+                <span class="related__meta">{metaOf(p)}</span>
               </a>
             </li>
           ))}
