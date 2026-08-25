@@ -6,6 +6,7 @@ import RelatedReading from '../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
 import { articleJsonLd } from '../../lib/structuredData';
+import { splitScriptRuns } from '../../lib/scriptRuns';
 
 export async function getStaticPaths() {
   const all = await getCollection('articles', ({ data }) => data.approved !== false);
@@ -69,6 +70,7 @@ const ogCard = piece.data.hero?.src
   title={`${piece.data.title} — Madār`}
   description={piece.data.dek}
   lang="en"
+  pageType="article"
   ogImage={ogCard}
   noHeader={true}
   alternate={piece.data.arabicVersion
@@ -154,7 +156,16 @@ const ogCard = piece.data.hero?.src
         <img src={stillSrc} alt={stillAlt} loading="lazy" decoding="async" />
       </div>
       <figcaption class="still__colophon">
-        <span><span class="still__num">{stillCaption}</span></span>
+        <span><span class="still__num">{
+          /* One element per script run: a screen reader takes its voice from the
+             nearest lang, so the Arabic form-name must not be read in English.
+             See web/src/lib/scriptRuns.ts. */
+          splitScriptRuns(stillCaption).map((run) =>
+            run.script === 'arabic'
+              ? <span lang="ar" dir="rtl">{run.text}</span>
+              : run.text
+          )
+        }</span></span>
         <span>Made in-house for Madār · 2026</span>
       </figcaption>
     </figure>

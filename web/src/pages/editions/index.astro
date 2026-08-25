@@ -116,6 +116,30 @@ const blocks = ordered.map((e) => {
         )}
       </section>
     ))}
+
+    {/* ---- Standing pieces ----------------------------------------------
+         VALENCE has been published since 2026-08-08 and, until today, NOTHING
+         on this site linked to it. It was in the sitemap, which is why the
+         08-18 sweep recorded the orphan as cleared — but a sitemap entry is a
+         declaration, not an edge. A crawler arriving at the home page could
+         reach 81 of 82 pages by following links; this was the one it could not
+         get to, and a human never could either.
+         Filed as the growth action for 2026-08-25.                        */}
+    <section class="standing" aria-labelledby="standing-head">
+      <p class="kicker">Standing pieces</p>
+      <h2 id="standing-head" class="standing__title">Outside the editions</h2>
+      <ul class="edition__pieces">
+        <li class="piece">
+          <a href={withBase('/valence/')} class="piece__link">
+            <span class="piece__meta">
+              <span class="piece__country">Interactive</span>
+              <span class="piece__date">August 2026</span>
+            </span>
+            <h3 class="piece__title">VALENCE — The Chemistry of Education</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
   </article>
 </Base>
 
@@ -127,6 +151,17 @@ const blocks = ordered.map((e) => {
     margin-block-end: var(--space-xl);
   }
   .editions__title { margin-block-start: var(--space-sm); }
+
+  /* ---- Standing pieces (outside the numbered editions) ---- */
+  .standing {
+    border-block-start: 1px solid var(--color-rule);
+    padding-block-start: var(--space-xl);
+    margin-block-start: var(--space-lg);
+  }
+  .standing__title {
+    margin-block: var(--space-sm) var(--space-lg);
+    font-family: var(--font-display);
+  }
   .editions__intro {
     margin-block-start: var(--space-md);
     font-family: var(--font-body);

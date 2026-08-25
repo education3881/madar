@@ -1,6 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { createLastmodResolver } from './src/lib/sitemapLastmod.mjs';
+
+// Resolved once at config load. Throws loudly on a shallow clone or an empty
+// git map rather than emitting a sitemap with no lastmod (see the module head).
+const lastmodFor = createLastmodResolver();
 
 // Madār v0.1 — project page at https://education3881.github.io/madar/
 // If we later move to a user page (repo renamed to education3881.github.io)
@@ -24,6 +29,16 @@ export default defineConfig({
       // therefore no discovery path at all. Anything added under public/ that is
       // meant to be found must be listed here in the same commit.
       customPages: ['https://education3881.github.io/madar/valence/'],
+      // <lastmod> from git — the last commit that touched the files a page is
+      // built from. Added 2026-08-24: the sitemap had carried 82 URLs and zero
+      // lastmod since 07-02, so a crawler had no signal that this site ever
+      // changes — while we revised all 76 article pages twice in one week.
+      // Publication date and build time were both rejected as dishonest; see
+      // src/lib/sitemapLastmod.mjs for the reasoning.
+      serialize: (item) => {
+        const lastmod = lastmodFor(new URL(item.url).pathname);
+        return lastmod ? { ...item, lastmod } : item;
+      },
     }),
   ],
   site: 'https://education3881.github.io',

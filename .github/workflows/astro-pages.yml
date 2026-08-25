@@ -21,7 +21,16 @@ jobs:
       run:
         working-directory: web
     steps:
+      # fetch-depth: 0 — full history. The sitemap's <lastmod> is derived from
+      # the last commit that touched each page's source files (see
+      # web/src/lib/sitemapLastmod.mjs). checkout@v4 clones at depth 1 by
+      # default, where `git log -- <path>` returns nothing: the build would pass
+      # locally and emit a sitemap with no lastmod in CI. Ruling #16 — verify in
+      # the judging environment. The resolver also throws on a shallow clone, so
+      # if this line is ever removed the deploy fails loudly instead of quietly.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20

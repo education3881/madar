@@ -35,3 +35,7 @@ yarn-error.log*
 # renamed aside instead of deleted; never commit them)
 **/.astro-stale*
 **/.vite-stale*
+
+# Python bytecode from agents/tools assertions
+__pycache__/
+*.pyc

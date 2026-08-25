@@ -57,6 +57,14 @@ const labels = {
     copy: 'Copy link',
     copied: 'Link copied',
     email: 'Share by email',
+    // Visible button captions. These were English in BOTH languages until
+    // 2026-08-25 — every aria-label on this component was localised and the
+    // three captions a sighted Arabic reader actually sees were not, which is
+    // the reverse of the usual oversight. Caught by qa_a11y_lang: Latin text
+    // resolving under lang="ar" is read aloud in an Arabic voice.
+    nameWhatsapp: 'WhatsApp',
+    nameX: 'X',
+    nameEmail: 'Email',
   },
   ar: {
     share: 'مشاركة',
@@ -66,6 +74,12 @@ const labels = {
     copy: 'نسخ الرابط',
     copied: 'نُسخ الرابط',
     email: 'مشاركة بالبريد',
+    // The two platform names take the Arabic renderings the component's own
+    // aria-labels have used since it was written ("واتساب", "إكس"), so the
+    // caption and the announced label finally say the same thing.
+    nameWhatsapp: 'واتساب',
+    nameX: 'إكس',
+    nameEmail: 'البريد',
   },
 }[lang];
 ---
@@ -137,14 +151,14 @@ const labels = {
         <path d="M3.5 20.5 5 16.4a8.5 8.5 0 1 1 3.1 3l-4.6 1.1Z"/>
         <path d="M8.4 9.6c.4 1.3 1 2.4 1.9 3.4.9.9 2 1.5 3.3 1.8l1-1.2c.2-.3.5-.3.8-.2l2.4.9c.3.1.5.4.5.7v.6c0 1-.7 1.8-1.7 1.9-3.6.4-7-1-9.5-3.5-2.5-2.5-3.9-5.9-3.5-9.5.1-1 .9-1.7 1.9-1.7h.6c.3 0 .6.2.7.5l.9 2.4c.1.3 0 .6-.2.8l-1.1 1Z"/>
       </svg>
-      <span>WhatsApp</span>
+      <span>{labels.nameWhatsapp}</span>
     </a>
     <a class="share-inline__btn" href={links.x} target="_blank" rel="noopener noreferrer" aria-label={labels.x}>
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 5 19 19"/>
         <path d="M19 5 5 19"/>
       </svg>
-      <span>X</span>
+      <span>{labels.nameX}</span>
     </a>
     <button class="share-inline__btn" type="button" data-share-copy aria-label={labels.copy}>
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -159,7 +173,7 @@ const labels = {
         <rect x="3" y="6" width="18" height="12" rx="0.5"/>
         <path d="M3.5 7 12 13l8.5-6"/>
       </svg>
-      <span>Email</span>
+      <span>{labels.nameEmail}</span>
     </a>
   </div>
 </section>

@@ -437,3 +437,94 @@ body::before {
 .site-header,
 .site-footer,
 main { position: relative; z-index: 1; }
+
+/* ===================================================================== */
+/* PRINT                                                                  */
+/* ===================================================================== */
+/*
+  Added 2026-08-24. Until today this stylesheet contained no `@media print`
+  rule of any kind — 91 days, 82 pages, zero print handling.
+
+  The question that found it was asked of the Arabic side: does an Arabic page
+  print right-to-left? The answer turned out to be one layer further out. No
+  page has ever had a print rule, so what a reader actually gets on paper or in
+  a Save-as-PDF is: the skip link, the top bar, the language switcher, the
+  share buttons, the related-reading rail, the footer navigation — and, worst
+  of the set, a Sources block in which every citation is a coloured word with
+  no URL behind it.
+
+  That last one is the reason this matters more here than it would elsewhere.
+  Madār's entire claim is that every piece stands on named primary sources, and
+  the readers most likely to print a piece — a ministry adviser, a researcher,
+  a teacher taking it into a room — are exactly the readers who need the
+  citations to survive the trip. We were printing the argument and dropping the
+  evidence. Same defect family as the SVG og:image (08-18) and the Latin-script
+  Arabic chrome (08-23): the artefact existed, every check passed, and the
+  consumer received something unusable.
+
+  Direction needs no special handling: `dir="rtl"` is on <html>, so print
+  inherits it correctly. Verified rather than assumed — that was the question.
+*/
+@media print {
+  /* Ink, not screen. The grain layer and the paper tint both cost toner and
+     buy nothing on a page that is already paper. */
+  body::before { display: none !important; }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  /* Screen furniture. None of it is actionable on paper. */
+  .skip-link,
+  .top-bar,
+  .site-header,
+  .site-footer,
+  .share-inline,
+  .related,
+  .prev-editions,
+  .cross-lang,
+  .lead__read,
+  .about__more { display: none !important; }
+
+  main { position: static; }
+
+  .container,
+  .body-grid,
+  .body-main { max-width: none; width: auto; margin: 0; padding: 0; display: block; }
+
+  .body-left,
+  .body-right { display: none; }
+
+  /* The masthead wordmark stays: a printed page should say where it came from. */
+  .masthead { border: 0; padding: 0 0 1rem; }
+
+  img, svg, figure { max-width: 100% !important; page-break-inside: avoid; break-inside: avoid; }
+
+  h1, h2, h3, .title, .subhead {
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+  p, li, blockquote { orphans: 3; widows: 3; }
+  .pullquote, .still { page-break-inside: avoid; break-inside: avoid; }
+
+  /* THE POINT OF THIS BLOCK.
+     Print the URL behind every source link so a printed Madār piece is still a
+     citable document. Scoped to the Sources list only — expanding every inline
+     link in running prose would make the body unreadable, and the bibliography
+     is where the evidence lives. */
+  .sources { page-break-before: auto; break-inside: auto; }
+  .sources a[href^="http"]::after {
+    content: ' — ' attr(href);
+    font-size: 8.5pt;
+    word-break: break-all;
+    color: #000;
+  }
+  .sources a { text-decoration: none; color: #000; }
+
+  a { color: #000; }
+
+  /* Every printed sheet carries the provenance line. */
+  @page { margin: 18mm 16mm; }
+}

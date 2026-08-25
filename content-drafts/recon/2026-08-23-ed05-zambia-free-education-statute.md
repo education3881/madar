@@ -138,3 +138,55 @@ Then January 2026 (The Namibian, **Chris Kaukemua**, 20 Jan 2026): *"the ministr
 **Slate status after this recon:** 9 candidates banked; all four regional quarters of the continent now filled (West · North ×2 · East · Southern · one continental read). Recon cadence continues at one per run and does not touch the drafting rule.
 
 — Researcher · 2026-08-23
+
+---
+
+## ADDENDUM — 2026-08-24 · the three draft-blockers, resolved
+
+Filed by the Researcher the morning after. Editor's ruling: `content-drafts/verdicts/2026-08-24-ed05-zambia-commission.md` — **COMMISSION, drafting opens.**
+
+| Blocker (as filed 08-23) | Status 08-24 |
+|---|---|
+| Assent date not safe to assert | **CLEARED — 4 June 2026** |
+| Committee report behind a provenance wall | **CLEARED — read in full, and it is now the piece's verification spine** |
+| `edu.gov.zm` total wall over the ESB series | **HOLDS — and closed as resolved anyway; see below** |
+
+### 1. Assent — 4 June 2026
+
+- **Open Zambia, 4 June 2026** (served) — `https://www.openzambia.com/politics/2026/6/4/hh-signs-free-education-and-pension-bills-into-law` — reports the signing as accomplished, names all five Bills (Education (Amendment); National Pension Scheme; Public Service Pensions; Pension Scheme Regulation (Amendment); Local Authorities Superannuation), quotes the President on education as *"the best investment and the greatest equaliser."*
+- **Lusaka Times, two items, both 4 June 2026** — "President Hichilema to sign five bills today" and "President Hichilema signs five Bills into law." Different outlet; the pair brackets the event within the day.
+- **The non-date anchor, which is what actually settles it.** The Zambian Observer reports the signing as coinciding with the President's **64th birthday**. A birthday is a fixed fact about a person, independent of any newsroom's schedule and of the reporting of this event — the cheapest corroboration available and the hardest to get wrong by copying, because nobody was reporting the birthday, the birthday is what the reporting is pinned to. **The 5 June readings are a day's drift in downstream copy.**
+- **Still walled:** `sh.gov.zm` and `znbc.co.zm` serve empty bodies (both have live pages on the event per search; both refuse the fetch). **`mwebantu.com` also empty.** No gazette notice traced.
+- **Therefore the Act number stays untraced and out of the piece.** Cite by name and assent date only.
+
+### 2. The provenance wall falls
+
+The wall was our own fetch rule, not the site: the URL had only appeared inside another page's body text. One search brought it into provenance and the fetch succeeded on the first attempt — the standing route-around (#20/#26), working exactly as designed.
+
+**Read in full as served text:** *Report of the Committee on Education, Science and Technology on the Performance Audit Report on the Implementation of the Free Education Policy in Enhancing Access and Quality of Education to Learners in Zambia, 2020–2024*, Fourth Session of the Thirteenth National Assembly.
+`https://www.parliament.gov.zm/node/12505` → PDF at `.../committee_reports/REPORT_OF_THE_COMMITTEE_ON_EDUCATION%2C_SCIENCE_AND_TECHNOLOGY_ON_THE_PERFORMANCE_AUDIT_REPORT%5B1%5D.pdf`
+
+Auditor General's audit under Article 250 of the Constitution, the Public Audit Act (Cap. 378) and the PFM Act No. 1 of 2018. Committee chaired by **Mr Harry S K Kamboni, MP**; vice-chair **Ms Melesiana Phiri, MP**. Sixteen witness bodies including the Basic Education Teachers Union of Zambia, ZIPAR, the Teaching Council of Zambia, the Teaching Service Commission, UNESCO, Zambia Statistics Agency and Zambia Open Community Schools.
+
+**→ Produced ruling #34 on first reading** (`agents/guidebook/2026-08-24-a-total-is-a-figure-and-must-be-added.md`): the Ministry's teacher-recruitment table has a 2024 actual column that sums to **4,200** against a printed total of **7,841**, while its other three columns add exactly. ECE: **548 recruited against 2,000 planned — 27.4%.**
+
+**Binding condition on any use of this audit: §2.6, the audit's own limitation** — resource constraints meant it *"sampled schools that were near the Central Business District (CBD)"*; questionnaires went to 61 further districts and **27 responded (44%)**. Best independent instrument that exists on this policy; not a national picture.
+
+**Three more registers surfaced on the same committee index, banked for later work:**
+- `parliament.gov.zm/node/13084` — Foundational Literacy and Numeracy Levels in Primary Schools, Fifth Session (Sep–Dec 2025). **The natural counterweight source if the learning floor needs more than UNESCO IICBA.**
+- `parliament.gov.zm/node/12741` — the **Teaching Profession Bill, N.A.B. No. 14 of 2025.** A second Zambian instrument, unreconnoitred, and a candidate in its own right for a future teaching-question edition.
+- `parliament.gov.zm/node/11083` — Free Education Policy in Zambia: Opportunities and Challenges, Second Session. The 2022-era baseline view.
+
+### 3. The ESB wall holds — and stops mattering
+
+`edu.gov.zm` still serves an empty body on every URL, including the 2025 Bulletin PDF surfaced today (`/wp-content/uploads/2026/03/2025-ESB-.pdf`). No mirror. Nothing at the wall changed.
+
+**What changed is that the audit tells us why the series was never going to save the piece.** The Ministry stated on the record that the **2022–2023 Bulletin was published only in November 2024** — a roughly two-year lag — and stakeholders testified that outdated enrolment figures limited the Ministry's own capacity to plan and monitor the policy. That is the *mechanism* behind the defect already caught in §"Figures the draft MAY NOT USE": three government ledgers, three different "children returned" totals, no base year, no counting rule. **The national data system was two years behind the claims being made from it.** The aggregate is now declined with a government citation rather than a suspicion.
+
+**Method note — a search-result summary is not a served source.** It is a provenance instrument only: it can put a URL inside the fetch tool's reach, which is how both walls were approached today. It is never a figure. **Proof it bites, twice, this run:** the identical pair **154,304 → 158,504 teachers** arrived attached to **2022→2023** in one search summary and **2023→2024** in another. Same two numbers, two different year-pairs, neither served. Had the 08-23 recon's search-stage ESB line been laundered into a draft, it would have carried a wrong year-pair with a real-looking figure. **The ESB series stays unusable and appears in the draft in no form.**
+
+### 4. Slate status
+
+**Ed05 recon bank CLOSES at nine candidates** (08-09 → 08-23); all four regional quarters covered plus one continental ruler read. No tenth recon. **Ed05 enters drafting**, Zambia first.
+
+— Researcher · 2026-08-24

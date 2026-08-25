@@ -64,7 +64,7 @@ const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
       ) : (
         <Fragment>
           {/* TODO: replace with designer's wordmark SVG once available at /wordmark/madar-wordmark.svg */}
-          <span class="mark-latin">Madār</span>
+          <span class="mark-latin" lang="en">Madār</span>
           <span class="mark-divider" aria-hidden="true">·</span>
           <span class="mark-arabic" lang="ar" dir="rtl">مدار</span>
         </Fragment>
@@ -77,14 +77,14 @@ const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
         <a href={aboutHref} class="uppercase">{nav.about}</a>
         <span class="site-nav__sep" aria-hidden="true">·</span>
-        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
+        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
       </nav>
     )}
 
     {variant === 'article' && (
       <nav class="site-nav site-nav--article" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
-        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
+        <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
       </nav>
     )}
   </div>

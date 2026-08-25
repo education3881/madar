@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Zambia: a low wall of stacked slabs runs across the page, each slab a year, and where the wall once ended in a raised post — a finishing marker — the post has been lifted clear and set down one slab short, leaving a shallow socket in the stone where it used to stand. Behind the wall a doorway stands open with its gate unhinged and laid flat on the ground, and just inside the threshold a small bed frame with a thin mattress has been drawn to the same weight of line as the doorway itself, brought inside rather than left out in the yard. Below the wall, at the near end, three short courses are begun and unfinished, drawn as outlines only. The single warm mark on the page, a kiln-orange line, traces the empty socket where the marker used to be.">
+  <title>The Still · Zambia — the finishing marker lifted one course short, the gate laid flat, the bed brought inside</title>
+  <desc>Paper-cream ground, pure line, no fills — tone carried by hatch density alone. A low wall of stacked year-slabs crosses the page; its end course carries a shallow empty socket where a raised finishing marker used to stand, and the marker now stands one slab short of it. Behind the wall a doorway stands open, its gate unhinged and laid flat on the ground outside; just inside the threshold a bed frame and a thin mattress are drawn at the doorway's own weight of line. At the near end three further courses are begun and unfinished, outline only. A single kiln-orange line traces the empty socket.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- ground -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2" stroke-opacity="0.35" d="M 40 522 L 1160 522"/>
+  </g>
+
+  <!-- the doorway, standing open, behind the wall -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 838 522 L 838 286 L 986 286 L 986 522"/>
+    <path stroke-width="1.6" stroke-opacity="0.45" d="M 850 522 L 850 298 L 974 298 L 974 522"/>
+    <path stroke-width="1.0" stroke-opacity="0.30" d="M 838 286 L 850 298 M 986 286 L 974 298"/>
+    <!-- vacated hinges -->
+    <path stroke-width="1.8" stroke-opacity="0.6" d="M 986 340 l 14 0 M 986 410 l 14 0 M 986 480 l 14 0"/>
+  </g>
+
+  <!-- the gate, unhinged and laid flat outside -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2.6" stroke-opacity="0.85" d="M 1020 514 L 1150 508 L 1152 528 L 1022 534 Z"/>
+    <path stroke-width="1.0" stroke-opacity="0.35" d="M 1046 512 L 1048 532 M 1072 511 L 1074 531 M 1098 510 L 1100 530 M 1124 509 L 1126 529"/>
+    <path stroke-width="1.2" stroke-opacity="0.28" stroke-dasharray="4 8" d="M 1000 410 C 1006 462 1010 494 1020 516"/>
+  </g>
+
+  <!-- the bed, brought inside the threshold, at the doorway's own weight -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 866 470 L 962 470 L 962 484 L 866 484 Z"/>
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 872 484 L 872 512 M 956 484 L 956 512"/>
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 866 470 L 866 436 M 962 470 L 962 452"/>
+    <path stroke-width="1.2" stroke-opacity="0.40" d="M 870 462 L 892 470 M 870 452 L 912 470 M 874 442 L 932 470 M 890 438 L 952 470 M 910 438 L 962 466 M 930 438 L 962 456"/>
+  </g>
+
+  <!-- the wall: four courses of year-slabs -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 172 522 L 172 418 L 760 418 L 760 522"/>
+    <path stroke-width="2.2" stroke-opacity="0.75" d="M 172 496 L 760 496 M 172 470 L 760 470 M 172 444 L 760 444"/>
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 240 522 L 240 496 M 320 522 L 320 496 M 400 522 L 400 496 M 480 522 L 480 496 M 560 522 L 560 496 M 640 522 L 640 496 M 720 522 L 720 496"/>
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 200 496 L 200 470 M 280 496 L 280 470 M 360 496 L 360 470 M 440 496 L 440 470 M 520 496 L 520 470 M 600 496 L 600 470 M 680 496 L 680 470 M 740 496 L 740 470"/>
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 240 470 L 240 444 M 320 470 L 320 444 M 400 470 L 400 444 M 480 470 L 480 444 M 560 470 L 560 444 M 640 470 L 640 444 M 720 470 L 720 444"/>
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 200 444 L 200 418 M 280 444 L 280 418 M 360 444 L 360 418 M 440 444 L 440 418 M 520 444 L 520 418 M 600 444 L 600 418 M 680 444 L 680 418 M 740 444 L 740 418"/>
+    <!-- hatch, light, in the lowest course only -->
+    <path stroke-width="0.9" stroke-opacity="0.22" d="M 180 522 L 202 500 M 220 522 L 242 500 M 260 522 L 282 500 M 300 522 L 322 500 M 340 522 L 362 500 M 380 522 L 402 500 M 420 522 L 442 500 M 460 522 L 482 500 M 500 522 L 522 500 M 540 522 L 562 500 M 580 522 L 602 500 M 620 522 L 642 500 M 660 522 L 682 500 M 700 522 L 722 500 M 740 522 L 758 504"/>
+  </g>
+
+  <!-- the empty socket in the end course -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2.4" stroke-opacity="0.85" d="M 690 418 L 690 434 L 726 434 L 726 418"/>
+    <path stroke-width="1.0" stroke-opacity="0.30" d="M 694 432 L 706 420 M 702 434 L 722 420 M 712 434 L 725 424"/>
+  </g>
+
+  <!-- the marker, lifted clear and set down one slab short -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 600 418 L 600 300 L 618 300 L 618 418"/>
+    <path stroke-width="2.4" stroke-opacity="0.85" d="M 618 306 L 682 316 L 618 336"/>
+    <path stroke-width="1.0" stroke-opacity="0.28" d="M 626 316 L 640 322 M 626 326 L 660 320 M 634 332 L 668 318"/>
+    <!-- the short move it made -->
+    <path stroke-width="1.2" stroke-opacity="0.30" stroke-dasharray="3 7" d="M 700 400 C 676 384 646 384 620 396"/>
+  </g>
+
+  <!-- three courses begun and unfinished, at the near end -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.30">
+    <path stroke-width="1.6" stroke-dasharray="9 7" d="M 60 522 L 60 496 L 160 496 L 160 522 Z"/>
+    <path stroke-width="1.6" stroke-dasharray="9 7" d="M 74 496 L 74 470 L 160 470"/>
+    <path stroke-width="1.6" stroke-dasharray="9 7" d="M 96 470 L 96 444 L 160 444"/>
+  </g>
+
+  <!-- the one warm mark: the empty socket -->
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="8" stroke-opacity="0.10" d="M 690 416 L 690 436 L 726 436 L 726 416"/>
+    <path stroke-width="2.8" stroke-opacity="0.96" d="M 690 416 L 690 436 L 726 436 L 726 416"/>
+    <path stroke-width="2.2" stroke-opacity="0.85" d="M 682 416 l 16 0 M 718 416 l 16 0"/>
+  </g>
+</svg>

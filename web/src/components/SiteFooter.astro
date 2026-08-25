@@ -59,7 +59,7 @@ const copy = {
 
     <div class="site-footer__cell site-footer__cell--mark">
       <a href={copy.homeHref} class="site-footer__mark" aria-label="Madār — home">
-        <span class="mark-latin">Madār</span>
+        <span class="mark-latin" lang="en">Madār</span>
         <span aria-hidden="true" class="mark-divider">·</span>
         <span class="mark-arabic" lang="ar" dir="rtl">مدار</span>
       </a>
@@ -70,8 +70,8 @@ const copy = {
       <ul class="site-footer__links">
         <li><a href={copy.editionsHref} class="uppercase">{copy.editionsLabel}</a></li>
         <li><a href={copy.aboutHref} class="uppercase">{copy.aboutLabel}</a></li>
-        <li><a href={copy.otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'}>{copy.otherLangLabel}</a></li>
-        <li><a href={copy.rssHref} class="uppercase">{copy.rss}</a></li>
+        <li><a href={copy.otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{copy.otherLangLabel}</a></li>
+        <li><a href={copy.rssHref} class="uppercase" lang="en">{copy.rss}</a></li>
       </ul>
     </div>
 
