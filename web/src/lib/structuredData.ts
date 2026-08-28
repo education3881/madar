@@ -65,6 +65,58 @@ export interface ArticleNodeInput {
   translationPath?: string;
 }
 
+/**
+ * BreadcrumbList (Growth, 2026-08-28).
+ *
+ * WHY: the Article node describes what a page IS; nothing yet describes where
+ * it SITS. A crawler that arrives at an article URL (the likeliest entry point
+ * once indexing starts — articles outnumber hubs 76 to 6) learns the page's
+ * position in the site only by walking links. BreadcrumbList states it in the
+ * head, and search results render it as a readable trail instead of a raw URL —
+ * which matters more than usual while the URL still carries a github.io host.
+ * Same conservative posture as articleJsonLd: every value is derived from the
+ * page's own lang + path (ruling #36 — a claim about a page is computed from
+ * the page), labels reuse the SiteHeader's own nav strings, and both language
+ * editions get the same builder.
+ */
+export interface BreadcrumbInput {
+  lang: 'en' | 'ar';
+  /** Site-absolute path INCLUDING base prefix. */
+  path: string;
+  title: string;
+}
+
+export function breadcrumbJsonLd(input: BreadcrumbInput) {
+  const ar = input.lang === 'ar';
+  const url = absolute(input.path);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: ar ? 'مدار' : 'Madār',
+        item: absolute(ar ? `${BASE}/ar/` : `${BASE}/`),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        // The SiteHeader's own nav labels — not a translation invented here.
+        name: ar ? 'الإصدارات' : 'Editions',
+        item: absolute(ar ? `${BASE}/ar/editions/` : `${BASE}/editions/`),
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: input.title,
+        item: url,
+      },
+    ],
+  };
+}
+
 export function articleJsonLd(input: ArticleNodeInput) {
   const url = absolute(input.path);
   return {

@@ -5,7 +5,7 @@ import ShareRail from '../../components/ShareRail.astro';
 import RelatedReading from '../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
-import { articleJsonLd } from '../../lib/structuredData';
+import { articleJsonLd, breadcrumbJsonLd } from '../../lib/structuredData';
 import { splitScriptRuns } from '../../lib/scriptRuns';
 
 export async function getStaticPaths() {
@@ -76,7 +76,11 @@ const ogCard = piece.data.hero?.src
   alternate={piece.data.arabicVersion
     ? { en: `/articles/${piece.id}/`, ar: `/ar/articles/${piece.data.arabicVersion}/` }
     : undefined}
-  jsonLd={articleJsonLd({
+  jsonLd={[breadcrumbJsonLd({
+    lang: 'en',
+    path: withBase(`/articles/${piece.id}/`),
+    title: piece.data.title,
+  }), articleJsonLd({
     title: piece.data.title,
     dek: piece.data.dek,
     path: withBase(`/articles/${piece.id}/`),
@@ -89,7 +93,7 @@ const ogCard = piece.data.hero?.src
     translationPath: piece.data.arabicVersion
       ? withBase(`/ar/articles/${piece.data.arabicVersion}/`)
       : undefined,
-  })}
+  })]}
 >
   <SiteHeader lang="en" variant="article" />
 

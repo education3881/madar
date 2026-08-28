@@ -38,7 +38,8 @@ interface Props {
    * Passed in rather than assembled here so the layout stays presentational
    * and each route describes its own content type.
    */
-  jsonLd?: Record<string, unknown>;
+  /** One node or several (e.g. Article + BreadcrumbList); an array is valid JSON-LD. */
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
   /**
    * Open Graph object type. Added 2026-08-24.
    *
@@ -70,8 +71,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const alternateEN = alternate ? new URL(withBase(alternate.en), Astro.site).href : null;
 const alternateAR = alternate ? new URL(withBase(alternate.ar), Astro.site).href : null;
 // og:image / twitter:image must be ABSOLUTE for social scrapers (Growth audit,
-// 2026-07-16). Callers pass base-prefixed paths; resolve against the site origin.
-const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).href : null;
+// 2026-07-16). The contract used to be "callers pass base-prefixed paths" — a
+// contract stated in a comment is a declaration, and on 2026-08-26 five new
+// callers passed `/og/brand-card.png` unprefixed, which would have served a
+// 404 card from every front door. Caught by qa_live_drift's first bite
+// (2026-08-27) before it deployed. So the base is now DERIVED here, per ruling
+// #36: a site-absolute path gets the base applied unless it already carries it.
+const _base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const ogImagePath = ogImage && !(_base && ogImage.startsWith(_base + '/'))
+  ? withBase(ogImage)
+  : ogImage;
+const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
 ---
 
 <!doctype html>
@@ -146,7 +156,17 @@ const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).href : null;
       <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_AR'} />
     )}
 
-    <meta name="twitter:card" content="summary_large_image" />
+    {/* twitter:card — CONDITIONAL, and it must stay that way (2026-08-26).
+        `summary_large_image` is a PROMISE that a large image follows. This tag
+        was unconditional, so the five non-article pages — including both front
+        doors, / and /ar/, the most-shared URLs we have — promised a card and
+        shipped none for 93 days. That is exactly the 2026-08-18 og:image
+        defect (a promise kept with nothing), and it survived that day's fix
+        because the fix enumerated ARTICLES. The structural repair is not to
+        add the image; it is to make the promise IMPOSSIBLE to make without one.
+        A page with no image now declares `summary`, which is honest and still
+        renders. */}
+    <meta name="twitter:card" content={ogImageAbs ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     {ogImageAbs && <meta name="twitter:image" content={ogImageAbs} />}

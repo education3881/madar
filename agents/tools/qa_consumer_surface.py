@@ -62,7 +62,9 @@ from pathlib import Path
 DIST = Path(sys.argv[1] if len(sys.argv) > 1 else "web/dist")
 
 META = re.compile(
-    r'<meta\s+(?:property|name)="(og:[a-z_:]+)"\s+content="([^"]*)"', re.I
+    # `twitter:*` added 2026-08-26 — the Twitter card tags are a promise about
+    # the OG image, so they have to be readable in the same pass that checks it.
+    r'<meta\s+(?:property|name)="((?:og|twitter):[a-z_:]+)"\s+content="([^"]*)"', re.I
 )
 HTML_LANG = re.compile(r'<html\s+lang="([a-z-]+)"', re.I)
 
@@ -124,6 +126,45 @@ def main() -> int:
         img = og.get("og:image")
         if img and not img.lower().endswith(RASTER):
             defects.append(f"{rel}: og:image is not raster — {img}")
+
+        # ---- the card must EXIST at the URL declared (added 2026-08-27) --
+        # Presence is a declaration; existence is the asset. On 08-26 the five
+        # non-article pages declared `https://…github.io/og/brand-card.png` —
+        # present, raster, absolute, and missing the `/madar` base, so the
+        # first consumer to dereference it would have got a 404. This check
+        # maps the declared URL back to a file in dist and requires it to be
+        # there. A card URL we cannot serve is a promise with nothing behind
+        # it — same family as ruling #36.
+        if img:
+            from urllib.parse import urlparse
+            path = urlparse(img).path
+            base_prefix = "/madar/"
+            if not path.startswith(base_prefix):
+                defects.append(
+                    f"{rel}: og:image URL escapes the site base — {img}")
+            elif not (DIST / path[len(base_prefix):]).is_file():
+                defects.append(
+                    f"{rel}: og:image declares {img} but no such file in dist")
+
+        # ---- the card promise (added 2026-08-26) -------------------------
+        # Two assertions the 08-18 raster check could not make, because it was
+        # scoped to pages that HAVE an og:image and every article does.
+        #
+        # (1) EVERY served page needs a card. The five non-article pages —
+        #     /, /ar/, /editions/, /ar/editions/, /about/ — had none for 93
+        #     days, and they include both front doors, i.e. the URLs a reader
+        #     is most likely to share.
+        # (2) `twitter:card=summary_large_image` is a PROMISE of a large image.
+        #     Declaring it with no image is the same defect class as declaring
+        #     an SVG: metadata a machine we do not own will act on and find
+        #     nothing behind. The promise must track the asset, both ways.
+        if not img:
+            defects.append(f"{rel}: og:image MISSING — this page shares with no card")
+        tw = og.get("twitter:card")
+        if tw == "summary_large_image" and not img:
+            defects.append(f"{rel}: twitter:card promises a large image and none is declared")
+        if img and tw != "summary_large_image":
+            defects.append(f"{rel}: has an og:image but twitter:card={tw!r} — the card is wasted")
 
     # ---- sitemap lastmod -----------------------------------------------
     # sitemap-index.xml points at the sitemaps, not at pages — counting its

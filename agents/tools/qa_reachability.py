@@ -21,6 +21,26 @@ indexed and the pages have never been crawled. The first crawler to arrive will
 arrive at a link, and will then walk the graph. Anything off the graph stays
 invisible even after the rest starts working.
 
+PER-LANGUAGE ROOTS (added 2026-08-26)
+------------------------------------
+The first version of this check walked from ONE root, `/index.html`, which is
+the ENGLISH front door. It therefore proved something narrower than it printed:
+that every page is reachable *by a reader who is willing to pass through English
+pages*. An Arabic reader does not arrive at `/`; they arrive at `/ar/`, and a
+crawler fetching the Arabic sitemap entries walks the Arabic subgraph. If an
+Arabic article were linked only from an English hub, this check would have
+reported PASS while the Arabic edition had a hole in it — the same shape as the
+08-17 orphan (a page in the sitemap that nothing points at), one language over.
+
+So the walk now runs once per language root, CONFINED to that language's pages:
+`/index.html` over the non-`/ar/` pages, `/ar/index.html` over the `/ar/` pages.
+A language edition must be navigable on its own terms. The whole-site walk is
+kept as the third pass, because a page can be language-neutral (VALENCE).
+
+Proved both ways before being trusted, per ruling #35: on the real build the
+Arabic subgraph is complete (40/40, max depth 2); on a build with the article
+links severed from the two Arabic hubs it reports 12 orphans.
+
 Exit codes: 0 clean · 1 orphans found · 2 nothing to check (a FAILURE, per the
 08-16 silent-pass trap).
 """
@@ -35,6 +55,7 @@ from pathlib import Path
 
 BASE = "/madar"
 ROOT = "/index.html"
+AR_ROOT = "/ar/index.html"
 
 # Pages nothing is expected to link to from the site graph. Empty on purpose:
 # if a page belongs on the site, something should point at it, and if nothing
@@ -71,6 +92,19 @@ def outbound(dist: Path, page: str) -> list[str]:
     return out
 
 
+def walk(dist: Path, root: str, universe: set[str]) -> dict[str, int]:
+    """BFS from `root`, following only edges that land inside `universe`."""
+    depth = {root: 0}
+    queue = collections.deque([root])
+    while queue:
+        cur = queue.popleft()
+        for nxt in outbound(dist, cur):
+            if nxt in universe and nxt not in depth:
+                depth[nxt] = depth[cur] + 1
+                queue.append(nxt)
+    return depth
+
+
 def main() -> int:
     dist = Path(sys.argv[1] if len(sys.argv) > 1 else "web/dist")
     pages = {
@@ -84,26 +118,40 @@ def main() -> int:
         print(f"FAIL(2): no {ROOT} to start from.")
         return 2
 
-    depth = {ROOT: 0}
-    queue = collections.deque([ROOT])
-    while queue:
-        cur = queue.popleft()
-        for nxt in outbound(dist, cur):
-            if nxt not in depth:
-                depth[nxt] = depth[cur] + 1
-                queue.append(nxt)
+    ar_pages = {p for p in pages if p.startswith("/ar/")}
+    en_pages = pages - ar_pages
 
-    orphans = sorted(pages - set(depth) - set(EXPECTED_ORPHANS))
-    hist = dict(sorted(collections.Counter(depth.values()).items()))
+    # Each pass: (label, root, universe). A language edition must be navigable
+    # WITHOUT leaving its own language; the whole-site pass catches the rest.
+    passes = [
+        ("English side, from /index.html", ROOT, en_pages),
+        ("Arabic side, from /ar/index.html", AR_ROOT, ar_pages),
+        ("whole site, from /index.html", ROOT, pages),
+    ]
 
-    print(f"pages: {len(pages)} · reachable from {ROOT}: {len(depth)} · orphans: {len(orphans)}")
-    print(f"click-depth histogram: {hist}")
-    if orphans:
+    failed = False
+    for label, root, universe in passes:
+        if not universe:
+            print(f"FAIL(2): {label} — no pages in scope; nothing to check is not a pass.")
+            return 2
+        if root not in universe:
+            print(f"FAIL(2): {label} — no {root} to start from.")
+            return 2
+        depth = walk(dist, root, universe)
+        orphans = sorted(universe - set(depth) - set(EXPECTED_ORPHANS))
+        hist = dict(sorted(collections.Counter(depth.values()).items()))
+        print(
+            f"{label}: pages {len(universe)} · reachable {len(depth)} · "
+            f"orphans {len(orphans)} · depth {hist}"
+        )
         for o in orphans:
-            print(f"  ORPHAN {o} — in the sitemap, and nothing links to it.")
+            print(f"  ORPHAN {o} — reachable only from outside this language, or not at all.")
+        failed = failed or bool(orphans)
+
+    if failed:
         print("FAIL(1): a page nothing links to cannot be crawled or found.")
         return 1
-    print("PASS: every page is reachable by following links from the home page.")
+    print("PASS: every page is reachable from its own language's front door.")
     return 0
 
 
