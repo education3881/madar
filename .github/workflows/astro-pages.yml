@@ -52,4 +52,43 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # verify — the 2026-08-29 forward question, answered. Every QA assertion runs
+  # at BUILD time; the 07-02→07-07 outage proved a green build can coexist with
+  # a stale origin (the deploy is a second gate, ruling #17). This job extends
+  # ruling #16's "judging environment" to the minutes AFTER the push: it
+  # downloads the exact artifact deploy-pages published, then polls the origin
+  # until it serves those bytes — the probe is sitemap-0.xml, the widest
+  # single-file fingerprint of a deploy (all 82 URLs with their lastmod; it
+  # changes whenever any page's source does) — then byte-compares a five-file
+  # sample across both languages. A CDN still propagating gets 5 minutes of retries; a deploy that
+  # "succeeded" onto a misconfigured Pages source fails the run loudly instead
+  # of leaving the drift for a human to notice days later.
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+      - name: Origin serves this build, byte-for-byte
+        run: |
+          mkdir dist && tar -xf artifact.tar -C dist
+          BASE="https://education3881.github.io/madar"
+          ok=""
+          for i in $(seq 1 20); do
+            curl -fsSL "$BASE/sitemap-0.xml" -o live-probe || true
+            if cmp -s live-probe dist/sitemap-0.xml; then ok=1; break; fi
+            sleep 15
+          done
+          if [ "$ok" != "1" ]; then
+            echo "::error::origin sitemap-0.xml never matched the deployed artifact after 5 minutes"
+            exit 1
+          fi
+          fail=0
+          for f in index.html ar/index.html rss.xml ar/rss.xml sitemap-index.xml; do
+            curl -fsSL "$BASE/$f" -o live-file || { echo "::error::origin $f unreachable"; fail=1; continue; }
+            cmp -s live-file "dist/$f" || { echo "::error::origin $f differs from the deployed artifact"; fail=1; }
+          done
+          exit $fail
         

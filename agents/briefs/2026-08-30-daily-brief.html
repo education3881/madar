@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-08-30</title>
+<meta name="description" content="Manager to Founder daily brief for Sunday 30 August 2026. Brief 62. Seven days unpushed, fifth consecutive day the staged block went unrun. Sierra Leone banked as a pair — Edition 05 stands at two complete; the deploy pipeline gains its missing gate (a verify job that byte-compares the origin against the published artifact); ruling #39 on delivery fingerprints; og cards generated for both Ed05 pairs. QA green; zero held-leak; corpus unchanged." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head>
+<body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 62
+    <strong>Sunday 30 August 2026</strong>
+  </div>
+</header>
+
+<!-- ===== PUSH BLOCK AT THE TOP: 7 days unpushed, per the 08-16 escalation rule ===== -->
+<div class="push-block">
+  <div class="kicker">Your one action &mdash; 7 days unpushed &middot; fifth day the block went unrun</div>
+  <p>
+    <strong>Origin still serves the 08-23 build.</strong> The drift check counts the same
+    <strong>84 differences</strong> a reader has been waiting on since the 25th. Local history is
+    clean: two commits (<span class="mono">f66162d</span>, <span class="mono">a340782</span>) plus
+    the 08-29 and 08-30 days on disk. Nothing is lost. Nothing is delivered. Today's weekly review
+    runs concurrently and treats <strong>founder-push availability as the constraint</strong>, per
+    the standing note.
+  </p>
+  <p>
+    One thing is different about this block: it carries the <strong>verify job</strong> &mdash;
+    from this push onward, the deploy pipeline itself confirms the origin went current, byte for
+    byte, and fails loudly if it did not. The next time a deploy silently strands (July's outage,
+    this week's shape), the red X finds you; nobody has to remember to check.
+  </p>
+  <p>
+    No approved flips. Corpus unchanged at 38 English and 38 Arabic across 35 countries.
+    <strong>Edition 05 stands at two complete pairs</strong> &mdash; Zambia and Sierra Leone both
+    banked by the Editor, both held for your wave gate, og cards on disk for both.
+  </p>
+  <code>cd &quot;/Users/vini/Documents/Claude/Projects/Educational Website&quot;
+rm -f .git/index.lock
+git add -A
+git commit -m &quot;Madar 2026-08-30: seventh day unpushed, fifth consecutive day the staged block went unrun; origin still serves 08-23, the drift check counts the same 84 differences, and today's weekly review treats founder-push availability as the constraint per the standing note -- one push clears all seven days. Content: Sierra Leone is BANKED as a pair -- the Editor ran the five tests on the pair per the Zambia cadence and passed all five in writing: the figure trace survives the crossing register by register, 0.278 and 0.102 from the body-annex register per ruling 38 with the 0.280 table variant absent from both languages, the .359 per-grade result carried with the provider's own smaller two-thirds-of-a-year conversion, the three reach numbers in order with their rare downward direction; all prohibitions hold in Arabic at full weight, la maksab muthbat for no demonstrated gain, the two percentile claims unblended, NYAF bare Latin; the posture is the honesty architecture carried at full adverse weight; the spine, paid what the measurement said, runs dek to close in both languages; and test five was closed by the 08-29 composition and gate. Edition 05 now stands at two complete pairs, Zambia and Sierra Leone, both held approved false for the wave gate, zero build leak re-verified; the pipeline moves to mandated slot 2, Sudan, with the Editor's instruction that the 08-13 recon index be re-verified against the web as served today before commission. Quality: the 08-29 forward question is answered in the workflow itself -- astro-pages.yml gains a third job, verify, which downloads the exact artifact deploy-pages published, polls the origin up to five minutes until sitemap-0.xml matches byte for byte, then byte-compares a five-file bilingual sample and fails the run loudly on any mismatch, so ruling 16's judging environment now includes the minutes after the push and ruling 17's second gate reports its own failure. Research, ruling 39 filed as row 34: a delivery fingerprint must vary with the delivery -- an invariant probe proves reachability, not currency, and false-passes on exactly the failure it exists to catch; the obvious probe, sitemap-index.xml, is deploy-invariant on the live 08-23 build and would have stayed green through the very July outage the job answers, then became variant when the 08-25 resolver added lastmod, so probe validity itself drifted within one week; probe of record is sitemap-0.xml, the widest single-file fingerprint, and the job was proved both ways per ruling 35 against real state, bite on today's stale origin, control silent on dist versus itself. Growth: the flip-day checklist loses its only asset item -- og raster cards generated for both Ed05 pairs from their own stills at 1200 by 600 via the derivation the article route already declares, six to seven KB each, assets not pages, zero held-leak re-proved with both on disk. QA green on the route-around build: 82 pages exit 0, parity 38 of 38, sitemap 82 with 82 lastmod, all six standing assertions clean, both feeds 38 items, publish gate run in writing and passed with nothing shipping. New forward question: the verify job proves the origin serves the bytes; nothing yet proves the feeds' consumers see new items promptly -- candidate is asserting the feed ETag and Last-Modified headers change across a deploy, inside the same job. Next: Sudan recon re-verification, then commission. Corpus unchanged at 38 EN and 38 AR, 35 countries, no approved flips. Brief 62.&quot;
+git push origin main</code>
+</div>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>Edition 05 reaches two banked pairs &mdash; and the pipeline learns to check its own delivery</h1>
+  <p class="dek">
+    The Editor passed the Sierra Leone pair on all five tests: two complete bilingual pieces now
+    sit finished, held, and carded for your wave gate. And the week's delivery lesson became
+    machinery: a new job inside the deploy workflow itself now polls the origin after every push
+    and refuses to go green until the live site serves the exact bytes that were built.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>The Arabic twin, composed and gated &mdash; delivered, uncommitted, unpushed</h2>
+      <div class="day__date">2026&middot;08&middot;29 &middot; complete &middot; on disk, swept into today's block</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label">The gap, honestly</div>
+      <div class="item__body">
+        Yesterday delivered all five functions: Sierra Leone composed in Arabic at register
+        (~1,340 words, dek 185/200 with tashkeel), the Arabic Editor's gate passed in writing with
+        7/7 named humans confirmed, row 33's labial-velar routing rule filed, and
+        <span class="mono">qa_jsonld</span> standing up as the sixth assertion &mdash; 608
+        machine-layer promises dereferenced to dist. What did not happen, for the fourth
+        consecutive day then and the fifth today, is the push. The 08-29 work sat uncommitted at
+        this morning's open; today's block sweeps it in &mdash; safe, versioned the moment the
+        commit runs, and still undelivered until the push does.
+      </div>
+      <div class="item__note">Last push: 08-23. Local: 2 commits + 2 days on disk. One block clears all seven days.</div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>Banked, gated at the pipeline, fingerprinted</h2>
+      <div class="day__date">2026&middot;08&middot;30 &middot; all five functions delivered &middot; weekly review runs concurrently</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; Sierra Leone BANKED as a pair; Edition 05 stands at two</div>
+      <div class="item__body">
+        The Editor ran the five tests on the <strong>pair</strong>, per the Zambia cadence:
+        the figure trace survives the crossing register-by-register (0.278/0.102 from the
+        body+annex register per #38; the provider's own smaller ruler &mdash; two-thirds of a year,
+        not 1.1&ndash;1.6 &mdash; carried with its stated reasons; the three reach numbers in order
+        with their rare downward direction); all prohibitions hold in Arabic at full weight
+        (<span lang="ar" dir="rtl">لا مكسبَ مُثبَت</span>, percentile claims unblended, NYAF bare
+        Latin); posture is the honesty architecture paying full adverse freight; the spine &mdash;
+        <em>paid what the measurement said</em> &mdash; runs dek-to-close in both languages.
+        <strong>PASS, all five. Both files stay approved:false for your wave gate.</strong>
+        Pipeline moves to mandated slot #2, Sudan &mdash; with the 08-13 recon index to be
+        re-verified against the web as served <em>today</em> before commission (#16 applied to
+        recon vintage).
+      </div>
+      <div class="item__note">verdicts/2026-08-30-ed05-sierra-leone-pair-verdict.md &middot; zero held-leak re-proved</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &mdash; the deploy pipeline gains its missing gate</div>
+      <div class="item__body">
+        Yesterday's forward question, answered inside the workflow itself. A third job,
+        <span class="mono">verify</span>, now runs after <span class="mono">deploy-pages</span>:
+        it downloads the exact artifact that was published, polls the origin up to five minutes
+        until <span class="mono">sitemap-0.xml</span> matches <strong>byte-for-byte</strong>, then
+        byte-compares a five-file bilingual sample &mdash; and fails the run loudly on any
+        mismatch. #16's judging environment now includes the minutes <em>after</em> the push;
+        #17's second gate reports its own failure. Proved per #35 against <em>real</em> state:
+        the bite ran locally against today's 7-day-stale origin and fired exactly as it must;
+        the control is silent. Its first live run is your next push.
+      </div>
+      <div class="item__note">.github/workflows/astro-pages.yml &middot; YAML parses, 3 jobs &middot; agents/logs/qa-2026-08-30.md</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &mdash; ruling #39: a delivery fingerprint must vary with the delivery</div>
+      <div class="item__body">
+        The verify job's first candidate probe, <span class="mono">sitemap-index.xml</span>, would
+        have been wrong twice: on the live 08-23 build it is <strong>deploy-invariant</strong>
+        &mdash; identical bytes for any deploy of any commit, a probe that would have stayed green
+        through the very July outage the job answers &mdash; and its invariance then silently
+        <em>ended</em> when the 08-25 resolver added lastmod. The same probe changed meaning
+        between two builds in one week. The rule: probe what varies, prefer the widest single-file
+        fingerprint (<span class="mono">sitemap-0.xml</span>: 82 URLs, each with lastmod), and
+        re-prove the probe's variance whenever the artifact changes &mdash; because probe validity
+        itself drifts. Rejects a probe class outright, the structural move of #29 applied to
+        verification.
+      </div>
+      <div class="item__note">guidebook row 34 &middot; ruling series now #1&ndash;#39, no gaps, no dupes</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &mdash; the flip-day checklist loses its only asset item</div>
+      <div class="item__body">
+        og raster cards generated for <strong>both Ed05 pairs</strong> &mdash; Zambia and Sierra
+        Leone &mdash; 1200&times;600 from their own stills, 6&ndash;7 KB each, by the exact
+        derivation the article route already declares (#36: card path derived from still path).
+        Assets, not pages: zero held-leak re-proved with both on disk. When you open the wave
+        gate, no share arrives cardless for even a first crawl &mdash; the 08-18 lesson (83 days
+        of cardless shares), pre-paid this time.
+      </div>
+      <div class="item__note">og/2026-08-25-zambia&hellip;.png &middot; og/2026-08-28-sierra-leone&hellip;.png &middot; zero trackers, as always</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Quality &mdash; QA green; gate run in writing; the next question aims at the feeds' caches</div>
+      <div class="item__body">
+        Route-around build: 82 pages exit 0, parity 38/38, sitemap 82/82 lastmod, all
+        <strong>six</strong> standing assertions clean (a11y 2,993 nodes &middot; AR chrome 235
+        fields &middot; reachability 82/82, 0 orphans &middot; jsonld 152 nodes, 608 promises
+        &middot; consumer surface &middot; drift), both feeds 38 items, held-leak zero with both
+        og cards on disk. Publish gate run in writing: nothing ships, nothing flips. New forward
+        question filed: verify proves the origin serves the bytes &mdash; nothing yet proves feed
+        <em>consumers</em> see new items promptly. Candidate: assert the feeds' ETag/Last-Modified
+        headers change across a deploy, inside the same verify job.
+      </div>
+      <div class="item__note">agents/logs/qa-2026-08-30.md &middot; drift steady at 84 &mdash; the same delivery, still waiting</div>
+    </div>
+
+  </div>
+</article>
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-08-30 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 40 EN / 40 AR &mdash; incl. 2 EN / 2 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Sudan: re-verify the index, then commission</h2>
+      <div class="day__date">2026&middot;08&middot;31 &middot; on deck</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label">Content</div>
+      <div class="item__body">
+        The Researcher re-verifies the 08-13 Sudan recon index against the web as served tomorrow
+        &mdash; a three-week-old index does not get commissioned unchecked &mdash; then the Editor
+        commissions mandated slot #2, and drafting begins on the Zambia/Sierra Leone cadence.
+        After Sudan: best-system-in-Africa, ruler first. Founder's open calls, unchanged and
+        unhurried: the push above, the custom-domain decision, Substack.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Delivery</div>
+      <div class="item__body">
+        Whatever the weekly review (running this morning) decides about the staging rhythm, the
+        verify job changes the day after the next push: the origin's currency stops being a thing
+        anyone checks by hand and becomes a thing the pipeline asserts. The drift tool stays for
+        the between-push window; the maiden run of the new gate is the push itself.
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; daily brief &middot; No. 62</span>
+  <span>Manager, for the founder &middot; 2026-08-30</span>
+</footer>
+
+</main>
+</body>
+</html>

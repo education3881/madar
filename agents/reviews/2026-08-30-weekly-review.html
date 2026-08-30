@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-08-30</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 999px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  .flag { background: #FFF4F0; border: 1px solid var(--color-orange); padding: 1.1rem 1.4rem; margin: 1.3rem 0; border-radius: 2px; }
+  .flag .kicker { margin-bottom: 0.35rem; }
+  .rule-box { background: var(--color-sand); padding: 1.2rem 1.4rem; margin: 1.2rem 0; border-radius: 2px; }
+  .rule-box .kicker { color: var(--color-ink); opacity: 0.72; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; padding: 1.2rem 1.4rem; border-radius: 2px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+  .footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 11.5px; color: var(--color-muted); }
+  .dark { color: var(--color-orange); }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="kicker">Madār · مدار — Weekly Review</div>
+      <h1>The week the work outran the wire</h1>
+      <div class="sub">Sunday 2026-08-30 · covers 2026-08-24 → 2026-08-30 · prepared by the Manager, autonomous run</div>
+    </header>
+
+    <section>
+      <div class="flag">
+        <div class="kicker">The one action · 7 days unpushed · 2 commits + 2 days of work staged · 84 named drifts waiting</div>
+        <p style="margin-bottom:0.6em;">Origin has not moved since <span class="num">2026-08-23</span>. Everything below this line — two complete Edition 05 pairs, five new rulings, three new standing assertions, the entire discoverability layer — exists on your disk and nowhere else. Origin re-checked this morning before composing the block (<span class="num">origin/main = 5e16db2</span>, no founder push landed underneath). One line clears all of it:</p>
+        <pre>cd "/Users/vini/Documents/Claude/Projects/Educational Website" &amp;&amp; rm -f .git/index.lock &amp;&amp; git add -A &amp;&amp; git commit -m "Madar 2026-08-30: weekly review plus daily run - ruling register consolidated to 39, push-cadence rule codified, Sierra Leone pair BANKED, deploy-verify job added; clears 7-day gap: 08-25 and 08-28 commits plus 08-29 and 08-30 work" &amp;&amp; git push origin main</pre>
+      </div>
+
+      <div class="summary-box">
+        <h3>Founder summary — two minutes</h3>
+
+        <p><strong>What changed.</strong> The mirror image of last week. Then: two runs in seven days and everything staged got pushed. Now: <strong>six runs in seven days — the operation's most productive week since Edition 04 — and not one line has reached a reader.</strong> What those six runs produced: <strong>Edition 05 pieces 1 and 2 are both complete bilingual pairs</strong> — Zambia banked behind the wave gate, Sierra Leone drafted from the 264-page OPM evaluation read in full, composed in Arabic, passed through the Arabic Editor's gate on Saturday, and <strong>banked this morning on the Editor's five-test pair verdict</strong> — plus six durable rulings (<span class="num">#34–#39</span>, the sixth filed by today's daily run, which executed concurrently with this review and also shipped the deploy-verify job and both flip-day og cards), three new standing assertions (the QA suite now runs <span class="num">six</span>), and a discoverability layer the site has never had: article + breadcrumb JSON-LD on all <span class="num">76</span> article pages, real modification dates in the sitemap, a print stylesheet that keeps the bibliography, share cards on the front doors. The published corpus holds at <span class="num">38 / 38</span>, parity <span class="num">100%</span>, <span class="num">35</span> countries — by design: both Ed05 pairs are held <span class="num">approved:false</span> for your wave gate, with zero build-leak proved every run.</p>
+
+        <p><strong>What I decided.</strong> (1) <strong>The push cadence is now named as what it is — the operation's binding constraint — and a RUNBOOK rule reframes it as capacity, not compliance</strong> (§2). The 08-16 escalation rule fired correctly four days running and changed nothing, because it escalates at the operation, and the operation was never the blocker. From today the plan assumes one guaranteed push window a week — Sunday, when you read this — unless you tell me otherwise; a one-line answer settles it. (2) <strong>The guidebook consolidated:</strong> the ruling register now runs <span class="num">#1–#38</span> canonical one-liners, and this week's five rulings turned out to be one family being enumerated — two families, in fact, both named in the INDEX (§3). (3) <strong>This week's growth bet is the push itself</strong> — every growth asset built since 08-23 is invisible until it deploys, and with <span class="num">0 of 82</span> URLs indexed, sequencing matters more than usual (§1). (4) <strong>No new persona, fifth consecutive hold</strong> — and this week is the cleanest evidence yet for why: the team produced two complete pairs in six days without saturating; the only queue that grew is one no persona can staff (§4).</p>
+
+        <p><strong>What needs your eye.</strong> Three things, in order. <strong>The push block at the top.</strong> <strong>The cadence question</strong> — daily pushes as designed, or a formalized weekly window? Either answer works; only ambiguity is expensive. And <strong>the same two standing calls, sixth week: (a) custom domain, (b) Substack</strong> — in that order, because the domain must move before anything binds to the URL, and every week of JSON-LD and sitemap work makes the binding clock tick louder.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">1 · Traffic, Growth &amp; Statistics</div>
+      <h2>The discoverability layer got built — and it is all sitting on the wrong side of the wire</h2>
+
+      <p class="lede">Six days of growth work, zero days of growth delivery. The corpus stood still on purpose; the deploy stood still by default.</p>
+
+      <h3>Content snapshot and week-over-week delta</h3>
+      <table>
+        <thead><tr><th>Signal</th><th>Last weekly (2026-08-23)</th><th>This weekly (2026-08-30)</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>Published corpus (EN / AR)</td><td class="n">38 / 38</td><td class="n">38 / 38</td><td class="n">0 (by design)</td></tr>
+          <tr><td>Corpus on disk incl. held Ed05 pairs</td><td class="n">38 / 38 + 1 EN draft</td><td class="n">40 / 40</td><td class="n">+2 complete pairs</td></tr>
+          <tr><td>AR/EN parity</td><td class="n">100%</td><td class="n">100%</td><td class="n">held</td></tr>
+          <tr><td>Countries covered (live / on flip)</td><td class="n">35 / —</td><td class="n">35 / 36</td><td class="n">Zambia queued</td></tr>
+          <tr><td>Runs in the window</td><td class="n">2 of 7</td><td class="n">6 of 7</td><td class="n">+4</td></tr>
+          <tr><td>Days since last published piece</td><td class="n">26</td><td class="n">33</td><td class="n">+7</td></tr>
+          <tr><td>Days origin unpushed</td><td class="n">0</td><td class="n dark">7</td><td class="n dark">+7</td></tr>
+          <tr><td>Named live-vs-tree drifts (<span class="num">qa_live_drift</span>)</td><td class="n">0</td><td class="n dark">84</td><td class="n dark">+84</td></tr>
+          <tr><td>Durable rulings filed</td><td class="n">#1–#33</td><td class="n">#1–#39</td><td class="n">+6</td></tr>
+          <tr><td>Standing QA assertions</td><td class="n">3</td><td class="n">6</td><td class="n">+3</td></tr>
+          <tr><td>Ed05 recon bank (banked / consumed into drafts)</td><td class="n">9 / 0</td><td class="n">9 / 2</td><td class="n">drafting opened</td></tr>
+          <tr><td>Pages with JSON-LD (Article + BreadcrumbList)</td><td class="n">76 (Article only)</td><td class="n">76 (both, in tree)</td><td class="n">awaiting deploy</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Region and theme drift: none, by arithmetic</strong> — nothing published. MENA <span class="num">15</span>, Asia <span class="num">7</span>, Africa <span class="num">5</span>, Europe <span class="num">5</span>, LatAm–Caribbean <span class="num">3</span>, Oceania <span class="num">2</span>, N-America <span class="num">1</span>. The Ed05 wave will move Africa <span class="num">5 → 7</span> on flip day and add the corpus's 36th country.</p>
+
+      <h3>Last week's bet, read as promised</h3>
+      <p>The 2026-08-23 review named one bet — <em>finish the feed: verified in a real reader, from outside our origin</em>. <strong>Paid on 2026-08-27, in full, in the consumer:</strong> both live feeds parsed with <span class="num">feedparser</span> (a reader's library, not our regex) — <span class="num">bozo=0</span> in both languages, <span class="num">38</span> items each, all <span class="num">152</span> item links and enclosures dereferenced <span class="num">HTTP 200</span> from the origin, every enclosure <span class="num">image/png</span>, and the Arabic direction work survives the parse: <span class="num">38/38</span> titles carry the RLM as parsed, <span class="num">38/38</span> descriptions keep <span class="num">dir="rtl"</span>. <span class="pill ok">bet paid</span></p>
+
+      <h3>Substack and the tracker line</h3>
+      <p>Unchanged, and honestly reported: the site carries no third-party tracker by design, so there are no visitor analytics to invent. Substack remains <strong>not launched, blocked on the two founder calls</strong> (domain first, then the account) — the launch-readiness picture is otherwise complete: bilingual feeds verified in-consumer, share cards raster, structured data on every article. Attributable inbound: no publication-URL shares found on X/Bluesky/LinkedIn this window; expected, with distribution not yet begun. One indexing fact carried from 08-25: <strong><span class="num">0 of 82</span> URLs are indexed</strong> — which is precisely why the reachability, breadcrumb and lastmod work was worth a week, and why it needs to be live before the first crawler walks the graph.</p>
+
+      <div class="bet">
+        <div class="kicker">This week's single growth bet</div>
+        <p style="margin-bottom:0;"><strong>Land the block; read the origin.</strong> The bet is already built — JSON-LD on 76 pages, breadcrumbs, git-derived <span class="num">lastmod</span> on 82 URLs, print bibliography, front-door cards, 0 orphans at click-depth ≤3 — but a growth asset on the wrong side of the wire has a return of exactly zero. The bet's terms: the push lands; <span class="num">qa_live_drift</span> is re-run against the origin until it reads <span class="num">0</span>; <span class="num">qa_jsonld</span>'s 608 dereferences are re-proved against the live site rather than <span class="num">dist</span>; and next Sunday's review reads the result — including whether indexing has moved off <span class="num">0 of 82</span>. If the push cannot land weekly, that is the real reading, and §2's cadence rule already prices it in.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">2 · Quality Retrospective</div>
+      <h2>Six green runs, six standing assertions — and a defect class the operation cannot fix from its side</h2>
+
+      <p class="lede">Every run this week ended QA green with the publish gate run in writing. The interesting failures were all caught before they shipped — one of them only because the push gap accidentally held it back.</p>
+
+      <h3>The week's defect pattern: promises declared instead of derived</h3>
+      <p>Three finds, one family, now closed three ways. <strong>(a)</strong> <span class="num">twitter:card</span> promised a large image unconditionally while <span class="num">og:image</span> was conditional — both front doors promised scrapers a card and delivered nothing for 93 days (ruling <span class="num">#36</span>: derive the promise from the asset in the same expression). <strong>(b)</strong> The very next day, the five new brand-card callers broke <span class="num">Base.astro</span>'s own comment-documented path convention — a 404 card, present/raster/absolute and wrong (ruling <span class="num">#37</span>: a contract in prose binds nobody; compute the invariant where the value enters, and assert by <em>existence</em> — every promise dereferenced back to <span class="num">dist</span>). <strong>(c)</strong> Saturday's <span class="num">qa_jsonld</span> applied the same existence pattern to the machine layer: <span class="num">152</span> JSON-LD nodes, <span class="num">608</span> promises dereferenced, <span class="num">inLanguage</span> forced to agree with the page's own path. Each assertion proved both ways per <span class="num">#35</span>: fails on synthetic breaks, silent on known-good controls.</p>
+
+      <h3>Near-misses that never reached a reader</h3>
+      <ul>
+        <li><strong>The deploy-breaker the gap held back.</strong> The sitemap <span class="num">lastmod</span> resolver — written to fail loudly in CI — would have failed the deploy on its first push: its pathspec resolved relative to the workflow's <span class="num">working-directory</span>, matched nothing, and its own empty-map guard would have killed the build. Caught and fixed on 08-25 <em>because</em> the block had not yet pushed. Luck is not a control; it is named as luck.</li>
+        <li><strong>A P1 in our own held draft:</strong> the Zambia EN dek at 232 characters against the 200 cap, caught by the build, trimmed same run — and the Sierra Leone deks in both languages were then counted <em>at compose</em> (194/200 EN; 185/200 AR with tashkeel) rather than left for the build to catch. The check moved upstream within the week.</li>
+      </ul>
+      <p><strong>Reached production: nothing new</strong> — nothing could, and that is the retro's real finding. The live site has served the 08-23 block all week; the 84 named drifts are all <em>improvements</em> waiting, not regressions leaking.</p>
+
+      <div class="rule-box">
+        <div class="kicker">Prevention rule codified into the RUNBOOK (2026-08-30)</div>
+        <p style="margin-bottom:0;"><strong>Founder-push availability is a capacity constraint, not a compliance failure.</strong> When the staged block goes unrun ≥3 consecutive days with a clean, reconciled tree, the operation stops escalating tone daily (the fourth identical P1 teaches nothing), keeps the block at the top of the brief with the day count, plans as if the guaranteed push window is <strong>weekly — Sunday, when the founder reads the review</strong> — stages nothing time-sensitive that assumes same-day deploy, and schedules wave gates only onto push-confirmed state. The weekly review carries the standing founder question until answered once: <em>keep the daily-push design, or formalize the weekly window.</em></p>
+      </div>
+
+      <p><strong>Forward question — answered the same day it was owed.</strong> Saturday's QA log named the blind spot: every check runs at build time; nothing verifies the origin <em>at deploy time</em>. Today's daily run (concurrent with this review) closed it in the workflow itself: <span class="num">astro-pages.yml</span> gains a third job, <strong><span class="num">verify</span></strong>, which downloads the exact artifact <span class="num">deploy-pages</span> published and polls the origin up to five minutes until it serves those bytes, then byte-compares a five-file bilingual sample — any mismatch fails the run loudly. Probe selection produced ruling <span class="num">#39</span>: <em>a delivery fingerprint must vary with the delivery</em> — the obvious probe (<span class="num">sitemap-index.xml</span>) is deploy-invariant and would have false-passed on exactly the staleness it exists to catch; the shipped probe is <span class="num">sitemap-0.xml</span>, the widest single-file fingerprint of a deploy. The very next push exercises this gate for the first time.</p>
+    </section>
+
+    <section>
+      <div class="kicker">3 · Knowledge Consolidation</div>
+      <h2>Five rulings arrived as two families — and the ledger caught itself drifting</h2>
+
+      <p class="lede">The heaviest research week since the register was built: rulings #34–#38 in five consecutive runs, plus row 33's transliteration rule. All merged into the canonical register today.</p>
+
+      <p><strong>What was consolidated.</strong> The §3 register now runs <span class="num">#1–#39</span>, one line each — consolidated to <span class="num">#38</span> by this review, then reconciled in place when the concurrent daily run filed <span class="num">#39</span>, both timestamps preserved per the 2026-08-23 concurrency note — with row 33's table fragment merged into the single table and the series verified no-gaps/no-dupes against the files and the archived ledger. The week's real gain is that five rulings arrived as <strong>two families, both now named in the INDEX</strong>: <em>whether the artefact agrees with itself</em> (<span class="num">#34</span> — a published table must be added before any number in it is quoted; <span class="num">#38</span> — a source can state a fact twice and disagree, so a figure carries its page) and <em>how a check earns trust</em> (<span class="num">#35</span> prove against a control, <span class="num">#36</span> derive the promise, <span class="num">#37</span> compute the contract and assert by existence — with <span class="num">#16</span> as the family's ancestor). Naming the family tells the Researcher where the next ruling comes from; the internal-consistency family predicts it will be a document disagreeing with itself about <em>time</em>.</p>
+
+      <p><strong>Composition knowledge banked for the Africa edition:</strong> row 33 adds the West African labial-velar routing (<span class="num">kp</span> /k͡p/ → <span class="num">كب</span>: Kpakra → كباكرا) beside row 30's Bantu <span class="num">ph</span> → aspirated /p/ (Phiri → بيري) — two rules that convert unresolvable per-name questions into resolvable per-language ones, exactly what a 17-country edition needs. Seven named humans gated Saturday, 7/7 CONFIRMED, none PROVISIONAL.</p>
+
+      <p><strong>Housekeeping, including one at our own expense.</strong> The INDEX's "Last consolidation" header still read <span class="num">2026-08-16</span> — the 08-23 review built the entire register and forgot to update the one line that records consolidations. Our own ledger drifted against itself, which is <span class="num">#38</span> applied to us; reconciled today with the miss recorded rather than papered over. Also noted, not pruned: <span class="num">history.jsonl</span> carries duplicate same-day snapshots (3× 08-23, 2× 08-25) from multiple runs appending — harmless in an append-only stats log, and the weekly delta reads by date, not by line. <strong>Pruning: nothing deleted;</strong> the archive and provenance ledger verified intact.</p>
+    </section>
+
+    <section>
+      <div class="kicker">4 · Team-Expansion Decision</div>
+      <h2>Hold at eleven — fifth consecutive hold, and the cleanest case yet</h2>
+
+      <p class="lede">The question the ladder asks is whether a capability gap is recurring and the team genuinely saturated. This week answers both, in the right direction.</p>
+
+      <p><strong>Decision: no new persona.</strong> Recorded reasons: <strong>(1) The team is demonstrably not saturated.</strong> Six runs produced two complete bilingual pairs — recon, 264-page primary read, draft, hero still, Arabic composition, Arabic gate — plus five rulings and three standing assertions, at full quality-bar, with the Editor, Verifier, both Arabic personas, the Web Developer and the Designer all exercised and none parked for capacity. <strong>(2) The Researcher watch-signal is not firing:</strong> the recon bank ran <em>ahead</em> of drafting all week (9 banked, 2 consumed; Sudan next, already reconned on 08-13). <strong>(3) The only queue that grew — the unpushed block — is not staffable.</strong> The sandbox cannot reach the founder's terminal; a deploy persona would be an org-chart answer to a physics problem. The correct instruments are §2's cadence rule and the founder's one-line cadence answer, both now in place. Next genuine trigger to watch: <strong>flip-day for the Ed05 wave</strong> (8+ pieces, og-card generation, editions rewiring, social packets in two languages in one window) — if that saturates Growth + Designer, the Social/Video rung has its evidence; it is not evidenced today.</p>
+    </section>
+
+    <section>
+      <div class="kicker">Pipeline · the week ahead</div>
+      <h2>Next: Sudan</h2>
+      <p>The Sierra Leone <strong>pair verdict landed this morning — PASS on all five tests, BANKED</strong> behind Zambia for the wave gate, so Edition 05 stands at two complete pairs of a planned eight-plus. Both flip-day og PNG cards are already on disk, generated today rather than left for the wave gate. Monday's run resumes <strong>Sudan recon</strong> (mandated slot 2, reconned 08-13). Open founder calls carried, unchanged: <strong>domain, Substack.</strong></p>
+    </section>
+
+    <div class="footer">
+      Madār · مدار — weekly review · 2026-08-30 · prepared autonomously per CHARTER §Cadence · corpus 38 EN / 38 AR live · 40/40 on disk · rulings #1–#39 · six standing assertions + the deploy-verify gate · made in spite of, not because of.
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
