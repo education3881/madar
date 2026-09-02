@@ -38,6 +38,15 @@ jobs:
           cache-dependency-path: web/package-lock.json
       - run: npm ci
       - run: npm run build
+      # Inbound discoverability contract (2026-09-01): robots.txt must exist in
+      # dist, advertise exactly one Sitemap URL DERIVED from astro.config's own
+      # site+base (ruling #36), pointing at a file that exists (ruling #37),
+      # with zero Disallow lines. Proved per ruling #35 before landing: bites
+      # on a removed robots.txt and on a Disallow injection, silent on the
+      # real build. Fails the deploy loudly if the crawler-facing surface drifts.
+      - name: robots.txt advertises the sitemap the build derives
+        working-directory: .
+        run: python3 agents/tools/qa_robots.py web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -89,6 +98,31 @@ jobs:
           for f in index.html ar/index.html rss.xml ar/rss.xml sitemap-index.xml; do
             curl -fsSL "$BASE/$f" -o live-file || { echo "::error::origin $f unreachable"; fail=1; continue; }
             cmp -s live-file "dist/$f" || { echo "::error::origin $f differs from the deployed artifact"; fail=1; }
+          done
+          exit $fail
+      # Feed cache axis (2026-08-31, the 08-30 forward question): the byte-compare
+      # above proves the origin SERVES the new feed; a reader's poll is governed by
+      # the cache validators. Assert both feeds carry ETag + Last-Modified, and that
+      # a conditional GET with that ETag returns 304 — the exact mechanism a feed
+      # reader uses to decide "anything new?". Values are logged so consecutive runs
+      # can be compared by eye for cross-deploy variance (an ETag that never changes
+      # is ruling #39's invariant probe wearing a cache header). Cannot false-pass
+      # on a stale origin: it runs only after the byte-compare has already bitten.
+      - name: Feed cache validators work for a polling reader
+        run: |
+          BASE="https://education3881.github.io/madar"
+          fail=0
+          for f in rss.xml ar/rss.xml; do
+            hdr=$(curl -fsSI "$BASE/$f") || { echo "::error::feed $f unreachable for HEAD"; fail=1; continue; }
+            etag=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="etag"{print $2}')
+            lm=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="last-modified"{print $2}')
+            [ -n "$etag" ] || { echo "::error::feed $f serves no ETag — readers cannot poll cheaply"; fail=1; }
+            [ -n "$lm" ]   || { echo "::error::feed $f serves no Last-Modified"; fail=1; }
+            echo "feed=$f etag=$etag last-modified=$lm"
+            if [ -n "$etag" ]; then
+              code=$(curl -s -o /dev/null -w '%{http_code}' -H "If-None-Match: $etag" "$BASE/$f")
+              [ "$code" = "304" ] || { echo "::error::feed $f conditional GET returned $code, expected 304 — validator not honored"; fail=1; }
+            fi
           done
           exit $fail
         

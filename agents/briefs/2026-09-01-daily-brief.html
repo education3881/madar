@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-01</title>
+<meta name="description" content="Manager to Founder daily brief for Tuesday 1 September 2026. Brief 64. Sudan is DRAFTED — Edition 05 mandated slot 2 moves from commission to held draft in one run, with all four Test-1 items closed before a word was written. Ruling #41 — supersede, don't resurrect. robots.txt gains its standing assertion and a CI gate. One day staged, unpushed; today's block carries both." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head>
+<body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 64
+    <strong>Tuesday 1 September 2026</strong>
+  </div>
+</header>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>Sudan is drafted &mdash; the classroom invented before the war that needed it</h1>
+  <p class="dek">
+    Mandated slot #2 went from commission to held draft in a single run, and every one of the
+    four homework items the Editor set was closed before a word was written &mdash; including
+    the one that found the idea's named inventor on UNESCO's own page. Edition 05 now holds
+    three complete or drafting pairs. One honest note first: yesterday's block went unrun, so
+    today's carries two days.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Produced in full, staged in full &mdash; block unrun</h2>
+      <div class="day__date">2026&middot;08&middot;31 &middot; one day staged, nothing lost</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-running">The state, honestly</div>
+      <div class="item__body">
+        Origin and local still agree at <span class="mono">9886987</span> and the live site
+        serves the 08-30 build &mdash; the drift check read CLEAN again today, its second
+        consecutive clean read, which is exactly right while nothing approved changes. But the
+        08-31 block was not run, so yesterday's full day &mdash; the Sudan re-verification and
+        commission, ruling #40, the feed-cache verify step, the wave packet, Brief 63 &mdash;
+        sits staged in the working tree. Per the 08-30 standing note this is a founder-availability
+        fact, not a process alarm: named, carried, and cleared by today's one block.
+      </div>
+      <div class="item__note">days staged: 1 (08-31) &middot; today's block carries both &middot; workflow-scope PAT still required</div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>Two true stories, one page &mdash; and the homework closed first</h2>
+      <div class="day__date">2026&middot;09&middot;01 &middot; all five functions delivered</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; the four Test-1 items, closed in the Editor's order, before drafting</div>
+      <div class="item__body">
+        <strong>(1)</strong> The dead national counts were superseded, not resurrected: the
+        owner's living register &mdash; UNICEF's Learning Passport page, read served today &mdash;
+        carries <strong>750 safe learning spaces / 870,000+ reached since the war began</strong>
+        (April 2024, vintage in-sentence), and the orphaned 699/60/12,660 block appears nowhere
+        in the piece. <strong>(2)</strong> The named-adult hunt landed three, not one: Tahir Onoor
+        Ali at the Badareer e-learning centre (Kassala, pre-war vintage marked), Teacher Amani
+        inside a wartime safe learning space (Gezira, late 2023), Fatima Abbas Tahir held over
+        from recon &mdash; plus the find of the day: UNESCO's own prize page credits the idea to
+        <strong>Dr. Aiman Badri of Ahfad University for Women</strong>, giving the invention a
+        named Sudanese origin. <strong>(3)</strong> The UNESCO prize rides via the owner's served
+        article (2018 King Hamad laureate). <strong>(4)</strong> The trial body stayed unreadable,
+        so the marketing multipliers do not ride &mdash; the abstract is the ceiling, and its
+        adverse findings ride at full weight.
+      </div>
+      <div class="item__note">null on hope &middot; negative self-esteem finding carried with the authors' own caveat &middot; the honesty architecture, again</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; the Sudan piece is DRAFTED, held for the wave</div>
+      <div class="item__body">
+        <em>The classroom invented before the war that needed it</em> &mdash; ~2,000 words, the
+        commissioned two-story frame with exactly one orienting sentence between them and no
+        asserted program identity anywhere. Story one: 2014, e-Learning Sudan, the trial that
+        published its own bad news, the export to ~125,000 children in Ukraine, Uganda and
+        Lebanon and a platform handed to Ukraine's government. Story two: the war, the Makannas,
+        Mehad and Teacher Amani, the zero-rated Learning Passport &mdash; and BRIDGES as the
+        forward build, every figure marked as announced plan. Title 52/100, dek 192/200, counted
+        at compose. Hero still drawn in the same run: the tablet under the pole shelter, the
+        dotted arc out through three far flags, and the kiln-orange half of the arc coming home
+        to an empty stand. Held <span class="mono">approved:false</span>; zero build leak proved.
+      </div>
+      <div class="item__note">web/src/content/articles/2026-09-01-sudan-cant-wait-to-learn.md &middot; next: Arabic composition (native-AR story &mdash; the instrument itself teaches in Arabic), then the pair verdict</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &mdash; ruling #41: supersede, don't resurrect</div>
+      <div class="item__body">
+        When a figure's register dies, the question is not <em>where else does this figure
+        survive?</em> but <em>what does the owner serve today?</em> Mirrors still carrying the
+        dead figure &mdash; a Forbes syndication, a search engine's summary &mdash; are not
+        re-anchor candidates. Two corollaries proved in the same hunt: a search summary is not a
+        served register (a fresher "76,000 / March 2025" figure was declined because no page we
+        read as served carries it), and a URL is a figure too &mdash; cited as fetched, never
+        composed from a pattern. That second corollary bit our own draft: a pattern-composed
+        War Child URL was caught not serving and replaced with the sister entity's real register
+        before staging.
+      </div>
+      <div class="item__note">guidebook row 36 &middot; ruling series now #1&ndash;#41, no gaps, no dupes</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality/Growth &mdash; the inbound half of discoverability gets its assertion</div>
+      <div class="item__body">
+        Yesterday's forward question, answered same-day. robots.txt was enumerated for the first
+        time and found already present and already correct &mdash; the defect was that nothing
+        asserted it. Now something does: <span class="mono">qa_robots.py</span>, standing
+        assertion #8 &mdash; robots must exist, advertise exactly one Sitemap URL <em>derived</em>
+        from the build's own config, point at a file that exists, disallow nothing, and the
+        legacy stub must resolve. Proved per ruling #35 before landing (bites on a removed
+        robots.txt and on a Disallow injection, silent on the real build) and wired into the CI
+        build job, so a drifted crawler surface fails the deploy before anything publishes.
+      </div>
+      <div class="item__note">agents/tools/qa_robots.py &middot; .github/workflows/astro-pages.yml build step &middot; YAML re-parsed clean</div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Quality &mdash; QA green; gate run in writing; the next question is the hreflang cluster</div>
+      <div class="item__body">
+        Route-around build: 81 routed pages exit 0, parity 38/38, all <strong>eight</strong>
+        standing assertions clean, drift CLEAN for the second consecutive read, held-leak zero
+        with three held pairs' assets on disk. Publish gate run in writing: nothing ships,
+        nothing flips. New forward question filed: no check has ever asserted that the hreflang
+        clusters a crawler reassembles from our pages match the sitemap's own URL set &mdash;
+        every sitemap URL in exactly one cluster, no cluster naming a URL the sitemap omits.
+      </div>
+      <div class="item__note">agents/logs/qa-2026-09-01.md &middot; flip-day note: Sudan og card still owed at the wave gate</div>
+    </div>
+
+  </div>
+</article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-01 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 41 EN / 40 AR &mdash; incl. 3 EN / 2 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Sudan speaks Arabic &mdash; the composition the story was born in</h2>
+      <div class="day__date">2026&middot;09&middot;02 &middot; on deck</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label">Content</div>
+      <div class="item__body">
+        The Arabic Content Creator composes the Sudan piece &mdash; a native-AR story, since the
+        instrument itself teaches in Arabic. The commission's routing flags stand: recover
+        فاطمة عباس طاهر via UNICEF's own AR mirror; Makanna's Arabic spelling from the owner's AR
+        edition, never invented; Addise routes Ethiopian by heard vowel with the Arabic Editor
+        confirming before ship; CWTL keeps Latin plus gloss. Then the Editor's pair verdict on
+        the Zambia/Sierra Leone cadence. After Sudan: mandated slot #3, best-system, is banked
+        and waiting. Founder's open calls, unchanged and unhurried: custom domain, Substack.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Quality</div>
+      <div class="item__body">
+        The hreflang-cluster-vs-sitemap set-compare gets asked before anything new is added. Your
+        next push is now a triple maiden: the feed-cache step's first live run, the robots gate's
+        first CI run, riding the verify job's second.
+      </div>
+    </div>
+  </div>
+</article>
+
+<div class="push-block">
+  <div class="kicker">Your one action &mdash; when you like</div>
+  <p>
+    This block carries two days (08-31 + 09-01): the Sudan commission and draft, two rulings,
+    two pipeline gates, the wave packet, both briefs. Nothing reader-visible changes &mdash; no
+    approved flips. The commit touches
+    <strong><span class="mono" style="color:var(--color-paper)">.github/workflows/astro-pages.yml</span></strong>
+    (feed-cache step + robots gate), so the push needs the PAT with <em>workflow</em> scope
+    &mdash; the one that ran the 08-30 block has it.
+  </p>
+  <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-09-01: carries two days -- the 08-31 block went unrun, one day staged and nothing lost, cleared here. 08-31: Sudan re-verified and COMMISSIONED for mandated slot 2 after the Researcher re-checked all seven 08-13 registers against the web as served, two of seven changed serving state in eighteen days with zero figures going false, the walled Tribune superseded by the first-party UNICEF PR which corrects the programme name to BRIDGES and adds Belay Addise of GPE and an official Arabic edition; the Brown et al abstract read in full with the adverse findings the marketing omits, a null on hope and a significant negative effect on self-esteem; War Child's own 2025 accounting puts CWTL in Ukraine Uganda and Lebanon so the lineage gate closes on the honest side, two true stories joined by place and idea never by asserted program identity; ruling 40 filed as row 35, a mirror can misname the instrument; the verify job gains the feed cache step, ETag and Last-Modified must serve and a conditional GET must return 304; the Ed05 wave packet staged for Zambia and Sierra Leone. 09-01: the Sudan piece is DRAFTED, held approved false -- The classroom invented before the war that needed it, about 2000 words, all four Test-1 items closed before drafting: the dead national counts superseded not resurrected via the owner's living Learning Passport register at 750 spaces and 870000 reached April 2024 vintage; three named adults found, Tahir Onoor Ali, Teacher Amani and Fatima Abbas Tahir, plus the idea's named originator Dr Aiman Badri of Ahfad University from UNESCO's own served prize page; the prize rides via the owner register; the trial body stayed unreadable so the multipliers do not ride and the abstract is the ceiling. Hero still drawn same run; title 52 of 100, dek 192 of 200 counted at compose. Ruling 41 filed as row 36: supersede dont resurrect -- a dead register's figure is replaced by the owner's living figure never re-anchored through a mirror; corollaries, a search summary is not a served register and a URL is a figure cited as fetched never composed from a pattern, which bit our own draft once before staging. Quality and growth: robots.txt enumerated for the first time, found present and correct with nothing asserting it; qa_robots.py lands as standing assertion 8, derived sitemap URL per ruling 36, existence per 37, proved per 35 both ways, and wired into the CI build job so a drifted crawler surface fails the deploy. QA green: 81 routed pages exit 0, parity 38 of 38, all eight standing assertions clean, drift CLEAN second consecutive read, held-leak zero, publish gate run in writing with nothing shipping. NOTE the commit touches the workflows directory so the push needs the workflow-scope PAT. New forward question: hreflang clusters versus the sitemap URL set. Corpus unchanged at 38 EN and 38 AR, 35 countries, no approved flips. Briefs 63 and 64."
+git push origin main</code>
+</div>
+
+<footer>
+  <span>Mad&#257;r &middot; daily brief &middot; No. 64</span>
+  <span>Manager, for the founder &middot; 2026-09-01</span>
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Sudan: at the left, a small wooden stand holds a tablet upright like a miniature blackboard beneath an open-sided shelter of leaning poles, a solar panel resting on its roof beam and a sun drawn as a plain circle above. From the tablet's screen a dotted line rises and travels right across the page, far over a low horizon line, where it loops through three small distant flags before turning back. The single warm mark on the page, a kiln-orange line, traces the returning half of the arc — the stretch that comes home — ending at a second, plainer stand drawn in outline only, still waiting for its tablet.">
+  <title>The Still · Sudan — the classroom that left home, and the returning arc</title>
+  <desc>Paper-cream ground, pure line, no fills — tone carried by hatch density alone. At left a pole shelter shades a wooden stand holding a tablet; a solar panel leans on the roof beam beneath a plain sun circle. A dotted arc leaves the tablet, crosses a low horizon, loops through three small far-off flags at the right, and turns back. The homeward half of the arc is the single kiln-orange line, descending to a second stand drawn in outline only, empty.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- ground line -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2" stroke-opacity="0.35" d="M 40 524 L 1160 524"/>
+    <!-- far horizon -->
+    <path stroke-width="1.2" stroke-opacity="0.22" d="M 620 336 L 1160 336"/>
+  </g>
+
+  <!-- sun, plain circle, upper left -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <circle cx="150" cy="98" r="34" stroke-width="2.2" stroke-opacity="0.75"/>
+    <path stroke-width="1.2" stroke-opacity="0.35" d="M 150 46 L 150 30 M 196 116 L 212 122 M 104 116 L 88 122"/>
+  </g>
+
+  <!-- the shelter: leaning poles, open-sided -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.0" stroke-opacity="0.9" d="M 96 524 L 148 236 L 388 236 L 428 524"/>
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 128 524 L 170 252 M 400 524 L 372 252"/>
+    <!-- roof thatch strokes -->
+    <path stroke-width="1.2" stroke-opacity="0.4" d="M 150 236 L 142 218 M 190 236 L 184 216 M 230 236 L 226 214 M 270 236 L 268 214 M 310 236 L 312 216 M 350 236 L 354 218 M 386 236 L 392 220"/>
+    <!-- solar panel resting on the roof beam -->
+    <path stroke-width="2.4" stroke-opacity="0.85" d="M 232 232 L 322 196 L 344 210 L 254 246 Z"/>
+    <path stroke-width="1.0" stroke-opacity="0.4" d="M 262 220 L 282 233 M 288 210 L 308 223"/>
+  </g>
+
+  <!-- the wooden stand and tablet, under the shelter -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stand legs -->
+    <path stroke-width="2.6" stroke-opacity="0.9" d="M 226 524 L 254 400 M 298 524 L 272 400"/>
+    <path stroke-width="1.8" stroke-opacity="0.6" d="M 238 470 L 288 470"/>
+    <!-- tablet, upright like a small blackboard -->
+    <path stroke-width="3.0" stroke-opacity="0.95" d="M 216 400 L 312 400 L 312 322 L 216 322 Z"/>
+    <!-- screen lines: a lesson -->
+    <path stroke-width="1.2" stroke-opacity="0.5" d="M 230 344 L 280 344 M 230 360 L 296 360 M 230 376 L 264 376"/>
+  </g>
+
+  <!-- low mat and two small seated figures, suggestion only -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 120 512 Q 170 502 220 512"/>
+    <path stroke-width="1.8" stroke-opacity="0.6" d="M 150 500 q -4 -18 8 -22 q 12 -2 12 12 q 0 8 -8 10"/>
+    <path stroke-width="1.8" stroke-opacity="0.6" d="M 186 502 q -2 -20 10 -22 q 12 0 10 14 q -1 7 -8 8"/>
+  </g>
+
+  <!-- the outward arc: dotted, ink, leaving the tablet, over the horizon, through three far flags -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="2.0" stroke-opacity="0.6" stroke-dasharray="2 12"
+          d="M 312 340 C 460 240, 640 200, 800 220 C 920 236, 1020 258, 1080 290"/>
+    <!-- three small distant flags beyond the horizon -->
+    <path stroke-width="1.6" stroke-opacity="0.55" d="M 848 330 L 848 296 L 872 302 L 848 308"/>
+    <path stroke-width="1.6" stroke-opacity="0.55" d="M 950 328 L 950 292 L 974 298 L 950 304"/>
+    <path stroke-width="1.6" stroke-opacity="0.55" d="M 1052 330 L 1052 294 L 1076 300 L 1052 306"/>
+    <path stroke-width="1.0" stroke-opacity="0.3" d="M 838 336 L 882 336 M 940 336 L 984 336 M 1042 336 L 1086 336"/>
+  </g>
+
+  <!-- the returning arc: the single warm mark, kiln orange, coming home -->
+  <g fill="none" stroke="#D94F2A" stroke-linecap="round">
+    <path stroke-width="2.4" stroke-opacity="0.9" stroke-dasharray="14 8"
+          d="M 1080 290 C 1110 320, 1092 366, 1010 396 C 880 442, 700 452, 596 462"/>
+    <!-- small arrowhead easing down toward the empty stand -->
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 596 462 l 14 -8 M 596 462 l 16 4"/>
+  </g>
+
+  <!-- the second stand: outline only, empty, waiting -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 520 524 L 546 430 M 588 524 L 564 430"/>
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 530 486 L 578 486"/>
+    <!-- the empty frame where a tablet would sit -->
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 512 430 L 596 430 L 596 366 L 512 366 Z"/>
+  </g>
+</svg>
