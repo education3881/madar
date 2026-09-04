@@ -47,6 +47,18 @@ jobs:
       - name: robots.txt advertises the sitemap the build derives
         working-directory: .
         run: python3 agents/tools/qa_robots.py web/dist
+      # Cluster contract (2026-09-03): the hreflang clusters a crawler
+      # reassembles from our pages must be reciprocal, dereference to dist,
+      # and equal the sitemap's own URL set — every sitemap URL in exactly one
+      # cluster (or a NAMED no-alternate page), no cluster naming a URL the
+      # sitemap omits, and the sitemap's xhtml:link alternates agreeing with
+      # the page-level cluster (ruling #36 across two files). Proved per #35:
+      # bit on first contact (the English home's canonical was `/madar`, not
+      # `/madar/`, since 2026-05-25 — fixed in Base.astro the same run), bites
+      # on a retargeted alternate and on an injected held-slug cluster.
+      - name: hreflang clusters equal the sitemap set
+        working-directory: .
+        run: python3 agents/tools/qa_hreflang_clusters.py web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

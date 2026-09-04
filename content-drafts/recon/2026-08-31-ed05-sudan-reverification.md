@@ -29,3 +29,6 @@ No served source connects the wartime digital learning spaces (Let Us Learn, reg
 Two of seven registers changed serving state in eighteen days while zero figures went false — and the register that *drifted worst* (the walled Tribune) turned out to be misnaming the programme it reported. See `2026-08-31-a-mirror-can-misname-the-instrument.md`.
 
 — Researcher · 2026-08-31
+
+---
+**Correction — 2026-09-03 (Researcher, at AR composition).** Register #4 above says the UNICEF PR carries "an Arabic edition of the release on-site (العربية toggle)". The toggle was seen; its destination was not fetched. Fetched today: the anchor is served `class="has-no-translation"` and its href is the same English URL — **there is no Arabic edition of the 4 May 2026 press release.** The same is true of the *Safe Learning Spaces* story (27 Nov 2023). Arabic editions DO exist, at their own translated URLs and with their own dates, for *New horizons* (31 Aug 2020) and *A golden opportunity to learn* (2 Nov 2022). Filed as guidebook row 37 / ruling #42 (`2026-09-03-a-language-toggle-is-not-a-translation.md`); the EN draft's source annotation corrected the same day.

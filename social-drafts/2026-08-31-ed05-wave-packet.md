@@ -17,3 +17,14 @@ Sierra Leone ran an $18m outcomes fund across 325 schools. When Year-3 results l
 The measurement-cluster list (assessment-reform beat, v2) is the natural first audience for Sierra Leone — the piece is an outcomes-measurement story wearing a finance coat. On flip-day, the SL link goes to that list's queue first; Zambia to the access/rights beat. No outreach before both URLs return 200 from the origin.
 
 — Growth · 2026-08-31
+
+---
+## Sudan — *The classroom invented before the war that needed it* (added 2026-09-03, HELD with the wave)
+og card on disk today: `og/2026-09-01-sudan-cant-wait-to-learn.png` (1200×600, 17 KB, from the same still). Pair completes on the Editor's verdict; nothing posts before the wave gate + a green `verify` job.
+**EN caption:**
+In 2014 — nine years before its own war — Sudan built a classroom that needs no school: a tablet, a solar panel, games that teach Arabic and maths, a trained adult from the village. It scaled into other countries' emergencies. When Sudan's schools closed, the idea worked its way home under other names. Two true stories, joined by place and idea — new from Madār, in English and Arabic. #Sudan #EducationInEmergencies #Africa
+**AR caption:**
+في 2014 — قبل تسع سنوات من حربه — بنى السودان صفًّا لا يحتاج إلى مدرسة: جهاز لوحي ولوح شمسي وألعاب تعلّم العربية والرياضيات وبالغ مدرَّب من القرية. اتّسع في طوارئ بلدان أخرى؛ ولمّا أُغلقت مدارس السودان شقّت الفكرة طريقها إلى البيت بأسماء أخرى. قصتان صحيحتان يجمعهما المكان والفكرة. جديد مدار، بالعربية والإنجليزية.
+**Engagement-list note:** Sudan goes to the continuity beat (the Ed03 list — exam-continuity, wartime schooling readers) first; it is a native-Arabic story, so the AR link leads on the Arabic-side queue. The piece's honesty rail (a trial that published its own null and negative) is the hook for the measurement list second.
+
+— Growth · 2026-09-03

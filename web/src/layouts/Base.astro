@@ -67,7 +67,18 @@ const {
 } = Astro.props;
 
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Every HTML route this site builds is a directory (`build.format` default),
+// so the URL the origin actually serves always ends in a slash. For the root
+// route under `base`, `Astro.url.pathname` is `/madar` — no slash — which put
+// the English home's canonical and og:url at a URL GitHub Pages 301s away
+// from, and made the home the one page whose canonical was not a member of
+// its own hreflang cluster nor equal to its sitemap entry (found 2026-09-03 by
+// qa_hreflang_clusters on first contact; live since 2026-05-25). Derive the
+// canonical from the served shape, not the router's (ruling #36).
+const _canonicalPath = Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+const canonicalURL = new URL(_canonicalPath, Astro.site);
 const alternateEN = alternate ? new URL(withBase(alternate.en), Astro.site).href : null;
 const alternateAR = alternate ? new URL(withBase(alternate.ar), Astro.site).href : null;
 // og:image / twitter:image must be ABSOLUTE for social scrapers (Growth audit,
