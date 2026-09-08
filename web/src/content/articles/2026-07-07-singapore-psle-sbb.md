@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-07-07-netherlands-doorstroomtoets
   - 2026-06-17-korea-aidt-reversal
+  - 2026-07-07-india-parakh-hpc
 contains_composites: false
 arabicVersion: 2026-07-07-singapore-psle-sbb
 sources:

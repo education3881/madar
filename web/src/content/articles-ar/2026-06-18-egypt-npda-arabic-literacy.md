@@ -12,6 +12,7 @@ related:
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-05-28-kuwait-ccet-arabic-tests
   - 2026-06-25-brazil-crianca-alfabetizada
+  - 2026-07-06-morocco-ecoles-pionnieres
 contains_composites: false
 englishVersion: 2026-06-18-egypt-npda-arabic-literacy
 sources:

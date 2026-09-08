@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-05-28-iraq-mosul-library
   - 2026-07-04-kenya-cbe-grade10-pathways
+  - 2026-07-07-gaza-education-continuity
 contains_composites: false
 englishVersion: 2026-07-07-syria-certificate-recognition
 sources:

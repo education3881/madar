@@ -12,6 +12,7 @@ related:
   - 2026-06-18-egypt-npda-arabic-literacy
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-06-17-korea-aidt-reversal
+  - 2026-07-07-rohingya-myanmar-curriculum
 contains_composites: false
 englishVersion: 2026-06-19-philippines-mtb-mle-reversal
 sources:

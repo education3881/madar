@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-07-07-turkiye-earthquake-school-recovery
   - 2026-05-27-egypt-ekb-decade
+  - 2026-07-07-poland-ukrainian-students
 contains_composites: false
 arabicVersion: 2026-07-07-ukraine-wartime-schooling
 sources:

@@ -15,6 +15,10 @@ themes:
   - value of teachers
 type: curated
 englishVersion: 2026-05-31-qatar-humanity-spark-strategy
+related:
+  - 2026-06-17-korea-aidt-reversal
+  - 2026-05-31-indonesia-permen-13-coding-ai
+  - 2026-05-31-uruguay-eduia-lab-ceibal
 sources:
   - title: "هيئة الاتِّصال الحكومي القَطَريَّة — «معالي رئيس مجلس الوزراء ووزير الخارجيَّة يُطلِق استراتيجيَّة التعليم 2024-2030». بيان صحفي بتاريخ 3 سبتمبر 2024. يَتَضَمَّن تصريحاتٍ حرفيَّة لِمعالي بثينة بنت علي الجبر النعيمي، وزيرة التعليم والتعليم العالي وقتَ الإطلاق؛ وشعارَ «إشعال شرارة التَّعَلُّم»؛ ورقمَ التحاق الطفولة المبكِّرة عند 44% مع هدف 2030 لِمضاعفته؛ وإعلانَ أربع مدارس STEM جديدةٍ بِحلول 2026 لِأكثر من 2,000 طالب؛ وبرنامج «مدرستي مجتمعي»."
     url: "https://www.gco.gov.qa/en/top-news/he-prime-minister-and-minister-of-foreign-affairs-launches-education-strategy-2024-2030/"

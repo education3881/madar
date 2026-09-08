@@ -15,6 +15,10 @@ themes:
   - female education
 type: curated
 arabicVersion: 2026-05-28-ghana-cbe-curriculum
+related:
+  - 2026-07-04-kenya-cbe-grade10-pathways
+  - 2026-07-07-rohingya-myanmar-curriculum
+  - 2026-06-19-philippines-mtb-mle-reversal
 sources:
   - title: "Ghana News Agency — 'CEA launches revised curriculum for out-of-school children', by Jesse Ampah Owusu, 31 March 2026. Reports the Accra launch with verbatim quotes from Dr. Clement Abas Apaak (Deputy Minister of Education) and Mr. Daniel Kwesi Ashiamah (Executive Director, Complementary Education Agency). Details the four-language scope (Dagaari, Dagbani, Asante Twi, Ewe) out of a fifteen-language target, the nine-month/three-phase structure, and the partnership with the National Council for Curriculum and Assessment, Luminos Fund, UK International Development, and UNICEF."
     url: "https://gna.org.gh/2026/03/cea-launches-revised-curriculum-for-out-of-school-children/"

@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-08</title>
+<meta name="description" content="Manager to Founder daily brief for Tuesday 8 September 2026. Brief 68. The held-date lastmod leak is closed and proved both ways, and a new standing assertion guards the output side. Edition 05 gets its first verification verdict: the Zambia pair fails on one item and it is a class of error no existing instrument could catch. Ruling #45. Sunday and Monday were dark; this push carries two runs." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head>
+<body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 68
+    <strong>Tuesday 8 September 2026</strong>
+  </div>
+</header>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>The digits were right and the noun was wrong</h1>
+  <p class="dek">
+    Edition 05 has its first verification verdict, and the Zambia pair did not pass clean. One
+    figure survived the drafter's read, the Arabic gate, the Editor's five tests and a
+    fourteen-day re-fetch &mdash; because every one of those checks compares <em>values</em>, and
+    this number's value was correct. Its noun was not: the source says a saving, we printed a
+    price. Also today, held drafts stop dating live pages. Sunday and Monday were dark.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Two dark days, and a full day&rsquo;s work still sitting on the desk</h2>
+      <div class="day__date">2026-09-05 &middot; 2026-09-06 &middot; 2026-09-07</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label">State, read from git before anything was planned</div>
+      <div class="item__body">
+        Local and origin both at <span class="mono">fad150f</span> &mdash; the 09-04 block, which
+        landed cleanly. But the working tree holds <strong>an entire uncommitted 09-06 day</strong>:
+        Brief 67, the weekly review, the Edition 05 status memo, the tenth standing assertion, the
+        rail audit and its twenty-four files, the PASEC read, ruling #44, the guidebook archive
+        roll, the IndexNow key and two workflow edits. <strong>The 09-06 block went unrun.</strong>
+      </div>
+      <div class="item__note">
+        Nothing is lost. Nothing is delivered either &mdash; the origin has served the 09-04 build
+        for four days, and a review that has not landed cannot be read by anyone but us.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">Named plainly</div>
+      <div class="item__body">
+        <strong>Sunday 6 September ran. Saturday 5 and Monday 7 September did not</strong> &mdash;
+        no run, no brief, either day. That makes three of the last four calendar days without a
+        delivered artefact, and it is the reason the Zambia verification verdict, scheduled by the
+        weekly review for the 7th, is landing on the 8th.
+      </div>
+      <div class="item__note">
+        One day late, named rather than absorbed into today&rsquo;s column.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Carried in, and now answered</div>
+      <div class="item__body">
+        The 09-06 review left two P1s and a written specification. Both P1s are addressed today:
+        the held-date leak in the sitemap resolver, and Edition 05&rsquo;s missing verification
+        verdicts &mdash; three banked pairs against zero verdicts, the Verifier idle for the whole
+        edition.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>A verdict that earned its own existence</h2>
+      <div class="day__date">Tuesday 2026-09-08 &middot; five standing functions</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &middot; Verifier &middot; Edition 05, verdict 1 of 3</div>
+      <div class="item__body">
+        <strong>The Zambia pair: FAIL with one item.</strong> The piece is unusually well built
+        &mdash; it declines the aggregates it cannot stand behind, fences the audit before it uses
+        it, and carries <strong>seven of seven</strong> recon guardrails in the prose with no
+        silent avoidance. Every load-bearing figure traces, most of them through a second,
+        independently-routed channel: I re-fetched the ZANIS results and the UNESCO floor myself
+        today, fourteen days after the drafter read them, and re-computed all nine audit sums from
+        their components without reference to either read.
+        <br><br>
+        One figure failed. The piece said the Examinations Council built its results system
+        <em>&ldquo;for K4.7&nbsp;million, against an estimated K15&nbsp;million to procure it
+        externally.&rdquo;</em> The source says it cost 4.7 million <em>&ldquo;a move that has
+        <strong>saved</strong> Government about 15 Million Kwacha.&rdquo;</em> A saving is not a
+        price. The two coincide only on one of the source sentence&rsquo;s two available readings
+        &mdash; and the piece had introduced that paragraph with the word
+        <em>&ldquo;unambiguously.&rdquo;</em>
+      </div>
+      <div class="item__note">
+        Both languages carried the price reading independently. Fixed in-run in English, Arabic and
+        both source annotations, in the source&rsquo;s own grammar; K19.7m was <em>not</em>
+        computed, because that is the other reading asserted. The pair stays
+        <span class="mono">approved: false</span> and returns for a confirmation read at the wave
+        gate &mdash; a fix authored today is not verified today by the same desk.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Why it matters more than one clause</div>
+      <div class="item__body">
+        This error was invisible to every instrument we own, and not by accident. The
+        <em>value</em> is right, so the figure trace passed. The digits match across languages, so
+        the Editor&rsquo;s numeral-multiset test passed. The sums reconcile, so the arithmetic
+        passed. It is not a vintage, scope, direction, position, condition, coverage or
+        funnel-stage error, so none of the seven trace axes named it. <strong>It had no axis until
+        today.</strong>
+      </div>
+      <div class="item__note">
+        The ceiling moves: 3 banked, 1 verified &mdash; <strong>slot-3 drafting is unblocked.</strong>
+        Sierra Leone is next in banking order, 09-09.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the held-date leak, closed and proved</div>
+      <div class="item__body">
+        A held draft is a file in the content directory and not a byte anyone can read. The sitemap
+        resolver did not know that, so a commit touching only a held draft moved the dates on five
+        live pages &mdash; and it reached production twice, on 08-30 and 09-02. The old held-leak
+        sweep was green through both, because it enumerated held <em>slugs</em> and a held slug has
+        no URL to leak. It never enumerated <em>dates</em>.
+        <br><br>
+        <strong>Held files now contribute no date anywhere.</strong> Proved on real state, both
+        ways: a scratch commit touching only the held Zambia draft moved four index pages under the
+        old resolver and <strong>none</strong> under the new one; a scratch commit touching an
+        approved file moved exactly what it should &mdash; the English page and the indexes, and
+        correctly <em>not</em> its Arabic twin.
+      </div>
+      <div class="item__note">
+        The control caught a defect in my own fix, which is what a control is for: I had parsed a
+        fixed sixty-line window for the approval flag. Today&rsquo;s deepest one sits at line 47 &mdash;
+        comfort, not a guarantee. Now it parses the frontmatter block, which cannot be outgrown.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Quality &middot; standing assertion #11</div>
+      <div class="item__body">
+        <span class="mono">qa_lastmod</span> is the output-side twin: every URL carries a date, and
+        no date exceeds a <strong>ceiling derived from git</strong> &mdash; the newest commit
+        touching an approved article or a chrome file. Anything above that could only have come
+        from a held draft, from build time, or from nowhere. Proved per the standing rule: silent
+        on the real build, loud on an injected above-ceiling date and on a stripped one. Wired into
+        the CI build job, so a drifted date now fails the deploy.
+      </div>
+      <div class="item__note">
+        Today&rsquo;s run edited the Zambia pair in both languages and the live-drift check still
+        reads CLEAN &mdash; because the pair is held and produces no served bytes. The fix&rsquo;s
+        premise, demonstrated rather than argued.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Growth &middot; what a crawler actually receives</div>
+      <div class="item__body">
+        With the leak closed I measured the signal itself. Of the 82 URLs in the sitemap,
+        <strong>81 carry the same date</strong> &mdash; 99 per cent, one value. If each article
+        carried the date it was actually last touched, the same corpus would show
+        <strong>nine distinct dates</strong>, clustered where the work happened.
+        <br><br>
+        The resolver&rsquo;s own comment block rejected build-time stamping in August because
+        &ldquo;all 82 pages changed simultaneously, again&rdquo; is the pattern crawlers are
+        documented to discount. We produce that pattern anyway, by a different door: any chrome
+        edit becomes the floor for every page, and we edit chrome most days. <strong>Leak-free is
+        not the same as informative.</strong>
+      </div>
+      <div class="item__note">
+        Designed, not just diagnosed: a per-URL output-hash manifest carried between deploys inside
+        the <span class="mono">verify</span> job we already run. Goes to Sunday&rsquo;s review as a
+        decision. Recommendation: sequence it <em>before</em> the IndexNow switch is turned on
+        &mdash; no point spending a fresh channel on a signal that says the same thing 81 times.
+        No traffic figure claimed; the site carries no tracker by design.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &middot; ruling #45, row 40</div>
+      <div class="item__body">
+        <strong>A number&rsquo;s noun is part of the figure.</strong> Price, saving, budget,
+        target, reached, planned, avoided &mdash; these are the figure, not framing around it. Two
+        sentences with the same digits and different nouns carry different figures. This is the
+        <strong>eighth trace axis: type</strong>, and it comes with the reason the other seven
+        could not catch it: two independently-routed channels both return the same digits, because
+        the digits are right. Only a read of the source <em>sentence</em> catches it, so the trace
+        now quotes the clause rather than recording the number.
+      </div>
+      <div class="item__note">
+        Corollaries: a saving is not a price, and inferring the missing term adjudicates a source
+        against itself; and <em>&ldquo;unambiguously&rdquo;</em> is a claim, traced harder than the
+        figures beside it. First ruling in the series produced by a verification verdict rather
+        than a recon or a QA sweep &mdash; which is the Verifier doing the job it was hired for.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Quality &middot; the sweep</div>
+      <div class="item__body">
+        Build exit 0 twice, 81 routed pages plus VALENCE. Parity 38/38. Sitemap 82 URLs, 82
+        lastmod. Both feeds 38 items and 38 enclosures under a real XML parse. All eleven standing
+        assertions clean. Held-leak zero across pages, sitemap and feeds. Live drift CLEAN against
+        the origin. No stale <span class="mono">approved: true</span> duplicate anywhere.
+        <strong>Publish gate run in writing; nothing ships editorially.</strong>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-08 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 41 EN / 41 AR &mdash; incl. 3 EN / 3 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Verdict two, and the surface nobody has looked at</h2>
+      <div class="day__date">Wednesday 2026-09-09</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label">First</div>
+      <div class="item__body">
+        <strong>The Sierra Leone verification verdict</strong> &mdash; next in banking order, one
+        per run. It carries the heaviest figure load in the edition (the 264-page OPM evaluation,
+        pooled effects against a national tide going out) and it is the first pair to be traced
+        with the new <em>type</em> axis in the table.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Then</div>
+      <div class="item__body">
+        <strong>Slot-3 drafting opens</strong> &mdash; the ceiling cleared today. Draft-blocker 2,
+        the TIMSS 2019 national report, is the Researcher&rsquo;s read; the ruler piece cannot
+        carry its trend figures until it lands.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Behind those &mdash; today&rsquo;s forward question</div>
+      <div class="item__body">
+        A held file now contributes no date, no page, no sitemap entry and no feed item.
+        <strong>Nothing yet proves it contributes no bytes at all.</strong> Its hero still and its
+        share card sit in <span class="mono">dist/</span>, copied from <span class="mono">public/</span>
+        &mdash; correctly, as assets. But a share card is a derivable promise: guess the path and
+        you fetch an image for an article that returns 404. Not a defect until it is decided in
+        writing, one way or the other. An unexamined surface is how both of the last two leaks
+        began.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<div class="flag">
+  <div class="kicker">Needs your eye</div>
+  <p>
+    <strong>One push, two runs&rsquo; work</strong> (09-06 and 09-08), and it needs the
+    <strong>workflow-scope PAT</strong> &mdash; three edits to
+    <span class="mono">.github/workflows/astro-pages.yml</span> across the two days. The origin has
+    served the 09-04 build for four days.
+  </p>
+  <p>
+    <strong>Nothing ships editorially.</strong> Corpus unchanged at 38 English and 38 Arabic, 35
+    countries, no approval flag flipped. This block is infrastructure, one verification verdict,
+    one ruling and two briefs.
+  </p>
+  <p>
+    <strong>Your open calls, unhurried:</strong> the IndexNow switch (staged off &mdash; and my
+    recommendation today is to hold it until the lastmod signal is worth announcing); Edition
+    05&rsquo;s piece count (silence by 09-13 means six); the custom domain; Substack.
+  </p>
+</div>
+
+<div class="push-block">
+  <div class="kicker">Push block &mdash; copy and paste</div>
+  <p>Single line, ASCII only, no <span class="mono">!</span> or <span class="mono">$</span>.</p>
+  <code>cd ~/Documents/Claude/Projects/Educational\ Website
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-09-08: carries the unrun 09-06 block plus today. Held drafts no longer date live pages, and Edition 05 gets its first verification verdict. Quality: the sitemap resolver read approved from frontmatter for the first time, so a held file now contributes no date on either path, closing a leak that reached production twice, on 08-30 and 09-02, when a commit touching only a held draft moved four index pages while the held-leak sweep stayed green because it enumerated slugs and never dates. Proved both ways on real state: a scratch commit touching only the held Zambia draft moved four index dates under the old resolver and none under the new, and a scratch commit touching an approved file moved the English page and the indexes and correctly not the Arabic twin. The control caught a defect in the fix itself, a fixed sixty-line frontmatter window against a deepest approved field at line 47, replaced by a parse of the frontmatter block. Standing assertion 11, qa_lastmod, lands as the output-side twin, every URL carries a date and none exceeds a ceiling derived from git as the newest approved-content or chrome commit, proved silent on the real build and loud on an injected above-ceiling date and a stripped one, wired into the CI build job, so this commit touches the workflows directory and needs the workflow-scope PAT. Content: the Verifier delivers Edition 05 verdict one, the Zambia pair, FAIL with one item. Every load-bearing figure traces, most through a second independently-routed channel re-fetched fourteen days after compose, all nine audit sums re-computed from components, seven of seven recon guardrails carried in prose with no silent avoidance, the Act number absent from both bodies, no stale approved-true duplicate. The item: the ZANIS fifteen million is a saving in the source and was printed as the external price in both languages, in a paragraph the piece opened with the word unambiguously. Fixed in-run in English, Arabic and both source annotations in the source own grammar, the other reading not computed, numeral multiset re-checked and still zero one-sided figures. The pair stays held and returns for a confirmation read at the wave gate. Ceiling cleared, three banked and one verified, so slot-3 drafting is unblocked and Sierra Leone is next in banking order. Research, ruling 45 filed as row 40: a number noun is part of the figure, the eighth trace axis is type, because two channels of figure checking both return the same digits when the digits are right and only a read of the source sentence catches a saving printed as a price. Growth: with the leak closed, the signal itself measured, 81 of 82 URLs carry one identical date where per-article dates would give nine, so leak-free is not informative, and an output-hash manifest carried between deploys inside the verify job is designed and goes to Sunday review as a decision, sequenced before IndexNow. QA green on the route-around build, 81 routed pages exit 0 twice, parity 38 of 38, sitemap 82 with 82 lastmod, both feeds 38 items and 38 enclosures, all eleven standing assertions clean, held-leak zero, live drift CLEAN. Publish gate run in writing, nothing ships editorially, corpus unchanged at 38 EN and 38 AR, 35 countries, no approved flips. 09-05 and 09-07 were dark days. Briefs 67 and 68."
+git push origin main</code>
+</div>
+
+<footer>
+  <span>Mad&#257;r &middot; daily brief &middot; No. 68</span>
+  <span>Manager, for the founder &middot; 2026-09-08</span>
+</footer>
+
+</main>
+</body>
+</html>

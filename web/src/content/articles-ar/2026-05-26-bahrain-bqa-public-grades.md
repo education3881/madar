@@ -9,6 +9,9 @@ level: Both
 themes: [government-led programs, access, value of teachers]
 type: curated
 englishVersion: 2026-05-26-bahrain-bqa-public-grades
+related:
+  - 2026-06-20-oman-school-performance-ratings
+  - 2026-07-28-england-report-cards-first-term
 sources:
   - title: "هيئة جودة التعليم والتدريب (BQA) — إصدار تقرير أداء مؤسسات التعليم والتدريب للعام الأكاديمي 2024–2025 (إعلان بتاريخ 6 سبتمبر 2025)"
     url: "https://www.bqa.gov.bh/education-and-training-quality-authority-issues-the-performance-report-of-education-and-training-institutions-for-the-academic-year-2024-2025/"

@@ -59,6 +59,29 @@ jobs:
       - name: hreflang clusters equal the sitemap set
         working-directory: .
         run: python3 agents/tools/qa_hreflang_clusters.py web/dist
+      # Article-promise contract (2026-09-06): every `related:` slug and every
+      # `sources[].url` an APPROVED article declares in frontmatter must be
+      # rendered on its built page (asserted by existence in dist, ruling #37);
+      # no placeholder source on an approved page. RelatedReading.astro drops
+      # unresolvable slugs silently by design — this is the loud half. Proved
+      # per #35: control silent; bites on a bogus related slug (rebuilt), a
+      # removed source anchor, and a placeholder title. Reports the in-body
+      # link count (0 by design) as a count, never as a pass.
+      - name: article promises are kept on the built page
+        working-directory: .
+        run: python3 agents/tools/qa_body_links.py web/dist
+      # Held drafts date nothing (2026-09-08). A commit touching only a held
+      # file moved five live <lastmod> values twice in production (9886987,
+      # 642fef2) while the held-leak sweep stayed green, because it enumerated
+      # SLUGS and never DATES. The resolver now excludes held files on both
+      # paths; this is the output-side twin — every URL carries a lastmod and
+      # none is newer than max(newest approved content commit, newest chrome
+      # commit), a ceiling derived from git rather than asserted (#36). Proved
+      # per #35: control silent on the real build; bites on an injected
+      # above-ceiling date and on a stripped lastmod.
+      - name: no lastmod above the approved-and-chrome ceiling
+        working-directory: .
+        run: python3 agents/tools/qa_lastmod.py web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -88,6 +111,15 @@ jobs:
   verify:
     needs: deploy
     runs-on: ubuntu-latest
+    env:
+      # IndexNow switch (2026-09-06 weekly review, the week's growth bet).
+      # "off" = the step below logs what it WOULD submit and exits 0.
+      # "on"  = it POSTs the served sitemap's URL set to api.indexnow.org.
+      # Staged off by design: submitting our URLs to an external index is a
+      # binding (ruling #7) and an action in the publication's name — the
+      # founder turns it on, in one word, when he chooses. Nothing else in
+      # this job changes with the switch.
+      INDEXNOW: "off"
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -137,4 +169,46 @@ jobs:
             fi
           done
           exit $fail
-        
+      # IndexNow (2026-09-06): the one inbound lever that needs no account —
+      # only a key file we host (web/public/<key>.txt, under /madar/ so the
+      # keyLocation covers every /madar/ URL) and a POST. The URL set is READ
+      # FROM THE SERVED sitemap-0.xml, never from the tree (ruling #36: derive
+      # the promise from the asset), and the step runs only after the
+      # byte-compare above has proved the origin serves this build — so it can
+      # never announce a URL the origin does not yet serve. Best-effort by
+      # design: a non-2xx from the index is logged as a warning, not a deploy
+      # failure — the deploy's job is the origin; notifying an index is not a
+      # condition of publishing. Keys are public by protocol design.
+      - name: IndexNow — announce the served URL set (switch in job env)
+        run: |
+          BASE="https://education3881.github.io/madar"
+          KEY="66ec26c5232c206b2c4714fd916a29a8"
+          curl -fsSL "$BASE/sitemap-0.xml" -o served-sitemap.xml
+          grep -o '<loc>[^<]*</loc>' served-sitemap.xml | sed 's/<\/\?loc>//g' | sort -u > urls.txt
+          n=$(wc -l < urls.txt | tr -d ' ')
+          [ "$n" -gt 0 ] || { echo "::error::served sitemap yielded zero URLs — nothing to announce, something is wrong"; exit 1; }
+          served_key=$(curl -fsSL "$BASE/$KEY.txt" || true)
+          [ "$served_key" = "$KEY" ] || { echo "::error::key file not served at $BASE/$KEY.txt — IndexNow would 403"; exit 1; }
+          python3 - <<'PY' > payload.json
+          import json, sys
+          urls = [u.strip() for u in open("urls.txt", encoding="utf-8") if u.strip()]
+          json.dump({
+            "host": "education3881.github.io",
+            "key": "66ec26c5232c206b2c4714fd916a29a8",
+            "keyLocation": "https://education3881.github.io/madar/66ec26c5232c206b2c4714fd916a29a8.txt",
+            "urlList": urls,
+          }, sys.stdout, ensure_ascii=False)
+          PY
+          if [ "$INDEXNOW" != "on" ]; then
+            echo "IndexNow switch is '$INDEXNOW' — dry run. Would submit $n URLs from the served sitemap (key file verified served)."
+            exit 0
+          fi
+          code=$(curl -s -o response.txt -w '%{http_code}' -X POST \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data-binary @payload.json https://api.indexnow.org/indexnow)
+          echo "IndexNow: submitted $n URLs, HTTP $code"
+          case "$code" in
+            200|202) echo "IndexNow accepted the set (200 = ok, 202 = key validation pending)";;
+            *) echo "::warning::IndexNow returned HTTP $code — $(head -c 300 response.txt)";;
+          esac
+

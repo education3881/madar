@@ -15,6 +15,10 @@ themes:
   - access
 type: curated
 englishVersion: 2026-05-31-indonesia-permen-13-coding-ai
+related:
+  - 2026-06-17-korea-aidt-reversal
+  - 2026-05-31-qatar-humanity-spark-strategy
+  - 2026-05-31-uruguay-eduia-lab-ceibal
 sources:
   - title: "وزارة التعليم الأساسي والثانوي الإندونيسية (Kemendikdasmen) — بيان صحفي رسمي: «لائحة الوزارة رقم 13 لسنة 2025، تعزيز توجُّه السياسة عبر التعلُّم العميق»، بتاريخ 23 يوليو 2025. يَتَضَمَّن تصريحاتٍ حرفيَّة لِلوزير عبدالمعطي خلال ندوة 22 يوليو 2025، وتفسيرًا مُسهبًا مِن طوني توهارودين، رئيس هيئة المعايير والمناهج والتقييم التربوي، حول الأبعاد الثمانية لِصورة الخرِّيج، والمادَّة الاختياريَّة لِلبرمجة والذكاء الاصطناعي مِن الصفِّ الخامس إلى الثاني عشر، والبدء المرحلي في الصفوف الخامس والسابع والعاشر."
     url: "https://www.kemendikdasmen.go.id/siaran-pers/13278-permendikdasmen-nomor-13-tahun-2025-menguatkan-arah-kebijakan-melalui-pembelajaran-mendalam"

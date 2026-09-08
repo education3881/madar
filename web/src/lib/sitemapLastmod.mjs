@@ -67,6 +67,8 @@
  */
 
 import { execFileSync } from 'node:child_process';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 const git = (args) =>
   execFileSync('git', args, {
@@ -103,6 +105,85 @@ const CHROME_GLOBS = [
   'web/src/lib',
   'web/src/pages',
 ];
+
+/**
+ * HELD FILES CONTRIBUTE NO DATE, ANYWHERE (2026-09-08).
+ *
+ * The five index pages resolved as max(chrome, newest file under src/content/)
+ * with no regard to `approved:`. A held draft is a file in the content directory
+ * and not a byte of served output, so a commit that touched only a held draft
+ * moved five live <lastmod> values and told a crawler the site had changed when
+ * nothing a reader can reach had. That is not a hypothetical: it reached
+ * production twice — `9886987` (08-30, held Sierra Leone AR only) and `642fef2`
+ * (09-02, held Sudan EN only), both recorded in the QA logs of the days after.
+ *
+ * The old held-leak sweep asserted zero held *slugs* in the sitemap and was
+ * green through both, because a held slug never had a URL to leak. It never
+ * enumerated *dates*. Sixth member of the enumeration family: an assertion that
+ * checks one shape of a leak does not check the leak.
+ *
+ * The rule: `approved: false` is the hold (ruling #18), and a hold must hold in
+ * every direction — the page, the sitemap entry, the feed item AND the date. A
+ * file the reader cannot reach may not date a page the reader can.
+ *
+ * We read `approved:` from the frontmatter rather than inferring it from the
+ * build, because this resolver runs while the route graph is being built and
+ * must not depend on it. A content file whose `approved:` cannot be read is a
+ * fail, not a default: silently treating an unparseable draft as published is
+ * exactly the leak this function exists to close.
+ */
+const CONTENT_DIRS = ['web/src/content/articles', 'web/src/content/articles-ar'];
+
+function heldContentFiles(repoRoot) {
+  const held = new Set();
+  for (const dir of CONTENT_DIRS) {
+    let names;
+    try {
+      names = readdirSync(join(repoRoot, dir)).filter((n) => n.endsWith('.md'));
+    } catch (err) {
+      throw new Error(
+        `sitemapLastmod: cannot read content directory ${dir} (${err.message}). ` +
+          'Refusing to emit lastmod without knowing which drafts are held.'
+      );
+    }
+    if (names.length === 0) {
+      throw new Error(
+        `sitemapLastmod: content directory ${dir} is EMPTY. An approval sweep that ` +
+          'finds nothing to check has failed, not passed.'
+      );
+    }
+    for (const name of names) {
+      const path = `${dir}/${name}`;
+      // Read the frontmatter BLOCK, not a fixed number of lines. A line budget is
+      // a guess about how long a sources list is allowed to get, and it fails
+      // silently-then-loudly the first time an article outgrows it (today's
+      // deepest `approved:` sits at line 47, which is comfort, not a guarantee).
+      const lines = readFileSync(join(repoRoot, path), 'utf8').split(/\r?\n/);
+      if (lines[0].trim() !== '---') {
+        throw new Error(`sitemapLastmod: ${path} does not open with a frontmatter block.`);
+      }
+      const end = lines.indexOf('---', 1);
+      if (end === -1) {
+        throw new Error(`sitemapLastmod: ${path} has an unterminated frontmatter block.`);
+      }
+      const line = lines.slice(1, end).find((l) => /^approved:\s*\S/.test(l));
+      if (!line) {
+        throw new Error(
+          `sitemapLastmod: ${path} has no readable \`approved:\` field. A draft whose ` +
+            'hold state cannot be read must not be assumed published.'
+        );
+      }
+      const value = line.split(':')[1].trim().replace(/#.*$/, '').trim();
+      if (value !== 'true' && value !== 'false') {
+        throw new Error(
+          `sitemapLastmod: ${path} has \`approved: ${value}\`, which is neither true nor false.`
+        );
+      }
+      if (value === 'false') held.add(path);
+    }
+  }
+  return held;
+}
 
 /** repo-relative path -> ISO-8601 date of the most recent commit touching it. */
 function buildFileDateMap() {
@@ -185,6 +266,8 @@ export function createLastmodResolver() {
     return () => null;
   }
 
+  const repoRoot = git(['rev-parse', '--show-toplevel']).trim();
+  const held = heldContentFiles(repoRoot);
   const files = buildFileDateMap();
 
   let chrome = null;
@@ -195,8 +278,14 @@ export function createLastmodResolver() {
     throw new Error('sitemapLastmod: no chrome file dates resolved — map is malformed.');
   }
 
-  const forContent = (dir, slug) =>
-    newer(files.get(`web/src/content/${dir}/${slug}.md`) ?? null, chrome);
+  // A held file contributes no date on EITHER path. This branch is unreachable
+  // today — a held piece has no route, so nothing asks for its lastmod — and it
+  // is written anyway so the invariant is total rather than incidental.
+  const forContent = (dir, slug) => {
+    const path = `web/src/content/${dir}/${slug}.md`;
+    if (held.has(path)) return chrome;
+    return newer(files.get(path) ?? null, chrome);
+  };
 
   /**
    * @param {string} pathname e.g. "/madar/ar/articles/2026-07-07-sudan-exam-continuity/"
@@ -219,7 +308,9 @@ export function createLastmodResolver() {
     // they change when the chrome changes AND when any article changes.
     let newestArticle = null;
     for (const [path, date] of files) {
-      if (path.startsWith('web/src/content/')) newestArticle = newer(newestArticle, date);
+      if (!path.startsWith('web/src/content/')) continue;
+      if (held.has(path)) continue; // a held draft is not on any index page
+      newestArticle = newer(newestArticle, date);
     }
     return iso(newer(chrome, newestArticle));
   };

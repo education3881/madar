@@ -15,6 +15,10 @@ themes:
   - inspiring stories
 type: curated
 arabicVersion: 2026-05-28-iraq-mosul-library
+related:
+  - 2026-07-07-gaza-education-continuity
+  - 2026-07-07-turkiye-earthquake-school-recovery
+  - 2026-07-07-sudan-exam-continuity
 sources:
   - title: "United Nations Development Programme — 'Moslawis celebrate the reopening of Mosul University's Central Library and Ninewa Federal Court of Appeal', 19 February 2022. Press release with verbatim named quotes: Zena Ali Ahmad (UNDP Resident Representative in Iraq), Peter Felten (Chargé d'Affaires a.i., German Embassy Baghdad), Dr. Anna-Christine Janke (Country Director, KfW Office Iraq). Includes funding chain (Germany via KfW Development Bank; furniture from the Netherlands; Court funded by Germany with Australian-provided furniture), library founding date (1921), pre-occupation collection size (~1 million resources), books burned (8,000–10,000), reopened capacity (1,000+ seats, 100,000+ books), and the 40% enrollment-increase figure."
     url: "https://www.undp.org/arab-states/press-releases/moslawis-celebrate-reopening-mosul-universitys-central-library-and-ninewa-federal-court-appeal"

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-09-06</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 999px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  .flag { background: #FFF4F0; border: 1px solid var(--color-orange); padding: 1.1rem 1.4rem; margin: 1.3rem 0; border-radius: 2px; }
+  .flag .kicker { margin-bottom: 0.35rem; }
+  .rule-box { background: var(--color-sand); padding: 1.2rem 1.4rem; margin: 1.2rem 0; border-radius: 2px; }
+  .rule-box .kicker { color: var(--color-ink); opacity: 0.72; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; padding: 1.2rem 1.4rem; border-radius: 2px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+  .footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 11.5px; color: var(--color-muted); }
+  .dark { color: var(--color-orange); }
+  .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; direction: rtl; unicode-bidi: isolate; }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="kicker">Madār · مدار — Weekly Review</div>
+      <h1>The week the wire caught up — and three ledgers didn't</h1>
+      <div class="sub">Sunday 2026-09-06 · covers 2026-08-31 → 2026-09-06 · prepared by the Manager, autonomous run · origin re-checked before the block: <span class="num">origin/main = fad150f</span>, tree clean at open</div>
+    </header>
+
+    <section>
+      <div class="flag">
+        <div class="kicker">The one action · 0 days unpushed · one block carries the review AND today's daily run · needs the workflow-scope PAT</div>
+        <p style="margin-bottom:0.6em;">Nothing is stranded this week: the 09-01 and 09-03 blocks both landed within a day of being staged (runs <span class="num">69</span> and <span class="num">70</span>, green, the deploy-verify job green on all three of its live runs). Today's daily run started at 09:10 and executed <em>concurrently</em> with this review; per the 08-23 concurrency note the later writer reconciled — the daily appended to this review's files, extended the register it had just consolidated, and closed its own day (Brief 67). One tree, one push: the review (guidebook consolidation, two RUNBOOK rules, the Edition 05 ledger, the IndexNow asset <strong>staged off</strong>) plus the daily (ruling <span class="num">#44</span>, standing assertion <span class="num">#10</span>, the PASEC 2019 report read, and <strong>the one reader-visible change in this push: twelve pages gain an editor-curated related rail, in both languages</strong>). Two edits to <span class="num">.github/workflows/</span>, so the push needs the PAT with <span class="num">workflow</span> scope. Brief 67 carries an equivalent block — run either, once.</p>
+        <pre>cd "/Users/vini/Documents/Claude/Projects/Educational Website" &amp;&amp; rm -f .git/index.lock &amp;&amp; git add -A &amp;&amp; git commit -m "Madar 2026-09-06: weekly review plus daily run in one block. Review: rulings 40-43 consolidated and the register-hierarchy family named, Section 1 table reconciled with rows 26-38, ledger 08-09 to 08-23 archived, two RUNBOOK rules (held files leak dates into lastmod; the verifier follows each banked pair) plus the push-cadence answer, Edition 05 status memo and wave ledger opened with scope six proposed and the Verifier gap named, IndexNow key file and verify-job step staged OFF. Daily: ruling 44, qa_body_links as assertion 10 in the CI build job, PASEC 2019 report read and slot-3 blocker 1 closed, rail dead-end audit applied to twelve pages in both languages. Touches the workflows directory - workflow scope PAT" &amp;&amp; git push origin main</pre>
+      </div>
+
+      <div class="summary-box">
+        <h3>Founder summary — two minutes</h3>
+
+        <p><strong>What changed.</strong> The constraint that defined last week is gone: two pushes landed inside this window, each within about a day of staging, and the origin has served every fix the same week it was found — including the one reader-visible correction of the week, the English home's canonical, which had pointed at a redirect for <span class="num">101</span> days until assertion <span class="num">#9</span> bit on first contact. <strong>Edition 05 stands at three complete bilingual pairs</strong> — Zambia, Sierra Leone, and now <strong>Sudan</strong> (<em>The classroom invented before the war that needed it</em> / <span class="ar">الصفُّ الذي اختُرِع قبل الحرب التي احتاجته</span>), drafted Tuesday, composed in Arabic Thursday, banked Friday on the Editor's five-test pair verdict — with mandated slot 3, the <em>best-system-in-Africa</em> ruler question, re-verified and commissioned, and the operation's <strong>first hard external date</strong> on the calendar: PASEC 2024's results, announced for the last quarter of 2026, before which the ruler piece must be live. Five rulings in five runs (<span class="num">#40–#44</span> — the fifth filed by today's daily, which ran alongside this review), four new standing assertions (<span class="num">10</span> now), and five runs in seven days: 09-02 and 09-05 were dark. Today's daily also read the 444-page PASEC 2019 report for the ruler piece (the report crowns <em>Senegal</em> on the equity ruler in its own words; a footnote disclaims causality on the Niger policy list — ruling <span class="num">#44</span>, <em>the footnote rides with the table</em>) and ran the first <strong>rail dead-end audit</strong>: six live pages had no related rail at all, six had nothing pointing at them, and one twin rail had drifted between languages — the Editor approved twelve clusters, applied in both languages. The published corpus holds at <span class="num">38 / 38</span>, <span class="num">100%</span> parity, <span class="num">35</span> countries, by design.</p>
+
+        <p><strong>What I decided.</strong> Three ledgers had fallen behind the work, and each is fixed today. <strong>(1) The Verifier has been idle for the whole of Edition 05</strong> — three pairs banked, zero independent verification verdicts, the team quietly re-scheduling verification to "when the wave's pass runs," which is the one shape that persona was hired to refuse. From Monday the Verifier clears one pair per run, in banking order, and a RUNBOOK rule makes the wave ledger a required artefact (§2, §4). <strong>(2) A metadata leak that reached production twice:</strong> a deploy touching only a <em>held</em> draft moved the live front doors' <span class="num">lastmod</span> — the held-leak sweep counts slugs and never enumerated dates; rule codified, fix briefed for Monday (§2). <strong>(3) The guidebook's own table had drifted thirteen rows behind its header</strong> — reconciled, rulings <span class="num">#40–#43</span> canonical, a sixth family named (§3). Also: <strong>Edition 05 scope proposed at six with a gate target of 2026-10-11</strong> — the default applies if you say nothing by next Sunday; the wave gate itself is operational, not yours. <strong>No new persona</strong>, sixth consecutive hold: the gap this week was an idle role, not a missing one (§4). The push-cadence question I asked last week is <strong>answered by your behaviour</strong> and retired.</p>
+
+        <p><strong>What needs your eye.</strong> Two things, both one word. <strong>(a) IndexNow.</strong> The one inbound lever that needs no account is built and staged <em>off</em>: a key file we host and a step in the deploy that would announce our served URL set to the shared Bing/Yandex/Naver index on every green deploy. It is a binding (ruling <span class="num">#7</span>) and an action in the publication's name, so it waits for you — say <em>go</em> and the next run flips one word; say <em>wait for the domain</em> and it stays off (§1). <strong>(b) Edition 05 at six</strong>, or a different count. And the same two standing calls, seventh week, unchanged in order: <strong>custom domain, then Substack.</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">1 · Traffic, Growth &amp; Statistics</div>
+      <h2>Everything built is now live; nothing built has been found</h2>
+
+      <p class="lede">The discoverability layer reached the origin. Three dated observations on the same instrument say no crawler has walked it. The lever that needs no account is staged.</p>
+
+      <h3>Content snapshot and week-over-week delta</h3>
+      <table>
+        <thead><tr><th>Signal</th><th>Last weekly (2026-08-30)</th><th>This weekly (2026-09-06)</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>Published corpus (EN / AR)</td><td class="n">38 / 38</td><td class="n">38 / 38</td><td class="n">0 (by design)</td></tr>
+          <tr><td>Corpus on disk incl. held Ed05 pairs</td><td class="n">40 / 40</td><td class="n">41 / 41</td><td class="n">+1 complete pair (Sudan)</td></tr>
+          <tr><td>AR/EN parity</td><td class="n">100%</td><td class="n">100%</td><td class="n">held</td></tr>
+          <tr><td>Countries covered (live / on flip)</td><td class="n">35 / 36</td><td class="n">35 / 36</td><td class="n">—</td></tr>
+          <tr><td>Runs in the window</td><td class="n">6 of 7</td><td class="n">5 of 7</td><td class="n dark">−1 (09-02, 09-05 dark)</td></tr>
+          <tr><td>Days since last published piece</td><td class="n">33</td><td class="n">40</td><td class="n">+7</td></tr>
+          <tr><td>Days origin unpushed</td><td class="n dark">7</td><td class="n">0</td><td class="n">−7</td></tr>
+          <tr><td>Pushes landed in the window · mean lag from staging</td><td class="n">0</td><td class="n">2 · ≈1 day</td><td class="n">+2</td></tr>
+          <tr><td>Named live-vs-tree drifts (<span class="num">qa_live_drift</span>)</td><td class="n dark">84</td><td class="n">0</td><td class="n">−84</td></tr>
+          <tr><td>Deploy-verify job, live runs green</td><td class="n">0 (maiden pending)</td><td class="n">3 of 3</td><td class="n">+3</td></tr>
+          <tr><td>Durable rulings filed</td><td class="n">#1–#39</td><td class="n">#1–#44</td><td class="n">+5</td></tr>
+          <tr><td>Standing QA assertions</td><td class="n">6</td><td class="n">10</td><td class="n">+4</td></tr>
+          <tr><td>Ed05 pairs banked / Verifier verdicts on file</td><td class="n">2 / 0</td><td class="n">3 / 0</td><td class="n dark">verification idle</td></tr>
+          <tr><td>Ed05 recon bank (files / consumed into drafts or commissions)</td><td class="n">10 / 2</td><td class="n">12 / 4</td><td class="n">slot 3 commissioned</td></tr>
+          <tr><td><span class="num">site:</span> observation — URLs returned from the domain</td><td class="n">0 (08-24)</td><td class="n">0 (09-04, 09-06)</td><td class="n">three dated points</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Region and theme drift: none, by arithmetic</strong> — nothing published. MENA <span class="num">15</span>, Asia <span class="num">7</span>, Africa <span class="num">5</span>, Europe <span class="num">5</span>, LatAm–Caribbean <span class="num">3</span>, Oceania <span class="num">2</span>, N-America <span class="num">1</span>. On flip day Africa moves <span class="num">5 → 8</span> with the three banked pairs and the corpus gains its 36th country (Zambia); at the proposed scope of six it moves to <span class="num">11</span> and becomes the second-largest region in the publication — the founder's Africa frame, made arithmetic.</p>
+
+      <h3>Last week's bet, read as promised</h3>
+      <p>The 2026-08-30 review bet on <em>land the block; read the origin</em>. <strong>Paid on delivery, unpaid on discovery.</strong> The block landed the same afternoon; on 08-31 <span class="num">qa_live_drift</span> read <span class="num">CLEAN</span> for the first time in its history (<span class="num">84 → 0</span>), and it has read clean on every run since except for the one staged field it was supposed to catch. The deploy-verify job did what it was built for on three consecutive pushes, and its feed-cache step and the robots gate were each proved live in the judging environment on their first run. What did not move: <strong>indexing.</strong> Two <span class="num">site:</span> queries on 09-04 and two more this morning return zero URLs from the domain — the third and fourth dated points on the same instrument since 08-24, thirteen days after the README inbound edge reached the origin. Recorded as what it is: an observation from a public search tool, not a crawler's register (<span class="num">#41</span>). Attributable inbound shares: none — the publication URL appears nowhere in search results for its own string, which is expected with distribution not begun. <span class="pill ok">delivery paid</span> <span class="pill hold">discovery unpaid</span></p>
+
+      <h3>Substack and the tracker line</h3>
+      <p>Unchanged and honestly reported: no third-party tracker, so no visitor analytics to invent. Substack remains <strong>not launched, blocked on the two founder calls</strong> (domain first, then the account); launch-readiness is otherwise complete — bilingual feeds verified in a real reader and cache-validated in CI, raster share cards on every page, structured data on every article, hreflang clusters proved reciprocal. The 08-24 discovery-path audit ranked the inbound levers <em>domain → Search Console → Substack</em>, all founder-gated. This week the Growth desk found the one lever that is not: <strong>IndexNow</strong> needs no account — only a key file we host and a POST from the deploy.</p>
+
+      <div class="bet">
+        <div class="kicker">This week's single growth bet</div>
+        <p style="margin-bottom:0.6em;"><strong>Turn on the lever that needs no account.</strong> Built today and proved both ways without leaving the sandbox: a key file at <span class="num">/madar/66ec…a8.txt</span>, and a fourth step in the deploy's <span class="num">verify</span> job that reads the URL set from the <em>served</em> sitemap (never the tree), confirms the key file is served, and — only when the job's switch reads <span class="num">INDEXNOW: "on"</span> — announces all <span class="num">82</span> URLs to <span class="num">api.indexnow.org</span>, which Bing, Yandex, Naver and Seznam share. It runs after the byte-compare, so it can never announce a stale origin; it is best-effort on the index's answer and loud on our own side. <strong>Staged off, deliberately:</strong> submitting our URLs to an external index is a binding under ruling <span class="num">#7</span> and an action in the publication's name — that is the founder's word, not the operation's. The binding cost is near zero <em>because</em> the step re-derives the URL set from whatever the origin serves, so a domain migration re-announces itself on its first deploy.</p>
+        <p style="margin-bottom:0;"><strong>The bet's terms:</strong> one word from you — <em>go</em> — and Monday's run flips the switch; the next push then reads the index's HTTP answer in the Actions log (<span class="num">200</span> accepted, <span class="num">202</span> key pending), and next Sunday's review reads whether a Bing <span class="num">site:</span> query moves off zero for the first time. If the word is <em>wait for the domain</em>, that is the reading, and the lever stays built. Either way the operation stops asking about the domain as a precondition for discovery and starts measuring one.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">2 · Quality Retrospective</div>
+      <h2>Four green runs, one recurring register problem, and two ledgers the sweeps could not see</h2>
+
+      <p class="lede">Every run ended QA green with the publish gate in writing. The week's real defects were not in the pages — they were in what the checks had never been asked to count.</p>
+
+      <h3>The week's recurring defect class: the owner speaks in several registers, and the wrong one was read</h3>
+      <p>Three catches in four runs, all before production, all by re-reading the owner's served register instead of a mirror of it. <strong>(a)</strong> The Sudan index carried the programme name <em>BRIDGE</em> from a newspaper headline for eighteen days; the first-party UNICEF release serves <em>BRIDGES</em> (<span class="num">#40</span>). <strong>(b)</strong> The 08-31 re-verification recorded "an official Arabic edition on-site" because the page had an <span class="ar">العربية</span> toggle; the toggle is served <span class="num">class="has-no-translation"</span> — the claim lived three days and reached the English draft's own source annotation before the Arabic composition caught it (<span class="num">#42</span>). <strong>(c)</strong> South Africa's education department announced its TIMSS 2023 result as "a remarkable upward trend"; its own report says <em>not statistically significant, relatively stable</em>, with a reliability reservation in the footnote (<span class="num">#43</span>). One shape, three surfaces; §3 names the family and states the hierarchy once.</p>
+
+      <h3>What reached production</h3>
+      <ul>
+        <li><strong>Fixed live this week — the front door's canonical was a redirect for 101 days.</strong> The English home's canonical and <span class="num">og:url</span> read <span class="num">…/madar</span> (no trailing slash) since 2026-05-25, while its own hreflang cluster, the Arabic home and the sitemap all said <span class="num">…/madar/</span>. Invisible to every sweep because none compared a page's canonical with its cluster; found the moment a check did (assertion <span class="num">#9</span>, 09-03, biting on its own control build); fixed by derivation in <span class="num">Base.astro</span>; on the origin since run 70. Reader-visible? Only to a machine — which is exactly the reader we have been building for.</li>
+        <li><strong>Found by this review — a held draft's date leaked into five live pages, twice.</strong> The sitemap's <span class="num">lastmod</span> resolver dates the index pages by the newest file under <span class="num">web/src/content/</span>, and a held draft is a file under <span class="num">web/src/content/</span>. The 08-30 deploy touched only the held Sierra Leone Arabic; the 09-02 deploy touched only the held Sudan draft and its still; both moved the live home, Arabic home, About and Editions pages' <span class="num">lastmod</span> to the held file's commit time — recorded in the QA logs each time as "origin sitemap lastmod = <em>the commit time</em>," with nobody noticing that no served byte had changed. A crawler was told the front doors changed when they had not: the precise "unreliable lastmod" pattern the resolver's own header says makes a search engine discard the signal. The held-leak sweep was green both times; it counts <em>slugs</em> and had never enumerated <em>dates</em>. Sixth member of the enumeration family.</li>
+      </ul>
+
+      <h3>Near-misses that never reached a reader</h3>
+      <ul>
+        <li><strong>The idle Verifier.</strong> Three pairs banked, zero independent verification verdicts, the ≤3 ceiling reached exactly; the fourth draft would have breached it silently, and the 09-04 pair verdict's phrase "when the wave's verification pass runs" shows verification had been re-scheduled to a batch at the end — the one thing the Verifier's charter says does not compress. Not a page defect; a pipeline one, and the more expensive kind, because it would have surfaced as three verdict-days between "wave complete" and "wave live," in the same weeks the PASEC clock is running.</li>
+        <li><strong>Process, named plainly:</strong> 09-02 dark; 09-03 ran at 21:55 instead of 08:00 (closed-app delay, five functions delivered, breakfast reader found nothing); 09-05 dark; today's daily started at 09:10, ten minutes after this review, and the two reconciled cleanly. Two dark days in a week is the cadence failing, not the craft — and the shape of the first run back is fixed by rule.</li>
+      </ul>
+
+      <div class="rule-box">
+        <div class="kicker">Prevention rules codified into the RUNBOOK (2026-09-06)</div>
+        <p><strong>A held file is not part of the publication — nothing derived from the content set may read it.</strong> Every build-time derivation over the content collection (lastmod, feeds, rails, counts, JSON-LD) reads only <span class="num">approved: true</span>; the fix is proved per <span class="num">#35</span> — a scratch commit touching a held file must move no live date; one touching an approved file must move exactly the dates it should — and the held-leak sweep gains a date assertion beside its slug check. Briefed as Monday's first item, before anything new. Carried with it, unanswered on purpose: the 09-04 deploy moved all 82 dates for a change that altered one page's head — the resolver derives <em>change</em> from source provenance while the truth lives in the served bytes; an output-bounded lastmod is the honest instrument and a design question, not a defect.</p>
+        <p style="margin-bottom:0;"><strong>In wave mode the Verifier's verdict follows each pair's banking within the same week — never deferred to the wave gate.</strong> The edition status memo carries the wave ledger from the first banked pair; a pair without a verification verdict seven days after banking is a P1 in the brief; the verdict is scheduled the run after the pair verdict, one per run, in banking order, in parallel with the next draft. The wave gate is operational; the founder owns scope, never approvals.</p>
+      </div>
+
+      <p><strong>The standing question from 08-30, retired.</strong> Daily pushes or a weekly window? Two blocks staged, two pushes within about a day, each with the PAT scope the commit needed. The planning assumption is now <em>a block lands within ~48 hours; Sunday is the floor</em>. The rest of the 08-30 rule stands.</p>
+    </section>
+
+    <section>
+      <div class="kicker">3 · Knowledge Consolidation</div>
+      <h2>Four rulings, one question — and a table thirteen rows behind its own header</h2>
+
+      <p class="lede">The register grew #39 → #43, one ruling per run. The consolidation's real work was structural: naming the family the four belong to, and making the guidebook's own ledger tell the truth about itself.</p>
+
+      <p><strong>A sixth family named: which register speaks for the owner.</strong> <span class="num">#38</span> (a source drifts against itself within a document), <span class="num">#40</span> (a mirror misnames the instrument), <span class="num">#42</span> (a toggle is not the edition) and <span class="num">#43</span> (the podium is not the document) are one question asked of four surfaces — <em>of the several places this owner speaks, which one is the document?</em> — and <span class="num">#43</span> answers it once with a ranked list: <strong>document &gt; tables &gt; first-party written &gt; reported speech &gt; mirror</strong>, never averaged across ranks. <span class="num">#41</span> (supersede, don't resurrect — a URL is a figure, cited as fetched) is the family's vintage corollary. Naming the family tells the Researcher where the next ruling comes from: a register that <em>outranks</em> the document — a court filing, a statute — disagreeing with the report.</p>
+
+      <p><strong>The ledger drifting against itself, again — and reconciled.</strong> Since 08-23 the INDEX header has claimed "thirty-three rows" (now thirty-eight) in Section 1 while the table itself stopped at row 25; rows 26–38 existed only as daily "Section 1 gains row NN" addenda, and two consolidations verified the <em>series</em> without merging the <em>table</em>. That is <span class="num">#38</span> applied to us for the second week running, and this time it is fixed rather than noted: thirteen rows are in the table today, numbers exactly as first cited in commits and briefs, each with its rule in one line and where it has been applied. Rulings <span class="num">#40–#43</span> are canonical one-liners in §3; the heading, which still read "#1–#38" a week after #39 was filed, was corrected — and then today's daily filed <span class="num">#44</span> (<em>the footnote rides with the table</em>: an owner's disclaimer on a table travels with every figure taken from it) into the same table an hour later and reconciled the heading and the integrity line in place, both timestamps preserved. Series verified <span class="num">#1–#44</span>, no gaps, no dupes.</p>
+
+      <p><strong>Archive roll, per the INDEX's own rule.</strong> The 08-09, 08-16 and 08-23 consolidation sections and the 08-10 → 08-18 addenda — the origin cases behind <span class="num">#29–#32</span> and rows 19–25, the Ed05 recon bank's opening — moved verbatim into <span class="num">ARCHIVE-2026-08-09_2026-08-23.md</span>; the INDEX now carries the ledger from the 08-23 daily addendum forward, and the pointer paragraph names both archives and the precedence order. Verified line by line: every line of the old INDEX is present in the new INDEX or the archive except the six header and pointer lines this review rewrote. <strong>Pruning: nothing deleted.</strong> <strong>Composition knowledge for the Africa edition, cumulative:</strong> Bantu <span class="num">ph</span> (row 30), West African <span class="num">kp</span> (row 33), and this week the native-Arabic-story discipline (row 37): when the owner serves an Arabic edition, its names are read, never routed — three of Sudan's twelve named humans confirmed that way, none provisional. <strong>Owed next Sunday:</strong> §0's seven-axes checklist predates the register family and does not carry a <em>register</em> axis; the Verifier's new trace row ("which register was this read in") suggests an eighth.</p>
+    </section>
+
+    <section>
+      <div class="kicker">4 · Team-Expansion Decision</div>
+      <h2>Hold at eleven — sixth consecutive hold; the gap was an idle role, not a missing one</h2>
+
+      <p class="lede">The ladder asks whether a capability gap is recurring and the team genuinely saturated. This week's gap was real and recurring, and no rung on the ladder would have closed it.</p>
+
+      <p><strong>Decision: no new persona.</strong> Recorded reasons: <strong>(1) The capability that fell behind exists and was idle.</strong> Verification did not fail for lack of a Verifier; it failed because the pipeline stopped routing to one — three pairs banked, zero verdicts — and the fix is scheduling (one verdict per run from Monday) plus a ledger, not a hire. Adding a second Verifier to an idle first one would be an org-chart answer to a routing problem. <strong>(2) No rung is evidenced.</strong> The Researcher watch-signal is not firing (the bank ran ahead of drafting all week: twelve recon files, four consumed, the slot-3 re-verification done the same day it was asked for); the Data/SEO rung's trigger — <em>real traffic to analyse</em> — is explicitly unmet at zero indexed URLs; the second-language rung has no case; the Social/Video rung's evidence would come from a day that saturates Growth and the Designer together, and that day has not occurred. <strong>(3) Throughput was not the ceiling.</strong> Four runs produced a complete bilingual pair from commission to bank, a continental re-verification and commission, four rulings and three assertions, with no persona parked for capacity. What cost the week was two dark days and an unrouted role — neither staffable.</p>
+
+      <p><strong>Trigger to watch, and now dated:</strong> the <strong>PASEC launch day</strong> in the last quarter of 2026 — the first time the operation must move on an external clock: a same-day dated follow-up, drafted and composed in Arabic, with a bilingual packet, and the ruler piece already live. If that day saturates Growth + both Content Creators + the Arabic desk + the Designer, the Social/Video rung has its evidence. Before it: <strong>flip day for the Ed05 wave</strong> (six pieces, og cards on disk already for three, editions rewiring, packets in two languages) — the same trigger named last week, closer now.</p>
+    </section>
+
+    <section>
+      <div class="kicker">Pipeline · the week ahead</div>
+      <h2>Verify three, draft one, decide six</h2>
+      <p><strong>Edition 05 status memo and wave ledger opened today</strong> (<span class="num">content-drafts/_EDITION_05_STATUS.md</span>). <strong>Scope proposed at six</strong> — Zambia, Sierra Leone, Sudan, the ruler piece, Egypt (the Baccalaureate, positive re-angle) and Rwanda (teacher certification) — every region of the continent with a story; <strong>gate target: on the origin by 2026-10-11</strong>, latest 2026-11-15, so the ruler piece is context on PASEC's launch day rather than commentary after it. The founder may set a different count; silence by 2026-09-13 means six. Monday: the Web Developer's held-file fix (proved both ways) and the Verifier's first Ed05 verdict, Zambia; then Sierra Leone, then Sudan, one per run, while Content Creator II reads the 440-page PASEC 2019 report for slot 3 — the draft opens only once Zambia's verdict lands, because that is what the ceiling is for. The technical call the memo carried this morning was taken by the Editor this afternoon: the ruler piece files as <span class="num">country: Mauritius</span> + <span class="num">region: Africa</span> with an optional <span class="num">countries:</span> list, implemented in the same commit as the article with <span class="num">madar_stats.py</span> counting the union that day. New editorial rule from the rail audit, applied to the three banked pairs at the wave gate: <em>a piece is commissioned with its rail</em>. Open founder calls, carried: <strong>IndexNow (one word), Ed05 count, domain, Substack.</strong></p>
+    </section>
+
+    <div class="footer">
+      Madār · مدار — weekly review · 2026-09-06 · prepared autonomously per CHARTER §Cadence · corpus 38 EN / 38 AR live · 41/41 on disk · Ed05 3 pairs banked, 0 verified, scope 6 proposed · rulings #1–#44 · ten standing assertions + the deploy-verify gate · IndexNow staged off · daily run reconciled in the same tree · made in spite of, not because of.
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
