@@ -134,7 +134,13 @@ const CHROME_GLOBS = [
  */
 const CONTENT_DIRS = ['web/src/content/articles', 'web/src/content/articles-ar'];
 
-function heldContentFiles(repoRoot) {
+/**
+ * Exported 2026-09-09 so the held-asset withholding integration
+ * (`src/lib/heldAssets.mjs`) reads the hold from exactly one parser. Two
+ * modules deciding independently what "held" means is a drift defect waiting
+ * to happen — the same reason the sitemap is generated and never hand-kept.
+ */
+export function heldContentFiles(repoRoot) {
   const held = new Set();
   for (const dir of CONTENT_DIRS) {
     let names;

@@ -82,6 +82,25 @@ jobs:
       - name: no lastmod above the approved-and-chrome ceiling
         working-directory: .
         run: python3 agents/tools/qa_lastmod.py web/dist
+      # A held piece contributes no BYTES (2026-09-09). The 09-08 fix stopped a
+      # held draft contributing a DATE; this stops it contributing FILES. Its
+      # hero still and share card live in public/, which Astro copies into dist
+      # wholesale, so six assets for three unpublished Edition 05 pieces were
+      # being SERVED at guessable URLs while the articles returned 404 — and the
+      # stills are SVGs carrying their own <title>, so the withheld pieces'
+      # subjects were readable on the origin. The build now removes them
+      # (src/lib/heldAssets.mjs); this asserts the removal, and its control
+      # asserts every approved asset is still served, so a sweep that deleted
+      # the whole og/ directory could not pass.
+      - name: a held piece contributes no bytes
+        working-directory: .
+        run: python3 agents/tools/qa_held_assets.py --dist web/dist
+      # Every page reachable from its own front door — plus the orphan
+      # allowlist, which is itself checked (exactly one entry, /404.html, and
+      # it must exist). An exemption list is where defects hide.
+      - name: every page reachable, and the orphan allowlist is honest
+        working-directory: .
+        run: python3 agents/tools/qa_reachability.py web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

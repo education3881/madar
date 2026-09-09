@@ -61,7 +61,22 @@ AR_ROOT = "/ar/index.html"
 # if a page belongs on the site, something should point at it, and if nothing
 # should point at it, it probably should not be published. Add entries here only
 # with a reason, so the exemption is an argument rather than a silencer.
-EXPECTED_ORPHANS: dict[str, str] = {}
+EXPECTED_ORPHANS: dict[str, str] = {
+    "/404.html": (
+        "The branded 404 (2026-09-09). It is reached by FAILURE, never by a link: "
+        "GitHub Pages serves it for every unmatched URL under /madar/, including "
+        "/ar/ paths. Linking to it from the site graph would be nonsense, and it "
+        "carries noindex for the same reason it carries no canonical — it has no "
+        "address of its own. This is the one page on the site whose orphanhood is "
+        "the design; the allowlist is asserted to contain exactly this entry below."
+    ),
+}
+
+# The allowlist itself is checked, because an exemption list is a place defects
+# go to hide (08-09 flag-sweep inversion). Two ways: every exempted page must
+# actually EXIST in dist — an exemption for a page we no longer build is a stale
+# silencer — and the list must not grow without this line changing with it.
+EXPECTED_ORPHAN_COUNT = 1
 
 
 def normalise(href: str) -> str | None:
@@ -147,6 +162,21 @@ def main() -> int:
         for o in orphans:
             print(f"  ORPHAN {o} — reachable only from outside this language, or not at all.")
         failed = failed or bool(orphans)
+
+    # Check the exemption list itself, both ways.
+    if len(EXPECTED_ORPHANS) != EXPECTED_ORPHAN_COUNT:
+        print(
+            f"  ALLOWLIST DRIFT — {len(EXPECTED_ORPHANS)} exempted page(s), expected "
+            f"{EXPECTED_ORPHAN_COUNT}. An orphan exemption is an argument; adding one "
+            "means writing the reason AND moving this number."
+        )
+        failed = True
+    for page, reason in sorted(EXPECTED_ORPHANS.items()):
+        if not (dist / page.lstrip("/")).exists():
+            print(f"  STALE EXEMPTION {page} — allowlisted but not built.")
+            failed = True
+        else:
+            print(f"  exempt {page} — {reason.split('.')[0]}.")
 
     if failed:
         print("FAIL(1): a page nothing links to cannot be crawled or found.")

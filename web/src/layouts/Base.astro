@@ -53,6 +53,17 @@ interface Props {
    * false claim. Article routes opt in explicitly.
    */
   pageType?: 'website' | 'article';
+  /**
+   * Keep this page out of the index. Added 2026-09-09 with the branded 404.
+   *
+   * `robots` had been hardcoded to "index, follow" on every page since launch,
+   * which was correct while every page was a page we wanted found. A 404 is
+   * not: it is served under every wrong URL on the site, so indexing it would
+   * offer a crawler an unbounded set of distinct URLs that all return the same
+   * body. Opt-in rather than a new default, because the safe direction here is
+   * that a page is indexable unless a human said otherwise.
+   */
+  noindex?: boolean;
 }
 
 const {
@@ -64,6 +75,7 @@ const {
   alternate,
   jsonLd,
   pageType = 'website',
+  noindex = false,
 } = Astro.props;
 
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -104,7 +116,15 @@ const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <link rel="canonical" href={canonicalURL.href} />
+    {/*
+      A noindex page has no canonical address. The 404 body is served under
+      EVERY wrong URL on this site, and its own file is `/madar/404.html` — so
+      the derived canonical came out as `/madar/404/`, a directory route that
+      does not exist and would itself 404. A canonical is a promise about where
+      a document lives (#36); a promise that dereferences to nothing is worse
+      than silence. Caught 2026-09-09 by looking at the built head.
+    */}
+    {!noindex && <link rel="canonical" href={canonicalURL.href} />}
     {alternateEN && alternateAR && (
       <>
         <link rel="alternate" hreflang="en" href={alternateEN} />
@@ -145,7 +165,7 @@ const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
     <meta property="og:site_name" content="Madār · مدار" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalURL.href} />
+    {!noindex && <meta property="og:url" content={canonicalURL.href} />}
     {ogImageAbs && <meta property="og:image" content={ogImageAbs} />}
 
     {/* og:locale — added 2026-08-24, and it is the Arabic side that needed it.
@@ -182,7 +202,7 @@ const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
     <meta name="twitter:description" content={description} />
     {ogImageAbs && <meta name="twitter:image" content={ogImageAbs} />}
 
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="color-scheme" content="light" />
 
     {jsonLd && (

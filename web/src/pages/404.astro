@@ -1,0 +1,141 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/urls';
+
+// The branded 404 (Growth, 2026-09-09).
+//
+// WHY: until today every wrong URL on this site — a mistyped slug, a stale
+// share, a link that survived a rename — served GitHub Pages' default 404.
+// Fetched from the origin this morning to be sure rather than to assume: it
+// carries no Madār chrome, no Arabic, and its only outbound links are
+// help.github.com, githubstatus.com, twitter.com/githubstatus and `/`, which
+// on a project site is the USER root and not this publication. So the one
+// page guaranteed to be reached by every broken inbound link was a dead end
+// that also advertised somebody else.
+//
+// Growth leads with return, not reach (CHARTER): a reader who arrives on a
+// dead link is the cheapest reader to keep and the easiest to lose.
+//
+// BILINGUAL BY NECESSITY, not by symmetry. GitHub Pages serves ONE 404 for the
+// whole project site, including every /ar/ path, so this page cannot know which
+// language its reader came for. It therefore says the same thing twice, in
+// full, and offers both front doors — rather than guessing and being wrong for
+// half the audience.
+//
+// `noindex` because this body is served under an unbounded set of URLs.
+//
+// Hrefs are built with the same `withBase` helper the site header uses, in the
+// frontmatter and not inline: the base prefix is exactly the kind of thing that
+// must have one implementation, and a 404 whose own links 404 is a joke we
+// would only get to hear about once.
+
+const enHome = withBase('/');
+const enEditions = withBase('/editions/');
+const enAbout = withBase('/about/');
+const arHome = withBase('/ar/');
+const arEditions = withBase('/ar/editions/');
+---
+
+<Base
+  title="Not found — Madār"
+  description="This page does not exist. Madār publishes in English and Arabic; both front doors are below."
+  lang="en"
+  ogImage="/og/brand-card.png"
+  noindex={true}
+>
+  <section class="notfound container">
+    <div class="notfound__pair">
+      <div class="notfound__side" lang="en" dir="ltr">
+        <p class="kicker">404</p>
+        <h1 class="notfound__title">This page does not exist.</h1>
+        <p class="notfound__body">
+          The address you followed points at nothing we publish. It may have been
+          mistyped, or it may be a link to something that was never here.
+        </p>
+        <ul class="notfound__links">
+          <li><a href={enHome}>Madār, in English</a></li>
+          <li><a href={enEditions}>All editions</a></li>
+          <li><a href={enAbout}>About this publication</a></li>
+        </ul>
+      </div>
+
+      <div class="notfound__side notfound__side--ar" lang="ar" dir="rtl">
+        <p class="kicker">٤٠٤</p>
+        <h1 class="notfound__title">هذه الصفحة غير موجودة.</h1>
+        <p class="notfound__body">
+          العنوانُ الذي اتَّبعتَه لا يشير إلى شيءٍ ننشره. قد يكون قد كُتب خطأً، وقد
+          يكون رابطًا إلى شيءٍ لم يكن هنا قطُّ.
+        </p>
+        <ul class="notfound__links">
+          <li><a href={arHome}>مدار، بالعربية</a></li>
+          <li><a href={arEditions}>الطبعات كلُّها</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .notfound {
+    padding-block: 4rem 5rem;
+  }
+  .notfound__pair {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    max-width: 62rem;
+    margin-inline: auto;
+  }
+  @media (min-width: 780px) {
+    .notfound__pair {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .notfound__side--ar {
+      border-inline-start: 1px solid var(--color-rule);
+      padding-inline-start: 4rem;
+    }
+  }
+  .notfound__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+    line-height: 1.2;
+    margin-block: 0.6rem 1rem;
+  }
+  .notfound__side--ar .notfound__title {
+    font-family: var(--font-arabic-display);
+    line-height: 1.5;
+  }
+  .notfound__body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    margin-block: 0 1.6em;
+  }
+  .notfound__side--ar .notfound__body {
+    font-family: var(--font-arabic);
+  }
+  .notfound__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  .notfound__links a {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--color-ink);
+    text-decoration: none;
+    border-block-end: 1px solid var(--color-orange);
+    padding-block-end: 1px;
+  }
+  .notfound__side--ar .notfound__links a {
+    font-family: var(--font-arabic);
+  }
+  .notfound__links a:hover,
+  .notfound__links a:focus-visible {
+    color: var(--color-orange);
+  }
+</style>

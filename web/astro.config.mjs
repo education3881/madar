@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { createLastmodResolver } from './src/lib/sitemapLastmod.mjs';
+import { withholdHeldAssets } from './src/lib/heldAssets.mjs';
 
 // Resolved once at config load. Throws loudly on a shallow clone or an empty
 // git map rather than emitting a sitemap with no lastmod (see the module head).
@@ -40,6 +41,13 @@ export default defineConfig({
         return lastmod ? { ...item, lastmod } : item;
       },
     }),
+    // A held piece contributes no bytes. `public/` is copied into `dist`
+    // wholesale, so a withheld article's hero still and share card were being
+    // served — at guessable URLs, with the still's own <title> readable inside
+    // the SVG — while the article itself returned 404. Removed at build:done,
+    // derived from the same `approved:` parser the lastmod resolver uses.
+    // See src/lib/heldAssets.mjs.
+    withholdHeldAssets(),
   ],
   site: 'https://education3881.github.io',
   base: '/madar',
