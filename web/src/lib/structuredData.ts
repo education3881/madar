@@ -34,19 +34,89 @@ const BASE = '/madar';
 
 const absolute = (path: string) => new URL(path, SITE).href;
 
-/** The publication itself. Referenced by every Article node. */
+export const ORG_ID = `${SITE}${BASE}/#organization`;
+export const SITE_ID = `${SITE}${BASE}/#website`;
+
+/**
+ * The publication itself. Referenced by every Article node.
+ *
+ * WHY THIS IS EMITTED, NOT JUST DEFINED (Growth, 2026-09-11)
+ * ----------------------------------------------------------
+ * This function existed from 2026-08-23 and was never called. Meanwhile every
+ * one of the 76 article pages shipped
+ *
+ *     "author":    { "@id": ".../madar/#organization" }
+ *     "publisher": { "@id": ".../madar/#organization" }
+ *     "isPartOf":  { "@id": ".../madar/#organization" }
+ *
+ * — three bare `@id` REFERENCES to a node defined nowhere on the site. A node
+ * object carrying only `@id` is a pointer, not a description; for 19 days the
+ * corpus credited its author and its publisher to a dangling pointer, and the
+ * breadcrumb's first crumb named "Madār" and linked to a front door that
+ * declared nothing at all.
+ *
+ * The correction that matters is WHERE the node is emitted. Consumers resolve
+ * `@id` references within a single document; none of them fetches the home page
+ * to complete an article's publisher. So the node is emitted on every page that
+ * references it — the article pages themselves — and on both front doors, which
+ * is where the entity belongs anyway. Same `@id` in every document means one
+ * node, merged, not duplicates (ruling #36: the claim is derived from the thing
+ * it describes; #37: a reference is a declaration, and a declaration is checked).
+ *
+ * Conservative, as the rest of this file: only fields that are true and
+ * verifiable from what we ship. No `sameAs` (the publication holds no verified
+ * social profile), no `foundingDate` (the first publish date is not a founding
+ * date and inventing the equivalence is the kind of precision this operation
+ * rules against), and deliberately no `SearchAction` on the WebSite node —
+ * the site has no search endpoint, and declaring one would promise a surface
+ * that 404s.
+ */
 export function organizationNode() {
   return {
+    // Every node in Base.astro's jsonLd ARRAY is serialised as a top-level
+    // object, so each carries its own @context — matching articleJsonLd and
+    // breadcrumbJsonLd rather than relying on a sibling's context.
+    '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': `${SITE}${BASE}/#organization`,
+    '@id': ORG_ID,
     name: 'Madār',
     alternateName: 'مدار',
     url: absolute(`${BASE}/`),
+    knowsLanguage: ['en', 'ar'],
     logo: {
       '@type': 'ImageObject',
       url: absolute(`${BASE}/wordmark/madar-wordmark.svg`),
     },
   };
+}
+
+/**
+ * The site as a work, distinct from the organization that publishes it.
+ *
+ * An Article `isPartOf` a WebSite; it is not "part of" an Organization — that
+ * was a category error in the 08-23 builder, and it is fixed here rather than
+ * carried. `inLanguage` is a list because the site genuinely is one bilingual
+ * publication, not two sites: the same editions index, the same edition
+ * numbering, reciprocal hreflang on every page.
+ */
+export function websiteNode() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': SITE_ID,
+    name: 'Madār · مدار',
+    url: absolute(`${BASE}/`),
+    inLanguage: ['en', 'ar'],
+    publisher: { '@id': ORG_ID },
+  };
+}
+
+/**
+ * The pair every page needs in order for its own references to resolve.
+ * Spread into the `jsonLd` array of any page that names ORG_ID or SITE_ID.
+ */
+export function publisherNodes() {
+  return [organizationNode(), websiteNode()];
 }
 
 export interface ArticleNodeInput {
@@ -135,8 +205,8 @@ export function articleJsonLd(input: ArticleNodeInput) {
     // The publication is the author of record. Pieces are bylined
     // «هيئة التحرير» / the editorial desk, never an individual, so naming a
     // person here would invent one.
-    author: { '@id': `${SITE}${BASE}/#organization` },
-    publisher: { '@id': `${SITE}${BASE}/#organization` },
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
     ...(input.cardPath
       ? {
           image: {
@@ -158,6 +228,9 @@ export function articleJsonLd(input: ArticleNodeInput) {
     ...(input.translationPath
       ? { workTranslation: { '@id': `${absolute(input.translationPath)}#article` } }
       : {}),
-    isPartOf: { '@id': `${SITE}${BASE}/#organization` },
+    // A piece is part of the SITE, not of the organization that publishes it.
+    // Corrected 2026-09-11; the 08-23 builder pointed all three of author,
+    // publisher and isPartOf at the same Organization node.
+    isPartOf: { '@id': SITE_ID },
   };
 }

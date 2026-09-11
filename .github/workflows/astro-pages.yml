@@ -101,6 +101,18 @@ jobs:
       - name: every page reachable, and the orphan allowlist is honest
         working-directory: .
         run: python3 agents/tools/qa_reachability.py web/dist
+      # Structured data is the only part of the page written FOR a machine, and
+      # until today nothing in CI read it. qa_jsonld has existed since 08-29 and
+      # ran only by hand in the daily run — so on 2026-09-11 it was extended and
+      # immediately found that all 76 article pages had, since 08-23, pointed
+      # author, publisher and isPartOf at a node defined nowhere on the site
+      # (organizationNode() was written and never called). 228 dangling
+      # references, 19 days, invisible to every check that dereferences URLs
+      # rather than nodes. A layer no human ever reads needs its gate in CI more
+      # than the layers we look at, not less.
+      - name: the machine-readable layer honours its contract
+        working-directory: .
+        run: python3 agents/tools/qa_jsonld.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

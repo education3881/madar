@@ -9,7 +9,7 @@ import { withBase } from '../../../lib/urls';
 // The data stays English (one shared schema, one comparable vocabulary);
 // only what an Arabic reader SEES is translated. See lib/i18n-geo.ts.
 import { countryAr, regionAr, levelAr, themeAr } from '../../../lib/i18n-geo';
-import { articleJsonLd, breadcrumbJsonLd } from '../../../lib/structuredData';
+import { articleJsonLd, breadcrumbJsonLd, publisherNodes } from '../../../lib/structuredData';
 
 export async function getStaticPaths() {
   const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
@@ -89,7 +89,7 @@ const ogCard = piece.data.hero?.src
     translationPath: piece.data.englishVersion
       ? withBase(`/articles/${piece.data.englishVersion}/`)
       : undefined,
-  })]}
+  }), ...publisherNodes()]}
 >
   <SiteHeader lang="ar" variant="article" />
 

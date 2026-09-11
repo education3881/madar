@@ -57,7 +57,7 @@
 
 import { readdirSync, rmSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { join, basename } from 'node:path';
+import { join, dirname, resolve, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { heldContentFiles } from './sitemapLastmod.mjs';
@@ -65,14 +65,84 @@ import { heldContentFiles } from './sitemapLastmod.mjs';
 /** Directories under `public/` that carry per-slug assets. */
 const SLUG_ASSET_DIRS = ['stills', 'og'];
 
+/**
+ * The path that proves a candidate is the repo root — the first of the content
+ * directories `heldContentFiles` will read. A root is accepted only if the
+ * thing we intend to read from it actually exists there.
+ */
+const CONTENT_PROBE = 'web/src/content/articles';
+
+/**
+ * Locate the repo root WITHOUT making git a precondition of the build.
+ *
+ * ---------------------------------------------------------------------------
+ * DEFECT FOUND 2026-09-10 (Verifier's QA pass, one day after this hook shipped)
+ *
+ * The first version of this hook opened with a bare `git rev-parse
+ * --show-toplevel` and used its output unchecked. In CI that works. Outside a
+ * git work tree it does not merely degrade — it throws, and takes the whole
+ * build with it:
+ *
+ *     [madar:withhold-held-assets] Command failed: git rev-parse --show-toplevel
+ *     fatal: not a git repository
+ *
+ * This is the SAME defect the sitemap lastmod resolver carried on 2026-08-25
+ * and the same lesson (#16, verify in the judging environment): a build step
+ * that reaches for git makes the site unbuildable anywhere git is not, and
+ * `heldContentFiles` never needed git at all — it does filesystem reads. The
+ * hold was being read through a tool that has nothing to do with the hold.
+ *
+ * Two rules restored here, both already in the guidebook:
+ *  - **Wrong data and missing data get different answers** (08-25). A missing
+ *    git binary or a non-repo directory is not by itself a defect; a root we
+ *    cannot find the CONTENT in is.
+ *  - **Derive it from the thing itself** (#36). The primary route is this
+ *    module's own location, which is deterministic, needs no external process,
+ *    and is correct in a shallow clone, a worktree, an export or a copy. git is
+ *    consulted LAST and only as one more candidate, never as an authority —
+ *    and even its answer must pass the existence probe, so a git root that
+ *    points somewhere without content cannot silently aim the sweep at nothing.
+ */
+function resolveRepoRoot() {
+  const moduleDir = dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    // web/src/lib/heldAssets.mjs -> repo root
+    resolve(moduleDir, '..', '..', '..'),
+    // the astro project's parent (build cwd is `web/` in CI), then cwd itself
+    resolve(process.cwd(), '..'),
+    process.cwd(),
+  ];
+
+  try {
+    candidates.push(
+      execFileSync('git', ['rev-parse', '--show-toplevel'], {
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }).trim()
+    );
+  } catch {
+    // Not a work tree, or no git on PATH. Not fatal on its own.
+  }
+
+  for (const candidate of candidates) {
+    if (candidate && existsSync(join(candidate, CONTENT_PROBE))) return candidate;
+  }
+
+  throw new Error(
+    `heldAssets: could not locate the content set. Probed for "${CONTENT_PROBE}" ` +
+      `under: ${candidates.filter(Boolean).join(', ')}. Either the content ` +
+      'directories moved — in which case this sweep is checking nothing and the ' +
+      'hold is unenforced — or the build is running somewhere it cannot see the ' +
+      'repo. Both are defects; neither is a silent pass.'
+  );
+}
+
 export function withholdHeldAssets() {
   return {
     name: 'madar:withhold-held-assets',
     hooks: {
       'astro:build:done': ({ dir, logger }) => {
-        const repoRoot = execFileSync('git', ['rev-parse', '--show-toplevel'], {
-          encoding: 'utf8',
-        }).trim();
+        const repoRoot = resolveRepoRoot();
 
         // heldContentFiles returns repo-relative content PATHS; the slug is the
         // filename. Both language files of a held pair yield the same slug.

@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-10</title>
+<meta name="description" content="Manager to Founder daily brief for Thursday 10 September 2026. Brief 70. The Sudan verdict closes Edition 05’s verification backlog — three pairs banked, three verified, zero owed — and fails on three items, none of them a number, for the third run running. Ruling #47. Yesterday’s build hook could not build outside a git checkout. The first sweep of our outbound source links found a dead one on a held piece." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head>
+
+<body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 70
+    <strong>Thursday 10 September 2026</strong>
+  </div>
+</header>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>Three failures, and not one of them was a number</h1>
+  <p class="dek">
+    The Sudan verdict closes Edition 05&rsquo;s verification backlog &mdash; three pairs banked,
+    three verified, zero owed. It fails on three items and, for the third run in a row, every
+    single one is invisible to every numeric instrument we own. That is now a pattern, and it
+    got a ruling. Also today: yesterday&rsquo;s new build hook turned out to be unbuildable
+    outside a git checkout, and the first sweep of our outbound source links found a dead one
+    on a held piece, thirteen days before it would have gone live.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>The block ran the same morning, and the origin is current</h2>
+      <div class="day__date">2026-09-09</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-shipped">State, verified before planning</div>
+      <div class="item__body">
+        <p>
+          Local <span class="mono">HEAD</span> and <span class="mono">origin/main</span> both at
+          <span class="mono">1b26b2d</span>, zero ahead, zero behind, working tree clean at open.
+          The 09-09 block ran. <strong>No push gap, no dark day, nothing owed from yesterday.</strong>
+          The live drift check &mdash; the one that reads the origin rather than reasoning about it
+          &mdash; came back <strong>CLEAN</strong> for the third time: 82 URLs, zero lastmod drift,
+          four sampled pages byte-identical.
+        </p>
+        <div class="item__note">
+          Named plainly because the honest version of this line has usually been worse. This is the
+          third consecutive day the reader sees what we built.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Carried forward</div>
+      <div class="item__body">
+        <p>
+          Yesterday shipped the Sierra Leone verdict (fail on two items, both non-numeric), the
+          held-assets withholding hook, the branded bilingual 404, and ruling&nbsp;#46. Two of
+          those come back today: the hook had a defect, and the verdict&rsquo;s shape repeated
+          itself on a different piece by a different drafter.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>The last verdict the edition owed</h2>
+      <div class="day__date">2026-09-10</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; Sudan verdict: FAIL with three items, all fixed in-run</div>
+      <div class="item__body">
+        <p>
+          The Verifier took the Sudan pair &mdash; <em>The classroom invented before the war that
+          needed it</em> &mdash; and re-fetched six of its ten registers independently today rather
+          than trusting the compose-time read. Everything numeric held. The Badareer block traced
+          line by line (60 pupils, ages 6&ndash;14, a twelve-member committee, two sessions a day
+          five days a week, a certificate after the two-year cycle, the nearest school 7&nbsp;km
+          away). Both named wartime humans confirmed through a second channel. The 870,000 across
+          750 spaces, the Egypt vintage, the whole BRIDGES plan set fenced figure by figure as
+          plans rather than reach. Ten of ten recon guardrails carried in the prose with no silent
+          avoidance.
+        </p>
+        <p>
+          <strong>And the Belay Addise quotation was checked character for character against the
+          served press release, and held.</strong> That was the single most likely place for this
+          piece to repeat yesterday&rsquo;s Sierra Leone failure, and ruling #46 was one day old
+          when it did its first job on a fresh piece.
+        </p>
+        <p>Three items failed anyway, and here is what they were:</p>
+        <p>
+          <strong>One &mdash; the 2014 sentence describes a later programme.</strong> UNICEF&rsquo;s
+          own register says the first phase &ldquo;start[ed] in 2014 focusing on <em>a numeracy
+          trial</em>&hellip; an applied mathematics game.&rdquo; The piece wrote &ldquo;educational
+          games teaching Arabic and mathematics&rdquo; into the 2014 clause &mdash; in the opening
+          sentence, under the thesis that Sudan built this <em>before</em> its emergency. Arabic
+          literacy is real and it is measured, by Brown et al., on the programme the trial
+          evaluated years later. Nothing false was said about the evaluation. Something untrue was
+          said about 2014.
+        </p>
+        <p>
+          <strong>Two &mdash; the announcement year attached to the award year.</strong> The piece
+          said &ldquo;In 2019 UNESCO named the programme a laureate.&rdquo; The register says
+          &ldquo;one of the <em>2018</em> laureates,&rdquo; announced 20 March 2019. Two dates; we
+          printed the wrong one for the object of the sentence. <strong>Our own
+          <span class="mono">sources[]</span> annotation had it right and both bodies dropped
+          it</strong> &mdash; which is exactly what happened on Sierra Leone yesterday, on a
+          different fact, in a different piece, by a different drafter. Twice in two days makes it
+          a property of how we work, not a slip: the annotation gets written with the register
+          open, the body gets written from memory of the annotation.
+        </p>
+        <p>
+          <strong>Three &mdash; a venue nobody attended.</strong> &ldquo;The programme&rsquo;s
+          stated ambition <em>at the ceremony</em> &mdash; 1.5 million children by 2023.&rdquo;
+          There is no ceremony in any register; the figure is a quotation given to UNESCO inside a
+          written feature. The uncomfortable part is the direction of the error: that sentence
+          exists <em>only</em> to fence the figure as an aim rather than a reach. The piece was
+          being careful, and built the fence out of something unsourced.
+        </p>
+        <p>
+          Two further register-restorations in the same pass, both from the same root &mdash; the
+          source&rsquo;s own word replaced by a firmer one of ours. &ldquo;35,000 learners&rdquo;
+          had become &ldquo;35,000 Sudanese children.&rdquo; &ldquo;Disruption &hellip; especially
+          acute in Darfur and Kordofan&rdquo; had become &ldquo;destruction &hellip;
+          concentrated.&rdquo; Neither was false. Neither was the owner&rsquo;s.
+        </p>
+        <div class="item__note">
+          All five edits made in both languages. Numeral multiset re-checked after every one:
+          identical, zero one-sided figures, <span class="mono">2018</span> added to both sides so
+          the symmetry survives. Flag stays <span class="mono">approved: false</span>.
+          Coverage stated honestly in the verdict: four registers rode on one channel only
+          (Brown et al., both War Child pages, the Arabic <em>New horizons</em> edition) &mdash;
+          named rather than papered over, and the confirmation read&rsquo;s first job.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; Edition 05&rsquo;s verification backlog is zero</div>
+      <div class="item__body">
+        <p>
+          Three pairs banked, three verified: Zambia (09-08), Sierra Leone (09-09), Sudan (09-10).
+          Every banked pair now has a written verdict on file. The Verifier&rsquo;s queue is empty
+          until slot 3 drafts, and that capacity goes to the confirmation reads owed at the gate.
+        </p>
+        <p>
+          One structural note recorded before it can bite: <strong>all three pairs are now
+          mutually bound.</strong> Sudan&rsquo;s rail names Zambia and Sierra Leone; Sierra
+          Leone&rsquo;s names Zambia. All three are held. That is only correct because the wave
+          flips atomically &mdash; ship any one alone and its rail carries a dead end and
+          <span class="mono">qa_body_links</span> fails the build. Written into the status memo
+          to be checked <em>before</em> the flip commit, not after.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &mdash; yesterday&rsquo;s hook could not build outside a git checkout</div>
+      <div class="item__body">
+        <p>
+          The first QA build of the day died. Not on the content &mdash; on the withholding hook
+          shipped less than 24 hours ago:
+        </p>
+        <p class="mono" style="color:var(--color-ink)">
+          [madar:withhold-held-assets] Command failed: git rev-parse --show-toplevel<br />
+          fatal: not a git repository
+        </p>
+        <p>
+          It opened with a bare <span class="mono">git rev-parse</span> and used the answer
+          unchecked. In CI that works. Anywhere git is not &mdash; an export, a copy, a sandbox
+          &mdash; it does not degrade, it throws and takes the whole build with it. <strong>This is
+          the identical defect the sitemap lastmod resolver carried on 25 August</strong>, and the
+          identical lesson (#16, verify in the judging environment). Worse: the hook never needed
+          git at all. It reads the hold through a parser that does filesystem reads.
+        </p>
+        <p>
+          Fixed by deriving the root from the module&rsquo;s own location &mdash; deterministic, no
+          external process, correct in a shallow clone or a worktree or a copy &mdash; with git
+          consulted <em>last</em> and only as one more candidate, and every candidate required to
+          pass an existence probe, so a git root pointing somewhere without content cannot silently
+          aim the sweep at nothing. Missing data and wrong data get different answers again.
+        </p>
+        <div class="item__note">
+          Proved both ways per #35: control silent on the real build (six assets withheld for three
+          held pieces), bite loud when the content probe is pointed at a directory that moved.
+          Then rebuilt in a real non-shallow clone with <span class="mono">CI=true</span> &mdash;
+          the actual judging environment &mdash; because the route-around cannot produce
+          <span class="mono">lastmod</span>.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &mdash; the first sweep of our outbound promises, and it found a 404</div>
+      <div class="item__body">
+        <p>
+          Ten standing assertions guard this site and every one of them checks that a link is
+          <em>rendered</em>. Not one has ever asked whether the thing at the other end still
+          answers. That gap sits directly on top of the only claim this publication makes for
+          itself: every figure stands on a named primary source the reader can open. When a source
+          link rots, the piece&rsquo;s central promise becomes a 404 in front of the one reader who
+          cared enough to click &mdash; which is, by definition, the returning reader.
+        </p>
+        <p>
+          <span class="mono">qa_sources_alive.py</span> now sweeps them. First run, scoped
+          deliberately to the three held Edition 05 pairs, because that is where a source problem
+          is still free to fix. <strong>28 distinct URLs: 20 answered, 3 walled, 4 unreachable, and
+          one hard 404.</strong>
+        </p>
+        <p>
+          The 404 is the Save the Children blog cited by Sierra Leone &mdash; the green-provider
+          register, the one whose unnamed provider the OPM read identified as Rising Academy. It
+          served on 28 August. It is gone today, <strong>thirteen days later and thirteen days
+          before the earliest plausible flip.</strong> Had the wave shipped on schedule with nothing
+          watching this, Sierra Leone would have gone live carrying a dead link under one of its
+          most-quoted paragraphs, and no assertion we own would have said a word, because the
+          anchor renders perfectly.
+        </p>
+        <p>
+          Nothing in the piece falls &mdash; every figure it carried is independently anchored in
+          the 264-page OPM evaluation. The decision is editorial: supersede the URL or carry it as
+          fetched-on-date. My recommendation is supersede, because a 404 in a source list is worse
+          than no entry: it advertises the failure.
+        </p>
+        <div class="item__note">
+          Not a deploy gate, by design &mdash; the far side belongs to UNESCO, UNICEF, ministries
+          and journals, and a GPE outage at 09:00 must not stop us publishing. Four buckets, not
+          pass/fail: two of the three &ldquo;walled&rdquo; 403s are UNICEF pages this operation read
+          successfully today through a different client, so a 403 is a statement about who is
+          asking, not about whether the source exists. The four unreachable are all one host
+          (<span class="mono">parliament.gov.zm</span>, Zambia&rsquo;s Bill text) &mdash; one
+          sitting is not rot, so it goes to the confirmation read to be probed on a different day.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &mdash; ruling #47, a description has a date too</div>
+      <div class="item__body">
+        <p>
+          Every non-numeric attribute of a programme &mdash; what it taught, where it ran, what it
+          was called, what prize it held, where a sentence was said &mdash; is dated exactly as
+          strictly as a figure, and inherits the vintage of the register it was read in. A
+          description read at one stage does not describe another stage.
+        </p>
+        <p>
+          It needed a number rather than three corrections because of what the three items have in
+          common: <strong>our entire figure discipline is numeric, and all three were invisible to
+          every part of it.</strong> The multiset comparison, the one-sided grep, the
+          prohibited-figure grep, the eight trace axes &mdash; each takes a number as its object.
+          Item two was invisible <em>precisely because the correct number was absent</em>, and a
+          check that compares the numbers present cannot see a year that was never written.
+        </p>
+        <p>
+          Third consecutive ruling produced by a verdict, and the third consecutive verdict whose
+          failure was non-numeric: #45 a number&rsquo;s noun, #46 a quotation&rsquo;s orthography
+          and a plan&rsquo;s tense, #47 three descriptions. Read as a series that is not luck
+          &mdash; it says we have hardened the numbers to the point where the errors that remain
+          are all in the words around them, and it tells the Editor and the Verifier where to look
+          next.
+        </p>
+        <div class="item__note">
+          Filed as guidebook row 42; series now #1&ndash;#47, no gaps, no duplicates. Four
+          corollaries, each bitten today &mdash; award year vs announcement year; a setting is a
+          claim about a register; a guardrail is a claim and a claim is checked; and the annotation
+          is written with the register open while the body is written from memory of it.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Quality &mdash; QA green in the judging environment</div>
+      <div class="item__body">
+        <p>
+          Built twice. Route-around: exit 0, 83 pages, the withholding hook working outside git for
+          the first time. Then a real non-shallow clone with <span class="mono">CI=true</span>:
+          exit 0, 83 pages, sitemap 82 URLs with 82 <span class="mono">lastmod</span>, parity 38/38,
+          both feeds 38 items, <strong>all ten standing assertions clean</strong>, held-slug leak
+          zero across pages, sitemap, feeds and assets, and live drift CLEAN against the origin.
+        </p>
+        <div class="item__note">
+          No workflow files touched today &mdash; this push does <em>not</em> need the
+          workflow-scope PAT.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= STATISTICS ============================= -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-10 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 41 EN / 41 AR &mdash; incl. 3 EN / 3 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Slot 3 is the whole job now</h2>
+      <div class="day__date">2026-09-11</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-running">First</div>
+      <div class="item__body">
+        <p>
+          <strong>The TIMSS 2019 South Africa national report</strong> &mdash; slot 3&rsquo;s second
+          draft-blocker, and the Researcher&rsquo;s day. The +104-point and 0.9&nbsp;SD trend
+          figures sit outside the 2023 Highlights primary and do not ride until that report is read
+          in the body. With the verification queue empty, there is nothing competing for the run.
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-running">Behind it</div>
+      <div class="item__body">
+        <p>
+          The optional <span class="mono">countries:</span> schema line for the continental piece,
+          which the Editor ruled ships in the same commit as the article. Then Egypt and Rwanda
+          re-verified before commission &mdash; both recons are three weeks old and the
+          Sudan re-check found two of seven registers had moved in eighteen days.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<div class="flag">
+  <div class="kicker">Three things that want your eye</div>
+  <p>
+    <strong>1. Edition 05 scope &mdash; the silence deadline is Sunday.</strong> Six pieces was
+    proposed on 09-06 and silence by the 09-13 review makes it six. Three are banked and verified;
+    the ruler piece is commissioned; Egypt and Rwanda would be five and six. If you want a
+    different count, Sunday is when it stops being cheap to change.
+  </p>
+  <p>
+    <strong>2. IndexNow is staged and switched off</strong>, waiting on your go. With zero of 82
+    URLs indexed and a gate target of 11 October, it is the cheapest discoverability move on the
+    board.
+  </p>
+  <p>
+    <strong>3. Still open, unchanged:</strong> the custom domain, and Substack. Both have been on
+    this line for a while; neither blocks the wave, and both shape what the wave lands into.
+  </p>
+</div>
+
+<div class="push-block">
+  <div class="kicker">Your one action</div>
+  <p>
+    Today&rsquo;s work: the Sudan verdict and its five bilingual fixes, the heldAssets root-resolution
+    fix, <span class="mono">qa_sources_alive.py</span> and its first sweep, ruling #47, the edition
+    status memo, and this brief. <strong>No workflow files touched &mdash; an ordinary
+    repo-scope token is enough today.</strong>
+  </p>
+  <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-09-10: Sudan verdict, ruling 47, and the first sweep of our own outbound promises."
+git push origin main</code>
+</div>
+
+<footer>
+  <span>Mad&#257;r &middot; daily brief &middot; No. 70</span>
+  <span>Manager, for the founder &middot; 2026-09-10</span>
+</footer>
+
+</main>
+</body>
+</html>

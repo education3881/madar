@@ -5,7 +5,7 @@ import ShareRail from '../../components/ShareRail.astro';
 import RelatedReading from '../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
-import { articleJsonLd, breadcrumbJsonLd } from '../../lib/structuredData';
+import { articleJsonLd, breadcrumbJsonLd, publisherNodes } from '../../lib/structuredData';
 import { splitScriptRuns } from '../../lib/scriptRuns';
 
 export async function getStaticPaths() {
@@ -93,7 +93,7 @@ const ogCard = piece.data.hero?.src
     translationPath: piece.data.arabicVersion
       ? withBase(`/ar/articles/${piece.data.arabicVersion}/`)
       : undefined,
-  })]}
+  }), ...publisherNodes()]}
 >
   <SiteHeader lang="en" variant="article" />
 

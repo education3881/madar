@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
 import { currentEdition, editions } from '../lib/editions';
+import { publisherNodes } from '../lib/structuredData';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
@@ -92,7 +93,7 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
 }
 ---
 
-<Base title={`Madār · مدار — Edition ${edNum}`} lang="en" noHeader={true} ogImage="/og/brand-card.png" alternate={{ en: '/', ar: '/ar/' }}>
+<Base title={`Madār · مدار — Edition ${edNum}`} lang="en" noHeader={true} ogImage="/og/brand-card.png" alternate={{ en: '/', ar: '/ar/' }} jsonLd={publisherNodes()}>
 
   {/* ============== TOP UTILITY BAR ============== */}
   <div class="top-bar">

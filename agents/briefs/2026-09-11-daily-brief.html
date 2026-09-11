@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-11</title>
+<meta name="description" content="Manager to Founder daily brief for Thursday 10 September 2026. Brief 70. The Sudan verdict closes Edition 05’s verification backlog — three pairs banked, three verified, zero owed — and fails on three items, none of them a number, for the third run running. Ruling #47. Yesterday’s build hook could not build outside a git checkout. The first sweep of our outbound source links found a dead one on a held piece." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head>
+
+<body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 71
+    <strong>Friday 11 September 2026</strong>
+  </div>
+</header>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>The figure survived its primary. Its twin did not.</h1>
+  <p class="dek">
+    Slot 3&rsquo;s last big research blocker is closed. The TIMSS 2019 national report was read in
+    the body, and it settles both South African figures in opposite directions: <strong>+104 points
+    rides</strong>, better sourced than we expected &mdash; and <strong>the 0.9 standard deviation
+    does not exist</strong>. Not misquoted: the report never prints it, and the window it was
+    attributed to silently crosses from one school grade to another. Also today: the publication
+    has been telling search engines that its author and publisher are a thing defined nowhere on
+    the site, on all 76 article pages, for nineteen days.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>A full day&rsquo;s work is written and sitting unpushed</h2>
+      <div class="day__date">2026-09-10</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-held">The gap, named plainly</div>
+      <div class="item__body">
+        <p>
+          Local <span class="mono">HEAD</span> and <span class="mono">origin/main</span> are both at
+          <span class="mono">1b26b2d</span> &mdash; the 09-09 push landed. But
+          <strong>the 09-10 block went unrun</strong>: the Sudan verdict, the heldAssets
+          root-resolution fix, <span class="mono">qa_sources_alive.py</span>, ruling #47, the edition
+          status memo and Brief 70 are all written and all still uncommitted. One day staged,
+          nothing lost.
+        </p>
+        <div class="item__note">
+          Worth saying precisely, because the honest version is better than it sounds: the live
+          drift check read <strong>CLEAN against the origin before today&rsquo;s change</strong>.
+          Everything in the 09-10 day was verdicts, tools, rulings and edits to <em>held</em>
+          files &mdash; which by design contribute no bytes. The unpushed day cost the reader
+          nothing at all. It cost us only the delay.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Carried forward, and it mattered today</div>
+      <div class="item__body">
+        <p>
+          Yesterday&rsquo;s run found that the 09-09 held-assets build hook was
+          <strong>unbuildable outside a git checkout</strong> and fixed it &mdash; but could not
+          finish the proof, because the route-around build cannot produce
+          <span class="mono">lastmod</span>. That proof is closed today: the whole QA pass ran in a
+          real clone, and both the hook and <span class="mono">qa_lastmod</span> behave correctly
+          there. Six assets for three held pieces withheld by name; 82 of 82 lastmod;
+          held files contributing no date.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>Two figures, one register, opposite verdicts</h2>
+      <div class="day__date">2026-09-11</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &mdash; slot 3, draft-blocker 2 CLOSED</div>
+      <div class="item__body">
+        <p>
+          The Researcher read <strong>the HSRC/DBE TIMSS 2019 Grade 9 national report</strong> in
+          the body, from the national TIMSS centre&rsquo;s own copy, with the HSRC&rsquo;s launch
+          release as the second, independent first-party channel. The commission had blocked
+          drafting on two figures. They come back opposite ways.
+        </p>
+        <p>
+          <strong>+104 rides, and arrives stronger than it left.</strong> The report prints it
+          twice, decomposes it &mdash; <span class="mono">+67</span> (2003&ndash;11),
+          <span class="mono">+20</span> (2011&ndash;15), <span class="mono">+17</span>
+          (2015&ndash;19) &mdash; and states that every cycle-to-cycle difference is statistically
+          significant. It then hands over, unprompted and in the same eight pages, the two things
+          our standing prohibition demands beside any improvement claim: the climb is
+          <em>decelerating</em> (7.4 points a year in the first half, 4.6 in the second) and the
+          floor is <em>rising</em> (the 5th&ndash;95th percentile range narrowing from 320 to 252,
+          with the top end flat since 2011).
+        </p>
+        <p>
+          <strong>The 0.9 SD does not exist.</strong> The report never prints 0.9 anywhere. It
+          prints <em>one</em> standard deviation, and it prints it for <em>2003&ndash;2019</em>.
+          Reconstructing the arithmetic shows where the phantom came from: 276 &rarr; 372 is +96,
+          about 0.96 SD, over 1995&ndash;2015. Both endpoints are real numbers on the
+          report&rsquo;s own chart. The subtraction is where it dies &mdash; <strong>276 is a
+          Grade 8 score and 372 is a Grade 9 score</strong>, and the report says in its own words
+          that Grade 9 learners scored <strong>21 points more than Grade 8 learners</strong> in the
+          one year it measured both, precisely in order to bridge the two arms. Roughly a fifth of
+          that &ldquo;improvement&rdquo; is one extra year of school. And the longer window buys
+          eight years the report itself calls <em>no significant change</em>.
+        </p>
+        <div class="item__note">
+          Nothing here was a misquotation, which is the unsettling part. Both endpoints verify.
+          The arithmetic is right. The owner is first-party and published both arms on one chart.
+          The error lives entirely in the <em>span</em> &mdash; and not one instrument we own
+          takes a span as its object.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &mdash; ruling #48, row 43</div>
+      <div class="item__body">
+        <p>
+          <strong>A trend line can have a seam.</strong> When an owner has spliced measurements of
+          different populations, grades, instruments or scales into one series, the join is a
+          construction with a size, and that size belongs to every figure crossing it. Three
+          obligations: find the seam before quoting the span; carry the seam in the same sentence;
+          prefer the owner&rsquo;s own certified window over a longer one a reader assembled.
+        </p>
+        <p>
+          Second half of the ruling, on the figure that <em>did</em> survive: &ldquo;one standard
+          deviation&rdquo; here is <strong>a scale unit, not an effect size</strong>. The TIMSS
+          scale is defined with a mean of 500 and an SD of 100 <em>by construction</em>; South
+          Africa&rsquo;s own 5th&ndash;95th spread in 2003 was 320 points. A reader hearing
+          &ldquo;a one-SD improvement&rdquo; hears something relative to the people measured. That
+          reading is wrong, and it flatters. Fourth shape of the scoped-instrument family, after
+          the multiplier with no base (#19), the deficit that is secretly a ratio (row 20) and the
+          converted figure with two owners (#44).
+        </p>
+        <div class="item__note">
+          Best corollary of the day, and it is a gift to the piece: <strong>a bridge is a
+          finding.</strong> When an owner runs two instruments on one cohort in one year to make
+          its series joinable, that year is a result &mdash; here, <em>a year of schooling was
+          worth 21 TIMSS points in South Africa in 2003</em>. An operation that mines a series only
+          for its endpoints throws away the best number in the chapter. Ruling series now
+          <strong>#1&ndash;#48, no gaps, no dupes.</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &mdash; the publisher was a pointer to nothing</div>
+      <div class="item__body">
+        <p>
+          Since 23 August every one of the <strong>76 article pages</strong> has told search engines
+          that its <span class="mono">author</span>, its <span class="mono">publisher</span> and its
+          <span class="mono">isPartOf</span> are all
+          <span class="mono">&hellip;/madar/#organization</span> &mdash; <strong>a node defined
+          nowhere on the site</strong>. The function that builds it was written that day, exported,
+          and never called. The home page, the Arabic home, both editions indexes and About carried
+          <em>no</em> structured data at all. That is <strong>228 dangling references, in two
+          languages, for nineteen days</strong>, on a site with zero of 82 URLs indexed and a gate
+          target of 11 October.
+        </p>
+        <p>
+          Fixed: <span class="mono">Organization</span> and a new
+          <span class="mono">WebSite</span> node are now emitted on <em>every page that references
+          them</em> &mdash; both front doors and all 76 articles &mdash; because consumers resolve
+          these pointers <em>within a document</em> and none of them fetches the home page to
+          complete an article&rsquo;s publisher. <span class="mono">isPartOf</span> corrected to
+          point at the site rather than the company, which was a category error. Conservative by
+          construction: no <span class="mono">sameAs</span>, no invented founding date, and
+          deliberately no search action &mdash; the site has no search, and declaring one would
+          promise a surface that 404s.
+        </p>
+        <div class="item__note">
+          Why nothing caught it: <span class="mono">qa_jsonld</span> reported <strong>CLEAN on this
+          very build</strong> an hour before the defect was found by reading the emitted JSON by
+          hand. It dereferences <em>URLs to files</em>; the reference&rsquo;s document part is the
+          home page, which exists. It was checking the right string for the wrong thing. The broken
+          object was a <em>node</em>, and nothing in the tool had ever looked for nodes.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &mdash; assertion extended, proved both ways, and finally gated</div>
+      <div class="item__body">
+        <p>
+          <span class="mono">qa_jsonld</span> gains assertion 4: <strong>every bare
+          <span class="mono">@id</span> reference must resolve to a node defined in the same
+          document</strong>, with the one legitimate cross-document exception named in the code
+          rather than left silent. Proved per #35 against real state, not a synthetic bug:
+          <strong>BITE &mdash; FAIL(228)</strong> on the pre-fix build, each defect naming its page
+          and its field; <strong>CONTROL &mdash; silent</strong> on the rebuild, 308 nodes, 608
+          URL promises, 306 references resolved.
+        </p>
+        <p>
+          And the reason the defect had nineteen days: <strong>the script has existed since 29
+          August and was never in CI.</strong> It ran only by hand, in the daily run. It is now a
+          build-job step &mdash; a layer no human ever reads needs its gate more than the layers we
+          look at, not less.
+        </p>
+        <div class="item__note">
+          Gap named for Sunday&rsquo;s review while doing it: <strong>six of ten standing assertions
+          gate the deploy; four do not</strong> &mdash; <span class="mono">qa_a11y_lang</span>,
+          <span class="mono">qa_ar_language</span> and <span class="mono">qa_consumer_surface</span>
+          are still hand-run only. An assertion that runs when someone remembers is a checklist
+          item, not a gate. Recommending all four into CI at the weekly.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &mdash; the full pass, in the judging environment</div>
+      <div class="item__body">
+        <p>
+          Everything ran in a <strong>real git clone</strong> with the working tree copied over it
+          &mdash; the environment yesterday&rsquo;s run could not reach. Build exit 0 twice, 82
+          pages. Parity 38/38. Sitemap 82 URLs with 82 lastmod. Both feeds 38 items, 38 enclosures.
+          Held-slug leak <strong>zero</strong> across pages, sitemap, feeds and assets.
+          <strong>All ten standing assertions green</strong> after the change, re-run as a
+          regression set. Live drift <strong>CLEAN</strong> against the origin.
+        </p>
+        <p>
+          Publish gate run in writing (<span class="mono">agents/logs/2026-09-11-publish-gate.md</span>):
+          <strong>nothing ships editorially</strong>, corpus unchanged at 38 EN / 38 AR, 35
+          countries, no <span class="mono">approved</span> flips, all three Edition 05 pairs still
+          held for the wave.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= STATISTICS ============================= -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-11 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Asia 7 &middot; Africa 5 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 &middot; access 34 &middot; value of teachers 26 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 41 EN / 41 AR &mdash; incl. 3 EN / 3 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>The ruler piece can finally be written</h2>
+      <div class="day__date">2026-09-12</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-queued">First</div>
+      <div class="item__body">
+        <p>
+          <strong>The Editor&rsquo;s decision on drafting.</strong> Both of the two blockers that
+          were a day&rsquo;s work each &mdash; the PASEC 2019 report and the TIMSS 2019 national
+          report &mdash; are now closed. What remains is non-fatal and has stated fallbacks: the
+          Mauritius vintage, and a 2026 first-party PASEC voice. The verification queue is empty,
+          the ceiling is clear, and slot 3 is the only piece in the edition still unwritten.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-queued">With it</div>
+      <div class="item__body">
+        <p>
+          The optional <span class="mono">countries:</span> schema line for the continental piece,
+          which the Editor ruled ships in the <em>same commit</em> as the article, with
+          <span class="mono">madar_stats.py</span> counting the union that day.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-queued">Behind it</div>
+      <div class="item__body">
+        <p>
+          Egypt and Rwanda re-verified before commission &mdash; both recons are more than three
+          weeks old, and the Sudan re-check found two of seven registers had changed serving state
+          in eighteen days. Then the confirmation reads owed at the wave gate, including the four
+          Zambian parliament URLs that were unreachable on 09-10 and want a re-probe on a different
+          day from a different client.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<div class="flag">
+  <div class="kicker">Three things that want your eye</div>
+  <p>
+    <strong>1. Edition 05 scope &mdash; the silence deadline is this Sunday.</strong> Six pieces was
+    proposed on 09-06; silence by the 09-13 review makes it six. Three are banked and verified, the
+    ruler piece is unblocked as of today, and Egypt and Rwanda would be five and six. After Sunday
+    it stops being cheap to change.
+  </p>
+  <p>
+    <strong>2. IndexNow is still staged and switched off</strong>, waiting on your go. Today&rsquo;s
+    entity fix makes it worth more than it was yesterday: there is now something coherent for a
+    crawler to find when it arrives.
+  </p>
+  <p>
+    <strong>3. Still open, unchanged:</strong> the custom domain, and Substack. Neither blocks the
+    wave; both shape what the wave lands into.
+  </p>
+</div>
+
+<div class="push-block">
+  <div class="kicker">Your one action</div>
+  <p>
+    This push carries <strong>two days</strong> &mdash; the whole of 09-10, which went unrun, and
+    today. <strong>It touches <span class="mono">.github/workflows/astro-pages.yml</span></strong>
+    (qa_jsonld becomes a deploy gate), so it needs the <strong>workflow-scope PAT</strong>, not a
+    plain repo-scope token.
+  </p>
+  <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
+rm -f .git/index.lock
+git add -A
+git commit -m "Madar 2026-09-11: carries 09-10 and today. TIMSS 2019 read closes slot 3 blocker 2 -- plus 104 rides, the 0.9 SD does not exist. Ruling 48, a trend line can have a seam. The publisher entity was a dangling pointer on all 76 pages for 19 days; fixed, asserted, gated."
+git push origin main</code>
+</div>
+
+<footer>
+  <span>Mad&#257;r &middot; daily brief &middot; No. 71</span>
+  <span>Manager, for the founder &middot; 2026-09-11</span>
+</footer>
+
+</main>
+</body>
+</html>

@@ -73,11 +73,13 @@ def main() -> int:
     defects: list[str] = []
     nodes_checked = 0
     derefs = 0
+    refs_resolved = 0
 
     for page in pages:
         rel = page.relative_to(dist).as_posix()
         page_lang = "ar" if rel.startswith("ar/") else "en"
         html = page.read_text(encoding="utf-8")
+        page_blocks = []
         for block in re.findall(
             r'<script type="application/ld\+json">(.*?)</script>', html, re.S
         ):
@@ -86,6 +88,7 @@ def main() -> int:
             except json.JSONDecodeError as e:
                 defects.append(f"{rel}: JSON-LD does not parse ({e})")
                 continue
+            page_blocks.append(data)
             for node in data if isinstance(data, list) else [data]:
                 nodes_checked += 1
                 ntype = node.get("@type")
@@ -142,8 +145,73 @@ def main() -> int:
                         if cu and not re.match(r"https?://", cu):
                             defects.append(f"{rel}: citation url not absolute: {cu}")
 
+        # ---------------------------------------------------------------
+        # ASSERTION 4 (added 2026-09-11) — every bare @id reference must
+        # resolve to a node DEFINED IN THE SAME DOCUMENT.
+        #
+        # WHY: a node object carrying only "@id" is a POINTER, not a
+        # description. Consumers resolve such pointers within one document;
+        # none of them fetches another page to complete an Article's
+        # publisher. From 2026-08-23 to 2026-09-11 every one of the 76
+        # article pages pointed author, publisher and isPartOf at
+        # ".../madar/#organization" — a node that was defined NOWHERE on
+        # the site, because organizationNode() was written and never
+        # called. Assertions 1–3 all passed it: the block parsed, the
+        # @type was right, and the checks that dereference URLs saw a
+        # document part (the home page) that exists in dist. The thing
+        # that was broken was not a URL — it was a NODE, and nothing here
+        # had ever looked for nodes.
+        #
+        # This is ruling #36/#37 turned one level inward: a reference is a
+        # declaration, and a declaration is checked against the thing it
+        # names, not against the page that happens to host it.
+        #
+        # EXCEPTION, named rather than silent: workTranslation and
+        # translationOfWork are cross-document BY DESIGN — they point at
+        # the same piece's node on the other language's page, and they are
+        # already dereferenced as URLs to dist above. Every other bare
+        # reference is expected to be local.
+        CROSS_DOC_OK = {"workTranslation", "translationOfWork"}
+        defined: set = set()
+        refs: list = []
+
+        def walk(obj, parent_key=None):
+            if isinstance(obj, list):
+                for x in obj:
+                    walk(x, parent_key)
+                return
+            if not isinstance(obj, dict):
+                return
+            nid = obj.get("@id")
+            if nid:
+                if obj.get("@type"):
+                    defined.add(nid)
+                elif len(obj) == 1:
+                    refs.append((parent_key, nid))
+            for k, v in obj.items():
+                if k.startswith("@"):
+                    continue
+                walk(v, k)
+
+        for blk in page_blocks:
+            walk(blk)
+
+        for field, nid in refs:
+            if field in CROSS_DOC_OK:
+                continue
+            if not nid.startswith(BASE):
+                continue
+            if nid not in defined:
+                defects.append(
+                    f"{rel}: '{field}' references node {nid} which is defined nowhere on this page "
+                    f"(dangling @id — a pointer with no referent)"
+                )
+            else:
+                refs_resolved += 1
+
     print(
-        f"qa_jsonld: pages {len(pages)} · nodes {nodes_checked} · dereferenced {derefs} promises to dist"
+        f"qa_jsonld: pages {len(pages)} · nodes {nodes_checked} · dereferenced {derefs} promises to dist "
+        f"· resolved {refs_resolved} in-document @id references"
     )
     if defects:
         for d in defects:
