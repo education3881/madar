@@ -207,64 +207,65 @@
     <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
   </div>
   <div class="masthead__date">
-    Daily brief &middot; No. 72
+    Daily brief &middot; No. 73
     <strong>Monday 14 September 2026</strong>
   </div>
 </header>
 
 <section class="lede">
   <div class="kicker">Manager &rarr; Founder</div>
-  <h1>Four rulers, four crowns, and the ruler changes in December.</h1>
+  <h1>The operation ran itself today, and the first thing it did was find something.</h1>
   <p class="dek">
-    Edition 05&rsquo;s third mandated slot &mdash; the one you worded <em>&ldquo;best educational
-    system in Africa, location to be determined by research&rdquo;</em> &mdash; is drafted. Research&rsquo;s
-    honest answer is that there are four defensible ways to measure it and they crown four
-    different countries. Along the way the piece nearly inherited a false spine from a headline,
-    which became today&rsquo;s ruling. Also: the corpus can be browsed for the first time &mdash; 38 new
-    pages, 500 new internal links &mdash; and the schema gained its first new field since launch,
-    with its assertion in the same commit.
+    This is the first Mad&#257;r run executed in the cloud rather than on your laptop, and it is
+    the day&rsquo;s second brief &mdash; No. 72 was written by this morning&rsquo;s desktop run and is
+    preserved beside this one. The cutover took four attempts; the fourth worked because the
+    authentication secret was re-pasted, not because of anything in the repository. The run then
+    asked a question a QA log had written down five days ago and three runs had skipped, and the
+    question failed on first contact &mdash; on code six hours old. Also today: Edition 05&rsquo;s slot 3
+    is a pair, and a correction from four days ago turned out not to have reached the artefact
+    that was staged to advertise it.
   </p>
 </section>
 
 <!-- ============================= YESTERDAY ============================= -->
 <article class="day">
   <header class="day__head">
-    <div class="day__beat">Yesterday</div>
+    <div class="day__beat">Yesterday &middot; this morning</div>
     <div class="day__title">
-      <h2>The weekly block went unrun, and Friday was dark</h2>
-      <div class="day__date">2026-09-12 &ndash; 2026-09-13</div>
+      <h2>Slot 3 drafted, the operation moved to the cloud, and four dispatches failed</h2>
+      <div class="day__date">2026-09-14, run 1 &mdash; brief No. 72</div>
     </div>
   </header>
 
   <div class="stream">
     <div class="item">
-      <div class="item__label status-parked">2026-09-12 &middot; dark</div>
+      <div class="item__label">Shipped</div>
       <div class="item__body">
-        No run and no brief. Named plainly, not absorbed.
+        The morning run drafted Edition 05&rsquo;s mandated slot 3 &mdash; <em>Four rulers, four crowns,
+        and one about to be re-read</em>, ~2,170 words, held &mdash; filed ruling&nbsp;#49, added the
+        <code>countries</code> field with its assertion in the same commit, and shipped the browse
+        surface (sitemap 82&nbsp;&rarr;&nbsp;120). It also moved the daily and weekly runs onto
+        GitHub Actions. Deploy green at 07:12 UTC.
       </div>
     </div>
-
     <div class="item">
-      <div class="item__label status-parked">2026-09-13 &middot; produced, not pushed</div>
+      <div class="item__label">Named plainly</div>
       <div class="item__body">
-        The weekly review ran and its push block went unrun. The review itself, the three
-        CI assertion wirings, the taxonomy audit and the Edition&nbsp;05 scope decision all sat
-        uncommitted for a day. <strong>This push carries two days.</strong>
-      </div>
-      <div class="item__note">
-        Nothing live went stale. Every uncommitted change was to held files, agent artefacts,
-        tools and the workflow &mdash; none of which contributes bytes to the origin. Local and
-        origin both sat at <code>d196390</code>, as they still do until you run the block below.
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="item__label status-shipped">What the unrun block contained</div>
-      <div class="item__body">
-        <strong>The scope of Edition 05 closed itself at six</strong> by the default stated on
-        09-06 &mdash; Egypt and Rwanda moved out of the recon bank and into the pipeline.
-        <strong>Three hand-run assertions were wired into CI</strong>, taking the deploy from six
-        gated checks to ten. And Growth filed the audit that became today&rsquo;s build.
+        <strong>Four dispatches of the new daily workflow failed before this one ran</strong>
+        &mdash; 06:56, 07:07, 07:12 UTC, each followed by an automatic failure issue. Three
+        different causes were hypothesised in three commits. Only the third failure was readable,
+        because that commit had turned on full output, and it said something none of the commits
+        had guessed: <strong>the <code>CLAUDE_CODE_OAUTH_TOKEN</code> secret contained a line
+        break at character 80</strong> &mdash; 110 characters across 2 lines. No change to this
+        repository could have fixed it. Between 07:12 and 07:17 the secret was evidently
+        re-pasted, and this run authenticated on the first try with the file unchanged.
+        <div class="item__note">
+          Recorded rather than smoothed over, because the lesson outlives the day: <strong>a masked
+          error makes you debug the artefact you can read.</strong> Two commits went to a
+          configuration file that was never the problem. When a failure is unreadable, the first
+          fix to try is the one that makes it readable. The five automatic failure issues are
+          closed today with the diagnosis on each.
+        </div>
       </div>
     </div>
   </div>
@@ -275,169 +276,180 @@
   <header class="day__head">
     <div class="day__beat">Today</div>
     <div class="day__title">
-      <h2>The mandated continental piece, and a navigation surface this publication never had</h2>
-      <div class="day__date">2026-09-14</div>
+      <h2>A token that evaporated, a caption that did not get the memo, and slot 3 in Arabic</h2>
+      <div class="day__date">2026-09-14, run 2 &mdash; the first autonomous cloud run</div>
     </div>
   </header>
 
   <div class="stream">
 
     <div class="item">
-      <div class="item__label status-shipped">Content &middot; Edition 05, mandated slot 3 &mdash; drafted</div>
+      <div class="item__label">Quality</div>
       <div class="item__body">
-        <strong><em>Four rulers, four crowns, and one about to be re-read</em></strong> &mdash;
-        about 2,170 words, held unpublished, hero still and share card drawn in the same run.
-        Both day-long research blockers had already been closed (the PASEC 2019 report on 09-06,
-        the TIMSS 2019 national report on 09-11), so every figure in the piece rides on the
-        register that closed its blocker, with its page number.
-      </div>
-      <div class="item__note">
-        The four rulers and their crowns &mdash; <strong>level</strong>: Mauritius, 12.4 expected
-        years of school becoming 9.4 learned ones, carried in the past tense because the World
-        Bank brief says of itself that its data are pre-COVID. &middot;
-        <strong>Learning relative to income</strong>: Senegal and Benin, on an analyst&rsquo;s axis,
-        attributed to him &mdash; PASEC&rsquo;s own income analysis finds no correlation, which is a
-        different claim and crowns nobody. &middot;
-        <strong>Improvement</strong>: Niger, the largest gain in all four trend series, with its
-        policy list set beside the gain exactly as the report sets it &mdash; and the report&rsquo;s own
-        footnote, saying the two are not a causal link, quoted where the list appears. Plus South
-        Africa on the global instrument: +104 points, with its deceleration, its floor, and its
-        grade seam all named. &middot;
-        <strong>Shared gains</strong>: Senegal, on the report&rsquo;s own sentence &mdash; the only
-        country that reduced inequality of performance &mdash; with the report&rsquo;s own limits in the
-        same paragraph.
-      </div>
-      <div class="item__note">
-        The piece says outright that the four cannot be averaged. A composite would require
-        deciding how many points of Senegalese equity are worth one Mauritian learning-adjusted
-        year, and that is not an arithmetic question.
-      </div>
-    </div>
-
-    <div class="flag">
-      <div class="kicker">The thing that nearly went wrong</div>
-      <p>
-        While confirming the date that gives the piece its spine &mdash; PASEC 2024&rsquo;s results are
-        announced for the last quarter of this year &mdash; a <strong>first-party</strong> register
-        surfaced under the headline <em>&laquo;&nbsp;PASEC 2024 will be the last international
-        evaluation&nbsp;&raquo;</em>, an interview with the secretary-general of the organisation
-        that owns PASEC.
-      </p>
-      <p>
-        If true as printed, the piece inverts: the ruler is not about to be re-read, it is about
-        to be retired. Read in the body, the sentence continues &mdash; <em>the last international
-        evaluation <strong>before 2030</strong>, the end point of SDG&nbsp;4</em>, with the 2024 data
-        to be mobilised for that year&rsquo;s stocktake. The same owner&rsquo;s February 2026 register names
-        a PASEC 2028 cycle. And the interview is dated <strong>January 2023</strong>, not 2026.
-      </p>
-      <p>
-        Nothing false was published, because the register was opened rather than quoted from a
-        result list. But it would have survived to the verification verdict, and that is the wrong
-        margin to be working on &mdash; which is why it is now a rule rather than an anecdote.
-      </p>
-    </div>
-
-    <div class="item">
-      <div class="item__label status-shipped">Research &middot; ruling #49 &mdash; a superlative has a horizon</div>
-      <div class="item__body">
-        A superlative carries <em>two</em> scopes, not one: the <strong>ruler</strong> it is
-        measured on and the <strong>horizon</strong> it is measured within. Missing either, it has
-        not yet made a claim. The bounding clause is the one a headline cuts, because it is the one
-        that reads like qualification.
-      </div>
-      <div class="item__note">
-        Three corollaries: a headline is where the horizon goes missing; time-superlatives are the
-        least examined, because &ldquo;the last X&rdquo; sounds like a fact about the world rather
-        than a ranking on a timeline; and a superlative in a <em>first-party</em> headline is still
-        a second register &mdash; the owner wrote the sentence, the sub-editor wrote the headline.
-        Extends ruling #29 from aggregators to owners. It contains no number at all, and its unit
-        is a date.
+        <span class="flag status-fixed">FIXED</span>
+        <strong>The browse surface shipped this morning has had no accent colour since 06:13.</strong>
+        The 09-09 QA log ended with a named forward question &mdash; <em>the design tokens are a
+        contract nothing checks</em> &mdash; and the rule since 08-23 is that the next run tests the
+        named surface before adding anything new. Three runs wrote no QA log and named no question
+        at all, so it went untested for five days. Asked this morning, it failed immediately: the
+        new browse pages style the country label on every listed piece, and both hover states, with
+        <code>var(--color-accent)</code>. <strong>This design system has no
+        <code>--color-accent</code></strong>; its accent is <code>--color-orange</code>. An
+        undefined custom property does not error &mdash; it evaporates. So 76 pages in both
+        languages served those declarations and rendered nothing at all, through a clean build and
+        twelve green assertions.
+        <div class="item__note">
+          Now a gate, not a habit: <strong><code>qa_css_tokens.py</code> is the thirteenth standing
+          assertion and the twelfth to gate the deploy</strong>, in the same commit that proves it.
+          Proved four ways &mdash; control silent on the real 120-page build, with VALENCE&rsquo;s
+          runtime-set <code>--c</code> correctly <em>not</em> cried wolf on; bites on the real
+          defect reinjected into the served stylesheet, on an undefined token in an inline
+          <code>&lt;style&gt;</code> block, and on a &ldquo;definition&rdquo; planted in prose rather
+          than in a CSS region, whose own control goes green. One injection failed to change the
+          file and the harness caught it &mdash; which is yesterday&rsquo;s ruling about proving the
+          bite as carefully as the control, working the day after it was written.
+        </div>
       </div>
     </div>
 
     <div class="item">
-      <div class="item__label status-shipped">Quality &middot; the schema&rsquo;s first new field since launch</div>
+      <div class="item__label">Content</div>
       <div class="item__body">
-        A continental piece does not fit a single <code>country:</code>. The file lands with
-        Mauritius as its primary and a new optional list naming all five countries it measures,
-        shown to the reader in both languages and counted in the statistics panel as the union, so
-        &ldquo;countries covered&rdquo; stays truthful. The new assertion <strong>landed in the same
-        commit as the field</strong> &mdash; a field with no consumer is a promise to nobody, and a
-        field with no assertion is one nobody finds out about.
-      </div>
-      <div class="item__note">
-        It has two halves for a reason worth recording: <strong>the piece introducing the field is
-        held</strong>, so an output-side-only check would have had its first real run on flip day.
-        The source half reads the content files regardless; the output half reads the built pages
-        and reports held pieces as <em>skipped</em>, never as passed. Both halves proved both ways
-        &mdash; including on a temporarily-approved throwaway build, rather than leaving the proof
-        to October.
-      </div>
-      <div class="item__note">
-        Two traps caught while proving it, both now rules. The first bite <em>did not bite</em>,
-        because it was written against the source markup and the site serves an extra attribute
-        &mdash; a failed injection reads exactly like a passing control. And the check&rsquo;s first draft
-        searched the whole sidebar, which let the primary country on the line above mask a list that
-        had failed to render: <strong>an assertion must not be able to read its answer off the field
-        it exists to supplement.</strong>
+        <span class="flag status-parked">HELD</span>
+        <strong>Edition 05&rsquo;s slot 3 is a pair.</strong> The continental piece was composed in
+        Arabic and gated the same day: <strong>Arabic Editor PASS</strong>, held
+        <code>approved: false</code> with the rest of the wave. Dek 145/200 code points, title
+        58/100, both measured at compose rather than at the gate. Numeral multiset EN&harr;AR:
+        <strong>zero Arabic-only figures</strong>; the only English-only tokens are grade labels,
+        which Arabic renders as ordinal words, and the still caption&rsquo;s number in Arabic-Indic
+        digits &mdash; both established properties of the two languages rather than errors on
+        either side.
+        <div class="item__note">
+          Five named humans: four confirmed, one <em>restored</em> &mdash; عبد الرحمن بابا موسى is
+          Arabic in origin and francophone in spelling, and no CONFEMEN register serves an Arabic
+          edition, so the restoration is stated as one. The nine-author TIMSS list is
+          <strong>deliberately not transliterated</strong>: eight of the nine have no served Arabic
+          register, and inventing eight renderings to fill a citation line is a figure composed
+          from a pattern, applied to people. The Arabic carries ريدي وزملاؤه with the served Latin
+          list beside it. <strong>Four of the edition&rsquo;s six pieces now exist in both
+          languages.</strong>
+        </div>
       </div>
     </div>
 
     <div class="item">
-      <div class="item__label status-shipped">Growth &middot; the week&rsquo;s bet shipped whole &mdash; the corpus can be browsed</div>
+      <div class="item__label">Content</div>
       <div class="item__body">
-        Until today this site served seven route files and <strong>not one of them grouped
-        articles by anything</strong>. A reader who finished the Sierra Leone piece and wanted the
-        rest of what we have written about Africa, or about teachers, had nowhere to go. Shipped
-        today: a browse hub plus <strong>18 index pages per language</strong> &mdash; 7 regions,
-        8 topics, 3 countries &mdash; all generated from the published corpus at build time.
+        <strong>The attribution verb &mdash; the surface last Sunday&rsquo;s review named as
+        forward &mdash; was tested, and it bit.</strong> The review predicted that
+        <em>said &middot; announced &middot; confirmed &middot; found &middot; estimates</em> each
+        promise a different register and that nothing checks them. Arabic is what checked it: the
+        English read <em>&ldquo;The Principal Investigator <strong>said</strong> it at the
+        launch&rdquo;</em>, and Arabic cannot compose that sentence without choosing a gender, so
+        the register had to be re-opened instead of remembered. The served release says:
+        <em>&ldquo;Reddy <strong>cautions</strong> that while we applaud the improvement in
+        educational achievement, &lsquo;the rate of achievement improvement is
+        decreasing.&rsquo;&rdquo;</em>
+        <div class="item__note">
+          Three corrections, both languages. The verb is <em>cautions</em>, not <em>said</em> &mdash;
+          the flattest verb available, and it deletes the direction of the speech act. The caution
+          sits <em>inside applause</em>, and quoting it without the applause is our framing rather
+          than the register&rsquo;s. And the Principal Investigator is named and titled on the
+          served page &mdash; Dr Vijay Reddy &mdash; which is what now anchors the Arabic&rsquo;s
+          الباحثة الرئيسة in a register instead of an assumption. <strong>Fourth consecutive
+          non-numeric finding in this edition, and the first found by a language crossing rather
+          than by a verification pass.</strong>
+        </div>
       </div>
-      <div class="item__note">
-        <strong>Sitemap 82 &rarr; 120 URLs. 140 new links into articles</strong> (the audit predicted
-        about 140) <strong>and 360 between index pages &mdash; 500 in all.</strong> Zero orphans on
-        the larger graph, which was the bet&rsquo;s own pass condition. All four numbers readable without
-        anyone&rsquo;s permission, which is the criterion this bet was chosen on.
-      </div>
-      <div class="item__note">
-        The one inbound path into 38 new URLs is a <em>Browse</em> item added to the header &mdash;
-        in the article navigation as well as the home navigation, because the reader who wants more
-        of a subject is the one who has just finished a piece about it. A sitemap entry is a
-        declaration; a link is an edge. At the Edition 05 flip this compounds with no new work:
-        Africa moves from 5 pieces to 11 and becomes the second-largest region page we have.
-      </div>
-    </div>
-
-    <div class="flag">
-      <div class="kicker">One for the Editor, and it is about us</div>
-      <p>
-        Building the taxonomy surfaced something about our own vocabulary. Of fourteen theme tags,
-        <strong><code>government-led programs</code> is on 38 of 38 published pieces</strong> &mdash;
-        a tag true of everything carries zero information. Today sharpened it: <strong>the piece
-        drafted this morning is about measurement</strong> &mdash; its entire argument is that a
-        number without its instrument is an opinion with decimal places &mdash; <strong>and the
-        vocabulary has no tag for assessment.</strong> It was filed under three true tags, none of
-        which is what it is about.
-      </p>
-      <p>
-        That is no longer a navigation problem. The recommendation standing with the Editor: the
-        vocabulary needs a term for measurement, and needs to lose or demote one that has been true
-        every time since 25 May.
-      </p>
     </div>
 
     <div class="item">
-      <div class="item__label status-running">Quality &middot; the full pass, in a real checkout</div>
+      <div class="item__label">Growth</div>
       <div class="item__body">
-        Build clean at <strong>120 pages</strong>. Parity 38/38. Sitemap 120 URLs with 120
-        last-modified dates, and held drafts contributing none of them. Both feeds 38 items with
-        38 share cards. Held-slug leak <strong>zero</strong> across pages, sitemap, feeds and assets
-        for all four held pieces. <strong>Twelve of twelve standing assertions green.</strong>
+        <span class="flag status-fixed">FIXED</span>
+        <strong>A correction from 09-10 never reached the artefact staged to advertise it.</strong>
+        The wave packet&rsquo;s fourth caption was due once the ruler piece had a dek, and it is
+        written &mdash; but re-reading the three captions already in the packet turned up something
+        worse than a missing one. The Sudan captions, English and Arabic, were composed on 09-03 and
+        said the 2014 programme was <em>&ldquo;games that teach Arabic and maths&rdquo;</em>. That is
+        the exact claim the Verifier&rsquo;s 09-10 verdict struck from the piece&rsquo;s opening
+        sentence in both languages &mdash; the owner&rsquo;s register says a <em>numeracy trial</em>.
+        The article was corrected that day. The packet was not, because nothing connects a
+        piece&rsquo;s correction to the artefacts composed from it.
+        <div class="item__note">
+          Nothing was published &mdash; the packet is held with the wave &mdash; but that is luck
+          from an unrelated hold, not a control. On flip-day it would have carried into the world
+          the one sentence a verification verdict had removed. Both captions fixed; re-reading every
+          caption against the <em>shipped</em> text of its piece is now step 3 of the packet&rsquo;s
+          flip-day checklist rather than a good intention.
+        </div>
       </div>
-      <div class="item__note">
-        One piece of debris named rather than absorbed: a duplicate-warning appeared in a rebuild
-        and turned out to be stale build-cache carried in from the throwaway proof workspace, not a
-        corpus defect. Cleared, rebuilt, silent. Separately, the share-card step &mdash; retyped by
-        hand in every run since 18 August &mdash; is now a documented script on disk.
+    </div>
+
+    <div class="item">
+      <div class="item__label">Research</div>
+      <div class="item__body">
+        <strong>Ruling&nbsp;#50 &mdash; a correction has a blast radius.</strong> When a verdict
+        changes a piece, it changes every artefact composed from that piece; the correction is
+        finished when the descendants have been re-read, not when the article is fixed. Every check
+        we own was structurally blind to it: the Verifier traces the piece, the thirteen assertions
+        enumerate <code>dist</code>, the 08-23 perimeter rule reaches <em>rendered</em> artefacts and
+        a markdown packet is neither published nor rendered &mdash; and the packet&rsquo;s own header
+        promised &ldquo;no figure appears here that is not in the shipped piece,&rdquo; while
+        <strong>the defect was not a figure but a noun</strong>.
+        <div class="item__note">
+          Seventh member of the enumeration family and the second to sit outside <code>dist</code>,
+          but it asks the family&rsquo;s question backwards: not <em>what can this check not see?</em>
+          but <strong>what does this correction not reach?</strong> Series now #1&ndash;#50, no gaps.
+          Housekeeping owed to Sunday: the canonical table still ends at #48, with #49 and #50
+          living as register rows &mdash; deliberately left for the consolidation, because a daily
+          run merging that table by hand is how the three-way disagreement of 09-13 was created.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Operations</div>
+      <div class="item__body">
+        <span class="flag status-running">OPEN</span>
+        <strong>The run cannot edit its own CI, and found out by being refused.</strong> The new
+        assertion was written into the deploy workflow beside the other eleven, exactly as the rule
+        requires, and the push came back: <em>refusing to allow a GitHub App to create or update
+        workflow &hellip; without <code>workflows</code> permission</em>. That is not grantable from
+        inside a workflow, deliberately &mdash; a job that can rewrite its own workflow can grant
+        itself anything. The design is right. This morning the operation moved to the cloud to stop
+        depending on one person, and by the afternoon had found the one class of change that still
+        does.
+        <div class="item__note">
+          <strong>The gate was not dropped.</strong> It is invoked from <code>web/package.json</code>
+          as <code>postbuild</code>, which <code>npm run build</code> &mdash; the deploy job&rsquo;s
+          own command &mdash; runs; a failure there fails the build and nothing deploys. Proved
+          through that entry point: exit 0 on the real tree, exit 1 with the defect reinjected at
+          source. Stronger in one respect, since it now gates every local build too, and weaker in
+          another: <code>astro-pages.yml</code> stops being the complete register of what gates the
+          deploy. <strong>That is issue #6, and it is yours</strong> &mdash; the clean fix needs a
+          credential only you can create. Three options, a recommendation, and a stated default
+          (document the split) applied on <strong>2026-09-20</strong> if it goes unanswered.
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Quality &middot; the sweep</div>
+      <div class="item__body">
+        Build exit 0, <strong>120 pages</strong>. Parity <strong>38 EN / 38 AR</strong> approved,
+        4&nbsp;+&nbsp;4 held. Sitemap 120 URLs / 120 lastmod, newest dated to this morning&rsquo;s
+        approved-file commit &mdash; <strong>held files contributed no date</strong>. Both feeds 38
+        items. <strong>Held-slug leak zero</strong>; 8 assets withheld for 4 held pieces.
+        <strong>All twelve gating assertions green</strong>, including the one landing today.
+        <code>qa_live_drift</code> stays out of the build job by design &mdash; the
+        <code>verify</code> job byte-compares the published artifact against the live origin, which
+        is strictly stronger &mdash; and the reason is written in the workflow file beside the others.
+        <div class="item__note">
+          Today&rsquo;s new assertion was also pointed at the artefacts <em>you</em> read &mdash; this
+          brief and Sunday&rsquo;s review &mdash; and both are clean: 18 properties read, 19 defined,
+          none dangling. That is the 08-23 perimeter rule honoured with a tool rather than a promise.
+        </div>
       </div>
     </div>
 
@@ -454,52 +466,63 @@
     <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
   </div>
   <div class="stats__rows">
-    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
-    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
-    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Asia 7 &middot; Africa 5 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 &middot; access 34 &middot; value of teachers 26 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1</div>
     <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
     <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
-    <div><span class="stats__k">On disk</span> 42 EN / 41 AR &mdash; incl. 4 EN / 3 AR held drafts (approved:false, not published)</div>
+    <div><span class="stats__k">On disk</span> 42 EN / 42 AR &mdash; incl. 4 EN / 4 AR held drafts (approved:false, not published)</div>
   </div>
 </div>
 
+<p class="muted mono">
+  Traffic, stated plainly as always: the site carries <strong>no third-party tracker, by design</strong>,
+  so there is no visitor number to report and none will be estimated. The privacy-clean signals
+  &mdash; Substack opens, return rate, country, attributable inbound &mdash; switch on when Issue 01
+  sends. The published corpus is unchanged today: <strong>no flag was flipped, and no reader-visible
+  byte of any article changed.</strong>
+</p>
 
 <!-- ============================= TOMORROW ============================= -->
 <article class="day">
   <header class="day__head">
     <div class="day__beat">Tomorrow</div>
     <div class="day__title">
-      <h2>Arabic composition of the ruler piece, then Egypt</h2>
+      <h2>The Editor&rsquo;s pair verdict on slot 3, then Egypt</h2>
       <div class="day__date">2026-09-15</div>
     </div>
   </header>
 
   <div class="stream">
     <div class="item">
-      <div class="item__label status-running">On deck</div>
+      <div class="item__label">Content</div>
       <div class="item__body">
-        The Arabic composition of slot 3 and its language gate &mdash; composition, not translation,
-        with the ruler vocabulary fixed at commission. Then Egypt re-verified against the web as
-        served, before it is commissioned. The three confirmation reads owed on the banked pairs are
-        interleaved one per run rather than batched, so none of them is discovered at the gate.
+        The Editor&rsquo;s five-test <strong>pair verdict</strong> on slot 3, English and Arabic
+        together &mdash; then the Verifier&rsquo;s verdict on the same pair, one per run, in banking
+        order. The ceiling is clear and this edition&rsquo;s verification backlog is zero, so nothing
+        is queued behind it. Then Egypt re-verification, with the three confirmation reads
+        interleaved one per run.
       </div>
     </div>
     <div class="item">
-      <div class="item__label status-parked">Carried, honestly</div>
+      <div class="item__label">Quality</div>
       <div class="item__body">
-        Two source links on the new piece were <em>located</em> today rather than <em>fetched</em>
-        &mdash; their bodies were read on 4 and 6 September and are cited in that state. They are the
-        first job of the confirmation read, and they are the reason the piece is held rather than
-        nearly done.
+        <strong>The forward question, restored and named for tomorrow:</strong> today&rsquo;s new
+        check proves a token <em>resolves</em>, exactly as the old checks proved a link resolves and
+        a page is reachable &mdash; and 08-18 already taught us that <em>resolves</em> is narrower
+        than <em>works</em>. Nothing has ever verified that a page <strong>renders</strong>. Every
+        one of the thirteen assertions reads structure; not one has ever looked at a pixel. The
+        Arabic wordmark&rsquo;s broken joins in August were found by a human opening a PNG, and
+        nothing has looked since. That is tomorrow&rsquo;s surface, and it is tested before anything
+        new is added.
       </div>
     </div>
     <div class="item">
-      <div class="item__label status-running">Edition 05 &middot; where it stands</div>
+      <div class="item__label">Operations</div>
       <div class="item__body">
-        <strong>Four drafted of six.</strong> Three pairs banked and verified (Zambia, Sierra Leone,
-        Sudan); the ruler piece drafted today; Egypt and Rwanda in the pipeline. Gate target
-        11 October &mdash; roughly 17 runs owed in 27 days, feasible with no slack. If the arithmetic
-        fails, <strong>the date gives</strong>, never a verdict.
+        <code>show_full_output</code> stays on for one more run. The workflow file says to turn it
+        off &ldquo;once the cutover is confirmed,&rdquo; and one green run is not confirmation &mdash;
+        a second consecutive green is. It comes off tomorrow, named in the brief when it does.
       </div>
     </div>
   </div>
@@ -509,23 +532,26 @@
 <section class="push-block">
   <div class="kicker">Your one action</div>
   <p>
-    One block, carrying both 13 and 14 September. It touches
-    <code style="display:inline;padding:0.1rem 0.3rem;">.github/workflows/</code>, so it needs a
-    token with <strong>repo</strong> <em>and</em> <strong>workflow</strong> scope &mdash; the same
-    condition as the last several pushes. The first line removes a stray helper file of mine so it
-    is not swept into the commit.
+    <strong>There isn&rsquo;t one any more.</strong> This run committed and pushed its own work
+    before writing this sentence, which is the whole point of the move. The block you used to paste
+    is gone from the brief permanently; if it ever comes back, something has broken and the brief
+    will say so.
   </p>
-  <code>cd "/Users/vini/Documents/Claude/Projects/Educational Website"
-rm -f web/mkog.mjs
-rm -f .git/index.lock
-git add -A
-git commit -m "Madar 2026-09-14: carries 09-13 and today. Edition 05 slot 3 drafted -- four rulers, four crowns. Ruling 49, a superlative has a horizon. Schema gains countries, asserted in the same commit. The corpus can be browsed: 38 index pages, sitemap 82 to 120."
-git push origin main</code>
+  <p>
+    What is worth your attention instead: the five automatic <em>&ldquo;Daily run failed&rdquo;</em>
+    issues from this morning are closed with the cause written on each, and <strong>one new
+    founder-decision issue is open &mdash; #6</strong>, on whether the autonomous run should be given
+    a token that lets it edit its own CI. It has three options, a recommendation
+    (<em>don&rsquo;t</em>), and a stated default applied on <strong>2026-09-20</strong> if you say
+    nothing, which is fine &mdash; the default is the conservative one. Nothing is blocked on it.
+    Edition 05&rsquo;s scope was the last founder-owned call on that edition and it closed on 09-13
+    by the stated default, at six.
+  </p>
 </section>
 
 <footer>
   <span>Mad&#257;r &middot; Manager to Founder</span>
-  <span>Brief No. 72 &middot; 2026-09-14</span>
+  <span>Brief No. 73 &middot; 2026-09-14 &middot; run 2 of 2</span>
 </footer>
 
 </main>

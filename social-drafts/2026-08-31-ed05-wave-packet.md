@@ -22,9 +22,40 @@ The measurement-cluster list (assessment-reform beat, v2) is the natural first a
 ## Sudan — *The classroom invented before the war that needed it* (added 2026-09-03, HELD with the wave)
 og card on disk today: `og/2026-09-01-sudan-cant-wait-to-learn.png` (1200×600, 17 KB, from the same still). Pair completes on the Editor's verdict; nothing posts before the wave gate + a green `verify` job.
 **EN caption:**
-In 2014 — nine years before its own war — Sudan built a classroom that needs no school: a tablet, a solar panel, games that teach Arabic and maths, a trained adult from the village. It scaled into other countries' emergencies. When Sudan's schools closed, the idea worked its way home under other names. Two true stories, joined by place and idea — new from Madār, in English and Arabic. #Sudan #EducationInEmergencies #Africa
+In 2014 — nine years before its own war — Sudan built a classroom that needs no school: a tablet, a solar panel, a set of educational games, a trained adult from the village. It scaled into other countries' emergencies. When Sudan's schools closed, the idea worked its way home under other names. Two true stories, joined by place and idea — new from Madār, in English and Arabic. #Sudan #EducationInEmergencies #Africa
 **AR caption:**
-في 2014 — قبل تسع سنوات من حربه — بنى السودان صفًّا لا يحتاج إلى مدرسة: جهاز لوحي ولوح شمسي وألعاب تعلّم العربية والرياضيات وبالغ مدرَّب من القرية. اتّسع في طوارئ بلدان أخرى؛ ولمّا أُغلقت مدارس السودان شقّت الفكرة طريقها إلى البيت بأسماء أخرى. قصتان صحيحتان يجمعهما المكان والفكرة. جديد مدار، بالعربية والإنجليزية.
+في 2014 — قبل تسع سنوات من حربه — بنى السودان صفًّا لا يحتاج إلى مدرسة: جهاز لوحي ولوح شمسي ومجموعة ألعاب تعليمية وبالغ مدرَّب من القرية. اتّسع في طوارئ بلدان أخرى؛ ولمّا أُغلقت مدارس السودان شقّت الفكرة طريقها إلى البيت بأسماء أخرى. قصتان صحيحتان يجمعهما المكان والفكرة. جديد مدار، بالعربية والإنجليزية.
 **Engagement-list note:** Sudan goes to the continuity beat (the Ed03 list — exam-continuity, wartime schooling readers) first; it is a native-Arabic story, so the AR link leads on the Arabic-side queue. The piece's honesty rail (a trial that published its own null and negative) is the hook for the measurement list second.
 
 — Growth · 2026-09-03
+
+---
+## Africa — *Four rulers, four crowns, and one about to be re-read* (added 2026-09-14, HELD with the wave)
+
+The fourth entry, composed from the piece's own dek now that the dek exists. og card on disk: `og/2026-09-14-africa-best-system-ruler.png` (1200×600, 13,705 bytes, from the same still). Both languages exist as of today; nothing posts before the wave gate + a green `verify` job.
+
+**EN caption:**
+Ask which education system in Africa is best and four defensible measures answer with four different countries — Mauritius on learning a child ends up with, Senegal and Benin on learning relative to income, Niger and South Africa on speed of improvement, Senegal again on whether the gains were shared. They cannot be averaged. Choosing the ruler is choosing what school is for. And the continent's widest ruler is re-read this December. New from Madār, in English and Arabic. #Africa #EducationData #Assessment
+
+**AR caption:**
+اسألْ أيُّ نظامٍ تعليميٍّ في أفريقيا أفضلُ، يُجِبْك أربعةُ مقاييسَ وجيهةٍ بأربعةِ بلدانٍ مختلفة — موريشيوس على ما ينتهي إلى الطفل من تعلُّم، والسنغال وبنين على التعلُّم منسوبًا إلى الدخل، والنيجر وجنوب أفريقيا على سرعة التحسُّن، والسنغال مرّةً أخرى على ما إذا كانت المكاسب مشتركة. ولا تُتوسَّط هذه المساطر. واختيارُ المسطرة هو اختيارُ ما المدرسةُ من أجله. جديد مدار، بالعربية والإنجليزية.
+
+**Engagement-list note:** this piece is the wave's natural *lead*, not its fourth item — it is the frame the other three sit inside, and it is the only one of the four that names five countries. On flip-day it goes first to the measurement-cluster list (assessment-reform beat, v2), with Sierra Leone second as the worked example of the same argument. The PASEC 2024 publication, announced for the last quarter of 2026, is a **dated follow-up and never a rewrite** (#41): when the results land, the piece gets a dated note, not a new edit.
+
+**No figure in either caption is absent from the shipped piece**, and the four crowns are named with their rulers attached in the same sentence — the piece's own standing prohibition, honoured in the distribution copy as well as in the prose.
+
+## Correction propagation — a defect found in this packet today, and fixed
+
+The Sudan captions above (EN and AR) were composed on 2026-09-03 and said the 2014 programme was *"games that teach Arabic and maths"*. The Verifier's verdict of **2026-09-10** struck exactly that claim from the piece in both languages — the owner's register says the 2014 first phase was a numeracy trial, and Arabic literacy belongs to the later programme the evaluation measured. The article was corrected that day. **The packet was not**, because nothing connects a piece's correction to the artefacts composed from it.
+
+Both captions now match the corrected piece. Nothing was published — the packet is held with the wave, so no reader ever saw it — but it was staged to publish, and on flip-day it would have carried into the world the one sentence a verification verdict had removed from the piece it was advertising. Filed as ruling #50 (`agents/guidebook/2026-09-14-a-correction-has-a-blast-radius.md`).
+
+**Standing addition to this packet's own procedure:** before flip-day, every caption is re-read against the *current* text of the piece it advertises, not against the draft it was composed from. Written into the flip-day checklist below rather than left as a good intention.
+
+### Flip-day checklist (Growth)
+1. Wave gate flipped, deploy green, `verify` job byte-compared.
+2. Both URLs per piece return 200 from the origin (EN + AR), and the og card resolves.
+3. **Every caption re-read against the shipped text of its piece** — figures, hedges, and the nouns a verdict may have changed (#50).
+4. Then, and only then, the list queues in the order given per piece.
+
+— Growth · 2026-09-14

@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "python3 ../agents/tools/qa_css_tokens.py dist",
     "preview": "astro preview",
     "check": "astro check"
   },
