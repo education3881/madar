@@ -1,0 +1,237 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/urls';
+import { facetsFor, facetPath, browsePath, piecesIn, type Facet } from '../../lib/taxonomy';
+
+// ---------------------------------------------------------------------------
+// Browse (EN) — the hub at /browse/ plus one index page per facet.
+//
+// Growth bet of the week of 2026-09-14: until today nothing on this site
+// grouped articles by region, topic or country. Every page here is derived
+// from the approved collection at build time; the Arabic twin under
+// /ar/browse/ derives the same set from the Arabic collection, which is what
+// makes the hreflang clusters reciprocal without either side listing the
+// other's slugs. If the two sets ever diverge, qa_hreflang_clusters fails the
+// build — that divergence is the defect, and it should be loud.
+// ---------------------------------------------------------------------------
+
+export async function getStaticPaths() {
+  const pieces = await getCollection('articles', ({ data }) => data.approved !== false);
+  const facets = facetsFor(pieces as any);
+  return [
+    { params: { path: undefined }, props: { facet: null as Facet | null } },
+    ...facets.map((f) => ({
+      params: { path: `${f.kind}/${f.slug}` },
+      props: { facet: f },
+    })),
+  ];
+}
+
+const { facet } = Astro.props as { facet: Facet | null };
+const all = await getCollection('articles', ({ data }) => data.approved !== false);
+const facets = facetsFor(all as any);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const KIND_LABEL: Record<string, string> = {
+  region: 'Regions',
+  topic: 'Topics',
+  country: 'Countries',
+};
+
+const listed = facet
+  ? (piecesIn(all as any, facet) as typeof all)
+      .slice()
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  : [];
+
+const title = facet ? `${facet.key} · Browse · Madār` : 'Browse · Madār';
+const alternate = facet
+  ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
+  : { en: browsePath('en'), ar: browsePath('ar') };
+
+const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
+  kind,
+  label: KIND_LABEL[kind],
+  items: facets.filter((f) => f.kind === kind),
+}));
+---
+
+<Base title={title} lang="en" ogImage="/og/brand-card.png" alternate={alternate}>
+  <article class="browse container">
+    <header class="browse__head">
+      <p class="kicker">
+        {facet ? <a href={withBase(browsePath('en'))}>Browse</a> : 'The corpus'}
+      </p>
+      <h1 class="browse__title">{facet ? facet.key : 'Browse'}</h1>
+      <p class="browse__intro measure">
+        {facet
+          ? `${listed.length} ${listed.length === 1 ? 'piece' : 'pieces'} in the archive.`
+          : 'Every published piece, grouped. Editions are chronological; this is the same corpus read by region, by topic and by country.'}
+      </p>
+    </header>
+
+    {facet ? (
+      <ul class="browse__pieces">
+        {listed.map((piece) => (
+          <li class="piece">
+            <a href={withBase(`/articles/${piece.id}/`)} class="piece__link">
+              <span class="piece__meta">
+                <span class="piece__country">{piece.data.country}</span>
+                <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+              </span>
+              <h2 class="piece__title">{piece.data.title}</h2>
+              {piece.data.dek && <p class="piece__dek">{piece.data.dek}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      groups.map((g) => (
+        <section class="browse__group">
+          <h2 class="browse__grouphead">{g.label}</h2>
+          <ul class="browse__facets">
+            {g.items.map((f) => (
+              <li>
+                <a href={withBase(facetPath(f, 'en'))} class="facet">
+                  <span class="facet__name">{f.key}</span>
+                  <span class="facet__count">{f.count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    )}
+
+    {facet && (
+      <nav class="browse__more" aria-label="More of the archive">
+        <p class="kicker">Elsewhere in the archive</p>
+        <ul class="browse__facets">
+          {facets
+            .filter((f) => !(f.kind === facet.kind && f.slug === facet.slug))
+            .slice(0, 9)
+            .map((f) => (
+              <li>
+                <a href={withBase(facetPath(f, 'en'))} class="facet">
+                  <span class="facet__name">{f.key}</span>
+                  <span class="facet__count">{f.count}</span>
+                </a>
+              </li>
+            ))}
+        </ul>
+        <p class="browse__back">
+          <a href={withBase(browsePath('en'))}>All of the archive, grouped →</a>
+        </p>
+      </nav>
+    )}
+  </article>
+</Base>
+
+<style>
+  .browse { padding-block: var(--space-lg) var(--space-2xl); }
+  .browse__head {
+    padding-block: var(--space-xl) var(--space-lg);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--space-xl);
+  }
+  .browse__title { margin-block-start: var(--space-sm); }
+  .browse__intro {
+    margin-block-start: var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--fs-dek);
+    line-height: var(--lh-dek);
+    font-style: italic;
+    color: var(--color-muted);
+  }
+  .browse__group { margin-block-end: var(--space-xl); }
+  .browse__grouphead {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    font-weight: 500;
+    padding-block-end: 0.75rem;
+    border-block-end: 1px solid var(--color-rule-soft);
+    margin-block-end: 1.25rem;
+  }
+  .browse__facets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.75rem;
+  }
+  .facet {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: var(--color-ink);
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    padding: 0.4rem 0.7rem;
+  }
+  .facet:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .facet__name { font-family: var(--font-body); font-size: 15px; }
+  .facet__count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    opacity: 0.55;
+  }
+
+  .browse__pieces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+  .piece__link { display: block; text-decoration: none; color: var(--color-ink); }
+  .piece__meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .piece__country { color: var(--color-accent); font-weight: 500; }
+  .piece__date { opacity: 0.55; }
+  .piece__title {
+    margin-block: 0.5rem 0;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: -0.008em;
+  }
+  .piece__dek {
+    margin-block-start: 0.45rem;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--color-muted);
+  }
+  .piece__link:hover .piece__title { color: var(--color-accent); }
+
+  .browse__more {
+    border-block-start: 1px solid var(--color-rule);
+    padding-block-start: var(--space-xl);
+    margin-block-start: var(--space-2xl);
+  }
+  .browse__more .kicker { margin-block-end: 1rem; }
+  .browse__back { margin-block-start: 1.5rem; font-family: var(--font-mono); font-size: 12px; }
+
+  @media (max-width: 720px) {
+    .browse__pieces { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+</style>

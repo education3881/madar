@@ -137,6 +137,13 @@ const ogCard = piece.data.hero?.src
       <aside class="body-right marginalia">
         <h4>Field reference</h4>
         <p>{piece.data.country} · {piece.data.region}</p>
+        {/* Continental pieces only (2026-09-14). The line above stays the
+            primary; this one shows the whole set the piece measures, in the
+            piece's own order, so the marginalia does not under-report what
+            the reader just read. Absent on every single-country piece. */}
+        {piece.data.countries && (
+          <p>Measured · {piece.data.countries.join(', ')}</p>
+        )}
         <p>Level · {piece.data.level}</p>
         <p>Themes · {piece.data.themes.join(', ')}</p>
         {piece.data.contains_composites && (

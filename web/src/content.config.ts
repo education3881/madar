@@ -9,6 +9,21 @@ const articleSchema = z.object({
 
   // Geography (validated against /docs/10_geo_scope.md by editorial process)
   country: z.string().min(1),
+
+  // OPTIONAL, added 2026-09-14 for the first continental piece (Editor's
+  // decision 3, commission 2026-09-04). `country` stays the single primary —
+  // the byline, the feed category and the related rail all read it and none of
+  // them changes. `countries` is the full set a continental piece measures, in
+  // the piece's own order, and it MUST contain `country`. It exists because a
+  // piece whose honest deliverable is "four rulers, four crowns" is not a
+  // Mauritius piece, and because the stats panel counts distinct countries and
+  // would otherwise under-count it by four. Rendered in the marginalia when
+  // present (both languages, through the i18n-geo display map); asserted by
+  // agents/tools/qa_geo_fields.py, which lands in the same commit as the field
+  // and the first file to use it — a field with no consumer is a promise to
+  // nobody (#37).
+  countries: z.array(z.string().min(1)).min(2).optional(),
+
   region: z.enum(['MENA', 'Africa', 'Asia', 'LatAm-Caribbean', 'Europe', 'N-America', 'Oceania', 'Other']),
 
   // Education level (per /docs/20_topics.md)

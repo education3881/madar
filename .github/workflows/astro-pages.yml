@@ -113,6 +113,47 @@ jobs:
       - name: the machine-readable layer honours its contract
         working-directory: .
         run: python3 agents/tools/qa_jsonld.py
+      # The last three hand-run assertions, wired 2026-09-13 (weekly review).
+      # All three read only web/dist, all three have existed for weeks, all
+      # three BIT HARD on first contact — qa_a11y_lang found 471 chrome strings
+      # served under a language they were not written in (2026-08-25), and
+      # qa_ar_language found 235 Arabic-page fields printing English (08-23).
+      # Neither has ever gated a deploy. An assertion that runs only when a
+      # human remembers it is a habit, not a gate: the defects it exists to
+      # catch are exactly the ones a distracted run ships. qa_live_drift and
+      # qa_sources_alive stay out of the build job on purpose and for stated
+      # reasons — the first reads the ORIGIN (the verify job below byte-compares
+      # the published artifact against it, which is strictly stronger), the
+      # second reads third-party hosts (someone else's 404 is not our build's
+      # failure). Each of the three proved both ways per ruling #35 before
+      # landing: control exit 0 on the real 82-page build; bite exit 1 on an
+      # Arabic string injected under lang=en, on a Latin country name injected
+      # into Arabic chrome, and on an og:image reverted to SVG.
+      - name: no text served under a language it is not written in
+        working-directory: .
+        run: python3 agents/tools/qa_a11y_lang.py web/dist
+      - name: the Arabic edition reads as Arabic
+        working-directory: .
+        run: python3 agents/tools/qa_ar_language.py web/dist
+      - name: every asset handed to an external consumer is usable by it
+        working-directory: .
+        run: python3 agents/tools/qa_consumer_surface.py web/dist
+      # The geography fields against their display map (2026-09-14), landing in
+      # the same commit as the new optional `countries` list and the first piece
+      # to use it — a field with no consumer is a promise to nobody (#37), and a
+      # field with no assertion is one nobody finds out about. Two halves: the
+      # SOURCE half reads the content files and runs whether or not the piece is
+      # held, because the piece introducing the field IS held and an output-only
+      # check would have its first real run on flip day; the OUTPUT half reads
+      # the rendered marginalia for whatever is actually in dist and reports
+      # held pieces as skipped, never as passed. Proved both ways per #35 —
+      # control silent on the real build and on a temporarily-approved one;
+      # bites on an unmapped name, a `countries` list missing its own `country`,
+      # a duplicate, a list of one, EN/AR twins disagreeing, the rendered line
+      # stripped, one name dropped from it, and a Latin name in the Arabic line.
+      - name: the geography fields resolve, agree, and reach the reader
+        working-directory: .
+        run: python3 agents/tools/qa_geo_fields.py web/dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

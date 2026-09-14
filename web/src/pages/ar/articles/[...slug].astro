@@ -131,6 +131,13 @@ const ogCard = piece.data.hero?.src
       <aside class="body-right marginalia">
         <h4>المرجع الميداني</h4>
         <p>{countryAr(piece.data.country)} · {regionAr(piece.data.region)}</p>
+        {/* Twin of the English marginalia line (2026-09-14). Every member goes
+            through countryAr for the same reason the line above does — an
+            Arabic page printing a Latin country name is the 08-23 defect, and
+            qa_ar_language reads this field. */}
+        {piece.data.countries && (
+          <p>المقيسة · {piece.data.countries.map(countryAr).join('، ')}</p>
+        )}
         <p>المرحلة · {levelAr(piece.data.level)}</p>
         <p>المحاور · {piece.data.themes.map(themeAr).join('، ')}</p>
         {piece.data.contains_composites && (

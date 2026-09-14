@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing: the outline of the African continent, small and plain, drawn once in the centre of the page. Four straight rulers lie across it at four different angles, each one crossing the outline and extending past its edge, each one marked with its own scale so that no two sets of graduations line up. Where each ruler passes over the continent it touches a single small circle. One mark on the page is warm — a kiln-orange stroke at the zero end of the fourth ruler, drawn slightly clear of the ruler's edge, as though the zero had been set down in a different place from the one the ruler assumes.">
+  <title>The Still · Africa — four rulers, four scales, one outline</title>
+  <desc>Paper-cream ground, pure line, no fills. A plain outline of Africa sits in the centre. Four straight measuring rulers cross it at four angles; each carries its own graduation spacing, so no two scales agree. Four small circles sit where the rulers meet the outline. The single warm mark is a kiln-orange stroke at the zero end of the fourth ruler, set clear of the ruler's own edge.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- ============ the continent, plain, drawn once ============ -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2.6" stroke-opacity="0.82"
+          d="M 505 150 L 545 120 L 600 118 L 665 120 L 690 150 L 712 192 L 735 205
+             L 712 222 L 700 255 L 688 300 L 672 352 L 648 392 L 628 420 L 604 438
+             L 575 420 L 560 390 L 548 350 L 538 312 L 520 288 L 492 282 L 468 272
+             L 450 258 L 430 252 L 415 240 L 408 220 L 420 196 L 448 172 L 478 158 Z"/>
+    <!-- the island off the south-east coast -->
+    <path stroke-width="2.0" stroke-opacity="0.7" d="M 742 392 m -9 0 a 9 9 0 1 0 18 0 a 9 9 0 1 0 -18 0"/>
+  </g>
+
+  <!-- ============ ruler one — through the island ============ -->
+  <g transform="rotate(-18 742 392)" fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 242 392 L 922 392 M 242 370 L 922 370 M 242 370 L 242 392 M 922 370 L 922 392"/>
+    <path stroke-width="1.1" stroke-opacity="0.42"
+          d="M 286 370 L 286 384 M 330 370 L 330 378 M 374 370 L 374 384 M 418 370 L 418 378
+             M 462 370 L 462 384 M 506 370 L 506 378 M 550 370 L 550 384 M 594 370 L 594 378
+             M 638 370 L 638 384 M 682 370 L 682 378 M 726 370 L 726 384 M 770 370 L 770 378
+             M 814 370 L 814 384 M 858 370 L 858 378"/>
+  </g>
+
+  <!-- ============ ruler two — through the western cape ============ -->
+  <g transform="rotate(26 416 230)" fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 266 230 L 1036 230 M 266 208 L 1036 208 M 266 208 L 266 230 M 1036 208 L 1036 230"/>
+    <path stroke-width="1.1" stroke-opacity="0.42"
+          d="M 324 208 L 324 222 M 382 208 L 382 216 M 440 208 L 440 222 M 498 208 L 498 216
+             M 556 208 L 556 222 M 614 208 L 614 216 M 672 208 L 672 222 M 730 208 L 730 216
+             M 788 208 L 788 222 M 846 208 L 846 216 M 904 208 L 904 222 M 962 208 L 962 216"/>
+  </g>
+
+  <!-- ============ ruler three — through the sahel ============ -->
+  <g transform="rotate(62 545 212)" fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 285 212 L 845 212 M 285 190 L 845 190 M 285 190 L 285 212 M 845 190 L 845 212"/>
+    <path stroke-width="1.1" stroke-opacity="0.42"
+          d="M 321 190 L 321 204 M 357 190 L 357 198 M 393 190 L 393 204 M 429 190 L 429 198
+             M 465 190 L 465 204 M 501 190 L 501 198 M 537 190 L 537 204 M 573 190 L 573 198
+             M 609 190 L 609 204 M 645 190 L 645 198 M 681 190 L 681 204 M 717 190 L 717 198
+             M 753 190 L 753 204 M 789 190 L 789 198"/>
+  </g>
+
+  <!-- ============ ruler four — through the southern tip ============ -->
+  <g transform="rotate(-46 604 418)" fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 184 418 L 984 418 M 184 396 L 984 396 M 184 396 L 184 418 M 984 396 L 984 418"/>
+    <path stroke-width="1.1" stroke-opacity="0.42"
+          d="M 252 396 L 252 410 M 320 396 L 320 404 M 388 396 L 388 410 M 456 396 L 456 404
+             M 524 396 L 524 410 M 592 396 L 592 404 M 660 396 L 660 410 M 728 396 L 728 404
+             M 796 396 L 796 410 M 864 396 L 864 404 M 932 396 L 932 410"/>
+    <!-- the single warm mark: a zero set down clear of the ruler's own edge -->
+    <g stroke="#D94F2A" stroke-linecap="round">
+      <path stroke-width="2.8" stroke-opacity="0.92" d="M 162 384 L 162 430"/>
+      <path stroke-width="1.4" stroke-opacity="0.55" d="M 162 430 L 184 430"/>
+    </g>
+  </g>
+
+  <!-- ============ the four small circles, where a ruler meets the outline ============ -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <circle cx="742" cy="392" r="5.5" stroke-width="2.2" stroke-opacity="0.9"/>
+    <circle cx="416" cy="230" r="5.5" stroke-width="2.2" stroke-opacity="0.9"/>
+    <circle cx="545" cy="212" r="5.5" stroke-width="2.2" stroke-opacity="0.9"/>
+    <circle cx="604" cy="418" r="5.5" stroke-width="2.2" stroke-opacity="0.9"/>
+  </g>
+</svg>

@@ -38,8 +38,8 @@ const otherLangHref = withBase(lang === 'ar' ? '/' : '/ar/');
 const otherLangLabel = lang === 'ar' ? 'English' : 'العربية';
 
 const nav = {
-  en: { latest: 'Latest', editions: 'Editions', about: 'About', newsletter: 'Newsletter' },
-  ar: { latest: 'الأحدث', editions: 'الإصدارات', about: 'عن المنشور', newsletter: 'النشرة' },
+  en: { latest: 'Latest', editions: 'Editions', browse: 'Browse', about: 'About', newsletter: 'Newsletter' },
+  ar: { latest: 'الأحدث', editions: 'الإصدارات', browse: 'تصفّح', about: 'عن المنشور', newsletter: 'النشرة' },
 }[lang];
 
 // Arabic has no standalone About page yet (commissioned 2026-08-16); the AR
@@ -47,6 +47,13 @@ const nav = {
 // to /ar/about/, which 404'd. Revert to '/ar/about/' when that page ships.
 const aboutHref = withBase(lang === 'ar' ? '/ar/#about' : '/about/');
 const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
+// The browse hub (2026-09-14). This link is the ONLY inbound edge into the 19
+// new index pages per language; without it they are in the sitemap and off the
+// graph, which is exactly the VALENCE orphan of 2026-08-25 — a sitemap entry is
+// a declaration, a link is an edge. It sits in the ARTICLE nav as well as the
+// home nav on purpose: the reader who wants more of a subject is the one who
+// has just finished a piece about it.
+const browseHref = withBase(lang === 'ar' ? '/ar/browse/' : '/browse/');
 ---
 
 <header class={`site-header site-header--${variant}`} data-lang={lang}>
@@ -75,6 +82,7 @@ const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
       <nav class="site-nav" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
         <a href={homeHref} class="uppercase">{nav.latest}</a>
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
+        <a href={browseHref} class="uppercase">{nav.browse}</a>
         <a href={aboutHref} class="uppercase">{nav.about}</a>
         <span class="site-nav__sep" aria-hidden="true">·</span>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
@@ -84,6 +92,7 @@ const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
     {variant === 'article' && (
       <nav class="site-nav site-nav--article" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
+        <a href={browseHref} class="uppercase">{nav.browse}</a>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
       </nav>
     )}

@@ -1,0 +1,228 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../../lib/urls';
+import { facetsFor, facetPath, browsePath, piecesIn, type Facet } from '../../../lib/taxonomy';
+// Arabic pages translate what the reader SEES and never the schema (the
+// 2026-08-23 fix — 235 fields printed English to an Arabic reader for ninety
+// days because `lang="ar"` was wrapped around Latin content). Every facet label
+// here goes through the display map; `qa_ar_language` and `qa_geo_fields` both
+// read these pages.
+import { countryAr, regionAr, themeAr } from '../../../lib/i18n-geo';
+
+export async function getStaticPaths() {
+  const pieces = await getCollection('articles-ar', ({ data }) => data.approved !== false);
+  const facets = facetsFor(pieces as any);
+  return [
+    { params: { path: undefined }, props: { facet: null as Facet | null } },
+    ...facets.map((f) => ({
+      params: { path: `${f.kind}/${f.slug}` },
+      props: { facet: f },
+    })),
+  ];
+}
+
+const { facet } = Astro.props as { facet: Facet | null };
+const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
+const facets = facetsFor(all as any);
+
+const dateFormatter = new Intl.DateTimeFormat('ar', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const labelAr = (f: Facet) =>
+  f.kind === 'region' ? regionAr(f.key) : f.kind === 'topic' ? themeAr(f.key) : countryAr(f.key);
+
+const KIND_LABEL_AR: Record<string, string> = {
+  region: 'المناطق',
+  topic: 'المحاور',
+  country: 'البلدان',
+};
+
+const listed = facet
+  ? (piecesIn(all as any, facet) as typeof all)
+      .slice()
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  : [];
+
+const title = facet ? `${labelAr(facet)} · تصفّح · مدار` : 'تصفّح · مدار';
+const alternate = facet
+  ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
+  : { en: browsePath('en'), ar: browsePath('ar') };
+
+const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
+  kind,
+  label: KIND_LABEL_AR[kind],
+  items: facets.filter((f) => f.kind === kind),
+}));
+---
+
+<Base title={title} lang="ar" ogImage="/og/brand-card.png" alternate={alternate}>
+  <article class="browse container" lang="ar" dir="rtl">
+    <header class="browse__head">
+      <p class="kicker">
+        {facet ? <a href={withBase(browsePath('ar'))}>تصفّح</a> : 'الأرشيف'}
+      </p>
+      <h1 class="browse__title">{facet ? labelAr(facet) : 'تصفّح'}</h1>
+      <p class="browse__intro measure">
+        {facet
+          ? `${listed.length} من المقالات في الأرشيف.`
+          : 'الأرشيف كاملًا، مُجمَّعًا. الإصدارات مرتَّبة زمنيًّا، وهذه الصفحات تقرأ المتن نفسه بحسب المنطقة والمحور والبلد.'}
+      </p>
+    </header>
+
+    {facet ? (
+      <ul class="browse__pieces">
+        {listed.map((piece) => (
+          <li class="piece">
+            <a href={withBase(`/ar/articles/${piece.id}/`)} class="piece__link">
+              <span class="piece__meta">
+                <span class="piece__country">{countryAr(piece.data.country)}</span>
+                <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+              </span>
+              <h2 class="piece__title">{piece.data.title}</h2>
+              {piece.data.dek && <p class="piece__dek">{piece.data.dek}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      groups.map((g) => (
+        <section class="browse__group">
+          <h2 class="browse__grouphead">{g.label}</h2>
+          <ul class="browse__facets">
+            {g.items.map((f) => (
+              <li>
+                <a href={withBase(facetPath(f, 'ar'))} class="facet">
+                  <span class="facet__name">{labelAr(f)}</span>
+                  <span class="facet__count">{f.count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    )}
+
+    {facet && (
+      <nav class="browse__more" aria-label="مواضع أخرى في الأرشيف">
+        <p class="kicker">مواضع أخرى في الأرشيف</p>
+        <ul class="browse__facets">
+          {facets
+            .filter((f) => !(f.kind === facet.kind && f.slug === facet.slug))
+            .slice(0, 9)
+            .map((f) => (
+              <li>
+                <a href={withBase(facetPath(f, 'ar'))} class="facet">
+                  <span class="facet__name">{labelAr(f)}</span>
+                  <span class="facet__count">{f.count}</span>
+                </a>
+              </li>
+            ))}
+        </ul>
+        <p class="browse__back">
+          <a href={withBase(browsePath('ar'))}>الأرشيف كاملًا، مُجمَّعًا ←</a>
+        </p>
+      </nav>
+    )}
+  </article>
+</Base>
+
+<style>
+  .browse { padding-block: var(--space-lg) var(--space-2xl); }
+  .browse__head {
+    padding-block: var(--space-xl) var(--space-lg);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--space-xl);
+  }
+  .browse__title { margin-block-start: var(--space-sm); }
+  .browse__intro {
+    margin-block-start: var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--fs-dek);
+    line-height: var(--lh-dek);
+    color: var(--color-muted);
+  }
+  .browse__group { margin-block-end: var(--space-xl); }
+  .browse__grouphead {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0;
+    color: var(--color-muted);
+    font-weight: 500;
+    padding-block-end: 0.75rem;
+    border-block-end: 1px solid var(--color-rule-soft);
+    margin-block-end: 1.25rem;
+  }
+  .browse__facets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.75rem;
+  }
+  .facet {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: var(--color-ink);
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    padding: 0.4rem 0.7rem;
+  }
+  .facet:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .facet__name { font-family: var(--font-body); font-size: 15px; }
+  .facet__count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    opacity: 0.55;
+  }
+
+  .browse__pieces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+  .piece__link { display: block; text-decoration: none; color: var(--color-ink); }
+  .piece__meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+  }
+  .piece__country { color: var(--color-accent); font-weight: 500; }
+  .piece__date { opacity: 0.55; }
+  .piece__title {
+    margin-block: 0.5rem 0;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .piece__dek {
+    margin-block-start: 0.45rem;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-muted);
+  }
+  .piece__link:hover .piece__title { color: var(--color-accent); }
+
+  .browse__more {
+    border-block-start: 1px solid var(--color-rule);
+    padding-block-start: var(--space-xl);
+    margin-block-start: var(--space-2xl);
+  }
+  .browse__more .kicker { margin-block-end: 1rem; }
+  .browse__back { margin-block-start: 1.5rem; font-family: var(--font-mono); font-size: 12px; }
+
+  @media (max-width: 720px) {
+    .browse__pieces { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+</style>

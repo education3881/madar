@@ -83,6 +83,30 @@ def tally(items, key):
     return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
 
 
+def tally_countries(items):
+    """Countries covered = the UNION of `country` and the optional `countries`.
+
+    Added 2026-09-14 with the `countries` field itself (Editor's decision 3,
+    commission 2026-09-04). A continental piece names one primary country in
+    `country` so the byline, the feed category and the related rail have a
+    single value to read; counting only that value would report a piece that
+    measured five countries as covering one. Each piece contributes each
+    country ONCE, however many of its fields name it — the panel reports how
+    many countries the corpus covers, not how many mentions it contains.
+    """
+    counts = {}
+    for it in items:
+        names = []
+        if it.get("country"):
+            names.append(str(it["country"]))
+        for c in it.get("countries") or []:
+            if c:
+                names.append(str(c))
+        for name in dict.fromkeys(names):  # de-duplicate, keep first-seen order
+            counts[name] = counts.get(name, 0) + 1
+    return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
+
+
 def build_snapshot():
     en, ar = load(EN_DIR), load(AR_DIR)
     en_approved = [a for a in en if str(a.get("approved")).lower() == "true"]
@@ -118,7 +142,7 @@ def build_snapshot():
             "ar_parity_pct": round(100 * len(ar_approved) / len(en_approved)) if en_approved else 0,
         },
         "by_region": tally(en_approved, "region"),
-        "by_country": tally(en_approved, "country"),
+        "by_country": tally_countries(en_approved),
         "by_type": tally(en_approved, "type"),
         "by_theme": dict(sorted(theme_counts.items(), key=lambda kv: (-kv[1], kv[0]))),
         "cadence": {
