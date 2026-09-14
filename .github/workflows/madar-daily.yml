@@ -73,16 +73,35 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # The prompt is PLAIN TEXT that points at the instruction file, not a
+          # slash command. The first cutover attempt (2026-09-14, run 34815261498)
+          # passed `/madar-daily` and died in 88 milliseconds with num_turns 1,
+          # zero cost and an empty modelUsage — the prompt never reached the model
+          # at all, because a prompt beginning with `/` is dispatched as a slash
+          # command and a slash command that does not resolve fails instantly
+          # rather than falling back to text. Reading a file is not clever, and
+          # it cannot fail for a reason that has nothing to do with the operation.
           prompt: |
-            /madar-daily
+            Read `.claude/skills/madar-daily/SKILL.md` in this repository and follow
+            it exactly. It is the complete operating instruction for this run: you
+            are the CEO of Madār, the run is autonomous, and nobody will answer a
+            question. Read `CLAUDE.md`, `agents/CHARTER.md` and `agents/RUNBOOK.md`
+            before planning anything, as that file tells you to.
 
             Today is ${{ env.MADAR_DATE }} in Asia/Dubai, the operation's calendar.
             The runner's own clock is UTC; convert before dating anything.
 
             ${{ inputs.note }}
+          # A plain-text prompt inherits NO tools — only a skill invocation picks
+          # them up from its own frontmatter. So the grant is explicit here, and
+          # it has to cover everything the run does: shell for git, npm, the build
+          # and the twelve QA assertions; the file tools for drafting and for the
+          # brief; and the web tools for reading registers, which is the one thing
+          # this publication cannot operate without.
           claude_args: |
             --model claude-opus-5
             --max-turns 180
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite"
 
       # The brief is the proof-of-work contract. On the desktop it was handed over
       # in chat; here it goes into the run summary so the founder can read the day
@@ -120,24 +139,24 @@ jobs:
 
       # A silent failure is the failure mode this migration exists to end. If the
       # run dies, say so somewhere the founder will see without going looking.
+      # Uses the gh CLI rather than actions/github-script, which still targets
+      # Node 20 and warns on every run. One less deprecated dependency, and gh
+      # is preinstalled on the runner.
       - name: report a failed run
         if: failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const date = process.env.MADAR_DATE;
-            const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Daily run failed — ${date}`,
-              labels: ['run-failure'],
-              body: [
-                `The autonomous daily run for **${date}** did not complete.`,
-                ``,
-                `Run log: ${url}`,
-                ``,
-                `This is a dark day unless the next run picks it up. The following run`,
-                `should name it plainly in the brief and carry whatever was owed.`,
-              ].join('\n'),
-            });
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          # gh refuses to create an issue with a label that does not exist yet,
+          # so make sure it does. Idempotent; the || true covers the second run.
+          gh label create run-failure --color B60205 --description "An autonomous run did not complete" 2>/dev/null || true
+          gh issue create \
+            --title "Daily run failed — ${MADAR_DATE}" \
+            --label run-failure \
+            --body "The autonomous daily run for **${MADAR_DATE}** did not complete.
+
+          Run log: ${RUN_URL}
+
+          This is a dark day unless the next run picks it up. The following run
+          should name it plainly in the brief and carry whatever was owed."

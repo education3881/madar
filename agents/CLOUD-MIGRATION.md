@@ -148,6 +148,52 @@ allowed to push to it.
 
 ---
 
+## Cutover log
+
+### Attempt 1 — 2026-09-14, run `34815261498`: FAILED in 88 milliseconds
+
+**Everything except the prompt worked.** The log is worth keeping because of how
+much it proves: the OIDC exchange succeeded, the app token was obtained, git auth was
+configured as `claude[bot]`, the actor check passed (*"Verified human actor:
+education3881"*), and Claude Code v2.1.270 installed cleanly. Infrastructure: green.
+
+Then:
+
+```json
+{ "type": "result", "subtype": "success", "is_error": true,
+  "duration_ms": 88, "num_turns": 1, "total_cost_usd": 0, "modelUsage": {} }
+```
+
+**Eighty-eight milliseconds, one turn, zero cost, empty `modelUsage`.** The prompt never
+reached the model. Cause: the workflow passed `/madar-daily` as the prompt, relying on
+slash-command dispatch to find the skill in `.claude/skills/`. It did not resolve, and a
+prompt beginning with `/` that is not a known command **fails instantly rather than
+falling back to being treated as text.**
+
+A second defect sat behind the first and would have bitten on the next attempt: the
+action's own documentation states that a *plain-text* prompt inherits **no** tools —
+only a skill invocation picks them up from its `allowed-tools` frontmatter. So switching
+to plain text without an explicit grant would have produced a run with no shell, no file
+tools and no web access, which would have failed later, slower, and far less legibly.
+
+**Fix (both at once):** the prompt is now plain text instructing the run to *read*
+`.claude/skills/madar-daily/SKILL.md` and follow it, and `claude_args` carries an
+explicit `--allowedTools` grant covering Bash, the file tools and the web tools.
+
+**The lesson, which is one this operation already owns in another form:** the failure
+was not in the work, it was in the *dispatch* — a mechanism chosen because it was
+idiomatic rather than because it was verifiable. Reading a file cannot fail for a reason
+that has nothing to do with the operation. Same shape as ruling #36 (*a promise must be
+derived, not declared*) and ruling #16 (*verify in the judging environment*): the first
+version of this workflow was written against the documentation's example rather than
+against the environment it would actually run in, and 88 milliseconds is what that costs.
+
+Also cleared in the same commit: `actions/github-script` replaced with the `gh` CLI,
+removing a dependency that warns about Node 20 on every run, and the `run-failure` label
+is now created idempotently before an issue tries to use it — `gh` refuses to attach a
+label that does not exist, so the failure reporter would itself have failed on its first
+real failure.
+
 ## Cutover sequence
 
 1. Steps 1–3 above. **Do not disable anything yet.**

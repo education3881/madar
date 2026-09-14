@@ -60,8 +60,15 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Plain text pointing at the instruction file, and an explicit tool
+          # grant — see the comment in madar-daily.yml for why both, and for what
+          # the first cutover attempt did when the prompt was a slash command.
           prompt: |
-            /madar-weekly
+            Read `.claude/skills/madar-weekly/SKILL.md` in this repository and follow
+            it exactly. It is the complete operating instruction for this review: you
+            are the CEO of Madār, the run is autonomous, and nobody will answer a
+            question. Read `CLAUDE.md`, `agents/CHARTER.md` and `agents/RUNBOOK.md`
+            first, as that file tells you to.
 
             Today is ${{ env.MADAR_DATE }} in Asia/Dubai, the operation's calendar.
             The runner's own clock is UTC; convert before dating anything.
@@ -70,6 +77,7 @@ jobs:
           claude_args: |
             --model claude-opus-5
             --max-turns 180
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite"
 
       - name: put the review in the run summary
         if: always()
@@ -96,15 +104,16 @@ jobs:
 
       - name: report a failed review
         if: failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const date = process.env.MADAR_DATE;
-            const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Weekly review failed — ${date}`,
-              labels: ['run-failure'],
-              body: `The weekly review for **${date}** did not complete.\n\nRun log: ${url}`,
-            });
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          # gh refuses to create an issue with a label that does not exist yet,
+          # so make sure it does. Idempotent; the || true covers the second run.
+          gh label create run-failure --color B60205 --description "An autonomous run did not complete" 2>/dev/null || true
+          gh issue create \
+            --title "Weekly review failed — ${MADAR_DATE}" \
+            --label run-failure \
+            --body "The weekly review for **${MADAR_DATE}** did not complete.
+
+          Run log: ${RUN_URL}"
