@@ -74,10 +74,10 @@ jobs:
             The runner's own clock is UTC; convert before dating anything.
 
             ${{ inputs.note }}
-          claude_args: |
-            --model claude-opus-5
-            --max-turns 180
-            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite"
+          # Single line and the same tool grant as the daily run — see the comment
+          # in madar-daily.yml for why the multi-line form was abandoned.
+          claude_args: '--model claude-opus-5 --max-turns 180 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
+          show_full_output: true
 
       - name: put the review in the run summary
         if: always()

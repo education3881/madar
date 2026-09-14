@@ -92,16 +92,29 @@ jobs:
             The runner's own clock is UTC; convert before dating anything.
 
             ${{ inputs.note }}
+          # Attempt 2 (2026-09-14) also failed fast. The prompt reached the action
+          # this time, so the remaining suspect is this block: attempt 1's
+          # claude_args was a multi-line list of BARE flags and parsed fine;
+          # attempt 2 added a QUOTED value inside the same multi-line form, which
+          # is not the shape the documentation uses. Single line, exactly as
+          # documented, is the safer form and costs nothing.
+          #
           # A plain-text prompt inherits NO tools — only a skill invocation picks
-          # them up from its own frontmatter. So the grant is explicit here, and
-          # it has to cover everything the run does: shell for git, npm, the build
-          # and the twelve QA assertions; the file tools for drafting and for the
-          # brief; and the web tools for reading registers, which is the one thing
-          # this publication cannot operate without.
-          claude_args: |
-            --model claude-opus-5
-            --max-turns 180
-            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,TodoWrite"
+          # them up from its own frontmatter — so the grant has to be explicit and
+          # has to cover everything the run does: shell for git, npm, the build and
+          # the twelve QA assertions; the file tools for drafting and the brief;
+          # and the web tools for reading registers, which this publication cannot
+          # operate without. TodoWrite is dropped: it is not load-bearing and I am
+          # not certain enough of the name to risk an invalid entry taking the
+          # whole list down with it.
+          claude_args: '--model claude-opus-5 --max-turns 180 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
+          # Diagnosis, not decoration. Both failed attempts printed "full output
+          # hidden for security" and pointed here. Until this run is proved green
+          # twice, an unreadable failure costs more than the output is worth — the
+          # repository is public in its content and carries no secrets in its
+          # source, and the action masks the token regardless. TURN THIS OFF once
+          # the cutover is confirmed.
+          show_full_output: true
 
       # The brief is the proof-of-work contract. On the desktop it was handed over
       # in chat; here it goes into the run summary so the founder can read the day
