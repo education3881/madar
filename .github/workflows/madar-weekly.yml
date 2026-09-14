@@ -1,0 +1,110 @@
+# Madār — the autonomous weekly review
+#
+# Sundays, 05:00 UTC = 09:00 Asia/Dubai. Runs after Sunday's daily run so the
+# review reads a week that is closed rather than one still in progress.
+#
+# The review consolidates the guidebook register, reconciles the edition ledger,
+# reads last week's growth bet against the numbers it promised, counts how many
+# assertions actually gate the deploy, and decides on team expansion. It does not
+# advance a piece; that is the daily run's job.
+
+name: Madār — weekly review
+
+on:
+  schedule:
+    - cron: "0 5 * * 0"
+  workflow_dispatch:
+    inputs:
+      note:
+        description: "Optional instruction to append to the review"
+        required: false
+        type: string
+
+# Shares the daily run's concurrency group on purpose. On a Sunday both are due
+# within an hour of each other, and two agents editing the guidebook index at the
+# same time is exactly how the 2026-08-23 near-clobber happened.
+concurrency:
+  group: madar-autonomous-run
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      actions: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: install site dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: record the operation's own date
+        run: echo "MADAR_DATE=$(TZ=Asia/Dubai date +%F)" >> "$GITHUB_ENV"
+
+      - name: the weekly review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            /madar-weekly
+
+            Today is ${{ env.MADAR_DATE }} in Asia/Dubai, the operation's calendar.
+            The runner's own clock is UTC; convert before dating anything.
+
+            ${{ inputs.note }}
+          claude_args: |
+            --model claude-opus-5
+            --max-turns 180
+
+      - name: put the review in the run summary
+        if: always()
+        run: |
+          REVIEW="agents/reviews/${MADAR_DATE}-weekly-review.html"
+          {
+            echo "## Madār weekly review — ${MADAR_DATE}"
+            echo
+            if [ -f "$REVIEW" ]; then
+              echo "Review: [\`$REVIEW\`](https://github.com/${GITHUB_REPOSITORY}/blob/main/${REVIEW})"
+            else
+              echo "**No review was written for ${MADAR_DATE}.** See the run log above."
+            fi
+            echo
+            echo "Open founder decisions:"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          gh issue list --label founder-decision --state open \
+            --json number,title,createdAt \
+            --template '{{range .}}- #{{.number}} {{.title}} (open since {{timeago .createdAt}}){{"\n"}}{{end}}' \
+            >> "$GITHUB_STEP_SUMMARY" || echo "_(could not list issues)_" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: report a failed review
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = process.env.MADAR_DATE;
+            const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Weekly review failed — ${date}`,
+              labels: ['run-failure'],
+              body: `The weekly review for **${date}** did not complete.\n\nRun log: ${url}`,
+            });

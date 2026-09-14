@@ -1,0 +1,143 @@
+# Madār — the autonomous daily run
+#
+# This is the operation's heartbeat, moved off the founder's laptop (2026-09-14).
+# Between 11 August and 14 September the daily run lived in a desktop app: it
+# executed only when his machine was awake, and 11 of 34 days were dark. Every
+# push also waited on him pasting a block. Both dependencies end here.
+#
+# The run is autonomous and commits its own work. The guard rails are not in this
+# file — they are the twelve standing assertions in astro-pages.yml, which this
+# push triggers, plus the verify job that byte-compares the published artifact
+# against the live origin. A bad run fails the deploy; it does not reach a reader.
+#
+# Schedule: 04:00 UTC = 08:00 Asia/Dubai, the operation's own clock.
+# GitHub's cron is best-effort and can drift or skip under load; a missed run is
+# named in the next brief exactly as a dark day always has been.
+
+name: Madār — daily run
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+    inputs:
+      note:
+        description: "Optional instruction to append to the run (e.g. 'focus on the Arabic composition')"
+        required: false
+        type: string
+
+# Never let two runs touch the tree at once. A scheduled run that overlaps a
+# manual one would race on the index and on the edition ledger.
+concurrency:
+  group: madar-autonomous-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write      # the run commits and pushes its own work
+      issues: write        # founder-decision issues, and failure reports
+      pull-requests: write
+      actions: read        # so the run can read whether the last deploy went green
+      id-token: write      # required by the action's GitHub App authentication
+
+    steps:
+      # fetch-depth: 0 is LOAD-BEARING, not a default worth trimming. The sitemap's
+      # lastmod resolver derives every URL's date from git history and fails loudly in a
+      # shallow clone (ruling #16 - verify in the judging environment; the defect
+      # that taught us this shipped on 2026-08-25). A depth-1 checkout here would
+      # turn every run red for a reason that has nothing to do with the run.
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      # Install before Claude starts so the run does not spend turns on plumbing.
+      # npm ci, never npm install — a hand-edited lockfile killed CI for four days
+      # in July 2026 and npm ci is what refuses to paper over it.
+      - name: install site dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: record the operation's own date
+        run: echo "MADAR_DATE=$(TZ=Asia/Dubai date +%F)" >> "$GITHUB_ENV"
+
+      - name: the daily run
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            /madar-daily
+
+            Today is ${{ env.MADAR_DATE }} in Asia/Dubai, the operation's calendar.
+            The runner's own clock is UTC; convert before dating anything.
+
+            ${{ inputs.note }}
+          claude_args: |
+            --model claude-opus-5
+            --max-turns 180
+
+      # The brief is the proof-of-work contract. On the desktop it was handed over
+      # in chat; here it goes into the run summary so the founder can read the day
+      # from a notification without opening the repository.
+      - name: put today's brief in the run summary
+        if: always()
+        run: |
+          BRIEF="agents/briefs/${MADAR_DATE}-daily-brief.html"
+          {
+            echo "## Madār — ${MADAR_DATE}"
+            echo
+            if [ -f "$BRIEF" ]; then
+              echo "Brief: [\`$BRIEF\`](https://github.com/${GITHUB_REPOSITORY}/blob/main/${BRIEF})"
+              echo
+              # The lede carries the day's headline and dek, which is the digest.
+              # Every brief since the template was fixed has <section class="lede">;
+              # if that ever stops being true this prints nothing rather than lying,
+              # and the link above still works.
+              sed -n '/<section class="lede">/,/<\/section>/p' "$BRIEF" \
+                | sed -e 's/<[^>]*>//g' \
+                | python3 -c 'import html,sys; print(html.unescape(sys.stdin.read()))' \
+                | sed -e '/^[[:space:]]*$/d' -e 's/^[[:space:]]*//'
+            else
+              echo "**No brief was written for ${MADAR_DATE}.**"
+              echo
+              echo "A day with no brief is a failed day, regardless of what else happened."
+              echo "See the run log above for where it stopped."
+            fi
+            echo
+            echo "---"
+            echo
+            echo "Latest commits:"
+            git log -3 --pretty="- \`%h\` %s" | cut -c1-200
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # A silent failure is the failure mode this migration exists to end. If the
+      # run dies, say so somewhere the founder will see without going looking.
+      - name: report a failed run
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = process.env.MADAR_DATE;
+            const url = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Daily run failed — ${date}`,
+              labels: ['run-failure'],
+              body: [
+                `The autonomous daily run for **${date}** did not complete.`,
+                ``,
+                `Run log: ${url}`,
+                ``,
+                `This is a dark day unless the next run picks it up. The following run`,
+                `should name it plainly in the brief and carry whatever was owed.`,
+              ].join('\n'),
+            });
