@@ -35,7 +35,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-      actions: read
+      actions: write   # dispatch the deploy; see madar-daily.yml, issue #6
       id-token: write
 
     steps:
@@ -55,6 +55,11 @@ jobs:
 
       - name: record the operation's own date
         run: echo "MADAR_DATE=$(TZ=Asia/Dubai date +%F)" >> "$GITHUB_ENV"
+
+      - name: remember the origin's starting point
+        run: |
+          git fetch origin main --quiet
+          echo "ORIGIN_BEFORE=$(git rev-parse origin/main)" >> "$GITHUB_ENV"
 
       - name: the weekly review
         uses: anthropics/claude-code-action@v1
@@ -101,6 +106,22 @@ jobs:
             >> "$GITHUB_STEP_SUMMARY" || echo "_(could not list issues)_" >> "$GITHUB_STEP_SUMMARY"
         env:
           GH_TOKEN: ${{ github.token }}
+
+      # See madar-daily.yml for why this is here and why it is a workflow step
+      # rather than something the review is trusted to remember (issue #6).
+      - name: publish what the review pushed
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin main --quiet
+          ORIGIN_AFTER="$(git rev-parse origin/main)"
+          if [ "$ORIGIN_AFTER" = "$ORIGIN_BEFORE" ]; then
+            echo "Origin unchanged; nothing to publish."
+          else
+            gh workflow run astro-pages.yml --ref main
+            echo "Deploy dispatched for ${ORIGIN_AFTER:0:7}."
+          fi
 
       - name: report a failed review
         if: failure()

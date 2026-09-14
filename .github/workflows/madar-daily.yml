@@ -40,7 +40,10 @@ jobs:
       contents: write      # the run commits and pushes its own work
       issues: write        # founder-decision issues, and failure reports
       pull-requests: write
-      actions: read        # so the run can read whether the last deploy went green
+      actions: write       # read the last deploy's result, AND dispatch the next one
+                           # (issue #6, 2026-09-14: a push authenticated by this
+                           # token starts no workflow, so the deploy has to be
+                           # asked for explicitly — see the last step in this job)
       id-token: write      # required by the action's GitHub App authentication
 
     steps:
@@ -68,6 +71,14 @@ jobs:
 
       - name: record the operation's own date
         run: echo "MADAR_DATE=$(TZ=Asia/Dubai date +%F)" >> "$GITHUB_ENV"
+
+      # Remember where the origin stood BEFORE the run, so the publish step at the
+      # end can tell whether anything was actually pushed. Reading it afterwards
+      # would be useless: by then the run's own commit is the origin.
+      - name: remember the origin's starting point
+        run: |
+          git fetch origin main --quiet
+          echo "ORIGIN_BEFORE=$(git rev-parse origin/main)" >> "$GITHUB_ENV"
 
       - name: the daily run
         uses: anthropics/claude-code-action@v1
@@ -149,6 +160,39 @@ jobs:
             echo "Latest commits:"
             git log -3 --pretty="- \`%h\` %s" | cut -c1-200
           } >> "$GITHUB_STEP_SUMMARY"
+
+      # ---- Publish what the run pushed (issue #6, 2026-09-14) ----------------
+      #
+      # The first cloud run worked, pushed its own commits, and NOTHING DEPLOYED.
+      # A push authenticated by this job's token starts no workflow — GitHub
+      # suppresses it deliberately, to stop a workflow triggering itself forever.
+      # That protection is correct and we are not working around it: we are asking
+      # for the deploy explicitly, by name, which is a different thing and is what
+      # `workflow_dispatch` exists for.
+      #
+      # Why this lives in the workflow and not in the run's instructions: the run
+      # reported it could neither trigger a workflow nor write one, and a step that
+      # must happen every single time should not depend on an agent remembering to
+      # do it. Deterministic, or it is not a gate.
+      #
+      # It fires only when the origin actually moved. A run that held everything —
+      # which is the correct outcome on plenty of days — publishes nothing and
+      # should not spend a deploy proving it.
+      - name: publish what the run pushed
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin main --quiet
+          ORIGIN_AFTER="$(git rev-parse origin/main)"
+          if [ "$ORIGIN_AFTER" = "$ORIGIN_BEFORE" ]; then
+            echo "Origin unchanged at ${ORIGIN_BEFORE:0:7} — the run pushed nothing, so there is nothing to publish."
+            echo "- Origin unchanged; no deploy dispatched." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Origin moved ${ORIGIN_BEFORE:0:7} -> ${ORIGIN_AFTER:0:7}; dispatching the deploy."
+            gh workflow run astro-pages.yml --ref main
+            echo "- Deploy dispatched for \`${ORIGIN_AFTER:0:7}\`. The verify job byte-compares the origin; check it went green." >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       # A silent failure is the failure mode this migration exists to end. If the
       # run dies, say so somewhere the founder will see without going looking.
