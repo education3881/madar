@@ -214,7 +214,7 @@
 
 <section class="lede">
   <div class="kicker">Manager &rarr; Founder</div>
-  <h1>The operation ran itself today, and the first thing it did was find something.</h1>
+  <h1>The operation ran itself today. It can work without you; it cannot yet publish without you.</h1>
   <p class="dek">
     This is the first Mad&#257;r run executed in the cloud rather than on your laptop, and it is
     the day&rsquo;s second brief &mdash; No. 72 was written by this morning&rsquo;s desktop run and is
@@ -224,6 +224,15 @@
     question failed on first contact &mdash; on code six hours old. Also today: Edition 05&rsquo;s slot 3
     is a pair, and a correction from four days ago turned out not to have reached the artefact
     that was staged to advertise it.
+  </p>
+  <p class="dek">
+    <strong>And one thing needs you, once.</strong> This run committed and pushed its work, and
+    <strong>no deploy started</strong> &mdash; a push authenticated by the Actions token does not
+    trigger workflows, and this run is not permitted to start one by hand. Both are correct designs
+    and together they mean today&rsquo;s work is on <code>main</code> and not on the origin,
+    including the fix for the defect below, which is <em>live and broken right now</em>. One
+    <strong>Run workflow</strong> on <em>Deploy Astro site to Pages</em> in the Actions tab
+    publishes it. The durable fix is issue&nbsp;#6.
   </p>
 </section>
 
@@ -427,9 +436,25 @@
           through that entry point: exit 0 on the real tree, exit 1 with the defect reinjected at
           source. Stronger in one respect, since it now gates every local build too, and weaker in
           another: <code>astro-pages.yml</code> stops being the complete register of what gates the
-          deploy. <strong>That is issue #6, and it is yours</strong> &mdash; the clean fix needs a
-          credential only you can create. Three options, a recommendation, and a stated default
-          (document the split) applied on <strong>2026-09-20</strong> if it goes unanswered.
+          deploy.
+        </div>
+        <div class="item__note">
+          <strong>Then the same constraint turned out to be much larger.</strong> The push itself
+          succeeded &mdash; and <strong>started no deploy at all</strong>. A push made with the
+          Actions token does not trigger other workflows (GitHub&rsquo;s rule, so that workflows
+          cannot recurse), and this run holds <code>actions: read</code>, so dispatching the deploy
+          by hand returns <em>403 Resource not accessible by integration</em>. Verified against
+          production a minute ago: the live stylesheet still serves
+          <code>border-color:var(--color-accent)</code> on all 76 browse pages. <strong>The steady
+          state, not a corner case: every autonomous run can commit and push, and none of it reaches
+          a reader until a human pushes or clicks.</strong> This morning&rsquo;s cutover fixed the
+          half of the architecture that stopped the operation working without you; it moved the
+          other half from a paste in your terminal to a click in the Actions tab &mdash; smaller,
+          and now invisible, which is worse. <strong>Issue&nbsp;#6</strong> carries it, with my
+          recommendation changed in writing from &ldquo;don&rsquo;t give the run a token&rdquo; to
+          <strong>do</strong>, and a revised default of <em>the run opens a PR instead of pushing</em>
+          from <strong>2026-09-20</strong> if you say nothing &mdash; because a default has to be
+          something the operation can apply by itself, and creating a credential is not.
         </div>
       </div>
     </div>
@@ -520,9 +545,13 @@
     <div class="item">
       <div class="item__label">Operations</div>
       <div class="item__body">
-        <code>show_full_output</code> stays on for one more run. The workflow file says to turn it
-        off &ldquo;once the cutover is confirmed,&rdquo; and one green run is not confirmation &mdash;
-        a second consecutive green is. It comes off tomorrow, named in the brief when it does.
+        <code>show_full_output</code> stays on for one more run &mdash; one green run is not
+        confirmation of a cutover, a second consecutive green is &mdash; and in any case
+        <strong>it cannot come off until the run can write its own workflow file</strong>, which is
+        issue&nbsp;#6 again. Tomorrow&rsquo;s run will also inherit the deploy problem: it will
+        commit, push, and not publish. It will say so at the top of its brief and keep the day count
+        there, exactly as the push-gap rule of 08-16 required of the old cadence &mdash; the
+        constraint has changed shape, not existence.
       </div>
     </div>
   </div>

@@ -29,6 +29,19 @@ of the *site* changes: the browse pages' accent colour, which is a defect fix.
 - **`show_full_output`** stays on in the daily workflow. The file says to remove it "once the
   cutover is confirmed," and one green run is not confirmation.
 
+## The thing that needs the founder, once
+
+**Today's commit is on `main` and not on the origin.** The push succeeded and started no deploy: a
+push made with the Actions token does not trigger workflows, and this run cannot dispatch one
+(`actions: read`). Confirmed against production — the live stylesheet still serves the undefined
+`--color-accent` on all 76 browse pages, which is the defect this run found and fixed. One **Run
+workflow** on *Deploy Astro site to Pages*, or any push of his own, publishes it.
+
+This is the steady state from today, not a one-off, and it is the cutover's unfinished half: the
+operation can now work without him and still cannot publish without him. Issue #6 carries it, with
+the recommendation changed to *give the run a PAT* and a default of *open a PR instead of pushing*
+from 2026-09-20, because a default has to be something the operation can apply by itself.
+
 ## Named plainly
 
 Four dispatches of the new daily workflow failed this morning before this one ran. The readable
