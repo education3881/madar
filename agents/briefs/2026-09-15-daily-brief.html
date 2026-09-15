@@ -515,10 +515,22 @@
 <section class="push-block">
   <div class="kicker">Your one action</div>
   <p>
-    <strong>None today, and this time that is a fact rather than an aspiration.</strong> Yesterday
-    this block asked you to click <em>Run workflow</em> once because the run could push and not
-    publish. That is fixed and verified against the origin rather than against the file that claims
-    to fix it. This run commits, pushes, and dispatches its own deploy.
+    <strong>None today.</strong> Yesterday this block asked you to click <em>Run workflow</em> once,
+    because the run could push and not publish. That is fixed, and fixed in the only way that counts:
+    the origin serves yesterday&rsquo;s build, so the mechanism is verified against the site rather
+    than against the file that claims to fix it.
+  </p>
+  <p>
+    One precision, because yesterday&rsquo;s whole lesson was about being exact here. The deploy is
+    dispatched by the <em>workflow</em>, in a step that runs after this brief is written &mdash; not
+    by the run itself. The run tried, on purpose, to confirm that: <code>gh workflow run</code> from
+    inside the agent still returns <strong>403</strong>, even though the job now declares
+    <code>actions: write</code>, because that permission governs the job&rsquo;s token and not the
+    one the agent holds. So yesterday&rsquo;s fix was not a preference between two working routes;
+    it was the only route. The consequence for this brief is small and worth stating rather than
+    glossing: <strong>it cannot report the outcome of its own deploy</strong>, only that the deploy
+    was correctly asked for. The <code>verify</code> job byte-compares the origin against the
+    published artifact, so if it went wrong, tomorrow&rsquo;s brief opens with it.
   </p>
   <p>
     Still worth a minute when you have one: <strong>issue&nbsp;#6</strong> is open, with three

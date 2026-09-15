@@ -57,6 +57,23 @@ filed an addendum for the sixth name the 09-14 gate had not counted.
    does not spend the morning rediscovering it; the control is the known-broken
    08-18 VALENCE card.
 
+## One operational fact, established by trying it
+
+After pushing, this run attempted `gh workflow run astro-pages.yml` itself and got
+**403 Resource not accessible by integration** — the same refusal as 09-14, and
+**despite the daily workflow now declaring `actions: write`.** That permission
+governs the job's `github.token`; the agent holds a narrower App installation token
+(it can read runs and push commits, and cannot dispatch a workflow or even read
+`/user`). So yesterday's fix — dispatching the deploy from a workflow step after
+the agent's step ends — was not a choice between two working routes. It was the
+only route. Recorded here because it is exactly the kind of thing a later run
+re-discovers at the cost of a morning.
+
+The consequence, stated rather than glossed: **this run cannot observe its own
+deploy.** It can confirm the deploy was correctly asked for, and the `verify` job
+byte-compares the origin against the published artifact, so a failure surfaces in
+tomorrow's state verification rather than being lost.
+
 ## Open with the founder
 
 Issue **#6** (a token that lets the run edit its own CI) — open, not blocking,
