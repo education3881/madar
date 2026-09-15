@@ -37,7 +37,9 @@ WHAT IT ASSERTS
 3. og:site_name is present.
 
 4. og:image, where present, is a raster file (the 08-18 rule, restated here so
-   the whole head is covered by one assertion).
+   the whole head is covered by one assertion), and it carries og:image:alt and
+   twitter:image:alt, non-empty and within the 420 characters the consumer
+   accepts (added 2026-09-15).
 
 5. sitemap.xml carries a <lastmod> on every <loc>. It carried none from
    2026-07-02 until today.
@@ -166,6 +168,25 @@ def main() -> int:
         if img and tw != "summary_large_image":
             defects.append(f"{rel}: has an og:image but twitter:card={tw!r} — the card is wasted")
 
+        # ---- the card must SAY WHAT IT IS (added 2026-09-15) -------------
+        # 08-18 asked whether the consumer can render the asset. This asks the
+        # question one reader further out: what does the share look like to
+        # someone who cannot see the image? Every page has declared an
+        # og:image since 25 May and not one declared og:image:alt — 113 days of
+        # shares carrying a picture and no description of it, on a surface
+        # where the description is not ours to add later. The text existed the
+        # whole time, composed in both languages as the hero still's alt.
+        # Twitter rejects an image alt over 420 characters, so the cap is the
+        # consumer's, not ours (08-18's rule: verify against that machine's
+        # contract, never against our own filesystem).
+        if img:
+            for key in ("og:image:alt", "twitter:image:alt"):
+                text = (og.get(key) or "").strip()
+                if not text:
+                    defects.append(f"{rel}: {key} MISSING — the card describes itself to nobody")
+                elif len(text) > 420:
+                    defects.append(f"{rel}: {key} is {len(text)} chars, over the 420 the consumer accepts")
+
     # ---- sitemap lastmod -----------------------------------------------
     # sitemap-index.xml points at the sitemaps, not at pages — counting its
     # single <loc> would make lastmods fall one short of locs forever.
@@ -210,7 +231,7 @@ def main() -> int:
             print(f"  … and {len(defects) - 60} more")
         return 1
 
-    print("CLEAN — og:locale, og:type, og:site_name, og:image raster, "
+    print("CLEAN — og:locale, og:type, og:site_name, og:image raster + alt, "
           "sitemap lastmod, print block all pass.")
     return 0
 

@@ -10,6 +10,24 @@ interface Props {
   lang?: 'en' | 'ar';
   ogImage?: string;
   /**
+   * A description of the share card, for the reader who never sees it.
+   *
+   * Added 2026-09-15 (Growth). Every page has declared an `og:image` since the
+   * first publish and NOT ONE has ever declared `og:image:alt` — so for 113 days
+   * every share of every piece travelled with a picture and no way to know what
+   * the picture was. On a social timeline the alternative text is not ours to
+   * supply later: the scraper takes what the head offers at fetch time. The text
+   * already exists — the hero still's alt, composed in both languages by the
+   * people who commissioned the drawing — and it was being spent on the page
+   * and withheld from the share.
+   *
+   * Twitter rejects an image alt over 420 characters, so this is cut to the last
+   * whole sentence that fits rather than chopped mid-clause: a machine may choose
+   * where to stop, never how to phrase. Callers that pass the brand card need
+   * pass nothing; the card's own description, per language, is below.
+   */
+  ogImageAlt?: string;
+  /**
    * If true, suppress the SiteHeader (used when a page renders its own
    * editorial masthead, e.g. an article page).
    */
@@ -71,6 +89,7 @@ const {
   description = 'An editorial publication on early childhood and K-12 education, written and made in English and Arabic.',
   lang = 'en',
   ogImage,
+  ogImageAlt,
   noHeader = false,
   alternate,
   jsonLd,
@@ -105,6 +124,42 @@ const ogImagePath = ogImage && !(_base && ogImage.startsWith(_base + '/'))
   ? withBase(ogImage)
   : ogImage;
 const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
+
+// The brand card's own description, composed rather than translated, and written
+// from the card as it actually renders: two concentric orbits, the bilingual
+// wordmark at the centre, one kiln-orange dot on the outer orbit, a kiln-orange
+// band along the top edge.
+const BRAND_CARD_ALT = {
+  en: "The Madār wordmark — Madar in Latin letters beside مدار in Arabic — at the centre of two thin concentric ellipses drawn as orbits, with a single kiln-orange dot resting on the outer orbit and a kiln-orange band along the top edge.",
+  ar: 'علامةُ مدار الكتابية — «Madar» باللاتينية إلى جانب «مدار» بالعربية — في مركز قطعَين ناقصَين رفيعَين متراكزَين مرسومَين مدارَين، وعلى المدار الخارجيِّ نقطةٌ واحدة بلون برتقال الأتّون، وعلى الحافة العليا شريطٌ باللون نفسِه.',
+} as const;
+
+// Twitter's ceiling is 420 characters. Cut at the last sentence that fits — never
+// mid-clause — and fall back to a word boundary only if the first sentence alone
+// is already over. A machine may choose where to stop; it may not rephrase.
+const ALT_CAP = 420;
+function fitAlt(text: string): string {
+  const t = text.trim();
+  if ([...t].length <= ALT_CAP) return t;
+  const sentences = t.match(/[^.!?؟]+[.!?؟]+\s*/g) ?? [];
+  let kept = '';
+  for (const s of sentences) {
+    if ([...(kept + s)].length > ALT_CAP) break;
+    kept += s;
+  }
+  if (kept.trim()) return kept.trim();
+  const words = t.split(/\s+/);
+  let cut = '';
+  for (const w of words) {
+    if ([...(cut + ' ' + w)].length > ALT_CAP - 1) break;
+    cut += (cut ? ' ' : '') + w;
+  }
+  return cut + '…';
+}
+
+const _altSource =
+  ogImageAlt ?? (ogImagePath && ogImagePath.endsWith('/og/brand-card.png') ? BRAND_CARD_ALT[lang] : null);
+const ogImageAltText = ogImageAbs && _altSource ? fitAlt(_altSource) : null;
 ---
 
 <!doctype html>
@@ -167,6 +222,7 @@ const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
     <meta property="og:description" content={description} />
     {!noindex && <meta property="og:url" content={canonicalURL.href} />}
     {ogImageAbs && <meta property="og:image" content={ogImageAbs} />}
+    {ogImageAltText && <meta property="og:image:alt" content={ogImageAltText} />}
 
     {/* og:locale — added 2026-08-24, and it is the Arabic side that needed it.
         The Open Graph default when og:locale is absent is en_US. Every Arabic
@@ -201,6 +257,7 @@ const ogImageAbs = ogImagePath ? new URL(ogImagePath, Astro.site).href : null;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     {ogImageAbs && <meta name="twitter:image" content={ogImageAbs} />}
+    {ogImageAltText && <meta name="twitter:image:alt" content={ogImageAltText} />}
 
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="color-scheme" content="light" />

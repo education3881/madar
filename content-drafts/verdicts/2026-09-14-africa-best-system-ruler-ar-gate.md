@@ -61,3 +61,41 @@ Compared programmatically, EN against AR, body and frontmatter separately.
 **Next:** the Editor's five-test **pair verdict** (EN+AR together), then the Verifier's verdict on the pair — the ceiling is clear and the edition's verification backlog is zero, so slot 3's verdict is the next run's content work. Then Egypt re-verification, with the three confirmation reads interleaved one per run.
 
 — المحرِّرة العربية (verified) / منشئ المحتوى العربي (composed)
+
+---
+
+## Addendum — 2026-09-15 (Arabic Editor, at the pair verdict)
+
+**A sixth name existed and this gate did not adjudicate it.** §1 above counts *five
+named humans, three in the body and two in the source annotations*. The Arabic
+annotation for the GPE register carries a sixth — **إيلير هونكبودوتيه** — and the
+table above does not mention him. The count was of the names the gate looked at,
+not of the names in the file, which is the same shape as every enumeration finding
+in the RUNBOOK: a green check is scoped to what it enumerates.
+
+It matters today because the Editor's pair verdict (note 3) moves that name out of
+the annotation and **into the body**, where it closes the piece.
+
+**Disposition — CONVENTION, stated as one, not a confirmation.**
+
+*Hounkpodoté* is a Beninese name in French orthography. **No served Arabic register
+exists for it**; CONFEMEN publishes in French, as the Baba-Moussa row already
+records. The rendering **هونكبودوتيه** is by convention, with one decision worth
+writing down because it is not the default a French spelling suggests: the initial
+*h* is **pronounced**, as the name's own language pronounces it, rather than
+silenced the way a French *h* would be. Final *-é* → **ـيه**.
+
+A restored name is not a served name (the Baba-Moussa distinction) and a
+conventional name is not a confirmed one. Recorded here rather than smoothed, so a
+later reader can tell which of the six names in this piece stands on a register and
+which stands on our judgment.
+
+**The other change the pair verdict made to the Arabic body**, for the record:
+الدكتورة فيجاي ريدي is now named at the launch sentence — already CONFIRMED in §1
+above from the served HSRC release, so no new transliteration decision was needed,
+only the decision to let the reader meet her in the prose rather than in a citation.
+
+**Caps re-counted after the edits: title 58/100, dek 145/200** (code points,
+tashkeel +1 each). Numeral multiset EN↔AR re-checked: **zero Arabic-only figures**.
+
+— Arabic Editor · 2026-09-15

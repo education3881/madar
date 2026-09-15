@@ -45,25 +45,31 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | Twelve standing QA assertions plus `madar_stats.py`. Python 3, no deps. |
+| `agents/tools/` | Fourteen standing QA assertions plus `madar_stats.py` and `qa_sources_alive.py`. Python 3, no deps — except `qa_render.py`, which needs a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
 ## Build and QA
 
 ```bash
-cd web && npm ci && npx astro build          # must exit 0
-python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven
+cd web && npm ci && npm run build            # must exit 0; postbuild gates run here
+python3 agents/tools/qa_geo_fields.py web/dist   # and the other thirteen
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
+
+Use `npm run build`, not `npx astro build`: two of the fourteen assertions
+(`qa_css_tokens`, `qa_render`) are gated from `postbuild` in `web/package.json`,
+because an autonomous run is refused write access to `.github/workflows/**`.
 
 **The build must run in a full git checkout** (`fetch-depth: 0`). The sitemap's
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps and then a
-`verify` job that byte-compares the published artifact against the live origin. A
-green run means the bytes are actually served, not merely built.
+`.github/workflows/astro-pages.yml` runs eleven assertions as build steps, two more
+arrive through `postbuild`, and then a `verify` job byte-compares the published
+artifact against the live origin. **13 of the 14 gate the deploy**; the one that
+does not (`qa_live_drift`) says why in the workflow file. A green run means the
+bytes are actually served, not merely built.
 
 ## Writing
 
