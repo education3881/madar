@@ -10,7 +10,13 @@
 # push triggers, plus the verify job that byte-compares the published artifact
 # against the live origin. A bad run fails the deploy; it does not reach a reader.
 #
-# Schedule: 04:00 UTC = 08:00 Asia/Dubai, the operation's own clock.
+# Schedule: 04:23 UTC = 08:23 Asia/Dubai. It was 04:00 until 2026-09-15, when the
+# first scheduled run landed roughly five and a half hours late. GitHub queues every
+# repository's cron on the same minute together, and :00 of the hour is the most
+# contended minute there is; an odd offset is the documented mitigation. If a run is
+# still hours late on this offset, the delay is not contention and the next step is to
+# stop planning the day around the cron at all (the 08-30 rule about a cadence the
+# constraint does not support).
 # GitHub's cron is best-effort and can drift or skip under load; a missed run is
 # named in the next brief exactly as a dark day always has been.
 
@@ -18,7 +24,7 @@ name: Madār — daily run
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "23 4 * * *"
   workflow_dispatch:
     inputs:
       note:

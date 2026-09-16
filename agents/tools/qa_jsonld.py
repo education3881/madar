@@ -46,7 +46,25 @@ from pathlib import Path
 BASE = "https://education3881.github.io/madar/"
 
 
-def find_dist() -> Path:
+def find_dist(argv=None) -> Path:
+    """Resolve the dist to audit.
+
+    2026-09-15 — this function used to take no argument and guess. Its eleven
+    siblings all read `sys.argv[1]`, CLAUDE.md documents the pass in that form,
+    and every invocation from the repo root handed it a path the shell accepted
+    and the program ignored. On a tree holding a stale `web/dist` (gitignored,
+    so invisible to `git status`) that silently audited a 48-day-old build and
+    reported CLEAN on zero nodes. An assertion reads the artefact it was ASKED
+    to read, or it says so. See ruling #52 and `qa_dist_input.py`.
+    """
+    argv = sys.argv if argv is None else argv
+    if len(argv) > 1:
+        asked = Path(argv[1])
+        if not ((asked / "sitemap-0.xml").exists() or (asked / "index.html").exists()):
+            sys.exit(f"FAIL(2): {asked.resolve()} is not a built dist — build first, "
+                     f"or check the path. (This tool no longer silently substitutes "
+                     f"a directory you did not name.)")
+        return asked
     for cand in (Path("web/dist"), Path("dist"), Path(__file__).resolve().parents[2] / "web" / "dist"):
         if (cand / "sitemap-0.xml").exists() or (cand / "index.html").exists():
             return cand
@@ -210,9 +228,26 @@ def main() -> int:
                 refs_resolved += 1
 
     print(
+        f"qa_jsonld: {dist.resolve()}\n"
         f"qa_jsonld: pages {len(pages)} · nodes {nodes_checked} · dereferenced {derefs} promises to dist "
         f"· resolved {refs_resolved} in-document @id references"
     )
+
+    # NON-VACUITY FLOOR (2026-09-15). This site has emitted schema.org Article
+    # nodes on every article page since 08-23 and an Organization + WebSite pair
+    # since 09-11. A build that serves article pages and carries ZERO JSON-LD
+    # nodes is not a clean build — it is a build this check could not see. The
+    # old code swept nothing and printed CLEAN; the 08-16 rule says an assertion
+    # that finds nothing to check has failed rather than passed, and until today
+    # that rule had never been applied to our own instruments. Ruling #51.
+    article_pages = [p for p in pages if "articles" in p.parts]
+    if article_pages and nodes_checked == 0:
+        print(f"FAIL(vacuous): {len(article_pages)} article page(s) present and 0 JSON-LD "
+              f"nodes found. This site has emitted Article nodes since 2026-08-23. "
+              f"Either the markup regressed or this is not the build you meant to audit "
+              f"— check the path printed above.")
+        return 1
+
     if defects:
         for d in defects:
             print("  DEFECT:", d)

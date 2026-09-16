@@ -38,6 +38,25 @@ jobs:
           cache-dependency-path: web/package-lock.json
       - run: npm ci
       - run: npm run build
+      # THE INPUT ASSERTION (2026-09-15, ruling #52) — runs FIRST, before any
+      # assertion that reads dist, because every one of them is a claim about a
+      # directory and until today nothing checked WHICH directory. Found by
+      # accident: the standing pass, run from the repo root in the form
+      # CLAUDE.md documents, reported `qa_jsonld: pages 67 · nodes 0 · CLEAN`.
+      # qa_jsonld was the one assertion of fourteen that ignored sys.argv[1] and
+      # guessed, and the tree held a gitignored `web/dist` from 2026-07-29 — 48
+      # days old, 67 pages against 120, zero JSON-LD because it predates the
+      # 08-23 markup. The check found nothing to check and called that a pass.
+      # Three ways to be green and worthless, one rule each: SCOPE (08-16, a
+      # green check is scoped to what it enumerates), ORACLE (#35 + 09-14, prove
+      # the bite as carefully as the control), INPUT (this). Proved both ways:
+      # control silent on the real 120-page build; bites on a build older than
+      # its own sources (freshness), on an empty directory, and on a directory
+      # with no sitemap. qa_jsonld gains a matching non-vacuity floor and now
+      # refuses to substitute a path it was not given.
+      - name: the artefact under audit is the one this run built
+        working-directory: .
+        run: python3 agents/tools/qa_dist_input.py web/dist
       # Inbound discoverability contract (2026-09-01): robots.txt must exist in
       # dist, advertise exactly one Sitemap URL DERIVED from astro.config's own
       # site+base (ruling #36), pointing at a file that exists (ruling #37),
@@ -112,7 +131,11 @@ jobs:
       # than the layers we look at, not less.
       - name: the machine-readable layer honours its contract
         working-directory: .
-        run: python3 agents/tools/qa_jsonld.py
+        # 2026-09-15: the path is now passed explicitly, like its thirteen
+        # siblings. The bare invocation was correct here only by luck — CI has
+        # no stale dist to find — and the missing argument was the tell nobody
+        # read. Ruling #51.
+        run: python3 agents/tools/qa_jsonld.py web/dist
       # The last three hand-run assertions, wired 2026-09-13 (weekly review).
       # All three read only web/dist, all three have existed for weeks, all
       # three BIT HARD on first contact — qa_a11y_lang found 471 chrome strings
