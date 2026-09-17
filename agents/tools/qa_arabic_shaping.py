@@ -198,6 +198,12 @@ def probe(browser: str, root: str, port: int, path: str):
         if not m:
             return None
         return json.loads(m.group(1))
+    except subprocess.TimeoutExpired:
+        # A hung browser must fail LEGIBLY, not as a traceback. It still fails —
+        # a check that cannot run is not a check that passed (RUNBOOK 2026-09-13) —
+        # but the build log should say "the browser hung on this page" rather than
+        # print a stack trace that reads like a defect in the site.
+        return {"error": "the browser did not return within 120s on this target"}
     finally:
         shutil.rmtree(profile, ignore_errors=True)
         try:
