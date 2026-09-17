@@ -341,6 +341,27 @@ hr.rule {
 /* RTL — Arabic-specific adjustments                                      */
 /* ===================================================================== */
 
+/* Arabic is a cursive script: its letters are joined, and the shaping engine draws
+   the connecting strokes. Tracking is a Latin display convention; inserted between
+   Arabic letters it pulls those joins apart and the word stops being a word. That
+   is a property of the script and not a design choice, which is why this rule keys
+   on the LANGUAGE rather than on the direction or on any component, and why it is
+   the only `!important` outside the print block — a component that sets tracking
+   for its Latin form must not be able to win it back on an Arabic run.
+
+   The heading rule below has had this right since the beginning (`letter-spacing: 0`
+   on Arabic h1–h4). Every other tracked element on the page — the nav labels, the
+   kickers, the country and date spans, the footer line, the Still caption and the
+   cross-language link on the ENGLISH pages — quietly inherited its Latin tracking
+   instead, and was served that way. Found 2026-09-17 by standing assertion 17,
+   which reads computed style rather than CSS text precisely because the worst of
+   these arrived by inheritance from a `body` rule that names no component at all.
+
+   Asserted by agents/tools/qa_arabic_shaping.py. Do not remove without it. */
+:lang(ar) {
+  letter-spacing: normal !important;
+}
+
 [dir="rtl"] {
   font-family: var(--font-arabic);
   line-height: 1.9;

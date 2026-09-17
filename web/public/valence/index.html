@@ -67,6 +67,11 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:auto}
 body{background:var(--void);color:var(--ink2);font-family:'Space Grotesk',system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.68;letter-spacing:.005em;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* Arabic is cursive: tracking pulls the joins apart. The 2026-08-18 fix removed
+   letter-spacing from the Arabic wordmark on this page's SHARE CARD and left the
+   page itself inheriting .005em from the body rule above onto the one Arabic run
+   it carries. A correction has a blast radius (#50). Asserted by assertion 17. */
+:lang(ar){letter-spacing:normal !important}
 ::selection{background:rgba(77,141,255,.28);color:var(--ink)}
 a{color:inherit}
 canvas{display:block}
