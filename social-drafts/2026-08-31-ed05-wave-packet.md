@@ -59,3 +59,19 @@ Both captions now match the corrected piece. Nothing was published — the packe
 4. Then, and only then, the list queues in the order given per piece.
 
 — Growth · 2026-09-14
+
+---
+## Egypt — *The doors were published before the exams existed* (added 2026-09-19, HELD with the wave)
+
+The fifth entry. og card on disk: `og/2026-09-19-egypt-baccalaureate-published-first.png` (1200×600, 1,911 bytes — the sparsest still in the corpus, and the byte count is a property of the drawing, not a failed render; the PNG was opened and looked at before this line was written, per the 08-18 rule).
+
+**AR caption: OWED, and deliberately not composed today.** The Arabic side of this piece does not exist yet. Every other entry in this packet was composed from its piece's own Arabic dek; there is no Arabic dek to compose from, and writing one here would be inventing the Arabic edition's words in a distribution file — which is the Arabic Content Creator's work and the Arabic Editor's gate, in that order. It is composed the run after the Arabic is gated, exactly as the Africa entry was.
+
+**EN caption:**
+Egypt legislated a second secondary certificate in 2025, optional and free, standing beside the 120-year-old Thanaweya Amma rather than replacing it. What makes it worth reading is the order of operations: a year before anyone sat an exam, two ministries published which university faculties each track opens. The price is in the statute. The admissions arithmetic was published with a worked example. What Egypt has not published is how many students are in it — and we say so rather than borrowing a number we could not read. New from Madār. #Egypt #EducationPolicy #Africa
+
+**Engagement-list note:** this is the wave's **certificate** story and its natural first audience is the Ed04 cluster — the PSLE / NCEA / report-cards readers, who have already read three pieces asking what a certificate's number means. It goes to that list first, not to the Africa beat. Second queue is the access/rights beat, because the piece carries EIPR's objection to the bill in EIPR's own words and that is the half of the story that list reads for. **The piece names a live domestic political dispute** (the coercion allegation and the ministry's answer, both quoted): the caption above deliberately carries neither, because a caption cannot hold three voices in one breath and a caption that carries one of them takes a side the piece does not take.
+
+**Flip-day note specific to this entry:** the EN caption above must be re-read against the shipped text (#50), and the AR caption must exist and have passed the Arabic gate, before this entry queues at all. An entry with one language is not a Madār entry.
+
+— Growth · 2026-09-19

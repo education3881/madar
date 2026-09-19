@@ -60,6 +60,22 @@ NON-VACUITY
     — which is the single most likely place for a Latin-tuned tracking rule to land
     on an Arabic run.
 
+WHAT COUNTS AS AN ELEMENT (narrowed 2026-09-19)
+    The census was 326 and is now 310. Standing assertion #19 — which compares the
+    instruments' counts to one another — found on its first run that 16 of the 326
+    were elements whose text no reader ever sees laid out by our CSS: the HTML
+    <title>, the JSON-LD <script> blocks (4,000 characters of schema.org carrying
+    the publication's Arabic name and its headlines), and the hero still's SVG
+    <title>, which is an accessible name and a tooltip, never painted. The SVG
+    <text> elements — the still's visible caption — stay, because a reader reads
+    them. Two costs paid by the old number: it was incomparable with assertion 18's
+    census, which measures rendered runs only; and a letter-spacing landing on
+    `head title` would have been reported as a defect on a page no reader could
+    tell had changed. Proved by isolation — the same tracking injection at a
+    specificity above #55's `:lang(ar)` rule makes the OLD version report 11
+    defects on <title> and <script>, and the NEW version silent, while a rendered
+    injection (html:lang(ar) p) still bites both.
+
 Dependencies: Python 3 standard library, plus a headless Chrome/Chromium on PATH —
 the same browser qa_render already requires. If no browser is found this exits 1
 rather than skipping (RUNBOOK, 2026-09-13).
@@ -124,9 +140,27 @@ PROBE = """<!doctype html>
     var out = [], seen = 0;
     try {
       var d = f.contentDocument, w = f.contentWindow;
+      // Elements whose text a reader never sees laid out by our CSS. Excluded
+      // 2026-09-19, by standing assertion #19's first census: 16 of this
+      // check's 326 Arabic-bearing elements were 11 <title> and 5 JSON-LD
+      // <script> blocks, which carry the publication's Arabic name and its
+      // headlines. Two costs, both real. It made this census incomparable
+      // with assertion 18's, which measures rendered runs only — the quiet
+      // disagreement the 09-18 log predicted and could not measure. And it is
+      // a false positive waiting: a letter-spacing landing on `head title`
+      // would be reported as a defect on a page no reader could tell had
+      // changed. What this check exists to catch is tracking a READER sees.
+      // tagName is UPPERCASE for HTML elements and lowercase for elements in
+      // the SVG namespace, so the list is matched case-folded. Caught while
+      // proving this change: the first version skipped 10 of the 16 and left
+      // the hero still's <title> — the SVG accessible name, a tooltip, never
+      // painted — in the census, because it is `title` and not `TITLE`.
+      var SKIP = { SCRIPT: 1, STYLE: 1, TITLE: 1, NOSCRIPT: 1, TEMPLATE: 1,
+                   META: 1, LINK: 1, HEAD: 1, DESC: 1 };
       var all = d.querySelectorAll('*');
       for (var i = 0; i < all.length; i++) {
         var el = all[i], own = '';
+        if (SKIP[String(el.tagName).toUpperCase()]) continue;
         for (var j = 0; j < el.childNodes.length; j++) {
           if (el.childNodes[j].nodeType === 3) own += el.childNodes[j].nodeValue;
         }

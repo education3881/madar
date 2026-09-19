@@ -140,7 +140,14 @@ def main(argv):
         return 1
 
     # 2. NON-VACUITY
-    pages = sorted(dist.rglob("index.html"))
+    # Every served HTML page, not every `index.html`. Corrected 2026-09-19 by
+    # standing assertion #19 on its first run: this line enumerated routed
+    # pages and called them "built page(s)", so it printed 120 for a dist
+    # containing 121 — the branded 404 is a built page and is not an index.
+    # Harmless to the freshness test and wrong in the log, which is where the
+    # number is actually consumed. A count is a claim about a set; the label
+    # names the set.
+    pages = sorted(dist.rglob("*.html"))
     sitemap = dist / "sitemap-0.xml"
     print("qa_dist_input: %d built page(s); sitemap-0.xml %s"
           % (len(pages), "present" if sitemap.exists() else "ABSENT"))

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Egypt: at the right of the page four plain doorways stand in a row on a single ground line, each drawn as an upright rectangle with nothing inside it. A long dotted line enters at the left edge and travels the width of the page towards them, passing four small upright markers set along it like milestones, and stops short of the first threshold. One doorway alone is traced in a warm kiln-orange line, its frame complete and its opening empty. Above the row, small and in outline, a notice hangs from a single nail, its lines of writing drawn as plain rules.">
+  <title>The Still · Egypt — the doors drawn before the road reaches them</title>
+  <desc>Paper-cream ground, pure line, no fills — tone carried by stroke weight and opacity alone. Four plain upright doorframes stand on the ground line at the right, the third of them in kiln orange. A dotted line crosses the page from the left, marked by four short upright milestones, and halts before the thresholds. A small notice, its text rendered as unreadable rules, hangs from a nail above the doorways.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- ground line -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2" stroke-opacity="0.35" d="M 40 524 L 1160 524"/>
+  </g>
+
+  <!-- the four doorways: open frames, nothing behind them yet -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 772 524 L 772 354 L 846 354 L 846 524"/>
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 868 524 L 868 354 L 942 354 L 942 524"/>
+    <path stroke-width="1.8" stroke-opacity="0.62" d="M 1060 524 L 1060 354 L 1134 354 L 1134 524"/>
+    <!-- the thin sill each frame stands on -->
+    <path stroke-width="1.0" stroke-opacity="0.26" d="M 766 524 L 852 524 M 862 524 L 948 524 M 958 524 L 1044 524 M 1054 524 L 1140 524"/>
+  </g>
+
+  <!-- the third doorway: the single warm mark, frame complete, opening empty -->
+  <g fill="none" stroke="#D94F2A" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 964 524 L 964 354 L 1038 354 L 1038 524"/>
+  </g>
+
+  <!-- the road: dotted, entering at the left, stopping short of the first threshold -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="2.0" stroke-opacity="0.6" stroke-dasharray="2 12"
+          d="M 56 492 C 236 474, 418 464, 598 468 C 664 470, 708 472, 742 474"/>
+    <!-- the halt: a short upright tick where the line ends, well before the sill -->
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 742 464 L 742 484"/>
+  </g>
+
+  <!-- four milestones along the road, upright, unnumbered -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 172 482 L 172 452 M 164 452 L 180 452"/>
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 322 474 L 322 444 M 314 444 L 330 444"/>
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 472 468 L 472 438 M 464 438 L 480 438"/>
+    <path stroke-width="1.6" stroke-opacity="0.5" d="M 622 468 L 622 438 M 614 438 L 630 438"/>
+  </g>
+
+  <!-- the notice on its nail, above the row: published, and hanging there already -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.4" stroke-opacity="0.45" d="M 900 150 L 900 176"/>
+    <circle cx="900" cy="146" r="4" stroke-width="1.4" stroke-opacity="0.5"/>
+    <path stroke-width="1.6" stroke-opacity="0.55" d="M 842 176 L 958 176 L 958 286 L 842 286 Z"/>
+    <!-- the writing, as rules: legible as writing, unreadable as words -->
+    <path stroke-width="1.2" stroke-opacity="0.32"
+          d="M 858 200 L 942 200 M 858 218 L 942 218 M 858 236 L 930 236 M 858 254 L 942 254 M 858 272 L 902 272"/>
+  </g>
+</svg>

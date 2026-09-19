@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "python3 ../agents/tools/qa_css_tokens.py dist && python3 ../agents/tools/qa_render.py dist && python3 ../agents/tools/qa_arabic_shaping.py dist && python3 ../agents/tools/qa_arabic_joining.py dist",
+    "postbuild": "python3 ../agents/tools/qa_css_tokens.py dist && python3 ../agents/tools/qa_render.py dist && python3 ../agents/tools/qa_arabic_shaping.py dist && python3 ../agents/tools/qa_arabic_joining.py dist && python3 ../agents/tools/qa_census.py dist",
     "preview": "astro preview",
     "check": "astro check"
   },
