@@ -222,7 +222,14 @@
   </p>
   <p class="mono" style="color:rgba(250,250,247,0.6);">
     Named here, at the top, because for four of the last six days this block has said the opposite.
-    An undeployed commit is an undelivered one, and today there are none.
+    An undeployed commit is an undelivered one, and at the start of today there were none.
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
+    Today&rsquo;s own block is the exception that proves the shape: it is pushed, and the deploy for
+    it is dispatched by the workflow <em>after</em> this run ends, so <strong>this run cannot watch
+    it</strong>. Every gate it will face was run against this exact build first &mdash; 19 of 19
+    green. If it goes red, tomorrow&rsquo;s run finds it in the first five minutes, exactly as
+    yesterday&rsquo;s did.
   </p>
 </div>
 
