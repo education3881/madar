@@ -1,0 +1,337 @@
+#!/usr/bin/env python3
+"""
+qa_stable_order.py — assert that every list Madar serves is in a DETERMINED
+order: newest first, ties broken by slug ascending.
+
+WHY (2026-09-20, ruling #58)
+----------------------------
+The 09-19 deploy went red on the `verify` job's feed-cache step. While
+diagnosing it, this build was byte-compared against the live origin — the same
+commit, 8208eb7, built twice on two runners — and **five sitemap pages and both
+feeds differed**. Not in content: in ORDER. Same 38 pieces, same byte count,
+same-day pieces in a different sequence.
+
+Cause: eight of the nine sort sites in `web/src` compared dates and nothing
+else --
+
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+
+-- which returns 0 for two pieces published on the same day. `Array.prototype`
+`.sort` is stable, so a 0 does not randomise the pair; it silently delegates the
+decision to the order `getCollection()` happened to hand the entries over in,
+which is filesystem enumeration order, which nobody chose and nothing asserted.
+**24 of the 38 approved English pieces sit in a tie group** (16 share
+2026-07-07 alone), so most of the corpus had no defined position.
+
+The ninth site, `facetsFor` in taxonomy.ts, already broke its count ties on the
+key (`b[1] - a[1] || a[0].localeCompare(a[0])`). The shape was known in this
+codebase; it was simply never carried across.
+
+WHAT THIS CHECKS, AND WHY NOT "BUILD IT TWICE"
+-----------------------------------------------
+The obvious instrument is to build twice and compare. It is the wrong one:
+two builds on the SAME runner share a filesystem order, so the control passes
+for a reason unrelated to the property. That is the 09-14 trap -- an experiment
+whose negative result is indistinguishable from a healthy one.
+
+So this asserts the stronger property, and from a single build: the served
+order IS the canonical order. A partial comparator cannot satisfy that except
+by luck, and luck is visible here because the expectation is derived from the
+CONTENT COLLECTION (frontmatter date + slug, ruling #36) and never read back
+off the page being judged (the 09-14 masking trap).
+
+SCOPING -- WHY CONTAINERS AND NOT PAGES
+----------------------------------------
+The first draft compared each page's whole document-order link sequence. It
+FALSE-FAILED on the real build, and the reason is worth keeping: the editions
+page renders one block per edition, Edition 04's block ends with
+`2026-07-07-us-naep-honesty-gap` and Edition 03's block begins with
+`2026-07-07-chad-sudanese-refugee-schooling`. A tie run legitimately spans the
+boundary, and across that boundary descending-by-slug is correct. Order is a
+property of a LIST, not of a page.
+
+So links are grouped by the smallest enclosing element that holds two or more
+of them -- discovered by walking the element stack, never by a hard-coded class
+name, so a new list surface is scoped automatically instead of being silently
+skipped (the 08-17 orphan lesson: an exemption list is where defects hide).
+
+Non-vacuity floors, per the 2026-08-16 silent-pass trap: zero pages found, zero
+lists found, zero feeds found, or a corpus with no tie group at all -- each is
+an error, not a pass. The last one matters most: this check is only meaningful
+while same-day pieces exist, so it says out loud how many ties it actually
+exercised.
+
+Reads only `web/dist` plus the content collection. Gated from `postbuild` in
+web/package.json, because this identity cannot write `.github/workflows/**`
+(2026-09-14 rule, clause 4).
+"""
+
+import os
+import re
+import sys
+from html.parser import HTMLParser
+
+ART = re.compile(r'^/madar/(?:(ar)/)?articles/([^/]+)/$')
+
+
+def repo_root(dist):
+    d = os.path.abspath(dist)
+    while d != os.path.dirname(d):
+        if os.path.isdir(os.path.join(d, 'web', 'src', 'content')):
+            return d
+        d = os.path.dirname(d)
+    return None
+
+
+def collection_meta(root):
+    """slug -> {date, related}, per collection, read from frontmatter. Both
+    expectations this check applies are derived from the source of truth and
+    never read back off the artefact under audit (#36, and the 09-14 masking
+    trap)."""
+    out = {}
+    for coll, key in (('articles', 'en'), ('articles-ar', 'ar')):
+        d = os.path.join(root, 'web', 'src', 'content', coll)
+        table = {}
+        for name in os.listdir(d) if os.path.isdir(d) else []:
+            if not name.endswith('.md'):
+                continue
+            head = open(os.path.join(d, name), encoding='utf-8').read(8000)
+            m = re.search(r'^date:\s*([0-9]{4}-[0-9]{2}-[0-9]{2})', head, re.M)
+            if not m:
+                continue
+            rel = []
+            r = re.search(r'^related:\s*\n((?:\s*-\s*\S+\n)+)', head, re.M)
+            if r:
+                rel = re.findall(r'-\s*(\S+)', r.group(1))
+            table[name[:-3]] = {'date': m.group(1), 'related': rel}
+        out[key] = table
+    return out
+
+
+class Lists(HTMLParser):
+    """Collect article links with the identity of every ancestor element, so a
+    link can be assigned to the smallest list that actually contains it."""
+
+    VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+            'link', 'meta', 'param', 'source', 'track', 'wbr'}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+        self.n = 0
+        self.links = []          # (ancestor_ids tuple, lang, slug)
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.VOID:
+            if tag == 'a':
+                pass
+            return
+        self.n += 1
+        self.stack.append((tag, self.n))
+        if tag == 'a':
+            href = dict(attrs).get('href') or ''
+            m = ART.match(href)
+            if m:
+                self.links.append((tuple(i for _, i in self.stack[:-1]),
+                                   m.group(1) or 'en', m.group(2)))
+
+    def handle_endtag(self, tag):
+        if tag in self.VOID:
+            return
+        for i in range(len(self.stack) - 1, -1, -1):
+            if self.stack[i][0] == tag:
+                del self.stack[i:]
+                return
+
+
+def lists_on(html):
+    """-> list of (ancestor_id, [(lang, slug), ...]) in document order.
+
+    Each link is assigned to the SMALLEST enclosing element holding two or more
+    distinct article links. Duplicate links to the same piece inside one list
+    (a thumbnail and a title pointing at the same article) collapse to their
+    first occurrence -- the question is the order of the pieces, not of the
+    anchors."""
+    p = Lists()
+    p.feed(html)
+    counts = {}
+    for anc, lang, slug in p.links:
+        for i in anc:
+            counts.setdefault(i, set()).add((lang, slug))
+    groups, order = {}, []
+    for anc, lang, slug in p.links:
+        home = None
+        for i in reversed(anc):                     # innermost outward
+            if len(counts.get(i, ())) >= 2:
+                home = i
+                break
+        if home is None:
+            continue                                # a lone link is trivially ordered
+        if home not in groups:
+            groups[home] = []
+            order.append(home)
+        if (lang, slug) not in groups[home]:
+            groups[home].append((lang, slug))
+    return [(i, groups[i]) for i in order]
+
+
+def links_in_order(html):
+    """Every article link on the page, document order, no grouping.
+
+    Used for article pages, whose one list is defined by the SOURCE
+    (`related:`) rather than by the markup — so the rail's contract does not
+    depend on the container structure at all. An earlier draft grouped these
+    too and would silently skip a rail of exactly one item, because a single
+    link has no enclosing element holding two."""
+    p = Lists()
+    p.feed(html)
+    return [(lang, slug) for _, lang, slug in p.links]
+
+
+def feed_items(xml):
+    out = []
+    for link in re.findall(r'<link>([^<]+)</link>', xml):
+        m = ART.match(link.replace('https://education3881.github.io/madar',
+                                   '/madar'))
+        if m:
+            out.append((m.group(1) or 'en', m.group(2)))
+    return out
+
+
+def canonical(items, meta):
+    """Newest first, ties broken by slug ascending -- the same total order
+    web/src/lib/order.ts applies at build time."""
+    return sorted(items, key=lambda p: (
+        [-int(x) for x in meta[p[0]][p[1]]['date'].split('-')],
+        p[1],
+    ))
+
+
+ARTICLE_PAGE = re.compile(r'^(?:(ar)/)?articles/([^/]+)/index\.html$')
+
+
+def main(dist='web/dist'):
+    root = repo_root(dist)
+    if root is None:
+        print('ERROR: could not locate web/src/content above %s' % dist)
+        return 2
+    meta = collection_meta(root)
+    if not meta['en'] or not meta['ar']:
+        print('ERROR: 0 content files read. An assertion that finds nothing '
+              'to check has failed.')
+        return 2
+
+    defects, pages, lists_seen, rails, feeds, ties = [], 0, 0, 0, 0, 0
+
+    def known(label, items):
+        unknown = [s for lang, s in items if s not in meta[lang]]
+        if unknown:
+            defects.append((label, 'links a slug absent from the content '
+                                   'collection: %s' % unknown[:3]))
+        return not unknown
+
+    def judge_dated(label, items):
+        """A date-ordered list: newest first, ties broken by slug."""
+        nonlocal ties
+        if not known(label, items):
+            return
+        want = canonical(items, meta)
+        groups = {}
+        for lang, s in items:
+            groups.setdefault(meta[lang][s]['date'], set()).add(s)
+        ties += sum(1 for v in groups.values() if len(v) > 1)
+        if items != want:
+            first = next(i for i in range(len(items)) if items[i] != want[i])
+            defects.append((label, 'order diverges at position %d: serves %s, '
+                                   'canonical is %s'
+                            % (first + 1, items[first][1], want[first][1])))
+
+    def judge_rail(label, lang, slug, items, served):
+        """An article page's `related:` rail. Its order is EDITORIAL -- the
+        sequence declared in frontmatter -- not a date order. Judging it
+        against the date order is the 09-14 scoping trap: the right check
+        applied to the wrong list. RelatedReading drops slugs it cannot
+        resolve, so the promise is the declared sequence filtered to what the
+        build actually serves."""
+        want = [s for s in meta[lang][slug]['related'] if (lang, s) in served]
+        got = [s for _, s in items]
+        if got != want:
+            n = min(len(got), len(want))
+            at = next((i for i in range(n) if got[i] != want[i]), n)
+            defects.append((label, 'related rail diverges at position %d '
+                                   '(serves %d, declares %d): serves %s, '
+                                   'frontmatter declares %s'
+                            % (at + 1, len(got), len(want),
+                               got[at] if at < len(got) else '<nothing>',
+                               want[at] if at < len(want) else '<nothing>')))
+
+    served = set()
+    html_pages = []
+    for base, _, names in os.walk(dist):
+        for name in sorted(names):
+            path = os.path.join(base, name)
+            rel = os.path.relpath(path, dist).replace(os.sep, '/')
+            if name.endswith('.html'):
+                html_pages.append((rel, path))
+                m = ARTICLE_PAGE.match(rel)
+                if m:
+                    served.add((m.group(1) or 'en', m.group(2)))
+            elif name == 'rss.xml':
+                feeds += 1
+                judge_dated(rel, feed_items(open(path, encoding='utf-8').read()))
+
+    for rel, path in html_pages:
+        pages += 1
+        html = open(path, encoding='utf-8', errors='replace').read()
+        m = ARTICLE_PAGE.match(rel)
+        if m:
+            # An article page carries exactly one list: its related rail. Every
+            # article link on it that is not the page's own self-link belongs
+            # to that rail -- asserted, not assumed, so a second list appearing
+            # here fails loudly instead of being silently skipped.
+            #
+            # "Self-link" is matched on the SLUG and not on (lang, slug): the
+            # language switch in the chrome points at the same piece in the
+            # other edition, and it is the page itself, not an item in its rail.
+            lang, slug = m.group(1) or 'en', m.group(2)
+            items, seen = [], set()
+            for it in links_in_order(html):
+                if it[1] == slug or it in seen:
+                    continue
+                seen.add(it)
+                items.append(it)
+            rails += 1
+            if known(rel, items):
+                judge_rail(rel, lang, slug, items, served)
+        else:
+            for i, items in lists_on(html):
+                lists_seen += 1
+                judge_dated('%s [list %d]' % (rel, i), items)
+
+    if pages == 0 or lists_seen == 0 or feeds == 0 or rails == 0:
+        print('ERROR: %d pages, %d dated lists, %d rails, %d feeds. An '
+              'assertion that finds nothing to check has failed.'
+              % (pages, lists_seen, rails, feeds))
+        return 2
+    if ties == 0:
+        print('ERROR: not one dated list contains two pieces sharing a date. '
+              'This check can only bite on a tie; with no tie anywhere it is '
+              'green and worthless (2026-08-16 silent-pass trap).')
+        return 2
+
+    print('qa_stable_order: %d pages, %d dated lists, %d feeds, %d related '
+          'rails; %d tie groups actually exercised.'
+          % (pages, lists_seen, feeds, rails, ties))
+    if defects:
+        print('DEFECT (%d):' % len(defects))
+        for lab, why in defects[:25]:
+            print('  %-52s %s' % (lab, why))
+        return 1
+    print('CLEAN — every dated list is newest-first with ties broken by slug, every '
+          'related rail is in its declared order; no list depends on filesystem '
+          'enumeration order.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else 'web/dist'))

@@ -5,6 +5,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { withBase } from '../../lib/urls';
+import { byDateThenSlug } from '../../lib/order';
 import { currentEdition, editions } from '../../lib/editions';
 import { countryAr } from '../../lib/i18n-geo';
 import { publisherNodes } from '../../lib/structuredData';
@@ -19,8 +20,8 @@ import { publisherNodes } from '../../lib/structuredData';
 const arPieces = await getCollection('articles-ar', ({ data }) => data.approved !== false);
 const enPieces = await getCollection('articles', ({ data }) => data.approved !== false);
 
-const sortedAr = arPieces.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const sortedEn = enPieces.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const sortedAr = arPieces.sort(byDateThenSlug);
+const sortedEn = enPieces.sort(byDateThenSlug);
 
 const dateFormatterAr = new Intl.DateTimeFormat('ar-EG', {
   year: 'numeric',

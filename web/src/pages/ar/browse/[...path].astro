@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../../lib/urls';
+import { byDateThenSlug } from '../../../lib/order';
 import { facetsFor, facetPath, browsePath, piecesIn, type Facet } from '../../../lib/taxonomy';
 // Arabic pages translate what the reader SEES and never the schema (the
 // 2026-08-23 fix — 235 fields printed English to an Arabic reader for ninety
@@ -44,7 +45,7 @@ const KIND_LABEL_AR: Record<string, string> = {
 const listed = facet
   ? (piecesIn(all as any, facet) as typeof all)
       .slice()
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      .sort(byDateThenSlug)
   : [];
 
 const title = facet ? `${labelAr(facet)} · تصفّح · مدار` : 'تصفّح · مدار';

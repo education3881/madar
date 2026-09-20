@@ -12,6 +12,7 @@ related:
   - 2026-06-16-vietnam-tuition-free-public-school
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-07-04-kenya-cbe-grade10-pathways
+  - 2026-09-14-africa-best-system-ruler
 contains_composites: false
 englishVersion: 2026-08-25-zambia-free-education-act
 sources:

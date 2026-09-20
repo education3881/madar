@@ -16,6 +16,32 @@
  * on 2026-05-25.
  */
 
+import { statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+
+import { newestFirst } from './order';
+
+/**
+ * Real byte size of a share card, read from `public/` at build time.
+ *
+ * A missing card is not an error here: `cardPath` is only set when the piece
+ * declares a hero, and `qa_held_assets` already governs which cards exist in
+ * dist. But a card that is present and mis-measured is exactly the defect this
+ * function was written to end, so a stat failure yields 0 and is caught by
+ * `qa_feed_enclosures.py`, which asserts against the served file rather than
+ * against this computation.
+ */
+function cardBytes(cardPath: string): number {
+  const here = dirname(fileURLToPath(import.meta.url));
+  const pub = resolve(here, '../../public', cardPath.replace(/^\/madar\//, ''));
+  try {
+    return statSync(pub).size;
+  } catch {
+    return 0;
+  }
+}
+
 export interface FeedItem {
   title: string;
   /** Site-absolute path INCLUDING the base prefix, e.g. /madar/articles/slug/ */
@@ -95,7 +121,7 @@ function feedDescription(value: string, language: 'en' | 'ar'): string {
 
 export function renderFeed(channel: FeedChannel, site: URL | undefined): string {
   const items = [...channel.items]
-    .sort((a, b) => b.date.getTime() - a.date.getTime())
+    .sort(newestFirst<FeedItem>((i) => i.date, (i) => i.path))
     .map((item) => {
       const link = abs(site, item.path);
       return [
@@ -112,8 +138,17 @@ export function renderFeed(channel: FeedChannel, site: URL | undefined): string 
         // The share card, so an item carries its art into a reader. Only ever
         // a raster path — the 2026-08-18 rule (no consumer renders SVG) binds
         // the feed exactly as it binds og:image.
+        //
+        // 2026-09-20: `length` was hard-coded to "0" from the day enclosures
+        // shipped. In RSS 2.0 it is the size of the file in bytes, and it is
+        // how a reader decides whether to fetch or show the thing at all — so
+        // for 38 pieces in two languages every card was resolvable, correctly
+        // typed, and declared empty. The 08-18 defect exactly (the URL was
+        // never the problem; the promise about it was), on the surface 08-18
+        // named as the next one to check. Measured from the file on disk, so
+        // it cannot drift from what is served.
         item.cardPath
-          ? `      <enclosure url="${esc(abs(site, item.cardPath))}" length="0" type="image/png" />`
+          ? `      <enclosure url="${esc(abs(site, item.cardPath))}" length="${cardBytes(item.cardPath)}" type="image/png" />`
           : null,
         `      <pubDate>${rfc822(item.date)}</pubDate>`,
         '    </item>',

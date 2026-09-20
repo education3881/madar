@@ -12,6 +12,7 @@ related:
   - 2026-07-07-sudan-exam-continuity
   - 2026-08-25-zambia-free-education-act
   - 2026-08-28-sierra-leone-sleic-outcomes
+  - 2026-09-14-africa-best-system-ruler
 contains_composites: false
 arabicVersion: 2026-09-01-sudan-cant-wait-to-learn
 sources:

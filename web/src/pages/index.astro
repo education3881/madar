@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
+import { byDateThenSlug } from '../lib/order';
 import { currentEdition, editions } from '../lib/editions';
 import { publisherNodes } from '../lib/structuredData';
 import { readFileSync, existsSync } from 'node:fs';
@@ -43,7 +44,7 @@ const wordmarkSvg = loadWordmark();
 // Pieces — only those approved appear in the latest list.
 // ---------------------------------------------------------------------------
 const all = await getCollection('articles', ({ data }) => data.approved !== false);
-const sorted = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const sorted = all.sort(byDateThenSlug);
 
 // ---------------------------------------------------------------------------
 // The home page leads with the CURRENT edition. Scope the featured pieces to

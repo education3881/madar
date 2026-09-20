@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../../lib/urls';
+import { byDateThenSlug } from '../../../lib/order';
 import { editions } from '../../../lib/editions';
 import { inlineCover } from '../../../lib/inlineCover';
 import { countryAr } from '../../../lib/i18n-geo';
@@ -37,7 +38,7 @@ const ordered = [...editions].sort((a, b) => {
 const blocks = ordered.map((e) => {
   const pieces = (byEdition.get(e.number) ?? [])
     .slice()
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    .sort(byDateThenSlug);
   return { e, pieces };
 });
 ---

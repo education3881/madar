@@ -12,6 +12,7 @@ related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-08-25-zambia-free-education-act
   - 2026-07-28-england-report-cards-first-term
+  - 2026-09-14-africa-best-system-ruler
 contains_composites: false
 englishVersion: 2026-08-28-sierra-leone-sleic-outcomes
 sources:
