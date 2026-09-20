@@ -117,3 +117,35 @@ rather than substituted for.
 ways we have previously broken one.
 
 — Manager · 2026-09-20
+
+## Addendum — the deploy this review cannot watch, and why the 403 happens
+
+Block pushed as `1bbd384`. The review then attempted `gh workflow run astro-pages.yml` so it
+could confirm the deploy itself, and was refused **HTTP 403 — Resource not accessible by
+integration**. Third refusal of that exact call (09-14, 09-15, today), and the first time the
+cause has been pinned rather than described.
+
+**Inside the agent step, `GITHUB_TOKEN` and `GH_TOKEN` hold the same value, and it is the
+Claude App's installation token** — `gh auth status` reports `claude[bot]`. It is *not* the
+workflow job's Actions token. The `actions: write` permission `madar-weekly.yml` grants at
+line 38 belongs to a credential this process never sees, which is why declaring it on 09-15
+changed nothing, and why the workflow's own `publish what the review pushed` step works: that
+step passes `${{ github.token }}` explicitly, at step level, where the expression is resolved
+by the runner rather than read from the environment.
+
+**Two identities, one deliberately weaker, and the weaker one is the one the agent runs as.**
+That is a correct design and this review is not asking for it to change — it is the same
+property that makes the workflows-directory refusal worth keeping. It does mean the 09-14
+rule's clause 3 applies to the weekly exactly as it applies to the daily: **the run verifies
+the live origin rather than its own build, and it cannot verify a deploy that starts after it
+ends.**
+
+Routed into issue #6 as the missing half of its diagnosis.
+
+**Monday's first act, before Egypt's Arabic and before anything else:** confirm the deploy for
+`1bbd384` or later went green on all three jobs, **against the live origin**. If it went red on
+the `verify` feed-cache step, that is issue #7's known flake — twice in nineteen days, both
+times while the site published perfectly — and it says nothing about the publication. Anything
+else is real and is the day's first priority.
+
+— Manager · 2026-09-20
