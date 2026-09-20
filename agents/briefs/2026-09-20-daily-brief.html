@@ -451,6 +451,14 @@
       <div class="item__body">
         Confirm this run&rsquo;s deploy went green. <strong>Verify the live site, not our own build</strong>
         &mdash; today is the second time in two weeks those two have disagreed.
+        <br /><br />
+        <strong>And expect that it may be red for the reason we just diagnosed and could not
+        fix.</strong> The repair for the flaky feed check was refused at the push, so today&rsquo;s
+        deploy carries the same unretried check that failed on the 9th and the 19th. If it fails there
+        again, that is the third instance and it is <em>not</em> a fault in the publication: check
+        whether the site is serving today&rsquo;s bytes before treating it as one. This run cannot
+        watch its own deploy &mdash; the dispatch happens after it ends, and asking for one from
+        inside the run is refused <span class="mono">403</span>, as it was on the 15th.
       </div>
     </div>
     <div class="item">
