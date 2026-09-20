@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Review · Madār · 2026-09-20</title>
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1: clamp(32px, 4.0vw, 52px);
+    --fs-h2: clamp(22px, 2.0vw, 28px);
+    --fs-body: 18px;
+    --fs-kicker: 10.5px;
+    --container-max: 960px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; background: var(--color-paper); color: var(--color-ink);
+    font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: 2rem; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.12; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.18rem; margin-bottom: 0.2em; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-orange); }
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker); letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--color-orange); margin-bottom: 0.6rem;
+  }
+  header.masthead { padding: 3rem 0 1.5rem; border-bottom: 2px solid var(--color-ink); }
+  header.masthead .sub { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.04em; }
+  section { padding: 2.2rem 0; border-bottom: 1px solid var(--color-rule-soft); }
+  section:last-of-type { border-bottom: none; }
+  .lede { font-size: 1.28rem; line-height: 1.5; font-family: var(--font-display); color: var(--color-ink); }
+  .summary-box {
+    background: #fff; border: 1px solid var(--color-rule); border-left: 4px solid var(--color-orange);
+    padding: 1.4rem 1.6rem; margin: 1.4rem 0; border-radius: 2px;
+  }
+  .summary-box h3 { margin-top: 0; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--color-rule-soft); vertical-align: top; }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); border-bottom: 1px solid var(--color-rule); }
+  td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 999px; border: 1px solid var(--color-rule); color: var(--color-muted); }
+  .pill.hold { color: var(--color-orange); border-color: var(--color-orange); }
+  .pill.ok { color: var(--color-sage); border-color: var(--color-sage); }
+  .bet { background: var(--color-ink); color: var(--color-paper); padding: 1.4rem 1.6rem; border-radius: 2px; margin: 1.4rem 0; }
+  .bet .kicker { color: #F0A891; }
+  .bet a { color: #F0A891; }
+  .flag { background: #FFF4F0; border: 1px solid var(--color-orange); padding: 1.1rem 1.4rem; margin: 1.3rem 0; border-radius: 2px; }
+  .flag .kicker { margin-bottom: 0.35rem; }
+  .rule-box { background: var(--color-sand); padding: 1.2rem 1.4rem; margin: 1.2rem 0; border-radius: 2px; }
+  .rule-box .kicker { color: var(--color-ink); opacity: 0.72; }
+  ul { margin: 0.4rem 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  pre { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; padding: 1.2rem 1.4rem; border-radius: 2px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+  .footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 11.5px; color: var(--color-muted); }
+  .dark { color: var(--color-orange); }
+  .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; direction: rtl; unicode-bidi: isolate; }
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="kicker">Madār · مدار — Weekly Review</div>
+      <h1>Seven days of seven, and ten rulings the register never heard about</h1>
+      <div class="sub">Sunday 2026-09-20 · covers 2026-09-14 → 2026-09-20 · prepared by the Manager, autonomous run · state verified before planning: <span class="num">origin/main = 78ea08c</span>, local identical, tree clean, <span class="num">0</span> ahead / <span class="num">0</span> behind · live origin serving <span class="num">Sun, 20 Sep 2026 09:51:25 GMT</span></div>
+    </header>
+
+    <section>
+      <div class="flag">
+        <div class="kicker">The one action · nothing is waiting on you · 0 days unpushed · 0 days unserved</div>
+        <p style="margin-bottom:0.4em;"><strong>There is no push block in this review, and there will not be one again.</strong> The cloud cutover completed on 09-14; the run pushes its own commits and a workflow step dispatches the deploy afterwards. Today that chain ran end to end on its own: the daily pushed four commits at 09:49, the deploy fired at 09:50, and <strong>all three jobs went green — including <span class="num">verify</span>, which byte-compares the published artifact against the live origin.</strong> The site is serving this morning's bytes.</p>
+        <p style="margin-bottom:0;">What is left on your desk is <strong>two questions, not a terminal command</strong> — issues <span class="num">#6</span> and <span class="num">#7</span>, carried by name in §5 with their ages and their stated defaults. <strong>#6's default fired today</strong> and has been applied.</p>
+      </div>
+
+      <div class="summary-box">
+        <h3>Founder summary — two minutes</h3>
+
+        <p><strong>The week, counted first.</strong> Seven days, seven days with a run — <strong>the first week in this publication's history with no dark day</strong> — nine runs, nineteen commits, zero days unpushed, zero days unserved. Every previous week has had at least one day where nothing happened. The deploy went red twice (09-17, 09-19) and both were diagnosed and closed by the next morning's run; neither reached a reader. <strong>And nothing was published</strong>, for the fifty-fourth consecutive day: Edition 05 ships as one gated wave, five of its six pieces are drafted and four are fully verified, and the corpus holds at <span class="num">38 / 38</span> with <span class="num">100%</span> parity across <span class="num">35</span> countries.</p>
+
+        <p><strong>What the extra run-days went into, and it was not content.</strong> The operation filed <strong>ten durable rulings this week</strong> — <span class="num">#49</span> through <span class="num">#58</span> — against a previous single-week record of four, and built <strong>seven new standing quality assertions</strong>, taking the estate from fourteen to twenty-one. Five of the ten rulings are about the same thing: <em>what is a check's answer actually about?</em> That is the question you can only ask once you own enough checks for them to disagree with each other, and this week they did. The sharpest instance: the same commit, built twice on two machines, served five pages and both news feeds <strong>in a different order</strong>, because twenty-four of our thirty-eight pieces share a publication date and eight sorting sites never said what to do about a tie. The build was not a function of its sources. It is now, and an assertion holds it there.</p>
+
+        <p><strong>My own bookkeeping was the week's worst defect, and I want it said plainly.</strong> Those ten rulings were each filed on the day they were earned and cited by number in commits, briefs and verdicts all week — and <strong>the guidebook's own register still read <span class="num">#1–#48</span> when I opened it this morning.</strong> Its Section 1 was two weeks behind, stopped at row 39 with fourteen rows loose on disk. Worse: <code>CLAUDE.md</code>, the one file every single run is instructed to read first, told each of them that we own <em>fourteen</em> quality assertions of which <em>thirteen</em> gate the deploy. The true numbers were twenty-one and nineteen. All of it is reconciled today, and the cause is not carelessness — it is that <strong>a register consolidated weekly against a daily filing rate drifts by construction, and our run rate doubled when we moved to the cloud.</strong> The fix is in the RUNBOOK: the cheap half of the maintenance moves onto the fast clock.</p>
+
+        <p><strong>What needs your eye.</strong> Two open questions, both mine to ask once and then stop asking. <strong><span class="num">#6</span> (six days open) carried a default dated today, it passed unanswered, and I applied it</strong> — our deploy gates now live in two files by design, and the workflow says so out loud. <strong><span class="num">#7</span> (opened today)</strong> is the one live ask: a finished repair to the deploy's flakiest step cannot be pushed by an autonomous run, because GitHub refuses any push touching the workflows directory from a robot's token. That refusal is correct and I do not want it removed. I want one command run once, from a terminal that has the scope. <strong>The standing calls are unchanged and still in order: custom domain, then Substack</strong>, eighth consecutive week.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">1 · Traffic, Growth &amp; Statistics</div>
+      <h2>The bet paid, and it is still paying a week later</h2>
+
+      <h3>Content snapshot and week-over-week delta</h3>
+      <table>
+        <thead><tr><th>Signal</th><th>Last weekly (2026-09-13)</th><th>This weekly (2026-09-20)</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>Published corpus (EN / AR)</td><td class="n">38 / 38</td><td class="n">38 / 38</td><td class="n">0 (by design)</td></tr>
+          <tr><td>Corpus on disk incl. held Ed05 set</td><td class="n">41 / 41</td><td class="n">43 / 42</td><td class="n">+2 / +1</td></tr>
+          <tr><td>AR/EN parity (published)</td><td class="n">100%</td><td class="n">100%</td><td>held</td></tr>
+          <tr><td>Countries covered (live / on full wave)</td><td class="n">35 / 38</td><td class="n">35 / 38</td><td>unchanged</td></tr>
+          <tr><td><strong>Runs in the window</strong></td><td class="n">5 of 7</td><td class="n"><strong>7 of 7 · 9 runs</strong></td><td class="ok"><strong>no dark day — a first</strong></td></tr>
+          <tr><td>Days since last published piece</td><td class="n">47</td><td class="n">54</td><td class="n">+7</td></tr>
+          <tr><td>Days unpushed · days unserved</td><td class="n">0 · —</td><td class="n">0 · 0</td><td>clean all week</td></tr>
+          <tr><td>Deploys · green</td><td class="n">3 · 2</td><td class="n">10 · 8</td><td class="n">80% green</td></tr>
+          <tr><td>Durable rulings filed</td><td class="n">#1–#48</td><td class="n"><strong>#1–#58</strong></td><td class="n">+10 · record</td></tr>
+          <tr><td>Standing QA assertions</td><td class="n">12</td><td class="n"><strong>21</strong></td><td class="n">+7 built, +2 counted</td></tr>
+          <tr><td>…of which <strong>GATE the deploy</strong></td><td class="n">10 of 12</td><td class="n"><strong>19 of 21</strong></td><td class="n">+9</td></tr>
+          <tr><td>Ed05 pieces drafted / banked / verified</td><td class="n">3 / 3 / 3</td><td class="n">5 / 4 / 4</td><td class="n">+2 / +1 / +1</td></tr>
+          <tr><td>Verification backlog</td><td class="n">0</td><td class="n">0</td><td>held at zero</td></tr>
+          <tr><td>Browse surface (pages live, per language)</td><td class="n">0</td><td class="n">19</td><td class="n">last week's bet</td></tr>
+          <tr><td>Sitemap URLs (live origin)</td><td class="n">82</td><td class="n">120</td><td class="n">+38</td></tr>
+          <tr><td><code>site:</code> observation — URLs from the domain</td><td class="n">0 (09-13)</td><td class="n">not re-run</td><td>see below</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Region and theme drift: none, by arithmetic</strong> — nothing published. MENA <span class="num">15</span>, Asia <span class="num">7</span>, Africa <span class="num">5</span>, Europe <span class="num">5</span>, LatAm–Caribbean <span class="num">3</span>, Oceania <span class="num">2</span>, N-America <span class="num">1</span>. On flip day Africa moves <span class="num">5 → 11</span> and becomes the second-largest region in the publication.</p>
+
+      <h3>Last week's bet, read as promised — and it paid on all four numbers</h3>
+      <p>The 2026-09-13 review bet on <strong>giving the corpus a second way to be walked</strong>: taxonomy index pages, chosen specifically because its result could be read <em>without anyone's permission</em>, after the IndexNow bet the week before turned out to depend on a word we do not control. It shipped on <strong>09-14</strong>, one day later. Re-read today against the <strong>live origin</strong>, not against a build:</p>
+      <table>
+        <thead><tr><th>Reading</th><th>Forecast 09-13</th><th>Shipped 09-14</th><th>Live origin 09-20</th></tr></thead>
+        <tbody>
+          <tr><td>Index pages per language</td><td class="n">18</td><td class="n">19</td><td class="n"><strong>19</strong> (38 total)</td></tr>
+          <tr><td>Sitemap URLs</td><td class="n">82 → 118</td><td class="n">120</td><td class="n"><strong>120</strong></td></tr>
+          <tr><td>New internal edges</td><td class="n">~140</td><td class="n">500</td><td class="n"><strong>823</strong> hrefs across the 38 browse pages</td></tr>
+          <tr><td><code>qa_reachability</code> on the larger graph</td><td>zero orphans</td><td>zero on 120</td><td class="n"><strong>zero on 120</strong></td></tr>
+        </tbody>
+      </table>
+      <p>All four hold a week on, on bytes a stranger can fetch. <strong>The discipline that produced it is the part worth keeping:</strong> the criterion was <em>what can we build, ship and read entirely by ourselves?</em>, and it is the criterion again this week.</p>
+
+      <p><strong>One reading deliberately not taken.</strong> The <code>site:</code> observation was <em>not</em> re-run today. Five dated observations have returned zero, every discoverability lever the operation can pull alone has been pulled, and a sixth zero would be a number collected to fill a row. It resumes when something changes that could move it — the domain, or Search Console, both yours. <strong>No traffic figure appears in this review.</strong> The site carries no third-party tracker by design, so visitor analytics are not collected; saying so is the honest line and estimating would not be.</p>
+
+      <h3>A 33-day-old debt closed today, and it cost five minutes</h3>
+      <p>The 2026-08-18 rule named <strong>the feeds</strong> as the operation's blind spot and asked three questions of them. This morning's daily answered the first and found every one of <span class="num">76</span> share-card enclosures declaring <code>length="0"</code> — telling every feed reader that a 1–20 KB PNG was an empty file. Its own note then said the other two questions <em>"need a client we do not currently own."</em></p>
+      <p><strong>That sentence was true of the old desktop cadence and is not true of this one.</strong> The cloud runner <em>is</em> a client outside our origin. Fetched from it, against the live site:</p>
+      <table>
+        <thead><tr><th>Probe</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Item and channel links, both feeds</td><td class="n"><strong>78 / 78</strong> → 200 · <code>text/html</code></td></tr>
+          <tr><td>Enclosures, both feeds</td><td class="n"><strong>76 / 76</strong> → 200 · <code>image/png</code></td></tr>
+          <tr><td>Declared <code>length</code> vs the origin's <code>Content-Length</code></td><td class="n"><strong>76 / 76 exact</strong>, 0 mismatches</td></tr>
+        </tbody>
+      </table>
+      <p>The third row is the one that matters. This morning's assertion checks the declaration against the file in <code>dist</code>; this checks the same declaration against <strong>what the origin actually serves</strong> — ruling <span class="num">#16</span> one layer out. Recorded in <code>agents/growth/2026-09-20-the-feed-proved-from-outside.md</code>. <strong>A review that runs a sweep once has a habit, not a gate</strong> — making it reproducible is part of this week's bet.</p>
+
+      <div class="bet">
+        <div class="kicker">This week's single growth bet · readable Sunday 2026-09-27 using only actions we can take alone</div>
+        <h3 style="color:var(--color-paper);margin-bottom:0.5em;">Make the one channel we own outright actually work for a reader — and widen it by exactly one step</h3>
+        <p>The feed is the only distribution surface this publication owns outright: no account, no platform, nobody's permission, and a reader can take it and go. It has also never been verified end to end, and when it finally was looked at this week it had been telling every reader its images were empty. <strong>Breadth on an unverified foundation is the exact mistake our own enumeration rules keep catching</strong>, so the bet closes the foundation first and widens by one deliberate step.</p>
+        <p style="margin-bottom:0.3em;"><strong>Three readings, all ours:</strong></p>
+        <ul style="margin-bottom:0.6em;">
+          <li><strong>A.</strong> Arabic items carry their direction — asserted from the <strong>resolved</strong> value in the headless browser we already run for three assertions, never from our own markup (<span class="num">#55</span>). Wired, and proved both ways per <span class="num">#35</span>. <em>Owed since 2026-08-18 — 33 days.</em></li>
+          <li><strong>B.</strong> Today's egress reading becomes an instrument rather than a thing a review did once: <span class="num">78/78</span>, <span class="num">76/76</span>, <span class="num">0</span> length mismatches, reproducible on demand.</li>
+          <li><strong>C.</strong> <strong>Per-region feeds — seven per language, fourteen in all</strong>, autodiscovered from the region browse pages that shipped last week, derived from the approved collection at build time (<span class="num">#36</span>), with each feed's item set asserted equal to its browse page's article set <strong>by name, never by count</strong> (<span class="num">#57</span>). Seven, not all eighteen facets: small enough not to eat a verdict, and scoped to the thing Edition 05 is about to make true — on flip day a reader can subscribe to <em>Africa</em> and Africa goes <span class="num">5 → 11</span>.</li>
+        </ul>
+        <p style="margin-bottom:0;"><strong>Pass condition, stated in advance:</strong> A wired and gating, B reproducible, C live with zero orphans on the larger graph and every facet feed's membership asserted by name. <strong>Fail condition, equally in advance:</strong> if C competes with an Edition 05 verdict for a run, <strong>C gives</strong> — the date gives, the verdicts do not (09-13). A bet is not a licence.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">2 · Quality — the gate ratio, and two red deploys</div>
+      <h2>19 of 21 assertions gate the deploy</h2>
+
+      <div class="rule-box">
+        <div class="kicker">The count, printed because a count nobody prints is a count nobody notices drifting</div>
+        <p style="margin-bottom:0.4em;"><strong>21 standing assertions · 19 gate the deploy · 2 do not, and both say why in the workflow file.</strong></p>
+        <p style="margin-bottom:0.4em;"><strong>Twelve</strong> run as build steps in <code>astro-pages.yml</code>: <code>qa_dist_input · qa_robots · qa_hreflang_clusters · qa_body_links · qa_lastmod · qa_held_assets · qa_reachability · qa_jsonld · qa_a11y_lang · qa_ar_language · qa_consumer_surface · qa_geo_fields</code>.</p>
+        <p style="margin-bottom:0.4em;"><strong>Seven</strong> gate from <code>postbuild</code> in <code>web/package.json</code>, because the identity that writes them may not write the workflows directory: <code>qa_css_tokens · qa_render · qa_arabic_shaping · qa_arabic_joining · qa_stable_order · qa_feed_enclosures · qa_census</code>.</p>
+        <p style="margin-bottom:0;"><strong>Two</strong> are out, with stated reasons: <code>qa_live_drift</code> reads the <em>origin</em> and the <code>verify</code> job's byte-compare is strictly stronger; <code>qa_sources_alive</code> reads third-party hosts, and someone else's 404 is not our build's failure. <strong>No assertion that reads only <code>web/dist</code> is unwired.</strong> All 21 run clean against today's build; the <code>verify</code> job confirms the origin matches it, 120 URLs, zero drift.</p>
+      </div>
+
+      <p><strong>The estate grew by seven in seven days</strong> — <code>qa_arabic_shaping</code> (17), <code>qa_arabic_joining</code> (18), <code>qa_census</code> (19), <code>qa_stable_order</code> (20), <code>qa_feed_enclosures</code> (21), plus <code>qa_geo_fields</code> and <code>qa_jsonld</code>'s rewiring. Every one was proved both ways before it landed, per ruling <span class="num">#35</span> and the 09-14 addendum: a control that must stay silent on a known-good build, <em>and</em> a bite that must first be shown to have changed the artefact before the check is run on it. Five of the seven <strong>bit on first contact</strong>, which is the only real evidence that a new check was worth writing.</p>
+
+      <h3>The two red deploys, and what each one actually meant</h3>
+      <table>
+        <thead><tr><th>Date</th><th>Job</th><th>Cause</th><th>Reached a reader?</th></tr></thead>
+        <tbody>
+          <tr><td class="n">09-17</td><td>build</td><td><code>qa_lastmod</code> failed on a date that was <strong>true</strong> — the check modelled two of its resolver's three branches, and the URL it failed on was the one URL it had never been checking (ruling <span class="num">#56</span>)</td><td><strong>No — and that is the cost:</strong> the site served 09-16 bytes for a day and the whole of 09-17's work sat unread</td></tr>
+          <tr><td class="n">09-19</td><td>verify</td><td>The feed-cache step — a conditional GET issued ~12 seconds after publish, the only step in that job with no retry. <strong>Second failure in nineteen days</strong> (09-09, 09-19), both times while the site was publishing perfectly</td><td>Yes — the bytes were served; the <em>run</em> was marked failed and nobody had looked at which half</td></tr>
+        </tbody>
+      </table>
+      <p><strong>These two are opposite failures and it is worth keeping them apart.</strong> The first is a check that was right to fail and wrong about where to look — a real defect in our own instrument, found and fixed by the next run. The second is a check that was wrong to fail: the publication was fine and the probe was impatient. The repair is written, tested against the live origin both ways, and <strong>cannot be pushed</strong> — see issue <span class="num">#7</span> in §5. Today's deploy went green on that same step, which is exactly what a flake does and exactly why it needs the retry rather than another week of watching.</p>
+
+      <div class="flag">
+        <div class="kicker">The blind-spot question, answered — the 08-23 rule</div>
+        <p style="margin-bottom:0;"><strong>What could this week's sweeps not structurally see?</strong> Order. Every check the operation has ever written asks <em>what is on the page</em>; none asked <em>in what order</em> — which is how the same commit came to serve five pages and both feeds differently on two runners without a single number changing (<span class="num">#58</span>). That one is closed. <strong>The surface named for next:</strong> a hedge that survives its own citation, survives the first clause of its sentence, and dies in the last one. Both of this week's held-set findings (§4) have exactly that shape, and nothing we own looks for it — our checks compare the annotation to the sentence, and in both cases the sentence <em>starts</em> by agreeing.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">3 · Knowledge — the guidebook consolidation</div>
+      <h2>Ten rulings the register had never heard of, and a section two weeks behind</h2>
+
+      <p>The weekly skill warns that this register has drifted three weeks running, always in the same direction, and instructs the review to <em>check it, do not assume it</em>. <strong>It had drifted further than at any point on record.</strong></p>
+
+      <table>
+        <thead><tr><th>Where</th><th>Said</th><th>Was</th></tr></thead>
+        <tbody>
+          <tr><td>§3 heading, table and series line</td><td class="n">#1–#48</td><td class="n"><strong>#1–#58</strong> on disk, all ten cited by number in commits, briefs and verdicts</td></tr>
+          <tr><td>§1 table</td><td>stops at <span class="num">row 39</span></td><td><span class="num">rows 40–53</span> existed only as loose files — <strong>since 2026-09-06</strong></td></tr>
+          <tr><td>§3 families heading</td><td>"the three families"</td><td>it listed <strong>seven</strong>, and had since 2026-08-23</td></tr>
+          <tr><td><code>CLAUDE.md</code>, read first by every run</td><td><span class="num">14</span> assertions, <span class="num">13</span> gate</td><td><strong><span class="num">21</span> and <span class="num">19</span></strong></td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>All reconciled today.</strong> Ten canonical one-liners written into §3; fourteen rows merged into §1 with seven row numbers assigned and nothing renumbered; the series line rebuilt and verified file by file — <strong><span class="num">#1–#58</span>, no gaps, no duplicates</strong>; §1 given a <strong>count line, which it had never had</strong>; the families heading corrected to eight; the 08-23 → 09-06 addenda and the 09-06 consolidation section rolled verbatim into <code>ARCHIVE-2026-08-23_2026-09-06.md</code> per the two-cycle rule, nothing deleted.</p>
+
+      <h3>Why §1 drifted twice as long as §3, and it is our own ruling</h3>
+      <p>§3 was caught within a week because <strong>its heading claimed a range its table contradicted</strong>. §1 went two weeks because it claimed nothing at all — the table simply stopped, and last week's consolidation reconciled §3 and <em>took §1's silence for agreement</em>. That is ruling <span class="num">#57</span>, filed on Wednesday, committed by the review that will file it: <strong>a section with no count is not safer than one with a wrong count; it is only quieter.</strong> §1 now carries its count.</p>
+
+      <h3>The cause is structural, not moral — and the fix is in the RUNBOOK</h3>
+      <p>Ten rulings did not go unrecorded through carelessness. Every one was filed as a dated file on the day it was earned, by the run that earned it. What failed is the <strong>cadence</strong>: the register's prose is consolidated weekly, and the rate at which rulings arrive doubled the moment the operation moved to the cloud — nine runs in seven days this week against five in seven last. <strong>A document maintained on a slower clock than the work it describes is not out of date by accident; it is out of date by design.</strong> New RUNBOOK rule: the run that files a ruling updates the <em>range</em> in the same commit — one line, two numbers, no judgment — and the weekly keeps the work that genuinely needs a week's distance, the one-liner and the family placement.</p>
+
+      <h3>No new family was named, and that is this week's structural result</h3>
+      <p>All ten joined existing families. <strong>Five joined the assertion-discipline family</strong> — <span class="num">#52</span> which artefact did it read · <span class="num">#55</span> at which layer · <span class="num">#56</span> from which endpoint · <span class="num">#57</span> over which set, by name · <span class="num">#58</span> in which order — taking it from five members to ten and making it the largest in the register by half again. <strong>The split inside it is the finding:</strong> its first five ask <em>would this check catch the defect?</em>; its second five ask <em>what is this check's answer actually about?</em> — a question that only becomes askable once you own enough checks for them to disagree with each other. We crossed that line this week. The <strong>enumeration family</strong> is listed in §3 for the first time, having always lived only in the RUNBOOK, and gains its first numbered member in <span class="num">#50</span>.</p>
+
+      <div class="rule-box">
+        <div class="kicker">A prediction the register made, and kept</div>
+        <p style="margin-bottom:0;">The 09-13 review closed by naming the <strong>attribution verb</strong> as the non-numeric family's next surface. It was tested on <strong>09-14</strong> — not by a verification pass but by a language crossing, because Arabic cannot render <em>"the Principal Investigator <strong>said</strong> it"</em> without choosing a gender, so the source release had to be re-opened. Its verb is <strong>cautions</strong>, and it places the caution <em>inside applause</em>. Both restored in both languages; the same re-read then produced ruling <span class="num">#53</span> by leaving a third fact behind. <strong>A taxonomy that predicts where the next ruling comes from, and is right, has become an instrument.</strong></p>
+      </div>
+
+      <p><strong>Owed, and named rather than carried silently:</strong> §0's seven-axes checklist <strong>has not been touched since 2026-07-27</strong> and now understates the trace by three axes — <span class="num">#45</span> named <em>type</em> as the eighth in so many words, and <span class="num">#46</span>/<span class="num">#47</span> added <em>quotation</em>, <em>clock</em> and <em>description-date</em>. Eight weeks of drift in the one section a drafter is told to work through before a figure ships. It was named as owed on 09-06 and again today. <strong>It is the first item of next week's consolidation and is not to be carried a third time.</strong></p>
+    </section>
+
+    <section>
+      <div class="kicker">4 · Content — the edition ledger, reconciled against disk</div>
+      <h2>Five of six drafted, four verified, and two sentences the calendar moved under</h2>
+
+      <p><strong>Every cell of the wave ledger is backed by a file.</strong> Checked one at a time against the tree this morning: five drafts, five hero stills, five share cards, four Arabic twins, four Editor pair verdicts, four Verifier verdicts. One location note recorded so nobody hunts at the flip — <strong>Zambia's Arabic gate has no standalone file</strong>, because it was composed before that convention existed; its gate is section 5 of the pair verdict. <strong>Verification backlog is zero</strong> and has been for a fortnight.</p>
+
+      <table>
+        <thead><tr><th>#</th><th>Piece</th><th>Draft</th><th>AR + gate</th><th>Pair verdict</th><th>Verifier</th><th>Still · card</th><th>Flag</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1</td><td>Zambia — the Free Education Act</td><td class="n">08-25</td><td class="n">08-26 ✓</td><td class="n">08-27 ✓</td><td class="n">09-08 ✓</td><td>✓ ✓</td><td><span class="pill hold">held</span></td></tr>
+          <tr><td class="n">2</td><td>Sierra Leone — SLEIC outcomes</td><td class="n">08-28</td><td class="n">08-29 ✓</td><td class="n">08-30 ✓</td><td class="n">09-09 ✓</td><td>✓ ✓</td><td><span class="pill hold">held</span></td></tr>
+          <tr><td class="n">3</td><td>Sudan — Can't Wait to Learn</td><td class="n">09-01</td><td class="n">09-03 ✓</td><td class="n">09-04 ✓</td><td class="n">09-10 ✓</td><td>✓ ✓</td><td><span class="pill hold">held</span></td></tr>
+          <tr><td class="n">4</td><td>Africa — four rulers, four crowns</td><td class="n">09-14</td><td class="n">09-14 ✓</td><td class="n">09-15 ✓</td><td class="n">09-17 ✓</td><td>✓ ✓</td><td><span class="pill hold">held</span></td></tr>
+          <tr><td class="n">5</td><td>Egypt — the doors published first</td><td class="n">09-19</td><td>—</td><td>—</td><td>—</td><td>✓ ✓</td><td><span class="pill hold">held</span></td></tr>
+          <tr><td class="n">6</td><td>Rwanda — teacher certification</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill">not started</span></td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>The gate dependency is unchanged and binds four.</strong> Rows 1–4 rail into each other and now do so reciprocally — the three edges into row 4, owed since 09-14 <em>in the flip commit</em>, landed a run early on 09-20, in both languages, and are now covered by assertion 20's rail contract. Row 5 rails deliberately outward to three live pieces, so it can ship with the wave or after it.</p>
+
+      <h3>The two clock findings — both block the flip, neither is fixed here</h3>
+      <p>The review's job is to re-read every forward-looking date in the held set against the calendar. Doing that found two, both ruling <span class="num">#46</span>'s corollary — <em>a plan is only a plan until its date arrives</em> — and neither visible to any of the four gates each piece has already cleared, <strong>because at compose time both sentences were true.</strong></p>
+
+      <div class="flag">
+        <div class="kicker">Item A · Zambia, row 1, both languages</div>
+        <p style="margin-bottom:0.5em;"><em>"Zambia goes to a general election in <strong>August 2026</strong>, two months after assent, with free education at the centre of the campaign."</em> · <span class="ar">«فزامبيا ذاهبةٌ إلى انتخاباتٍ عامةٍ في أغسطس 2026»</span></p>
+        <p style="margin-bottom:0;">The piece is datelined <strong>25 August 2026</strong>. Today is <strong>20 September</strong>. The wave gates on <strong>11 October</strong>. Whatever day in August the vote fell on, by the flip this reads as a prediction about the past — in the one paragraph the piece uses to argue that the statute is <em>not</em> campaign material, which is exactly the paragraph that cannot afford to sound as though it was written before the thing it discusses. <strong>This review does not say when the election was held or what it returned:</strong> no register for it has been read by this operation, and supplying one from what a model remembers of Zambian electoral law is a figure composed from a pattern (<span class="num">#41</span>), which this publication forbids. <strong>Verifier opens a register; Editor re-tenses.</strong></p>
+      </div>
+
+      <div class="flag">
+        <div class="kicker">Item B · slot 3, row 4, both languages, ¶94 — and it is #51 inside the piece #51 was filed on</div>
+        <p style="margin-bottom:0.5em;">The paragraph opens correctly — <em>"its results are announced for <strong>the last quarter of 2026</strong>"</em> — which is exactly what <code>sources[]</code> entry 8 carries. It then closes: <em>"A crown handed out in September 2026 is handed out in the knowledge that the ruler is <strong>re-read in December</strong>."</em> · <span class="ar">«تُقرأ من جديد في ديسمبر»</span></p>
+        <p style="margin-bottom:0;"><strong>No register read for this piece says December.</strong> Q4 is October, November and December; the piece picks the last of the three and states it flat — in its closing line, in the piece whose entire argument is that a rank without its ruler is an opinion with decimal places. It is <strong>ruling <span class="num">#51</span> committed for the third time inside the piece that earned it</strong> (after pair-verdict note 1 and verification item 1), and the first time by a <em>date</em> — which is why nothing saw it: the annotation is right, both bodies are wrong, and the wrong thing is <em>narrower</em> rather than false, so neither the numeral multiset, nor the eight axes, nor the <code>annotation == sentence</code> hand-off line can fire. <strong>Recommended disposition: restore the register's own scope in both languages</strong> — it adds no claim and removes one. The Editor's call, because it costs the sentence its cadence.</p>
+      </div>
+
+      <p><strong>The shape they share is the sharper finding.</strong> Each sits in a sentence whose <em>first half is correct</em> — the right month, the right quarter, cited correctly one clause earlier — and fails in the second half, where the writer moved from the register to the rhythm. A hedge dropped outright is what the 09-13 rule was written to catch. <strong>A hedge that survives the citation, survives the first clause, and dies in the last one is a different failure, and nothing we own looks for it.</strong> Carried as the forward surface.</p>
+
+      <h3>The lane split is retired</h3>
+      <p>Declared 09-16 to stop two cadences colliding on the same row. <strong>It was never once tested:</strong> the last desktop run fired 09-16, and the six runs since have all been the cloud cadence. The founder decision that would disable the desktop schedules still cannot be executed by this identity — it lives in the workflows directory. <strong>Bookkeeping that describes one lane is not coordination.</strong> The rule of thumb underneath it stands and needs no table: <em>the run that starts second on a given day reads the ledger before planning and takes a lane no line above claims.</em> <strong>Rwanda's re-verification is released to any run</strong> after seven days reserved for a cadence that did not fire.</p>
+
+      <h3>The schedule, read honestly against the 11 October gate</h3>
+      <p><span class="num">21</span> days. Owed: Egypt's Arabic, gate, pair verdict and verification (<span class="num">4</span> runs); Rwanda's re-verification, draft, Arabic, gate, pair verdict and verification (<span class="num">6</span>); three confirmation reads; and now two clock items. <strong>~<span class="num">15</span> runs in <span class="num">21</span> days</strong>, against a week that just delivered nine in seven. <strong>It fits only at this week's rate.</strong> The order of sacrifice was stated in advance on 09-13 and does not change: <strong>the date gives, the verdicts do not.</strong> The outer bound is 11-15, and even that is soft against the only hard date in the calendar — PASEC 2024, Q4 2026 — which the <em>ruler piece</em> must beat, and the ruler piece is the furthest along of all six.</p>
+
+      <p><strong>Egypt's Arabic composition has now slipped twice</strong> — declared as the next lane on 09-19 and again on 09-20, not started either time, both times for a stated and defensible reason (a red deploy, and then what diagnosing it uncovered). Twice is a pattern rather than a day. <strong>It is tomorrow's first lane, before anything else, and this review is naming the slip rather than restating the intention.</strong></p>
+    </section>
+
+    <section>
+      <div class="kicker">5 · Team, decisions and the founder's desk</div>
+      <h2>No new persona — the eighth consecutive hold, and this time it is checkable</h2>
+
+      <p><strong>Headcount verified, not assumed:</strong> eleven personas on disk (<code>01</code>–<code>11</code>), eleven claimed in the CHARTER. No drift — which is worth saying because that exact line stood four additions out of date until 2026-08-16.</p>
+
+      <p>The trigger is <em>a capability gap that daily runs have hit repeatedly</em> — not idleness, not enthusiasm. The candidate this week was real: <strong>split the Web Developer</strong>, site and build from assertions. The role shipped <strong>seven standing assertions in seven days</strong> while also carrying the build, the deploy and two red-deploy diagnoses, and five of the week's ten rulings came out of that work.</p>
+
+      <p><strong>Held, and the reasoning is the opposite of the obvious one.</strong> A role writing a ruling a day is at peak, not saturated. What is growing is the <em>queue</em>, not the incapacity. And the review found that the queue had a worse problem than its length: <strong>five open Web Developer items existed, and every one was recorded in a different artefact</strong> — a QA log, the edition ledger, a weekly review, a daily brief, a growth note. Nothing held the list. That is the guidebook drift of §3, one desk over: work filed by the run that finds it and consolidated by nobody. <strong>A queue nobody can see cannot be shown to be growing faster than it is cleared</strong>, which means the expansion question was not answerable by looking — only by arguing. So the action of record is not a hire; it is <code>agents/logs/WEBDEV-QUEUE.md</code>, opened today with all five items, their ages and what each blocks.</p>
+
+      <div class="rule-box">
+        <div class="kicker">The trigger, stated so next week can check it by looking</div>
+        <p style="margin-bottom:0;"><strong>If at the 2026-09-27 review that queue still stands at four or more open items, with three or more older than three runs, and the week cleared fewer than two — the Web Developer role is split</strong>, site/build from assertions, scaffolded under the existing persona per the CHARTER's ladder. Today it did not fire, on a deliberately strict reading. One item on that list blocks something real: <code>qa_sources_alive</code> is unschedulable, and the ledger makes it the <em>last step before the flip commit</em> — an unbounded, un-observable step at the worst possible moment.</p>
+      </div>
+
+      <h3>Founder decisions, carried by name — a question asked once and never repeated is a question abandoned</h3>
+      <table>
+        <thead><tr><th>#</th><th>Question</th><th>Open</th><th>Default</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td class="n">#6</td><td>The autonomous run can push, but its pushes do not deploy — and it may not write the workflows directory, so seven gates live in <code>package.json</code></td><td class="n">6 days</td><td><strong>C, dated 2026-09-20</strong></td><td><span class="pill ok">default applied today</span></td></tr>
+          <tr><td class="n">#7</td><td>A finished, tested repair to the deploy's flakiest step cannot be pushed by an autonomous run</td><td class="n">opened today</td><td>Option 3 (do nothing) if unanswered by 2026-09-27</td><td><span class="pill hold">live</span></td></tr>
+          <tr><td>—</td><td><strong>Custom domain</strong>, then <strong>Substack</strong></td><td class="n">8th week</td><td>none — yours entirely</td><td><span class="pill hold">unchanged, in order</span></td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>#6's default fired today and was applied.</strong> The question was whether to hand the run a workflow-scope credential, queue patches for a human, or accept that <code>package.json</code> is a second equal home for deploy gates and say so out loud. The stated default was the third, and it has been executed: the workflow now carries a comment naming all seven <code>postbuild</code> gates, the total, the ratio, and the reason the split exists. <strong>A decision made by silence is now legible as one.</strong> The circularity the issue warned about is real — applying it required editing the very file this identity may not write — and the outcome of that attempt is recorded at the foot of this review either way.</p>
+
+      <p><strong>#7 is the one live ask, and it is one command.</strong> The <code>verify</code> job's feed-cache step has failed the deploy twice in nineteen days, both times while the site was publishing perfectly, because it is the only step in that job that queries the origin without a retry — the step immediately above it retries for five minutes for exactly this reason. The patch is written, tested against the live origin both ways, and sitting in <code>agents/patches/</code>. My recommendation is <strong>option 1</strong>: apply it by hand, once. <strong>I specifically do not want option 2</strong>, a standing credential that lets an autonomous run rewrite the rules it is judged by. The refusal is a property worth keeping.</p>
+
+      <h3>Recommended run order from Monday 2026-09-21, for the Editor's call</h3>
+      <ol>
+        <li><strong>Egypt's Arabic composition and gate</strong> — twice-declared, twice-slipped, first lane before anything else.</li>
+        <li>The two clock items — Verifier opens Zambia's election register, Editor rules both.</li>
+        <li>Egypt's pair verdict, then its verification verdict, one per run in banking order.</li>
+        <li>Rwanda re-verification (now unreserved), then the three confirmation reads interleaved one per run.</li>
+      </ol>
+      <p>The growth bet runs on the Web Developer's side and touches no editorial capacity — and gives way if it ever does.</p>
+    </section>
+
+    <div class="footer">
+      <p>Madār · مدار — weekly review · Sunday 2026-09-20 · prepared autonomously by the Manager per <code>/agents/CHARTER.md</code></p>
+      <p><strong>Artefacts in this block:</strong> this review · <code>agents/guidebook/INDEX.md</code> (consolidated, register #1–#58, §1 rows 1–53) · <code>agents/guidebook/ARCHIVE-2026-08-23_2026-09-06.md</code> (new) · <code>agents/RUNBOOK.md</code> (one rule) · <code>CLAUDE.md</code> (three stale counts corrected) · <code>content-drafts/_EDITION_05_STATUS.md</code> (reconciled; two clock findings; lane split retired) · <code>agents/logs/WEBDEV-QUEUE.md</code> (new) · <code>agents/growth/2026-09-20-the-feed-proved-from-outside.md</code> · <code>agents/logs/manager-status-2026-09-20-weekly.md</code> · <code>.github/workflows/astro-pages.yml</code> (issue #6 default C).</p>
+      <p><strong>Corpus unchanged:</strong> 38 EN / 38 AR, 100% parity, 35 countries, no approved flips, 54th day without a publication. <strong>All 21 standing assertions clean</strong> against today's build; <strong>19 of 21 gate the deploy</strong>, and the 2 that do not say why in the workflow file. <code>qa_live_drift</code>: origin matches dist, 120 URLs, 0 lastmod drift.</p>
+      <p><strong>Artefact check (2026-08-23 rule):</strong> recorded at the foot of the run log — this file was rendered and inspected, not merely parsed.</p>
+      <p>Made in spite of, not because of.</p>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
