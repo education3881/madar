@@ -1,0 +1,85 @@
+From edca4db025370b7fcaef944d31faefdbe012df6d Mon Sep 17 00:00:00 2001
+From: Madar Operations <agostinialves@gmail.com>
+Date: Sun, 20 Sep 2026 09:47:38 +0000
+Subject: [PATCH] Madar 2026-09-20: the verify jobs feed-cache step gets the
+ retry every other origin check in that job already has, and records which
+ edge node answered
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ .github/workflows/astro-pages.yml | 54 +++++++++++++++++++++++++------
+ 1 file changed, 45 insertions(+), 9 deletions(-)
+
+diff --git a/.github/workflows/astro-pages.yml b/.github/workflows/astro-pages.yml
+index 37b8383..c09f02e 100644
+--- a/.github/workflows/astro-pages.yml
++++ b/.github/workflows/astro-pages.yml
+@@ -247,20 +247,56 @@ jobs:
+       # can be compared by eye for cross-deploy variance (an ETag that never changes
+       # is ruling #39's invariant probe wearing a cache header). Cannot false-pass
+       # on a stale origin: it runs only after the byte-compare has already bitten.
++      # 2026-09-20 — THIS STEP HAD NO RETRY, and it is the only step in this job
++      # that talks to the origin without one. It failed the deploy twice in
++      # nineteen days (09-09 and 09-19), both times ~12 seconds after the
++      # byte-compare above had just succeeded, and both times on rss.xml while
++      # ar/rss.xml passed in the same loop. A day later the property holds
++      # perfectly: twelve consecutive conditional GETs, twelve DISTINCT edge
++      # nodes by x-served-by, twelve 304s.
++      #
++      # The origin is not one server. `education3881.github.io` is a Fastly
++      # estate, and a deploy reaches its nodes at different moments, so in the
++      # seconds after a publish the HEAD that FETCHES the validator and the GET
++      # that PRESENTS it can be answered by two nodes holding two versions —
++      # which is a 200, correctly. The byte-compare above already assumes this
++      # and spends up to 5 minutes converging; this step assumed the opposite
++      # one line later. The property is real and worth gating; the instant was
++      # never a fair question to ask.
++      #
++      # So: retry the pair, and fail only if it never converges. The retry is
++      # on the (HEAD, conditional GET) PAIR and not on the GET alone — re-using
++      # a validator fetched from a node that has since been superseded would
++      # re-ask the same unfair question with a staler answer.
++      #
++      # It also now prints x-cache and x-served-by on a miss. The mechanism
++      # above is inferred from timing and from the recovery, not observed: the
++      # old step captured no headers, so a third occurrence would have been as
++      # undiagnosable as the first two. Whatever the cause, the next failure
++      # says which node said it.
+       - name: Feed cache validators work for a polling reader
+         run: |
+           BASE="https://education3881.github.io/madar"
+           fail=0
+           for f in rss.xml ar/rss.xml; do
+-            hdr=$(curl -fsSI "$BASE/$f") || { echo "::error::feed $f unreachable for HEAD"; fail=1; continue; }
+-            etag=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="etag"{print $2}')
+-            lm=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="last-modified"{print $2}')
+-            [ -n "$etag" ] || { echo "::error::feed $f serves no ETag — readers cannot poll cheaply"; fail=1; }
+-            [ -n "$lm" ]   || { echo "::error::feed $f serves no Last-Modified"; fail=1; }
+-            echo "feed=$f etag=$etag last-modified=$lm"
+-            if [ -n "$etag" ]; then
+-              code=$(curl -s -o /dev/null -w '%{http_code}' -H "If-None-Match: $etag" "$BASE/$f")
+-              [ "$code" = "304" ] || { echo "::error::feed $f conditional GET returned $code, expected 304 — validator not honored"; fail=1; }
++            ok=""
++            for i in $(seq 1 10); do
++              hdr=$(curl -fsSI "$BASE/$f") || { sleep 10; continue; }
++              etag=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="etag"{print $2}')
++              lm=$(printf '%s' "$hdr" | tr -d '\r' | awk -F': ' 'tolower($1)=="last-modified"{print $2}')
++              if [ -z "$etag" ] || [ -z "$lm" ]; then sleep 10; continue; fi
++              rsp=$(curl -s -o /dev/null -D - -H "If-None-Match: $etag" "$BASE/$f" -w '%{http_code}')
++              code=$(printf '%s' "$rsp" | tail -1)
++              if [ "$code" = "304" ]; then
++                echo "feed=$f etag=$etag last-modified=$lm (converged on attempt $i)"
++                ok=1; break
++              fi
++              echo "feed=$f attempt $i: conditional GET returned $code, not 304 — $(printf '%s' "$rsp" | tr -d '\r' | awk -F': ' 'tolower($1)=="x-cache"||tolower($1)=="x-served-by"{printf "%s=%s ", $1, $2}')"
++              sleep 10
++            done
++            if [ -z "$ok" ]; then
++              echo "::error::feed $f never honored its own ETag across 10 attempts over ~100s — this is not propagation, the validator is genuinely not honored"
++              fail=1
+             fi
+           done
+           exit $fail
+-- 
+2.55.0
+
