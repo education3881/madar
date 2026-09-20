@@ -481,12 +481,20 @@
       </div>
     </div>
     <div class="item">
-      <div class="item__label status-parked">One thing to know, not to do</div>
+      <div class="item__label status-parked">One thing to know &mdash; and it was refused, as expected</div>
       <div class="item__body">
-        This push edits a file under <span class="mono">.github/workflows/</span> &mdash; the feed-check
-        repair. <strong>This identity may not be permitted to write that path</strong>, so it is staged
-        as a separate final commit: if it is refused, everything else still lands and the brief will
-        say so. Nothing else in the push depends on it.
+        The feed-check repair edits a file under <span class="mono">.github/workflows/</span>, and this
+        identity is not permitted to write that path. It was staged as a separate final commit so a
+        refusal would cost nothing, and <strong>it was refused</strong>:
+        <span class="mono">refusing to allow a GitHub App to create or update workflow &hellip; without
+        &lsquo;workflows&rsquo; permission</span>. Everything else landed.
+        <br /><br />
+        The work is not lost. It is preserved as an applyable patch in
+        <span class="mono">agents/patches/</span>, with the reason it is there, and filed as
+        <strong>issue&nbsp;#7</strong> with three options and a stated default. <strong>The
+        recommendation is the boring one</strong> &mdash; apply it by hand once, rather than give an
+        unwatched run a credential that lets it rewrite the rules it is judged by. On silence by the
+        27th, nothing happens and the review says so again.
       </div>
     </div>
     <div class="item">
