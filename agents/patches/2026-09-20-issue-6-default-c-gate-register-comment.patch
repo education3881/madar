@@ -1,0 +1,55 @@
+From 8f48427853ad6b3259d8b6530ea7ad61aac3a4b2 Mon Sep 17 00:00:00 2001
+From: Madar Operations <agostinialves@gmail.com>
+Date: Sun, 20 Sep 2026 10:11:39 +0000
+Subject: [PATCH] Madar 2026-09-20 weekly addendum: issue 6 stated default C
+ applied on its own date. The gate register has two homes and the workflow now
+ says so - twelve build steps here, seven postbuild gates in package.json, 19
+ of 21 gating, and the two that do not with their reasons. Staged separately
+ so a refusal costs only this commit.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ .github/workflows/astro-pages.yml | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+
+diff --git a/.github/workflows/astro-pages.yml b/.github/workflows/astro-pages.yml
+index 37b8383..97b1f9d 100644
+--- a/.github/workflows/astro-pages.yml
++++ b/.github/workflows/astro-pages.yml
+@@ -136,6 +136,33 @@ jobs:
+         # no stale dist to find — and the missing argument was the tell nobody
+         # read. Ruling #51.
+         run: python3 agents/tools/qa_jsonld.py web/dist
++      # ---- THE GATE REGISTER HAS TWO HOMES (issue #6, default C applied 2026-09-20) ----
++      #
++      # Reading this file top to bottom answers "what gates the deploy?" with TWELVE
++      # assertions. That is an incomplete answer and has been since 2026-09-14.
++      #
++      # The other SEVEN are gated from `postbuild` in web/package.json:
++      #   qa_css_tokens  qa_render  qa_arabic_shaping  qa_arabic_joining
++      #   qa_stable_order  qa_feed_enclosures  qa_census
++      #
++      # They are there rather than here because the autonomous identity that writes
++      # them is refused write access to .github/workflows/** — correctly; `workflows`
++      # is not a scope a workflow can grant itself. `npm run build` runs them, so they
++      # gate this job for real; they are simply declared somewhere else.
++      #
++      # Issue #6 offered three options: a PAT with workflow scope (A), a human applying
++      # queued patches (B), or accepting package.json as a second equal home and saying
++      # so here (C). It carried a stated default — unanswered by the 2026-09-20 weekly
++      # review, apply C — and the date passed with no word. C is applied. The register
++      # is split, deliberately, and this comment is the thing that makes the split
++      # honest rather than hidden.
++      #
++      # TOTAL: 21 standing assertions, 19 of which gate the deploy.
++      # The two that do not are named in the paragraph below, with their reasons.
++      # The weekly review prints "N of M gate the deploy" and reconciles it against
++      # BOTH files. If that ratio and this comment disagree, the two files are the
++      # state and this comment is the stale one.
++      # -------------------------------------------------------------------------------
+       # The last three hand-run assertions, wired 2026-09-13 (weekly review).
+       # All three read only web/dist, all three have existed for weeks, all
+       # three BIT HARD on first contact — qa_a11y_lang found 471 chrome strings
+-- 
+2.55.0
+
