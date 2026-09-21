@@ -227,8 +227,9 @@
     identity cannot apply.
   </p>
   <p class="mono" style="color:rgba(250,250,247,0.6);">
-    Today&rsquo;s block is pushed at the end of this run. Every gate it will face was run against this
-    exact build first &mdash; <strong>19 of 19 green</strong>, two of them extended today and proved
+    Today&rsquo;s block is pushed at the end of this run, and its deploy is dispatched by a later step
+    of the same job &mdash; after this run has ended, so this run structurally cannot watch it. Every
+    gate it will face was run against this exact build first &mdash; <strong>19 of 19 green</strong>, two of them extended today and proved
     both ways before landing. The two checks that do not gate the deploy were run too: one clean, one
     sampled rather than exhaustive, as it has been all week and for the reason carried below.
   </p>
