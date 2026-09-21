@@ -68,6 +68,7 @@ web/package.json, because this identity cannot write `.github/workflows/**`
 
 import os
 import re
+import unicodedata
 import sys
 from html.parser import HTMLParser
 
@@ -84,10 +85,10 @@ def repo_root(dist):
 
 
 def collection_meta(root):
-    """slug -> {date, related}, per collection, read from frontmatter. Both
-    expectations this check applies are derived from the source of truth and
-    never read back off the artefact under audit (#36, and the 09-14 masking
-    trap)."""
+    """slug -> {date, related, approved, region, countries, themes}, per
+    collection, read from frontmatter. Every expectation this check applies is
+    derived from the source of truth and never read back off the artefact under
+    audit (#36, and the 09-14 masking trap)."""
     out = {}
     for coll, key in (('articles', 'en'), ('articles-ar', 'ar')):
         d = os.path.join(root, 'web', 'src', 'content', coll)
@@ -103,9 +104,91 @@ def collection_meta(root):
             r = re.search(r'^related:\s*\n((?:\s*-\s*\S+\n)+)', head, re.M)
             if r:
                 rel = re.findall(r'-\s*(\S+)', r.group(1))
-            table[name[:-3]] = {'date': m.group(1), 'related': rel}
+            country = _scalar(head, 'country')
+            table[name[:-3]] = {
+                'date': m.group(1),
+                'related': rel,
+                # `approved: false` is the hold (#18). Absent means false, per
+                # the schema default -- never assumed true.
+                'approved': re.search(r'^approved:\s*true\s*$', head, re.M) is not None,
+                'region': _scalar(head, 'region'),
+                'countries': [c for c in [country] + _inline_list(head, 'countries')
+                              if c] or [],
+                'themes': _inline_list(head, 'themes'),
+            }
         out[key] = table
     return out
+
+
+def _scalar(head, field):
+    m = re.search(r'^%s:\s*(.+?)\s*$' % field, head, re.M)
+    if not m:
+        return ''
+    return m.group(1).strip().strip('"\'')
+
+
+def _inline_list(head, field):
+    """A YAML sequence in either spelling. Six of the 85 content files write
+    `themes:` as an indented block rather than inline, and a parser that knew
+    only the inline form under-counted three topics into silence -- caught by
+    this check's own first run, which is the argument for deriving the
+    expectation from the collection rather than from the page."""
+    m = re.search(r'^%s:\s*\[(.*?)\]\s*$' % field, head, re.M | re.S)
+    if m:
+        return [v.strip().strip('"\'') for v in m.group(1).split(',') if v.strip()]
+    m = re.search(r'^%s:\s*\n((?:[ \t]+-[ \t]*.+\n)+)' % field, head, re.M)
+    if not m:
+        return []
+    return [v.strip().strip('"\'')
+            for v in re.findall(r'^[ \t]+-[ \t]*(.+?)\s*$', m.group(1), re.M)]
+
+
+def collation_key(value):
+    """The comparison form of a display name -- NFD, combining marks dropped,
+    lower-cased. The Python half of `collationKey` in web/src/lib/order.ts, and
+    it must stay the same three operations: the build sorts facet rows with one
+    and this check predicts them with the other (ruling #59)."""
+    stripped = ''.join(c for c in unicodedata.normalize('NFD', value)
+                       if unicodedata.category(c) != 'Mn')
+    return stripped.lower()
+
+
+def expected_facets(table):
+    """The facet rows `facetsFor` derives from an approved collection, in the
+    order it derives them: count descending, then the normalised key ascending,
+    then the raw key. The keep rules are taxonomy.ts's own -- every region, a
+    theme on at least two pieces and fewer than half, a country on at least
+    two -- restated here rather than read off the page (#36)."""
+    pieces = [v for v in table.values() if v['approved']]
+    total = len(pieces)
+
+    def tally(values_of):
+        counts = {}
+        for p in pieces:
+            for v in set(values_of(p)):
+                if v:
+                    counts[v] = counts.get(v, 0) + 1
+        return counts
+
+    rows = []
+    for kind, counts, keep in (
+        ('region', tally(lambda p: [p['region']]), lambda n: n >= 1),
+        ('topic', tally(lambda p: p['themes']), lambda n: 2 <= n < total / 2),
+        ('country', tally(lambda p: p['countries']), lambda n: n >= 2),
+    ):
+        ordered = sorted(counts.items(),
+                         key=lambda kv: (-kv[1], collation_key(kv[0]), kv[0]))
+        rows.extend((kind, facet_slug(k), n) for k, n in ordered if keep(n))
+    return rows
+
+
+def facet_slug(value):
+    """The Python half of `facetSlug`. Same normalisation as the sort key, so a
+    row's position and its URL are derived from one function on both sides."""
+    s = collation_key(value.strip())
+    s = re.sub(r'[\u2019\']', '', s)
+    s = re.sub(r'[^a-z0-9]+', '-', s)
+    return s.strip('-')
 
 
 class Lists(HTMLParser):
@@ -208,6 +291,24 @@ def canonical(items, meta):
 
 
 ARTICLE_PAGE = re.compile(r'^(?:(ar)/)?articles/([^/]+)/index\.html$')
+BROWSE_HUB = re.compile(r'^(?:(ar)/)?browse/index\.html$')
+BROWSE_FACET = re.compile(
+    r'^(?:(ar)/)?browse/(region|topic|country)/([a-z0-9\-]+)/index\.html$')
+FACET_UL = re.compile(r'<ul class="browse__facets"[^>]*>(.*?)</ul>', re.S)
+FACET_LINK = re.compile(
+    r'href="/madar/(?:ar/)?browse/(region|topic|country)/([a-z0-9\-]+)/"')
+
+
+def facet_lists(html):
+    """The facet rows a browse page serves, one list per `browse__facets` <ul>,
+    in document order.
+
+    Scoped to that element and not to the page: a facet page's <head> carries
+    its own URL four times over (canonical, og:url, both hreflang alternates),
+    and a sweep over the whole document reads those as rows. That is the 09-14
+    masking trap from the other side -- a string found where it also
+    legitimately appears."""
+    return [FACET_LINK.findall(block) for block in FACET_UL.findall(html)]
 
 
 def main(dist='web/dist'):
@@ -222,6 +323,20 @@ def main(dist='web/dist'):
         return 2
 
     defects, pages, lists_seen, rails, feeds, ties = [], 0, 0, 0, 0, 0
+    browse_pages = 0
+    facet_rows = {lang: expected_facets(meta[lang]) for lang in ('en', 'ar')}
+    # A facet tie group is where the locale-dependent comparator of ruling #59
+    # could show: two keys of the same kind on the same count. Counted out loud
+    # for the same reason the date ties are (2026-08-16 silent-pass trap) --
+    # with no tie anywhere, the row order is fixed by the counts alone and this
+    # half of the check is green without having judged anything.
+    facet_ties = 0
+    for lang in ('en', 'ar'):
+        groups = {}
+        for kind, _slug, count in facet_rows[lang]:
+            groups.setdefault((kind, count), 0)
+            groups[(kind, count)] += 1
+        facet_ties += sum(1 for n in groups.values() if n > 1)
 
     def known(label, items):
         unknown = [s for lang, s in items if s not in meta[lang]]
@@ -304,14 +419,46 @@ def main(dist='web/dist'):
             if known(rel, items):
                 judge_rail(rel, lang, slug, items, served)
         else:
+            hub, fac = BROWSE_HUB.match(rel), BROWSE_FACET.match(rel)
+            if hub or fac:
+                browse_pages += 1
+                lang = (hub or fac).group(1) or 'en'
+                canon = [(k, s) for k, s, _ in facet_rows[lang]]
+                if hub:
+                    # The hub renders one <ul> per kind; concatenated they are
+                    # the canonical order entire.
+                    want = canon
+                else:
+                    # A facet page renders one <ul>: "Elsewhere in the archive",
+                    # which is the canonical order minus this page's own row,
+                    # truncated to nine. WHICH nine is a function of the order,
+                    # so this surface fails on a permutation the hub could
+                    # survive by rendering the same rows in a different place.
+                    self_row = (fac.group(2), fac.group(3))
+                    want = [r for r in canon if r != self_row][:9]
+                got = [r for block in facet_lists(html) for r in block]
+                if got != want:
+                    n = min(len(got), len(want))
+                    at = next((i for i in range(n) if got[i] != want[i]), n)
+                    defects.append((rel, 'facet rows diverge at position %d '
+                                         '(serves %d, corpus implies %d): '
+                                         'serves %s, corpus implies %s'
+                                    % (at + 1, len(got), len(want),
+                                       '/'.join(got[at]) if at < len(got) else '<nothing>',
+                                       '/'.join(want[at]) if at < len(want) else '<nothing>')))
             for i, items in lists_on(html):
                 lists_seen += 1
                 judge_dated('%s [list %d]' % (rel, i), items)
 
-    if pages == 0 or lists_seen == 0 or feeds == 0 or rails == 0:
-        print('ERROR: %d pages, %d dated lists, %d rails, %d feeds. An '
-              'assertion that finds nothing to check has failed.'
-              % (pages, lists_seen, rails, feeds))
+    if pages == 0 or lists_seen == 0 or feeds == 0 or rails == 0 or browse_pages == 0:
+        print('ERROR: %d pages, %d dated lists, %d rails, %d feeds, %d browse '
+              'pages. An assertion that finds nothing to check has failed.'
+              % (pages, lists_seen, rails, feeds, browse_pages))
+        return 2
+    if facet_ties == 0:
+        print('ERROR: not one facet kind holds two keys on the same count. The '
+              'row order is then fixed by the counts alone and the tie-break '
+              'this half exists to judge was never consulted.')
         return 2
     if ties == 0:
         print('ERROR: not one dated list contains two pieces sharing a date. '
@@ -320,16 +467,18 @@ def main(dist='web/dist'):
         return 2
 
     print('qa_stable_order: %d pages, %d dated lists, %d feeds, %d related '
-          'rails; %d tie groups actually exercised.'
-          % (pages, lists_seen, feeds, rails, ties))
+          'rails, %d browse pages; %d date tie groups and %d facet tie groups '
+          'actually exercised.'
+          % (pages, lists_seen, feeds, rails, browse_pages, ties, facet_ties))
     if defects:
         print('DEFECT (%d):' % len(defects))
         for lab, why in defects[:25]:
             print('  %-52s %s' % (lab, why))
         return 1
     print('CLEAN — every dated list is newest-first with ties broken by slug, every '
-          'related rail is in its declared order; no list depends on filesystem '
-          'enumeration order.')
+          'related rail is in its declared order, and every browse page serves the '
+          'facet rows the corpus implies; no list depends on filesystem enumeration '
+          'order or on the build machine\'s locale.')
     return 0
 
 

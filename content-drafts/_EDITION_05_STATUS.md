@@ -32,7 +32,7 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 2 | `2026-08-28-sierra-leone-sleic-outcomes` — *The country that paid what the measurement said* / *البلدُ الذي دفع ما قاله القياس* | West · **mandated slot 1** | 08-12 (recon 4) + OPM read 08-28 | 08-28 | 08-29 · gate PASS | **08-30 PASS** | **09-09 FAIL-2-ITEMS → both fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (08-30) | held |
 | 3 | `2026-09-01-sudan-cant-wait-to-learn` — *The classroom invented before the war that needed it* / *الصفُّ الذي اختُرِع قبل الحرب التي احتاجته* | North-East · **mandated slot 2** | 08-13 (recon 5) + re-verified 08-31 | 09-01 | 09-03 · gate PASS | **09-04 PASS** | **09-10 FAIL-3-ITEMS → all fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (09-03) | held |
 | 4 | `2026-09-14-africa-best-system-ruler` — *Four rulers, four crowns, and one about to be re-read* | Continental (`country: Mauritius` + `countries:` ×5) · **mandated slot 3** | 08-16 (recon 6) + re-verified 09-04 · blocker 1 closed 09-06 (PASEC2019) · blocker 2 closed 09-11 (TIMSS 2019) | **09-14** — now 2,332 words (cap ≤2,300 — **Editor's waiver owed**), title 53/100, dek 162/200 | **09-14 · gate PASS** (+ addendum 09-15) — title 58/100, dek 145/200 | **09-15 RETURNED-4-NOTES → all closed in-run → PASS, BANKED** | **09-17 FAIL-5-ITEMS → 3 closed in-run; items 3 and 5 RULED AND CLOSED 09-18** (Editor decisions 1 and 5) | ✓ (09-14) | ✓ (09-14) | held |
-| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | — | — | — | ✓ (09-19) | ✓ (09-19) | held |
+| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 39/39, zero one-sided figures in either direction — the edition's first clean-both-ways pair** | — | — | ✓ (09-19) | ✓ (09-19) | held |
 | 6 | Rwanda — teacher certification | East | 08-18 (recon 8) — **IN PIPELINE from 09-13 (scope set); re-verify first** | — | — | — | — | — | — | — |
 
 ### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
@@ -149,6 +149,49 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-09-21** — **ROW 5 IS A PAIR, AND THE CROSSING STRUCK A FIGURE OUT OF THE ENGLISH.**
+  State verified against git and the live origin: tree clean, no dark day, and the deploy the
+  09-20 review predicted would go **red went green** — the whole weekly review is served.
+  `2026-09-19-egypt-baccalaureate-published-first` composed in Arabic and gated the same run
+  (`verdicts/2026-09-21-egypt-baccalaureate-published-first-ar-gate.md`, **PASS**, held). Title
+  **38/100**, dek **149/200**, both measured at compose. **Numeral multiset EN↔AR: 39 tokens each
+  side, zero Arabic-only and zero English-only figures — the first pair in this edition clean in
+  both directions**, because this is the first piece with no grade labels: its figures are dates,
+  money, percentages and article numbers, and all of them cross. **Both named humans confirmed on
+  served Arabic registers today** — محمد عبد اللطيف (the minister, in Youm7's own headline and the
+  National Media Authority's tag) and فريدي البياضي (two registers, both naming him عضو مجلس
+  النواب) — and for these two the Arabic is the origin, the English the transliteration. The Al
+  Manassa byline is **deliberately not transliterated**: no served Arabic register for it was
+  found, and *very probably Arabic* is how a name gets invented (#41 applied to people, the 09-14
+  TIMSS-author precedent). **Ruling #28a applied twice**: `Daily News Egypt` reverted from
+  «ديلي نيوز إيجيبت» to its own Latin tag. **ONE FINDING, AND IT CHANGED THE ENGLISH.** The EN
+  draft called Thanaweya Amma *"the 120-year-old examination"*; the figure is in no source this
+  piece read and in no recon entry. Asked during the Arabic composition — because Arabic makes you
+  choose a construction and the construction made it visible — the nearest served registers give
+  the لائحة of **29 March 1887** (139 years) and an 1825 origin under another name, both press
+  rather than document. **The number is struck in both languages and none replaces it** (#41, and
+  the 09-11 precedent where 0.9 SD was struck rather than repaired to 0.96); the sentence keeps
+  all of its argument and none of its arithmetic. Routed to the Researcher, non-blocking. **Fifth
+  consecutive non-numeric finding in this edition, and the second found by a language crossing
+  rather than a verification pass.** **Quality: ruling #59 and two assertions extended.** The
+  09-20 forward question was tested first and bit: `facetsFor` broke its ties with a bare
+  `localeCompare`, whose answer is the runner's locale and not the data — `Türkiye`, in this
+  corpus since 07-07, reverses against `Turkmenistan` between `en_US` and `sv_SE`, and is held out
+  of the rendered set only by the two-piece country threshold. The same read found nine Arabic
+  browse pages serving **`7 يوليو 2026` in Latin digits for seven days** beside an Arabic home
+  serving `٢٨ يوليو ٢٠٢٦` — one route file asking `Intl.DateTimeFormat` for `'ar'` instead of
+  `'ar-EG'`. Both repaired; assertion 20 extended to the facet rows (38 browse pages, 6 facet tie
+  groups, three bites) and `qa_ar_language` to the listing date (it bit on the real defect, 70
+  hits). **19 of 21 assertions gate the deploy**, unchanged — both extensions landed inside
+  assertions that already gate. **For this edition specifically:** Growth read the browse surface
+  the flip will produce (`agents/growth/2026-09-21-browse-surface-after-the-wave.md`) — **one new
+  page per language (`/browse/country/sudan/`), no page lost, no existing URL changed, EN and AR
+  identical page for page.** Africa moves **5 → 10**, not the 5 → 11 `taxonomy.ts` predicts, because
+  that comment describes the edition and the flip describes the drafts. Corpus unchanged at
+  **38 EN / 38 AR**, **no approved flips**, fifty-fifth consecutive day without a published piece;
+  held set now **10 files / 5 slugs**, and **the Arabic side of the held set is complete for the
+  first time.** **Next lane: the Editor's five-test pair verdict on row 5**, then the Verifier's,
+  then Rwanda's re-verification.
 - **2026-09-20 (weekly review)** — **THE LEDGER IS TRUE, AND THE CALENDAR MOVED UNDER TWO HELD SENTENCES.**
   Every cell of the wave ledger reconciled against disk: five rows, five stills, five og cards, four
   Arabic twins, four pair verdicts, four verification verdicts, one location note (row 1's Arabic gate

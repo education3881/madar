@@ -27,7 +27,14 @@ const { facet } = Astro.props as { facet: Facet | null };
 const all = await getCollection('articles-ar', ({ data }) => data.approved !== false);
 const facets = facetsFor(all as any);
 
-const dateFormatter = new Intl.DateTimeFormat('ar', {
+// 'ar-EG', not 'ar' — the tag this edition uses on every other Arabic page.
+// They are not interchangeable: 'ar' resolves to a default numbering system of
+// `latn` and served `7 يوليو 2026`, while 'ar-EG' serves `٧ يوليو ٢٠٢٦`. Every
+// Arabic browse page shipped with Latin digits from 2026-09-14 to 2026-09-21,
+// beside an Arabic home and an Arabic editions index printing Arabic-Indic —
+// the same defect as ruling #59 in a second costume: a locale argument that is
+// not the one the page means. Asserted from today by qa_ar_language.py.
+const dateFormatter = new Intl.DateTimeFormat('ar-EG', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',

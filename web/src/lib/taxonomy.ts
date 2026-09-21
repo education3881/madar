@@ -34,6 +34,8 @@
  * derived over held drafts leaks a slug and a date (RUNBOOK, 2026-09-06).
  */
 
+import { byKeyAsc, collationKey } from './order';
+
 export type FacetKind = 'region' | 'topic' | 'country';
 
 export interface Facet {
@@ -57,11 +59,17 @@ interface Piece {
   data: PieceData;
 }
 
-/** ASCII slug for a controlled-vocabulary value. Total on the enums we own. */
+/**
+ * ASCII slug for a controlled-vocabulary value. Total on the enums we own.
+ *
+ * The normalisation step is `collationKey` and not a second spelling of it
+ * (2026-09-21): a key's position in a list and its URL are then derived from
+ * one function, so they cannot disagree. Without it `Türkiye` — a country this
+ * publication has already covered — slugs to `t-rkiye`, because `ü` is not in
+ * `[a-z0-9]` and the character class turns it into a separator.
+ */
 export function facetSlug(value: string): string {
-  return value
-    .trim()
-    .toLowerCase()
+  return collationKey(value.trim())
     .replace(/[’']/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
@@ -85,9 +93,13 @@ export function facetsFor(pieces: Piece[]): Facet[] {
   const total = pieces.length;
   const out: Facet[] = [];
 
+  // Count descending, ties on the normalised key ascending. The tie-break is
+  // `byKeyAsc` and not `localeCompare` because localeCompare with no locale
+  // argument answers out of the environment rather than out of the data —
+  // ruling #59, and the reasoning is in order.ts beside the comparator.
   const push = (kind: FacetKind, counts: Map<string, number>, keep: (n: number) => boolean) => {
     for (const [key, count] of [...counts.entries()].sort((a, b) =>
-      b[1] - a[1] || a[0].localeCompare(b[0])
+      b[1] - a[1] || byKeyAsc(a[0], b[0])
     )) {
       if (keep(count)) out.push({ kind, key, slug: facetSlug(key), count });
     }
