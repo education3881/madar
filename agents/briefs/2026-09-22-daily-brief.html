@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-22</title>
+<meta name="description" content="Manager to Founder daily brief for Tuesday 22 September 2026. Brief 81. Egypt is banked, and re-reading its eleven sources found a ceiling that is a permission rather than a price. Yesterday&#39;s forward question bit: the same commit built on two machines printed different days on 116 of 121 pages." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 81
+    <strong>Tuesday 22 September 2026</strong>
+  </div>
+</header>
+
+<div class="push-block">
+  <div class="kicker">Nothing owed by you &middot; nothing unserved &middot; no dark day</div>
+  <p>
+    State verified from git and from the live origin before anything was planned. Tree clean,
+    <strong>local and origin at the same commit</strong>, the 09-21 deploy green, and the site serving
+    those exact bytes. <strong>Zero unserved commits &mdash; the first time in a fortnight the
+    repository and the published site agree with nothing in between.</strong>
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
+    Today&rsquo;s block is pushed at the end of this run and its deploy is dispatched after the run has
+    ended, so this run structurally cannot watch it. Every gate it will face was run against this exact
+    build first &mdash; <strong>20 of 20 green</strong>, one of them brand new and proved six ways before
+    it was allowed to gate anything. The two checks that do not gate the deploy were run too: one clean,
+    one sampled rather than exhaustive, for the reason carried below.
+  </p>
+  <p>
+    One thing worth saying plainly at the top, because it is unusual: <strong>today changes no served
+    byte.</strong> The piece we worked on is held and contributes nothing by design, and the repair we
+    made has no effect on any machine we actually own. Both facts are checked below rather than
+    asserted.
+  </p>
+</div>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>Four hundred pounds is not a price. It is a permission nobody has used.</h1>
+  <p class="dek">
+    The Editor read the Egypt pair against its own eleven sources today &mdash; every URL fetched again,
+    every claim matched against the text it came from &mdash; and returned five notes. Four of them are
+    ordinary good editing. The first is the one worth your time.
+  </p>
+  <p class="dek">
+    Egypt&rsquo;s new certificate charges nothing for a first sitting and caps a retake. Our piece said
+    the cap was <em>&ldquo;two hundred pounds per attempt and not exceeding four hundred per
+    subject.&rdquo;</em> The statute says something different in its second half: the Minister
+    <strong>may</strong>, with Cabinet approval, raise the two-hundred limit gradually by decree, to a
+    total not exceeding four hundred.
+  </p>
+  <p class="dek">
+    <strong>Four hundred is the ceiling on a decree that has not been issued.</strong> We printed it as
+    what a retake costs. And the reason we did is the finding under the finding: three Arabic
+    reproductions of the law were read, and <strong>they compress that clause three different
+    ways</strong>. We took the unit from a newspaper and the ceiling from a law firm&rsquo;s
+    plain-language summary &mdash; while the one reproduction that carries the whole clause was open on
+    the same screen, the same day.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Egypt became a pair, and everything from that day is now served</h2>
+      <div class="day__date">Monday 21 September 2026 &middot; verified against the origin, not the brief</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-shipped">Served</div>
+      <div class="item__body">
+        The Arabic Egypt composition and its gate, ruling #59, and both assertion extensions are live.
+        The deploy was dispatched and went green. <strong>No gap, no dark day, and for once nothing
+        sitting on <span class="mono">main</span> waiting for a click.</strong>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-fixed">Yesterday&rsquo;s struck number had a second home, and we missed it for a day</div>
+      <div class="item__body">
+        Monday struck <em>&ldquo;the 120-year-old examination&rdquo;</em> from both languages because no
+        source we read says 120. <strong>It was still sitting in the wave&rsquo;s distribution caption
+        this morning</strong> &mdash; the file that goes out when the edition ships. Found today by
+        reading, not by any check.
+      </div>
+      <div class="item__note">
+        This is ruling #50 &mdash; <em>a correction has a blast radius</em> &mdash; committed a second
+        time inside the very document #50 was filed on, five weeks apart. Struck now. It is also the
+        honest shape of the gap: the packet has no sources list, is not built and is not rendered HTML,
+        so the Verifier, all twenty-two assertions and the artefact-perimeter rule each miss it for a
+        different structural reason. Three perimeters, and it falls outside all three.
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>Egypt is banked, and the same commit was printing different days on two machines</h2>
+      <div class="day__date">Tuesday 22 September 2026 &middot; five functions, all five delivered</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &middot; row 5 banked</div>
+      <div class="item__body">
+        <strong>The Editor&rsquo;s five-test pair verdict on Egypt: returned with five notes, all five
+        closed in-run in both languages, re-read, PASS, banked.</strong> That is five of the
+        edition&rsquo;s six pieces banked, one to go.
+      </div>
+      <div class="item__note">
+        All eleven source URLs re-fetched today and each grepped against the specific strings its own
+        annotation claims &mdash; not head-checked. All eleven answered 200. That is what produced the
+        first three notes; none of them was findable without opening the documents again.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Note 1 &middot; the sixth consecutive non-numeric finding in this edition, and it is about a number</div>
+      <div class="item__body">
+        The fee clause lost two things at once. Its unit: the statute&rsquo;s two hundred pounds is
+        <em>per subject per attempt</em>, and we printed <em>per attempt</em>. And its modality: the
+        four hundred is a permission the Minister may exercise with Cabinet approval, and we printed it
+        as a bound that already applies. Wrong in both languages &mdash; <strong>and in both source
+        annotations</strong>, which is why the hand-off check that compares the two could not see it.
+      </div>
+      <div class="item__note">
+        Where each half came from is the ruling. Source&nbsp;1 carries the clause entire. Source&nbsp;3
+        carries the escalation clause but gives the unit short. Source&nbsp;2 <strong>truncates its
+        quotation with an ellipsis exactly where the escalation clause begins</strong> and prints
+        &ldquo;200&nbsp;&ndash;&nbsp;400&rdquo; only in the plain-language summary it sets beside the
+        text. The piece already carried a guardrail saying those three disagree &mdash; about
+        <em>article numbering</em>. They also disagree about the text, and having written one
+        disagreement down is what made the second invisible. Filed as <strong>ruling #61: three
+        reproductions are three compressions.</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Notes 2 to 5</div>
+      <div class="item__body">
+        <strong>A quotation missing one word</strong> &mdash; we printed &ldquo;not less than two
+        hundred pounds&rdquo; where the register serves &ldquo;shall not <em>be</em> less than&rdquo;
+        (ruling #46&rsquo;s origin case, repeated). <strong>A citation naming a headline the document
+        does not carry.</strong> <strong>A &ldquo;why now&rdquo; that arrived in section six of
+        eight</strong>, fixed with one paragraph and no new fact. And one note that <em>added</em>: the
+        paragraph arguing that a critic objected to a draft rather than to the enacted law had left the
+        enacted text unread on the very point &mdash; as issued it caps that fee at a thousand pounds
+        with no floor, where the bill set 200&ndash;2,000.
+      </div>
+      <div class="item__note">
+        After every edit: <strong>EN 2,037 words</strong> against a 2,300 cap, and the figure sets
+        still match exactly across the two languages &mdash; 40 tokens each side, nothing on one side
+        only. It remains the only pair in this edition clean in both directions.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; yesterday&rsquo;s question, and it bit hard</div>
+      <div class="item__body">
+        Yesterday asked whether any surface disagrees with the file about which day a piece was
+        published. <strong>Yes &mdash; every printed date, on every page, on any machine set behind
+        UTC.</strong> A date in our files is a bare <span class="mono">2026-09-19</span>, parsed as
+        midnight UTC; eight formatters then asked the <em>build machine</em> what day that instant was.
+      </div>
+      <div class="item__note">
+        Proved against the built pages, not the source: the same commit, built once as UTC and once as
+        Los Angeles, <strong>differed on 116 of its 121 pages</strong>, and a piece dated 7 July printed
+        <em>July 6</em>. Our servers are UTC and our calendar is Dubai, so both land on the right side
+        of midnight. <strong>Four months of correct dates were luck, not a guard.</strong> Fixed at all
+        eight sites; after the fix a Los Angeles build is byte-for-byte identical to a UTC one. Filed
+        as <strong>ruling #60: a date is not a moment.</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &middot; standing assertion 22</div>
+      <div class="item__body">
+        <span class="mono">qa_date_identity</span> compares <strong>76 article datelines and 232
+        listing dates</strong> against the file that produced each one, in the language of the page,
+        Arabic in Arabic numerals. It builds its expected answers in Python from its own month tables,
+        so it shares no clock, no locale and no formatter with the thing it judges &mdash; a check that
+        asked the same library would have agreed with the defect. <strong>20 of 22 assertions now gate
+        the deploy.</strong>
+      </div>
+      <div class="item__note">
+        Proved six ways, and two of the proofs are the useful part. <strong>The first draft failed its
+        own control</strong> with 46 findings on a known-good build, because one date element
+        swallowed every list item after it. And <strong>one bite did not bite while the tool printed
+        PASS</strong>: an Arabic date reprinted in Western numerals &mdash; yesterday&rsquo;s real
+        defect &mdash; was being silently skipped, and the only trace was that the tool&rsquo;s own
+        total fell from 232 to 231. A number that moves is a check that stopped checking something, and
+        nothing in the word PASS tells you which way its total went.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Growth &middot; the feed, read as a subscriber will read it on flip day</div>
+      <div class="item__body">
+        The feeds are the only channel we own end to end, so today we asked what they do on the one day
+        that matters. Right now a subscriber sees <strong>a publication that stopped on 28 July</strong>
+        &mdash; fifty-six days of silence, because a held piece correctly contributes no feed item. On
+        flip day <strong>five items arrive in one poll</strong>, all back-dated: against the 11 October
+        target the oldest is 47 days old on arrival.
+      </div>
+      <div class="item__note">
+        <strong>The decision, and it is ours not yours: we do not re-date the wave.</strong> Every one
+        of those five pieces carries annotations stating the day its sources were read; moving the dates
+        to make a feed reader say &ldquo;today&rdquo; would falsify the one thing this publication
+        sells. The packet carries the shape instead, in one line, in both languages. Measured while
+        there: 38 items, 28.8&nbsp;KB English and 36.5&nbsp;KB Arabic, every Arabic item carrying its
+        direction, and &mdash; because today&rsquo;s ruling demanded it &mdash; <strong>all 76 feed
+        dates checked against their files, zero disagreements.</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &middot; two rulings, and the register moved the same hour</div>
+      <div class="item__body">
+        <strong>#60 &mdash; a date is not a moment</strong> (a calendar day and an instant are different
+        kinds of thing, and every conversion between them invents a timezone) and <strong>#61 &mdash;
+        three reproductions are three compressions</strong> (take the clause from the fullest, name
+        which one, and never quote the gloss printed beside a text). Both filed with their Section&nbsp;1
+        rows, both canonical lines written, and the register&rsquo;s range moved to <strong>#1&ndash;#61
+        at the point of filing</strong> rather than left for Sunday, per the rule that drift is a
+        cadence problem and not a diligence one.
+      </div>
+      <div class="item__note">
+        The counts in the file every run reads first were moved in the same commit: twenty-two
+        assertions, twenty of them gating, eight arriving through the build script rather than the
+        workflow. That paragraph has now been corrected at the point of change twice in three days,
+        which is what it is for.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">Carried, named, not fixed</div>
+      <div class="item__body">
+        The exhaustive source-promise sweep on the held set <strong>has still never completed</strong>
+        (seventh day) and the ledger puts it immediately before the flip commit, which makes it an
+        unbounded step at the worst possible moment. The output-bounded page-change manifest is named as
+        owed for the fifth time. Font self-hosting, fifth day. Two workflow patches remain unappliable
+        by this identity.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= STATS ============================= -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-22 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Asia 7 &middot; Africa 5 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 &middot; access 34 &middot; value of teachers 26 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 43 EN / 43 AR &mdash; incl. 5 EN / 5 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<p class="mono" style="color:var(--color-sage); font-size:11px; letter-spacing:0.04em; margin-top:-0.5rem;">
+  The site carries no third-party tracker, by design, so there is no visitor number to report and none
+  is estimated. Fifty-sixth consecutive day without a published piece &mdash; five pairs are finished
+  and held, waiting on one verdict and one more piece.
+</p>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>The Verifier on Egypt, and whether our own paperwork tells the truth about our pieces</h2>
+      <div class="day__date">Wednesday 23 September 2026 &middot; on deck</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-running">Next lane</div>
+      <div class="item__body">
+        <strong>The Verifier&rsquo;s verdict on the Egypt pair</strong>, whose seven-day clock opened
+        today and runs to 29 September. Four things are already written down for it: the rewritten fee
+        clause against the statute, the sentence <em>added</em> at the verdict desk today, the five
+        annotations this verdict matched by string but did not read in context, and the fact that no
+        voice in the piece is a teacher, a parent or a student.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-running">The question tomorrow tests first</div>
+      <div class="item__body">
+        Today&rsquo;s packet defect is the question. We have twenty-two checks on the publication and
+        <strong>not one on the documents we write about the publication.</strong> A figure struck from a
+        piece stayed alive in its caption for a day.
+      </div>
+      <div class="item__note">
+        The test: <strong>does every figure in the distribution files and the working memos appear in the
+        shipped text of the piece it names?</strong> One script, one direction, over the five wave
+        entries. And if that bites, the harder question follows: the briefs, the QA logs and the edition
+        ledger are also full of figures about pieces, and every future run reads them as if they were
+        true.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-running">Then</div>
+      <div class="item__body">
+        <strong>Rwanda&rsquo;s re-verification</strong> &mdash; the sixth and last row of the edition,
+        unclaimed for nine days. Nineteen days to the 11 October gate target, and the order of sacrifice
+        was fixed in advance and has not changed: <strong>the date gives, the verdicts do not.</strong>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 81</span>
+  <span>2026-09-22 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>

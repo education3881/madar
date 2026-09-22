@@ -32,7 +32,7 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 2 | `2026-08-28-sierra-leone-sleic-outcomes` — *The country that paid what the measurement said* / *البلدُ الذي دفع ما قاله القياس* | West · **mandated slot 1** | 08-12 (recon 4) + OPM read 08-28 | 08-28 | 08-29 · gate PASS | **08-30 PASS** | **09-09 FAIL-2-ITEMS → both fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (08-30) | held |
 | 3 | `2026-09-01-sudan-cant-wait-to-learn` — *The classroom invented before the war that needed it* / *الصفُّ الذي اختُرِع قبل الحرب التي احتاجته* | North-East · **mandated slot 2** | 08-13 (recon 5) + re-verified 08-31 | 09-01 | 09-03 · gate PASS | **09-04 PASS** | **09-10 FAIL-3-ITEMS → all fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (09-03) | held |
 | 4 | `2026-09-14-africa-best-system-ruler` — *Four rulers, four crowns, and one about to be re-read* | Continental (`country: Mauritius` + `countries:` ×5) · **mandated slot 3** | 08-16 (recon 6) + re-verified 09-04 · blocker 1 closed 09-06 (PASEC2019) · blocker 2 closed 09-11 (TIMSS 2019) | **09-14** — now 2,332 words (cap ≤2,300 — **Editor's waiver owed**), title 53/100, dek 162/200 | **09-14 · gate PASS** (+ addendum 09-15) — title 58/100, dek 145/200 | **09-15 RETURNED-4-NOTES → all closed in-run → PASS, BANKED** | **09-17 FAIL-5-ITEMS → 3 closed in-run; items 3 and 5 RULED AND CLOSED 09-18** (Editor decisions 1 and 5) | ✓ (09-14) | ✓ (09-14) | held |
-| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 39/39, zero one-sided figures in either direction — the edition's first clean-both-ways pair** | — | — | ✓ (09-19) | ✓ (09-19) | held |
+| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-22 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | — | ✓ (09-19) | ✓ (09-19) | held |
 | 6 | Rwanda — teacher certification | East | 08-18 (recon 8) — **IN PIPELINE from 09-13 (scope set); re-verify first** | — | — | — | — | — | — | — |
 
 ### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
@@ -83,7 +83,7 @@ the first clause, and dies in the last one** is a different failure and nothing 
 ### Gate dependency — re-checked 2026-09-14, and it now binds FOUR
 Row 4's `related:` rail names **rows 1, 2 and 3**, all held. Together with the rails already recorded below, the four pieces are **mutually bound and flip atomically** — no subset can ship without leaving a dead end for `qa_body_links` (#10). ~~**The reciprocal edges into row 4 are owed**: rows 1–3 were commissioned before row 4 existed and none of them points back at it. Add those three `related:` entries in the same commit that flips the flags, not after.~~ — **DONE 2026-09-20, a run early rather than at the flip.** All three added in **both languages** (#42), appended to each rail. The flip commit no longer carries this. They are now covered by **standing assertion 20**, which asserts every rendered rail against its own frontmatter sequence, so a rail that loses or reorders an entry fails the build rather than the reader.
 
-**Ceiling check (2026-07-12 rule) — VERIFICATION BACKLOG IS ZERO; 5 drafted, 4 banked, 4 verified, 11 findings raised across the four verdicts and 11 disposed** (Zambia 09-08, Sierra Leone 09-09, Sudan 09-10, slot 3 09-17). The slot-3 P1 clock opened 09-15 and **closed on day 2 of 7**. The ceiling is clear with room for **both** Egypt and Rwanda to draft before another verdict is owed.
+**Ceiling check (2026-07-12 rule) — VERIFICATION BACKLOG IS ONE, opened 2026-09-22; 5 drafted, 5 banked, 4 verified, 11 findings raised across the four verdicts and 11 disposed** (Zambia 09-08, Sierra Leone 09-09, Sudan 09-10, slot 3 09-17). The slot-3 P1 clock opened 09-15 and **closed on day 2 of 7**. The ceiling is clear. **Row 5's P1 verification clock opened 2026-09-22 and runs to 2026-09-29** (the 09-06 rule: a banked pair without a verification verdict seven days after banking is a P1 named in the first line of the Content function). Rwanda may draft in parallel; the ceiling is what makes that safe and the ceiling is only real if the verdict lands.
 
 ### Slot 3 — ALL FIVE VERIFICATION ITEMS ARE NOW CLOSED (items 3 and 5 ruled 2026-09-18)
 `content-drafts/verdicts/2026-09-17-africa-best-system-ruler-verification.md` — FAIL with five, **not one of them a number** (the edition's fourth consecutive verdict with that property). Three closed in-run in both languages: a uniqueness claim carried into a cell where the report names **two** countries (#51 recurring *inside the piece #51 was filed on*); the hedge « apparaît comme » dropped from both bodies **and both annotations** — the first instance of the 09-13 shape where the `annotation == sentence` line could not have caught it, because both sides were identically wrong; and two vintages the register prints in parentheses, **40% (2006)** and **4.8% (2018)**, dropped from both bodies behind a blanket *pre-COVID* that is a floor and not a date.
@@ -149,6 +149,67 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-09-22** — **ROW 5 IS BANKED, AND READING ITS ELEVEN SOURCES AGAIN FOUND A CEILING THAT
+  IS A PERMISSION.** State verified against git and the live origin: tree clean, no dark day,
+  **HEAD == origin/main**, the 09-21 deploy green and its bytes served — zero unserved commits
+  for the first time in a fortnight. `verdicts/2026-09-22-ed05-egypt-pair-verdict.md`:
+  **RETURNED with five notes, all five closed in-run in both languages, re-read, PASS, BANKED.**
+  All **eleven source URLs re-fetched and grepped against their own annotations' claims** — all
+  eleven 200 — which is what produced notes 1 to 3. **NOTE 1 IS THE EDITION'S SIXTH CONSECUTIVE
+  NON-NUMERIC FINDING AND IT IS ABOUT A NUMBER.** The statute's retake fee is *two hundred
+  pounds per subject per attempt*, and above it sits a **permission**: the Minister may, with
+  Cabinet approval, raise that ceiling gradually by decree, to a total not exceeding four
+  hundred per subject. The piece printed *"bounded at two hundred per attempt and not exceeding
+  four hundred per subject"* — the unit short by *per subject*, the permission flattened into a
+  price — **in both languages and in both annotations**, so the `annotation == sentence` line
+  could not have caught it, the second such instance in this edition. The three reproductions
+  were read again side by side and **they compress the clause three different ways**: source 1
+  carries it entire, source 3 carries the escalation clause but gives the unit as *per attempt*,
+  and source 2 **truncates its quotation at «مائتي جنيه…» with an ellipsis** and prints its
+  200–400 pair only in the plain-language summary beside the text. **The unit came from a news
+  reproduction and the ceiling came from a law practice's summary, while the one reproduction
+  carrying the whole clause was open on the same screen the same day.** The piece had already
+  recorded a guardrail about these three — *they disagree about which numbered bis-article
+  carries the fee* — and that guardrail's existence is what made the second disagreement
+  invisible. Filed as **ruling #61, three reproductions are three compressions**. Fixed in both
+  languages from source 1, whose annotation now carries the clause verbatim and says it is the
+  one the provision is taken from. **Note 2:** a quotation carried as *"not less than two
+  hundred pounds"* where EIPR serves *"shall not **be** less than"* — #46's origin case
+  repeated, EN only, the languages' second structural asymmetry in this edition. **Note 3:** a
+  `sources[]` entry named a headline the document does not carry — *'Egypt's parliament approves
+  optional baccalaureate system'* against the served *'Parliament approves new education bill
+  amid inequality fears'*, News Desk, 7 July 2025. Fixed in both languages. **Note 4, Test 3:**
+  the piece's recency arrived in section six of eight; one paragraph added to the frame, **no new
+  fact**, naming that the admissions arithmetic, two further decrees and the international
+  agreement are all dated August 2026. **Note 5, the rare note that adds:** the paragraph
+  arguing *EIPR objected to a draft, not to the enacted chapter* left the enacted text unread on
+  the very point — Article 24 as issued caps the general retake fee at **one thousand pounds
+  with no floor**, where the bill EIPR objected to set 200–2,000. Added in one sentence from the
+  register the piece already cites. **Caps at the verdict desk:** EN 2,037 words against ≤2,300
+  (no waiver owed, unlike row 4), title 49/100, dek 192/200; AR title 38/100, dek 149/200.
+  **Numeral multiset after every edit: EN 40 / AR 40, zero one-sided figures in either
+  direction** — still the only pair in this edition clean both ways. **Quality: ruling #60 and
+  standing assertion 22.** The 09-21 forward question was tested first and bit: `z.coerce.date()`
+  parses a bare date as **UTC midnight**, eight `Intl.DateTimeFormat` sites formatted it with
+  **no `timeZone`**, and the same commit built under `TZ=UTC` and `TZ=America/Los_Angeles`
+  differed on **116 of 121 pages** — a 2026-07-07 piece printing *July 6, 2026*. Four months of
+  correct datelines were luck: our CI is UTC and our calendar is UTC+4. Fixed at all eight
+  sites; after the fix a Los Angeles build is **byte-identical** to a UTC build. `qa_date_identity`
+  proved six ways, including a first draft that failed its own control and a bite that did not
+  bite while the tool printed PASS. **20 of 22 assertions gate the deploy.** **For this edition
+  specifically:** Growth read the feed as a subscriber will read it on flip day
+  (`agents/growth/2026-09-22-the-feed-on-flip-day.md`) — five items in one poll, all
+  back-dated, the oldest **47 days old on arrival** at the 10-11 target, `lastBuildDate` jumping
+  53 days; **the decision is do not re-date the wave**, because every one of these pieces carries
+  annotations saying when its sources were read, and the packet carries the shape instead. That
+  read also found **the struck 120-year figure still standing in the packet's Egypt caption** —
+  **#50 committed a second time inside the document #50 was filed on**, five weeks apart. Struck,
+  and the **Arabic caption composed** at last, so the entry is complete in two languages; it is
+  composed, not gated, so the Arabic Editor now gates **five** captions, not four. Corpus
+  unchanged at **38 EN / 38 AR**, **no approved flips**, fifty-sixth consecutive day without a
+  published piece; held set **10 files / 5 slugs**. **Next lane: the Verifier's verdict on row
+  5** (P1 clock 09-22 → 09-29), then Rwanda's re-verification, with the three confirmation reads
+  interleaved.
 - **2026-09-21** — **ROW 5 IS A PAIR, AND THE CROSSING STRUCK A FIGURE OUT OF THE ENGLISH.**
   State verified against git and the live origin: tree clean, no dark day, and the deploy the
   09-20 review predicted would go **red went green** — the whole weekly review is served.

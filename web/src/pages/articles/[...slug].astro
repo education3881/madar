@@ -23,6 +23,13 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  // A frontmatter date is a bare YYYY-MM-DD, which `z.coerce.date()` parses as
+  // UTC midnight. Without an explicit timeZone this formatter asks the BUILD
+  // MACHINE what day that instant is, and every runner behind UTC answers with
+  // the day before: a 2026-07-07 piece renders "July 6, 2026" on a Los Angeles
+  // runner, on 116 of 121 pages. Ruling #60 — the date is pinned to the zone the
+  // value was parsed in, never to the machine that formats it.
+  timeZone: 'UTC',
 });
 
 // "Draft — pending source verification" pill if any source carries the

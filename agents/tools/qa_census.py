@@ -299,6 +299,16 @@ ROWS = [
          "CONTENT files, not pages — held pieces included, which is why this "
          "number exceeds qa_body_links' approved pages by exactly the held set"),
     ]),
+    # Assertion 22, added 2026-09-22 with the assertion itself. Its dateline
+    # population is the article-page set, the same one qa_body_links names, so
+    # #57 applies: if the two ever print the same number for different sets,
+    # this row is where that shows.
+    ("qa_date_identity", ["qa_date_identity.py", "{dist}"], [
+        ("article datelines", r"PASS — (\d+) article datelines",
+         lambda P: len(P["articles"]),
+         "article pages in dist — every one must carry a dateline that agrees "
+         "with its own frontmatter, which is why this equals qa_body_links' set"),
+    ]),
 ]
 
 

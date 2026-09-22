@@ -45,7 +45,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-one** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py` and `qa_arabic_joining.py`, which need a headless Chrome. |
+| `agents/tools/` | **Twenty-two** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py` and `qa_arabic_joining.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -53,13 +53,13 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 
 ```bash
 cd web && npm ci && npm run build            # must exit 0; postbuild gates run here
-python3 agents/tools/qa_geo_fields.py web/dist   # and the other thirteen
+python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven that run as build steps
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **seven** of the twenty-one assertions
+Use `npm run build`, not `npx astro build`: **eight** of the twenty-two assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
-`qa_feed_enclosures`, `qa_census`) are gated from `postbuild` in `web/package.json`,
+`qa_date_identity`, `qa_feed_enclosures`, `qa_census`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`package.json`
 is a second, equal home for gates** — a reader asking "what gates the deploy?" must read both
 files (issue #6, default C applied 2026-09-20).
@@ -68,15 +68,17 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, seven more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, eight more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **19 of the 21 gate the deploy**; the two that do not
+artifact against the live origin. **20 of the 22 gate the deploy**; the two that do not
 (`qa_live_drift` — the `verify` byte-compare is strictly stronger; `qa_sources_alive` —
 someone else's 404 is not our build's failure) say why in the workflow file. A green run
 means the bytes are actually served, not merely built.
 
 **These three counts drifted for seven days and were corrected at the 2026-09-20 weekly
-review.** They read 14 / 13-of-14 / eleven while the operation had built seven new
+review, and were moved again on 2026-09-22 by the run that added assertion 22
+(`qa_date_identity`, ruling #60) — at the point of filing, per the 09-20 rule, rather than
+waiting for a Sunday.** They read 14 / 13-of-14 / eleven while the operation had built seven new
 assertions and wired five of them — in the one file every run is told to read first. The
 weekly review now prints the ratio (`N of M gate the deploy`) and reconciles it against
 both homes; if this paragraph and that ratio ever disagree, the workflow files are the
