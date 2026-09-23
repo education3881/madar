@@ -12,23 +12,30 @@ The strongest distribution line is the spine itself, stated plainly:
 > Vietnam waived tuition for 23 million children. Tuition was the smallest line in the family budget. The fees that actually keep a child home — meals, insurance, the "voluntary" fund — are untouched. *Tuition-free is true. Fee-free is not.*
 
 ## Social captions — Edition-correct from birth (EN + AR)
+<!-- piece: 2026-06-16-vietnam-tuition-free-public-school -->
 
 These say **"Edition"/«الإصدار»**, never "Issue" — the new standard. (The pre-existing Edition-01 send packet, the IG opening grid and the Husseiny tile still say "Issue" and still need the one-pass sweep before they go out — carried, Growth/founder action.)
 
 **EN — primary (Instagram / Substack note):**
+<!-- caption:en -->
 > A government just made public school free for 23 million children. A real reform — and aimed at the *smallest* fee a family pays.
 > The costs that actually keep a child at home — meals, compulsory insurance, the "voluntary" parents' fund — weren't touched.
 > Tuition-free is true. Fee-free is not. The distance between them is the reform not yet finished.
 > New in Edition 02 → [link]
+<!-- /caption -->
 
 **EN — short (engagement reply / alt):**
+<!-- caption:en -->
 > "Free school" usually isn't. Vietnam's 2025 waiver, read honestly: what was lifted was small; what keeps a child home is still there.
+<!-- /caption -->
 
 **AR — primary:**
+<!-- caption:ar -->
 > أعلنت الحكومة مجانية التعليم الحكومي لنحو 23 مليون طفل. إصلاحٌ حقيقي — لكنه يطال *أصغر* رسمٍ تدفعه الأسرة.
 > أمّا الكلفة التي تُبقي الطفل في البيت فعلًا — الوجبات، والتأمين الإلزامي، و«صندوق» أولياء الأمور «الطوعي» — فبقيت كما هي.
 > «مجانية الرسوم» صحيحة. «مجانية التعليم» ليست كذلك. والمسافة بينهما هي الإصلاح الذي لم يكتمل.
 > جديد في الإصدار الثاني → [الرابط]
+<!-- /caption -->
 
 *(Arabic captions: Arabic-Editor-consistent with the article; verify the live link before posting.)*
 

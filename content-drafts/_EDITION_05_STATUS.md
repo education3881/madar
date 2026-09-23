@@ -32,7 +32,7 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 2 | `2026-08-28-sierra-leone-sleic-outcomes` — *The country that paid what the measurement said* / *البلدُ الذي دفع ما قاله القياس* | West · **mandated slot 1** | 08-12 (recon 4) + OPM read 08-28 | 08-28 | 08-29 · gate PASS | **08-30 PASS** | **09-09 FAIL-2-ITEMS → both fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (08-30) | held |
 | 3 | `2026-09-01-sudan-cant-wait-to-learn` — *The classroom invented before the war that needed it* / *الصفُّ الذي اختُرِع قبل الحرب التي احتاجته* | North-East · **mandated slot 2** | 08-13 (recon 5) + re-verified 08-31 | 09-01 | 09-03 · gate PASS | **09-04 PASS** | **09-10 FAIL-3-ITEMS → all fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (09-03) | held |
 | 4 | `2026-09-14-africa-best-system-ruler` — *Four rulers, four crowns, and one about to be re-read* | Continental (`country: Mauritius` + `countries:` ×5) · **mandated slot 3** | 08-16 (recon 6) + re-verified 09-04 · blocker 1 closed 09-06 (PASEC2019) · blocker 2 closed 09-11 (TIMSS 2019) | **09-14** — now 2,332 words (cap ≤2,300 — **Editor's waiver owed**), title 53/100, dek 162/200 | **09-14 · gate PASS** (+ addendum 09-15) — title 58/100, dek 145/200 | **09-15 RETURNED-4-NOTES → all closed in-run → PASS, BANKED** | **09-17 FAIL-5-ITEMS → 3 closed in-run; items 3 and 5 RULED AND CLOSED 09-18** (Editor decisions 1 and 5) | ✓ (09-14) | ✓ (09-14) | held |
-| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-22 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | — | ✓ (09-19) | ✓ (09-19) | held |
+| 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-23 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | **09-23 FAIL-3-ITEMS → all three closed in-run in both languages; item 4 (source 1 unreachable) OPEN and first at the confirmation read** | ✓ (09-19) | ✓ (09-19) | held |
 | 6 | Rwanda — teacher certification | East | 08-18 (recon 8) — **IN PIPELINE from 09-13 (scope set); re-verify first** | — | — | — | — | — | — | — |
 
 ### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
@@ -83,7 +83,7 @@ the first clause, and dies in the last one** is a different failure and nothing 
 ### Gate dependency — re-checked 2026-09-14, and it now binds FOUR
 Row 4's `related:` rail names **rows 1, 2 and 3**, all held. Together with the rails already recorded below, the four pieces are **mutually bound and flip atomically** — no subset can ship without leaving a dead end for `qa_body_links` (#10). ~~**The reciprocal edges into row 4 are owed**: rows 1–3 were commissioned before row 4 existed and none of them points back at it. Add those three `related:` entries in the same commit that flips the flags, not after.~~ — **DONE 2026-09-20, a run early rather than at the flip.** All three added in **both languages** (#42), appended to each rail. The flip commit no longer carries this. They are now covered by **standing assertion 20**, which asserts every rendered rail against its own frontmatter sequence, so a rail that loses or reorders an entry fails the build rather than the reader.
 
-**Ceiling check (2026-07-12 rule) — VERIFICATION BACKLOG IS ONE, opened 2026-09-22; 5 drafted, 5 banked, 4 verified, 11 findings raised across the four verdicts and 11 disposed** (Zambia 09-08, Sierra Leone 09-09, Sudan 09-10, slot 3 09-17). The slot-3 P1 clock opened 09-15 and **closed on day 2 of 7**. The ceiling is clear. **Row 5's P1 verification clock opened 2026-09-22 and runs to 2026-09-29** (the 09-06 rule: a banked pair without a verification verdict seven days after banking is a P1 named in the first line of the Content function). Rwanda may draft in parallel; the ceiling is what makes that safe and the ceiling is only real if the verdict lands.
+**Ceiling check (2026-07-12 rule) — VERIFICATION BACKLOG IS ZERO as of 2026-09-23; 5 drafted, 5 banked, 5 verified, 15 findings raised across the five verdicts and 14 disposed** (Zambia 09-08, Sierra Leone 09-09, Sudan 09-10, slot 3 09-17, **row 5 09-23**). The slot-3 P1 clock opened 09-15 and closed on day 2 of 7; **row 5's opened 09-22 and closed on day 1 of 7** — the fastest verification turn the edition has had, and the only one that ran the run after its pair verdict as the 09-06 rule actually requires. **Every banked pair in this edition now carries a verification verdict.** The one undisposed finding is row 5's item 4, the unreachable statute reproduction, which is open by the state of a third-party host and not by anything this operation owes. **The ceiling is clear and empty: Rwanda drafts against zero backlog.**
 
 ### Slot 3 — ALL FIVE VERIFICATION ITEMS ARE NOW CLOSED (items 3 and 5 ruled 2026-09-18)
 `content-drafts/verdicts/2026-09-17-africa-best-system-ruler-verification.md` — FAIL with five, **not one of them a number** (the edition's fourth consecutive verdict with that property). Three closed in-run in both languages: a uniqueness claim carried into a cell where the report names **two** countries (#51 recurring *inside the piece #51 was filed on*); the hedge « apparaît comme » dropped from both bodies **and both annotations** — the first instance of the 09-13 shape where the `annotation == sentence` line could not have caught it, because both sides were identically wrong; and two vintages the register prints in parentheses, **40% (2006)** and **4.8% (2018)**, dropped from both bodies behind a blanket *pre-COVID* that is a floor and not a date.
@@ -149,6 +149,64 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-09-23** — **ROW 5 IS VERIFIED, AND THE PIECE HAD BEEN DATING DOCUMENTS AS
+  EVENTS.** State verified against git and the live origin: tree clean, no dark day,
+  **HEAD == origin/main**, the 09-22 deploy green and its bytes served — **second
+  consecutive day with zero unserved commits.**
+  `verdicts/2026-09-23-egypt-baccalaureate-published-first-verification.md`:
+  **FAIL with three items, all three closed in-run in both languages, plus one item OPEN.**
+  **EVERY BANKED PAIR IN THIS EDITION NOW CARRIES A VERIFICATION VERDICT; THE BACKLOG IS
+  ZERO.** The P1 clock opened 09-22 and **closed on day 1 of 7.**
+  **The three items are one defect three times, and it is ruling #62.** The piece takes a
+  **register's** date and attaches it to the **event the register reports** — and it does
+  this six times, correctly three times and wrongly three. EIPR's objection was dated **21
+  July 2025**, which is the **Wayback capture timestamp**; the statement's own dateline,
+  read on the capture today, is **7 July 2025**. The minister's London remarks were dated
+  **18 May 2026**, which is the newspaper's publication date; the register names the forum,
+  the session and its title and **gives no date for the speech at all**. The admissions
+  arithmetic was dated **3 August 2026**, which is the portal's own article date; the page
+  says the ministry *"has announced"* and dates nothing. **The three that are right are what
+  makes it a ruling rather than three slips:** the 25 July register says the ministries
+  announced *"today"*, the 17 August register says «أعلنت … اليوم الاثنين 17 أغسطس 2026»,
+  and one sentence in the piece already does it perfectly — *"Daily News Egypt **reported
+  on** 16 August 2026 that…"*. **Why nothing caught it:** the `annotation == sentence`
+  hand-off line of 09-13 was written for exactly this shape — annotation right, body wrong —
+  and it passes here, because **both print the same digits while meaning different things**.
+  It is the non-numeric family's seventh member and the first the family's own instrument
+  cannot catch. All three fixed by dating the **account**: *"In an account published on 18
+  May 2026…"* / «في روايةٍ منشورةٍ في 18 مايو 2026…». **Swept afterwards** — the whole
+  corpus for archive-capture citations (only this piece has ever cited one) and the held set
+  for the publication-date limb (two candidates, **both licensed**: Sudan's BRIDGES release
+  is datelined *KHARTOUM, 4 May 2026* and says *"launched today"*). **The class is contained
+  to row 5 and closed there.**
+  **ITEM 4, OPEN AND NOT OURS TO CLOSE: source 1 died between the verdict and the
+  verification.** `lawhub.info` — the only reproduction carrying the fee clause entire, and
+  the register yesterday's verdict was written from — **stopped answering today**: DNS
+  resolves, **TCP :443 is accepted**, and no TLS or HTTP response ever arrives, on two
+  clients and five attempts; **no Internet Archive snapshot of the URL exists** and a capture
+  requested today returned **HTTP 500**. Named to the layer, because in this same edition
+  Zambia is *refused* at :443 and Sierra Leone was a *404 that was a re-slug* — three
+  different facts a ledger must not flatten. **The escalation half of the clause WAS
+  corroborated on two reachable channels today** (Youm7, and a **fourth reproduction**,
+  `eldyar.net`, read today and deliberately **not** added to the piece); the **unit**
+  «للمادة الواحدة فى المرة الواحدة» is carried by source 1 alone, and the three reachable
+  reproductions serve it three shorter ways. **Ruling #61 on day two: four reproductions,
+  four compressions.** Carried fetched-on-date with the host's state stated in both
+  annotations; **the re-probe is now the FIRST item of the confirmation read, not the
+  last**, because Article 24 and the fee unit both stand on it alone. **Quality: standing
+  assertion 23**, `qa_packet_figures` — the 09-22 forward question, tested first, and it bit.
+  Gated from `postbuild`, **the first gate not handed `dist`**, proved seven ways with the
+  bite taken from the real 09-21 defect. **23 assertions, 21 gating.** **For this edition
+  specifically:** Growth swept every distribution artefact in `social-drafts/**` for the
+  first time (`agents/growth/2026-09-23-the-distribution-perimeter.md`) — the held wave
+  packet came back **clean**, and a **live** piece's packet did not: Brazil advertised the
+  Saeb result as **49%** where the piece ships **49.3%**, paired against the wrong year, for
+  **90 days**. Corrected in both languages. **The Arabic Editor now gates six captions and
+  one held pair's edits.** Corpus unchanged at **38 EN / 38 AR**, **no approved flips**,
+  fifty-seventh consecutive day without a published piece; held set **10 files / 5 slugs**.
+  **Next lane: Rwanda's re-verification** — tenth day unclaimed, eighteen days to the 10-11
+  gate target, and now the only thing standing between this edition and a complete drafted
+  set.
 - **2026-09-22** — **ROW 5 IS BANKED, AND READING ITS ELEVEN SOURCES AGAIN FOUND A CEILING THAT
   IS A PERMISSION.** State verified against git and the live origin: tree clean, no dark day,
   **HEAD == origin/main**, the 09-21 deploy green and its bytes served — zero unserved commits

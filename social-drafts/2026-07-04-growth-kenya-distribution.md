@@ -13,23 +13,30 @@ The strongest distribution line is the spine, stated plainly:
 > Kenya just placed 1.13 million fourteen-year-olds into senior-school pathways with one blended score. It wanted 60% in STEM; the exam found 59% could; 53% asked for it; the seats held 51%. Then it did the rare thing: published how many objected — 355,457 — and ran the correction window twice.
 
 ## Social captions — Edition-correct from birth (EN + AR)
+<!-- piece: 2026-07-04-kenya-cbe-grade10-pathways -->
 
 Say **"Edition"/«الإصدار»**, never "Issue".
 
 **EN — primary (Instagram / Substack note):**
+<!-- caption:en -->
 > At fourteen, every Kenyan learner was just placed — by one score built from three assessments — into STEM, Social Sciences, or Arts & Sports.
 > The state wanted 60% in STEM. The exam found 59% could. Families asked for 53%. The seats held 51%.
 > Four numbers, four owners, none of them meet. The honest part: Kenya published the objections too — all 355,457 of them — and reran the window.
 > New in Edition 02 → [link]
+<!-- /caption -->
 
 **EN — short (engagement reply / alt):**
+<!-- caption:en -->
 > A placement seats the child; it does not put a teacher in front of her. Kenya placed 1.13M fourteen-year-olds by algorithm — then published its own correction ledger. The ledger, not the algorithm, is the export.
+<!-- /caption -->
 
 **AR — primary:**
+<!-- caption:ar -->
 > في الرابعةَ عشرةَ، وُضع كلُّ طالبٍ كينيٍّ — بدرجةٍ واحدةٍ من ثلاثة تقييمات — في مسار العلوم أو العلوم الاجتماعية أو الفنون والرياضة.
 > أرادت الدولةُ 60٪ في مسار STEM. ووجد الامتحانُ أن 59٪ يستطيعون. وطلبت الأسرُ 53٪. ووسِعت المقاعدُ 51٪.
 > أربعةُ أرقامٍ لا تلتقي. والجديرُ بالاحترام أن كينيا نشرت الاعتراضاتِ أيضًا — كلَّ 355,457 منها — وأعادت فتحَ نافذة المراجعة.
 > جديد في الإصدار الثاني → [الرابط]
+<!-- /caption -->
 
 *(Arabic captions: consistent with the Arabic Editor's terminology rulings for this piece — التنسيق for placement; verify the live link before posting.)*
 
