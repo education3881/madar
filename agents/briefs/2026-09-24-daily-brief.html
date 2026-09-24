@@ -225,6 +225,20 @@
     An independent instrument agrees: the origin matches our build exactly &mdash; 120 URLs, zero drift.
   </p>
   <p class="mono" style="color:rgba(250,250,247,0.6);">
+    <strong>Addendum, after the push.</strong> The block landed on <span class="mono">main</span> and
+    <strong>started no deploy</strong> &mdash; a push made by this identity does not trigger workflows,
+    and asking for one directly is refused with a 403. Both are correct designs and both were re-tested
+    just now, not assumed. <strong>Fourth consecutive day the work sits on main until someone clicks
+    Run workflow.</strong> It costs the reader nothing today, because today changes no served byte.
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
+    <strong>And one number worth having before you click it.</strong> The broken step must match on
+    <em>both</em> feeds to pass. On the roughly even split we measured between the two servers, that
+    gives a dispatched deploy about a <strong>three-in-four chance of going red</strong> &mdash; on a site
+    that is perfectly healthy. Not a reason to withhold the click; a reason the one-line patch on
+    issue&nbsp;#7 is worth a minute of someone&rsquo;s time.
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
     <strong>Today changes no served byte.</strong> Every file touched is outside the published site.
     All 24 standing assertions were run against this exact build &mdash; 21 gate the deploy, and the
     three that do not were run by hand. One of the 24 is new today.
