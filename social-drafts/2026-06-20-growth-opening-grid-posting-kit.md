@@ -113,7 +113,7 @@ EN + عربي
 ## Post 9 — Fri 2026-07-10, 09:00 GST  ·  Tile 1 (Sierra Leone)
 **Image:** `design-assets/instagram/opening-grid/tile-01.png`
 ```
-Sierra Leone marked ten years of its Free Quality School Education policy in 2026. A field note from Bo on what the policy actually paid for, and the line item the country has under-paid since the beginning.
+Sierra Leone has covered tuition, textbooks and exam fees since 2018. A field note from Bo on what the policy actually paid for, and the line item the country has under-paid since the beginning.
 
 Read it — link in bio.
 EN + عربي

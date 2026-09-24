@@ -28,11 +28,11 @@ Growth does not decide content. Three coherent options are on the table; the Edi
 
 ### Option B — *Public-good infrastructure at ten*
 
-**Pieces:** Sierra Leone (FQSE at 10) + Egypt (EKB at 10) + Bahrain (BQA's 2024–25 posture as present-tense companion).
-**Through-line:** *Two ten-year-old public-education-infrastructure projects, and one regulator deciding what a public report can hold.*
-**Why this works:** the editorial spine is legible — two anniversaries and a present-tense witness — and it makes the publication's geographic posture visible without listing geographies.
+**Pieces:** Sierra Leone (FQSE since 2018) + Egypt (EKB at 10) + Bahrain (BQA's 2024–25 posture as present-tense companion).
+**Through-line:** *A ten-year-old knowledge-access programme, a free-schooling policy running since 2018, and one regulator deciding what a public report can hold.*
+**Why this works:** the editorial spine is legible — an anniversary, a policy running since 2018, and a present-tense witness — and it makes the publication's geographic posture visible without listing geographies.
 **Risk:** three pieces is heavier than the cadence promise wants the first send to be.
-**Subject line draft:** *What ten years bought — Issue 01.*
+**Subject line draft:** ~~*What ten years bought — Issue 01.*~~ **STRUCK 2026-09-24** — it counted an anniversary Sierra Leone has not had (the piece's register says *from 2018*). A replacement subject is the Editor's call, not Growth's.
 
 ### Option C — *GCC arc*
 

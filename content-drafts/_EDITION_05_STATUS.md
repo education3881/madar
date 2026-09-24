@@ -33,7 +33,7 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 3 | `2026-09-01-sudan-cant-wait-to-learn` — *The classroom invented before the war that needed it* / *الصفُّ الذي اختُرِع قبل الحرب التي احتاجته* | North-East · **mandated slot 2** | 08-13 (recon 5) + re-verified 08-31 | 09-01 | 09-03 · gate PASS | **09-04 PASS** | **09-10 FAIL-3-ITEMS → all fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (09-03) | held |
 | 4 | `2026-09-14-africa-best-system-ruler` — *Four rulers, four crowns, and one about to be re-read* | Continental (`country: Mauritius` + `countries:` ×5) · **mandated slot 3** | 08-16 (recon 6) + re-verified 09-04 · blocker 1 closed 09-06 (PASEC2019) · blocker 2 closed 09-11 (TIMSS 2019) | **09-14** — now 2,332 words (cap ≤2,300 — **Editor's waiver owed**), title 53/100, dek 162/200 | **09-14 · gate PASS** (+ addendum 09-15) — title 58/100, dek 145/200 | **09-15 RETURNED-4-NOTES → all closed in-run → PASS, BANKED** | **09-17 FAIL-5-ITEMS → 3 closed in-run; items 3 and 5 RULED AND CLOSED 09-18** (Editor decisions 1 and 5) | ✓ (09-14) | ✓ (09-14) | held |
 | 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-23 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | **09-23 FAIL-3-ITEMS → all three closed in-run in both languages; item 4 (source 1 unreachable) OPEN and first at the confirmation read** | ✓ (09-19) | ✓ (09-19) | held |
-| 6 | Rwanda — teacher certification | East | 08-18 (recon 8) — **IN PIPELINE from 09-13 (scope set); re-verify first** | — | — | — | — | — | — | — |
+| 6 | Rwanda — teacher certification | East | 08-18 (recon 8) + **re-verified 09-24 · PROCEED** — denominator CLOSED (79,224 pre-primary+primary, Yearbook 2023/24) and the debt now counted in the ministry's own voice (~27,322 untrained); **recon §3/§5 AMENDED — the clock moved under its own drafting instruction**; one NEW blocker (the A2→A1 five-year upgrade, reported speech only, #43) | — | — | — | — | — | — | — |
 
 ### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
 
@@ -149,6 +149,51 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-09-24** — **RWANDA IS RE-VERIFIED; THE EDITION HAS A COMPLETE SET OF CLEARED
+  RECONS, AND THE RECON'S OWN DRAFTING INSTRUCTION HAD GONE STALE.** State verified
+  against git and the live origin: tree clean, no dark day, **HEAD == origin/main**.
+  **The 09-23 deploy went RED and the publication was not at fault** — the `verify` job's
+  byte-compare passed on all five files and the failure is the feed-validator step after
+  it, which compares an ETag fetched on one connection against one fetched on another.
+  GitHub Pages unpacks each deploy onto more than one replica, so every feed URL carries
+  **two permanent validators** one second apart; the step is a coin flip and was green on
+  09-21 and 09-22 by luck. **Ruling #63, a validator is not the content**, and standing
+  **assertion 24** (`qa_feed_validators`) proved seven ways — the fanout control **failed
+  on its first run**, which rewrote the check from a tolerance into the honest instrument:
+  hold one connection and revalidate on it, the way a reader does. Live origin **16/16
+  honored, one body per feed**. The one-line patch returning it to the `verify` job
+  **cannot be pushed by this identity** (re-probed today, refused); staged at
+  `agents/tools/patches/` and escalated on issue #7. **24 assertions, 21 gating.**
+  `recon/2026-09-24-ed05-rwanda-reverification.md` — **PROCEED**, and three findings that
+  change the commission. **(1) The clock moved through the recon's drafting instruction.**
+  §5 says *"the first five-year cohort has not yet enrolled"* and §3 says *"write it in the
+  future tense"*; the TTC five-year programme was announced *"Beginning in September
+  2026"* and **today is 24 September**. A drafter obeying the recon would have composed a
+  false tense, **and the recon would have been the reason** — #46's corollary 2, the
+  edition's third instance and **the first caught before drafting rather than after
+  banking**, which is the whole return on the #40 corollary. It is not simply flipped to
+  the past either: *announced ≠ commenced*, and nothing read says the cohort enrolled.
+  **(2) Both standing draft-blockers close, from one register the recon sent the drafter to
+  for something else.** The 2024/25 Yearbook the recon named **does not exist**; 2023/24 is
+  the latest, and it gives **10,898 pre-primary + 68,326 primary = 79,224**, each figure
+  confirmed twice before being carried, with the *trained*-teacher trend deliberately **not**
+  carried because its column alignment could not be confirmed. The same register counts the
+  debt in the ministry's own voice — **5,162 untrained pre-primary (47.4%) and 22,160
+  untrained primary (32.4%), ~27,322** — in the school year the programme opened, and
+  attributes it to *"newly recruited primary teachers who may not have received training."*
+  **The subject wrote the debt down in its own statistical annual**, which is the piece's
+  thesis better cited than the funder's feature carries it. That makes a **three-way seam**
+  (~25,000 entered · ~27,322 untrained · 24,000 certified — three registers, three
+  definitions, three vintages), now a standing prohibition on the piece per #14.
+  **(3) A new blocker that changes the ENDING:** on 20 August 2026 the State Minister
+  announced a **five-year window for A2 holders to reach an A1 diploma** — so the
+  certificate the 24,000 just earned is a waypoint, not a terminus, and the argument becomes
+  *incur, disclose, retire, and re-open at a higher bar*. It reaches us **only through
+  government-adjacent reported speech** (#43) and may not carry the ending until a
+  first-party register is read. Ruling #32's scope seam re-confirmed verbatim as served.
+  Corpus unchanged at **38 EN / 38 AR**, **no approved flips**, fifty-eighth consecutive day
+  without a published piece; held set **10 files / 5 slugs**. **Next lane: the Editor's
+  commission decision on Rwanda**, then its draft — seventeen days to the 10-11 gate target.
 - **2026-09-23** — **ROW 5 IS VERIFIED, AND THE PIECE HAD BEEN DATING DOCUMENTS AS
   EVENTS.** State verified against git and the live origin: tree clean, no dark day,
   **HEAD == origin/main**, the 09-22 deploy green and its bytes served — **second

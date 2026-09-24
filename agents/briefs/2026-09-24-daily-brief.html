@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-24</title>
+<meta name="description" content="Manager to Founder daily brief for Thursday 24 September 2026. Brief 83. The deploy went red and the publication was never at fault &mdash; a cache gate that has been a coin flip since the feeds shipped. Ruling 63, and standing assertion 24. Rwanda re-verified: the recon own drafting instruction had gone stale under the calendar." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 83
+    <strong>Thursday 24 September 2026</strong>
+  </div>
+</header>
+
+<div class="push-block">
+  <div class="kicker">Nothing owed by you &middot; no dark day &middot; <strong>but yesterday&rsquo;s deploy is red</strong></div>
+  <p>
+    State verified from git and from the live origin before anything was planned. Tree clean,
+    <strong>local and origin at the same commit</strong>, no missed day.
+    <strong>The 09-23 deploy failed</strong> &mdash; and the first thing this run did was establish
+    whether that meant the site was broken. It does not.
+  </p>
+  <p>
+    The build passed. The deploy passed. The byte-compare against the live origin, <em>inside the same
+    job</em>, passed on all five files. The failure is a step that runs after it, and
+    <strong>the publication it was checking was in perfect health the entire time.</strong>
+    An independent instrument agrees: the origin matches our build exactly &mdash; 120 URLs, zero drift.
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
+    <strong>Today changes no served byte.</strong> Every file touched is outside the published site.
+    All 24 standing assertions were run against this exact build &mdash; 21 gate the deploy, and the
+    three that do not were run by hand. One of the 24 is new today.
+  </p>
+</div>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>The gate failed and the publication was fine. It has been a coin flip since the day the feeds shipped.</h1>
+  <p class="dek">
+    One of our checks asks a reasonable question: can a reader who subscribes to our feed poll it cheaply,
+    getting back <em>&ldquo;nothing new&rdquo;</em> instead of the whole file? To ask it, the check fetches
+    the feed&rsquo;s version tag, then sends that tag back and expects to be told <em>&ldquo;still
+    current.&rdquo;</em>
+  </p>
+  <p class="dek">
+    GitHub unpacks each of our deploys onto <strong>more than one server</strong>, and it stamps the
+    version tag from the moment of unpacking. Those servers finished
+    <strong>one second apart</strong>. So the same file has two version tags &mdash; identical content,
+    two labels. The check&rsquo;s two requests go out separately and land on whichever server answers, so
+    roughly half the time it sends one server a label minted by the other, and gets told
+    <em>&ldquo;never heard of it.&rdquo;</em>
+  </p>
+  <p class="dek">
+    We measured it twelve times before touching anything. <strong>Every single refusal was the label
+    mismatch, and never once an actual refusal to honour a label the server held.</strong> Both stamps
+    were still being served a day later, so this is not something settling down. It is permanent. The gate
+    passed on Monday and Tuesday <strong>by luck</strong>.
+  </p>
+  <p class="dek">
+    The obvious repair is to loosen the check. We did something better, because asking <em>why</em> it
+    flaked was cheap and loosening it would have hidden the real question: <strong>if a server can hand
+    out two labels for one file, does it also hand out two files?</strong> The old check could never have
+    told us &mdash; it compared labels and never once downloaded the thing they label. The replacement
+    downloads it every time. <strong>Many labels are tolerated; many files are not.</strong>
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Egypt was verified, and the deploy that carried it went red</h2>
+      <div class="day__date">Wednesday 23 September 2026 &middot; verified against the origin, not the brief</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-shipped">Landed</div>
+      <div class="item__body">
+        The 09-23 run pushed, and the site is serving those bytes. Edition 05&rsquo;s verification backlog
+        reached zero: five drafted, five banked, five verified.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-parked">Named plainly</div>
+      <div class="item__body">
+        <strong>The deploy job reports failure</strong>, and yesterday&rsquo;s brief could not have known
+        &mdash; it is dispatched after the run ends, so no run watches its own deploy. That is the third
+        consequence of the cloud cutover and it is recorded, not absorbed. Diagnosing it was this
+        run&rsquo;s first work and became most of its quality function.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-fixed">Yesterday&rsquo;s forward question bit again</div>
+      <div class="item__body">
+        It asked which of our text is written to be published word for word and carries no marker saying
+        so. Tested this morning before anything new was added, <strong>and it found a wrong figure that
+        has stood for four months</strong> &mdash; see Growth.
+      </div>
+      <div class="item__note">
+        Fifth consecutive day a forward question has found something.
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>A gate that was wrong about a site that was right, and a recon that had gone stale in its own instructions</h2>
+      <div class="day__date">Thursday 24 September 2026 &middot; five functions, all five delivered</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the red deploy, diagnosed and repaired</div>
+      <div class="item__body">
+        Root cause established by measurement rather than inference, then rebuilt as
+        <strong>standing assertion 24</strong>. The fix is to do what an actual feed reader does:
+        <strong>hold one connection and ask on that one</strong>, because a single connection reaches a
+        single server holding a single label. Against the live site: <strong>sixteen of sixteen
+        honoured, one file per feed.</strong> It is stricter than what it replaces &mdash; the old step
+        wanted one success, this wants all of them.
+      </div>
+      <div class="item__note">
+        <strong>The first version of the repair was wrong, and proving it is what caught that.</strong>
+        We require every new check to be shown both that it stays quiet on a known-good case and that it
+        fires on the fault it exists for. The known-good case here is the real 23 September condition
+        &mdash; two labels, one file &mdash; and <strong>the check failed it on the first run.</strong>
+        That failure is what replaced a tolerance with the honest instrument. Proved seven ways before it
+        was allowed near anything.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">And we cannot apply it &mdash; this is the one thing worth your attention</div>
+      <div class="item__body">
+        The broken step lives in a deployment workflow file, and this identity is
+        <strong>refused permission to write those files</strong>. Re-tested today on a throwaway branch;
+        refused, verbatim, as in the two previous attempts. The one-line patch is written, staged in the
+        repository, and escalated on <strong>issue&nbsp;#7</strong>.
+      </div>
+      <div class="item__note">
+        <strong>What has changed about that issue is its cost.</strong> Until today it held a repair that
+        was an <em>improvement</em> and could wait. It now also holds a repair for
+        <strong>a gate that is failing at random on a healthy site</strong>. The expense is not the
+        unapplied patch &mdash; it is that every future run must now spend its first minutes deciding
+        whether a red deploy is real. A gate that cries wolf is worse than no gate.
+        <strong>Stated default, stated date:</strong> if neither the permission nor a hand-applied patch
+        arrives by the 28 September review, that cost simply continues, and the review will say so again.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &middot; Rwanda re-verified, and the recon had gone stale in its own instructions</div>
+      <div class="item__body">
+        The sixth and last row of Edition 05, unclaimed for ten days. Its August recon was re-read against
+        the web as served. <strong>Nothing has gone false</strong> &mdash; all three registers still
+        serve, and the piece&rsquo;s central sourcing finding holds word for word.
+        <strong>Verdict: proceed.</strong>
+      </div>
+      <div class="item__note">
+        <strong>But the calendar moved through the recon&rsquo;s drafting instruction.</strong> The recon
+        says of Rwanda&rsquo;s new five-year teacher-training programme: <em>&ldquo;the first cohort has
+        not yet enrolled&rdquo;</em> and <em>&ldquo;write it in the future tense.&rdquo;</em> The
+        programme was announced to begin <strong>in September 2026</strong>. Today is 24 September.
+        <strong>A writer obeying our own recon would have put a false tense into the piece, and the recon
+        would have been the reason.</strong> It is the edition&rsquo;s third case of a plan outliving its
+        date &mdash; and the first one caught <em>before</em> drafting rather than after banking, which is
+        the entire return on re-verifying a recon before using it.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Content &middot; both standing blockers close, and the subject wrote the story down itself</div>
+      <div class="item__body">
+        Rwanda certified <strong>24,000</strong> previously unqualified teachers. Since August the piece
+        has been blocked on a simple question: <strong>24,000 out of how many?</strong> Without it the
+        number is impressive and unreadable. The route the recon named &mdash; a 2024/25 yearbook &mdash;
+        <strong>does not exist</strong>; the ministry&rsquo;s most recent is 2023/24. It holds the answer:
+        <strong>10,898 pre-primary plus 68,326 primary teachers</strong>.
+      </div>
+      <div class="item__note">
+        <strong>And the same register counts the debt in the ministry&rsquo;s own voice</strong>, which
+        nobody had looked for: <strong>5,162 untrained pre-primary teachers (47.4%) and 22,160 untrained
+        primary (32.4%)</strong> &mdash; roughly 27,300, in the school year the programme opened. It
+        attributes the decline to <em>&ldquo;newly recruited primary teachers who may not have received
+        training.&rdquo;</em> <strong>The government wrote the shortfall into its own statistical
+        annual.</strong> That is the piece&rsquo;s thesis, stated by its subject, and it is a better
+        citation than anything the funder&rsquo;s account carries.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Content &middot; a new blocker that changes the ending</div>
+      <div class="item__body">
+        On 20 August a minister announced a <strong>five-year window for teachers to upgrade beyond the
+        qualification the 24,000 just earned</strong>. If it holds, the argument improves: not
+        <em>incur, disclose, retire</em>, but <strong>incur, disclose, retire, and immediately re-open at
+        a higher bar</strong> &mdash; a system treating a qualification floor as something that moves.
+      </div>
+      <div class="item__note">
+        It reaches us only through a government-adjacent newspaper quoting a speech. An ending is
+        load-bearing by definition, so <strong>it may not carry one until a first-party register is
+        read.</strong> Owed before commission.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Growth &middot; we verify our way into print and not our way out of it</div>
+      <div class="item__body">
+        Yesterday&rsquo;s question asked which of our text is meant to be published verbatim without
+        saying so. The answer: <strong>four of twenty-five files carry the marker our new check reads.</strong>
+        Outside it sit tile captions in both languages, hashtags, and a subscriber welcome signed
+        <em>&ldquo;&mdash; The Editors.&rdquo;</em> That is copy, not commentary.
+      </div>
+      <div class="item__note">
+        It was hiding a plain error. Our Instagram tile said <em>&ldquo;Sierra Leone marked <strong>ten
+        years</strong> of its Free Quality School Education policy in 2026&rdquo;</em> &mdash; and the
+        piece it advertises says <em>&ldquo;<strong>From 2018</strong>&hellip;&rdquo;</em> That is eight
+        years, and the piece marks no anniversary at all. <strong>Four instances, three files, both
+        languages, up to 121 days</strong>, one of them the posting kit. All corrected &mdash; by removing
+        the claim, not by substituting a different anniversary.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-running">Growth &middot; the finding under the finding</div>
+      <div class="item__body">
+        <strong>We caught this exact error the same week, on a different piece, and killed it.</strong> A
+        May editorial brief reads: <em>&ldquo;The phrase &lsquo;ten years on&rsquo; in the slate&rsquo;s
+        framing is wrong.&rdquo;</em> Same reflex, same fortnight. The Editor stopped it on the way
+        <em>into</em> a piece. Nothing stopped it on the way <em>out</em>, because nothing reads the
+        distribution copy &mdash; and five days later it went into the grid.
+      </div>
+      <div class="item__note">
+        The instinct is to mark up the other twenty-one files. <strong>That reproduces the defect</strong>
+        &mdash; the marker is a comment a writer can forget, which is exactly why four files have one and
+        twenty-one do not. What is owed is the inversion: postable copy lives in a declared place and
+        everything there is checked, the way a piece&rsquo;s source list works because the format demands
+        it. <strong>Default-in beats default-out. The failure mode of default-out is silence.</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research &middot; ruling 63, a validator is not the content</div>
+      <div class="item__body">
+        An identifier minted by the machine that <em>stores</em> a file is a property of the storage, not
+        of the file &mdash; two copies of identical content get different labels. And the operational
+        half: <strong>a check that makes two requests has run two experiments</strong>, so anything the
+        infrastructure may vary between them is a variable, not a constant.
+      </div>
+      <div class="item__note">
+        It sits beside two we already had. <strong>Ruling 57:</strong> two equal counts are not two equal
+        sets. <strong>Ruling 60:</strong> the same commit built on two machines printed different dates.
+        Now: the same bytes stored on two servers mint different labels.
+        <strong>In each, a value that varies with where it was computed got mistaken for a value that
+        varies with what it describes.</strong> Filed with the register&rsquo;s three counts moved in the
+        same commit, which is what that rule asks for.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= STATS ============================= -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-24 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Asia 7 &middot; Africa 5 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 &middot; access 34 &middot; value of teachers 26 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 43 EN / 43 AR &mdash; incl. 5 EN / 5 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<p class="mono" style="color:var(--color-sage); font-size:11px; letter-spacing:0.04em; margin-top:-0.5rem;">
+  The site carries no third-party tracker, by design, so there is no visitor number to report and none is
+  estimated. Fifty-eighth consecutive day without a published piece &mdash; five pairs are finished,
+  verified and held, waiting on one more piece. The one number Growth can honestly report moving today is
+  <strong>four wrong figures removed from three distribution artefacts, in two languages.</strong>
+</p>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Rwanda&rsquo;s commission, and whether any of our checks are measuring themselves</h2>
+      <div class="day__date">Friday 25 September 2026 &middot; on deck</div>
+    </div>
+  </header>
+
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-running">Next lane</div>
+      <div class="item__body">
+        <strong>The Editor&rsquo;s commission decision on Rwanda</strong>, then its draft. The recon is
+        cleared and amended; three things travel with it &mdash; the struck tense, the prohibition on
+        subtracting three numbers that count different things, and the unsourced ending.
+      </div>
+      <div class="item__note">
+        <strong>Seventeen days to the 11 October gate target</strong>, and the order of sacrifice is
+        unchanged: the date gives, the verdicts do not. Every recon in the edition is now cleared, which
+        has not been true before.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-running">The question tomorrow tests first</div>
+      <div class="item__body">
+        Today&rsquo;s defect was not a check that missed something. It was <strong>a check that failed
+        while the thing it guards was perfectly healthy</strong>, and had been a coin flip since the feeds
+        shipped &mdash; passing twice by luck before anyone looked.
+      </div>
+      <div class="item__note">
+        So: <strong>which of our checks has an answer that is not a function of the thing it claims to
+        measure?</strong> The probe is cheap and we have never run it &mdash; run each of the 24 twice
+        against an unchanged site and compare the two outputs byte for byte. Anything that differs is
+        reading a clock, a network, an ordering or a machine, rather than the publication.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-running">Owed</div>
+      <div class="item__body">
+        The <strong>Arabic Editor gates two corrected Arabic captions</strong> before either is posted, on
+        top of the six already owed. Growth composed Arabic today and gated none of it, which is the
+        correct order and is recorded rather than assumed.
+      </div>
+      <div class="item__note">
+        Also still owed, and now for the seventh time: an honest way to know which pages actually changed
+        in a deploy. Today it was answerable only because nothing changed.
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 83</span>
+  <span>2026-09-24 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>

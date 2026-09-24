@@ -49,9 +49,9 @@ Pieces deliberately **not** in the opening grid: Kuwait CCET, Indonesia Permen 1
 
 **Image:** `/web/dist/stills/2026-05-25-bo-teacher-chalk.svg` exported as 1080×1080 PNG.
 
-**Caption (EN, 218 chars):**
+**Caption (EN, 192 chars):**
 
-> Sierra Leone marked ten years of its Free Quality School Education policy in 2026. A field note from Bo on what the policy actually paid for, and the line item the country has under-paid since the beginning.
+> Sierra Leone has covered tuition, textbooks and exam fees since 2018. A field note from Bo on what the policy actually paid for, and the line item the country has under-paid since the beginning.
 >
 > Read it — link in bio.
 > EN + عربي
@@ -60,7 +60,7 @@ Pieces deliberately **not** in the opening grid: Kuwait CCET, Indonesia Permen 1
 
 **Caption (AR companion — second post body or alt-text alternative if Instagram-bio-language is set to Arabic):**
 
-> سيراليون أكملت عشر سنوات من سياسة التعليم المجاني عام ٢٠٢٦. تقريرٌ ميداني من بو حول ما اشترته السياسة فعلًا، والبنْد الذي بقي البلد يدفع أقلَّ منه منذ البداية.
+> تغطّي سيراليون الرسومَ الدراسية والكتبَ المدرسية ورسومَ الامتحانات منذ ٢٠١٨. تقريرٌ ميداني من بو حول ما اشترته السياسة فعلًا، والبنْد الذي بقي البلد يدفع أقلَّ منه منذ البداية.
 >
 > الرابط في السيرة.
 
