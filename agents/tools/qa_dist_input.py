@@ -125,7 +125,13 @@ def newest(paths):
 
 
 def stamp(t):
-    return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(t))
+    # UTC, and labelled, because this line is written into a QA log that later
+    # runs read as true. `time.localtime` rendered the same mtime as 09:38 on
+    # the runner and 13:38 on a desktop in Asia/Dubai -- ruling #60's defect
+    # (a date is not a moment) surviving inside an instrument after it was
+    # closed in the publication. The verdict never depended on it; the record
+    # did. Found 2026-09-25 by the determinism probe's static half.
+    return time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t)) + "Z"
 
 
 def main(argv):
