@@ -22,6 +22,31 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 EN_DIR = os.path.join(ROOT, "web", "src", "content", "articles")
 AR_DIR = os.path.join(ROOT, "web", "src", "content", "articles-ar")
 HIST = os.path.join(ROOT, "agents", "stats", "history.jsonl")
+LAYOUT_DIR = os.path.join(ROOT, "web", "src", "layouts")
+COMPONENT_DIR = os.path.join(ROOT, "web", "src", "components")
+
+
+def third_party_origins():
+    """Distinct external origins the site LAYOUT asks a reader's browser to
+    contact. Read from source rather than from dist, so the count is available
+    without a build and cannot disagree with what the layout says.
+
+    Scoped to layouts and components — the site chrome — because an origin named
+    in an article's `sources[]` is a citation the reader may choose to follow,
+    not a request their browser makes on our behalf. That distinction is the
+    whole point of the number."""
+    origins = set()
+    pat = re.compile(r"""(?:href|src)\s*=\s*["'](https?://([^/"']+))""")
+    for d in (LAYOUT_DIR, COMPONENT_DIR):
+        if not os.path.isdir(d):
+            continue
+        for name in sorted(os.listdir(d)):
+            if not name.endswith(".astro"):
+                continue
+            text = open(os.path.join(d, name), encoding="utf-8").read()
+            for _full, host in pat.findall(text):
+                origins.add(host)
+    return origins
 
 try:
     import yaml  # type: ignore
@@ -194,6 +219,23 @@ def html_panel(s):
             f'\n    <div><span class="stats__k">On disk</span> {a["en_total"]} EN / {a["ar_total"]} AR '
             f'&mdash; incl. {a["held_en"]} EN / {a["held_ar"]} AR held drafts (approved:false, not published)</div>'
         )
+    # Third-party origins in the site layout, DERIVED rather than asserted
+    # (2026-09-26). The traffic line used to read "no tracker, by design" and
+    # stop there, which is true and narrower than it sounds: the layout requests
+    # fonts from two Google origins on every page, handing a party that is not us
+    # the reader's IP, user agent and the article they are reading. A hardcoded
+    # count would drift the day the fonts are self-hosted, which is the defect
+    # class this register keeps filing rulings about — so it is counted from the
+    # layout every run. Zero is printed as zero, and the claim goes away by
+    # itself when the cause does.
+    third_party = third_party_origins()
+    if third_party:
+        tp = ("no tracker and no analytics, by design &middot; "
+              "%d third-party origin(s) requested by the layout (%s)"
+              % (len(third_party), ", ".join(sorted(third_party))))
+    else:
+        tp = "no tracker, no analytics and no third-party request, by design"
+
     panel = (
         '<div class="stats">\n'
         f'  <h3>Statistics &middot; as of {s["as_of"]} &middot; published (live) corpus</h3>\n'
@@ -208,7 +250,7 @@ def html_panel(s):
         f'    <div><span class="stats__k">Top themes</span> {top_themes}</div>\n'
         f'    <div><span class="stats__k">Pieces per ISO week</span> {wk_str}</div>\n'
         f'    <div><span class="stats__k">Cadence</span> first {cad["first_piece"]} &middot; latest {cad["latest_piece"]}</div>\n'
-        '    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>'
+        f'    <div><span class="stats__k">Traffic</span> site: {tp} &middot; Substack: pending launch &middot; shares: manual (weekly)</div>'
         f'{held_note}\n'
         '  </div>\n'
         '</div>'

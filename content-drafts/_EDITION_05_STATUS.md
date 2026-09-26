@@ -33,7 +33,7 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 3 | `2026-09-01-sudan-cant-wait-to-learn` — *The classroom invented before the war that needed it* / *الصفُّ الذي اختُرِع قبل الحرب التي احتاجته* | North-East · **mandated slot 2** | 08-13 (recon 5) + re-verified 08-31 | 09-01 | 09-03 · gate PASS | **09-04 PASS** | **09-10 FAIL-3-ITEMS → all fixed in-run; confirmation read owed at the gate** | ✓ | ✓ (09-03) | held |
 | 4 | `2026-09-14-africa-best-system-ruler` — *Four rulers, four crowns, and one about to be re-read* | Continental (`country: Mauritius` + `countries:` ×5) · **mandated slot 3** | 08-16 (recon 6) + re-verified 09-04 · blocker 1 closed 09-06 (PASEC2019) · blocker 2 closed 09-11 (TIMSS 2019) | **09-14** — now 2,332 words (cap ≤2,300 — **Editor's waiver owed**), title 53/100, dek 162/200 | **09-14 · gate PASS** (+ addendum 09-15) — title 58/100, dek 145/200 | **09-15 RETURNED-4-NOTES → all closed in-run → PASS, BANKED** | **09-17 FAIL-5-ITEMS → 3 closed in-run; items 3 and 5 RULED AND CLOSED 09-18** (Editor decisions 1 and 5) | ✓ (09-14) | ✓ (09-14) | held |
 | 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-23 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | **09-23 FAIL-3-ITEMS → all three closed in-run in both languages; item 4 (source 1 unreachable) OPEN and first at the confirmation read** | ✓ (09-19) | ✓ (09-19) | held |
-| 6 | Rwanda — teacher certification | East | **COMMISSIONED 09-25** (`briefs/2026-09-25-rwanda-teacher-certification-brief.md`) — the A2→A1 instrument hunted to a first-party register on **eight routes and not found** (`recon/2026-09-25-ed05-rwanda-a2-a1-instrument-hunt.md`); it may not carry the ending, and the **A1 label itself is press-supplied** — MINEDUC's own 10 Aug register names no tier. Prior: 08-18 (recon 8) + **re-verified 09-24 · PROCEED** — denominator CLOSED (79,224 pre-primary+primary, Yearbook 2023/24) and the debt now counted in the ministry's own voice (~27,322 untrained); **recon §3/§5 AMENDED — the clock moved under its own drafting instruction**; one NEW blocker (the A2→A1 five-year upgrade, reported speech only, #43) | — | — | — | — | — | — | — |
+| 6 | Rwanda — teacher certification | East | **COMMISSIONED 09-25** (`briefs/2026-09-25-rwanda-teacher-certification-brief.md`) — the A2→A1 instrument hunted to a first-party register on **eight routes and not found** (`recon/2026-09-25-ed05-rwanda-a2-a1-instrument-hunt.md`); it may not carry the ending, and the **A1 label itself is press-supplied** — MINEDUC's own 10 Aug register names no tier. Prior: 08-18 (recon 8) + **re-verified 09-24 · PROCEED** — denominator CLOSED (79,224 pre-primary+primary, Yearbook 2023/24) and the debt now counted in the ministry's own voice (~27,322 untrained); **recon §3/§5 AMENDED — the clock moved under its own drafting instruction**; one NEW blocker (the A2→A1 five-year upgrade, reported speech only, #43). **AMENDED 2026-09-26** (`verdicts/2026-09-26-ed05-rwanda-commission-amendment.md`, on `recon/2026-09-26-ed05-rwanda-yearbook-2024-25-supersedes.md`) — the **2024/25 Yearbook exists** and has been on MINEDUC's own listing since **21 April 2026**; the 09-24 entry recorded it as non-existent *and supplied a cause* (**ruling #69**). Register of record moves to 2024/25: workforce **84,763**, untrained **27,409** (5,692 pre-primary 44.2% + 21,717 primary 30.2%), trained primary 46,166→50,162 — every figure confirmed twice, trained+untrained closing exactly on the totals in both years, and the 09-24 read of 2023/24 independently reproduced by the newer register's own prior-year column. **The commission's spine verb *discharged most of that debt* is STRUCK**: the untrained stock **rose** 27,322→27,409 while the 24,000 was being certified, the ministry's own word is *“marginally”* and its own attribution is *“newly recruited primary school teachers”* — a **flow** against a **stock** (**ruling #68**), seam now **five** definitions deep. Guardrail A **refined**: the A2/A1/A0 labels are MINEDUC's own (salary communiqué, 01 Aug 2022, read in served text — 68,207 A2 / 12,214 A1 / 17,547 A0, and the recon's before/after salary pairs are NOT in it and do not ship); only the **A1 outcome of the five-year TTC and the upgrade window** stay with The New Times. Ending unchanged. Blocker 3 still open, 39 days | **owed — next run** | — | — | — | — | — | — | — |
 
 ### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
 
@@ -149,6 +149,49 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-09-26** — **THE DENOMINATOR REGISTER WAS SUPERSEDED, AND THE COMMISSION'S SPINE DID NOT
+  SURVIVE IT — CAUGHT BEFORE A WORD WAS DRAFTED.** State verified against git and the live
+  origin: tree clean, no dark day, **HEAD == origin/main**, the **09-25 deploy green and its
+  bytes served** (`36121527064`) — fourth consecutive day with zero unserved commits.
+  **The draft was the owed lane and it is not written**, for the second day running and for a
+  better reason than yesterday's. The 09-13 rule sends a drafter to the register rather than the
+  annotation; opening it found that the **2024/25 Education Statistical Yearbook — recorded by the
+  09-24 re-verification as not existing, with the publication schedule given as the cause — has
+  been on MINEDUC's own dated listing since 21 April 2026.** Five months. **Ruling #69: the cause
+  of an absence is a claim, and it needs its own register** — *not found on the routes tried* is a
+  record, *not published yet* is a second claim about the world made from evidence about our own
+  search, and it is the one that closes the question in a file every later run reads as verified.
+  The same lane had done it correctly one day later (the 09-25 A2→A1 hunt, eight routes, no cause
+  invented), which makes it an execution gap rather than a knowledge gap.
+  **And the newer register contradicts the spine.** Untrained teaching staff **rose** from 27,322
+  to **27,409** across the window in which 24,000 certificates were issued — primary down 443,
+  pre-primary up 530, the ministry's own word *“marginally”*, its own attribution *“newly recruited
+  primary school teachers”*, and a workforce that grew by 5,539 in one year. **Ruling #68: a flow
+  is not a stock.** No figure in the commission was wrong; the **verb** was, and *most* is what a
+  reader computes when a flow and a stock are set side by side with their kinds unnamed. Spine
+  amended to four moments — *incur, disclose, discharge at scale, and disclose again that the
+  stock did not move* — posture intact and stronger: the debtor published the number that
+  undercuts its own funder's headline. Seam extended to a **fifth** definition. Every 2024/25
+  figure confirmed twice; trained+untrained closes exactly on the totals in both years; the
+  09-24 read of 2023/24 independently reproduced by the newer register's own prior-year column;
+  and the trend the 09-24 run rightly declined to carry is now resolved (45,875 is 2022/23).
+  **Two registers the recon had flagged unread were read:** the 01 Aug 2022 salary communiqué —
+  which **refines Guardrail A** (the A2/A1/A0 labels are the ministry's own, with headcounts; only
+  the five-year TTC's A1 outcome is the newspaper's) and **strikes the recon's before/after salary
+  pairs**, which are not in the ministry's register at all; and MINEDUC's publications listing,
+  which answers *is there a newer one* on one page. **Quality: the 09-25 forward question tested
+  first** — six of the operation's real historical defects re-injected as they shipped, each
+  injection hash-proved to have changed the artefact: four caught, one bounded-blind, and **one a
+  hole** — the 83-day footer `/rss.xml` 404 is caught by nothing we own. **Rulings #66** (inject
+  the defect that shipped, not the bite you wrote) **and #67** (a rule that produces no file has
+  produced nothing — the 08-16 chrome sweep was a rule for 41 days and never a tool). **Standing
+  assertion 25, `qa_chrome_links`**, proved three ways against the historical defect and wired to
+  `postbuild` and to `qa_census` in the same commit: **25 assertions, 22 gating.** Its first run
+  found **two third-party origins in the chrome of every page** — Growth's action today, and the
+  brief's traffic line is now scoped accordingly. Corpus unchanged at **38 EN / 38 AR**, **no
+  approved flips**, sixtieth consecutive day without a published piece; held set **10 files / 5
+  slugs**. **Next lane: the Rwanda EN draft**, against a corrected figure set and a ruled frame —
+  fifteen days to the 10-11 gate target.
 - **2026-09-25** — **RWANDA IS COMMISSIONED, AND THE INSTRUMENT THAT WOULD HAVE CHANGED
   ITS ENDING HAS NO REGISTER.** State verified against git and the live origin: tree clean,
   no dark day, **HEAD == origin/main**, the **09-24 deploy green and its bytes served** —

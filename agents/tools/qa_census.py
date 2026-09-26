@@ -238,6 +238,12 @@ ROWS = [
          lambda P: len(P["served"]),
          "served — every *.html the build emits, the 404 page included"),
     ]),
+    ("qa_chrome_links", ["qa_chrome_links.py", "{dist}"], [
+        ("pages", r"qa_chrome_links: (\d+) page\(s\)",
+         lambda P: len(P["served"]),
+         "served — every pointer on every page the build emits, the 404 page "
+         "included; its chrome is emitted by the same layout"),
+    ]),
     ("qa_hreflang_clusters", ["qa_hreflang_clusters.py", "{dist}"], [
         ("sitemap URLs", r"sitemap URLs (\d+)",
          lambda P: len(P["sitemap"]), "the sitemap's own <loc> set"),

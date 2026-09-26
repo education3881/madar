@@ -45,7 +45,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-four** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py` and `qa_arabic_joining.py`, which need a headless Chrome. |
+| `agents/tools/` | **Twenty-five** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py` and `qa_arabic_joining.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -57,9 +57,9 @@ python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven that run
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **nine** of the twenty-four assertions
+Use `npm run build`, not `npx astro build`: **ten** of the twenty-five assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
-`qa_date_identity`, `qa_feed_enclosures`, `qa_census`, `qa_packet_figures`) are gated from `postbuild` in `web/package.json`,
+`qa_date_identity`, `qa_feed_enclosures`, `qa_chrome_links`, `qa_census`, `qa_packet_figures`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -71,16 +71,16 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, nine more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, ten more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **21 of the 24 gate the deploy**; of the three that do
+artifact against the live origin. **22 of the 25 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
 reason cannot be written where the others are** — it belongs in the `verify` job and this
 identity cannot write `.github/workflows/**`, so its reason lives in the tool's own header
 and the one-line patch is staged at `agents/tools/patches/`. Applying that patch makes it
-**22 of 24**. A green run means the bytes are actually served, not merely built.
+**23 of 25**. A green run means the bytes are actually served, not merely built.
 
 **A red `verify` job is not automatically a red publication.** On 2026-09-23 the deploy
 failed on a feed-validator step while the byte-compare in the same job passed — the check
@@ -91,7 +91,9 @@ review, moved again on 2026-09-22 by the run that added assertion 22 (`qa_date_i
 ruling #60), again on 2026-09-23 by the run that added assertion 23 (`qa_packet_figures`),
 and again on 2026-09-24 by the run that added assertion 24 (`qa_feed_validators`, ruling
 #63) — at the point of filing, per the 09-20 rule, rather than
-waiting for a Sunday.** They read 14 / 13-of-14 / eleven while the operation had built seven new
+waiting for a Sunday — and again on 2026-09-26 by the run that added assertion 25
+(`qa_chrome_links`, ruling #67 — a rule that named a check and never produced a file, so the count
+had no way to notice it missing).** They read 14 / 13-of-14 / eleven while the operation had built seven new
 assertions and wired five of them — in the one file every run is told to read first. The
 weekly review now prints the ratio (`N of M gate the deploy`) and reconciles it against
 both homes; if this paragraph and that ratio ever disagree, the workflow files are the
