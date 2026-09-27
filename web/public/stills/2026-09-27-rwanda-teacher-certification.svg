@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A continuous ink drawing for Rwanda: a ledger page drawn in plain rule lines fills the right of the sheet, two narrow columns side by side under a single header rule, each column holding a stack of horizontal entry marks. The left column's stack and the right column's stack stand at almost exactly the same height, and a fine dashed level line is drawn across from one to the other to show it. Away to the left, a long low row of small upright tally strokes runs along the foot of the page, far more numerous than the entries in either column, one of them traced in warm kiln-orange. Nothing is written in words anywhere.">
+  <title>The Still · Rwanda — two columns that stand level, and the tally that did not move them</title>
+  <desc>Paper-cream ground, pure line, no fills — tone carried by stroke weight and opacity alone. A ledger occupies the right of the page: one header rule, a single vertical divider, and two columns of horizontal entry marks whose stacks reach almost the same height, with a dashed level line drawn between their tops. A long low row of 34 upright tally strokes runs along the foot of the page to the left, one of them in kiln orange. No words, no numerals, no figures.</desc>
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- the foot rule the whole page stands on -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="2" stroke-opacity="0.35" d="M 40 524 L 1160 524"/>
+  </g>
+
+  <!-- the ledger: header rule, divider, column frames -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="1.8" stroke-opacity="0.6" d="M 712 120 L 1130 120"/>
+    <path stroke-width="1.0" stroke-opacity="0.22" d="M 712 134 L 1130 134"/>
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 921 120 L 921 524"/>
+    <path stroke-width="1.4" stroke-opacity="0.4" d="M 712 120 L 712 524 M 1130 120 L 1130 524"/>
+  </g>
+
+  <!-- the entries: two stacks, standing level -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="2.6" stroke-opacity="0.58" d="M 726 514 L 906 514 M 726 486 L 906 486 M 726 458 L 906 458 M 726 430 L 906 430 M 726 402 L 906 402 M 726 374 L 906 374 M 726 346 L 906 346 M 726 318 L 906 318 M 726 290 L 906 290 M 726 262 L 906 262"/>
+    <path stroke-width="2.6" stroke-opacity="0.58" d="M 936 514 L 1116 514 M 936 485 L 1116 485 M 936 456 L 1116 456 M 936 427 L 1116 427 M 936 398 L 1116 398 M 936 370 L 1116 370 M 936 341 L 1116 341 M 936 312 L 1116 312 M 936 283 L 1116 283 M 936 254 L 1116 254"/>
+  </g>
+
+  <!-- the level line: drawn across, because the two tops are the finding -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="1.2" stroke-opacity="0.42" stroke-dasharray="3 9" d="M 726 258 L 1116 258"/>
+  </g>
+
+  <!-- the tally: far more numerous, and it did not move the columns -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round">
+    <path stroke-width="1.5" stroke-opacity="0.46" d="M 64 522 L 64 492 M 82 522 L 82 492 M 99 522 L 99 492 M 117 522 L 117 492 M 134 522 L 134 492 M 152 522 L 152 492 M 170 522 L 170 492 M 187 522 L 187 492 M 205 522 L 205 492 M 222 522 L 222 492 M 240 522 L 240 492 M 258 522 L 258 492 M 275 522 L 275 492 M 293 522 L 293 492 M 310 522 L 310 492 M 328 522 L 328 492 M 346 522 L 346 492 M 363 522 L 363 492 M 381 522 L 381 492 M 416 522 L 416 492 M 434 522 L 434 492 M 451 522 L 451 492 M 469 522 L 469 492 M 486 522 L 486 492 M 504 522 L 504 492 M 522 522 L 522 492 M 539 522 L 539 492 M 557 522 L 557 492 M 574 522 L 574 492 M 592 522 L 592 492 M 610 522 L 610 492 M 627 522 L 627 492 M 645 522 L 645 492"/>
+  </g>
+  <g fill="none" stroke="#D94F2A" stroke-linecap="round">
+    <path stroke-width="2.4" stroke-opacity="0.9" d="M 398 522 L 398 486"/>
+  </g>
+</svg>
