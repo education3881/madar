@@ -31,7 +31,11 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently #1–#58, and binding.
+  `agents/guidebook/INDEX.md` — currently **#1–#71**, and binding. *(Read #1–#58 from
+  2026-09-20 until 2026-09-27, thirteen rulings stale, because the 09-20 rule that moves a
+  range at the point of filing enumerates three homes — §3's range, §3's heading, §1's count
+  — and this is a **fourth**. A rule about counts was itself a bucket set missing a member.
+  The rule now names four; see the RUNBOOK.)*
 - **Prove an assertion both ways.** A new check must be shown to stay silent on a
   known-good control *and* to fail on the defect it exists to catch. Prove the bite as
   carefully as the control: an injection that fails to change the artefact reads
@@ -79,8 +83,18 @@ not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
 reason cannot be written where the others are** — it belongs in the `verify` job and this
 identity cannot write `.github/workflows/**`, so its reason lives in the tool's own header
-and the one-line patch is staged at `agents/tools/patches/`. Applying that patch makes it
+and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
+there 2026-09-27** when the weekly review found the queue split across two directories with
+this file naming one and issue #7 naming the other. Applying that patch makes it
 **23 of 25**. A green run means the bytes are actually served, not merely built.
+
+**A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
+patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
+`postbuild`* while four assertions landed; applying it on any day after 09-22 would have
+written stale counts into `astro-pages.yml`, where this identity could not then correct
+them. Every open patch is now re-read against current state at each weekly review and
+refreshed or withdrawn. The counts in this section were re-verified 2026-09-27 by counting
+both files.
 
 **A red `verify` job is not automatically a red publication.** On 2026-09-23 the deploy
 failed on a feed-validator step while the byte-compare in the same job passed — the check

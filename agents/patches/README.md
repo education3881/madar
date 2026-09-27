@@ -30,12 +30,34 @@ Then delete the patch file in the same push — a patch that has landed and stay
 exactly like one that has not, which is the failure mode this directory would otherwise
 create for itself.
 
+## The queue is reconciled at every weekly review, and here is why that is not tidiness
+
+**Found 2026-09-27:** the `2026-09-20-issue-6-default-c…` patch below had been sitting here
+for seven days asserting, into the one file every run is told to read first, that the
+operation owns **21 standing assertions of which 19 gate the deploy, seven of them from
+`postbuild`**. Four assertions landed while it sat unapplied. Had the founder applied it on
+any day after 09-22, it would have written **stale counts into `astro-pages.yml`** — which
+is precisely the drift the 2026-09-20 review spent its budget repairing in `CLAUDE.md`.
+
+**A staged patch is frozen prose about a moving count.** Every other artefact here that
+carries a number is now reconciled weekly; a patch was reconciled by nobody, ages silently,
+and its failure mode is the worst available — it injects stale state *at the moment of
+application*, by a hand that trusts it, in a file the autonomous run cannot then correct.
+Both entries below were re-read and the counts refreshed on 2026-09-27; the patch was
+regenerated from a real diff and re-verified with `git apply --check`.
+
+**Standing rule from today: the weekly review re-reads every open patch in this directory
+against current state, and refreshes or withdraws it.** A patch that cannot be re-verified
+is withdrawn rather than left to rot — an unapplied patch is unapplied work, but a *wrong*
+unapplied patch is a trap.
+
 ## Open
 
 | Patch | What it does | Why it matters |
 |---|---|---|
 | `2026-09-20-verify-feed-cache-retry.patch` | Gives the `verify` job's feed-cache step the retry every other origin check in that job already has, and makes it record `x-cache` / `x-served-by` on a miss | **That step has failed the deploy twice in nineteen days** (2026-09-09 and 2026-09-19), both times on a conditional GET issued ~12s after publish, both times while the site itself was serving correctly. Until this lands, the deploy stays liable to a red run that means nothing about the publication — and the third occurrence will be as undiagnosable as the first two, because the current step records nothing about which edge node answered. The shell is proved both ways against the live origin; see `agents/logs/qa-2026-09-20.md` §1. |
-| `2026-09-20-issue-6-default-c-gate-register-comment.patch` | Adds the comment block that makes issue #6's option C honest: `astro-pages.yml` names all seven `postbuild` gates in `web/package.json`, prints the total (21) and the ratio (19 gating), and says why the register is split in two | **Issue #6 carried a stated default dated 2026-09-20 — apply C — and the date passed unanswered, so C applies.** The circularity the issue itself warned about then bit: applying C means editing the one file this identity may not write, and the push was refused on exactly the error quoted at the top of this README. Comment-only; changes no step and no gate. Until it lands, a reader of the workflow gets *twelve* as the answer to "what gates the deploy?", which is an incomplete answer — the honest total lives in `CLAUDE.md` and in each weekly review's printed ratio. |
+| `2026-09-24-verify-feed-validators.md` | Returns `qa_feed_validators` (standing assertion 24) to the `verify` job, where its reason belongs. **Moved here from `agents/tools/patches/` on 2026-09-27**, when the review found the queue had two homes and no count. | Assertion 24 is one of the three that do not gate the deploy, and the only one whose *reason for being ungated* cannot be written where the other two are — it belongs to the `verify` job, which this identity cannot write. Applying it makes the ratio **23 of 25**. Counts re-verified 2026-09-27. |
+| `2026-09-20-issue-6-default-c-gate-register-comment.patch` | Adds the comment block that makes issue #6's option C honest: `astro-pages.yml` names all **ten** `postbuild` gates in `web/package.json`, prints the total (**25**) and the ratio (**22 gating**), names the three that do not gate and why, and says why the register is split in two. **Counts refreshed 2026-09-27 — see the section above; as staged on 09-20 it read seven / 21 / 19 and would have written all three wrong.** | **Issue #6 carried a stated default dated 2026-09-20 — apply C — and the date passed unanswered, so C applies.** The circularity the issue itself warned about then bit: applying C means editing the one file this identity may not write, and the push was refused on exactly the error quoted at the top of this README. Comment-only; changes no step and no gate. Until it lands, a reader of the workflow gets *twelve* as the answer to "what gates the deploy?", which is an incomplete answer — the honest total lives in `CLAUDE.md` and in each weekly review's printed ratio. |
 
 ## A note on the second entry, because the shape is worth keeping
 

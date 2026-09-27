@@ -63,13 +63,14 @@ The publication grows by being worth returning to, not by volume. The loop, run 
 
 The team grows **gradually and deliberately**, decided in the weekly review — never on novelty. Add a persona only when a capability gap is *recurring* and the existing team is *genuinely saturated*.
 
-Current team (11, as of 2026-08-16): Manager/CEO, Editor (the filter), Researcher, Content Creator, Content Creator II, Verifier, Arabic Editor, Arabic Content Creator, Web Developer, Designer, Growth. The routing diagram in the RUNBOOK is canonical; this line is the headcount only. *(Corrected at the 2026-08-16 weekly review — it had read "(7)" since 2026-06-03, four additions out of date, in the one document every session reads first.)*
+Current team (12, as of 2026-09-27): Manager/CEO, Editor (the filter), Researcher, Content Creator, Content Creator II, Verifier, Arabic Editor, Arabic Content Creator, Web Developer, **Assertions Engineer**, Designer, Growth. The routing diagram in the RUNBOOK is canonical; this line is the headcount only. *(Corrected at the 2026-08-16 weekly review — it had read "(7)" since 2026-06-03, four additions out of date, in the one document every session reads first. **Moved to 12 at the 2026-09-27 weekly review**, at the point of the decision rather than at the next reconciliation, per the 09-20 rule about counts maintained on a slower clock than the work.)*
 
 Candidate future roles, in likely order of need:
-1. **Researcher** — a dedicated source-reconnaissance persona, if the Editor is repeatedly bottlenecked doing recon before drafting. (Watch signal: candidates parking for sourcing-time, not sourcing-quality.)
-2. **Social/Video** — if Growth saturates on a channel that needs craft beyond stills + copy (e.g., short video).
-3. **Data/SEO analyst** — once there is real traffic to analyse and a discoverability surface worth optimising.
-4. **Second-language editor** — if the publication expands beyond EN/AR.
+1. **Social/Video** — if Growth saturates on a channel that needs craft beyond stills + copy (e.g., short video).
+2. **Data/SEO analyst** — once there is real traffic to analyse and a discoverability surface worth optimising.
+3. **Second-language editor** — if the publication expands beyond EN/AR.
+
+*Filled and struck from this list: **Researcher** (added 2026-06-14) and **Assertions Engineer** (added 2026-09-27, split from the Web Developer). Both were on the ladder as capability gaps and both fired on a recurring, measured signal rather than on enthusiasm. The **Researcher** line sat on this list for three and a half months after it was filled — a stale ladder is the same defect as a stale headcount, corrected here at the 2026-09-27 review.*
 
 **How to add one:** scaffold `/agents/NN_role.md` in the existing persona format, wire it into the RUNBOOK routing diagram, brief its first week, and record the decision (and its trigger signal) in the weekly review. If no addition is warranted in a given week, say so and record why — restraint applies to the org chart as much as to the publication.
 

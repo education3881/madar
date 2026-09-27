@@ -80,6 +80,90 @@ dropped outright is what the 09-13 rule was written to catch. A hedge that **sur
 the first clause, and dies in the last one** is a different failure and nothing we own looks for it.
 **Named as the register's forward surface for the week of 09-21: does a hedge survive its own paragraph?**
 
+### RECONCILED AGAINST DISK — 2026-09-27, weekly review. Two clock items still open, and a THIRD found.
+
+**The ledger is true.** Every cell in the table above is backed by a file that exists: six EN drafts,
+five AR twins, five pair verdicts, five verification verdicts, four standalone AR gates plus Zambia's
+inside its pair verdict (the location note above is correct), six stills, six og cards, and row 6's
+three owed cells correctly empty. Held set on disk: **11 files / 6 slugs**, which is what
+`qa_held_assets` reported in today's build (6 held slugs, 38 approved), and the corpus is unchanged at
+**38 EN / 38 AR** with 44/43 files on disk. Verification backlog **zero**. **Fourteen days to the
+10-11 gate target.**
+
+**ITEMS A AND B ARE BOTH STILL OPEN, seven days after being found**, and both were re-read against the
+calendar today rather than taken from the 09-20 entry. Zambia ¶103 still reads *"Zambia goes to a
+general election in **August 2026**"* in EN and «أغسطس 2026» in AR — the month is now **two** months
+past. Slot 3 ¶94 still closes *"the ruler is **re-read in December**"* / «ديسمبر», narrowing a
+register that says *the last quarter*. Neither is edited here: the prose is the Editor's and the trace
+is the Verifier's. **Both still block the flip**, and they are now the oldest open items on the
+edition. Seven days is not a criticism of any run — every run since had a louder lane and said so —
+but the flip is fourteen days out and these two are the only items on the critical path that need a
+*human judgment* rather than a task.
+
+**ITEM C — NEW, found today, and it is the one nobody could have found by reading a piece.** Re-reading
+every forward-looking date in the held set surfaced a coupling between an *operational* decision and an
+*editorial* sentence, which is why neither the four gates each piece has cleared nor any assertion
+could see it. **The six pieces carry six datelines — 25 Aug, 28 Aug, 01 Sep, 14 Sep, 19 Sep, 27 Sep —
+and they will all first be served on ONE day**, the gate target of 11 October at the earliest and 15
+November at the outer bound. That is up to **47 days of spread on a single publication event.** On its
+own that is a defensible convention and the operation has already ruled on its shape (*a dateline is a
+claim, a slug is an identifier* — #46 corollary 2, applied to row 6's slug move on 09-27). **What is
+new is that one piece's prose leans on its own dateline.** Slot 3 ¶94 closes: *"A crown handed out in
+**September 2026** is handed out in the knowledge that the ruler is re-read in December."* / «سبتمبر
+2026». The crown is the piece's own act. If the dateline stays 14 September, the sentence is true of
+the dateline and false of the day a reader receives it; if the dateline moves to flip day, the sentence
+is false outright. **The dateline decision and that sentence cannot both be free**, and nothing in this
+ledger recorded that they were connected.
+
+- **Owed to the Editor, and it is a judgment not a task:** rule the wave's dateline convention *once*,
+  for all six pieces together — compose-date datelines (and then ¶94's month is re-cut, since item B is
+  already re-cutting that same sentence's second half) or flip-date datelines (and then six `date:`
+  fields and six slugs move, and every derived artefact re-reads per **#50**: eight distribution
+  captions, four packet entries, the og cards, the sitemap, both feeds).
+- **Manager's view for the record, not as an instruction:** keep the compose datelines and re-cut ¶94.
+  Moving six slugs fourteen days before a gate, when `qa_stable_order`, `qa_date_identity`,
+  `qa_packet_figures` and `qa_body_links` all assert against them, buys honesty about one date and
+  spends it on a much larger blast radius. And the compose date is the *true* date of the reading —
+  which is the thing this publication actually claims.
+- **Worth knowing about the feed, because it is the channel we own:** `pubDate` is `piece.data.date`
+  (`web/src/pages/rss.xml.ts`), so on flip day six items enter each feed stamped 14 to 47 days old.
+  They still sort **above** everything published — the newest live piece is dated **2026-07-28** — so
+  nothing is buried in our own feed. What a reader in a merged river sees is an edition launched today
+  and dated up to seven weeks ago. **Stated as a consequence of the convention, not as a defect**, and
+  it is the reason the convention deserves one deliberate ruling rather than six silent inheritances.
+
+### THE RAIL GRAPH — rows 5 and 6 are inside the wave and outside its argument (found 2026-09-27)
+
+Re-checking the gate dependency by reading all six `related:` rails rather than the three the ledger
+records produced a finding the ledger's own dependency section is structurally unable to contain,
+because that section asks *what breaks if a subset ships* and this is about what **does not break**.
+
+| Row | `related:` rail points at | Held siblings |
+|---|---|---|
+| 1 Zambia | Vietnam, Sierra Leone TSC, Kenya, **row 4** | 1 |
+| 2 Sierra Leone | Sierra Leone TSC, **row 1**, England, **row 4** | 2 |
+| 3 Sudan | Sudan exams, **row 1**, **row 2**, **row 4** | 3 |
+| 4 slot 3 | **row 1**, **row 2**, **row 3** | 3 |
+| **5 Egypt** | Egypt EKB, Egypt NPDA, Singapore | **none** |
+| **6 Rwanda** | Sierra Leone TSC, Yemen, Brazil | **none** |
+
+**Rows 1–4 are mutually bound and flip atomically — that part of the ledger is correct and re-verified.
+Rows 5 and 6 are bound to nothing.** Every target they name is already approved and live, so no rail
+carries a dead end, `qa_body_links` passes, and **it passes correctly** — there is nothing wrong to
+find. The gap is the absence of an edge, and **a check that asserts every rail resolves cannot see a
+rail that was never written.** That is the 2026-08-17 orphan sweep one graph over: *a link sweep checks
+pages that are pointed at; it can never find a page nothing points to.* Here it is not a page but an
+argument — the edition's claim is that six pieces are one continent's story, and on flip day **two of
+the six will point at none of the other five, and none of the other five will point at them.**
+
+**Owed in the flip commit, exactly as the three reciprocal edges into row 4 were owed and were added a
+run early on 09-20:** rails between rows 5 and 6 and the wave, in **both languages** (#42), Editor's
+call on which pairings carry an argument rather than a mechanical six-way mesh. Rwanda↔Sierra Leone
+(both teacher-workforce pieces, and row 6 already names the *older* Sierra Leone piece), Rwanda↔row 4
+(the continental ruler piece measures the systems row 6 describes), Egypt↔row 4 likewise. **Not added
+by this review:** a rail is an editorial claim that two pieces illuminate each other, and this review
+does not write those. Recorded here so the flip does not inherit it silently.
+
 ### Gate dependency — re-checked 2026-09-14, and it now binds FOUR
 Row 4's `related:` rail names **rows 1, 2 and 3**, all held. Together with the rails already recorded below, the four pieces are **mutually bound and flip atomically** — no subset can ship without leaving a dead end for `qa_body_links` (#10). ~~**The reciprocal edges into row 4 are owed**: rows 1–3 were commissioned before row 4 existed and none of them points back at it. Add those three `related:` entries in the same commit that flips the flags, not after.~~ — **DONE 2026-09-20, a run early rather than at the flip.** All three added in **both languages** (#42), appended to each rail. The flip commit no longer carries this. They are now covered by **standing assertion 20**, which asserts every rendered rail against its own frontmatter sequence, so a rail that loses or reorders an entry fails the build rather than the reader.
 
