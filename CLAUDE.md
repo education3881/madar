@@ -31,11 +31,13 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#71**, and binding. *(Read #1–#58 from
-  2026-09-20 until 2026-09-27, thirteen rulings stale, because the 09-20 rule that moves a
-  range at the point of filing enumerates three homes — §3's range, §3's heading, §1's count
-  — and this is a **fourth**. A rule about counts was itself a bucket set missing a member.
-  The rule now names four; see the RUNBOOK.)*
+  `agents/guidebook/INDEX.md` — currently **#1–#74**, and binding. *(Moved from #71 to #74
+  on 2026-09-28, at the point of filing, by the first run to execute the four-count rule since
+  it was written — §3's range, §3's heading, §1's count line and this line, in one commit.
+  This line read #1–#58 from 2026-09-20 until 2026-09-27, thirteen rulings stale, because the
+  09-20 rule that moves a range at the point of filing enumerated three homes and this is a
+  **fourth**. A rule about counts was itself a bucket set missing a member. The rule now names
+  four; see the RUNBOOK.)*
 - **Prove an assertion both ways.** A new check must be shown to stay silent on a
   known-good control *and* to fail on the defect it exists to catch. Prove the bite as
   carefully as the control: an injection that fails to change the artefact reads
@@ -49,7 +51,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-five** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py` and `qa_arabic_joining.py`, which need a headless Chrome. |
+| `agents/tools/` | **Twenty-six** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -61,9 +63,9 @@ python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven that run
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **ten** of the twenty-five assertions
+Use `npm run build`, not `npx astro build`: **eleven** of the twenty-six assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
-`qa_date_identity`, `qa_feed_enclosures`, `qa_chrome_links`, `qa_census`, `qa_packet_figures`) are gated from `postbuild` in `web/package.json`,
+`qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`, `qa_packet_figures`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -75,9 +77,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, ten more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, eleven more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **22 of the 25 gate the deploy**; of the three that do
+artifact against the live origin. **23 of the 26 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -86,15 +88,17 @@ identity cannot write `.github/workflows/**`, so its reason lives in the tool's 
 and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
 there 2026-09-27** when the weekly review found the queue split across two directories with
 this file naming one and issue #7 naming the other. Applying that patch makes it
-**23 of 25**. A green run means the bytes are actually served, not merely built.
+**24 of 26**. A green run means the bytes are actually served, not merely built.
 
 **A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
 patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
 `postbuild`* while four assertions landed; applying it on any day after 09-22 would have
 written stale counts into `astro-pages.yml`, where this identity could not then correct
 them. Every open patch is now re-read against current state at each weekly review and
-refreshed or withdrawn. The counts in this section were re-verified 2026-09-27 by counting
-both files.
+refreshed or withdrawn. The counts in this section were re-verified **2026-09-28 by counting
+both files** — twelve build steps in `astro-pages.yml`, eleven `postbuild` entries in
+`web/package.json`, twenty-six tools in `agents/tools/`, and the three non-gating ones named
+below. They moved that day with assertion 26, `qa_feed_direction`, at the point of filing.
 
 **A red `verify` job is not automatically a red publication.** On 2026-09-23 the deploy
 failed on a feed-validator step while the byte-compare in the same job passed — the check

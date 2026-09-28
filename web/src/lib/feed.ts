@@ -84,39 +84,62 @@ function abs(site: URL | undefined, path: string): string {
   return new URL(path, site ?? 'https://education3881.github.io').href;
 }
 
-/** Right-to-left mark, U+200F. */
-const RLM = '‏';
+/** Directional isolates. U+2066 LRI, U+2067 RLI, U+2069 PDI. */
+const LRI = '⁦';
+const RLI = '⁧';
+const PDI = '⁩';
 
 /**
- * BIDIRECTIONAL TEXT IN A FEED (added 2026-08-23).
+ * BIDIRECTIONAL TEXT IN A FEED (added 2026-08-23; the plain-text half REPLACED
+ * 2026-09-28 after it was measured for the first time).
  *
  * "Well-formed" is to a feed what "resolves" was to the og:image — it says the
  * document parses, not that a reader can read it. Two separate problems, and
  * RSS 2.0 gives each a different lever:
  *
- *  - `<title>` is PLAIN TEXT by spec. No markup, so no `dir` attribute. A
- *    reader drops the string into its own paragraph, whose base direction is
- *    the reader's UI language — LTR for most subscribers. Under an LTR base,
- *    trailing punctuation and runs of digits ("2026", "12,348") resolve to the
- *    WRONG SIDE of an Arabic string. The only available lever is to prefix the
- *    value with U+200F, which sets the paragraph base direction to RTL.
- *
  *  - `<description>` is HTML by universal convention, so it takes real markup:
- *    a `<div dir="rtl" lang="ar">` wrapper, which is both stronger and more
- *    explicit than a control character.
+ *    a `dir`/`lang` wrapper on a div of our own. **This half was right**, and
+ *    `qa_feed_direction` confirms it by measurement: all 38 Arabic item
+ *    descriptions render in the same visual order whatever base direction the
+ *    reader's document has. It is applied to BOTH languages from today — an
+ *    English dek ending in a full stop, read in an Arabic-language reader, puts
+ *    that full stop on the wrong side by the identical mechanism, and a helper
+ *    that only ever ran on `ar` could not see it.
  *
- * 27 of our 38 Arabic deks mix Arabic with Latin or digits, and before today
- * not one character of direction metadata appeared anywhere in either feed.
+ *  - `<title>` and `<category>` are PLAIN TEXT by spec. No markup, so no `dir`
+ *    attribute. This file used to say the only available lever was to prefix
+ *    the value with U+200F RLM, "which sets the paragraph base direction to
+ *    RTL". **That was wrong, and it stood here for 36 days.** RLM is a strong
+ *    directional *character*: it satisfies the first-strong heuristic, which is
+ *    what `dir="auto"` and an otherwise-undetermined paragraph consult, and it
+ *    does nothing at all to a paragraph whose base direction is already
+ *    determined — which is exactly the reader case the old comment described.
+ *    Measured in headless Chrome on 2026-09-28 inside a host explicitly
+ *    `dir="ltr"`: the same Arabic string with and without the RLM prefix laid
+ *    out IDENTICALLY, to the pixel.
+ *
+ *    The lever that changes the embedding level is an ISOLATE — U+2066 LRI or
+ *    U+2067 RLI, closed by U+2069 PDI — and it was never tried. Measured, it
+ *    works. Isolating rather than embedding (U+202A/U+202B) is deliberate: an
+ *    isolate cannot let our field's direction leak into the reader's own
+ *    surrounding chrome, which is a courtesy we owe a document we do not own.
+ *    All three are default-ignorable format characters, so a reader that does
+ *    not implement them renders nothing extra.
+ *
+ * The channel's own `title` and `description` were passed through NEITHER
+ * helper from the day the feeds shipped — the first Arabic a subscriber ever
+ * sees, carrying no direction at all. Both channel fields go through the
+ * helpers now. A helper's scope is where it is called, which is the
+ * enumeration rule pointed at our own code.
  */
-function feedTitle(value: string, language: 'en' | 'ar'): string {
-  if (language !== 'ar') return esc(value);
-  return esc(value.startsWith(RLM) ? value : RLM + value);
+function feedText(value: string, language: 'en' | 'ar'): string {
+  return esc((language === 'ar' ? RLI : LRI) + value + PDI);
 }
 
 function feedDescription(value: string, language: 'en' | 'ar'): string {
-  if (language !== 'ar') return esc(value);
+  const dir = language === 'ar' ? 'rtl' : 'ltr';
   // Escaped, then wrapped: the wrapper is markup we intend, the content is not.
-  return `&lt;div dir="rtl" lang="ar"&gt;${esc(value)}&lt;/div&gt;`;
+  return `&lt;div dir="${dir}" lang="${language}"&gt;${esc(value)}&lt;/div&gt;`;
 }
 
 export function renderFeed(channel: FeedChannel, site: URL | undefined): string {
@@ -126,14 +149,14 @@ export function renderFeed(channel: FeedChannel, site: URL | undefined): string 
       const link = abs(site, item.path);
       return [
         '    <item>',
-        `      <title>${feedTitle(item.title, channel.language)}</title>`,
+        `      <title>${feedText(item.title, channel.language)}</title>`,
         `      <link>${esc(link)}</link>`,
         `      <guid isPermaLink="true">${esc(link)}</guid>`,
         item.description
           ? `      <description>${feedDescription(item.description, channel.language)}</description>`
           : null,
         item.category
-          ? `      <category>${feedTitle(item.category, channel.language)}</category>`
+          ? `      <category>${feedText(item.category, channel.language)}</category>`
           : null,
         // The share card, so an item carries its art into a reader. Only ever
         // a raster path — the 2026-08-18 rule (no consumer renders SVG) binds
@@ -167,9 +190,9 @@ export function renderFeed(channel: FeedChannel, site: URL | undefined): string 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${esc(channel.title)}</title>
+    <title>${feedText(channel.title, channel.language)}</title>
     <link>${esc(abs(site, channel.homePath))}</link>
-    <description>${esc(channel.description)}</description>
+    <description>${feedDescription(channel.description, channel.language)}</description>
     <language>${channel.language}</language>
     <atom:link href="${esc(selfHref)}" rel="self" type="application/rss+xml" />
 ${latest ? `    <lastBuildDate>${rfc822(latest)}</lastBuildDate>\n` : ''}${items}

@@ -238,6 +238,17 @@ ROWS = [
          lambda P: len(P["served"]),
          "served — every *.html the build emits, the 404 page included"),
     ]),
+    ("qa_feed_direction", ["qa_feed_direction.py", "{dist}"], [
+        ("AR feed items", r"ar (\d+) item",
+         lambda P: len([s for s in P["approved"] if s.startswith("articles-ar/")]),
+         "approved Arabic pieces — the feed is a mirror of the published corpus and a held "
+         "piece contributes no item (#18), so this is the one number that ties the "
+         "subscription surface to the flag"),
+        ("EN feed items", r"en (\d+) item",
+         lambda P: len([s for s in P["approved"] if s.startswith("articles/")]),
+         "approved English pieces — same tie, other side; the two feeds are peers and not "
+         "translations of each other"),
+    ]),
     ("qa_chrome_links", ["qa_chrome_links.py", "{dist}"], [
         ("pages", r"qa_chrome_links: (\d+) page\(s\)",
          lambda P: len(P["served"]),
