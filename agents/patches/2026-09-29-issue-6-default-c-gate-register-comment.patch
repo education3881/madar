@@ -1,0 +1,75 @@
+From 6a79c6fe7a3f5e2dfca6a193d4814b39949b8eb6 Mon Sep 17 00:00:00 2001
+From: Madar Operations <agostinialves@gmail.com>
+Date: Tue, 29 Sep 2026 10:50:46 +0000
+Subject: [PATCH] Madar 2026-09-20 weekly addendum, re-staged 2026-09-29: issue
+ 6 stated default C applied on its own date. The gate register has two homes
+ and the workflow now says so - and states NO count, because this patch has
+ been wrong three times in nine days about a number that lives in three other
+ files. The count is derived and gated by qa_patch_queue instead. Ruling 75.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ .github/workflows/astro-pages.yml | 47 +++++++++++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+
+diff --git a/.github/workflows/astro-pages.yml b/.github/workflows/astro-pages.yml
+index 37b8383..017607f 100644
+--- a/.github/workflows/astro-pages.yml
++++ b/.github/workflows/astro-pages.yml
+@@ -136,6 +136,53 @@ jobs:
+         # no stale dist to find — and the missing argument was the tell nobody
+         # read. Ruling #51.
+         run: python3 agents/tools/qa_jsonld.py web/dist
++      # ---- THE GATE REGISTER HAS TWO HOMES (issue #6, default C applied 2026-09-20) ----
++      #
++      # Reading this file top to bottom answers "what gates the deploy?" with the
++      # build steps listed here. That is an INCOMPLETE answer and has been since
++      # 2026-09-14. The rest are gated from `postbuild` in web/package.json, which
++      # `npm run build` runs - so they gate this job for real; they are simply
++      # declared somewhere else.
++      #
++      # They are there rather than here because the autonomous identity that writes
++      # them is refused write access to .github/workflows/** - correctly; `workflows`
++      # is not a scope a workflow can grant itself. Note that two of them are handed
++      # the REPOSITORY ROOT rather than dist (qa_packet_figures, qa_patch_queue): a
++      # distribution caption and a staged patch are never built, and postbuild is
++      # simply where a gate of this identity can be wired at all.
++      #
++      # Issue #6 offered three options: a PAT with workflow scope (A), a human applying
++      # queued patches (B), or accepting package.json as a second equal home and saying
++      # so here (C). It carried a stated default - unanswered by the 2026-09-20 weekly
++      # review, apply C - and the date passed with no word. C is applied. The register
++      # is split, deliberately, and this comment is the thing that makes the split
++      # honest rather than hidden. (Issue #6 itself was CLOSED 2026-09-27 on its other
++      # limb: the run's pushes DO trigger the deploy, and always did - ruling #71. The
++      # two-homes fact this comment records is unaffected and still true.)
++      #
++      # THIS COMMENT DELIBERATELY STATES NO COUNT, AND THAT IS THE POINT.
++      # Staged on 2026-09-20 with a postbuild count, a total and a ratio, all three of
++      # which were stale two days later; refreshed at the 09-27 weekly review, all three
++      # stale again the next morning when assertion 26 landed on the Monday. Three
++      # statements of the same three numbers in nine days, wrong within days every time.
++      # A patch queued for a hand this identity does not have is frozen prose about a
++      # moving count, and a number written here cannot be corrected by the run that
++      # discovers it is stale. (The superseded values are in agents/patches/README.md
++      # and in this patch's git history, where a record belongs.)
++      # So the number does not live here. It is DERIVED, by
++      # agents/tools/qa_patch_queue.py, from the three homes that actually hold it -
++      # the build steps in this file, the postbuild chain in web/package.json, and the
++      # files in agents/tools/ - and that assertion gates this build and fails it if any
++      # staged prose disagrees with the tree. To read the current register, run it:
++      #
++      #     python3 agents/tools/qa_patch_queue.py .
++      #
++      # The three that do not gate, which is a fact about design and not a count:
++      # qa_live_drift and qa_sources_alive, named with their reasons in the paragraph
++      # below, and qa_feed_validators, whose reason cannot be written here because it
++      # belongs to the verify job - it lives in that tool's own header, and its
++      # one-line patch is queued beside this one. Ruling #75.
++      # -------------------------------------------------------------------------------
+       # The last three hand-run assertions, wired 2026-09-13 (weekly review).
+       # All three read only web/dist, all three have existed for weeks, all
+       # three BIT HARD on first contact — qa_a11y_lang found 471 chrome strings
+-- 
+2.55.0
+

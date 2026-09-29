@@ -31,7 +31,9 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#74**, and binding. *(Moved from #71 to #74
+  `agents/guidebook/INDEX.md` — currently **#1–#76**, and binding. *(Moved from #74 to #76 on
+  2026-09-29, at the point of filing, by the second run to execute the four-count rule — §3's
+  range, §3's heading, §1's count line and this line, in one commit. Moved from #71 to #74
   on 2026-09-28, at the point of filing, by the first run to execute the four-count rule since
   it was written — §3's range, §3's heading, §1's count line and this line, in one commit.
   This line read #1–#58 from 2026-09-20 until 2026-09-27, thirteen rulings stale, because the
@@ -51,7 +53,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-six** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Twenty-seven** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -60,10 +62,11 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 ```bash
 cd web && npm ci && npm run build            # must exit 0; postbuild gates run here
 python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven that run as build steps
+python3 agents/tools/qa_patch_queue.py .         # prints the whole gate register, derived
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **eleven** of the twenty-six assertions
+Use `npm run build`, not `npx astro build`: **twelve** of the twenty-seven assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`, `qa_packet_figures`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
@@ -77,9 +80,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, eleven more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, twelve more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **23 of the 26 gate the deploy**; of the three that do
+artifact against the live origin. **24 of the 27 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -88,17 +91,30 @@ identity cannot write `.github/workflows/**`, so its reason lives in the tool's 
 and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
 there 2026-09-27** when the weekly review found the queue split across two directories with
 this file naming one and issue #7 naming the other. Applying that patch makes it
-**24 of 26**. A green run means the bytes are actually served, not merely built.
+**25 of 27**. A green run means the bytes are actually served, not merely built.
 
 **A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
 patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
 `postbuild`* while four assertions landed; applying it on any day after 09-22 would have
 written stale counts into `astro-pages.yml`, where this identity could not then correct
 them. Every open patch is now re-read against current state at each weekly review and
-refreshed or withdrawn. The counts in this section were re-verified **2026-09-28 by counting
-both files** — twelve build steps in `astro-pages.yml`, eleven `postbuild` entries in
-`web/package.json`, twenty-six tools in `agents/tools/`, and the three non-gating ones named
-below. They moved that day with assertion 26, `qa_feed_direction`, at the point of filing.
+refreshed or withdrawn. The counts in this section were re-verified **2026-09-29 by counting
+both files** — twelve build steps in `astro-pages.yml`, twelve `postbuild` entries in
+`web/package.json`, twenty-seven tools in `agents/tools/`, and the three non-gating ones named
+below. They moved that day with assertion 27, `qa_patch_queue`, at the point of filing.
+
+**And the weekly re-read was not enough — the queue is now GATED (ruling #75, 2026-09-29).** The
+09-27 review executed the rule above in full, and the patch was **wrong again the next morning**
+because assertion 26 landed on the Monday: a queue reconciled weekly against a count that moves
+daily holds a wrong number six days in seven. `git apply --check` returned 0 on every day it was
+wrong, because it proves a patch *lands*, never what it then *asserts*. **Standing assertion 27,
+`qa_patch_queue.py`**, derives the register from its three real homes — `agents/tools/`, this
+workflow's build steps, and `web/package.json` — reads every numeric claim in `agents/patches/`,
+and fails the build on any disagreement. **Run it to read the register rather than trusting this
+paragraph:** `python3 agents/tools/qa_patch_queue.py .`. The re-staged issue-#6 patch now states
+**no count at all** and points at that derivation, so it carries zero numeric claims and cannot go
+stale again — *a number that lives in three files should be asserted from them, never copied into a
+fourth, least of all into a file the run that finds the error cannot edit.*
 
 **A red `verify` job is not automatically a red publication.** On 2026-09-23 the deploy
 failed on a feed-validator step while the byte-compare in the same job passed — the check

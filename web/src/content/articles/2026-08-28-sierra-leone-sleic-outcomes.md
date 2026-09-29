@@ -13,6 +13,7 @@ related:
   - 2026-08-25-zambia-free-education-act
   - 2026-07-28-england-report-cards-first-term
   - 2026-09-14-africa-best-system-ruler
+  - 2026-09-27-rwanda-teacher-certification
 contains_composites: false
 arabicVersion: 2026-08-28-sierra-leone-sleic-outcomes
 sources:

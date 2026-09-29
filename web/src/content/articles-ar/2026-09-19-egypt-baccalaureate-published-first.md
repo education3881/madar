@@ -12,6 +12,7 @@ related:
   - 2026-05-27-egypt-ekb-decade
   - 2026-06-18-egypt-npda-arabic-literacy
   - 2026-07-07-singapore-psle-sbb
+  - 2026-09-14-africa-best-system-ruler
 contains_composites: false
 englishVersion: 2026-09-19-egypt-baccalaureate-published-first
 sources:
