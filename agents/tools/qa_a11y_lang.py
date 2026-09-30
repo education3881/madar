@@ -32,8 +32,42 @@ So `<article>` body prose and the sources block are deliberately exempt. This
 checks the furniture we compose ourselves, where a mixed-script string is our
 mistake and not the world's.
 
-Exit codes: 0 clean · 1 defects found · 2 nothing to check (which is a FAILURE,
-per the 08-16 silent-pass trap — an assertion that finds no pages has not passed).
+Exit codes: 0 clean · 1 defects found, OR the self-test fixture disagreeing ·
+2 nothing to check (which is a FAILURE, per the 08-16 silent-pass trap — an
+assertion that finds no pages has not passed).
+
+THE SELF-TEST FIXTURE (added 2026-09-30, answering the 09-29 forward question)
+-----------------------------------------------------------------------------
+The 09-29 QA log asked which of the twenty-six fixture-free assertions could
+have its original bite frozen into a permanent self-test, and which was cheapest
+first. This one, for three reasons: its judgment is `LangAudit`, a pure function
+of an HTML string, so a fixture needs no fake `dist`; four distinct wrong
+readings are already written down in this docstring as prose; and the two real
+bites that proved it on 2026-09-13 are one line each.
+
+The distinction this closes is not the one `qa_census` already covers. A census
+can tell you this check enumerated 121 pages; it cannot tell you the check can
+still RECOGNISE the defect. `CHROME_CLASS`, `EXEMPT_CLASS` and `CHROME_TAGS` are
+guesses about served markup, and a template change can quietly move a string out
+of scope — after which the check enumerates everything, finds nothing, and
+passes. *A bite run once is a claim about the day it ran; a fixture is a claim
+about every day since.*
+
+Each fixture carries `checked` as well as its findings, deliberately. Two of the
+readings below are silent in both the correct and the broken code and differ only
+in how many text nodes were looked at — a fixture that compares findings alone
+cannot see a scope that collapsed.
+
+**One historical bite could NOT be frozen, and that is reported rather than
+quietly dropped.** The VOID-element stack bug (`<img>` pushed and never popped)
+is unreachable against the current `handle_endtag`, which pops to the nearest
+*matching* open tag rather than popping blindly — so removing the `VOID` guard
+today changes no reading, because the later fix made the earlier bug
+unreproducible. A fixture that cannot be made to fail is not a fixture. The
+`VOID` set stays, the stack discipline is frozen instead through the stray-close
+reading, and the limb is worth carrying: *some of an instrument's own history
+stops being testable once a second defence lands, and the honest record says
+which.*
 """
 
 from __future__ import annotations
@@ -149,7 +183,98 @@ class LangAudit(HTMLParser):
             self.findings.append((lang, "arabic-under-latin", text[:70]))
 
 
+# Every fixture is a reading this check has really made, on this site's own
+# markup shapes. Format: (what it is evidence of, html, expected findings as
+# (kind, resolved-lang), expected count of text nodes checked).
+SELF_TEST = [
+    ("the bite of 2026-09-13 — 'Skip to content' in English on all 40 Arabic "
+     "pages, the first thing a screen reader announces",
+     '<html lang="ar"><body><a class="skip-link" href="#main">Skip to content'
+     '</a></body></html>',
+     [("latin-under-ar", "ar")], 1),
+
+    ("the same bite reached by TAG instead of class — an English nav label on "
+     "an Arabic page",
+     '<html lang="ar"><body><nav class="site-nav"><a href="/">Editions</a>'
+     '</nav></body></html>',
+     [("latin-under-ar", "ar")], 1),
+
+    ("the 38 real defects of 2026-09-13 — the still colophon, Arabic served "
+     "under lang=en",
+     '<html lang="en"><body><figure><figcaption>سكون</figcaption></figure>'
+     '</body></html>',
+     [("arabic-under-latin", "en")], 1),
+
+    ("the naive version's false positive — an Arabic span that DECLARES its "
+     "own lang inside English chrome is correct, and inheritance must see it",
+     '<html lang="en"><body><footer><span lang="ar">مدار</span></footer>'
+     '</body></html>',
+     [], 1),
+
+    ("the sources carve-out — a register keeps the name it publishes under "
+     "(#33's corollary), and the sources block sits inside article chrome",
+     '<html lang="ar"><body><footer class="article__footer">'
+     '<ul class="sources"><li>Elsevier, Amsterdam</li></ul></footer>'
+     '</body></html>',
+     [], 0),
+
+    ("the wolf-cry the allowlist was written to stop — a Spanish pull-quote in "
+     "Arabic body prose is correct and must not even be looked at",
+     '<html lang="ar"><body><article><blockquote>Todos los niños aprenden'
+     '</blockquote></article></body></html>',
+     [], 0),
+
+    ("the mixed-script rule, which is a rule and not an oversight — Latin "
+     "inside an Arabic caption that also carries Arabic is allowed",
+     '<html lang="ar"><body><footer>سكون · The Still · Curated 51</footer>'
+     '</body></html>',
+     [], 1),
+
+    ("stack discipline, frozen where the VOID bite could not be — a stray "
+     "close tag must leave the stack alone; popping blindly takes the footer "
+     "with it and silently empties this check's scope",
+     '<html lang="en"><body><footer></div><span lang="ar">مدار</span> Madar'
+     '</footer></body></html>',
+     [], 2),
+]
+
+
+def run_self_test():
+    """Read each fixture through the same LangAudit the tree goes through, so a
+    fixture that passes is a statement about the code that actually runs.
+    Returns the failures; an empty list means the recogniser still reads what it
+    is known to have read."""
+    failures = []
+    for label, html, want_findings, want_checked in SELF_TEST:
+        audit = LangAudit()
+        audit.feed(html)
+        got = sorted((kind, lang) for lang, kind, _ in audit.findings)
+        if got != sorted(want_findings) or audit.checked != want_checked:
+            failures.append((label, sorted(want_findings), want_checked,
+                             got, audit.checked))
+    return failures
+
+
 def main() -> int:
+    # The instrument is proved before the tree is judged. `qa_census` already
+    # asserts that this check enumerates 121 pages; nothing but a fixture can
+    # assert that it would still recognise the defect on one of them.
+    st = run_self_test()
+    if st:
+        print("FAIL qa_a11y_lang — the language recogniser no longer reads what "
+              "it is known to have read. %d fixture(s) failed:" % len(st))
+        for label, want_f, want_c, got_f, got_c in st:
+            print("    fixture: %s" % label)
+            print("    expect : %s · %d text node(s) checked"
+                  % (want_f or "no finding", want_c))
+            print("    got    : %s · %d text node(s) checked"
+                  % (got_f or "no finding", got_c))
+        print("  A clean sweep read through a broken recogniser is the "
+              "2026-08-16 silent pass. Fix the recogniser, not the site.")
+        return 1
+    print("qa_a11y_lang — recogniser proved on %d fixture(s) drawn from "
+          "readings this check has really made." % len(SELF_TEST))
+
     dist = Path(sys.argv[1] if len(sys.argv) > 1 else "web/dist")
     pages = sorted(dist.rglob("*.html"))
     if not pages:

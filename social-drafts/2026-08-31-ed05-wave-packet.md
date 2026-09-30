@@ -137,3 +137,65 @@ both languages. The caption says *"The price is in the statute"*, which survives
 and is now more exactly true than it was — but *survives* is a judgment somebody has to
 make by reading, and that is the point of #50. **One line of the flip-day checklist now has
 a name beside it: the Arabic Editor gates five captions, not four.**
+
+
+---
+## Rwanda — *Rwanda counted the teachers it had not trained, twice* (added 2026-09-30, HELD with the wave)
+
+<!-- piece: 2026-09-27-rwanda-teacher-certification -->
+**The SIXTH entry, and the count is worth one line because it was wrong in two places.** The 08-31
+header of this packet says *"three entries… the fourth composes from the ruler piece's dek once it
+exists"*, and the 09-29 manager status queued **"the fifth wave-packet entry"** for today. Counting the
+`<!-- piece: -->` markers above gives **five** already staged — Zambia, Sierra Leone, Sudan, the
+continental ruler, Egypt — so this one is the sixth and the edition's last. Corrected by counting the
+markers rather than by trusting the queue, which is the 09-20 rule applied to a packet instead of a
+register.
+
+og card on disk: `og/2026-09-27-rwanda-teacher-certification.png` (1200×600, 1,644 bytes — the second
+sparsest still in the corpus after Egypt's, and, like Egypt's, the byte count is a property of the
+drawing rather than a failed render; the PNG was opened and looked at before this line was written, per
+the 08-18 rule). Both languages of the piece exist, both have passed the Arabic gate and the Editor's
+pair verdict, and the **Verifier's verdict landed today**, which makes this the first packet entry in
+the edition composed *after* its piece was fully verified rather than before.
+
+**EN caption:**
+<!-- caption:en -->
+Rwanda built classrooms faster than it could staff them, relaxed its hiring bar, and then did the rarer thing: it counted the untrained teachers in its own statistical annual and published the number. It went on to certify 24,000 teachers on weekends and public holidays. The next annual counted more untrained teachers, not fewer — 27,409 against 27,322 — because a programme's certificates are a flow and a census counts a stock, and the ministry named its own new recruitment as the reason. The discharge was a large piece of work. The accomplishment is the bookkeeping. New from Madār, in English and Arabic. #Rwanda #Teachers #Africa
+<!-- /caption -->
+
+**AR caption:**
+<!-- caption:ar -->
+بنت رواندا الصفوفَ أسرعَ مما تقدر على تزويدها بالمعلِّمين، فخفَّضت شروطَ التعيين، ثم فعلت الأندرَ: أحصت المعلِّمين غيرَ المدرَّبين في حَولِيَّتها الإحصائية ونشرت العدد. ثم شهَّدت 24,000 معلِّمٍ في عُطَل الأسبوع والأعياد الرسمية. وأحصت الحَولِيَّةُ التالية عددًا أكبر لا أصغر — 27,409 في مقابل 27,322 — لأنَّ شهاداتِ البرنامج تدفُّقٌ والإحصاءَ يَعُدُّ مخزونًا، ولأنَّ الوزارةَ سمَّت تعيينَها الجديد سببًا. والسَّدادُ عملٌ كبير. والمُنجَزُ هو المُحاسَبة. جديد مدار، بالعربية والإنجليزية.
+<!-- /caption -->
+
+**The seam is carried in the caption, deliberately and at the cost of a clause.** The three figures
+above are the piece's definitions 3, 5 and 2, and the commission's standing prohibition bars any
+subtraction, share or residual between them in either direction. A caption is the easiest place in this
+operation to break that rule, because the shape *24,000 certified against 27,409 still untrained* is
+irresistible and arithmetically meaningless. So the caption states the **kinds** — a flow and a stock —
+in the same sentence as the numbers, and never writes 24,000 as a subset of either census figure.
+`qa_packet_figures` would not have caught it: all three numerals are in the shipped text, in both
+languages, and the defect would have been the relation between them. **Ruling #68 carried in
+distribution copy, not just in prose.**
+
+**Engagement-list note:** Rwanda goes first to the **measurement-cluster list** (assessment-reform
+beat, v2) — not to the teacher-workforce beat, which is the obvious call and the wrong one. The piece's
+subject is a *register*, and its finding is that a ministry published the column that undercut its own
+funder's headline; that is the same argument Sierra Leone makes with money, and the list that read
+Sierra Leone is the list that will recognise it. Second queue is the teacher-workforce beat, where the
+hook is the A2→A1 upgrade window and the absence behind it. **Rwanda and Sierra Leone now rail into
+each other in both languages** (the 09-29 graph work), so a reader arriving at either has the other one
+click away — which is the first time this packet's two queues have had a path between them inside the
+publication.
+
+**Flip-day note specific to this entry:** the captions above are composed from the piece **as verified
+today**, so the #50 re-read is current as of 2026-09-30 and must be re-run only if the prose moves
+again. It may: the Verifier's verdict leaves one editorial option open — whether to carry a teacher's
+voice from outside the funder's and the ministry's channels (verdict item 2) — and if the Editor takes
+it, the §*What cannot be read* argument changes and this caption's last two sentences should be re-read
+against it. **The captions do not touch that paragraph**, which is why this is a note and not a hold.
+
+**Still owed before it queues, same as Egypt's:** the AR caption is composed, not gated. Six captions
+now await the Arabic Editor, not five.
+
+— Growth · 2026-09-30

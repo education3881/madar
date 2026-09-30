@@ -31,7 +31,10 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#76**, and binding. *(Moved from #74 to #76 on
+  `agents/guidebook/INDEX.md` — currently **#1–#79**, and binding. *(Moved from #76 to #79 on
+  2026-09-30, at the point of filing, by the third run to execute the four-count rule — three rulings
+  from three lanes, and the run's own first write of the range was wrong by two, caught by counting the
+  rows inside the same commit. Moved from #74 to #76 on
   2026-09-29, at the point of filing, by the second run to execute the four-count rule — §3's
   range, §3's heading, §1's count line and this line, in one commit. Moved from #71 to #74
   on 2026-09-28, at the point of filing, by the first run to execute the four-count rule since
