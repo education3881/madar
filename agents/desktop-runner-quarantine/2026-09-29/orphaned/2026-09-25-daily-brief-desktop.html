@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-09-25 &middot; desktop</title>
+<meta name="description" content="Manager to Founder daily brief for Friday 25 September 2026, second run, desktop session. Brief 85. Issue 7 applied from the one identity that can write workflow files, and the staged patch turned out to be wrong in a way only applying it could show. Ruling 66. The desktop schedule says PAUSED and is enabled true." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body>
+<main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 85 &middot; desktop, run 2
+    <strong>Friday 25 September 2026</strong>
+  </div>
+</header>
+
+<div class="push-block">
+  <div class="kicker">One thing owed by you &middot; <strong>a push that needs your workflow-scope token</strong></div>
+  <p>
+    State verified from git and from the task store before anything was planned. <strong>This is the
+    day&rsquo;s second run.</strong> The cloud run fired this morning, delivered all five functions and
+    pushed &mdash; brief 84, Rwanda commissioned. It has not missed a day since 09-17. Nothing below
+    duplicates it, and this run went nowhere near its queue head.
+  </p>
+  <p>
+    <strong>The desktop checkout, however, is nine days behind and could not have caught up on its
+    own.</strong> Local HEAD sat at 09-16 while the origin had moved nine commits. The mechanism is on
+    disk and dated: <span class="mono">.git/index.lock</span>, created <strong>Sep&nbsp;16 04:23</strong>,
+    on a mount that permits <span class="mono">create</span> and refuses <span class="mono">unlink</span>.
+    Every desktop run since has been able to do work and unable to stage a byte of it.
+  </p>
+  <p class="mono" style="color:rgba(250,250,247,0.6);">
+    <strong>Today changes no served byte.</strong> Every file touched is outside
+    <span class="mono">web/</span>. But one of them is <span class="mono">.github/workflows/astro-pages.yml</span>,
+    which is why this push needs your workflow-scope token and the cloud could not do it.
+  </p>
+</div>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder</div>
+  <h1>Issue&nbsp;#7 is applied. The repair we had been waiting to apply was itself broken, and only applying it could show that.</h1>
+  <p class="dek">
+    Since 09-23 the deploy has carried a gate that fails at random &mdash; ruling&nbsp;#63, a validator
+    is not the content. The one-line repair was written the same day and has sat unapplied for two
+    days, because the autonomous identity is refused write access to workflow files. This session has
+    that access. <strong>It is applied.</strong>
+  </p>
+  <p class="dek">
+    And it was wrong. Applied exactly as staged, the deploy would have gone red on its first dispatch:
+    the step replaces a <span class="mono">curl</span> one-liner with <em>our own tool</em>, and the
+    <span class="mono">verify</span> job <strong>has no checkout</strong> &mdash; it has never needed
+    one, having only ever downloaded the artifact and probed the origin. The step would have exited 2
+    on <em>no such file</em>. <strong>A gate that was red half the time would have become red every
+    time.</strong>
+  </p>
+  <p class="dek">
+    There is a second trap underneath, which the patch could not have known to state:
+    <span class="mono">actions/checkout</span> cleans the workspace by default, so a checkout placed
+    after the artifact download deletes the <span class="mono">artifact.tar</span> and
+    <span class="mono">dist/</span> that the byte-compare depends on. <strong>It goes first, or it
+    silently destroys the assertion it was added to serve.</strong> Both closed, both proved.
+  </p>
+  <p class="dek">
+    <strong>The part worth your minute is why the patch was wrong, because it is not carelessness.</strong>
+    The run that staged it measured the tool beautifully &mdash; 16/16 revalidations, re-measured 16/16
+    today. What it could not measure was the <em>job</em>, because it could not open the job&rsquo;s
+    file. <strong>A repair staged where it cannot be applied is proved for its tool and unproved for
+    its site.</strong> Those are two artefacts and they need two proofs. That is ruling&nbsp;#66, and
+    it was earned twice in an hour.
+  </p>
+</section>
+
+<!-- ============================= YESTERDAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Nine days, honestly named: the cloud never missed one and the desktop never landed one</h2>
+      <div class="day__date">2026-09-17 &rarr; 2026-09-24 &middot; verified against the origin and the task store, not against a brief</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">There is no dark day &mdash; on the cloud side</div>
+      <div class="item__body">
+        Briefs 76 through 84 are on the origin, one per day, 09-17 through 09-25 with two addenda.
+        Egypt banked and verified, Rwanda re-verified and commissioned, rulings&nbsp;#59 through&nbsp;#65,
+        assertions 20 through 24. <strong>The publication has not skipped a day.</strong> Whatever this
+        brief says about the desktop lane, it is not a story about a stalled operation.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">The desktop lane has been silent for nine days, and the reason is one file</div>
+      <div class="item__body">
+        The 09-16 run&rsquo;s work &mdash; a corrected lane-split block and 56 lines of QA log &mdash;
+        has been sitting uncommitted in the working tree ever since. Not through neglect:
+        <span class="mono">.git/index.lock</span> was created at <strong>04:23 on Sep&nbsp;16</strong>,
+        the minute that run started, and the mount it lives on refuses <span class="mono">unlink</span>.
+        <strong>Probed rather than assumed today</strong> &mdash; <span class="mono">touch</span>
+        succeeds in <span class="mono">.git/</span>, <span class="mono">rm</span> returns
+        <em>Operation not permitted</em> on both the lock and a file this run created itself. Any git
+        operation needing the index has been refused for nine days. Routed around, not fought:
+        everything below was done in a clean clone at <span class="mono">origin/main</span>.
+      </div>
+      <div class="item__note">
+        Your terminal is not on that mount. <span class="mono">rm -f .git/index.lock</span> will work
+        for you, and it is the first line of the block at the end.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">And the nine-day-old block was wrong, which is the good luck in this</div>
+      <div class="item__body">
+        Because it never landed, it could still be corrected. The 09-16 block records that
+        <strong>both</strong> Cowork cadences were disabled on 09-15, in the words <em>&ldquo;Verified in
+        the task store, not inferred.&rdquo;</em> Read in the task store today:
+        <span class="mono">madar-weekly-review</span> is genuinely <span class="mono">enabled: false</span>
+        with no next fire. <strong><span class="mono">madar-daily-operation</span> is
+        <span class="mono">enabled: true</span></strong>, cron <span class="mono">0 8 * * *</span>, next
+        fire <strong>tomorrow</strong>, last fire <strong>today &mdash; this run</strong>.
+      </div>
+      <div class="item__note">
+        The word PAUSED is in its <span class="mono">description</span>, the field a human writes. It is
+        not in <span class="mono">enabled</span>, the field the scheduler obeys. Had that block been
+        pushed it would have entered the record as a verified fact &mdash; in a paragraph whose own
+        closing sentence is <em>a constraint is verified in the system that enforces it, or it is a
+        rumour</em>.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= TODAY ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>The one lane the cloud cannot take, taken &mdash; and the repair repaired before it shipped</h2>
+      <div class="day__date">Friday 25 September 2026 &middot; desktop run 2 &middot; four functions delivered, content deliberately not taken</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; issue&nbsp;#7 applied, and the two defects that only applying could find</div>
+      <div class="item__body">
+        The coin-flip cache step is gone. In its place,
+        <span class="mono">python3 agents/tools/qa_feed_validators.py --attempts 6</span> &mdash; one
+        held connection, revalidated on itself, which is what a polling reader actually does and is
+        strictly stronger than what it replaced: <em>every</em> revalidation must be honoured, not
+        merely one of them. Re-measured against the live origin before landing:
+        <strong>16 of 16 revalidated 304</strong>, both feeds, eight connections each.
+      </div>
+      <div class="item__note">
+        Two things the staged patch did not say, both now in the file and both in the patch document
+        for the next hand that reads it: the <span class="mono">verify</span> job needed a checkout it
+        had never had, and that checkout must come <em>first</em> or it deletes the artifact the
+        byte-compare reads. The ratio returns to <strong>22 of 24 gating</strong>, and the
+        stated-reasons list beside <span class="mono">qa_live_drift</span> now carries this tool&rsquo;s
+        reason, per the 09-13 rule.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; proved both ways, and the bite is the job&rsquo;s own prior state</div>
+      <div class="item__body">
+        <strong>Control:</strong> a verify-shaped workspace with the repository present &mdash;
+        <span class="mono">exit 0</span>,
+        <em>PASS &mdash; feeds revalidate, and every validator names the same bytes.</em>
+        <strong>Bite:</strong> the same workspace as the job stood this morning, artifact only &mdash;
+        <span class="mono">exit 2</span>,
+        <em>can&rsquo;t open file &hellip;/qa_feed_validators.py.</em>
+      </div>
+      <div class="item__note">
+        Worth one line because the RUNBOOK asks for the bite to be proved as carefully as the control:
+        <strong>this bite is not simulated.</strong> It is the current state of the file, which is the
+        strongest form of that proof available &mdash; there is no question of whether the injection
+        was real.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &middot; the standing QA pass, run against a clean clone of the origin</div>
+      <div class="item__body">
+        <span class="mono">npm ci</span> and <span class="mono">npm run build</span> clean &mdash;
+        <strong>120 pages</strong>, 10 assets withheld for 5 held pieces.
+        <strong>21 assertions run, all clean</strong>, each invoked exactly as CI invokes it.
+        <span class="mono">qa_live_drift</span>: <strong>CLEAN &mdash; origin matches dist, 120 URLs,
+        0 lastmod drift.</strong> The site being served is the site in the repository.
+      </div>
+      <div class="item__note">
+        Named rather than glossed: <span class="mono">qa_render</span>,
+        <span class="mono">qa_arabic_shaping</span> and <span class="mono">qa_arabic_joining</span>
+        need a real headless Chrome. One was installed and <span class="mono">qa_render</span> still did
+        not finish inside this run&rsquo;s budget. <strong>They were not run here and they are not
+        claimed as green</strong> &mdash; they gate from <span class="mono">postbuild</span> in CI,
+        where Chrome is present. Also named: two assertions were briefly &ldquo;failing&rdquo; until the
+        arguments were read off the workflow rather than guessed. <strong>A check run with the wrong
+        argument is not a finding</strong>, and it was not reported as one.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Research &middot; ruling&nbsp;#66, earned twice in an hour</div>
+      <div class="item__body">
+        <strong>Read the field that enforces, not the label that describes.</strong> A description of a
+        state is written by us; the state is obeyed by a machine. Both exist in every system we operate
+        through &mdash; a scheduler&rsquo;s <span class="mono">description</span> beside its
+        <span class="mono">enabled</span> flag, a CI job&rsquo;s comment block beside its step list
+        &mdash; nothing keeps them in agreement and nothing reports it when they part.
+      </div>
+      <div class="item__note">
+        Two origins, one shape: the scheduler labelled PAUSED and enabled, and a patch that described a
+        defect correctly and a landing site it had never read. In both the artefact read was a
+        description we maintain, and the artefact that governs was a field a machine obeys. Filed as
+        Section&nbsp;1 row&nbsp;61 with §3&rsquo;s range, §3&rsquo;s heading and §1&rsquo;s count line
+        moved in the same commit &mdash; register reconciled by counting rows:
+        <strong>66 rows, 1&ndash;66, no gaps, no duplicates.</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &middot; the feed poll path measured from outside, and a date put on the IndexNow decision</div>
+      <div class="item__body">
+        The feeds are the one distribution channel that needs no account. Measured today from an
+        outside client: both serve 200, <strong>16 of 16 revalidations honoured</strong>, so a
+        subscriber pays the body once and 304 thereafter. That path is now <em>gated</em> &mdash; it
+        was not before, and a regression in it would have failed at the reader rather than at the
+        deploy.
+      </div>
+      <div class="item__note">
+        The IndexNow switch is still <span class="mono">"off"</span> by your decision and stays off.
+        What this run adds is a <strong>date</strong>: the key file is served (200), the mechanism is
+        idle and ready, and the wave gate on <strong>2026-10-11</strong> is the largest batch of new
+        URLs this publication will ever publish at once. <strong>The honest row in that table is that
+        we cannot measure the result</strong> &mdash; no tracker, and an index reports nothing back.
+        Manager&rsquo;s view for the record, not as an instruction: <em>after</em> the wave is live and
+        green, not before.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">Content &middot; deliberately not taken, and why that is the right call today</div>
+      <div class="item__body">
+        The cloud run&rsquo;s 09-25 queue head was Rwanda&rsquo;s commission, issued this morning to all
+        four departments. <strong>The lane rule says the run that starts second takes a lane no earlier
+        line claims.</strong> This run started second. It took the workflow lane, which no cloud run can
+        claim, and went nowhere near Rwanda, Egypt, the wave or any verdict.
+      </div>
+      <div class="item__note">
+        Corpus unchanged: <strong>38 EN / 38 AR</strong>, 5 held slugs, no approved flips, the four-piece
+        wave still mutually rail-bound. The pipeline advanced this morning; it did not need advancing
+        twice, and a second run drafting beside the first is how two runs collide on seven files, which
+        is what happened on 09-15.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- ============================= STATISTICS ============================= -->
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-25 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 43 EN / 43 AR &mdash; incl. 5 EN / 5 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<p class="mono" style="color:var(--color-muted); font-size:12px; margin-top:-0.5rem;">
+  Panel regenerated deterministically from frontmatter by
+  <span class="mono">madar_stats.py</span>. <strong>The history snapshot was deliberately not
+  appended:</strong> this morning&rsquo;s run already logged an identical one for today, and a
+  byte-identical second line records a run, not a change. <strong>Traffic:</strong> the site carries
+  no third-party tracker by design &mdash; there is no visitor number here and none is estimated.
+</p>
+
+<!-- ============================= TOMORROW ============================= -->
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>On deck &mdash; and one question only you can answer</h2>
+      <div class="day__date">Saturday 26 September 2026 &middot; the cloud run fires as usual</div>
+    </div>
+  </header>
+
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-shipped">First, confirm the repair actually took</div>
+      <div class="item__body">
+        This is the first workflow change in three weeks and it touches the
+        <span class="mono">verify</span> job&rsquo;s step list. After your push, dispatch the deploy and
+        <strong>watch <span class="mono">verify</span> specifically</strong>. Expected: checkout,
+        artifact download, byte-compare, then the feed step printing two lines like
+        <em>8 connections &middot; 1 distinct validator &middot; 8/8 revalidated 304</em>.
+      </div>
+      <div class="item__note">
+        If it goes red on the feed step with <em>no such file</em>, the checkout did not land and the
+        push dropped a hunk &mdash; that is the one failure mode to look for, and it is loud.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">The one thing owed by you &mdash; the desktop schedule</div>
+      <div class="item__body">
+        <span class="mono">madar-daily-operation</span> fires again <strong>tomorrow morning</strong>.
+        Its description says it is kept for manual runs only; its <span class="mono">enabled</span> flag
+        says otherwise. <strong>This run did not change it</strong>, because whether a manual-only daily
+        keeps a live cron is your call and not a run&rsquo;s &mdash; and because today is the day that
+        live cron turned out to be useful.
+      </div>
+      <div class="item__note">
+        Three options, stated plainly. <strong>Disable it</strong> and start a desktop session by hand
+        when a workflow change is needed &mdash; cleanest, and matches the 09-15 decision as written.
+        <strong>Leave it enabled</strong> and accept a daily second run whose lane is whatever the cloud
+        cannot do &mdash; which is what happened today. <strong>Leave it and fix the lock</strong>, which
+        is the real blocker: until <span class="mono">.git/index.lock</span> is removed, a desktop run
+        cannot stage anything it produces. Say the word and the next session executes whichever you pick.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">On deck for the cloud run</div>
+      <div class="item__body">
+        Rwanda drafting, commissioned this morning with its ending ruled out and four arithmetic
+        guardrails. Then the Arabic composition and gate, then the pair verdict. The wave gate target is
+        <strong>2026-10-11</strong>, and the three confirmation reads plus the source-promise sweep are
+        still owed before any flag flips.
+      </div>
+      <div class="item__note">
+        The forward question this run leaves for the next: <strong>which other operating facts in the
+        RUNBOOK were verified by reading a description?</strong> #66 found two in an hour and neither was
+        looked for. The repository states a good many constraints about tokens, permissions and schedules
+        that nothing re-probes.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 85 &middot; desktop, run 2</span>
+  <span>2026-09-25 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>

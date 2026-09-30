@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Observer Report &middot; Mad&#257;r &middot; 2026-09-29</title>
+<meta name="description" content="Desktop-runner observer report for Tuesday 29 September 2026. Not brief 88 - brief 88 is today's canonical brief, written and pushed by the GitHub Actions run at 11:18 UTC. This report records a second finding: Madar has two daily runners, the desktop one has produced two uncommitted duplicate days, and its push block would have regressed the canonical line. Reconciled, quarantined, and the live site independently byte-verified against a clean-room build of the pushed commit." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head><body><main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Observer report &middot; not numbered
+    <strong>Tuesday 29 September 2026</strong>
+  </div>
+</header>
+
+<div class="push-block">
+  <div class="kicker">Nothing owed by you &middot; no dark day &middot; <strong>today&rsquo;s work is already served</strong></div>
+  <p>
+    <strong>This is not brief 88.</strong> Brief 88 exists, it is at
+    <span class="mono">agents/briefs/2026-09-29-daily-brief.html</span>, and the canonical run wrote and
+    pushed it at <strong>11:18:14Z</strong> today &mdash; commit <span class="mono">d3d1f69</span>,
+    addendum <span class="mono">38fcd5c</span>, deploy dispatched 11:19:05Z and <strong>green</strong>.
+    Edition 05 is fully banked. All five standing functions were delivered today. None of them by this run.
+  </p>
+  <p>
+    This page is the second finding of the day, and it is about the operation rather than the publication:
+    <strong>Mad&#257;r has two daily runners, and only one of them is supposed to exist.</strong> The other
+    one is this one. It has produced two uncommitted duplicate days, and the push block it has been handing
+    you would have regressed the canonical line by twelve stats snapshots, thirty-two lines of the guidebook
+    index, three queued patches and one brief.
+  </p>
+  <p>
+    <strong>You owe nothing, and you have owed nothing since 14 September.</strong> That is the second half
+    of the finding: the push stopped being your job on the day the operation moved to GitHub Actions. Every
+    brief that has handed you a terminal block since then has been handing you a retired dependency.
+  </p>
+</div>
+
+<section class="lede">
+  <div class="kicker">Manager &rarr; Founder &middot; desktop runner</div>
+  <h1>Two runners, one desk. The concurrency group that was built to stop exactly this binds only the runners inside it &mdash; and this one is outside.</h1>
+  <p class="dek">
+    On 14 September the daily run moved off your laptop into GitHub Actions, for a reason the commit states
+    plainly: eleven of thirty-four days were dark because the machine had to be awake, and every push waited
+    on you pasting a block. <em>Both dependencies end here</em>, it says. They did &mdash; inside the
+    repository. The schedule <em>outside</em> the repository was never named in that migration, so it kept
+    firing, and today it fired thirty minutes into the canonical run and five minutes before its deploy.
+    Nothing was lost. The reason nothing was lost is that a <span class="mono">git pull</span> aborts on an
+    untracked file, which is luck wearing the costume of a safeguard.
+  </p>
+</section>
+
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>Two 28 Septembers were written. One was pushed. The other is still on your disk at the same path</h2>
+      <div class="day__date">Monday 28 September 2026 &middot; verified against the reflog and the Actions log, not against a brief</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-shipped">The canonical day &mdash; ran, pushed, deployed</div>
+      <div class="item__body">
+        The GitHub Actions run started 10:58:43Z, finished green, and pushed
+        <span class="mono">c60fecc</span> and <span class="mono">098bfaf</span>. Rwanda&rsquo;s Arabic was
+        composed and gated, assertion 26 landed, three rulings filed. The deploy ran and succeeded at
+        11:57:53Z. That day is complete and in the record.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-parked">The duplicate day &mdash; ran, never committed</div>
+      <div class="item__body">
+        This desktop runner also ran 28 September. Its <span class="mono">pull --ff-only</span> landed at
+        <strong>07:18:11Z</strong>; it wrote files until <strong>07:37Z</strong>; it stopped. Nine artefacts
+        were left untracked and six tracked files modified, none of it committed and none of it pushed. It
+        wrote its own <span class="mono">2026-09-28-daily-brief.html</span> &mdash; <strong>29,760
+        bytes</strong> at the identical path where the canonical brief is <strong>30,812</strong>.
+      </div>
+      <div class="item__note">
+        The same thing happened on 25 September. That run at least used a <span class="mono">-desktop</span>
+        suffix on its brief and QA log; the 09-28 run did not, which is how a naming convention that exists
+        to prevent a collision produced one.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-fixed">Named plainly: no day was dark</div>
+      <div class="item__body">
+        Both 28 and 29 September ran and both published. There is no missed day to recover. What there is
+        instead is a <em>doubled</em> day, twice, which no gap-check in this operation was looking for
+        because every instrument we own asks whether the work happened, never whether it happened once.
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>The five functions, delivered in the only register that does not collide with a run that was already in flight</h2>
+      <div class="day__date">Tuesday 29 September 2026 &middot; Asia/Dubai &middot; fired 11:14:23Z, thirty minutes into the canonical run</div>
+    </div>
+  </header>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-parked">Content &middot; held, and held on purpose</div>
+      <div class="item__body">
+        <strong>The pipeline advanced today. It was not this runner that advanced it.</strong> At 11:18Z,
+        while this run was still reading the repository, the canonical run banked Rwanda: the Editor read the
+        pair, returned three notes, closed all three in-run in both languages. Edition 05 now stands
+        <strong>six drafted, six composed, six banked, five verified</strong> &mdash; one owed cell, row 6&rsquo;s
+        Verifier verdict. Twelve days to the 11 October gate target.
+      </div>
+      <div class="item__note">
+        Drafting anything here would have produced a fourth conflicting artefact against a piece being banked
+        in the same minute. Quality over slot cuts this way too: the honest entry is that the pipeline moved
+        and someone else moved it. Writing &ldquo;advanced the pipeline&rdquo; in this column today would
+        have been the fiction, not the restraint.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the clobber hazard on your disk, defused</div>
+      <div class="item__body">
+        The local checkout was two commits behind with a divergent tree. Pasting
+        <span class="mono">git add -A &amp;&amp; git commit &amp;&amp; git push</span> from it &mdash; the
+        block six briefs handed you &mdash; would have cost, precisely: the canonical 09-28 brief
+        <strong>overwritten</strong>; <span class="mono">guidebook/INDEX.md</span> <strong>&minus;32
+        lines</strong>; <span class="mono">stats/history.jsonl</span> <strong>12 snapshots</strong> dropped
+        from the series whose only purpose is week-over-week deltas; <strong>three</strong> patches queued
+        for a human hand deleted; and <span class="mono">astro-pages.yml</span>, the file the deploy gate
+        lives in, replaced by a version <strong>+94/&minus;22</strong> against it.
+      </div>
+      <div class="item__note">
+        Quarantined to <span class="mono">agents/desktop-runner-quarantine/2026-09-29/</span>: the tracked
+        edits as a 647-line patch, and the nine orphans <em>moved</em> rather than copied, so no
+        <span class="mono">add -A</span> can ever sweep them back to their old paths. The tree is now
+        <strong>byte-identical to <span class="mono">origin/main</span></strong>, verified by diff, not by
+        assertion.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &middot; independent verification, which is this runner&rsquo;s one real edge</div>
+      <div class="item__body">
+        <strong>Ruling #71 says a run cannot observe what happens after it ends.</strong> This run fires
+        thirty minutes later, so it can. A clean-room clone of today&rsquo;s pushed commit
+        <span class="mono">38fcd5c</span> was built from scratch in a separate container &mdash; fresh
+        <span class="mono">npm ci</span>, full build, full postbuild chain. <strong>120 pages, 12 assets
+        correctly withheld for 6 held pieces, every standing assertion CLEAN, exit 0, 24 of 27
+        gating.</strong> Then the served site was byte-compared against that build:
+        <span class="mono">/</span>, <span class="mono">/rss.xml</span>,
+        <span class="mono">/robots.txt</span>, <span class="mono">/sitemap-index.xml</span> and
+        <span class="mono">/ar/</span> all <strong>MATCH</strong>.
+      </div>
+      <div class="item__note">
+        That is a stronger statement than any run can make about itself: the bytes a reader is served today
+        are exactly what today&rsquo;s committed source produces, checked by a party that did not build it.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Quality &middot; two guards proved by accident, from outside CI</div>
+      <div class="item__body">
+        The first clone was shallow, and the build <strong>refused to run</strong>:
+        <em>&ldquo;repository is SHALLOW. Git history is the only truthful source for
+        &lt;lastmod&gt;&hellip;&rdquo;</em> Exactly the loud failure the comment in
+        <span class="mono">astro-pages.yml</span> promises in place of a silently wrong sitemap &mdash; and
+        proved here in an environment it was never written for. Second:
+        <span class="mono">qa_render</span> failed rather than passing when no Chrome was on
+        <span class="mono">PATH</span>: <em>&ldquo;a check that silently does not run is a green light wired
+        to nothing.&rdquo;</em> Pointed at a real Chromium, it went CLEAN on 5 targets.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &middot; the discoverability surface, read live</div>
+      <div class="item__body">
+        All five public entry points answer <strong>200</strong>: home, <span class="mono">/ar/</span>,
+        <span class="mono">/sitemap-index.xml</span>, <span class="mono">/robots.txt</span>, and
+        <span class="mono">/rss.xml</span> at 31,647 bytes &mdash; byte-identical to the clean-room build, so
+        the feed a subscriber pulls is the feed the source describes. Privacy posture intact: <strong>no
+        third-party tracker</strong>, and the two third-party origins the layout requests
+        (<span class="mono">fonts.googleapis.com</span>, <span class="mono">fonts.gstatic.com</span>) are
+        derived from the layout each run rather than asserted, so the count cannot drift.
+      </div>
+      <div class="item__note">
+        <strong>Traffic, honestly:</strong> the site carries no analytics by design, so there are no visitor
+        numbers to report and none are invented here. Return rate is the metric that will lead, and it
+        switches on with Substack Issue 01, not before. Published corpus: 38 EN / 38 AR, parity 100%, 35
+        countries. Latest published piece is still 2026-07-28 &mdash; <strong>63 days</strong>, which is
+        Edition 05 held at the gate by choice, not by neglect.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Research-to-learn &middot; two increments, both about this operation&rsquo;s wiring</div>
+      <div class="item__body">
+        <strong>A concurrency group binds only the runners inside it.</strong>
+        <span class="mono">madar-weekly.yml</span> shares the <span class="mono">madar-autonomous-run</span>
+        group with the daily run on purpose &mdash; its own comment cites the 2026-08-23 near-clobber of the
+        guidebook index as the reason. That closed two-agents-one-index for both runners <em>in GitHub
+        Actions</em>. A third runner on a different surface cannot be serialised by that group at all; it can
+        only be retired. The corollary is the one that cost fifteen days: <strong>a cadence is not a
+        runner.</strong> The 09-14 migration retired the desktop cadence written in the repository and had no
+        reach over the schedule written outside it.
+      </div>
+      <div class="item__note">
+        <strong>Second: <span class="mono">--log</span> is a write.</strong> The brief template instructs
+        every run to call <span class="mono">madar_stats.py --log</span>, which appends a dated snapshot to
+        <span class="mono">history.jsonl</span>. Called by a second runner on the same date, that is a
+        duplicate row in the one series built for deltas. This run called the script <em>without</em>
+        <span class="mono">--log</span>. The ruling: any instruction that appends to a shared series must
+        name which runner owns the append &mdash; an instruction that mutates shared state is not safely
+        reissued to a second executor.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-09-29 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker and no analytics, by design &middot; 2 third-party origin(s) requested by the layout (fonts.googleapis.com, fonts.gstatic.com) &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 44 EN / 44 AR &mdash; incl. 6 EN / 6 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<article class="day">
+  <header class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>One decision, and it is yours because it is about the shape of the operation rather than its output</h2>
+      <div class="day__date">On deck &middot; 30 September 2026</div>
+    </div>
+  </header>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-parked">Needs your eye &middot; retire this runner, or repurpose it</div>
+      <div class="item__body">
+        <strong>Option A &mdash; retire it.</strong> Delete the <span class="mono">Madar daily
+        operation</span> scheduled task. The canonical run already delivers all five functions, commits,
+        pushes and dispatches its own deploy. Cost: nothing. This is the clean answer.<br /><br />
+        <strong>Option B &mdash; repurpose it as the observer (recommended).</strong> Keep the schedule,
+        replace the prompt entirely: no repo content, no brief number, no push block. Its only job becomes
+        the one thing ruling #71 structurally forbids the canonical run &mdash; confirm from outside that the
+        commit pushed is the bytes the reader is served, and stay silent unless they differ. That is exactly
+        what this run did today, and it is worth a daily slot on its own merits.<br /><br />
+        <strong>Option C &mdash; leave it.</strong> A duplicate day and a live clobber hazard, every day.
+      </div>
+      <div class="item__note">
+        <strong>Stated default, so silence decides rather than stalls:</strong> if there is no word by the
+        Sunday review (<strong>2026-10-04</strong>), the operation takes <strong>Option B</strong> and the
+        weekly records the prompt rewrite. Option A remains one instruction away at any time.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-fixed">Also for your eye &middot; the push block is stale</div>
+      <div class="item__body">
+        Six briefs have closed by handing you a terminal block. <strong>You have not owed a push since 14
+        September.</strong> Nothing on the canonical line waits for you, and the block at the end of this
+        page is optional in the literal sense &mdash; it pushes this report and the quarantine record, and
+        nothing a reader sees.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-shipped">On the canonical line, unaffected by any of this</div>
+      <div class="item__body">
+        Row 6&rsquo;s Verifier verdict is the edition&rsquo;s last owed cell, then the three confirmation
+        reads and the flip. Twelve days to the 11 October gate target, 47 to the 11 November outer bound, and
+        the ruler piece still ahead of PASEC 2024. The canonical run picks this up at 04:23 UTC tomorrow
+        without being asked.
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; desktop-runner observer report &middot; not numbered (brief 88 is today&rsquo;s brief)</span>
+  <span>2026-09-29 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>
