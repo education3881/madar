@@ -138,7 +138,31 @@ def classify(exc: BaseException, url: str) -> tuple[str, str]:
     root = _root_cause(exc)
     if isinstance(root, ssl.SSLCertVerificationError):
         why = (root.verify_message or "certificate rejected").strip()
-        return "tls", f"cert: {why}{_still_served(url)}"
+        # A verification failure is not one failure mode, and the two it
+        # usually is are opposite facts about the READER (added 2026-10-01,
+        # ruling #80, against a live defect in this tool's own advice).
+        #
+        #   * The certificate is bad — expired, wrong hostname, self-signed.
+        #     Every mainstream browser shows a full-page interstitial.
+        #   * The certificate is FINE and the host simply does not send the
+        #     issuing intermediate, publishing it instead at the CA Issuers
+        #     address printed inside the leaf. Clients that follow that
+        #     address — Chrome, Edge, Safari — complete the chain and show the
+        #     reader nothing at all. Python, curl and openssl(1) do not, so
+        #     this sweep fails where a reader succeeds.
+        #
+        # Measured on 2026-10-01 against the four `parliament.gov.zm` URLs in
+        # the held Zambia pair, which this bucket had reported for three weeks
+        # as unreachable, then refused, then "invalid certificate": the host
+        # sends exactly one certificate; that certificate is valid 26 May 2026
+        # to 10 December 2026; and `openssl verify -untrusted <AIA cert> leaf`
+        # returns OK once the intermediate is fetched from the address the leaf
+        # itself names. The document, the certificate and the reader were all
+        # fine. Only this tool was not.
+        chain_only = ("unable to get local issuer certificate" in why
+                      or "unable to verify the first certificate" in why)
+        return ("tls-chain" if chain_only else "tls",
+                f"cert: {why}{_still_served(url)}")
     if isinstance(root, ssl.SSLError):
         return "tls", f"tls: {root.reason or type(root).__name__}{_still_served(url)}"
     if isinstance(root, socket.gaierror):
@@ -234,9 +258,18 @@ def main() -> int:
         for f in findings:
             note = {
                 "walled": "a wall, not a death — cite as fetched-on-date (#41), consider a first-party twin",
-                "tls": "the HOST is broken, not necessarily the document — if it is still served, "
-                       "the citation stands and the annotation states the certificate's state; "
-                       "a reader meets a browser interstitial either way, so say so",
+                "tls": "the CERTIFICATE is bad — expired, wrong hostname or self-signed — so "
+                       "every mainstream browser shows a full-page interstitial and the "
+                       "annotation says so as a dated observation (#76); if the document is "
+                       "still served, the citation stands",
+                "tls-chain": "the certificate is probably FINE and the host is not sending its "
+                             "issuing intermediate. MEASURE BEFORE WRITING ANYTHING: fetch the "
+                             "issuer from the CA Issuers address printed in the leaf and "
+                             "re-verify. If the chain then completes, a browser that follows "
+                             "that address — Chrome, Edge, Safari — meets NO warning, and an "
+                             "annotation claiming an interstitial would be false. This sweep "
+                             "fails here because Python does not chase AIA; the reader is not "
+                             "Python (#80)",
                 "dns": "the name itself is gone — supersede, don't resurrect (#41)",
                 "refused": "a refusal is not a 404 (#54) — re-probe from a second client on a "
                            "different day before any disposition",

@@ -96,7 +96,28 @@ def collection_meta(root):
         for name in os.listdir(d) if os.path.isdir(d) else []:
             if not name.endswith('.md'):
                 continue
-            head = open(os.path.join(d, name), encoding='utf-8').read(8000)
+            # Read the WHOLE frontmatter, never a prefix (fixed 2026-10-01).
+            #
+            # This line read `.read(8000)` and it was the only bounded read in
+            # the toolkit. `approved:` is the LAST key in the block and the
+            # `sources[]` annotations above it are long — so the cut selected,
+            # with some precision, for the most heavily sourced pieces in the
+            # publication. All ten Edition 05 files whose frontmatter exceeds
+            # 8,000 characters (11,368 / 8,628 / 13,831 / 15,945 / 17,213 in EN
+            # and their Arabic twins) had their `approved: true` truncated away
+            # and were silently counted as HELD.
+            #
+            # It read green every day because the ten were in fact held, so the
+            # bug and the corpus agreed. A dry run of the wave flip on
+            # 2026-10-01 broke the agreement and the build failed 40 ways —
+            # facet rows diverging on every browse page in both languages,
+            # because Africa was counted as 6 by this check and 18 by the site.
+            # A check whose correctness depends on a flag it cannot read is a
+            # check waiting for the day that flag moves (ruling #81).
+            raw = open(os.path.join(d, name), encoding='utf-8').read()
+            lines = raw.split('\n')
+            head = ('\n'.join(lines[:lines.index('---', 1) + 1])
+                    if lines[:1] == ['---'] and '---' in lines[1:] else raw)
             m = re.search(r'^date:\s*([0-9]{4}-[0-9]{2}-[0-9]{2})', head, re.M)
             if not m:
                 continue
@@ -466,10 +487,18 @@ def main(dist='web/dist'):
               'green and worthless (2026-08-16 silent-pass trap).')
         return 2
 
+    # The approved-piece count is printed because every expectation above is
+    # derived from it, and on 2026-10-01 it was silently wrong by ten without
+    # any output in which that could be noticed (#65: an assertion has two
+    # outputs, and the record is one of them).
+    approved_seen = {lang: sum(1 for v in meta[lang].values() if v['approved'])
+                     for lang in ('en', 'ar')}
     print('qa_stable_order: %d pages, %d dated lists, %d feeds, %d related '
           'rails, %d browse pages; %d date tie groups and %d facet tie groups '
-          'actually exercised.'
-          % (pages, lists_seen, feeds, rails, browse_pages, ties, facet_ties))
+          'actually exercised; expectations derived from %d approved EN and '
+          '%d approved AR pieces.'
+          % (pages, lists_seen, feeds, rails, browse_pages, ties, facet_ties,
+             approved_seen['en'], approved_seen['ar']))
     if defects:
         print('DEFECT (%d):' % len(defects))
         for lab, why in defects[:25]:

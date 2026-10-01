@@ -245,11 +245,79 @@ Two register questions on the ruler pair's Arabic, raised by a second independen
 Row 2's `related:` rail names **row 1 (Zambia)**, and **row 3's rail names BOTH row 1 and row 2** — all held. That is correct **only because the wave flips atomically**: no one of the three can ship without the other two in the same commit, or its rail carries a dead end and `qa_body_links` (#10) fails the build. The three are now mutually bound. Any future piece railing into a held sibling inherits the same constraint. Check this row before composing the flip commit, not after.
 
 ### Confirmation reads owed at the gate (the wave cannot flip without them)
+
+> **ZAMBIA'S IS CLOSED — 2026-10-01**, the first of the five
+> (`verdicts/2026-10-01-ed05-zambia-confirmation-read.md`). All three owed items disposed, **two new
+> defects found and closed in-run in both languages**, body **2,298 / ≤2,300 with no waiver** after
+> three words were given back in the sentences that spent them, and the numeral multiset confirms the
+> edits symmetric (both bodies gained exactly `300` and `625`). **Four remain: Sierra Leone, Sudan,
+> slot 3 and Egypt.**
+>
+> * **Item A, the four `parliament.gov.zm` URLs — closed, and all three of our previous readings of
+>   that host were wrong.** All four serve **200**; the certificate is **valid to 10 Dec 2026**; the
+>   host simply does not send its issuing intermediate, which it publishes at the address printed in
+>   its own leaf, so the chain closes for any client that follows it and a reader meets nothing.
+>   **Ruling #80**, and the expensive half of it is that `qa_sources_alive`'s advice for that bucket
+>   told us to write the opposite into twelve annotations.
+> * **Item B, the K15m saving — annotation confirmed exactly right**, re-read in served text; the body
+>   carries *says saved*, the hedge and the attribution verb both intact. One gloss examined and
+>   allowed with the reason written down (*full* School Certificates, symmetric with AR «كاملةً»).
+> * **Item C, the IICBA attribution — OPEN, and it was two defects.** The brief does not claim the 99%:
+>   its sentence is *"is estimated by the World Bank, UNESCO, and other organizations"*, and the piece
+>   said the institute *puts* it there. **The same annotation already carried the onward attribution
+>   correctly for four other figures inside the same parenthesis.** Second: **358** was printed without
+>   the scale the register prints beside it (*300 lowest, 625 advanced*). Both fixed in both languages.
+
 | Pair | Verdict | What the confirmation read must close |
 |---|---|---|
-| Zambia | 09-08 FAIL-1 | the K15m saving/price fix as served; the IICBA attribution note; **four `parliament.gov.zm` URLs unreachable on 09-10 — re-probe on a different day, different client (#20)** |
+| ~~Zambia~~ | 09-08 FAIL-1 | **CLOSED 2026-10-01** — all three items disposed, two new defects fixed in-run |
 | Sierra Leone | 09-09 FAIL-2 | the emendation and the superseded launch date; **the Save the Children blog now returns HTTP 404 — supersede or carry as fetched-on-date (#41)** |
 | Sudan | 09-10 FAIL-3 | first-phase subjects, laureate year-class, the venue; **four registers rode on one channel only** (Brown et al., both War Child pages, the *New horizons* AR edition) |
+
+### THE FLIP, REHEARSED — 2026-10-01, and it would have gone RED
+
+**The edition has never once been built as it will actually ship.** Ruling #81, filed this morning,
+says why that matters: **22 of the 25 gating assertions are handed `web/dist`**, and a held piece is not
+in `dist`. Five do reach back into `web/src/content/**`, but each reads a held piece only for a
+**frontmatter fact** — so **no assertion has ever examined the HTML a held piece will serve**, and every
+served-shape gate meets the wave for the first time on flip day, after four gates per piece have already
+passed.
+
+So the flip was rehearsed. All twelve held files flipped to `approved: true` in the working tree, full
+`npm run build`, all twenty-five gating assertions, then reverted and verified byte-identical against a
+snapshot.
+
+**First attempt: BUILD EXIT 1.** `qa_stable_order` reported **40 defects** — facet rows diverging on
+every browse page in both languages, *serves region/africa, corpus implies region/asia*.
+
+**Diagnosis (per ruling #63 — read which step failed before planning a repair): the check was wrong,
+not the site.** `qa_stable_order` read each content file with `.read(8000)` — the only bounded read in
+the whole toolkit, confirmed by grep rather than by memory. `approved:` is the **last** key in the
+frontmatter and the `sources[]` annotations above it are long, so the cut selected almost exactly for
+the most heavily sourced pieces in the publication. **Ten files exceed 8,000 characters of frontmatter
+— 11,368 / 8,628 / 13,831 / 15,945 / 17,213 in EN and their Arabic twins — and every one of them is an
+Edition 05 file.** All ten had `approved: true` truncated away and were silently counted as held.
+
+**The bug's blast radius is exactly the set the flip moves.** On today's corpus those ten files *are*
+held, so the bug and the corpus agree and the check is green — measured, by restoring the old line and
+re-running: 38 approved, CLEAN, identical output. The moment the wave flips, the agreement breaks and
+the build fails forty ways, on the one day of the edition when a red deploy is most expensive.
+
+**Fixed:** the whole frontmatter is read, never a prefix; and the approved-piece count the expectations
+are derived from is now **printed**, because it was wrong by ten with no output in which that could be
+noticed (#65).
+
+**Second attempt: BUILD EXIT 0.** 135 pages (121 held-state), 44 approved EN and 44 approved AR, six
+facet tie groups exercised, **all thirteen `postbuild` gates CLEAN**, and the twelve CI build-step
+assertions run by hand against the flipped artefact — every one exit 0, including `qa_held_assets`
+correctly inverting to *0 held slugs, 44 approved, 88 control assets* (the 2026-08-09 rule, executed by
+the tool rather than by a judgment).
+
+**What this does and does not establish.** It establishes that the wave *builds* green and that every
+gate passes on the corpus it will actually meet. It does not establish that the wave is *ready* — four
+confirmation reads, two Arabic register questions, the packet captions' Arabic gate and the publish
+gate in writing are all still owed. **Re-run the rehearsal in the run that composes the flip commit**,
+because a rehearsal is an observation with a date.
 
 **Source-promise state of the held set (Growth sweep 2026-09-10, `agents/growth/2026-09-10-source-promise-decay-sweep.md`):** 28 distinct URLs — 20 `ok`, 3 `walled` (bot walls, not deaths), 4 `unreachable` (one host), **1 hard 404**. Re-run `qa_sources_alive.py --held-only --sample 0` immediately before the flip commit.
 
@@ -263,6 +331,21 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-01** — **THE FLIP WAS REHEARSED FOR THE FIRST TIME AND IT WOULD HAVE GONE RED; THE OLDEST
+  CONFIRMATION READ IS CLOSED.** State verified against git, the Actions API and the live origin:
+  tree clean, no dark day, **HEAD == origin/main** at `db96c0d`, and the item the 09-30 log owed —
+  *this run's FINAL commit's deploy conclusion* — reads **green**: `db96c0d` deployed as
+  **`36707820004`**, `workflow_dispatch`, **success**, 83 seconds, created 24 seconds after that commit was written (11:18:59Z → 11:19:23Z).
+  The eight-fixture `qa_a11y_lang` self-test shipped on 09-30 passes in CI. `qa_live_drift` CLEAN, 120
+  URLs, 0 drift, before and after today's edits — a second live control for the 09-06 held-file rule,
+  obtained for free from eight edited held files. **Zambia's confirmation read closed** with two
+  defects fixed in both languages and the body at 2,298 / ≤2,300 with no waiver. **Standing assertion
+  28, `qa_pair_frontmatter`**, answering the 09-30 forward question, found the **Egypt pair carrying no
+  `arabicVersion`** — alone among 44 English articles, and the served consequence measured in a scratch
+  build: 0 hreflang alternates against a control's 3, no `workTranslation` node, no link to its own
+  twin. **Three rulings filed, #80, #81 and #82**, four counts moved at the point of filing, and a
+  fifth home for a moving number found and named rather than silently fixed. **28 assertions, 25
+  gating.** Ten days to the 10-11 gate.
 - **2026-09-30** — **THE EDITION IS FULLY VERIFIED, AND THE TWO CLOCK ITEMS THAT HAVE BLOCKED THE FLIP
   FOR TEN DAYS ARE CLOSED.** State verified against git, the Actions API and the live origin: tree
   clean, no dark day, **HEAD == origin/main** at `3a97d43`, and — the item the 09-29 log explicitly
