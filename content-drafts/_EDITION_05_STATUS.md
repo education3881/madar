@@ -246,6 +246,49 @@ Row 2's `related:` rail names **row 1 (Zambia)**, and **row 3's rail names BOTH 
 
 ### Confirmation reads owed at the gate (the wave cannot flip without them)
 
+> **SIERRA LEONE'S IS CLOSED — 2026-10-02**, the second of the five
+> (`verdicts/2026-10-02-ed05-sierra-leone-confirmation-read.md`). All three owed items disposed, **one
+> new defect found and fixed in-run in both languages**, and **no body prose touched in either
+> language** — EN 1,592 / AR 1,343, unchanged, no numeral moved either way, every edit inside
+> `sources[]`. **Three remain: Sudan, slot 3 and Egypt.** This is the first piece in the edition whose
+> source sweep came back **completely clean — all eight URLs 200 with TLS validation enabled**, and it
+> is the piece whose sources have been the most troubled (source 3 produced ruling #54).
+>
+> * **The owed items, all three closed.** *Item 1, the unmarked emendation:* EOF still serves
+>   *"SLEIC does not **definitely** prove…"* — the 09-09 fix is right and is now attested on two dates
+>   twenty-three days apart. **And the 09-09 verdict's own supporting evidence has changed under it:**
+>   it argued the page was typo-prone by citing *"what is takes to help children learn"*, and today
+>   that sentence reads *"what it takes."* We cannot tell whether EOF corrected it or the verdict
+>   mis-transcribed it, because no capture was kept — the exact method defect that verdict named in the
+>   drafter and then committed about its own evidence. Either way the conclusion is stronger: **the
+>   register is maintained, so a quotation from it is a dated reading, not a property of the page**, and
+>   both annotations now say so. *Item 2, the superseded launch date:* status **Running**, term
+>   **2026–2029**, re-confirmed, and the news rail has grown by **four** items since 09-09 — the
+>   decision to print a *status* and no date has aged well, since a launch month would now be competing
+>   with five dated items on the owner's own page. *Item 3, the StC blog:* **200** at the re-slugged
+>   address, #54's correction already in the file.
+> * **NEW — ruling #84, and it is in an annotation rather than a body.** Source 8 was the one URL of
+>   the eight that **redirected**: the GitHub account was renamed `fergalturnerSCUK` → `fergal-turner`.
+>   Our annotation credited the repository to **Save the Children UK** in both languages; the README
+>   says *"Background analysis for an SCUK published blog"* on a **personal** account. The organisation
+>   published the blog (source 3, correctly cited); an individual published the analysis. **The
+>   organisation's name had been read off the account handle, which contained `SCUK` and no longer
+>   does — so the rename did not create the defect, it removed what was concealing it.** It passed
+>   `qa_pair_frontmatter` **correctly**, because both languages agreed on the same error: parity is a
+>   floor, never a verdict (#42, #78). And **the body was the careful side in both languages** — the
+>   inverse of the 09-13 shape, which is why #84's corollary bounds that rule: *a reciprocity check has
+>   no arrow.* Fixed in both languages, URL moved to the living address (#41).
+> * **STILL OPEN, and blocked on our client rather than on the source:** #54's carried citation
+>   upgrade, the *Final Learning Report 2026*. The document page serves **200 / 84 KB** and its
+>   bibliographic text is **not readable by any client available here** — the rendered fetch returns
+>   the site shell, the raw response carries `SLEIC` only inside escaped JSON. Walled by rendering, not
+>   dead (#70). **A document we cannot read cannot outrank one we can (#43)**, so the upgrade is
+>   neither applied nor dropped. Nothing is broken: source 3 is live and correctly cited, and this was
+>   always an improvement rather than a correction. Second item in the edition whose blocker is a
+>   third-party renderer.
+>
+> **Row 2 is clear for the flip.** Nothing on it needs a human judgment and nothing on it blocks the wave.
+
 > **ZAMBIA'S IS CLOSED — 2026-10-01**, the first of the five
 > (`verdicts/2026-10-01-ed05-zambia-confirmation-read.md`). All three owed items disposed, **two new
 > defects found and closed in-run in both languages**, body **2,298 / ≤2,300 with no waiver** after
@@ -271,7 +314,7 @@ Row 2's `related:` rail names **row 1 (Zambia)**, and **row 3's rail names BOTH 
 | Pair | Verdict | What the confirmation read must close |
 |---|---|---|
 | ~~Zambia~~ | 09-08 FAIL-1 | **CLOSED 2026-10-01** — all three items disposed, two new defects fixed in-run |
-| Sierra Leone | 09-09 FAIL-2 | the emendation and the superseded launch date; **the Save the Children blog now returns HTTP 404 — supersede or carry as fetched-on-date (#41)** |
+| ~~Sierra Leone~~ | 09-09 FAIL-2 | **CLOSED 2026-10-02** — all three owed items disposed, one new defect fixed in-run in both languages, one carried upgrade left open on our own client |
 | Sudan | 09-10 FAIL-3 | first-phase subjects, laureate year-class, the venue; **four registers rode on one channel only** (Brown et al., both War Child pages, the *New horizons* AR edition) |
 
 ### THE FLIP, REHEARSED — 2026-10-01, and it would have gone RED
@@ -331,6 +374,30 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-02** — **THE SECOND CONFIRMATION READ IS CLOSED, AND THE TWO ITEMS YESTERDAY LEFT OWED
+  BOTH CAME BACK GREEN.** State verified against git, the Actions API and the live origin: tree clean,
+  no dark day, **HEAD == origin/main** at `329afff`. **The two items the 10-01 addendum owed this run,
+  in the order it named them:** (1) the `gh` credential **works at open** — so yesterday's three
+  `401 Bad credentials` refusals were a window, not a loss of the instrument, and there is no P1; (2)
+  the deploy conclusion for the branch head that run left behind — `329afff` deployed as
+  **`36861609960`**, `workflow_dispatch`, **success**, 139 seconds, created 53 seconds after the
+  commit. **So yesterday's raised-stakes question is answered green:** the thirteenth `postbuild` gate
+  `qa_pair_frontmatter` passes in CI with its eleven fixtures, and the edited `qa_stable_order` — the
+  line every content file passes through — passes on the real corpus in CI. **Sierra Leone's
+  confirmation read closed** (see above): three owed items disposed, **ruling #84** found in an
+  annotation, fixed in both languages, no body prose touched and no numeral moved. **The 10-01 forward
+  question executed on the candidate it named as cheapest:** `qa_consumer_surface`'s accepted-format
+  list was credited to four consumers and **none of the four publishes one** — Slack delegates to X in
+  its own words, LinkedIn's list belongs to a different product, Meta and `ogp.me` give none — while
+  X, the sole owner that ever published both the list and the 420-character alt cap, now answers **402
+  Payment Required**. **Ruling #83**: a stale allow-list fails *silently, at the consumer*, and *wrong*
+  and *unverifiable* are different statuses. `.webp` proved admitted by injection; `ar_AR` confirmed as
+  Meta's own named ISO exception and dated. **Growth: the whole corpus read as a graph for the first
+  time — zero orphans, 98 edges per language, the two graphs structurally identical**, and the held
+  rails carry **15 inbound edges into already-published pieces**, so the flip strengthens the old
+  corpus and not only the new. **Two rulings filed, #83 and #84; five count homes moved for #83 and
+  four for #84**, because the fifth home is conditional on the family keeping a running count. 28
+  assertions, 25 gating, build exit 0 at 121 pages. **Nine days to the 10-11 gate.**
 - **2026-10-01** — **THE FLIP WAS REHEARSED FOR THE FIRST TIME AND IT WOULD HAVE GONE RED; THE OLDEST
   CONFIRMATION READ IS CLOSED.** State verified against git, the Actions API and the live origin:
   tree clean, no dark day, **HEAD == origin/main** at `db96c0d`, and the item the 09-30 log owed —

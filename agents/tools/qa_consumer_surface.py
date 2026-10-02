@@ -41,6 +41,13 @@ WHAT IT ASSERTS
    twitter:image:alt, non-empty and within the 420 characters the consumer
    accepts (added 2026-09-15).
 
+   Every constant in (1) and (4) is a claim about a machine we do not own, so
+   each one now carries the date we last opened its owner's register and who
+   attested it. See EXTERNAL_IMAGE_FORMATS below, added 2026-10-02: the
+   accepted-format list is derived from that table rather than declared beside
+   it, the provenance prints on every run, and one member of the list turns out
+   to be attested by nobody we can currently read.
+
 5. sitemap.xml carries a <lastmod> on every <loc>. It carried none from
    2026-07-02 until today.
 
@@ -70,8 +77,97 @@ META = re.compile(
 )
 HTML_LANG = re.compile(r'<html\s+lang="([a-z-]+)"', re.I)
 
-RASTER = (".png", ".jpg", ".jpeg", ".webp", ".gif")
+# ---------------------------------------------------------------------------
+# WHEN WAS EACH EXTERNAL EXPECTATION LAST DERIVED FROM THE WORLD?
+# Added 2026-10-02, answering the 2026-10-01 forward question.
+# ---------------------------------------------------------------------------
+# Every constant below is a claim about a machine this operation does not own.
+# The assertion runs daily; the belief inside it does not. The accepted-format
+# list was written in August 2026 and carried unchanged for six weeks on the
+# strength of a reading nobody recorded — which is the exact defect class
+# ruling #18 was filed on, pointed at our own instrument instead of at a source.
+#
+# So the beliefs are dated here, as data rather than as prose, and the
+# allow-list below is DERIVED from this table (#36) — a format cannot be
+# accepted by the check without a provenance row saying who attested it and
+# when we last read them say so.
+#
+# What the 2026-10-02 derivation found, and it is not what the old comment
+# claimed. The comment credited the format list to four consumers. Read in
+# their own registers today, NOT ONE OF THE FOUR publishes an accepted-format
+# list for a link-preview image:
+#
+#   ogp.me                     states no formats at all. It defines
+#                              `og:image:type` as "A MIME type for this image"
+#                              and never says which are rendered.
+#   Meta (webmasters/images)   states no formats. Dimensions (min 200x200,
+#                              1200x630 recommended) and an 8 MB ceiling only.
+#                              SVG is not mentioned either way.
+#   Slack (docs.slack.dev)     states no formats, and delegates: it "looks for
+#                              common OpenGraph and X ... Card metadata."
+#   LinkedIn (help a521928)    names JPG, PNG, GIF — for SINGLE IMAGE ADS, a
+#                              different product. For shareable website content
+#                              it gives 5 MB and 1200x627 and no format list.
+#
+# The one owner that ever published both the format list and the 420-character
+# alt cap is X, and ON 2026-10-02 X'S DEVELOPER REGISTER COULD NOT BE READ
+# FROM THIS RUNNER ON FIVE ROUTES: developer.x.com returned HTTP 402 Payment
+# Required twice, docs.x.com returned 404 twice, and developer.twitter.com
+# 307-redirected to the docs root. The cap is therefore not wrong — it is
+# UNVERIFIABLE, which is a different status, and this file used to record the
+# two identically.
+#
+# The consequence is specific and it points one way. This is an ALLOW-list, so
+# a stale member is admitted rather than rejected: a deny-list that goes stale
+# refuses something valid and fails loudly in our own build, while an allow-list
+# that goes stale ACCEPTS a format the consumer will not render, and that
+# failure is silent and happens at the consumer. That is 2026-08-18's defect
+# exactly — 83 days of shares carrying no card — with our own allow-list as the
+# mechanism. `.webp` is the member no readable register attests, and the only
+# reason it has never bitten is that all 121 cards this build serves are PNG:
+# the belief and the corpus agree, which is ruling #81's shape.
+#
+# Nothing is narrowed on this reading. Composing a stricter list from an
+# unreadable register would be a figure composed from a pattern (#41), and WEBP
+# being absent from a paywalled page is not evidence that WEBP fails. What
+# changes is that the status is now printed, so a run that ever considers
+# serving a WEBP card sees who attested it: nobody.
+#
+#   attested_by  — the owner whose own register names this format, read in
+#                  served text on `derived`, never from a search summary (#41).
+#   derived      — the date WE last opened that register, not the date it was
+#                  written. A belief with an old date here is not wrong; it is
+#                  undated, and undated is the status this block exists to end.
+EXTERNAL_IMAGE_FORMATS = [
+    # ext      attested_by                                      derived       status
+    (".png",  "LinkedIn help a521928 (ads list); X, when readable", "2026-10-02", "attested"),
+    (".jpg",  "LinkedIn help a521928 (ads list); X, when readable", "2026-10-02", "attested"),
+    (".jpeg", "LinkedIn help a521928 (ads list); X, when readable", "2026-10-02", "attested"),
+    (".gif",  "LinkedIn help a521928 (ads list); X, when readable", "2026-10-02", "attested"),
+    (".webp", "nobody readable — X only, register 402 on 2026-10-02", "2026-10-02", "UNATTESTED"),
+]
+RASTER = tuple(ext for ext, _, _, _ in EXTERNAL_IMAGE_FORMATS)
+
+# The 420 cap's sole owner is X and its register is paywalled (above). Carried
+# unchanged, with the status recorded rather than implied.
+ALT_CAP = 420
+ALT_CAP_PROVENANCE = ("X developer docs", "2026-08-18 (last readable); "
+                      "re-derivation refused 402 on 2026-10-02", "UNVERIFIABLE")
+
+# `ar_AR` is the one belief in this file its owner confirms in its own voice,
+# and the derivation answered a question nobody had asked: AR is Argentina
+# under ISO 3166-1, so `ar_AR` looks like a typo for an Arabic locale. It is
+# not. Meta's internationalization register, read 2026-10-02, gives the format
+# as `ll_CC` ("a two-letter language code" + "a two-letter country code") and
+# names `ar_AR` explicitly as an exception to the ISO standard — one of the
+# "umbrella locales for Arabic and Spanish." Attested, dated, and correct.
+# The `en_US` default is ogp.me's own words, read the same day: "Default is
+# `en_US`." So absence is not neutral, as the header has said since 08-24.
 EXPECTED_LOCALE = {"en": "en_US", "ar": "ar_AR"}
+LOCALE_PROVENANCE = ("ogp.me (format + en_US default); Meta "
+                     "developers.facebook.com/docs/internationalization "
+                     "(ll_CC, ar_AR named as an ISO exception)", "2026-10-02",
+                     "attested")
 
 
 def is_article_route(rel: str) -> bool:
@@ -184,8 +280,9 @@ def main() -> int:
                 text = (og.get(key) or "").strip()
                 if not text:
                     defects.append(f"{rel}: {key} MISSING — the card describes itself to nobody")
-                elif len(text) > 420:
-                    defects.append(f"{rel}: {key} is {len(text)} chars, over the 420 the consumer accepts")
+                elif len(text) > ALT_CAP:
+                    defects.append(f"{rel}: {key} is {len(text)} chars, over the "
+                                   f"{ALT_CAP} the consumer accepts")
 
     # ---- sitemap lastmod -----------------------------------------------
     # sitemap-index.xml points at the sitemaps, not at pages — counting its
@@ -222,7 +319,18 @@ def main() -> int:
             defects.append("css: print block does not expand source URLs (attr(href))")
 
     # ---- report ---------------------------------------------------------
+    # The provenance is printed on every run, green or red. A belief carried on
+    # trust is invisible precisely because the check around it passes (#65: an
+    # assertion has two outputs, and only the verdict is guaranteed to be a
+    # function of the artefact — the record is what later runs read as true).
+    unattested = [e for e, _, _, s in EXTERNAL_IMAGE_FORMATS if s != "attested"]
     print(f"pages checked: {checked} · sitemap <loc>: {locs} · <lastmod>: {lastmods}")
+    print(f"external beliefs · image formats {''.join(RASTER)} "
+          f"derived {EXTERNAL_IMAGE_FORMATS[0][2]}"
+          + (f", UNATTESTED: {' '.join(unattested)}" if unattested else "")
+          + f" · alt cap {ALT_CAP} {ALT_CAP_PROVENANCE[2]} ({ALT_CAP_PROVENANCE[1]})"
+          + f" · locales {sorted(EXPECTED_LOCALE.values())} {LOCALE_PROVENANCE[2]}"
+          f" {LOCALE_PROVENANCE[1]}")
     if defects:
         print(f"\nDEFECTS: {len(defects)}")
         for d in defects[:60]:

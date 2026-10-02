@@ -31,7 +31,14 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#82**, and binding. *(Moved from #79 to #82 on
+  `agents/guidebook/INDEX.md` — currently **#1–#84**, and binding. *(Moved from #82 to #84 on
+  2026-10-02, at the point of filing, by the fifth run to execute the four-count rule — two rulings from
+  two lanes, and the first run to move **five** counts rather than four, because the fifth home the 10-01
+  reconciliation found (the assertion-discipline family's own count) was already known, and a known home
+  left unmoved is the rule being declined rather than a gap in it. The weekly review still owes the
+  amendment's wording. The rule's shape also got sharper by being executed twice in one run: **#83 moved
+  five counts and #84 moved four**, because #84's family keeps no running count — so the fifth home is
+  conditional on the family maintaining one, which no previous run had cause to notice. Moved from #79 to #82 on
   2026-10-01, at the point of filing, by the fourth run to execute the four-count rule — three rulings
   from two lanes, reconciled by counting 82 §3 rows and 78 §1 rows. That reconciliation found a **fifth**
   home for a moving number, the assertion-discipline family's own count, which read seventeen while the

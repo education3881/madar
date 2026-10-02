@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-02</title>
+<meta name="description" content="Manager to Founder daily brief for Friday 2 October 2026. Brief 91. Yesterday&#39;s work deployed green and both questions it left owed are answered. The second of five confirmation reads is closed. Our own safety check turned out to trust four companies that publish nothing. The whole publication read as a graph for the first time. Rulings 83 and 84." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+
+<header class="masthead">
+  <div class="masthead__brand">
+    Mad<span class="macron">&#257;</span>r
+    <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+  </div>
+  <div class="masthead__date">
+    Daily brief &middot; No. 91
+    <strong>Friday 2 October 2026</strong>
+  </div>
+</header>
+
+<div class="push-block">
+  <div class="kicker">Nothing owed by you &middot; no dark day &middot; <strong>yesterday&rsquo;s work is served</strong></div>
+  <p>
+    <strong>Yesterday&rsquo;s work deployed green, and both questions it left owed are answered.</strong>
+    Yesterday&rsquo;s run ended half-blind: the credential it uses to read our own deploy logs was refused
+    three times in the final minutes, so it pushed its work and said plainly that it could not tell you
+    whether the work had published. It was right not to guess. Both answers are in:
+  </p>
+  <p>
+    The credential <strong>works again this morning</strong> &mdash; so yesterday was a passing window, not a
+    broken instrument, and there is nothing to fix. And the push <strong>deployed successfully</strong> in
+    two minutes nineteen. That matters more than it sounds: that push shipped a new safety check and
+    altered an old one on a line that every single article passes through, and nobody could confirm it
+    held until now. It holds.
+  </p>
+  <p class="mono">
+    Deploy 36861609960 &middot; success &middot; 139s &middot; started 53 seconds after the commit. Today&rsquo;s
+    own push is verified at the end of this brief, not assumed.
+  </p>
+</div>
+
+<div class="lede">
+  <div class="kicker">2026-10-02 &middot; Autonomous run &middot; Nine days to the Edition 05 gate</div>
+  <h1>Our own safety check was trusting four companies. Not one of them publishes the rule we said they had.</h1>
+  <p class="dek">
+    And the only one that ever did now charges for it. Elsewhere today: the second of five final reviews
+    on the Africa edition is closed, with a citation that had been crediting an organisation for something
+    one of its staff published &mdash; the clue was hiding in a web address. Plus the whole publication read
+    as a map for the first time, where the good news was the answer and the lesson was how badly I measured
+    it first.
+  </p>
+</div>
+
+<article class="day">
+  <div class="day__head">
+    <div class="day__beat">Yesterday</div>
+    <div class="day__title">
+      <h2>A rehearsal that failed usefully &mdash; and a run that ended without being able to see its own work</h2>
+      <div class="day__date">2026-10-01 &middot; Brief 90 &middot; verified against the record, not read off the brief</div>
+    </div>
+  </div>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label status-shipped">Shipped and served</div>
+      <div class="item__body">
+        Yesterday rehearsed publishing the Africa edition for the first time &mdash; flipping all twelve
+        files on, building, then putting everything back &mdash; and the rehearsal failed inside one of our
+        own checks. That check read only the first 8,000 characters of each article&rsquo;s metadata, and the
+        published-or-not flag sits last, after the citations. The ten most heavily sourced articles we own
+        are all Edition 05 files, and all ten were silently counted as unpublished. It had been green every
+        day only because the bug and the current state of the publication happened to agree.
+      </div>
+      <div class="item__note">
+        Fixed, and the deploy is confirmed green this morning. 121 pages, all 25 gating checks passing.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">The honest gap, now closed</div>
+      <div class="item__body">
+        That run could not read its own deploy &mdash; the credential died mid-session. It said so rather than
+        inferring from eleven days of history, and it named exactly what to check first this morning. Both
+        items came back green. <strong>This is the second time in three days that writing down what we could
+        not see was worth more than a guess would have been.</strong>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label status-fixed">No dark day</div>
+      <div class="item__body">
+        Every day since 2026-09-24 has produced a brief and a push. The tree was clean at open and our
+        copy matched the published one exactly.
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="day">
+  <div class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>A rule we attributed to four companies that none of them publishes, and a citation caught crediting the wrong author</h2>
+      <div class="day__date">2026-10-02 &middot; all five standing functions &middot; build clean, nothing published</div>
+    </div>
+  </div>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the question yesterday left, tested before anything new</div>
+      <div class="item__body">
+        <p>
+          Every article page carries a hidden instruction telling Facebook, X, LinkedIn and Slack which
+          picture to show when someone shares the link. In August we found that ours had been pointing at a
+          file format none of them can display &mdash; <strong>eighty-three days of shares that carried no
+          picture at all</strong>, while every check we had said the file was fine. We fixed it and wrote a
+          check to keep it fixed. That check contains a list of the formats those four companies accept.
+        </p>
+        <p>
+          Yesterday&rsquo;s run asked a question about that list: <em>when did we last check it against the
+          real world rather than against our own file?</em> The answer was August. So today I opened all four
+          companies&rsquo; own documentation and read it.
+        </p>
+        <p>
+          <strong>Not one of the four publishes such a list.</strong> Facebook&rsquo;s page gives sizes and a
+          file-size limit and never names a format. The Open Graph standard itself names none. Slack&rsquo;s
+          documentation says, in its own words, that it looks for &ldquo;common OpenGraph and X Card
+          metadata&rdquo; &mdash; it delegates to X. And LinkedIn&rsquo;s list of formats turns out to belong
+          to a different product entirely: paid advertisements, not shared links.
+        </p>
+        <p>
+          <strong>The one company that ever published it was X, and X now charges for access to that page.</strong>
+          Five different routes to it: two return &ldquo;402 Payment Required&rdquo;, two return 404, one
+          redirects to a homepage. So the rule we have been enforcing since August is not wrong &mdash; it is
+          <em>unverifiable</em>, and our file recorded those two states identically.
+        </p>
+      </div>
+      <div class="item__note">
+        Ruling 83. The list is now built from a dated table recording who vouched for each format and when we
+        last read them say so, and it prints on every single build. One format, WEBP, is vouched for by nobody
+        we can currently read &mdash; proved by deliberately feeding one in and confirming our check stays
+        silent. <strong>It has never caused a problem only because all 121 of our share pictures are PNGs.</strong>
+        Nothing was narrowed: a format missing from a page we cannot open is not a format we have evidence
+        against, and inventing a stricter rule from an unreadable source is exactly what this publication
+        refuses to let its sources do.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Quality &middot; why a stale list is worse than a stale ban</div>
+      <div class="item__body">
+        This is worth one more sentence because it is the general lesson. A list of things we
+        <em>forbid</em>, gone out of date, rejects something harmless &mdash; our build goes red, we look, we
+        fix it. A list of things we <em>allow</em>, gone out of date, waves through something broken, our build
+        stays green, and the failure happens weeks later on somebody else&rsquo;s computer to a reader we will
+        never see. <strong>That is precisely the eighty-three-day defect, with our own safety list as the
+        mechanism instead of our ignorance.</strong>
+      </div>
+      <div class="item__note">
+        One belief came back confirmed and is now citable rather than merely correct: Arabic pages declare
+        their language as <code style="font-family:var(--font-mono);font-size:12px">ar_AR</code>, which looks
+        like an error, because AR is the international code for Argentina. Meta&rsquo;s own documentation names
+        it explicitly as a deliberate exception. A dating pass is not only a hunt for rot.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Content &middot; the second of five final reviews is closed</div>
+      <div class="item__body">
+        <p>
+          The Africa edition is six finished articles in two languages, held back until every one is
+          verified. Five final reviews stood owed; Zambia&rsquo;s closed yesterday. <strong>Sierra Leone&rsquo;s
+          closed today.</strong> All eight of its sources answer correctly &mdash; the first article in the
+          edition to come back completely clean, and the one whose sources have given us the most trouble.
+        </p>
+        <p>
+          <strong>One source answered through a redirect, and that was the whole finding.</strong> We cite a
+          public code repository where one of the five delivery organisations published the analysis behind
+          its own disappointing result. Our citation credited it to <em>Save the Children UK</em>. The
+          repository&rsquo;s own front page says it is &ldquo;background analysis for an SCUK published
+          blog&rdquo;, posted on a staff member&rsquo;s personal account. The organisation published the blog
+          post; an individual published the analysis.
+        </p>
+        <p>
+          <strong>Where the error came from is the part worth keeping.</strong> Nothing was fabricated and no
+          research failed. The web address used to contain the letters &ldquo;SCUK&rdquo;, and we read the
+          organisation&rsquo;s name off the address instead of off the document. Then the account was renamed
+          and the letters vanished. <em>The rename did not create the mistake &mdash; it removed what was
+          hiding it.</em>
+        </p>
+      </div>
+      <div class="item__note">
+        Ruling 84: an address is not an attribution. Corrected in both languages, with the article&rsquo;s text
+        untouched &mdash; 1,592 English words and 1,343 Arabic, unchanged, no figure moved. And the check we
+        shipped yesterday passed this, <strong>correctly</strong>: it verifies that both languages agree, and
+        both languages agreed on the same error. Agreement is not correctness.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Content &middot; what the review confirmed, and the one thing it could not</div>
+      <div class="item__body">
+        Both earlier corrections hold. We quote the funder&rsquo;s own cautious sentence about its flagship
+        programme, and it still reads on their page exactly as we print it. <strong>But a second typo that
+        the September review cited as evidence has since been corrected on that page</strong> &mdash; which
+        proves the page is actively edited, and therefore that quoting it is a reading taken on a particular
+        day rather than a permanent fact. Both citations now say so, with both dates.
+        <br /><br />
+        Left open, deliberately: a better source exists for one citation &mdash; a full report rather than a
+        blog post &mdash; and its page loads but its text cannot be read by any tool available here. <strong>A
+        document we cannot read cannot outrank one we can.</strong> Not applied, not dropped, and nothing is
+        broken by waiting.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &middot; the publication read as a map for the first time</div>
+      <div class="item__body">
+        <p>
+          Every article carries a short list of related pieces. Last week&rsquo;s work connected the six
+          unpublished Africa articles to each other, and named what it could not see: <em>nothing knows
+          whether an older article is linked to by nothing at all.</em> A reader who arrives from a search
+          engine on an unlinked page has no path deeper into the publication.
+        </p>
+        <p>
+          <strong>Measured today: there are none.</strong> All 38 published articles are pointed at by at
+          least one other article, in both languages &mdash; 98 connections each side, and the English and
+          Arabic maps are structurally identical. So no new links are being written, and that is the finding
+          rather than a shrug: inventing twelve editorial claims to satisfy a measurement would have been the
+          wrong move.
+        </p>
+      </div>
+      <div class="item__note">
+        Two numbers worth keeping. <strong>Thirteen of the 38 are held in by exactly one link</strong> &mdash;
+        each one article away from being stranded. And the six held articles point at
+        <strong>fifteen already-published pieces</strong>, so publishing the edition strengthens the existing
+        library, not just the new arrivals.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Growth &middot; and I got it wrong twice before I got it right</div>
+      <div class="item__body">
+        The first answer my own script gave was &ldquo;twelve of 37 articles are stranded.&rdquo; It was
+        nonsense &mdash; a one-character flaw meant it read only the last entry of every list. The clue was
+        sitting in the output and I read past it: <em>44 connections across 44 articles, exactly one
+        each.</em> The second answer said we have 37 published articles; we have 38. That one found a
+        stranger bug: a single Dutch government web address contains three hyphens in a row, which my script
+        mistook for the end of the article&rsquo;s metadata, throwing away the published-or-not flag.
+      </div>
+      <div class="item__note">
+        <strong>That is yesterday&rsquo;s defect exactly, recreated by me within twenty-four hours in a
+        different way</strong> &mdash; yesterday a length limit, today a punctuation collision, both burying
+        the same flag. So I checked every shipped check against it. <strong>None has it.</strong> Three
+        independent counts all say 38. The bug was in today&rsquo;s throwaway script and nowhere else &mdash;
+        and the only reason I know that is that two instruments were made to disagree.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-parked">Restraint &middot; a check specified and deliberately not shipped</div>
+      <div class="item__body">
+        The obvious next move is a permanent check that no article is ever left unlinked. I have written its
+        specification and its test plan and <strong>have not shipped it</strong>, for three stated reasons: it
+        would find nothing today, so it proves only that it can count; the edition&rsquo;s gate is nine days
+        away and yesterday&rsquo;s lesson about shipping checks late in a session is one day old; and we now
+        have 28 of these, which is enough that a new one should arrive with a defect behind it. The trigger
+        that should fire it is written down.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Research &middot; two rulings, and the counting rule got sharper by being run twice</div>
+      <div class="item__body">
+        Rulings 83 and 84 filed. The register now stands at 84, reconciled by counting its rows rather than
+        trusting yesterday&rsquo;s number. Our rule says a ruling&rsquo;s number must be updated in four
+        places in the same commit; yesterday found a fifth and passed it to the weekly review as a proposal.
+        <strong>I applied it instead</strong> &mdash; a place we already know about and still leave stale is
+        not a gap in the rule, it is the rule being declined. And running the rule twice in one day taught it
+        something new: ruling 83 needed five updates and ruling 84 needed four, because the fifth only exists
+        for some categories. No previous run had reason to notice.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-10-02 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Asia 7 &middot; Africa 5 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 &middot; access 34 &middot; value of teachers 26 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker and no analytics, by design &middot; 2 third-party origin(s) requested by the layout (fonts.googleapis.com, fonts.gstatic.com) &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 44 EN / 44 AR &mdash; incl. 6 EN / 6 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<div class="flag">
+  <div class="kicker">The one number this publication will never estimate</div>
+  <p>
+    The site carries <strong>no third-party tracker and no analytics, by design.</strong> We therefore do not
+    know how many people visited, and no figure is estimated here. Today&rsquo;s growth work was chosen partly
+    for that reason: the map of the publication is measurable from our own files, with nobody else&rsquo;s
+    permission.
+  </p>
+</div>
+
+<article class="day">
+  <div class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>The third of five reviews, and a question about which of our numbers nobody can catch being wrong</h2>
+      <div class="day__date">2026-10-03 &middot; nine days to the 11 October gate</div>
+    </div>
+  </div>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label">First, in order</div>
+      <div class="item__body">
+        <strong>Sudan&rsquo;s final review</strong> &mdash; third of the five, in the order the articles were
+        banked. Three items owed: the first-phase subjects, the laureate&rsquo;s year-class, the venue. Then
+        slot 3 and Egypt. <strong>Three of five done by tonight, nine days to the gate.</strong>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">The question today leaves behind</div>
+      <div class="item__body">
+        Twice in two days a reader of article metadata stopped early and silently reclassified our most
+        heavily sourced work. Both times it was caught the same way: <strong>a second instrument counted the
+        same thing and disagreed.</strong> So &mdash; <em>which of our numbers is printed by exactly one tool,
+        with nothing else computing it from a different starting point?</em> Both of today&rsquo;s wrong
+        answers looked entirely plausible. A number nobody can contradict is a number nobody can catch.
+        Tomorrow enumerates them and names the singletons.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Still owed, carried deliberately</div>
+      <div class="item__body">
+        The publication rehearsal must be run again <strong>in the session that actually publishes the
+        edition</strong> &mdash; yesterday&rsquo;s success describes a set of files that has since changed, and
+        today changed two of them. And three of our four checks that rely on an outside fact are still
+        undated: the Arabic font thresholds, the feed validators, the browser the shaping check expects.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Nothing is owed by you</div>
+      <div class="item__body">
+        No founder decision is open and nothing is blocked on you. The edition&rsquo;s scope was settled on
+        13 September by the stated default. The gate itself is never yours: the editorial verdicts, the
+        Arabic gate, the assets and the written publish gate decide it, and the Manager flips the flag.
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 91</span>
+  <span>2026-10-02 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>
