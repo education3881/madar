@@ -69,6 +69,33 @@ URL_RE = re.compile(r'^\s+url:\s*"([^"]+)"\s*$', re.M)
 APPROVED_RE = re.compile(r"^approved:\s*(true|false)\s*$", re.M)
 
 
+def frontmatter(text: str) -> str:
+    """The frontmatter BLOCK — the opening fence to the first fence that starts a LINE.
+
+    This line read `text.split("---", 2)[1]` from this file's first commit
+    (2026-09-10) until 2026-10-03, and it was wrong in the way ruling #81 is
+    wrong: it stopped early and it stopped earliest on the most heavily
+    annotated pieces. `---` is not a delimiter in this corpus, it is a
+    SUBSTRING — one source URL contains it
+    (`...schooljaar-2025---2026-vastgesteld`), so the split cut that pair's
+    frontmatter at 3,182 of 4,646 characters, mid-URL, and the sweep then
+    collected 678 of the corpus's 684 source promises. **The URL that broke the
+    parser was the first of the three it stopped checking.** Measured, not
+    reasoned: the three lost per language were the ministry newsletter that
+    contains the hyphens, the PO-Raad 2030 page and the Tweede Kamer motion.
+
+    A fence is a line. Matching it as one costs nothing and is the only reading
+    that is true of YAML. (#81's family, third mechanism in three days: a
+    bounded read on 10-01, a naive split in a scratch script on 10-02, and this
+    — the same split, shipped, in the one content-reading tool that neither
+    gates the build nor is read by qa_census.)
+    """
+    if not text.startswith("---"):
+        return text
+    end = text.find("\n---", 3)
+    return text[3:end if end != -1 else len(text)]
+
+
 def collect(root: str) -> dict[str, dict]:
     """slug+lang -> {url: [(slug, held)]}; returns url -> list of citing pieces."""
     by_url: dict[str, list[tuple[str, bool]]] = {}
@@ -76,9 +103,18 @@ def collect(root: str) -> dict[str, dict]:
         path = os.path.join(root, d)
         for f in sorted(glob.glob(os.path.join(path, "*.md"))):
             text = open(f, encoding="utf-8").read()
-            head = text.split("---", 2)[1] if text.startswith("---") else text
+            head = frontmatter(text)
             m = APPROVED_RE.search(head)
-            held = bool(m and m.group(1) == "false")
+            # content.config.ts: `approved` is z.boolean().default(false), so an
+            # ABSENT flag is HELD. This read `bool(m and ...)` — absent meant
+            # NOT held, the opposite of the schema and of qa_census, which
+            # mirrors it. Latent today because every one of the 88 files carries
+            # the key; it stops being latent the moment a parser cannot reach
+            # it, which is exactly the bug above. A held piece whose
+            # frontmatter contains `---` would have been classified approved and
+            # dropped from `--held-only` — the mode the Edition 05 ledger names
+            # as the LAST step before the flip commit.
+            held = (m.group(1) == "false") if m else True
             slug = os.path.basename(f)[:-3]
             lang = "ar" if d.endswith("-ar") else "en"
             for url in URL_RE.findall(head):
@@ -208,6 +244,10 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--held-only", action="store_true")
     ap.add_argument("--json", dest="json_out", default=None)
+    ap.add_argument("--collect-only", action="store_true",
+                    help="parse the corpus, print the population, touch no "
+                         "network. This is the half of this tool that is cheap, "
+                         "deterministic and safe to gate (ruling #85).")
     args = ap.parse_args()
 
     by_url = collect(args.root)
@@ -217,6 +257,24 @@ def main() -> int:
         return 2
 
     total = len(by_url)
+
+    # ---- the collection half, separable from the probing half (ruling #85) ----
+    # This tool is correctly out of CI because PROBING third-party hosts must
+    # never red our build. The exemption was granted to the whole tool, and so
+    # its PARSER — which touches no network, costs milliseconds and reads the
+    # same frontmatter five gating assertions read — went un-gated and
+    # un-censused for 23 days, which is where ruling #81's family was living.
+    # A tool exempted for the cost of its ACTION is not exempted for the cost
+    # of its INPUT. qa_census reads this line.
+    if args.collect_only:
+        citations = sum(len(v) for v in by_url.values())
+        held_urls = sum(1 for u in by_url if any(h for _, h in by_url[u]))
+        files = sum(len(glob.glob(os.path.join(args.root, d, "*.md")))
+                    for d in CONTENT_DIRS)
+        print("qa_sources_alive: collect-only — %d citation(s), %d distinct URL(s), "
+              "%d cited by a held piece, %d content file(s); no network touched."
+              % (citations, total, held_urls, files))
+        return 0
     urls = sorted(by_url)
     if args.held_only:
         urls = [u for u in urls if any(h for _, h in by_url[u])]

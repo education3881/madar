@@ -246,6 +246,45 @@ Row 2's `related:` rail names **row 1 (Zambia)**, and **row 3's rail names BOTH 
 
 ### Confirmation reads owed at the gate (the wave cannot flip without them)
 
+> **SUDAN'S IS CLOSED — 2026-10-03**, the third of the five
+> (`verdicts/2026-10-03-ed05-sudan-confirmation-read.md`). All three owed items disposed, and the
+> 09-10 verdict's own flagged debt — **four registers riding on one channel** — settled register by
+> register: **three discharged, one declined and said so in the annotation.** **Two remain: slot 3 and
+> Egypt.** Body prose touched in **one language only, by three words**, for the one reason that
+> justifies it — the other language was already right. EN 1,863 → **1,866**, AR **1,607** unchanged,
+> cap ≤2,300 with no waiver, numeral multiset **37/37** with zero one-sided figures either way.
+>
+> * **#27, register by register.** *Brown et al.* — the publisher answers **403** to every client here,
+>   walled not dead (#70), so the abstract was re-read **verbatim on RePEc/IDEAS** (15(3), 320–341,
+>   2023), which confirms our annotation clause for clause. **And a third route produced a warning
+>   rather than a correction:** a literature-review summary describes the self-esteem result as
+>   *"improved in comparison villages but not CWTL villages"* against the paper's own *"significant
+>   negative intervention effect"* — a different claim, which taken as a correction would have replaced
+>   a true sentence with a false one. **A second channel is only a second channel if it reproduces the
+>   register rather than interpreting it (#43).** *The Ukraine handover* — discharged independently by
+>   **Bond**, 9 Sep 2026, quoted. *The New horizons facilitator register* — discharged across the
+>   owner's **two editions**, four days apart, agreeing on every figure. *War Child Annual Report 2025*
+>   — **NOT discharged**: the Alliance's own edition carries neither the 125,000 nor the 6,600, so the
+>   figures stand on one channel attested on two dates, and both annotations now say so. Three of four
+>   is the honest count.
+> * **NEW DEFECT 1 — the two editions disagreed about a named institution, and the ARABIC was right.**
+>   The owner writes *"the National Council for Literacy **and Adult Education**"*; the Arabic body and
+>   annotation carry it in full, the English carried *"the National Council for Literacy"*. **The same
+>   class this piece already has a guardrail for** — *BRIDGES, not "BRIDGE"* (#40), recorded as carried
+>   in the 09-10 verdict. Fixed in English only. **The finding under it: Madār composes the Arabic
+>   rather than translating it, so the Arabic Content Creator read the same register independently —
+>   which makes the second language a free second channel on our own annotations, and nothing we own
+>   compares them.** `qa_pair_frontmatter` passed correctly: it does not compare composed prose, because
+>   composed prose is supposed to differ. **Yesterday's #84 found parity blind to an error both
+>   languages shared; today's finding is parity blind to a disagreement** — two opposite blind spots in
+>   one gate, both for #84's reason (*a reciprocity check has no arrow*).
+> * **NEW DEFECT 2 — the handover register moved, and its annotation was the only undated one of ten.**
+>   `warchild.net/news/…` now redirects to `/latest/article/…`; moved to the living address (#41). The
+>   register publishes **18 May 2026** and the annotation carried no date and no *read in served text*
+>   clause, alone among the piece's ten in both languages. Both now carry date, read-date and the second
+>   channel. **Second confirmation read running where the one URL that redirected carried the day's
+>   citation finding.**
+
 > **SIERRA LEONE'S IS CLOSED — 2026-10-02**, the second of the five
 > (`verdicts/2026-10-02-ed05-sierra-leone-confirmation-read.md`). All three owed items disposed, **one
 > new defect found and fixed in-run in both languages**, and **no body prose touched in either
@@ -315,7 +354,7 @@ Row 2's `related:` rail names **row 1 (Zambia)**, and **row 3's rail names BOTH 
 |---|---|---|
 | ~~Zambia~~ | 09-08 FAIL-1 | **CLOSED 2026-10-01** — all three items disposed, two new defects fixed in-run |
 | ~~Sierra Leone~~ | 09-09 FAIL-2 | **CLOSED 2026-10-02** — all three owed items disposed, one new defect fixed in-run in both languages, one carried upgrade left open on our own client |
-| Sudan | 09-10 FAIL-3 | first-phase subjects, laureate year-class, the venue; **four registers rode on one channel only** (Brown et al., both War Child pages, the *New horizons* AR edition) |
+| ~~Sudan~~ | 09-10 FAIL-3 | **CLOSED 2026-10-03** — all three owed items disposed; **#27's channel debt discharged on three of four registers and declined on the fourth, in the annotation**; two new defects fixed in-run. EN +3 words (1,866), AR unchanged (1,607), multiset 37/37 |
 
 ### THE FLIP, REHEARSED — 2026-10-01, and it would have gone RED
 
@@ -374,6 +413,35 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-03** — **THE THIRD CONFIRMATION READ IS CLOSED, AND THE ARABIC EDITION CAUGHT THE ENGLISH
+  ONE.** State verified against git, the Actions API and the live origin: tree clean, no dark day,
+  **HEAD == origin/main** at `62ca8a9`, which deployed as **`36998580484`**, `workflow_dispatch`,
+  **success**, 103s, all three jobs green — and `qa_live_drift` CLEAN against the origin, 120 URLs, 0
+  drift. **Sudan's confirmation read closed** (see above), third of five: three owed items disposed and
+  the 09-10 verdict's **#27 channel debt settled register by register — three discharged, one declined
+  and annotated as declined**, because three of four is the honest count. **Two new defects.** The first
+  is the day's editorial finding: the two editions **disagreed about the name of a named institution and
+  the ARABIC was right** — *"the National Council for Literacy and Adult Education"*, carried in full in
+  Arabic, short by three words in English, in the body and the annotation, through four gates since 01
+  September; the same class this piece already carries a guardrail for (#40, *BRIDGES not "BRIDGE"*).
+  **Because Madār composes the Arabic rather than translating it, the Arabic Content Creator read the
+  same register independently — so the second language is a free second channel on our own annotations,
+  and nothing we own compares them.** `qa_pair_frontmatter` passed correctly: it does not compare
+  composed prose, because composed prose is supposed to differ. **#84 found parity blind to an error both
+  languages shared; this is parity blind to a disagreement.** The second defect: the handover register had
+  moved (`/news/` → `/latest/article/`) and its annotation was **the only undated one of the piece's
+  ten** in both languages. EN 1,863 → **1,866**, AR **1,607** unchanged, cap ≤2,300 no waiver, numeral
+  multiset **37/37 symmetric**. **QA: ruling #85** from the 10-02 forward question, executed before
+  anything new was added — `qa_sources_alive` was collecting **678 of 684** source promises for 23 days
+  on #81's defect in a shipped file, and the cross-check rather than the parser is the finding: two
+  instruments printed 684 and 678 and **nothing compared them**, because one never runs where comparisons
+  happen. Fixed, split at the seam, and `qa_census` gains a fifteenth instrument. **Growth: the wave's
+  first complete source-promise sweep, eight days early** — 59 held-cited URLs, **53 ok, 4 timeout, 2
+  walled, zero 404s**; the four timeouts are all `parliament.gov.zm`, this operation's **sixth** distinct
+  reading of that host in four weeks, and **not one published sentence has gone false** because 10-01
+  wrote its twelve annotations as dated observations (**ruling #80 paying, 48 hours later**). Row 1 is
+  deliberately **not edited** — nothing to fix is the finding. One ruling filed, **#85**; **five count
+  homes moved**. 28 assertions, 25 gating. **Eight days to the 10-11 gate.**
 - **2026-10-02** — **THE SECOND CONFIRMATION READ IS CLOSED, AND THE TWO ITEMS YESTERDAY LEFT OWED
   BOTH CAME BACK GREEN.** State verified against git, the Actions API and the live origin: tree clean,
   no dark day, **HEAD == origin/main** at `329afff`. **The two items the 10-01 addendum owed this run,

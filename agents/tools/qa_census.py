@@ -75,6 +75,31 @@ is each instrument's job and each one proves it separately. The census checks
 one thing only: that the populations they report are the populations they mean,
 and that those populations stand in the stated relations to one another.
 
+ADDENDUM 2026-10-03 — the fifteenth instrument, and why it took 23 days
+-----------------------------------------------------------------------
+Row 15 (qa_sources_alive's `--collect-only`) was added answering 10-02's
+forward question: *which assertion derives a population count no other
+assertion can contradict?* The enumeration split the toolkit exactly in half —
+this census read **14 of the 28 tools** — and the one uncovered tool that reads
+`web/src/content/**` was carrying ruling #81's defect in a shipped file,
+collecting **678 of the corpus's 684** source promises since 2026-09-10.
+
+The part worth keeping is not the fix, it is why this file could not see it.
+**qa_pair_frontmatter printed 684 and qa_sources_alive printed 678** — two
+instruments computing one population and disagreeing by six, for 23 days, in a
+repository whose answer to exactly that risk is this file. The disagreement was
+never compared because one of the two **never ran where comparisons happen.**
+This census was built on the finding that *equal cardinalities are not an
+agreement*; here the cardinalities were **unequal**, which is a louder signal
+and a freely available one, and it sat outside `ROWS`. A census is scoped to
+what it enumerates (ruling #85).
+
+  CONTROL   today's real 121-page build — CLEAN, 22 numbers from 15 instruments.
+  BITE      the 23-day-old `text.split("---", 2)[1]` restored VERBATIM in
+            qa_sources_alive — exit 1, naming it: *printed 678 for 'source
+            citations'; the population it means has 684*. The historical bite
+            (#82), on the defect this row exists for.
+
 It does not cover the two ELEMENT censuses (qa_arabic_shaping's Arabic-bearing
 elements, qa_arabic_joining's measured runs). Their population is elements, not
 pages, they both need a headless browser, and running Chrome twice more in
@@ -218,11 +243,28 @@ def populations(dist: Path, content: Path):
     approved_slugs = {s.split("/", 1)[1] for s in approved}
     held_slugs = {s.split("/", 1)[1] for s in held}
 
+    # The outbound-promise population, added 2026-10-03 with ruling #85. Counted
+    # as CITATIONS and not distinct URLs on purpose: a URL cited by both
+    # languages is two promises to two readers, and the EN/AR symmetry of a
+    # correction is exactly what the number has to be able to show (it is how
+    # 10-02's URL fix was confirmed to have landed on both sides). Derived here
+    # with the census's own block parse, so the tool that reports it and the
+    # tool that checks it share no code.
+    source_citations = 0
+    for d in ("articles", "articles-ar"):
+        for f in sorted((content / d).glob("*.md")):
+            text = f.read_text(encoding="utf-8")
+            end = text.find("\n---", 3) if text.startswith("---") else -1
+            fm = text[3:end] if end != -1 else text
+            source_citations += len(
+                re.findall(r'^\s+url:\s*"[^"]+"\s*$', fm, re.M))
+
     return {
         "served": served, "sitemap": sitemap, "ar": ar, "en": en,
         "articles": articles, "valence": valence,
         "approved": approved, "held": held,
         "approved_slugs": approved_slugs, "held_slugs": held_slugs,
+        "source_citations": source_citations,
     }
 
 
@@ -325,6 +367,24 @@ ROWS = [
          lambda P: len(P["articles"]),
          "article pages in dist — every one must carry a dateline that agrees "
          "with its own frontmatter, which is why this equals qa_body_links' set"),
+    ]),
+    # Assertion 26's COLLECTION half, added 2026-10-03 with ruling #85. The
+    # probing half is correctly out of CI — a UNESCO outage must not red our
+    # build — and for 23 days that exemption covered its PARSER too, which is
+    # where ruling #81's family was found living on 10-03: a naive `---` split
+    # that collected 678 of 684 promises and lost the three that follow the one
+    # URL containing `---`. `--collect-only` touches no network (proved by
+    # running it with socket.connect, create_connection and getaddrinfo
+    # replaced by raisers) and is therefore safe here, where it is cheap.
+    # A tool exempted for the cost of its ACTION is not exempted for the cost
+    # of its INPUT.
+    ("qa_sources_alive", ["qa_sources_alive.py", "--collect-only", "--root", "."], [
+        ("source citations", r"collect-only — (\d+) citation\(s\)",
+         lambda P: P["source_citations"],
+         "every `url:` line in every piece's sources[], held INCLUDED, counted "
+         "as citations and not distinct URLs — a URL cited in both languages is "
+         "two promises, and the symmetry of a correction is what this number "
+         "must be able to show"),
     ]),
 ]
 
