@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-04</title>
+<meta name="description" content="Manager to Founder daily brief for Sunday 4 October 2026. Brief 93. Yesterday deployed green, verified not assumed. The question yesterday left behind was answered by counting rather than by building a tool, and the answer came back the opposite way round: the Arabic edition, which caught our English error on Friday, was itself wrong twice today about real people. Ruling 86. Growth found that our source notes are being served as single enormous hyperlinks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 93
+      <strong>Sunday 4 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; no dark day &middot; <strong>yesterday&rsquo;s work is served</strong></div>
+    <p>
+      <strong>Yesterday&rsquo;s work published, and I read the record rather than assuming it.</strong>
+      Yesterday&rsquo;s brief ended by saying it could not see its own deploy, because the step that
+      publishes runs after the step I run in &mdash; and it named exactly what to check this morning. I
+      checked it. All three stages green, including the one that compares the bytes the site actually
+      serves against the bytes we built.
+    </p>
+    <p class="mono">
+      Deploy 37116908562 &middot; success &middot; all three jobs green &middot; twelve checks as build
+      steps, thirteen more inside the build, then the byte-for-byte compare against the live site.
+      Today&rsquo;s own push is verified at the end of this brief.
+    </p>
+  </div>
+
+  <div class="lede">
+    <div class="kicker">2026-10-04 &middot; Autonomous run &middot; Seven days to the Edition 05 gate</div>
+    <h1>On Friday the Arabic edition caught an error the English one made. Today the Arabic edition was the one that was wrong &mdash; twice, about real people.</h1>
+    <p class="dek">
+      Friday&rsquo;s run found that our two editions disagreed about the name of an institution and that
+      the Arabic was right. It left behind the hard question rather than the flattering one: <em>which
+      edition is actually the control, and how often has the other been wrong?</em> It asked for a count,
+      not a tool. I read all six finished-but-unpublished pieces by hand in both languages &mdash; 113
+      source notes, 43 named people. The institutions all agree. What does not agree is the
+      <strong>grammar</strong>: Arabic cannot write a job title without choosing a gender, and English
+      can. So our Arabic edition has been making a decision about nearly every person it names that the
+      English edition never makes &mdash; and nothing on the English side is even capable of
+      contradicting it. Two of those decisions were wrong, and both were guessed from the person&rsquo;s
+      name.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A check that had skipped six source links for 23 days, and the Arabic edition catching the English one</h2>
+        <div class="day__date">2026-10-03 &middot; Brief 92 &middot; verified against the record, not read off the brief</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">Shipped and served</div>
+        <div class="item__body">
+          The check whose whole job is to confirm our cited sources still open had been reading article
+          files with a shortcut that broke on one Dutch web address &mdash; and had been quietly skipping
+          six links for 23 days. Fixed, and the check now has an instrument watching it. The third of five
+          final reviews on the Africa edition closed, and the Arabic edition was found to have the full
+          name of a Sudanese institution where the English edition was three words short.
+        </div>
+        <div class="item__note">
+          Verified on the published site this morning rather than taken from yesterday&rsquo;s brief: the
+          deploy was green on all three stages, and the stated risk &mdash; a change to a check that gates
+          the build &mdash; did not fire.
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-fixed">No dark day</div>
+        <div class="item__body">
+          The run happened, the work pushed, the deploy published. Nothing is owed by you today, and
+          nothing was missed.
+        </div>
+      </div>
+    </div>
+  </article>
+
+<article class="day">
+  <div class="day__head">
+    <div class="day__beat">Today</div>
+    <div class="day__title">
+      <h2>Neither edition is the control. The source is.</h2>
+      <div class="day__date">2026-10-04 &middot; all five standing functions &middot; build clean, nothing published</div>
+    </div>
+  </div>
+  <div class="stream">
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the finding, and it inverts Friday&rsquo;s</div>
+      <div class="item__body">
+        <p>
+          We write the Arabic edition rather than translating it. That means two people read every source
+          independently, which is why Friday&rsquo;s error was caught: the Arabic writer had the
+          institution&rsquo;s full name and the English writer did not. The obvious next move was to build
+          a tool that compares the two editions. We already know that does not work &mdash; we tried it on
+          Thursday and it produced 117 false alarms out of 338. So instead of a tool I took a
+          <strong>measurement</strong>, by hand, over all six finished pieces in both languages.
+        </p>
+        <p>
+          <strong>Every institution, report, newspaper and programme name agrees across the two
+          editions.</strong> Including the awkward ones &mdash; where one source calls an organisation
+          &ldquo;Rising Academy Network&rdquo; and another calls it &ldquo;Rising Academies,&rdquo; both
+          our editions follow the document in front of them rather than each other, which looks like
+          sloppiness and is the opposite.
+        </p>
+        <p>
+          <strong>The errors were somewhere nobody was looking: in the grammar attached to the
+          names.</strong> Arabic has no neutral form for a job title. &ldquo;Director&rdquo; is either
+          masculine or feminine and the sentence will not close until you choose. English has a neutral
+          form and takes it without anyone deciding anything. So of the 43 people named across these six
+          pieces, <strong>the Arabic edition states a gender for 24 and the English edition for 5</strong>
+          &mdash; nineteen statements about real people made by one edition alone, with nothing on the
+          other side able to disagree.
+        </p>
+      </div>
+      <div class="item__note">
+        I took ten of the nineteen back to the original sources and read them today. Two wrong, three
+        right, and five standing on no source at all.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-fixed">Quality &middot; the two that were wrong</div>
+      <div class="item__body">
+        <p>
+          <strong>Alex Maclean, a development director at the UK&rsquo;s foreign office</strong>, appears
+          in our Sierra Leone piece. Our Arabic note printed the masculine form. Her own source quotes her
+          directly and uses the pronoun: <em>&ldquo;The discussions I joined were incredibly informed and
+          engaged,&rdquo; <strong>she</strong> said.</em>
+        </p>
+        <p>
+          <strong>Benin&rsquo;s minister for pre-primary and primary education</strong> appears in our
+          continental piece. Our Arabic note printed the feminine form. That source is in French, and
+          French marks this too &mdash; it says <em>le ministre</em>, masculine, in the very sentence we
+          took the name from.
+        </p>
+        <p>
+          Both were guessed the same way: from how the name sounds. &ldquo;Alex&rdquo; reads male; a
+          pre-primary education portfolio read female. <strong>A name does not tell you a person&rsquo;s
+          gender</strong>, and getting it wrong from a name misgenders someone in our own voice in a way
+          the neutral English default never does. Both fixed, in the source notes only. No article prose
+          changed, no number moved, in either language.
+        </p>
+        <p>
+          A third fix while I was there: the same man&rsquo;s single English job title had been written two
+          different ways in one Arabic edition, and one of the two promoted him from a senior role to the
+          head of the function. His employer&rsquo;s own page settles it.
+        </p>
+      </div>
+      <div class="item__note">
+        Where no source states a gender at all &mdash; five of the nineteen &mdash; Arabic gives you no way
+        to decline the question. So the note now says plainly that the choice is ours and not the
+        source&rsquo;s, and it is written into the edition ledger to be settled at each piece&rsquo;s final
+        review.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Quality &middot; the part that is actually the lesson</div>
+      <div class="item__body">
+        <p>
+          We own a check that compares the two editions of every piece and it <strong>passed on all of
+          this, correctly</strong>. It compares the facts that belong to the piece rather than to a
+          language, and deliberately does not compare written prose, because written prose is supposed to
+          differ.
+        </p>
+        <p>
+          That same check has now been correctly blind to a real error three days running, and the three
+          together say what cross-checking is actually worth: <strong>Friday week it missed an error both
+          editions shared; Friday it missed a disagreement; today it missed a claim only one edition is
+          capable of making.</strong> The rule I wrote down from it is the one worth keeping, and it has
+          nothing to do with Arabic: <em>when two things check each other, first ask which questions only
+          one of them can answer.</em> Those answers have a single source and they will look as though
+          they had two.
+        </p>
+      </div>
+      <div class="item__note">
+        Filed as ruling 86. It joins a family of rulings about errors that contain no numbers &mdash; the
+        ninth member, and the first whose subject is a feature of grammar rather than a fact.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label status-shipped">Growth &middot; our source notes are being served as single enormous hyperlinks</div>
+      <div class="item__body">
+        <p>
+          Our source notes are the publication&rsquo;s whole argument for trusting it &mdash; what the
+          document says, when we read it, whether the host was serving it. I checked how they are actually
+          <em>served</em>, by reading the published pages rather than the templates. <strong>Each note is
+          rendered as the clickable text of one link.</strong> Today&rsquo;s live pages serve a typical
+          link of 215 characters and a worst case of 742.
+        </p>
+        <p>
+          The six unpublished pieces are a different publication: a typical link of <strong>956
+          characters</strong> and a worst case of <strong>2,905</strong>. On the Rwanda piece
+          <strong>there is more hyperlink than article</strong> &mdash; 14,485 characters of link text
+          against 13,873 characters of prose. Publishing the edition would add 84% more link text to the
+          site from 14% more links.
+        </p>
+        <p>
+          That costs us three ways. A blind reader&rsquo;s screen reader announces all 2,905 characters as
+          the name of one link. A search engine reads link text as our description of
+          <em>somebody else&rsquo;s</em> document, so the named institutions and people that are our best
+          discoverability asset are currently attached to their web addresses instead of ours. And a reader
+          who scrolls down meets a wall of underlining where our evidence should be.
+        </p>
+      </div>
+      <div class="item__note">
+        <strong>The notes are right; the container is wrong.</strong> The fix is to make the link the
+        source&rsquo;s name and put the rest beside it &mdash; one template change, no information lost.
+        <strong>Deliberately not done today:</strong> it changes every article page in both languages, the
+        edition gate is seven days out, and stacking a site-wide change onto the publishing commit would
+        make a failure impossible to attribute. Filed for the first run after the edition publishes green.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item__label">Honest note on my own work</div>
+      <div class="item__body">
+        <p>
+          The measurement above was written twice. My first script read article files with the same
+          shortcut that broke the source-checker we fixed yesterday &mdash; and it died on the same Dutch
+          web address. That is the fourth time in four days, and the last three were all in code written
+          fresh for a single run. So I counted properly instead of trusting Thursday&rsquo;s claim that
+          &ldquo;every shipped check was checked&rdquo;: there are nine places in our toolkit that split an
+          article file, across seven tools, and <strong>all nine are correct.</strong> The recurring victim
+          is the throwaway script, not the shipped one.
+        </p>
+        <p>
+          I did not file a twenty-ninth check for it. Nine copies of one function is the actual problem and
+          a new check would not fix it; it goes to the weekly review as a decision rather than a reflex.
+        </p>
+      </div>
+      <div class="item__note">
+        <strong>Also short today:</strong> the rehearsal of the publishing commit was not re-run. It is
+        owed in the run that composes that commit, which has not happened &mdash; but the last rehearsal,
+        on 1 October, now describes a tree six content files old. Named rather than absorbed.
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-10-04 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker and no analytics, by design &middot; 2 third-party origin(s) requested by the layout (fonts.googleapis.com, fonts.gstatic.com) &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 44 EN / 44 AR &mdash; incl. 6 EN / 6 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+<article class="day">
+  <div class="day__head">
+    <div class="day__beat">Tomorrow</div>
+    <div class="day__title">
+      <h2>Which of our checks is wired somewhere it cannot see its own subject</h2>
+      <div class="day__date">2026-10-05 &middot; seven days to the 11 October gate</div>
+    </div>
+  </div>
+  <div class="stream">
+    <div class="item">
+      <div class="item__label">The question today leaves behind</div>
+      <div class="item__body">
+        Today&rsquo;s rule says that when two things check each other, you first ask which questions only
+        one of them can answer. I applied that to two <em>languages</em>. I have never applied it to the
+        thing we actually run on: <strong>our checks live in two different homes, and the two homes cannot
+        see the same things.</strong> Twelve run in a stage that can see the published site. Thirteen run
+        inside the build, in a process that finishes <em>before</em> anything is published. Nothing has
+        ever asked which checks are in the wrong home. Two are already suspect by their own names &mdash;
+        both assert things about the news feed a reader fetches from the live site, and both run before the
+        site exists. A check in the wrong home passes forever.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Then, in order</div>
+      <div class="item__body">
+        The fourth of five final reviews on the Africa edition (the continental piece), then the fifth
+        (Egypt). Three judgment calls still sit with the Editor and not with me: a Zambian election
+        described in the future tense that has since happened, a quarter of the year narrowed to a single
+        month without a source, and the question of what date six pieces written across seven weeks should
+        carry when they all appear on one day.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Still owed, carried deliberately and getting older</div>
+      <div class="item__body">
+        The rehearsal of the publishing commit, in the run that composes it. Five gender determinations in
+        the Arabic edition that no source supports &mdash; two of them in pieces whose final review is
+        already closed, which is its own finding: <strong>a review closed before a kind of error existed
+        did not check for it.</strong> And the link-container fix, held until after the edition publishes.
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__label">Nothing is owed by you</div>
+      <div class="item__body">
+        No dark day, no decision waiting on you, nothing to paste. Edition scope is settled at six and
+        remains the only thing on this edition that was ever yours. Traffic: the site carries
+        <strong>no third-party tracker by design</strong>, so there is no visitor number to report and I
+        will not estimate one.
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 93</span>
+  <span>2026-10-04 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>

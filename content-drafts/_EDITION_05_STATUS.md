@@ -413,6 +413,70 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-04** — **THE SECOND LANGUAGE WAS MEASURED AS A CHANNEL, AND TODAY IT WAS THE WRONG ONE.**
+  State verified against git and the Actions API: tree clean, no dark day, **HEAD == origin/main** at
+  `05203be`, which deployed as **`37116908562`**, `workflow_dispatch`, **success**, all three jobs green
+  including the `verify` job's byte-compare — which closes the first item 10-03 owed to today and pays the
+  stakes that run named, since it shipped a change to a gating assertion and the named risk
+  (`--collect-only` resolving `--root` under CI) did not fire.
+  **The 10-03 forward question executed before anything new was added**, as the RUNBOOK requires, and it
+  asked for a count rather than a tool because the obvious tool had already failed. **Cross-edition
+  named-entity sweep over all six held pairs** (`verdicts/2026-10-04-ed05-cross-edition-named-entity-sweep.md`):
+  56 EN and 57 AR annotations, 684 source promises, 338 shared, **43 named humans**. **Institutions and
+  publications CLEAN** in both editions, including the hard cases. **The errors are in the grammar
+  attached to them.** Arabic has no neutral agreement for a role noun and English has one, so the Arabic
+  edition gendered **24** of the 43 named humans where the English edition gendered **5** — **19
+  determinations made by one edition alone, about real people, with nothing on the other side capable of
+  disagreeing.** Ten were taken back to their registers in served text: **2 wrong, 3 right, 5 standing on
+  no register at all.**
+  **Two defects fixed in-run, both Arabic, both annotation-only, no body prose and no numeral moved in
+  either language.** (1) **Sierra Leone source 6** printed Alex Maclean, FCDO Development Director, as
+  **masculine**; the register quotes her and uses the pronoun — *"The discussions I joined were incredibly
+  informed and engaged," **she** said."* (2) **Slot 3 source 8** printed Benin's minister of maternal and
+  primary education as **feminine**; the register is French and marks it — *« le directeur de cabinet du
+  **ministre** béninois des enseignements maternel et primaire »* — **masculine, one clause from the name
+  we took.** Both were read off how the name sounds. (3) A third fix: the same human's one English title
+  rendered two ways in one Arabic edition, one of them claiming the headship of a function rather than a
+  grade in it; the register settles it and the two annotations are harmonised. (4) A free attribution
+  sharpening carried into **both** editions for parity: the last-quarter-2026 publication claim is
+  attributed by the register to **Avodagbe by name**, not to the newspaper generically — which is the
+  register authority **ledger Item B** rests on, making the Editor's call on it cheaper rather than
+  different. **Ruling #86**, ninth member of the non-numeric family and the first whose unit is a feature
+  of grammar; five counts moved at the point of filing, and the count caught Section 1's rows 80 and 81
+  filed out of order the previous day — *an out-of-order row is invisible to a range check and visible
+  only to a count.*
+  **The direction is the whole finding.** Yesterday the Arabic caught the English short by three words;
+  today the Arabic was wrong twice and the English was silently right twice — **not because it was
+  careful, but because English let it say nothing.** So neither edition is the control; the register is.
+  `qa_pair_frontmatter` passed on all of it, **correctly**, for the third consecutive day of being blind
+  to a real defect: 10-02 blind to an error both editions shared, 10-03 blind to a disagreement, today
+  blind to a claim only one edition is capable of making. Parity is a floor and was never a verdict.
+  **And the awkward part, stated rather than smoothed: three of these pieces have confirmation reads
+  already CLOSED** — Zambia 10-01, Sierra Leone 10-02, Sudan 10-03, each signed off before this class
+  existed. **A confirmation read closed before a defect class existed did not check for it.** The reads
+  are not re-opened wholesale against a 10-11 gate; this one class is re-opened on them and the five
+  unsourced determinations are tracked below. Sierra Leone's two fixes landed today inside a read that
+  closed two days ago, which is the evidence for the statement rather than a counter-example to it.
+  **Growth:** the `sources[]` annotation is rendered as the link text of a single `<a>`, proved by reading
+  `dist` — 571 rendered anchors matching the 571 published annotations character for character. Held
+  median **956 ch** against a published median of 215, max **2,905**, and **the flip adds 84% more anchor
+  text from 14% more anchors**; on the Rwanda pair there is more link text than article prose. Fix filed
+  for the Web Developer and **deliberately not applied before the flip** — it changes every article page
+  in both languages and would make a red flip deploy impossible to attribute.
+  **Still owed and named:** slot 3's and Egypt's confirmation reads (4th and 5th of five), Items A/B/C
+  with the Editor, and the **flip rehearsal in the run that composes the flip commit** — 10-01's green is
+  now six content files old. **Seven days to the 10-11 gate target.**
+
+  **The five unsourced gender determinations, carried (ruling #86 binding item 4):**
+
+  | Named human | AR | Register | Where it is owed |
+  |---|---|---|---|
+  | Edward Kpakra, Chief Education Officer | masculine | no pronoun | **recorded as unsourced in the annotation 10-04** |
+  | Saima Sohail Malik, Senior Education Specialist | feminine | byline only | Rwanda's confirmation read |
+  | Leon Mugenzi, Head of Teacher Development | masculine | byline only | Rwanda's confirmation read |
+  | Kate Radford, CWTL Programme Director | feminine | no pronoun | Sudan — read CLOSED 10-03, re-opened on this class only |
+  | Dr. Aiman Badri, Ahfad University for Women | masculine | no pronoun; two routes read 10-04 name no such person at AUW | Sudan — same |
+
 - **2026-10-03** — **THE THIRD CONFIRMATION READ IS CLOSED, AND THE ARABIC EDITION CAUGHT THE ENGLISH
   ONE.** State verified against git, the Actions API and the live origin: tree clean, no dark day,
   **HEAD == origin/main** at `62ca8a9`, which deployed as **`36998580484`**, `workflow_dispatch`,
