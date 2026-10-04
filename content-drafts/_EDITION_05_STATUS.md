@@ -35,7 +35,130 @@ artefact. Recorded so nobody at the flip goes looking for a file that was never 
 | 5 | `2026-09-19-egypt-baccalaureate-published-first` — *The doors were published before the exams existed* / *نُشِرت الأبوابُ قبل أن توجد الامتحانات* | North | 08-17 (recon 7) + re-verified 09-16 · draft-blocker 1 ruled 09-18 (option 1) · **blockers 3 and 4 CLOSED 09-19 at the draft** | **09-19** — 1,894 words (cap ≤2,300), title 49/100, dek 192/200, measured at compose | **09-21 · gate PASS** — title 38/100, dek 149/200; **numeral multiset 40/40 after the 09-23 edits, zero one-sided figures in either direction — the edition's only clean-both-ways pair** | **09-22 RETURNED-5-NOTES → all five closed in-run in both languages → PASS, BANKED** | **09-23 FAIL-3-ITEMS → all three closed in-run in both languages; item 4 (source 1 unreachable) OPEN and first at the confirmation read** | ✓ (09-19) | ✓ (09-19) | held |
 | 6 | `2026-09-27-rwanda-teacher-certification` — *Rwanda counted the teachers it had not trained, twice* | East | **COMMISSIONED 09-25** (`briefs/2026-09-25-rwanda-teacher-certification-brief.md`) — the A2→A1 instrument hunted to a first-party register on **eight routes and not found** (`recon/2026-09-25-ed05-rwanda-a2-a1-instrument-hunt.md`); it may not carry the ending, and the **A1 label itself is press-supplied** — MINEDUC's own 10 Aug register names no tier. Prior: 08-18 (recon 8) + **re-verified 09-24 · PROCEED** — denominator CLOSED (79,224 pre-primary+primary, Yearbook 2023/24) and the debt now counted in the ministry's own voice (~27,322 untrained); **recon §3/§5 AMENDED — the clock moved under its own drafting instruction**; one NEW blocker (the A2→A1 five-year upgrade, reported speech only, #43). **AMENDED 2026-09-26** (`verdicts/2026-09-26-ed05-rwanda-commission-amendment.md`, on `recon/2026-09-26-ed05-rwanda-yearbook-2024-25-supersedes.md`) — the **2024/25 Yearbook exists** and has been on MINEDUC's own listing since **21 April 2026**; the 09-24 entry recorded it as non-existent *and supplied a cause* (**ruling #69**). Register of record moves to 2024/25: workforce **84,763**, untrained **27,409** (5,692 pre-primary 44.2% + 21,717 primary 30.2%), trained primary 46,166→50,162 — every figure confirmed twice, trained+untrained closing exactly on the totals in both years, and the 09-24 read of 2023/24 independently reproduced by the newer register's own prior-year column. **The commission's spine verb *discharged most of that debt* is STRUCK**: the untrained stock **rose** 27,322→27,409 while the 24,000 was being certified, the ministry's own word is *“marginally”* and its own attribution is *“newly recruited primary school teachers”* — a **flow** against a **stock** (**ruling #68**), seam now **five** definitions deep. Guardrail A **refined**: the A2/A1/A0 labels are MINEDUC's own (salary communiqué, 01 Aug 2022, read in served text — 68,207 A2 / 12,214 A1 / 17,547 A0, and the recon's before/after salary pairs are NOT in it and do not ship); only the **A1 outcome of the five-year TTC and the upgrade window** stay with The New Times. Ending unchanged. **BLOCKER 3 CLOSED 2026-09-27** — the QBE progress note is dated **05 November 2025** on MINEDUC's own reverse-chronological news index at `/updates/news-2` (page 3 of 35), the route the 08-18 and 09-24 recons both named and neither reached because `/news` 404s; the pairing is proved on a control inside the same list, and the **article page still serves no date of its own**, so the annotation says the date is the index's. **The A2→A1 absence is UPGRADED from a hunt to an enumeration** — all four MINEDUC channels enumerated 09-27: News carries **nothing after 10 August 2026** (35 pages, back to 2018, so no release for the 20 August ceremony and none for the window), Speeches ends Dec 2024, Press releases Nov 2024, Announcements Jan 2026. Ending and Guardrail A unchanged and better supported. **NEW, and it touches every MINEDUC citation: the host's TLS certificate expired 23 Sep 2026** while it goes on serving every document at 200 — six of the draft's eight registers are on it (**ruling #70**); every annotation states the expiry and that the document is served. **Slug moved `2026-09-26-` → `2026-09-27-`**, Editor's confirmation sought at the pair verdict: the amendment said *slug unchanged* on the assumption of a 09-26 draft the draft-blocker displaced, and a dateline is a claim while a slug is an identifier (#46 corollary 2, the edition's fourth instance). (`recon/2026-09-27-ed05-rwanda-mineduc-channel-enumeration.md`) | **09-27** — 2,300 words (cap ≤2,300, no waiver), title 53/100, dek 199/200, **all three measured at compose**; hand-off with the `annotation == sentence` table and the five-definition seam table at `content-drafts/2026-09-27-ed05-rwanda-draft-handoff.md` | **09-28 · gate PASS** (`verdicts/2026-09-28-rwanda-teacher-certification-ar-gate.md`) — title 51/100, dek 194/200, both measured at compose and both under cap on first composition; **numeral multiset 110/110, zero one-sided figures in either direction — the edition's second clean-both-ways pair**. **The first pair in this publication whose eight registers are ALL English**, which forced a translation-policy decision the other five never faced (**ruling #72**): the load-bearing hedges are carried in the register's own English and glossed in Arabic, and the treatment is applied to **every** voice including the teacher's, because a selective policy would have printed a voice hierarchy into the typography of the very section that names it. Named humans: **كلوديت إيريري** confirmed in served Arabic text (Al-Sharq, 08 Mar 2025, opened and read, not taken from a search summary — #41); **بيلاجي أبايِكوندا** by the Kinyarwanda routing filed today (guidebook row 67). **كيغالي** by convention — both candidate first-party Arabic registers are **walled, not dead** (#70) and are added to the confirmation read | **09-29 PASS, BANKED** (`verdicts/2026-09-29-ed05-rwanda-pair-verdict.md`) — **RETURNED-3-NOTES → all three closed in-run in both languages.** Caps re-measured at the Editor's desk: title 53/100, dek 199/200, body **exactly 2,300 / ≤2,300 with no waiver** (note 2 added a word; the same sentence gave one back rather than taking an exemption). Body numeral multiset **111/111, zero one-sided figures either way** — kept through an editing pass, which no other pair in this edition has done. **Note 1 (ruling #76):** Test 1's live re-probe found `mineduc.gov.rw` **renewed** — new serial, valid 23 Sep 2026 → 9 Apr 2027, all six MINEDUC URLs 200 *with validation enabled* — so **twelve annotations across the pair** (six per language) asserted a security interstitial the reader no longer meets, plus a **uniqueness claim** in source 3 that went false without source 3 changing. All twelve rewritten as **dated observations**; no body prose and no figure touched. **Note 2:** the piece's own *"begins in September"* carried no year into an edition serving 11 Oct at the earliest — fixed to *September 2026* in both languages; **the edition's third clock instance and the first caught at a pair verdict.** **Note 3:** the Arabic composer's two register questions answered (keep «المخزون» — the weight is the instrument; keep the nine «أي إنَّ» openers — a varied opener would print the voice hierarchy #72 refuses) | **09-30 FAIL-6-ITEMS → all six closed in-run in both languages** (`verdicts/2026-09-30-rwanda-teacher-certification-verification.md`). **Not one of the six is a number** — the fifth consecutive verdict on this edition with that property, and this time it is the toolkit rather than luck: 31 load-bearing figures traced on eight axes and **every one confirmed twice by two routes**, both yearbook PDFs **re-extracted by the Verifier's own decoder** rather than the drafter's, 14 internal sums closing exactly, body multiset **111/111** with zero one-sided, and the two PDFs byte-identical on a **fourth** consecutive day. **Item 1 (#22/#51):** the ministry's *“declined only marginally”* is the register's sentence about **primary** — it names 22,160 and 21,717 in its own clause — and the piece attached it to the **combined** two-level stock that **rose**, leaving an apparent self-contradiction whose resolution was the scope the quotation had lost. The 09-20 forward surface inverted: *the hedge did not die in its paragraph, it travelled.* **Item 2 (ruling #77):** *“every voice in the record for this story reaches us through the funder's channel or the ministry's own”* is refuted by the piece's **own ¶99** and by two named teachers on a page already in `sources[]`; the claim originated in the **commission**, and a per-source check has no row for a claim about the corpus. **Item 3 (ruling #78):** **no MINEDUC news page dates its own article** — all three serve a byte-identical nine-item rail — so source 5's *“dated on its own page”* was reading the rail, and source 4's index-pairing control was resting on source 5. Replaced with the index's own ordering plus an enumeration of where the date is **not** served. **Items 4–6:** *from 2021* → *in 2021* (the register says *at that time*); *621 retaining walls* → the register's *621 schools/sites*; and an apposition that closed a list the register leaves open with *including*. **Body edits word-neutral by construction** — item 1 spends two, item 2 returns two, item 6 returns one: **EN 2,299 / ≤2,300, no waiver, a word in hand.** All eight URLs re-probed with validation enabled and the four-channel absence re-enumerated, both unchanged | ✓ (09-27) | ✓ (09-27) | held |
 
-### THE CLOCK — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review)
+### RECONCILED AGAINST DISK — 2026-10-04, weekly review. **Production is complete. Everything left is a read, a judgment or a gate — and the oldest open item is now 19 days old.**
+
+**The ledger is true, cell by cell, verified by looking rather than by reading the row above.** Six EN
+drafts, six AR twins, six Editor pair verdicts, six Verifier verdicts, five standalone AR gates plus
+Zambia's inside its pair verdict (the 09-20 location note is still correct), **six stills and six og
+cards — all twelve held assets present on disk.** Held set **12 content files / 6 slugs**, matching
+`qa_held_assets` in today's build (6 held slugs, 38 approved) and `qa_pair_frontmatter` (44 pairs — 38
+approved, 6 held, 432 identity fields, 684 source URLs, 338 shared annotations). Corpus unchanged at
+**38 EN / 38 AR**, 100% parity, 35 countries, **44 EN / 44 AR on disk**. Verification backlog **zero**
+since 09-30. **Sixty-eighth consecutive day without a published piece. Seven days to the 10-11 gate
+target.**
+
+**Build and gates, re-run independently of this morning's daily:** `npm ci && npm run build` exit 0,
+**121 served pages / 120 sitemap URLs** (the difference is the branded 404, declared by name), **all 25
+gating assertions green** — thirteen from `postbuild` in the build itself, and the twelve CI build-step
+assertions additionally run by hand here, every one exit 0. Gate register **25 of 28, derived by
+`qa_patch_queue` from its three homes** and not copied. `qa_live_drift` **CLEAN — origin matches dist,
+120 URLs, 0 lastmod drift, 4 sampled heads identical.**
+
+**And one positive worth recording because it is the 09-06 held-file rule caught working in public.**
+The live sitemap serves **119 of its 120 lastmod values as `2026-09-28T11:56:49Z`** — the chrome date —
+with `/valence/` alone at its own 09-17 date. Six days of pushes since, including **three content files
+edited this morning**, moved **not one live date**, because all three are **held** and the newest
+*approved* content file on disk is still `2026-07-07-ukraine-wartime-schooling` at 2026-09-08. The rule
+that cost two production incidents in September (`9886987`, `642fef2`) is now demonstrably holding
+against a wave of six held pieces under daily edit.
+
+#### THE CLOCK, re-read against the calendar — **the three named items are CLOSED, and the ledger said otherwise**
+
+**Items A, B and C are all closed**, and this review verified each in the served text rather than in the
+ledger: Zambia ¶103 no longer describes the August election in the future; slot 3 ¶94 reads *"the ruler
+is re-read in **the last quarter**"* / «تُقرأ من جديد في **الربع الأخير**»; and the dateline convention
+was ruled on 09-29 (`verdicts/2026-09-29-ed05-dateline-convention-ruling.md`, compose datelines kept).
+All three were closed by the **09-30** run, which recorded it in this file's own **Log**.
+
+**And this morning's manager status says all three still block the flip.** That is not a copy from an
+earlier day — the block appears in no other status log — it was composed fresh on 10-04 from **the
+`RECONCILED AGAINST DISK — 2026-09-27` section above**, which correctly reports them open *as of 09-27*,
+rather than from the Log eleven screens below, which reports them closed. **A document that records both
+a finding and its closure in two different places will be read at whichever one is nearer the top.**
+Four days stale, in the artefact that tells the founder what is on the Editor's desk, written by a run
+that applied ruling #71 to its own deploy three paragraphs earlier. **#71's transferable limb exactly —
+*an inherited narrative outranks a fresh observation unless something forces them into the same
+sentence*** — and the forcing mechanism is cheap: **a superseded dated section says so in its own
+heading, where a reader lands.** Done below and done for the rail-graph section too.
+
+**Full forward-looking-date sweep, run here rather than assumed.** All six held pairs, both languages,
+every month name and every year 2026–2039 in every body, with each hit read in its sentence:
+
+- **No tense defect survives.** The only bare months are day-and-month references whose year is fixed in
+  the same clause (*"the 10 August release"*, *"the 20 August ceremony"*), one generic (*"a budget line
+  renewed each October"*) and three false positives on proper nouns (Mayukwayukwa, مارستين).
+- **Rwanda's forward dates are all still forward or correctly reported:** *from January 2027* parental
+  contributions rise; the five-year TTC programme is carried as **announced**, in the register's own
+  quoted future tense, with the piece refusing in its own prose to claim the first cohort enrolled.
+- **The one date that has arrived is September 2026**, the month the Rwanda piece's argument turns on —
+  so the absence claim resting on it was **re-verified today in served text** rather than inherited. See
+  immediately below.
+
+#### THE RWANDA ABSENCE CLAIM — re-verified today, HOLDS, and the body's tense is the open item
+
+**Row 6 carries a corpus-level absence claim in served prose:** *"The ministry's news index was
+enumerated for this piece — thirty-five pages, reverse-chronological, back to 2018 — and its newest item
+is the 10 August release: nothing after it, including nothing for the 20 August ceremony itself. The
+speeches and press-release libraries on the same domain end in 2024, the announcements library in
+January 2026."* That was read on **09-27**. The index is one the piece itself describes as
+reverse-chronological — so it is **guaranteed to change**, and the sentence names no read-date in the
+prose.
+
+**Re-read today, 2026-10-04, in served text, and it holds:** `mineduc.gov.rw/updates/news-2` still
+serves the **10 August 2026** reform release as its newest item (next: 14 July, 16 June, 04 May, 17
+April 2026 — the same order, unchanged), and **there is still nothing for the 20 August ceremony and
+nothing for the September 2026 start**, which is the fact the piece's refusal-to-claim rests on. The
+**speeches** library still ends **13 December 2024**. `/updates/news` still returns **404**, as both
+recons recorded. **The announcements library's route was not resolved from here on two attempts**
+(`/updates/announcements`, `/updates/announcements-2`, both 404) — named rather than skipped, and **no
+cause is supplied for it** (#69: *the cause of an absence is a claim*). Two of the three channel claims
+re-verified in served text; the third is unverified-from-here, which is a different status from wrong
+(#83).
+
+**So the piece is stronger today than when it was drafted, and the open item is the grammar.** Three
+sentences in row 6's body state the **present** condition of a third party's living channels with no
+read-date in the prose: *"its newest item **is** the 10 August release"*, *"the speeches and
+press-release libraries … **end** in 2024"*, and *"a page that **serves** no publication date"*. **This
+is ruling #76 one surface over, on the same pair.** The 09-29 pair verdict rewrote **twelve annotations**
+across this pair for precisely this defect — a present-tense claim about a host's serving state — and
+recorded, correctly, that **no body prose was touched**. The body kept the tense the annotations lost.
+**Owed to the Verifier at slot 3's and Egypt's confirmation reads, and routed to the Editor for the
+prose, because this review does not edit a sentence:** carry the reading's date in the clause, as the
+twelve annotations now do. The observation is right; the tense claims a currency we verified on 09-27
+and again today and cannot verify on the day a reader arrives. **Not a flip blocker** — the claim is
+true as of today and the dateline convention anchors it — but it is the cheapest correction left on the
+edition and it is seven days from being served.
+
+#### WHAT ACTUALLY BLOCKS THE FLIP — five items, with ages, in the order they must run
+
+| # | Item | Owner | Open since | Age | Needs |
+|---|---|---|---|---|---|
+| 1 | **Slot 3's confirmation read** — fourth of five. Carries item 5 (the Educ'Action 404, #49's origin register, archive snapshot unread on four routes) and the Le Nestour biography annotation. | Verifier | 2026-09-17 | 17 days | a run |
+| 2 | **Egypt's confirmation read** — fifth of five. Carries row 5's open verification item 4 (source 1 unreachable). | Verifier | 2026-09-23 | 11 days | a run |
+| 3 | **The Arabic Editor's two register questions on the ruler pair** — ¶48's indefinite dual under negation (*"no two of them can be added together"*, the piece's spine, returning as *"They cannot be averaged"*), and ¶60's دعوتان. | Arabic Editor | 2026-09-15 | **19 days — the oldest open item on the edition** | a judgment |
+| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | 3 days | a gate |
+| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, now seven after today. | Assertions Engineer | 2026-10-01 | 3 days | the flip-commit run |
+
+**Plus the two that are not items but gates:** `qa_sources_alive --held-only --sample 0` immediately
+before the flip commit (and **its total ceiling is still unbuilt** — queue item 1, 18 days, the only
+flip dependency on the standing queue), and the **publish gate in writing**.
+
+**The honest read on the date.** Nothing in the list above needs more than a run except item 3, which
+has needed a judgment for nineteen days and is the spine sentence of the edition's most argued piece.
+Two confirmation reads at one per run, an Arabic gate, a rehearsal and a publish gate is **five runs
+against seven days** — feasible with slack for the first time in this edition's life, because production
+is finished. **Standing rule #1 is unchanged and outranks the date: if the arithmetic fails, the gate
+date gives, never a verdict, a confirmation read or an Arabic gate.** The 11-15 outer bound exists for
+this, and the only hard date is PASEC 2024 in Q4 2026, which binds row 4 alone.
+
+**Item 3 is named as the review's one escalation, and it is escalated by being made first rather than by
+being made louder** (the 08-30 rule: stop raising the volume, change the order). It is older than every
+other open item, it is the only one that touches what a piece *claims* rather than what we *know about a
+source*, and a pair that carries different claims at its strongest sentence is a parity defect no gate
+we own can see — `qa_pair_frontmatter` compares frontmatter and composed prose is supposed to differ,
+which is #86's finding three days running.
+
+### ~~THE CLOCK~~ — two forward-looking dates in the held set have moved under it (found 2026-09-20, weekly review). **SUPERSEDED: both items CLOSED 2026-09-30, and a third (item C) ruled 2026-09-29 — see the 10-04 reconciliation above. Kept verbatim as the record of what was found; do not plan from it.**
 
 **Both are #46's corollary 2 — *a plan is only a plan until its date arrives* — and both are found by
 reading the held set against the calendar rather than against its sources.** Neither is a figure. Neither
@@ -80,7 +203,7 @@ dropped outright is what the 09-13 rule was written to catch. A hedge that **sur
 the first clause, and dies in the last one** is a different failure and nothing we own looks for it.
 **Named as the register's forward surface for the week of 09-21: does a hedge survive its own paragraph?**
 
-### RECONCILED AGAINST DISK — 2026-09-27, weekly review. Two clock items still open, and a THIRD found.
+### ~~RECONCILED AGAINST DISK — 2026-09-27~~, weekly review. Two clock items still open, and a THIRD found. **SUPERSEDED by the 2026-10-04 reconciliation above — all three of those items are closed. This heading says so because a run read this section on 10-04 and reported them open; a superseded dated section carries its own supersession where a reader lands, not eleven screens below in the Log.**
 
 **The ledger is true.** Every cell in the table above is backed by a file that exists: six EN drafts,
 five AR twins, five pair verdicts, five verification verdicts, four standalone AR gates plus Zambia's
@@ -132,7 +255,7 @@ ledger recorded that they were connected.
   and dated up to seven weeks ago. **Stated as a consequence of the convention, not as a defect**, and
   it is the reason the convention deserves one deliberate ruling rather than six silent inheritances.
 
-### THE RAIL GRAPH — rows 5 and 6 are inside the wave and outside its argument (found 2026-09-27)
+### ~~THE RAIL GRAPH~~ — rows 5 and 6 are inside the wave and outside its argument (found 2026-09-27). **SUPERSEDED: CLOSED 2026-09-29 — see the section immediately below. Kept verbatim as the record of the finding.**
 
 Re-checking the gate dependency by reading all six `related:` rails rather than the three the ledger
 records produced a finding the ledger's own dependency section is structurally unable to contain,
@@ -403,7 +526,11 @@ because a rehearsal is an observation with a date.
 
 **Source-promise state of the held set (Growth sweep 2026-09-10, `agents/growth/2026-09-10-source-promise-decay-sweep.md`):** 28 distinct URLs — 20 `ok`, 3 `walled` (bot walls, not deaths), 4 `unreachable` (one host), **1 hard 404**. Re-run `qa_sources_alive.py --held-only --sample 0` immediately before the flip commit.
 
-## Open technical decision (Web Developer proposes → Editor decides, before the slot-3 file lands)
+## ~~Open technical decision~~ — **DECIDED and SHIPPED. Marked at the 2026-10-04 review; the section had read "open" since 09-04 while the answer was live on disk.**
+
+Row 4 ships as `country: Mauritius` + `countries:` ×5 + `region: Africa` — the optional list beside the primary field, which is what the Manager's note below recommended and what the Editor took. Verified on disk today and asserted by `qa_geo_fields` across all 88 content pieces in every build. *Original section kept verbatim below.*
+
+### Original, 2026-09-04 (Web Developer proposes → Editor decides, before the slot-3 file lands)
 A continental piece against a single `country:` field. Options on the table (commission 09-04): `country: Mauritius` + `region: Africa`, or extend the schema. Manager's view for the record: a piece whose honest deliverable is *four rulers, four crowns* should not be filed as a Mauritius piece — the stats panel counts countries from `country:` and would mis-count either way; an optional `countries:` list beside the primary `country:` keeps the panel truthful and costs one schema line plus one line in `madar_stats.py`. The Editor decides.
 
 ## Standing prohibitions carried from the commissions
@@ -413,6 +540,45 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-04 (weekly review, second run of the day)** — **PRODUCTION IS FINISHED AND THE LEDGER WAS
+  FOUR DAYS STALE ABOUT ITSELF.** Reconciled cell by cell against disk: six EN, six AR, six pair
+  verdicts, six Verifier verdicts, five standalone AR gates plus Zambia's inside its pair verdict, six
+  stills, six og cards — **all twelve held assets present**; held set 12 files / 6 slugs, matching
+  `qa_held_assets` and `qa_pair_frontmatter` in a build re-run here (exit 0, 121 pages, 25 of 28 gating
+  assertions green, `qa_live_drift` CLEAN across 120 URLs). **Verification backlog zero since 09-30.
+  Seven days to the gate target.**
+  **Items A, B and C were reported as open in this morning's manager status and all three closed on
+  09-30/09-29** — verified here in served text, not in the ledger. The run composed that line from the
+  `RECONCILED AGAINST DISK — 2026-09-27` section, which is correct *as of 09-27*, rather than from the
+  Log eleven screens below it. **A document that records both a finding and its closure in two places
+  will be read at whichever is nearer the top**, so three superseded sections now carry their
+  supersession **in their own headings**, where a reader lands. #71's transferable limb, committed by a
+  run that applied #71 to its own deploy three paragraphs earlier.
+  **The clock re-read across all six pairs, both languages, every month name and every year 2026–2039:
+  no tense defect survives.** The one date that has *arrived* is September 2026, the month row 6's
+  argument turns on — so its absence claim was **re-opened in served text today rather than inherited**:
+  `mineduc.gov.rw/updates/news-2` still serves the **10 August 2026** release as its newest item, with
+  **nothing for the 20 August ceremony and nothing for the September start**; speeches still end
+  13 Dec 2024; `/updates/news` still 404s. The announcements route was not resolved from here on two
+  attempts — **named rather than skipped, with no cause supplied** (#69). **The piece is stronger than
+  when it was drafted.**
+  **NEW, and it is #76 one surface over on the same pair:** three sentences in row 6's **body** state the
+  *present* condition of MINEDUC's living channels with no read-date in the prose (*"its newest item
+  **is**…"*, *"the libraries … **end** in 2024"*, *"a page that **serves** no publication date"*). The
+  09-29 verdict rewrote **twelve annotations** across this pair for exactly this and recorded, correctly,
+  that no body prose was touched — **the body kept the tense the annotations lost.** Routed to the
+  Verifier for the trace and the Editor for the sentence; not a flip blocker, and the cheapest correction
+  left on the edition.
+  **Five items block the flip, with ages: slot 3's confirmation read (17 d), Egypt's (11 d), the Arabic
+  Editor's two register questions on the ruler pair (19 d — the oldest, and a judgment rather than a
+  task), the packet captions' Arabic gate (3 d), the flip rehearsal re-run (3 d)** — plus the
+  source-promise sweep and the publish gate. **Five runs against seven days, with slack for the first
+  time in this edition's life.** Item 3 is escalated by being put **first** rather than louder (08-30):
+  a pair that carries different claims at its strongest sentence is a parity defect no gate we own can
+  see. **The gate date gives before a verdict does.**
+  Housekeeping: the **open technical decision** on row 4's `country`/`countries:` fields is marked
+  **decided and shipped** — it had read "open" since 09-04 while the answer was live on disk and asserted
+  by `qa_geo_fields` in every build.
 - **2026-10-04** — **THE SECOND LANGUAGE WAS MEASURED AS A CHANNEL, AND TODAY IT WAS THE WRONG ONE.**
   State verified against git and the Actions API: tree clean, no dark day, **HEAD == origin/main** at
   `05203be`, which deployed as **`37116908562`**, `workflow_dispatch`, **success**, all three jobs green

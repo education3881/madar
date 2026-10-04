@@ -27,30 +27,31 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
-## Open — reconciled against disk 2026-09-27, by looking
+## Open — **FIVE items, reconciled against disk 2026-10-04 by looking, ages to 2026-10-04**
 
-| # | Item | Owner | Raised | Age at 09-27 | Verified how | Blocks |
-|---|---|---|---|---|---|---|
-| 1 | **The output-bounded served-bytes manifest** — a per-URL content hash emitted into `dist` and compared against the origin's copy on the next build. The honest answer to the one direction `qa_lastmod` cannot bound: a page whose bytes changed and whose date says they did not. | **[AE]** | 2026-09-06 (weekly) | **21 days** | No manifest tool in `agents/tools/`. Named ten times now. The throwaway version **found ruling #58 on its first run** and is strictly stronger than `qa_live_drift`, which reported CLEAN at the same moment. It exists, in `/tmp`, unowned. | nothing — but it is the strongest instrument this operation has ever written and it is still not in the repository |
-| 2 | **`qa_sources_alive` bounded and schedulable** — the P1 is closed; the design item is not. | **[AE]** | 2026-09-16 (QA log, P1) | **11 days** | **P1 CLOSED 2026-09-27**: the 40-minute 09-16 hang was **block-buffered stdout**, not a slow sweep — `flush=True` and a per-URL timeout are in the file, verified by reading it. What remains is the *bound*: the ledger makes this the last step before the flip commit and nothing yet proves a total ceiling. | **YES — the wave flip.** An un-observable step at the worst possible moment is now an *observable* step of unproven duration. |
-| 3 | **The derived-register assertion** — compute the guidebook's `#1–#N` range and Section 1's row count from the files on disk, so the INDEX header stops being hand-maintained. | **[AE]** | 2026-09-13 (weekly) | **14 days** | No tool in `agents/tools/` reads `INDEX.md` — grepped, zero hits. | nothing, and its urgency **fell** this week: see below |
-| 4 | **Self-hosted fonts** — two third-party origins requested by the layout on every page, against the privacy posture. | **[WD]** | carried, P1 | — | Confirmed live in today's build: `fonts.googleapis.com` and `fonts.gstatic.com` on **120 of 121** served pages, printed by name by `qa_chrome_links`. | nothing — but the privacy claim is the only one the publication makes about itself |
-| 5 | **The feed's Arabic-direction assertion** — assert `direction: rtl` on AR feed item descriptions from the **resolved** value in a rendering engine (#55), not from our markup. | **[AE]** | 2026-08-18, re-named 09-20 | **40 days** | No tool asserts feed item direction — grepped every `qa_*.py`. **It was part A of the 09-20 growth bet and did not ship.** | nothing — and it is now the **first item** on the Assertions Engineer's first-week brief |
+**Count line, because this file had none and the 09-20 finding that opened it was about a list with
+five homes and no count: five open, one closed this week, oldest 28 days.** Reconcile against the rows
+below at every weekly review, never against the previous week's number (#57).
 
-**Item 3 stays on the list, and this week made it more interesting rather than less.** The
-2026-09-27 consolidation found the ruling register **already true** for the first time in
-four weeks — range, heading, series line and §1 count all correct, confirmed by counting
-71 and 66 rows and resolving every long-form reference against 102 files on disk. So the
-assertion that would have caught the drift was not needed, because a **RUNBOOK rule** moved
-the cheapest part of the maintenance onto the faster clock and seven consecutive runs
-executed it. That is the better fix and it is working. It does not retire the item: a rule
-executed by hand seven times is still a rule executed by hand, and the two leaks it did
-have (09-23, 09-25) were both caught by a human counting rows.
+**THIS FILE IS NOW THE OPERATION'S ONE QUEUE AND ITS HEAD IS BINDING** (RUNBOOK rule, 2026-10-04). The
+previous run's **forward question enters at the head** — it is the freshest thing the operation knows
+and it belongs first. **An item displaced from the head three times goes first regardless**, and the
+run writes one line in the QA log naming which head it took and what it displaced. Displacement counts
+are in the table and are the only number here that moves daily.
+
+| # | Item | Owner | Raised | Age | Displaced | Verified how | Blocks |
+|---|---|---|---|---|---|---|---|
+| 1 | **`qa_sources_alive` bounded and schedulable** — a *total* ceiling, demonstrated against the full held set. | **[AE]** | 2026-09-16 | **18 days** | **3** — bet part B (09-27), then six consecutive runs | Read the file today: a per-URL `TIMEOUT` and `flush=True` are present; **no total ceiling exists** — `--help` offers `--root --sample --seed --held-only --json --collect-only` and nothing bounding. The 10-03 split gave the *parse* half a gate (`--collect-only`, network-free, proved by poisoning the socket module) and left the *probing* half unbounded, which is the half the ledger schedules. Mitigated but not closed: the full sweep has now run to completion twice (09-30, and 10-03 over 59 URLs). | **YES — the wave flip.** Seven days out. **Head of the queue by the displacement rule.** |
+| 2 | **The output-bounded served-bytes manifest** — a per-URL content hash emitted into `dist` and compared against the origin's copy on the next build. The honest answer to the one direction `qa_lastmod` cannot bound: a page whose bytes changed and whose date says they did not. | **[AE]** | 2026-09-06 (weekly) | **28 days** | **11** | No manifest tool in `agents/tools/` — 28 tools listed, none of them this. **Named eleven times** (09-06, 09-18, 09-19, 09-20, 09-22, 09-23, 09-24, 09-25, 09-26, 09-27, and here) and **mentioned zero times in all seven of this week's QA logs**, which is the measurement that produced the one-queue rule. The throwaway version **found ruling #58 on its first run** and is strictly stronger than `qa_live_drift`, which reported CLEAN at that same moment. It exists, in `/tmp`, unowned. | nothing — and it is still the strongest instrument this operation has ever written |
+| 3 | **The derived-register assertion** — compute the guidebook's `#1–#N` range, §1's row count **and the shape of every §3 row** from the files on disk. | **[AE]** | 2026-09-13 (weekly) | **21 days** | **4** | No tool reads `INDEX.md` — grepped all 28, zero hits. **Its urgency went back UP this week and the evidence is specific:** the 10-04 consolidation found **five of the last eight §3 rows malformed** — three columns in a four-column table, rulings #80 through #84, their long-form files unreachable from the canonical register — and **every row count and every range check ever run on that table passed on all five.** A hand reconciliation that counts rows cannot see a row with the wrong number of cells. `len(row.split("|")) == 6` is one line and would have caught it the day it shipped. | nothing — but it is now the only queue item with a *demonstrated* miss behind it |
+| 4 | **Self-hosted fonts** — two third-party origins requested by the layout on every page, against the privacy posture. | **[WD]** | carried, P1 | — | **2** | Confirmed live in today's build: `fonts.googleapis.com` and `fonts.gstatic.com` on **120 of 121** served pages, printed by name by `qa_chrome_links`. The privacy claim in the statistics panel is scoped by construction and stays honest either way. | nothing — but the privacy claim is the only claim the publication makes about itself |
+| 5 | **`agents/stats/history.jsonl` has 102 rows for 89 dates** — ten dates carry two snapshots and one (09-14) carries four. | **[AE]** | **2026-10-04** (weekly) | **0 days** | 0 | Counted today: 102 lines, 89 distinct `as_of` values. The duplicated dates are exactly the days with more than one run, so the file is a faithful per-run log and not corrupt — **but the CHARTER's stated purpose for it is *"so week-over-week deltas accumulate"***, and any consumer taking "the row seven back" gets the wrong answer on ten of 89 dates. Nothing consumes it yet, which is the only reason it has never bitten; the Substack metrics read is what will consume it. **Not fixed here on purpose:** `madar_stats.py` is the Assertions Engineer's and the right answer (last-write-wins per date, or an explicit `run_seq`) is a design call, not a patch. This review also **declined to run `--log` a third time today** rather than add an eleventh duplicate for a corpus that has not changed. | nothing yet — it blocks the first week-over-week read |
 
 ## Closed
 
 | Item | Raised | Closed | By |
 |---|---|---|---|
+| **The feed's Arabic-direction assertion** — `direction: rtl` on AR feed item descriptions, read from the **resolved** value in headless Chrome (#55), never from our markup | 2026-08-18, re-named 09-20 | **2026-09-28** | **Monday's daily run, as its first work, before the content lane** — `qa_feed_direction`, standing assertion 26, wired to `postbuild` and declared to `qa_census` in the same commit, proved seven ways. It found **43 of 232 feed fields inheriting the reader's base direction**. Item 5 on the 09-27 list and item 1 of the Assertions Engineer's first-week brief, **40 days owed and closed on day one of the role** — and the only part of the 09-27 growth bet that landed. **This row was not written until the 2026-10-04 review**, so this file sat for seven days showing the item as open at "40 days" while the tool was shipped, gating and green — *the defect the file's own rule exists to stop (an item lands, and the queue hears about it at the next reconciliation), in the week the file was handed to a dedicated owner.* |
 | Feed links and enclosures resolve from outside our origin | 2026-08-18 | **2026-09-20** | weekly review — 78/78 links, 76/76 enclosures, 76/76 declared `length` exact against the origin (`agents/growth/2026-09-20-the-feed-proved-from-outside.md`) |
 | `qa_sources_alive` hangs with no output (**P1 limb only**) | 2026-09-16 | **2026-09-27** | daily run — diagnosed as block-buffered stdout, not a slow sweep; `flush=True` + per-URL timeout. The eleven-day P1 was a reporting defect in the reporter. Design limb stays open as item 2. |
 
@@ -87,10 +88,49 @@ adding anything new*, while the weekly bet carries no such clause. A role cannot
 between its own priorities. That is what the second role is for, and it is why the split is
 along *instrument versus product* rather than along *new work versus old work*.
 
-**Restraint test, dated:** if by the **2026-10-25** review the Assertions Engineer has not
+~~**Restraint test, dated:** if by the **2026-10-25** review the Assertions Engineer has not
 cleared at least three inherited items, and the standing-assertion count has grown faster
 than this queue has shrunk, the split addressed the wrong constraint and the role folds
-back. Recorded here so it is checkable by looking, exactly as this trigger was.
+back.~~ — **REPLACED 2026-10-04, after one week, and the reason is that this operation's own
+rule about bets applies to its own restraint tests.**
+
+**Why it was replaced, stated against myself because I wrote it.** The 09-27 review ruled, in
+the same document, that *a bet whose outcome the operation does not own is a request, not a
+bet.* This test fails that standard twice.
+
+- **Its second limb punishes the role's charter.** *"The standing-assertion count has grown
+  faster than this queue has shrunk"* — read against the role's first week, that is **+3
+  assertions against −1 queue item**, so the limb fires. But all three assertions came out of
+  forward questions that **bit** (#73, #75, #79 and onward), and the one cleared item was the
+  **oldest and most-owed thing on the board**, closed on day one of the role. The role's own
+  persona says *you do not add an assertion to make the count go up.* A test that converts
+  assertion count into a score — and a negative one — contradicts the file it is written in and
+  would fail a role having its best possible week.
+- **Its first limb includes an item the split assigns elsewhere.** Item 2, the served-bytes
+  manifest, is marked **[AE]** and its deliverable is *a manifest emitted into `dist`* — a
+  served byte, which the split's own standing exception assigns to the **Web Developer**
+  (*"a fix that changes served bytes is the Web Developer's, even when an assertion found
+  it"*). And the three staged patches are blocked on a credential **no persona holds** (issue
+  #7). *Counting items the role may not finish is the same error as counting a bet the
+  operation cannot read.*
+
+**The replacement test, dated 2026-10-25, and it is one number.** The split exists to make the
+queue get **reached**. So:
+
+1. **The age of the oldest open item on this queue is LOWER on 2026-10-25 than the 28 days it
+   reads today.** One number, owned entirely by the role, moved only by doing the thing the
+   role was created to do. Assertion count is not in it, in either direction.
+2. **The one-queue rule's displacement line appears in every QA log in the window** — *which
+   head did this run take, and what did it displace.* A displacement nobody writes down is how
+   an item named ten times becomes an item named eleven times.
+3. **If the oldest age has climbed instead, the split addressed the wrong constraint** and the
+   role folds back — and the fallback is already known: put the queue head into the RUNBOOK's
+   binding forward-question slot by force, which is the 2026-10-04 one-queue rule without the
+   persona.
+
+Recorded here so it is checkable by looking, exactly as the trigger above was — and the whole
+point of re-writing it at week one rather than discovering at week four that it was unmeasurable
+is that **a test is an instrument, and an instrument is proved before it is trusted (#35).**
 
 ## Footnote — the patch queue nearly repeated this file's own defect
 

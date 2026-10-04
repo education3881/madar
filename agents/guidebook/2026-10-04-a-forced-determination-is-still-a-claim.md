@@ -6,8 +6,18 @@ sweep that executed the 2026-10-03 forward question before anything new was adde
 `articles-ar/2026-08-28-sierra-leone-sleic-outcomes.md` and
 `articles-ar/2026-09-14-africa-best-system-ruler.md`, plus one role-title correction in the first and one
 parity clause in `articles/2026-09-14-africa-best-system-ruler.md`.
-**Family:** the non-numeric family (#45, #46, #47, #53, #62, #64, and the attribution-verb surface) — its
-**ninth** member, and the first whose unit is a feature of grammar rather than of fact.
+**Family:** the non-numeric family (#45, #46, #47, **#49**, **#51**, #53, #62, #64, and the
+attribution-verb surface) — its **ninth** member, and the first whose unit is a feature of grammar
+rather than of fact.
+
+> **Corrected at the 2026-10-04 weekly consolidation, and the correction is small and funny.** This line
+> as filed listed **six** numbered members and then claimed the ninth place — so the enumeration and the
+> ordinal, written in the same sentence a few hours apart from each other, disagreed by two. The ordinal
+> was right: #49 and #51 are members by their own files' claims (#51's says *"fifth member"* in so many
+> words), and §3's bullet confirms the sequence. **A ruling about one edition making a claim with nothing
+> able to disagree with it shipped with two numbers in one sentence that could have disagreed and were
+> never compared** — which is #57 pointed at the filing of #86. Enumerated in full in §3 of the INDEX
+> from today, so the next filing run has a list to count rather than a number to trust.
 **Cousins:** #42 (a pair carries only what both languages share), #84 (*a reciprocity check has no
 arrow*), #43 (the register hierarchy), #41 (read the register, never the result list), #51 (a claim
 without its register's scope).

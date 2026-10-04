@@ -10,7 +10,15 @@ Read on every run, in this order:
 1. `agents/CHARTER.md` — the operating mandate. The five standing functions.
 2. `agents/RUNBOOK.md` — the accumulated procedural rules. Long, and load-bearing.
 3. The most recent `agents/briefs/*.html` — yesterday's artefact, **not** today's state.
-4. `content-drafts/_EDITION_05_STATUS.md` — the live edition's ledger.
+4. `content-drafts/_EDITION_05_STATUS.md` — the live edition's ledger. **A dated section inside it is
+   history, not state** — read the Log and the newest `RECONCILED AGAINST DISK` block before planning
+   from any section above them. A run on 2026-10-04 reported three closed items as open because it
+   read the 09-27 section, which is eleven screens above the entry closing them.
+5. `agents/logs/WEBDEV-QUEUE.md` — **the operation's one standing queue, and from 2026-10-04 its head is
+   binding** (RUNBOOK, *one queue, one head*). The previous run's forward question enters at the head;
+   an item displaced three times goes first regardless; the run writes one line naming which head it
+   took and what it displaced. **This file is in this list because a binding queue nobody is told to
+   read is the same defect as a count nobody is named to maintain.**
 
 ## What this publication is
 
@@ -71,6 +79,14 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   exactly like a passing control.
 - **Never invent a traffic number.** The site carries no third-party tracker by
   design. Say so rather than estimating.
+- **Count against the population, never against yesterday's number.** Ruling #57, earned four weeks
+  running. A count that agrees with itself every day can disagree with the thing it counts for a
+  month: the assertion-discipline family's member count was arithmetically perfect for five
+  consecutive filings and wrong by three the whole time, because the rule that moves it was written
+  after three members had already joined. **A point-of-filing rule fixes a count's future and leaves a
+  step discontinuity where it was written; it never reconciles backward.** And count the *shape* too —
+  five rows of the canonical ruling register carried three columns in a four-column table while every
+  row count and range check ever run on it passed (2026-10-04).
 
 ## Layout
 

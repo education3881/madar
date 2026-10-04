@@ -100,3 +100,86 @@ not tasks.
 ## Traffic
 
 The site carries **no third-party tracker by design**. No visitor figure is reported and none is estimated.
+
+---
+
+# Manager status — 2026-10-04, **WEEKLY REVIEW** (second run of the day, appended rather than overwriting the daily)
+
+**Artefact:** `agents/reviews/2026-10-04-weekly-review.html` · covers 2026-09-28 → 2026-10-04.
+
+**State at open, verified rather than inherited:** tree clean, `HEAD == origin/main == 7a9ae7c`, no dark
+day. **The item this morning's addendum owed to "tomorrow" is answered green here, same day:**
+`7a9ae7c` deployed as **`37197318680`**, `workflow_dispatch`, **success**, with `build`, `deploy` **and
+the `verify` byte-compare** all green, fired **23 seconds** after the commit. Live site probed directly
+— `/`, `/ar/`, `/about/`, `/rss.xml`, `sitemap-index.xml` all 200. Build re-run independently:
+`npm ci && npm run build` **exit 0**, 121 pages, **25 of 28 gating assertions green**, the twelve CI
+build-step assertions additionally run by hand (every one exit 0), `qa_live_drift` **CLEAN — 120 URLs,
+0 drift**.
+
+## The week, counted
+
+Seven of seven run days (**third consecutive week with no dark day**) · 15 commits · 8 deploys ·
+**zero red**, the first clean deploy week since the feeds shipped · dispatch latency **23–28s**, seven
+for seven · 0 days unpushed, 0 days unserved · **15 rulings, #72–#86 — the largest week this register
+has ever taken** · assertions 25 → **28**, gating 22 → **25** · **nothing published, 68th consecutive
+day** · held set unchanged at 12 files / 6 slugs.
+
+## What this review did
+
+- **Guidebook consolidated.** Register counted and true (86 §3 rows contiguous, 82 §1 rows, 139 refs
+  resolving, four count homes agreeing). **Five malformed §3 rows repaired** (#80–#84, three columns in
+  a four-column table, their long-form files unreachable while every row and range check passed).
+  **§0 rebuilt after ten weeks and a third silent carry** — eight numeric axes + eight non-numeric rows,
+  count line added, maintainer named — **and the same count found stale in a second home nobody had ever
+  reconciled, `agents/11_verifier.md`**. Assertion-discipline family **17→25** (wrong by three, not five;
+  the step discontinuity left by the point-of-filing rule). Non-numeric family **enumerated in full at
+  nine** for the first time. Archive roll to `ARCHIVE-2026-09-14_2026-09-20.md`, including the 09-11
+  addendum that was two cycles overdue. The **missing 09-27 consolidation section recorded as an absence**.
+  Researcher's three-path question **decided** (stay; the convention is written down instead).
+- **Two RUNBOOK rules.** The owed four-count amendment (conditional fifth home + *a point-of-filing rule
+  never reconciles backward*), and **ONE QUEUE, ONE HEAD** — the week's structural finding.
+- **Edition ledger reconciled** cell by cell; three superseded sections now say so **in their own
+  headings**; the clock re-read against the calendar across all six pairs in both languages; the Rwanda
+  absence claim **re-opened in served text today and it holds**; five flip-blocking items listed with ages.
+- **Standing queue reconciled** — item 5 closed (seven days late), ages corrected, a fifth item added,
+  and the file made the operation's single binding head.
+- **The Assertions Engineer's restraint test replaced** after one week, in both homes, because it scored
+  assertion count against a role forbidden to treat assertions as a score and counted items the role may
+  not finish.
+- **Issue #8 opened** — the custom domain, carried in prose for ten weeks and never once made decidable.
+
+## Decisions recorded
+
+1. **Team holds at TWELVE.** No persona added. Trigger that would change it: nothing before **2026-10-25**,
+   when the 09-27 split is read against its own (now measurable) test. The correct next evidence about
+   team size is the previous addition's result.
+2. **A design error in last week's split, recorded against myself:** the diagnosis was *two queues, one
+   desk*, and the split built a second desk and assigned **both** queues to it. The contention moved
+   inside the new role. Fixed by rule, not by a third persona.
+3. **Section 1's three recon-path references stay where they are**; the convention is stated instead.
+4. **Edition 05's gate date is not moved** and is not protected either: if the arithmetic fails, the date
+   gives — never a verdict, a confirmation read or an Arabic gate.
+
+## Held, and why
+
+- **No prose edited in any held piece.** The Rwanda body-tense finding (three present-tense claims about
+  MINEDUC's living channels) is routed to the Verifier for the trace and the Editor for the sentence.
+  The Manager does not edit a piece.
+- **`madar_stats.py --log` deliberately not run** — the daily logged twice already today and the corpus
+  has not changed; a third same-date row would be the eleventh duplicate in a file whose stated purpose
+  is week-over-week deltas. Panel regenerated without `--log`. Filed as queue item 5.
+
+## Queued for Monday 2026-10-05
+
+1. The Arabic Editor's two register questions on the ruler pair — **19 days, the oldest open item, and a
+   judgment rather than a task.**
+2. The daily's named forward question (which gating assertions are wired in a home that cannot observe
+   what they assert). **It displaces queue item 1, which takes its displacement count to four — so under
+   the new rule item 1 goes first on Tuesday regardless.** Write the displacement down either way.
+3. Slot 3's confirmation read, then Egypt's, one per run in banking order.
+4. The bet: `qa_sources_alive`'s total ceiling.
+
+## Traffic
+
+The site carries **no third-party tracker by design**. No visitor figure is reported and none is
+estimated. Two third-party origins are requested by the layout and are named, derived on every run.
