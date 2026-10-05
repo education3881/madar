@@ -39,7 +39,18 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#86**, and binding. *(Moved from #85 to #86 on
+  `agents/guidebook/INDEX.md` — currently **#1–#88**, and binding. *(Moved from #86 to #88 on
+  2026-10-05, at the point of filing, by the eighth run to execute the four-count rule — two rulings from
+  two lanes, and the **fourth** run to move five counts, applied **twice in one commit** because both
+  #87 and #88 join families that keep a running member count (non-numeric NINE → TEN, assertion-discipline
+  TWENTY-FIVE → TWENTY-SIX). Ten counts in one commit, and the membership lists moved with them per limb 3.
+  **Both rulings came out of the one-queue rule's first Monday rather than from anything new** — #88 closed
+  the queue's 18-day head, which arrived there by the three-displacement clause rather than by anyone
+  remembering it, and #87 is the 20-day Arabic judgment the 10-04 review escalated by putting it first.
+  **And the row-shape check the 10-04 consolidation had to invent found twelve more malformed rows — in
+  Section 1, which that consolidation never looked at.** Rows 71 through 82 had carried three columns in a
+  four-column table since 2026-09-29, their Status cells simply absent, while every row count and range
+  check passed. A check invented for one section was not run on its neighbour; repaired here. Moved from #85 to #86 on
   2026-10-04, at the point of filing, by the seventh run to execute the four-count rule — one ruling from
   one lane, and the **third** run to move five counts, because #86 joins the non-numeric family and that
   family keeps a running member count, so the conditional fifth home applies. The count also caught

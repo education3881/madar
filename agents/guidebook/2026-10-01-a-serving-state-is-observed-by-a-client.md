@@ -98,3 +98,41 @@ Two sentences, and the second is the one that generalises furthest:
 *And the remediation note attached to a check's finding is prose this publication will eventually
 print. Prove it the way the verdict is proved, or do not write it.* A check that is right about the
 layer and wrong about the consequence has not found a defect; it has drafted one.
+
+---
+
+## SECOND INSTANCE — 2026-10-05, a new mechanism and a worse property
+
+**No new ruling number was minted. This is #80 arriving by a different road**, and the operation does
+not number a lesson twice for that.
+
+The **first complete sweep of the corpus** — 343 distinct URLs, affordable for the first time because
+ruling #88 gave the sweep a total ceiling that morning — returned two URLs as
+`unreachable · UnicodeEncodeError`. **That is not a fact about either host.** `urllib` must hand a
+request line to a socket as ASCII, so a path containing Arabic raises *before a single byte leaves the
+machine*. Percent-encoded, **both documents are served**: `mehe.gov.lb` answers HEAD **200** and
+`almodon.com` answers GET **200**.
+
+So: #80 was *the certificate is fine and only Python sees a problem.* This is *the URL is fine and only
+Python cannot write it down.* Same ruling — **the tool's own limitation reported as a fact about the
+source** — and, as #80's own second sentence warned, it would have been reported in the register where
+it does damage, since this check's findings are editorial advice about whether a citation still stands.
+
+**The property that makes this instance worse than the original, and it is the part worth carrying.**
+The blindness is **language-correlated**. The corpus contains exactly **two** non-ASCII URLs; **both are
+Arabic-language registers; both were mis-reported. Two of two, one hundred per cent.** A source-health
+instrument that fails precisely on Arabic paths is not randomly wrong — it is **systematically blind to
+the registers one of our two editions is built on**, and for a publication whose Arabic is *composed
+from the sources* rather than translated, that is the worst available place for an instrument to be
+blind. It would also have degraded in exactly the wrong direction over time: the more Arabic-language
+primaries the publication cites, the more of its own source-health report becomes noise.
+
+**Fixed** (`_to_uri`, IRI → URI with IDNA on the host), and proved both ways: ASCII URLs pass through
+**byte-identical**, including one already carrying percent-escapes — so nothing is double-encoded — and
+genuine redirects still print their arrow, while the two Arabic URLs now return a clean `200` with no
+spurious self-redirect.
+
+> **The general form, restated once more and now third-hand:** *every negative result a tool reports is
+> a claim about two things — the subject, and the tool's ability to ask.* #80 separated them at the TLS
+> layer. This separates them at the **encoding** layer. Before writing down any `unreachable`, ask
+> whether the request was ever actually made.

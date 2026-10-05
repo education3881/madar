@@ -129,25 +129,50 @@ and again today and cannot verify on the day a reader arrives. **Not a flip bloc
 true as of today and the dateline convention anchors it — but it is the cheapest correction left on the
 edition and it is seven days from being served.
 
-#### WHAT ACTUALLY BLOCKS THE FLIP — five items, with ages, in the order they must run
+#### WHAT ACTUALLY BLOCKS THE FLIP — **FOUR items** (item 3 closed 2026-10-05), with ages to 2026-10-05, in the order they must run
 
 | # | Item | Owner | Open since | Age | Needs |
 |---|---|---|---|---|---|
-| 1 | **Slot 3's confirmation read** — fourth of five. Carries item 5 (the Educ'Action 404, #49's origin register, archive snapshot unread on four routes) and the Le Nestour biography annotation. | Verifier | 2026-09-17 | 17 days | a run |
-| 2 | **Egypt's confirmation read** — fifth of five. Carries row 5's open verification item 4 (source 1 unreachable). | Verifier | 2026-09-23 | 11 days | a run |
-| 3 | **The Arabic Editor's two register questions on the ruler pair** — ¶48's indefinite dual under negation (*"no two of them can be added together"*, the piece's spine, returning as *"They cannot be averaged"*), and ¶60's دعوتان. | Arabic Editor | 2026-09-15 | **19 days — the oldest open item on the edition** | a judgment |
-| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | 3 days | a gate |
-| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, now seven after today. | Assertions Engineer | 2026-10-01 | 3 days | the flip-commit run |
+| 1 | **Slot 3's confirmation read** — fourth of five. Carries item 5 (the Educ'Action 404, #49's origin register, archive snapshot unread on four routes) and the Le Nestour biography annotation. | Verifier | 2026-09-17 | 18 days | a run |
+| 2 | **Egypt's confirmation read** — fifth of five. Carries row 5's open verification item 4 (source 1 unreachable). | Verifier | 2026-09-23 | 12 days | a run |
+| ~~3~~ | ~~**The Arabic Editor's two register questions on the ruler pair**~~ — **CLOSED 2026-10-05 at 20 days, and BOTH BIT.** ¶48's indefinite dual is the ism of `أنَّ`, so it never enters the negator's scope and `النكرة في سياق النفي تفيد العموم` never triggers: the Arabic carried an **existential** where the English carries a **universal**, at the edition's spine sentence, for twenty days through four gates. Fixed to `وأنَّه لا تُجمَعُ اثنتان منها`. And ¶60's `دعوتان` is the dual of **دعوة** (an invitation), not of **دعوى** (a claim) — the alif maqṣūra is the fourth letter, so the dual is **دعويان**. Both applied to the held AR file; no numeral moved, no EN prose touched, no annotation touched. **Ruling #87**; judgment at `verdicts/2026-10-05-ed05-ruler-arabic-register-judgment.md`. | Arabic Editor | 2026-09-15 | ~~19 days~~ **closed at 20** | ~~a judgment~~ **done** |
+| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | 4 days | a gate |
+| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, now **eight** after 10-04's four annotation corrections and today's two AR body fixes. | Assertions Engineer | 2026-10-01 | 4 days | the flip-commit run |
 
-**Plus the two that are not items but gates:** `qa_sources_alive --held-only --sample 0` immediately
-before the flip commit (and **its total ceiling is still unbuilt** — queue item 1, 18 days, the only
-flip dependency on the standing queue), and the **publish gate in writing**.
+**Plus the two that are not items but gates:** the held-source sweep immediately before the flip
+commit, and the **publish gate in writing**.
 
-**The honest read on the date.** Nothing in the list above needs more than a run except item 3, which
-has needed a judgment for nineteen days and is the spine sentence of the edition's most argued piece.
-Two confirmation reads at one per run, an Arabic gate, a rehearsal and a publish gate is **five runs
-against seven days** — feasible with slack for the first time in this edition's life, because production
-is finished. **Standing rule #1 is unchanged and outranks the date: if the arithmetic fails, the gate
+> **The flip's source sweep now has a command and a measured duration (2026-10-05, ruling #88 —
+> queue item 1 CLOSED after 18 days).** The step is no longer "run the sweep and hope"; it is:
+>
+> ```bash
+> python3 agents/tools/qa_sources_alive.py --held-only --sample 0 \
+>         --budget 300 --require-complete --json agents/logs/flip-sources.json
+> ```
+>
+> **Measured today against the real population: 59 of 59 held URLs in 153.2s, complete, exit 0** — so
+> 300s is ~2× headroom and the step can finally be *placed in a sequence*. `--require-complete` is the
+> load-bearing half: it gives *"everything answered"* and *"we ran out of clock"* **different exit
+> codes**, which before today were the same code and the same silence. Any URL the budget does not
+> reach is named in its own `unchecked` bucket and is **never** summarised beside the ones that
+> answered — because an unopened source reads exactly like a clean one in the only direction that
+> costs a reader anything.
+>
+> **Today's sweep, for the record, and nothing in it blocks the flip:** `ok: 52 · tls-chain: 4 ·
+> walled: 2 · timeout: 1`. The four `tls-chain` are the known `parliament.gov.zm` case — **ruling #80
+> exactly**, certificate valid, intermediate unsent, *document still served (200)*, reader meets
+> nothing. The two `walled` are 403 bot walls (lawhub.info, tandfonline), walls and not deaths (#70).
+> **The single `timeout` was re-probed twice per #20 and is not a timeout at all** — cgdev.org answers
+> **403** on re-read, so it is a wall too, and one read would have recorded a slow host where the truth
+> is a bot rule. *Never declare rot on one read, earned again.* **Zero dead sources across the held
+> set with six days to the gate.**
+
+**The honest read on the date, re-taken 2026-10-05.** The one item that needed a *judgment* rather than
+a run — item 3, nineteen days old when that sentence was written — **is closed, and it was not a
+formality: both questions bit, one of them at the piece's spine.** What remains needs no judgment at
+all. Two confirmation reads at one per run, an Arabic gate, a rehearsal and a publish gate is **four
+runs against six days** — still feasible with slack, and with the edition's only *unbounded* step now
+bounded and measured at 153 seconds. **Standing rule #1 is unchanged and outranks the date: if the arithmetic fails, the gate
 date gives, never a verdict, a confirmation read or an Arabic gate.** The 11-15 outer bound exists for
 this, and the only hard date is PASEC 2024 in Q4 2026, which binds row 4 alone.
 
@@ -540,6 +565,21 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-05 (daily)** — **THE OLDEST ITEM ON THE EDITION IS CLOSED AND IT WAS A REAL DEFECT AT THE
+  SPINE.** Item 3, the Arabic Editor's two register questions on the ruler pair, routed 09-15 and
+  escalated by the 10-04 review *by being put first rather than louder* — **both bit.** ¶48 carried an
+  **existential** in Arabic against a **universal** in English, because the indefinite dual is the ism
+  of `أنَّ` and so never enters the negator's scope; the pair argued a weaker claim than its own closing
+  paragraph for twenty days, through four gates, none of which could see it. ¶60's `دعوتان` was the dual
+  of *invitation*, not of *claim* — `دعوى` → **دعويان**. Both fixed in the held AR file; **no numeral
+  moved, no EN prose touched, no annotation touched.** **Ruling #87**, tenth member of the non-numeric
+  family and the first whose unit is **scope** — the inverse of #86 and its completion: *a second edition
+  is a second channel for facts and a single channel for grammar.* **And the flip's source sweep is
+  closed as a dependency** — queue item 1, 18 days, **ruling #88**: a total wall-clock ceiling, measured
+  at **59 of 59 held URLs in 153.2s**, with `--require-complete` giving *complete* and *ran out of clock*
+  different exit codes. Today's sweep found **zero dead sources** across the held set; the one `timeout`
+  re-probed to a 403 wall per #20. **Blockers 5 → 3** (two Verifier confirmation reads, the Arabic
+  captions gate) plus the rehearsal. **Six days to the 10-11 gate.**
 - **2026-10-04 (weekly review, second run of the day)** — **PRODUCTION IS FINISHED AND THE LEDGER WAS
   FOUR DAYS STALE ABOUT ITSELF.** Reconciled cell by cell against disk: six EN, six AR, six pair
   verdicts, six Verifier verdicts, five standalone AR gates plus Zambia's inside its pair verdict, six
