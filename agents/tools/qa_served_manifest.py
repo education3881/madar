@@ -172,14 +172,20 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
-try:
-    import requests
-except ImportError:  # pragma: no cover
-    print("FAIL(2): python-requests unavailable — the origin cannot be read, "
-          "and an unread origin is never a clean one.")
-    sys.exit(2)
+# STDLIB ONLY, AND THAT IS A GATE REQUIREMENT RATHER THAN A PREFERENCE.
+# `--emit` is wired into `postbuild`, so it runs on every build and a failed
+# import reds the deploy. The first draft of this file imported `requests` at
+# module level and exited 2 when it was missing — which would have made a step
+# that needs NO NETWORK AT ALL fail on an image lacking a third-party package.
+# `requests` is used by exactly one tool in this directory (`qa_live_drift`) and
+# that tool is deliberately NOT gated; CLAUDE.md states the assertions are
+# "Python 3, no deps" except the four that need a headless Chrome. A gated
+# assertion must not be the first to break that. So the origin is read with
+# `urllib`, the same way `qa_sources_alive` reads third-party hosts.
 
 SCHEMA = "madar-served-manifest/1"
 MANIFEST_NAME = "served-manifest.json"
@@ -345,10 +351,18 @@ def build_manifest(dist: Path) -> tuple[dict | None, int]:
 # ---- seeding from the origin's real bytes ----------------------------------
 
 def fetch(url: str) -> bytes | None:
+    """The raw bytes the origin serves at this URL, or None.
+
+    Raw BYTES, never decoded text: the whole instrument hashes what a reader
+    receives, and a decode-then-reencode round trip is not guaranteed to be the
+    identity. Returning text here would make every hash a hash of our own
+    transcoding.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": "madar-qa-served-manifest"})
     try:
-        r = requests.get(url, timeout=_attempt_timeout())
-        return r.content if r.status_code == 200 else None
-    except requests.RequestException:
+        with urllib.request.urlopen(req, timeout=_attempt_timeout()) as r:
+            return r.read() if r.status == 200 else None
+    except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError):
         return None
 
 
