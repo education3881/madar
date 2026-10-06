@@ -39,7 +39,23 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#88**, and binding. *(Moved from #86 to #88 on
+  `agents/guidebook/INDEX.md` — currently **#1–#89**, and binding. *(Moved from #88 to #89 on
+  2026-10-06, at the point of filing, by the ninth run to execute the four-count rule — one ruling from
+  one lane, and the **fifth** run to move five counts, because #89 joins the assertion-discipline family
+  and that family keeps a running member count (TWENTY-SIX → TWENTY-SEVEN), so the conditional fifth
+  home applies. **#89 closed standing-queue item 2 — the oldest item the board has ever carried at 29
+  days, named twelve times across five weeks and done zero** — which reached the head by the
+  displacement clause and the 10-05 tiebreak rather than by anyone remembering it. **That is the
+  one-queue rule choosing the day's first job for the second consecutive run, and choosing correctly
+  both times.** Two things found by executing the rule rather than by looking for them: the row-shape
+  check was run over **every** table in `INDEX.md` for the first time (21 tables, 189 rows) and **bit
+  immediately on this run's own §1 row** — five fields against a six-column header, the eighteenth
+  instance of a defect the previous two days repaired seventeen times, written by the run that knew
+  about it; and the assertion-discipline family's count moved to twenty-seven **beside a membership list
+  that does not exist**, so limb 3 could be honoured for the new member and for none of the other
+  twenty-six. A derivation from this register's own labels reaches **twenty-four of twenty-seven**, and
+  the remaining three are recorded as a debt owed to the 10-11 review rather than invented to balance
+  the number. Moved from #86 to #88 on
   2026-10-05, at the point of filing, by the eighth run to execute the four-count rule — two rulings from
   two lanes, and the **fourth** run to move five counts, applied **twice in one commit** because both
   #87 and #88 join families that keep a running member count (non-numeric NINE → TEN, assertion-discipline
@@ -105,7 +121,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-eight** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Twenty-nine** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -119,10 +135,10 @@ python3 agents/tools/qa_patch_queue.py .         # prints the whole gate registe
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **thirteen** of the twenty-eight assertions
+Use `npm run build`, not `npx astro build`: **fourteen** of the twenty-nine assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
-`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`) are gated from `postbuild` in `web/package.json`,
+`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -134,9 +150,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, thirteen more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, fourteen more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **25 of the 28 gate the deploy**; of the three that do
+artifact against the live origin. **26 of the 29 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -145,7 +161,7 @@ identity cannot write `.github/workflows/**`, so its reason lives in the tool's 
 and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
 there 2026-09-27** when the weekly review found the queue split across two directories with
 this file naming one and issue #7 naming the other. Applying that patch makes it
-**26 of 28**. A green run means the bytes are actually served, not merely built.
+**27 of 29**. A green run means the bytes are actually served, not merely built.
 
 **A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
 patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
@@ -160,6 +176,21 @@ below. They moved that day with assertion 27, `qa_patch_queue`, at the point of 
 25 of 28 gating, all three derived by `qa_patch_queue` rather than counted by hand. `qa_pair_frontmatter`
 is the **second** gate not handed `dist` and the second to read `web/src/content/**` directly, because a
 held piece is not built and the six held pieces are what the next flip commit serves (ruling #81).
+**They moved again on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89)** — fourteen
+`postbuild` entries, twenty-nine tools, **26 of 29 gating**, all three derived by `qa_patch_queue`
+rather than counted by hand. **It is the first assertion whose gated half and asserting half are
+different modes of the same tool, and the distinction is load-bearing rather than tidy.** `--emit`
+writes a per-URL fingerprint of the served bytes into `dist` and is gated from `postbuild`, because if
+it ever fails to run the chain of memory breaks and the *next* build has no baseline; `qa_census` reads
+it as a sixteenth instrument and asserts its routed-page count against the sitemap's own `<loc>` set, so
+a manifest that quietly stops describing some pages fails the build instead of narrowing in silence.
+`--check` fetches the manifest the **origin** is currently serving and is **not** gated — its home is the
+`build` job after `npm run build`, which this identity cannot write, so the reason lives in the tool's
+header and the step is staged at `agents/patches/2026-10-06-build-served-manifest-check.md`. **The
+`verify` job is the wrong home and that is worth knowing rather than guessing:** verify compares the
+artifact it just published against the origin, so origin == artifact by construction and the manifest
+would be compared against itself — a check in the wrong home, passing forever, which is standing-queue
+item 1's subject reached from the other side.
 
 **And the weekly re-read was not enough — the queue is now GATED (ruling #75, 2026-09-29).** The
 09-27 review executed the rule above in full, and the patch was **wrong again the next morning**

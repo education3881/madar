@@ -312,13 +312,9 @@ pieces illuminate each other and this review correctly declined to write them.
 
 | Pairing | The argument it carries |
 |---|---|
-| **Rwanda ↔ Sierra Leone** (6 ↔ 2) | The same virtue in two currencies: a state that measured its own teachers and
-published the number that did not flatter it. Row 6 already named the *older* Sierra Leone piece; this adds the
-edition's own. |
-| **Rwanda ↔ slot 3** (6 ↔ 4) | Row 4 asks what a system produces given its means and refuses to average the rulers
-that answer; row 6 is a ministry that supplied its own means, with the school year beside each figure. |
-| **Egypt ↔ slot 3** (5 ↔ 4) | Two halves of one question — what a state chooses to measure, and what it chooses to
-announce instead. Egypt published every architecture of its certificate and no count of who is in it. |
+| **Rwanda ↔ Sierra Leone** (6 ↔ 2) | The same virtue in two currencies: a state that measured its own teachers and published the number that did not flatter it. Row 6 already named the *older* Sierra Leone piece; this adds the edition's own. |
+| **Rwanda ↔ slot 3** (6 ↔ 4) | Row 4 asks what a system produces given its means and refuses to average the rulers that answer; row 6 is a ministry that supplied its own means, with the school year beside each figure. |
+| **Egypt ↔ slot 3** (5 ↔ 4) | Two halves of one question — what a state chooses to measure, and what it chooses to announce instead. Egypt published every architecture of its certificate and no count of who is in it. |
 
 **Deliberately not written:** Egypt↔Rwanda, Egypt↔Sierra Leone, Egypt↔Zambia/Sudan, Rwanda↔Zambia/Sudan. Each is
 defensible in a sentence and none is a claim worth a name. A mesh where everything points at everything tells a
@@ -565,6 +561,34 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-06 (daily)** — **THE CHEAPEST CORRECTION LEFT ON THE EDITION IS DONE, AND IT WAS THE ONE THE
+  LEDGER ITSELF NAMED AND ROUTED TWO DAYS AGO.** Row 6's body carried **three present-tense claims about a
+  third party's living channels** with no read-date in the prose — *"its newest item **is** the 10 August
+  release"*, *"the speeches and press-release libraries … **end** in 2024"*, and in ¶51 *"a page that
+  **serves** no publication date"* — plus a fourth nobody had listed: *"a reader looking **today** …
+  **does not** find it"*, which is the same defect in its purest form, since *today* in served prose means
+  the day a reader arrives. **Ruling #76 one surface over, exactly as the 10-04 review predicted:** the
+  09-29 pair verdict rewrote twelve annotations on this pair for this defect and recorded that no body
+  prose was touched — so the body kept the tense the annotations lost. All four now carry their reading's
+  date, in **both** editions, composed on the Arabic side rather than translated (`كانتا تنتهيان … في
+  القراءتين كلتيهما`, `يومَ قُرِئت`, `الذي بحث في ذَيْنِك التاريخين`).
+  **And fixing the body exposed the reciprocity failure in the other direction (#84 — a reciprocity check
+  has no arrow).** The body now cites a **2026-10-04 re-read**, and the `sources[]` annotation carried
+  only the 09-27 enumeration — so the citation did not hold what the sentence leaned on. The annotation
+  now records the re-read in both languages, including the part that is *not* a confirmation: the
+  **Announcements route did not resolve from here on 10-04** (`/updates/announcements` and
+  `-2`, both 404), so its January 2026 endpoint stands on the 09-27 reading alone. **Unverified from here
+  is a different status from changed (#83), and no cause is supplied for the route (#69).**
+  **Numeral multisets checked both ways: the only additions are the read-dates, and they are identical in
+  both editions** (`2026`×2, `27`×2, `4`×2). No figure moved, no source URL added or removed — `684`
+  citations before and after. **Zero served bytes changed, and that is now a measurement rather than a
+  prediction:** `qa_served_manifest --check` reports **0 pages changed, 0 dates moved** against a baseline
+  taken from the origin's own served bytes. The pair is held, so six edits reached no reader. **Blockers
+  stay at 3** (two Verifier confirmation reads, the Arabic captions gate) plus the rehearsal — this item
+  was never a flip blocker, only the cheapest thing left and the nearest to being served. **Five days to
+  the 10-11 gate.** *(Also repaired here: three table rows wrapped across physical lines, which terminate
+  their table and dump the remainder into the page as loose prose — found by pointing the row-shape check
+  at this file for the first time rather than only at the guidebook.)*
 - **2026-10-05 (daily)** — **THE OLDEST ITEM ON THE EDITION IS CLOSED AND IT WAS A REAL DEFECT AT THE
   SPINE.** Item 3, the Arabic Editor's two register questions on the ruler pair, routed 09-15 and
   escalated by the 10-04 review *by being put first rather than louder* — **both bit.** ¶48 carried an

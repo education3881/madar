@@ -291,6 +291,14 @@ ROWS = [
          "approved English pieces — same tie, other side; the two feeds are peers and not "
          "translations of each other"),
     ]),
+    ("qa_served_manifest", ["qa_served_manifest.py", "{dist}", "--describe"], [
+        ("routed pages", r"qa_served_manifest: (\d+) routed page\(s\)",
+         lambda P: len(P["sitemap"]),
+         "the sitemap's own <loc> set — the manifest is the baseline the NEXT "
+         "build compares against, so a manifest describing fewer pages than the "
+         "sitemap routes is a baseline that reports those pages unchanged "
+         "forever. The one number that must never narrow in silence"),
+    ]),
     ("qa_chrome_links", ["qa_chrome_links.py", "{dist}"], [
         ("pages", r"qa_chrome_links: (\d+) page\(s\)",
          lambda P: len(P["served"]),
