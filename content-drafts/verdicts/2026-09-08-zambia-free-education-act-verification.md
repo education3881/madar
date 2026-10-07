@@ -208,7 +208,9 @@ Legend: **2ch** = confirmed through a second, independently-routed channel on 09
 | `related:` — 3 slugs | all 3 resolve in **both** collections, all 3 `approved: true` ✔ | identical set ✔ |
 | hero still on disk | `/stills/2026-08-25-…svg`, 7,094 B ✔ | same asset ✔ |
 | og raster card on disk | `/og/2026-08-25-…png`, 6,526 B ✔ (raster, not SVG) | shared ✔ |
-| stale `approved: true` duplicate anywhere in repo (07-11 trap) | **none** — swept all 7 files bearing the slug ✔ |
+| stale `approved: true` duplicate anywhere in repo (07-11 trap) | **none** — swept all 7 files bearing the slug ✔ | **same sweep, not a second measurement** — this check is repo-wide and language-independent by construction, so one pass answers for both editions ✔ |
+
+> **Shape repair, 2026-10-07 — the row above had TWO cells in a three-column table, and so did Sierra Leone's.** Found by standing assertion 30 (`qa_register_shape`, ruling #90) on its first run, in the full-scope sweep that queue item 3 had specified for `INDEX.md` only. **The judgment is unchanged and was re-measured before the cell was written** rather than filled in from the row beside it: every file bearing this slug and carrying an `approved:` line reads `false`, in `articles/` and `articles-ar/` both. What was wrong was that the **AR column rendered blank** on the one table in this verdict whose entire purpose is to show both editions checked — and a blank cell and a cell saying *one sweep covers both* are different statuses that this file recorded identically (#83's shape, one surface over). The defect stood for **29 days** through a pair verdict, a verification verdict and a confirmation read.
 
 ### Numeral multiset, EN body vs AR body (the Sudan test, applied)
 AR-only numerals: **none**. EN-only numerals: **7** — `2,000`, `30,000`, `15`, `12`, `9`, `7`, `70`.

@@ -39,7 +39,20 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#89**, and binding. *(Moved from #88 to #89 on
+  `agents/guidebook/INDEX.md` — currently **#1–#90**, and binding. *(**This line is now ASSERTED rather
+  than remembered.** Moved from #89 to #90 on 2026-10-07, at the point of filing, by the tenth run to execute
+  the four-count rule — and the last run that will have to execute its fourth limb from memory, because
+  **standing assertion 30, `qa_register_shape`, derives the range from §3's own rows and fails the build when
+  this sentence disagrees with them.** It was this line, stale by thirteen rulings for seven days, that the
+  09-27 amendment was written about. **#90 closed standing-queue item 3 at 24 days and six displacements** —
+  the assertion the queue had specified since 2026-09-13 — which is the one-queue rule choosing the day's
+  first job for the **third consecutive run**. **SIX counts moved, not five**, and the sixth was found by the
+  new assertion on the real tree: the families list's quotable ratio read *twenty-six of eighty-eight rulings*
+  against a true twenty-seven of eighty-nine — **a home the 10-04 consolidation named as a defect, the 10-05
+  run honoured, and the 10-06 run dropped again while moving the count line three sentences above it.** The
+  conditional fifth home therefore has **two halves in one bullet**: a numerator that is not derivable (25 of
+  28 members recoverable, three owed to the 10-11 review) and a denominator that is exactly derivable. Only
+  the uncheckable half had an owner. That split is the ruling. Previously moved from #88 to #89 on
   2026-10-06, at the point of filing, by the ninth run to execute the four-count rule — one ruling from
   one lane, and the **fifth** run to move five counts, because #89 joins the assertion-discipline family
   and that family keeps a running member count (TWENTY-SIX → TWENTY-SEVEN), so the conditional fifth
@@ -121,7 +134,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Twenty-nine** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -135,10 +148,10 @@ python3 agents/tools/qa_patch_queue.py .         # prints the whole gate registe
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **fourteen** of the twenty-nine assertions
+Use `npm run build`, not `npx astro build`: **fifteen** of the thirty assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
-`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`) are gated from `postbuild` in `web/package.json`,
+`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -150,9 +163,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, fourteen more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, fifteen more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **26 of the 29 gate the deploy**; of the three that do
+artifact against the live origin. **27 of the 30 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -176,7 +189,7 @@ below. They moved that day with assertion 27, `qa_patch_queue`, at the point of 
 25 of 28 gating, all three derived by `qa_patch_queue` rather than counted by hand. `qa_pair_frontmatter`
 is the **second** gate not handed `dist` and the second to read `web/src/content/**` directly, because a
 held piece is not built and the six held pieces are what the next flip commit serves (ruling #81).
-**They moved again on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89)** — fourteen
+**They moved again on 2026-10-07 with assertion 30, `qa_register_shape` (ruling #90)** — **fifteen** `postbuild` entries, **thirty** tools, **27 of 30 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is this repository's own prose rather than the publication**, and the first to make one of this file's own counts a build failure: the ruling range in the non-negotiables above is now derived from §3's rows, which is the 09-27 amendment's fourth home closed by an instrument instead of by a habit. It takes the repository root, not `dist` — the **fourth** such gate — because a markdown table is never built. Previously moved on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89) — fourteen
 `postbuild` entries, twenty-nine tools, **26 of 29 gating**, all three derived by `qa_patch_queue`
 rather than counted by hand. **It is the first assertion whose gated half and asserting half are
 different modes of the same tool, and the distinction is load-bearing rather than tidy.** `--emit`

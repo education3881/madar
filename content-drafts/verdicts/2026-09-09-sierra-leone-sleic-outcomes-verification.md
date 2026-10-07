@@ -239,7 +239,9 @@ to the report, in the report's own words. That is the correct posture and it is 
 | `related:` — 3 slugs | all 3 resolve in **both** collections ✔ | identical set ✔ |
 | hero still on disk | `/stills/2026-08-28-…svg`, 4,744 B ✔ | same asset ✔ |
 | og raster card on disk | `/og/2026-08-28-…png`, 7,305 B ✔ (raster) | shared ✔ |
-| stale `approved: true` duplicate anywhere in repo (07-11 trap) | **none** ✔ |
+| stale `approved: true` duplicate anywhere in repo (07-11 trap) | **none** ✔ | **same sweep, not a second measurement** — this check is repo-wide and language-independent by construction, so one pass answers for both editions ✔ |
+
+> **Shape repair, 2026-10-07 — identical defect to the Zambia verdict's, in the identical row.** Two cells in a three-column table, so the **AR column rendered blank**; found by standing assertion 30 (`qa_register_shape`, ruling #90) on its first run. **Two verdicts, two drafters, one row:** that is a property of the template this trace table is copied from, not a slip in either verdict — the same diagnosis the 09-13 review made about the `annotation == sentence` defect appearing in two pieces by two hands. The judgment is unchanged and was re-measured before the cell was written: every file bearing this slug and carrying an `approved:` line reads `false`, in both collections. The defect stood for **28 days**.
 
 ### Numeral multiset, EN body vs AR body
 AR-only: **none.** EN-only: **`18`, `70`, `1`, and the lot/year ordinals `2`×5 and `3`×8** —

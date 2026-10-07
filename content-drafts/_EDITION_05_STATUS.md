@@ -129,15 +129,40 @@ and again today and cannot verify on the day a reader arrives. **Not a flip bloc
 true as of today and the dateline convention anchors it — but it is the cheapest correction left on the
 edition and it is seven days from being served.
 
-#### WHAT ACTUALLY BLOCKS THE FLIP — **FOUR items** (item 3 closed 2026-10-05), with ages to 2026-10-05, in the order they must run
+#### WHAT ACTUALLY BLOCKS THE FLIP — **THREE items** (item 3 closed 2026-10-05, **item 1 closed 2026-10-07**), with ages to 2026-10-07, in the order they must run
+
+> **2026-10-07 — ITEM 1 IS CLOSED at 20 days, the edition's oldest blocker, taken first for that reason.**
+> `verdicts/2026-10-07-ed05-ruler-confirmation-read.md`. **Both owed items disposed and one of them was a
+> live defect, not a formality.** The Educ'Action register — item 5's anchor, *unread on four routes* when
+> this line was written — **was read in full on the first attempt from the 2023-03-27 capture**: the
+> headline verbatim, the publication date `7 février 2023` printed on the page (confirming the 09-18
+> self-correction against this memo's own earlier record), the superlative **with its bounding clause in
+> the same breath** — « Avant 2030 qui est le point final de l'ODD4 » — and the question it answers,
+> « Quel est l'accent mis sur 2030 ? ». **Ruling #49 is satisfied in both editions against the register as
+> served today**, checked in the prose and not in the citation.
+> **And the Le Nestour annotation was wrong.** It placed the author's two PASEC advisory years *on the
+> served page*; the blog carries a byline and **no biography at all** — read three times now by two
+> clients. The fact is true and sits on the author's own CGD expert profile, read in served text today.
+> **Both bodies lean on it**, in the sentence that is the piece's entire warrant for using a secondary's
+> ruler, so a reader checking the warrant went to a page that does not carry it. **Repaired in both
+> editions inside `sources[]` only — no body prose touched, no numeral moved, the 09-18 word-cap waiver
+> not re-opened.** Recorded as a **second instance of ruling #84** (*a reciprocity check has no arrow* —
+> body right, annotation wrong) rather than as a new number, and `qa_pair_frontmatter` passed throughout,
+> correctly, because both editions carried the identical error (#86: parity is a floor, never a verdict).
+> **The count that makes this worth a block rather than a line:** four confirmation reads have now run and
+> **four of four found something after every prior gate had cleared the pair** — Zambia 2, Sierra Leone 1,
+> Sudan 2, this one 1. **Six defects on four pairs** that the Editor's pair verdict, the Arabic gate and
+> the Verifier's own verification verdict had all passed. The confirmation read is not a formality, and
+> the Zambia read named the surface in writing on 10-01: *an annotation is the only prose in this
+> publication that no instrument reads.*
 
 | # | Item | Owner | Open since | Age | Needs |
 |---|---|---|---|---|---|
-| 1 | **Slot 3's confirmation read** — fourth of five. Carries item 5 (the Educ'Action 404, #49's origin register, archive snapshot unread on four routes) and the Le Nestour biography annotation. | Verifier | 2026-09-17 | 18 days | a run |
-| 2 | **Egypt's confirmation read** — fifth of five. Carries row 5's open verification item 4 (source 1 unreachable). | Verifier | 2026-09-23 | 12 days | a run |
+| ~~1~~ | ~~**Slot 3's confirmation read**~~ — **CLOSED 2026-10-07 at 20 days.** Item 5's register read in full from the archive capture; #49 confirmed in both editions with its bound. The Le Nestour locus claim **confirmed wrong and repaired in both editions**, second instance of #84. | Verifier | 2026-09-17 | ~~18 days~~ **closed at 20** | ~~a run~~ **done** |
+| 2 | **Egypt's confirmation read** — **fifth and last.** Carries row 5's open verification item 4 (source 1 unreachable). **Goes to `sources[]` first and prose second**, which is the inverse of a verification pass's order and is now backed by four data points rather than an instinct. | Verifier | 2026-09-23 | **14 days** | a run |
 | ~~3~~ | ~~**The Arabic Editor's two register questions on the ruler pair**~~ — **CLOSED 2026-10-05 at 20 days, and BOTH BIT.** ¶48's indefinite dual is the ism of `أنَّ`, so it never enters the negator's scope and `النكرة في سياق النفي تفيد العموم` never triggers: the Arabic carried an **existential** where the English carries a **universal**, at the edition's spine sentence, for twenty days through four gates. Fixed to `وأنَّه لا تُجمَعُ اثنتان منها`. And ¶60's `دعوتان` is the dual of **دعوة** (an invitation), not of **دعوى** (a claim) — the alif maqṣūra is the fourth letter, so the dual is **دعويان**. Both applied to the held AR file; no numeral moved, no EN prose touched, no annotation touched. **Ruling #87**; judgment at `verdicts/2026-10-05-ed05-ruler-arabic-register-judgment.md`. | Arabic Editor | 2026-09-15 | ~~19 days~~ **closed at 20** | ~~a judgment~~ **done** |
-| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | 4 days | a gate |
-| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, now **eight** after 10-04's four annotation corrections and today's two AR body fixes. | Assertions Engineer | 2026-10-01 | 4 days | the flip-commit run |
+| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | **6 days** | a gate |
+| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, then eight, then ten after 10-06's Rwanda tense fixes, and **twelve** after today's two annotation repairs on the ruler pair. | Assertions Engineer | 2026-10-01 | **6 days** | the flip-commit run |
 
 **Plus the two that are not items but gates:** the held-source sweep immediately before the flip
 commit, and the **publish gate in writing**.
