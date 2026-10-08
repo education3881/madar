@@ -39,7 +39,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#90**, and binding. *(**This line is now ASSERTED rather
+  `agents/guidebook/INDEX.md` — currently **#1–#92**, and binding. *(**This line is now ASSERTED rather
   than remembered.** Moved from #89 to #90 on 2026-10-07, at the point of filing, by the tenth run to execute
   the four-count rule — and the last run that will have to execute its fourth limb from memory, because
   **standing assertion 30, `qa_register_shape`, derives the range from §3's own rows and fails the build when
@@ -134,7 +134,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Thirty** standing QA assertions plus `madar_stats.py`. Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty-one** standing QA assertions plus `madar_stats.py` and `build_font_bundle.py` (a generator, not an assertion — the count globs `qa_*.py`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -148,10 +148,11 @@ python3 agents/tools/qa_patch_queue.py .         # prints the whole gate registe
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **fifteen** of the thirty assertions
+Use `npm run build`, not `npx astro build`: **sixteen** of the thirty-one assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
-`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`) are gated from `postbuild` in `web/package.json`,
+`qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`,
+`qa_third_party_origins`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -163,9 +164,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, fifteen more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, sixteen more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **27 of the 30 gate the deploy**; of the three that do
+artifact against the live origin. **28 of the 31 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -189,7 +190,7 @@ below. They moved that day with assertion 27, `qa_patch_queue`, at the point of 
 25 of 28 gating, all three derived by `qa_patch_queue` rather than counted by hand. `qa_pair_frontmatter`
 is the **second** gate not handed `dist` and the second to read `web/src/content/**` directly, because a
 held piece is not built and the six held pieces are what the next flip commit serves (ruling #81).
-**They moved again on 2026-10-07 with assertion 30, `qa_register_shape` (ruling #90)** — **fifteen** `postbuild` entries, **thirty** tools, **27 of 30 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is this repository's own prose rather than the publication**, and the first to make one of this file's own counts a build failure: the ruling range in the non-negotiables above is now derived from §3's rows, which is the 09-27 amendment's fourth home closed by an instrument instead of by a habit. It takes the repository root, not `dist` — the **fourth** such gate — because a markdown table is never built. Previously moved on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89) — fourteen
+**They moved again on 2026-10-08 with assertion 31, `qa_third_party_origins` (the self-hosted fonts, standing-queue item 4)** — **sixteen** `postbuild` entries, **thirty-one** tools, **28 of 31 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is the publication's *privacy posture*, which until 2026-09-18 was a sentence in the CHARTER with no number behind it and until today was a measurement with no gate behind it.** It asserts one thing: no page fetches anything automatically from an origin we do not own. The whole design is a classification the 09-18 audit wrote before any code existed — **by who initiates the fetch, never by origin** — because this publication points at ~180 external origins on purpose and a check that counted those would report our own method as our largest defect and be switched off inside a week. `<a href>` and `og:image` are counted and printed and **not** asserted, with the reason in the output. Proved **19 ways**, bite first, on a copy of `dist`, and the first bite is the markup removed from `Base.astro` this morning rather than an invented one. *(Also corrected today: `qa_patch_queue` printed its first home's label as `agents/tools/*.py` while the glob has always been `qa_*.py` — harmless for nine days, misleading from the moment this day added the first non-assertion tool to that directory.)* Previously moved on 2026-10-07 with assertion 30, `qa_register_shape` (ruling #90) — **fifteen** `postbuild` entries, **thirty** tools, **27 of 30 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is this repository's own prose rather than the publication**, and the first to make one of this file's own counts a build failure: the ruling range in the non-negotiables above is now derived from §3's rows, which is the 09-27 amendment's fourth home closed by an instrument instead of by a habit. It takes the repository root, not `dist` — the **fourth** such gate — because a markdown table is never built. Previously moved on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89) — fourteen
 `postbuild` entries, twenty-nine tools, **26 of 29 gating**, all three derived by `qa_patch_queue`
 rather than counted by hand. **It is the first assertion whose gated half and asserting half are
 different modes of the same tool, and the distinction is load-bearing rather than tidy.** `--emit`

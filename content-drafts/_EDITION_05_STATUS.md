@@ -129,7 +129,46 @@ and again today and cannot verify on the day a reader arrives. **Not a flip bloc
 true as of today and the dateline convention anchors it — but it is the cheapest correction left on the
 edition and it is seven days from being served.
 
-#### WHAT ACTUALLY BLOCKS THE FLIP — **THREE items** (item 3 closed 2026-10-05, **item 1 closed 2026-10-07**), with ages to 2026-10-07, in the order they must run
+#### WHAT ACTUALLY BLOCKS THE FLIP — **TWO items** (item 3 closed 2026-10-05, item 1 closed 2026-10-07, **item 2 closed 2026-10-08**), with ages to 2026-10-08, in the order they must run
+
+> **2026-10-08 — ITEM 2 IS CLOSED at 15 days. The fifth and last confirmation read, and the edition's
+> verification work is now finished.** `verdicts/2026-10-08-ed05-egypt-confirmation-read.md`. **Both items
+> the 09-23 verification verdict left owed are verified, and neither of them is a correction to the piece
+> — the correction is to the verdict.**
+> That verdict could not re-read source 1 (`lawhub.info`, the legal encyclopaedia carrying the fee clause
+> entire) and recorded, in one table, *"Internet Archive — no snapshot of this URL exists at all"* beside
+> *"Save Page Now, requested today — HTTP 500"*. **A 200 snapshot of exactly that URL exists, timestamped
+> 2026-09-23T09:41:57Z, and the verdict recording its absence was committed at 10:01:55Z — twenty minutes
+> later.** The capture the run requested is the capture that is there: the request returned 500 and the
+> work completed. **Ruling #91** — *a failed acknowledgement is not a failed action*; binding shape is
+> **query, act, query again.**
+> **So the register was read in full in served text today**, 243,096 bytes and 16,158 Arabic code points,
+> and both owed items confirmed character for character: Article 37 bis 2's fee clause **including the unit
+> on the two hundred** — «مائتي جنيه للمادة الواحدة فى المرة الواحدة», carried by source 1 alone and
+> compressed three different ways by the other three reproductions (#61) — and Article 24's
+> «ورسوم التقدم لها والتي لا تزيد على ألف جنيه», which was the sentence added at the Editor's desk and
+> flagged *NOT INDEPENDENTLY VERIFIED*. **The no-floor claim is confirmed by reading rather than inferred:**
+> «لا تقل» occurs **zero** times in the whole register and «ألفي» zero times, so the bill-versus-enacted
+> contrast holds from the enacted side. One trap recorded because a numeric sweep would have fallen in it:
+> Article 24 *does* carry a «بما لا يقل» — governing the **number of retakes**, not their fee. One article,
+> two quantities, and the *not less than* is attached to the other one (#51).
+> **The host, probed to the layer per #54 and #80, has now given FOUR answers in nineteen days:** 200
+> (09-19, 09-22), TCP-accepted-then-silent (09-23), **403** (10-05, our own sweep), and today **no SYN-ACK
+> and no RST at all** — three reads by name, one by IP, on :443 and :80, while three control hosts opened
+> from the same machine in under a tenth of a second. #54 split *unreachable* into three signatures; this
+> host has produced four.
+> **Repaired in `sources[]` only, both editions, composed on the Arabic side rather than translated.** No
+> body prose touched, no numeral moved: one line changed in each file, and the numerals **added** by the two
+> edits are an exactly equal multiset — sixteen distinct values each, verified by diffing against `HEAD`.
+> `qa_pair_frontmatter` green throughout at **684 source URLs before and after**, correctly, because both
+> editions carried the identical stale claim — **#84, third instance** (*a reciprocity check has no arrow*)
+> and **#86** (*parity is a floor, never a verdict*).
+> **The count that makes this a block rather than a line: FIVE confirmation reads have run and five of five
+> found something after every prior gate had cleared the pair** — Zambia 2, Sierra Leone 1, Sudan 2, the
+> ruler 1, Egypt 1. **Seven defects on five pairs** that the Editor's pair verdict, the Arabic gate and the
+> Verifier's own verification verdict all passed. The surface the 10-01 Zambia read named in writing has
+> held for every read since: *an annotation is the only prose in this publication that no instrument reads.*
+> **Three days to the 10-11 gate. Two items left and neither needs a judgment.**
 
 > **2026-10-07 — ITEM 1 IS CLOSED at 20 days, the edition's oldest blocker, taken first for that reason.**
 > `verdicts/2026-10-07-ed05-ruler-confirmation-read.md`. **Both owed items disposed and one of them was a
@@ -159,10 +198,10 @@ edition and it is seven days from being served.
 | # | Item | Owner | Open since | Age | Needs |
 |---|---|---|---|---|---|
 | ~~1~~ | ~~**Slot 3's confirmation read**~~ — **CLOSED 2026-10-07 at 20 days.** Item 5's register read in full from the archive capture; #49 confirmed in both editions with its bound. The Le Nestour locus claim **confirmed wrong and repaired in both editions**, second instance of #84. | Verifier | 2026-09-17 | ~~18 days~~ **closed at 20** | ~~a run~~ **done** |
-| 2 | **Egypt's confirmation read** — **fifth and last.** Carries row 5's open verification item 4 (source 1 unreachable). **Goes to `sources[]` first and prose second**, which is the inverse of a verification pass's order and is now backed by four data points rather than an instinct. | Verifier | 2026-09-23 | **14 days** | a run |
+| ~~2~~ | ~~**Egypt's confirmation read** — **fifth and last.**~~ — **CLOSED 2026-10-08 at 15 days, and the edition's verification work is finished.** Both owed items verified from the Internet Archive capture the 09-23 verdict recorded as non-existent twenty minutes after it landed — **ruling #91**. Article 37 bis 2's fee clause confirmed **with the unit source 1 alone carries**; Article 24's thousand-pound cap confirmed and its absent floor read rather than inferred. No body prose touched; `sources[]` repaired in both editions with equal numeral multisets. *The `sources[]`-first ordering was right for the fifth time running.* | Verifier | 2026-09-23 | ~~14 days~~ **closed at 15** | ~~a run~~ **done** |
 | ~~3~~ | ~~**The Arabic Editor's two register questions on the ruler pair**~~ — **CLOSED 2026-10-05 at 20 days, and BOTH BIT.** ¶48's indefinite dual is the ism of `أنَّ`, so it never enters the negator's scope and `النكرة في سياق النفي تفيد العموم` never triggers: the Arabic carried an **existential** where the English carries a **universal**, at the edition's spine sentence, for twenty days through four gates. Fixed to `وأنَّه لا تُجمَعُ اثنتان منها`. And ¶60's `دعوتان` is the dual of **دعوة** (an invitation), not of **دعوى** (a claim) — the alif maqṣūra is the fourth letter, so the dual is **دعويان**. Both applied to the held AR file; no numeral moved, no EN prose touched, no annotation touched. **Ruling #87**; judgment at `verdicts/2026-10-05-ed05-ruler-arabic-register-judgment.md`. | Arabic Editor | 2026-09-15 | ~~19 days~~ **closed at 20** | ~~a judgment~~ **done** |
-| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | **6 days** | a gate |
-| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, then eight, then ten after 10-06's Rwanda tense fixes, and **twelve** after today's two annotation repairs on the ruler pair. | Assertions Engineer | 2026-10-01 | **6 days** | the flip-commit run |
+| 4 | **The gate on the six packet captions' Arabic** | Arabic Editor | 2026-10-01 | **7 days — now the edition's oldest open item** | a gate |
+| 5 | **The flip rehearsal, re-run** — 10-01's green describes a tree **six content files** old, then eight, then ten after 10-06's Rwanda tense fixes, twelve after 10-07's two annotation repairs on the ruler pair, and **fourteen** after today's two on the Egypt pair. **And it is now also a chrome-stale green:** 10-01's rehearsal ran against a tree whose every page still fetched two third-party origins, which today's queue work removed, so the rehearsal has a second kind of staleness it did not have yesterday. | Assertions Engineer | 2026-10-01 | **7 days** | the flip-commit run |
 
 **Plus the two that are not items but gates:** the held-source sweep immediately before the flip
 commit, and the **publish gate in writing**.
@@ -586,6 +625,38 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-08 (daily)** — **THE EDITION'S VERIFICATION WORK IS FINISHED. The fifth and last confirmation
+  read closed blocker 2 at 15 days, and five of five reads have now found something after every prior gate
+  cleared the pair.** The finding is not in the piece — the piece was right on both counts — it is in the
+  **verdict**. The 09-23 verification recorded *"no Internet Archive snapshot of this URL exists at all"*
+  beside *"Save Page Now, requested today — HTTP 500"*, and the capture it had itself requested is
+  timestamped **2026-09-23T09:41:57Z**, twenty minutes before that verdict was committed. **A 500 is not a
+  no** — the request's acknowledgement failed and the work completed, and nobody re-queried because an
+  error reads as *nothing happened*. **Ruling #91**, reachability family: *query, act, query again.*
+  Fifteen days of believing a load-bearing register was readable on no channel at all, and an Editor's
+  question about shipping a one-channel enacted clause that never needed asking.
+  **Read in served text today from that capture** — 243,096 bytes, 16,158 Arabic code points — and both
+  owed items confirmed character for character: the fee clause of Article 37 bis 2 **with the unit on the
+  two hundred** («للمادة الواحدة فى المرة الواحدة», carried by source 1 alone, compressed three different
+  ways by the other three reproductions — #61 on day fifteen), and Article 24's «ورسوم التقدم لها والتي لا
+  تزيد على ألف جنيه». **The absent floor is read, not inferred:** «لا تقل» occurs zero times in the whole
+  register and «ألفي» zero times. One trap named because a numeric sweep would have fallen into it —
+  Article 24 *does* carry a «بما لا يقل», governing the number of retakes and not their fee (#51).
+  **The host has now answered four ways in nineteen days**: 200, TCP-accepted-then-silent, 403, and today
+  no SYN-ACK and no RST, with control hosts opening in a tenth of a second. #54's three signatures are not
+  a closed set.
+  **Repaired in `sources[]` only, both editions, Arabic composed rather than translated.** One line per
+  file; the numerals **added** by the two edits form an exactly equal multiset, sixteen distinct values
+  each, verified by diff against `HEAD`. No body prose, no numeral moved, 684 citations before and after.
+  The pair is held, so two edits reached no reader.
+  **Also today, and it is the queue's work rather than the edition's but it touches every page of it:** the
+  two third-party font origins are gone from the layout, self-hosted and gated by standing assertion 31.
+  Every page of this edition will ship contacting **nobody but our own origin** — measured, not assumed:
+  with all external hosts blackholed, 15 faces load across all five families. **It also makes blocker 5
+  stale a second way**, because the 10-01 rehearsal ran against a tree whose pages still fetched Google.
+  **Blockers 3 → 2** (the packet captions' Arabic gate, now the edition's oldest open item at 7 days, and
+  the flip rehearsal) plus the held-source sweep and the publish gate. **Three days to the 10-11 gate, two
+  items left, and neither needs a judgment.**
 - **2026-10-06 (daily)** — **THE CHEAPEST CORRECTION LEFT ON THE EDITION IS DONE, AND IT WAS THE ONE THE
   LEDGER ITSELF NAMED AND ROUTED TWO DAYS AGO.** Row 6's body carried **three present-tense claims about a
   third party's living channels** with no read-date in the prose — *"its newest item **is** the 10 August

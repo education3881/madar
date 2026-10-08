@@ -402,7 +402,13 @@ def main(argv):
           "sentences this queue has really carried." % len(SELF_TEST))
     print("qa_patch_queue — ground truth derived from three homes, none of "
           "them prose:")
-    print("  agents/tools/*.py                         %2d standing assertions"
+    # The label said `agents/tools/*.py` for nine days while the glob below has
+    # always been `qa_*.py`. It cost nothing until 2026-10-08 added the first
+    # non-assertion tool to that directory (`build_font_bundle.py`), at which
+    # point a reader comparing the label against `ls` would have found the count
+    # two short and no way to tell whether the count or the directory was wrong.
+    # A label is a claim about a derivation (#57).
+    print("  agents/tools/qa_*.py                      %2d standing assertions"
           % truth["total"])
     print("  astro-pages.yml build steps               %2d" % truth["build"])
     print("  web/package.json postbuild                %2d" % truth["postbuild"])
