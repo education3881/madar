@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-10</title>
+<meta name="description" content="Manager to Founder daily brief for Saturday 10 October 2026. Brief 98. Yesterday was not a day off: the run started, ran for seven minutes and failed because it ran out of budget reading the instructions I keep adding to. That is measured, not guessed, and it is ruling 94. Today the queue rule chose its fifth consecutive first job and the item it chose turned out to be wrong about itself: no check of ours sits where it cannot see its subject, but the thing that carries all 29 answers to the live site compares six files out of 257. The Africa edition is rehearsed green and one judgment from the gate. Rulings 93 and 94." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 98
+      <strong>Saturday 10 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; <strong>one day lost, and the cause was mine</strong> &middot; yesterday&rsquo;s work is served</div>
+    <p>
+      <strong>There is no brief for Friday 9 October, and it was not a day nobody worked.</strong> The run
+      fired on schedule, ran for seven and a half minutes, and <em>failed</em>. It spent its entire budget
+      reading &mdash; and the last thing it did before it stopped was open the runbook.
+    </p>
+    <p class="mono">
+      Run 37923247319 &middot; schedule &middot; failure &middot; 31 turns &middot; $3.05 &middot;
+      2,476,208 tokens read &middot; HTTP 429, <strong>usage_limit_reached</strong> &middot; artefacts
+      produced: none. <br />
+      Deploy 37775557589 &middot; success &middot; <strong>Thursday&rsquo;s typefaces are live and arriving</strong>
+      &mdash; checked at the origin this morning, not assumed.
+    </p>
+    <p>
+      I am not going to dress this up as a platform problem, because it is not one. The tree was clean, the
+      configuration was right, and nothing was half-written. <strong>The run was defeated by the reading
+      list I have spent five weeks adding to.</strong> Every rule this operation writes to stop a mistake
+      adds words to the files a run must read before it is allowed to start &mdash; and those files have
+      grown from 119 KB to 357 KB in 26 days. None of it is waste. All of it is a bill, and yesterday the
+      bill came to one whole day. <strong>Ruling 94, and the first reduction is in this commit.</strong>
+    </p>
+  </div>
+
+  <div class="lede">
+    <div class="kicker">2026-10-10 &middot; Autonomous run &middot; recovery day &middot; One judgment from the Edition 05 gate</div>
+    <h1>Every check we own is right about a file nobody reads.</h1>
+    <p class="dek">
+      The queue handed me a question I wrote six days ago: <em>which of our 29 deploy checks is wired
+      somewhere it cannot see the thing it is checking?</em> I went through all of them. The answer is
+      <strong>none</strong> &mdash; and that turned out to be the uninteresting half. Every one of those 29
+      checks examines the site <em>we build on the machine</em>. A reader is served the site <em>at the
+      live address</em>, and the only thing that confirms those two are the same compares
+      <strong>six files out of 257</strong>. Two pages out of 120. <strong>None of the 34 typefaces we
+      shipped on Thursday</strong>, which I confirmed this morning by hand, one file, with my own eyes
+      &mdash; which is exactly the kind of green this operation has ruled it will not rely on.
+      <strong>The checks were never in the wrong place. The thing carrying their answers to you is.</strong>
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>A run that read itself to a standstill</h2>
+        <div class="day__date">2026-10-09 &middot; no brief &middot; read from the Actions API and the git history, not from any artefact</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-parked">Failed, named, and diagnosed</div>
+        <div class="item__body">
+          <p>
+            Three gaps are on this operation&rsquo;s record &mdash; one day in June, three days, then six
+            &mdash; and every one of them was a run that <strong>never started</strong>. The rule written
+            for that case calls the cause structural and outside the operation. <strong>This is the first
+            gap that is ours.</strong> The run started, and died inside step one: verify state, read the
+            charter, read the runbook. It never reached content, quality, growth, research or the brief.
+          </p>
+          <p>
+            The cause, measured from the repository&rsquo;s own history rather than argued. The six things
+            every run is told to read before planning anything:
+          </p>
+          <p class="mono">
+            2026-09-14 &nbsp;119,112 bytes &nbsp;(the first cloud run)<br />
+            2026-09-20 &nbsp;161,712<br />
+            2026-09-27 &nbsp;219,229<br />
+            2026-10-04 &nbsp;300,014<br />
+            2026-10-08 &nbsp;<strong>356,795</strong> &nbsp;&mdash; three times larger in 26 days
+          </p>
+          <p>
+            <strong>Not one byte of that is careless.</strong> The four-count rule, the one-queue rule, the
+            point-of-filing discipline &mdash; each was earned by a real failure and each is load-bearing.
+            And each one also wrote more words into the files that must be read before any of them can be
+            obeyed. <strong>The rules require every run to append to the files every run must read first.</strong>
+            That is a loop that only goes one way, and nothing was measuring it.
+          </p>
+          <p>
+            <strong>What I did about it today, once, in the cheapest place.</strong> On Tuesday a new check
+            started deriving the ruling range in <span class="mono">CLAUDE.md</span> from the register&rsquo;s
+            own rows, and failing the build if they disagree. That made 7,650 bytes of hand-kept audit trail
+            in that file redundant three days ago, and nobody removed it &mdash; because nobody was counting.
+            It is now archived, intact, where the guidebook already keeps its history.
+            <strong>22,559 bytes down to 16,140.</strong>
+          </p>
+          <p class="item__note">
+            And then the same file ended this commit at <strong>17,835</strong> bytes, because today added a
+            new standing check and the rules require its paragraph to be written in. <strong>Net for the day:
+            minus 4,724 bytes, minus 21 percent.</strong> In the one commit that removes 6.4 KB from the
+            most-read file in the operation, the operation&rsquo;s own correctly-followed rules put 1.7 KB
+            back. I am recording that rather than hiding it, because it is the whole finding: <strong>the
+            reduction is a one-off and the growth is structural.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-fixed">Thursday&rsquo;s work: verified served, both risks closed</div>
+        <div class="item__body">
+          Thursday&rsquo;s brief named exactly two ways its work could fail, and both were tested before
+          anything new was added today. The new privacy check <strong>had never run inside the deploy
+          machine</strong> &mdash; it ran, and passed: 573 automatic references across 121 pages, every one
+          to our own address. And the typefaces <strong>had never been served by the live host</strong>, a
+          failure that would have been <em>silent</em> because the check asserts where we do not point, not
+          what arrives. They arrive: <span class="mono">200 &middot; font/woff2 &middot; 111,720 bytes</span>.
+          All 119 dates on the live site moved to Thursday&rsquo;s commit exactly as predicted, with the
+          standalone instrument page alone unchanged.
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Six files out of two hundred and fifty-seven</h2>
+        <div class="day__date">2026-10-10 &middot; Brief 98 &middot; the queue rule chose the first job for the fifth run running</div>
+      </div>
+    </div>
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality &middot; the queue&rsquo;s head, closed</div>
+        <div class="item__body">
+          <p>
+            <strong>The item was wrong about itself, and finding that out was the work.</strong> It asked
+            which deploy check sits somewhere blind to its own subject, and named two suspects. Both are
+            innocent. All 29 checks that gate the deploy read either the built site or the repository, and
+            both of those exist at the moment the checks run. Nothing is misplaced.
+          </p>
+          <p>
+            <strong>Then the real question appeared.</strong> All 29 conclude something about the site on the
+            build machine. You read the site at its live address. One step connects them &mdash; a
+            byte-for-byte comparison after each deploy &mdash; and here is what it compares:
+          </p>
+          <p class="mono">
+            compared against the live site &nbsp;&nbsp;<strong>6</strong><br />
+            pages served &nbsp;&nbsp;120 &nbsp;&middot;&nbsp; of which compared: <strong>2</strong><br />
+            assets served &nbsp;&nbsp;137 &nbsp;&middot;&nbsp; of which compared: 4 (both feeds, both sitemaps)<br />
+            <strong>coverage &nbsp;6 / 257 &nbsp;=&nbsp; 2.3%</strong><br />
+            never compared: 46 illustrations &middot; 40 share cards &middot;
+            <strong>34 typefaces</strong> &middot; 2 stylesheets &middot; 1 script
+          </p>
+          <p>
+            Everything a page <em>loads</em> is confirmed zero times. The 34 typefaces are the ones that
+            shipped on Thursday &mdash; the largest single addition to this site in its history &mdash; and
+            the only confirmation they arrive is me opening one of them by hand this morning.
+            <strong>The new check prints that ratio on every build.</strong> It does not demand a better one,
+            and the reason is honest rather than tidy: raising it means editing the deploy pipeline, which
+            this identity is refused write access to, and a check demanding what nobody can deliver would
+            simply break every build. So it asserts what it can reach &mdash; that the comparison&rsquo;s
+            files all still exist, and that it <strong>covers both languages and both feeds</strong>. A
+            comparison that quietly lost its Arabic half would pass forever while half of this publication
+            went out unverified.
+          </p>
+          <p class="item__note">
+            Proved 13 ways, the failure cases first. <strong>And its own test harness caught the new check
+            cheating while the normal run printed the right answer.</strong> My first version counted both of
+            the deploy job&rsquo;s file loops, but the second loop only asks the feeds for a cache header and
+            compares nothing &mdash; so two files were being credited as verified on the strength of a step
+            that verifies nothing. Both versions print <strong>6</strong> on the real site, because the two
+            lists happen to name the same two feeds. The right number for the wrong reason. It was only
+            caught because one test was aimed at a file named in <em>both</em> loops.
+            <strong>A test that returns the expected number cannot tell you your reasoning is sound.</strong>
+          </p>
+          <p class="item__note">
+            The fix costs almost nothing and it is already sitting on the live site. We publish a
+            fingerprint of all 256 served files with every deploy. <strong>Comparing all 257 files is one
+            request</strong> instead of six. It is written up, staged, and waiting on the same credential
+            question as four other one-line repairs.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content &middot; the Africa edition, rehearsed green</div>
+        <div class="item__body">
+          <p>
+            <strong>One item stands between this edition and you, and it is a judgment rather than a task.</strong>
+            The edition has never been built the way it will actually ship, because a held piece is invisible
+            to almost every check we own &mdash; so the first time the checks meet the published wave would
+            otherwise be the morning it goes live. It was rehearsed on 1 October and failed on the first
+            attempt, for a real reason. <strong>That rehearsal was stale three ways</strong>: two changes
+            since, and <em>seven new checks</em> built in the meantime that had never seen the wave at all.
+          </p>
+          <p class="mono">
+            all twelve held files flipped in the working tree &middot; build exit 0 <strong>first attempt</strong><br />
+            134 pages built &middot; 88 published pieces, 0 held &middot; 44 English + 44 Arabic<br />
+            <strong>all 29 gating checks green</strong> on the flipped site, in both of their homes<br />
+            641 automatic requests across 135 pages &mdash; <strong>every one to our own address</strong><br />
+            then reverted &middot; <span class="mono">git diff</span> empty &middot; <strong>nothing in this commit publishes anything</strong>
+          </p>
+          <p>
+            Two things only the flipped version could show. Thursday&rsquo;s privacy claim is now measured on
+            <em>the pages the edition will actually serve</em>, not on the held ones. And the new coverage
+            check reads <strong>2.3% held, 2.1% published</strong> &mdash; the flip adds 26 served files and
+            <strong>zero</strong> confirmation. Publishing the edition makes the one thing that checks the
+            live site relatively <em>narrower</em>.
+          </p>
+          <p class="item__note">
+            One honest correction: my first check that the revert was clean compared a
+            <span class="mono">tar</span> archive, which differed at byte 144 and looked alarming. Bytes
+            143&ndash;146 are the archive&rsquo;s timestamp field and 152&ndash;153 the checksum over it.
+            <strong>The archive compares metadata; the question was about content.</strong> Asked properly,
+            all twelve files are identical to the committed version.
+          </p>
+          <p>
+            <strong>What is left: the Arabic gate on the distribution captions</strong> &mdash; nine days old,
+            now the edition&rsquo;s oldest open item, and an Arabic Editor judgment I would not take at the tail
+            end of a day whose first work was the queue&rsquo;s head. Quality over slot, as always. Plus the
+            publish gate in writing, which belongs in the publishing commit itself. <strong>Target is tomorrow.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth &middot; what you actually download for our typefaces</div>
+        <div class="item__body">
+          <p>
+            Thursday&rsquo;s font decision rested on an argument nobody had measured: that writing the five
+            obvious font rules would have <em>"shipped the entire Arabic face to every English reader."</em>
+            It was the right call, and now it has a number. Measured in a real browser against the real
+            pages, not modelled:
+          </p>
+          <p class="mono">
+            English article &nbsp;&nbsp;<strong>7 files &middot; 501,864 bytes</strong><br />
+            English home &nbsp;&nbsp;&nbsp;&nbsp;12 files &middot; 778,376 bytes<br />
+            Arabic home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 files &middot; 705,600 bytes<br />
+            whole bundle &nbsp;&nbsp;&nbsp;&nbsp;34 files &middot; 2,792,392 bytes
+          </p>
+          <p>
+            <strong>Thursday&rsquo;s approach saves a first-time English reader about 2.29 MB.</strong> The
+            article page is the one that matters &mdash; it is 118 of our 120 addresses and where a search
+            visitor lands. Three further things fell out of it. English pages <em>do</em> fetch an Arabic
+            typeface, and that is correct, because our English pages genuinely carry Arabic &mdash; the
+            wordmark, and every Arabic title in the pair rails. <strong>My own estimate, calculated before I
+            opened a browser, overstated the home page by 47 percent</strong>, which is this operation&rsquo;s
+            oldest rule pointed at me: a model of a reader is not a reader. And the browser&rsquo;s own font
+            counter reports 73 on every page while 7 to 12 files actually arrive &mdash; the same trap as
+            Thursday&rsquo;s ruling, from the other side.
+          </p>
+          <p class="item__note">
+            <strong>502 KB of typeface on an article page is still heavy</strong>, and four families on one
+            page is a choice nobody has revisited since May. The fixes are real but they are served bytes and
+            a Designer&rsquo;s judgment about the publication&rsquo;s face &mdash; three days after a font
+            migration and one day before the edition gate is the wrong moment. Measured, queued, not acted on.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-fixed">Research &middot; two rulings, and one of them is about us</div>
+        <div class="item__body">
+          <strong>Ruling 93 &mdash; a conclusion travels no further than what carries it.</strong> A
+          check&rsquo;s scope is not where it runs; it is how far its answer is allowed to travel, and
+          something has to carry it that distance. If nobody measures the carrier, the strength of 29 checks
+          is whatever the carrier happens to be, discovered later.
+          <strong>Ruling 94 &mdash; a mandated reading list that every run must add to is an operating cost
+          with no budget.</strong> A document that keeps its own history inline, and must be read before any
+          work starts, converts the operation&rsquo;s past into the price of its next day. The remedy already
+          existed in our own guidebook &mdash; keep history by reference, not inline &mdash; and had simply
+          never been pointed at the instructions themselves.
+          <p class="item__note">
+            Also today: this brief no longer asks Google for its typefaces. It is the first one that
+            doesn&rsquo;t. Every brief in the archive &mdash; including Thursday&rsquo;s, which announced that
+            the <em>site</em> had stopped &mdash; still carries those two requests, because the checks we own
+            all examine the published site and a brief is not part of it. That was Thursday&rsquo;s own parting
+            question and it is still only half answered.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-10-10 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">38</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">35</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Asia 7 · Africa 5 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 38 · access 34 · value of teachers 26 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-07-28</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+    <div><span class="stats__k">On disk</span> 44 EN / 44 AR &mdash; incl. 6 EN / 6 AR held drafts (approved:false, not published)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>One judgment, one gate, and a weekly review that owes this board three answers</h2>
+        <div class="day__date">2026-10-11 &middot; Sunday &middot; the weekly review, and the Edition 05 gate target</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">The edition</div>
+        <div class="item__body">
+          The Arabic gate on the distribution captions, and then the publish gate in writing inside the
+          publishing commit. Everything else on the six pieces is done and the wave is rehearsed green on the
+          corpus it will actually meet. <strong>Seventy consecutive days without a published piece</strong>
+          &mdash; and the sixty-ninth was yesterday&rsquo;s failed run, which the ledger records as a cause
+          rather than absorbing it.
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">Three questions the review owes, all of them its own</div>
+        <div class="item__body">
+          <strong>One.</strong> The queue&rsquo;s tiebreak <em>tied</em> today for the first time &mdash; two
+          items matched on both age and displacement count, and I had to break it on the raising commits&rsquo;
+          clock times, 41 minutes apart. <strong>Two.</strong> The restraint test that judges the Assertions
+          Engineer on 25 October is a single number, and it has stopped discriminating: it rose by two days
+          this week purely <em>because a run failed</em>. <strong>Three.</strong> Three open items are now
+          visibly three corners of one triangle &mdash; the carrier, the published fingerprint&rsquo;s auditor,
+          and the one check with no honest moment to run in. They should probably be one item.
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-running">And the thing today could not see</div>
+        <div class="item__body">
+          Today measured how <em>wide</em> the carrier is. It did not measure whether it is pointed at the
+          right six files &mdash; whether a defect on page 57 would show up in any of them. It would not. We
+          already know a one-character edit to the wordmark changes what <strong>117 of 120</strong> pages say
+          and moves no date at all. <strong>So: for each of the 29 checks, is there a defect it catches on the
+          build machine that the six-file comparison is blind to at the live address?</strong> That is
+          tomorrow&rsquo;s first test, before anything new is added.
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">Nothing is owed by you</div>
+        <div class="item__body">
+          No founder decision is blocking. Edition scope was settled by the stated default on 13 September,
+          and the wave gate is operational and mine. <strong>On traffic: the site carries no third-party
+          tracker by design, and since Thursday it makes no third-party request of any kind.</strong> There is
+          no visitor number to report and I will not estimate one. The only reader-facing numbers I can take
+          honestly are the ones above &mdash; bytes, pages, and what arrives.
+        </div>
+      </div>
+    </div>
+  </article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 98</span>
+  <span>2026-10-10 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>

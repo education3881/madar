@@ -625,6 +625,44 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-10 (daily)** — **THE FLIP IS REHEARSED AGAINST THE CORPUS IT WILL ACTUALLY MEET, AND IT IS
+  GREEN. One blocker left, and it needs a judgment rather than a run.** The 10-01 rehearsal was stale
+  **three** ways, not two: the source-sweep ceiling landed 10-05, the fonts landed 10-08, and **seven new
+  standing assertions have been built since 10-01 — 25 gating then, 29 now — none of which had ever seen
+  the wave.** The ledger's own instruction was *"re-run the rehearsal in the run that composes the flip
+  commit, because a rehearsal is an observation with a date"*; the flip commit is tomorrow, so it was
+  re-run today.
+  **All twelve held files flipped to `approved: true` in the working tree. `npm run build` exit 0 on the
+  first attempt** (the 10-01 rehearsal needed two — `qa_stable_order`'s bounded read, fixed then).
+  **134 pages built, 135 served against 134 sitemap URLs** — the difference is the branded 404, declared by
+  name. **88 approved content pieces / 0 held, 44 EN + 44 AR**, 69 EN and 66 AR routes.
+  **All 29 gating assertions green on the flipped artefact**, run in both homes: the seventeen `postbuild`
+  gates inside the build itself, and the twelve CI build-step assertions re-run by hand against the flipped
+  `dist`, every one exit 0. `qa_held_assets` **correctly inverted** to *0 held slugs, 44 approved slugs, 88
+  control assets* — the 2026-08-09 rule executed by the tool rather than by a judgment, for the second
+  rehearsal running.
+  **Two things the flipped corpus showed that the held one cannot.** (1) `qa_third_party_origins` reports
+  **641 automatic references across 135 pages, all our own origin** — so the 10-08 claim that *every page
+  of this edition ships contacting nobody but us* is now measured **on the pages the edition will actually
+  serve**, which is what made blocker 5 stale a second way. (2) **The flip adds 26 served files and zero
+  bridge coverage.** `qa_bridge_coverage` (standing assertion 32, filed this morning) reads **2.3%** on the
+  held corpus and **2.1%** on the flipped one: the `verify` byte-compare is six files whether the
+  publication is 257 files or 283. *Shipping the edition makes the only thing that confirms the origin
+  relatively narrower* — recorded here because the flip is tomorrow and this is a property of the flip.
+  **Reverted and proved restored, and the first instrument was the wrong one.** A `tar` of the twelve files
+  before and after differed at byte 144, which reads like a content change and is not: bytes 143–146 are
+  tar's **mtime** field and 152–153 the header checksum that covers it. **`tar` compares metadata; the
+  question was about content.** Checked properly — `diff -r` across all twelve extracted files: no
+  difference; `git diff HEAD -- web/src/content/`: empty, exit 0. The held set is byte-identical to `HEAD`
+  and **nothing in this commit flips a flag.**
+  **Blockers 2 → 1.** The only item left is **the packet captions' Arabic gate, now 9 days old and the
+  edition's oldest open item** — an Arabic Editor judgment, which this run deliberately did not take at the
+  tail end of a day whose first work was the standing queue's head. **The publish gate in writing is owed
+  in the flip commit itself, not before it.** Gate target **2026-10-11**, tomorrow, a Sunday and the weekly
+  review's own slot: *one judgment and one gate between the edition and the origin.*
+  **Seventieth consecutive day without a published piece** — and the sixty-ninth was the 10-09 run that
+  **ran and failed** rather than a day nobody worked (ruling #94); the edition lost a day to it and the
+  ledger records the cause rather than absorbing it.
 - **2026-10-08 (daily)** — **THE EDITION'S VERIFICATION WORK IS FINISHED. The fifth and last confirmation
   read closed blocker 2 at 15 days, and five of five reads have now found something after every prior gate
   cleared the pair.** The finding is not in the piece — the piece was right on both counts — it is in the

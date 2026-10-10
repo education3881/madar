@@ -39,80 +39,19 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#92**, and binding. *(**This line is now ASSERTED rather
-  than remembered.** Moved from #89 to #90 on 2026-10-07, at the point of filing, by the tenth run to execute
-  the four-count rule — and the last run that will have to execute its fourth limb from memory, because
-  **standing assertion 30, `qa_register_shape`, derives the range from §3's own rows and fails the build when
-  this sentence disagrees with them.** It was this line, stale by thirteen rulings for seven days, that the
-  09-27 amendment was written about. **#90 closed standing-queue item 3 at 24 days and six displacements** —
-  the assertion the queue had specified since 2026-09-13 — which is the one-queue rule choosing the day's
-  first job for the **third consecutive run**. **SIX counts moved, not five**, and the sixth was found by the
-  new assertion on the real tree: the families list's quotable ratio read *twenty-six of eighty-eight rulings*
-  against a true twenty-seven of eighty-nine — **a home the 10-04 consolidation named as a defect, the 10-05
-  run honoured, and the 10-06 run dropped again while moving the count line three sentences above it.** The
-  conditional fifth home therefore has **two halves in one bullet**: a numerator that is not derivable (25 of
-  28 members recoverable, three owed to the 10-11 review) and a denominator that is exactly derivable. Only
-  the uncheckable half had an owner. That split is the ruling. Previously moved from #88 to #89 on
-  2026-10-06, at the point of filing, by the ninth run to execute the four-count rule — one ruling from
-  one lane, and the **fifth** run to move five counts, because #89 joins the assertion-discipline family
-  and that family keeps a running member count (TWENTY-SIX → TWENTY-SEVEN), so the conditional fifth
-  home applies. **#89 closed standing-queue item 2 — the oldest item the board has ever carried at 29
-  days, named twelve times across five weeks and done zero** — which reached the head by the
-  displacement clause and the 10-05 tiebreak rather than by anyone remembering it. **That is the
-  one-queue rule choosing the day's first job for the second consecutive run, and choosing correctly
-  both times.** Two things found by executing the rule rather than by looking for them: the row-shape
-  check was run over **every** table in `INDEX.md` for the first time (21 tables, 189 rows) and **bit
-  immediately on this run's own §1 row** — five fields against a six-column header, the eighteenth
-  instance of a defect the previous two days repaired seventeen times, written by the run that knew
-  about it; and the assertion-discipline family's count moved to twenty-seven **beside a membership list
-  that does not exist**, so limb 3 could be honoured for the new member and for none of the other
-  twenty-six. A derivation from this register's own labels reaches **twenty-four of twenty-seven**, and
-  the remaining three are recorded as a debt owed to the 10-11 review rather than invented to balance
-  the number. Moved from #86 to #88 on
-  2026-10-05, at the point of filing, by the eighth run to execute the four-count rule — two rulings from
-  two lanes, and the **fourth** run to move five counts, applied **twice in one commit** because both
-  #87 and #88 join families that keep a running member count (non-numeric NINE → TEN, assertion-discipline
-  TWENTY-FIVE → TWENTY-SIX). Ten counts in one commit, and the membership lists moved with them per limb 3.
-  **Both rulings came out of the one-queue rule's first Monday rather than from anything new** — #88 closed
-  the queue's 18-day head, which arrived there by the three-displacement clause rather than by anyone
-  remembering it, and #87 is the 20-day Arabic judgment the 10-04 review escalated by putting it first.
-  **And the row-shape check the 10-04 consolidation had to invent found twelve more malformed rows — in
-  Section 1, which that consolidation never looked at.** Rows 71 through 82 had carried three columns in a
-  four-column table since 2026-09-29, their Status cells simply absent, while every row count and range
-  check passed. A check invented for one section was not run on its neighbour; repaired here. Moved from #85 to #86 on
-  2026-10-04, at the point of filing, by the seventh run to execute the four-count rule — one ruling from
-  one lane, and the **third** run to move five counts, because #86 joins the non-numeric family and that
-  family keeps a running member count, so the conditional fifth home applies. The count also caught
-  Section 1's rows 80 and 81 filed out of order the previous day and reordered them — **an out-of-order
-  row is invisible to a range check and visible only to a count**, which is the 09-20 rule earning its
-  keep in a way nobody designed. The weekly review still owes the amendment's wording. Moved from #84 to #85 on
-  2026-10-03, at the point of filing, by the sixth run to execute the four-count rule — one ruling from
-  one lane, and the **second** run to move five counts, because #85 joins the assertion-discipline
-  family and that family keeps a running count, so the conditional fifth home applies rather than
-  being declined. The weekly review still owes the amendment's wording. Moved from #82 to #84 on
-  2026-10-02, at the point of filing, by the fifth run to execute the four-count rule — two rulings from
-  two lanes, and the first run to move **five** counts rather than four, because the fifth home the 10-01
-  reconciliation found (the assertion-discipline family's own count) was already known, and a known home
-  left unmoved is the rule being declined rather than a gap in it. The weekly review still owes the
-  amendment's wording. The rule's shape also got sharper by being executed twice in one run: **#83 moved
-  five counts and #84 moved four**, because #84's family keeps no running count — so the fifth home is
-  conditional on the family maintaining one, which no previous run had cause to notice. Moved from #79 to #82 on
-  2026-10-01, at the point of filing, by the fourth run to execute the four-count rule — three rulings
-  from two lanes, reconciled by counting 82 §3 rows and 78 §1 rows. That reconciliation found a **fifth**
-  home for a moving number, the assertion-discipline family's own count, which read seventeen while the
-  previous day's ruling file claimed eighteen; corrected there and carried to the weekly review as a
-  candidate amendment rather than applied as one. Moved from #76 to #79 on
-  2026-09-30, at the point of filing, by the third run to execute the four-count rule — three rulings
-  from three lanes, and the run's own first write of the range was wrong by two, caught by counting the
-  rows inside the same commit. Moved from #74 to #76 on
-  2026-09-29, at the point of filing, by the second run to execute the four-count rule — §3's
-  range, §3's heading, §1's count line and this line, in one commit. Moved from #71 to #74
-  on 2026-09-28, at the point of filing, by the first run to execute the four-count rule since
-  it was written — §3's range, §3's heading, §1's count line and this line, in one commit.
-  This line read #1–#58 from 2026-09-20 until 2026-09-27, thirteen rulings stale, because the
-  09-20 rule that moves a range at the point of filing enumerated three homes and this is a
-  **fourth**. A rule about counts was itself a bucket set missing a member. The rule now names
-  four; see the RUNBOOK.)*
+  `agents/guidebook/INDEX.md` — currently **#1–#94**, and binding. **This range is
+  ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
+  §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
+  it to match a memory; file the ruling and let the gate tell you the number.
+  *(A filing run moves four counts always — §3's range, §3's heading, §1's count line and
+  this one — plus a conditional fifth when the ruling joins a register family that keeps a
+  running member count. The rule, both its amendments and the reasoning that earned them are
+  in the RUNBOOK; the day-by-day record of every move this line made between 2026-09-20 and
+  2026-10-08 is archived at `agents/guidebook/ARCHIVE-2026-09-20_2026-10-08-ruling-range-moves.md`.
+  It was moved out of this file on 2026-10-10 under **ruling #94**, because 7,650 bytes of
+  audit trail for a number a gate now maintains is a cost every run pays before it can do
+  any work — and on 2026-10-09 that cost took the whole run.)*
+
 - **Prove an assertion both ways.** A new check must be shown to stay silent on a
   known-good control *and* to fail on the defect it exists to catch. Prove the bite as
   carefully as the control: an injection that fails to change the artefact reads
@@ -134,7 +73,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Thirty-one** standing QA assertions plus `madar_stats.py` and `build_font_bundle.py` (a generator, not an assertion — the count globs `qa_*.py`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py` and `build_font_bundle.py` (a generator, not an assertion — the count globs `qa_*.py`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -148,11 +87,11 @@ python3 agents/tools/qa_patch_queue.py .         # prints the whole gate registe
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **sixteen** of the thirty-one assertions
+Use `npm run build`, not `npx astro build`: **seventeen** of the thirty-two assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
 `qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`,
-`qa_third_party_origins`) are gated from `postbuild` in `web/package.json`,
+`qa_third_party_origins`, `qa_bridge_coverage`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -164,9 +103,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, sixteen more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, seventeen more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **28 of the 31 gate the deploy**; of the three that do
+artifact against the live origin. **29 of the 32 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -190,7 +129,7 @@ below. They moved that day with assertion 27, `qa_patch_queue`, at the point of 
 25 of 28 gating, all three derived by `qa_patch_queue` rather than counted by hand. `qa_pair_frontmatter`
 is the **second** gate not handed `dist` and the second to read `web/src/content/**` directly, because a
 held piece is not built and the six held pieces are what the next flip commit serves (ruling #81).
-**They moved again on 2026-10-08 with assertion 31, `qa_third_party_origins` (the self-hosted fonts, standing-queue item 4)** — **sixteen** `postbuild` entries, **thirty-one** tools, **28 of 31 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is the publication's *privacy posture*, which until 2026-09-18 was a sentence in the CHARTER with no number behind it and until today was a measurement with no gate behind it.** It asserts one thing: no page fetches anything automatically from an origin we do not own. The whole design is a classification the 09-18 audit wrote before any code existed — **by who initiates the fetch, never by origin** — because this publication points at ~180 external origins on purpose and a check that counted those would report our own method as our largest defect and be switched off inside a week. `<a href>` and `og:image` are counted and printed and **not** asserted, with the reason in the output. Proved **19 ways**, bite first, on a copy of `dist`, and the first bite is the markup removed from `Base.astro` this morning rather than an invented one. *(Also corrected today: `qa_patch_queue` printed its first home's label as `agents/tools/*.py` while the glob has always been `qa_*.py` — harmless for nine days, misleading from the moment this day added the first non-assertion tool to that directory.)* Previously moved on 2026-10-07 with assertion 30, `qa_register_shape` (ruling #90) — **fifteen** `postbuild` entries, **thirty** tools, **27 of 30 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is this repository's own prose rather than the publication**, and the first to make one of this file's own counts a build failure: the ruling range in the non-negotiables above is now derived from §3's rows, which is the 09-27 amendment's fourth home closed by an instrument instead of by a habit. It takes the repository root, not `dist` — the **fourth** such gate — because a markdown table is never built. Previously moved on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89) — fourteen
+**They moved again on 2026-10-10 with assertion 32, `qa_bridge_coverage` (ruling #93, standing-queue item 1)** — **seventeen** `postbuild` entries, **thirty-two** tools, **29 of 32 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is not the publication and not this repository's prose, but the STEP THAT CARRIES the other assertions' conclusions to the reader.** Item 1 asked which gating assertion is wired where it cannot observe its subject; the answer, enumerated, is **none of them** — all read `dist` or the repository root, both of which exist in the `build` job where all 29 run. The wrong home belongs to the **bridge**: only the `verify` job's byte-compare promotes a claim about `dist` into a claim about the origin, and it compares **six files of 257 — 2.3%**, with **zero of the 133 assets a page loads**, including the 34 fonts added two days earlier. It takes the repository root, not `dist` — the **fifth** such gate — because it parses the workflow file. The ratio is **measured and deliberately not asserted** (widening the bridge needs a workflow write this identity does not have, and a floor above today's reality would red every build until a patch nobody can apply lands); what it asserts is that bridge members exist, that every `.html` member is a page the sitemap claims, and that **the bridge spans both editions and both feeds.** Proved 13 ways, bite first, on /tmp copies — **and the harness caught the tool overcounting the bridge while its control printed the correct total**, because the verify job names both feeds twice and the two lists overlap exactly. Previously moved on 2026-10-08 with assertion 31, `qa_third_party_origins` (the self-hosted fonts, standing-queue item 4)** — **sixteen** `postbuild` entries, **thirty-one** tools, **28 of 31 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is the publication's *privacy posture*, which until 2026-09-18 was a sentence in the CHARTER with no number behind it and until today was a measurement with no gate behind it.** It asserts one thing: no page fetches anything automatically from an origin we do not own. The whole design is a classification the 09-18 audit wrote before any code existed — **by who initiates the fetch, never by origin** — because this publication points at ~180 external origins on purpose and a check that counted those would report our own method as our largest defect and be switched off inside a week. `<a href>` and `og:image` are counted and printed and **not** asserted, with the reason in the output. Proved **19 ways**, bite first, on a copy of `dist`, and the first bite is the markup removed from `Base.astro` this morning rather than an invented one. *(Also corrected today: `qa_patch_queue` printed its first home's label as `agents/tools/*.py` while the glob has always been `qa_*.py` — harmless for nine days, misleading from the moment this day added the first non-assertion tool to that directory.)* Previously moved on 2026-10-07 with assertion 30, `qa_register_shape` (ruling #90) — **fifteen** `postbuild` entries, **thirty** tools, **27 of 30 gating**, all three derived by `qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is this repository's own prose rather than the publication**, and the first to make one of this file's own counts a build failure: the ruling range in the non-negotiables above is now derived from §3's rows, which is the 09-27 amendment's fourth home closed by an instrument instead of by a habit. It takes the repository root, not `dist` — the **fourth** such gate — because a markdown table is never built. Previously moved on 2026-10-06 with assertion 29, `qa_served_manifest` (ruling #89) — fourteen
 `postbuild` entries, twenty-nine tools, **26 of 29 gating**, all three derived by `qa_patch_queue`
 rather than counted by hand. **It is the first assertion whose gated half and asserting half are
 different modes of the same tool, and the distinction is load-bearing rather than tidy.** `--emit`
