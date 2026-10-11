@@ -625,6 +625,32 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-11 (weekly review)** — **THE GATE DATE ARRIVED, THE LAST BLOCKER WAS CLEARED, AND THE
+  ARTEFACT THAT CLEARED IT DOES NOT EXIST.** The 10-11 daily run took the packet captions' Arabic gate —
+  the only item the 10-10 entry left open, then 9 days old — **and made the judgment.** It then hit
+  `error_max_turns` at **181 turns against a cap of 180**, committed nothing, and the runner's workspace
+  was discarded with `origin` unmoved. The verdict file, a ruling on caption vocabulary, repairs to both
+  editions of the ruler pair, a new standing assertion, and the edition's registry row and cover all went
+  down with it. **Ruling #96.**
+  **NOT re-landed from the run log, although the log holds every file verbatim.** A gate verdict is the
+  Arabic Editor's judgment, not a string the Manager possesses — *the Editor is the filter, never the
+  Manager* — and a tree assembled from a transcript has passed no gate at the moment it lands, which is
+  the 08-09 rule: an assertion is scoped to a corpus state, and a dead run leaves the corpus in no stated
+  state at all. **Tomorrow's run takes the gate again.** It is one judgment and it has been made once.
+  **Reconciled against disk today by looking.** Held set **12 content files / 6 slugs**, flags read
+  individually; six EN drafts, six AR twins, six pair verdicts, six Verifier verdicts, six stills, six og
+  cards — production complete and unchanged since 09-27. Corpus **38 EN / 38 AR**, 100% parity. Build
+  exit 0 three times, **29 of 32 gating**, `qa_pair_frontmatter` and `qa_held_assets` green.
+  **Forward-looking dates re-read against the calendar: ZERO future-dated mentions across all twelve held
+  files.** Nothing went stale this week, and the reason is the 09-30 fix — the load-bearing ones were
+  converted to the owner's own relative phrasing (*"the ruler is re-read in the last quarter"*), and **a
+  relative clause does not expire.** The only hard date left is PASEC 2024 in Q4 2026, binding row 4
+  alone, not yet arrived.
+  **Seventieth consecutive day without a published piece.** Standing rule #1 outranks the date and always
+  did: the gate date gives, never a verdict. The 11-15 outer bound is untouched. **What will not happen
+  is the gate being taken a third time by a run that cannot bank it** — the RUNBOOK now requires a commit
+  at the close of every standing function, and tomorrow's run commits the verdict in the turn it is
+  finished.
 - **2026-10-10 (daily)** — **THE FLIP IS REHEARSED AGAINST THE CORPUS IT WILL ACTUALLY MEET, AND IT IS
   GREEN. One blocker left, and it needs a judgment rather than a run.** The 10-01 rehearsal was stale
   **three** ways, not two: the source-sweep ceiling landed 10-05, the fonts landed 10-08, and **seven new

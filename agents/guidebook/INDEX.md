@@ -1,7 +1,9 @@
 # Guidebook — index of durable working knowledge
 
 **Maintained by:** the Manager (consolidated in the weekly review); **Section 1 owned by the Researcher** from 2026-06-14.
-**Last consolidation:** 2026-10-04 (weekly review, covering 2026-09-28 → 2026-10-04 — **the largest week this register has ever taken, fifteen rulings #72–#86, and the second consecutive consolidation to find the register itself already true.** Range, §3 heading, series-integrity line and §1's count line all read correctly and **all four were confirmed by counting rows: 86 §3 rows contiguous 1 → 86, 82 §1 rows, every long-form pointer in §1, §2 and §3 resolving to a file on disk.** What was *not* true was everything around the register. **Five of the last eight §3 rows — #80 through #84 — were malformed markdown**, three columns in a four-column table, so five rulings' long-form files were unreachable from the canonical register while passing every row count and every range check ever run on it. **§0 was repaired after ten weeks and a third silent carry**, and the grep the 09-27 amendment demands found it stale in a **second** live home nobody had ever reconciled — `agents/11_verifier.md`, the file the role is told to read; §0 now holds eight numeric axes and eight non-numeric rows, with a count line and a named owner. **The assertion-discipline family was wrong by three**, not by five: the conditional-fifth-home rule was found on 10-01 and applied from 10-02, and it never reconciled backward over the three members filed on 09-28 and 09-29 — *a point-of-filing rule fixes a count's future and leaves a step discontinuity at the moment it was written.* **The non-numeric family is enumerated in full for the first time at nine members**, and #86's own file, filed this morning, listed six of them and claimed the ninth place. **No new family, three weeks and 38 rulings running**; *composition discipline* named as the candidate ninth. **Archive roll:** `ARCHIVE-2026-09-14_2026-09-20.md` created for the 09-20 section **and the 09-11 addendum, two cycles overdue because every roll moved the block the previous review named and nothing enumerated the remainder** — the roll now lists every dated block and checks its age. The **missing 2026-09-27 consolidation section** is recorded as an absence, because the form is what carries the owed items and dropping the form dropped §0.)
+**Last consolidation:** 2026-10-11 (weekly review, covering 2026-10-05 → 2026-10-11 — **the third consecutive consolidation to find the register already true, and the first to discharge a debt by discovering it was never owed.** Range, §3 heading, series-integrity line and §1's count line all correct on arrival and **all four confirmed by `qa_register_shape` rather than by reading: 94 §3 rows contiguous 1 → 94, 90 §1 rows, all 111 distinct dated file references resolving, every date-only row of the old convention resolving to a file carrying its date.** The gate then failed the build **twice on this review's own edits** — two §3-convention rows appended without their `Status` cell, which is the 10-04 malformed-row defect exactly, and a stale denominator reading *thirty of ninety-four* against a register holding 96. **The assertion-discipline family's membership debt, owed to this review four times, is DISCHARGED and was never real** (#95): counted four ways, the count had been right since 10-02 while two narrow recovery methods under-reported it for nine days — a regex anchored on `— ruling #` cannot see eleven labels reading `Assertion discipline / build determinism — ruling #`, and a prose reading missed two member lists deposited mid-bullet by earlier consolidations. *An under-recovering method produces a deficit, and a deficit reads as honesty.* The membership of record is now **written down in full at 31 members**, so limb 3 attaches to a list. **A NINTH FAMILY is named — the operating-cost family (#94, #96)**, three weeks and 40 rulings after the last one, and the first whose subject is neither the publication nor an instrument but **the run itself as a bounded process**; #94's placement was owed here and is made. **Archive roll: none due** — the 10-04 section is one cycle old and **rolls at the 10-18 review, named here so the roll does not again move only the block the previous review happened to mention.** Filed by the review rather than by a daily, which is this week's shape: the 10-11 daily did a full day's work and delivered none of it.)
+
+**Prior consolidation:** 2026-10-04 (weekly review, covering 2026-09-28 → 2026-10-04 — **the largest week this register has ever taken, fifteen rulings #72–#86, and the second consecutive consolidation to find the register itself already true.** Range, §3 heading, series-integrity line and §1's count line all read correctly and **all four were confirmed by counting rows: 86 §3 rows contiguous 1 → 86, 82 §1 rows, every long-form pointer in §1, §2 and §3 resolving to a file on disk.** What was *not* true was everything around the register. **Five of the last eight §3 rows — #80 through #84 — were malformed markdown**, three columns in a four-column table, so five rulings' long-form files were unreachable from the canonical register while passing every row count and every range check ever run on it. **§0 was repaired after ten weeks and a third silent carry**, and the grep the 09-27 amendment demands found it stale in a **second** live home nobody had ever reconciled — `agents/11_verifier.md`, the file the role is told to read; §0 now holds eight numeric axes and eight non-numeric rows, with a count line and a named owner. **The assertion-discipline family was wrong by three**, not by five: the conditional-fifth-home rule was found on 10-01 and applied from 10-02, and it never reconciled backward over the three members filed on 09-28 and 09-29 — *a point-of-filing rule fixes a count's future and leaves a step discontinuity at the moment it was written.* **The non-numeric family is enumerated in full for the first time at nine members**, and #86's own file, filed this morning, listed six of them and claimed the ninth place. **No new family, three weeks and 38 rulings running**; *composition discipline* named as the candidate ninth. **Archive roll:** `ARCHIVE-2026-09-14_2026-09-20.md` created for the 09-20 section **and the 09-11 addendum, two cycles overdue because every roll moved the block the previous review named and nothing enumerated the remainder** — the roll now lists every dated block and checks its age. The **missing 2026-09-27 consolidation section** is recorded as an absence, because the form is what carries the owed items and dropping the form dropped §0.)
 
 **Prior consolidation:** 2026-09-27 (weekly review, covering 2026-09-21 → 2026-09-27 — **the first consolidation in four weeks that found the register already true.** The range read `#1–#71`, the §3 heading read `#1–#71`, the series-integrity line read `#1–#71`, and §1's count line read sixty-six — and **all four were confirmed by counting the rows rather than by trusting the number**: 71 §3 rows with no gaps and no duplicates, 66 §1 rows, and every `#N`'s long-form reference resolving to a file that exists on disk (102 files checked). The 2026-09-20 rule — *the run that files a ruling moves every count its ruling touches, in the same commit as the ruling file* — **has now survived a week in which thirteen rulings were filed across seven runs**, including two days that filed four and two respectively. It leaked twice in its first three days (09-23, no §1 count; 09-25, no §3 row for #63) and has not leaked since. **The drift this review exists to catch was absent, so the consolidation's whole budget went to the prose it was always supposed to buy:** three family narratives were stale, and the largest was stale by five members — the **assertion-discipline family** was still described as *standing at twelve today*, written on 09-22, while #63, #65, #66, #67 and #70 had joined it since. **No new family was named**, and the week's shape is that eight of its thirteen rulings joined that one family, which now holds seventeen of seventy-one rulings — a quarter of everything the operation knows is about how its own instruments earn trust. **Archive roll:** the 2026-09-13 consolidation section moved verbatim to `ARCHIVE-2026-09-07_2026-09-13.md` per the two-cycle rule; nothing deleted, nothing summarised.)
 
@@ -535,3 +537,60 @@ The 09-20 point-of-filing rule has now survived three consecutive weeks and 38 r
   paragraph is exactly where the §0 debt went to die. Named here for the record only: the derived-register
   assertion (which would have caught the five malformed rows, and is queue item 3), and §0's own
   reconciliation at the next consolidation — now cheap, because it has a count line and a named owner.
+
+## Consolidation — 2026-10-11 (weekly review; covers 2026-10-05 → 2026-10-11)
+
+**The register was true on arrival for the third consecutive week, and the gate said so before I did.**
+`qa_register_shape` — built 10-07, the assertion whose subject is this repository's own prose — derived
+`#1–#94` from §3's rows and confirmed all four homes. **It then red the build twice on my own edits**,
+which is the better half of the week's evidence about it: once on two §3-convention rows appended
+without their `Status` cell (the 10-04 defect exactly — three columns in a four-column table, invisible
+to every row count and range check ever run), and once on `thirty of ninety-four rulings` against a
+register that now holds 96. **Both were mine, both were caught by an instrument rather than by a
+habit, and neither would have been caught by any check this operation owned eight days ago.**
+
+### What was reconciled, counted and not trusted
+
+§3: **96 rows, contiguous 1 → 96**, no gaps, no duplicates, every row well-formed. §1: **92 rows**.
+All four range homes agreeing. **111 distinct dated file references, zero unresolved**, and every
+date-only row (#14–#61, the pre-file convention) resolving to a file carrying its date. §0 at **8
+numeric axes and 8 non-numeric rows** against its own rows, unchanged and correct — the first
+consolidation since it was repaired on 10-04 at which it cost nothing, because it has a count line and
+a named owner.
+
+### The debt that was never owed — #95
+
+Four consecutive runs recorded *three members of the assertion-discipline family unaccounted for* and
+declined to invent them. **The three were never missing**, and the four channels are in #95's own file.
+What belongs here is the lesson, because it generalises past this register: **a shortfall between a
+count and a list you derived is a claim about your derivation before it is a claim about the list.**
+An over-recovering method produces a surplus, and a surplus is loud — it names a member you can go
+look for. An under-recovering method produces a deficit, and **a deficit names nothing**: it is
+unfalsifiable in the small and it recruits the operation's best instinct, which is not to invent. Four
+runs in a row did the right thing with the wrong number, and the number is what the next run reads as
+state.
+
+*Note the shape against #57.* #57 warns that a count agreeing with itself can disagree with its
+population for a month. **This was the mirror: a population agreeing with itself while the instrument
+reading it disagreed, for nine days.** Both are closed by the same move — count against the population
+— and the 10-04 limb-3 requirement (*the membership list moves with the count*) is now satisfiable,
+because there is finally a list.
+
+### The ninth family
+
+**The operating-cost family — what executing our own discipline costs, and what happens when the cost
+exceeds the envelope.** Two members, #94 and #96, bracketing a run: a fixed price before any work and
+a total risk after all of it. Named on evidence rather than on novelty — three weeks and 40 rulings
+have passed since the last family, and both members were earned by runs that failed in ways no
+artefact of the publication could show. **#88 is deliberately NOT reassigned into it**, though it asks
+the same question of a check's duration: moving an existing member would make a new family's count
+inherited rather than counted, which is the defect the fifth-home rule exists to stop.
+
+### Owed to the 2026-10-18 consolidation
+
+Carried in the **standing queue** (`agents/logs/WEBDEV-QUEUE.md`) rather than in this paragraph, per
+the 10-04 finding that an owed item written into prose a later review reads as *history* is an item
+that will be carried silently. Named here for the record only: **the archive roll of the 10-04 section**
+(due 10-18, two cycles), and **whether the operating-cost family's question has a third member** —
+*which other rule of ours has a cost nobody has measured?*
+
