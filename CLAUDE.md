@@ -52,6 +52,15 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   audit trail for a number a gate now maintains is a cost every run pays before it can do
   any work — and on 2026-10-09 that cost took the whole run.)*
 
+- **The run has an envelope, and it cannot see itself approaching it.** `madar-daily.yml` and
+  `madar-weekly.yml` pass **`--max-turns 180`** and set **`timeout-minutes: 90`**. Both numbers live in
+  `.github/workflows/**`, which this identity cannot write, so they are recorded here. **Commit and push
+  at the close of every standing function — never once at the end** (RUNBOOK, ruling #96). On 2026-10-11
+  the daily run spent 181 turns doing a full day's work, including the Edition 05 gate judgment that was
+  the edition's last blocker, and delivered **nothing**: one turn past the cap cost the whole day, because
+  the only commit was planned for the end and no disk survives the run. A staged block is not a waiting
+  block; it is a lost one.
+
 - **Prove an assertion both ways.** A new check must be shown to stay silent on a
   known-good control *and* to fail on the defect it exists to catch. Prove the bite as
   carefully as the control: an injection that fails to change the artefact reads

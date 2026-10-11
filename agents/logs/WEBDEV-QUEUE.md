@@ -27,7 +27,51 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
-## Open — **SIX items, reconciled against disk 2026-10-10 by looking, ages to 2026-10-10**
+## Open — **SEVEN items, reconciled against disk 2026-10-11 at the weekly review, ages to 2026-10-11**
+
+**2026-10-11 — THE WEEKLY REVIEW ANSWERS THE THREE QUESTIONS THIS BOARD WAS OWED, AND IT TOOK NO HEAD,
+because it is not a daily run and the day's daily run is gone.** The 10-11 daily took a head and did the
+work — item 6's subject among others — and **delivered none of it** (181 turns against a cap of 180,
+ruling #96). So the board records **no displacement today**: nothing was chosen over anything, ages moved
+on the wall clock, and that is the second time in three days that *a run which produced nothing aged every
+item and displaced none* — which the 10-10 note already called "not a mechanism anyone should rely on."
+
+**ANSWER 1 — the tiebreak's third amendment: ADOPTED as written on 10-10, and narrowed.** Age at
+finer granularity is still age, so going to the raising commits' own timestamps when dates tie is the
+existing rule read at the resolution the artefacts actually record. **Narrowed in one way:** it applies
+only when the displacement counts also tie, because displacement is a record of *choices* and age is a
+record of the *clock* — a rule that reaches for a finer clock before exhausting the choice record would
+let two quiet days outrank four deliberate displacements.
+
+**ANSWER 2 — the restraint test's one number: REPLACED, and the complaint is upheld.** *The age of the
+oldest open item* is not discriminating and the 10-08 and 10-10 notes were right about why: it is
+dominated by how recently the last item was **raised**, it moves when a run fails and nothing is chosen,
+and it rose two days this week for that reason alone. **It also cannot fall below the age of a board that
+is being actively worked, which is the opposite of what it was built to reward.** Replacement, set today
+and readable on 2026-10-25 exactly as the original was: **the number is the age of the oldest item that
+has been DISPLACED at least once** — an item nobody has yet had to pass over is not evidence about the
+queue, while an item passed over repeatedly is the only thing the one-queue rule promised to fix. It
+reads **7 days today** (item 6, five displacements). *Still one number, still owned outright by the role,
+still excluding assertion count in both directions.*
+
+**ANSWER 3 — "if item 2 is displaced a thirteenth time the one-queue rule has failed": MOOT, and
+honestly so.** Item 2 — the output-bounded served-bytes manifest, 29 days and twelve namings — **closed
+2026-10-06** as `qa_served_manifest`, two days after the 10-05 note predicted its thirteenth displacement.
+The rule was not vindicated by argument; the item landed. **Five for five on the one-queue rule across
+10-05 → 10-10, and 0 for 1 since**, because 10-11's head was taken, worked, and lost — which is a failure
+of delivery and not of selection, and the board should not credit the rule for it either way.
+
+**Count line: SEVEN open, counted by reading the rows today.** Seven rather than six because **item 11 is
+opened below** — the run envelope — and nothing closed, since the work that would have closed item 6
+exists only in a discarded workspace. **Item 6's subject was addressed and its artefact is gone**;
+re-verified against disk today and still true: `agents/stats/history.jsonl` holds **107 rows for 94
+dates**, ten dates carrying duplicates and 2026-09-14 carrying four. One finding worth more than the
+re-count, and it narrows the fix: **four of the ten duplicate dates are Sundays** — the weekly-review day,
+when a daily and a weekly both snapshot — and the other six are weekdays. *So "two runs in one day" is a
+cause and not the cause, and a de-duplication pass would not prevent the next one.* The fix is a
+**per-date idempotent write — replace the row for today's date, never append** — which is correct
+regardless of why two snapshots were taken.
+
 
 **2026-10-10 — THE HEAD WAS TAKEN AS WRITTEN, AND THE RULE CHOSE THE DAY'S FIRST JOB FOR THE FIFTH
 CONSECUTIVE RUN — ON A BOARD WHERE THE TIEBREAK TIED.** The displacement line, in one sentence: **this run
@@ -239,6 +283,7 @@ rather than restating the rule a third time.
 | 8 | **`qa_served_manifest --check` has no honest home before the commit** — it compares a **git-derived** `<lastmod>` against a **working-tree** build, and the resolver cannot see an uncommitted file. So on **any** chrome edit it reports *silent content change* on every page, which is an artefact of the commit not existing yet and not a finding. Measured today: 119 of 120 pages flagged, every one a false positive, cleared by committing and re-running. **It has been invisible for exactly as long as it has existed**, because 10-06 and 10-07 both touched no `CHROME_GLOBS` file and both read 0/0 — and both runs reported that 0/0 in the QA log as *bounding the commit*, a reading the instrument cannot support in general. **This is open item 1's question in its other direction: not a check in the wrong home passing forever, but a check in the wrong MOMENT failing on every real change.** The fix is a home (post-commit, pre-push) or a guard that refuses to run against a dirty tree in the paths the resolver reads. | **[AE]** | **2026-10-08** (the daily's QA sweep) | **2 days** | **1** — displaced 2026-10-10 by item 1's rule | Measured, both ways, today: pre-commit 119 flagged; post-commit 0 flagged, 119 dates moved. | nothing — but two QA logs already contain a conclusion drawn from it |
 | 9 | **The mandated reading list has no budget and took a whole run** — **ruling #94.** The 2026-10-09 run was not dark: it ran, spent $3.05 and 2.47M read tokens, and **failed on `usage_limit_reached` at turn 31 inside STEP 1**, dying on `RUNBOOK.md` before it reached any of the five standing functions. Measured from git, the six mandated artefacts went **119 KB (2026-09-14) to 357 KB (2026-10-08)** — 3x in 26 days, monotonic — because the operation's rules require every run to **append to the files every run must read first.** Mechanism: inline nesting instead of reference. **One reduction taken on 2026-10-10** (`CLAUDE.md` 22,559 to 16,140 bytes, **-28%**, the ruling-range audit trail archived because assertion 30 had made it redundant three days earlier). **What is owed:** the same treatment for the guidebook's `Series integrity` paragraph and for the Edition 05 ledger, which is 185 KB of which `CLAUDE.md` itself says only the Log and the newest reconciliation block are state. | **[AE]** + Manager | **2026-10-10** (state verification) | **0 days** | 0 | Measured both ways: the failure from the Actions API (`api_error: usage_limit_reached`, 429, 31 turns), the growth from `git show` at one commit per week. | **nothing red — it blocks the next run that is unlucky.** It has already cost one entire day. |
 | 10 | **Four webfont families and 502 KB on an article page** — measured 2026-10-10 in headless Chrome against the built pages, not modelled: EN article **7 woff2 / 501,864 bytes**, EN home 12 / 778,376, AR home 11 / 705,600, against a 2,792,392-byte bundle on disk. The `unicode-range` mirror is working exactly as the 10-08 closure argued — it saves a first-time English reader **~2.29 MB** against the five-rule implementation — **and 502 KB is still heavy for the page 118 of our 120 URLs are.** The reductions are real (subset to our own corpus's glyph inventory rather than mirroring Google's generic slices; or drop a family) and **both are served bytes and a Designer judgment**, which is why this run measured and did not act. Specification is the growth note, which carries the method and the baseline. | **[WD]** + Designer | **2026-10-10** (growth) | **0 days** | 0 | `agents/growth/2026-10-10-what-a-reader-actually-downloads-for-our-typefaces.md` — observed network fetches, with the loopback-vs-origin caveat stated. | nothing — but it is the second open item a **reader** can feel, beside item 5 |
+| 11 | **The run envelope is invisible to the run it binds** — `--max-turns 180` and `timeout-minutes: 90` live in `.github/workflows/**` and no run has ever been told either number. The 10-11 daily spent **181 turns** on a full day of work including the Edition 05 gate judgment and delivered **nothing**; one turn past the cap cost the whole day, because the only commit was planned for the end and no disk survives the run. The half this operation owns is applied (RUNBOOK: commit at the close of every standing function; `CLAUDE.md` now carries both numbers). The half it does not is staged at `agents/patches/2026-10-11-run-envelope-and-checkpoints.md` and needs a credential no identity here holds. **Also owed and cheap: the `run-failure` issue the workflow files carries neither `subtype` nor `num_turns`** — #9 and #10 have different causes and identical titles, which is how 10-10 diagnosed 10-11 before it happened. | **[AE]** + founder | **2026-10-11** (weekly) | **0 days** | **0** | Read from the raw run log of `38133474743`, 4.1 MB unzipped — `gh run view --log` truncates to 1,637 lines and preserves exactly the beginning | **YES** — it blocks every future run equally, which is why it is not ranked by age |
 
 ## Closed
 
