@@ -195,6 +195,36 @@ composed from (#50), and each piece **had changed** since its caption was writte
   **a repair to the spine of a piece is not a tail-end job on the day it is found.** Standing rule
   #1 outranks the gate date, which has already passed.
 
+## 8. Addendum — the Arabic Editor's gate on the Arabic the Editor's ruling wrote
+
+Taken **after** `verdicts/2026-10-12-ed05-ruler-stale-count-ruling.md` was written, not before,
+because a composer who grades their own sentence is the split this operation abolished on
+2026-05-26.
+
+**Two strings, both PASS.**
+
+**AR dek** — «…يُجِبْك أربعةُ مقاييسَ وجيهةٍ **بأربعةِ تيجانٍ لا تتفق**.» **146/200 code points,
+tashkeel counted +1 each, measured at compose** (the 07-27 enforcement rule). `تيجان` is the
+broken plural of `تاج`, non-human, so the feminine singular `لا تتفق` is the correct agreement and
+not a licence. The jussive `يُجِبْك` as apodosis of `اسألْ` is untouched, and so is the second
+sentence.
+
+**AR ¶1** — «…أنَّ ثمّة أربعَ طرائقَ وجيهةٍ لقياسه، **وأنَّ لكلٍّ منها تاجَها ولا تتفق**، وأنَّه
+لا تُجمَعُ اثنتان منها.» `أنَّ` + fronted shibh-jumla khabar (`لكلٍّ منها`) + accusative ism
+mu'akhkhar (`تاجَها`) — the standard construction when `أنَّ`'s khabar precedes its ism, and the
+same construction the clause already sat in. **The three-fold `أنَّ` parallelism survives**:
+`أنَّ ثمّة` / `وأنَّ لكلٍّ منها` / `وأنَّه لا تُجمَعُ`. The 2026-10-05 repair to the third clause
+is not touched, read character for character.
+
+**And the reason both editions moved in the same commit is itself a finding of 10-05.** That
+judgment found this pair carrying a universal in English and an existential in Arabic at this
+exact sentence, for twenty days, through four gates. A repair that moved one edition and left the
+other would have re-opened the same defect one clause to the left.
+
+**Caps re-measured after the edits:** EN title 53/100, EN dek **164/200**, AR title 58/100, AR dek
+**146/200**. EN body **2,340** against the **2,400** ceiling granted 2026-09-18 — one word *lower*
+than before this repair.
+
 ---
 
 **Arabic Editor · 2026-10-12**

@@ -1,6 +1,6 @@
 ---
 title: "Four rulers, four crowns, and one about to be re-read"
-dek: "Ask which education system in Africa is best and four defensible measures answer with four different countries. Choosing the ruler is choosing what school is for."
+dek: "Ask which education system in Africa is best and four defensible measures hand out four crowns that do not agree. Choosing the ruler is choosing what school is for."
 date: 2026-09-14
 edition: 5
 country: Mauritius
@@ -47,7 +47,7 @@ approved: false
 
 Somewhere there is a table with African countries in rank order and one column of scores beside them, and it is the least useful document on this subject. The problem is not its arithmetic. The problem is that a rank is an answer with its question deleted. Every ranking of school systems is a ruler someone chose, and the choosing is the whole argument; publishing the order while omitting the ruler is how a measurement becomes an opinion with decimal places.
 
-This piece was commissioned to answer a plain question — which is the best education system in Africa? — and the honest answer research can give is that there are four defensible ways to measure it, that they crown four different countries, and that no two of them can be added together. What follows names each ruler, says what it can and cannot see, and hands out its crown.
+This piece was commissioned to answer a plain question — which is the best education system in Africa? — and the honest answer research can give is that there are four defensible ways to measure it, that their crowns do not agree, and that no two of them can be added together. What follows names each ruler, says what it can and cannot see, and hands out its crown.
 
 ## Ruler one: how much learning a child actually ends up with
 

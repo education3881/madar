@@ -52,17 +52,19 @@ The fourth entry, composed from the piece's own dek now that the dek exists. og 
 
 **EN caption:**
 <!-- caption:en -->
-Ask which education system in Africa is best and four defensible measures answer with four different countries — Mauritius on learning a child ends up with, Senegal and Benin on learning relative to income, Niger and South Africa on speed of improvement, Senegal again on whether the gains were shared. They cannot be averaged. Choosing the ruler is choosing what school is for. And the continent's widest ruler is re-read this December. New from Madār, in English and Arabic. #Africa #EducationData #Assessment
+Ask which education system in Africa is best and four defensible measures hand out four crowns that do not agree — Mauritius on learning a child ends up with, Gabon, Senegal, Benin and Burkina Faso together on learning relative to income, Niger and South Africa on speed of improvement, Senegal again on whether the gains were shared. They cannot be averaged. Choosing the ruler is choosing what school is for. And the continent's widest ruler is re-read in the last quarter of 2026. New from Madār, in English and Arabic. #Africa #EducationData #Assessment
 <!-- /caption -->
 
 **AR caption:**
 <!-- caption:ar -->
-اسألْ أيُّ نظامٍ تعليميٍّ في أفريقيا أفضلُ، يُجِبْك أربعةُ مقاييسَ وجيهةٍ بأربعةِ بلدانٍ مختلفة — موريشيوس على ما ينتهي إلى الطفل من تعلُّم، والسنغال وبنين على التعلُّم منسوبًا إلى الدخل، والنيجر وجنوب أفريقيا على سرعة التحسُّن، والسنغال مرّةً أخرى على ما إذا كانت المكاسب مشتركة. ولا تُتوسَّط هذه المساطر. واختيارُ المسطرة هو اختيارُ ما المدرسةُ من أجله. جديد مدار، بالعربية والإنجليزية.
+اسألْ أيُّ نظامٍ تعليميٍّ في أفريقيا أفضلُ، يُجِبْك أربعةُ مقاييسَ وجيهةٍ بأربعةِ تيجانٍ لا تتفق — موريشيوس على ما ينتهي إلى الطفل من تعلُّم، والغابون والسنغال وبنين وبوركينا فاسو معًا على التعلُّم منسوبًا إلى الدخل، والنيجر وجنوب أفريقيا على سرعة التحسُّن، والسنغال مرّةً أخرى على ما إذا كانت المكاسب مشتركة. ولا تُتوسَّط هذه المساطر. واختيارُ المسطرة هو اختيارُ ما المدرسةُ من أجله. جديد مدار، بالعربية والإنجليزية.
 <!-- /caption -->
 
 **Engagement-list note:** this piece is the wave's natural *lead*, not its fourth item — it is the frame the other three sit inside, and it is the only one of the four that names five countries. On flip-day it goes first to the measurement-cluster list (assessment-reform beat, v2), with Sierra Leone second as the worked example of the same argument. The PASEC 2024 publication, announced for the last quarter of 2026, is a **dated follow-up and never a rewrite** (#41): when the results land, the piece gets a dated note, not a new edit.
 
 **No figure in either caption is absent from the shipped piece**, and the four crowns are named with their rulers attached in the same sentence — the piece's own standing prohibition, honoured in the distribution copy as well as in the prose.
+
+> **2026-10-12 — BOTH CAPTIONS REPAIRED AT THE ARABIC GATE, and this is #50's fourth instance in this file.** As staged they named **Senegal and Benin** on ruler two. The piece has crowned **all four that cleared 410 — Gabon, Senegal, Benin and Burkina Faso** since commit `78d6daa` on **2026-09-18**, four days after these captions were composed, and says in its own body that *"naming two of them would be our narrowing, not his."* **Twenty-four days, both languages, through five readings of this edition**, and `qa_packet_figures` was green on it the whole time and correctly so — the clause carries no numeral. The EN caption carried a **second** defect the AR one did not: *"re-read this December"* against the piece's own *"the last quarter of 2026"*, which the 09-30 run had deliberately moved to the owner's relative phrasing so it could not expire. Verdict: `verdicts/2026-10-12-ed05-wave-packet-captions-ar-gate.md`.
 
 ## Correction propagation — a defect found in this packet today, and fixed
 

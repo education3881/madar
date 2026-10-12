@@ -7,7 +7,18 @@ WHY (2026-09-14)
 ----------------
 Today the schema gained its first new field since launch: `countries`, an
 optional ordered list for a continental piece whose honest deliverable is four
-rulers crowning four different countries. The field has three consumers — the
+rulers handing out four crowns that do not agree.
+
+  (Amended 2026-10-12. This paragraph read "four rulers crowning four different
+  countries" until today. The piece it was written about stopped crowning four
+  different countries on 2026-09-18, when ruler two widened from Senegal and
+  Benin to all four that cleared 410; the claim had SEVEN homes and that commit
+  moved one. This header is a home nobody looked in, in a tool that gates the
+  deploy. The FIELD's own definition is untouched and was ruled on separately
+  that day — it reports COVERAGE, not mentions and not crowns, so Gabon and
+  Burkina Faso are deliberately absent from the list and this check asserts
+  structure, never editorial membership. See verdicts/2026-09-18-ed05-editor-
+  decisions.md decision 3, and verdicts/2026-10-12-ed05-ruler-stale-count-ruling.md.) The field has three consumers — the
 English marginalia, the Arabic marginalia, and `madar_stats.py`'s "Countries
 covered" count — and every one of them can fail silently:
 
