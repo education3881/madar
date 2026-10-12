@@ -6,12 +6,18 @@ Scans the EN and AR content collections, parses frontmatter, and emits:
   - a JSON snapshot (stdout with --json)
   - an HTML stats panel in the site's look-and-feel (default), ready to inject
     into the daily brief
-  - appends a dated snapshot line to /agents/stats/history.jsonl (with --log)
+  - records a dated snapshot in /agents/stats/history.jsonl (with --log)
+
+The history file is ONE ROW PER DATE, not one row per run. --log replaces the
+row already carrying today's date rather than appending beside it; see
+log_snapshot() for why last-write-wins is the correct resolution.
 
 Usage:
   python3 agents/tools/madar_stats.py            # prints HTML panel
   python3 agents/tools/madar_stats.py --json     # prints JSON snapshot
-  python3 agents/tools/madar_stats.py --log      # also append to history.jsonl
+  python3 agents/tools/madar_stats.py --log      # also record in history.jsonl
+  python3 agents/tools/madar_stats.py --dedupe   # one-off: collapse the series
+                                                 # to one row per date, last wins
 
 No third-party dependencies required (uses a minimal frontmatter parser);
 PyYAML is used if available for robustness.
@@ -132,6 +138,20 @@ def tally_countries(items):
     return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
 
 
+# The operation's calendar is Asia/Dubai, which is UTC+4 all year — the emirate
+# has never observed daylight saving — so a fixed offset is exact and needs no
+# tzdata on the runner. `date.today()` meant the operation's calendar while the
+# runs happened on a Dubai desktop; it silently became UTC at the 2026-09-14
+# cloud cutover, and the two disagree for any run between 20:00 and 24:00 UTC.
+# Every run to date has fallen in the 10:30–12:30 UTC window (15:30 Dubai), so no
+# row on file is affected; this keeps the key meaning what the series says it means.
+DUBAI = datetime.timezone(datetime.timedelta(hours=4))
+
+
+def operation_today():
+    return datetime.datetime.now(DUBAI).date()
+
+
 def build_snapshot():
     en, ar = load(EN_DIR), load(AR_DIR)
     en_approved = [a for a in en if str(a.get("approved")).lower() == "true"]
@@ -156,7 +176,7 @@ def build_snapshot():
         except Exception:
             pass
     snap = {
-        "as_of": datetime.date.today().isoformat(),
+        "as_of": operation_today().isoformat(),
         "articles": {
             "en_total": len(en),
             "ar_total": len(ar),
@@ -258,12 +278,92 @@ def html_panel(s):
     return panel + "\n" + PANEL_CSS
 
 
+def read_history():
+    """Parse the whole series. Raises ValueError on any line it cannot read.
+
+    Strict on purpose: --log and --dedupe both REWRITE this file, and a rewrite
+    that silently drops a line it could not parse would destroy the series it
+    exists to keep. Nothing is written unless the whole file was read.
+    """
+    if not os.path.exists(HIST):
+        return []
+    rows = []
+    with open(HIST, encoding="utf-8") as fh:
+        for n, line in enumerate(fh, 1):
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError("%s line %d is not JSON: %s" % (HIST, n, exc))
+            if not isinstance(row, dict) or not row.get("as_of"):
+                raise ValueError("%s line %d carries no as_of" % (HIST, n))
+            rows.append(row)
+    return rows
+
+
+def write_history(rows):
+    """Rewrite the series, one row per line, ordered by as_of, atomically."""
+    os.makedirs(os.path.dirname(HIST), exist_ok=True)
+    tmp = HIST + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        for row in sorted(rows, key=lambda r: r["as_of"]):
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    os.replace(tmp, HIST)
+
+
+def log_snapshot(snap):
+    """Record today's snapshot, REPLACING any row already carrying this date.
+
+    The CHARTER's stated purpose for this file is "so week-over-week deltas
+    accumulate", and a delta read as "the row seven back" is only correct if the
+    series is one row per date. Appending made it one row per RUN: on 2026-10-12
+    the file held 108 rows for 95 dates, and a seven-day delta was wrong on ten
+    of them. Two runs in one day is a cause and not THE cause — four of the ten
+    duplicated dates are Sundays, when a daily and a weekly both snapshot, and
+    six are weekdays — so the fix is a per-date idempotent write rather than a
+    de-duplication pass, which would only postpone the next one.
+
+    Last-write-wins, and that resolution is measured rather than assumed: nine of
+    the ten duplicated dates carry byte-identical payloads, so the choice is free
+    on them. On 2026-09-14, the only date whose rows DIFFER, the fourth run of
+    the day is the one that counts the Arabic twin that landed during it — the
+    last snapshot of a day is that day's closing state.
+    """
+    rows = [r for r in read_history() if r["as_of"] != snap["as_of"]]
+    rows.append(snap)
+    write_history(rows)
+
+
+def dedupe_history():
+    """Collapse the existing series to one row per date, last row winning.
+
+    A point-of-filing rule fixes a count's future and leaves a step
+    discontinuity where it was written (RUNBOOK, 2026-10-04, limb two), so the
+    rule above is reconciled backward against its own population in the same
+    commit, by an instrument rather than by hand.
+    """
+    rows = read_history()
+    kept = {}
+    for row in rows:
+        kept[row["as_of"]] = row
+    write_history(list(kept.values()))
+    return len(rows), len(kept)
+
+
 def main():
-    snap = build_snapshot()
-    if "--log" in sys.argv:
-        os.makedirs(os.path.dirname(HIST), exist_ok=True)
-        with open(HIST, "a", encoding="utf-8") as fh:
-            fh.write(json.dumps(snap, ensure_ascii=False) + "\n")
+    try:
+        if "--dedupe" in sys.argv:
+            before, after = dedupe_history()
+            print("history.jsonl: %d rows -> %d rows, one per date (last wins)"
+                  % (before, after))
+            return
+        snap = build_snapshot()
+        if "--log" in sys.argv:
+            log_snapshot(snap)
+    except ValueError as exc:
+        print("madar_stats: refusing to write: %s" % exc, file=sys.stderr)
+        sys.exit(2)
     if "--json" in sys.argv:
         print(json.dumps(snap, ensure_ascii=False, indent=2))
     else:
