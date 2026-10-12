@@ -625,6 +625,48 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-12 (daily)** — **THE GATE WAS TAKEN AGAIN AND IT BIT. The edition's last blocker is judged,
+  banked and closed — and judging it opened a repair, so the flip does not run today.**
+  The Arabic Editor's gate on the six wave-packet captions, **20 days old**, taken for the second time
+  after the 10-11 daily made the judgment and lost it (#96). **Five pass. Row 4 returns in both
+  languages** (`verdicts/2026-10-12-ed05-wave-packet-captions-ar-gate.md`). Committed in the turn it was
+  finished, which is what the RUNBOOK now requires and what 10-11 could not do.
+  **The defect:** both captions name *Senegal and Benin* on ruler two. The piece has crowned **all four
+  that cleared 410 — Gabon, Senegal, Benin, Burkina Faso** — since commit `78d6daa` on **2026-09-18**,
+  and says in its own body *"naming two of them would be our narrowing, not his."* **Twenty-four days,
+  both languages, through the 09-19, 09-22, 09-30, 10-05 and 10-07 readings.** `qa_packet_figures` was
+  green throughout and **was right to be**: the clause carries no numeral.
+  **The finding under the finding, and it is the day's ruling.** The same claim has **seven homes**. The
+  09-18 correction traced its own consequence *properly* — decision 3 of that day raised the `countries:`
+  array by name, weighed it over four paragraphs and ruled on it — and found **one: the home with
+  `qa_geo_fields` gating it, shipped four days earlier.** The six it missed are prose: both deks, both
+  opening sentences, the captions, and the gating tool's own header. **Ruling #98** — *a blast radius is
+  traced where the instruments are and stops exactly there*, because an uninstrumented home is silent and
+  silence is indistinguishable from *not affected*.
+  **Repaired in both editions in one commit**, because the 10-05 judgment found this exact sentence
+  carrying a universal in English and an existential in Arabic for twenty days. The count is **struck, not
+  corrected** — the sentence never needed one, and the crowned set is seven countries. **The title is
+  untouched and still exactly true: four rulers, four crowns, and the second one is shared.** The
+  `countries:` array is untouched and the 09-18 ruling on it stands verbatim: the field reports
+  **coverage**, this piece reads evidence on five systems, and adding Gabon would be #51 committed by a
+  metadata field (`verdicts/2026-10-12-ed05-ruler-stale-count-ruling.md`).
+  **Caps re-measured at compose:** EN dek **164/200**, AR dek **146/200**, titles unchanged, EN body
+  **2,340** against the **2,400** ceiling granted 09-18 — **one word lower** than before the repair.
+  **Rendered and looked at (#16):** row 4 alone flipped in the working tree, built (**exit 0, every gate
+  clean, 122 routed pages**), both editions' page dek and `<meta name="description">` carrying the
+  repaired strings with the Arabic tashkeel intact, then reverted and **proved restored with `git diff
+  HEAD -- web/src/content/` returning empty.** Held set back at **12 files / 6 slugs**, flags read
+  individually.
+  **WHY THE FLIP DOES NOT RUN TODAY, stated rather than implied.** A spine sentence and a dek in both
+  editions were found stale **this morning**; the repair is hours old and no gate has yet run against a
+  built corpus containing it other than today's own rehearsal. Standing rule #1 outranks a gate date that
+  has already passed, and *a repair to the spine of a piece is not a tail-end job on the day it is found.*
+  **What is left is now exactly one clean build and one publish gate in writing**, and the publish gate is
+  owed in the flip commit itself. **Seventy-first consecutive day without a published piece**, and the
+  reason is named rather than absorbed: the edition was one judgment from the origin and the judgment
+  found something.
+  **Blockers: 1 → 0 open, 1 new and closeable.** The captions gate is **closed**. What replaces it is not
+  a blocker of the same kind — it is the flip itself.
 - **2026-10-11 (weekly review)** — **THE GATE DATE ARRIVED, THE LAST BLOCKER WAS CLEARED, AND THE
   ARTEFACT THAT CLEARED IT DOES NOT EXIST.** The 10-11 daily run took the packet captions' Arabic gate —
   the only item the 10-10 entry left open, then 9 days old — **and made the judgment.** It then hit

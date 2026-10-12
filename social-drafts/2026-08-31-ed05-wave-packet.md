@@ -77,7 +77,7 @@ Both captions now match the corrected piece. Nothing was published — the packe
 ### Flip-day checklist (Growth)
 1. Wave gate flipped, deploy green, `verify` job byte-compared.
 2. Both URLs per piece return 200 from the origin (EN + AR), and the og card resolves.
-3. **Every caption re-read against the shipped text of its piece** — figures, hedges, and the nouns a verdict may have changed (#50).
+3. **Every caption re-read against the shipped text of its piece** — figures, hedges, and the nouns a verdict may have changed (#50). **LAST EXECUTED: 2026-10-12** (the Arabic gate; it returned row 4 in both languages). *This date is carried here and moved by the run that does the re-read, so a reader sees the step's AGE instead of assuming its freshness — it had gone twelve days between 09-30 and 10-12 and the staleness was invisible because nothing recorded it.*
 4. Then, and only then, the list queues in the order given per piece.
 
 > **2026-09-23 — step 3 now has a machine behind half of it, and the half matters.** Standing
