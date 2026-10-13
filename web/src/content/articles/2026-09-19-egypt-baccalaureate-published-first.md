@@ -42,7 +42,7 @@ hero:
   src: "/stills/2026-09-19-egypt-baccalaureate-published-first.svg"
   alt: "A continuous ink drawing for Egypt: at the right of the page four plain doorways stand in a row on a single ground line, each drawn as an upright rectangle with nothing inside it. A long dotted line enters at the left edge and travels the width of the page towards them, passing four small upright markers set along it like milestones, and stops short of the first threshold. One doorway alone is traced in a warm kiln-orange line, its frame complete and its opening empty. Above the row, small and in outline, a notice hangs from a single nail, its lines of writing drawn as plain rules."
   caption: "سكون · The Still · Curated 50 · Egypt"
-approved: false
+approved: true
 ---
 
 The usual order of an examination reform is announce, legislate, examine, and then — once a cohort is holding results nobody has seen before — tell families what those results are actually worth. The last step is the one that slips. A new certificate exists on paper long before anyone can say which university door it opens, and the families asked to choose it are asked to choose in the dark.

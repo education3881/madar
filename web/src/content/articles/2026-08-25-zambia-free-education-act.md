@@ -38,7 +38,7 @@ hero:
   src: "/stills/2026-08-25-zambia-free-education-act.svg"
   alt: "A continuous ink drawing for Zambia: a low wall of stacked slabs runs across the page, each slab a year, and where the wall once ended in a raised post — a finishing marker — the post has been lifted clear and set down one slab short, leaving a shallow socket in the stone where it used to stand. Behind the wall a doorway stands open with its gate unhinged and laid flat on the ground, and just inside the threshold a small bed frame with a thin mattress has been drawn to the same weight of line as the doorway itself, brought inside rather than left out in the yard. Below the wall, at the near end, three short courses are begun and unfinished, drawn as outlines only. The single warm mark on the page, a kiln-orange line, traces the empty socket where the marker used to be."
   caption: "سكون · The Still · Curated 44 · Zambia"
-approved: false
+approved: true
 ---
 
 The Education (Amendment) Act's central sentence is fourteen words long, and its grammar is the whole story. *"A child who is a citizen shall have the right to free education."* Not a programme, not a commitment, not a budget line renewed each October: a right, vested in a person, enforceable against the state. Zambia had already abolished school fees — a policy announcement in January 2022, delivered by administrative circular and sustained by annual appropriation, the kind of thing a later government can end with a memo. What the President assented to on 4 June 2026 converts that policy into statute. The change is not what a child receives. It is who has to justify taking it away.

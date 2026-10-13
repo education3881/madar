@@ -42,7 +42,7 @@ hero:
   src: "/stills/2026-09-14-africa-best-system-ruler.svg"
   alt: "A continuous ink drawing: the outline of the African continent, small and plain, drawn once in the centre of the page. Four straight rulers lie across it at four different angles, each one crossing the outline and extending past its edge, each one marked with its own scale so that no two sets of graduations line up. Where each ruler passes over the continent it touches a single small circle. One mark on the page is warm — a kiln-orange stroke at the zero end of the fourth ruler, drawn slightly clear of the ruler's edge, as though the zero had been set down in a different place from the one the ruler assumes."
   caption: "سكون · The Still · Curated 49 · Africa"
-approved: false
+approved: true
 ---
 
 Somewhere there is a table with African countries in rank order and one column of scores beside them, and it is the least useful document on this subject. The problem is not its arithmetic. The problem is that a rank is an answer with its question deleted. Every ranking of school systems is a ruler someone chose, and the choosing is the whole argument; publishing the order while omitting the ruler is how a measurement becomes an opinion with decimal places.

@@ -37,7 +37,7 @@ hero:
   src: "/stills/2026-09-27-rwanda-teacher-certification.svg"
   alt: "A continuous ink drawing for Rwanda: a ledger page drawn in plain rule lines fills the right of the sheet, two narrow columns side by side under a single header rule, each column holding a stack of horizontal entry marks. The left column's stack and the right column's stack stand at almost exactly the same height, and a fine dashed level line is drawn across from one to the other to show it. Away to the left, a long low row of small upright tally strokes runs along the foot of the page, far more numerous than the entries in either column, one of them traced in warm kiln-orange. Nothing is written in words anywhere."
   caption: "سكون · The Still · Curated 51 · Rwanda"
-approved: false
+approved: true
 ---
 
 A government that expands schooling faster than it can staff it has few options and only one of them is honest. It can lower the standard quietly and go on calling the new hires teachers. It can leave the rooms empty and call it phasing. Or it can put unqualified adults in front of children deliberately, write down in its own records that this is what it has done, and attach a plan to the entry.

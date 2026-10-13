@@ -76,6 +76,23 @@ export const editions: Edition[] = [
     accent: '#9C5B3A',
     motif: 'horizon',
     cover: 'edition-04.svg',
+    status: 'closed',
+  },
+  // Ed05: the period label names the month the issue reaches readers, not the
+  // span of its datelines — the convention every row above already follows
+  // (Ed04 is 'August 2026' over pieces dated 07-07 to 07-28). This wave's six
+  // pieces are dated 2026-08-25 to 2026-09-27 and ship in October; there was no
+  // September edition, and the gap is honest rather than hidden.
+  {
+    number: 5,
+    periodEn: 'October 2026',
+    periodAr: 'أكتوبر ٢٠٢٦',
+    themeEn: 'Africa entire — six systems, each read on the instrument it chose for itself.',
+    themeAr: 'أفريقيا بأكملها — ستةُ أنظمة، كلٌّ منها يُقرأ بالأداةِ التي اختارها لنفسه.',
+    ground: '#E4E8DF',
+    accent: '#2D6A4F',
+    motif: 'thread',
+    cover: 'edition-05.svg',
     status: 'current',
   },
 ];

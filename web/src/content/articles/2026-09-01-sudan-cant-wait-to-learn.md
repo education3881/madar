@@ -40,7 +40,7 @@ hero:
   src: "/stills/2026-09-01-sudan-cant-wait-to-learn.svg"
   alt: "A continuous ink drawing for Sudan: at the left, a small wooden stand holds a tablet upright like a miniature blackboard beneath an open-sided shelter of leaning poles, a solar panel resting on its roof beam and a sun drawn as a plain circle above. From the tablet's screen a dotted line rises and travels right across the page, far over a low horizon line, where it loops through three small distant flags before turning back. The single warm mark on the page, a kiln-orange line, traces the returning half of the arc — the stretch that comes home — ending at a second, plainer stand drawn in outline only, still waiting for its tablet."
   caption: "سكون · The Still · Curated 46 · Sudan"
-approved: false
+approved: true
 ---
 
 Most education technology is built in peacetime capitals and parachuted into emergencies, where it fails for reasons its designers never imagined. Sudan ran the sequence in the other direction. In 2014 — nine years before its own war would shutter nearly every school in the country — Sudan built, trialled and scaled a classroom that needs no school: a tablet, a solar panel, a set of educational games, and a trained adult from the community sitting beside the children. The instrument left home, was carried into other countries' emergencies, and by 2025 was serving roughly 125,000 children in Ukraine, Uganda and Lebanon. Then Sudan's own catastrophe arrived, and the question this piece follows is what happened to the idea in the place that invented it.

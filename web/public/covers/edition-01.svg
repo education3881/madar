@@ -1,12 +1,12 @@
-<svg viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg class="ed-cover ed-cover-01" viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>Madār — Edition 01, May 2026 — cover</title>
 <desc>Line-art cover in terracotta on a sand ground: a surveyor's compass rose crossed by a horizon line, with cardinal survey markers and a finely ticked azimuth ring. The founding survey — systems, two languages, one question.</desc>
 <style>
-.wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#0E1B2C}
-.ar{font-family:'Amiri',Georgia,serif;fill:#0E1B2C}
-.kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#D94F2A;letter-spacing:3px}
-.th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#0E1B2C}
-.thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#D94F2A;letter-spacing:2px}
+.ed-cover-01 .wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#0E1B2C}
+.ed-cover-01 .ar{font-family:'Amiri',Georgia,serif;fill:#0E1B2C}
+.ed-cover-01 .kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#D94F2A;letter-spacing:3px}
+.ed-cover-01 .th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#0E1B2C}
+.ed-cover-01 .thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#D94F2A;letter-spacing:2px}
 </style>
 <rect x="40" y="40" width="600" height="800" fill="#E8E2D0" stroke="#0E1B2C" stroke-width="1"/>
 <rect x="54" y="54" width="572" height="772" fill="none" stroke="#0E1B2C" stroke-width="0.5"/>

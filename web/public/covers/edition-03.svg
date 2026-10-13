@@ -1,12 +1,12 @@
-<svg viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg class="ed-cover ed-cover-03" viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>Madār — Edition 03, July 2026 — cover</title>
 <desc>Line-art cover in slate-navy on a cool pale ground: a continuous measurement trace crossing four disruptions and returning to the line each time, over a faint unbroken baseline. Continuity under disruption — school systems holding through war, disaster and collapse.</desc>
 <style>
-.wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#14202E}
-.ar{font-family:'Amiri',Georgia,serif;fill:#14202E}
-.kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#2E4C63;letter-spacing:3px}
-.th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#14202E}
-.thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#2E4C63;letter-spacing:2px}
+.ed-cover-03 .wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#14202E}
+.ed-cover-03 .ar{font-family:'Amiri',Georgia,serif;fill:#14202E}
+.ed-cover-03 .kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#2E4C63;letter-spacing:3px}
+.ed-cover-03 .th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#14202E}
+.ed-cover-03 .thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#2E4C63;letter-spacing:2px}
 </style>
 <rect x="40" y="40" width="600" height="800" fill="#EAEEF1" stroke="#14202E" stroke-width="1"/>
 <rect x="54" y="54" width="572" height="772" fill="none" stroke="#14202E" stroke-width="0.5"/>

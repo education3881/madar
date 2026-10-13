@@ -1,12 +1,12 @@
-<svg viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg class="ed-cover ed-cover-04" viewBox="0 0 680 880" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>Madār — Edition 04, August 2026 — cover</title>
 <desc>Line-art cover in warm ink on a stone ground: a field of upright measuring strokes stands at differing heights across a single sharp threshold rule, most gathered just below it, a few clearing it; one kiln-toned sightline arcs from a low stroke to rest on the threshold. The measurement question — what a score actually measures, and who sets the line.</desc>
 <style>
-.wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#1A1410}
-.ar{font-family:'Amiri',Georgia,serif;fill:#1A1410}
-.kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:3px}
-.th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#1A1410}
-.thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:2px}
+.ed-cover-04 .wm{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;fill:#1A1410}
+.ed-cover-04 .ar{font-family:'Amiri',Georgia,serif;fill:#1A1410}
+.ed-cover-04 .kick{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:3px}
+.ed-cover-04 .th{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;fill:#1A1410}
+.ed-cover-04 .thm{font-family:'JetBrains Mono','Courier New',monospace;fill:#9C5B3A;letter-spacing:2px}
 </style>
 <rect x="40" y="40" width="600" height="800" fill="#E9E5DB" stroke="#1A1410" stroke-width="1"/>
 <rect x="54" y="54" width="572" height="772" fill="none" stroke="#1A1410" stroke-width="0.5"/>

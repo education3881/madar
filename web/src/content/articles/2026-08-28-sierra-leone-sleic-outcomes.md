@@ -37,7 +37,7 @@ hero:
   src: "/stills/2026-08-28-sierra-leone-sleic-outcomes.svg"
   alt: "A continuous ink drawing for Sierra Leone: a classroom wall stands at the centre with a low chalk mark on it, and two measuring rods lean nearby — a tall one laid face-down on the ground, set aside, and a shorter one standing upright against the wall, its top aligned exactly with the mark. At the foot of the wall an open ledger lies flat with a few ruled lines, one entry shorter than the rest. The single warm mark on the page, a kiln-orange line, traces the chalk mark on the wall — the measurement the shorter ruler gave, kept."
   caption: "سكون · The Still · Curated 45 · Sierra Leone"
-approved: false
+approved: true
 ---
 
 In a low-income country's education budget, the moment of truth is rarely a classroom. It is a disbursement. In early 2026, Sierra Leone's largest education experiment reached that moment carrying three years of independently measured results — and the results were under target. What happened next is the story: the payments went out exactly as the measurement dictated, reduced where the gains fell short. The evaluator's full report went on the public record. And one of the five organisations being paid published its own shortfall, in its own words, with its own analysis code attached. *"Our results are not what we would have hoped them to be,"* wrote Fergal Turner of Save the Children — a sentence education systems almost never produce, from an instrument built so that someone would have to.
