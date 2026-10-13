@@ -108,10 +108,57 @@ commit touching any source file and no date moving anywhere. That is case 1, on
 the whole corpus, from the calendar. It is written here so that when it fires it
 is recognised as predicted rather than diagnosed from scratch.
 
+THE ORACLE HAS AN AUDITOR — `--audit-origin` (2026-10-13, standing-queue item 7)
+--------------------------------------------------------------------------------
+`--emit` reads `dist`. `--check` compares the ORIGIN's manifest against a LOCAL
+build. The one comparison nobody was making is the origin's manifest against
+**the origin's own bytes** — and every answer this instrument will ever give
+rebases on that file being a true description of what is published.
+
+The failure it exists to catch has one shape and it is quiet: a manifest that
+rode along with a deploy while describing a *different* tree. Nothing in the
+pipeline would say so. `--check` would keep returning clean exit codes against a
+corrupted baseline, and each day's "0 changed" would be a statement about a
+fiction. An oracle nobody audits is not a record; it is a rumour with a schema.
+
+It was measured BY HAND on 2026-10-12 — 120 of 120 pages, both hashes, zero
+differences — and that hand-run is the 2026-09-13 defect by name: a green that
+costs a human's attention is paid for out of the runs that have least of it.
+**The hand-run also covered 120 of the manifest's 216 entries.** The origin seed
+walks sitemap URLs only, so the 95 asset hashes and the one unrouted entry — 44%
+of the file — were claimed and unverified, including every font, still and share
+card a page actually loads. This mode audits **all three sections**: `pages`,
+`unrouted` and `assets`, each fetched from the origin and re-hashed by the same
+code that wrote the claim.
+
+WHERE `--audit-origin` BELONGS, AND WHY IT IS NOT IN `postbuild` (the 09-13 rule)
+---------------------------------------------------------------------------------
+Its home is the **`verify` job, after `deploy-pages`** — the one moment when the
+question is answerable about the artefact this run just published. That is the
+mirror of `--check`, whose home is the build job for the opposite reason: verify
+is the *wrong* home for `--check` because origin == artifact by construction
+there, and it is the *right* home for `--audit-origin` because that is exactly
+the identity being asserted. Both facts come from the same sentence about the
+same job; which one makes a home wrong depends on the question.
+
+It is not gated from `postbuild` and the reason is not network shyness: at
+`postbuild` time the origin holds the PREVIOUS deploy, so a failure would be a
+statement about a tree this build is already replacing. Gating a build on the
+integrity of the deploy before it reds the wrong run.
+
+`.github/workflows/**` is refused to this identity, so per RUNBOOK clause (4) of
+the 09-14 rule the reason lives here and the one-line step is staged at
+`agents/patches/2026-10-13-verify-audit-origin.md`. Until it lands this is
+hand-run, which is the carried defect, named rather than implied.
+
 EXIT CODES
 ----------
   0  every rendered-content change is dated; cases 2 and 3 reported if present
+     (`--audit-origin`: every claim in the published manifest matches the bytes
+     the origin serves for it)
   1  SILENT CONTENT CHANGE — bytes say the page changed, the date says it did not
+     (`--audit-origin`: the published manifest DISAGREES with the published
+     bytes — the oracle is describing a tree that is not the one being served)
   2  FAILURE TO CHECK — no dist, no sitemap, the page/URL join could not be
      confirmed, the normaliser matched nothing, the origin was unreachable, or
      the budget truncated the sweep. Never reported as "no drift" (08-16).
@@ -125,6 +172,8 @@ USAGE
   python3 agents/tools/qa_served_manifest.py --describe [dist]
   python3 agents/tools/qa_served_manifest.py --check [dist] [--baseline PATH]
   python3 agents/tools/qa_served_manifest.py --seed-from-origin PATH [dist]
+                                             [--budget SECONDS]
+  python3 agents/tools/qa_served_manifest.py --audit-origin [dist]
                                              [--budget SECONDS]
 
 WHERE IT IS WIRED, AND WHY THE HALVES DIFFER (the 09-13 rule)
@@ -451,6 +500,156 @@ def seed_from_origin(dist: Path, out_path: Path) -> int:
     return 0
 
 
+# ---- auditing the published oracle against the published bytes -------------
+
+def audit_origin(dist: Path) -> int:
+    """Fetch the ORIGIN's manifest and check every claim in it against the
+    ORIGIN's own bytes.
+
+    The local tree is used for exactly one thing — deriving the site prefix —
+    and never as a source of truth: an auditor that compared the origin against
+    a local build would be answering `--check`'s question with this one's name.
+    """
+    sm = dist / "sitemap-0.xml"
+    if not sm.exists():
+        print(f"FAIL(2): no local sitemap in {dist} to learn the site prefix from.")
+        return 2
+    prefix = site_prefix(list(sitemap_map(sm.read_text())))
+    if not prefix:
+        print("FAIL(2): could not derive the site prefix from the local sitemap.")
+        return 2
+
+    url = f"{prefix}/{MANIFEST_NAME}"
+    raw = fetch(url)
+    if raw is None:
+        print(f"NO MANIFEST(3): {url} is not served, so there is no oracle to audit.")
+        print("  Reported as its own exit code rather than as a pass: an auditor "
+              "with nothing to audit has failed, not passed (08-16).")
+        return 3
+    try:
+        base = json.loads(raw)
+    except json.JSONDecodeError:
+        print(f"FAIL(2): {url} is served but is not JSON. A corrupt oracle is not "
+              "an absent one.")
+        return 2
+    if base.get("schema") != SCHEMA:
+        print(f"FAIL(2): published manifest schema {base.get('schema')!r} != "
+              f"{SCHEMA!r} — auditing across schema versions would invent findings.")
+        return 2
+
+    # Every claim the file makes, in one list, each with the URL that serves it
+    # and the fields the audit is allowed to check. Assets carry no content_sha
+    # (the normaliser is an HTML notion), so the section carries its own field
+    # list rather than the audit assuming one.
+    claims: list[tuple[str, str, str, dict]] = []
+    for section in ("pages", "unrouted"):
+        for u, e in sorted(base.get(section, {}).items()):
+            claims.append((section, u, u, e))
+    for rel, e in sorted(base.get("assets", {}).items()):
+        claims.append(("assets", rel, f"{prefix}/{rel}", e))
+
+    if not claims:
+        print("FAIL(2): the published manifest claims nothing — zero pages, zero "
+              "unrouted entries, zero assets. An assertion that finds nothing to "
+              "check has failed, not passed (08-16).")
+        return 2
+
+    print(f"auditing the published manifest against the origin it describes:\n"
+          f"  {url}\n"
+          f"  commit {base.get('commit')} · generated {base.get('generated_at_utc')}\n"
+          f"  {len(claims)} claim(s): {len(base.get('pages', {}))} page(s), "
+          f"{len(base.get('unrouted', {}))} unrouted, "
+          f"{len(base.get('assets', {}))} asset(s)", flush=True)
+
+    got: dict[str, bytes | None] = {}
+
+    def _sweep() -> None:
+        for _section, key, u, _e in claims:
+            if _budget_left() <= 0:
+                return
+            got[key] = fetch(u)
+
+    t = threading.Thread(target=_sweep, daemon=True)
+    t.start()
+    while t.is_alive():
+        left = _budget_left()
+        if left <= 0:
+            break
+        t.join(timeout=min(1.0, left) if left != float("inf") else 1.0)
+
+    # A SINGLE PROBE IS NOT A MEASUREMENT (#91, and the rule this publication
+    # already applies to every source it cites). 256 sequential reads of one
+    # host will occasionally drop one; reporting that as "the origin does not
+    # serve what its manifest claims" is a finding about the network wearing a
+    # finding's costume, and an auditor that reds on a flaky fetch is an auditor
+    # somebody switches off. Failures are re-probed ONCE, and the recovery count
+    # is PRINTED rather than smoothed away, because a host that needs two reads
+    # is a fact worth carrying.
+    retried = [(s, k, u, e) for s, k, u, e in claims if got.get(k) is None]
+    recovered = 0
+    if retried and _budget_left() > 0:
+        print(f"  {len(retried)} entr(ies) did not read on the first pass — "
+              "re-probing each once before calling it unserved", flush=True)
+        for _s, k, u, _e in retried:
+            if _budget_left() <= 0:
+                break
+            body = fetch(u)
+            if body is not None:
+                got[k] = body
+                recovered += 1
+
+    unreached: list[tuple[str, str]] = []
+    mismatched: list[tuple[str, str, list[str]]] = []
+    audited = 0
+    for section, key, u, e in claims:
+        body = got.get(key)
+        if body is None:
+            unreached.append((section, u))
+            continue
+        audited += 1
+        if section == "assets":
+            observed = {"bytes_sha": sha(body), "bytes": len(body)}
+        else:
+            b, c, _n = hash_page(body)
+            observed = {"bytes_sha": b, "content_sha": c, "bytes": len(body)}
+        bad = [f for f, v in observed.items() if f in e and e[f] != v]
+        if bad:
+            mismatched.append((section, u, bad))
+
+    if unreached:
+        # A claim the origin does not serve is a failure to audit, never a pass:
+        # the whole point is that the file describes what is published, and an
+        # entry nobody can fetch is the loudest possible way for it not to.
+        print(f"FAIL(2): {len(unreached)} of {len(claims)} claimed entr(ies) could "
+              "not be read from the origin. The manifest describes bytes the "
+              "origin does not serve, or the sweep was truncated by its budget:")
+        for section, u in unreached[:10]:
+            print(f"  ! [{section}] {u}")
+        if len(unreached) > 10:
+            print(f"  ... and {len(unreached) - 10} more")
+        return 2
+
+    if mismatched:
+        print(f"FAIL(1): {len(mismatched)} of {audited} claim(s) DISAGREE with the "
+              "bytes the origin serves. The published oracle describes a tree "
+              "that is not the one being served, so every answer rebased on it "
+              "is void until this is explained:")
+        for section, u, bad in mismatched[:20]:
+            print(f"  x [{section}] {u} — {', '.join(bad)}")
+        if len(mismatched) > 20:
+            print(f"  ... and {len(mismatched) - 20} more")
+        return 1
+
+    print(f"CLEAN qa_served_manifest --audit-origin — {audited} claim(s) audited, "
+          "every one re-fetched from the origin and re-hashed by the code that "
+          "wrote the claim; zero disagreements."
+          + (f" {recovered} needed a second read." if recovered else ""))
+    print("  pages and unrouted entries checked on bytes_sha, content_sha and "
+          "length; assets on bytes_sha and length, which is every field the "
+          "manifest states about them.")
+    return 0
+
+
 # ---- the comparison --------------------------------------------------------
 
 def compare(base: dict, cur: dict) -> int:
@@ -573,6 +772,10 @@ def main() -> int:
                     help="compare this build against the origin's manifest")
     ap.add_argument("--baseline", default=None,
                     help="compare against a manifest FILE instead of the origin")
+    ap.add_argument("--audit-origin", action="store_true",
+                    help="check the ORIGIN's published manifest against the "
+                         "origin's own bytes — pages, unrouted entries and "
+                         "assets. The oracle's auditor (standing-queue item 7).")
     ap.add_argument("--seed-from-origin", default=None, metavar="PATH",
                     help="write a baseline from the origin's REAL served bytes")
     ap.add_argument("--budget", type=float, default=0,
@@ -588,6 +791,12 @@ def main() -> int:
 
     if args.budget and args.budget > 0:
         _DEADLINE = time.monotonic() + args.budget
+
+    if args.audit_origin:
+        # Deliberately before build_manifest(): the auditor must not need a
+        # local build to be correct, and must not be able to read its answer off
+        # one (the 09-14 masking trap at the level of a whole mode).
+        return audit_origin(dist)
 
     if args.seed_from_origin:
         return seed_from_origin(dist, Path(args.seed_from_origin))
@@ -618,7 +827,8 @@ def main() -> int:
         return 0
 
     if not args.check:
-        print("Nothing asked. Use --emit, --check or --seed-from-origin.")
+        print("Nothing asked. Use --emit, --check, --audit-origin or "
+              "--seed-from-origin.")
         return 2
 
     if args.baseline:
