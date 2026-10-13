@@ -625,6 +625,37 @@ No "best" without its ruler in the same sentence; no composite of rulers; improv
 Wave packet on file (`social-drafts/2026-08-31-ed05-wave-packet.md`) with three entries, EN+AR, held with the wave; the fourth composes from the ruler piece's dek once it exists. Engagement slices 2 (Africa evidence) and 3 (measurement of systems) carry the wave. **Nothing posts before the wave gate + a green `verify` job.** PASEC launch day: one dated follow-up, never a rewrite (#41).
 
 ## Log
+- **2026-10-13 (daily)** — **THE WAVE FLIPPED. Edition 05 is on `origin`: six pieces, both editions,
+  twelve flags in one commit, with the publish gate written out beside them**
+  (`agents/logs/2026-10-13-publish-gate.md`, a row per piece naming every verdict by filename).
+  **Seventy-first held day is the last one.** Build exit 0, **135 served pages against 134 sitemap
+  URLs** (the branded 404, declared by name), **all 29 gating assertions green in both homes** —
+  seventeen from `postbuild`, twelve CI build steps re-run by hand on the flipped `dist`.
+  **The 08-09 inversion executed by the tool, not by a judgment:** `qa_held_assets` reads **0 held
+  slug(s), 44 approved slug(s), 88 control asset(s)** — the held-leak question can no longer fail, so
+  the instrument switched to the positive one. By hand beside it: twelve sitemap `<loc>` entries for
+  the six slugs (EN + AR), six stills resolving in both languages' built pages, six og cards resolving.
+  **Two artefacts went in with the flip that no blocker list carried, and one of them would have been a
+  silent defect.** The editions index renders `editions.map(...)` — **the registry, never the corpus** —
+  so six pieces carrying `edition: 5` with no registry row would have shipped **invisible on the one
+  page that gathers an issue**, and both home pages would have gone on calling Edition 04 *current*
+  while serving a newer wave. Row 5 added (`status: 'current'`, Edition 04 to `'closed'`, period label
+  **October 2026** on the convention every row already follows), plus a new cover in the house line-art
+  convention.
+  **And the render was looked at, and it was wrong — ruling #99.** The new cover printed its kicker in
+  **Edition 01's vermilion**: five inlined `<style>` blocks sharing five class names are one cascade and
+  the last in document order wins, so every edition's cover type has printed in Edition 01's accent
+  since the second cover was inlined. Measured as computed `fill` through a browser — one value before,
+  five after, each its own registry accent — and fixed in the same commit by scoping every rule under
+  `.ed-cover-NN`. **The defect existed in no file**, which is why none of the 29 gating assertions could
+  have found it.
+  **Distribution:** nothing posts today and the packet's own checklist is why — step 1 requires a green
+  `verify`, and the deploy fires after the agent step (#71). The **Arabic tag asymmetry is decided**:
+  five AR captions gain composed Arabic tags on the pattern Egypt's own caption already set;
+  `qa_packet_figures` re-run CLEAN; the Arabic Editor's sign-off on the five sets is owed before any
+  post.
+  **Blockers: 0. The edition is published.** What remains is a read at the origin after the deploy, and
+  that is a confirmation rather than a gate.
 - **2026-10-12 (daily)** — **THE GATE WAS TAKEN AGAIN AND IT BIT. The edition's last blocker is judged,
   banked and closed — and judging it opened a repair, so the flip does not run today.**
   The Arabic Editor's gate on the six wave-packet captions, **20 days old**, taken for the second time
