@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-13</title>
+<meta name="description" content="Manager to Founder daily brief for Wednesday 14 October 2026. Brief 100. Edition 05 is on the origin: six pieces, both languages, twelve flags in one commit after seventy-one days without publishing." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 101
+      <strong>Wednesday 14 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; <strong>Edition 05 is readable</strong> &middot; and five broken promises stop being served</div>
+    <p>
+      <strong>Africa is live.</strong> Yesterday&rsquo;s deploy went green at <strong>16:21 Dubai</strong> and
+      all twelve Edition 05 pages now answer from the origin &mdash; six pieces, both languages, checked by
+      reading them twice each rather than by trusting the build that made them. That closes the sequence the
+      last three weeks were about.
+    </p>
+    <p>
+      <strong>Today&rsquo;s work was a repair, and the repair found something.</strong> Four published pieces
+      were carrying five citations that lead nowhere &mdash; hard 404s, in both languages, so eight live pages.
+      They had been broken for <strong>131 days</strong>. Fixing them meant opening each source document again,
+      and that is where the day turned: <strong>three of the five were holding up a sentence the document does
+      not support.</strong>
+    </p>
+    <p>
+      The sharpest of the three: a Lebanon piece has been telling readers that a tenured public teacher takes
+      home roughly $350 to $600 a month, and crediting that to a named union study. We read that study three
+      ways today &mdash; its current edition, an archived copy of the version we originally cited, and the
+      study&rsquo;s own PDF. <strong>It contains no monthly figure at all.</strong> The figure is gone from the
+      piece, and what the registers actually say is in its place.
+    </p>
+    <p class="mono">
+      Deploy 38396706724 &middot; success &middot; serving commit 9d29292 &mdash; read from the Actions API and
+      confirmed against the live pages, not assumed. <br />
+      <strong>Today&rsquo;s deploy has not fired yet</strong>, by design: the workflow dispatches it after this
+      run finishes. Five commits are on <strong>origin</strong> and reach readers minutes from now.
+    </p>
+    <p>
+      The uncomfortable half is worth your attention. A dead link is the <em>only</em> thing that ever makes
+      anyone re-read a source we have already published. Nothing else does. So today&rsquo;s three errors were
+      not found by diligence &mdash; they were found because a Turkish agency reorganised its website and a
+      Moroccan ministry deleted two PDFs. <strong>The other 338 sources we cite still work, and have therefore
+      never been checked a second time by anybody.</strong> That is now written down as a rule and queued as
+      work.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The edition shipped, and it reached the origin</h2>
+        <div class="day__date">2026-10-13 &middot; Tuesday &middot; read from git and the Actions API, not from the brief</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">Six commits, five functions, all delivered</div>
+        <div class="item__body">
+          <p>
+            Edition 05 flipped in a single commit, the publish gate written out in full, the queue&rsquo;s head
+            closed at seven days, ruling 99 filed, the growth note written and an addendum recording the five
+            pushes as timestamped observations. Nothing was staged and lost.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-fixed">The question yesterday could not answer, answered</div>
+        <div class="item__body">
+          <p>
+            Yesterday&rsquo;s brief said the edition was on <strong>origin</strong> but that no deploy had yet
+            fired, so a reader was still being served the previous day&rsquo;s publication. That has now
+            resolved exactly as predicted: the deploy fired sixteen minutes after the last commit, went green,
+            and the origin serves 134 pages against a build of 134. <strong>No dark day, nine days running.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">And one thing was named and left</div>
+        <div class="item__body">
+          <p>
+            The five dead citations were passed over for the third time, on the honest ground that the day had
+            added twelve clean pages rather than repair eight old ones. Yesterday&rsquo;s log said in writing
+            that they would go first today. They did.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>A link repair turns into the only audit we have ever run on what we publish</h2>
+        <div class="day__date">2026-10-14 &middot; Brief 101 &middot; five commits, one per function</div>
+      </div>
+    </div>
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-fixed">Content &middot; eight live pages, in both languages</div>
+        <div class="item__body">
+          <p>
+            Five citations, four pieces, both editions. Each dead URL was probed twice, and all four host
+            websites answer normally at their front doors &mdash; so these are deleted documents, not outages.
+            Every one was then opened again somewhere, and each needed a different kind of repair:
+          </p>
+          <ul>
+            <li>
+              <strong>T&uuml;rkiye</strong> &mdash; the exam authority has retired its entire old URL scheme.
+              The document is unchanged at its new address. But the note beside it credited that announcement
+              with waiving exam fees across eleven provinces, and the announcement says nothing of the kind.
+              <strong>The claim is true</strong> &mdash; it belongs to a different statement, two weeks
+              earlier, which names all eleven provinces and the one district exactly as our piece did. Right
+              fact, wrong source, now cited properly.
+            </li>
+            <li>
+              <strong>Rohingya camps</strong> &mdash; UNICEF UK deleted its copy of a UNICEF press release;
+              UNICEF&rsquo;s own copy is fine. The note dated it &ldquo;early 2026&rdquo;. It is dated
+              <strong>6 November 2025</strong>: someone had recorded the deadline the release warns about as
+              the date the release was written, and a sentence in the article inherited the mistake.
+            </li>
+            <li>
+              <strong>Lebanon</strong> &mdash; the $350 to $600 figure, described above. Removed from both
+              languages.
+            </li>
+            <li>
+              <strong>Morocco</strong> &mdash; the ministry has deleted both of the lists our piece read, and
+              no public archive kept a copy. Those lists are what tied a labelling round to a particular
+              intake of schools, which is the basis of our line that roughly one candidate school in six was
+              refused. <strong>Nobody can open that basis now, including us.</strong> So the article now says
+              so, in the sentence itself, instead of presenting the ratio as though it were still checkable.
+            </li>
+          </ul>
+          <p>
+            All four replacement links were tested twice. The list of sources the publication points at moved
+            from 343 to 342, and the arithmetic is readable: two deleted documents removed, one new source
+            added, three re-pointed.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research &middot; ruling 100</div>
+        <div class="item__body">
+          <p>
+            <em>A dead citation is the only event that makes anyone re-open a source.</em> The repair above
+            produced a three-in-five error rate on documents nobody would otherwise have looked at twice. That
+            is not a statement about carelessness; it is a statement about <strong>triggers</strong>. Once a
+            piece is published, its sources are never re-read, because nothing asks anyone to. A 404 asks
+            &mdash; and it arrives for reasons that have nothing to do with us.
+          </p>
+          <p>
+            So the chore is actually the audit, and a working link is not evidence that the note beside it is
+            true; it is the absence of the only event that would have checked it. The ruling also sets out the
+            four things a dead source can mean &mdash; the website moved, the parent organisation still has it,
+            a newer version replaced it, or it is simply gone &mdash; and only the last one means deleting a
+            link.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-fixed">Quality &middot; a green light that was wired to nothing</div>
+        <div class="item__body">
+          <p>
+            Found by accident and worth recording. The check that compares what we built against what the
+            website actually serves reported <strong>&ldquo;134 pages, no differences&rdquo;</strong> at a
+            moment when eight article files had just been rewritten on disk. The reason is mundane and the
+            consequence is not: page dates are read from the project&rsquo;s history, the build reads the
+            files, and a change that has not been committed yet is invisible to the first and visible to the
+            second.
+          </p>
+          <p>
+            We already had this defect written down &mdash; but written down <em>backwards</em>, as a check
+            that complains too much. It also <strong>stays silent when it should complain</strong>, which is
+            the worse half, because a noisy check gets investigated. Re-run after committing, it correctly
+            reports 53 changed pages.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Growth &middot; the packet is finally unblocked, and now waits on you</div>
+        <div class="item__body">
+          <p>
+            The Arabic editor&rsquo;s sign-off on five sets of Arabic hashtags was owed from yesterday and is
+            done &mdash; approved, with the reasoning on file and one note recorded about a phrase that is fine
+            in a hashtag and would be returned in prose. They were checked against the Egypt caption that
+            already had tags, rather than against each other.
+          </p>
+          <p>
+            With the edition live, <strong>the Edition 05 announcement packet has passed every check it
+            contains</strong> and is held on nothing editorial for the first time since 31 August. What it is
+            held on is that <strong>no account or channel is connected to it</strong> &mdash; this operation has
+            no posting credential and was not built with one. That is the fourth day running that this note has
+            ended the same way, and it is carried to Sunday&rsquo;s review as a question only you can answer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-10-14 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 11 · Asia 7 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 44 · access 40 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-09-27</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Which of our published claims can nobody check any more?</h2>
+        <div class="day__date">2026-10-15 &middot; the question the day leaves open</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">The forward question, and it goes first</div>
+        <div class="item__body">
+          <p>
+            Today&rsquo;s sweep sorts <em>links</em>: five dead, six that block automated readers, one with a
+            broken security certificate, fifty-three fine. It has no category at all for a
+            <em>claim</em>. Morocco&rsquo;s one-in-six line has quietly become unverifiable, and we only
+            noticed because the link beside it happened to break.
+          </p>
+          <p>
+            So the question is the inventory: <strong>for every load-bearing figure we have published, can its
+            source still be opened today, by us?</strong> The six blocked websites are the same problem in a
+            quieter form &mdash; one of them is the only public survivor of the very Moroccan list that went
+            missing, and we could not read it today either.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">And what is still waiting</div>
+        <div class="item__body">
+          <p>
+            Eight items on the board. The oldest that has ever been passed over now reads <strong>six
+            days</strong>, down from eight &mdash; and it fell because something was finished rather than
+            because the calendar moved. Still open and visible to a reader: an article page downloads about
+            500 KB of typefaces, which is a design judgment and not a bug. Still open and invisible: the first
+            brief we ever wrote, No. 01, has rendered with a one-word-wide column for 137 days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 101</span>
+  <span>2026-10-14 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>
