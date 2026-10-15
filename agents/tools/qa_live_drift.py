@@ -44,9 +44,14 @@ Proved both ways before being trusted, per ruling #35:
 
 Exit codes: 0 origin matches dist · 1 drift (named, counted) · 2 could not
 fetch the origin (a FAILURE to check, per the 08-16 silent-pass trap — an
-unreachable origin is never reported as "no drift").
+unreachable origin is never reported as "no drift") · **4 the <lastmod> axis was
+REFUSED** because the tree is dirty in the paths the date resolver reads
+(standing-queue item 8, closed 2026-10-15; see `lastmod_tree_guard.py`). On a 4
+the other two axes still ran and are reported; what the run may not do is read
+their agreement as a clean date.
 
 Usage: python3 agents/tools/qa_live_drift.py [dist_dir] [--live https://...]
+       [--repo-root .]
 """
 
 from __future__ import annotations
@@ -54,6 +59,11 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+
+# Sibling precondition (standing-queue item 8). Travels with the tool, not with
+# the cwd: Python puts this script's own directory on sys.path.
+import lastmod_tree_guard
+from lastmod_tree_guard import REFUSED
 
 try:
     import requests
@@ -111,11 +121,25 @@ def fetch(url: str) -> str | None:
 
 
 def main() -> int:
-    args = [a for a in sys.argv[1:] if not a.startswith("--live")]
+    skip = {"--live", "--repo-root"}
+    args, drop = [], False
+    for a in sys.argv[1:]:
+        if drop:
+            drop = False
+            continue
+        if a in skip:
+            drop = True
+            continue
+        args.append(a)
     live = LIVE
+    # Defaults to the repo this tool is checked into rather than the cwd, so the
+    # guard cannot be silenced by where the tool was invoked from.
+    repo_root = str(Path(__file__).resolve().parents[2])
     for i, a in enumerate(sys.argv):
         if a == "--live" and i + 1 < len(sys.argv):
             live = sys.argv[i + 1].rstrip("/")
+        if a == "--repo-root" and i + 1 < len(sys.argv):
+            repo_root = sys.argv[i + 1]
     dist = Path(args[0] if args else "web/dist")
     if not dist.is_dir():
         print(f"FAIL(2): dist not found at {dist} — nothing to compare is not a pass.")
@@ -148,8 +172,19 @@ def main() -> int:
         for u in only_live[:10]:
             print(f"  - {u}")
 
-    mod_drift = [u for u in sorted(set(live_map) & set(local_map))
-                 if live_map[u] != local_map[u]]
+    # Standing-queue item 8, closed 2026-10-15. The <lastmod> this build emitted
+    # was resolved from GIT HISTORY; the bytes beside it came from DISK. On
+    # 2026-10-14 this axis printed `0 lastmod drift` while eight article files on
+    # disk had changed — the origin was serving exactly the dates our own build
+    # re-emitted, so agreement was guaranteed and meant nothing. The URL set and
+    # the sampled heads compare served bytes to served bytes and need no
+    # provenance, so they keep running: refusing all three would make the tool
+    # too blunt to run on a working day, which is its own silent-pass trap.
+    date_axis_refused = lastmod_tree_guard.check(
+        Path(repo_root), "qa_live_drift's <lastmod> axis") is not None
+    mod_drift = [] if date_axis_refused else [
+        u for u in sorted(set(live_map) & set(local_map))
+        if live_map[u] != local_map[u]]
     if mod_drift:
         drift += len(mod_drift)
         print(f"DRIFT: {len(mod_drift)} page(s) whose <lastmod> differs "
@@ -181,7 +216,18 @@ def main() -> int:
         print(f"\nDRIFT({drift}): the origin is not serving what we built. If a "
               "push is staged, this is the count of what the reader is waiting "
               "on; if nothing is staged, the deploy pipeline is the suspect.")
+        if date_axis_refused:
+            print("  The <lastmod> axis was REFUSED and contributed nothing to "
+                  "that count. Two of three axes ran; the date axis is not "
+                  "clean, it is unasked.")
         return 1
+    if date_axis_refused:
+        print(f"\nPARTIAL({REFUSED}): URL set and {len(SAMPLES)} sampled heads "
+              f"match the origin across {len(local_map)} URLs. The <lastmod> "
+              "axis was refused, so this run makes NO claim about dates — and "
+              "a two-axis agreement is not the CLEAN line, which is reserved "
+              "for a comparison all three axes could support.")
+        return REFUSED
     print(f"CLEAN — origin matches dist: {len(local_map)} URLs, "
           f"{len(mod_drift)} lastmod drift, {len(SAMPLES)} sampled heads identical.")
     return 0

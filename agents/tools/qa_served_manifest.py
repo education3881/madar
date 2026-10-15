@@ -225,6 +225,11 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Sibling precondition, stdlib only, deliberately not a `qa_*` assertion — see
+# its header. Imported by name: Python puts this script's own directory on
+# sys.path, so the guard travels with the tool rather than with the cwd.
+import lastmod_tree_guard
+
 # STDLIB ONLY, AND THAT IS A GATE REQUIREMENT RATHER THAN A PREFERENCE.
 # `--emit` is wired into `postbuild`, so it runs on every build and a failed
 # import reds the deploy. The first draft of this file imported `requests` at
@@ -778,6 +783,11 @@ def main() -> int:
                          "assets. The oracle's auditor (standing-queue item 7).")
     ap.add_argument("--seed-from-origin", default=None, metavar="PATH",
                     help="write a baseline from the origin's REAL served bytes")
+    ap.add_argument("--repo-root", default=str(Path(__file__).resolve().parents[2]),
+                    help="repository root whose working tree the <lastmod> "
+                         "guard reads (standing-queue item 8). Defaults to the "
+                         "repo this tool is checked into, not the cwd, so the "
+                         "guard cannot be silenced by where it was invoked.")
     ap.add_argument("--budget", type=float, default=0,
                     help="total wall-clock ceiling in seconds for origin reads "
                          "(ruling #88). 0 = unbounded, so existing invocations "
@@ -830,6 +840,16 @@ def main() -> int:
         print("Nothing asked. Use --emit, --check, --audit-origin or "
               "--seed-from-origin.")
         return 2
+
+    # Standing-queue item 8, closed 2026-10-15. Every bucket in compare() keys
+    # on `date_moved`, and every <lastmod> in this build was resolved from git
+    # history — so against a dirty tree this whole comparison is two different
+    # moments wearing one verdict's clothes. Refused before the origin is even
+    # fetched: an unsupportable comparison should cost nothing to decline.
+    refused = lastmod_tree_guard.check(Path(args.repo_root),
+                                       "qa_served_manifest --check")
+    if refused is not None:
+        return refused
 
     if args.baseline:
         bp = Path(args.baseline)

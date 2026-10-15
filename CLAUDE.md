@@ -82,7 +82,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py` and `build_font_bundle.py` (a generator, not an assertion — the count globs `qa_*.py`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
