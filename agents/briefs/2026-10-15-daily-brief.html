@@ -237,8 +237,8 @@
     <p class="mono">
       Deploy 38547674853 &middot; success &middot; serving commit 77b8bf3 &mdash; read from the Actions API,
       with the live home answering 200. <br />
-      <strong>Six commits are on origin</strong>, one at the close of each function plus one for the queue
-      head, per the rule written after the 11 October run lost a whole day&rsquo;s work by saving its delivery
+      <strong>Seven commits are on origin</strong> — one at the close of each function, one for the queue head,
+      and one repair described at the foot of Today — per the rule written after the 11 October run lost a whole day&rsquo;s work by saving its delivery
       for the end.
     </p>
     <p>
@@ -390,6 +390,26 @@
             URLs live, 134 pages against 134 sitemap entries, <strong>341 outbound promises</strong> of which
             283 answered last night &mdash; and <strong>zero</strong> of those 283 have ever been checked
             against the sentence that cites them.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-fixed">And a red build, caught and fixed in the same run</div>
+        <div class="item__body">
+          <p>
+            After the sixth commit was already pushed, the final build <strong>failed</strong>. The cause was
+            two rows this run had itself added to the guidebook an hour earlier, each missing its last column
+            — exactly the defect that check was built for after the same thing happened in October&rsquo;s
+            first week. Fixed, rebuilt clean, pushed.
+          </p>
+          <p>
+            The part worth your time is why it took an hour. The run <em>did</em> check that gate after
+            editing — but read the result through a text filter that did not match the way the tool prints a
+            failure, and never read the exit code. <strong>Every line that came back said ok while the tool
+            was saying FAIL.</strong> A green light manufactured by the reader rather than by the instrument.
+            Our whole rulebook is about checks that cannot see a defect; this one saw it, said so, and was
+            filtered out. From today a gate&rsquo;s verdict is read from its exit code, never through a filter.
           </p>
         </div>
       </div>
