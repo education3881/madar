@@ -10,10 +10,16 @@ Read on every run, in this order:
 1. `agents/CHARTER.md` — the operating mandate. The five standing functions.
 2. `agents/RUNBOOK.md` — the accumulated procedural rules. Long, and load-bearing.
 3. The most recent `agents/briefs/*.html` — yesterday's artefact, **not** today's state.
-4. `content-drafts/_EDITION_05_STATUS.md` — the live edition's ledger. **A dated section inside it is
-   history, not state** — read the Log and the newest `RECONCILED AGAINST DISK` block before planning
-   from any section above them. A run on 2026-10-04 reported three closed items as open because it
-   read the 09-27 section, which is eleven screens above the entry closing them.
+4. `content-drafts/_EDITION_05_STATUS.md` — **the closed-edition record. Edition 05 flipped 2026-10-13
+   and there is no live edition.** The file is 5 KB: what shipped, the one item still owed, the standing
+   prohibitions, and a pointer. Its 194 KB working ledger was archived on 2026-10-16 under standing-queue
+   item 9, because this list had spent three days telling every run to read a shipped wave's history
+   before planning. **Standing rule: a wave's status memo is reduced to its record in the flip commit's
+   week, and this line names whichever edition is open** — if that is a closed one, the line is stale
+   and the run that notices fixes it. **A dated section inside a working ledger is history, not state**
+   — read the Log and the newest `RECONCILED AGAINST DISK` block before planning from any section above
+   them. A run on 2026-10-04 reported three closed items as open because it read the 09-27 section,
+   which was eleven screens above the entry closing them.
 5. `agents/logs/WEBDEV-QUEUE.md` — **the operation's one standing queue, and from 2026-10-04 its head is
    binding** (RUNBOOK, *one queue, one head*). The previous run's forward question enters at the head;
    an item displaced three times goes first regardless; the run writes one line naming which head it
