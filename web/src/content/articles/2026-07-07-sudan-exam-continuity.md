@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-07-07-chad-sudanese-refugee-schooling
   - 2026-05-28-iraq-mosul-library
+  - 2026-09-01-sudan-cant-wait-to-learn
 contains_composites: false
 arabicVersion: 2026-07-07-sudan-exam-continuity
 sources:

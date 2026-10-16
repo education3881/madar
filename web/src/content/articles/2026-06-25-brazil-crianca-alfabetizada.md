@@ -13,6 +13,7 @@ related:
   - 2026-06-18-egypt-npda-arabic-literacy
   - 2026-07-04-kenya-cbe-grade10-pathways
   - 2026-07-07-chile-simce-return
+  - 2026-09-27-rwanda-teacher-certification
 contains_composites: false
 arabicVersion: 2026-06-25-brazil-crianca-alfabetizada
 sources:

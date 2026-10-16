@@ -13,6 +13,7 @@ related:
   - 2026-05-31-uruguay-eduia-lab-ceibal
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-07-04-kenya-cbe-grade10-pathways
+  - 2026-08-28-sierra-leone-sleic-outcomes
 contains_composites: false
 arabicVersion: 2026-06-08-sierra-leone-tsc-teacher-matching
 sources:

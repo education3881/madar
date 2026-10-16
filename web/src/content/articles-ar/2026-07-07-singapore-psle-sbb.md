@@ -12,6 +12,7 @@ related:
   - 2026-07-07-netherlands-doorstroomtoets
   - 2026-06-17-korea-aidt-reversal
   - 2026-07-07-india-parakh-hpc
+  - 2026-09-19-egypt-baccalaureate-published-first
 contains_composites: false
 englishVersion: 2026-07-07-singapore-psle-sbb
 sources:

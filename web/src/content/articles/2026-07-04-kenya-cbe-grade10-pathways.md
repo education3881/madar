@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-06-25-brazil-crianca-alfabetizada
+  - 2026-08-25-zambia-free-education-act
 contains_composites: false
 arabicVersion: 2026-07-04-kenya-cbe-grade10-pathways
 sources:

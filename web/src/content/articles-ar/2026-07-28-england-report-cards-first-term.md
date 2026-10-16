@@ -12,6 +12,7 @@ related:
   - 2026-06-20-oman-school-performance-ratings
   - 2026-07-07-us-naep-honesty-gap
   - 2026-07-07-netherlands-doorstroomtoets
+  - 2026-08-28-sierra-leone-sleic-outcomes
 contains_composites: false
 englishVersion: 2026-07-28-england-report-cards-first-term
 sources:

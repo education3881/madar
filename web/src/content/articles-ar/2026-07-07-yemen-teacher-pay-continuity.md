@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-07-07-lebanon-crisis-schooling
   - 2026-05-28-iraq-mosul-library
+  - 2026-09-27-rwanda-teacher-certification
 contains_composites: false
 englishVersion: 2026-07-07-yemen-teacher-pay-continuity
 sources:

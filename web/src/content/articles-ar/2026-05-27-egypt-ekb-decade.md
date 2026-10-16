@@ -13,6 +13,7 @@ related:
   - 2026-06-18-egypt-npda-arabic-literacy
   - 2026-06-16-vietnam-tuition-free-public-school
   - 2026-07-07-ukraine-wartime-schooling
+  - 2026-09-19-egypt-baccalaureate-published-first
 sources:
   - title: "اليونسكو — دراسة حالة عن بنك المعرفة المصري (EKB)، مبادرة Gateways (صفحة الدراسة؛ التقرير الكامل في unesdoc)"
     url: "https://www.unesco.org/en/learning-platforms-gateway/case-study-egyptian-knowledge-bank-ekb"
