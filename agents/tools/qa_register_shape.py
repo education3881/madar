@@ -127,14 +127,28 @@ def fields(row):
 
 
 def words_to_int(text):
-    """'Eighty-five' -> 85. Returns None if it is not a number word."""
+    """'Eighty-five' -> 85, 'One hundred four' -> 104. None if not a number word.
+
+    `hundred` MULTIPLIES rather than adds, so it cannot be folded into WORDS:
+    a plain sum would read 'one hundred' as 101. It was added 2026-10-17, the
+    day Section 1 reached a hundred rows and this check became unable to pass
+    for any true value — it refused the count correctly and then had no number
+    to accept, which is the right failure and still a failure. A ceiling that
+    is only reached once is still a ceiling.
+    """
     parts = [p for p in re.split(r"[\s-]+", text.strip().lower()) if p]
-    if not parts or not all(p in WORDS for p in parts):
+    if not parts or not all(p in WORDS or p == "hundred" for p in parts):
         return None
     total = 0
+    current = 0
     for p in parts:
-        total += WORDS[p]
-    return total
+        if p == "hundred":
+            current = (current or 1) * 100
+            total += current
+            current = 0
+        else:
+            current += WORDS[p]
+    return total + current
 
 
 def doc_files(root):
