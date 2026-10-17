@@ -1,5 +1,27 @@
 # Growth — what a reader actually downloads for our typefaces
 
+> **CORRECTED 2026-10-17, in place rather than rewritten (#41).** Three figures below are
+> wrong, all in one class — *a figure summed or sampled over one population and labelled with
+> another*, which is what `CLAUDE.md`'s *a figure is cited as read* forbids.
+>
+> 1. **`2,792,392` ("whole bundle on disk, 34 files") is a sum over the 73 `@font-face`
+>    DECLARATIONS**, counting each file once per declaration. The bundle on disk is
+>    **1,333,968 bytes over 34 files**. The row's two cells came from two different
+>    populations.
+> 2. **"worth roughly 2.29 MB per first-time English reader" therefore overstates by ~2.75×.**
+>    Against the honest proxy — the sum of the distinct files — the mirror is worth
+>    **832,104 bytes**. The 10-08 decision stands; its size does not.
+> 3. **"EN article · 7 woff2 · 501,864" is ONE page reported as a property of 118.** Measured
+>    over all 44: **487,672 / 521,408 / 703,556** (min / median / max), a spread of 215,884.
+>    And the sample was English, so the line *"the article page is the one that matters"*
+>    measured the lighter edition — **the Arabic article was the heaviest page in the
+>    publication at 825,868 bytes**, and this note never looked at it.
+>
+> The method below is **cleared**: re-run on 2026-10-17 against the loopback server's own
+> access log with nothing injected into the page, it agreed with the injected-probe figures
+> file for file on all four control pages. Successor:
+> [`2026-10-17-the-arabic-edition-was-the-heavy-one.md`](2026-10-17-the-arabic-edition-was-the-heavy-one.md).
+
 **Taken:** 2026-10-10, by the daily run. **Lane:** Growth (reader experience).
 **Why now:** the 2026-10-08 run self-hosted five typefaces and made a *design* claim it
 did not measure. This measures it.
