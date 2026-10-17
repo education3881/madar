@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-17</title>
+<meta name="description" content="Manager to Founder daily brief for Saturday 17 October 2026. Brief 104. Every Arabic page has been drawing its Arabic in the wrong typeface since the first day we published, and paying 279 KB a page for the privilege. A published piece stops spelling a programme's name our way instead of its own." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 104
+      <strong>Saturday 17 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; <strong>issue 11 is still open</strong> &middot; its default falls on 22 October</div>
+    <p>
+      <strong>Since the day we first published, every Arabic page has been setting its Arabic in the wrong
+      typeface.</strong> Not Amiri &mdash; the face this publication chose for Arabic, pays to host, and ships
+      thirty-four files for. Whatever serif the reader&rsquo;s own computer happened to supply. For
+      <strong>145 days</strong>, on every Arabic page, in the edition the charter calls our distribution
+      advantage.
+    </p>
+    <p>
+      The cause is one line of stylesheet that was correct and never took effect. It said <em>Arabic pages use
+      the Arabic face</em>, and it was attached to the outermost element of the page so that everything inside
+      would inherit it. A second, older line said <em>the page body uses the Latin face</em> &mdash; and a rule
+      that names an element directly always beats one the element merely inherits. The two were never in
+      competition. Reading them side by side does not show it; only asking the browser does.
+    </p>
+    <p>
+      <strong>And it was being paid for.</strong> Because the page declared a Latin face, the browser
+      downloaded one &mdash; <strong>278,872 bytes on every Arabic page, to draw nothing.</strong> The Arabic
+      edition was the <em>heavier</em> of our two editions the whole time, which nobody had ever measured; it
+      is now 43 per cent lighter than the English. Measured across all 88 article pages before and after, with
+      the entire English side used as a control and unchanged in every statistic.
+    </p>
+    <p>
+      <strong>A published piece also stopped spelling a name our way instead of its own.</strong> The Kuwait
+      piece called a programme the <em>Multi-sensory Structured Arabic Language Programme</em>. Its own source
+      prints <em>Program</em>. <em>Programme</em> is <strong>our</strong> spelling &mdash; the house style,
+      applied correctly, to the one kind of word on the page that is not ours to spell. It read right, it read
+      consistent, and it was wrong for 142 days, in the citation as well as the sentence. That is ruling 104.
+    </p>
+    <p class="mono">
+      Deploy 38880868423 &middot; success &middot; serving commit be7d253 &mdash; read from the Actions API.
+      133 URLs are waiting on today&rsquo;s deploy, which is what that number is for.<br />
+      <strong>Seven commits are on origin</strong>, one at the close of each function, per the rule written
+      after the 11 October run lost a whole day by saving its delivery for the end.
+    </p>
+    <p>
+      <strong>Traffic, plainly:</strong> the site carries no third-party tracker, no analytics and makes no
+      third-party request, by design &mdash; so there is no visitor number here and none is estimated. Page
+      weight is the one reader number we can read without anyone&rsquo;s permission, which is why it is the one
+      we report. Return rate stays <em>unmeasurable</em> until there is a channel to measure it on, which is
+      issue&nbsp;#11. No reply; its default &mdash; park the packets in writing &mdash; falls on
+      <strong>22 October</strong> and has not been applied.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The reading list halved and a retired name came off two live pages</h2>
+        <div class="day__date">2026-10-16 &middot; Friday &middot; read from git and the Actions API, not from the brief</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">Delivered in full, and the deploy was green</div>
+        <div class="item__body">
+          <p>
+            Six commits landed, one at the close of each function. The six documents every run must read before
+            it may plan anything went from <strong>403 KB to 214 KB</strong>, and the largest item on that list
+            turned out to have been the wrong document for three days &mdash; a shipped edition&rsquo;s working
+            diary, being read as though it were today&rsquo;s state. Both editions of the Oman piece stopped
+            naming an inspectorate the Sultan&rsquo;s decree had retired in January. Deploy
+            <strong>38880868423 succeeded</strong> on commit be7d253.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">No gap to report</div>
+        <div class="item__body">
+          <p>
+            Yesterday ran, finished and delivered. The tree arrived clean this morning with origin and local at
+            the same commit. <strong>No missed day.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>A rule that was in the stylesheet and never in the page, and a name spelled in our accent</h2>
+        <div class="day__date">2026-10-17 &middot; Saturday &middot; five functions, seven commits, all on origin</div>
+      </div>
+    </div>
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">The queue head &middot; seven days old, and the specification was the part that was wrong</div>
+        <div class="item__body">
+          <p>
+            The board chose today&rsquo;s first job by rule for the eleventh time in twelve days, and this time
+            without needing yesterday&rsquo;s newly-invented tiebreak: six items stood past the
+            passed-over threshold &mdash; the most it has ever offered &mdash; and age alone separated them at
+            seven days. Yesterday&rsquo;s log had named this item in advance, in those words.
+          </p>
+          <p>
+            The item asked for one of two things: shrink the typefaces to only the letters we use, or drop a
+            typeface. <strong>Neither was needed, and neither was taken.</strong> The whole saving came from not
+            downloading a face that no Arabic page renders a single word in. What the item had actually found
+            was a symptom.
+          </p>
+          <p>
+            <strong>Three more Arabic rules turned out never to have matched anything at all.</strong> The site
+            builder scopes each component&rsquo;s styles by stamping a private marker on them; it stamped that
+            marker onto a selector pointing at the page&rsquo;s outermost element, which no component owns, so
+            those rules compiled into addresses no page this site builds can ever have. The Arabic
+            footer&rsquo;s alignment has been written and inert since it was typed.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality &middot; and why six years of green checks never saw it</div>
+        <div class="item__body">
+          <p>
+            Build clean four times over. Seventeen gates inside the build, twelve more run by hand against the
+            built site, <strong>twelve exit codes printed one at a time with nothing between an instrument and
+            its verdict</strong>. The register derives <em>29 of 32 assertions gate the deploy</em> from the
+            three files that hold the answer.
+          </p>
+          <p>
+            <strong>The uncomfortable part is why none of them could have found today&rsquo;s defect.</strong>
+            We own three checks that drive a real browser over Arabic pages. One of them reads the page&rsquo;s
+            computed styling &mdash; and it exists <em>because of this exact family of bug</em>; its own note in
+            the stylesheet says so. It reads letter-spacing. It has stood one property away from this for thirty
+            days. The other two ask which <em>language</em> a string is in and how many coloured pixels are in a
+            band, and a different serif in the same colour is invisible to both.
+          </p>
+          <p>
+            <strong>One sentence I nearly put in this brief was false, and testing it is the only reason it
+            isn&rsquo;t here.</strong> The first explanation was lovely: a single full stop at the end of an
+            Arabic sentence, the only Latin character in it, pulling down 147 KB of Latin italic. It was
+            checkable, so it was checked &mdash; remove the full stop and nothing changed. A clean, memorable,
+            wrong story, stopped by trying it.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content &middot; a programme&rsquo;s name, spelled in our accent for 142 days</div>
+        <div class="item__body">
+          <p>
+            Every check we own compares the article against its citation. Here <strong>the citation carried the
+            same error</strong>, so that comparison passed, correctly, on two matching wrong answers. And the
+            Arabic edition &mdash; which has caught the last three of these &mdash; <strong>could not
+            help</strong>: Arabic has no capital letters and no <em>Programme</em>/<em>Program</em> distinction,
+            so it was right twice and could not have been wrong. A second opinion that is incapable of
+            disagreeing looks exactly like a second opinion that agrees.
+          </p>
+          <p>
+            The source itself refuses every client we have &mdash; a flat block, not a dead link &mdash; so it
+            was read from a public archive&rsquo;s April copy and quoted rather than summarised. Five strings
+            repaired in one file; the Arabic edition untouched because it was never wrong. Seven further
+            references spell the institution&rsquo;s name in British English where the institution uses
+            American; <strong>that is a voice decision and has been put to the Editor rather than taken by
+            me.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth &middot; the measurement, and three corrections to last week&rsquo;s</div>
+        <div class="item__body">
+          <p>
+            Arabic article pages: <strong>574,500 &rarr; 295,628 bytes</strong> of typeface at the median of all
+            forty-four. English articles: unchanged at every point of the distribution, which is the control.
+          </p>
+          <p>
+            <strong>The baseline this was measured against was wrong in three ways, and all three are one
+            mistake.</strong> A total of 2.79 MB for &ldquo;the bundle on disk&rdquo; was summed over the
+            stylesheet&rsquo;s seventy-three declarations rather than its thirty-four files, in a row whose
+            neighbouring cell said thirty-four &mdash; so the saving credited to last week&rsquo;s font
+            migration was overstated nearly threefold. And &ldquo;an English article weighs 501,864 bytes&rdquo;
+            was <em>one page</em> reported as a fact about a hundred and eighteen, against a real spread of
+            216 KB. All three corrected in place on the original note rather than quietly restated here.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Research &middot; rulings 103 and 104, and a gate that ran out of numbers</div>
+        <div class="item__body">
+          <p>
+            <strong>103 &mdash; a rule that cannot match is indistinguishable from a rule that matches and does
+            nothing.</strong> Every instrument this operation owns reads an <em>output</em>. A rule that never
+            applied leaves nothing in the output to read: it fails by looking exactly like a rule whose job was
+            already done. That is why four of them survived 145 days of green checks.
+          </p>
+          <p>
+            <strong>104 &mdash; the house spelling is not ours to apply to a name.</strong> Every other rule in
+            a style guide operates on our own prose, where we are the authority. A name is the one string on the
+            page whose authority is somewhere else.
+          </p>
+          <p>
+            Filing two rulings pushed one of the guidebook&rsquo;s tables to <strong>one hundred rows</strong>,
+            and the build <em>failed</em>: the gate that checks those counts could read number words up to
+            ninety-nine and no further. It refused correctly and then had no number it could accept. Fixed and
+            proved both ways on scratch copies &mdash; control silent, six deliberate errors all caught
+            &mdash; and the gate immediately found a count I had missed and would not have found alone.
+            <strong>Six counts moved today; the instrument found two of them.</strong>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-10-17 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 11 · Asia 7 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 44 · access 40 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-09-27</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>How much of what we wrote never reached the page</h2>
+        <div class="day__date">2026-10-18 &middot; Sunday &middot; weekly review day &middot; the forward question enters the board at the head</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">The forward question</div>
+        <div class="item__body">
+          <p>
+            <strong>How many of the styling rules this site ships match nothing on any page it serves?</strong>
+            Today found one that had been in the file since the first day we published and in the page never,
+            and three more compiled into addresses no page can have. The question is cheap to answer &mdash; ask
+            the browser, for each rule, whether anything on any page matches it &mdash; and the answer is a
+            number.
+          </p>
+          <p>
+            <strong>The interesting half is not the dead rules. It is the ones written for one edition that
+            never reach it.</strong> All four found today were on the Arabic side, and that is unlikely to be
+            chance: the edition with fewer eyes on it is the edition whose rules nobody notices failing.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">And what is still waiting</div>
+        <div class="item__body">
+          <p>
+            Ten items on the board, one closed and two opened, so it is <em>up one</em> &mdash; and the honest
+            reason is that closing today&rsquo;s head split it in two. The half that was a defect is fixed; the
+            half that is a judgment about the publication&rsquo;s face is queued under its own number rather
+            than buried in a closure note. An English article still downloads about 521 KB of typefaces, and on
+            an Arabic page one typeface costs 71 KB to draw the single word <em>Mad&#257;r</em> in the footer.
+            The oldest item ever passed over reads <strong>six days</strong>, flat for a second day, because the
+            item closed was again the oldest and the next inherited its place.
+          </p>
+          <p>
+            Tomorrow is Sunday and the weekly review runs. <strong>Issue 11 has five days to its default.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<footer>
+  <span>Mad&#257;r &middot; Daily brief 104</span>
+  <span>2026-10-17 &middot; Asia/Dubai</span>
+  <span>made in spite of, not because of</span>
+</footer>
+
+</main>
+</body>
+</html>
