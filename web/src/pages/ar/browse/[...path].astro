@@ -153,9 +153,15 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
     margin-block-end: var(--space-xl);
   }
   .browse__title { margin-block-start: var(--space-sm); }
+  /* The Arabic stack, not the Latin one. Both rules in this file named
+     `--font-body` — "Newsreader", a face with no Arabic glyph — on a page whose
+     every string is Arabic, so the text fell through to the system serif and
+     the browser fetched 132,000 bytes of Newsreader Latin to draw none of it.
+     Same defect as the `[dir="rtl"] body` repair in global.css, in a page
+     template rather than in the cascade (2026-10-17, ruling #103). */
   .browse__intro {
     margin-block-start: var(--space-md);
-    font-family: var(--font-body);
+    font-family: var(--font-arabic);
     font-size: var(--fs-dek);
     line-height: var(--lh-dek);
     color: var(--color-muted);
@@ -190,7 +196,7 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
     padding: 0.4rem 0.7rem;
   }
   .facet:hover { border-color: var(--color-orange); color: var(--color-orange); }
-  .facet__name { font-family: var(--font-body); font-size: 15px; }
+  .facet__name { font-family: var(--font-arabic); font-size: 15px; }
   .facet__count {
     font-family: var(--font-mono);
     font-size: 10px;
