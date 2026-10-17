@@ -102,6 +102,25 @@ const copy = {
     font-size: 0.95rem;
     color: var(--color-muted);
   }
+  /* The Arabic strapline is composed in Arabic (`copy.ar.closing`) and was
+     being set in Newsreader Italic — a Latin-only face — so it rendered from
+     the system serif while the browser fetched 146,872 bytes to draw none of
+     it. Measured 2026-10-17: the single largest font request on every Arabic
+     page, for nine words it cannot render. Italic is reset rather than carried
+     because Arabic has no italic convention, which this stylesheet already
+     says once, at `[dir="rtl"] .pullquote { font-style: normal }`. */
+  /* `:global()` on the ancestor is load-bearing, not decoration. A bare
+     `[dir="rtl"]` in a component's scoped style gets the component's own
+     `data-astro-cid` attribute attached to it, and `dir="rtl"` lives on
+     <html>, which this component does not render and therefore never carries
+     that attribute — so the rule compiles to a selector that cannot match any
+     document. `ShareRail.astro` has used `:global([dir="rtl"])` since it was
+     written; this file did not, and that is why the two rules below it had
+     never once applied to an Arabic page. */
+  :global([dir="rtl"]) .site-footer__closing {
+    font-family: var(--font-arabic);
+    font-style: normal;
+  }
 
   .site-footer__mark {
     text-decoration: none;
@@ -138,7 +157,8 @@ const copy = {
     align-items: flex-end;
     gap: 0.6rem;
   }
-  [dir="rtl"] .site-footer__links { align-items: flex-start; }
+  /* Never applied before 2026-10-17 — see the `:global()` note above. */
+  :global([dir="rtl"]) .site-footer__links { align-items: flex-start; }
   .site-footer__links a { text-decoration: none; color: var(--color-ink); opacity: 0.78; }
   .site-footer__links a:hover { opacity: 1; color: var(--color-orange); }
 
@@ -152,6 +172,6 @@ const copy = {
     .site-footer__cell--mark,
     .site-footer__cell--nav { justify-self: center; }
     .site-footer__links { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    [dir="rtl"] .site-footer__links { align-items: center; }
+    :global([dir="rtl"]) .site-footer__links { align-items: center; }
   }
 </style>

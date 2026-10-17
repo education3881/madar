@@ -366,6 +366,23 @@ hr.rule {
   font-family: var(--font-arabic);
   line-height: 1.9;
 }
+/* The rule above is on <html dir="rtl">, so everything below it was meant to
+   inherit Amiri. Nothing did. `body { font-family: var(--font-body) }` matches
+   <body> DIRECTLY, and a declaration that matches an element always beats a
+   value the element inherits, whatever the two selectors' specificities are —
+   so from the first publish on 2026-05-25 until 2026-10-17 the computed
+   font-family on <body> was `Newsreader` on every Arabic page, measured in a
+   browser: <html> = Amiri, <body> = Newsreader. Newsreader carries no Arabic
+   glyph, so any Arabic text in an element with no font rule of its own fell
+   through the Latin stack to the system serif, and the browser fetched
+   132,000 bytes of Newsreader Latin on each of the 46 Arabic pages to render
+   nothing. This is the defect class the comment above names in its own last
+   sentence — *inheritance from a `body` rule that names no component at all* —
+   and assertion 17 could not see it, because it reads computed `letter-spacing`
+   and never computed `font-family`. (ruling #103, standing-queue item 10.) */
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
 [dir="rtl"] h1,
 [dir="rtl"] h2,
 [dir="rtl"] h3,
