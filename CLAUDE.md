@@ -58,9 +58,16 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   audit trail for a number a gate now maintains is a cost every run pays before it can do
   any work — and on 2026-10-09 that cost took the whole run.)*
 
-- **The run has an envelope, and it cannot see itself approaching it.** `madar-daily.yml` and
+- **The run has an envelope, and it can see itself approaching HALF of it.** `madar-daily.yml` and
   `madar-weekly.yml` pass **`--max-turns 180`** and set **`timeout-minutes: 90`**. Both numbers live in
-  `.github/workflows/**`, which this identity cannot write, so they are recorded here. **Commit and push
+  `.github/workflows/**`, which this identity cannot write, so they are recorded here — **and recording a
+  number is not measuring it.** From 2026-10-18 the measurable half is measured: `python3
+  agents/tools/run_envelope.py .` parses both numbers out of the workflow file and reports elapsed and
+  remaining **wall clock** against the run's own `run_started_at`, readable with the `actions: read` grant
+  the job already holds. **That half was observable from inside for the five runs that believed the whole
+  envelope was dark** (ruling #105). The **turn** axis genuinely is dark — nothing in the agent step counts
+  turns — and the tool prints it as UNMEASURABLE on every call, because a green clock is not a green
+  envelope: the run that lost 10-11 to `error_max_turns` had minutes to spare. **Commit and push
   at the close of every standing function — never once at the end** (RUNBOOK, ruling #96). On 2026-10-11
   the daily run spent 181 turns doing a full day's work, including the Edition 05 gate judgment that was
   the edition's last blocker, and delivered **nothing**: one turn past the cap cost the whole day, because
@@ -88,7 +95,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own) and `run_envelope.py` (added 2026-10-18 closing standing-queue item 11 — **where this run stands against the envelope in the two lines above**, parsed from the workflow file and never copied, with the wall clock measured from `run_started_at` and the **turn axis printed as UNMEASURABLE** so a healthy clock cannot be read as a healthy envelope; exits 0 / 3 = BANK NOW / 2 = cannot measure / 4 = REFUSED, and `--log` accumulates each function's cost in `agents/stats/run-envelope.jsonl`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
