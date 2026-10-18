@@ -3,7 +3,14 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/urls';
 import { byDateThenSlug } from '../../lib/order';
-import { facetsFor, facetPath, browsePath, piecesIn, type Facet } from '../../lib/taxonomy';
+import {
+  facetsFor,
+  facetPath,
+  browsePath,
+  piecesIn,
+  soloCountries,
+  type Facet,
+} from '../../lib/taxonomy';
 
 // ---------------------------------------------------------------------------
 // Browse (EN) — the hub at /browse/ plus one index page per facet.
@@ -63,10 +70,17 @@ const alternate = facet
   ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
   : { en: browsePath('en'), ar: browsePath('ar') };
 
+// Countries with exactly one piece get no index page — an index listing one
+// article is a dead end — but they are named here and linked straight to the
+// piece. Four countries clear the >= 2 bar; 38 do not, and before today none
+// of those 38 appeared anywhere on this surface. See taxonomy.ts.
+const solo = soloCountries(all as any);
+
 const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
   kind,
   label: KIND_LABEL[kind],
   items: facets.filter((f) => f.kind === kind),
+  solo: kind === 'country' ? solo : [],
 }));
 ---
 
@@ -113,6 +127,23 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
               </li>
             ))}
           </ul>
+          {g.solo.length > 0 && (
+            <>
+              <p class="browse__solonote measure">
+                {g.solo.length} further countries carry a single piece. An index page
+                listing one article is a dead end, so these go straight to the piece.
+              </p>
+              <ul class="browse__facets browse__facets--solo">
+                {g.solo.map((s) => (
+                  <li>
+                    <a href={withBase(`/articles/${s.pieceId}/`)} class="facet facet--solo">
+                      <span class="facet__name">{s.key}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </section>
       ))
     )}
@@ -188,6 +219,19 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
     padding: 0.4rem 0.7rem;
   }
   .facet:hover { border-color: var(--color-orange); color: var(--color-orange); }
+
+  /* A one-piece country. Linked to the piece rather than to an index, so it is
+     marked as the lighter thing it is: dashed rule, no count badge. Added
+     2026-10-18 — see taxonomy.ts for why 38 of 42 countries were invisible. */
+  .facet--solo { border-style: dashed; color: var(--color-muted); }
+  .facet--solo:hover { border-style: solid; }
+  .browse__solonote {
+    margin-block: var(--space-md) var(--space-sm);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-muted);
+  }
   .facet__name { font-family: var(--font-body); font-size: 15px; }
   .facet__count {
     font-family: var(--font-mono);

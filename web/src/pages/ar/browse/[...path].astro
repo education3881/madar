@@ -3,7 +3,14 @@ import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../../lib/urls';
 import { byDateThenSlug } from '../../../lib/order';
-import { facetsFor, facetPath, browsePath, piecesIn, type Facet } from '../../../lib/taxonomy';
+import {
+  facetsFor,
+  facetPath,
+  browsePath,
+  piecesIn,
+  soloCountries,
+  type Facet,
+} from '../../../lib/taxonomy';
 // Arabic pages translate what the reader SEES and never the schema (the
 // 2026-08-23 fix — 235 fields printed English to an Arabic reader for ninety
 // days because `lang="ar"` was wrapped around Latin content). Every facet label
@@ -67,10 +74,17 @@ const alternate = facet
   ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
   : { en: browsePath('en'), ar: browsePath('ar') };
 
+// البلدان التي تحمل قطعة واحدة لا تحصل على صفحة فهرس — فالفهرس الذي يسرد
+// مقالة واحدة طريق مسدود — لكنها تُسمّى هنا وتُوصل بالمقالة مباشرة. أربعة
+// بلدان تتجاوز حدّ القطعتين و38 لا تتجاوزه، ولم يكن أيٌّ من هذه الـ38 ظاهرًا
+// على هذا السطح قبل اليوم. انظر taxonomy.ts.
+const solo = soloCountries(all as any);
+
 const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
   kind,
   label: KIND_LABEL_AR[kind],
   items: facets.filter((f) => f.kind === kind),
+  solo: kind === 'country' ? solo : [],
 }));
 ---
 
@@ -117,6 +131,23 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
               </li>
             ))}
           </ul>
+          {g.solo.length > 0 && (
+            <>
+              <p class="browse__solonote measure">
+                وبلدانٌ أخرى تحمل كلٌّ منها قطعةً واحدة. لا صفحة فهرس لها، لأنّ فهرسًا
+                يسرد مقالةً واحدة طريقٌ مسدود، فتقود هذه الروابط إلى المقالة مباشرة.
+              </p>
+              <ul class="browse__facets browse__facets--solo">
+                {g.solo.map((s) => (
+                  <li>
+                    <a href={withBase(`/ar/articles/${s.pieceId}/`)} class="facet facet--solo">
+                      <span class="facet__name">{countryAr(s.key)}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </section>
       ))
     )}
@@ -196,6 +227,19 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
     padding: 0.4rem 0.7rem;
   }
   .facet:hover { border-color: var(--color-orange); color: var(--color-orange); }
+
+  /* A one-piece country. Linked to the piece rather than to an index, so it is
+     marked as the lighter thing it is: dashed rule, no count badge. Added
+     2026-10-18 — see taxonomy.ts for why 38 of 42 countries were invisible. */
+  .facet--solo { border-style: dashed; color: var(--color-muted); }
+  .facet--solo:hover { border-style: solid; }
+  .browse__solonote {
+    margin-block: var(--space-md) var(--space-sm);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-muted);
+  }
   .facet__name { font-family: var(--font-arabic); font-size: 15px; }
   .facet__count {
     font-family: var(--font-mono);

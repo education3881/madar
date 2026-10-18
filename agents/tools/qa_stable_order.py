@@ -320,6 +320,51 @@ FACET_LINK = re.compile(
     r'href="/madar/(?:ar/)?browse/(region|topic|country)/([a-z0-9\-]+)/"')
 
 
+SOLO_UL = re.compile(
+    r'<ul class="browse__facets browse__facets--solo"[^>]*>(.*?)</ul>', re.S)
+SOLO_LINK = re.compile(r'href="/madar/(?:(ar)/)?articles/([^/"]+)/"')
+
+
+def expected_solo(table):
+    """The country directory `soloCountries` derives from an approved
+    collection, in the order it derives it: countries measured by EXACTLY ONE
+    piece, sorted on the normalised key ascending, each paired with the slug of
+    that one piece.
+
+    Added 2026-10-18 with the hub's country directory. This list is NOT in the
+    canonical date order and must not be judged against it: it is indexed by
+    country, like the facet rows beside it, because a reader scanning 34
+    country names is looking for a country and not for a month. So it gets its
+    OWN asserted order rather than an exemption -- `judge_dated` would have
+    been satisfied by a date sort, which is the one order this list must not
+    be in, and an exemption would have left 34 article links on a served page
+    with no order contract at all.
+
+    Keep rule restated from taxonomy.ts rather than read off the page (#36),
+    and it is the exact complement of `expected_facets`'s country rule: that
+    one keeps `n >= 2`, this one keeps `n == 1`, so between them every country
+    in the corpus is on the hub exactly once."""
+    pieces = [(slug, v) for slug, v in table.items() if v['approved']]
+    counts = {}
+    for _slug, p in pieces:
+        for c in set(p['countries']):
+            if c:
+                counts[c] = counts.get(c, 0) + 1
+    out = []
+    for key in sorted((k for k, n in counts.items() if n == 1),
+                      key=lambda k: (collation_key(k), k)):
+        owner = next(slug for slug, p in pieces if key in p['countries'])
+        out.append((key, owner))
+    return out
+
+
+def solo_lists(html):
+    """The article slugs the hub's country directory serves, one list per
+    `browse__facets--solo` <ul>, in document order."""
+    return [[(lang or 'en', slug) for lang, slug in SOLO_LINK.findall(block)]
+            for block in SOLO_UL.findall(html)]
+
+
 def facet_lists(html):
     """The facet rows a browse page serves, one list per `browse__facets` <ul>,
     in document order.
@@ -345,6 +390,7 @@ def main(dist='web/dist'):
 
     defects, pages, lists_seen, rails, feeds, ties = [], 0, 0, 0, 0, 0
     browse_pages = 0
+    solo_seen = 0
     facet_rows = {lang: expected_facets(meta[lang]) for lang in ('en', 'ar')}
     # A facet tie group is where the locale-dependent comparator of ruling #59
     # could show: two keys of the same kind on the same count. Counted out loud
@@ -444,6 +490,41 @@ def main(dist='web/dist'):
             if hub or fac:
                 browse_pages += 1
                 lang = (hub or fac).group(1) or 'en'
+                # The country directory is lifted out BEFORE anything else
+                # reads the page, for two reasons. `facet_lists` would match
+                # its <ul> (the class attribute starts with `browse__facets`)
+                # and find no facet rows in it, which happens to be harmless
+                # and is not a thing to rely on; and `lists_on` below would see
+                # 34 article links in one container and judge them as a dated
+                # list, which is the one order they must not be in.
+                want_solo = expected_solo(meta[lang])
+                blocks = solo_lists(html)
+                if hub:
+                    solo_seen += len(blocks)
+                    if want_solo and not blocks:
+                        defects.append((rel, 'the hub serves NO country '
+                                             'directory, and %d countries are '
+                                             'measured by exactly one piece'
+                                        % len(want_solo)))
+                    for block in blocks:
+                        want = [(lang, slug) for _k, slug in want_solo]
+                        if block != want:
+                            n = min(len(block), len(want))
+                            at = next((i for i in range(n)
+                                       if block[i] != want[i]), n)
+                            defects.append((rel, 'country directory diverges '
+                                                 'at position %d (serves %d, '
+                                                 'corpus implies %d): serves '
+                                                 '%s, canonical is %s'
+                                            % (at + 1, len(block), len(want),
+                                               block[at][1] if at < len(block)
+                                               else '<nothing>',
+                                               want[at][1] if at < len(want)
+                                               else '<nothing>')))
+                elif blocks:
+                    defects.append((rel, 'a facet page serves a country '
+                                         'directory; its home is the hub'))
+                html = SOLO_UL.sub('', html)
                 canon = [(k, s) for k, s, _ in facet_rows[lang]]
                 if hub:
                     # The hub renders one <ul> per kind; concatenated they are
@@ -493,12 +574,30 @@ def main(dist='web/dist'):
     # outputs, and the record is one of them).
     approved_seen = {lang: sum(1 for v in meta[lang].values() if v['approved'])
                      for lang in ('en', 'ar')}
+    solo_expected = {lang: len(expected_solo(meta[lang]))
+                     for lang in ('en', 'ar')}
     print('qa_stable_order: %d pages, %d dated lists, %d feeds, %d related '
-          'rails, %d browse pages; %d date tie groups and %d facet tie groups '
+          'rails, %d browse pages, %d country directories (%d EN + %d AR '
+          'one-piece countries); %d date tie groups and %d facet tie groups '
           'actually exercised; expectations derived from %d approved EN and '
           '%d approved AR pieces.'
-          % (pages, lists_seen, feeds, rails, browse_pages, ties, facet_ties,
+          % (pages, lists_seen, feeds, rails, browse_pages, solo_seen,
+             solo_expected['en'], solo_expected['ar'], ties, facet_ties,
              approved_seen['en'], approved_seen['ar']))
+    # An assertion that finds nothing to check has failed (2026-08-16). The
+    # country directory is expected on both hubs whenever any country holds
+    # exactly one piece -- which is the normal state of this corpus and not a
+    # guarantee, so the guard is conditional on the expectation rather than
+    # absolute. If every country ever reaches two pieces the directory
+    # correctly disappears and this stays silent.
+    if any(solo_expected.values()) and solo_seen < 2:
+        print('ERROR: %d one-piece countries are expected on the hubs and only '
+              '%d country director%s served. A list that was not found cannot '
+              'have been judged.'
+              % (max(solo_expected.values()), solo_seen,
+                 'y was' if solo_seen == 1 else 'ies were'))
+        return 2
+
     if defects:
         print('DEFECT (%d):' % len(defects))
         for lab, why in defects[:25]:

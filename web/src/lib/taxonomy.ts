@@ -115,6 +115,70 @@ export function facetsFor(pieces: Piece[]): Facet[] {
   return out;
 }
 
+/**
+ * Countries measured by EXACTLY ONE piece, each with that piece's id.
+ *
+ * WHY (Growth, 2026-10-18)
+ * ------------------------
+ * `facetsFor` gives a country an index page at **two or more** pieces, and the
+ * reason in the header is right: an index listing one article is a dead end.
+ * Measured against the corpus on 2026-10-18, that rule serves **four** country
+ * pages — Egypt, Sierra Leone, Sudan, United Arab Emirates — out of the **42
+ * countries this publication measures.** The other **38 — 90% of them —
+ * appeared nowhere on the browse surface in either language.**
+ *
+ * *(Both figures are the ones `qa_stable_order` derives and prints, not a hand
+ * count. The hand count taken first said 34 of 38, because it tallied the
+ * primary `country` field and the facet rule tallies `countriesOf` — the
+ * primary **plus** `countries[]`. Four countries clear the bar only through
+ * the continental piece's list, and Benin is in the corpus without being any
+ * piece's primary at all. A figure summed over one population and labelled
+ * with another, in the same morning the recon one directory over was written
+ * to warn about exactly that.)*
+ *
+ * That is not the threshold misfiring. It is the threshold meeting an
+ * editorial shape it was not written against: this publication deliberately
+ * moves to a new country with nearly every piece (42 countries across 44
+ * published pieces), so for a country the `>= 2` condition is not a bar that
+ * is slowly cleared — **it is a bar almost nothing will ever clear.** A reader
+ * in Bahrain, Oman, Morocco or Kenya searching for their own country has
+ * nowhere on this site to land, by construction, and would have stayed that
+ * way as the corpus doubled.
+ *
+ * The dead-end objection is sound and is not being overruled; it is being
+ * answered. A one-piece country gets **no index page** — nothing thin is
+ * built, no route is added, the sitemap does not move and the facet sets the
+ * hreflang clusters are derived from are untouched. It gets a **direct link to
+ * the piece** on the browse hub, which already exists and is already crawled.
+ * Thirty-eight country names become visible, linked and indexable in both
+ * languages at the cost of zero new pages.
+ *
+ * Derived from the collection, never listed (#36): the day a second Bahrain
+ * piece ships, Bahrain leaves this list and enters `facetsFor` on its own.
+ */
+export interface SoloCountry {
+  /** The frontmatter value, in the schema's own (English) vocabulary. */
+  key: string;
+  /** The id of the single piece that measures it. */
+  pieceId: string;
+}
+
+export function soloCountries(pieces: Piece[]): SoloCountry[] {
+  const counts = tally(pieces, countriesOf);
+  const out: SoloCountry[] = [];
+  for (const [key, count] of counts) {
+    if (count !== 1) continue;
+    // `piecesIn` would need a Facet; the membership test is the same one.
+    const owner = pieces.find((p) => countriesOf(p).includes(key));
+    if (owner) out.push({ key, pieceId: owner.id });
+  }
+  // Alphabetical on the normalised key, not by count: every entry has count 1,
+  // so a count sort would leave the order to `Map` insertion — which is file
+  // order, which is a date. `byKeyAsc` for the same reason as `facetsFor`
+  // (#59: never let the environment answer a question the data should).
+  return out.sort((a, b) => byKeyAsc(a.key, b.key));
+}
+
 /** Site-absolute path (no base prefix) for a facet page in one language. */
 export function facetPath(f: Facet, lang: 'en' | 'ar'): string {
   const prefix = lang === 'ar' ? '/ar' : '';
