@@ -287,6 +287,59 @@ def data_rows(lines, start, end):
 
 FAMILIES_CUE = "families the register makes visible"
 
+# A family DECLARES its membership with one of these cues. They are written on
+# purpose and they are the only place this check will read a numerator from; a
+# family that carries a count and no cue is listed as unchecked rather than
+# passed. See the long note at the call site (ruling #106).
+MEMBERSHIP_CUES = ("MEMBERSHIP OF RECORD", "enumerated here in full",
+                   "Count line:")
+
+# <count> members ... : or -- ... #N [sep #N]*
+#   The gap between the count and the first token must carry a colon or a dash,
+#   which is what distinguishes a DECLARATION ("thirty-five members, reconciled
+#   against the population 2026-10-18: #16 . #35 . ...") from a historical
+#   aside ("named 2026-08-30 with five members and standing at THIRTY-FIVE").
+#   A separator is whitespace, a middot, a comma or the word "and" - never a
+#   full stop and never a dash, so the run ends where the list ends.
+#
+#   THE DASH AND MIDDOT CLASSES CARRY LITERAL CHARACTERS, and the first draft
+#   did not. Written as "\u2014" inside a RAW string, the escape is not an
+#   escape: the class held a backslash, a "u" and four digits, and no em dash
+#   at all. The check then read **2 of the 3 declarations on disk** and printed
+#   CLEAN - which is #106 reproduced inside the tool that #106 was filed about,
+#   on the same morning, by its author. **The claim-count line is the only
+#   reason it was visible**, and it was visible within one run of being added.
+INTRO = ":\u2014\u2013-"              # colon, em dash, en dash, hyphen
+SEP = "\\s\u00b7,"                    # whitespace, middot, comma
+_CUE = r"(?P<cue>" + "|".join(re.escape(c) for c in MEMBERSHIP_CUES) + r")"
+_COUNT = r"(?:\*{0,2})(?P<count>[A-Za-z][A-Za-z\-]*)(?:\*{0,2})\s+members"
+_RUN = (r"[^.#]{0,120}?[" + INTRO + r"]\s*(?:\*{0,2}\s*)"
+        r"(?P<run>\*{0,2}#\d+\*{0,2}"
+        r"(?:[" + SEP + r"]+(?:and\s+)?\*{0,2}#\d+\*{0,2})*)")
+
+# THE CUE MAY SIT ON EITHER SIDE OF THE COUNT, and the first draft allowed only
+# one order. `MEMBERSHIP OF RECORD - thirty-five members: #16 ...` puts the cue
+# first; `THIRTEEN members, enumerated here in full: #45 ...` puts the count
+# first. One order read 2 of the 3 declarations and printed clean - the same
+# shape as the dash bug above and the same reason it was caught: the claim
+# count. Three declarations is the number on disk today; the check says how
+# many it read on every run so that a fourth going unread is visible.
+MEMBERSHIP = [re.compile(_CUE + r"[^.#]{0,80}?" + _COUNT + _RUN, re.S),
+              re.compile(_COUNT + r"[^.#]{0,40}?" + _CUE + _RUN, re.S)]
+
+
+def membership_declarations(seg):
+    """Declared membership lists in `seg`, de-duplicated by the count's span."""
+    seen, out = set(), []
+    for pat in MEMBERSHIP:
+        for m in pat.finditer(seg):
+            key = m.span("count")
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(m)
+    return out
+
 
 def families_block(lines, start, end):
     """
@@ -304,11 +357,28 @@ def families_block(lines, start, end):
         return ""
     out = []
     for i in range(cue + 1, end):
-        s = lines[i].strip()
+        raw, s = lines[i], lines[i].strip()
         if s.startswith("- "):
-            out.append(lines[i])
-        elif s and not s.startswith("- ") and out:
-            break                      # first non-bullet prose ends the list
+            out.append(raw)
+        elif not s:
+            if out:
+                out.append(raw)        # blank lines live inside the list
+        elif raw[:1] in " \t":
+            # An INDENTED paragraph is a continuation of the bullet above it,
+            # not the end of the list. Until 2026-10-18 this branch did not
+            # exist and the loop broke here, so the block stopped at the first
+            # sub-paragraph and returned **five of nine** bullets — and the four
+            # it never reached were the four that carry the membership
+            # declarations. The structure moved under the parser (ruling #106,
+            # limb 2): sub-paragraphs were written beneath the bullets after the
+            # parser was written, and a parser that stops at the first thing it
+            # does not recognise reports a prefix as the whole.
+            if out:
+                out.append(raw)
+        elif out:
+            break                      # un-indented prose ends the list
+    while out and not out[-1].strip():
+        out.pop()
     return "\n".join(out)
 
 
@@ -433,6 +503,7 @@ def limb_register(root):
     # claims, never to the section that contains it, because a section contains
     # its own history too.
     seg3 = families_block(lines, start, end)
+    ratios_seen = 0
     if not seg3:
         findings.append("§3's families list could not be located (the cue '%s' "
                         "is absent), so its ratio denominators are unchecked — "
@@ -445,11 +516,83 @@ def limb_register(root):
         denom = words_to_int(m.group(2))
         if denom is None:
             continue          # not a number word; not a claim about the register
+        ratios_seen += 1
         if denom != hi:
             findings.append(
                 "§3's families list says '%s' — the denominator is a count of "
                 "the whole register and the register holds %d"
                 % (m.group(0), hi))
+
+    # --- the FIFTH home's NUMERATOR, and why this code exists -------------
+    #
+    # The comment forty lines above says the numerator "is not derivable" and
+    # gives a real reason: on 2026-10-06 a hand reconciliation recovered 24 of
+    # 27 members from this register's own labels and recorded the other three as
+    # a debt rather than inventing them, so asserting a count against a list
+    # nobody could build would have been asserting an uncheckable number.
+    #
+    # **That reason expired on 2026-10-11 and the exemption did not.** Ruling
+    # #95 established that the three were never missing, and the repair wrote
+    # the assertion-discipline family a MEMBERSHIP OF RECORD — an explicit list
+    # beside the count — which is precisely the thing whose absence made the
+    # numerator undecidable. Nothing re-read this comment. Within six days the
+    # count word and its own list disagreed by one (#103 moved the count on
+    # 10-17 and did not append), and the operating-cost family's count line sat
+    # at *two* for the hours after #105 joined it. Both were found by hand at
+    # the 10-18 consolidation, which is the cadence the gate exists to replace.
+    # Ruling **#106**: an exemption outlives the reason written beside it,
+    # because the reason is prose at the site of the decision and the thing that
+    # falsifies it happens somewhere else.
+    #
+    # WHAT IS ASSERTED, and it is deliberately narrower than "every count":
+    # a family that DECLARES its membership must agree with what it declared.
+    # The declaration is recognised by one of three cues the operation writes on
+    # purpose (below), the count is the `<word> members` claim attached to it,
+    # and the population is the run of `#N` tokens that follows — a run ends at
+    # the first text that is not a token or a separator, so the `#N`s in the
+    # prose *after* a list ("not a member: #91", "kin: #88") are outside it by
+    # construction. That boundary is the whole difficulty and it is why this
+    # asserts a CONVENTION rather than a count: a family with no declared list
+    # is reported as unchecked by name, never silently passed (the silent-pass
+    # trap, 08-16).
+    declared = membership_declarations(seg3)
+    for m in declared:
+        word, run = m.group("count"), m.group("run")
+        spelled = words_to_int(word)
+        members = sorted(set(int(x) for x in re.findall(r"#(\d+)", run)))
+        if spelled is None:
+            findings.append("a family declares '%s members' and '%s' is not a "
+                            "number word this check can read" % (word, word))
+        elif spelled != len(members):
+            findings.append(
+                "a family's declared count says '%s members' (%d) and the list "
+                "beside it enumerates %d: %s"
+                % (word, spelled, len(members),
+                   " ".join("#%d" % n for n in members)))
+        for n in members:
+            if n > hi:
+                findings.append("a family's membership list names #%d and the "
+                                "register ends at #%d" % (n, hi))
+
+    # THE SILENT-PASS GUARD, and it is limb 3 of #106. On 2026-10-18 the ratio
+    # check was found to have had **zero live claims to read** for eleven days:
+    # the only "X of Y rulings" string left in the families list is the literal
+    # `N of M rulings` in the preamble, which `words_to_int` correctly refuses,
+    # so the limb ran, matched nothing and reported clean. The form it looks for
+    # had moved — the families now write "standing at THIRTY-FIVE" and
+    # "THIRTEEN members" — and a check whose pattern its subject has stopped
+    # using is indistinguishable from a check whose subject is correct.
+    # *A ruling that finds nothing to check has failed, not passed* (08-16).
+    # The fifth home is not allowed to be entirely unread: zero of BOTH forms
+    # is a finding, while zero of one form and some of the other is normal and
+    # is printed rather than asserted.
+    if ratios_seen == 0 and not declared:
+        findings.append(
+            "§3's families list carries no count claim this check can read — "
+            "no 'X of Y rulings' ratio and no declared membership list (cues: "
+            "%s). The fifth home is entirely unchecked, which is a check with "
+            "nothing to check rather than a clean one"
+            % ", ".join(MEMBERSHIP_CUES))
 
     # --- home 4: the range quoted in CLAUDE.md's non-negotiables ---------
     cpath = os.path.join(root, CLAUDE)
@@ -468,7 +611,8 @@ def limb_register(root):
                             "end at #%d" % (CLAUDE, m.group(1), hi))
 
     return findings, {"rulings": len(nums), "hi": hi, "s1_rows": n1,
-                      "s3_blocks_rows": len(rows3)}
+                      "s3_blocks_rows": len(rows3),
+                      "declared": len(declared), "ratios": ratios_seen}
 
 
 def main():
@@ -511,6 +655,12 @@ def main():
         print("qa_register_shape REGISTER — derived from the rows on disk: "
               "§3 holds %d ruling row(s) contiguous 1 → %d; §1 holds %d row(s)"
               % (d["rulings"], d["hi"], d["s1_rows"]))
+        # Printed BEFORE the verdict and on every run, clean or not: the
+        # whole of #106 is that an unread claim and a correct one look the
+        # same from outside, so the count of claims read is not a detail of a
+        # passing run - it is the only place a decayed check shows.
+        print("  fifth home — %d declared membership list(s) read, "
+              "%d ratio denominator(s) read" % (d["declared"], d["ratios"]))
         if findings:
             failed = True
             print("  FAIL — %d count(s) disagree with the rows:" % len(findings))
