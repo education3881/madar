@@ -5,3 +5,4 @@
 {"run_id": "39113176962", "workflow": "madar-daily.yml", "label": "qa log, gate, board", "at": "2026-10-18T09:20:52+00:00", "elapsed_minutes": 27.7, "timeout_minutes": 90, "remaining_minutes": 62.3}
 {"run_id": "39113176962", "workflow": "madar-daily.yml", "label": "close of run", "at": "2026-10-18T09:25:07+00:00", "elapsed_minutes": 31.95, "timeout_minutes": 90, "remaining_minutes": 58.05}
 {"run_id": "39116385914", "workflow": "madar-weekly.yml", "label": "", "at": "2026-10-18T09:50:48+00:00", "elapsed_minutes": 8.5, "timeout_minutes": 90, "remaining_minutes": 81.5}
+{"run_id": "39116385914", "workflow": "madar-weekly.yml", "label": "weekly-2of5", "at": "2026-10-18T09:59:46+00:00", "elapsed_minutes": 17.46, "timeout_minutes": 90, "remaining_minutes": 72.54}
