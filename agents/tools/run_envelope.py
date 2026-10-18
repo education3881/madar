@@ -105,7 +105,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 WORKFLOW_DIR = Path(".github/workflows")
@@ -149,12 +149,52 @@ def parse_budget(root: Path, workflow: str | None):
         text = path.read_text(encoding="utf-8")
         t = re.search(r"^\s*timeout-minutes:\s*(\d+)\s*$", text, re.M)
         n = re.search(r"--max-turns\s+(\d+)", text)
+        c = re.search(r'^\s*-\s*cron:\s*["\']([^"\']+)["\']', text, re.M)
         return (
             path,
             int(t.group(1)) if t else None,
             int(n.group(1)) if n else None,
+            c.group(1).strip() if c else None,
         )
-    return (candidates[0] if candidates else None, None, None)
+    return (candidates[0] if candidates else None, None, None, None)
+
+
+def cron_delay(cron: str, started):
+    """Minutes between the run's cron instant and its actual start.
+
+    Added 2026-10-18 under ruling #107. The schedule was the one bound in this
+    operation nobody had ever measured: `madar-daily.yml`'s own header says, in
+    writing, that if a run is *still hours late on this offset the delay is not
+    contention* and the planning assumption must change -- a trigger with a
+    condition, a consequence and **nobody named to evaluate it**. Measured over
+    all 38 scheduled runs since the 2026-09-15 offset change: every one started
+    between **4h14m and 7h42m** after its cron, median 5h37m, and no artefact of
+    the operation said so. The number is now printed by the run itself on every
+    call, because recording a median in a document is the error #105 is about.
+
+    Only minute-and-hour crons are read -- `23 4 * * *` and `23 5 * * 0`, which
+    are the two this repository has. A field this parser cannot read returns
+    None and the line prints as unread rather than as zero.
+    """
+    parts = cron.split()
+    if len(parts) != 5 or not parts[0].isdigit() or not parts[1].isdigit():
+        return None, None
+    minute, hour = int(parts[0]), int(parts[1])
+    fire = started.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if fire > started:
+        fire -= timedelta(days=1)
+    # THE DAY-OF-WEEK FIELD, and the first draft dropped it. `23 5 * * 0` is
+    # the weekly, and rolling back a DAY from a Tuesday start would have named
+    # a Monday 05:23 that is not a cron instant at all -- a delay figure that
+    # is wrong rather than unread, which is the one output this tool must not
+    # produce (it REFUSES rather than remembering, by design). Found by a bite
+    # on a start instant three hours before the cron hour, not by reading the
+    # code. Cron weekdays are 0=Sunday; Python's weekday() is 0=Monday.
+    if parts[4].isdigit():
+        want = int(parts[4]) % 7
+        while (fire.weekday() + 1) % 7 != want:
+            fire -= timedelta(days=1)
+    return fire, (started - fire).total_seconds() / 60.0
 
 
 def run_started_at(override: str | None):
@@ -205,7 +245,7 @@ def main() -> int:
     args = ap.parse_args()
 
     root = Path(args.root).resolve()
-    wf_path, timeout_minutes, max_turns = parse_budget(root, args.workflow)
+    wf_path, timeout_minutes, max_turns, cron = parse_budget(root, args.workflow)
 
     if timeout_minutes is None:
         shown = wf_path.relative_to(root) if wf_path and wf_path.is_file() else (
@@ -271,6 +311,20 @@ def main() -> int:
         print(f"{head} run_envelope — wall clock, the measurable half of the envelope")
         print(f"  budget parsed from ......... {record['workflow']}")
         print(f"  run started ................ {record['started_at']}  ({how})")
+        if cron:
+            fire, late = cron_delay(cron, started)
+            if late is None:
+                print(f"  cron ....................... '{cron}' — not a fixed "
+                      "hour-and-minute this parser reads, so the delay is UNREAD")
+            else:
+                print(f"  cron ....................... {cron}  →  "
+                      f"{fire.strftime('%H:%M')}Z, so this run began "
+                      f"{late/60:.1f} h late")
+                print("    Normal, measured, and nobody's fault: all 38 scheduled runs since the")
+                print("    2026-09-15 offset change began 4.2 to 7.7 h after their cron (median")
+                print("    5.6 h). A delay in this band is the operation's ordinary morning and is")
+                print("    NOT evidence of a missed run (#107). It does mean the day starts in the")
+                print("    Dubai afternoon, which is what the CHARTER's cadence table now says.")
         print(f"  now ........................ {record['now']}")
         print(f"  elapsed .................... {elapsed:.1f} of {timeout_minutes} min")
         print(f"  remaining .................. {remaining:.1f} min "

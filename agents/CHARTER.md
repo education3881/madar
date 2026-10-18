@@ -39,10 +39,27 @@ Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel
 
 ## Cadence
 
-| Cadence | Task | Time | What it covers |
-|---|---|---|---|
-| Daily | `madar-daily-operation` | ~08:00 Asia/Dubai | The five standing functions + the brief, staged for the push. |
-| Weekly | `madar-weekly-review` | Sun 09:00 Asia/Dubai | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
+| Cadence | Task | Cron | **Measured start** (Asia/Dubai) | What it covers |
+|---|---|---|---|---|
+| Daily | `madar-daily-operation` | `23 4 * * *` → 08:23 | **12:37 – 16:05, median ≈ 14:00** | The five standing functions + the brief, committed per function. |
+| Weekly | `madar-weekly-review` | `23 5 * * 0` → 09:23 Sun | **13:42 – 15:27, median ≈ 14:36** | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
+
+**The measured column was added 2026-10-18 under ruling #107, and the two columns disagree by four to eight
+hours on purpose.** This table read *~08:00* and *Sun 09:00* from 2026-06-03 until that date. GitHub's
+scheduled events are best-effort and queue under load: across **all 38 scheduled runs since the 2026-09-15
+cron offset change, every one started between 4 h 14 m and 7 h 42 m after its cron — median 5 h 37 m, and
+not one within four hours.** The offset change to `:23` was made on the theory that `:00` is the most
+contended minute; the median after it is unchanged from the figure that prompted it, so the theory is
+falsified and **the cron is not a start time.** `madar-daily.yml`'s own header said in writing that this
+condition would mean exactly that, and no run evaluated it for 33 days, because the sentence lives in the
+one directory this identity cannot write.
+
+**What follows for planning:** the cadence is **one run per day**, never *a run at 08:23*. Nothing is
+scheduled against a time of day. A delay inside the measured band is the operation's ordinary morning and
+is **not** evidence of a missed run — `python3 agents/tools/run_envelope.py .` prints each run's own
+lateness beside that band, so no run has to judge it. **The weekly review owns this column and re-measures
+it**, because the defect above was a number with no named maintainer (09-20), in the first document every
+session reads — which is this table's second offence, after the `(7)` headcount.
 
 Both run autonomously. A closed app delays a run to next launch rather than dropping it. The founder's surface stays exactly one action: the push.
 
