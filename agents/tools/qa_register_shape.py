@@ -136,7 +136,10 @@ def words_to_int(text):
     to accept, which is the right failure and still a failure. A ceiling that
     is only reached once is still a ceiling.
     """
-    parts = [p for p in re.split(r"[\s-]+", text.strip().lower()) if p]
+    # `and` is a connective, never a value: "one hundred and one" is 101 and
+    # "one hundred one" is the same number written by someone else. Dropped
+    # before the sum rather than mapped to 0, so an unknown word still refuses.
+    parts = [p for p in re.split(r"[\s-]+", text.strip().lower()) if p and p != "and"]
     if not parts or not all(p in WORDS or p == "hundred" for p in parts):
         return None
     total = 0
@@ -378,7 +381,13 @@ def limb_register(root):
 
     # --- home 3: §1's count line (word form AND numerals) ----------------
     seg = "\n".join(lines[start1:end1])
-    m = re.search(r"\*\*([A-Za-z\-]+(?:[ \-][A-Za-z]+)?)\s+rows,\s*1\s*→\s*(\d+)", seg)
+    # Up to four words, and `and` is allowed between them. The 2026-10-17 fix
+    # taught `words_to_int` to multiply by `hundred` on the day §1 reached 100
+    # — and left THIS regex at a two-word ceiling, which `One hundred` happens
+    # to fit exactly. So the ceiling moved by precisely one row and the check
+    # failed again on the very next filing (2026-10-18, `One hundred and one`).
+    # A ceiling raised to the value that reached it is not a ceiling removed.
+    m = re.search(r"\*\*((?:[A-Za-z\-]+[ \-]){0,3}[A-Za-z\-]+)\s+rows,\s*1\s*→\s*(\d+)", seg)
     if not m:
         findings.append("§1 carries no '**<word> rows, 1 → N**' count line")
     else:
