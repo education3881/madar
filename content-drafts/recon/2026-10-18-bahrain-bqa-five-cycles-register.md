@@ -157,3 +157,105 @@ and Colombia parks of 2026-05-26 as the live state. It is not the state of anyth
 has read it as such for months, but `agents/RUNBOOK.md` names it in the Manager's first ten
 minutes. Raised as a queue item rather than fixed here, because deciding what replaces it is an
 editorial call about whether this publication still plans in issues at all.
+
+---
+
+# ADDENDUM — 2026-10-19 · both draft-blocking gaps worked, one CLOSED and one RESOLVED AS UNREADABLE
+
+Taken by the content function the morning after the recon, before anything new was opened. Both
+§"What is NOT read" items were attacked in served text. **Neither answer is the one the recon
+expected, and the piece is commissionable on the weaker spine the recon named in advance.**
+
+## Gap 1 — the Gold seal's own register: NOT READABLE. The seal stays out of the piece.
+
+The recon said: *until a first-party page is read in served text, the seal is not in the piece.*
+Four first-party surfaces read today, and the string `Gold` is absent from **all** of them:
+
+| Surface read today | `Gold` | What it does carry |
+|---|---|---|
+| `bqa.gov.bh/En/MediaCenter/Pages/News.aspx` | **0** | a site shell; no news items load; footer *Last Modified 16 September 2026* |
+| `bqa.gov.bh/En/MediaCenter/Pages/ExcellenceAward.aspx` | **0** | a menu link only |
+| `bqa.gov.bh/excellence-award/` | **0** | the **Educational Excellence Award** — a different instrument |
+| MoE's own TIMSS 2023 Encyclopedia chapter (below) | **0** | BQA as *"an independent authority"* conducting *"regular school reviewing visits"* |
+
+Added to yesterday's two reads — **0 of 1,022 register rows** and **0 of 7 open-data datasets** —
+that is **six first-party surfaces and zero occurrences.**
+
+**And the authority's own award is not the seal, which is the thing a run could easily have got
+wrong.** The *Educational Excellence Award* is issued by the BQA, has no published categories, no
+rating levels and no criteria document on its own page, and its recorded recipients are **one or
+two schools a year: 2016 Aminah Bint Wahab Primary Girls School; 2017 Rabia'a Al-Adaweyia Primary
+Girls School and Al-Rawdha Primary Girls School; 2018 Al-Orouba Primary Girls School** — nothing
+after 2018. A seal awarded to roughly two dozen schools in September 2026 is not this. **Treating
+the two as one instrument would have been #102's defect on the piece's central sentence**, which
+is exactly the risk the recon wrote down.
+
+Everything the operation has on the Gold seal remains **press coverage of a 3 September 2026
+palace meeting** — a result list, not a register (#41). One private school's own page calls the
+seal the top rating and says it is endorsed by the Cabinet; that is a **secondary source about a
+third party's instrument** and it is not enough to name an issuing body in print.
+
+**Incidental, and recorded because it bears on every future read of this authority: every
+`bqa.gov.bh` page fetched today carries the notice "This is a Development Server."** The host we
+are reading as the register's owner says in its own chrome that it is not production. That is a
+#70 condition — walled by configuration rather than dead — and it means a future run finding
+different content at these URLs has not caught us in an error.
+
+## Gap 2 — the denominator: CLOSED, first-party, dated, and read in the register itself
+
+The search summary offered a count; per **#41** the register was opened instead. The PDF defeated
+the fetch tool (compressed streams), so it was decompressed locally and the exhibit read verbatim.
+
+**Source:** *Bahrain* chapter, **TIMSS 2023 Encyclopedia**, authored by the **Ministry of
+Education**, `timss2023.org/wp-content/uploads/2024/10/Bahrain.pdf`.
+**Exhibit 1: Distribution of Schools in Bahrain in Academic Year 2022–2023** — the exhibit's own
+title carries its own clock, which is what makes it usable.
+
+| Public schools, by type | Boys' | Girls' | Total |
+|---|---|---|---|
+| primary | 58 | 54 | **112** |
+| primary / intermediate | 15 | 7 | **22** |
+| intermediate | 16 | 21 | **37** |
+| secondary | 11 | 20 | **31** |
+| comprehensive | — | 1 | **1** |
+| vocational | 4 | 0 | **4** |
+| religious institutes | 3 | — | **3** |
+| **Total public** | | | **210** |
+
+*(Private, same exhibit, for context only: 166 preschools, 39 coeducational national, 37 foreign,
+1 foreign community.)*
+
+**210 is the sum of the exhibit's own rows, computed here and labelled as computed** — the exhibit
+prints no total line. Per **#14** the arithmetic is ours and is declared as ours.
+
+**What this unlocks, and what it still forbids.** The recon's **242 distinct schools across five
+cycles** can now be set against a system of **210 schools in 2022–23**, and the honest sentence is
+the interesting one: *the register names more distinct schools than the system contains at any one
+moment*, because seventeen years of reviews outlive individual schools. **It does NOT license a
+percentage of "Bahrain's schools"**: 210 is a 2022–23 count, the cycles span 2008–2026, and the
+reported *76 public schools* in the 2024-25 annual report is a year's cohort. Percentages stay
+scoped to the reviewed cohort, exactly as the recon required.
+
+## Commission decision
+
+**PROCEED, on the ruler alone, with the seal named as absent rather than contrasted.** The recon
+offered the Editor a weaker spine if gap 1 failed a real attempt, and it has failed one: six
+first-party surfaces, zero occurrences. The spine is therefore the second half of the recon's own
+diagnosis, which needs no seal to stand and no superlative of ours —
+
+> a regulator that has graded its own government schools by name, in public, in two languages, for
+> seventeen years, and whose most common verdict on itself is `(3) Satisfactory` (350 of 882), with
+> `(4) Inadequate` (245) ahead of `(2) Good` (202).
+
+The seal appears in the piece **once**, as a measured absence with its own method stated — *the
+word the public account used is not on the ruler, and is not on any page the authority serves* —
+which is a stronger sentence than the contrast would have been, because it is ours and it is
+checkable. **Carried forward as a dated follow-up, never a rewrite (#41):** if the BQA or the MoE
+publishes the seal's criteria, that is a later piece or a dated addendum.
+
+**Still owed before drafting, and neither is draft-blocking:** the annual report in served text
+for the 76-school cohort, and the C4/C5 partial-draw trap the recon named — *the sentence that
+writes itself compares a finished cohort against an unfinished one* — which goes into the
+commission brief as a standing prohibition, not into the drafter's judgment.
+
+— Content function · 2026-10-19 · gap 1 resolved unreadable, gap 2 closed in the register
