@@ -1,7 +1,7 @@
 # Staged workflow patch — the dist-to-origin bridge is six files wide and the wide instrument is already published
 
 **Filed:** 2026-10-10 · **Owner:** any hand holding `workflow` scope · **Issue:** #7
-**Blocks:** nothing red. It blocks the only thing that promotes 29 gating assertions'
+**Blocks:** nothing red. It blocks the only thing that promotes every gating assertion's
 conclusions from `dist` to the publication a reader is actually served.
 
 ---
@@ -16,11 +16,11 @@ the **fifth** staged workflow item; issue #7 carries the credential question for
 ## The finding, measured on 2026-10-10 and now printed on every build
 
 Standing-queue item 1 asked: *of the assertions that gate the deploy, which are wired
-somewhere that cannot observe the thing they assert?* Enumerated: **none of them.** All 29
+somewhere that cannot observe the thing they assert?* Enumerated: **none of them.** All of them
 gating assertions read `web/dist` or the repository root, and both exist in the `build` job
-where all 29 run. Not one is blind to its own subject.
+where all of them run. Not one is blind to its own subject.
 
-**The wrong home belongs to the bridge, not to an assertion.** Every one of those 29
+**The wrong home belongs to the bridge, not to an assertion.** Every one of them
 assertions concludes something about `dist`. A reader is served the origin. The only thing
 that carries a conclusion from `dist` to the origin is this job's byte-compare, and it
 compares:

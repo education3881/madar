@@ -45,7 +45,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#107**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#108**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
@@ -95,7 +95,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Thirty-two** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own) and `run_envelope.py` (added 2026-10-18 closing standing-queue item 11 — **where this run stands against the envelope in the two lines above**, parsed from the workflow file and never copied, with the wall clock measured from `run_started_at` and the **turn axis printed as UNMEASURABLE** so a healthy clock cannot be read as a healthy envelope; exits 0 / 3 = BANK NOW / 2 = cannot measure / 4 = REFUSED, and `--log` accumulates each function's cost in `agents/stats/run-envelope.jsonl`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
+| `agents/tools/` | **Thirty-three** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own) and `run_envelope.py` (added 2026-10-18 closing standing-queue item 11 — **where this run stands against the envelope in the two lines above**, parsed from the workflow file and never copied, with the wall clock measured from `run_started_at` and the **turn axis printed as UNMEASURABLE** so a healthy clock cannot be read as a healthy envelope; exits 0 / 3 = BANK NOW / 2 = cannot measure / 4 = REFUSED, and `--log` accumulates each function's cost in `agents/stats/run-envelope.jsonl`). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py` and `qa_feed_direction.py`, which need a headless Chrome. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
@@ -109,11 +109,11 @@ python3 agents/tools/qa_patch_queue.py .         # prints the whole gate registe
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
 
-Use `npm run build`, not `npx astro build`: **seventeen** of the thirty-two assertions
+Use `npm run build`, not `npx astro build`: **eighteen** of the thirty-three assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
 `qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`,
-`qa_third_party_origins`, `qa_bridge_coverage`) are gated from `postbuild` in `web/package.json`,
+`qa_third_party_origins`, `qa_bridge_coverage`, `qa_artefact_render`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -125,9 +125,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, seventeen more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, eighteen more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **29 of the 32 gate the deploy**; of the three that do
+artifact against the live origin. **30 of the 33 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -136,7 +136,7 @@ identity cannot write `.github/workflows/**`, so its reason lives in the tool's 
 and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
 there 2026-09-27** when the weekly review found the queue split across two directories with
 this file naming one and issue #7 naming the other. Applying that patch makes it
-**27 of 29**. A green run means the bytes are actually served, not merely built.
+**28 of 30**. A green run means the bytes are actually served, not merely built.
 
 **A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
 patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
