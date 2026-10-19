@@ -448,7 +448,13 @@ def main():
             overflow_ok += 1
 
     new_overflow = [o for o in overflowing if not o[2]]
-    fixed = sorted(OVERFLOW_BASELINE - {o[0] for o in overflowing})
+    # Scoped to what was actually RENDERED, not to the whole baseline: under
+    # `--only` the unmeasured members are not fixed, they are absent, and
+    # telling a future run to delete 25 live entries because it filtered to one
+    # file is this very morning's ruling (#108) committed by its own author --
+    # a claim scoped wider than the measurement behind it.
+    measured = {str(t.relative_to(root)) for t in targets}
+    fixed = sorted((OVERFLOW_BASELINE & measured) - {o[0] for o in overflowing})
 
     if args.report:
         print("qa_artefact_render --report · %d artefacts rendered at %dpx"

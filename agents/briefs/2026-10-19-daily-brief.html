@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-19</title>
+<meta name="description" content="Manager to Founder daily brief for Saturday 17 October 2026. Brief 104. Every Arabic page has been drawing its Arabic in the wrong typeface since the first day we published, and paying 279 KB a page for the privilege. A published piece stops spelling a programme's name our way instead of its own." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; مدار</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 106
+      <strong>Monday 19 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; <strong>issue 11 is still open</strong> &middot; its default falls on 22 October</div>
+    <p>
+      <strong>Seven of your daily briefs render thirty thousand pixels wide.</strong> Not a little wide
+      &mdash; the worst of them is <strong>34,254 pixels wider than a screen</strong>, because the
+      copy-paste push block we used to send you sits in a box that was told never to wrap. Open
+      17&nbsp;August&rsquo;s brief and the page runs off to the right and keeps going.
+    </p>
+    <p>
+      It has been like that for <strong>sixty-two days</strong>, and nothing we own could have told us.
+      Every check this publication runs looks at the website; the brief is not the website. The three
+      things ever asserted about these pages are that they exist, that they have a wrapper, and that they
+      load nothing from anyone else. All three are properties of the <em>file</em>. None is a property of
+      what you actually see.
+    </p>
+    <p>
+      <strong>Today the briefs get looked at &mdash; all 128 of them, by machine, every build.</strong>
+      One half of that check is now binding: a brief must render all the way to its own end. That one is
+      clean, <strong>128 of 128</strong> &mdash; 127 when it was written this morning, 128 once this brief
+      joined them &mdash; and it catches the defect from 12&nbsp;October when a stray character swallowed
+      the bottom third of a brief without breaking anything a counter could count.
+    </p>
+    <p>
+      <strong>The other half is the day&rsquo;s real lesson, and it is not flattering.</strong> The
+      check that found the twenty-five broken pages <em>cannot be shown to work.</em> When we planted the
+      exact defect in a clean brief to prove the check would catch it, it did not. The browser
+      instruction we were asking &mdash; a perfectly ordinary one &mdash; simply returns a confident
+      number that happens to be silent about this kind of overflow. The twenty-five were found by
+      accident, through a different route. So that half <strong>reports and does not gate</strong>, and
+      it prints its own blind spot every time it runs. A check that cannot be shown to fail is not a
+      check; it is a green light wired to nothing, and this operation has written that sentence four
+      times now about other people&rsquo;s blind spots.
+    </p>
+    <p class="mono">
+      Deploy 39118185359 &middot; success &middot; serving commit b3782d5 &mdash; read from the Actions
+      API; the live home page and sitemap both answered 200 this morning. Today&rsquo;s deploy is
+      dispatched after this brief lands.<br />
+      <strong>Five commits are on origin</strong>, one at the close of each function, per the rule
+      written after the 11 October run lost a whole day by saving its delivery for the end.
+    </p>
+    <p>
+      <strong>Traffic, plainly:</strong> the site carries no third-party tracker, no analytics and makes
+      no third-party request, by design &mdash; so there is no visitor number here and none is estimated.
+      Return rate stays <em>unmeasurable</em> until there is a channel to measure it on, which is
+      issue&nbsp;#11; no reply yet, and its stated default &mdash; park the packets in writing &mdash;
+      falls on <strong>22 October</strong> and has not been applied. The one reader-facing number we can
+      read without anyone&rsquo;s permission today is that <strong>thirty-eight Arabic country names are
+      now filed under the letter an Arabic reader would look under</strong>, where yesterday they were
+      filed under the English one.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The weekly review, and a rule that had been false for thirty-three days</h2>
+        <div class="day__date">2026-10-18 &middot; Sunday &middot; read from git and the Actions API, not from the brief</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-shipped">Delivered in full, and the deploy was green</div>
+        <div class="item__body">
+          <p>
+            Six commits landed &mdash; five review functions and an addendum. The review found its own
+            register true for the fourth week running and the <em>gate</em> false; it also established
+            that the daily run has started between four and eight hours after its scheduled time on
+            <strong>38 of 38 occasions</strong> since mid-September, while the charter said the day began
+            at eight in the morning. Deploy <strong>39118185359 succeeded</strong> on commit b3782d5.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">No gap to report</div>
+        <div class="item__body">
+          <p>
+            Yesterday ran, finished and delivered. This run opened with local and origin at the same
+            commit and a clean tree. <strong>No missed day</strong> &mdash; the last dark day is still
+            11 October.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>Twenty-five broken pages, and a ruler that was lying quietly</h2>
+        <div class="day__date">2026-10-19 &middot; Monday &middot; five functions, five commits, all on origin</div>
+      </div>
+    </div>
+    <div class="stream">
+
+      <div class="item">
+        <div class="item__label status-shipped">Quality &middot; the board&rsquo;s oldest item, closed</div>
+        <div class="item__body">
+          <p>
+            The queue handed up <strong>item 12</strong> by rule rather than by preference &mdash; seven
+            days old, displaced seven times, the oldest past the threshold. It asked a question nobody
+            had asked in the five months this publication has existed: <strong>has anyone ever looked at
+            these briefs?</strong>
+          </p>
+          <p>
+            The answer is now a standing check that renders all <strong>128</strong> briefs and weekly
+            reviews in a real browser on every build &mdash; this one included, which is the point. <strong>Twenty-five of them are broken.</strong>
+            Seven run off the page by up to 34,254 pixels &mdash; the push block that does not wrap.
+            Eighteen more, from the May and June template, scatter emphasised words out of their own
+            sentences: a list item was laid out in two columns, and anything bold or in code type inside
+            it gets thrown into the <strong>24-pixel bullet column</strong> and spills out of it. That is
+            the defect found in Brief No. 01 last week, and the mechanism is now named rather than
+            guessed.
+          </p>
+          <p>
+            <strong>The item&rsquo;s own wording was corrected rather than obeyed.</strong> It asked for
+            a check that every brief renders its footer. Counted first: 113 of 127 then on disk had a footer element
+            and <em>the two newest do not</em> &mdash; so that check would have failed on correct pages
+            and been switched off within a week. What is asserted instead is the thing the October defect
+            actually broke: the document renders to its own end.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-running">Knowledge &middot; ruling 108, and it is about our own instruments</div>
+        <div class="item__body">
+          <p>
+            Six times this operation has written down that <em>a check only sees what it looks at</em>.
+            Today is one turn further out and worse: <strong>a check also only sees what its measuring
+            instrument can represent</strong>, and that blindness leaves no trace anywhere. The
+            browser instruction used to detect overflow is the one every guide recommends. It returns a
+            number. For this defect the number is simply wrong, and nothing says so.
+          </p>
+          <p>
+            Three more instrument errors turned up inside the same morning, each of which read as a pass:
+            a ruler that derived the correct answer <em>from the broken page</em>, so both sides agreed
+            and the test went green on the very defect it was written for; a text measurement that
+            counted invisible code as visible words and came out at <strong>117.8%</strong> of the
+            original; and a planted defect that never actually landed, caught only because the harness
+            insists on proving the injection changed the file first. Eighteen proofs, zero failures, and
+            every one of those three would have shipped as a working check.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content &middot; both blockers on the Bahrain piece, worked</div>
+        <div class="item__body">
+          <p>
+            Yesterday&rsquo;s recon on Bahrain&rsquo;s seventeen-year school-review register listed two
+            things that had to be read before anyone could draft. Both were attacked this morning.
+          </p>
+          <p>
+            <strong>The &ldquo;Gold&rdquo; seal does not exist on any page its supposed author serves.</strong>
+            Six first-party surfaces now read &mdash; 1,022 register rows, seven open-data sets, the news
+            centre, the award page, the award&rsquo;s own site and the ministry&rsquo;s international
+            report &mdash; and the word appears <strong>zero times</strong>. The authority does run an
+            award, but it goes to one or two schools a year and has no recorded recipient since 2018; a
+            seal given to two dozen schools last month is not it. Treating them as one instrument would
+            have put a false claim in the piece&rsquo;s central sentence.
+          </p>
+          <p>
+            <strong>The denominator closed in the register itself:</strong> 210 government schools in
+            2022&ndash;23, summed from the ministry&rsquo;s own table &mdash; and the sum is labelled as
+            ours, because the table prints no total. <strong>Commissioned</strong> on the stronger half
+            of the story: a regulator that has graded its own schools by name, in public, in two
+            languages, for seventeen years, and whose most common verdict on itself is
+            <em>Satisfactory</em>, with <em>Inadequate</em> ahead of <em>Good</em>. The seal appears once,
+            as a measured absence.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth &middot; the Arabic list sorts in Arabic</div>
+        <div class="item__body">
+          <p>
+            Yesterday&rsquo;s thirty-eight country names reached the Arabic hub in <em>English</em>
+            alphabetical order &mdash; &rlm;أستراليا، البحرين، بنغلاديش&rlm; is Australia, Bahrain,
+            Bangladesh, which is no order at all to an Arabic reader. Fixed today, and the one real
+            decision is written down rather than buried: <strong>the definite article is ignored</strong>,
+            so البحرين files under <em>b</em> and المغرب under <em>m</em>, as an Arabic index or atlas
+            would do it. The reason is countable &mdash; <strong>17 of the 38 names begin with
+            &rlm;ال&rlm;</strong>, so filing on the article would stack a third of the list under one
+            letter. That is a pile, not an index.
+          </p>
+          <p>
+            The two editions now sort differently <em>on purpose</em>, and the check that used to assert
+            one shared order learned to expect two &mdash; reading the Arabic names from the single file
+            that holds them, and refusing to run at all if it reads back fewer than forty, because the
+            quiet failure would be to sort every Arabic name by its English spelling and call it green.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-10-19 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 &middot; Africa 11 &middot; Asia 7 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 44 &middot; access 40 &middot; value of teachers 31 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1 &middot; 35 -&gt; 2 &middot; 36 -&gt; 1 &middot; 38 -&gt; 2 &middot; 39 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-09-27</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>Which of our rulers has never been checked?</h2>
+        <div class="day__date">2026-10-20 &middot; Tuesday &middot; the forward question enters the board at the head</div>
+      </div>
+    </div>
+    <div class="stream">
+      <div class="item">
+        <div class="item__label status-running">The forward question</div>
+        <div class="item__body">
+          <p>
+            <strong>Four of the checks that gate this website look at a rendered page</strong> &mdash;
+            one reads a picture of it, two read its text after the browser has drawn it, one reads the
+            feed. Each asks the browser a question and trusts the answer. Today one of those answers
+            turned out to be confidently, silently wrong about the thing it was asked.
+          </p>
+          <p>
+            So tomorrow takes the other four one at a time and asks what each one&rsquo;s instrument is
+            <em>incapable</em> of reporting &mdash; not what the check forgot to look at, which we have
+            asked six times, but what it could never have seen however carefully it looked. The first
+            concrete job is already named: rebuild today&rsquo;s overflow measurement on a geometric
+            question the browser has no way to answer evasively.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-parked">And what is still waiting</div>
+        <div class="item__body">
+          <p>
+            Fourteen items on the board &mdash; one closed, two opened, so <em>up one</em> again, and
+            again because closing the head split it into an instrument, a repair and a question. The
+            repair is the twenty-five broken briefs: that is a judgment about type and layout on pages
+            nobody has ever looked at, and it is queued rather than done quietly by a checking tool.
+            An English article still downloads about 521 KB of typefaces. And the weekly review&rsquo;s
+            own bet &mdash; seventy-eight future-dated promises sitting on live pages that nobody has
+            re-read since the date arrived &mdash; was displaced on its first morning, by the rule it
+            was deliberately placed under.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+</body>
+</html>
