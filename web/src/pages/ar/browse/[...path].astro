@@ -78,7 +78,7 @@ const alternate = facet
 // مقالة واحدة طريق مسدود — لكنها تُسمّى هنا وتُوصل بالمقالة مباشرة. أربعة
 // بلدان تتجاوز حدّ القطعتين و38 لا تتجاوزه، ولم يكن أيٌّ من هذه الـ38 ظاهرًا
 // على هذا السطح قبل اليوم. انظر taxonomy.ts.
-const solo = soloCountries(all as any);
+const solo = soloCountries(all as any, 'ar');
 
 const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
   kind,

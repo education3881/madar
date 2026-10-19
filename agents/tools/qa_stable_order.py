@@ -68,6 +68,7 @@ web/package.json, because this identity cannot write `.github/workflows/**`
 
 import os
 import re
+import pathlib
 import unicodedata
 import sys
 from html.parser import HTMLParser
@@ -172,6 +173,50 @@ def collation_key(value):
     stripped = ''.join(c for c in unicodedata.normalize('NFD', value)
                        if unicodedata.category(c) != 'Mn')
     return stripped.lower()
+
+
+def country_ar_map(root):
+    """`COUNTRY_AR` read out of `web/src/lib/i18n-geo.ts`, never restated here.
+
+    Added 2026-10-19 with the Arabic country directory's own collation
+    (standing-queue item 23). The Arabic order is a function of the Arabic
+    NAMES, so this check cannot predict it without them -- and a copy of
+    fifty-odd names in a second file is #57 waiting to happen. Parsed from the
+    one home instead, and the parse is checked by its caller: a map that comes
+    back implausibly small fails the check rather than quietly ordering every
+    Arabic name on its English fallback, which would read as a pass."""
+    src = pathlib.Path(root, 'web', 'src', 'lib', 'i18n-geo.ts').read_text(encoding='utf-8')
+    m = re.search(r'COUNTRY_AR[^=]*=\s*\{(.*?)\n\};', src, re.S)
+    if not m:
+        return {}
+    out = {}
+    for line in m.group(1).split('\n'):
+        mm = re.match(r"""\s*(?:'([^']+)'|"([^"]+)"|([^:'" ]+))\s*:\s*'([^']+)'\s*,""", line)
+        if mm:
+            out[(mm.group(1) or mm.group(2) or mm.group(3)).strip()] = mm.group(4)
+    return out
+
+
+def arabic_collation_key(value):
+    """The Python half of `arabicCollationKey` in web/src/lib/order.ts. Four
+    operations, and they must stay the same four in both files:
+
+      NFD + drop Mn    removes tashkeel and folds the hamzated alifs onto alif
+      U+0649 -> U+064A the alif-maqsura pair an Arabic index treats as one
+      U+0629 -> U+0647 the ta-marbuta pair, likewise
+      leading ALIF-LAM dropped as a prefix, because 17 of this directory's
+                       names begin with it and filing on the article would put
+                       a third of the list under one letter
+
+    After the foldings the comparison is plain code-point order, which for the
+    Arabic block IS the hija'i order -- which is the whole reason this is
+    predictable in Python without ICU (#59)."""
+    folded = ''.join(c for c in unicodedata.normalize('NFD', value)
+                     if unicodedata.category(c) != 'Mn')
+    folded = folded.replace('\u0649', '\u064a').replace('\u0629', '\u0647')
+    if folded.startswith('\u0627\u0644') and len(folded) > 2:
+        folded = folded[2:]
+    return folded.strip()
 
 
 def expected_facets(table):
@@ -325,7 +370,7 @@ SOLO_UL = re.compile(
 SOLO_LINK = re.compile(r'href="/madar/(?:(ar)/)?articles/([^/"]+)/"')
 
 
-def expected_solo(table):
+def expected_solo(table, lang='en', ar_names=None):
     """The country directory `soloCountries` derives from an approved
     collection, in the order it derives it: countries measured by EXACTLY ONE
     piece, sorted on the normalised key ascending, each paired with the slug of
@@ -351,8 +396,18 @@ def expected_solo(table):
             if c:
                 counts[c] = counts.get(c, 0) + 1
     out = []
-    for key in sorted((k for k, n in counts.items() if n == 1),
-                      key=lambda k: (collation_key(k), k)):
+    if lang == 'ar':
+        # Ordered on the name the READER sees, which is the English key's
+        # Arabic rendering -- two orders by design, not one derivation (item
+        # 23). `countryAr` falls back to the English key when a name is
+        # missing, so this does too, exactly.
+        def sort_key(k):
+            name = (ar_names or {}).get(k, k)
+            return (arabic_collation_key(name), name)
+    else:
+        def sort_key(k):
+            return (collation_key(k), k)
+    for key in sorted((k for k, n in counts.items() if n == 1), key=sort_key):
         owner = next(slug for slug, p in pieces if key in p['countries'])
         out.append((key, owner))
     return out
@@ -391,6 +446,13 @@ def main(dist='web/dist'):
     defects, pages, lists_seen, rails, feeds, ties = [], 0, 0, 0, 0, 0
     browse_pages = 0
     solo_seen = 0
+    ar_names = country_ar_map(root)
+    if len(ar_names) < 40:
+        print('ERROR: COUNTRY_AR parsed to %d names from web/src/lib/i18n-geo.ts. '
+              'The Arabic country directory is ordered on those names, so a short '
+              'parse would silently order them on their English fallbacks and '
+              'print clean. Refusing.' % len(ar_names))
+        return 2
     facet_rows = {lang: expected_facets(meta[lang]) for lang in ('en', 'ar')}
     # A facet tie group is where the locale-dependent comparator of ruling #59
     # could show: two keys of the same kind on the same count. Counted out loud
@@ -497,7 +559,7 @@ def main(dist='web/dist'):
                 # and is not a thing to rely on; and `lists_on` below would see
                 # 34 article links in one container and judge them as a dated
                 # list, which is the one order they must not be in.
-                want_solo = expected_solo(meta[lang])
+                want_solo = expected_solo(meta[lang], lang, ar_names)
                 blocks = solo_lists(html)
                 if hub:
                     solo_seen += len(blocks)

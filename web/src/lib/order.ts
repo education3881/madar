@@ -81,6 +81,66 @@ export function collationKey(value: string): string {
 }
 
 /**
+ * The comparison form of an ARABIC display name.
+ *
+ * WHY (2026-10-19, standing-queue item 23)
+ * ----------------------------------------
+ * The hub's country directory shipped 2026-10-18 ordered by `collationKey` on
+ * the frontmatter value, which is in the schema's English vocabulary — so the
+ * Arabic hub read **أستراليا، البحرين، بنغلاديش**: Australia, Bahrain,
+ * Bangladesh, an order no Arabic reader has. Found by rendering the page and
+ * looking at it (#16), not by reading markup.
+ *
+ * Three foldings, each with a reason, and the third is an editorial decision
+ * rather than a technical one:
+ *
+ *  1. **NFD, combining marks dropped.** Identical to `collationKey`, and it is
+ *     doing more work here: it removes tashkeel (`عُمان` → `عمان`, `الفلبّين` →
+ *     `الفلبين`) and it folds the hamzated alifs onto plain alif, because
+ *     `أ` `إ` `آ` all canonically decompose to `ا` + a mark. So `أستراليا` and
+ *     `إندونيسيا` compare as alif, which is where a reader looks for them.
+ *  2. **`ى` → `ي` and `ة` → `ه`.** The two orthographic pairs an Arabic index
+ *     treats as one letter. Neither is a canonical decomposition, so NFD does
+ *     not reach them.
+ *  3. **The definite article `ال` is dropped from the front of the name.**
+ *     This is the convention of Arabic reference indexes and atlases — `المغرب`
+ *     is filed under `م` — and the corpus says why it matters rather than
+ *     leaving it to taste: **17 of the directory's country names begin with
+ *     `ال`**, so filing on the article would put roughly a third of the list
+ *     under one letter. That is a pile, not an index. The Arabic Editor owns
+ *     this convention; it is written here because a sort order nobody can find
+ *     the reason for is changed back by the next person who dislikes it.
+ *
+ * After the foldings the comparison is plain code-point order, which for the
+ * Arabic block IS the hijāʾī order (`ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق
+ * ك ل م ن ه و ي` ascend by code point). No ICU, no locale, no environment —
+ * #59's requirement, and the reason `qa_stable_order.py` can predict this order
+ * in Python in the same four lines.
+ */
+export function arabicCollationKey(value: string): string {
+  const folded = value
+    .normalize('NFD')
+    .replace(/\p{Mn}+/gu, '')
+    .replace(/ى/g, 'ي') // ى → ي
+    .replace(/ة/g, 'ه'); // ة → ه
+  // Only as a PREFIX, and only when something follows it: a name that is just
+  // `ال` would otherwise collate as the empty string.
+  const stripped = folded.replace(/^ال(?=.)/u, '');
+  return stripped.trim();
+}
+
+/**
+ * Ascending by Arabic display name. Ties broken by the raw string, exactly as
+ * `byKeyAsc` does, so the order is total even where two names fold alike.
+ */
+export function byArabicKeyAsc(a: string, b: string): number {
+  const ka = arabicCollationKey(a);
+  const kb = arabicCollationKey(b);
+  if (ka !== kb) return ka < kb ? -1 : 1;
+  return a === b ? 0 : a < b ? -1 : 1;
+}
+
+/**
  * Ascending by display name, on the normalised key, ties broken by the raw
  * string so the order is total even when two keys normalise alike.
  */

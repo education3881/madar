@@ -34,7 +34,8 @@
  * derived over held drafts leaks a slug and a date (RUNBOOK, 2026-09-06).
  */
 
-import { byKeyAsc, collationKey } from './order';
+import { byArabicKeyAsc, byKeyAsc, collationKey } from './order';
+import { countryAr } from './i18n-geo';
 
 export type FacetKind = 'region' | 'topic' | 'country';
 
@@ -163,7 +164,10 @@ export interface SoloCountry {
   pieceId: string;
 }
 
-export function soloCountries(pieces: Piece[]): SoloCountry[] {
+export function soloCountries(
+  pieces: Piece[],
+  lang: 'en' | 'ar' = 'en',
+): SoloCountry[] {
   const counts = tally(pieces, countriesOf);
   const out: SoloCountry[] = [];
   for (const [key, count] of counts) {
@@ -176,6 +180,18 @@ export function soloCountries(pieces: Piece[]): SoloCountry[] {
   // so a count sort would leave the order to `Map` insertion — which is file
   // order, which is a date. `byKeyAsc` for the same reason as `facetsFor`
   // (#59: never let the environment answer a question the data should).
+  //
+  // **Ordered on the name the READER sees, which is why this takes a language
+  // (2026-10-19, standing-queue item 23).** The keys are the schema's English
+  // vocabulary, so sorting them served the Arabic hub `أستراليا، البحرين،
+  // بنغلاديش` — Australia, Bahrain, Bangladesh. The two editions now diverge
+  // by design rather than by accident, and `qa_stable_order.py` expects two
+  // orders instead of one: a single derivation is only a virtue where the two
+  // sides are answering the same question, and alphabetical order is a
+  // question about an alphabet.
+  if (lang === 'ar') {
+    return out.sort((a, b) => byArabicKeyAsc(countryAr(a.key), countryAr(b.key)));
+  }
   return out.sort((a, b) => byKeyAsc(a.key, b.key));
 }
 
