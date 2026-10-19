@@ -52,6 +52,15 @@ families the CHARTER names as the proof-of-work contract. The quarantined deskto
 runner's orphans are excluded by name: they are a record of a run that failed, not
 an artefact rendered for anybody.
 
+**What this costs every build, measured rather than assumed (the operating-cost
+family, #94/#96/#105/#107, asked of my own instrument).** 128 artefacts in **4
+seconds** of wall clock — about 31 ms each — because they are loaded in turn into
+a single iframe in ONE browser rather than one browser each. The corpus grows by
+one artefact a day, so this is ~16 s at 500 artefacts and does not need revisiting
+before then. *Written down because the opposite was assumed while building it: a
+gate too slow to tolerate is a gate somebody eventually removes, and the way to
+know which kind you have built is to time it.*
+
 Dependencies: Python 3 standard library plus a headless Chrome/Chromium on PATH —
 the same single dependency qa_render.py takes, for the same reason. If no browser
 is found this exits 1 rather than skipping: a check that silently does not run is a
