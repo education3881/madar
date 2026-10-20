@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/urls';
 import { byDateThenSlug } from '../../lib/order';
+import { collectionJsonLd } from '../../lib/structuredData';
 import {
   facetsFor,
   facetPath,
@@ -82,9 +83,24 @@ const groups = (['region', 'topic', 'country'] as const).map((kind) => ({
   items: facets.filter((f) => f.kind === kind),
   solo: kind === 'country' ? solo : [],
 }));
+
+// Structured data (Growth, 2026-10-20). Until today these 40 pages — the
+// twenty EN and twenty AR browse hubs — were the only part of the site
+// graph that described itself to a machine not at all. A facet page KNOWS
+// a membership; ItemList is the type that states one. The hub lists its
+// facet pages, a facet page lists its pieces, both in render order.
+const jsonLd = collectionJsonLd({
+  lang: 'en',
+  path: withBase(facet ? facetPath(facet, 'en') : browsePath('en')),
+  name: facet ? facet.key : 'Browse',
+  isFacet: Boolean(facet),
+  items: facet
+    ? listed.map((piece) => ({ name: piece.data.title, path: withBase(`/articles/${piece.id}/`) }))
+    : facets.map((f) => ({ name: f.key, path: withBase(facetPath(f, 'en')) })),
+});
 ---
 
-<Base title={title} lang="en" ogImage="/og/brand-card.png" alternate={alternate}>
+<Base title={title} lang="en" ogImage="/og/brand-card.png" alternate={alternate} jsonLd={jsonLd}>
   <article class="browse container">
     <header class="browse__head">
       <p class="kicker">

@@ -234,3 +234,87 @@ export function articleJsonLd(input: ArticleNodeInput) {
     isPartOf: { '@id': SITE_ID },
   };
 }
+
+/**
+ * CollectionPage + ItemList for a browse facet page (Growth, 2026-10-20).
+ *
+ * WHY. Measured today over the built site: **45 of 135 served pages carry no
+ * structured data at all, and 40 of those 45 are the browse facet pages** — the
+ * twenty EN and twenty AR pages whose entire job is to be this site's topical
+ * graph. The article pages have described themselves since 08-23; the hubs that
+ * say *these pieces belong together, and here is the axis* have described
+ * themselves never. `ItemList` is the one schema.org type that states a
+ * membership, and a membership is exactly what a facet page knows and a crawler
+ * has to infer from markup.
+ *
+ * Same conservative posture as every builder above: every value is derived from
+ * the page's own lang, path and the collection the build already resolved
+ * (#36 — a claim about a page is computed from the page). No `numberOfItems`
+ * that is not the length of the list we actually emit; no description invented
+ * for a facet; `inLanguage` real and per-edition, because the Arabic hubs are
+ * described exactly as richly as the English ones.
+ *
+ * `breadcrumbJsonLd` is NOT reused: its second crumb is hardcoded *Editions*,
+ * and a browse page does not sit under Editions. A crumb that names the wrong
+ * parent is worse than no crumb, so the trail is built here with Browse in that
+ * position, using the SiteHeader's own two labels rather than a translation
+ * invented at this call site.
+ */
+export interface CollectionNodeInput {
+  lang: 'en' | 'ar';
+  /** Site-absolute path INCLUDING base prefix, with trailing slash. */
+  path: string;
+  /** The page's own visible heading — the facet key, or the hub's own word. */
+  name: string;
+  /** Members, in the order the page renders them. */
+  items: { name: string; path: string }[];
+  /** False for the /browse/ hub itself, which has no parent facet. */
+  isFacet: boolean;
+}
+
+export function collectionJsonLd(input: CollectionNodeInput) {
+  const ar = input.lang === 'ar';
+  const url = absolute(input.path);
+  const home = absolute(ar ? `${BASE}/ar/` : `${BASE}/`);
+  const hub = absolute(ar ? `${BASE}/ar/browse/` : `${BASE}/browse/`);
+  const browseLabel = ar ? 'تصفّح' : 'Browse';
+
+  const trail: Record<string, unknown>[] = [
+    { '@type': 'ListItem', position: 1, name: ar ? 'مدار' : 'Madār', item: home },
+    { '@type': 'ListItem', position: 2, name: browseLabel, item: hub },
+  ];
+  if (input.isFacet) {
+    trail.push({ '@type': 'ListItem', position: 3, name: input.name, item: url });
+  }
+
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${url}#collection`,
+      name: input.name,
+      url,
+      inLanguage: input.lang,
+      isPartOf: { '@id': SITE_ID },
+      publisher: { '@id': ORG_ID },
+      mainEntity: {
+        '@type': 'ItemList',
+        '@id': `${url}#itemlist`,
+        itemListOrder: 'https://schema.org/ItemListOrderDescending',
+        numberOfItems: input.items.length,
+        itemListElement: input.items.map((it, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: it.name,
+          url: absolute(it.path),
+        })),
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumb`,
+      itemListElement: trail,
+    },
+  ];
+}
