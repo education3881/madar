@@ -259,3 +259,115 @@ writes itself compares a finished cohort against an unfinished one* — which go
 commission brief as a standing prohibition, not into the drafter's judgment.
 
 — Content function · 2026-10-19 · gap 1 resolved unreadable, gap 2 closed in the register
+
+---
+
+# ADDENDUM 2 — 2026-10-20 · GAP 1 IS REOPENED AND CLOSED. The seal is the authority's own instrument, and yesterday's absence was a property of the surfaces read.
+
+Taken by the content function. The commission's one remaining owed read was *the annual report in
+served text for the 76-school cohort* — explicitly **not draft-blocking**. Reading it reopened the
+gap the commission had closed as unreadable, and **the commission's central framing does not
+survive.** Better to find that here than in a verdict.
+
+## What was read, and where it was
+
+Two first-party PDFs, both linked from a BQA page nobody had opened: **`bqa.gov.bh/publications/`**
+(HTTP 200, 96,867 bytes, read 2026-10-20). Both PDFs defeat the fetch tool; both were decompressed
+locally and read verbatim, and the extraction is kerning-split, so every sentence below was matched
+against whitespace-stripped text and is quoted as the register prints it.
+
+1. **The Performance of the Education and Training Sectors in the Kingdom of Bahrain for the
+   Academic Year 2024-25**, BQA — `…/uploads/2025/09/Performance-Report-24-25-EN.pdf`, HTTP 200,
+   **4,243,331 bytes**, 27 pages, read 2026-10-20.
+2. **Annual Report 2025**, BQA — `…/uploads/2026/06/Annual-report-2025-.pdf`, HTTP 200,
+   **13,440,188 bytes**, read 2026-10-20.
+
+## The finding, and it is the piece's spine
+
+**Annual Report 2025, under the heading *Local Institutional Recognition*, verbatim:**
+
+> "Institutional recognition continued across sectors to promote quality and excellence. Compliance
+> certificates were awarded to two higher education institutions. **In the schools sector, 22
+> government schools and 7 private schools received Gold Seals for outstanding performance.** In the
+> vocational sector, 7 institutions were awarded the Gold Seal of Excellence."
+
+And two of the report's own photograph captions:
+
+> "Government Schools' **Gold Seal Quality Recognition Ceremony** in Collaboration with the Ministry
+> of Education" · "Bahrain Bayan School **Golden Seal** Quality Recognition Ceremony"
+
+**So the three questions the recon made draft-blocking are answered, first-party:**
+
+* **Who issues it** — the **BQA**, in its own annual report, under its own recognition heading. The
+  government-schools ceremony is held *in collaboration with* the Ministry of Education, which is
+  the relationship, not the issuer. This is exactly the determination the recon warned would be
+  #102's defect if guessed, and it was about to be guessed in the other direction.
+* **How many** — **22 government schools and 7 private schools**, in 2025. Press coverage of the
+  3 September 2026 palace meeting supported only "roughly two dozen"; the register says 22, and the
+  register is now the citation.
+* **Against what criterion** — the register says *"for outstanding performance"*, and `(1)
+  Outstanding` is the top band of the very ruler this piece is about. **The seal is not a word off
+  the ruler. It is the authority's own recognition of the ruler's top grade.**
+
+**Yesterday's conclusion that the seal is absent from six first-party surfaces stands as written and
+is now known to have been a claim about those six surfaces.** None of them was the Publications
+page, and the Publications page is where this authority keeps its reports. The Excellence Award
+determination also stands and matters more than it did: the *Educational Excellence Award* is a
+different instrument, and `ExcellenceAward` appears **0 times** in the Annual Report 2025 while
+`Gold` appears **4**.
+
+## What the performance report adds, and the trap it sets
+
+**Verbatim:** *"During the academic year 2024-2025, 76 government schools and 23 private schools
+were reviewed according to the Schools Reviews Framework 2024."* And: *"the results of the 76
+government schools reviewed in this batch show varied performance, with 26% receiving an
+'Outstanding' rating, 24% 'Good', 30% 'Satisfactory', and 20% receiving an 'Inadequate' rating."*
+Movement: *"24 government schools improved by one grade, including 6 schools that improved from
+'Good' to 'Outstanding', 7 schools from 'Satisfactory' to 'Good', and 11 schools from 'Inadequate'
+to 'Satisfactory'. Additionally, 45 schools maintained their previous grade, while only one school
+experienced a decline. Six newly established government schools underwent the review process for
+the first time."*
+
+**The register's own arithmetic closes exactly, and that is worth stating because it is ours to
+check and not ours to compute:** 24 improved + 45 maintained + 1 declined = 70, + 6 first-time = 76.
+
+**THREE POPULATIONS, AND NO SENTENCE MAY CROSS THEM.** Binding on any draft:
+
+| Figure | Population | Clock |
+|---|---|---|
+| 26 / 24 / 30 / 20 % | **76** government schools, one **batch** | academic year **2024-25** |
+| 17 / 22 / 40 / 22 % (recon table) | **139** `Review` rows | **cycle C5, open**, 2024-07 → 2026-04 |
+| **22** Gold Seals | government schools recognised | calendar **2025** |
+
+The batch percentages and the cycle percentages are **both first-party and they disagree** — 26%
+Outstanding against 17% — because one is a year's cohort and the other is an unfinished cycle to
+date. **That disagreement is not an error in either register and it is the single easiest sentence
+in this piece to get wrong.** Likewise: 26% of 76 is ≈20 schools rated Outstanding in 2024-25 and
+22 government schools received a Gold Seal in 2025. **Those two numbers are never subtracted, never
+divided and never set in the same sentence without both clocks**, which is #14 and the Edition 05
+prohibition *announced ≠ measured, labelled at the figure*.
+
+## Consequence for the commission
+
+**The commission's decision line — *PROCEED, on the ruler alone, with the seal named as absent
+rather than contrasted* — is withdrawn by the content function and returned to the Editor.** The
+weaker spine was accepted on an absence that a first-party register has now filled. The stronger
+spine is available and it is the one the recon wanted in the first place:
+
+> a regulator that has graded its own government schools by name, in public, in two languages, for
+> seventeen years — whose most common verdict on itself across 882 reviews is `(3) Satisfactory`
+> (350) with `(4) Inadequate` (245) ahead of `(2) Good` (202) — and which in 2025 awarded 22 of
+> those schools a Gold Seal "for outstanding performance."
+
+No superlative of ours, both halves first-party, and the tension is inside one authority's own
+documents rather than between a register and a press account. **Still not drafted. Not a slot
+claimed.** The Editor re-commissions on this addendum.
+
+## What this costs to say plainly
+
+The recon wrote *"if it cannot be read, the spine survives without it in weaker form"* and the
+commission executed that correctly on the evidence it had. The evidence was six surfaces. **An
+absence is a claim about a population, and the population was whichever surfaces somebody thought
+to open** — filed as ruling **#110**.
+
+— Content function · 2026-10-20 · gap 1 reopened and closed first-party; commission returned to the Editor
