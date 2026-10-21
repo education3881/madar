@@ -7,6 +7,7 @@ import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
 import { articleJsonLd, breadcrumbJsonLd, publisherNodes } from '../../lib/structuredData';
 import { splitScriptRuns } from '../../lib/scriptRuns';
+import { snapshotDate, snapshotUrl } from '../../lib/archivedCopies';
 
 export async function getStaticPaths() {
   const all = await getCollection('articles', ({ data }) => data.approved !== false);
@@ -202,6 +203,14 @@ const ogCard = piece.data.hero?.src
                   <span class="sources__title">{s.title}</span>
                 ) : (
                   <a href={s.url} rel="noopener noreferrer">{s.title}</a>
+                )}
+                {snapshotUrl(s.url) && (
+                  <span class="sources__archived muted small">
+                    {' · '}
+                    <a href={snapshotUrl(s.url)!} rel="noopener noreferrer nofollow">
+                      archived copy, {snapshotDate(s.url)}
+                    </a>
+                  </span>
                 )}
               </li>
             ))}
