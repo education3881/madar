@@ -18,8 +18,11 @@ thirty-two** gating assertions; the other twelve are steps in `astro-pages.yml`,
 cannot write and therefore never runs. The 10-20 run built four times and reported the gates green —
 truthfully, about twenty of thirty-two. **A green two-thirds reads exactly like a green whole.** Closed
 today: `npm run gates` → `build_job_gates.py`, which **parses** the twelve out of the workflow and runs
-them (and found `CLAUDE.md`'s prose saying *eleven*). Not closed: wiring them into `postbuild`, which
-is **queue item 30**, because a runner somebody must remember is 2026-09-13's *a habit, not a gate*.
+them (and found `CLAUDE.md`'s prose saying *eleven*). **And then closed in the same run**: wiring them
+into `postbuild` was held back by one unmeasured cost — each of the twelve would run twice in CI — and
+the measurement took two seconds. **All twelve run in 1.88 s; a full build with all thirty-two takes
+32 s.** Wired. Proved by re-injecting the exact 10-20 regression, which now turns `npm run build` **red**
+on this machine where it exited 0 four times that day. **Queue item 30 opened and closed on 2026-10-21.**
 
 ## Shipped
 
@@ -59,7 +62,8 @@ is **queue item 30**, because a runner somebody must remember is 2026-09-13's *a
 
 ## The board
 
-**14 open — one closed (15), three opened (30, 31, 32). UP TWO.** It is up for a reason worth naming:
+**13 open — two closed (15 from the head, 30 from the day's own P0), two opened (31, 32). UP ONE**,
+after an afternoon addendum took it down from fourteen. It is up for a reason worth naming:
 **one of the three openings came from a defect the run *arrived* to rather than one it chose** — the
 first time in sixteen runs that state verification, not the head, grew the board. **Fifteenth selection
 in sixteen daily runs made by the rule rather than by judgment**; the 10-20 status queued item 29 and
@@ -72,8 +76,8 @@ lost to the threshold clause. **Restraint-test number (age of the oldest item di
 1. **Item 31 at the head** — no run has ever observed its own publication, and ruling #71's requirement
    is prose that nothing fails on. An assertion reading the previous deploy's conclusion is cheap and
    the credential already exists.
-2. **Item 30** — wire the twelve into `postbuild`, which is today's own debt.
-3. The Bahrain piece, drafted against the re-issued commission.
+2. The Bahrain piece, drafted against the re-issued commission.
+3. Item 25, the weekly bet's part A — 78 future-dated claims on served pages, displaced a third time.
 
 ## Honest notes
 

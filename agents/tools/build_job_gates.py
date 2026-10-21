@@ -31,14 +31,24 @@ extracts every `qa_*.py` invocation in the `build` job with its real arguments,
 runs each one, and reports. Derived, never copied — so it cannot tell you about
 eleven gates when there are twelve.
 
-**It is not wired into `postbuild`, and that is a known gap rather than a
-decision.** Making the twelve run locally *by default* means gating them from
-`web/package.json` — the one home this identity can write — and that is a real
-change to the build with a real cost (every one of the twelve would run twice
-in CI). It is standing-queue item 30, raised the same day as this file. Until
-then this is a runner somebody has to remember, which is precisely the shape
-2026-09-13 named as *a habit, not a gate*. Written down so the gap is visible
-instead of implied.
+**It IS wired into `postbuild`, from the afternoon of the day it was written**
+— standing-queue item 30, opened and closed in one run. It was a runner for
+about an hour, and a runner somebody must remember is precisely the shape
+2026-09-13 named as *a habit, not a gate*. The cost that argued against wiring
+it was assumed and then measured: **all twelve run in 1.88 s**, and a full
+`npm run build` with all thirty-two gates takes **32 s**. The twelve do now run
+twice in CI, once as workflow steps and once here, and two seconds is not a
+reason to let a local build mean something different from a deploy.
+
+**Proved by re-injecting the defect that caused the gap:** removing
+`...publisherNodes()` from `collectionJsonLd` again — the exact 2026-10-20
+regression — now turns `npm run build` red at exit 1 on this machine, where on
+2026-10-20 it exited 0 four times in a row. Restored, the build is green.
+
+It adds ONE entry to `postbuild` and no assertion to the count: `qa_patch_queue`
+globs `qa_*.py` in both homes, so the register still reads 35 / 12 / 20 /
+**32 of 35**, which is correct — these twelve always gated the deploy. What
+changed is where they can be *reached*.
 
 Usage:  python3 agents/tools/build_job_gates.py [repo-root] [--dist web/dist]
 Exit:   0 all green · 1 one or more gates failed · 2 cannot parse the workflow
@@ -101,7 +111,8 @@ def main(argv: list[str]) -> int:
             for line in tail:
                 print(f"  {line}")
         print(f"\nFAIL build_job_gates — {len(failures)} of {len(gates)} build-job gate(s) red. "
-              f"These do NOT run under `npm run build`; a green postbuild is 20 of 32.")
+              f"Before 2026-10-21 these did not run under `npm run build` at all, and a defect here "
+              f"reached the deploy past a green local build.")
         return 1
     print(f"CLEAN build_job_gates — all {len(gates)} build-job gates green against this tree's dist, "
           f"so the local gate set is the deploy's gate set rather than two-thirds of it.")

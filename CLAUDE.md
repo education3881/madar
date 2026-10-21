@@ -103,7 +103,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 
 ```bash
 cd web && npm ci && npm run build            # must exit 0; the TWENTY postbuild gates run here
-cd web && npm run gates                      # the TWELVE that run ONLY as build steps in the workflow
+cd web && npm run gates                      # the TWELVE workflow build steps, alone (postbuild runs them too)
 python3 agents/tools/qa_pair_frontmatter.py .     # reads SOURCE files, held pieces included
 python3 agents/tools/qa_patch_queue.py .         # prints the whole gate register, derived
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
@@ -115,11 +115,16 @@ else; `npm run build` runs the other twenty. **On 2026-10-20 that cost a day of 
 function shipped 80 dangling JSON-LD `@id`s, `qa_jsonld` failed the build job, deploy and verify were
 skipped, and the origin served the 10-19 build for two days while five commits sat on `main`. The run
 built four times and called the gates green. `npm run gates` →
-`agents/tools/build_job_gates.py` closes the *reachability* half: it parses the twelve out of the
-workflow file and runs them, derived rather than copied — **and the line above it in this file said
-eleven, because a list in prose is maintained by nobody.** It is a **runner, not an assertion** (the count
-globs `qa_*.py`) and it is **not** in `postbuild`, so it is still something a run has to remember, which
-is 2026-09-13's *a habit, not a gate*. Wiring the twelve into `postbuild` is **standing-queue item 30**.
+`agents/tools/build_job_gates.py` closes it: it parses the twelve out of the workflow file and runs
+them, derived rather than copied — **and the line above it in this file said eleven, because a list in
+prose is maintained by nobody.** It is a **runner, not an assertion** (the count globs `qa_*.py`, so the
+register still reads 35 / 12 / 20 / **32 of 35** — these twelve always gated the deploy; what changed is
+where they can be *reached*), and **it is wired into `postbuild`**, closing standing-queue item 30 the
+same afternoon it opened: a runner somebody must remember is 2026-09-13's *a habit, not a gate*. The cost
+was assumed and then measured — **twelve gates in 1.88 s, a full build with all thirty-two in 32 s** —
+and proved by **re-injecting the 10-20 regression**, which now turns `npm run build` red on this machine
+where it exited 0 four times that day. **From 2026-10-21 a green local build is the deploy's own gate
+set**, so the second command below is a diagnostic rather than a duty.
 
 Use `npm run build`, not `npx astro build`: **twenty** of the thirty-five assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
