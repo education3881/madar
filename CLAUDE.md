@@ -102,12 +102,24 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 ## Build and QA
 
 ```bash
-cd web && npm ci && npm run build            # must exit 0; postbuild gates run here
-python3 agents/tools/qa_geo_fields.py web/dist   # and the other eleven that run as build steps
+cd web && npm ci && npm run build            # must exit 0; the TWENTY postbuild gates run here
+cd web && npm run gates                      # the TWELVE that run ONLY as build steps in the workflow
 python3 agents/tools/qa_pair_frontmatter.py .     # reads SOURCE files, held pieces included
 python3 agents/tools/qa_patch_queue.py .         # prints the whole gate register, derived
 python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats panel
 ```
+
+**`npm run build` is TWO-THIRDS of the gate set, and a green postbuild reads exactly like a green deploy.**
+Twelve of the thirty-two gating assertions are steps in `astro-pages.yml`'s build job and run nowhere
+else; `npm run build` runs the other twenty. **On 2026-10-20 that cost a day of publication**: the growth
+function shipped 80 dangling JSON-LD `@id`s, `qa_jsonld` failed the build job, deploy and verify were
+skipped, and the origin served the 10-19 build for two days while five commits sat on `main`. The run
+built four times and called the gates green. `npm run gates` →
+`agents/tools/build_job_gates.py` closes the *reachability* half: it parses the twelve out of the
+workflow file and runs them, derived rather than copied — **and the line above it in this file said
+eleven, because a list in prose is maintained by nobody.** It is a **runner, not an assertion** (the count
+globs `qa_*.py`) and it is **not** in `postbuild`, so it is still something a run has to remember, which
+is 2026-09-13's *a habit, not a gate*. Wiring the twelve into `postbuild` is **standing-queue item 30**.
 
 Use `npm run build`, not `npx astro build`: **twenty** of the thirty-five assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
