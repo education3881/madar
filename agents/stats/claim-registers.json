@@ -1,0 +1,3927 @@
+{
+ "observed": "2026-10-21",
+ "registers": [
+  {
+   "url": "http://www.ccetkuwait.org",
+   "pieces": [
+    "2026-05-28-kuwait-ccet-arabic-tests:en",
+    "2026-05-28-kuwait-ccet-arabic-tests:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-02-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-04",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-07/brasil-atinge-592-de-criancas-alfabetizadas-em-2024",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-17",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://agenciagov.ebc.com.br/noticias/202603/brasil-supera-meta-de-alfabetizacao-na-idade-certa",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-30",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://allafrica.com/stories/202608240232.html",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-31",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://almanassa.com/en/news/26936",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://almasdare.com/302388-2/",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-04-24",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ankahaber.net/haber/detay/bakan_tekin_deprem_bolgesinde_derslik_sayisi_137_bin_505e_cikacak_290813",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-02-06",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://arabic.euronews.com/2026/05/20/gaza-education-war-displaced-students-schools-crisis-tents-conflict",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://archivespasec.confemen.org/wp-content/uploads/sites/2/2022/08/Rapport-international-evaluation-PASEC2019.pdf",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://aujourdhui.ma/societe/ecoles-pionnieres-un-programme-structurant-pour-ameliorer-lapprentissage-et-la-maitrise-des-acquis",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-10-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://blog.aare.edu.au/naplan-results-havent-collapsed-but-media-interpretations-have/",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-09-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://blogs.worldbank.org/en/education",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-22",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://blogs.worldbank.org/en/education/integrating-refugee-students-into-chad-s-national-education-system",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ccetkuwait.wixsite.com/ccet-english/about-us",
+   "pieces": [
+    "2026-05-28-kuwait-ccet-arabic-tests:en",
+    "2026-05-28-kuwait-ccet-arabic-tests:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://ceibal.edu.uy/en/",
+   "pieces": [
+    "2026-05-31-uruguay-eduia-lab-ceibal:en",
+    "2026-05-31-uruguay-eduia-lab-ceibal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://core.unesco.org/en/project/534IRQ1002",
+   "pieces": [
+    "2026-05-28-iraq-mosul-library:en",
+    "2026-05-28-iraq-mosul-library:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-27",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://dailynewsegypt.com/2026/08/16/egyptian-education-ministry-secures-ibo-approval-for-new-baccalaureate-curricula-ahead-of-183-day-academic-year/",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://dashboard.parakh.ncert.gov.in/en/dashboard/IND",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-10-18",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://data.unhcr.org/en/documents/download/83328",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-08-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://databankfiles.worldbank.org/public/ddpext_download/hci/HCI_2pager_MUS.pdf",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://decree.om/2026/rd20260012/",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-18",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://demagog.org.pl/analizy_i_raporty/obowiazek-szkolny-dla-dzieci-z-ukrainy-co-sie-zmieni-od-1-wrzesnia/",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-05-17",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/441551624871338412",
+   "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://documents1.worldbank.org/curated/en/099063025153091285/txt/P175036-162a07a4-674d-464b-84e2-e7bbf6926acd.txt",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "GET",
+   "state": "live-only"
+  },
+  {
+   "url": "https://documents1.worldbank.org/curated/en/099090524085540633/pdf/P179209-b0057b3a-fd8c-476a-a1c6-271b276117ff.pdf",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-08-01",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://doi.org/10.53832/edtechhub.1114",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://doi.org/10.53832/edtechhub.1115",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://download.inep.gov.br/avaliacao_da_alfabetizacao/resultados/brasil_2025.pdf",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-18",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://duo.nl/zakelijk/primair-onderwijs/leerlingenadministratie/schooladvies-en-doorstroomtoets/",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-15",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://dyslexiaida.org/the-center-for-child-evaluation-teaching/",
+   "pieces": [
+    "2026-05-28-kuwait-ccet-arabic-tests:en",
+    "2026-05-28-kuwait-ccet-arabic-tests:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-14",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://edtechhub.org/2024/12/04/strengthening-the-use-of-data-for-decisions-on-teacher-deployment-in-sierra-leone/",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-13",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://edtechhub.org/2025/11/20/getting-teachers-where-they-are-needed-most/",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-18",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://edtechhub.org/case-study/impact-of-gis-supported-teacher-allocation-sierra-leone/",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://educationinspection.blog.gov.uk/2026/06/12/what-you-need-to-know-about-the-september-2026-updates-to-education-inspections/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-14",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://egyptianstreets.com/2026/03/03/how-the-gap-between-spoken-and-written-arabic-shapes-early-literacy-in-egypt/",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-08",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/97888",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://en.baochinhphu.vn/viet-nam-to-exempt-tuition-for-all-public-school-pupils-from-2025-2026-academic-year-111250228202316262.htm",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://en.tempo.co/read/1931371/new-minister-abdul-muti-indicates-review-of-merdeka-curriculum",
+   "pieces": [
+    "2026-05-31-indonesia-permen-13-coding-ai:en",
+    "2026-05-31-indonesia-permen-13-coding-ai:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2024-11-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://en.vietnamplus.vn/na-resolutions-on-tuition-and-agricultural-land-tax-exemption-universal-preschool-education-passed-post321705.vnp",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-10-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english&searchType=null&statusYN=W",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-14",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://english.wafa.ps/Pages/Details/158570",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-07-19",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://english.wafa.ps/Pages/Details/159615",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-19",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ericchelpdesk.org/wp-content/uploads/2025/07/021_Syria_EducationforRefugeesReturnees_FINAL270625_External.pdf",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-12-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://euromaidanpress.com/2025/08/28/kharkiv-opens-7-underground-schools-converts-metro-stations-into-classrooms-for-6000-students/",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-08-28",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://files.eric.ed.gov/fulltext/ED673992.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://github.com/Fab-Inc/FabMatch_SLE",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://github.com/fergal-turner/2025_SCUK_SLEIC_Results",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://gna.org.gh/2026/03/cea-launches-revised-curriculum-for-out-of-school-children/",
+   "pieces": [
+    "2026-05-28-ghana-cbe-curriculum:en",
+    "2026-05-28-ghana-cbe-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-01",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://gov.om/en/authority-for-academic-accreditation-and-quality-assurance-of-education",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-14",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://help.unhcr.org/lebanon/en/2025/10/16/extension-important-update-for-parents-with-school-aged-children/",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-07",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://help.unhcr.org/syria/where-to-find-help/education/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-20",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://hsrc.ac.za/press-releases/eee/department-of-basic-education-and-hsrc-release-timss-2019-grade-9-study/",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-15",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://iea.gov.ua/en/main-activities/en-main-activities-administration-of-the-national-management-information-systems/distance-learning-platform-all-ukrainian-school-online/",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ies.ed.gov/nces/2026/02/mapping-state-proficiency-standards-naep-scales-results-2022-naep-reading-and-mathematics",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-10",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ila.onlinelibrary.wiley.com/doi/full/10.1002/rrq.598",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://inee.org/blog/resilience-crisis-sudan-national-secondary-school-exams-amidst-conflict",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-14",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://inee.org/resources/implementing-myanmar-curriculum-rohingya-camps-overcoming-challenges-and-barriers",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2024-11-25",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://jakartaglobe.id/tech/indonesia-introduces-ai-and-coding-to-59000-schools-nationwide",
+   "pieces": [
+    "2026-05-31-indonesia-permen-13-coding-ai:en",
+    "2026-05-31-indonesia-permen-13-coding-ai:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-06-17",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://jrs.net/en/story/the-challenge-of-accessing-education-for-sudanese-refugees-in-chad/",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://kaladanpress.org/inside-the-camps-rohingya-matriculation-exams-mark-breakthrough-but-recognition-and-rights-remain-uncertain/",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://keeplearning.unrwa.org/en/",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://kemendikdasmen.go.id/siaran-pers/13420-permendikdasmen-112025-dan-132025-dasar-sinkronisasi-kurikulum-dan-beban-kerja-guru",
+   "pieces": [
+    "2026-05-31-indonesia-permen-13-coding-ai:en"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://kjsea.knec.ac.ke/",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-02-07",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ladakh.gov.in/diet-kargil-and-parakh-ncert-collaborate-to-empower-educators-with-holistic-progress-card-implementation/",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-08-22",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lanouvelletribune.info/2026/02/evaluation-des-systemes-educatifs-cotonou-accueille-latelier-international-du-pasec-2024/",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-02-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lawhub.info/eg/?p=15517",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-23",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12027_2024.html",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-20",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lematin.ma/enseignement/ecoles-pionnieres-ce-quil-faut-savoir-sur-le-programme-et-son-evolution/231959",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-20",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lematin.ma/societe/ecoles-pionnieres-les-parents-sinquietent-le-ministere-rassure/310142",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-22",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://lms.e-school.net.ua/",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-08",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://luminosfund.org/blog/a-curriculum-refresh-strengthening-ghanas-cbe-program/",
+   "pieces": [
+    "2026-05-28-ghana-cbe-curriculum:en",
+    "2026-05-28-ghana-cbe-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-20",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://madrasa.org/",
+   "pieces": [
+    "2026-05-27-uae-madrasa-tiktok:en",
+    "2026-05-27-uae-madrasa-tiktok:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://manassa.news/en/news/25481",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-02-15",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://mb.com.ph/2024/10/14/teachers-slam-move-to-abandon-mother-tongue",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://mbsse.gov.sl/fqse/",
+   "pieces": [
+    "2026-05-25-bo-teacher-chalk:en",
+    "2026-05-25-bo-teacher-chalk:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://mbsse.gov.sl/policies/",
+   "pieces": [
+    "2026-05-25-bo-teacher-chalk:en",
+    "2026-05-25-bo-teacher-chalk:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-21",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://medias24.com/2023/11/10/ecoles-pionnieres-un-gain-dune-a-deux-annees-de-scolarite-grace-a-la-methode-tarl/",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-01-20",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://medias24.com/2025/04/03/reportage-wadi-el-makhazine-un-modele-decole-communautaire-pionniere-en-pleine-transformation/",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://medias24.com/2025/12/04/ecoles-pionnieres-2-415-etablissements-publics-labellises-pour-lannee-2025-2026-liste-1589295",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-07-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://moe.gov.eg/en/what-s-on/news/developing-arabic/",
+   "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://mon.gov.ua/news/mon-zatverdylo-osoblyvosti-orhanizatsii-navchannia-u-zzso-na-2025-2026-navchalnyi-rik",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-06-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/-how-senior-school-slots-were-shared-5304094",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/crisis-as-grade-10-stem-learners-go-without-teachers--5393964",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-22",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/dawn-of-new-era-as-kjsea-results-released--5294850",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/grade-10-20-000-learners-jostle-for-500-slots-at-alliance-kenya-high-and-mang-u-5311888",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-05",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/kjsea-inside-criteria-for-placing-learners-in-senior-schools--5302338",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/principals-demand-return-to-school-led-system-in-grade-10-placements-5314142",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-07",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/senior-school-placement-chaos-burning-questions-answered-5315668",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/senior-school-placement-ministry-opens-second-review-window-on-tuesday-5317362",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-01-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/tsc-drops-two-subject-rule-to-plug-cbe-teacher-shortage-5509004",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://nation.africa/kenya/news/education/tsc-senior-school-roll-out-has-shortage-of-58-590-teachers-5286098",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-12-28",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ncea.education.govt.nz/overview-NCEA-corequisite-standards",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-21",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ncea.education.govt.nz/standards-approved-ncea-co-requisite-during-transition-period-2024-2027",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://ncert.nic.in/parakh/hpc.php",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2024-05-06",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://nces.ed.gov/nationsreportcard/subject/participating/pdfs/2026_naep_in_your_school_math_reading_naep_device.pdf",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-05",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://news.careers360.com/nep-2025-5-years-parakh-ncert-board-exams-assessment-report-national-education-policy-holistic-progress-card-learning-ceo",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-24",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://news.careers360.com/parakh-rashtriya-sarvekshan-result-2024-state-govt-schools-sc-st-far-behind-class-3-6-9-maths-science-language-evs-exam-survey",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-19",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://news.un.org/ar/interview/2024/01/1127972",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-02-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://oklahoma.gov/oeqa/about-oeqa/faqs.html",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://oklahomavoice.com/2025/05/21/oklahoma-board-raises-testing-rigor-to-restore-truth-and-transparency-to-student-testing/",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://oko.press/800-plus-dzieci-z-ukrainy-polska-szkola",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-16",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://osvita.ua/legislation/Ser_osv/95314/",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://osym.gov.tr/2023-yuksekogretim-kurumlari-sinavi-2023yks-deprem-bolgesinden-sinava-basvuran-adaylara-ulasim-ve-barinma-destegi",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://osym.gov.tr/osym-deprem-bolgesindeki-adaylardan-kpss-basvuru-ucreti-almayacak",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://parakh.ncert.gov.in/prs",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://parakh.ncert.gov.in/sites/default/files/2025-07/REPORT_India_IND.pdf",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-07-30",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://parakh.ncert.gov.in/themes/parakh/hpc-files/cards-pdf/Holistic-Progress-Card-(Secondary-Stage).pdf",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-05-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://publications.alqasimifoundation.com/en/improving-arabic-reading-fluency-results-from-iqra-an-early-grade-reading-intervention-in-ras-al-khaimah",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-02-16",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://reliefweb.int/report/lebanon/statement-uk-foreign-commonwealth-and-development-office-world-bank-and-unicef-teachers-productivity-allowance-program-lebanons-public-school-teachers-academic-year-2022-2023-enar",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-05",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://reliefweb.int/report/yemen/yemen-humanitarian-needs-and-response-plan-2026-march-2026",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-29",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://restofworld.org/2025/south-korea-ai-textbook/",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-13",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://result.sudani.sd/",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-10-08",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://resultadossimce.agenciaeducacion.cl/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-04-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sana.sy/education/2275016/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-10-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sana.sy/education/2425127/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-21",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sana.sy/education/2489845/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-22",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sana.sy/education/2494168/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-07-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/heads-overwhelmingly-negative-to-new-ofsted-inspections/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-26",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/high-court-rejects-nahts-ofsted-report-card-challenge/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-06",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/more-collaborative-more-pressure-heads-issue-report-cards-on-new-ofsted-inspections/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-16",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/naht-loses-appeal-against-ofsted-judicial-review-refusal/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-10",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/no-reinspections-despite-new-context-measure-says-ofsted/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-08-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://schoolsweek.co.uk/ofsted-publishes-first-school-report-cards/",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-11",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sectorrapportage.poraad.nl/p/Doorstroomtoets",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://selection.education.go.ke/about",
+   "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
+    "2026-07-04-kenya-cbe-grade10-pathways:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-07-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://shoeiblaw.com/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B1%D9%82%D9%85-169-%D9%84%D8%B3%D9%86%D8%A9-2025-%D8%A8%D8%AA%D8%B9%D8%AF%D9%8A%D9%84-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84/",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-09-08",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sl.education-os.org/",
+   "pieces": [
+    "2026-05-25-bo-teacher-chalk:en",
+    "2026-05-25-bo-teacher-chalk:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-06-06",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://snrtnews.com/article/149238",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-02",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://study.ekb.eg/",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2021-11-02",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://sudantribune.com/article/312732",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://sultanhani.meb.gov.tr/www/deprem-sebebiyle-lgs-yks-sinav-konularinda-ve-deprem-bolgesinde-okula-devam-devamsizlik-durumlarinda-duzenleme/icerik/371",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://syriaishome.org/en/2026/announcement-new-decision-by-the-syrian-ministry-of-education/",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-04-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://thedocs.worldbank.org/en/doc/a1a85bd0a24e4679b24e423abfb01061-0140012025/original/-Ceibal-Increasing-access-to-digital-technology-and-ensuring-education-for-all-in-Uruguay.pdf",
+   "pieces": [
+    "2026-05-31-uruguay-eduia-lab-ceibal:en",
+    "2026-05-31-uruguay-eduia-lab-ceibal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2026-03-24",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://thepeninsulaqatar.com/article/10/11/2025/wise-12-unveils-global-speaker-lineup-for-humanityio-summit-in-doha",
+   "pieces": [
+    "2026-05-31-qatar-humanity-spark-strategy:en",
+    "2026-05-31-qatar-humanity-spark-strategy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": true,
+   "snapshot": "2025-11-13",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://tienphong.vn/mien-hoc-phi-tu-nam-hoc-2025-2026-dam-bao-co-hoi-hoc-tap-cho-hoc-sinh-post1721961.tpo",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://timesofoman.com/article/152660-hh-sayyid-theyazin-launches-national-system-for-evaluating-school-performance",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://timesofoman.com/article/166925-omani-academic-accreditation-authority-to-announce-outcome-of-school-performance-on-7-january",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2026/03/nota-tecnica-indicador-crianca-alfabetizada-2025-todos-pela-educacao.pdf",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://tsc.gov.sl/teacher-payroll/",
+   "pieces": [
+    "2026-05-25-bo-teacher-chalk:en",
+    "2026-05-25-bo-teacher-chalk:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://tsc.gov.sl/wp-content/uploads/2020/10/Teacher-Management-Policy-for-Sierra-Leone.pdf",
+   "pieces": [
+    "2026-05-25-bo-teacher-chalk:en",
+    "2026-05-25-bo-teacher-chalk:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://tuoitre.vn/duoc-mien-hoc-phi-hoc-sinh-phai-dong-nhung-khoan-nao-20250311144712508.htm",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://tvn24.pl/wroclaw/wroclaw-obowiazkowa-nauki-dla-okolo-80-tys-dzieci-uchodzcow-z-ukrainy-szkoly-zapewniaja-asystentow-miedzykulturowych-st8067851",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://unric.org/en/unrwa-continues-its-work-in-gaza-despite-a-ban-and-the-destruction-of-the-education-system/",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://vietnaminsiders.com/unicef-representative-in-vietnam-tuition-fee-exemption-marks-a-major-step-forward/",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://vietnamnet.vn/en/tuition-free-policy-a-turning-point-for-vietnam-s-education-system-2475010.html",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://web.archive.org/web/20230327004120/https://eduactions.org/3-questions-au-professeur-abdel-rahamane-baba-moussa-sg-de-la-confemen-le-pasec-2024-sera-la-derniere-evaluation-internationale/",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://web.archive.org/web/20250721184835/https://www.eipr.org/en/press/2025/07/educational-law-amendments-perpetuate-social-inequality-and-increase-burdens-families",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aa.com.tr/tr/egitim/milli-egitim-bakani-tekinden-deprem-bolgesindeki-derslik-sayisi-hedefine-iliskin-aciklama/3473826",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aa.com.tr/tr/gundem/hatayda-depremde-hasar-aldigi-icin-yikilan-okulun-yerine-yenisi-yapildi-/3361226",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/2025-naplan-national-results-broadly-stable-as-participation-rates-bounce-back-30-7-25.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/media-release-2024-naplan-national-results-release-14-8-24.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/media-release-20260327-naplan-testing-concludes-for-2026.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/naplan-national-results-release-media-release-23.08.23.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/naplan-proficiency-standards-media-release-2023-02-10.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.acara.edu.au/reporting/key-dates",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.agenciaeducacion.cl/agencia-informa-el-calendario-de-evaluaciones-nacionales-2026/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.agenciaeducacion.cl/simce/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ajnet.me/politics/2024/12/28/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A3%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D9%84%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aljazeera.com/features/2026/4/8/yemens-teachers-pushed-to-the-brink-as-salaries-collapse",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aljazeera.net/politics/2026/4/10/%D8%A7%D9%84%D9%82%D9%81%D8%B2-%D8%A8%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%88%D8%A7%D9%84%D8%AA%D8%B9%D8%AB%D8%B1-%D8%A8%D8%A3%D8%AE%D8%B1%D9%89-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.alkhaleej.ae/2026-08-17/%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA/%D9%85%D8%AD%D8%B7%D8%A7%D8%AA/%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-2026-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%AA%D8%B9%D9%84%D9%86-%D9%85%D9%81%D8%A7%D8%AC%D8%A3%D8%A9-%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A7%D9%84%D8%B5%D9%81-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.almaktouminitiatives.org/en/what-we-do/madrasa-e-learning-platform",
+   "pieces": [
+    "2026-05-27-uae-madrasa-tiktok:en",
+    "2026-05-27-uae-madrasa-tiktok:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.almodon.com/society/2025/04/10/روابط-المعلمين-تعلن-الإضراب-المفتوح-في-كل-المدارس-الرسمية",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.alqasimifoundation.com/programs-students",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aph.gov.au/-/media/Estimates/eet/add2526/Opening_statement__Stephen_Gniel_ACARA_Chief_Executive_Officer.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.asu.edu.eg/8965/news/the-ministry-of-higher-education-and-the-ministry-of-education-announce-details-of-the-faculties-and-university-majors-available-for-the-various-tracks-in-the-new-baccalaureate-system",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.atheer.om/2026/03/16/102944/",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.aucegypt.edu/news/stories/dean-shawki-egyptian-knowledge-bank-widen-research-education-opportunities",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.beehive.govt.nz/release/details-ncea-replacement-confirmed",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.beehive.govt.nz/release/surge-ncea-numeracy-literacy-results",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/education-and-training-quality-authority-issues-the-performance-report-of-education-and-training-institutions-for-the-academic-year-2024-2025/",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en",
+    "2026-05-26-bahrain-bqa-public-grades:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/institutions-performance/preschool-review-reports/",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en",
+    "2026-05-26-bahrain-bqa-public-grades:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/institutions-performance/schools-performance/",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en",
+    "2026-05-26-bahrain-bqa-public-grades:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/wp-content/uploads/2024/10/ISChoueifat-EN.pdf",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en",
+    "2026-05-26-bahrain-bqa-public-grades:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/wp-content/uploads/2025/05/BQA-Annual-Report-2024.pdf",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en",
+    "2026-05-26-bahrain-bqa-public-grades:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.cairo.gov.eg/en/news/2026/august/3/education/",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.cgdev.org/blog/new-pasec-results-show-modest-improvements-student-learning-francophone-africa",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.confemen.org/actualite/rapport-international-pasec2019/",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.csefrs.ma/wp-content/uploads/2025/06/Resume_rapport_EcolesPionnieresFrancais_finale.pdf",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.csmonitor.com/World/Middle-East/2025/0922/gaza-palestine-tawjihi-exams-education-undp",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.dailynewsegypt.com/2026/05/18/egypt-overhauls-education-system-for-25-million-students-shifting-focus-to-skills-and-new-baccalaureate/",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.dha.com.tr/foto-galeri/bakan-tekin-deprem-bolgesinde-derslik-sayisini-yuzde-16-artirdik-2727188",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-statement-2026-naep-schedule",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.education.gov.za/Portals/0/Documents/Reports/2024/TIMSS%202024.pdf",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.education.govt.nz/consultation-ncea",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/insight/challenge-accepted",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/insight/learning-what-works-closing-sleic",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/insight/outcomes-delivered",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/programme/sierra-leone-basic-education",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/programme/sierra-leone-early-childhood",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.educationoutcomesfund.org/sites/www.educationoutcomesfund.org/files/downloads/SLEIC%20OPM%20Evaluation%20Report%202025.pdf",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.edweek.org/teaching-learning/fewer-subjects-students-data-points-feds-to-scale-back-naep/2025/04",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.eeas.europa.eu/eom-zambia-2026/eu-eom-election-observation-update_en",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.egypttoday.com/Article/1/147316/PM-reviews-UNICEF-study-on-Egypt%E2%80%99s-education-reform-efforts",
+   "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ei-ie.org/en/item/32239:teacher-remuneration-during-emergencies-just-wages-for-public-school-teachers-in-lebanon",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ekb.eg/",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.elections.org.zm/?p=5598",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.elmostrador.cl/noticias/opinion/columnas/2026/03/02/del-pragmatismo-a-la-renuncia-el-debate-pendiente-sobre-el-simce/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.elsevier.com/hubs/egyptian-knowledge-bank",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.emol.com/noticias/Nacional/2026/05/20/1200492/simce-ajuste-mineduc.html",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.euronews.com/2026/05/21/gaza-students-sit-exams-in-tents-as-nearly-all-schools-lie-in-ruins",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1518728/full",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gco.gov.qa/en/state-of-qatar/state-institutions/council-of-ministers/members-of-the-cabinet/minister-of-education-and-higher-education/",
+   "pieces": [
+    "2026-05-31-qatar-humanity-spark-strategy:en",
+    "2026-05-31-qatar-humanity-spark-strategy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gco.gov.qa/en/top-news/he-prime-minister-and-minister-of-foreign-affairs-launches-education-strategy-2024-2030/",
+   "pieces": [
+    "2026-05-31-qatar-humanity-spark-strategy:en",
+    "2026-05-31-qatar-humanity-spark-strategy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gdnonline.com/Details/1353164",
+   "pieces": [
+    "2026-05-27-uae-madrasa-tiktok:en",
+    "2026-05-27-uae-madrasa-tiktok:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.globalpartnership.org/blog/pasecs-contribution-measuring-how-much-children-are-learning",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/avaliacao-da-alfabetizacao/brasil-e-20-unidades-da-federacao-alcancam-meta-de-alfabetizacao",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.pl/web/edukacja/uczniowie-z-ukrainy-w-polskich-szkolach--nowe-rozwiazania-prawne",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/education-inspection-framework/education-inspection-framework-for-use-from-november-2025",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference/independent-evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.iicba.unesco.org/en/zambia",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.imlebanon.org/2025/11/24/lebanon-1023/",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.indiatvnews.com/education/news/what-is-holistic-progress-card-hpc-list-of-states-that-are-yet-to-adopt-these-cards-2025-04-18-986183",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.inseed.td/statistiques/694694a9e91c8b9ce12a07ca",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.istiklal.com.tr/genel/hatayda-deprem-sonrasi-199-yeni-okul-hizmete-acildi-1068551h",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.itv.com/news/2024-09-01/one-word-ofsted-judgments-for-schools-scrapped-by-government",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.k12dive.com/news/NAEP-nations-report-card-assessment-changes-2033-nagb-vote/746821/",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.kemendikdasmen.go.id/siaran-pers/13278-permendikdasmen-nomor-13-tahun-2025-menguatkan-arah-kebijakan-melalui-pembelajaran-mendalam",
+   "pieces": [
+    "2026-05-31-indonesia-permen-13-coding-ai:en",
+    "2026-05-31-indonesia-permen-13-coding-ai:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.khaleejtimes.com/uae/rak-private-schools-to-roll-out-programme-in-september-to-help-kids-read-arabic",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.kmu.gov.ua/news/sohodni-35-mln-shkoliariv-rozpochynaiut-novyi-navchalnyi-rik-bilshist-ditei-navchatymetsia-oflain-oksen-lisovyi",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.koreaherald.com/article/10546695",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.koreatimes.co.kr/southkorea/society/20250610/ai-textbooks-targeted-for-phaseout-under-south-koreas-new-administration",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.latercera.com/nacional/noticia/cned-aprueba-nueva-propuesta-de-arzola-por-simce-2026-tras-rechazarle-la-idea-inicial-que-eliminaba-pruebas/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.learningpassport.org/stories/sudans-19-million-learners-are-facing-worlds-worst-education-crisis",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.meb.gov.tr/deprem-bolgesindeki-toplam-derslik-sayisi-6-subat-oncesine-gore-artacak/haber/32430/tr",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.meb.gov.tr/depremzede-ogrencilerin-sinif-gecme-notunda-iki-donemde-aldiklari-en-yuksek-puani-esas-alinacak/haber/29699/tr",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.meb.gov.tr/mebden-depremin-yasandigi-on-bir-ilde-egitim-seferberligi/haber/36256/tr",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mehe.gov.lb/ar/media-center/news/الوزيرة-كرامي-أصدرت-قرار-بدء-العام-الدراسي-الجديد-20252026",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.men.gov.ma/%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.men.gov.ma/fr/%C3%A9tablissements-pionniers",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.cl/cataldo-tras-entrega-de-resultados-simce-2025-durante-nuestra-gestion-no-solo-recuperamos-aprendizajes-y-protegimos-trayectorias-educativas-sino-que-tambien-logramos-avanzar-de-manera-res/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.cl/resultados-simce-2024-revelan-historico-avance-en-4basico/",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/Publications/REPORTS/Education_Statistics/Education_statistical_yearbook/Education_Statistical_Year_Book_2024-2025.pdf",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/Publications/REPORTS/Education_Statistics/Education_statistical_yearbook/Final_Education_Statistical_Yearbook_23_24.pdf",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/news-detail/communique-on-the-increment-of-salary-for-primary-and-secondary-schools-teachers",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/news-detail/mineduc-world-bank-report-13-model-schools-11000-classrooms-and-621-resilience-upgrades-under-quality-basic-education-project",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/news-detail/the-ministry-of-education-introduces-new-eforms-to-strengthen-teaching-learning-and-student-development",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mineduc.gov.rw/updates/news-2",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.mlex.com/mlex/articles/2373192",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/parliamentary-replies/20250108-secondary-1-posting-outcome",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/parliamentary-replies/20250205-data-on-cut-off-points-for-secondary-1-school-admission-for-students-from-affiliated-and-non-affiliated-primary-schools",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/press-releases/20160713-changes-to-psle-scoring-and-secondary-one-posting",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/press-releases/20241120-release-of-2024-psle-results",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/press-releases/20251125-release-of-2025-psle-results",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/speeches/20250211-speech-by-minister-chan-chun-sing-at-the-moe-x-nie-x-ips-lecture-from-foundations-to-frontiers-our-education-journey",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/psle-fsbb/",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.moe.gov.sg/psle-fsbb/posting-to-secondary-school/faqs",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.muscatdaily.com/2024/12/02/landmark-school-evaluation-system-set-to-transform-education-in-oman/",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.nic.gov.sd/news/details/13",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.nieuwsbrievenminocw.nl/actueel/nieuws/2025/06/12/tijdpad-doorstroomtoets-en-overgang-po-vo-schooljaar-2025---2026-vastgesteld",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.nik.gov.pl/aktualnosci/nik-o-realizacji-prawa-do-nauki-dzieci-z-ukrainy-w-polskich-szkolach.html",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.oaaaqa.gov.om/public/external-activities/cseqa",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ocwincijfers.nl/sectoren/primair-onderwijs/leerlingen/prestaties-eindtoets",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/philippines_a0882a2d-en.html",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.omanobserver.om/article/1161960/oman/education/national-system-to-evaluate-performance-of-schools",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en",
+    "2026-06-20-oman-school-performance-ratings:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.onama.td/education-le-tchad-renforce-son-engagement-pour-une-education-inclusive-des-refugies/",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.onderwijsinspectie.nl/onderwerpen/onderzoeken/staat-van-het-onderwijs/congres/speech-de-staat-van-het-onderwijs-2026",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.openzambia.com/politics/2026/6/4/hh-signs-free-education-and-pension-bills-into-law",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.parliament.gov.zm/node/12505",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.parliament.gov.zm/node/12930",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.parliament.gov.zm/sites/default/files/documents/bills/N.%20A.%20B.%206%20of%202026.pdf",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.parliament.gov.zm/sites/default/files/images/publication_docs/Ministerial%20Statement%20-%20Update%20on%20Recruitment%20of%2030%2C000%20Teachers.pdf",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.pbs.org/newshour/world/some-of-ukraines-children-start-school-in-underground-classrooms-to-avoid-russian-bombs",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.philstar.com/headlines/2025/07/05/2455702/deped-use-both-english-filipino-teach-k-3",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2080272",
+   "pieces": [
+    "2026-07-07-india-parakh-hpc:en",
+    "2026-07-07-india-parakh-hpc:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11556.htm",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.pomocprawna.org/nowe-zasady-800-dla-obywateli-ukrainy-od-1-czerwca-2025",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/kabinet-wil-in-2030-terug-naar-een-doorstroomtoets",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/toetsing/rapportage-doorstroomtoets-2026-verschillen-tussen",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.pravda.com.ua/eng/news/2025/08/28/7528204/",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/bill-ceasing-mother-tongue-medium-instruction-kindergaten-grade-3-lapses-law/",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.rfa.org/english/asia/2025/03/09/southeast-asia-free-education/",
+   "pieces": [
+    "2026-06-16-vietnam-tuition-free-public-school:en",
+    "2026-06-16-vietnam-tuition-free-public-school:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.rnz.co.nz/news/education/534832/ero-ncea-report-pass-mark-from-principals-for-new-literacy-numeracy-tests",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.savethechildren.net/news/about-300000-children-risk-losing-education-learning-centres-rohingya-camps-shut-due-funding",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.savethechildren.org.uk/blogs/2026/results-are-out-summary-save-childrens-evaluation-results-sierra-leone-education-innovation",
+   "pieces": [
+    "2026-08-28-sierra-leone-sleic-outcomes:en",
+    "2026-08-28-sierra-leone-sleic-outcomes:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.sciencedirect.com/science/article/pii/S0738059325002068",
+   "pieces": [
+    "2026-06-19-philippines-mtb-mle-reversal:en",
+    "2026-06-19-philippines-mtb-mle-reversal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.seduc.ce.gov.br/2026/03/24/pelo-segundo-ano-ceara-obtem-ouro-no-selo-nacional-compromisso-com-a-alfabetizacao/",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.stomp.sg/trending-now/latest-batch-24-schools-adopt-full-subject-based-banding-2024",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.tandfonline.com/doi/full/10.1080/19439342.2020.1829000",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.telesemana.com/blog/2025/03/31/eduia-lab-despues-del-plan-ceibal-uruguay-apuesta-por-la-educacion-y-el-desarrollo-de-la-inteligencia-artificial/",
+   "pieces": [
+    "2026-05-31-uruguay-eduia-lab-ceibal:en",
+    "2026-05-31-uruguay-eduia-lab-ceibal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.terra.com.br/noticias/educacao/pais-tem-resultado-pior-de-alfabetizacao-em-prova-federal-mas-mec-diz-que-exame-nao-e-indicador,f5b2e5a4483ced618789f5744a34e9day49t8vl4.html",
+   "pieces": [
+    "2026-06-25-brazil-crianca-alfabetizada:en",
+    "2026-06-25-brazil-crianca-alfabetizada:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.the74million.org/article/after-declaring-naep-off-limits-education-department-cancels-upcoming-test/",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.the74million.org/article/responding-to-post-pandemic-norms-more-states-are-lowering-testing-standards/",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en",
+    "2026-07-07-us-naep-honesty-gap:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.thedailystar.net/news/bangladesh/education/news/education-rohingya-camps-disarray-3949321",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.thenationalnews.com/news/uae/2026/05/22/ras-al-khaimah-classroom-scheme-to-make-arabic-easier-to-learn-will-be-expanded/",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.thisislebanon.com/exclusive/584086/",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.timss-sa.org/wp-content/uploads/2022/02/FINAL-HSRC-TIMSS-Gr9-report_ELECTRONIC.pdf",
+   "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
+    "2026-09-14-africa-best-system-ruler:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2025Z21893&did=2025D51746",
+   "pieces": [
+    "2026-07-07-netherlands-doorstroomtoets:en",
+    "2026-07-07-netherlands-doorstroomtoets:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.ulster.ac.uk/news/2024/november/ulster-university-partners-with-unesco-to-support-restoration-of-mosul-library",
+   "pieces": [
+    "2026-05-28-iraq-mosul-library:en",
+    "2026-05-28-iraq-mosul-library:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.undp.org/arab-states/press-releases/moslawis-celebrate-reopening-mosul-universitys-central-library-and-ninewa-federal-court-appeal",
+   "pieces": [
+    "2026-05-28-iraq-mosul-library:en",
+    "2026-05-28-iraq-mosul-library:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unesco.org/en/articles/game-based-learning-tool-children-conflict-areas-wins-unesco-prize-innovation-education",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unesco.org/en/learning-platforms-gateway/case-study-egyptian-knowledge-bank-ekb",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unesco.org/sdg4education2030/en/knowledge-hub/egyptian-knowledge-bank-ekb",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unhcr.org/sites/default/files/2025-08/teachers-in-refugee-and-displacement-settings-chad-case-study.pdf",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unhcr.org/ua/en/news/press-releases/unhcr-lwf-open-new-underground-schools-kharkiv",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en",
+    "2026-07-07-ukraine-wartime-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unhcr.org/us/news/stories/sudanese-refugees-chad-face-challenges-deliver-education",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/bangladesh/en/press-releases/education-almost-quarter-million-rohingya-refugee-children-risk-unicef-calls-urgent",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/chad/press-releases/close-5000-refugee-students-sudan-finalize-their-baccalaureate-exams-chad",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/egypt/stories/egypts-national-literacy-mission",
+   "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/ghana/",
+   "pieces": [
+    "2026-05-28-ghana-cbe-curriculum:en",
+    "2026-05-28-ghana-cbe-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/innocenti/reports/developing-arabic-language-skills-egypt",
+   "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
+    "2026-06-18-egypt-npda-arabic-literacy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/lebanon/press-releases/least%E2%80%AF100000-children%E2%80%AFrisk-missing-next-school-year-without-urgent-action-restore",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/lebanon/press-releases/ministry-education-and-higher-education-european-union-and-unicef-visited-southern",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/lebanon/reports/transition-and-resilience-education-fund-tref",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/media/180486/file/Lebanon-Humanitarian-Situation-Report-No.1,31-March-2026.pdf.pdf",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/press-releases/unicef-against-odds-children-begin-new-school-year-rohingya-refugee-camps",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/press-releases/unicef-education-milestone-rohingya-refugee-children-myanmar-curriculum-pilot",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/press-releases/unicef-goodwill-ambassador-orlando-bloom-visits-rohingya-refugee-camps-bangladesh",
+   "pieces": [
+    "2026-07-07-rohingya-myanmar-curriculum:en",
+    "2026-07-07-rohingya-myanmar-curriculum:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/ar/%D8%A2%D9%81%D8%A7%D9%82-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/%D9%82%D8%B5%D8%B5",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/ar/%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%85/%D9%82%D8%B5%D8%B5",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/press-releases/unicef-save-children-and-partners-restore-learning-328000-conflict-affected-children",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/stories/golden-opportunity-learn",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/stories/new-horizons-education-sudan",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/stories/safe-learning-spaces",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/sudan/stories/sudan-cant-wait-learn",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/syria/press-releases/new-chapter-education-syria-back-learning-campaign-presents-new-opportunities",
+   "pieces": [
+    "2026-07-07-syria-certificate-recognition:en",
+    "2026-07-07-syria-certificate-recognition:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/yemen/education",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/yemen/restoring-education-and-learning-project",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unicef.org/yemen/stories/volunteer-teachers-strengthening-education-and-improving-student-retention",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-203-situation-gaza-strip-and-west-bank-including-east-jerusalem",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-228-humanitarian-crisis-gaza-strip-and-occupied-west-bank",
+   "pieces": [
+    "2026-07-07-gaza-education-continuity:en",
+    "2026-07-07-gaza-education-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.uruguayxxi.gub.uy/en/news/article/80-000-uruguayan-students-trained-in-artificial-intelligence-by-2023/",
+   "pieces": [
+    "2026-05-31-uruguay-eduia-lab-ceibal:en",
+    "2026-05-31-uruguay-eduia-lab-ceibal:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.usach.cl/news/experto-critica-excesiva-valoracion-pruebas-estandarizadas-medicion-simce",
+   "pieces": [
+    "2026-07-07-chile-simce-return:en",
+    "2026-07-07-chile-simce-return:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.warchild.net/latest/article/cant-wait-to-learn-formalises-handover-of-its-ukraine-learning-platform-to-ukraine-government/",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.warchild.org.uk/news/annual-report-2025",
+   "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
+    "2026-09-01-sudan-cant-wait-to-learn:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.wise-qatar.org/about",
+   "pieces": [
+    "2026-05-31-qatar-humanity-spark-strategy:en",
+    "2026-05-31-qatar-humanity-spark-strategy:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.worldbank.org/en/news/feature/2026/03/27/welcome-to-the-workforce-how-rwanda-trained-and-certified-24-000-teachers-in-less-than-one-year",
+   "pieces": [
+    "2026-09-27-rwanda-teacher-certification:en",
+    "2026-09-27-rwanda-teacher-certification:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.worldbank.org/en/news/feature/2026/05/21/morocco-s-pioneer-schools-advancing-improved-student-learning",
+   "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
+    "2026-07-06-morocco-ecoles-pionnieres:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen",
+   "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
+    "2026-07-07-yemen-teacher-pay-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.worldbank.org/en/news/statement/2021/12/23/world-bank-statement-on-incentive-program-for-lebanon-s-public-school-teachers-for-the-academic-year-2021-2022",
+   "pieces": [
+    "2026-07-07-lebanon-crisis-schooling:en",
+    "2026-07-07-lebanon-crisis-schooling:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.youm7.com/story/2025/10/20/-/7165289",
+   "pieces": [
+    "2026-07-07-sudan-exam-continuity:en",
+    "2026-07-07-sudan-exam-continuity:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.youm7.com/story/2026/4/23/%D8%A7%D8%B9%D8%B1%D9%81-%D8%A8%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7-%D9%88%D9%85%D8%AF%D8%AA%D9%87/7384066",
+   "pieces": [
+    "2026-09-19-egypt-baccalaureate-published-first:en",
+    "2026-09-19-egypt-baccalaureate-published-first:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.zanis.gov.zm/?p=1779",
+   "pieces": [
+    "2026-08-25-zambia-free-education-act:en",
+    "2026-08-25-zambia-free-education-act:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.zus.pl/en/-/zmiany-w-800-dla-obywateli-ukrainy-1",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www2.nzqa.govt.nz/about-us/news/ncea-and-university-entrance-attainment-in-2025/",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www2.nzqa.govt.nz/assets/About-us/Official-releases/2025/OC01148-Co-requisite-Assessments-Results-Release-dates.pdf",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www2.nzqa.govt.nz/ncea/subjects/litnum/literacy-and-numeracy-data/",
+   "pieces": [
+    "2026-07-07-nz-ncea-corequisite:en",
+    "2026-07-07-nz-ncea-corequisite:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://zielonalinia.gov.pl/800-dla-obywateli-ukrainy-zmiany-od-lutego-2026-r",
+   "pieces": [
+    "2026-07-07-poland-ukrainian-students:en",
+    "2026-07-07-poland-ukrainian-students:ar"
+   ],
+   "observed": "2026-10-21",
+   "archived": null,
+   "archive_note": "HTTPError",
+   "state": "archive-unknown"
+  }
+ ]
+}
