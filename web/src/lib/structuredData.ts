@@ -287,7 +287,15 @@ export function collectionJsonLd(input: CollectionNodeInput) {
     trail.push({ '@type': 'ListItem', position: 3, name: input.name, item: url });
   }
 
+  // The referents ship with the references (fixed 2026-10-21). The 10-20 growth
+  // commit gave these 40 pages `isPartOf` and `publisher` pointers and did not
+  // spread `publisherNodes()` at either call site, so every browse page served
+  // two dangling @ids — 80 defects, and `qa_jsonld` failed the deploy on them.
+  // Supplying them HERE rather than at the call sites is deliberate: the
+  // function that writes the pointer is the only place that cannot forget the
+  // node it points at.
   return [
+    ...publisherNodes(),
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
