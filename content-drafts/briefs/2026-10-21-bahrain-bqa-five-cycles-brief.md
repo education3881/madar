@@ -80,6 +80,17 @@ Carried verbatim from the recon's addendum 2 and binding on every draft, both ed
 | 26 / 24 / 30 / 20 % | **76** government schools, one **batch** | academic year **2024-25** |
 | 17 / 22 / 40 / 22 % | **139** `Review` rows | **cycle C5, OPEN**, 2024-07 → 2026-04 |
 | **22** Gold Seals | government schools recognised | calendar **2025** |
+| **242 / 245 / 76 / 52** schools | **four populations, added 2026-10-22** by the Test 1 recount — 242 have been *graded* (reviewed), 245 *appear in the register* (three have only ever had monitoring visits), 76 appear in all five cycles counting monitoring visits, **52** have been *reviewed* in all five | the whole series |
+
+**AMENDED 2026-10-22 — the recount corrected the recon twice, and both corrections are population
+boundaries.** `content-drafts/recon/2026-10-22-bahrain-bqa-test1-recount.md`: the recon's *242
+schools* is right for the review population and not for the register (245), and its *53 in all five
+cycles* matches neither population (52 by review, 76 by any row). **The draft may not write the five
+cycles as a panel**: the cycle-coverage distribution over the 242 reviewed schools is 52 in five, 124
+in four, 22 in three, 15 in two, 29 in one — so *the same schools, five times* would be wrong for 190
+of them. The 140 monitoring visits are a second instrument on a separate three-band scale and the
+four numbered grades appear on `Review` rows only; the piece either says that once or does not
+mention monitoring visits at all.
 
 The batch percentages and the cycle percentages are **both first-party and they disagree** — 26%
 Outstanding against 17% — because one is a year's cohort and the other is an unfinished cycle to
