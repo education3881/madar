@@ -69,7 +69,20 @@ and item 26's subject — a declined scope is a dated claim about a subject that
       declined quotation tokens are Arabic. **The edition that is FORCED to answer
       the name question is the edition no instrument of ours can read the answer
       from**, and that is now true twice.
-  (c) WHETHER THE EXPANSION IS *RIGHT*.  This tool compares the body against the
+  (c) AN ACRONYM THAT DOES NOT SPELL ITS OWN EXPANSION. The anchor is the whole
+      method, so an acronym whose letters do not appear as the word-prefixes of the
+      name it stands for supplies no boundary and is invisible here. **Measured
+      2026-10-23, on the afternoon of the morning this tool shipped: 123 acronym
+      tokens across the 44 EN bodies, and only 15 anchor — 12.2%.** The live case
+      is in the Bahrain commission being drafted the same day: the body expands
+      `BQA` as *Education & Training Quality Authority*, which shares not one
+      word-initial with it, and this tool sees nothing. Most of the other 107 are
+      compliant (the body simply keeps the acronym, which is #101 clause 1's second
+      branch), and nothing here separates those from the BQA shape. **So this
+      instrument gates a defect class it can see one eighth of, and the share is
+      written down rather than left to be inferred from a green exit.** Standing-
+      queue item 37.
+  (d) WHETHER THE EXPANSION IS *RIGHT*.  This tool compares the body against the
       piece's own annotation. It cannot compare either against the register — that
       is `qa_citation_identity`'s subject (#112) and it needs the network. An
       expansion wrong in BOTH places passes here, correctly, and is #86's floor

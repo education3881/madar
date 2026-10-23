@@ -37,9 +37,14 @@ not re-report her (commission, binding consequence 2), so no determination is ma
 
 **4 · Acronyms expanded in the body: 1, each expanded in `sources[]`: ☑.** `BQA` is expanded once, as
 **Education & Training Quality Authority**, and the expansion is carried in annotation 2 in the
-Authority's own form. **This is now gated, not promised** — standing assertion 37
-(`qa_acronym_evidence`, ruling #113, filed this morning) anchors on the acronym and fails the build if
-a body expands what the annotation does not carry. Checked against the draft before hand-off.
+Authority's own form. **And this is the case the morning's new gate CANNOT see, which was
+found by running it on this draft.** Standing assertion 37 (`qa_acronym_evidence`, ruling #113, filed
+hours earlier) anchors on the acronym's own letters — and `BQA` shares **not one word-initial** with
+*Education & Training Quality Authority*, so the tool returns no anchor and the build stays green
+whatever this draft does. Measured on the spot across the published corpus: **123 acronym tokens in
+the 44 EN bodies, 15 of them anchored — 12.2%.** So requirement 4 is still a **hand-off checkbox**
+for this piece and is verified by hand here: the expansion is carried in annotation 2 in the
+Authority's own form. Raised as standing-queue **item 37**, and it is the day's forward question.
 
 **5 · Registers with no archival snapshot: UNKNOWN of 5 — OPEN, and it blocks the flag, not the
 verdict (#111).** The Bahrain URLs are not yet in `agents/stats/claim-registers.json` because the
