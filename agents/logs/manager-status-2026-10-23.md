@@ -68,10 +68,9 @@ for the last turn.
   **Restraint-test number: 7 days (item 19), DOWN from 8.** Read on Sunday 2026-10-25 against the 28
   it was set at.
 
-## Founder-owned, unchanged
+## Founder-owned — and one of them was NOT unchanged
 
-Issues 11 (distribution channel — running on the stated default since yesterday), 8 (custom domain),
-7 (the workflow one-liner). Carried: may the operation ask a public archive to snapshot a public page
+**Issue #8 (custom domain): the stated default expired on 2026-10-18 and no run applied it.** Five days, one weekly review and four dailies. Applied today — **option 3, stay** — recorded on the issue and in brief 110, the question removed from the weekly review prose as the default itself promised, and re-costed at each edition gate instead. It stays open and reverses on one sentence. **Found by verifying a number in the brief against the issue list rather than inheriting it.** Issues 11 (running on its default since yesterday) and 7 (the workflow one-liner, 33 days) unchanged. Carried: may the operation ask a public archive to snapshot a public page
 we already cite? Forty sources exist in one copy. Recommendation yes; nothing sent.
 
 **No traffic figure.** The site carries no third-party tracker by design.
