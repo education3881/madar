@@ -54,6 +54,30 @@ instruments systematically cannot read. The Verifier runs `qa_claim_registers --
 before the flag moves, and any figure resting on an unarchived single register is double-sourced or
 dropped.
 
+**6 · Annotation quantities not in the body: 7 of 39, each registered: ☐ — and the right disposal is
+to REMOVE them, not to register them (#114, added 2026-10-24).** Standing assertion 38
+(`qa_annotation_figures`, ruling #114, filed this morning) was run **by hand** over this draft's five
+annotations, which is the deliberate inverse of yesterday's finding: on 10-23 the morning's new gate
+could not see the afternoon's own draft, so today's was carried to it on purpose. Result: **39
+quantities in the annotations, 32 printed in the body, 7 not.** All seven are the same class and none
+is a claim about Bahrain — they are **the apparatus of our own reading**: `183,242`, `13,440,188` and
+`4,243,331` served bytes, and the dates of the 10-18, 10-20 and 10-22 readings.
+
+That apparatus belongs in the TEST 1 table below and in the recon, where it already is, and **not in a
+served citation**: a reader of the article page is being told the byte length of a PDF we opened. So
+the instruction to the drafter is to strip the three byte counts and the three prior-reading dates from
+the shipped `sources[]` — the 2026-10-23 read date stays, licensed as a date — and the figure the
+Authority's own report states (`22` government and `7` private Gold Seals, `76` schools in the batch,
+`26%` at the top grade) stays, because the body prints each one.
+
+**Cost of measuring at the ruler rather than at the backstop, measured:** had this shipped as drafted,
+`npm run build` would have gone red on seven entries at the publish gate — the fourth strike of the
+07-27 shape, caught one gate earlier. **And the draft found a defect in the morning's instrument**: the
+trailing `MM-DD` fragments of a date list (*"the 10-18 and 10-22 readings"*) were being read as
+quantities, because the ISO licence consumes the first date of a list and its siblings are written
+bare. Licence (a2) added, four of 251 seeded register entries withdrawn, the published population
+restated at **423 annotation-only across 40 of 44 pieces** rather than 430.
+
 ---
 
 ## TEST 1 — all five registers re-opened today, dates recorded (#76)

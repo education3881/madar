@@ -115,6 +115,12 @@ LICENCES = [
     re.compile(r"\b\d{1,2}\s+" + MONTH + r"\b"),                       # 14 Oct
     re.compile(r"\b(?:19|20)\d{2}\s*[/–—-]\s*(?:\d{2}|\d{4})\b"),  # 2024/25, 2024-2026
     re.compile(r"\b(?:19|20)\d{2}\b"),                                 # bare year
+    # (a2) the trailing fragments of a date LIST — "read 2026-09-10, 09-16, 09-30".
+    # The first date is licensed above and its siblings are written bare. Found
+    # 2026-10-24 by running this gate on the Bahrain draft by hand: four of the 251
+    # seeded entries were fragments of this shape. An ASCII hyphen with month/day
+    # values only; a real range is an en-dash in house style, so none is swallowed.
+    re.compile(r"(?<![\d/])(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])(?![\d/])"),
     re.compile(r"\bp{1,2}\.?\s*\d+(?:\s*[–-]\s*\d+)?", re.I),     # p. 12, pp. 4-7
     re.compile(r"\b(?:Article|Art\.|Table|Figure|Fig\.|Annex|Section|Chapter|Clause)"
                r"s?\s*\d+(?:\.\d+)*", re.I),

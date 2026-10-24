@@ -434,27 +434,6 @@
   },
   {
    "slug": "2026-08-25-zambia-free-education-act",
-   "token": "09-10",
-   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
-   "lang_seen": "en",
-   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
-  },
-  {
-   "slug": "2026-08-25-zambia-free-education-act",
-   "token": "09-16",
-   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
-   "lang_seen": "en",
-   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
-  },
-  {
-   "slug": "2026-08-25-zambia-free-education-act",
-   "token": "09-30",
-   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
-   "lang_seen": "en",
-   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
-  },
-  {
-   "slug": "2026-08-25-zambia-free-education-act",
    "token": "30,833",
    "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
    "lang_seen": "en",
@@ -1054,13 +1033,6 @@
    "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
    "lang_seen": "en",
    "annotation": "MINEDUC — 'Communique on the increment of salary for primary and secondary schools teachers', dated in its own closing line 'Done at Kigali, on 01 August 2022', read in served text 2026-09-26 and re-fetched 2026-09-27. T"
-  },
-  {
-   "slug": "2026-09-27-rwanda-teacher-certification",
-   "token": "09-27",
-   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
-   "lang_seen": "en",
-   "annotation": "MINEDUC — news index at /updates/news-2, enumerated 2026-09-27 (the register behind this piece's stated absence, and the reason the absence is stated as strongly as it is). The index is reverse-chronological, 35 pages, r"
   },
   {
    "slug": "2026-05-27-egypt-ekb-decade",
@@ -1763,5 +1735,6 @@
    "annotation": "وزارةُ التعليم الرواندية (MINEDUC) — «MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project»، مقروءًا بالإنجليزية كنصٍّ مُتاح في 2026-09-24 ومُ"
   }
  ],
- "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures."
+ "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",
+ "licence_a2_added": "2026-10-24 — the trailing MM-DD fragments of a date list were being read as quantities; four seeded entries removed. Found by running this gate BY HAND on the Bahrain draft during the same run's content function, which is the inverse of 2026-10-23's finding: that morning's gate could not see the afternoon's draft, and this morning's gate was carried to it deliberately."
 }
