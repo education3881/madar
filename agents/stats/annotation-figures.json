@@ -1,0 +1,1767 @@
+{
+ "register": "annotation figures — quantities printed in a served annotation",
+ "assertion": "qa_annotation_figures.py (standing assertion 38, ruling #114)",
+ "seeded": "2026-10-24",
+ "how_to_use": "HAND-WRITTEN. The tool never writes this file: a gate that seeds its own register reads its answer off the field it supplements (09-14). To clear an entry, either print the figure in the piece's body — where the Verifier's eight trace axes reach it — or replace `provenance` with the register and clause it was read from. A placeholder provenance is REFUSED (exit 4).",
+ "seeded_backlog_is_a_known_error_with_a_known_size": "2026-10-04 limb two: a point-of-filing rule fixes a count's future and never reconciles backward, so the step discontinuity is written down with its size instead of being left to look like arithmetic. The tool prints the UNTRACED count on every run.",
+ "entries": [
+  {
+   "slug": "2026-05-28-iraq-mosul-library",
+   "token": "8,000–10,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "United Nations Development Programme — 'Moslawis celebrate the reopening of Mosul University's Central Library and Ninewa Federal Court of Appeal', 19 February 2022. Press release with verbatim named quotes: Zena Ali Ahm"
+  },
+  {
+   "slug": "2026-05-28-iraq-mosul-library",
+   "token": "1,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "United Nations Development Programme — 'Moslawis celebrate the reopening of Mosul University's Central Library and Ninewa Federal Court of Appeal', 19 February 2022. Press release with verbatim named quotes: Zena Ali Ahm"
+  },
+  {
+   "slug": "2026-05-28-iraq-mosul-library",
+   "token": "100,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "United Nations Development Programme — 'Moslawis celebrate the reopening of Mosul University's Central Library and Ninewa Federal Court of Appeal', 19 February 2022. Press release with verbatim named quotes: Zena Ali Ahm"
+  },
+  {
+   "slug": "2026-05-28-iraq-mosul-library",
+   "token": "22–25",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Ulster University news release — 'Ulster University Partners with UNESCO to Support Restoration of Mosul Library', November 2024. Documents the October 22–25, 2024 Training of Trainers visit to Ulster by UNESCO, the Univ"
+  },
+  {
+   "slug": "2026-05-31-indonesia-permen-13-coding-ai",
+   "token": "5–12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) — official press release, 'Permendikdasmen Nomor 13 Tahun 2025, Menguatkan Arah Kebijakan melalui Pembelajaran Mendalam,' dated 23 July 2025. Includes verbatim q"
+  },
+  {
+   "slug": "2026-05-31-indonesia-permen-13-coding-ai",
+   "token": "11",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Kemendikdasmen — official press release, 'Permendikdasmen 11/2025 dan 13/2025, Dasar Sinkronisasi Kurikulum dan Beban Kerja Guru.' Records the regulatory architecture into which Permen 13/2025 fits, including teacher wor"
+  },
+  {
+   "slug": "2026-05-31-uruguay-eduia-lab-ceibal",
+   "token": "18",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "TeleSemana — 'EduIA Lab: después del Plan Ceibal, Uruguay apuesta por la educación y el desarrollo de la inteligencia artificial,' dated 31 March 2025. Reports the launch of the EduIA Lab as a regional AI-in-education la"
+  },
+  {
+   "slug": "2026-05-31-uruguay-eduia-lab-ceibal",
+   "token": "205,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "TeleSemana — 'EduIA Lab: después del Plan Ceibal, Uruguay apuesta por la educación y el desarrollo de la inteligencia artificial,' dated 31 March 2025. Reports the launch of the EduIA Lab as a regional AI-in-education la"
+  },
+  {
+   "slug": "2026-05-31-uruguay-eduia-lab-ceibal",
+   "token": "10,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "TeleSemana — 'EduIA Lab: después del Plan Ceibal, Uruguay apuesta por la educación y el desarrollo de la inteligencia artificial,' dated 31 March 2025. Reports the launch of the EduIA Lab as a regional AI-in-education la"
+  },
+  {
+   "slug": "2026-06-16-vietnam-tuition-free-public-school",
+   "token": "50,000–540,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Viet Nam Government Portal (VGP / Báo Chính phủ, EN), 28 Feb 2025 — Viet Nam to exempt tuition for all public school pupils from the 2025–2026 academic year (the Politburo decision; scope ~23m pupils; tuition ranges pres"
+  },
+  {
+   "slug": "2026-06-16-vietnam-tuition-free-public-school",
+   "token": "50,000–650,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Viet Nam Government Portal (VGP / Báo Chính phủ, EN), 28 Feb 2025 — Viet Nam to exempt tuition for all public school pupils from the 2025–2026 academic year (the Politburo decision; scope ~23m pupils; tuition ranges pres"
+  },
+  {
+   "slug": "2026-06-17-korea-aidt-reversal",
+   "token": "3–4",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "The Korea Herald, 4 Aug 2025 — 'South Korea pulls plug on AI textbooks, leaving schools, companies without funding for them' (the reclassification instrument; the definition narrowed to 'printed books and e-books'; the 2"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Office of Strategy and Evidence – Innocenti (Sept 2025) — 'Developing Arabic Language Skills in Egypt: Assessing the Implementation and Impact of the NPDA' (the embedded, quasi-experimental evaluation: 180,000+ st"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Office of Strategy and Evidence – Innocenti (Sept 2025) — 'Developing Arabic Language Skills in Egypt: Assessing the Implementation and Impact of the NPDA' (the embedded, quasi-experimental evaluation: 180,000+ st"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "17",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Office of Strategy and Evidence – Innocenti (Sept 2025) — 'Developing Arabic Language Skills in Egypt: Assessing the Implementation and Impact of the NPDA' (the embedded, quasi-experimental evaluation: 180,000+ st"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "95",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Office of Strategy and Evidence – Innocenti (Sept 2025) — 'Developing Arabic Language Skills in Egypt: Assessing the Implementation and Impact of the NPDA' (the embedded, quasi-experimental evaluation: 180,000+ st"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "1,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Egypt (25 Mar 2026) — 'Egypt's National Literacy Mission' (the named operational voice — Naglaa Ragheb, Lead Arabic Teacher, Alexandria — and pupils Fairouz and Ahmed; the programme-reported first-phase reach of '"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "45.5",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Egypt Today (2026) — 'PM reviews UNICEF study on Egypt's education reform efforts' (the government-reported scale-up: phases by governorate with weak-reader share 45.5% → 32.4% → 13.9%; ~1.38m students tested, ~30,000 te"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "32.4",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Egypt Today (2026) — 'PM reviews UNICEF study on Egypt's education reform efforts' (the government-reported scale-up: phases by governorate with weak-reader share 45.5% → 32.4% → 13.9%; ~1.38m students tested, ~30,000 te"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "13.9",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Egypt Today (2026) — 'PM reviews UNICEF study on Egypt's education reform efforts' (the government-reported scale-up: phases by governorate with weak-reader share 45.5% → 32.4% → 13.9%; ~1.38m students tested, ~30,000 te"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "30,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Egypt Today (2026) — 'PM reviews UNICEF study on Egypt's education reform efforts' (the government-reported scale-up: phases by governorate with weak-reader share 45.5% → 32.4% → 13.9%; ~1.38m students tested, ~30,000 te"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "27",
+   "provenance": "TRACED VIA THE PAIR — printed in the AR body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "en",
+   "annotation": "Egypt Today (2026) — 'PM reviews UNICEF study on Egypt's education reform efforts' (the government-reported scale-up: phases by governorate with weak-reader share 45.5% → 32.4% → 13.9%; ~1.38m students tested, ~30,000 te"
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "74",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "OECD — PISA 2022 Results, Country Note: Philippines (reading score 347 vs OECD average 476; ~24% of students at Level 2 or above in reading vs 74% OECD; >90% of students speak a language at home other than the language o"
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "90",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "OECD — PISA 2022 Results, Country Note: Philippines (reading score 347 vs OECD average 476; ~24% of students at Level 2 or above in reading vs 74% OECD; >90% of students speak a language at home other than the language o"
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "69.5",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "World Bank — Philippines Learning Poverty Brief (learning poverty — the share of 10-year-olds unable to read and understand a simple text — at 69.5% before the pandemic in 2019, rising to roughly 90% in 2021–22; a dated "
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "22",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Royal Decree 12/2026, issued 22 Rajab 1447 / 12 January 2026, Official Gazette 1630a of 13 January 2026 — Article I renames the Oman Authority for Academic Accreditation and Quality Assurance of Education as the Oman Aut"
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "1447",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Royal Decree 12/2026, issued 22 Rajab 1447 / 12 January 2026, Official Gazette 1630a of 13 January 2026 — Article I renames the Oman Authority for Academic Accreditation and Quality Assurance of Education as the Oman Aut"
+  },
+  {
+   "slug": "2026-06-25-brazil-crianca-alfabetizada",
+   "token": "11.556",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Planalto — Decreto nº 11.556, de 12 de junho de 2023 (institutes the Compromisso Nacional Criança Alfabetizada in a collaborative regime of the Union, states, Federal District and municipalities; the goal of every child "
+  },
+  {
+   "slug": "2026-06-25-brazil-crianca-alfabetizada",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Planalto — Decreto nº 11.556, de 12 de junho de 2023 (institutes the Compromisso Nacional Criança Alfabetizada in a collaborative regime of the Union, states, Federal District and municipalities; the goal of every child "
+  },
+  {
+   "slug": "2026-06-25-brazil-crianca-alfabetizada",
+   "token": "19",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "INEP / gov.br — 'Brasil e 20 unidades da Federação alcançam meta de alfabetização' (the 2025 result: 19 states and the Federal District clear the target)"
+  },
+  {
+   "slug": "2026-06-25-brazil-crianca-alfabetizada",
+   "token": "59,2",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Agência Brasil (Jul 2025) — 'Brasil atinge 59,2% de crianças alfabetizadas em 2024' (the 2024 figure of 59.2%)"
+  },
+  {
+   "slug": "2026-06-25-brazil-crianca-alfabetizada",
+   "token": "49,3",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Agência Brasil (Apr 2025) — 'Taxa de alfabetização era de 49,3% no Brasil em 2023, diz Inep' (the externally-administered Saeb literacy rate of 49.3% for 2023 — the audit figure beside the 56% census Indicador)"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "1,130,459",
+   "provenance": "TRACED VIA THE PAIR — printed in the AR body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "en",
+   "annotation": "KNEC / kjsea.knec.ac.ke — release of the 2025 KJSEA results (1,130,459 candidates; 578,630 boys, 551,829 girls; nine subjects graded on eight performance levels to a 72-point maximum; results issued without ranking; 59.0"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "7–8",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily Nation — 'KJSEA: Inside criteria for placing learners in senior schools' (the placement score: 60% KJSEA + 20% school-based assessments from Grades 7–8 + 20% KPSEA at Grade 6; merit, school capacity and learner cho"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "14,630",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily Nation — 'TSC: Senior school roll-out has shortage of 58,590 teachers' (the commission's own projection: 35,111 of the deficit in STEM, on a planning basis of the 60% target — 677,144 learners in some 15,046 classe"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "8,778",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily Nation — 'TSC: Senior school roll-out has shortage of 58,590 teachers' (the commission's own projection: 35,111 of the deficit in STEM, on a planning basis of the 60% target — 677,144 learners in some 15,046 classe"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "2.415",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Médias24 — '2.415 établissements publics labellisés pour l'année 2025-2026 (liste)' (4 December 2025: 2,415 public establishments labelled — 2,214 primary, 201 collèges — at 'conformity' level by the central commission; "
+  },
+  {
+   "slug": "2026-07-07-chile-simce-return",
+   "token": "15",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Mineduc — results delivery release, 6 March 2026 (Simce 2025, sat November 2025, delivered at the start of the school year for the third consecutive year; II medio Lectura 250 / Matemática 263 at pre-pandemic levels; 4° "
+  },
+  {
+   "slug": "2026-07-07-chile-simce-return",
+   "token": "259",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Mineduc — 'Resultados Simce 2024 revelan histórico avance en 4° básico' (4° básico Lectura 278 / Matemática 264, up six and five points, the highest of the series since 2002; 6° básico's first measurement since 2018 at 2"
+  },
+  {
+   "slug": "2026-07-07-gaza-education-continuity",
+   "token": "203",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNRWA — Situation Report #203 on the Gaza Strip and the West Bank, including East Jerusalem (published 14 January 2026, reporting to 6 January: 220,950 students taught by 5,180 teachers in temporary learning spaces — abo"
+  },
+  {
+   "slug": "2026-07-07-gaza-education-continuity",
+   "token": "228",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNRWA — Situation Report #228 (June 2026: the temporary-learning-space operation still running and still reported, six months on)"
+  },
+  {
+   "slug": "2026-07-07-india-parakh-hpc",
+   "token": "28–31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "PARAKH / NCERT — PARAKH Rashtriya Sarvekshan 2024, national report (the measured sitting: 21.15 lakh students, 74,229 schools, 781 districts on 4 December 2024; Class 3 language 64% and mathematics 60%; Class 6 language "
+  },
+  {
+   "slug": "2026-07-07-lebanon-crisis-schooling",
+   "token": "90–95",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Hona Loubnan (thisislebanon.com) — 'Lebanon before a new educational map: 46% of pupils leaving private schools?', by Nadia El Hallak, 9 October 2025 (the labelled contextual voice: Hussein Jawad, president of the public"
+  },
+  {
+   "slug": "2026-07-07-poland-ukrainian-students",
+   "token": "73,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "NIK — 'NIK o realizacji prawa do nauki dzieci z Ukrainy w polskich szkołach' (the audit spine, published 3 June 2026: 160,200 pupils fulfilling the school obligation in autumn 2024, +9% on 2023; ~13,000 additional pupils"
+  },
+  {
+   "slug": "2026-07-07-poland-ukrainian-students",
+   "token": "61 — 156",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "TVN24 (2 September 2024) — Wrocław report on the first days of the obligation (the operator voice: Jacek Wildbret-Tuszyński, principal of Szkoła Podstawowa nr 61 — 156 children at the end of the previous school year, som"
+  },
+  {
+   "slug": "2026-07-07-poland-ukrainian-students",
+   "token": "50,000–80,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Demagog (29 August 2024) — 'Obowiązek szkolny dla dzieci z Ukrainy. Co się zmieni od 1 września?' (MEN's estimate of 50,000–80,000 expected newcomers, given to Demagog in writing; 195,288 children including preschools at"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "230,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Bangladesh (June 2025) — 'Education of almost a quarter of a million Rohingya refugee children at risk' (the operational decisions: kindergarten to grade 2 lose English, science and social studies for 2025-26; no "
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "5–7",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "The Daily Star (27 July 2025) — 'Education in Rohingya camps in disarray' (the 3 June 2025 suspension of kindergarten to class 4 across ~6,400 NGO-run centres; ~1,100 teachers dismissed in the first count, 1,179 host-com"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "8–10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "The Daily Star (27 July 2025) — 'Education in Rohingya camps in disarray' (the 3 June 2025 suspension of kindergarten to class 4 across ~6,400 NGO-run centres; ~1,100 teachers dismissed in the first count, 1,179 host-com"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "150,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF — press release, 6 November 2025, Goodwill Ambassador Orlando Bloom's visit to the Cox's Bazar camps (the register's own dates and grammar: 'In June this year, UNICEF was forced to temporarily close most schools i"
+  },
+  {
+   "slug": "2026-07-07-sudan-exam-continuity",
+   "token": "30,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Al Jazeera net (10 April 2026) — the 2026 sitting (ministry figures and an official report: ~564,000 registered across 3,333 centres; 226,684 from war-delayed batches and 222,404 from the class of 2024; Khartoum state's "
+  },
+  {
+   "slug": "2026-07-07-turkiye-earthquake-school-recovery",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MEB (district page) — the 2023 exam-scope decisions ('Arrangements to LGS and YKS exam content and to school attendance in the earthquake region': 2023 LGS limited to first-semester Grade 8 curriculum; 2023 YKS excluding"
+  },
+  {
+   "slug": "2026-07-07-ukraine-wartime-schooling",
+   "token": "1,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Ukrainska Pravda (English) — 'Children in Kharkiv will study in 7 underground schools and 6 metro stations' (28 August 2025, Mayor Ihor Terekhov on the national joint newscast: three of the seven built in spring–summer 2"
+  },
+  {
+   "slug": "2026-07-07-us-naep-honesty-gap",
+   "token": "74",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "The 74 — 'Responding to post-pandemic norms, more states are lowering testing standards' (the counter-direction: states recalibrating benchmarks downward, with their stated rationales)"
+  },
+  {
+   "slug": "2026-07-07-yemen-teacher-pay-continuity",
+   "token": "41,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "World Bank — Yemen Restoring Education and Learning Emergency Project (REAL, P175036), Implementation Status & Results Report Seq. 9, archived 30 June 2025 at project close (the measured actuals: performance-based paymen"
+  },
+  {
+   "slug": "2026-07-07-yemen-teacher-pay-continuity",
+   "token": "35,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Yemen — Restoring Education and Learning project page (the implementer's announced reach: more than 35,000 teachers and school-based staff paid incentives; more than 2,000 female teachers in rural areas receiving "
+  },
+  {
+   "slug": "2026-07-07-yemen-teacher-pay-continuity",
+   "token": "25,000–50,000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Al Jazeera English — 'Yemen's teachers pushed to the brink as salaries collapse', reported from Mukalla by Saeed Al Batati, 8 April 2026 (the independent 2026 voices: Mohammed Salem; Hana al-Rubaki; union heads Abdullah "
+  },
+  {
+   "slug": "2026-07-16-australia-naplan-reset",
+   "token": "58.0",
+   "provenance": "TRACED VIA THE PAIR — printed in the AR body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "en",
+   "annotation": "ACARA media release, 23 August 2023 — the first national results on the new scale (roughly 65% of students at Strong or Exceeding and about one in ten at Needs additional support; Year 9 writing at 58.0% meeting; on aver"
+  },
+  {
+   "slug": "2026-07-16-australia-naplan-reset",
+   "token": "9.2",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "ACARA media release, 30 July 2025 — 2025 national results (reading at Strong or Exceeding 68.2% against 67.0% in 2024; numeracy 66.8% against 65.5%; Needs additional support at 9.3% in reading and 9.2% in numeracy; parti"
+  },
+  {
+   "slug": "2026-07-28-england-report-cards-first-term",
+   "token": "14",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Schools Week — 'Heads ‘overwhelmingly negative’ about new Ofsted inspections', 22 June 2026 (the independent survey of 100 inspected heads by Coffield, Tymms, Pascal, Norris and Richards: 70% negative on wellbeing, 64% d"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "304,258",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "09-10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "09-16",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "09-30",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — The Education (Amendment) Bill, 2026 (N.A.B. No. 6 of 2026), full text as served (new section 15: the right to free education for a child who is a citizen; s.15(3) proof-of-citizenship at en"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "30,833",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — Bill page for N.A.B. No. 6 of 2026, recording all five stages (Presentation, First Reading, Second Reading, Committee Stage, Third Reading). Same host as source 1, and the same dated observa"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "31,709",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "National Assembly of Zambia — Report of the Committee on Education, Science and Technology on the Performance Audit Report on the Implementation of the Free Education Policy in Enhancing Access and Quality of Education t"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "55,842",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Ministerial Statement — 'Update on the Recruitment of 30,000 Teachers', Hon. Douglas Syakalima, MP, Minister of Education, National Assembly of Zambia, 9 June 2022, read in full (K1,994,817,600 provided in the 2022 Natio"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "1.98",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Zambia News and Information Services (ZANIS) — 2025 Grade 12 examination results, announced by the Minister of Education, January 2026 (136,434 candidates obtained full Grade 12 School Certificates and 54,771 received st"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "1.83",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Zambia News and Information Services (ZANIS) — 2025 Grade 12 examination results, announced by the Minister of Education, January 2026 (136,434 candidates obtained full Grade 12 School Certificates and 54,771 received st"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "100,401",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Zambia News and Information Services (ZANIS) — 2025 Grade 12 examination results, announced by the Minister of Education, January 2026 (136,434 candidates obtained full Grade 12 School Certificates and 54,771 received st"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "500",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNESCO IICBA — Zambia country brief, vintage January 2024 (learning poverty 99%, which this brief does NOT claim as its own and which this piece had attributed to it until the confirmation read of 2026-10-01: the brief's"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "77,238",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNESCO IICBA — Zambia country brief, vintage January 2024 (learning poverty 99%, which this brief does NOT claim as its own and which this piece had attributed to it until the confirmation read of 2026-10-01: the brief's"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "86,808",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Open Zambia — 'HH signs free education and pension bills into law', 4 June 2026, read as served text (the signing reported as accomplished, naming all five Bills — Education (Amendment); National Pension Scheme; Public S"
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "06",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Electoral Commission of Zambia — 'NOTICE OF VALIDLY NOMINATED CANDIDATES FOR THE 2026 PARLIAMENTARY ELECTIONS', a Public Notice on the commission's own site, read as served text 2026-09-30 (the register for this piece's "
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "503",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Electoral Commission of Zambia — 'NOTICE OF VALIDLY NOMINATED CANDIDATES FOR THE 2026 PARLIAMENTARY ELECTIONS', a Public Notice on the commission's own site, read as served text 2026-09-30 (the register for this piece's "
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "78,334",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Electoral Commission of Zambia — 'NOTICE OF VALIDLY NOMINATED CANDIDATES FOR THE 2026 PARLIAMENTARY ELECTIONS', a Public Notice on the commission's own site, read as served text 2026-09-30 (the register for this piece's "
+  },
+  {
+   "slug": "2026-08-25-zambia-free-education-act",
+   "token": "52,841",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "European Union Election Observation Mission Zambia 2026 — 'EU EOM Election Observation Update', read as served text 2026-09-30 (the second channel, and the register for the fact that polling occurred rather than for its "
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "264",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Oxford Policy Management — Year 3 Evaluation of SLEIC (the evaluator of record's endline report, 264 pages, read in full: the randomised controlled design with each provider measured against its own control group; the po"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "1–5",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Oxford Policy Management — Year 3 Evaluation of SLEIC (the evaluator of record's endline report, 264 pages, read in full: the randomised controlled design with each provider measured against its own control group; the po"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "0.130–0.384",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Oxford Policy Management — Year 3 Evaluation of SLEIC (the evaluator of record's endline report, 264 pages, read in full: the randomised controlled design with each provider measured against its own control group; the po"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "0.31–0.39",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Save the Children UK — 'The results are out!', Fergal Turner, Senior Education Evidence and Learning Advisor, 6 January 2026, read as served text (the provider register, publishing its own miss: maths Grade Effect of .35"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "1.1–1.6",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Save the Children UK — 'The results are out!', Fergal Turner, Senior Education Evidence and Learning Advisor, 6 January 2026, read as served text (the provider register, publishing its own miss: maths Grade Effect of .35"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "404",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Save the Children UK — 'The results are out!', Fergal Turner, Senior Education Evidence and Learning Advisor, 6 January 2026, read as served text (the provider register, publishing its own miss: maths Grade Effect of .35"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "200",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Save the Children UK — 'The results are out!', Fergal Turner, Senior Education Evidence and Learning Advisor, 6 January 2026, read as served text (the provider register, publishing its own miss: maths Grade Effect of .35"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "54",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Save the Children UK — 'The results are out!', Fergal Turner, Senior Education Evidence and Learning Advisor, 6 January 2026, read as served text (the provider register, publishing its own miss: maths Grade Effect of .35"
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "15",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Brown et al. — 'Can't Wait to Learn: A quasi-experimental mixed-methods evaluation of a digital game-based learning programme for out-of-school children in Sudan', Journal of Development Effectiveness 15:3 (the trial of "
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "7–9",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Brown et al. — 'Can't Wait to Learn: A quasi-experimental mixed-methods evaluation of a digital game-based learning programme for out-of-school children in Sudan', Journal of Development Effectiveness 15:3 (the trial of "
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "33",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Brown et al. — 'Can't Wait to Learn: A quasi-experimental mixed-methods evaluation of a digital game-based learning programme for out-of-school children in Sudan', Journal of Development Effectiveness 15:3 (the trial of "
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "403",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Brown et al. — 'Can't Wait to Learn: A quasi-experimental mixed-methods evaluation of a digital game-based learning programme for out-of-school children in Sudan', Journal of Development Effectiveness 15:3 (the trial of "
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "320–341",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Brown et al. — 'Can't Wait to Learn: A quasi-experimental mixed-methods evaluation of a digital game-based learning programme for out-of-school children in Sudan', Journal of Development Effectiveness 15:3 (the trial of "
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "6,600",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "War Child — Annual Report 2025 announcement (the export register: roughly 125,000 children in Ukraine, Uganda and Lebanon continuing their studies through Can't Wait to Learn in 2025; Sudan named in the same report for a"
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "6–14",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Sudan — 'A golden opportunity to learn', 1 November 2022, read in served text (the continuity register, pre-war vintage: facilitator Tahir Onoor Ali at the Badareer e-learning centre in Aroma village, Kassala stat"
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "13",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "UNICEF Sudan — 'Safe Learning Spaces', Sara Awad, 27 November 2023, read in served text (the wartime register: 13-year-old Mehad, displaced from Khartoum, at the safe learning space at the Al Maimona gathering point in H"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "0.62",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "World Bank — Human Capital Index 2020 country brief, Mauritius (the level register, read in served text: HCI 0.62, up from 0.60 in 2010; 98 of 100 children surviving to age five; expected years of school 12.4, disaggrega"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "0.60",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "World Bank — Human Capital Index 2020 country brief, Mauritius (the level register, read in served text: HCI 0.62, up from 0.60 in 2010; 98 of 100 children surviving to age five; expected years of school 12.4, disaggrega"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "444",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "500.0",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "519.8",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "19.8",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "501.4",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "1.4",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "47.9",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "38.1",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "75",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "52.1",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "16",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "25.5",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "128.6",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "5.12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "3.62",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "CONFEMEN / PASEC — PASEC2019: Qualité des systèmes éducatifs en Afrique subsaharienne francophone, the international report, read in the body from the owner's archive host (the ruler of record: 444 pages; the 2019 cross-"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "1000",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Reddy, Winnaar, Juan, Arends, Harvey, Hannan, Namome, Sekhejane & Zulu (2021) — The South African TIMSS 2019 Grade 9 Results: Building Achievement and Bridging Achievement Gaps, HSRC and the Department of Basic Education"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "276",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Reddy, Winnaar, Juan, Arends, Harvey, Hannan, Namome, Sekhejane & Zulu (2021) — The South African TIMSS 2019 Grade 9 Results: Building Achievement and Bridging Achievement Gaps, HSRC and the Department of Basic Education"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "275",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Reddy, Winnaar, Juan, Arends, Harvey, Hannan, Namome, Sekhejane & Zulu (2021) — The South African TIMSS 2019 Grade 9 Results: Building Achievement and Bridging Achievement Gaps, HSRC and the Department of Basic Education"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "264",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Reddy, Winnaar, Juan, Arends, Harvey, Hannan, Namome, Sekhejane & Zulu (2021) — The South African TIMSS 2019 Grade 9 Results: Building Achievement and Bridging Achievement Gaps, HSRC and the Department of Basic Education"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "404",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Educ'Action — interview with Professor Abdel Rahamane Baba-Moussa, secretary-general of CONFEMEN, at the PASEC 2024 item-selection workshop in Cotonou, published 7 February 2023. Read in served text at compose time; re-r"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "200",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "443",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "403",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "80",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "41",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "500",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 amending certain provisions of the Education Law issued by Law 139 of 1981 — the statute, read in Arabic in served text 2026-09-19 on a legal-encyclopaedia reproduction (the operative text: Article 37 bis"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "200 – 400",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Law 169 of 2025 — second channel, a law practice's reproduction of the same statute, read in Arabic in served text 2026-09-19 (carries the transfer clause «لا يجوز التحويل منه أو إليه من أنظمة التعليم الثانوي الأخرى أثنا"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "400",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Youm7 — 'اعرف بالقانون شروط التقديم لنظام البكالوريا ومدته', 23 April 2026, read in Arabic in served text 2026-09-19 (the third channel on the statute's wording, quoting «نظام البكالوريا نظام اختيارياً مجانىاً», «لا يجوز"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "700",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Al Manassa — 'Parliament approves new education bill amid inequality fears', News Desk, Monday 7 July 2025, read in served text 2026-09-19 (the parliamentary register: the bill 'seeks to introduce a new optional baccalau"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "320",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Al Manassa — 'Parliament approves new education bill amid inequality fears', News Desk, Monday 7 July 2025, read in served text 2026-09-19 (the parliamentary register: the bill 'seeks to introduce a new optional baccalau"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "183",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily News Egypt — 'Egyptian education ministry secures IBO approval for new baccalaureate curricula ahead of 183-day academic year', 16 August 2026, read in served text 2026-09-19 (reported speech from an independent da"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "4,500",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily News Egypt — 'Egyptian education ministry secures IBO approval for new baccalaureate curricula ahead of 183-day academic year', 16 August 2026, read in served text 2026-09-19 (reported speech from an independent da"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "116",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "Daily News Egypt — 'Egyptian education ministry secures IBO approval for new baccalaureate curricula ahead of 183-day academic year', 16 August 2026, read in served text 2026-09-19 (reported speech from an independent da"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "200",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 2024/2025 Education Statistical Yearbook, cover-dated February 2026 (the register of record for this piece's workforce and trained/untrained counts, school year ended July 2025, every table carrying the source "
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "4,023,048",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 2024/2025 Education Statistical Yearbook, cover-dated February 2026 (the register of record for this piece's workforce and trained/untrained counts, school year ended July 2025, every table carrying the source "
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "12,884",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 2024/2025 Education Statistical Yearbook, cover-dated February 2026 (the register of record for this piece's workforce and trained/untrained counts, school year ended July 2025, every table carrying the source "
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "71,879",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 2024/2025 Education Statistical Yearbook, cover-dated February 2026 (the register of record for this piece's workforce and trained/untrained counts, school year ended July 2025, every table carrying the source "
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "59",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 2024/2025 Education Statistical Yearbook, cover-dated February 2026 (the register of record for this piece's workforce and trained/untrained counts, school year ended July 2025, every table carrying the source "
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "5,224,340",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "113,548",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "29,601",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "38,725",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "43.3",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "45,875",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "29",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — Education Statistical Yearbook 2023/24, source line 'School Census, Ministry of Education, 2024' (the earlier column of the same series, and the debt as it stood essentially at the certification programme's ope"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "36",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "World Bank and Rwanda Basic Education Board — 'Welcome to the Workforce: How Rwanda Trained and Certified 24,000 Teachers in Less Than One Year', 27 March 2026, read in served text 2026-09-24 and re-fetched 2026-09-27 (H"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "13",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project', read in served text 2026-09-24 and re-read 2026-09-27. The project's own out"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "621",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project', read in served text 2026-09-24 and re-read 2026-09-27. The project's own out"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "91",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project', read in served text 2026-09-24 and re-read 2026-09-27. The project's own out"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "35",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project', read in served text 2026-09-24 and re-read 2026-09-27. The project's own out"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "404",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project', read in served text 2026-09-24 and re-read 2026-09-27. The project's own out"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "88",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'Communique on the increment of salary for primary and secondary schools teachers', dated in its own closing line 'Done at Kigali, on 01 August 2022', read in served text 2026-09-26 and re-fetched 2026-09-27. T"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "50,849",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'Communique on the increment of salary for primary and secondary schools teachers', dated in its own closing line 'Done at Kigali, on 01 August 2022', read in served text 2026-09-26 and re-fetched 2026-09-27. T"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "54,916",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'Communique on the increment of salary for primary and secondary schools teachers', dated in its own closing line 'Done at Kigali, on 01 August 2022', read in served text 2026-09-26 and re-fetched 2026-09-27. T"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "70,195",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — 'Communique on the increment of salary for primary and secondary schools teachers', dated in its own closing line 'Done at Kigali, on 01 August 2022', read in served text 2026-09-26 and re-fetched 2026-09-27. T"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "09-27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "en",
+   "annotation": "MINEDUC — news index at /updates/news-2, enumerated 2026-09-27 (the register behind this piece's stated absence, and the reason the absence is stated as strongly as it is). The index is reverse-chronological, 35 pages, r"
+  },
+  {
+   "slug": "2026-05-27-egypt-ekb-decade",
+   "token": "11",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الجامعة الأمريكية بالقاهرة — العميد شوقي: بنك المعرفة المصري لِتوسيع فرص البحث والتعليم (11 نوفمبر 2015) — تصريحٌ ما قبل الإطلاق من الشخصية المؤسِّسة لِبنك المعرفة"
+  },
+  {
+   "slug": "2026-05-27-uae-madrasa-tiktok",
+   "token": "15",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "Gulf Daily News / وكالة أنباء الإمارات (وام) — «مدرسة و TikTok تُطلقان خلاصة STEM في الإمارات تستعرض أكبر مكتبة تعليمية باللغة العربية» (15 مايو 2025)؛ يتضمَّن تصريحاتٍ مباشرة من د. وليد العلي (المنسِّق العام لِمنصة Madr"
+  },
+  {
+   "slug": "2026-05-28-ghana-cbe-curriculum",
+   "token": "10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "صندوق Luminos — «تحديث منهج: تعزيز برنامج التعليم الأساسي التكميلي في غانا»، بِقلم نونيا أبيتسي، 10 أبريل 2026. يُفَصِّل منهج 2019 المعياري الذي خَلَق الفجوة، 3,844 صفحة من مواد التعليم والتعلُّم الجديدة، التصميم القائم "
+  },
+  {
+   "slug": "2026-05-28-iraq-mosul-library",
+   "token": "40",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "برنامج الأمم المتحدة الإنمائي — «أهالي الموصل يحتفلون بِإعادة افتتاح المكتبة المركزية لِجامعة الموصل ومبنى رئاسة محكمة الاستئناف الاتحادية في نينوى»، 19 فبراير 2022. بيان صحفي مع تصريحاتٍ مباشرة لِأشخاصٍ مُسَمَّيِن: زينة"
+  },
+  {
+   "slug": "2026-05-31-indonesia-permen-13-coding-ai",
+   "token": "23",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم الأساسي والثانوي الإندونيسية (Kemendikdasmen) — بيان صحفي رسمي: «لائحة الوزارة رقم 13 لسنة 2025، تعزيز توجُّه السياسة عبر التعلُّم العميق»، بتاريخ 23 يوليو 2025. يَتَضَمَّن تصريحاتٍ حرفيَّة لِلوزير عبدالمعط"
+  },
+  {
+   "slug": "2026-05-31-indonesia-permen-13-coding-ai",
+   "token": "22",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم الأساسي والثانوي الإندونيسية (Kemendikdasmen) — بيان صحفي رسمي: «لائحة الوزارة رقم 13 لسنة 2025، تعزيز توجُّه السياسة عبر التعلُّم العميق»، بتاريخ 23 يوليو 2025. يَتَضَمَّن تصريحاتٍ حرفيَّة لِلوزير عبدالمعط"
+  },
+  {
+   "slug": "2026-05-31-qatar-humanity-spark-strategy",
+   "token": "10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "ذا بنينسيولا قَطَر — «WISE 12 يَكشف عن قائمة المتحدِّثين العالميَّة لِقمَّة Humanity.io في الدوحة». نُشِر بتاريخ 10 نوفمبر 2025. يَتَضَمَّن تصريحاتٍ حرفيَّة لِستافروس يانوكا، الرئيس التنفيذي لِـWISE؛ وتواريخَ القمَّة 24-"
+  },
+  {
+   "slug": "2026-05-31-uruguay-eduia-lab-ceibal",
+   "token": "31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "TeleSemana — «EduIA Lab: بعد خِطَّة سيبال، الأوروغواي تُراهن على التعليم وتطوير الذكاء الاصطناعي»، بتاريخ 31 مارس 2025. يَتَضَمَّن إطلاقَ EduIA Lab كَمختبرٍ إقليميٍّ لِلذكاء الاصطناعي في التعليم؛ والدعمَ المالي مِن البنك"
+  },
+  {
+   "slug": "2026-06-10-rak-iqra-arabic-diglossia",
+   "token": "22",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "ذا ناشيونال (22 مايو 2026)، شيرينة النويس — تركيزٌ على الصوتيات: مشروع مدرسي إماراتي يجعل تعلُّم العربية أيسر يتّجه إلى التوسّع (أصوات المشغِّل والمقيِّم على السجل: هنادي محمد ود. ناتاشا ريدج من مؤسسة القاسمي؛ نيرة عدلي "
+  },
+  {
+   "slug": "2026-06-10-rak-iqra-arabic-diglossia",
+   "token": "39",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "مؤسسة القاسمي (2020) — تحسين طلاقة القراءة بالعربية: نتائج من «اقرأ» (ورقة السياسات 39 — دورة تقييم أسبق ومنفصلة؛ تُذكر هنا للتمييز لا كمصدرٍ لأرقام تجربة 2024–2025)"
+  },
+  {
+   "slug": "2026-06-16-vietnam-tuition-free-public-school",
+   "token": "218",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "فيتنام بلس (وكالة الأنباء الفيتنامية، بالإنجليزية)، 26 يونيو 2025 — الجمعية الوطنية تُقرّ قراري الإعفاء من الرسوم وتعميم التعليم قبل المدرسي (القرار 217/2025/QH15، أُقرّ بـ440 من 441؛ والقرار المرافق 218/2025/QH15)"
+  },
+  {
+   "slug": "2026-06-16-vietnam-tuition-free-public-school",
+   "token": "11",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "توي تري أونلاين، مي دونغ، 11 مارس 2025 — «أُعفي الطلاب من الرسوم — فأيّ مبالغ يبقى عليهم دفعها؟»: تفصيلُ الكلفة المتبقّية، بأرقام خدمات هوشي منه 2024–2025"
+  },
+  {
+   "slug": "2026-06-16-vietnam-tuition-free-public-school",
+   "token": "5–6",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "فيتنام إنسايدر، مارس 2025 — ممثلة يونيسف سيلفيا دانايلوف: الإعفاء من الرسوم خطوةٌ كبيرة إلى الأمام (إطار الإنصاف، مقرونًا بتنبيهٍ إلى الكتب والزي والنقل؛ مؤكَّد لدى البوابة الحكومية / توي تري، 5–6 مارس 2025)"
+  },
+  {
+   "slug": "2026-06-17-korea-aidt-reversal",
+   "token": "10",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "كوريا تايمز، 10 يونيو 2025 — «الكتب المدرسية بالذكاء الاصطناعي مستهدَفة بالإلغاء في عهد إدارة كوريا الجديدة» (المنعطف السياسي؛ الاعتماد 37٪←19٪؛ 3,870 من 11,932 مدرسة ≈ 32٪؛ دعوى تشونجاي إيديوكيشن / YBM الإدارية في أبريل"
+  },
+  {
+   "slug": "2026-06-17-korea-aidt-reversal",
+   "token": "15",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "ريست أوف وورلد، 15 أكتوبر 2025 — «الكتب المدرسية بالذكاء الاصطناعي في كوريا الجنوبية تُخفِق بعد طرحٍ متسرّع» (الأصوات التشغيلية المسمّاة: كيم تشا-ميونغ، معلّم ابتدائي، غوانغميونغ؛ لي هيون-جون، معلّم رياضيات ثانوي — «كان "
+  },
+  {
+   "slug": "2026-06-17-korea-aidt-reversal",
+   "token": "30",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "البنك الدولي، مدوّنة التعليم من أجل التنمية العالمية، 30 أكتوبر 2024 — «المعلّمون يقودون ثورةَ ذكاءٍ اصطناعيٍّ في الصفوف الكورية» (الحجّة المضادّة: اعتمادٌ طوعيٌّ يقوده المعلّمون؛ والمَجرى المنفصل البالغ نحو 0.74 مليار د"
+  },
+  {
+   "slug": "2026-06-17-korea-aidt-reversal",
+   "token": "0.74",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "البنك الدولي، مدوّنة التعليم من أجل التنمية العالمية، 30 أكتوبر 2024 — «المعلّمون يقودون ثورةَ ذكاءٍ اصطناعيٍّ في الصفوف الكورية» (الحجّة المضادّة: اعتمادٌ طوعيٌّ يقوده المعلّمون؛ والمَجرى المنفصل البالغ نحو 0.74 مليار د"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "13",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف مصر، 25 مارس 2026 — «مهمّة مصر القومية لمحو الأمية» (الصوتُ الميدانيُّ المُسمّى — نجلاء راغب، معلّمةُ لغةٍ عربيةٍ أولى، الإسكندرية — والتلميذتان فيروز وأحمد؛ والرقمُ المُعلَن للمرحلة الأولى: «نصفُ مليون طالبٍ في"
+  },
+  {
+   "slug": "2026-06-18-egypt-npda-arabic-literacy",
+   "token": "1.38",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "إيجيبت توداي، 2026 — «رئيسُ الوزراء يستعرض دراسةَ اليونيسف لجهود إصلاح التعليم في مصر» (التوسّعُ المُبلَّغ حكوميًّا: مراحلُ بحسب المحافظة، ونسبةُ ضعاف القراءة 45.5٪ ← 32.4٪ ← 13.9٪؛ نحو 1.38 مليون طالبٍ خضعوا للاختبار، و"
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "10",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "القانون الجمهوري رقم 12027 (نَفَذ بقوّة القانون في 10 أكتوبر 2024) — النصّ الكامل، LawPhil (يُوقِف استعمالَ اللغة الأمّ وسيلةً للتعليم من رياض الأطفال إلى الصف الثالث، ويجعلها اختياريةً في الصفوف أحادية اللغة المؤهَّلة، "
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "10533",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "القانون الجمهوري رقم 12027 (نَفَذ بقوّة القانون في 10 أكتوبر 2024) — النصّ الكامل، LawPhil (يُوقِف استعمالَ اللغة الأمّ وسيلةً للتعليم من رياض الأطفال إلى الصف الثالث، ويجعلها اختياريةً في الصفوف أحادية اللغة المؤهَّلة، "
+  },
+  {
+   "slug": "2026-06-19-philippines-mtb-mle-reversal",
+   "token": "14",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "مانيلا بوليتن، 14 أكتوبر 2024 — «جماعاتُ المعلّمين تندّد بخطوة التخلّي عن اللغة الأمّ وسيلةً للتعليم» (ردُّ المعلّمين الجماعي: التنفيذ كان صعبًا، لكن «الوقف التامّ ينبغي ألّا يكون هو المسار»)"
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "7",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "تايمز أوف عُمان (يناير 2026) — «الهيئة العُمانية للاعتماد الأكاديمي تُعلن نتائج تقويم أداء المدارس في 7 يناير» (أول نتائج لكلِّ مدرسةٍ للفصل الأول 2025/2026، تُنشر عبر البوابة الرسمية للهيئة)"
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "16",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "أثير (16 مارس 2026) — «بين ‹التميّز› و‹الحاجة إلى التدخل السريع›: ماذا تكشف نتائج تقويم 58 مدرسة حكومية وخاصة؟» (مدى المرحلة الأولى البالغ 58 مدرسة؛ المدرسة في الفئة الدنيا — الحسن بن هاشم بالسيب — مُسمّاةً في النتائج ال"
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "1630",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "المرسوم السلطاني رقم 12/2026، الصادر في 22 رجب 1447 / 12 يناير 2026، الجريدة الرسمية العدد 1630 مكرر في 13 يناير 2026 — تُعيد المادةُ الأولى تسميةَ «الهيئة العُمانية للاعتماد الأكاديمي وضمان جودة التعليم» لتصير «الهيئة ا"
+  },
+  {
+   "slug": "2026-06-20-oman-school-performance-ratings",
+   "token": "13",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "المرسوم السلطاني رقم 12/2026، الصادر في 22 رجب 1447 / 12 يناير 2026، الجريدة الرسمية العدد 1630 مكرر في 13 يناير 2026 — تُعيد المادةُ الأولى تسميةَ «الهيئة العُمانية للاعتماد الأكاديمي وضمان جودة التعليم» لتصير «الهيئة ا"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "72",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "المجلس الوطني الكيني للامتحانات (KNEC) / kjsea.knec.ac.ke — إصدار نتائج KJSEA لعام 2025 (1,130,459 مرشّحًا؛ 578,630 فتًى و551,829 فتاةً؛ تسعُ موادَّ على ثمانية مستويات أداءٍ بحدٍّ أقصى 72 نقطة؛ نتائجُ بلا ترتيب؛ 59.09٪ أ"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "19",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "ديلي نيشن — «فوضى تنسيق الثانوية: أجوبةُ أسئلتكم العشرة الملحّة» (سجلُّ المراجعة: 355,457 طلبًا بعد إعلان التنسيق في 19 ديسمبر؛ قُبل 211,636 ورُفض 143,821 لغياب التوليفة الدراسية أو لضيق السعة؛ 88٪ من الطلاب في مدرسةٍ من"
+  },
+  {
+   "slug": "2026-07-04-kenya-cbe-grade10-pathways",
+   "token": "6–9",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "ديلي نيشن — «تنسيق الثانوية: الوزارة تفتح نافذة مراجعةٍ ثانية الثلاثاء» (النافذة الثانية، 6–9 يناير 2026 — الدولةُ تعيد فتحَ آليّةِ تصحيحها بنفسها)"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "322,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "لوماتان — «مدارس الريادة: ما ينبغي معرفته عن البرنامج وتطوّره» (22 يونيو 2024، عن الوزارة: بصمة التجربة — 626 ابتدائية، 322,000 تلميذ، 10,700 أستاذ متطوّع، 158 مفتشًا، 82 إقليمًا؛ توسعة 2024-2025 المعلنة — 2,626 ابتدائية"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "75,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "البنك الدولي — «المدارس الرائدة في المغرب: نحو تعلّمٍ أفضل للتلاميذ» (21 مايو 2026؛ البنك شريك في تمويل البرنامج بعملية قدرها 750 مليون دولار: الحالة المقيسة 2025-2026 — 4,626 ابتدائية، أكثر من مليوني تلميذ، نحو 54% من ا"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "678,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "البنك الدولي — «المدارس الرائدة في المغرب: نحو تعلّمٍ أفضل للتلاميذ» (21 مايو 2026؛ البنك شريك في تمويل البرنامج بعملية قدرها 750 مليون دولار: الحالة المقيسة 2025-2026 — 4,626 ابتدائية، أكثر من مليوني تلميذ، نحو 54% من ا"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "10,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "أوجوردوي لوماروك — «مدارس الريادة: برنامج مهيكِل لتحسين التعلّم والتحكم في المكتسبات» (المنحة السنوية البالغة 10,000 درهم للأساتذة الحاصلين على الإشهاد في المؤسسات الموسومة، كما أوردتها الصحافة المغربية؛ لم يُتحقَّق من ا"
+  },
+  {
+   "slug": "2026-07-06-morocco-ecoles-pionnieres",
+   "token": "29",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "برقية لوكالة المغرب العربي للأنباء عبر «المصدر ميديا» — «مدارس الريادة، نموذج تعليمي حديث» (29 مارس 2025: المدرسة نفسها في الصحافة العربية؛ دفتر إقليم برشيد — 42 مؤسسة، 25,514 تلميذًا، 862 أستاذًا مكوَّنًا؛ ومنها الرسم ا"
+  },
+  {
+   "slug": "2026-07-07-chad-sudanese-refugee-schooling",
+   "token": "5–6",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الوكالة الوطنية للإعلام ONAMA — «التعليم: تشاد تعزز التزامها بتعليم شامل للاجئين» (ورشة نجامينا مع الشركاء، 5–6 نوفمبر 2025)"
+  },
+  {
+   "slug": "2026-07-07-gaza-education-continuity",
+   "token": "21",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "يورونيوز — «طلاب غزة يؤدون الامتحانات في خيام فيما تكاد كل المدارس تكون أنقاضًا» (21 مايو 2026: نافذة 20 يونيو–8 يوليو؛ التسجيل مفتوح لأفواج 2023 و2024 و2025 إلى جانب مكملي الصف الحادي عشر؛ محمد حمدان مدير التربية والتعل"
+  },
+  {
+   "slug": "2026-07-07-india-parakh-hpc",
+   "token": "١٨",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "India TV News (PTI)، ١٨ أبريل ٢٠٢٥ — تعدادُ الاعتماد كما وردَ: ٢٦ ولايةً وإقليمًا اتحاديًّا تعتمد الـHPC أو تكيّفها للروضة حتى الصف الثامن؛ البطاقةُ تُترجَم إلى ٢٦ لغة (رقمٌ صحفيٌّ، محمولٌ كما وردَ)"
+  },
+  {
+   "slug": "2026-07-07-lebanon-crisis-schooling",
+   "token": "31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف لبنان — تقرير الحالة الإنسانية رقم 1، من 1 يناير إلى 31 مارس 2026 (سجل الطوارئ المقيس: إغلاق مدارس البلاد كلها أكثر من ثلاثة أسابيع من مطلع مارس؛ تعطُّل التعلم لنحو 400,000 طفل؛ نقل 40,000 معلم رسمي ونحو 390,000"
+  },
+  {
+   "slug": "2026-07-07-lebanon-crisis-schooling",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الدولية للتربية — «أجور المعلمين في أوقات الطوارئ: أجور عادلة لمعلمي المدارس الرسمية في لبنان» (صفحة ملخَّص الدراسة، نُشرت في 12 مايو 2025 وأُعيد نشرها في 20 مارس 2026؛ قُرئت في 2026-10-14 في ثلاثة مواضع — نسخةُ 2026، ول"
+  },
+  {
+   "slug": "2026-07-07-lebanon-crisis-schooling",
+   "token": "27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "IMLebanon — الدعوة إلى إضراب عام في التعليم الرسمي في 27 نوفمبر 2025 (أُعلنت في 24 نوفمبر 2025؛ ولا يوجد إحصاء أولي لأيام التدريس الضائعة بالإضراب — فجوة تسميها هذه القطعة ولا تملؤها)"
+  },
+  {
+   "slug": "2026-07-07-netherlands-doorstroomtoets",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "Ministerie van OCW — «تحديدُ الجدول الزمني لاختبار العبور والانتقال من الابتدائي إلى الثانوي للعام الدراسي 2025–2026»، 12 يونيو 2025 (الجدولُ الزمنيُّ القانونيُّ الثابتُ لدورة 2025–2026)"
+  },
+  {
+   "slug": "2026-07-07-nz-ncea-corequisite",
+   "token": "10",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم النيوزيلندية / NCEA — «نظرةٌ عامة على معايير المتطلَّب المرافق لـNCEA» (الأداة: 20 نقطةً — 10 في القرائية أو تي ريو ماتاتيني، و10 في الحساب أو بانغاراو — تُشترط قبل منح أيِّ مستوًى من NCEA؛ إلزاميةٌ من 2024"
+  },
+  {
+   "slug": "2026-07-07-nz-ncea-corequisite",
+   "token": "21",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "NZQA — بيانات المتطلَّب المرافق للقرائية والحساب (جداولُ النتائج المعياريةُ لكلِّ جولةٍ للتقييمات المستقلة؛ وبحلول 21 يوليو 2026 تحمل حدثَ 2026 الأول — القراءة 60.5٪، الكتابة 56.8٪، الحساب 51.7٪، أكثرُ من 82,900 مشارك، ن"
+  },
+  {
+   "slug": "2026-07-07-nz-ncea-corequisite",
+   "token": "23",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "NZQA — تواريخُ إصدار نتائج تقييمات المتطلَّب المرافق (تقويمُ الإصدار الذي قسم نتائج حدث 2026 الأول — القراءة في 23 يونيو 2026، الكتابة والحساب في 20 يوليو 2026 — التواريخُ التي هبطت فيها أرقامُ الجولة مع إغلاق هذه الطبعة"
+  },
+  {
+   "slug": "2026-07-07-poland-ukrainian-students",
+   "token": "30",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الهيئة العليا للرقابة البولندية (NIK) — «في إعمال حق أطفال أوكرانيا في التعلم في المدارس البولندية» (عمود الأرقام، صدر في 3 يونيو 2026: 160,200 تلميذ يوفون الإلزام المدرسي في خريف 2024 بزيادة 9٪ على 2023؛ نحو 13,000 تلمي"
+  },
+  {
+   "slug": "2026-07-07-poland-ukrainian-students",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم الوطني البولندية، gov.pl، 12 يونيو 2024 — «تلاميذ من أوكرانيا في المدارس البولندية: حلول قانونية جديدة» (التعديل: مدّ الإلزام المدرسي إلى أطفال اللاجئين الأوكرانيين من 1 سبتمبر 2024؛ اشتراط إعانة «800+» بال"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "10,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف — «مَعلَم تعليمي لأطفال الروهينغا اللاجئين مع بلوغ تجربة منهج ميانمار أول 10,000 طفل» (قرار حكومة بنغلاديش في يناير 2020؛ التجريب من نوفمبر 2021، الصفوف من السادس إلى التاسع أولًا)"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "ذا ديلي ستار، 27 يوليو 2025 — «التعليم في مخيمات الروهينغا في حالة اضطراب» (تعليق الدراسة من الروضة إلى الصف الرابع في 3 يونيو 2025 عبر نحو 6,400 مركز تديره منظمات غير حكومية؛ نحو 1,100 معلم صُرفوا في الإحصاء الأول، وتأك"
+  },
+  {
+   "slug": "2026-07-07-rohingya-myanmar-curriculum",
+   "token": "150",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف — بيان صحفي، 6 نوفمبر 2025، زيارة سفير النوايا الحسنة أورلاندو بلوم إلى مخيمات كوكس بازار (بتواريخ السجل ونحوه: «في يونيو من هذا العام، اضطرت اليونيسف إلى إغلاق معظم المدارس في مخيمات اللاجئين الروهينغا مؤقتًا»،"
+  },
+  {
+   "slug": "2026-07-07-singapore-psle-sbb",
+   "token": "١٣",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم السنغافورية — بيان صحفي، ١٣ يوليو ٢٠١٦: «تغييرات في تقدير درجات PSLE وتوزيع الصف الأول الثانوي» (التصميم مُدوَّنٌ كتابةً: الهدفُ المُعلَنُ الأوّل «تقليلُ التمييز الدقيق بين الطلاب»؛ ٢٩ درجةً ممكنةً في PSLE "
+  },
+  {
+   "slug": "2026-07-07-singapore-psle-sbb",
+   "token": "2",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم — موقع تقدير PSLE والتصنيف الكامل القائم على المواد (Full Subject-Based Banding) (الأداةُ النافذة: مستويات التحصيل AL1–AL8 لكلِّ مادة؛ درجةُ PSLE مجموعُ الأربع، من ٤ إلى ٣٢؛ إلغاءُ المسارات من فوج الصف الأو"
+  },
+  {
+   "slug": "2026-07-07-singapore-psle-sbb",
+   "token": "١١",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم — كلمةُ الوزير تشان تشون سينغ في محاضرة MOE X NIE X IPS، ١١ فبراير ٢٠٢٥ («لم يكن حقًّا نهايةَ التقسيم إلى مسارات، بل تنقيحًا للتقسيم حسب المادة»؛ «إن لم نُوسِّعْ تعريفاتِنا للنجاح إلى ما وراء المفاضلات الدا"
+  },
+  {
+   "slug": "2026-07-07-syria-certificate-recognition",
+   "token": "6853",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "سانا — «وزارة التربية توقف الامتحان المتمم لمعادلة الشهادات الأجنبية للطلاب السوريين لعامين» (13 مارس 2026: قرارُ إيقاف الامتحان المتمم المطلوب لتعادل شهادتي الإعدادية والثانوية الأجنبيتين خلال العامين الدراسيين 2025-202"
+  },
+  {
+   "slug": "2026-07-07-syria-certificate-recognition",
+   "token": "30",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "سانا — إعلان وزير التربية نتائجَ الشهادة الثانوية (30 أغسطس 2025: 354,075 متقدمًا بجميع الفروع؛ نجاح النظاميين 75.5٪ في العلمي و54.9٪ في الأدبي)"
+  },
+  {
+   "slug": "2026-07-07-syria-certificate-recognition",
+   "token": "31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "سانا — تقرير جاهزية مديرية تربية دمشق (31 مايو 2026: 65,111 مسجلًا في محافظة دمشق عبر 192 مركزًا؛ تصريح مديرة التربية رفاه البوشي الدباغ عن توزيع المراكز وتنظيمها الزمني المزدوج؛ أكثر من 832 ألف مسجل في عموم البلاد؛ انطل"
+  },
+  {
+   "slug": "2026-07-07-syria-certificate-recognition",
+   "token": "21",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "يونيسف سوريا — بيان حملة العودة إلى التعلم (سبتمبر 2025: أكثر من 2.4 مليون طفل خارج المدرسة وأكثر من مليون معرضون للتسرب؛ تقويم مدرسي وطني موحد من 21 سبتمبر 2025 «للمرة الأولى منذ أكثر من عقد»)"
+  },
+  {
+   "slug": "2026-07-07-ukraine-wartime-schooling",
+   "token": "22",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارة التعليم والعلوم الأوكرانية — إعلان الكتاب رقم 1/17526-25 «في تنظيم العام الدراسي 2025/2026 في مؤسسات التعليم الثانوي العام» (22 أغسطس 2025: الأداة التي تُسنِد إلى كل مدرسة صيغتَها؛ اشتراط الملجأ المعتمَد للدراسة ال"
+  },
+  {
+   "slug": "2026-07-07-ukraine-wartime-schooling",
+   "token": "18",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "Osvita.ua — النص الكامل المعاد نشره للكتاب الوزاري مع الأدوات المؤسِّسة (قرار مجلس الوزراء رقم 1003 في 20 أغسطس 2025 بتثبيت العام الدراسي من 1 سبتمبر إلى 30 يونيو في ظل الأحكام العرفية؛ الأمر رقم 1020 في 18 يوليو 2025 ال"
+  },
+  {
+   "slug": "2026-07-07-ukraine-wartime-schooling",
+   "token": "28",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "أوكراينسكا برافدا (بالإنجليزية) — «أطفال خاركيف سيدرسون في 7 مدارس تحت الأرض و6 محطات مترو» (28 أغسطس 2025، العمدة إيهور تيريخوف عبر النشرة الوطنية الموحدة: ثلاثٌ من السبع بُنيت في ربيع 2025 وصيفه؛ كل مدرسة تحت الأرض تست"
+  },
+  {
+   "slug": "2026-07-07-ukraine-wartime-schooling",
+   "token": "6,000",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "أوكراينسكا برافدا (بالإنجليزية) — «أطفال خاركيف سيدرسون في 7 مدارس تحت الأرض و6 محطات مترو» (28 أغسطس 2025، العمدة إيهور تيريخوف عبر النشرة الوطنية الموحدة: ثلاثٌ من السبع بُنيت في ربيع 2025 وصيفه؛ كل مدرسة تحت الأرض تست"
+  },
+  {
+   "slug": "2026-07-07-us-naep-honesty-gap",
+   "token": "29",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "بيان المجلس الوطني الحاكم للتقييم (NAGB)، 29 يناير 2025 (نحو 40٪ من تلاميذ الرابع دون «الأساسي» في القراءة — الحصة الأكبر منذ 2002؛ نحو ثلث تلاميذ الثامن دون «الأساسي» — الأكبر المسجَّلة؛ لم تتحسن ولاية في القراءة؛ تصريح"
+  },
+  {
+   "slug": "2026-07-07-us-naep-honesty-gap",
+   "token": "21",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "أوكلاهوما فويس، 21 مايو 2025 — هيئة الجودة والمساءلة التعليمية تصوّت بالإجماع على استعادة درجات القطع الموصولة بـNAEP المعمول بها 2017–2023 («الصدق والشفافية»)"
+  },
+  {
+   "slug": "2026-07-07-us-naep-honesty-gap",
+   "token": "12",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "K-12 دايف — المجلس الحاكم يعتمد جدولًا أنحف حتى 2033 (حذف علوم الرابع 2028؛ لا علوم للثاني عشر حتى 2032؛ حذف تاريخ الثاني عشر 2030؛ إلغاء كتابة 2032)"
+  },
+  {
+   "slug": "2026-07-16-australia-naplan-reset",
+   "token": "14",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "بيان الهيئة (ACARA)، 14 أغسطس 2024 — النتائج الوطنية 2024 (ثابتةٌ على العموم مقابل 2023؛ نحو 4.4 مليون اختبارٍ أنجزها ما يقارب 1.3 مليون طالب)"
+  },
+  {
+   "slug": "2026-07-16-australia-naplan-reset",
+   "token": "11–23",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الهيئة (ACARA) — المواعيد الرئيسية (نابلان 2026: نافذةُ الاختبار 11–23 مارس؛ تقاريرُ أوّليةٌ للمدارس أبريل؛ تقاريرُ ملخَّصةٌ نهائيةٌ من منتصف يونيو؛ النتائجُ الوطنية تُصدَر في أغسطس 2026)"
+  },
+  {
+   "slug": "2026-07-16-australia-naplan-reset",
+   "token": "27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "بيان الهيئة (ACARA)، 27 مارس 2026 — اختتام اختبارات نابلان لعام 2026"
+  },
+  {
+   "slug": "2026-07-28-england-report-cards-first-term",
+   "token": "12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "Schools Week — «أوفستد ينشر أولى بطاقات تقرير المدارس»، 12 يناير 2026 (أولى بطاقات المدارس الاثنتين والعشرين المتطوِّعة — 13 ابتدائية و9 ثانوية؛ من أصل 150 درجةً فرديةً: 79 «المستوى المتوقَّع»، 58 «مستوًى قوي»، 9 «استثنا"
+  },
+  {
+   "slug": "2026-07-28-england-report-cards-first-term",
+   "token": "22",
+   "provenance": "TRACED VIA THE PAIR — printed in the EN body of the same piece, so the figure sits inside the Verifier's trace axes in one edition and outside them in the other. A #42 asymmetry on a figure, 2026-10-24.",
+   "lang_seen": "ar",
+   "annotation": "Schools Week — «مديرو المدارس ‹سلبيّون بأغلبيةٍ ساحقة› إزاء تفتيش أوفستد الجديد»، 22 يونيو 2026 (المسحُ المستقلُّ لمئة مديرٍ خضعت مدارسُهم للتفتيش، أجراه كوفيلد وتِمز وباسكال ونوريس وريتشاردز: 70% سلبيّون حيال الرفاه، و6"
+  },
+  {
+   "slug": "2026-07-28-england-report-cards-first-term",
+   "token": "21",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "Schools Week — «أكثرُ تعاونًا، وأشدُّ ضغطًا: مديرو المدارس يُصدرون بطاقاتِ تقريرٍ عن تفتيش أوفستد الجديد»، 21 نوفمبر 2025 (استئنافُ التفتيش الروتينيِّ للمدارس الحكومية في 1 ديسمبر 2025؛ وشهاداتُ أوائل المفتَّشين عن قاعدة"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "0.31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "إنقاذُ الطفولة — المملكة المتحدة — «النتائجُ صدرت!»، فيرغال تيرنر، مستشارُ الأدلّة والتعلُّم التربويِّ الأول، 6 يناير 2026، مقروءًا كنصٍّ مُتاح (سجلُّ المزوِّد وهو ينشر إخفاقَه بنفسه: أثرُ صفٍّ في الرياضيات قدرُه .359 ان"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "11",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "صندوقُ نواتج التعليم — «نواتجُ، سُلِّمت»، كيت جيفريز، 11 يونيو 2026 (سجلُّ المموِّل: مدفوعاتٌ مربوطةٌ بنتائجَ مُتحقَّقٍ منها استقلالًا تُقاس بتجربةٍ عشوائيةٍ مضبوطة؛ أكثرُ من 130,000 متعلِّمٍ بُلِغوا؛ والكلفتان المُسمَّي"
+  },
+  {
+   "slug": "2026-08-28-sierra-leone-sleic-outcomes",
+   "token": "16",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "صندوقُ نواتج التعليم — «تعلُّمُ ما ينفع: إسدالُ الستار على SLEIC»، خبر، 16 يناير 2026، مقروءًا كنصٍّ مُتاح (سجلُّ الوزارة: حفلُ الختام استضافته المفوَّضةُ السامية البريطانيةُ جوزفين غولد في مقرِّها بفريتاون في 15 يناير 2"
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف – السودان — «آفاق جديدة للتعليم في السودان»، الطبعةُ العربيةُ الرسمية على منصّة المالك مؤرَّخةً 31 أغسطس 2020 (الإنجليزية 27 أغسطس)، مقروءةً كنصٍّ مُتاح وهي سجلُّ الأسماء لهذه الطبعة (سجلُّ الميسِّرة: فاطمة عباس"
+  },
+  {
+   "slug": "2026-09-01-sudan-cant-wait-to-learn",
+   "token": "27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليونيسف – السودان — «آفاق جديدة للتعليم في السودان»، الطبعةُ العربيةُ الرسمية على منصّة المالك مؤرَّخةً 31 أغسطس 2020 (الإنجليزية 27 أغسطس)، مقروءةً كنصٍّ مُتاح وهي سجلُّ الأسماء لهذه الطبعة (سجلُّ الميسِّرة: فاطمة عباس"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "220",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "5.5",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "224",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "5.7",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "226",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "2.6",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "71",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "221–225",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "225",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "227",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "90",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "232",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "222",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "5.9–5.12",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "229–231",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "232–233",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "143",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "5.13",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "236–237",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "235",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "الكونفيمن / باسيك — «باسيك2019: جودةُ الأنظمة التعليمية في أفريقيا جنوبَ الصحراء الناطقة بالفرنسية»، التقريرُ الدولي، مقروءًا في متنِه من مضيف أرشيف المالك (مسطرةُ السجلّ: 444 صفحة؛ المقطعُ العرضيُّ لعام 2019 يغطّي أربعة"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "27",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "إيدوك'أكسيون — حوارٌ مع الأستاذ عبد الرحمن بابا موسى، الأمين العام للكونفيمن، في ورشة اختيار مفردات باسيك 2024 بكوتونو، منشورٌ في 7 فبراير 2023. قُرِئ كنصٍّ مُتاح وقتَ التأليف، وأُعيدت قراءتُه في 2026-09-18 من نسخة أرشيف"
+  },
+  {
+   "slug": "2026-09-14-africa-best-system-ruler",
+   "token": "31",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "إيدوك'أكسيون — حوارٌ مع الأستاذ عبد الرحمن بابا موسى، الأمين العام للكونفيمن، في ورشة اختيار مفردات باسيك 2024 بكوتونو، منشورٌ في 7 فبراير 2023. قُرِئ كنصٍّ مُتاح وقتَ التأليف، وأُعيدت قراءتُه في 2026-09-18 من نسخة أرشيف"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "37",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "القانون رقم 169 لسنة 2025 بتعديل بعض أحكام قانون التعليم الصادر بالقانون رقم 139 لسنة 1981 — النصُّ التشريعي، مقروءًا بالعربية كنصٍّ مُتاح في 2026-09-19 على موسوعةٍ قانونية (النصُّ العامل: المادة 37 مكرَّرًا — «مع مراعاة"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "24",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "القانون رقم 169 لسنة 2025 بتعديل بعض أحكام قانون التعليم الصادر بالقانون رقم 139 لسنة 1981 — النصُّ التشريعي، مقروءًا بالعربية كنصٍّ مُتاح في 2026-09-19 على موسوعةٍ قانونية (النصُّ العامل: المادة 37 مكرَّرًا — «مع مراعاة"
+  },
+  {
+   "slug": "2026-09-19-egypt-baccalaureate-published-first",
+   "token": "23",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "اليوم السابع — «اعرف بالقانون شروط التقديم لنظام البكالوريا ومدته»، 23 أبريل 2026، مقروءًا بالعربية كنصٍّ مُتاح في 2026-09-19 (القناةُ الثالثة على صياغة النصّ، تنقل «نظام البكالوريا نظام اختيارياً مجانىاً»، و«لا يجوز الت"
+  },
+  {
+   "slug": "2026-09-27-rwanda-teacher-certification",
+   "token": "05",
+   "provenance": "UNTRACED 2026-10-24 — seeded backlog under #114. Printed in a served annotation, in no body of either edition, and therefore never reached by any numeric instrument this operation owns. Replace this line with the register and the clause it was read from, or print the figure in the body.",
+   "lang_seen": "ar",
+   "annotation": "وزارةُ التعليم الرواندية (MINEDUC) — «MINEDUC & World Bank report 13 model schools, 11,000 classrooms, and 621 resilience upgrades under quality basic education project»، مقروءًا بالإنجليزية كنصٍّ مُتاح في 2026-09-24 ومُ"
+  }
+ ],
+ "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures."
+}
