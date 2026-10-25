@@ -21,9 +21,16 @@ Read on every run, in this order:
    them. A run on 2026-10-04 reported three closed items as open because it read the 09-27 section,
    which was eleven screens above the entry closing them.
 5. `agents/logs/WEBDEV-QUEUE.md` — **the operation's one standing queue, and from 2026-10-04 its head is
-   binding** (RUNBOOK, *one queue, one head*). The previous run's forward question enters at the head;
-   an item displaced three times goes first regardless; the run writes one line naming which head it
-   took and what it displaced. **This file is in this list because a binding queue nobody is told to
+   binding** (RUNBOOK, *one queue, one head*). **Its ordering was replaced on 2026-10-25 by ruling #116:**
+   rows sit in three buckets, and **the head is the oldest DEFECT if any DEFECT is open, otherwise the
+   oldest OPEN**. A **DEFECT** names N > 0 artefacts, served or founder-facing, that are wrong **now**; a
+   **BLOCKED** item needs a credential, a purchase or a word nobody here holds and is **out of the ordering
+   entirely**, read at the weekly review only; everything else is **OPEN**, and the previous run's forward
+   question enters at OPEN's head. **Age is `today − Raised` and is NOT written in the row** — the Age and
+   Displaced columns were two copies of one derivable number and fifteen of eighteen were stale the day they
+   were deleted. The three-displacement threshold is **retired**: it equalled age on every row, which is why
+   the tiebreak needed its last rung on 10-25. The run still writes one line naming which head it took and
+   what it displaced. **This file is in this list because a binding queue nobody is told to
    read is the same defect as a count nobody is named to maintain.**
 
 ## What this publication is
