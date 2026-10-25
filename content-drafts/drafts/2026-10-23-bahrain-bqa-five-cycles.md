@@ -78,6 +78,17 @@ quantities, because the ISO licence consumes the first date of a list and its si
 bare. Licence (a2) added, four of 251 seeded register entries withdrawn, the published population
 restated at **423 annotation-only across 40 of 44 pieces** rather than 430.
 
+**EXECUTED 2026-10-25.** The three served byte counts (`183,242`, `13,440,188`, `4,243,331`) and the
+three prior-reading dates are out of the shipped `sources[]`; each now reads *unchanged across N prior
+readings*, which is the claim the apparatus was there to support and is the part a reader can use. The
+2026-10-23 read date stays, licensed as a date (#114 licence b), and every figure the Authority states
+stays, because the body prints each one. Re-run over the edited block with
+`qa_annotation_figures.quantities` imported directly: **30 annotation quantities, 0 absent from the
+body** — the two the probe reported are `#113` and `#101` in this section's own heading, outside any
+annotation, which is the instrument's parenthetical scope being wider than mine rather than a finding.
+*The disposal was removal and not registration, so the register did not grow by seven rows to record
+seven facts about our own reading.*
+
 ---
 
 ## TEST 1 — all five registers re-opened today, dates recorded (#76)
@@ -261,8 +272,8 @@ can settle, because the register that would settle it is one nobody publishes an
 ## SOURCES — composed with every register open, never from memory of an annotation (#113, #101, 09-13)
 
 1. **`data.gov.bh` — *Results of Government Schools Reviews*, CSV export** (read in served bytes
-   2026-10-23, HTTP 200, 183,242 bytes, sha256 `d6b62bda651083dc…`, byte-identical to the 10-18 and
-   10-22 readings; 1,022 rows — 882 `Review` and 140 monitoring visits across three row types; 245
+   2026-10-23, HTTP 200, sha256 `d6b62bda651083dc…`, unchanged across three prior readings;
+   1,022 rows — 882 `Review` and 140 monitoring visits across three row types; 245
    schools in the register and 242 ever graded; the four numbered grades on `Review` rows only; cycle
    coverage over the 242 reviewed: 52 in five cycles, 124 in four, 22 in three, 15 in two, 29 in one;
    grade totals over the 882 reviews: `(3) Satisfactory` 350, `(4) Inadequate` 245, `(2) Good` 202,
@@ -273,12 +284,12 @@ can settle, because the register that would settle it is one nobody publishes an
 2. **Education & Training Quality Authority — open-data page** (the dataset is the Authority's own,
    one of seven it publishes there; read 2026-10-23) — `https://www.bqa.gov.bh/open-data/`
 3. **Education & Training Quality Authority — Annual Report 2025** (read in served bytes 2026-10-23,
-   HTTP 200, 13,440,188 bytes, byte-identical to the 10-20 and 10-22 readings: *"22 government schools
+   HTTP 200, unchanged across two prior readings: *"22 government schools
    and 7 private schools received Gold Seals for outstanding performance"* — calendar year 2025, the
    Authority's own instrument and its own words)
    — `https://www.bqa.gov.bh/wp-content/uploads/2026/06/Annual-report-2025-.pdf`
 4. **Education & Training Quality Authority — Performance Report 2024–2025** (read in served bytes
-   2026-10-23, HTTP 200, 4,243,331 bytes, byte-identical: the batch cohort of 76 government schools
+   2026-10-23, HTTP 200, unchanged across two prior readings: the batch cohort of 76 government schools
    reviewed under the Schools Reviews Framework 2024, 26% at the top grade — **academic year 2024-25,
    a batch, not a cycle**)
    — `https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-EN.pdf`
