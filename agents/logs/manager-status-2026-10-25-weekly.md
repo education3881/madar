@@ -68,6 +68,20 @@ cannot be read, #101 clause 1 and #112 make the disposal *withdrawal*, which is 
    of the three-bucket rule against its own rates; and #116's forward question — *which other rule of this
    operation states a guarantee about a rate without ever having divided the two numbers that decide it?*
 
+## The deploy, recorded as an observation rather than a state of affairs
+
+**This run cannot watch its own deploy and does not claim to have.** `madar-weekly.yml` dispatches
+`astro-pages.yml` in a step that runs *after* the agent step ends — standing-queue item 31's subject, and
+#71's rule: *a run records an observation with a timestamp, never a state of affairs about a period it
+cannot reach.*
+
+What is observed, at **2026-10-25 10:18Z**: `origin/main == 2c9db29`, four commits pushed in stages, and
+**no deploy has fired for any of them yet** — the last green deploy is `18c9964`, dispatched 09:52Z before
+this review began. What is asserted instead of a forecast: **the gate set that deploy will run is green on
+this exact tree** — `npm run build` exit 0 re-run after the final edit, **all twelve build-job gates via
+`build_job_gates.py` plus all twenty-four `postbuild` gates, zero FAIL blocks**. The 10-20 failure mode —
+a run building locally four times and calling twelve unreachable gates green — cannot recur silently.
+
 ## Honest notes
 
 - **Nothing has been published in twelve days**, and the newest piece in the corpus is dated 2026-09-27. In
