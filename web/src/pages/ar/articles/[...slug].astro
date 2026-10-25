@@ -308,7 +308,19 @@ const ogCard = piece.data.hero?.src
     margin-block: var(--space-xl);
     width: 50%;
   }
-  .body-main :global(em) { font-style: italic; }
+  /* NOT ITALIC, AND THIS IS THE ARABIC TEMPLATE — the rule that was slanting
+     Arabic prose on 12 published pages. Arabic typography has no italic
+     convention (RUNBOOK 2026-08-18 clause 4; ruling #115), and `Amiri Italic`
+     is a real slanted face, so this line was fetching 131,100 bytes per page
+     to paint it: 686 characters on `2026-05-28-iraq-mosul-library` alone, six
+     quoted passages. The sibling rule below already knew — `p > em:only-child`
+     has reset to normal since it was written — so the file contained both the
+     fact and its contradiction, three lines apart.
+     Fixed HERE rather than from `global.css`, where `[dir="rtl"] em` lost the
+     cascade at equal specificity to this scoped selector. A correctness
+     constraint about a script should not have to win a specificity fight; it
+     should be stated in the template that is about that script. */
+  .body-main :global(em) { font-style: normal; }
   .body-main :global(p > em:only-child) {
     display: block;
     font-family: var(--font-arabic);

@@ -72,6 +72,20 @@ WHAT IS MEASURED AND DELIBERATELY NOT ASSERTED.
   reasoning in a second costume. The numbers are printed so the next person to
   look does not have to build the probe again.
 
+  AND THERE IS A SECOND, HARDER REASON, MEASURED ON THE DAY THIS TOOL SHIPPED.
+  **The payload total is not deterministic.** Three consecutive runs of this file
+  against one unchanged `dist` printed `EN article = 487,672 / 487,672 / 521,408`
+  and `EN editions = 625,040 / 636,664 / 636,664`; three runs of a bare fetch
+  probe against one unchanged page printed `703,556 / 669,820 / 669,820`. A
+  `unicode-range` fetch is issued when the engine reaches a glyph it needs, and
+  whether it reaches a given glyph before the virtual time budget expires is a
+  race. **A ceiling asserted on a number carrying a ±34 KB jitter is a gate that
+  reds at random**, which is worse than no gate. The two limbs that ARE asserted
+  returned the same verdict on three consecutive runs over the same tree, which
+  is the property a gate needs and a measurement does not: *assert the shape,
+  print the size.* Read a single run's totals as an order of magnitude and a
+  comparison across runs as ±1 subset file, never as an exact delta.
+
 PAGE SET. Six served pages, both editions, three kinds: the two home pages (the
 most type-dense documents the publication serves), one article pair (the longest
 running prose), and the two editions indexes. It is a sample and it says so —
