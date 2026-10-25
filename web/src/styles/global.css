@@ -414,6 +414,25 @@ hr.rule {
   font-family: var(--font-mono);
 }
 
+/* ARABIC IS NOT SLANTED, AND THIS IS THE RULE RATHER THAN THE THIRD INSTANCE.
+   Arabic typography has no italic convention — the same reason tracking is
+   never applied to it (2026-08-18 clause 4). This stylesheet already said so
+   at `[dir="rtl"] .pullquote` above, and `SiteFooter.astro` said it again on
+   2026-10-17 for the Arabic strapline; both were point fixes, so the <em> in
+   the about paragraph on BOTH home pages was never reached and had slanted
+   Arabic since the pages were written.
+   It is not only wrong to look at. `Amiri Italic` is a real slanted face in
+   the bundle, so unlike the strapline case it RENDERS, and the browser fetches
+   `amiri-italic-400-arabic.woff2` to paint it: measured 2026-10-25 by server-log
+   probe, 111,720 bytes for 29 painted characters — 3,852 bytes each, 26.2% of
+   the Arabic home page's entire font payload and 14.4% of the English one's.
+   Ruling #115; standing assertion 39 (`qa_font_payload`) is what keeps it shut. */
+[dir="rtl"] em,
+[dir="rtl"] i,
+[dir="rtl"] cite {
+  font-style: normal;
+}
+
 /* ===================================================================== */
 /* RESPONSIVE COLLAPSE                                                    */
 /* ===================================================================== */
