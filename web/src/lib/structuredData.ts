@@ -125,6 +125,18 @@ export interface ArticleNodeInput {
   /** Site-absolute path INCLUDING base prefix. */
   path: string;
   date: Date;
+  /**
+   * The last commit that touched the files this page is built from, from the
+   * SAME git-derived resolver the sitemap's <lastmod> uses (2026-10-26, growth).
+   * Not a build timestamp and not the frontmatter `date` — both of those were
+   * rejected for <lastmod> in 2026-08-24 for the same two reasons, and they are
+   * the same two reasons here: a build timestamp says every page changed on
+   * every deploy, and the publication date asserts the page has never changed.
+   * Omitted rather than guessed when the resolver cannot answer, because a
+   * fabricated freshness signal is worse than none (#1, and the whole of
+   * `sitemapLastmod.mjs`'s own header).
+   */
+  dateModified?: string | null;
   lang: 'en' | 'ar';
   country: string;
   themes: string[];
@@ -200,6 +212,15 @@ export function articleJsonLd(input: ArticleNodeInput) {
     // Date only — the corpus records a publication date, not a timestamp, and
     // inventing an hour to satisfy a richer format would be a fabrication.
     datePublished: input.date.toISOString().slice(0, 10),
+    // A correction a machine cannot see is a correction that did not travel.
+    // On 2026-10-26 nine served sentences were repaired across four pieces
+    // (#117) and the sitemap's <lastmod> moved for all eight affected URLs
+    // while every article's own structured data went on declaring only its
+    // publication date — so the one consumer class that reads JSON-LD rather
+    // than the sitemap was told nothing had changed since July.
+    ...(input.dateModified
+      ? { dateModified: input.dateModified.slice(0, 10) }
+      : {}),
     inLanguage: input.lang === 'ar' ? 'ar' : 'en',
     isAccessibleForFree: true,
     // The publication is the author of record. Pieces are bylined

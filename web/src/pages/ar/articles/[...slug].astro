@@ -10,6 +10,8 @@ import { withBase } from '../../../lib/urls';
 // only what an Arabic reader SEES is translated. See lib/i18n-geo.ts.
 import { countryAr, regionAr, levelAr, themeAr } from '../../../lib/i18n-geo';
 import { articleJsonLd, breadcrumbJsonLd, publisherNodes } from '../../../lib/structuredData';
+import { createLastmodResolver } from '../../../lib/sitemapLastmod.mjs';
+const lastmodFor = createLastmodResolver();
 import { snapshotDate, snapshotUrl } from '../../../lib/archivedCopies';
 
 export async function getStaticPaths() {
@@ -87,6 +89,7 @@ const ogCard = piece.data.hero?.src
     dek: piece.data.dek,
     path: withBase(`/ar/articles/${piece.id}/`),
     date: piece.data.date,
+    dateModified: lastmodFor(withBase(`/ar/articles/${piece.id}/`)),
     lang: 'ar',
     // The Arabic display name, not the schema's English key — the same
     // ruling (#33) that fixed the visible chrome binds the machine-readable

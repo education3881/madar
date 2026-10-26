@@ -6,6 +6,8 @@ import RelatedReading from '../../components/RelatedReading.astro';
 import { getCollection, render } from 'astro:content';
 import { withBase } from '../../lib/urls';
 import { articleJsonLd, breadcrumbJsonLd, publisherNodes } from '../../lib/structuredData';
+import { createLastmodResolver } from '../../lib/sitemapLastmod.mjs';
+const lastmodFor = createLastmodResolver();
 import { splitScriptRuns } from '../../lib/scriptRuns';
 import { snapshotDate, snapshotUrl } from '../../lib/archivedCopies';
 
@@ -94,6 +96,7 @@ const ogCard = piece.data.hero?.src
     dek: piece.data.dek,
     path: withBase(`/articles/${piece.id}/`),
     date: piece.data.date,
+    dateModified: lastmodFor(withBase(`/articles/${piece.id}/`)),
     lang: 'en',
     country: piece.data.country,
     themes: piece.data.themes,
