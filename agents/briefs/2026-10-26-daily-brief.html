@@ -213,11 +213,16 @@
   </header>
 
   <div class="push-block">
-    <div class="kicker">Nothing owed by you &middot; <strong>the site is current</strong> &middot; no missed day &middot; <strong>one thing goes false on 1 November and only you can stop it</strong></div>
+    <div class="kicker">Nothing owed by you &middot; <strong>today&rsquo;s deploy had not fired when this was written</strong> &middot; no missed day &middot; <strong>one thing goes false on 1 November and only you can stop it</strong></div>
     <p>
-      <strong>The website is current and nothing is waiting on you.</strong> Yesterday&rsquo;s deploy went
-      green on the exact commit this repository held this morning. Today&rsquo;s work went out in five
-      pushes across the day rather than one at the end.
+      <strong>Nothing is waiting on you, and here is the state rather than a forecast of it.</strong>
+      Yesterday&rsquo;s deploy went green on the exact commit this repository held this morning. Today&rsquo;s
+      work went out in five pushes across the day. <strong>At the moment this was written the site was still
+      serving yesterday&rsquo;s build</strong> &mdash; measured, not guessed: 133 of 134 pages carry the
+      25 October date. That is normal and nobody&rsquo;s fault: the step that publishes runs <em>after</em>
+      the step that writes this, so no run has ever been able to watch its own deploy. It should go out
+      within a minute or two of this brief being pushed, and tomorrow&rsquo;s brief will report what it
+      actually did rather than what this one expected.
     </p>
     <p>
       <strong>Four published pieces were saying something that had quietly stopped being true, and no check
