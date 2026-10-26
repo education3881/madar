@@ -31,8 +31,15 @@ UTC date to **Asia/Dubai** before dating anything.
    what is actually on disk: drafts, Arabic twins, verdicts, stills, share cards,
    flags. The ledger is the Verifier's instrument and it is only useful if it is true.
    Re-check the **gate dependency** — which held pieces rail into which — before any
-   flip is contemplated. Re-read every **forward-looking date** in every held piece
-   against the calendar; a plan is only a plan until its date arrives.
+   flip is contemplated. Re-read every **editorial future in the SERVED corpus
+   whose date has arrived since the last review** against the calendar — rescoped
+   2026-10-26 by **ruling #117**, because the previous wording said *in every held
+   piece* and there have been zero held pieces since Edition 05 flipped on
+   2026-10-13, so the mandate was vacuous at exactly the moment the exposure moved
+   onto pages a reader can load. A held plan is invisible (#18); a served plan
+   re-asserts itself every day the page is served (#102). The date is not the defect
+   — the **verb** is, and only when the verb is this publication's own: a quotation
+   and a dated report do not expire.
 
 4. **The bet, read.** State last week's growth bet, the numbers it said it would be
    read on, and what they came back as. **A bet whose outcome the operation does not
