@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-22",
+ "observed": "2026-10-26",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -552,11 +552,23 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-22",
-   "status": null,
-   "note": "URLError",
-   "ctype": "",
-   "state": "unreached"
+   "observed": "2026-10-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html",
+   "written_in": "latin:6165",
+   "tokens": [
+    {
+     "token": "An Act Discontinuing the Use of the Mother Tongue as Medium of Instruction from Kindergarten to Grade 3",
+     "verdict": "absent"
+    },
+    {
+     "token": "قانونٌ بوقف استعمال اللغة الأمّ وسيلةً للتعليم من رياض الأطفال إلى الصف الثالث",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://en.tempo.co/read/1931371/new-minister-abdul-muti-indicates-review-of-merdeka-curriculum",
@@ -1908,6 +1920,39 @@
    "state": "unreadable-format"
   },
   {
+   "url": "https://www.acara.edu.au/reporting/key-dates",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3375",
+   "tokens": [
+    {
+     "token": "August 2026 (published)",
+     "verdict": "found"
+    },
+    {
+     "token": "Dates are indicative only and may change due to data availability",
+     "verdict": "found"
+    },
+    {
+     "token": "أغسطس 2026 (نُشِر)",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "المواعيد استدلاليةٌ فقط وقد تتغير بحسب توفر البيانات",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://www.aljazeera.com/features/2026/4/8/yemens-teachers-pushed-to-the-brink-as-salaries-collapse",
    "pieces": [
     "2026-07-07-yemen-teacher-pay-continuity:ar"
@@ -2992,22 +3037,36 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
-   "status": null,
-   "note": "URLError",
-   "ctype": "",
-   "state": "unreached"
+   "observed": "2026-10-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:8041",
+   "tokens": [
+    {
+     "token": "مؤسسات الريادة",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.men.gov.ma/fr/%C3%A9tablissements-pionniers",
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:en"
    ],
-   "observed": "2026-10-22",
-   "status": null,
-   "note": "URLError",
-   "ctype": "",
-   "state": "unreached"
+   "observed": "2026-10-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:11078",
+   "tokens": [
+    {
+     "token": "Établissements pionniers",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.mineduc.cl/resultados-simce-2024-revelan-historico-avance-en-4basico/",
@@ -3576,11 +3635,23 @@
     "2026-06-16-vietnam-tuition-free-public-school:en",
     "2026-06-16-vietnam-tuition-free-public-school:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:8651",
+   "tokens": [
+    {
+     "token": "Free education",
+     "verdict": "found"
+    },
+    {
+     "token": "التعليم المجاني",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.rnz.co.nz/news/education/534832/ero-ncea-report-pass-mark-from-principals-for-new-literacy-numeracy-tests",
@@ -3588,11 +3659,23 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:7338",
+   "tokens": [
+    {
+     "token": "ERO NCEA report: Pass mark from principals for new literacy, numeracy tests",
+     "verdict": "found"
+    },
+    {
+     "token": "تقريرُ ERO عن NCEA: علامةُ نجاحٍ من المديرين لاختبارات القرائية والحساب الجديدة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.savethechildren.net/news/about-300000-children-risk-losing-education-learning-centres-rohingya-camps-shut-due-funding",
@@ -3600,22 +3683,45 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5671",
+   "tokens": [
+    {
+     "token": "About 300,000 children at risk of losing education as learning centres in Rohingya camps shut due to funding",
+     "verdict": "absent"
+    },
+    {
+     "token": "نحو 300,000 طفل مهددون بفقدان التعليم مع إغلاق مراكز التعلم في مخيمات الروهينغا بسبب التمويل",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.savethechildren.org.uk/blogs/2026/results-are-out-summary-save-childrens-evaluation-results-sierra-leone-education-innovation",
    "pieces": [
     "2026-08-28-sierra-leone-sleic-outcomes:en"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:11115",
+   "tokens": [
+    {
+     "token": "The results are out!",
+     "verdict": "found"
+    },
+    {
+     "token": "check our homework",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.sciencedirect.com/science/article/pii/S0738059325002068",
@@ -3623,11 +3729,11 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.seduc.ce.gov.br/2026/03/24/pelo-segundo-ano-ceara-obtem-ouro-no-selo-nacional-compromisso-com-a-alfabetizacao/",
@@ -3646,11 +3752,11 @@
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.telesemana.com/blog/2025/03/31/eduia-lab-despues-del-plan-ceibal-uruguay-apuesta-por-la-educacion-y-el-desarrollo-de-la-inteligencia-artificial/",
@@ -3658,11 +3764,23 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:12181",
+   "tokens": [
+    {
+     "token": "EduIA Lab: después del Plan Ceibal, Uruguay apuesta por la educación y el desarrollo de la inteligencia artificial",
+     "verdict": "found"
+    },
+    {
+     "token": "EduIA Lab: بعد خِطَّة سيبال، الأوروغواي تُراهن على التعليم وتطوير الذكاء الاصطناعي",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.terra.com.br/noticias/educacao/pais-tem-resultado-pior-de-alfabetizacao-em-prova-federal-mas-mec-diz-que-exame-nao-e-indicador,f5b2e5a4483ced618789f5744a34e9day49t8vl4.html",
@@ -3670,22 +3788,50 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:8366",
+   "tokens": [
+    {
+     "token": "País tem resultado pior de alfabetização em prova federal, mas MEC diz que exame não é indicador",
+     "verdict": "found"
+    },
+    {
+     "token": "is not the indicator",
+     "verdict": "absent"
+    },
+    {
+     "token": "البلد يحصل على نتيجة أسوأ في الامتحان الاتحادي، لكنّ الوزارة تقول إنّ الامتحان ليس المؤشّر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "الامتحان ليس المؤشّر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "partial"
   },
   {
    "url": "https://www.the74million.org/article/after-declaring-naep-off-limits-education-department-cancels-upcoming-test/",
    "pieces": [
     "2026-07-07-us-naep-honesty-gap:en"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:10640",
+   "tokens": [
+    {
+     "token": "After declaring NAEP off-limits, Education Department cancels upcoming test",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.the74million.org/article/responding-to-post-pandemic-norms-more-states-are-lowering-testing-standards/",
@@ -3693,11 +3839,23 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:22290",
+   "tokens": [
+    {
+     "token": "Responding to post-pandemic norms, more states are lowering testing standards",
+     "verdict": "absent"
+    },
+    {
+     "token": "استجابةً لمعايير ما بعد الجائحة، مزيد من الولايات يخفّض معايير الاختبارات",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.thedailystar.net/news/bangladesh/education/news/education-rohingya-camps-disarray-3949321",
@@ -3705,11 +3863,23 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6458",
+   "tokens": [
+    {
+     "token": "Education in Rohingya camps in disarray",
+     "verdict": "absent"
+    },
+    {
+     "token": "التعليم في مخيمات الروهينغا في حالة اضطراب",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.thisislebanon.com/exclusive/584086/",
@@ -3717,11 +3887,23 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:4485",
+   "tokens": [
+    {
+     "token": "Lebanon before a new educational map: 46% of pupils leaving private schools?",
+     "verdict": "script-mismatch",
+     "token_script": "latin"
+    },
+    {
+     "token": "لبنان أمام خريطة تعليمية جديدة: 46% من التلامذة يتركون المدارس الخاصة؟",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.timss-sa.org/wp-content/uploads/2022/02/FINAL-HSRC-TIMSS-Gr9-report_ELECTRONIC.pdf",
@@ -3729,11 +3911,11 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "application/pdf",
+   "state": "unreadable-format"
   },
   {
    "url": "https://www.ulster.ac.uk/news/2024/november/ulster-university-partners-with-unesco-to-support-restoration-of-mosul-library",
@@ -3741,22 +3923,22 @@
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.undp.org/arab-states/press-releases/moslawis-celebrate-reopening-mosul-universitys-central-library-and-ninewa-federal-court-appeal",
    "pieces": [
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.unesco.org/en/articles/game-based-learning-tool-children-conflict-areas-wins-unesco-prize-innovation-education",
@@ -3764,11 +3946,28 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5258",
+   "tokens": [
+    {
+     "token": "A game-based learning tool for children in conflict areas wins UNESCO Prize for innovation in education",
+     "verdict": "found"
+    },
+    {
+     "token": "أداةُ تعلُّمٍ قائمةٌ على اللعب للأطفال في مناطق النزاع تفوز بجائزة اليونسكو للابتكار في التعليم",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "التعليم لا ينتظر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unhcr.org/sites/default/files/2025-08/teachers-in-refugee-and-displacement-settings-chad-case-study.pdf",
@@ -3776,22 +3975,22 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.unhcr.org/ua/en/news/press-releases/unhcr-lwf-open-new-underground-schools-kharkiv",
    "pieces": [
     "2026-07-07-ukraine-wartime-schooling:en"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.unhcr.org/us/news/stories/sudanese-refugees-chad-face-challenges-deliver-education",
@@ -3799,11 +3998,11 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
-   "note": "",
-   "ctype": ""
+   "observed": "2026-10-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://www.unicef.org/bangladesh/en/press-releases/education-almost-quarter-million-rohingya-refugee-children-risk-unicef-calls-urgent",
@@ -3811,11 +4010,23 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5564",
+   "tokens": [
+    {
+     "token": "Education of almost a quarter of a million Rohingya refugee children at risk",
+     "verdict": "absent"
+    },
+    {
+     "token": "تعليم نحو ربع مليون طفل من لاجئي الروهينغا في خطر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.unicef.org/chad/press-releases/close-5000-refugee-students-sudan-finalize-their-baccalaureate-exams-chad",
@@ -3823,11 +4034,23 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-26",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5946",
+   "tokens": [
+    {
+     "token": "Close to 5,000 refugee students from Sudan finalize their Baccalaureate exams in Chad",
+     "verdict": "found"
+    },
+    {
+     "token": "قرابة 5,000 طالب لاجئ من السودان يُكملون امتحانات البكالوريا في تشاد",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/egypt/stories/egypts-national-literacy-mission",
