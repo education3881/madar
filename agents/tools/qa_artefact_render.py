@@ -145,7 +145,33 @@ FAMILIES = ("agents/briefs", "agents/reviews")
 # The 25 are listed rather than counted, because a count with no membership list
 # is this operation's oldest recurring defect (#57, and the three instances the
 # 2026-10-18 review found in one week).
-OVERFLOW_BASELINE = {
+#
+# ---------------------------------------------------------------------------
+# 2026-10-27 — **THE BASELINE IS EMPTY AND LIMB B NOW GATES.** Standing-queue
+# item 27 was taken at the head and all 25 were repaired: 136 of 136 artefacts
+# render with nothing overflowing. The twenty-five are kept below, commented
+# out, because a membership list that is deleted on the day it empties leaves
+# the next reader of this file unable to tell a repaired population from one
+# that was never measured.
+#
+# **Why the "do not assert" reason above no longer holds, limb by limb.** It had
+# two parts and they have moved in opposite directions. (1) *There is an excused
+# population* — there is not, any more; the floor is now AT today's reality
+# rather than above it, which is the condition #93 names for a measurement to
+# become a gate. (2) *The probe cannot be shown to bite on the class it was
+# commissioned for* — still true, and still item 28: `scrollWidth` is silent on
+# inline text overflowing an `overflow: visible` block. But a blind spot is a
+# gap in SENSITIVITY, not a source of false positives, and the class the probe
+# CAN see is the one that produced every defect it has ever found and was proved
+# red-then-green again today. An assertion that catches one of two mechanisms is
+# worth more than a measurement that catches neither, so B gates on what it can
+# see and prints what it cannot. **What is asserted is narrower than the limb's
+# name**: *no artefact overflows in a way `scrollWidth` reports*. The rest is
+# item 28's.
+# ---------------------------------------------------------------------------
+OVERFLOW_BASELINE = set()
+
+REPAIRED_2026_10_27 = {
     # the push-block seven — document wider than the viewport
     "agents/briefs/2026-08-10-daily-brief.html",
     "agents/briefs/2026-08-11-daily-brief.html",
@@ -453,10 +479,15 @@ def main():
                                o["client"], o["over"], o["text"][:48]))
             worst.append((max([doc_over] + [o["over"] for o in over]), rel))
             overflowing.append((rel, " · ".join(bits), baselined))
+            # 2026-10-27: limb B gates. The baseline is empty, so `baselined` is
+            # False for every artefact and the branch is kept only so that a
+            # future run which needs to excuse one does it by NAMING it here
+            # rather than by switching the limb back off.
+            if not baselined:
+                failures.append((rel, "OVERFLOWS AT %dpx" % VIEWPORT, " · ".join(bits)))
         else:
             overflow_ok += 1
 
-    new_overflow = [o for o in overflowing if not o[2]]
     # Scoped to what was actually RENDERED, not to the whole baseline: under
     # `--only` the unmeasured members are not fixed, they are absent, and
     # telling a future run to delete 25 live entries because it filtered to one
@@ -473,7 +504,7 @@ def main():
             lo, lorel = min(tail_ratios)
             print("     thinnest margin ...... %.1f%% of source text, floor %.0f%%  %s"
                   % (lo * 100, TEXT_FLOOR * 100, lorel))
-        print("  B  nothing overflows ..... %d of %d  (MEASURED, NOT ASSERTED - see header)"
+        print("  B  nothing overflows ..... %d of %d  (ASSERTED from 2026-10-27; baseline empty)"
               % (overflow_ok, len(targets)))
         for sev, rel in sorted(worst, reverse=True)[:12]:
             print("     worst overflow ....... %6dpx  %s" % (sev, rel))
@@ -501,22 +532,20 @@ def main():
           "real browser" % (len(targets), VIEWPORT))
     print("  A  tail renders .......... %d of %d · ASSERTED on all, nothing excused "
           "(the 2026-10-12 bite)" % (tails_ok, len(targets)))
-    print("  B  nothing overflows ..... %d of %d · MEASURED, NOT ASSERTED"
-          % (overflow_ok, len(targets)))
-    print("       This probe reads scrollWidth, which Chrome does NOT grow for inline")
-    print("       text overflowing an overflow:visible block - proved by injection, see")
-    print("       the header. It therefore has a known blind spot on the exact class it")
-    print("       was commissioned for, and a check that cannot be shown to bite does")
-    print("       not gate a build. The Range-rectangle oracle is queue item 28.")
+    print("  B  nothing overflows ..... %d of %d · ASSERTED from 2026-10-27, "
+          "baseline EMPTY" % (overflow_ok, len(targets)))
+    print("       The 25 historical artefacts this limb found on 2026-10-19 were all")
+    print("       repaired on 2026-10-27 (queue item 27), so the floor is now AT")
+    print("       today's reality rather than above it and the limb gates.")
+    print("       It gates on LESS than its own name: this probe reads scrollWidth,")
+    print("       which Chrome does NOT grow for inline text overflowing an")
+    print("       overflow:visible block, so what is asserted is 'no artefact")
+    print("       overflows in a way scrollWidth reports'. A blind spot is a gap in")
+    print("       sensitivity, never a source of false positives. The Range-rectangle")
+    print("       oracle that would widen it is queue item 28.")
     if overflowing:
-        print("       %d artefacts overflow today, every one historical; repair is queue "
-              "item 27" % len(overflowing))
         for sev, rel in sorted(worst, reverse=True)[:5]:
-            print("       %6dpx  %s" % (sev, rel))
-    if new_overflow:
-        print("       NEW since the 2026-10-19 baseline, and NOT excused by it:")
-        for rel, detail, _b in new_overflow:
-            print("       ! %s\n           %s" % (rel, detail))
+            print("       %6dpx  %s  (excused by name in OVERFLOW_BASELINE)" % (sev, rel))
     if fixed:
         print("       no longer overflowing - delete from OVERFLOW_BASELINE: %s"
               % ", ".join(fixed))

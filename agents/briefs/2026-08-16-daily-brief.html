@@ -173,6 +173,49 @@
     border-inline-start: 2px solid var(--color-orange);
   }
 
+  /* 2026-10-27 repair, standing-queue item 27. The markup of this brief -- and of
+     the six others dated 2026-08-10 to 2026-08-18, and of no other brief in the
+     corpus -- writes the founder's copy-paste block as `<pre class="push">`, and
+     `.push` was never given a rule in any of those seven stylesheets. The element
+     therefore fell back to the user-agent `pre` default, which wraps nothing and
+     scrolls nothing, and the unbreakable `cd "/Users/vini/Documents/..."` line made
+     these seven documents 7,277 to 34,254px wider than the 1280px viewport for 62
+     days, in the one artefact the CHARTER names as the proof-of-work contract. The
+     106 briefs on either side of those seven use `.push-block` above, which holds
+     the same line in a scrolling box. This rule is that treatment collapsed onto
+     the single element the markup kept, because a repair restores the design the
+     stylesheet already states rather than inventing a third one. Not one byte of
+     the command changes, and `white-space: pre` is retained deliberately: a shell
+     line is copied, and a soft wrap in a command block invites a reader to retype
+     it. */
+  pre.push {
+    display: block;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.55;
+    padding: 0.85rem 1rem;
+    margin: 0.5rem 0 0;
+    border-radius: 2px;
+    border-inline-start: 2px solid var(--color-orange);
+    overflow-x: auto;
+    white-space: pre;
+    max-width: 100%;
+  }
+  pre.push code {
+    display: block;
+    font: inherit;
+    color: inherit;
+    background: none;
+    padding: 0;
+    border: 0;
+    overflow-x: auto;   /* the scroll container is the `code`, exactly as in
+                           `.push-block code` above: put it on the `pre` alone and
+                           the block child inside it becomes the overflowing box
+                           instead, which is the same defect one element in. */
+  }
+
   /* Statistics panel (standing) */
   .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
   .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
@@ -195,6 +238,14 @@
 </style>
 </head>
 <body>
+<main class="container">
+<!-- 2026-10-27 repair: this opening tag was missing. The 2026-08-16 template
+     edit deleted it (08-16 kept the orphan closing tag; 08-17 lost both), so
+     these two briefs rendered EDGE TO EDGE with `.container` -- max-width 40rem,
+     margin-inline auto, padding-inline -- sitting in the stylesheet matching
+     nothing. That is the defect the RUNBOOK 2026-08-23 founder-facing perimeter
+     rule was written about; the rule was written and the two artefacts that
+     earned it were never repaired. Markup only: no text changes. -->
 
   <header class="masthead">
     <div class="masthead__brand">Madār<span class="macron">·</span><span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">مدار</span></div>

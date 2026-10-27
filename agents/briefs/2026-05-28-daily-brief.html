@@ -143,16 +143,27 @@
   .twin ul {
     list-style: none; padding: 0; margin: 0;
   }
+  /* 2026-10-27 repair, standing-queue item 27. This rule read `display: grid;
+     grid-template-columns: 1.5rem 1fr; gap: 0.5rem` for a hanging bullet. Grid
+     BLOCKIFIES its children, so every inline <strong>, <em>, <code> and
+     <span class=mono> written inside one of these <li> elements became its own
+     grid item and was auto-placed into the 1.5rem (24px) bullet column, where its
+     text overflowed by 11 to 190px -- Brief No. 01's "right-hand column one word
+     wide". The bullet is generated content, so it is taken out of flow instead:
+     the same 2rem indent and the same orange middot survive, and the inline
+     markup stays inline. Not one byte of this brief's text changes. */
   .twin li {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0 0.75rem 2rem;
     border-bottom: 1px solid var(--color-rule-soft);
-    display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.5rem;
+    display: block;
+    position: relative;
     line-height: 1.5;
   }
   .twin li:last-child { border-bottom: none; }
   .twin li::before {
     content: '·'; color: var(--color-orange); font-weight: 700;
     font-size: 1.4em; line-height: 1.1;
+    position: absolute; left: 0.45rem; top: 0.5rem;
   }
 
   /* Today/Tomorrow: tighter blockable list */
