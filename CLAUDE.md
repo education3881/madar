@@ -52,7 +52,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#117**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#118**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
