@@ -6,7 +6,7 @@ its cron, inside the measured band (#107).
 
 ## What shipped
 
-**Five functions, five pushes**, per #96 — nothing saved for the end.
+**Five functions, six pushes**, per #96 — nothing saved for the end.
 
 1. **Quality / the queue head — item 27, 8 days, the second served DEFECT ever to take a head.** All
    **25** broken founder-facing artefacts repaired; **136 of 136** now render with nothing overflowing,
@@ -54,3 +54,14 @@ bucket.
 **Today's forward question, which tomorrow must test before adding anything new:** the only overflow
 gate this operation owns reads the artefacts and never the publication, and it reads them at exactly
 one width.
+
+
+## Addendum — the deploy, recorded as an observation
+
+Measured at **10:35Z**, after the fifth function landed: all six of today's commits are on `origin`,
+**no deploy has fired for any of them**, and `qa_live_drift` reports **DRIFT(133)** — the origin is
+serving yesterday's build. Normal and nobody's fault: the step that dispatches the deploy runs *after*
+the agent step ends, so no run has ever observed its own publication (#71, standing-queue item 31). The
+brief carries the measurement rather than the forecast, and the push count in it was corrected from
+five to six in the same commit — a count in the one artefact the founder opens is held to the same
+standard as a count in the register.
