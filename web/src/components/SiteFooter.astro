@@ -1,12 +1,18 @@
 ---
 import { withBase } from '../lib/urls';
 import { currentEdition } from '../lib/editions';
+import { copyrightYear } from '../lib/copyrightYear.mjs';
 
 interface Props {
   lang?: 'en' | 'ar';
 }
 const { lang = 'en' } = Astro.props;
-const year = new Date().getFullYear();
+// 2026-10-27, standing-queue item 43: this read `new Date().getFullYear()` and was
+// therefore a claim about when the build ran, served on all 134 pages and invisible
+// to every byte-comparison this operation owns. Now derived from git, like the
+// sitemap's own dates. See lib/copyrightYear.mjs for why that is the difference
+// between a claim that can be wrong and one that cannot be caught.
+const year = copyrightYear();
 
 const edNum = String(currentEdition.number).padStart(2, '0');
 const edNumAr = currentEdition.number.toLocaleString('ar-EG', { minimumIntegerDigits: 2 });
