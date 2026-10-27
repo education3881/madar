@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-10-25</title>
+<meta name="description" content="Manager to Founder daily brief for Sunday 25 October 2026. Brief 112. Two italic tags were costing the Arabic edition a third of the type it downloads, and nothing we own could see it, because every check we have reads a byte that exists rather than a byte a reader is sent." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 114
+      <strong>Tuesday 27 October 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Nothing owed by you &middot; <strong>yesterday&rsquo;s deploy went green</strong> &middot; no missed day &middot; <strong>one thing goes false on 1 November, and it is yours</strong></div>
+    <p>
+      <strong>Nothing is waiting on you.</strong> Yesterday&rsquo;s deploy went green on the exact commit this
+      repository held this morning, and the live site matched the build byte for byte &mdash; 134 pages, no
+      drift, measured before anything else was touched. Today&rsquo;s work went out in five pushes across the
+      day. As ever, the step that publishes runs <em>after</em> the step that writes this, so tomorrow&rsquo;s
+      brief will report what today&rsquo;s deploy actually did rather than what this one expects of it.
+    </p>
+    <p>
+      <strong>Twenty-five of the documents in this series were broken, and seven of them were unreadable.</strong>
+      Not the website &mdash; <em>these briefs</em>, the one thing the charter says you actually open. Seven
+      briefs from August are between five and twenty-six screens wider than the window they open in, because
+      the copy-paste block I used to send you sat in a box nobody had ever given a style. Seventeen more from
+      May and June push half their bold phrases into a column twenty-four pixels wide. <strong>All twenty-five
+      are repaired, and the check that found them now fails the build if it ever happens again.</strong>
+    </p>
+    <p>
+      <strong>The part worth your minute is where the answer came from.</strong> I did not have to invent how
+      a push block should look: the right design was sitting in each of those seven files the whole time,
+      written out in full, attached to a name the page had stopped using. The instruction survived; the page
+      walked away from it. That is now a standing rule here &mdash; <em>before deleting a style nothing uses,
+      ask whether it is leftover or whether it is the last surviving description of what the page was
+      supposed to be.</em>
+    </p>
+    <p>
+      <strong>And one decision is yours, with four days on the clock.</strong> The home page tells every reader
+      that the current issue is <em>October 2026</em>. On 1 November that sentence becomes false by itself and
+      nothing here can make it true &mdash; it needs to know what the next edition is. That is <strong>GitHub
+      issue 13</strong>, opened Sunday. Today it stopped being a note in a brief and became a row on the board
+      with a date on it: on 1 November it moves itself into the column marked <em>currently wrong</em>.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        <h2>The tense correction travelled, and the deploy was recorded rather than predicted</h2>
+        <div class="day__date">2026-10-26 &middot; Monday &middot; five pushes and an addendum, nothing dropped</div>
+      </div>
+    </div>
+
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label status-shipped">Delivered and deployed</div>
+        <div class="item__body">
+          <p>
+            Nine expired sentences across four pieces in both languages, a new ruling, a new structured-data
+            field on all 88 article pages, and an addendum that declined to forecast its own deploy. The
+            deploy fired and went green on that exact commit. <strong>Checked this morning rather than
+            assumed:</strong> the live origin and the local build agree on all 134 pages, with zero date
+            drift. No missed day.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-note">What yesterday left open, and today took</div>
+        <div class="item__body">
+          <p>
+            Yesterday&rsquo;s run asked, in writing, what its own sweep could not see, and the answer was that
+            some of this publication&rsquo;s claims are not in any article at all &mdash; they live in the code
+            that builds the pages. <strong>That question was answered today</strong>, and it turned out to have
+            a second half nobody had asked for. More below.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        <h2>The evidence was the part we were about to throw away</h2>
+        <div class="day__date">2026-10-27 &middot; Tuesday &middot; five functions, five pushes</div>
+      </div>
+    </div>
+
+    <div class="day__items">
+
+      <div class="item">
+        <div class="item__label status-fixed">Quality &middot; the oldest live defect on the board, closed</div>
+        <div class="item__body">
+          <p>
+            The board sends the run at whatever is <em>currently wrong</em> before anything else, and this
+            morning that was eight days old: <strong>twenty-five of your briefs and reviews render broken.</strong>
+            The written description named two causes. There were three.
+          </p>
+          <p>
+            <strong>Seven briefs, 10&ndash;18 August.</strong> The copy-paste block went into a box tagged
+            <span class="mono">push</span>, and <span class="mono">push</span> was never given a style in any of
+            those seven files. So the browser fell back to its own default, which neither wraps nor scrolls, and
+            your one-line commit command dragged the whole document <strong>7,277 to 34,254 pixels</strong> wider
+            than the screen. Sixty-two days.
+          </p>
+          <p>
+            <strong>Seventeen briefs, late May to mid-June.</strong> Each bullet was laid out as a two-column
+            grid with a 24-pixel gutter for the dot. A grid does something to the text inside it that reads like
+            a technicality and is not: it breaks every bold phrase out into a cell of its own, and half of them
+            landed in the 24-pixel gutter. That is Brief No. 01&rsquo;s famous one-word-wide column, and the
+            mechanism now has a name.
+          </p>
+          <p>
+            <strong>And one weekly review, which was not that at all.</strong> A full sentence of prose had been
+            put inside a cell marked <em>this cell holds a number</em>, and that marking tells the browser never
+            to wrap. Nineteen pixels. Found by repairing the other twenty-four, not by counting them.
+          </p>
+          <p>
+            <strong>136 of 136 now render clean</strong>, and the check that measures it has been promoted: it
+            used to print a warning, and it now <strong>fails the build</strong>. It had been held back for two
+            reasons; one of them &mdash; <em>there are twenty-five known exceptions</em> &mdash; stopped being
+            true this morning.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-fixed">And two more, found by looking rather than by measuring</div>
+        <div class="item__body">
+          <p>
+            A standing rule here says that every page rendered for a human gets opened and <em>looked at</em>
+            before it ships. Looking at the repaired 17 August brief showed it still running edge to edge, with
+            no margin at all. Both it and the 16 August brief are missing the single tag that centres the page
+            &mdash; while the instruction that would have centred them sits complete in both stylesheets,
+            pointing at nothing.
+          </p>
+          <p>
+            <strong>Those are the exact two briefs that caused us to write the rule about looking, on 23 August.</strong>
+            We wrote the rule, built the checks it demanded, and never went back and fixed the two documents that
+            prompted it. Sixty-five days. Both are repaired now. <em>A rule written about a thing does not repair
+            the thing.</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Knowledge &middot; ruling 118</div>
+        <div class="item__body">
+          <p>
+            Both halves of today&rsquo;s repair leaned on something we were inclined to treat as rubbish, and that
+            is the ruling. <strong>What the page was supposed to look like</strong> survived only in style rules
+            that matched nothing &mdash; so an unused style is not dead weight, it is an unfiled bug report about
+            the page. <strong>What actually went wrong</strong> survived only in the version history.
+          </p>
+          <p>
+            That second half cost me a wrong answer first. To prove the new check really bites, you have to break
+            something on purpose and watch it go red. I rebuilt the fault by hand from a diagnosis I had got
+            right &mdash; and the check passed. The reconstruction restored one half of a two-part mechanism, so
+            it produced a different and harmless layout. <strong>Restored from the version history instead, the
+            real defect went red immediately.</strong> When the fault is in the history, do not rebuild it from
+            your understanding of it; your understanding is exactly what you are trying to test.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Content &middot; T&uuml;rkiye, read after its own deadline</div>
+        <div class="item__body">
+          <p>
+            Our T&uuml;rkiye piece argues that a published rebuild ledger turns <em>has Hatay recovered?</em> into
+            a question you can actually check. Its deadline &mdash; September 2026 &mdash; has now passed, so we
+            checked it.
+          </p>
+          <p>
+            <strong>The province answered; the country did not.</strong> On 14 September, opening the school year,
+            Hatay&rsquo;s governor put his province at <strong>254 schools finished and back in use against 47
+            still building</strong> &mdash; the same two columns the piece reported at 199 and 70 a year earlier,
+            moved again in the same direction. The national figure, measured against the ministry&rsquo;s own
+            24,000-classroom target, we <em>could not find</em>. Both editions now say exactly that, and say it as
+            a record of our search rather than as a claim about the ministry&rsquo;s silence.
+          </p>
+          <p>
+            One detail of method, because it is the kind of thing this publication exists to get right. Arabic
+            cannot name a governor without declaring his gender; English can avoid it, and Turkish does not mark
+            it at all. So rather than guess from the name, the Arabic edition read it off the man&rsquo;s own
+            official profile, which describes him as a father of three &mdash; and that page is now cited in
+            <em>both</em> editions, with the reason written out, although only one of them needed it.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-shipped">Growth &middot; a claim that could never have been caught</div>
+        <div class="item__body">
+          <p>
+            Yesterday&rsquo;s open question: which of our claims live in the code rather than in the articles?
+            Enumerated today. Two kinds came back, and only one was expected.
+          </p>
+          <p>
+            The expected kind is a date that expires &mdash; <em>October 2026</em> on the home page, false on
+            1 November, yours to resolve. <strong>The unexpected kind is worse, because nothing could ever have
+            noticed it.</strong> The copyright line in the footer of all 134 pages read <em>the year the build
+            happened to run in</em>. Every test we own compares one byte against another byte, and two builds run
+            in the same year produce the same byte no matter what the repository says. On 1 January 2027 every
+            page built in December quietly starts carrying the wrong year, nothing goes red, and nothing could.
+          </p>
+          <p>
+            It now takes its year from the repository&rsquo;s own history, the same source the sitemap uses.
+            <strong>The footer is byte-for-byte identical today</strong> &mdash; which is the right result, not a
+            sign that nothing happened. The value did not change; where it comes from did. It is now the same on
+            any day you build it, and for the first time it is capable of being wrong in a way something can
+            detect. <em>A claim that cannot be caught being wrong is not a strong claim.</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label status-note">The checks caught me three times today, and were right three times</div>
+        <div class="item__body">
+          <p>
+            Worth recording because it is the system working rather than the system being tidy. The pair check
+            caught two new citations pasted one level too high in a file. Two citation checks went red because
+            the new sources had never been archived or verified, and cleared once they were. And the figure
+            check went red on the characters <span class="mono">86</span> inside a note I had just written
+            &mdash; which is a reference to <em>our own rule 86</em>, not a measurement at all. Logged as such,
+            rather than teaching the tool to ignore anything with a hash in front of it.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-10-27 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 11 · Asia 7 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 44 · access 40 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-09-27</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        <h2>The gate we built today reads the wrong corpus, at one width</h2>
+        <div class="day__date">2026-10-28 &middot; Wednesday &middot; on deck</div>
+      </div>
+    </div>
+
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label status-running">Tomorrow&rsquo;s first job, chosen by the rule rather than by me</div>
+        <div class="item__body">
+          <p>
+            The board has <strong>two</strong> things on it that are currently wrong, and the older goes first:
+            <strong>three published articles quote their sources using words those sources did not print.</strong>
+            Five days old. Every correction gets written in the register&rsquo;s own words.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-note">Today&rsquo;s open question, written down so tomorrow has to test it</div>
+        <div class="item__body">
+          <p>
+            Today I promoted a check that catches a page rendering wider than the screen. It is the <em>only</em>
+            tool of the thirty-nine that measures that at all &mdash; and it reads your briefs, <strong>not the
+            publication</strong>. So the 134 pages a reader is served have never been checked for this, at any
+            width, in two scripts, one of which runs right-to-left. The rule that created the brief check in
+            August was written to <em>add</em> your briefs to a net that already covered the website. For this
+            one property the net only ever covered the briefs, and the sentence reads the same either way.
+          </p>
+          <p>
+            Second half, cheaper: the check runs at exactly one window width, 1,280 pixels, chosen because that
+            is what every previous inspection happened to use. A page that is fine at 1,280 and broken on a phone
+            is invisible to it &mdash; and you open these on whatever is in your hand.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__label status-note">Traffic, plainly</div>
+        <div class="item__body">
+          <p>
+            <strong>No visitor numbers, and that is a decision rather than a gap.</strong> The site carries no
+            third-party tracker and makes no third-party request; a check gates that posture on every build. We
+            will not estimate. What we <em>can</em> read without anyone&rsquo;s permission, we read: 134 of 134
+            pages now carry a copyright year derived from the repository instead of from a clock, 0 of them
+            disagree with the sitemap&rsquo;s own date, and the live origin matched the build on all 134 pages
+            when this run began.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+</body>
+</html>
