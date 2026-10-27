@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-21",
+ "observed": "2026-10-27",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -1935,6 +1935,18 @@
    "state": "archived"
   },
   {
+   "url": "https://www.aile.gov.tr/hatay/yoneticilerimiz/valimiz/hatay-valisi-mustafa-masatli",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-06-06",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
    "url": "https://www.ajnet.me/politics/2024/12/28/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A3%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D9%84%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9",
    "pieces": [
     "2026-07-07-sudan-exam-continuity:en",
@@ -1945,6 +1957,19 @@
    "snapshot": "2025-10-13",
    "archive_note": "200",
    "state": "archived"
+  },
+  {
+   "url": "https://www.akdenizgercek.com.tr/hatay/hatayda-depremin-ardindan-yeni-egitim-ogretim-yili-basladi/385087",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.aljazeera.com/features/2026/4/8/yemens-teachers-pushed-to-the-brink-as-salaries-collapse",
@@ -2516,10 +2541,11 @@
     "2026-05-27-uae-madrasa-tiktok:en",
     "2026-05-27-uae-madrasa-tiktok:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-07-26",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.globalpartnership.org/blog/pasecs-contribution-measuring-how-much-children-are-learning",
@@ -2527,10 +2553,11 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-03-23",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/avaliacao-da-alfabetizacao/brasil-e-20-unidades-da-federacao-alcancam-meta-de-alfabetizacao",
@@ -2538,10 +2565,11 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-26",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.pl/web/edukacja/uczniowie-z-ukrainy-w-polskich-szkolach--nowe-rozwiazania-prawne",
@@ -2549,10 +2577,11 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
@@ -2560,10 +2589,11 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-10-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/publications/education-inspection-framework/education-inspection-framework-for-use-from-november-2025",
@@ -2571,10 +2601,11 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-05-18",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference/independent-evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference",
@@ -2582,10 +2613,11 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-06-22",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.iicba.unesco.org/en/zambia",
@@ -2593,10 +2625,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-09-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.imlebanon.org/2025/11/24/lebanon-1023/",
@@ -2604,10 +2637,12 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.indiatvnews.com/education/news/what-is-holistic-progress-card-hpc-list-of-states-that-are-yet-to-adopt-these-cards-2025-04-18-986183",
@@ -2615,10 +2650,11 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-09-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.inseed.td/statistiques/694694a9e91c8b9ce12a07ca",
@@ -2626,10 +2662,12 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.istiklal.com.tr/genel/hatayda-deprem-sonrasi-199-yeni-okul-hizmete-acildi-1068551h",
@@ -2637,10 +2675,11 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-11-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.itv.com/news/2024-09-01/one-word-ofsted-judgments-for-schools-scrapped-by-government",
@@ -2648,10 +2687,11 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-05-10",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.k12dive.com/news/NAEP-nations-report-card-assessment-changes-2033-nagb-vote/746821/",
@@ -2659,10 +2699,11 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-05-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.kemendikdasmen.go.id/siaran-pers/13278-permendikdasmen-nomor-13-tahun-2025-menguatkan-arah-kebijakan-melalui-pembelajaran-mendalam",
@@ -2670,10 +2711,12 @@
     "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.khaleejtimes.com/uae/rak-private-schools-to-roll-out-programme-in-september-to-help-kids-read-arabic",
@@ -2681,10 +2724,11 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-06-12",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.kmu.gov.ua/news/sohodni-35-mln-shkoliariv-rozpochynaiut-novyi-navchalnyi-rik-bilshist-ditei-navchatymetsia-oflain-oksen-lisovyi",
@@ -2692,10 +2736,12 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.koreaherald.com/article/10546695",
@@ -2703,10 +2749,11 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-09-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.koreatimes.co.kr/southkorea/society/20250610/ai-textbooks-targeted-for-phaseout-under-south-koreas-new-administration",
@@ -2714,10 +2761,11 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-10-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.latercera.com/nacional/noticia/cned-aprueba-nueva-propuesta-de-arzola-por-simce-2026-tras-rechazarle-la-idea-inicial-que-eliminaba-pruebas/",
@@ -2725,10 +2773,11 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-06-10",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.learningpassport.org/stories/sudans-19-million-learners-are-facing-worlds-worst-education-crisis",
@@ -2736,10 +2785,11 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-09-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.meb.gov.tr/deprem-bolgesindeki-toplam-derslik-sayisi-6-subat-oncesine-gore-artacak/haber/32430/tr",
@@ -2747,10 +2797,11 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-09-08",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.meb.gov.tr/depremzede-ogrencilerin-sinif-gecme-notunda-iki-donemde-aldiklari-en-yuksek-puani-esas-alinacak/haber/29699/tr",
@@ -2758,10 +2809,11 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2024-08-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.meb.gov.tr/mebden-depremin-yasandigi-on-bir-ilde-egitim-seferberligi/haber/36256/tr",
@@ -2769,10 +2821,11 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-07-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mehe.gov.lb/ar/media-center/news/الوزيرة-كرامي-أصدرت-قرار-بدء-العام-الدراسي-الجديد-20252026",
@@ -2780,30 +2833,33 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-10-03",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.men.gov.ma/%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9",
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-05-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.men.gov.ma/fr/%C3%A9tablissements-pionniers",
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:en"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-05-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.cl/cataldo-tras-entrega-de-resultados-simce-2025-durante-nuestra-gestion-no-solo-recuperamos-aprendizajes-y-protegimos-trayectorias-educativas-sino-que-tambien-logramos-avanzar-de-manera-res/",
@@ -2811,10 +2867,11 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.cl/resultados-simce-2024-revelan-historico-avance-en-4basico/",
@@ -2822,10 +2879,11 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-10-09",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/Publications/REPORTS/Education_Statistics/Education_statistical_yearbook/Education_Statistical_Year_Book_2024-2025.pdf",
@@ -2833,10 +2891,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-08-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/Publications/REPORTS/Education_Statistics/Education_statistical_yearbook/Final_Education_Statistical_Yearbook_23_24.pdf",
@@ -2844,10 +2903,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-16",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/news-detail/communique-on-the-increment-of-salary-for-primary-and-secondary-schools-teachers",
@@ -2855,10 +2915,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2023-01-30",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/news-detail/mineduc-world-bank-report-13-model-schools-11000-classrooms-and-621-resilience-upgrades-under-quality-basic-education-project",
@@ -2866,10 +2927,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2025-11-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/news-detail/the-ministry-of-education-introduces-new-eforms-to-strengthen-teaching-learning-and-student-development",
@@ -2877,10 +2939,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-09-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mineduc.gov.rw/updates/news-2",
@@ -2888,10 +2951,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-09-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.mlex.com/mlex/articles/2373192",
@@ -2899,10 +2963,12 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.moe.gov.sg/news/parliamentary-replies/20250108-secondary-1-posting-outcome",
@@ -2910,10 +2976,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-08",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/news/parliamentary-replies/20250205-data-on-cut-off-points-for-secondary-1-school-admission-for-students-from-affiliated-and-non-affiliated-primary-schools",
@@ -2921,10 +2988,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-27",
+   "archived": true,
+   "snapshot": "2026-03-11",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/news/press-releases/20160713-changes-to-psle-scoring-and-secondary-one-posting",
@@ -4011,6 +4079,5 @@
    "archive_note": "HTTPError",
    "state": "archive-unknown"
   }
- ],
- "item_32_action_2026_10_24": "28 live-only registers were submitted to Save Page Now; 5 were accepted and all 5 are confirmed present by the availability API with a 2026-10-24 timestamp. The other 23 were refused by OUR request rate, not by the archive's willingness: 9 returned HTTP 429 and 14 had the connection refused outright, all within 90 seconds of the first submission. #111's lesson one step on - a row that reads no-snapshot because we were throttled is an observation about us. The remaining 23 are topped up across runs on a budget, exactly as --emit already reads on one."
+ ]
 }

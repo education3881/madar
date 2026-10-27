@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-26",
+ "observed": "2026-10-27",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -1946,6 +1946,53 @@
     },
     {
      "token": "المواعيد استدلاليةٌ فقط وقد تتغير بحسب توفر البيانات",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.aile.gov.tr/hatay/yoneticilerimiz/valimiz/hatay-valisi-mustafa-masatli",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6100",
+   "tokens": [
+    {
+     "token": "Sayın Mustafa MASATLI",
+     "verdict": "found"
+    },
+    {
+     "token": "evli ve 3 çocuk babası olup, iyi derecede İngilizce bilmektedir",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.akdenizgercek.com.tr/hatay/hatayda-depremin-ardindan-yeni-egitim-ogretim-yili-basladi/385087",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4468",
+   "tokens": [
+    {
+     "token": "254 okulun tamamlanarak yeniden eğitime kazandırıldığını, 47 okulun yapımının ise devam ettiğini",
+     "verdict": "found"
+    },
+    {
+     "token": "بدأ العامُ الدراسي الجديد في هاتاي بعد الزلزال",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
@@ -4058,11 +4105,28 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:11012",
+   "tokens": [
+    {
+     "token": "half a million students across 1,000 schools",
+     "verdict": "found"
+    },
+    {
+     "token": "مهمّة مصر القومية لمحو الأمية",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "نصفُ مليون طالبٍ في 1,000 مدرسة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/innocenti/reports/developing-arabic-language-skills-egypt",
@@ -4070,22 +4134,42 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3912",
+   "tokens": [
+    {
+     "token": "Developing Arabic Language Skills in Egypt: Assessing the Implementation and Impact of the NPDA",
+     "verdict": "absent"
+    },
+    {
+     "token": "تنمية مهارات اللغة العربية في مصر: تقييم تنفيذ البرنامج القومي وأثره",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.unicef.org/lebanon/reports/transition-and-resilience-education-fund-tref",
    "pieces": [
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3148",
+   "tokens": [
+    {
+     "token": "التحوّل والصمود للتعليم",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-against-odds-children-begin-new-school-year-rohingya-refugee-camps",
@@ -4093,11 +4177,23 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6381",
+   "tokens": [
+    {
+     "token": "Against the odds, children begin new school year in Rohingya refugee camps",
+     "verdict": "absent"
+    },
+    {
+     "token": "رغم كل الصعاب، الأطفال يبدؤون عامًا دراسيًّا جديدًا في مخيمات لاجئي الروهينغا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-education-milestone-rohingya-refugee-children-myanmar-curriculum-pilot",
@@ -4105,11 +4201,23 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6924",
+   "tokens": [
+    {
+     "token": "An education milestone for Rohingya refugee children as Myanmar curriculum pilot reaches first 10,000 children",
+     "verdict": "absent"
+    },
+    {
+     "token": "مَعلَم تعليمي لأطفال الروهينغا اللاجئين مع بلوغ تجربة منهج ميانمار أول 10,000 طفل",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-goodwill-ambassador-orlando-bloom-visits-rohingya-refugee-camps-bangladesh",
@@ -4117,55 +4225,139 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:8821",
+   "tokens": [
+    {
+     "token": "In June this year, UNICEF was forced to temporarily close most schools in the Rohingya refugee camps",
+     "verdict": "found"
+    },
+    {
+     "token": "almost 150,000 children",
+     "verdict": "found"
+    },
+    {
+     "token": "children across all grades recently resumed learning after fundraising efforts",
+     "verdict": "found"
+    },
+    {
+     "token": "the threat of an imminent funding shortfall in early 2026 risks closing all schools again",
+     "verdict": "found"
+    },
+    {
+     "token": "more than 300,000 children without access to education",
+     "verdict": "found"
+    },
+    {
+     "token": "في يونيو من هذا العام، اضطرت اليونيسف إلى إغلاق معظم المدارس في مخيمات اللاجئين الروهينغا مؤقتًا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "قرابة 150 ألف طفل",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "عاد الأطفال في كل الصفوف حديثًا إلى التعلم بعد جهود جمع التمويل",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "خطر نقص تمويلي وشيك في مطلع 2026 يهدِّد بإغلاق المدارس كلها من جديد",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "أكثر من 300 ألف طفل بلا تعليم",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/ar/%D8%A2%D9%81%D8%A7%D9%82-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/%D9%82%D8%B5%D8%B5",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:3248",
+   "tokens": [
+    {
+     "token": "آفاق جديدة للتعليم في السودان",
+     "verdict": "found"
+    },
+    {
+     "token": "التعليم لا ينتظر",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/ar/%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%85/%D9%82%D8%B5%D8%B5",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:4806",
+   "tokens": [
+    {
+     "token": "فرصة ذهبية للتعلم",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/golden-opportunity-learn",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:en"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5352",
+   "tokens": [
+    {
+     "token": "A golden opportunity to learn",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/new-horizons-education-sudan",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:en"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4300",
+   "tokens": [
+    {
+     "token": "New horizons for education in Sudan",
+     "verdict": "found"
+    },
+    {
+     "token": "our partners from War Child Holland, the Ministry of Education, and the National Council for Literacy and Adult Educatio",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/safe-learning-spaces",
@@ -4173,22 +4365,47 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5674",
+   "tokens": [
+    {
+     "token": "Safe Learning Spaces",
+     "verdict": "found"
+    },
+    {
+     "token": "مساحات التعلّم الآمنة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/sudan-cant-wait-learn",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5275",
+   "tokens": [
+    {
+     "token": "السودان: التعليم لا ينتظر!",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "التعلّم الإلكتروني في السودان",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.unicef.org/syria/press-releases/new-chapter-education-syria-back-learning-campaign-presents-new-opportunities",
@@ -4196,22 +4413,42 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4563",
+   "tokens": [
+    {
+     "token": "for the first time in over a decade",
+     "verdict": "found"
+    },
+    {
+     "token": "للمرة الأولى منذ أكثر من عقد",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.unicef.org/yemen/restoring-education-and-learning-project",
    "pieces": [
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3745",
+   "tokens": [
+    {
+     "token": "استعادة التعليم والتعلُّم",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.unicef.org/yemen/stories/volunteer-teachers-strengthening-education-and-improving-student-retention",
@@ -4219,11 +4456,23 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6045",
+   "tokens": [
+    {
+     "token": "Volunteer Teachers: Strengthening Education and Improving Student Retention",
+     "verdict": "found"
+    },
+    {
+     "token": "المعلمون المتطوعون: تعزيز التعليم وتحسين استبقاء الطلاب",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.uruguayxxi.gub.uy/en/news/article/80-000-uruguayan-students-trained-in-artificial-intelligence-by-2023/",
@@ -4231,11 +4480,23 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5177",
+   "tokens": [
+    {
+     "token": "80,000 Uruguayan students trained in artificial intelligence by 2023",
+     "verdict": "found"
+    },
+    {
+     "token": "80,000 طالبٍ أوروغواياني مُدَرَّبون في الذكاء الاصطناعي بحلول 2023",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.warchild.net/latest/article/cant-wait-to-learn-formalises-handover-of-its-ukraine-learning-platform-to-ukraine-government/",
@@ -4243,22 +4504,47 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6010",
+   "tokens": [
+    {
+     "token": "Can't Wait to Learn completed the full handover of its Ukraine digital learning platform to the government of Ukraine – ",
+     "verdict": "absent"
+    },
+    {
+     "token": "التعليم لا ينتظر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "أكملَ ‹التعليم لا ينتظر› التسليمَ الكاملَ لمنصّته التعليمية الرقمية الأوكرانية إلى حكومة أوكرانيا — تقنيًّا وقانونيًّا و",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://www.warchild.org.uk/news/annual-report-2025",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:9199",
+   "tokens": [
+    {
+     "token": "التعليم لا ينتظر",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.worldbank.org/en/news/feature/2026/03/27/welcome-to-the-workforce-how-rwanda-trained-and-certified-24-000-teachers-in-less-than-one-year",
@@ -4266,33 +4552,80 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:8655",
+   "tokens": [
+    {
+     "token": "Welcome to the Workforce: How Rwanda Trained and Certified 24,000 Teachers in Less Than One Year",
+     "verdict": "found"
+    },
+    {
+     "token": "At that time, approximately 25,000 graduates like Pelagie",
+     "verdict": "found"
+    },
+    {
+     "token": "became teachers",
+     "verdict": "found"
+    },
+    {
+     "token": "including TTC instructors and education specialists",
+     "verdict": "found"
+    },
+    {
+     "token": "in less than one year",
+     "verdict": "found"
+    },
+    {
+     "token": "aimed to train and certify all uncertified pre-primary and primary teachers in the country within one year",
+     "verdict": "found"
+    },
+    {
+     "token": "over 22,000 classrooms",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.worldbank.org/en/news/feature/2026/05/21/morocco-s-pioneer-schools-advancing-improved-student-learning",
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:9194",
+   "tokens": [
+    {
+     "token": "المدارس الرائدة في المغرب: نحو تعلّمٍ أفضل للتلاميذ",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen",
    "pieces": [
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5445",
+   "tokens": [
+    {
+     "token": "استدامة التعليم والتعلُّم",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://www.youm7.com/story/2026/4/23/%D8%A7%D8%B9%D8%B1%D9%81-%D8%A8%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7-%D9%88%D9%85%D8%AF%D8%AA%D9%87/7384066",
@@ -4300,11 +4633,46 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-27",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:4917",
+   "tokens": [
+    {
+     "token": "اعرف بالقانون شروط التقديم لنظام البكالوريا ومدته",
+     "verdict": "found"
+    },
+    {
+     "token": "نظام البكالوريا نظام اختيارياً مجانىاً",
+     "verdict": "found"
+    },
+    {
+     "token": "لا يجوز التحويل منه أو إليه من أنظمة التعليم الثانوي الأُخرى أثناء سنوات الدراسة",
+     "verdict": "found"
+    },
+    {
+     "token": "مدة الدراسة فى نظام البكالوريا ثلاث سنوات",
+     "verdict": "found"
+    },
+    {
+     "token": "يمنح الطالب بعد إتمامها شهادة تعادل شهادة إتمام دراسة الثانوية العامة",
+     "verdict": "found"
+    },
+    {
+     "token": "بما لا يجاوز مائتي جنيهاً فى كل مرة",
+     "verdict": "found"
+    },
+    {
+     "token": "للمادة الواحدة",
+     "verdict": "found"
+    },
+    {
+     "token": "ولوزير التربية والتعليم والتعليم الفني بعد موافقة مجلس الوزراء أن يصدر قراراً بزيادة هذا الحد تدريجياً، على ألا تتجاوز ا",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.zanis.gov.zm/?p=1779",
