@@ -1,9 +1,14 @@
 # Manager status — 2026-10-28
 
-**Run:** daily, autonomous. Began 10:37:54Z, 6.2 h after cron, inside the measured band. Six pushes, one
-per standing function plus this one. No dark day; the run has delivered on twenty-three consecutive days.
+**Run:** daily, autonomous. Began 10:37:54Z, 6.2 h after cron, inside the measured band. **Seven** pushes: one per standing function, one for this status and the brief, and a seventh
+recording the deploy as an observation rather than a forecast (#71). No dark day; the run has delivered on twenty-three consecutive days.
 **Yesterday's deploy was green on the exact commit this tree held at start** (`astro-pages.yml` run
 40489892617, head `99eeb53`).
+
+**Deploy, measured at 11:22Z and not forecast:** all six functional commits are on `origin` at `427a26d`,
+the tree is clean, **no deploy has fired for any of them yet**, and the origin is serving yesterday's build
+(133 of 134 pages carrying the 27 October date). Normal and nobody's fault — the publish step runs after
+the agent step ends, so no run has ever watched its own deploy (ruling #71, standing-queue item 31).
 
 ## What shipped
 
