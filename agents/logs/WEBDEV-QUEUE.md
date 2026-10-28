@@ -27,7 +27,7 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
-## Open — **TWENTY-THREE items in THREE BUCKETS, reconciled against disk 2026-10-28**
+## Open — **TWENTY-FOUR items in THREE BUCKETS, reconciled against disk 2026-10-28**
 
 **2026-10-28 — THE HEAD WAS TAKEN AS WRITTEN, AND IT IS THE THIRD SERVED DEFECT EVER TO TAKE ONE.** The
 displacement line, in one sentence: **this run took item 33 — *three published citations misquote their own
@@ -54,15 +54,17 @@ underneath: **₩1 trillion and $736 million attributed to the World Bank belong
 the near-agreement with the World Bank's own $0.74 billion is what hid the merge — not *averaged* across
 registers, **paired**.
 
-**Count line: TWENTY-THREE open — TWO DEFECT, EIGHTEEN OPEN, THREE BLOCKED. ONE closed today** (item 33
+**Count line: TWENTY-FOUR open — THREE DEFECT, EIGHTEEN OPEN, THREE BLOCKED. ONE closed today** (item 33
 from the DEFECT head at 6 days), **THREE opened** — item 48 (the extractor's apostrophe blind spot, 33
 spans it cannot see, found by the closure itself), item 49 (**both home pages serve no `<h1>` at all**,
-raised by the growth function, DEFECT at two artefacts) and item 50 (**the day's forward question**).
+raised by the growth function, DEFECT at two artefacts), item 50 (**the day's forward question**) and item 51
+(**three brief descriptions carry an earlier day's summary sentence**, DEFECT at three artefacts, raised by
+the brief function after it repaired the derivable half of the same drift in ten files).
 Counted by reading the rows below after removing item 33 in the same commit as its closure, per the 10-24
-rule: twenty-three. **The board is UP TWO.**
+rule: twenty-four. **The board is UP THREE.**
 
-**Rates, carried and moved by today:** raised 15 + 3 + 3 + 3 · closed 10 + 1 + 2 + 1 · board 21 → 23 · the
-28-day breach date stands at **2026-11-25** and today's one-for-three does not move it.
+**Rates, carried and moved by today:** raised 15 + 3 + 3 + 4 · closed 10 + 1 + 2 + 1 · board 21 → 24 · the
+28-day breach date stands at **2026-11-25** and today's one-for-four does not move it back.
 
 **And a row changes bucket by itself in four days:** item 45 is BLOCKED today and **enters DEFECT on
 2026-11-01**, when both home pages begin telling every reader that the current issue is a month that has
@@ -1168,7 +1170,7 @@ first.** It has now been named twelve times and done zero; if it is displaced a 
 rule has failed in the specific way its own author predicted, and the 2026-10-11 review says so plainly
 rather than restating the rule a third time.
 
-### DEFECT — **TWO items.** The head comes from here while any row stands.
+### DEFECT — **THREE items.** The head comes from here while any row stands.
 
 *The boundary is the artefact's, not a judgment: each row names **N > 0** artefacts, currently served or
 currently founder-facing, that are **wrong, broken or unevidenced**. A question carries no such count,
@@ -1177,6 +1179,7 @@ down (#116).*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 51 | **Three of the 117 daily briefs carry an EARLIER day's summary sentence in their `<meta description>`, and nothing asserts that a brief's invisible half agrees with its own masthead** — found by the brief function on the morning #119 was filed, in the artefact the CHARTER names as the founder's proof-of-work contract. **Ten briefs disagreed with themselves about their own date or number**; the date and the number are derivable from the file and all ten are **repaired today**, which leaves this row naming the part that is not derivable: `2026-10-19`, `2026-10-26` and `2026-10-27` describe, in the text a search engine and a link preview read, **a finding from an earlier day** (10-18's font defect and 10-25's italic-tag defect). Not rewritten by the run that found them, because only the run that wrote a brief knows what it meant to say — the repair is to read each brief's own Today section and write a description from it, which is one morning's work and is editorial rather than mechanical. **Second limb, and it is why this is a row rather than a note: nothing gates it.** `qa_artefact_render` renders all 138 artefacts and asserts nothing about their `<title>` or description; the assertion is cheap and exact — *a brief's `<title>` date equals its filename's, and its description's `Brief NN` equals its masthead's `No. NN`* — and its false-positive class is already known, a description legitimately **referring** to the previous brief (`2026-07-09`, `2026-08-03`, `2026-08-10` all do, and all three are correct). **The mechanism is #119's exactly: each run copies the previous brief, updates the masthead because it is visible, and leaves the tab title because it is not — and the error compounds**, 10-27's tab being two days stale because 10-26 had already forgotten it and 10-27 copied it forward. | **[AE]** + Manager | **2026-10-28** (the brief function) | All 118 briefs enumerated by script, `<title>` and description parsed against each file's own name and masthead; the ten repairs diffed line by line and the eight cosmetic rewrites the first pass made were reverted | nothing red — no instrument this operation owns reads a founder-facing artefact's `<head>` |
 | 49 | **Both home pages serve no `<h1>` at all, so each front door's heading outline begins at one specific article's `<h2>`** — found by the growth function's census of our own six headline forms, the day #119 was filed about somebody else's. `/` and `/ar/` are the only **2 of 134** served documents with no top-level heading. The masthead wordmark is an `<a>` with an `aria-label`, which is correct for a link and is not a heading, so a consumer building an outline of the English home page is told the page is about *Rwanda counted the teachers it had not trained, twice* — the lead piece, whichever piece that happens to be. **A reader using heading navigation or a screen reader meets this directly, and it is the two highest-value pages in the publication.** Deliberately not fixed by the run that found it: a heading on a front door changes served bytes on both home pages and is the Web Developer's even when growth found it (the 09-27 split), the correct shape has **three candidates** — a visually-hidden `<h1>`, promoting the `.masthead__tagline`, promoting the wordmark — and this operation owns **no visually-hidden utility class** (`.skip-link` is the only off-screen rule and it reveals itself on focus, which an `<h1>` must not). The census is in `agents/growth/2026-10-28-our-own-headline-forms-a-census-of-six.md`. | **[WD]** + Designer | **2026-10-28** (growth, from #119's census) | Every `<h1>`, `<title>`, `og:title`, `twitter:title` and JSON-LD `headline` enumerated across all 134 served documents in `dist`; the two absences are absences of the element, not of its text | nothing red — no instrument this operation owns asserts that a served page carries a heading |
 | 35 | **Four published acronym expansions have no evidence in the annotations of the piece that prints them** — found by standing assertion 37 on its first sweep and handed over, because a fix that changes served bytes is the Web Developer's even when an assertion found it (the 09-27 split). **(a)** `2026-07-04-kenya-cbe-grade10-pathways`: the body expands `KJSEA` as *Kenya Junior School Education Assessment* and the eleven annotations carrying the acronym never carry the name — **on the piece that earned #101, eight days after that correction shipped.** **(b)** `2026-07-07-singapore-psle-sbb`: *Primary School Leaving Examination* in the body, seven acronym-only annotations. **(c)** `2026-06-08-sierra-leone-tsc-teacher-matching`: *Teacher Management Information System* in the body, and neither the name nor the acronym in `sources[]`; the two EdTech Hub registers were read in served text 2026-10-23 and neither prints the expansion. **(d)** `2026-06-10-rak-iqra-arabic-diglossia`: annotations carry only `J-PAL MENA` — **and the anchor is SHORT by two words**, because J-PAL drops *Abdul Latif*, so the repair must use the owner's own *The Abdul Latif Jameel Poverty Action Lab* rather than copying the instrument's span. **Not repaired by the run that found them, for a second reason beyond the split:** `kjsea.knec.ac.ke` refuses the connection from this runner and `moe.gov.sg` answers 202 to every client here, so the expansion cannot be written *as the register prints it*, which is what #101 clause 1 actually requires — and a repair that guesses the wording is #101 again in the repair. All four are carried in the tool's `KNOWN_OPEN`, which is asserted to be a **subset** of the findings, so a repair that does not delete its own entry turns the build red. | **[WD]** + Editor | **2026-10-23** (from item 17's close) | Each flagged by the instrument and each read against its own frontmatter by hand today; the J-PAL name read in the owner's served chrome | nothing red — the gate is green with these four carried, by design, and goes red the moment a fifth appears |
 
