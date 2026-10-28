@@ -1959,6 +1959,18 @@
    "state": "unreadable-format"
   },
   {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/media-release-latest-naplan-data-shows-improvements-in-numeracy-levels-alongside-areas-for-continued-action-5-8-26.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-28",
+   "status": 200,
+   "note": "",
+   "ctype": "application/pdf",
+   "state": "unreadable-format"
+  },
+  {
    "url": "https://www.acara.edu.au/docs/default-source/media-releases/naplan-national-results-release-media-release-23.08.23.pdf",
    "pieces": [
     "2026-07-16-australia-naplan-reset:ar"

@@ -1743,9 +1743,52 @@
       "slug": "2026-07-07-turkiye-earthquake-school-recovery",
       "token": "86",
       "provenance": "NOT A QUANTITY — 2026-10-27. This is `#86`, a reference to this publication's OWN ruling register, inside an annotation that explains why a Turkish official-profile page is cited in both editions (ruling #86: an Arabic role noun forces a gender determination, which must be read from the register's own gendered word). The gate is right to stop on it and the register is the right place to dispose of it: a numeral in an annotation is a published quantity until somebody says what it is. Same disposition on both editions' copies of the same annotation."
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "10.2",
+      "provenance": "READ 2026-10-28 from ACARA's media release of 5 August 2026, served as a PDF at acara.edu.au/docs/default-source/media-releases/media-release-latest-naplan-data-shows-improvements-in-numeracy-levels-alongside-areas-for-continued-action-5-8-26.pdf, BACKGROUND section: the average proportion of students at the Needs additional support level in reading in 2026 was 10.2% (compared to 9.3% in 2025). Deliberately not printed in the body: the body carries the Strong-or-Exceeding pair (66.3 against 68.2) because that is the share the piece's argument about a still ruler turns on, and printing both pairs for both domains would put four numbers in one sentence. Recorded here so the figure is traced rather than untraceable (#114 clause 2).",
+      "lang_seen": "en",
+      "annotation": "ACARA media release, 5 August 2026 — 'LATEST NAPLAN DATA SHOWS IMPROVEMENTS IN NATIONAL NUMERACY LEVELS ALONGSIDE AREAS FOR CONTINUED ATTENTION' (the 2026 National Results, read 2026-10-28 after the A"
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "10.2",
+      "provenance": "READ 2026-10-28 from ACARA's media release of 5 August 2026, served as a PDF at acara.edu.au/docs/default-source/media-releases/media-release-latest-naplan-data-shows-improvements-in-numeracy-levels-alongside-areas-for-continued-action-5-8-26.pdf, BACKGROUND section: the average proportion of students at the Needs additional support level in reading in 2026 was 10.2% (compared to 9.3% in 2025). Deliberately not printed in the body: the body carries the Strong-or-Exceeding pair (66.3 against 68.2) because that is the share the piece's argument about a still ruler turns on, and printing both pairs for both domains would put four numbers in one sentence. Recorded here so the figure is traced rather than untraceable (#114 clause 2).",
+      "lang_seen": "ar",
+      "annotation": "بيان الهيئة (ACARA)، 5 أغسطس 2026 — «أحدث بيانات نابلان تُظهِر تحسُّنًا في مستويات الحساب الوطنية إلى جانب مجالاتٍ تحتاج انتباهًا مستمرًّا» (النتائجُ الوطنية 2026، قُرئت في 2026-10-28)"
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "9.6",
+      "provenance": "READ 2026-10-28 from the same ACARA release of 5 August 2026, BACKGROUND section: the average proportion of students at the Needs additional support level in numeracy in 2026 was 9.6% (compared to 9.2% in 2025). Same disposition as 10.2 above — the body carries the Strong-or-Exceeding pair for numeracy (67.0 against 66.8) and not this one.",
+      "lang_seen": "en",
+      "annotation": "ACARA media release, 5 August 2026 — 'LATEST NAPLAN DATA SHOWS IMPROVEMENTS IN NATIONAL NUMERACY LEVELS ALONGSIDE AREAS FOR CONTINUED ATTENTION' (the 2026 National Results, read 2026-10-28 after the A"
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "9.6",
+      "provenance": "READ 2026-10-28 from the same ACARA release of 5 August 2026, BACKGROUND section: the average proportion of students at the Needs additional support level in numeracy in 2026 was 9.6% (compared to 9.2% in 2025). Same disposition as 10.2 above — the body carries the Strong-or-Exceeding pair for numeracy (67.0 against 66.8) and not this one.",
+      "lang_seen": "ar",
+      "annotation": "بيان الهيئة (ACARA)، 5 أغسطس 2026 — «أحدث بيانات نابلان تُظهِر تحسُّنًا في مستويات الحساب الوطنية إلى جانب مجالاتٍ تحتاج انتباهًا مستمرًّا» (النتائجُ الوطنية 2026، قُرئت في 2026-10-28)"
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "119",
+      "provenance": "NOT A QUANTITY — 2026-10-28. This is `#119`, a reference to this publication's OWN ruling register, inside an annotation that states why the ACARA CEO is reported in reported speech and not quoted: the release is served as a PDF and the extraction this runner can perform recovers the body prose but not the quotation marks or the opening words inside them, and ruling #119 holds that a quotation mark promises a NAMED form of the source. Second instance of the disposition licence a3 was written for, two days after `#86`. Same disposition on both editions' copies of the same annotation.",
+      "lang_seen": "en",
+      "annotation": "ACARA media release, 5 August 2026 — 'LATEST NAPLAN DATA SHOWS IMPROVEMENTS IN NATIONAL NUMERACY LEVELS ALONGSIDE AREAS FOR CONTINUED ATTENTION' (the 2026 National Results, read 2026-10-28 after the A"
+    },
+    {
+      "slug": "2026-07-16-australia-naplan-reset",
+      "token": "119",
+      "provenance": "NOT A QUANTITY — 2026-10-28. This is `#119`, a reference to this publication's OWN ruling register, inside an annotation that states why the ACARA CEO is reported in reported speech and not quoted: the release is served as a PDF and the extraction this runner can perform recovers the body prose but not the quotation marks or the opening words inside them, and ruling #119 holds that a quotation mark promises a NAMED form of the source. Second instance of the disposition licence a3 was written for, two days after `#86`. Same disposition on both editions' copies of the same annotation.",
+      "lang_seen": "ar",
+      "annotation": "بيان الهيئة (ACARA)، 5 أغسطس 2026 — «أحدث بيانات نابلان تُظهِر تحسُّنًا في مستويات الحساب الوطنية إلى جانب مجالاتٍ تحتاج انتباهًا مستمرًّا» (النتائجُ الوطنية 2026، قُرئت في 2026-10-28)"
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",
   "licence_a2_added": "2026-10-24 — the trailing MM-DD fragments of a date list were being read as quantities; four seeded entries removed. Found by running this gate BY HAND on the Bahrain draft during the same run's content function, which is the inverse of 2026-10-23's finding: that morning's gate could not see the afternoon's draft, and this morning's gate was carried to it deliberately.",
-  "licence_a3_added": "2026-10-27 — the first register entries whose disposition is NOT A QUANTITY rather than a provenance. An annotation may cite this operation's own ruling numbers, and `#86` reads as a figure to any instrument that counts digits. Recorded rather than silenced: the alternative was a tool-side exclusion for `#NN`, which would also hide a real figure a drafter happened to prefix with a hash."
+  "licence_a3_added": "2026-10-27 — the first register entries whose disposition is NOT A QUANTITY rather than a provenance. An annotation may cite this operation's own ruling numbers, and `#86` reads as a figure to any instrument that counts digits. Recorded rather than silenced: the alternative was a tool-side exclusion for `#NN`, which would also hide a real figure a drafter happened to prefix with a hash.",
+  "licence_a4_added": "2026-10-28 — the first register entries whose provenance is a POSITIVE read rather than a seeded UNTRACED or a NOT A QUANTITY disposition: two figures read out of a served register the same morning, by the run that cited them, and deliberately left out of the body because the body prints the other half of the same pair. #114 clause 2 offers two ways to satisfy the gate and until today only one of them had ever been used on a fresh citation."
 }

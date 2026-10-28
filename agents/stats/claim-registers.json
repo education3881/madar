@@ -1887,6 +1887,19 @@
    "state": "archived"
   },
   {
+   "url": "https://www.acara.edu.au/docs/default-source/media-releases/media-release-latest-naplan-data-shows-improvements-in-numeracy-levels-alongside-areas-for-continued-action-5-8-26.pdf",
+   "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
+    "2026-07-16-australia-naplan-reset:ar"
+   ],
+   "observed": "2026-10-28",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
    "url": "https://www.acara.edu.au/docs/default-source/media-releases/naplan-national-results-release-media-release-23.08.23.pdf",
    "pieces": [
     "2026-07-16-australia-naplan-reset:en",
@@ -3073,10 +3086,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-10-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.muscatdaily.com/2024/12/02/landmark-school-evaluation-system-set-to-transform-education-in-oman/",
@@ -3084,10 +3098,11 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-06-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
@@ -3095,10 +3110,11 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-10-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/",
