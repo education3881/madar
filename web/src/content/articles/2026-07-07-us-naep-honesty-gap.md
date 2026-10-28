@@ -21,7 +21,7 @@ sources:
     url: "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/"
   - title: "NAGB news release, 29 January 2025 — 'Nation's Report Card: Decline in reading, progress in math' (about 40% of fourth-graders below NAEP Basic in reading, the largest share since 2002; about a third of eighth-graders below Basic, the largest ever recorded; no state gained in reading; Patrick Kelly's statement)"
     url: "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html"
-  - title: "Oklahoma Voice, 21 May 2025 — 'Oklahoma board raises testing rigor to restore truth and transparency to student testing' (the Commission for Educational Quality and Accountability's unanimous vote to restore the 2017–2023 NAEP-aligned cut scores)"
+  - title: "Oklahoma Voice, 21 May 2025 — \"Oklahoma board raises rigor to restore ‘truth and transparency’ to student testing\" (the Commission for Educational Quality and Accountability's unanimous vote to restore the 2017–2023 NAEP-aligned cut scores)"
     url: "https://oklahomavoice.com/2025/05/21/oklahoma-board-raises-testing-rigor-to-restore-truth-and-transparency-to-student-testing/"
   - title: "Oklahoma Office of Educational Quality and Accountability — FAQs (the commission's standing role in approving state cut scores)"
     url: "https://oklahoma.gov/oeqa/about-oeqa/faqs.html"

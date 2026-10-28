@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-27",
+ "observed": "2026-10-28",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -7,11 +7,11 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8816",
+   "written_in": "latin:9000",
    "tokens": [
     {
      "token": "Taxa de alfabetização era de 49,3% no Brasil em 2023, diz Inep",
@@ -31,16 +31,15 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
-   "ctype": "text/html",
-   "written_in": "too-short:150",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6494",
    "tokens": [
     {
      "token": "Brasil atinge 59,2% de crianças alfabetizadas em 2024",
-     "verdict": "script-mismatch",
-     "token_script": "latin"
+     "verdict": "found"
     },
     {
      "token": "البرازيل تبلغ 59.2٪ من الأطفال المُلِمّين بالقراءة في 2024",
@@ -48,7 +47,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "script-mismatch"
+   "state": "confirmed"
   },
   {
    "url": "https://agenciagov.ebc.com.br/noticias/202603/brasil-supera-meta-de-alfabetizacao-na-idade-certa",
@@ -56,16 +55,15 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
-   "ctype": "text/html",
-   "written_in": "too-short:150",
+   "ctype": "text/html;charset=utf-8",
+   "written_in": "latin:9340",
    "tokens": [
     {
      "token": "Brasil bate meta de alfabetização na idade certa para 2025, atingindo 66%. Em 2023, era 56%",
-     "verdict": "script-mismatch",
-     "token_script": "latin"
+     "verdict": "found"
     },
     {
      "token": "البرازيل تبلغ هدف الإلمام بالقراءة في السنّ المناسبة لعام 2025 ببلوغها 66٪. وفي 2023 كانت 56٪",
@@ -73,7 +71,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "script-mismatch"
+   "state": "confirmed"
   },
   {
    "url": "https://allafrica.com/stories/202608240232.html",
@@ -81,7 +79,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html",
@@ -108,7 +106,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -155,11 +153,11 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:4168",
+   "written_in": "arabic:4079",
    "tokens": [
     {
      "token": "مدارس الريادة، نموذج تعليمي حديث",
@@ -174,11 +172,11 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6765",
+   "written_in": "latin:6865",
    "tokens": [
     {
      "token": "Minister Tekin: classroom stock in the earthquake region will reach 137,505",
@@ -198,7 +196,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -209,11 +207,11 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6414",
+   "written_in": "latin:6461",
    "tokens": [
     {
      "token": "مدارس الريادة: برنامج مهيكِل لتحسين التعلّم والتحكم في المكتسبات",
@@ -228,11 +226,11 @@
    "pieces": [
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:24470",
+   "written_in": "latin:24448",
    "tokens": [
     {
      "token": "نتائجُ نابلان لم تنهَر، لكنّ تأويلات الإعلام انهارت",
@@ -272,7 +270,7 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
@@ -291,28 +289,61 @@
    "state": "confirmed"
   },
   {
+   "url": "https://blogs.worldbank.org/en/education/teachers-are-leading-an-ai-revolution-in-korean-classrooms",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-28",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html;charset=utf-8",
+   "written_in": "latin:8836",
+   "tokens": [
+    {
+     "token": "Teachers are leading an AI revolution in Korean classrooms",
+     "verdict": "found"
+    },
+    {
+     "token": "has allocated approximately $0.74 billion for three years (2024–2026) specifically for teacher training",
+     "verdict": "found"
+    },
+    {
+     "token": "المعلّمون يقودون ثورةَ ذكاءٍ اصطناعيٍّ في الصفوف الكورية",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "خصَّصت نحو 0.74 مليار دولار لِثلاث سنوات (2024–2026) لِتدريب المعلّمين تحديدًا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://core.unesco.org/en/project/534IRQ1002",
    "pieces": [
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:3611",
    "tokens": [
     {
-     "token": "Restoring the Mosul University Library",
-     "verdict": "absent"
+     "token": "Restoring and modernizing the Mosul University Library",
+     "verdict": "found"
     },
     {
-     "token": "استعادة مكتبة جامعة الموصل",
+     "token": "استعادة وتحديث مكتبة جامعة الموصل",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
    ],
-   "state": "absent"
+   "state": "confirmed"
   },
   {
    "url": "https://dailynewsegypt.com/2026/08/16/egyptian-education-ministry-secures-ibo-approval-for-new-baccalaureate-curricula-ahead-of-183-day-academic-year/",
@@ -366,7 +397,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -377,7 +408,7 @@
    "pieces": [
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -402,11 +433,11 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:15959",
+   "written_in": "latin:15832",
    "tokens": [
     {
      "token": "Obowiązek szkolny dla dzieci z Ukrainy. Co się zmieni od 1 września?",
@@ -425,7 +456,7 @@
    "pieces": [
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/plain;charset=utf-8",
@@ -456,7 +487,7 @@
    "pieces": [
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
@@ -476,11 +507,11 @@
     "2026-05-28-kuwait-ccet-arabic-tests:en",
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7877",
+   "written_in": "latin:7896",
    "tokens": [
     {
      "token": "The Center for Child Evaluation & Teaching (CCET): An IDA Global Partner in the Heart of Arabia!",
@@ -500,7 +531,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -528,11 +559,11 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4525",
+   "written_in": "latin:4540",
    "tokens": [
     {
      "token": "How the Gap Between Spoken and Written Arabic Shapes Early Literacy in Egypt",
@@ -575,7 +606,7 @@
    "pieces": [
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -587,7 +618,7 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
@@ -611,7 +642,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -623,11 +654,11 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6337",
+   "written_in": "latin:6414",
    "tokens": [
     {
      "token": "Kharkiv opens 7 underground schools, converts metro stations into classrooms",
@@ -647,11 +678,11 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7260",
+   "written_in": "latin:7259",
    "tokens": [
     {
      "token": "Background analysis for an SCUK published blog",
@@ -685,15 +716,16 @@
     "2026-05-28-ghana-cbe-curriculum:en",
     "2026-05-28-ghana-cbe-curriculum:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
-   "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4514",
+   "ctype": "text/html",
+   "written_in": "too-short:62",
    "tokens": [
     {
      "token": "CEA launches revised curriculum for out-of-school children",
-     "verdict": "found"
+     "verdict": "script-mismatch",
+     "token_script": "latin"
     },
     {
      "token": "وكالة التعليم التكميلي تُطلق منهجًا مُنَقَّحًا لِلأطفال خارج المدرسة",
@@ -701,7 +733,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "confirmed"
+   "state": "script-mismatch"
   },
   {
    "url": "https://hsrc.ac.za/press-releases/eee/department-of-basic-education-and-hsrc-release-timss-2019-grade-9-study/",
@@ -709,11 +741,11 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:9876",
+   "written_in": "latin:9837",
    "tokens": [
     {
      "token": "while we applaud the improvement in educational achievement, the rate of achievement improvement is decreasing",
@@ -732,7 +764,7 @@
    "pieces": [
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -752,7 +784,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -764,7 +796,7 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -776,7 +808,7 @@
     "2026-07-07-sudan-exam-continuity:en",
     "2026-07-07-sudan-exam-continuity:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -800,7 +832,7 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -812,30 +844,18 @@
     "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-22",
-   "status": 403,
-   "note": "HTTPError",
-   "ctype": "",
-   "state": "walled"
-  },
-  {
-   "url": "https://jrs.net/en/story/the-challenge-of-accessing-education-for-sudanese-refugees-in-chad/",
-   "pieces": [
-    "2026-07-07-chad-sudanese-refugee-schooling:en",
-    "2026-07-07-chad-sudanese-refugee-schooling:ar"
-   ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3423",
+   "written_in": "latin:6637",
    "tokens": [
     {
-     "token": "The challenge of accessing education for Sudanese refugees in Chad",
+     "token": "Indonesia Introduces AI and Coding to 59,000 Schools Nationwide",
      "verdict": "found"
     },
     {
-     "token": "تحدي الوصول إلى التعليم للاجئين السودانيين في تشاد",
+     "token": "إندونيسيا تُدخل الذكاء الاصطناعي والبرمجة في 59,000 مدرسة على المستوى الوطني",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
@@ -843,16 +863,41 @@
    "state": "confirmed"
   },
   {
+   "url": "https://jrs.net/en/story/the-challenge-of-accessing-education-for-sudanese-refugees-in-chad/",
+   "pieces": [
+    "2026-07-07-chad-sudanese-refugee-schooling:en",
+    "2026-07-07-chad-sudanese-refugee-schooling:ar"
+   ],
+   "observed": "2026-10-28",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html",
+   "written_in": "too-short:62",
+   "tokens": [
+    {
+     "token": "The challenge of accessing education for Sudanese refugees in Chad",
+     "verdict": "script-mismatch",
+     "token_script": "latin"
+    },
+    {
+     "token": "تحدي الوصول إلى التعليم للاجئين السودانيين في تشاد",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
+  },
+  {
    "url": "https://kaladanpress.org/inside-the-camps-rohingya-matriculation-exams-mark-breakthrough-but-recognition-and-rights-remain-uncertain/",
    "pieces": [
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7581",
+   "written_in": "latin:7734",
    "tokens": [
     {
      "token": "Inside the camps: Rohingya matriculation exams mark breakthrough, but recognition and rights remain uncertain",
@@ -871,11 +916,11 @@
    "pieces": [
     "2026-05-31-indonesia-permen-13-coding-ai:en"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8181",
+   "written_in": "latin:8184",
    "tokens": [
     {
      "token": "Permendikdasmen 11/2025 dan 13/2025, Dasar Sinkronisasi Kurikulum dan Beban Kerja Guru",
@@ -889,11 +934,11 @@
    "pieces": [
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2542",
+   "written_in": "latin:2527",
    "tokens": [
     {
      "token": "تقييمُ الأنظمة التعليمية: كوتونو تستضيف الورشةَ الدولية لباسيك 2024",
@@ -917,7 +962,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -951,11 +996,11 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6186",
+   "written_in": "latin:6189",
    "tokens": [
     {
      "token": "مدارس الريادة: ما ينبغي معرفته عن البرنامج وتطوّره",
@@ -970,11 +1015,11 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:21168",
+   "written_in": "latin:21175",
    "tokens": [
     {
      "token": "مدارس الريادة: الآباء قلقون والوزارة تطمئن",
@@ -989,19 +1034,11 @@
    "pieces": [
     "2026-05-28-ghana-cbe-curriculum:ar"
    ],
-   "observed": "2026-10-22",
-   "status": 200,
+   "observed": "2026-10-28",
+   "status": 202,
    "note": "",
-   "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7852",
-   "tokens": [
-    {
-     "token": "تحديث منهج: تعزيز برنامج التعليم الأساسي التكميلي في غانا",
-     "verdict": "script-mismatch",
-     "token_script": "arabic"
-    }
-   ],
-   "state": "script-mismatch"
+   "ctype": "text/html",
+   "state": "dead"
   },
   {
    "url": "https://manassa.news/en/news/25481",
@@ -1009,7 +1046,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -1037,7 +1074,7 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1049,7 +1086,7 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1061,7 +1098,7 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1072,7 +1109,7 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1084,7 +1121,7 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1096,7 +1133,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1108,7 +1145,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1120,7 +1157,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1131,7 +1168,7 @@
    "pieces": [
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1143,7 +1180,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1155,7 +1192,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1167,7 +1204,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1179,7 +1216,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1191,7 +1228,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1203,7 +1240,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -1215,11 +1252,23 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-22",
-   "status": 503,
-   "note": "HTTPError",
-   "ctype": "",
-   "state": "dead"
+   "observed": "2026-10-28",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:8436",
+   "tokens": [
+    {
+     "token": "Overview of the NCEA co-requisite standards",
+     "verdict": "absent"
+    },
+    {
+     "token": "نظرةٌ عامة على معايير المتطلَّب المرافق لـNCEA",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   },
   {
    "url": "https://nces.ed.gov/nationsreportcard/subject/participating/pdfs/2026_naep_in_your_school_math_reading_naep_device.pdf",
@@ -1286,15 +1335,19 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:10611",
+   "written_in": "latin:10579",
    "tokens": [
     {
-     "token": "Oklahoma board raises testing rigor to restore truth and transparency to student testing",
-     "verdict": "absent"
+     "token": "truth and transparency",
+     "verdict": "found"
+    },
+    {
+     "token": "Oklahoma board raises rigor to restore ‘truth and transparency’ to student testing",
+     "verdict": "found"
     },
     {
      "token": "الصدق والشفافية",
@@ -1302,7 +1355,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "absent"
+   "state": "confirmed"
   },
   {
    "url": "https://osvita.ua/legislation/Ser_osv/95314/",
@@ -1389,15 +1442,24 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-10-28",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8149",
+   "written_in": "latin:8162",
    "tokens": [
+    {
+     "token": "AI-powered textbooks fail to make the grade in South Korea",
+     "verdict": "found"
+    },
     {
      "token": "everything was rushed",
      "verdict": "found"
+    },
+    {
+     "token": "الكتب المدرسية المدعومة بالذكاء الاصطناعي تُخفِق في بلوغ المستوى في كوريا الجنوبية",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
     },
     {
      "token": "الكتب المدرسية بالذكاء الاصطناعي في كوريا الجنوبية تُخفِق بعد طرحٍ متسرّع",
@@ -2948,6 +3010,7 @@
   {
    "url": "https://www.koreatimes.co.kr/southkorea/society/20250610/ai-textbooks-targeted-for-phaseout-under-south-koreas-new-administration",
    "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
    "observed": "2026-10-22",
@@ -4680,11 +4743,23 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-28",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3715",
+   "tokens": [
+    {
+     "token": "has saved Government about 15 Million Kwacha that would have been spent on procuring an external system",
+     "verdict": "found"
+    },
+    {
+     "token": "وفَّر على الحكومة نحو 15 مليون كواتشا كانت ستُنفَق على شراء نظامٍ خارجيّ",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.zus.pl/en/-/zmiany-w-800-dla-obywateli-ukrainy-1",
@@ -4692,11 +4767,23 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-28",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html;charset=utf-8",
+   "written_in": "latin:67513",
+   "tokens": [
+    {
+     "token": "Zmiany w 800+ dla obywateli Ukrainy",
+     "verdict": "found"
+    },
+    {
+     "token": "تغييرات في 800+ لمواطني أوكرانيا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www2.nzqa.govt.nz/about-us/news/ncea-and-university-entrance-attainment-in-2025/",
@@ -4704,11 +4791,23 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-28",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:2674",
+   "tokens": [
+    {
+     "token": "NCEA and University Entrance attainment in 2025",
+     "verdict": "found"
+    },
+    {
+     "token": "تحصيلُ NCEA والقبول الجامعي في 2025",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://zielonalinia.gov.pl/800-dla-obywateli-ukrainy-zmiany-od-lutego-2026-r",
@@ -4716,11 +4815,23 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-22",
-   "state": "not-yet-asked",
-   "status": null,
+   "observed": "2026-10-28",
+   "status": 200,
    "note": "",
-   "ctype": ""
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:28260",
+   "tokens": [
+    {
+     "token": "800+ dla obywateli Ukrainy — zmiany od lutego 2026 r",
+     "verdict": "absent"
+    },
+    {
+     "token": "800+ لمواطني أوكرانيا: تغييرات من فبراير 2026",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "absent"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-27",
+ "observed": "2026-10-28",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -169,6 +169,18 @@
    "observed": "2026-10-21",
    "archived": true,
    "snapshot": "2026-06-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://blogs.worldbank.org/en/education/teachers-are-leading-an-ai-revolution-in-korean-classrooms",
+   "pieces": [
+    "2026-06-17-korea-aidt-reversal:en",
+    "2026-06-17-korea-aidt-reversal:ar"
+   ],
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-10-16",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3000,10 +3012,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2023-01-30",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/news/press-releases/20241120-release-of-2024-psle-results",
@@ -3011,10 +3024,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-06-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/news/press-releases/20251125-release-of-2025-psle-results",
@@ -3022,10 +3036,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-04-16",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/news/speeches/20250211-speech-by-minister-chan-chun-sing-at-the-moe-x-nie-x-ips-lecture-from-foundations-to-frontiers-our-education-journey",
@@ -3033,10 +3048,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": true,
+   "snapshot": "2026-07-10",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.moe.gov.sg/psle-fsbb/",
@@ -3044,10 +3060,12 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-28",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 202,
+   "origin_note": "HEAD",
+   "state": "GONE"
   },
   {
    "url": "https://www.moe.gov.sg/psle-fsbb/posting-to-secondary-school/faqs",
