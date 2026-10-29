@@ -32,6 +32,8 @@ sources:
     url: "https://www.moe.gov.sg/psle-fsbb/posting-to-secondary-school/faqs"
   - title: "MOE — speech by Minister Chan Chun Sing at the MOE X NIE X IPS Lecture, 11 February 2025 ('it was not really the end of streaming, but refinement of streaming by subject'; 'If we do not broaden our definitions of success beyond internal relativities, no extent of changes in the PSLE scoring system will ever reduce stress')"
     url: "https://www.moe.gov.sg/news/speeches/20250211-speech-by-minister-chan-chun-sing-at-the-moe-x-nie-x-ips-lecture-from-foundations-to-frontiers-our-education-journey"
+  - title: "Singapore Examinations and Assessment Board — PSLE (the board that conducts the examination, and the readable register that prints the name in full: 'The Primary School Leaving Examination (PSLE) is an annual national examination that is taken by candidates at the end of their final year of primary school education, in Singapore.' Read in served text 2026-10-29; the ministry's own pages are not readable by any client available here, so the name is cited from the board that sets the paper rather than from the ministry that set the policy)"
+    url: "https://www.seab.gov.sg/psle/"
   - title: "The Straits Times (Tang Yi Qing), 9 January 2025, republished on STOMP — the final batch of 24 schools adopting Full Subject-Based Banding (Principal Grace Chua and Year Head Mohamed Ashiq of Pasir Ris Secondary School; the 20-minute timetable blocks and resized classrooms)"
     url: "https://www.stomp.sg/trending-now/latest-batch-24-schools-adopt-full-subject-based-banding-2024"
 hero:

@@ -27,6 +27,8 @@ sources:
     url: "https://doi.org/10.53832/edtechhub.1114"
   - title: "Mackintosh, A., Koutecký, T., Godwin, K., Adam, T., & Frazer, M. (2025). Data-driven teacher deployment in Sierra Leone: Practicalities and quantitative analysis of using a matching algorithm in the 2024/25 deployment cycle [Technical Report]. EdTech Hub."
     url: "https://doi.org/10.53832/edtechhub.1115"
+  - title: "TMIS Sierra Leone (tsctmis.org) — the system's own site, and the register that prints the name in full: its front page's heading prints 'Teacher Management Information System' above the country name, under the strapline 'Bringing together teachers, trainers, government and the public.' Read in served text 2026-10-29; cited for the expansion the EdTech Hub registers above describe the system without ever printing"
+    url: "https://tsctmis.org/"
   - title: "Fab Inc. — FabMatch_SLE, the open-source teacher-deployment matching algorithm (public repository)"
     url: "https://github.com/Fab-Inc/FabMatch_SLE"
 hero:

@@ -27,6 +27,8 @@ sources:
     url: "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1518728/full"
   - title: "مؤسسة القاسمي (2020) — تحسين طلاقة القراءة بالعربية: نتائج من «اقرأ» (ورقة السياسات 39 — دورة تقييم أسبق ومنفصلة؛ تُذكر هنا للتمييز لا كمصدرٍ لأرقام تجربة 2024–2025)"
     url: "https://publications.alqasimifoundation.com/en/improving-arabic-reading-fluency-results-from-iqra-an-early-grade-reading-intervention-in-ras-al-khaimah"
+  - title: "جي-بال (povertyactionlab.org) — سجلُّ المقيِّم نفسِه، يطبع الاسمَ كاملًا: «The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center founded at the Massachusetts Institute of Technology.» قُرئ في النصّ المخدوم في 2026-10-29؛ يُستشهَد به لأنّ الاختصارَ يُسقِط أوّلَ كلمتين من الاسم، فلا يمكن إثباتُ الاسم الكامل من الاختصار وحده"
+    url: "https://www.povertyactionlab.org/"
   - title: "إيجيبشن ستريتس (3 مارس 2026) — كيف تشكِّل المسافة بين العربية المنطوقة والمكتوبة تعلُّم القراءة المبكرة في مصر"
     url: "https://egyptianstreets.com/2026/03/03/how-the-gap-between-spoken-and-written-arabic-shapes-early-literacy-in-egypt/"
 hero:

@@ -118,24 +118,39 @@ AR_DIR = os.path.join("web", "src", "content", "articles-ar")
 
 # Findings that are real, served, and handed over rather than fixed by the tool that
 # found them. (slug, acronym) -> why. Asserted to be a SUBSET of today's findings.
-KNOWN_OPEN = {
-    ("2026-07-04-kenya-cbe-grade10-pathways", "KJSEA"):
-        "queue item 35, raised 2026-10-23; kjsea.knec.ac.ke refuses the connection "
-        "from this runner, so the register's own wording is unreadable here",
-    ("2026-07-07-singapore-psle-sbb", "PSLE"):
-        "queue item 35, raised 2026-10-23; moe.gov.sg answers 202 to every client "
-        "available here (walled by rendering, #70), same reason",
-    ("2026-06-08-sierra-leone-tsc-teacher-matching", "TMIS"):
-        "queue item 35, raised 2026-10-23; the two EdTech Hub registers were read in "
-        "served text today and neither prints the expansion the body uses",
-    ("2026-06-10-rak-iqra-arabic-diglossia", "J-PAL"):
-        "queue item 35, raised 2026-10-23; the body prints the full name and the "
-        "annotations carry only `J-PAL MENA`. Note the anchor is SHORT by two words "
-        "— J-PAL drops `Abdul Latif`, so the span recovers a true suffix of the name "
-        "rather than the name. The flag is right; the quoted span is not the whole "
-        "name, and the repair must use the owner's own `The Abdul Latif Jameel "
-        "Poverty Action Lab` (read in povertyactionlab.org chrome, 2026-10-23)",
-}
+KNOWN_OPEN = {}
+# EMPTY SINCE 2026-10-29, when queue item 35 closed at 6 days from the DEFECT head.
+# All four findings of this tool's first sweep are repaired, and the two branches of
+# #101 clause 1 were BOTH needed — which is ruling #120.
+#
+#   PSLE  — seab.gov.sg/psle/ prints 'The Primary School Leaving Examination (PSLE)
+#           is an annual national examination…' in its own served text.  moe.gov.sg
+#           still answers 202 to every client here (re-measured 2026-10-29), so the
+#           expansion is cited from the BOARD THAT CONDUCTS THE EXAM rather than from
+#           the ministry: a readable first-party register outranks an unreadable one
+#           (#43), and the owner of a name is not always the owner of the policy.
+#   TMIS  — tsctmis.org serves `<h1>Teacher Management Information System / Sierra
+#           Leone`.  Per #119 the `<h1>` is the form the document PRINTS, which is
+#           the strongest evidence form available; the EdTech Hub registers the piece
+#           already cited never print it.
+#   J-PAL — povertyactionlab.org prints 'The Abdul Latif Jameel Poverty Action Lab
+#           (J-PAL)…'.  The anchor was always SHORT by two words and that was the
+#           finding's point: an acronym that drops a word cannot evidence it.
+#   KJSEA — took clause 1's OTHER branch: THE BODY KEEPS THE ACRONYM, in both
+#           editions.  kjsea.knec.ac.ke does not resolve from this runner, its one
+#           archive snapshot (2026-02-07) is a shell serving a `<title>` and nothing
+#           else, knec.ac.ke's own snapshot never prints the name, nation.africa
+#           answers 403 — and the readable third-party registers DISAGREE, between
+#           `Junior School` and `Junior Secondary`.  #101 clause 3 settles a
+#           disagreement by re-opening the register; when the register cannot be
+#           re-opened clause 3 has NO OUTPUT, and the second branch is the only exit.
+#           The Arabic edition had rendered it «تقييم للتعليم الإعدادي في كينيا» —
+#           إعدادي being the term for the PREPARATORY stage, i.e. the other reading —
+#           so the FORCED edition (#101 clause 3) was quietly voting the other way
+#           for 117 days and nothing compared them.
+#
+# The dict stays here, empty, because the next finding needs a home and because an
+# exception list deleted outright is an exception list that has to be re-argued.
 
 # A word may supply a prefix of any length. These may be skipped without supplying
 # one — they are the connectives institution names carry and acronyms drop.

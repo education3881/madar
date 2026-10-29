@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-28",
+ "observed": "2026-10-29",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -1741,6 +1741,18 @@
    "state": "archived"
   },
   {
+   "url": "https://tsctmis.org/",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-08-10",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
    "url": "https://tuoitre.vn/duoc-mien-hoc-phi-hoc-sinh-phai-dong-nhung-khoan-nao-20250311144712508.htm",
    "pieces": [
     "2026-06-16-vietnam-tuition-free-public-school:en",
@@ -3122,10 +3134,12 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.nic.gov.sd/news/details/13",
@@ -3133,10 +3147,11 @@
     "2026-07-07-sudan-exam-continuity:en",
     "2026-07-07-sudan-exam-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.nieuwsbrievenminocw.nl/actueel/nieuws/2025/06/12/tijdpad-doorstroomtoets-en-overgang-po-vo-schooljaar-2025---2026-vastgesteld",
@@ -3144,10 +3159,11 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-06-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.nik.gov.pl/aktualnosci/nik-o-realizacji-prawa-do-nauki-dzieci-z-ukrainy-w-polskich-szkolach.html",
@@ -3155,10 +3171,12 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "GET",
+   "state": "live-only"
   },
   {
    "url": "https://www.oaaaqa.gov.om/public/external-activities/cseqa",
@@ -3166,10 +3184,11 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-01-08",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.ocwincijfers.nl/sectoren/primair-onderwijs/leerlingen/prestaties-eindtoets",
@@ -3177,10 +3196,11 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-18",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/philippines_a0882a2d-en.html",
@@ -3188,10 +3208,11 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-19",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.omanobserver.om/article/1161960/oman/education/national-system-to-evaluate-performance-of-schools",
@@ -3199,10 +3220,11 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-04-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.onama.td/education-le-tchad-renforce-son-engagement-pour-une-education-inclusive-des-refugies/",
@@ -3210,10 +3232,12 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.onderwijsinspectie.nl/onderwerpen/onderzoeken/staat-van-het-onderwijs/congres/speech-de-staat-van-het-onderwijs-2026",
@@ -3221,10 +3245,12 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.openzambia.com/politics/2026/6/4/hh-signs-free-education-and-pension-bills-into-law",
@@ -3232,10 +3258,12 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.parliament.gov.zm/node/12505",
@@ -3243,10 +3271,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-08-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.parliament.gov.zm/node/12930",
@@ -3254,10 +3283,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.parliament.gov.zm/sites/default/files/documents/bills/N.%20A.%20B.%206%20of%202026.pdf",
@@ -3265,10 +3295,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-08-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.parliament.gov.zm/sites/default/files/images/publication_docs/Ministerial%20Statement%20-%20Update%20on%20Recruitment%20of%2030%2C000%20Teachers.pdf",
@@ -3276,10 +3307,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-08-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.pbs.org/newshour/world/some-of-ukraines-children-start-school-in-underground-classrooms-to-avoid-russian-bombs",
@@ -3287,10 +3319,11 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-09-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.philstar.com/headlines/2025/07/05/2455702/deped-use-both-english-filipino-teach-k-3",
@@ -3298,10 +3331,11 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-07-27",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2080272",
@@ -3309,10 +3343,11 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-05-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11556.htm",
@@ -3320,10 +3355,11 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-28",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.pomocprawna.org/nowe-zasady-800-dla-obywateli-ukrainy-od-1-czerwca-2025",
@@ -3331,10 +3367,11 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-05-11",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/kabinet-wil-in-2030-terug-naar-een-doorstroomtoets",
@@ -3342,10 +3379,12 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.poraad.nl/onderwijskwaliteit/overgang-po-vo/toetsing/rapportage-doorstroomtoets-2026-verschillen-tussen",
@@ -3353,10 +3392,24 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://www.povertyactionlab.org/",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-17",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.pravda.com.ua/eng/news/2025/08/28/7528204/",
@@ -3364,10 +3417,11 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-05-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.rappler.com/philippines/bill-ceasing-mother-tongue-medium-instruction-kindergaten-grade-3-lapses-law/",
@@ -3375,10 +3429,11 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-08-16",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.rfa.org/english/asia/2025/03/09/southeast-asia-free-education/",
@@ -3386,10 +3441,11 @@
     "2026-06-16-vietnam-tuition-free-public-school:en",
     "2026-06-16-vietnam-tuition-free-public-school:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-06",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.rnz.co.nz/news/education/534832/ero-ncea-report-pass-mark-from-principals-for-new-literacy-numeracy-tests",
@@ -3397,10 +3453,12 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.savethechildren.net/news/about-300000-children-risk-losing-education-learning-centres-rohingya-camps-shut-due-funding",
@@ -3408,10 +3466,11 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-02-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.savethechildren.org.uk/blogs/2026/results-are-out-summary-save-childrens-evaluation-results-sierra-leone-education-innovation",
@@ -3419,10 +3478,11 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-03-11",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.sciencedirect.com/science/article/pii/S0738059325002068",
@@ -3430,10 +3490,24 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
+  },
+  {
+   "url": "https://www.seab.gov.sg/psle/",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.seduc.ce.gov.br/2026/03/24/pelo-segundo-ano-ceara-obtem-ouro-no-selo-nacional-compromisso-com-a-alfabetizacao/",
@@ -3441,10 +3515,11 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-04-23",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.stomp.sg/trending-now/latest-batch-24-schools-adopt-full-subject-based-banding-2024",
@@ -3452,10 +3527,11 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-06-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.tandfonline.com/doi/full/10.1080/19439342.2020.1829000",
@@ -3463,10 +3539,11 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2024-02-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.telesemana.com/blog/2025/03/31/eduia-lab-despues-del-plan-ceibal-uruguay-apuesta-por-la-educacion-y-el-desarrollo-de-la-inteligencia-artificial/",
@@ -3474,10 +3551,11 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-07-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.terra.com.br/noticias/educacao/pais-tem-resultado-pior-de-alfabetizacao-em-prova-federal-mas-mec-diz-que-exame-nao-e-indicador,f5b2e5a4483ced618789f5744a34e9day49t8vl4.html",
@@ -3485,10 +3563,12 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.the74million.org/article/after-declaring-naep-off-limits-education-department-cancels-upcoming-test/",
@@ -3496,10 +3576,11 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-08-22",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.the74million.org/article/responding-to-post-pandemic-norms-more-states-are-lowering-testing-standards/",
@@ -3507,10 +3588,11 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-25",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.thedailystar.net/news/bangladesh/education/news/education-rohingya-camps-disarray-3949321",
@@ -3518,10 +3600,11 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-03",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.thenationalnews.com/news/uae/2026/05/22/ras-al-khaimah-classroom-scheme-to-make-arabic-easier-to-learn-will-be-expanded/",

@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-28",
+ "observed": "2026-10-29",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -1743,6 +1743,29 @@
    "note": "",
    "ctype": "application/pdf",
    "state": "unreadable-format"
+  },
+  {
+   "url": "https://tsctmis.org/",
+   "pieces": [
+    "2026-06-08-sierra-leone-tsc-teacher-matching:en",
+    "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
+   ],
+   "observed": "2026-10-29",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html",
+   "written_in": "latin:727",
+   "tokens": [
+    {
+     "token": "Teacher Management Information System · Sierra Leone",
+     "verdict": "absent"
+    },
+    {
+     "token": "Bringing together teachers, trainers, government and the public",
+     "verdict": "found"
+    }
+   ],
+   "state": "partial"
   },
   {
    "url": "https://tuoitre.vn/duoc-mien-hoc-phi-hoc-sinh-phai-dong-nhung-khoan-nao-20250311144712508.htm",
@@ -3704,6 +3727,25 @@
    "state": "confirmed"
   },
   {
+   "url": "https://www.povertyactionlab.org/",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-29",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:9373",
+   "tokens": [
+    {
+     "token": "The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center founded at the Massachusetts Institute of ",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://www.pravda.com.ua/eng/news/2025/08/28/7528204/",
    "pieces": [
     "2026-07-07-ukraine-wartime-schooling:en",
@@ -3856,6 +3898,25 @@
    "note": "HTTPError",
    "ctype": "",
    "state": "walled"
+  },
+  {
+   "url": "https://www.seab.gov.sg/psle/",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
+    "2026-07-07-singapore-psle-sbb:ar"
+   ],
+   "observed": "2026-10-29",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html",
+   "written_in": "latin:1769",
+   "tokens": [
+    {
+     "token": "The Primary School Leaving Examination (PSLE) is an annual national examination that is taken by candidates at the end o",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.seduc.ce.gov.br/2026/03/24/pelo-segundo-ano-ceara-obtem-ouro-no-selo-nacional-compromisso-com-a-alfabetizacao/",

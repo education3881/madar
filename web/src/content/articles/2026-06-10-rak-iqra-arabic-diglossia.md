@@ -27,6 +27,8 @@ sources:
     url: "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1518728/full"
   - title: "Al Qasimi Foundation (2020) — Improving Arabic Reading Fluency: Results from Iqra (PP39 — the earlier, separate evaluation cycle; cited to distinguish it, not as a figure source for the 2024–25 trial)"
     url: "https://publications.alqasimifoundation.com/en/improving-arabic-reading-fluency-results-from-iqra-an-early-grade-reading-intervention-in-ras-al-khaimah"
+  - title: "J-PAL (povertyactionlab.org) — the evaluator's own register, printing the name in full: 'The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center founded at the Massachusetts Institute of Technology.' Read in served text 2026-10-29; cited because the acronym drops the first two words of the name, so the body's expansion cannot be evidenced from the acronym alone"
+    url: "https://www.povertyactionlab.org/"
   - title: "Egyptian Streets (2026-03-03) — How the Gap Between Spoken and Written Arabic Shapes Early Literacy in Egypt"
     url: "https://egyptianstreets.com/2026/03/03/how-the-gap-between-spoken-and-written-arabic-shapes-early-literacy-in-egypt/"
 hero:
