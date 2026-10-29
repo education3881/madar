@@ -2128,6 +2128,33 @@
    "state": "walled"
   },
   {
+   "url": "https://www.alqasimifoundation.com/programs-students",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-29",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5152",
+   "tokens": [
+    {
+     "token": "Piloted in Ras Al Khaimah",
+     "verdict": "found"
+    },
+    {
+     "token": "now being evaluated by J-PAL MENA to guide future scale-up and policy impact",
+     "verdict": "found"
+    },
+    {
+     "token": "Twice-weekly sessions in KG2 or Grade 1 classrooms",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://www.asu.edu.eg/8965/news/the-ministry-of-higher-education-and-the-ministry-of-education-announce-details-of-the-faculties-and-university-majors-available-for-the-various-tracks-in-the-new-baccalaureate-system",
    "pieces": [
     "2026-09-19-egypt-baccalaureate-published-first:en",
@@ -3744,6 +3771,57 @@
     }
    ],
    "state": "confirmed"
+  },
+  {
+   "url": "https://www.povertyactionlab.org/evaluation/improving-literacy-through-cognitive-science-evidence-united-arab-emirates",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-29",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:10985",
+   "tokens": [
+    {
+     "token": "scored 0.19 standard deviations higher in word reading and 0.09 standard deviations higher in overall Arabic literacy",
+     "verdict": "found"
+    },
+    {
+     "token": "concentrated in the skills most relevant for beginning readers",
+     "verdict": "found"
+    },
+    {
+     "token": "weaker for more advanced skills, such as reading comprehension",
+     "verdict": "found"
+    },
+    {
+     "token": "about one quarter of a year of progress by local standards, or 0.17 learning-adjusted years of schooling using an intern",
+     "verdict": "found"
+    },
+    {
+     "token": "seven public and nineteen private",
+     "verdict": "absent"
+    },
+    {
+     "token": "did not appear to affect learning beyond Arabic reading",
+     "verdict": "found"
+    },
+    {
+     "token": "neither improved nor harmed numeracy",
+     "verdict": "found"
+    },
+    {
+     "token": "no detectable effects on executive function",
+     "verdict": "found"
+    },
+    {
+     "token": "The Iqra program is now being scaled up to all private schools in Ras Al Khaimah",
+     "verdict": "found"
+    }
+   ],
+   "state": "partial"
   },
   {
    "url": "https://www.pravda.com.ua/eng/news/2025/08/28/7528204/",

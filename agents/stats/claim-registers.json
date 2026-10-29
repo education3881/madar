@@ -3412,6 +3412,19 @@
    "state": "archived"
   },
   {
+   "url": "https://www.povertyactionlab.org/evaluation/improving-literacy-through-cognitive-science-evidence-united-arab-emirates",
+   "pieces": [
+    "2026-06-10-rak-iqra-arabic-diglossia:en",
+    "2026-06-10-rak-iqra-arabic-diglossia:ar"
+   ],
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
    "url": "https://www.pravda.com.ua/eng/news/2025/08/28/7528204/",
    "pieces": [
     "2026-07-07-ukraine-wartime-schooling:en",
@@ -3612,10 +3625,11 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-26",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.thisislebanon.com/exclusive/584086/",
@@ -3623,10 +3637,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-11-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.timss-sa.org/wp-content/uploads/2022/02/FINAL-HSRC-TIMSS-Gr9-report_ELECTRONIC.pdf",
@@ -3634,10 +3649,11 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-12",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2025Z21893&did=2025D51746",
@@ -3645,10 +3661,11 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-02-09",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.ulster.ac.uk/news/2024/november/ulster-university-partners-with-unesco-to-support-restoration-of-mosul-library",
@@ -3656,10 +3673,11 @@
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-03-27",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.undp.org/arab-states/press-releases/moslawis-celebrate-reopening-mosul-universitys-central-library-and-ninewa-federal-court-appeal",
@@ -3667,10 +3685,11 @@
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-01-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unesco.org/en/articles/game-based-learning-tool-children-conflict-areas-wins-unesco-prize-innovation-education",
@@ -3678,10 +3697,11 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2023-10-01",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unesco.org/en/learning-platforms-gateway/case-study-egyptian-knowledge-bank-ekb",
@@ -3689,10 +3709,11 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-06-09",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unesco.org/sdg4education2030/en/knowledge-hub/egyptian-knowledge-bank-ekb",
@@ -3700,10 +3721,12 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.unhcr.org/sites/default/files/2025-08/teachers-in-refugee-and-displacement-settings-chad-case-study.pdf",
@@ -3711,10 +3734,11 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-04-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unhcr.org/ua/en/news/press-releases/unhcr-lwf-open-new-underground-schools-kharkiv",
@@ -3722,10 +3746,11 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-08-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unhcr.org/us/news/stories/sudanese-refugees-chad-face-challenges-deliver-education",
@@ -3733,10 +3758,11 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-05-18",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/bangladesh/en/press-releases/education-almost-quarter-million-rohingya-refugee-children-risk-unicef-calls-urgent",
@@ -3744,10 +3770,11 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-07-01",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/chad/press-releases/close-5000-refugee-students-sudan-finalize-their-baccalaureate-exams-chad",
@@ -3755,10 +3782,11 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-11-05",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/egypt/stories/egypts-national-literacy-mission",
@@ -3766,10 +3794,12 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.unicef.org/ghana/",
@@ -3777,10 +3807,11 @@
     "2026-05-28-ghana-cbe-curriculum:en",
     "2026-05-28-ghana-cbe-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-16",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/innocenti/reports/developing-arabic-language-skills-egypt",
@@ -3788,10 +3819,11 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-10-29",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/lebanon/press-releases/least%E2%80%AF100000-children%E2%80%AFrisk-missing-next-school-year-without-urgent-action-restore",
@@ -3799,10 +3831,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-06",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/lebanon/press-releases/ministry-education-and-higher-education-european-union-and-unicef-visited-southern",
@@ -3810,10 +3843,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-06",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/lebanon/reports/transition-and-resilience-education-fund-tref",
@@ -3821,10 +3855,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-07",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/media/180486/file/Lebanon-Humanitarian-Situation-Report-No.1,31-March-2026.pdf.pdf",
@@ -3832,10 +3867,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-05-10",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-against-odds-children-begin-new-school-year-rohingya-refugee-camps",
@@ -3843,10 +3879,11 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-19",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-education-milestone-rohingya-refugee-children-myanmar-curriculum-pilot",
@@ -3854,10 +3891,11 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-10-08",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/press-releases/unicef-goodwill-ambassador-orlando-bloom-visits-rohingya-refugee-camps-bangladesh",
@@ -3865,30 +3903,33 @@
     "2026-07-07-rohingya-myanmar-curriculum:en",
     "2026-07-07-rohingya-myanmar-curriculum:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-19",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/ar/%D8%A2%D9%81%D8%A7%D9%82-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86/%D9%82%D8%B5%D8%B5",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2020-09-13",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/ar/%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%85/%D9%82%D8%B5%D8%B5",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-01-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/press-releases/unicef-save-children-and-partners-restore-learning-328000-conflict-affected-children",
@@ -3896,30 +3937,33 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-05-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/golden-opportunity-learn",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:en"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-08-31",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/new-horizons-education-sudan",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:en"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2020-09-11",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/safe-learning-spaces",
@@ -3927,10 +3971,11 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2024-03-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/sudan/stories/sudan-cant-wait-learn",
@@ -3938,10 +3983,11 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2024-03-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/syria/press-releases/new-chapter-education-syria-back-learning-campaign-presents-new-opportunities",
@@ -3949,10 +3995,11 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/yemen/education",
@@ -3960,10 +4007,11 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-22",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/yemen/restoring-education-and-learning-project",
@@ -3971,10 +4019,11 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-09-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unicef.org/yemen/stories/volunteer-teachers-strengthening-education-and-improving-student-retention",
@@ -3982,10 +4031,11 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2024-09-05",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-203-situation-gaza-strip-and-west-bank-including-east-jerusalem",
@@ -3993,10 +4043,11 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2026-05-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-228-humanitarian-crisis-gaza-strip-and-occupied-west-bank",
@@ -4004,10 +4055,12 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 403,
+   "origin_note": "GET",
+   "state": "walled-no-snapshot"
   },
   {
    "url": "https://www.uruguayxxi.gub.uy/en/news/article/80-000-uruguayan-students-trained-in-artificial-intelligence-by-2023/",
@@ -4015,10 +4068,11 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2025-06-20",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.usach.cl/news/experto-critica-excesiva-valoracion-pruebas-estandarizadas-medicion-simce",
@@ -4026,10 +4080,11 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-29",
+   "archived": true,
+   "snapshot": "2020-10-27",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.warchild.net/latest/article/cant-wait-to-learn-formalises-handover-of-its-ukraine-learning-platform-to-ukraine-government/",
