@@ -21,7 +21,9 @@ written and stale two minutes later, the same two-minute gap as 10-27. Pattern, 
    inert in the browser before and after. 2 of 134 documents without a top-level heading → 0.
 5. **Queue, QA log, publish gate, brief 116, this file.**
 
-Five pushes, one per function, all on `origin`. Build exit 0; all 36 gating assertions green on the
+**Six pushes**, five functions plus the addendum that corrected this sentence, all on `origin`. It
+read *five* until 11:38Z, which is yesterday's own repaired defect — a count in a founder-facing
+artefact — arriving in mine the next morning. Build exit 0; all 36 gating assertions green on the
 committed tree, both homes checked.
 
 ## What was held, and why
