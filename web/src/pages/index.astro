@@ -138,10 +138,15 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
 
       <div class="masthead__rule" aria-hidden="true"></div>
 
-      <p class="masthead__tagline">
+      {/* The front door's <h1>. It is a heading rather than a <p> because a page
+          with no top-level heading hands every outline consumer the LEAD ARTICLE's
+          <h2> as its subject (queue item 49). Visually inert: the class below
+          declares every property an h1 default would otherwise change, including
+          font-weight, which is pinned at 400 for exactly this reason. */}
+      <h1 class="masthead__tagline">
         Education, written slowly, in two languages
         <span class="masthead__tagline-ar" lang="ar" dir="rtl">التعليم، بتأنٍّ، بلغتين</span>
-      </p>
+      </h1>
     </div>
   </header>
   {/* ============== CURRENT EDITION ============== */}
@@ -425,6 +430,10 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
 
   .masthead__tagline {
     margin: 0;
+    /* font-weight is pinned because this element is an <h1>: global.css sets
+       h1 { font-weight: 500 } and a <p> inherits body's 400. Without this the
+       promotion to a heading would be a visible change. */
+    font-weight: 400;
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 0.14em;

@@ -115,9 +115,13 @@ function editionPieceCount(n: number): number {
 
       <div class="masthead__rule" aria-hidden="true"></div>
 
-      <p class="masthead__tagline" lang="ar" dir="rtl">
+      {/* The front door's <h1> — see the English home page for why. The two
+          pinned properties differ: this one also pins letter-spacing, because
+          global.css gives h1 the display tracking and Arabic is never tracked
+          (qa_arabic_shaping asserts letter-spacing: normal on every Arabic run). */}
+      <h1 class="masthead__tagline" lang="ar" dir="rtl">
         التعليم، بتأنٍّ، بلغتين
-      </p>
+      </h1>
     </div>
   </header>
 
@@ -273,6 +277,8 @@ function editionPieceCount(n: number): number {
   .masthead__rule::after  { inset-inline-end: 0; }
   .masthead__tagline {
     margin: 0;
+    font-weight: 400;
+    letter-spacing: normal;
     font-family: var(--font-arabic);
     font-size: 19px;
     line-height: 1.8;
