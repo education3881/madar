@@ -147,7 +147,7 @@ const ogCard = piece.data.hero?.src
         <Content />
       </div>
       <aside class="body-right marginalia">
-        <h4>Field reference</h4>
+        <h2>Field reference</h2>
         <p>{piece.data.country} · {piece.data.region}</p>
         {/* Continental pieces only (2026-09-14). The line above stays the
             primary; this one shows the whole set the piece measures, in the
@@ -160,13 +160,13 @@ const ogCard = piece.data.hero?.src
         <p>Themes · {piece.data.themes.join(', ')}</p>
         {piece.data.contains_composites && (
           <>
-            <h4>Composite figures</h4>
+            <h2>Composite figures</h2>
             <p>This piece uses a composite character marked with † on first appearance. See the footnote above the sources list.</p>
           </>
         )}
         {sourcesAreProvisional && (
           <>
-            <h4>Editorial status</h4>
+            <h2>Editorial status</h2>
             <p>One or more sources are placeholder citations. The Editor will replace these with verified ministry-document titles, dates, and URLs in the QA window.</p>
           </>
         )}

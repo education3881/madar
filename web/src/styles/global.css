@@ -325,7 +325,18 @@ hr.rule {
   color: var(--color-sage);
   line-height: 1.7;
 }
-.marginalia h4 {
+/* The marginalia rail's label is an h2, not an h4, from 2026-10-30 (queue item 54).
+   It is a top-level section of an article page and the only heading between the
+   page's h1 and the sources h2, so an h4 here told a screen reader's heading
+   navigation that two levels of structure exist between them and were skipped --
+   on all 88 article pages, both editions, since the first publish. Every property
+   the base `h1..h6` rule would change is declared below, so the promotion is
+   visually inert on screen; the one real difference is in PRINT, where the
+   stylesheet's page-break rule enumerates `h1, h2, h3` by tag, so this label now
+   carries `page-break-after: avoid` -- which is correct for a heading and is why
+   that rule enumerates headings at all. Measured in the browser before and after,
+   getComputedStyle on the element: every property identical. */
+.marginalia h2 {
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.14em;

@@ -141,7 +141,7 @@ const ogCard = piece.data.hero?.src
         <Content />
       </div>
       <aside class="body-right marginalia">
-        <h4>المرجع الميداني</h4>
+        <h2>المرجع الميداني</h2>
         <p>{countryAr(piece.data.country)} · {regionAr(piece.data.region)}</p>
         {/* Twin of the English marginalia line (2026-09-14). Every member goes
             through countryAr for the same reason the line above does — an
@@ -154,7 +154,7 @@ const ogCard = piece.data.hero?.src
         <p>المحاور · {piece.data.themes.map(themeAr).join('، ')}</p>
         {piece.data.contains_composites && (
           <>
-            <h4>شخصيات مركَّبة</h4>
+            <h2>شخصيات مركَّبة</h2>
             <p>تستخدم هذه المقالة شخصيةً مركَّبة موسومةً بـ † عند أول ظهور. انظر الحاشية فوق قائمة المصادر.</p>
           </>
         )}
