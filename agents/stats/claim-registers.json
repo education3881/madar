@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-29",
+ "observed": "2026-10-30",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -2645,6 +2645,18 @@
    "state": "archived"
   },
   {
+   "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-summary-of-interim-findings",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-10-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
    "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference/independent-evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference",
    "pieces": [
     "2026-07-28-england-report-cards-first-term:en",
@@ -2655,6 +2667,31 @@
    "snapshot": "2026-06-22",
    "archive_note": "200",
    "state": "archived"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/school-inspections-statistical-commentaries-2025-to-2026/considering-the-context-of-schools-in-challenging-circumstances-an-analysis-of-similar-schools-data",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-10-16",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/similar-schools-model-for-attainment/similar-schools-model-for-attainment-overview",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.iicba.unesco.org/en/zambia",
@@ -4092,10 +4129,12 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.warchild.org.uk/news/annual-report-2025",
@@ -4103,10 +4142,12 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.wise-qatar.org/about",
@@ -4114,10 +4155,11 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-10-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.worldbank.org/en/news/feature/2026/03/27/welcome-to-the-workforce-how-rwanda-trained-and-certified-24-000-teachers-in-less-than-one-year",
@@ -4125,10 +4167,11 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-04-19",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.worldbank.org/en/news/feature/2026/05/21/morocco-s-pioneer-schools-advancing-improved-student-learning",
@@ -4136,10 +4179,11 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-06-26",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen",
@@ -4147,10 +4191,11 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-04-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.worldbank.org/en/news/statement/2021/12/23/world-bank-statement-on-incentive-program-for-lebanon-s-public-school-teachers-for-the-academic-year-2021-2022",
@@ -4158,10 +4203,11 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-06-06",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.youm7.com/story/2025/10/20/-/7165289",
@@ -4169,10 +4215,12 @@
     "2026-07-07-sudan-exam-continuity:en",
     "2026-07-07-sudan-exam-continuity:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.youm7.com/story/2026/4/23/%D8%A7%D8%B9%D8%B1%D9%81-%D8%A8%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7-%D9%88%D9%85%D8%AF%D8%AA%D9%87/7384066",
@@ -4180,10 +4228,11 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-04-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.zanis.gov.zm/?p=1779",
@@ -4191,10 +4240,11 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-04-19",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.zus.pl/en/-/zmiany-w-800-dla-obywateli-ukrainy-1",
@@ -4202,10 +4252,12 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "GET",
+   "state": "live-only"
   },
   {
    "url": "https://www2.nzqa.govt.nz/about-us/news/ncea-and-university-entrance-attainment-in-2025/",
@@ -4213,10 +4265,11 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-07-14",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www2.nzqa.govt.nz/assets/About-us/Official-releases/2025/OC01148-Co-requisite-Assessments-Results-Release-dates.pdf",
@@ -4224,10 +4277,12 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www2.nzqa.govt.nz/ncea/subjects/litnum/literacy-and-numeracy-data/",
@@ -4235,10 +4290,11 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-03-05",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://zielonalinia.gov.pl/800-dla-obywateli-ukrainy-zmiany-od-lutego-2026-r",
@@ -4246,10 +4302,11 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": null,
-   "archive_note": "HTTPError",
-   "state": "archive-unknown"
+   "observed": "2026-10-30",
+   "archived": true,
+   "snapshot": "2026-04-10",
+   "archive_note": "200",
+   "state": "archived"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-29",
+ "observed": "2026-10-30",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -2899,6 +2899,30 @@
    "state": "absent"
   },
   {
+   "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-summary-of-interim-findings",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3571",
+   "tokens": [
+    {
+     "token": "insights from the first 4 waves of surveys, covering inspections from January 2026 onwards that were published before th",
+     "verdict": "found"
+    },
+    {
+     "token": "تقييمُ نهج أوفستد المُجدَّد في تفتيش التعليم: موجزُ النتائج الأوّليّة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://www.gov.uk/government/publications/evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference/independent-evaluation-of-ofsteds-renewed-approach-to-education-inspection-terms-of-reference",
    "pieces": [
     "2026-07-28-england-report-cards-first-term:ar"
@@ -2916,6 +2940,127 @@
     }
    ],
    "state": "script-mismatch"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/school-inspections-statistical-commentaries-2025-to-2026/considering-the-context-of-schools-in-challenging-circumstances-an-analysis-of-similar-schools-data",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:22161",
+   "tokens": [
+    {
+     "token": "Considering the context of schools in challenging circumstances: an analysis of similar schools data",
+     "verdict": "found"
+    },
+    {
+     "token": "the similar schools measure was not available during our 2025/26 inspections",
+     "verdict": "found"
+    },
+    {
+     "token": "nearly 3,300 inspections, which represents just 15% of state-funded schools",
+     "verdict": "found"
+    },
+    {
+     "token": "nearly 3,200 full inspections where we graded achievement",
+     "verdict": "found"
+    },
+    {
+     "token": "similar schools data supports conclusions that inspectors were already reaching",
+     "verdict": "found"
+    },
+    {
+     "token": "the outcomes of inspections carried out in a single year are not representative of the school population as a whole",
+     "verdict": "found"
+    },
+    {
+     "token": "more than 3 times that of London",
+     "verdict": "found"
+    },
+    {
+     "token": "Both regions have fairly similar numbers of pupils and proportions of pupils eligible for FSM",
+     "verdict": "found"
+    },
+    {
+     "token": "two thirds (65%) of schools said the same",
+     "verdict": "found"
+    },
+    {
+     "token": "Less than half (47%) of secondary schools agreed that their inspection was tailored to their context",
+     "verdict": "found"
+    },
+    {
+     "token": "This shows that Ofsted still has work to do",
+     "verdict": "found"
+    },
+    {
+     "token": "مراعاةُ سياق المدارس في الظروف الصعبة: تحليلٌ لبيانات المدارس المتشابهة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "just 15% of state-funded schools",
+     "verdict": "found"
+    },
+    {
+     "token": "supports conclusions that inspectors were already reaching",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.gov.uk/government/publications/similar-schools-model-for-attainment/similar-schools-model-for-attainment-overview",
+   "pieces": [
+    "2026-07-28-england-report-cards-first-term:en",
+    "2026-07-28-england-report-cards-first-term:ar"
+   ],
+   "observed": "2026-10-30",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:7541",
+   "tokens": [
+    {
+     "token": "Similar schools model for attainment: overview",
+     "verdict": "found"
+    },
+    {
+     "token": "a list of 50 similar schools for each mainstream primary and secondary school",
+     "verdict": "found"
+    },
+    {
+     "token": "a scaled, neighbourhood-level measure of income deprivation that affects children",
+     "verdict": "found"
+    },
+    {
+     "token": "a measure that captures progression to higher education",
+     "verdict": "found"
+    },
+    {
+     "token": "Ofsted will include similar schools information in its inspection data summary reports ( IDSRs ) from September 2026. Th",
+     "verdict": "found"
+    },
+    {
+     "token": "نموذج المدارس المتشابهة للتحصيل: نظرة عامة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "لن تُستخدَم في اتخاذ قرارات التدريج",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "The data will not be used to make grading decisions",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.iicba.unesco.org/en/zambia",
