@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/urls';
 import { byDateThenSlug } from '../lib/order';
-import { currentEdition, editions } from '../lib/editions';
+import { currentEdition, editions, hasOpenEdition } from '../lib/editions';
 import { publisherNodes } from '../lib/structuredData';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -156,8 +156,8 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
   >
     <div class="section__head">
       <div class="section__head-left">
-        <span class="section__kicker">Current edition</span>
-        <span class="section__kicker-ar" lang="ar" dir="rtl">الإصدار الحالي</span>
+        <span class="section__kicker">{hasOpenEdition ? 'Current edition' : 'Latest edition'}</span>
+        <span class="section__kicker-ar" lang="ar" dir="rtl">{hasOpenEdition ? 'الإصدار الحالي' : 'أحدث إصدار'}</span>
         <p class="current-edition__theme">{edLabel} — {currentEdition.themeEn}</p>
       </div>
       <div class="section__meta">

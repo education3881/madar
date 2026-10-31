@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { withBase } from '../../lib/urls';
 import { byDateThenSlug } from '../../lib/order';
-import { currentEdition, editions } from '../../lib/editions';
+import { currentEdition, editions, hasOpenEdition } from '../../lib/editions';
 import { countryAr } from '../../lib/i18n-geo';
 import { publisherNodes } from '../../lib/structuredData';
 
@@ -132,7 +132,7 @@ function editionPieceCount(n: number): number {
   >
     <div class="section__head">
       <div class="section__head-left">
-        <span class="section__kicker" lang="ar" dir="rtl">الإصدار الحالي</span>
+        <span class="section__kicker" lang="ar" dir="rtl">{hasOpenEdition ? 'الإصدار الحالي' : 'أحدث إصدار'}</span>
         <p class="current-edition__theme" lang="ar" dir="rtl">{edLabelAr} — {currentEdition.themeAr}</p>
       </div>
       <span class="section__meta" lang="ar" dir="rtl">{edLabelAr} · {currentEdition.periodAr}</span>

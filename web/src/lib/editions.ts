@@ -93,11 +93,33 @@ export const editions: Edition[] = [
     accent: '#2D6A4F',
     motif: 'thread',
     cover: 'edition-05.svg',
-    status: 'current',
+    // CLOSED 2026-10-31. It was closed on 2026-10-13 - twelve flags in one
+    // commit - and `content-drafts/_EDITION_05_STATUS.md` has said so in its
+    // first line ever since, while this field went on saying 'current' for
+    // eighteen days and the home pages printed the kicker "Current edition"
+    // over it in both languages. Two files in this repository disagreed about
+    // one fact and the served bytes carried the wrong one. Standing-queue item
+    // 45 named the PERIOD LABEL going stale on 2026-11-01 as the defect; the
+    // label is the issue's name and names do not expire (Ed04 is 'August 2026'
+    // over pieces dated July). The defect was this flag, and it was already
+    // served. What is NOT decided here, and is not ours, is what the next
+    // edition is: GitHub issue #13, stated default 2026-11-08.
+    status: 'closed',
   },
 ];
 
-/** The edition currently marked 'current' (falls back to the highest number). */
+/**
+ * Whether any edition is actually open. False from 2026-10-31: Edition 05
+ * closed on 2026-10-13 and nothing has been commissioned to follow it (issue
+ * #13). Consumers must not print the word "current" over the fallback.
+ */
+export const hasOpenEdition: boolean = editions.some((e) => e.status === 'current');
+
+/**
+ * The edition to feature. The one marked 'current' if there is one, otherwise
+ * the highest-numbered - which is the LATEST edition and not the current one.
+ * Read `hasOpenEdition` before labelling it.
+ */
 export const currentEdition: Edition =
   editions.find((e) => e.status === 'current') ??
   editions.reduce((a, b) => (b.number > a.number ? b : a));
