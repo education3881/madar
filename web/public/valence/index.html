@@ -303,7 +303,7 @@ body.inspector-open #dots{opacity:0 !important;pointer-events:none}
 #aiChips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 @media(max-width:820px){#aiChips .chip{padding:12px 14px;font-size:12.5px;border-radius:8px;min-height:44px}}
 #aiDetail{margin-top:22px;padding:24px 28px;border-radius:12px}
-#aiDetail h4{font-family:'Fraunces',serif;font-size:21px;font-weight:400;color:var(--ink);line-height:1.25;margin-bottom:8px}
+#aiDetail h3{font-family:'Fraunces',serif;font-size:21px;font-weight:400;color:var(--ink);line-height:1.25;margin-bottom:8px}
 #aiDetail .eff{font-size:13px;color:var(--prod-l);font-feature-settings:'tnum';margin-bottom:10px}
 #aiDetail .narr{font-size:14px;line-height:1.62;color:var(--ink2)}
 #aiDetail .cav{margin-top:12px}
@@ -313,7 +313,7 @@ body.inspector-open #dots{opacity:0 !important;pointer-events:none}
 @media(max-width:1000px){#ai .grid{grid-template-columns:1fr;grid-template-areas:'fig' 'panel' 'cards'}}
 #aiPrinciples .card{padding:24px;border-radius:20px;transition:transform .22s var(--e-touch),background .22s}
 #aiPrinciples .card:hover{transform:translateY(-3px);background:var(--panel-hi)}
-#aiPrinciples h4{font-family:'Fraunces',serif;font-style:italic;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:8px}
+#aiPrinciples h3{font-family:'Fraunces',serif;font-style:italic;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:8px}
 #aiPrinciples p{font-size:13.5px;line-height:1.6;color:var(--ink3)}
 #aiLegend{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:10px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
 #aiLegend i{display:inline-block;width:14px;height:2px;vertical-align:3px;margin-right:6px}
@@ -336,7 +336,7 @@ body.inspector-open #dots{opacity:0 !important;pointer-events:none}
 #timing .stage{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 44px,#000 calc(100% - 30px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 44px,#000 calc(100% - 30px),transparent 100%)}
 #timingCap .tc{opacity:0;transform:translateY(10px);transition:all .22s var(--e-entry)}
 #timingCap .tc.on{opacity:1;transform:none}
-#timingCap h4{font-family:'Fraunces',serif;font-size:clamp(20px,2.2vw,30px);font-weight:400;color:var(--ink);margin-bottom:6px}
+#timingCap h3{font-family:'Fraunces',serif;font-size:clamp(20px,2.2vw,30px);font-weight:400;color:var(--ink);margin-bottom:6px}
 #timingCap .eff{font-size:12.5px;color:var(--ink2);font-feature-settings:'tnum';margin-bottom:8px}
 #timingCap p{font-size:13.5px;line-height:1.58;color:var(--ink3);max-width:60ch}
 #timingCap .cites{margin-top:8px;display:flex;gap:6px 18px;flex-wrap:wrap}
@@ -534,9 +534,9 @@ body.inspector-open #dots{opacity:0 !important;pointer-events:none}
         <div id="aiDetail" class="card rv d1"></div>
       </div>
       <div id="aiPrinciples">
-      <div class="card rv"><h4>It accelerates.</h4><p>Across 50 controlled evaluations, intelligent tutoring moved the median student from the 50th to the 75th percentile — the reaction runs faster when each child gets a patient, adaptive step-by-step partner.</p></div>
-      <div class="card rv d1"><h4>It does not create.</h4><p>The machine has never beaten the human tutor — it approximates one (d = 0.76 vs 0.79). What it creates is supply: expertise where there was none, at the price of electricity.</p></div>
-      <div class="card rv d2"><h4>It needs guardrails.</h4><p>The same model that lifts practice 127% with teacher-designed guardrails drags unassisted exam scores 17% below control without them. The design of the interaction — not the model — decides whether children learn or outsource.</p></div>
+      <div class="card rv"><h3>It accelerates.</h3><p>Across 50 controlled evaluations, intelligent tutoring moved the median student from the 50th to the 75th percentile — the reaction runs faster when each child gets a patient, adaptive step-by-step partner.</p></div>
+      <div class="card rv d1"><h3>It does not create.</h3><p>The machine has never beaten the human tutor — it approximates one (d = 0.76 vs 0.79). What it creates is supply: expertise where there was none, at the price of electricity.</p></div>
+      <div class="card rv d2"><h3>It needs guardrails.</h3><p>The same model that lifts practice 127% with teacher-designed guardrails drags unassisted exam scores 17% below control without them. The design of the interaction — not the model — decides whether children learn or outsource.</p></div>
       </div>
     </div>
   </div>
@@ -1546,7 +1546,7 @@ if(!TOUCH){
   });
   function renderDetail(){
     const f=F[cur];
-    $('#aiDetail').innerHTML=`<h4>${f.claim}</h4><div class="eff">${f.eff}</div>
+    $('#aiDetail').innerHTML=`<h3>${f.claim}</h3><div class="eff">${f.eff}</div>
       <div class="narr">${f.narr}</div>
       ${f.cav?`<div class="cav">${f.cav}</div>`:''}
       <div class="cites">${f.st.map(s=>`<div class="cite"><span class="yr">${s.y}</span>${s.r} <a href="${s.u}" target="_blank" rel="noopener">${s.u.replace('https://','')}</a></div>`).join('')}</div>`;
@@ -1636,7 +1636,7 @@ if(!TOUCH){
   const capHost=$('#timingCap');
   T.forEach((f,i)=>{ const d=document.createElement('div'); d.className='tc'; d.id='tcap'+i;
     d.style.position='absolute'; d.style.inset='auto 0 0 0';
-    d.innerHTML=`<h4>${f.topic.replace('·','·')}</h4><div class="eff" style="color:${HUE[f.dm]}">${f.eff}</div><p>${f.claim}</p>
+    d.innerHTML=`<h3>${f.topic.replace('·','·')}</h3><div class="eff" style="color:${HUE[f.dm]}">${f.eff}</div><p>${f.claim}</p>
     <div class="cites">${f.st.map(s=>`<a href="${s.u}" target="_blank" rel="noopener" title="${s.r.replace(/"/g,'&quot;')}">${s.u.replace('https://','').slice(0,44)}</a>`).join('')}</div>`;
     capHost.appendChild(d); });
   let built=false, TW2=0, axB=0;
