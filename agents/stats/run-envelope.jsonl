@@ -36,3 +36,4 @@
 {"run_id": "41192708692", "workflow": "madar-daily.yml", "label": "content: item 42b, the Turkiye national ledger", "at": "2026-10-31T10:48:59+00:00", "elapsed_minutes": 23.29, "timeout_minutes": 90, "remaining_minutes": 66.71}
 {"run_id": "41192708692", "workflow": "madar-daily.yml", "label": "growth: item 45 half closed, the current-edition flag", "at": "2026-10-31T10:54:24+00:00", "elapsed_minutes": 28.71, "timeout_minutes": 90, "remaining_minutes": 61.29}
 {"run_id": "41192708692", "workflow": "madar-daily.yml", "label": "5of5a: queue, QA log, publish gate", "at": "2026-10-31T10:58:17+00:00", "elapsed_minutes": 32.59, "timeout_minutes": 90, "remaining_minutes": 57.41}
+{"run_id": "41192708692", "workflow": "madar-daily.yml", "label": "5of5: brief 117 and the manager status", "at": "2026-10-31T11:01:48+00:00", "elapsed_minutes": 36.11, "timeout_minutes": 90, "remaining_minutes": 53.89}
