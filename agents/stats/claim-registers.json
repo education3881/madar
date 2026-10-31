@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-30",
+ "observed": "2026-10-31",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -2864,6 +2864,19 @@
    "snapshot": "2026-09-04",
    "archive_note": "200",
    "state": "archived"
+  },
+  {
+   "url": "https://www.meb.gov.tr/asrin-gayreti-maarifin-iyilestirici-gucu-raporu-yayimladi/haber/39744/tr",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-31",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.meb.gov.tr/deprem-bolgesindeki-toplam-derslik-sayisi-6-subat-oncesine-gore-artacak/haber/32430/tr",

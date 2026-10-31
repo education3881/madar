@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-30",
+ "observed": "2026-10-31",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -3276,6 +3276,38 @@
     }
    ],
    "state": "script-mismatch"
+  },
+  {
+   "url": "https://www.meb.gov.tr/asrin-gayreti-maarifin-iyilestirici-gucu-raporu-yayimladi/haber/39744/tr",
+   "pieces": [
+    "2026-07-07-turkiye-earthquake-school-recovery:en",
+    "2026-07-07-turkiye-earthquake-school-recovery:ar"
+   ],
+   "observed": "2026-10-31",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:7017",
+   "tokens": [
+    {
+     "token": "Asrın Gayreti: Maarifin İyileştirici Gücü",
+     "verdict": "found"
+    },
+    {
+     "token": "9 bin 799 derslik ise kullanılamaz hâle geldi",
+     "verdict": "found"
+    },
+    {
+     "token": "14 bin 202 dersliğin yapımı tamamlandı",
+     "verdict": "found"
+    },
+    {
+     "token": "جهدُ القرن: قوةُ المعارف الشافية",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.meb.gov.tr/deprem-bolgesindeki-toplam-derslik-sayisi-6-subat-oncesine-gore-artacak/haber/32430/tr",
