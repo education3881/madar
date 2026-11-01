@@ -126,6 +126,47 @@ const blocks = ordered.map((e) => {
         )}
       </section>
     ))}
+
+    {/* ---- Standing pieces, outside the numbered editions ----
+         Added 2026-11-01 as the growth action, and it closes a gap that was
+         left open on purpose for 76 days. The ENGLISH editions index has
+         carried this section since 2026-08-25, when the orphan audit found
+         /valence/ served with no inbound edge at all. The Arabic side was
+         recorded that day as an editorial question and not a QA fix
+         (agents/growth/2026-08-17-orphan-page-audit-valence.md), and nobody
+         came back to it. Measured today: exactly ONE page in the whole site
+         linked to /madar/valence/ and ZERO of them were Arabic — so half the
+         publication had no path to a document the sitemap claims, and
+         qa_reachability was correctly silent, because it asks whether a page is
+         reachable from its OWN language's front door and valence has only one.
+
+         The editorial question is answered rather than dodged. The instrument
+         is in English, so the title is marked `lang="en" dir="ltr"` and the
+         Arabic reader is told what they are clicking into BEFORE they click,
+         instead of being sent to an English page by a link that looks Arabic.
+         That is #86 and #101's discipline applied to a link rather than to a
+         name: where one edition can answer a question the other cannot, say so
+         in the edition that cannot.
+
+         Heading level mirrors the English page deliberately — h2 section, h3
+         item — which gives the Arabic page its first real section outline and
+         keeps items 54/57/58's class closed (h1 -> h2 -> h3, no skip).      */}
+    <section class="standing" aria-labelledby="standing-head-ar">
+      <p class="kicker" lang="ar" dir="rtl">موادُّ دائمة</p>
+      <h2 id="standing-head-ar" class="standing__title" lang="ar" dir="rtl">خارج الإصدارات</h2>
+      <ul class="edition__pieces">
+        <li class="piece">
+          <a href={withBase('/valence/')} class="piece__link">
+            <span class="piece__meta">
+              <span class="piece__country" lang="ar" dir="rtl">تفاعُلي</span>
+              <span class="piece__date" lang="ar" dir="rtl">أغسطس ٢٠٢٦</span>
+            </span>
+            <h3 class="piece__title"><span lang="en" dir="ltr">VALENCE — The Chemistry of Education</span></h3>
+            <p class="standing__note" lang="ar" dir="rtl">أداةٌ تفاعليةٌ قائمةٌ بذاتها، نصُّها بالإنجليزية.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
   </article>
 </Base>
 
@@ -213,6 +254,49 @@ const blocks = ordered.map((e) => {
     max-width: 44ch;
   }
   .edition__motif { color: var(--ed-accent); height: 12px; width: 84px; }
+
+  /* ---- Standing pieces, outside the numbered editions (added 2026-11-01) ----
+     The Arabic counterpart of the EN editions index's own `.standing` block,
+     restated here rather than lifted into global.css ON PURPOSE: a rule
+     restated per component is exactly the shape ruling #123 names this
+     morning, so the choice is deliberate and the reason is written down. These
+     are furniture for two pages; promoting them would put a third unreachable
+     statement into the global layer beside `hr.rule` and `.pullquote`, which
+     is the defect #123 describes rather than a fix for it. If a third page
+     ever needs them, that is the moment they move. */
+  .standing {
+    border-block-start: 1px solid var(--color-rule);
+    padding-block-start: var(--space-xl);
+    margin-block-start: var(--space-lg);
+  }
+  .standing__title {
+    margin-block: var(--space-sm) var(--space-lg);
+    /* --font-arabic-display, NOT --font-display. The first draft of this rule
+       was copied from the English editions index and painted
+       «خارج الإصدارات» in Cormorant Garamond, a Latin serif that covers no
+       Arabic at all, so a system font did the work. Found by LOOKING at the
+       render (08-23 clause 2), not by a gate: qa_font_payload limb 2 is
+       correctly silent because a fallback is not a dead FETCH, and the class
+       it does measure — a painted Arabic run whose stack names no bundled
+       Arabic family — is printed and not asserted (standing-queue item 40),
+       so this would have become instance 90 of 89. */
+    font-family: var(--font-arabic-display);
+  }
+  /* The instrument's name is English and must be set in the English display
+     face, inside an RTL document. Without this it inherits Cairo from
+     .piece__title and Latin text is painted by an Arabic typeface — the exact
+     mirror of the defect above, in one element. `dir="ltr"` on the span
+     isolates the bidi run; this isolates the typography. */
+  .standing .piece__title [lang="en"] {
+    font-family: var(--font-display);
+  }
+  .standing__note {
+    margin-block-start: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--color-muted);
+  }
 
   .edition__pieces {
     list-style: none;

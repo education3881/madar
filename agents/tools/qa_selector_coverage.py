@@ -30,7 +30,7 @@ ITEM 21'S RE-SPECIFICATION (#118) IS THE DESIGN, AND IT HAS FOUR BUCKETS, NOT TW
   design stands and the markup walked away), because deleting an orphaned rule
   destroys the only surviving statement of what the document was supposed to look
   like. Measured over the real population, two buckets cannot hold it: 27 of the
-  44 unmatched selectors are neither — they are the untaken branch of a template
+  43 unmatched selectors are neither — they are the untaken branch of a template
   that is working exactly as designed, including the CHARTER-mandated CSS-only
   wordmark fallback, which is REQUIRED to match nothing while the SVG is present.
   Calling those residue would have deleted a non-negotiable. So the register
@@ -44,7 +44,7 @@ ITEM 21'S RE-SPECIFICATION (#118) IS THE DESIGN, AND IT HAS FOUR BUCKETS, NOT TW
     LATENT       a bare element-type or element-in-context rule for an element
                  the corpus happens not to contain. Defensive typography; this
                  is how standing-queue item 57's class is absorbed rather than
-                 re-introduced. (11)
+                 re-introduced. (10)
     ORPHANED     the design stands, stated somewhere outside the stylesheet, and
                  the markup walked away. It is an unfiled defect report about the
                  markup, and the report is the output. (1)
@@ -231,11 +231,14 @@ REGISTER = {
         "deleting it is how item 57's class returns the day somebody adds one"),
     "h5": ("LATENT", "no served document carries an h5; same reasoning as h4"),
     "h6": ("LATENT", "no served document carries an h6; same reasoning as h4"),
-    "[dir=rtl] h3": ("LATENT",
-        "h3 is served on two EN pages only - the EN home's .secondary__title and "
-        "the EN editions index's standing section - and neither has an Arabic "
-        "counterpart that uses one. Correct, and it is item 21's own prediction "
-        "about one-edition rules arriving from the other direction"),
+    # STRUCK 2026-11-01, hours after it was written, by limb 2 and by real work
+    # rather than by an injection: `[dir=rtl] h3` was registered LATENT because
+    # h3 was served on two EN pages and no Arabic page used one. The growth
+    # function then gave the Arabic editions index its own standing section with
+    # an h3 item, the selector started matching, and the build went red until
+    # this entry came out. That is the register-cannot-rot half proved on the
+    # day it shipped, and it is the whole reason limb 2 exists: #114's seeded
+    # register had no way to notice its own entries going stale.
     "[dir=rtl] h4": ("LATENT", "no h4 anywhere; the RTL half of the h4 rule"),
     "[dir=rtl] i": ("LATENT",
         "no <i> element is served on any Arabic page. One of the stylesheet's "

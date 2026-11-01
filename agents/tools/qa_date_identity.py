@@ -150,9 +150,11 @@ def main() -> int:
     article_pages = 0
     listing_pairs = 0
     declared_rows: list[tuple[str, str, str]] = []
+    pages_seen: list[str] = []
 
     for page in sorted(dist.rglob("index.html")):
         rel = page.relative_to(dist).as_posix()
+        pages_seen.append(rel)
         html = page.read_text(encoding="utf-8", errors="replace")
         arabic = rel.startswith("ar/")
         rx = AR_DATE_RE if arabic else EN_DATE_RE
@@ -183,13 +185,14 @@ def main() -> int:
             nearest = href[-1] if href else ""
             slug_m = ARTICLE_HREF_RE.search(nearest)
             if not slug_m:
-                # Not an article row. The editions index carries exactly one such
-                # row — the VALENCE standing instrument, served from public/ with
-                # a hand-written "August 2026" and no frontmatter to agree with
-                # (08-17 orphan audit; the Arabic editions index still has no
-                # VALENCE row, which is an open editorial question, not a defect).
-                # Named rather than skipped, so a SECOND unfrontmattered date row
-                # cannot arrive unnoticed behind this exemption.
+                # Not an article row. An editions index carries one such row —
+                # the VALENCE standing instrument, served from public/ with a
+                # hand-written period label and no frontmatter to agree with
+                # (08-17 orphan audit). Named rather than skipped, so an
+                # unfrontmattered date row cannot arrive unnoticed behind this
+                # exemption. BOTH editions indexes carry one from 2026-11-01:
+                # the Arabic row was the 08-17 audit's open editorial question
+                # and the growth function answered it that day.
                 if nearest in DECLARED_NON_ARTICLE_ROWS:
                     declared_rows.append((rel, nearest, txt.strip()))
                     if not txt.strip():
@@ -231,11 +234,28 @@ def main() -> int:
         )
     if listing_pairs == 0:
         failures.append("non-vacuity: zero listing dates were paired with an article; this check read nothing")
-    if len(declared_rows) != 1:
+    # The expectation is DERIVED, never copied. It read `expected exactly 1`
+    # from 2026-09-22 until 2026-11-01, which was true the day it was written
+    # and false the morning the growth function gave the Arabic editions index
+    # its own standing row — a number inside an assertion, maintained by nobody
+    # (#57), which is the defect this whole file exists to catch one level up.
+    # What is actually invariant is the PAIRING: every editions index serves
+    # exactly one declared standing row, and nothing else serves one at all.
+    editions_pages = {r for r in pages_seen if r.endswith("editions/index.html")}
+    rows_by_page = {}
+    for rel, href, _txt in declared_rows:
+        rows_by_page.setdefault(rel, []).append(href)
+    if set(rows_by_page) != editions_pages:
         failures.append(
-            f"non-vacuity: {len(declared_rows)} declared standing rows carried a date, expected exactly 1 "
-            f"(the VALENCE row on the English editions index)"
+            f"non-vacuity: declared standing rows were found on {sorted(rows_by_page)} and the "
+            f"editions indexes are {sorted(editions_pages)} — the two sets must be equal"
         )
+    for rel, hrefs in sorted(rows_by_page.items()):
+        if len(hrefs) != 1:
+            failures.append(
+                f"{rel}: {len(hrefs)} declared standing rows carried a date; an editions index "
+                f"serves exactly one"
+            )
 
     if failures:
         print(f"qa_date_identity: FAIL — {len(failures)} finding(s).")
@@ -254,7 +274,8 @@ def main() -> int:
         f"listing dates all agree with their own frontmatter, in both languages, "
         f"with Arabic in Arabic-Indic digits. The rendered day is a function of the "
         f"date field, not of the build machine's clock. "
-        f"{len(declared_rows)} declared standing row carries a date with no frontmatter behind it."
+        f"{len(declared_rows)} declared standing row(s) carry a date with no frontmatter behind it, "
+        f"one on each of the {len(editions_pages)} editions indexes."
     )
     return 0
 
