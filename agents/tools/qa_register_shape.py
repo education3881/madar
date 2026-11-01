@@ -120,6 +120,13 @@ WORDS = {
     "eighty": 80, "ninety": 90,
 }
 
+# Every token that makes a phrase a quantity. Used only to tell a DECLINED
+# ratio phrase that is a number this check cannot parse (`one hundred
+# twenty-three` before #124 widened the capture) from one that is not a number
+# at all (`N of M rulings`, the deliberate placeholder in the preamble). The
+# first is a ceiling and must be reported; the second is correctly ignored.
+NUMBER_WORDS = set(WORDS) | {"hundred"}
+
 
 def fields(row):
     """Pipe-fields of a table row. An ESCAPED pipe is not a delimiter."""
@@ -509,13 +516,47 @@ def limb_register(root):
                         "is absent), so its ratio denominators are unchecked — "
                         "which is a missing structure, not a clean one"
                         % FAMILIES_CUE)
+    # WIDTH, and it is the whole of ruling #124. This pattern held at most TWO
+    # number-words on each side, which covers every value up to ninety-nine.
+    # The register reached `one hundred` on 2026-10-14 and the limb read it
+    # correctly — two words. It reached `one hundred one` on 2026-10-15 and has
+    # read ZERO denominators on every run since, through two weekly
+    # consolidations, because three number-words will not fit a two-word group.
+    # Behind that silence the live claim drifted to *forty-two of one hundred
+    # twenty-one rulings* against a true forty-four of one hundred twenty-three.
+    # `words_to_int` has parsed `hundred` since 2026-10-17; the ceiling was
+    # never in the arithmetic, it was in the capture. Four tokens reaches 999,
+    # which is twenty-two months of filing at this rate.
+    #
+    # A CEILING IS NOT A CLEAN READ, so the decline below is a FINDING rather
+    # than a `continue`: a phrase in ratio position carrying a number word that
+    # this check cannot parse is the check's defect, not the prose's. The
+    # literal `N of M rulings` in the preamble carries no number word and is
+    # still declined silently, which is the one decline that is correct.
+    # AND THE FIRST FIX HAD THE SAME DEFECT ONE STEP OUT, which its own bite 4
+    # found: widening the token group from two to four still COUNTS tokens, so a
+    # phrase of five (`one hundred twenty-four-ish` splits to five) matches
+    # nothing at all, and a ratio the pattern cannot even locate cannot reach
+    # the decline limb that exists to report it. Counting tokens is the ceiling,
+    # not the number chosen. So the capture does not count: it is a lazy run of
+    # letters, spaces and hyphens between `of` and `rulings`, length-bounded
+    # only to stop a runaway across a sentence. `words_to_int` is the only judge
+    # of whether the run is a number.
     ratio = re.compile(
-        r"([A-Za-z][A-Za-z\-]*(?:[ \-][A-Za-z]+)?)\s+of\s+"
-        r"([A-Za-z][A-Za-z\-]*(?:[ \-][A-Za-z]+)?)\s+rulings", re.I)
+        r"([A-Za-z][A-Za-z\- ]{0,40}?)\s+of\s+"
+        r"([A-Za-z][A-Za-z\- ]{0,40}?)\s+rulings", re.I)
     for m in ratio.finditer(seg3):
         denom = words_to_int(m.group(2))
         if denom is None:
-            continue          # not a number word; not a claim about the register
+            words = set(re.split(r"[\s-]+", m.group(2).strip().lower()))
+            if words & NUMBER_WORDS:
+                findings.append(
+                    "§3's families list says '%s' and this check cannot parse "
+                    "'%s' as a number — a phrase in ratio position carrying a "
+                    "number word is a claim about the register, so a decline "
+                    "here is this check's ceiling rather than a clean read "
+                    "(#124)" % (m.group(0), m.group(2)))
+            continue          # no number word at all; not a claim about the register
         ratios_seen += 1
         if denom != hi:
             findings.append(
