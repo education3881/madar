@@ -102,7 +102,7 @@ the oldest age reaches 28 days on **2026-11-11**, against 2026-11-25 last week. 
 11-08, recorded not applied: a bucket for rows nobody intends to close soon.
 
 Two rows raised here: **69** (this review's own tables ran off the page at 390px — repaired in the
-instance, 137 artefacts unmeasured in the class) and **70** (the forward question: every hand-written
+instance, 140 artefacts unmeasured in the class) and **70** (the forward question: every hand-written
 quantity this operation parses has a capture with a ceiling).
 
 ## Founder questions, carried by name
