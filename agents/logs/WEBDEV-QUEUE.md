@@ -27,7 +27,7 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
-## Open — **THIRTY-ONE items in THREE BUCKETS, reconciled against disk 2026-11-01**
+## Open — **THIRTY-TWO items in THREE BUCKETS, reconciled against disk 2026-11-01**
 
 **2026-11-01 — THE HEAD WAS TAKEN AS WRITTEN, AND WITH THE DEFECT BUCKET EMPTY THE BOARD WENT BACK TO ITS
 BACKLOG FOR THE FIRST TIME IN SIX DAYS.** The displacement line, in one sentence: **this run took item 21 —
@@ -58,25 +58,25 @@ aggregates and the ten percent is a per-province floor, so an aggregate of 15.4%
 register that settles it was **already cited by the piece** — we had taken its investment-programme lines
 and left the finish line it prints unread for 117 days.
 
-**Count line: THIRTY-ONE open — ZERO DEFECT, TWENTY-EIGHT OPEN, THREE BLOCKED. TWO closed today** (item 21
-from the OPEN head at 15 days, item 61 by the content function at 1 day), **FOUR opened** — item 64 (the
+**Count line: THIRTY-TWO open — ZERO DEFECT, TWENTY-NINE OPEN, THREE BLOCKED. TWO closed today** (item 21
+from the OPEN head at 15 days, item 61 by the content function at 1 day), **FIVE opened** — item 64 (the
 one genuinely orphaned selector, and an orphaned rule is an unfiled defect report about the markup), item
 65 (the global layer states the thematic break three times and the pullquote twice, and only the
 per-component statements reach a reader), item 66 (valence's cascade is the one no instrument of ours can
 audit, and the 42-selector gap between its static and live figures *is* the runtime markup), and item 67
-(**the day's forward question**). **The board is UP TWO.** Counted by reading the rows below, not by
-arithmetic, per #57 for the seventh consecutive week: zero DEFECT rows, twenty-eight OPEN rows, three
+(**the day's forward question**), and item 68 (**`qa_font_payload` limb 2 reds intermittently on an unchanged tree**, raised by the brief function after seeing it red once and clean twice with nothing touched in between). **The board is UP THREE.** Counted by reading the rows below, not by
+arithmetic, per #57 for the seventh consecutive week: zero DEFECT rows, twenty-nine OPEN rows, three
 BLOCKED rows.
 
 **Nothing raised today is a DEFECT, and that is a statement about the rows rather than about the
-publication (#116 ii).** All four name coverage gaps, questions or design judgments; every byte they touch
-is currently correct, and items 64 and 65 say so explicitly. **So tomorrow's head is item 26 at 15 days** —
+publication (#116 ii).** All five name coverage gaps, questions or instrument defects; every byte they
+touch is currently correct, and items 64, 65 and 68 say so explicitly. **So tomorrow's head is item 26 at 15 days** —
 *which other check's stated reason for NOT asserting something has quietly become false?* — raised at the
 2026-10-18 weekly review, and it will be the second head running to come from the backlog. Founder issue
 #13 is open 7 days, stated default **2026-11-08**, **not** applied today because the date has not arrived.
 
-**Rates, carried and moved by today:** raised 15 + 3 + 3 + 4 + 4 + 4 + 4 + 4 · closed 10 + 1 + 2 + 1 + 2 +
-2 + 3 + 2 · board 29 → 31 · the 28-day breach date stands at **2026-11-25**, and today's two-for-four does
+**Rates, carried and moved by today:** raised 15 + 3 + 3 + 4 + 4 + 4 + 4 + 5 · closed 10 + 1 + 2 + 1 + 2 +
+2 + 3 + 2 · board 29 → 32 · the 28-day breach date stands at **2026-11-25**, and today's two-for-five does
 not move it.
 
 ## Superseded count line — **TWENTY-NINE items in THREE BUCKETS, reconciled against disk 2026-10-31**
@@ -1389,13 +1389,14 @@ down (#116).*
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
 
-### OPEN — **TWENTY-EIGHT items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **TWENTY-NINE items.** Ordered by age. The forward question enters at this block's head.
 
 *Questions, coverage gaps and face judgments. The bytes are right and the rows say so. Reached only when
 the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 68 | **`qa_font_payload` limb 2 failed and then passed TWICE on an unchanged tree, and an intermittent red is worse than a hard one** — raised by the brief function after observing exactly that sequence: one build red with *1 fetched font file nothing on the page justifies*, then two builds clean, no file touched in between, the tool run standalone also clean. **The bytes are right; the instrument is not deterministic**, which is why this is OPEN and not DEFECT. The suspected mechanism is in the tool's own harness rather than in its logic: fetches are attributed per page by clearing one shared list before each page's load, so a request still in flight from the PREVIOUS page can land after the clear and be charged to the next page, where nothing justifies it. That would be a false RED only — it cannot hide a real dead fetch — but it is the more corrosive failure anyway, because **a gate that sometimes reds on correct work teaches the next run to re-run it rather than to read it**, and that is 2026-09-13's *a hand-run assertion is a habit, not a gate* arriving by a different road: an assertion nobody trusts is switched off by re-running, not by unwiring. The work is to make the attribution deterministic — a per-page server or a barrier before each load — and to prove it by running the gate N times on one tree and asserting N identical verdicts, which is a property none of the 41 assertions has ever been asked for. | **[AE]** | **2026-11-01** (brief function, from a flake observed today) | Observed red once and clean twice on a byte-identical tree, plus clean standalone | **nothing red, and that is the problem** — it reds CORRECT work at an unknown rate |
 | 67 | **Every gating assertion this operation owns contains numbers that were TRUE THE DAY THEY WERE WRITTEN, and nothing distinguishes those from the ones derived** - the day's forward question, entered at this block's head per the one-queue rule. `qa_date_identity` refused today's build because its non-vacuity guard said *expected exactly 1* declared standing row. It was written 2026-09-22, it was correct for 40 days, and what falsified it was an ordinary content change rather than a defect. That is **#57 living inside the instrument built to catch #57**, and the fix was one line: derive the expectation from the tree (the set of pages carrying a standing row equals the set of editions indexes) instead of copying a count into the assertion. **The question is the population.** `qa_patch_queue` exists because a count in prose is maintained by nobody; a count in a non-vacuity guard is maintained by nobody *and reads as rigour*. Enumerate every literal integer across all 41 assertions, partition into derived-from-the-tree against written-by-hand, and for each hand-written one name what would falsify it and whether that thing is a defect or a Tuesday. | **[AE]** | **2026-11-01** (the daily's forward question) | One instance found today by being bitten by it, and fixed | nothing red |
 | 66 | **The one served document whose cascade no instrument of ours can audit is the one that needs it most** - raised by assertion 41's first sweep. `valence/index.html` carries 266 inline selectors and **129** match nothing under a static parse. Under a LIVE load with JS running the figure is **87**, and the 42-selector gap between those two numbers *is* the runtime markup - which makes the gap a measurement of exactly what no static instrument can reach. So both limbs decline it with the reason printed (#93), and the result is that the 540 KB instrument shipped 2026-08-08, the largest single document this operation serves, is the one page whose dead rules, orphaned rules and markup regressions are all invisible. Item 58's closure proved the shape from the other side: 10 of its 13 defective headings were written at runtime and absent from the served bytes. The work is to decide whether a driven probe (scroll to the end, settle, then query) turns 129 into a number that means something, or whether the honest answer is that a document which builds itself is outside this class of audit and should say so once, loudly. | **[AE]** | **2026-11-01** (from assertion 41's first sweep) | Both figures measured today, 129 static and 87 live, by the same oracle | nothing red |
 | 65 | **The global layer states the thematic break THREE times and the pullquote TWICE, and only the per-component statements reach a reader** - raised by assertion 41's partition, where all five SUPERSEDED entries turned out to share one cause. The design system was authored as hand-built HTML with classes (`div class=pullquote`, `hr class=rule` in three mockups); the publication's bodies are markdown and markdown cannot attach a class; so each rule was restated as an element selector scoped to `.body-main` (`:global(blockquote)`, `:global(hr)`) and the classed original became residue the cascade can never reach. **Nothing is broken and no byte is wrong** - all five served breaks and all six served blockquotes paint correctly - which is why this is OPEN and not DEFECT. It is 2026-10-25's slanted-Arabic shape inverted: there two per-component statements failed to reach a third instance, here the per-component statements are the only ones that reach anything. The work is a Designer/Web Developer call: consolidate to one statement per property, or keep the global rules as the design's record and say so at each one. **Deleting them is explicitly NOT the default** (#118). | **[WD]** + Designer | **2026-11-01** (from assertion 41's partition) | Five entries classified with what supersedes each, measured in the computed style | nothing red |
