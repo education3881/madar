@@ -128,12 +128,12 @@ That is **2026-10-25's slanted-Arabic shape inverted.** There, the stylesheet sa
 twice, both times per component, and neither statement reached a third instance. Here the per-component
 statements are the **only** ones that reach anything and the global statement reaches nothing. Same cause —
 a rule restated per component instead of once — opposite symptom. Consolidating the three is a
-Designer/Web Developer call and is **standing-queue item 67**, not a change this instrument's author makes
+Designer/Web Developer call and is **standing-queue item 65**, not a change this instrument's author makes
 (RUNBOOK: *a fix that changes served bytes is the Web Developer's even when an assertion found it*).
 
 The one true ORPHAN is **`.body-grid--resumed`**: no `:global` restatement, no scoped variant, markup in
 all three mockups and in no Astro template. Per #118 it stays, and the markup question it raises is filed
-as **item 66**.
+as **item 64**.
 
 ## 5. Two further things the build measured
 

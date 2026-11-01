@@ -261,19 +261,19 @@ REGISTER = {
         "residue. Related: standing-queue item 53 on the utility layer"),
 
     # ---- ORPHANED — the design stands elsewhere and the markup walked away.
-    #      Exactly ONE, and it is filed as standing-queue item 66.
+    #      Exactly ONE, and it is filed as standing-queue item 64.
     ".body-grid--resumed": ("ORPHANED",
         "a body grid that resumes after a full-bleed interruption takes zero top "
         "margin. The markup exists in all three design-assets article mockups "
         "(<div class='body-grid body-grid--resumed'>) and in no Astro template. "
-        "Standing-queue item 66"),
+        "Standing-queue item 64"),
 
     # ---- SUPERSEDED — the design moved on, and every one of these five moved
     #      for ONE reason: markdown cannot attach a class. The design system was
     #      authored as hand-built HTML with classes (the three article mockups),
     #      the publication's bodies are markdown, so each classed body rule had
     #      to be restated as an ELEMENT selector scoped to `.body-main`, and the
-    #      classed original is the residue. Standing-queue item 67.
+    #      classed original is the residue. Standing-queue item 65.
     ".pullquote": ("SUPERSEDED",
         "superseded by `.body-main :global(blockquote)` in BOTH article "
         "templates, which restates all twelve of this rule's declarations "
@@ -304,7 +304,7 @@ REGISTER = {
         "1px solid rgba(14,27,44,0.18) with 54px block margins. Nothing is "
         "broken. The thematic break is stated three times, twice per-component "
         "and once here unreachably - 2026-10-25's slanted-Arabic shape one "
-        "instrument later. Consolidation is standing-queue item 67"),
+        "instrument later. Consolidation is standing-queue item 65"),
     ".still__field svg": ("SUPERSEDED",
         "the hero still is served as <img src='...svg'> with authored alt text, "
         "not as an inlined <svg>. Inlining is the rule for brand-critical chrome "

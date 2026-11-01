@@ -42,3 +42,4 @@
 {"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "2of5-ruling-123", "at": "2026-11-01T11:50:22+00:00", "elapsed_minutes": 30.93, "timeout_minutes": 90, "remaining_minutes": 59.07}
 {"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "3of5-content-item61", "at": "2026-11-01T11:55:25+00:00", "elapsed_minutes": 35.98, "timeout_minutes": 90, "remaining_minutes": 54.02}
 {"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "4of5-growth-arabic-path-to-valence", "at": "2026-11-01T12:03:55+00:00", "elapsed_minutes": 44.47, "timeout_minutes": 90, "remaining_minutes": 45.53}
+{"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "5of5a-queue-qalog-publishgate", "at": "2026-11-01T12:08:39+00:00", "elapsed_minutes": 49.21, "timeout_minutes": 90, "remaining_minutes": 40.79}
