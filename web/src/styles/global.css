@@ -141,6 +141,20 @@ h3 { font-size: 1.15rem; }
 
 p { margin-block: 0 1em; }
 
+/* The thematic break, and this rule is UNREACHABLE — kept deliberately, with
+   the reason written here, 2026-11-01. `qa_selector_coverage` (assertion 41)
+   found it matching nothing on any of the 134 pages that load this sheet: the
+   only thing that produces an <hr> here is a markdown `---` in an article body,
+   and markdown cannot attach a class. It is SUPERSEDED, not orphaned, and the
+   difference was measured rather than assumed — the two article templates each
+   re-state this rule scoped to their own `.body-main`, with `--space-xl` and
+   `width: 50%`, so all five served breaks (four Arabic, one English) have been
+   painted correctly since 2026-05-25. Nothing is broken; the thematic break is
+   simply stated THREE times, twice per-component and once here where nothing can
+   reach it, which is 2026-10-25's slanted-Arabic shape one instrument later.
+   Consolidating the three is a Designer/Web Developer call: standing-queue
+   item 67. Until then this stays, because deleting it would leave the global
+   layer with no statement of the break at all. */
 hr.rule {
   border: none;
   border-block-start: 1px solid var(--color-rule);
