@@ -48,7 +48,11 @@ Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel
 hours on purpose.** This table read *~08:00* and *Sun 09:00* from 2026-06-03 until that date. GitHub's
 scheduled events are best-effort and queue under load: across **all 38 scheduled runs since the 2026-09-15
 cron offset change, every one started between 4 h 14 m and 7 h 42 m after its cron — median 5 h 37 m, and
-not one within four hours.** The offset change to `:23` was made on the theory that `:00` is the most
+not one within four hours.** **Re-measured at the 2026-11-01 weekly review, which this table names as the
+column's owner: the population is now 54 runs, the band 4 h 14 m to 7 h 43 m, the median 5 h 34 m, and
+still not one inside four hours.** The band and the median did not move in sixteen further runs, which is
+the strongest form the falsification has taken; what had drifted was the **population**, stale by sixteen
+in two homes — this paragraph and a hardcoded literal in `run_envelope.py` — for fourteen days. The offset change to `:23` was made on the theory that `:00` is the most
 contended minute; the median after it is unchanged from the figure that prompted it, so the theory is
 falsified and **the cron is not a start time.** `madar-daily.yml`'s own header said in writing that this
 condition would mean exactly that, and no run evaluated it for 33 days, because the sentence lives in the

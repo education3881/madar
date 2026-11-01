@@ -169,7 +169,13 @@ def cron_delay(cron: str, started):
     condition, a consequence and **nobody named to evaluate it**. Measured over
     all 38 scheduled runs since the 2026-09-15 offset change: every one started
     between **4h14m and 7h42m** after its cron, median 5h37m, and no artefact of
-    the operation said so. The number is now printed by the run itself on every
+    the operation said so. **Re-measured at the 2026-11-01 weekly review, which
+    the CHARTER names as this column's owner: 54 runs now, band 4h14m to 7h43m,
+    median 5h34m, still zero inside four hours.** The band and the median did
+    not move; the POPULATION did, by sixteen, and this literal had not been
+    re-read in fourteen days -- a hardcoded figure in the instrument built
+    because recording a number is not measuring it (#124's shape, one desk
+    over). The number is now printed by the run itself on every
     call, because recording a median in a document is the error #105 is about.
 
     Only minute-and-hour crons are read -- `23 4 * * *` and `23 5 * * 0`, which
@@ -320,9 +326,9 @@ def main() -> int:
                 print(f"  cron ....................... {cron}  →  "
                       f"{fire.strftime('%H:%M')}Z, so this run began "
                       f"{late/60:.1f} h late")
-                print("    Normal, measured, and nobody's fault: all 38 scheduled runs since the")
+                print("    Normal, measured, and nobody's fault: all 54 scheduled runs since the")
                 print("    2026-09-15 offset change began 4.2 to 7.7 h after their cron (median")
-                print("    5.6 h). A delay in this band is the operation's ordinary morning and is")
+                print("    5.6 h, re-measured 2026-11-01). A delay in this band is ordinary and is")
                 print("    NOT evidence of a missed run (#107). It does mean the day starts in the")
                 print("    Dubai afternoon, which is what the CHARTER's cadence table now says.")
         print(f"  now ........................ {record['now']}")
