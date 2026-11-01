@@ -27,6 +27,48 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
+## Open — **THIRTY-FOUR items in THREE BUCKETS, reconciled against disk 2026-11-01 (weekly review)**
+
+**2026-11-01, WEEKLY REVIEW — the board grew by FOURTEEN on the best closure week this operation has
+posted, and the 28-day breach moved two weeks CLOSER.** Counted by reading the rows, per #57 for the
+seventh consecutive week: **zero DEFECT, THIRTY-ONE OPEN, three BLOCKED, thirty-four total.** Two rows
+raised by this review and neither is a DEFECT: **item 69** (the review's own tables ran off the page at
+390px and nothing this operation owns can see it — repaired in the instance, unasserted in the class, 137
+artefacts unmeasured) and **item 70** (the review's forward question, entering at OPEN's head, and the
+thing ruling **#124** generates rather than closes).
+
+**The rates, printed as #116 requires — and the guarantee is a claim about a rate, so here it is stated as
+one.** Over 2026-10-26 → 2026-11-01 the board took **27 raises against 13 closures, 18 → 32** before this
+review's two. Thirteen closures beats last week's ten and is the best figure on record. **And the board
+still grew by fourteen, because the instruments that close rows are the instruments that raise them.**
+Under oldest-first the oldest age converges on board ÷ closure rate; the board grows at 2.0/day and closes
+at 1.86/day, so **the oldest item reaches 28 days on 2026-11-11** — against the **2026-11-25** this review
+printed last week. *It moved two weeks closer on a week in which closures improved by 30%.* That is the
+raise rate doing its job and it is not fixed by closing faster. **The candidate amendment for 2026-11-08,
+recorded here rather than applied today because one ordering change per week is the lesson of #116: a
+bucket for rows nobody intends to close soon** — the DEFECT/OPEN/BLOCKED partition has no way to say *this
+is a measurement we chose to keep open*, so every such row ages toward a head somebody is obliged to take.
+
+**BLOCKED re-read, which is this review's job and never the daily's.** Item **45** — its stated defect was
+**dissolved rather than deferred**, and today is the date it named: *October 2026* is the issue's name and
+a name does not expire, the defect was the `status: 'current'` flag, it was **ours**, it had been served
+eighteen days, and it was repaired 10-31. Verified in the origin this morning: the live EN home serves
+*Latest edition* and *Current edition* appears in zero files of `dist`. **The row did not enter DEFECT, and
+nothing false is being served.** It stays here for the half that is genuinely his — issue #13, open 7 days,
+stated default **2026-11-08**, which falls on next Sunday's review. Item **22** at 21 days — **it cost a
+publication day this week**: the 10-30 run died on `error_max_turns` with 45 of 90 wall-clock minutes
+unused, and the remedy has been staged since 10-11 behind a permission nobody here holds (issue #7, open 42
+days). Item **32** at 8 days — unchanged, and the window is what moves: 40 registers in one copy, 28
+readable today, 12 already refusing us.
+
+**The week's bet is READ and it PASSED**, the first this operation has passed: *the DEFECT bucket is empty
+by Sunday 1 November.* It is empty. Items 25, 27, 33 and 35 closed on four consecutive days, and items 51
+and 58 entered and closed inside two days each. **It passed because #116 put DEFECT ahead of age**, not
+because anybody tried harder — in the nineteen rule-made selections before 10-25 not one head was ever a
+served defect; in the seven after, five were.
+
+### The daily record for 2026-11-01 follows, unaltered.
+
 ## Open — **THIRTY-TWO items in THREE BUCKETS, reconciled against disk 2026-11-01**
 
 **2026-11-01 — THE HEAD WAS TAKEN AS WRITTEN, AND WITH THE DEFECT BUCKET EMPTY THE BOARD WENT BACK TO ITS
@@ -1389,13 +1431,15 @@ down (#116).*
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
 
-### OPEN — **TWENTY-NINE items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **THIRTY-ONE items.** Ordered by age. The forward question enters at this block's head.
 
 *Questions, coverage gaps and face judgments. The bytes are right and the rows say so. Reached only when
 the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 70 | **Every hand-written quantity this operation parses has a capture with a CEILING, and a ceiling reads as a clean pass** — the weekly review's forward question, entered at this block's head per the one-queue rule, and the thing ruling **#124** generates rather than closes. `qa_register_shape`'s ratio limb read `ninety` on 2026-10-07, `one hundred` on 10-14 and **nothing at all from 10-15**, for eighteen days through two weekly consolidations, because its capture counted tokens and three number-words would not fit a two-word group. `words_to_int` could parse the number the whole time; the wall was one function call upstream. And the first repair had the same defect one step out — widening two tokens to four still counts tokens, and a five-token phrase matched nothing. **The question is the population:** enumerate every regex across `agents/tools/**` that captures a number in order to compare it, partition into *counts tokens* against *delimits and lets the parser judge*, and for each one in the first bucket name the largest value it can read and how far its subject currently is from that value. A ceiling is a date, not a surprise. | **[AE]** | **2026-11-01** (the weekly review's forward question) | One instance found today by being bitten by it, and repaired | nothing red *(the ceiling is silent by construction — that is the finding)* |
+| 69 | **The weekly review's own tables ran off the page at 390px, and no instrument can see it** — found by rendering this morning's review at mobile width and looking at it (08-23), after item 27's repair had already passed every artefact through `qa_artefact_render`. The three-column tables carry monospace cells that do not wrap, so the rightmost column was cut off the viewport; repaired in this file's own CSS with a narrow-width scroll rule and the reason written at the point of change. **The row is the population, not the instance:** `qa_artefact_render` renders 138 artefacts at ONE width and asserts the container, which is the 10-27 mechanism and not this one. Nothing this operation owns asks whether an artefact's own content fits the viewport it is rendered into — and the 138 artefacts include 120 briefs and 9 reviews, every one of them carrying tables. Needs a second width in the render harness and an assertion that no element's right edge exceeds the viewport at it. | **[WD]** | **2026-11-01** (weekly review, by looking) | 1 artefact confirmed and repaired; **137 unmeasured** | repaired here; the class is unasserted |
 | 68 | **`qa_font_payload` limb 2 failed and then passed TWICE on an unchanged tree, and an intermittent red is worse than a hard one** — raised by the brief function after observing exactly that sequence: one build red with *1 fetched font file nothing on the page justifies*, then two builds clean, no file touched in between, the tool run standalone also clean. **The bytes are right; the instrument is not deterministic**, which is why this is OPEN and not DEFECT. The suspected mechanism is in the tool's own harness rather than in its logic: fetches are attributed per page by clearing one shared list before each page's load, so a request still in flight from the PREVIOUS page can land after the clear and be charged to the next page, where nothing justifies it. That would be a false RED only — it cannot hide a real dead fetch — but it is the more corrosive failure anyway, because **a gate that sometimes reds on correct work teaches the next run to re-run it rather than to read it**, and that is 2026-09-13's *a hand-run assertion is a habit, not a gate* arriving by a different road: an assertion nobody trusts is switched off by re-running, not by unwiring. The work is to make the attribution deterministic — a per-page server or a barrier before each load — and to prove it by running the gate N times on one tree and asserting N identical verdicts, which is a property none of the 41 assertions has ever been asked for. | **[AE]** | **2026-11-01** (brief function, from a flake observed today) | Observed red once and clean twice on a byte-identical tree, plus clean standalone | **nothing red, and that is the problem** — it reds CORRECT work at an unknown rate |
 | 67 | **Every gating assertion this operation owns contains numbers that were TRUE THE DAY THEY WERE WRITTEN, and nothing distinguishes those from the ones derived** - the day's forward question, entered at this block's head per the one-queue rule. `qa_date_identity` refused today's build because its non-vacuity guard said *expected exactly 1* declared standing row. It was written 2026-09-22, it was correct for 40 days, and what falsified it was an ordinary content change rather than a defect. That is **#57 living inside the instrument built to catch #57**, and the fix was one line: derive the expectation from the tree (the set of pages carrying a standing row equals the set of editions indexes) instead of copying a count into the assertion. **The question is the population.** `qa_patch_queue` exists because a count in prose is maintained by nobody; a count in a non-vacuity guard is maintained by nobody *and reads as rigour*. Enumerate every literal integer across all 41 assertions, partition into derived-from-the-tree against written-by-hand, and for each hand-written one name what would falsify it and whether that thing is a defect or a Tuesday. | **[AE]** | **2026-11-01** (the daily's forward question) | One instance found today by being bitten by it, and fixed | nothing red |
 | 66 | **The one served document whose cascade no instrument of ours can audit is the one that needs it most** - raised by assertion 41's first sweep. `valence/index.html` carries 266 inline selectors and **129** match nothing under a static parse. Under a LIVE load with JS running the figure is **87**, and the 42-selector gap between those two numbers *is* the runtime markup - which makes the gap a measurement of exactly what no static instrument can reach. So both limbs decline it with the reason printed (#93), and the result is that the 540 KB instrument shipped 2026-08-08, the largest single document this operation serves, is the one page whose dead rules, orphaned rules and markup regressions are all invisible. Item 58's closure proved the shape from the other side: 10 of its 13 defective headings were written at runtime and absent from the served bytes. The work is to decide whether a driven probe (scroll to the end, settle, then query) turns 129 into a number that means something, or whether the honest answer is that a document which builds itself is outside this class of audit and should say so once, loudly. | **[AE]** | **2026-11-01** (from assertion 41's first sweep) | Both figures measured today, 129 static and 87 live, by the same oracle | nothing red |

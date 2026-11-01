@@ -46,3 +46,4 @@
 {"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "5of5-brief-118-status-stats", "at": "2026-11-01T12:12:17+00:00", "elapsed_minutes": 52.84, "timeout_minutes": 90, "remaining_minutes": 37.16}
 {"run_id": "41301376136", "workflow": "madar-daily.yml", "label": "5of5-brief-118-final", "at": "2026-11-01T12:16:05+00:00", "elapsed_minutes": 56.64, "timeout_minutes": 90, "remaining_minutes": 33.36}
 {"run_id": "41303909154", "workflow": "madar-weekly.yml", "label": "weekly-consolidation", "at": "2026-11-01T12:24:24+00:00", "elapsed_minutes": 30.59, "timeout_minutes": 90, "remaining_minutes": 59.41}
+{"run_id": "41303909154", "workflow": "madar-weekly.yml", "label": "weekly-ledger", "at": "2026-11-01T12:26:57+00:00", "elapsed_minutes": 33.14, "timeout_minutes": 90, "remaining_minutes": 56.86}
