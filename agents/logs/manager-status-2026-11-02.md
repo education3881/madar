@@ -13,6 +13,15 @@ every reading, which is why delivery was staged rather than saved.
 
 ---
 
+## Deploy state, per #71 clause 2 — observed, not inherited
+
+Previous deploy: `workflow_dispatch` on **`79a4d1f`**, **success**, 2026-11-01T12:36Z. Live origin re-read
+directly: EN home, AR home, editions index and feed all **200**. `qa_live_drift` reports **DRIFT(51)** —
+the origin serves `lastmod 2026-11-01T12:03:55Z` and this tree builds `2026-11-02T12:52:28Z` — which is
+**today's own five commits awaiting the post-step dispatch**, not a pipeline fault. The `publish what the
+run pushed` step runs after the agent step ends, so **no run can observe its own publication** (item 31).
+The number is stated rather than a zero implied.
+
 ## What shipped
 
 **Nothing was published and no flag moved** — correct state, not a stall: Edition 05 closed 2026-10-13,
