@@ -14,6 +14,7 @@ related:
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-07-04-kenya-cbe-grade10-pathways
   - 2026-08-28-sierra-leone-sleic-outcomes
+  - 2026-09-27-rwanda-teacher-certification
 contains_composites: false
 englishVersion: 2026-06-08-sierra-leone-tsc-teacher-matching
 sources:

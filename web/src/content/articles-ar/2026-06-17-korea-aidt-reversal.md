@@ -12,6 +12,7 @@ related:
   - 2026-05-31-uruguay-eduia-lab-ceibal
   - 2026-05-31-indonesia-permen-13-coding-ai
   - 2026-05-31-qatar-humanity-spark-strategy
+  - 2026-06-19-philippines-mtb-mle-reversal
 contains_composites: false
 englishVersion: 2026-06-17-korea-aidt-reversal
 sources:
