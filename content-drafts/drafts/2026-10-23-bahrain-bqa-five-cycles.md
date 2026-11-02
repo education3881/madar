@@ -5,7 +5,7 @@
 **Recon of record:** `content-drafts/recon/2026-10-18-bahrain-bqa-five-cycles-register.md`,
 **as corrected twice** by `content-drafts/recon/2026-10-22-bahrain-bqa-test1-recount.md`.
 **Working slug:** `2026-10-23-bahrain-bqa-five-cycles`
-**Status:** awaiting Editor five-test verdict. **No slot claimed. `approved: false` when it lands.**
+**Status:** **APPROVED on the frame and all five tests, 2026-11-02** (`content-drafts/verdicts/2026-11-02-bahrain-bqa-five-cycles.md`), with the verdict's two binding corrections applied here in the same commit. **No slot claimed. `approved: false` stands, and the FLAG is blocked on founder issue #13** — Arabic composition, Arabic gate, Verifier verdict, still and og card all still owed.
 
 ---
 
@@ -165,7 +165,7 @@ only cycle in seventeen years in which `(4) Inadequate` is the **modal** verdict
 title: "Seventeen years of one regulator's own verdicts"
 dek: "Bahrain's quality authority has graded its government schools by name since 2009. Over all 882 reviews its most common verdict is Satisfactory — and the distribution moves more than the schools do."
 date: 2026-10-23
-edition: 6
+edition: HELD — see verdict correction 2; there is no Edition 06 and the registry exports hasOpenEdition false. Blocked on founder issue #13, default 2026-11-08. Do NOT guess this field.
 country: Bahrain
 region: MENA
 level: K-12
@@ -272,7 +272,7 @@ can settle, because the register that would settle it is one nobody publishes an
 ## SOURCES — composed with every register open, never from memory of an annotation (#113, #101, 09-13)
 
 1. **`data.gov.bh` — *Results of Government Schools Reviews*, CSV export** (read in served bytes
-   2026-10-23, HTTP 200, sha256 `d6b62bda651083dc…`, unchanged across three prior readings;
+   2026-10-23, HTTP 200, sha256 `d6b62bda651083dc…`, 1,022 rows and every count below unchanged across FOUR readings, 2026-10-18 → 2026-11-02, the last at the Editor's verdict; the export's own byte length moved from 183,242 to **183,191** in that window, outside every field this piece reads — so the stability claimed here is of the COUNTS and not of the bytes (#112 turned on our own annotation);
    1,022 rows — 882 `Review` and 140 monitoring visits across three row types; 245
    schools in the register and 242 ever graded; the four numbered grades on `Review` rows only; cycle
    coverage over the 242 reviewed: 52 in five cycles, 124 in four, 22 in three, 15 in two, 29 in one;
