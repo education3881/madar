@@ -67,16 +67,51 @@ fetch**, which is a property of the element and the attribute:
   READER-INITIATED — fires only on a click, and is NOT asserted:
       <a href>             the sources[] citations and the share rail
 
-  DECLARATIONS — markup that names a URL without fetching it, NOT asserted:
-      <link rel=alternate|canonical|author|license>   feed autodiscovery, canonical
-      <meta property=og:image>, <meta name=twitter:image>
-                           fetched by a scraper we hand the page to, not by the
-                           reader's browser; their format and origin are
-                           `qa_consumer_surface`'s subject, not this one
+  DECLARATIONS — markup that names a URL without fetching it. **ASSERTED from
+  2026-11-02 (ruling #125), and the reason it was not is written out below
+  rather than deleted**, because a decline that is quietly removed teaches the
+  next run nothing:
+      <link rel=canonical|alternate>, <meta property=og:url>
+                           these name OURS. A foreign origin here does not fetch
+                           anything — it tells a crawler that somebody else is
+                           the canonical home of our page, which is worse than a
+                           fetch and is why this class is asserted first.
+      <meta property=og:image|og:image:secure_url>, <meta name=twitter:image>,
+      <meta property=og:audio|og:video>
+                           fetched by a scraper we hand the page to. The reader's
+                           browser does not fetch it; a machine acting on the
+                           reader's behalf does, which is the same hand-off one
+                           actor further out.
+  EXEMPT, counted and printed, never asserted:
+      <link rel=author|license|me>
+                           a licence is SUPPOSED to name creativecommons.org and
+                           an author link is supposed to leave. Zero of these
+                           exist in the corpus today (2026-11-02); the exemption
+                           is written now so that the first one does not red the
+                           build and get "fixed" by deleting the limb.
 
-Both unasserted classes are **counted and printed** rather than silently
-dropped. A check that ignores a category without saying so is indistinguishable
-from a check that cannot see it.
+**WHY THE OLD DECLINE NO LONGER HOLDS, and it never held.** This block read
+*NOT asserted* from 2026-10-08 to 2026-11-02 on the stated ground that a
+declaration's "format and origin are `qa_consumer_surface`'s subject, not this
+one." **The format half is true and the origin half was false on the day it was
+written.** `qa_consumer_surface` asserts that an `og:image` is a raster with alt
+text; it contains no origin comparison at all — not one netloc parse, not one
+host set, in the whole file — and neither does any other gate for this class.
+So the privacy posture's own instrument declined 1,069 declarations to a sibling
+that had never taken the question, and nothing re-read the sentence for 25 days.
+Found by standing-queue item 26 at 15 days, which is the board's question for
+exactly this: *a declined scope is a dated claim about a subject that moves* —
+and this one was a dated claim about a SIBLING, which is the harder shape,
+because the delegate looks like coverage. Measured before it was asserted: 1,069
+declarations across 134 pages, **0 naming an origin we do not own**, so the floor
+sits exactly at today's reality rather than above it (#93).
+
+The reader-initiated class stays unasserted, and that reason is re-read and
+still true: this publication points at 235 external origins on purpose, and a
+check that counted a citation would report our own method as our largest
+defect. It is **counted and printed** rather than silently dropped. A check that
+ignores a category without saying so is indistinguishable from a check that
+cannot see it.
 
 TWO FAILURE-TO-CHECK GUARDS, because a silent pass is the house defect
 ----------------------------------------------------------------------
@@ -107,6 +142,12 @@ from urllib.parse import urlparse
 
 # Our own origin. The site's canonical host, from web/astro.config.mjs `site`.
 OURS = {"education3881.github.io"}
+
+# Ruling #125, 2026-11-02. Declaration rels that are SUPPOSED to leave our
+# origin, so they are counted and printed and never asserted. Zero exist in the
+# corpus on the day the limb shipped; the list is written in advance precisely
+# so the first legitimate one reds nothing and the limb survives it.
+DECL_EXEMPT_RE = re.compile(r"^link\[rel=(?:[a-z\- ]*\b(?:author|license|licence|me)\b[a-z\- ]*)\]$")
 
 # Pages that legitimately carry no automatic external reference. VALENCE is a
 # standalone instrument with its own inline stylesheet (2026-08-08); the 09-18
@@ -271,10 +312,13 @@ def main() -> int:
         return 2
 
     defects = []          # (page, why, url, host)
+    decl_defects = []     # (page, why, url, host) — limb 2, ruling #125
     bare = []             # pages with no automatic reference at all
-    n_auto = n_anchor = n_declared = 0
+    n_auto = n_anchor = n_declared = n_decl_exempt = 0
     hosts_auto = {}
+    hosts_decl = {}
     anchor_hosts = set()
+    exempt_hosts = {}
 
     for path in pages:
         rel = os.path.relpath(path, dist).replace(os.sep, "/")
@@ -297,14 +341,35 @@ def main() -> int:
             if kind == "third":
                 anchor_hosts.add(host)
 
+        # ---- limb 2, ruling #125: a declaration names us, or it is exempt ----
+        # The exemption is by REL, not by host: a licence link is supposed to
+        # leave, and naming the class keeps the first legitimate one from
+        # reading as a defect (and from being "fixed" by deleting the limb).
+        for why, url in declared:
+            if DECL_EXEMPT_RE.match(why):
+                n_decl_exempt += 1
+                _k, h = classify(url)
+                if h:
+                    exempt_hosts[h] = exempt_hosts.get(h, 0) + 1
+                continue
+            kind, host = classify(url)
+            if kind == "third":
+                decl_defects.append((rel, why, url, host))
+                hosts_decl[host] = hosts_decl.get(host, 0) + 1
+
     print("qa_third_party_origins — %d served page(s)" % len(pages))
     print("  automatic references (asserted) ....... %d" % n_auto)
     print("  reader-initiated <a href> (NOT asserted) %d, across %d external origin(s)"
           % (n_anchor, len(anchor_hosts)))
-    print("  declarations (NOT asserted) ........... %d  [link rel=alternate/canonical, og/twitter image]"
-          % n_declared)
+    print("  declarations (ASSERTED from 2026-11-02, #125) %d, of which %d exempt by rel"
+          % (n_declared, n_decl_exempt))
     print("  the second line is the publication working as designed: a citation is a link a")
     print("  reader chooses to follow, and counting it here would report our own method as a defect.")
+    print("  the third line was ALSO 'not asserted' until today, delegated to a sibling that had")
+    print("  no origin check in it. Item 26 at 15 days; the reason is written out in the header.")
+    if exempt_hosts:
+        print("  exempt declaration hosts (printed, never asserted): %s"
+              % ", ".join("%s x%d" % (h, n) for h, n in sorted(exempt_hosts.items())))
 
     if bare:
         print("\nFAIL qa_third_party_origins — %d page(s) carry NO automatic reference "
@@ -332,9 +397,27 @@ def main() -> int:
               "%d origin(s) we do not own before the reader asks it to." % len(hosts_auto))
         return 1
 
+    if decl_defects:
+        print("\nDEFECT — %d declaration(s) naming an origin we do not own, on %d page(s):"
+              % (len(decl_defects), len({d[0] for d in decl_defects})))
+        for host, n in sorted(hosts_decl.items(), key=lambda kv: -kv[1]):
+            print("  %-34s %d declaration(s)" % (host, n))
+        for rel, why, url, _host in decl_defects[:12]:
+            print("    %s  %s -> %s" % (rel, why, url[:96]))
+        if len(decl_defects) > 12:
+            print("    ... and %d more" % (len(decl_defects) - 12))
+        print("\nFAIL qa_third_party_origins — a declaration is a promise made to a machine")
+        print("we do not own: a canonical or og:url hands our page's identity to another")
+        print("origin, and an og/twitter image hands a scraper acting for the reader to one.")
+        print("If one of these is deliberate, exempt it BY REL with its reason in the header")
+        print("(#125) — do not widen OURS and do not delete the limb.")
+        return 1
+
     print("\nCLEAN qa_third_party_origins — every one of the %d automatic references "
-          "across %d pages\nresolves to our own origin or to a relative path. The reader's "
-          "browser contacts\nnobody but us before the reader acts." % (n_auto, len(pages)))
+          "and\n%d asserted declarations across %d pages resolves to our own origin or to a\n"
+          "relative path. The reader's browser contacts nobody but us before the reader\n"
+          "acts, and no machine is told that anybody else owns this page."
+          % (n_auto, n_declared - n_decl_exempt, len(pages)))
     return 0
 
 
