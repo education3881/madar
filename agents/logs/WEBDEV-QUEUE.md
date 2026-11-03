@@ -27,7 +27,7 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
-## Open — **THIRTY-SEVEN items in THREE BUCKETS, reconciled against disk 2026-11-03**
+## Open — **THIRTY-EIGHT items in THREE BUCKETS, reconciled against disk 2026-11-03**
 
 **2026-11-03 — THE HEAD WAS TAKEN AS WRITTEN, AND THE ROW'S ANSWER WAS A KERNEL PER INSTRUMENT RATHER
 THAN AN AUDIT OF ORACLES.** The displacement line, in one sentence: **this run took item 28 — *which of
@@ -56,9 +56,11 @@ ruler and **green on the old** — which is the measurement of what the widening
 *Six rulings ask what entered the measurement; none asks what the measurement cannot distinguish once
 it is in.*
 
-**Count line: THIRTY-SEVEN open — ZERO DEFECT, THIRTY-FOUR OPEN, THREE BLOCKED. ONE closed today**
-(item 28 from the OPEN head at 15 days), **THREE opened** — items **73**, **74** and **75**, all three
-raised by the head's own closure and none a DEFECT. **The board is UP TWO.** Counted by reading the rows
+**Count line: THIRTY-EIGHT open — ZERO DEFECT, THIRTY-FIVE OPEN, THREE BLOCKED. ONE closed today**
+(item 28 from the OPEN head at 15 days), **FOUR opened** — items **73**, **74** and **75** from the head's
+own closure, and item **76** from the growth function; none is a DEFECT, and the one defect the day found
+— 22 Arabic pages serving an English description in three fields each — was **fixed in the run that found
+it** rather than raised, so it never became a row. **The board is UP THREE.** Counted by reading the rows
 below, not by arithmetic, per #57 for the ninth consecutive week. **The gate count did not move: 41
 tools, 38 gating** — an existing gate's ruler was widened and a limb added, and no tool was added, so
 `qa_patch_queue` derives yesterday's three numbers (verified by running it). *A run that widens a ruler
@@ -68,10 +70,9 @@ and reports a tool is how a count drifts.*
 have no gate behind them* — raised 2026-10-20. Founder issue **#13** is open 9 days, stated default
 **2026-11-08**, **not** applied today because the date has not arrived.
 
-**Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 3 · closed 1 + 2 + 1
-+ 2 + 2 + 3 + 2 + 1 + 1 · board 35 → 37 · the 28-day breach date **moves in to 2026-11-10**, one day
-earlier than yesterday's 11-11, because a day that raises three and closes one lengthens the queue
-ahead of the oldest row.
+**Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 · closed 1 + 2 + 1
++ 2 + 2 + 3 + 2 + 1 + 1 · board 35 → 38 · the 28-day breach date **moves in to 2026-11-10**, one day earlier than yesterday's
+11-11, because a day that raises four and closes one lengthens the queue ahead of the oldest row.
 
 ### The daily record for 2026-11-02 follows, unaltered.
 
@@ -1524,13 +1525,14 @@ down (#116).*
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
 
-### OPEN — **THIRTY-FOUR items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **THIRTY-FIVE items.** Ordered by age. The forward question enters at this block's head.
 
 *Questions, coverage gaps and face judgments. The bytes are right and the rows say so. Reached only when
 the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 76 | **44 of 134 served pages describe themselves IDENTICALLY, and the wrong-language half of it was fixed today while the uniqueness half was not** — raised by the growth function from a measurement over the built corpus. Every `<title>` is distinct (134 of 134); **every `<meta name="description">` was not: 91 distinct values over 134 pages, with one value on 44 of them** — both homes, both browse indexes, all 16 region pages, all 16 topic pages, 8 Arabic country pages and both editions indexes, because none of those templates passes a `description` and `Base.astro` held a single default. **22 of the 44 were Arabic pages serving ENGLISH**, in three fields each — `description`, `og:description`, `twitter:description` — 66 declarations including the Arabic edition's own front door; that is the 2026-09-13 wrong-language class in a field **neither `qa_a11y_lang` nor `qa_ar_language` enumerates**, because both read text a reader can SEE and a `<meta>` content attribute is served without ever being painted (#121's shape on the publication instead of the brief). **Closed today with no new prose:** both feeds already carried this publication's self-description as a composed, Arabic-Editor-gated pair, so the pages were given the same pair — and the English default turned out to be the feed's sentence with its last clause, *A research instrument, not a magazine*, cut off. **What remains is the ask:** the 44 now serve two strings rather than one, so a region page and a topic page still describe themselves identically, and a description is the one piece of copy we control in a search result. Per-facet descriptions are **derived, not hand-written** (2026-06-07: anything that must equal the current article set is build-generated) — but the frame around the derivation is forty-four pieces of copy in two languages, and the Arabic half needs the Arabic Editor's gate. | Editor + Arabic Editor + **[WD]** | **2026-11-03** (growth) | Measured over all 134 built pages: 134 titles / 134 distinct, 91 distinct descriptions, the duplicate population enumerated by page kind and by `lang` attribute | nothing red — no gate asserts description uniqueness, which is part of the ask |
 | 75 | **`qa_feed_direction`'s projection is sound only in a geometry WE arranged, and it is not the consumer's** — raised by item 28's closure. `signature()` pushes `b.left` and discards `b.top`, so a line wrap and a direction flip are the same symbol: in an LTR host the first character of a new line sits far to the left of its predecessor and scores `-`, exactly as an RTL run does. **The kernel is empty anyway**, because the probe pins `white-space: pre; width: 60000px` so no field can wrap, with the reason written in the comment at the point of construction — this is the only one of the four render rulers whose author interrogated it, and the method is the template: *where you cannot widen a ruler, construct the geometry in which its kernel is empty.* The residue: **a subscriber's reader wraps**, and the probe's own header says it carries no site CSS precisely because *a subscriber's reader does not have ours* — so the direction question is answered in a layout no reader is in (#16, turned on our own probe). The ask is a two-key `(line, x)` signature compared at a realistic reader width, and a decision about whether a wrapped field's base-direction behaviour is ours to assert at all. | **[AE]** | **2026-11-03** (from item 28's close) | `b.top` absent from the signature, read in the code; the pinning read in the probe's own stylesheet and comment | nothing red — the assertion is sound as scoped, which is why this is OPEN and not DEFECT |
 | 74 | **`qa_arabic_joining`'s SERVED half reads ONE run per page and its scalar cannot represent WHICH join broke** — raised by item 28's closure, measured by injecting N evenly-spaced ZWNJ into the real longest run on each target, N broken joins and nothing else changed. **Eligible Arabic runs per page: 37 / 49 / 11 / 1. Runs read: 1.** One broken join is invisible to three decimals on three of four targets; on the AR article **128 broken joins of 511 reads 0.742 against the 0.90 threshold**, and on the AR home **79% of the run broken reads 0.863 and passes.** Only VALENCE's 14-character run can cross the threshold at all. **And the two limits cause each other:** a ratio over a short run has no dynamic range (`مدار`, 4 chars, measures 0.972 shaped and the tool's own header says no threshold can separate it), so `SERVED_MIN_LEN = 12` forces the *longest* run to be selected — and the longest run is the one in which a single broken join is most diluted. *The ruler's dynamic range and its locality trade against each other, and a single scalar admits no other resolution.* The ask is a per-word or per-join ruler, which changes what the gate expects of served bytes, so it is handed over rather than fixed by the instrument that found it. | **[WD]** + **[AE]** | **2026-11-03** (from item 28's close) | Nine injection levels measured per target on the real served runs today, every injection changing only the ZWNJ count | nothing red — every run on this build shapes, and the worst served ratio is 0.689 against 0.90 |
 | 73 | **`qa_render`'s per-band DARK and ACCENT are measured and NOT asserted, and the decline expires by a change of ruler rather than by arithmetic** — raised by item 28's closure as that decline's own stated falsifier (#93 for the floor, #125 for how a decline must be written: it names **no sibling instrument**, because there is none). Measured today on the real build: the EN home's footer band reads dark **0.0006** and the EN article's **0.0008** — both legible, both small muted type, and `dark` counts only pixels within 90 of INK. **A per-band dark floor at the whole-raster 0.003 would red this build today; a floor low enough to pass the footer (0.0005) sits too close to what a genuinely white-on-white band produces (≈0) to separate them.** So the ruler cannot hold per-band legibility *because it is an absolute count*. The ask is the ruler change that empties the kernel: **dark relative to the band's own ink** rather than to the band's area, which separates small-muted-but-legible from white-on-white at any density. Unlike a kind-C floor this does not expire by the corpus improving (item 71) — it expires only when somebody changes the arithmetic, which is why it is written down as a row and not as a watch. | **[AE]** | **2026-11-03** (from item 28's close) | 21 bands across 5 targets measured and printed by the widened gate on every build | nothing red — P1 per band is asserted and green; this is the limb that is printed |

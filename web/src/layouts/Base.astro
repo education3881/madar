@@ -86,7 +86,7 @@ interface Props {
 
 const {
   title,
-  description = 'An editorial publication on early childhood and K-12 education, written and made in English and Arabic.',
+  description: descriptionProp,
   lang = 'en',
   ogImage,
   ogImageAlt,
@@ -98,6 +98,45 @@ const {
 } = Astro.props;
 
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+/**
+ * The default description, PER LANGUAGE.
+ *
+ * Measured 2026-11-03 by the growth function: **44 of the 134 served pages carried one
+ * identical `<meta name="description">`** — both homes, both browse indexes, all sixteen
+ * region pages, all sixteen topic pages, eight Arabic country pages and both editions
+ * indexes — because none of those templates passes a `description` and this default was a
+ * single string. **22 of the 44 are Arabic pages, and they were serving ENGLISH**, in three
+ * fields each (`description`, `og:description`, `twitter:description`), including the Arabic
+ * edition's own front door.
+ *
+ * That is the 2026-09-13 wrong-language class (`qa_a11y_lang`: 471 chrome strings under a
+ * language they were not written in; `qa_ar_language`: 235 Arabic-page fields printing
+ * English) in a field **neither gate enumerates**, because both read text a reader can see
+ * and a `<meta>` content attribute is served without ever being painted. Same shape as #121
+ * on the brief's `<head>` and #115 on a byte that is not in `dist` at all.
+ *
+ * NO NEW PROSE WAS WRITTEN HERE. Both feeds already carry this publication's own self-
+ * description as a composed, per-language pair (`src/pages/rss.xml.ts` and
+ * `src/pages/ar/rss.xml.ts`), the Arabic composed rather than translated and gated by the
+ * Arabic Editor when the feeds shipped. The pages are now given the same pair — and note
+ * that the English default above had been the feed's sentence with its **last clause cut
+ * off**: *A research instrument, not a magazine* was missing from every page that fell back
+ * to it. The two homes keep their own hand-written descriptions; this is the fallback.
+ *
+ * STILL OPEN and deliberately not done here: the 44 pages now serve two distinct strings
+ * rather than one, which fixes the language but not the **uniqueness** — a region page and a
+ * topic page still describe themselves identically. Per-facet descriptions are forty-four
+ * pieces of copy in two languages and the Arabic half needs the Arabic Editor's gate, so it
+ * is standing-queue item 76 rather than a thing to compose in a hurry.
+ */
+const SITE_DESCRIPTION = {
+  en: 'An editorial publication on early childhood and K-12 education, written and made in English and Arabic. A research instrument, not a magazine.',
+  ar: 'مجلّةٌ تحريريّةٌ بطيئةُ الإيقاع تتناول التعليم في مرحلتَي الطفولة المبكّرة والتعليم العام، تصدر بالعربيّة والإنجليزيّة. أداةُ بحثٍ، لا مجلّةً.',
+} as const;
+
+const description =
+  descriptionProp ?? SITE_DESCRIPTION[lang === 'ar' ? 'ar' : 'en'];
 // Every HTML route this site builds is a directory (`build.format` default),
 // so the URL the origin actually serves always ends in a slash. For the root
 // route under `base`, `Astro.url.pathname` is `/madar` — no slash — which put
