@@ -145,8 +145,14 @@ only cycle in seventeen years in which `(4) Inadequate` is the **modal** verdict
 
 **Four hedges carried at every use of this table, in both editions:**
 
-1. **C5 is OPEN.** 139 reviews to date, the cycle running to April 2026. A cycle in progress is not a
-   result, and the 16.5% is the figure *so far*.
+1. **C5 is NOT FINISHED, and that is our inference, not the register's statement.** 139 reviews, the
+   most recent published **April 2026**; the register carries no cycle-end field, so it does not say
+   when C5 closes. The ground for calling it unfinished is the count — 139 against 202, 206 and 207
+   in C1–C3 — and the ground is stated wherever the label is used. A cycle in progress is not a
+   result, and the 16.5% is the figure *so far*. **Corrected 2026-11-03 on the Verifier's finding:
+   the draft previously said "running to April 2026" in three places, which attributes a scope to the
+   Authority that its register does not state, and which read as a live bound seven months after the
+   date had passed (#117).**
 2. **C4 is the smallest cycle (128) and the longest (4.5 years)** — it spans the pandemic closures.
    The draft states the span and does not explain the dip, because the register does not say why.
 3. **Not a panel** — 52 of 242. A movement between cycles is a movement in *who was reviewed* as well
@@ -195,7 +201,7 @@ from that register, 150 days later.
 The file holds 1,022 rows. Eight hundred and eighty-two of them are reviews; the remaining 140 are
 monitoring visits, which are a different instrument on a different scale and are set aside here after
 this sentence. The reviews run across five cycles, the first published between June 2009 and May
-2011, the fifth still open and running to April 2026. Two hundred and forty-five schools appear in
+2011, the fifth running from July 2024 to the register's most recent publication, April 2026. Two hundred and forty-five schools appear in
 the register; 242 of them have ever been graded. Counted over all 882 reviews, the Authority's own
 verdict on its own government schools divides like this: `(3) Satisfactory` 350, `(4) Inadequate`
 245, `(2) Good` 202, `(1) Outstanding` 85.
@@ -221,8 +227,9 @@ cycle in seventeen years of which that is true.
 Four things have to be said about that paragraph before anyone does anything with it, and they are
 the reason this piece is a reading of a register rather than a chart.
 
-The fifth cycle is **open**. Its 139 reviews are the ones published so far, against a cycle that runs
-to April 2026, and a cycle in progress is not a result. The fourth cycle is the smallest in the
+The fifth cycle is **not finished**. Its 139 reviews are the ones the register carries, published
+between July 2024 and April 2026, and the register does not say when the cycle closes — so each share
+below it is a share so far, not a result. The fourth cycle is the smallest in the
 register — 128 reviews — and by some distance the longest, four and a half years, spanning the period
 in which Bahrain's schools, like everyone's, closed and reopened. The register records what the
 Authority found; it does not say why, and neither will we.
