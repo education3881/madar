@@ -17,11 +17,57 @@ no stable oracle: a screenshot diff fails on every legitimate edit. So this asse
 *properties* of the rendering, never its identity, and the properties are chosen from
 the defects that have actually bitten:
 
-  P1  NOT BLANK        ink coverage above a floor            (the page drew something)
+  P1  NOT BLANK        ink coverage above a floor, PER 900px BAND   (no screenful blank)
   P2  LEGIBLE          ink-dark pixels present, on paper     (not white-on-white)
   P3  ACCENT PRESENT   the declared kiln-orange reaches the raster
                        (an undefined token evaporates into the inherited ink —
                         structurally invisible, visibly wrong: the 09-14 class)
+
+THE RULER WAS WIDENED TWICE ON 2026-11-03, UNDER STANDING-QUEUE ITEM 28 (ruling #126)
+-------------------------------------------------------------------------------------
+Item 28 asked which of our four render assertions rest on an oracle nobody has
+interrogated — *not* what the check enumerated, which six rulings already ask, but
+**what its ruler can represent once the thing is inside it.** This one had two
+answers and both were in the arithmetic rather than in the target list.
+
+**EXTENT.** `--screenshot` under `--headless=new` captures the VIEWPORT, not the
+document — old headless captured the full page, and the flag name did not change
+when the behaviour did. Measured 2026-11-03: every raster this tool had ever read
+was exactly 1200x900, against documents 2,559 to 5,648 px tall, so the ruler held
+**15.9% to 35.2% of each page** while the output printed one line per "page". It
+was never a regression: the floors were calibrated on 2026-09-15 from the same
+viewport crop, and today's viewport numbers reproduce that range to the digit. The
+shot is now taken at the document's own height, verified rather than assumed (see
+`page_height` below).
+
+**POSITION.** A pixel population count has no coordinates. Widening the raster
+alone would have *reduced* sensitivity: on the EN home the whole-page dark
+fraction is 0.0053 and passes a 0.003 floor, while its own last band reads
+**0.0006 — five times below that floor and invisible to the average.** So P1 is
+asserted per 900px band: the property is now *no screenful of any page is blank*,
+which is what the 2026-08-16 edge-to-edge defect actually was, rather than *the
+page as a whole drew something*, which no page with a masthead can fail.
+
+Measured on this build at full height, per band, before any floor was chosen
+(#93 — a floor above today's reality reds every build): band ink runs 0.0114 to
+0.0612 across all fourteen bands of the four targets, so BAND_INK_FLOOR sits at
+0.006, below today's worst band and twenty times above a blank one.
+
+**What is measured per band and deliberately NOT asserted, with what would
+falsify the decline:** per-band *dark* and per-band *accent*. The EN home's
+footer band reads dark 0.0006 and the EN article's reads 0.0008 — both legible,
+both small muted type, and `dark` counts only pixels within 90 of INK. A per-band
+dark floor at the whole-raster 0.003 would red this build today; a floor low
+enough to pass the footer (0.0005) sits too close to what a genuinely
+white-on-white band produces (~0) to separate them. The ruler cannot hold
+per-band legibility because it is an ABSOLUTE count, and the decline expires the
+day the ruler is made relative to the band's own ink — that is the falsifier, and
+it is standing-queue item 73, not a sibling instrument (#125: a decline may not
+name a sibling without naming the sibling's limb, and there is no sibling here).
+
+Cost, measured rather than assumed: the widening takes this assertion from a
+1.08 Mpx read per target to 3.1-6.8 Mpx, 1.5-2.3 s to shoot and 1.3-3.0 s to
+decode, plus one `--dump-dom` pass per target to learn the height.
 
 Scope is deliberately narrow, because crying wolf on correct output is how a standing
 assertion gets ignored (2026-08-25, ruling #35): four pages and one share card.
@@ -43,8 +89,10 @@ import argparse
 import collections
 import functools
 import http.server
+import json
 import os
 import pathlib
+import re
 import shutil
 import socketserver
 import struct
@@ -181,6 +229,39 @@ def is_light(pixel):
 # legitimately carries the same colour — the 2026-09-14 trap, in a new place.
 CHROME_BAND = 120
 
+# A screenful. P1 is asserted per band of this many rows, because a pixel count has
+# no coordinates and a page-wide average cannot represent a blank region (#126).
+BAND = 900
+BAND_INK_FLOOR = 0.006
+
+
+def band_rows(width, height, pixels):
+    """Per-BAND ink/dark/accent fractions, top to bottom. The position the count lost."""
+    rows = []
+    for top in range(0, height, BAND):
+        band = pixels[top * width : (top + BAND) * width]
+        n = len(band)
+        if not n:
+            continue
+        ink = dark = accent = 0
+        for p in band:
+            if not near(p, PAPER, PAPER_RADIUS):
+                ink += 1
+                if is_accent(p):
+                    accent += 1
+                elif near(p, INK, INK_RADIUS):
+                    dark += 1
+        rows.append(
+            {
+                "top": top,
+                "bottom": top + n // width,
+                "ink": ink / n,
+                "dark": dark / n,
+                "accent": accent,
+            }
+        )
+    return rows
+
 
 def measure(path):
     width, height, pixels = read_png(path)
@@ -197,6 +278,7 @@ def measure(path):
                 dark_px += 1
     band = pixels[: CHROME_BAND * width]
     return {
+        "bands": band_rows(width, height, pixels),
         "w": width,
         "h": height,
         "total": total,
@@ -225,6 +307,93 @@ def serve(dist):
     httpd = socketserver.ThreadingTCPServer(("127.0.0.1", 0), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd, httpd.server_address[1], root
+
+
+VIEWPORT_W = 1200
+# Generous ceiling. A page taller than this is not silently cropped — the tool says so.
+MAX_SHOT_H = 12000
+
+_HEIGHT_PROBE = """<!doctype html><html><head><meta charset="utf-8"><title>h</title></head>
+<body><script>
+(function () {
+  var f = document.createElement('iframe');
+  f.style.width = '%(w)dpx'; f.style.height = '%(h)dpx'; f.style.border = '0';
+  f.addEventListener('load', function () {
+    try {
+      var d = f.contentDocument;
+      document.title = 'H:' + JSON.stringify({h: d.documentElement.scrollHeight});
+    } catch (e) { document.title = 'H:' + JSON.stringify({error: String(e)}); }
+  });
+  f.src = '%(url)s'; document.body.appendChild(f);
+})();
+</script></body></html>
+"""
+
+
+def page_height(browser, root, port, url, at):
+    """The document's own scrollHeight, laid out in a VIEWPORT_W x `at` box.
+
+    Two passes rather than one, because `--screenshot` under --headless=new captures
+    the viewport and there is no CLI flag for a full-page capture (#126). The probe
+    is served over http from the same root as the target so the iframe is
+    same-origin; a file:// probe cannot read into it and returns null.
+    """
+    page = _HEIGHT_PROBE % {"w": VIEWPORT_W, "h": at, "url": url}
+    with tempfile.NamedTemporaryFile(
+        "w", suffix=".html", delete=False, dir=root, encoding="utf-8"
+    ) as fh:
+        fh.write(page)
+        name = pathlib.Path(fh.name).name
+    res = subprocess.run(
+        [
+            browser,
+            "--headless=new",
+            "--no-sandbox",
+            "--disable-gpu",
+            "--hide-scrollbars",
+            "--force-device-scale-factor=1",
+            f"--window-size={VIEWPORT_W},{at}",
+            "--virtual-time-budget=8000",
+            "--dump-dom",
+            f"http://127.0.0.1:{port}/{name}",
+        ],
+        capture_output=True,
+        text=True,
+        timeout=180,
+        check=False,
+    )
+    m = re.search(r"<title>H:(.*?)</title>", res.stdout, re.S)
+    if not m:
+        raise RuntimeError(f"could not measure the document height of {url}")
+    got = json.loads(m.group(1))
+    if "error" in got:
+        raise RuntimeError(f"height probe failed on {url}: {got['error']}")
+    return int(got["h"])
+
+
+def document_height(browser, root, port, url):
+    """Measure at 900, then CONFIRM at the measured height.
+
+    A layout that depends on viewport height (`vh` units, a sticky full-height hero)
+    cannot be captured in one pass, and a tool that assumed otherwise would measure
+    the wrong raster in silence. None of this assertion's four targets carries a `vh`
+    declaration — verified 2026-11-03 — but that is a fact about today's templates,
+    not a property of the tool, so it is asserted here instead of trusted.
+    """
+    first = page_height(browser, root, port, url, 900)
+    if first > MAX_SHOT_H:
+        raise RuntimeError(
+            f"{url}: document is {first}px, past the {MAX_SHOT_H}px shot ceiling — "
+            "raise MAX_SHOT_H deliberately rather than letting the raster crop"
+        )
+    second = page_height(browser, root, port, url, first)
+    if abs(second - first) > 2:
+        raise RuntimeError(
+            f"{url}: document height is viewport-dependent ({first}px measured at a "
+            f"900px viewport, {second}px at {first}px) — this page cannot be captured "
+            "in one raster and P1-per-band cannot be asserted on it"
+        )
+    return first
 
 
 def shoot(browser, url, out, size="1200,900"):
@@ -305,8 +474,23 @@ def main():
         jobs = [(label, f"http://127.0.0.1:{port}{path}", floors) for label, path, *floors in TARGETS]
         for label, url, floors in jobs:
             out = pathlib.Path(shots) / (label.replace(" ", "_") + ".png")
-            shoot(browser, url, str(out))
-            rows.append((label, measure(str(out)), floors))
+            # The whole document, not the 1200x900 viewport the flag name implies (#126).
+            try:
+                height = document_height(browser, root, port, url)
+            except RuntimeError as exc:
+                # A gate fails with a sentence, never with a traceback: a stack dump in
+                # CI is read as a broken tool and switched off, which is how an
+                # assertion stops being an assertion (2026-09-13).
+                findings.append(f"{label}: {exc}")
+                continue
+            shoot(browser, url, str(out), size=f"{VIEWPORT_W},{height}")
+            m = measure(str(out))
+            if m["h"] != height:
+                findings.append(
+                    f"{label}: asked for a {VIEWPORT_W}x{height} raster and got "
+                    f"{m['w']}x{m['h']} — the ruler is not holding the document"
+                )
+            rows.append((label, m, floors))
 
         label, rel, *floors = CARD
         card = dist / rel
@@ -326,6 +510,11 @@ def main():
                 f"ink={m['ink_frac']:.4f}  dark={m['dark_frac']:.4f}  "
                 f"accent[{scope}]={accent} (page={m['accent_page']}, chrome={m['accent_chrome']})"
             )
+            for b in m["bands"]:
+                print(
+                    f"             band {b['top']:5d}-{b['bottom']:<5d} ink={b['ink']:.4f}  "
+                    f"dark={b['dark']:.4f}  accent={b['accent']}"
+                )
             continue
         if not m["bg_is_light"]:
             findings.append(
@@ -335,6 +524,15 @@ def main():
             findings.append(
                 f"{label}: P1 blank — ink coverage {m['ink_frac']:.4f} below floor {ink_floor}"
             )
+        # P1 per band. The whole-raster fraction above cannot represent a blank region;
+        # this is the same property with the position the count lost (#126).
+        for b in m["bands"]:
+            if b["ink"] < BAND_INK_FLOOR:
+                findings.append(
+                    f"{label}: P1 blank BAND — rows {b['top']}-{b['bottom']} carry ink "
+                    f"{b['ink']:.4f}, below floor {BAND_INK_FLOOR} "
+                    f"(whole raster {m['ink_frac']:.4f} passes)"
+                )
         if m["dark_frac"] < dark_floor:
             findings.append(
                 f"{label}: P2 illegible — ink-dark pixels {m['dark_frac']:.4f} below floor {dark_floor}"
@@ -354,7 +552,18 @@ def main():
         for f in findings:
             print(f"  - {f}", file=sys.stderr)
         return 1
-    print(f"CLEAN qa_render — {len(rows)} targets rendered; not blank, legible, accent present")
+    bands = sum(len(m["bands"]) for _, m, _ in rows)
+    worst = min((b["ink"] for _, m, _ in rows for b in m["bands"]), default=0.0)
+    thin = min((b["dark"] for _, m, _ in rows for b in m["bands"]), default=0.0)
+    print(
+        f"CLEAN qa_render — {len(rows)} targets rendered at their own document height, "
+        f"{bands} bands of {BAND}px; not blank, legible, accent present. "
+        f"Worst band ink {worst:.4f} (floor {BAND_INK_FLOOR}). "
+        f"Per-band dark reaches {thin:.4f} and is PRINTED, NOT ASSERTED: an absolute "
+        f"ink-dark count cannot separate a legible band of small muted type from a "
+        f"white-on-white one, and the decline expires when the ruler is made relative "
+        f"to the band's own ink (queue item 73, not a sibling instrument)."
+    )
     return 0
 
 
