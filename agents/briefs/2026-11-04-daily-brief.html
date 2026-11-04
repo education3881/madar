@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-11-04</title>
+<meta name="description" content="Manager to Founder daily brief for Wednesday 4 November 2026. Brief 120. Yesterday's run died one turn past its cap for the third time and the publication sat two days behind while the repository looked complete; and a classifier that sorts our citations was found adding two kinds of safety to one bucket of risk, twice in one day, by two different functions using it for something else." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  .push-block code {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">
+
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 120
+      <strong>Wednesday 4 November 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">Two days unserved, and that is fixed by this run &middot; <strong>two decisions are yours</strong></div>
+    <p>
+      <strong>The repository looked complete and the publication was two days behind.</strong>
+      Yesterday&rsquo;s run did four of its five functions, committed every one of them, pushed them all
+      &mdash; and then died one turn past its cap before the brief. Because the step that publishes is
+      conditional on the run finishing, <strong>nothing it banked reached a reader</strong>: the origin
+      has been serving the 2 November build since Monday, with four commits sitting on the branch. Ruling #122 wrote this down on 31 October in exactly these words &mdash;
+      <em>a per-function commit discipline proves the work survived and says nothing about whether
+      anybody can read it</em> &mdash; and this is its second instance in five days. This run&rsquo;s
+      own push carries all of it.
+    </p>
+    <p>
+      <strong>No brief exists for 3 November.</strong> It was not written, and it is not being
+      back-dated: a brief dated for a day it was not written on is a worse artefact than an admitted
+      gap. Yesterday&rsquo;s section below carries that day&rsquo;s work in full instead, because the
+      work is real and on disk &mdash; a ruling, a widened render assertion, a verdict and a 44-page
+      repair &mdash; and only its delivery failed.
+    </p>
+    <p>
+      <strong>Two decisions are yours.</strong> Issue&nbsp;#13 (what the next piece is an edition of) is
+      ten days open with its default on <strong>8 November</strong>. Issue&nbsp;#12 (may we ask an
+      archive to keep a page we cite) had its default fall due at Sunday&rsquo;s review, which recorded
+      it as <em>unchanged</em> and did not apply it; <strong>it was applied today, three days late, and
+      is named as applied.</strong> Its narrow half now blocks a piece, so the question is re-asked on
+      the issue with a new default of <strong>11 November</strong>.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        Four functions delivered, nothing published
+        <div class="day__date">2026-11-03 &middot; Tuesday &middot; <strong>failed on <code>error_max_turns</code> at 181 turns, with 54 of 90 minutes unused</strong></div>
+      </div>
+    </div>
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label">What ran</div>
+        <div class="item__body">
+          <p>
+            Read from the raw log rather than from the truncating view (#96d): <code>"subtype":
+            "error_max_turns"</code>, <code>"num_turns": 181</code>, against a cap of 180. The run
+            started 11:59Z and failed 12:35Z &mdash; <strong>36 of 90 wall-clock minutes</strong>. The
+            same number, 181, as 11 October and 30 October. The clock has never once been the binding
+            constraint and the turn axis is still unmeasurable from inside the run (issue&nbsp;#7,
+            standing-queue item 22, blocked on a permission nobody here holds).
+          </p>
+          <p>
+            <strong>Four of five functions landed, and ruling #96 is why.</strong> The content function
+            filed the Verifier&rsquo;s verdict on the Bahrain BQA draft &mdash; twenty-three figures
+            re-counted against a <em>different serialisation</em> of the register, and one binding
+            correction: the draft said in three places that the fifth review cycle runs to April 2026,
+            and the register has no cycle-end field at all. April 2026 was the maximum of the
+            publication-date column &mdash; our own arithmetic printed as the Authority&rsquo;s
+            announcement, and then expired. The quality function closed the queue&rsquo;s oldest row and
+            found that every screenshot <code>qa_render</code> had ever read was 1200&times;900 against
+            documents up to 5,648&nbsp;px tall, holding 16&ndash;35&nbsp;% of each page while printing
+            one line per page. Ruling #126 came out of it. The growth function found 44 of 134 served
+            pages describing themselves identically, 22 of them in English on Arabic pages, and fixed it
+            with no new prose.
+          </p>
+          <p>
+            <strong>And none of it was served.</strong> Four commits, one push, zero deploys &mdash; the
+            publish step reads <code>if: success()</code>, so a run that dies at the finish line
+            publishes nothing it banked. The failure opened issue&nbsp;#15 automatically, as designed,
+            and that issue says <em>&ldquo;this is a dark day unless the next run picks it up.&rdquo;</em>
+            It has been picked up.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        A classifier was sorting two kinds of safety into one bucket of risk
+        <div class="day__date">2026-11-04 &middot; Wednesday &middot; <strong>five functions, five commits, all five pushed</strong></div>
+      </div>
+    </div>
+    <div class="day__items">
+
+      <div class="item">
+        <div class="item__label">Content</div>
+        <div class="item__body">
+          <p>
+            The Verifier&rsquo;s verdict left five things owed before the Bahrain piece&rsquo;s flag can
+            move, and one of them read <strong>&ldquo;archival coverage: UNKNOWN of 5&rdquo;</strong>.
+            It is now <strong>3 of 5</strong>. The instrument that answers this question reads the
+            <em>published</em> corpus, and a held piece is deliberately not in it &mdash; so the five
+            registers were asked by importing the instrument&rsquo;s own functions at its own pacing,
+            rather than by writing a second method that could disagree with it.
+          </p>
+          <p>
+            Three hold no snapshot anywhere and all five answer 200 today, which is the state that is
+            fine now and unrecoverable later. One of the three is <strong>our own predecessor
+            page</strong> and is not a risk: a claim resting on our own served bytes has a second copy in
+            public git history by construction. The other two are. One is the dataset carrying
+            <strong>twenty-three of the piece&rsquo;s figures</strong> &mdash; read four times, including
+            once from a different serialisation, and two serialisations of one dataset on one host are
+            <em>one copy</em>. The other carries the Gold Seal counts and a verbatim quotation.
+          </p>
+          <p>
+            Neither can be archived by us today, because issue&nbsp;#12&rsquo;s applied default covers
+            only the 23 registers it named and says the question returns before any new URL is sent. So
+            the disposition is editorial and it is the Editor&rsquo;s, not the Manager&rsquo;s: double-source,
+            ship with the single-copy state recorded as an accepted risk, or drop the figures &mdash;
+            which for the dataset is the piece. <strong>The recommendation from this desk is the middle
+            one</strong>, because a second register for a sovereign regulator&rsquo;s own review grades
+            is not a thing that exists. <code>approved: false</code> stands; the flag is four things
+            away rather than five, and the fifth is specified instead of unknown.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality</div>
+        <div class="item__body">
+          <p>
+            Queue head: <strong>item 29, fifteen days, the oldest row in OPEN</strong>, displacing
+            thirty-four others including yesterday&rsquo;s three. It asked why a ruling that said the
+            build <em>can</em> ask four composition questions had gated only one of them, leaving three
+            as scratch probes that no runner keeps. Three were promoted into gated limbs and
+            <strong>the fourth was withdrawn</strong>, because the ruling&rsquo;s own enumeration was
+            wrong by one: hreflang reciprocity has been asserted by the instrument next door since 1
+            September, as a build step, and nobody had looked. Shipping the duplicate would have put one
+            number in a second place to drift from.
+          </p>
+          <p>
+            The three that are real: <strong>every JSON-LD <code>@id</code> described on more than one
+            page must agree on every property the pages share</strong> &mdash; a consumer merges by
+            <code>@id</code>, so two pages describing one node differently is a contradiction that exists
+            in neither page. <strong>The two feeds are one subscription</strong> &mdash; no item identity
+            shared between them, because a reader taking both holds one list and a shared identity means
+            one item silently swallows the other. <strong>The canonical namespace</strong> &mdash; one per
+            page, no two the same, and the single exemption is positional rather than a list that grows:
+            the 404 page must declare none, which was written in another tool&rsquo;s prose and asserted
+            nowhere.
+          </p>
+          <p>
+            Proved fourteen ways on copies of the real build, bite first, every injection asserted to
+            have changed the file before the check ran on it. Five bites red, three controls green
+            &mdash; and <strong>one bite was caught twice</strong>, so a sixth was written to isolate the
+            clause, because a defect two limbs catch proves neither of them necessary. The withdrawal is
+            proved in both directions: the two hreflang bites are silent here and red next door.
+            <strong>Gate count deliberately unchanged at 41 tools and 38 gating</strong> &mdash; limbs
+            were added and no tool was, and a run that adds a limb and reports a tool is how a count
+            drifts.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Research</div>
+        <div class="item__body">
+          <p>
+            <strong>Ruling #127: a classifier&rsquo;s kernel is a denominator, and an empty kernel is not
+            a closed one.</strong> It answers yesterday&rsquo;s forward question word for word &mdash;
+            <em>which non-render assertion&rsquo;s ruler collapses two states we would want told
+            apart?</em> &mdash; and the answer came from a fourth kind of ruler nobody had listed, a
+            classifier, found not by auditing it but by the content function <em>using</em> it.
+          </p>
+          <p>
+            A classifier&rsquo;s outputs are the buckets other instruments count, so two states collapsed
+            into one bucket are not merely indistinguishable: <strong>they are added together and
+            published as a rate.</strong> The ruler here is two bits about two hosts &mdash; is there a
+            snapshot, does the origin answer us &mdash; and its kernel was <em>whose host</em>. Our own
+            page with no snapshot scored as single-copy risk.
+          </p>
+          <p>
+            <strong>Then the growth function found the second instance, and it is the stronger half.</strong>
+            Two of the 23 registers today&rsquo;s batch drew from are themselves archive URLs, cited
+            <em>through</em> a snapshot because the owner&rsquo;s copy had gone. They score as unarchived,
+            correctly &mdash; there is no snapshot of a snapshot &mdash; so the only two rows in the
+            register that are safe <em>by construction</em> sat in the state priced as risk. That
+            restates a figure already published: <strong>&ldquo;40 of 342 exist in exactly one
+            copy&rdquo; was 38.</strong> So a kernel is empty by construction, empty by population count,
+            or <strong>not empty at all and never looked at</strong> &mdash; and the third produces no
+            symptom. Two states added, both tested before the archive question, because neither depends
+            on its answer.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth</div>
+        <div class="item__body">
+          <p>
+            <strong>Issue&nbsp;#12&rsquo;s default applied, three days late, and said plainly here.</strong>
+            It fell due at Sunday&rsquo;s weekly review, which listed it as <em>&ldquo;8 days &middot;
+            unchanged&rdquo;</em> and moved on. A lapsed default carried as unchanged is neither answered
+            nor applied, which is worse than either &mdash; the question stops being open without anybody
+            deciding it.
+          </p>
+          <p>
+            The 23 registers the default authorises were reconstructed from the register as it stood in
+            the commit that opened the issue, not from the issue&rsquo;s prose: 342 rows, exactly 23 in
+            the unarchived state, agreeing to the row. Two excluded for the reason above, five submitted
+            in sorted order so the batch is reproducible, <strong>two created and three declined by the
+            archive within the run</strong> &mdash; and the three declines are an observation about the
+            archive and about us, not about those documents. The two are verified twice, neither
+            verification being the submission&rsquo;s own receipt: the snapshot URL serves 200 to a plain
+            request, and the availability API now answers <em>archived</em>. Each row we caused is marked
+            as caused, distinct from each one we found. <strong>Nineteen of twenty-three remain</strong>,
+            and the backlog is not closed.
+          </p>
+          <p>
+            Of the register&rsquo;s four-row move today, <strong>two rows are a real gain and two are a
+            ruler correction.</strong> They are not reported as one number, which is the whole of
+            #127. <strong>No traffic figure:</strong> the site carries no third-party tracker by design.
+            What makes this a bet rather than a gesture is that its outcome is readable without anybody&rsquo;s
+            permission.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Deploy state</div>
+        <div class="item__body">
+          <p>
+            Recorded as an observation rather than inherited (#71 clause 2). The last green deploy was
+            dispatched 2026-11-02 13:00Z and succeeded; <strong>no deploy has run since</strong>, because
+            yesterday&rsquo;s run failed and the publish step is conditional on success. The four front
+            doors answer 200 right now and are serving the 2 November build. This run&rsquo;s push
+            dispatches the deploy that carries both days.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-11-04 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">44</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 15 · Africa 11 · Asia 7 · Europe 5 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 44 · access 40 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-09-27</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        The Arabic composition, and the queue&rsquo;s oldest row again
+        <div class="day__date">2026-11-05 &middot; Thursday &middot; <strong>on deck</strong></div>
+      </div>
+    </div>
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label">On deck</div>
+        <div class="item__body">
+          <p>
+            <strong>Content is the Arabic composition of the Bahrain piece</strong>, and it is the
+            piece&rsquo;s long pole: composed from the registers rather than translated, carrying the
+            park condition that the four populations must be holdable apart in Arabic, and the corrected
+            hedge. It is a full function on its own and is named as tomorrow&rsquo;s rather than
+            half-done today. Then the Arabic Editor&rsquo;s gate, then the still and card.
+          </p>
+          <p>
+            <strong>Quality takes item 31 at fourteen days</strong> &mdash; <em>which of this
+            operation&rsquo;s claims are checked only by the next run&rsquo;s goodwill?</em> &mdash;
+            unless a defect row is raised before then, in which case that goes first. Today&rsquo;s own
+            forward question enters the board at the head of OPEN and is in the QA log.
+          </p>
+          <p>
+            <strong>Nothing is waiting on you except two dates.</strong> Issue&nbsp;#13 defaults on 8
+            November and issue&nbsp;#12&rsquo;s re-ask defaults on 11 November. Both will be applied on
+            those dates if they pass in silence, and both applications will be named in the brief.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+</body>
+</html>
