@@ -94,6 +94,78 @@ and this is its input-side twin: an assembly you have not been told the shape of
 will report every deliberate arrangement as a collision. That is why limb 1
 compares full selectors and limb 2 reads the registry rather than guessing.
 
+LIMBS 3, 4 AND 5 — ADDED 2026-11-04, closing standing-queue **item 29** (raised
+2026-10-20 as that day's forward question, 15 days, the oldest row in OPEN).
+Ruling **#127**. THE RULER AND ITS KERNEL, in one sentence per #126 clause 1:
+*this tool's ruler is textual identity across served documents — it can tell that
+two documents disagree and it cannot tell which of them a consumer will believe,
+so its kernel is the CONSUMER'S PRECEDENCE RULE, and that is why every limb here
+asserts a precondition and none asserts a consequence.*
+
+Item 29's ask: #109 named four statically-computable composition surfaces and
+assertion 34 gated **one**, leaving the other three as `/tmp` probes that would
+not survive the runner. Promote them. **Three were promoted and the fourth was
+WITHDRAWN, because the enumeration in #109 was wrong by one** — and finding that
+out cost one grep of a sibling, which is the whole of #125:
+
+  LIMB 3 — EVERY JSON-LD `@id` DESCRIBED ON MORE THAN ONE PAGE AGREES ON EVERY
+  PROPERTY THE PAGES SHARE. The intended assembly is stated in `ld_nodes()`: a
+  consumer merges nodes **by `@id`** across every page it crawls, so `{"@id": X}`
+  alone is a *reference* that claims nothing while `{"@id": X, "name": …}` is a
+  *description* that does. Two pages describing one node differently is a
+  contradiction that exists in **neither page** — the merged graph holds both.
+  Measured on the 2026-11-04 build: **1,206 nodes carrying an `@id`, 386
+  distinct, 2 described on more than one page, 0 disagreements.** The 386 is item
+  29's own hand-verified figure now derived by a gate: that row recorded 266 →
+  386 after the growth function added 120 nodes mid-run, *"and the only reason it
+  was re-measured is that I happened to remember."*
+
+  LIMB 4 — THE TWO FEEDS ARE ONE SUBSCRIPTION. No `<guid>` and no `<link>` is
+  shared between `rss.xml` and `ar/rss.xml`, none repeats inside either, and none
+  is absent. The intended assembly: a reader subscribing to both editions holds
+  one item list keyed by `guid`, so a shared identity means one item **silently
+  swallows** the other and the publication cannot tell. 44 + 44 items, 0 shared.
+  Genuinely ungated before today — `qa_feed_validators` is one of the three
+  assertions that do not gate, and it reads a validator rather than the identity.
+
+  LIMB 5 — THE CANONICAL NAMESPACE. Every served page claims **exactly one**
+  canonical, no two pages claim the **same** one, and the single exemption is
+  **positional rather than textual** (#113's shape): `404.html` must claim
+  **none**, because a canonical on an error page invites a crawler to index the
+  error as the preferred version of something. 134 canonicals over 135 documents,
+  the one gap being the error page. That property was already written down — in
+  `qa_reachability`'s prose, *"carries noindex for the same reason it carries no
+  canonical"* — and asserted nowhere, which is #125 one more time.
+
+  **WITHDRAWN — hreflang reciprocity.** #109 named it as ungated and item 29
+  inherited that. It is not: **`qa_hreflang_clusters` clauses 1 and 2 have
+  asserted cluster membership, dereferencing and reciprocity since 2026-09-01,
+  as a BUILD STEP in `astro-pages.yml`.** The count is printed here (264
+  alternates across 132 pages, x-default excluded, which is #109's 396 minus one
+  per page) and the decline names the sibling **having read it and proved it**,
+  not on the assumption that somebody must be. Shipping the duplicate would have
+  put one number in a second place to drift from.
+
+PROVED 14 WAYS on copies of the real `dist`, bite first, every injection asserted
+to have changed the file before the check ran on it (#35 and its 09-14 addendum):
+five bites red — one `@id` described twice with different names, one `guid` in
+both feeds, two pages claiming one canonical, a canonical on `404.html`, and a
+real page with its canonical removed — and **bite 5 was caught twice**, by the
+error-page clause and by the uniqueness clause, because the root it named was
+already claimed by `/`; so a sixth bite gives `404.html` a canonical **nothing
+else claims**, which isolates the clause. *A defect two limbs catch proves
+neither of them necessary* — #126's kernel lesson applied to a harness. Three
+controls green either side, including the control that matters most for limb 3: a
+bare `@id` **reference** injected into the same page must stay silent, and does.
+And the withdrawal is proved in both directions: the two hreflang bites are
+**silent here and red in `qa_hreflang_clusters`**. Harness of record:
+`agents/tools/proofs/qa_composition_limbs_proof.py`.
+
+**THE GATE COUNT DOES NOT MOVE: 41 tools, 38 gating.** Three limbs were added to
+an assertion already wired into `postbuild`; no tool was added, so
+`qa_patch_queue` derives the same three numbers. *A run that adds a limb and
+reports a tool is how a count drifts.*
+
 Exit 0 clean · 1 on any failed assertion · 2 on bad input.
 No third-party dependencies, no browser.
 """
@@ -103,7 +175,16 @@ import re
 import sys
 from pathlib import Path
 
+SITE = "https://education3881.github.io/madar/"
+
 STYLE = re.compile(r"<style[^>]*>(.*?)</style>", re.S | re.I)
+JSONLD = re.compile(
+    r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>', re.S | re.I)
+LINK_TAG = re.compile(r"<link\b[^>]*>", re.I)
+ATTR = re.compile(r'([A-Za-z][\w:-]*)="([^"]*)"')
+ITEM = re.compile(r"<item\b.*?</item>", re.S | re.I)
+GUID = re.compile(r"<guid[^>]*>(.*?)</guid>", re.S | re.I)
+RLINK = re.compile(r"<link\b[^>]*>(.*?)</link>", re.S | re.I)
 COMMENT = re.compile(r"/\*.*?\*/", re.S)
 AT_RULE = re.compile(r"@[a-zA-Z-]+[^{;]*\{(?:[^{}]|\{[^{}]*\})*\}", re.S)
 COVER_SCOPE = re.compile(r"\.ed-cover-(\d+)\s+\.kick\b")
@@ -142,6 +223,71 @@ def read_registry(root):
                       "short or uneven parse is refused rather than compared"
                       % (len(numbers), len(accents)))
     return dict(zip(numbers, accents)), None
+
+
+def served_url(rel: str) -> str:
+    """dist-relative path -> the URL that path is served at.
+
+    THE INTENDED ASSEMBLY, stated rather than inferred (item 29): this site is
+    built with `build.format: 'directory'`, so every route is a directory with an
+    `index.html` and is served WITHOUT that filename. The root `index.html` is
+    the site root. Nothing else in dist is HTML.
+    """
+    rel = rel.replace("\\", "/")
+    if rel == "index.html":
+        return SITE
+    if rel.endswith("/index.html"):
+        return SITE + rel[: -len("index.html")]
+    return SITE + rel
+
+
+def ld_nodes(text: str):
+    """Every JSON-LD node carrying an @id, with the keys that DESCRIBE it.
+
+    THE INTENDED ASSEMBLY: a consumer merges JSON-LD nodes BY `@id` across every
+    page it crawls — that is what an `@id` is for. So `{"@id": X}` alone is a
+    *reference* and carries no claim, while `{"@id": X, "name": ...}` is a
+    *description* and does. Two pages describing one node differently is a
+    contradiction that exists in neither page: the merged graph says both.
+    """
+    out = []
+    for raw in JSONLD.findall(text):
+        try:
+            payload = json.loads(raw)
+        except Exception:
+            out.append(("(unparseable)", {}))
+            continue
+        stack = [payload]
+        while stack:
+            cur = stack.pop()
+            if isinstance(cur, list):
+                stack.extend(cur)
+            elif isinstance(cur, dict):
+                stack.extend(v for v in cur.values()
+                             if isinstance(v, (dict, list)))
+                node_id = cur.get("@id")
+                if isinstance(node_id, str):
+                    described = {k: v for k, v in cur.items() if k != "@id"}
+                    out.append((node_id, described))
+    return out
+
+
+def link_rels(text: str):
+    """Every <link> tag as a dict of its attributes."""
+    for tag in LINK_TAG.findall(text):
+        yield dict(ATTR.findall(tag))
+
+
+def feed_items(path: Path):
+    """(guid, link) per <item> in an RSS file."""
+    text = path.read_text(encoding="utf-8", errors="replace")
+    rows = []
+    for chunk in ITEM.findall(text):
+        g = GUID.search(chunk)
+        l = RLINK.search(chunk)
+        rows.append((g.group(1).strip() if g else None,
+                     l.group(1).strip() if l else None))
+    return rows
 
 
 def main():
@@ -264,17 +410,215 @@ def main():
             print("    value is the COMPUTED value because limb 1 holds: no other")
             print("    inline rule in the document can match these elements.")
 
-    if collisions or failed_covers:
+    # ------- limb 3: one @id, one description, however many pages -------
+    print("  LIMB 3  every JSON-LD @id DESCRIBED on >1 page agrees on every")
+    print("          property the pages share")
+    described = {}        # @id -> {page: {key: json}}
+    ld_total = 0
+    unparseable = []
+    for page in pages:
+        rel = str(page.relative_to(dist))
+        text = page.read_text(encoding="utf-8", errors="replace")
+        for node_id, desc in ld_nodes(text):
+            if node_id == "(unparseable)":
+                unparseable.append(rel)
+                continue
+            ld_total += 1
+            if not desc:
+                continue          # a bare reference makes no claim
+            frozen = {k: json.dumps(v, sort_keys=True, ensure_ascii=False)
+                      for k, v in desc.items()}
+            described.setdefault(node_id, {}).setdefault(rel, {}).update(frozen)
+
+    multi = {i: d for i, d in described.items() if len(d) > 1}
+    ld_disagree = []
+    for node_id, by_page in multi.items():
+        keys = set()
+        for d in by_page.values():
+            keys |= set(d)
+        for key in sorted(keys):
+            values = {rel: d[key] for rel, d in by_page.items() if key in d}
+            if len(set(values.values())) > 1:
+                ld_disagree.append((node_id, key, values))
+
+    print("          nodes with an @id .................. %d, of which %d distinct"
+          % (ld_total, len(described)))
+    print("          described on more than one page .... %d" % len(multi))
+    if unparseable:
+        print("          FAIL — JSON-LD that does not parse on %d page(s): %s"
+              % (len(unparseable), ", ".join(sorted(set(unparseable))[:5])))
+    if ld_disagree:
+        print("          FAIL — the merged graph holds two values for one property:")
+        for node_id, key, values in ld_disagree[:12]:
+            print("            %s  '%s'" % (node_id, key))
+            for rel, val in sorted(values.items()):
+                print("              %-46s %s" % (rel, val[:90]))
+    elif multi:
+        print("          ok — no property disagrees, so a crawler merging these")
+        print("          pages reads one consistent node per @id")
+
+    # ------- limb 4: the two feeds are ONE subscription -------
+    print("  LIMB 4  the two feeds are one subscription: no item identity is")
+    print("          shared between them, and none repeats inside one")
+    feed_paths = [dist / "rss.xml", dist / "ar" / "rss.xml"]
+    feed_fail = []
+    feeds = {}
+    for fp in feed_paths:
+        if not fp.exists():
+            feed_fail.append(("(missing)", str(fp.relative_to(dist)), ""))
+            continue
+        feeds[str(fp.relative_to(dist))] = feed_items(fp)
+    if len(feeds) != 2:
+        print("          REFUSED — %d of 2 feeds found under dist. Both feeds are"
+              % len(feeds))
+        print("          shipped by this publication; a missing one is a change")
+        print("          this assertion must not pass over in silence.")
+    else:
+        for name, rows in feeds.items():
+            for field, idx in (("guid", 0), ("link", 1)):
+                vals = [r[idx] for r in rows]
+                if any(v is None for v in vals):
+                    feed_fail.append((name, field,
+                                      "%d item(s) carry no <%s>"
+                                      % (sum(v is None for v in vals), field)))
+                seen = {}
+                for v in vals:
+                    if v is not None:
+                        seen[v] = seen.get(v, 0) + 1
+                dupes = [v for v, n in seen.items() if n > 1]
+                if dupes:
+                    feed_fail.append((name, field,
+                                      "%d value(s) repeat inside this feed: %s"
+                                      % (len(dupes), dupes[:3])))
+        (a_name, a_rows), (b_name, b_rows) = list(feeds.items())
+        for field, idx in (("guid", 0), ("link", 1)):
+            shared = ({r[idx] for r in a_rows if r[idx]}
+                      & {r[idx] for r in b_rows if r[idx]})
+            if shared:
+                feed_fail.append(("%s + %s" % (a_name, b_name), field,
+                                  "%d value(s) in BOTH feeds: %s"
+                                  % (len(shared), sorted(shared)[:3])))
+        print("          items ............................. %s"
+              % " · ".join("%s %d" % (n, len(r)) for n, r in feeds.items()))
+        if feed_fail:
+            print("          FAIL — a reader subscribed to both is served one item")
+            print("          where two were published, or one twice:")
+            for name, field, why in feed_fail:
+                print("            %s  <%s>  %s" % (name, field, why))
+        else:
+            print("          ok — every item in either feed is its own identity, so")
+            print("          a reader taking both loses nothing and sees nothing twice")
+
+    # ------- limb 5: the canonical namespace -------
+    print("  LIMB 5  the canonical namespace: every served page claims exactly")
+    print("          one canonical and no two pages claim the same one")
+    alt_map = {}          # page url -> set of alternate urls (x-default excluded)
+    canon = {}            # canonical url -> [page urls]
+    url_of = {}
+    for page in pages:
+        rel = str(page.relative_to(dist))
+        url_of[served_url(rel)] = rel
+    for page in pages:
+        rel = str(page.relative_to(dist))
+        text = page.read_text(encoding="utf-8", errors="replace")
+        me = served_url(rel)
+        alts = set()
+        for attrs in link_rels(text):
+            relv = (attrs.get("rel") or "").lower()
+            href = attrs.get("href")
+            if not href:
+                continue
+            if relv == "alternate" and attrs.get("hreflang"):
+                if attrs["hreflang"].lower() != "x-default":
+                    alts.add(href)
+            elif relv == "canonical":
+                canon.setdefault(href, []).append(me)
+        alt_map[me] = alts
+
+    alt_total = sum(len(v) for v in alt_map.values())
+    dangling = [(p, t) for p, ts in alt_map.items() for t in ts
+                if t not in url_of]
+    one_way = []
+    for p, ts in alt_map.items():
+        for t in ts:
+            if t in url_of and p not in alt_map.get(t, set()):
+                one_way.append((p, t))
+    shared_canon = {c: ps for c, ps in canon.items() if len(ps) > 1}
+
+    # Canonical COVERAGE, and the one exemption is positional and by design
+    # (item 29's requirement: state the intended assembly in code). Every served
+    # page declares exactly one canonical EXCEPT `404.html`, which must declare
+    # none: a canonical on an error page tells a crawler the error page is the
+    # preferred version of something. The exemption is one literal filename, not
+    # a list that grows — anything else missing a canonical is a defect.
+    claimed = set()
+    for c, ps in canon.items():
+        claimed.update(ps)
+    no_canon = sorted(set(alt_map) - claimed)
+    error_url = served_url("404.html")
+    missing_canon = [u for u in no_canon if u != error_url]
+    error_has_canon = error_url in claimed
+    print("          coverage .......................... %d of %d page(s); the "
+          "exemption is 404.html by design" % (len(claimed), len(pages)))
+    if missing_canon:
+        print("          FAIL — %d page(s) other than 404.html declare no canonical:"
+              % len(missing_canon))
+        for u in missing_canon[:8]:
+            print("            %s" % u)
+    if error_has_canon:
+        print("          FAIL — 404.html declares a canonical. An error page that")
+        print("          names a preferred URL invites a crawler to index the error.")
+
+    print("          canonicals declared ............... %d over %d served page(s)"
+          % (sum(len(p) for p in canon.values()), len(pages)))
+    # The hreflang half of #109's surface (2) is MEASURED HERE AND NOT ASSERTED,
+    # and the decline names its sibling the way #125 requires — by having gone
+    # and looked rather than by saying somebody must be doing it. Reciprocity,
+    # dereferencing and cluster membership are asserted by
+    # `qa_hreflang_clusters` clauses 1 and 2, wired as a BUILD STEP in
+    # astro-pages.yml since 2026-09-01, and both are proved live against this
+    # tool's own bites 3 and 7 in agents/tools/proofs/qa_composition_limbs_proof.
+    # So #109's enumeration of three ungated surfaces was wrong by one, and
+    # standing-queue item 29 inherited the error: duplicating a gating sibling
+    # buys nothing and costs a second place for the same number to drift.
+    print("          hreflang alternates .............. %d across %d page(s) — "
+          "MEASURED, NOT ASSERTED" % (alt_total,
+                                      sum(1 for v in alt_map.values() if v)))
+    print("            one-way %d · naming a URL this build does not serve %d. "
+          "Asserted by" % (len(one_way), len(dangling)))
+    print("            qa_hreflang_clusters clauses 1-2, a build step since "
+          "2026-09-01, read")
+    print("            and proved rather than assumed (#125).")
+    if shared_canon:
+        print("          FAIL — %d canonical URL(s) claimed by more than one page:"
+              % len(shared_canon))
+        for c, ps in list(shared_canon.items())[:8]:
+            print("            %s  <-  %s" % (c, ", ".join(ps)))
+    if not (shared_canon or missing_canon or error_has_canon):
+        print("          ok — every served page but the error page claims exactly")
+        print("          one canonical, and no two pages claim the same one")
+
+    limb3_fail = bool(ld_disagree or unparseable)
+    limb4_fail = bool(feed_fail) or len(feeds) != 2
+    limb5_fail = bool(shared_canon or missing_canon or error_has_canon)
+
+    if collisions or failed_covers or limb3_fail or limb4_fail or limb5_fail:
         print("\nqa_composition: FAIL — see above. Each of these defects lives in "
               "no file; it is created by putting correct files together, which is "
               "why thirty-three assertions reading one artefact at a time could "
               "not see it.")
         sys.exit(1)
 
-    print("\nCLEAN qa_composition — %d served documents, %d inlined style blocks, "
-          "no two of which write the same selector into one cascade, and %d cover "
-          "kicker(s) each printing its own registry accent." %
-          (len(pages), blocks_total, covers_checked))
+    print("\nCLEAN qa_composition — %d served documents. %d inlined style blocks, "
+          "no two writing one selector into one cascade; %d cover kicker(s) each "
+          "printing its own registry accent; %d distinct @id with %d described on "
+          "more than one page and no property disagreeing; two feeds of %s items "
+          "sharing no guid and no link; and %d canonicals, one per served page "
+          "but 404.html, no two of them the same. %d hreflang alternates "
+          "measured here and asserted by qa_hreflang_clusters." %
+          (len(pages), blocks_total, covers_checked, len(described), len(multi),
+           " + ".join(str(len(r)) for r in feeds.values()), len(canon),
+           alt_total))
     sys.exit(0)
 
 
