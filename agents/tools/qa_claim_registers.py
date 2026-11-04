@@ -209,6 +209,7 @@ def origin_state(url: str) -> dict:
 
 
 OUR_ORIGIN = "education3881.github.io/madar/"
+ARCHIVE_HOSTS = ("web.archive.org/web/", "archive.ph/", "archive.today/")
 
 
 def classify(row: dict) -> str:
@@ -236,7 +237,22 @@ def classify(row: dict) -> str:
     this that is not a correction.
     """
     archived, origin = row.get("archived"), row.get("origin")
-    if OUR_ORIGIN in (row.get("url") or ""):
+    url = row.get("url") or ""
+    if any(h in url for h in ARCHIVE_HOSTS):
+        # THE SECOND INSTANCE OF THE SAME KERNEL, and this one is OCCUPIED.
+        # Found 2026-11-04 while executing issue #12's default over the 23
+        # named registers: two of the 23 are `web.archive.org/web/…` URLs,
+        # cited because the owner's own copy had already gone. The
+        # availability API is asked *is there a snapshot OF this URL* and
+        # answers no, correctly — there is no snapshot of a snapshot — so both
+        # scored `live-only`, the state priced as single-copy risk, when they
+        # are the only rows in the register that are archived BY CONSTRUCTION.
+        # 2 of 342 on 2026-10-24 and 2 of 354 today, which means #111's
+        # headline (40 of 205 hold no snapshot anywhere) was overstated by two
+        # on the day it was written. Unlike `ours-git-archived` this kernel was
+        # never empty; nobody had looked.
+        return "cited-as-archive"
+    if OUR_ORIGIN in url:
         # Asserted ahead of the archive question, because it does not depend on
         # the answer: whatever archive.org holds, we hold it too, in public.
         return "ours-git-archived"

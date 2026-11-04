@@ -100,6 +100,44 @@ walled-no-snapshot 14 · GONE 1, 353 registers, CLEAN.** *A ruler change that mo
 the only kind that can be made without restating a published figure* — and it is available exactly
 once per kernel, in the window before the first instance.
 
+## AMENDED THE SAME DAY, BY THE GROWTH FUNCTION, AND THE AMENDMENT IS THE STRONGER HALF
+
+The ruling above was filed with the kernel **empty by population count** — *0 of 353, and the next flip
+occupies it.* Two hours later the growth function went to execute issue #12's default over the 23 named
+registers, derived the set from the register as it stood on the issue's own date rather than from
+memory, and **two of the twenty-three are `web.archive.org/web/…` URLs** — cited in the first place
+*because the owner's copy had already gone*.
+
+They score **`live-only`**. The availability API is asked *is there a snapshot of this URL* and answers
+no, **correctly**: there is no snapshot of a snapshot. So the two rows in the entire register that are
+archived **by construction** are filed under the one state the claim-level join prices as single-copy
+risk. **2 of 342 on 2026-10-24 and 2 of 354 today**, unchanged in between.
+
+Three things follow, and they change the ruling rather than illustrating it.
+
+1. **Clause 1's two words were not enough.** A kernel is empty by construction, empty by population
+   count, or **not empty at all and never looked at**. The third is the dangerous one precisely because
+   it produces no symptom: the bucket counts, the rate publishes, nothing contradicts it. The first
+   instance found today was the harmless kind and the second was this one, in the same classifier,
+   found by *using* it twice in one day for two different purposes.
+2. **It restates a published figure, and the earlier sentence in this ruling must not stand
+   unqualified.** #111 is quoted for *of 342 cited registers, 40 exist in exactly one copy* — the
+   correct figure for that population was **38**. Today's 49 `live-only` is **47**. The re-derivation
+   was run over the stored register with **no network call and no `observed` date touched**, because
+   the state is a pure function of two bits that were already on file: 2 rows moved, `archived 290 ·
+   live-only 47 · walled-no-snapshot 14 · cited-as-archive 2 · GONE 1`. *A classifier's kernel is a
+   denominator* was the claim; here is the numerator it was hiding.
+3. **A second state, `cited-as-archive`.** Tested before everything else, for the same reason
+   `ours-git-archived` is: it does not depend on the archive's answer about the URL, only on what the
+   URL is. Proved five ways beside the first state, controls on the three pre-existing buckets.
+
+**And the method is the part to carry.** Neither instance was found by auditing the instrument. The
+first came from the content function asking it about five registers; the second from the growth function
+asking it which registers were authorised for submission. **Two kernels in one classifier in one day,
+both found by using it for something else** — which is the inverse of 2026-11-03's conclusion that *the
+rate is a property of the reader*. It is also a property of how many different questions the instrument
+is asked.
+
 ## What this does NOT claim
 
 **It does not say a self-citation is safe.** It says the *risk is of a different kind*: not "the
