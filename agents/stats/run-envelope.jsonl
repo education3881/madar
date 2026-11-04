@@ -62,3 +62,4 @@
 {"run_id": "41827440946", "workflow": "madar-daily.yml", "label": "research", "at": "2026-11-04T12:32:51+00:00", "elapsed_minutes": 19.17, "timeout_minutes": 90, "remaining_minutes": 70.83}
 {"run_id": "41827440946", "workflow": "madar-daily.yml", "label": "growth", "at": "2026-11-04T12:44:30+00:00", "elapsed_minutes": 30.82, "timeout_minutes": 90, "remaining_minutes": 59.18}
 {"run_id": "41827440946", "workflow": "madar-daily.yml", "label": "brief", "at": "2026-11-04T12:54:52+00:00", "elapsed_minutes": 41.19, "timeout_minutes": 90, "remaining_minutes": 48.81}
+{"run_id": "41827440946", "workflow": "madar-daily.yml", "label": "close", "at": "2026-11-04T12:55:35+00:00", "elapsed_minutes": 41.92, "timeout_minutes": 90, "remaining_minutes": 48.08}
