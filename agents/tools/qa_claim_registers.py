@@ -208,9 +208,38 @@ def origin_state(url: str) -> dict:
     return {"origin": None, "origin_note": "unreached"}
 
 
+OUR_ORIGIN = "education3881.github.io/madar/"
+
+
 def classify(row: dict) -> str:
-    """The four rows of the table in this file's header."""
+    """The four rows of the table in this file's header, plus the fifth that was
+    the ruler's KERNEL until 2026-11-04 (ruling #127).
+
+    THE RULER AND ITS KERNEL, stated per #126 clause 1: this function's ruler is
+    *does a snapshot exist, and does the origin answer us* — two bits about two
+    hosts. Its kernel was **WHOSE HOST**. A register on somebody else's server
+    with no snapshot is one hosting decision away from taking a published figure
+    out of the public record forever; **a register on our own origin with no
+    snapshot is not**, because its bytes are in this repository's public git
+    history and anybody can re-open them from there. Both scored `live-only`, and
+    `live-only` is the state the claim-level join prices as single-copy risk.
+
+    The kernel was **empty of instances by accident**, not by construction: 0 of
+    the 353 registers the published corpus cites are ours, so the number this
+    changes today is zero and there is no step discontinuity to reconcile
+    backward (#57 limb 2, stated because the usual case is the opposite). It
+    stops being empty at the **next flip**: the Bahrain BQA draft cites our own
+    `2026-05-26-bahrain-bqa-public-grades` page for a verbatim quotation, which
+    would have arrived in this register as the fifty-first `live-only` row and
+    inflated the one headline figure #111 is quoted for. **The ruler is changed
+    before the instance arrives rather than after**, which is the only version of
+    this that is not a correction.
+    """
     archived, origin = row.get("archived"), row.get("origin")
+    if OUR_ORIGIN in (row.get("url") or ""):
+        # Asserted ahead of the archive question, because it does not depend on
+        # the answer: whatever archive.org holds, we hold it too, in public.
+        return "ours-git-archived"
     if archived is None:
         return "archive-unknown"
     if archived:

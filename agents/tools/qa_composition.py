@@ -96,7 +96,12 @@ compares full selectors and limb 2 reads the registry rather than guessing.
 
 LIMBS 3, 4 AND 5 — ADDED 2026-11-04, closing standing-queue **item 29** (raised
 2026-10-20 as that day's forward question, 15 days, the oldest row in OPEN).
-Ruling **#127**. THE RULER AND ITS KERNEL, in one sentence per #126 clause 1:
+**Second instance of ruling #125** — see the WITHDRAWN note below, which is that
+ruling read from the other side: #125 is about a decline that delegates to a
+sibling, and this is a ruling that declared a surface *ungated* while the sibling
+had gated it for sixty days. A claim about what is **not** checked is read off
+the wiring, never off the ruling that wrote it.
+THE RULER AND ITS KERNEL, in one sentence per #126 clause 1:
 *this tool's ruler is textual identity across served documents — it can tell that
 two documents disagree and it cannot tell which of them a consumer will believe,
 so its kernel is the CONSUMER'S PRECEDENCE RULE, and that is why every limb here
