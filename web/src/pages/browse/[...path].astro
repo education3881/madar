@@ -5,6 +5,7 @@ import { withBase } from '../../lib/urls';
 import { byDateThenSlug } from '../../lib/order';
 import { collectionJsonLd } from '../../lib/structuredData';
 import {
+  countriesOf,
   facetsFor,
   facetPath,
   browsePath,
@@ -67,6 +68,31 @@ const listed = facet
   : [];
 
 const title = facet ? `${facet.key} · Browse · Madār` : 'Browse · Madār';
+
+// ---------------------------------------------------------------------------
+// Per-facet `<meta name="description">` (Growth, 2026-11-05). Standing-queue
+// item 76 measured 44 of 134 served pages describing themselves identically;
+// the wrong-language half was repaired on 11-03 and the UNIQUENESS half was
+// not, so all sixteen region pages and all sixteen topic pages still shared
+// one sentence. A description is the one piece of copy we control in a search
+// result, and the likeliest landing page for a reader who has never heard of
+// us is a facet page rather than a home.
+//
+// DERIVED, never hand-written (2026-06-07: anything that must equal the
+// current article set is build-generated). The counts move with the corpus,
+// which is exactly why they are not forty-four pieces of prose: 32 facet
+// pages, 32 distinct strings, zero to maintain.
+// ---------------------------------------------------------------------------
+const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+const facetCountries = facet
+  ? new Set(listed.flatMap((p) => countriesOf(p as any))).size
+  : new Set(all.flatMap((p) => countriesOf(p as any))).size;
+const TAIL = 'read from named primary sources in English and Arabic.';
+const description = facet
+  ? facet.kind === 'country'
+    ? `Madār's ${plural(listed.length, 'piece', 'pieces')} on education in ${facet.key}: early-childhood and K-12, ${TAIL}`
+    : `Madār's ${plural(listed.length, 'piece', 'pieces')} ${facet.kind === 'region' ? 'from' : 'on'} ${facet.key}, across ${plural(facetCountries, 'country', 'countries')}: early-childhood and K-12 education, ${TAIL}`
+  : `Every Madār piece by region, topic and country: ${plural(all.length, 'piece', 'pieces')} across ${plural(facetCountries, 'country', 'countries')}, early-childhood and K-12 education, ${TAIL}`;
 const alternate = facet
   ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
   : { en: browsePath('en'), ar: browsePath('ar') };
@@ -100,7 +126,7 @@ const jsonLd = collectionJsonLd({
 });
 ---
 
-<Base title={title} lang="en" ogImage="/og/brand-card.png" alternate={alternate} jsonLd={jsonLd}>
+<Base title={title} description={description} lang="en" ogImage="/og/brand-card.png" alternate={alternate} jsonLd={jsonLd}>
   <article class="browse container">
     <header class="browse__head">
       <p class="kicker">

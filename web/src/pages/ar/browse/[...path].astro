@@ -5,6 +5,7 @@ import { withBase } from '../../../lib/urls';
 import { byDateThenSlug } from '../../../lib/order';
 import { collectionJsonLd } from '../../../lib/structuredData';
 import {
+  countriesOf,
   facetsFor,
   facetPath,
   browsePath,
@@ -71,6 +72,42 @@ const listed = facet
   : [];
 
 const title = facet ? `${labelAr(facet)} · تصفّح · مدار` : 'تصفّح · مدار';
+
+// ---------------------------------------------------------------------------
+// وصف خاص بكل وجه من أوجه التصفّح (النمو، 2026-11-05) — البند 76 في قائمة
+// العمل. صفحات المناطق الست عشرة وصفحات المحاور الست عشرة كانت تصف نفسها
+// بجملة واحدة؛ والوصف هو النص الوحيد الذي نملكه داخل نتيجة البحث.
+//
+// مشتقّ من المجموعة وقت البناء، لا مكتوب باليد (قاعدة 2026-06-07)، والأعداد
+// تتحرك مع المدونة.
+//
+// COMPOSED, NOT TRANSLATED — and the composition is why this is four branches
+// rather than one interpolation. **A derived count in Arabic is not one
+// construction.** Arabic number agreement takes `مادة واحدة` at one, the dual
+// `مادتان` at two, the plural genitive `N مواد` from three to ten, and the
+// accusative singular `N مادة` from eleven up; the same four shapes govern
+// `بلد`. An English template needs `n === 1`; an Arabic one needs all four, and
+// a template that interpolated a numeral into a single noun form would be
+// ungrammatical on most of the corpus. Arabic-Indic numerals via 'ar-EG', the
+// tag this edition uses on every other page (see the date formatter above).
+// ---------------------------------------------------------------------------
+const arNum = new Intl.NumberFormat('ar-EG');
+const countAr = (n: number, one: string, two: string, few: string, many: string) =>
+  n === 1 ? one
+  : n === 2 ? two
+  : n <= 10 ? `${arNum.format(n)} ${few}`
+  : `${arNum.format(n)} ${many}`;
+const piecesAr = (n: number) => countAr(n, 'مادة واحدة', 'مادتان', 'مواد', 'مادة');
+const countriesAr = (n: number) => countAr(n, 'بلد واحد', 'بلدان', 'بلدان', 'بلدًا');
+const facetCountries = facet
+  ? new Set(listed.flatMap((p) => countriesOf(p as any))).size
+  : new Set(all.flatMap((p) => countriesOf(p as any))).size;
+const TAIL_AR = 'مقروءة من مصادر أولية مُسمّاة، بالعربية والإنجليزية.';
+const description = facet
+  ? facet.kind === 'country'
+    ? `${piecesAr(listed.length)} في مدار عن التعليم في ${labelAr(facet)}: التعليم المبكر والتعليم العام، ${TAIL_AR}`
+    : `${piecesAr(listed.length)} في مدار ${facet.kind === 'region' ? 'من' : 'عن'} ${labelAr(facet)}، في ${countriesAr(facetCountries)}: التعليم المبكر والتعليم العام، ${TAIL_AR}`
+  : `كل مواد مدار مرتّبة بالمنطقة والمحور والبلد: ${piecesAr(all.length)} في ${countriesAr(facetCountries)}، التعليم المبكر والتعليم العام، ${TAIL_AR}`;
 const alternate = facet
   ? { en: facetPath(facet, 'en'), ar: facetPath(facet, 'ar') }
   : { en: browsePath('en'), ar: browsePath('ar') };
@@ -104,7 +141,7 @@ const jsonLd = collectionJsonLd({
 });
 ---
 
-<Base title={title} lang="ar" ogImage="/og/brand-card.png" alternate={alternate} jsonLd={jsonLd}>
+<Base title={title} description={description} lang="ar" ogImage="/og/brand-card.png" alternate={alternate} jsonLd={jsonLd}>
   <article class="browse container" lang="ar" dir="rtl">
     <header class="browse__head">
       <p class="kicker">
