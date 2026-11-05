@@ -5,13 +5,21 @@
 **Recon of record:** `content-drafts/recon/2026-10-18-bahrain-bqa-five-cycles-register.md`,
 **as corrected twice** by `content-drafts/recon/2026-10-22-bahrain-bqa-test1-recount.md`.
 **Working slug:** `2026-10-23-bahrain-bqa-five-cycles`
-**Status:** **APPROVED on the frame and all five tests, 2026-11-02** (`content-drafts/verdicts/2026-11-02-bahrain-bqa-five-cycles.md`), with the verdict's two binding corrections applied here in the same commit. **No slot claimed. `approved: false` stands, and the FLAG is blocked on founder issue #13** — Arabic composition, Arabic gate, Verifier verdict, still and og card all still owed.
+**Status:** **CORRECTED 2026-11-05** on Editor disposition 2 — the four name-keyed populations are
+struck from both editions and hedge 3 is restated without a denominator, because the Arabic Content
+Creator's independent read of the register found that three of the four are different numbers in the
+Authority's Arabic column. The per-cycle distribution was re-counted from the Arabic bytes the same
+morning and **agrees cell for cell.** · **APPROVED on the frame and all five tests, 2026-11-02** (`content-drafts/verdicts/2026-11-02-bahrain-bqa-five-cycles.md`), with the verdict's two binding corrections applied here in the same commit. **No slot claimed. `approved: false` stands, and the FLAG is blocked on founder issue #13** — Arabic composition, Arabic gate, Verifier verdict, still and og card all still owed.
 
 ---
 
 ## HAND-OFF LINES — the Editor returns this unread if any is missing
 
-**1 · Caps (2026-07-27).** `dek: 197/200 · title: 47/100` (code points, tashkeel +1 each; counted at
+**1 · Caps (2026-07-27).** **Re-counted 2026-11-05 after the disposition-2 rewrite: `dek: 186/200 ·
+title: 47/100`** — the dek's closing clause had promised *the distribution moves more than the schools
+do*, and after disposition 2 this piece cannot measure how much the schools move, so the clause is
+replaced by the register's own second-place verdict. *A correction to a body is a correction to every
+capped string that summarises it.* Previously `dek: 197/200 · title: 47/100` (code points, tashkeel +1 each; counted at
 compose, not at the gate). **And the ruler earned its place this morning: the first dek composed came
 out at 225 and was cut before anything left the drafter's hand.** Three times (Korea 06-17, Oman
 06-20, Netherlands 07-22) this cap was first measured at the build and each time it cost a cycle; the
@@ -114,11 +122,20 @@ nobody's memory of what it was; the Authority's own host is the register.
 
 No sentence in either edition may use one of these as another.
 
-* **245** schools appear in the register · **242** have ever been *graded* · **76** appear in all five
-  cycles counting monitoring visits · **52** have been *reviewed* in all five.
-* Cycle coverage over the 242: **52** in five, **124** in four, **22** in three, **15** in two,
-  **29** in one. *The modal school has been reviewed in four cycles, not five.* **The five cycles are
-  not a panel** and the draft never writes them as one.
+* ~~**245** schools appear in the register · **242** have ever been *graded* · **76** appear in all
+  five cycles counting monitoring visits · **52** have been *reviewed* in all five.~~
+* ~~Cycle coverage over the 242: **52** in five, **124** in four, **22** in three, **15** in two,
+  **29** in one. *The modal school has been reviewed in four cycles, not five.*~~
+* **STRUCK FROM BOTH EDITIONS 2026-11-05, Editor disposition 2**
+  (`content-drafts/verdicts/2026-11-05-bahrain-bqa-five-cycles-dispositions.md`). Every figure on the
+  two lines above is **keyed on the school NAME, and the register carries no identifier**: the
+  Authority's Arabic column of the same 1,022 rows gives **248 / 245 / 75 / 52** against the English
+  column's **245 / 242 / 76 / 52**, and normalising the Arabic until the totals agree leaves the
+  partition disagreeing (**52 / 126 / 22 / 10 / 32** against **52 / 124 / 22 / 15 / 29**). Found by the
+  Arabic Content Creator's independent read, `content-drafts/recon/2026-11-05-bahrain-bqa-arabic-register-read.md`.
+  **The verdicts in this register are countable and the schools are not** — which is now a paragraph of
+  the piece rather than four figures in it. **The five cycles are not a panel** and the draft never
+  writes them as one; that claim is unaffected, because the numbers were never what made it true.
 * **1,022 rows = 882 `Review` + 140 monitoring visits**, the latter in **three** row types
   (`Monitoring Visit` 45, `Monitoring Visit 1` 61, `Monitoring Visit 2` 34).
 * **The four numbered grades appear on `Review` rows only**, confirmed again today: the 140 monitoring
@@ -155,7 +172,8 @@ only cycle in seventeen years in which `(4) Inadequate` is the **modal** verdict
    date had passed (#117).**
 2. **C4 is the smallest cycle (128) and the longest (4.5 years)** — it spans the pandemic closures.
    The draft states the span and does not explain the dip, because the register does not say why.
-3. **Not a panel** — 52 of 242. A movement between cycles is a movement in *who was reviewed* as well
+3. **Not a panel** — stated without a denominator from 2026-11-05, because the register has no school
+   key (Editor disposition 2). A movement between cycles is a movement in *who was reviewed* as well
    as in *how they did*.
 4. **The ruler may not be constant.** The Authority names a *Schools Reviews Framework 2024* for the
    current batch; the four grade labels are unchanged across all five cycles, and whether the bar
@@ -169,7 +187,7 @@ only cycle in seventeen years in which `(4) Inadequate` is the **modal** verdict
 
 ```yaml
 title: "Seventeen years of one regulator's own verdicts"
-dek: "Bahrain's quality authority has graded its government schools by name since 2009. Over all 882 reviews its most common verdict is Satisfactory — and the distribution moves more than the schools do."
+dek: "Bahrain's quality authority has graded its government schools by name since 2009. Over all 882 reviews its most common verdict is Satisfactory — and its second most common is Inadequate."
 date: 2026-10-23
 edition: HELD — see verdict correction 2; there is no Edition 06 and the registry exports hasOpenEdition false. Blocked on founder issue #13, default 2026-11-08. Do NOT guess this field.
 country: Bahrain
@@ -201,8 +219,9 @@ from that register, 150 days later.
 The file holds 1,022 rows. Eight hundred and eighty-two of them are reviews; the remaining 140 are
 monitoring visits, which are a different instrument on a different scale and are set aside here after
 this sentence. The reviews run across five cycles, the first published between June 2009 and May
-2011, the fifth running from July 2024 to the register's most recent publication, April 2026. Two hundred and forty-five schools appear in
-the register; 242 of them have ever been graded. Counted over all 882 reviews, the Authority's own
+2011, the fifth running from July 2024 to the register's most recent publication, April 2026. Each row
+carries a cycle, a publication date, a review type, a school name and a grade — five fields, and **no
+school identifier**, which turns out to matter and is returned to below. Counted over all 882 reviews, the Authority's own
 verdict on its own government schools divides like this: `(3) Satisfactory` 350, `(4) Inadequate`
 245, `(2) Good` 202, `(1) Outstanding` 85.
 
@@ -235,11 +254,25 @@ in which Bahrain's schools, like everyone's, closed and reopened. The register r
 Authority found; it does not say why, and neither will we.
 
 The third thing is a population boundary, and it is the one most likely to be got wrong by anybody
-who downloads this file. **The five cycles are not a panel.** Of the 242 schools ever reviewed, 52
-have been reviewed in all five; 124 in four, 22 in three, 15 in two, and 29 exactly once. The modal
-school in this register appears in four cycles, not five. So a movement between two cycles is partly a
-movement in which schools were looked at, and a sentence beginning *"the same schools, five times"*
-would be false for 190 of the 242.
+who downloads this file. **The five cycles are not a panel.** A school that appears in one cycle does
+not have to appear in the next, and plenty do not: the cycles carry 202, 206, 207, 128 and 139
+reviews, so whichever way the schools were chosen, they were not the same schools five times. A
+movement between two cycles is therefore partly a movement in which schools were looked at — and
+anybody who wants to say *how much* of it is will find that this register cannot tell them, for a
+reason worth a paragraph of its own.
+
+The file has no school identifier. It has a school *name*, and a name is not a key. The Authority
+publishes this table in both of the Kingdom's working languages, row for row, and the two columns do
+not agree on the names: the Arabic column writes eleven schools two ways each — with and without the
+word *madrasa*, with the hamza on the alif and without it, *Abdulrahman* as one word and as two — and
+the English column writes six schools two or three ways each, *Aminah* and *Aamna* and *Amina* Bint
+Wahab among them. Count the distinct names and the English column gives 245 and the Arabic 248. Make
+the two totals agree by normalising the Arabic spelling and they still disagree about which rows
+belong to which school. One December 2024 verdict is attached to the girls' school in the English
+column and to the boys' school in the Arabic. So the **verdicts** in this register are countable —
+882 of them, and every figure above is one of those counts — and the **schools** are not. That is a
+fact about the file and not a complaint about the Authority, which has published more than almost
+anybody; it is the first thing to know before counting, and nobody who downloads this file is told it.
 
 The fourth is about the ruler. The four grade labels are identical in all five cycles — the file
 prints them in both languages in the same row, `(1) Outstanding` / `(1) ممتاز`, `(2) Good` / `(2)
@@ -280,9 +313,11 @@ can settle, because the register that would settle it is one nobody publishes an
 
 1. **`data.gov.bh` — *Results of Government Schools Reviews*, CSV export** (read in served bytes
    2026-10-23, HTTP 200, sha256 `d6b62bda651083dc…`, 1,022 rows and every count below unchanged across FOUR readings, 2026-10-18 → 2026-11-02, the last at the Editor's verdict; the export's own byte length moved from 183,242 to **183,191** in that window, outside every field this piece reads — so the stability claimed here is of the COUNTS and not of the bytes (#112 turned on our own annotation);
-   1,022 rows — 882 `Review` and 140 monitoring visits across three row types; 245
-   schools in the register and 242 ever graded; the four numbered grades on `Review` rows only; cycle
-   coverage over the 242 reviewed: 52 in five cycles, 124 in four, 22 in three, 15 in two, 29 in one;
+   1,022 rows — 882 `Review` and 140 monitoring visits across three row types; the four numbered
+   grades on `Review` rows only; **five fields and no school identifier, the name being the only
+   join key the file offers and the Authority's Arabic and English columns of these same rows not
+   agreeing on it** — read in both languages 2026-11-05, one export per language from the portal's own
+   v2.1 endpoint, row order identical on cycle and date;
    grade totals over the 882 reviews: `(3) Satisfactory` 350, `(4) Inadequate` 245, `(2) Good` 202,
    `(1) Outstanding` 85; per-cycle counts as tabulated above; publication dates 2009-06 → 2026-04)
    — `https://www.data.gov.bh/explore/dataset/01-results-of-government-schools-reviews-1/`
@@ -319,6 +354,14 @@ defect settled by re-opening the register, never by preferring the English.
 Arabic without a construction the Arabic Editor will not pass, that is a stated **park condition** and
 it fires — it is not a thing to write around.
 
+**WHAT HAPPENED, 2026-11-05.** The condition as written **did not** fire: the four populations can be
+held apart in Arabic without strain. A condition on the same four numbers that nobody had written down
+fired instead — **three of them are different numbers in the Arabic column**, because the register
+keys on a name and has no identifier. The populations are struck from both editions (Editor
+disposition 2) and the per-cycle distribution is **confirmed cell for cell by the independent Arabic
+count**. *The specification was not the scope; the instruction to read the register rather than the
+draft is what found it.*
+
 ---
 
 ## WHAT THIS DRAFT DOES NOT CLAIM, named for the Editor and the Verifier
@@ -326,8 +369,8 @@ it fires — it is not a thing to write around.
 * **No school is named by its grade.** The register names them; the piece does not (Test 4).
 * **No causal claim** about cycle four, the pandemic, or the 2024 framework.
 * **No improvement claim.** `(1) Outstanding` rising from 3.5% to 16.5% is **not** written as
-  improvement anywhere, because the floor is unstated and the panel is 52 of 242 — *improvement never
-  without its floor*.
+  improvement anywhere, because the floor is unstated and the five cycles are not a panel —
+  *improvement never without its floor*.
 * **Nothing the predecessor reported is re-reported** — the 76/23/22/19 counts, the 24-improved and
   45-held movement, Dr. Maryam Hasan Mustafa's quotation and the publish-by-name posture are all
   established there and are referred to, not re-run.
