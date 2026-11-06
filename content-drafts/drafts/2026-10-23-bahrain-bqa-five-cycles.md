@@ -354,6 +354,24 @@ defect settled by re-opening the register, never by preferring the English.
 Arabic without a construction the Arabic Editor will not pass, that is a stated **park condition** and
 it fires — it is not a thing to write around.
 
+**WHAT HAPPENED, 2026-11-06 — the read moved to sources 3 and 4 and stopped the composition a second
+time, on the CITATION SET.** Both first-party PDFs are published by the Authority in **Arabic**, on its
+Arabic publications index, at paths the English index does not link — `Performance-Report-24-25-AR.pdf`
+(5,091,880 bytes) and `2026/08/Annual-report-2025-Aug-13-2026-3-Arabic-.pdf` (12,967,817). The Arabic
+edition of this piece cites the **Arabic** editions, which is #101's forced rendering applied to a
+*source* for the first time in 44 pairs. **The two editions of the 24–25 report AGREE in every figure
+checked** — item 81's first answer and a negative one — **and the second channel paid anyway**: our
+extraction reads the English edition *worse* (80 cmap glyphs against 207) and drops the Good label and
+the Inadequate percentage, so the complete government-batch distribution **26 / 24 / 30 / 20** was
+recovered from the Arabic edition and checked back against the English fragments and its own sums.
+**Also found and deliberately kept out of both editions:** a **newer** report, AY **2025–2026**, on the
+Arabic index only, unreadable here (zero `/ToUnicode` CMaps) and carrying a diagonal grey `DRAFT`
+watermark on one of its 39 pages. Full read:
+`content-drafts/recon/2026-11-06-bahrain-bqa-arabic-register-second-read.md`. **One question is routed
+to the Editor** — whether the sentence that prints the batch's 26% should state the batch's whole
+distribution *as the batch's*; this desk recommends the clause and recommends **against** any
+comparison with the cycle percentages, hand-off line 2 binding.
+
 **WHAT HAPPENED, 2026-11-05.** The condition as written **did not** fire: the four populations can be
 held apart in Arabic without strain. A condition on the same four numbers that nobody had written down
 fired instead — **three of them are different numbers in the Arabic column**, because the register
