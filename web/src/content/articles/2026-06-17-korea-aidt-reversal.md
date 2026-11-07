@@ -13,6 +13,9 @@ related:
   - 2026-05-31-indonesia-permen-13-coding-ai
   - 2026-05-31-qatar-humanity-spark-strategy
   - 2026-06-19-philippines-mtb-mle-reversal
+  - 2026-07-07-nz-ncea-corequisite
+  - 2026-07-07-singapore-psle-sbb
+
 contains_composites: false
 arabicVersion: 2026-06-17-korea-aidt-reversal
 sources:

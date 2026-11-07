@@ -13,6 +13,9 @@ related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-07-04-kenya-cbe-grade10-pathways
   - 2026-09-14-africa-best-system-ruler
+  - 2026-08-28-sierra-leone-sleic-outcomes
+  - 2026-09-01-sudan-cant-wait-to-learn
+
 contains_composites: false
 arabicVersion: 2026-08-25-zambia-free-education-act
 sources:

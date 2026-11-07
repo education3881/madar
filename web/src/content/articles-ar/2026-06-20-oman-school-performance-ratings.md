@@ -12,6 +12,10 @@ related:
   - 2026-05-26-bahrain-bqa-public-grades
   - 2026-06-17-korea-aidt-reversal
   - 2026-07-28-england-report-cards-first-term
+  - 2026-07-07-chile-simce-return
+  - 2026-07-07-us-naep-honesty-gap
+  - 2026-07-16-australia-naplan-reset
+
 contains_composites: false
 englishVersion: 2026-06-20-oman-school-performance-ratings
 sources:

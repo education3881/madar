@@ -12,6 +12,9 @@ related:
   - 2026-06-25-brazil-crianca-alfabetizada
   - 2026-06-20-oman-school-performance-ratings
   - 2026-07-07-netherlands-doorstroomtoets
+  - 2026-07-16-australia-naplan-reset
+  - 2026-07-28-england-report-cards-first-term
+
 contains_composites: false
 englishVersion: 2026-07-07-us-naep-honesty-gap
 sources:

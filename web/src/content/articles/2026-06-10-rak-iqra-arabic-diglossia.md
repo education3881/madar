@@ -12,6 +12,9 @@ related:
   - 2026-05-28-kuwait-ccet-arabic-tests
   - 2026-05-27-uae-madrasa-tiktok
   - 2026-06-08-sierra-leone-tsc-teacher-matching
+  - 2026-06-18-egypt-npda-arabic-literacy
+  - 2026-06-19-philippines-mtb-mle-reversal
+
 contains_composites: false
 arabicVersion: 2026-06-10-rak-iqra-arabic-diglossia
 sources:
