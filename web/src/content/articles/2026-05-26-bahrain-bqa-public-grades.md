@@ -52,6 +52,6 @@ A note on the framing the BQA uses in its own communications. The phrase that re
 
 What does a state commit to when it puts seventy-six named verdicts in public? It commits to the next seventy-six. It commits to a cycle in which a verdict that goes in the wrong direction the year after next will be on the same website, under the same school's name, with the same publication date. That is the part of the posture that is not in the press release. It is the part the document, taken seriously, asks the reader to take seriously.
 
-The 2024–2025 report sits, today, at the URL in the first paragraph above. The 2025–2026 report will appear in roughly twelve months.
+The 2024–2025 report sits, today, at the URL in the first paragraph above. The report for the academic year 2025–2026 arrived a good deal sooner than the roughly twelve months this piece estimated: the Authority's Arabic publications index serves it at an upload path dated July 2026, read there on 7 November 2026, and the Authority's English index does not link it.
 
 — *The Editors*

@@ -5,7 +5,10 @@
 **Recon of record:** `content-drafts/recon/2026-10-18-bahrain-bqa-five-cycles-register.md`,
 **as corrected twice** by `content-drafts/recon/2026-10-22-bahrain-bqa-test1-recount.md`.
 **Working slug:** `2026-10-23-bahrain-bqa-five-cycles`
-**Status:** **CORRECTED 2026-11-05** on Editor disposition 2 — the four name-keyed populations are
+**Status:** **CORRECTED 2026-11-07** on Editor disposition 3 (`content-drafts/verdicts/2026-11-07-bahrain-bqa-five-cycles-disposition-3.md`)
+— C4, the 76-school batch's whole four-grade shape (26 / 24 / 30 / 20) now stated **as the batch's**,
+with no cycle percentage in the same sentence or the next; C5, annotation 4 now says the shape was read
+in the **Arabic** edition of the report this piece cites in English, and why. · **CORRECTED 2026-11-05** on Editor disposition 2 — the four name-keyed populations are
 struck from both editions and hedge 3 is restated without a denominator, because the Arabic Content
 Creator's independent read of the register found that three of the four are different numbers in the
 Authority's Arabic column. The per-cycle distribution was re-counted from the Arabic bytes the same
@@ -288,7 +291,8 @@ There is one more figure in the Authority's own documents, and setting it beside
 where a careless reading would go wrong. In its Annual Report 2025 the BQA records that *"22
 government schools and 7 private schools received Gold Seals for outstanding performance."* In the
 performance report for the academic year 2024–2025, a batch of 76 government schools was reviewed
-under the 2024 framework, and 26% of that batch was rated at the top grade. Those two numbers come
+under the 2024 framework, and the Authority prints that batch's whole four-grade shape: 26% at `(1)
+Outstanding`, 24% at `(2) Good`, 30% at `(3) Satisfactory`, 20% at `(4) Inadequate`. Those two numbers come
 from two different clocks — a calendar year of recognitions, an academic year's cohort of reviews —
 and the 26% is a share of 76 schools, not of the 139 reviews in cycle five, which run 16.5% at the top
 grade over a cycle that is not finished. Three first-party figures about roughly the same period that
@@ -331,9 +335,22 @@ can settle, because the register that would settle it is one nobody publishes an
    Authority's own instrument and its own words)
    — `https://www.bqa.gov.bh/wp-content/uploads/2026/06/Annual-report-2025-.pdf`
 4. **Education & Training Quality Authority — Performance Report 2024–2025** (read in served bytes
-   2026-10-23, HTTP 200, unchanged across two prior readings: the batch cohort of 76 government schools
-   reviewed under the Schools Reviews Framework 2024, 26% at the top grade — **academic year 2024-25,
-   a batch, not a cycle**)
+   2026-10-23, HTTP 200, 4,243,331 bytes, unchanged across two prior readings: the batch cohort of 76
+   government schools reviewed under the Schools Reviews Framework 2024 — **academic year 2024-25, a
+   batch, not a cycle**. **The batch's four-grade shape — 26% `(1) Outstanding`, 24% `(2) Good`, 30%
+   `(3) Satisfactory`, 20% `(4) Inadequate` — was read in the ARABIC edition of this same report**,
+   `https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-AR.pdf`, 5,091,880
+   bytes, HTTP 200, sha256 `33eb9b6ee34d1f9d…`, read 2026-11-06, `Last-Modified` 2025-09-01 — the same
+   publication window as the English edition, not a later revision. The reason is ours and not the
+   Authority's: this publication's own extraction of the **English** edition carries 80 cmap glyphs
+   against the Arabic edition's 207 and returns the sentence as *"26% of government schools received
+   an Outstrating, 24% , 30% Satisfactory, and 2."* — **the `Good` label and the `Inadequate`
+   percentage are absent from what our client can read of the document this piece cites.** The four
+   percentages were then checked twice: against the English edition's surviving fragments, which carry
+   26, 24 and 30 in that order, and against their own sum, which closes at 100. The Authority's
+   private-school batch in the same sentence reads 26 / 22 / 48 / 4, the 4% being the single school the
+   sentence itself names. Both editions of this register are cited here; the figure is attributed to
+   the edition it was read in)
    — `https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-EN.pdf`
 5. **Madār — *Bahrain grades its schools, by name, in public*, 2026-05-26** (the predecessor, whose
    closing question this piece answers; quoted verbatim from the served page, read 2026-10-23)
