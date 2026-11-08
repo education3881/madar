@@ -19,7 +19,7 @@ related:
 contains_composites: false
 arabicVersion: 2026-06-20-oman-school-performance-ratings
 sources:
-  - title: "Times of Oman — 'HH Sayyid Theyazin launches National System for Evaluating School Performance' (the launch under the patronage of HH Sayyid Theyazin bin Haitham, organised by OAAAQA; the system's purpose and scale)"
+  - title: "Times of Oman — 'HH Sayyid Theyazin launches National System for Evaluating School Performance' (the launch under the patronage of HH Sayyid Theyazin bin Haitham, organised by OAAAQA; the system's purpose and scale. The register's own form is 'HH Sayyid Theyazin bin Haitham Al Said, Minister of Culture, Sports and Youth' — 'Sayyid' and 'bin' are both masculine forms printed by the register, which is where the Arabic edition's السيد and بن were read from, rather than from the sound of the name. Read 2026-11-08)"
     url: "https://timesofoman.com/article/152660-hh-sayyid-theyazin-launches-national-system-for-evaluating-school-performance"
   - title: "Muscat Daily (2 Dec 2024) — 'Landmark school evaluation system set to transform education in Oman' (launch date 2 December 2024; the multi-level scale; low-rated schools to be notified and supported to improve)"
     url: "https://www.muscatdaily.com/2024/12/02/landmark-school-evaluation-system-set-to-transform-education-in-oman/"
@@ -33,7 +33,7 @@ sources:
     url: "https://www.oaaaqa.gov.om/public/external-activities/cseqa"
   - title: "ITV News (1 Sep 2024) — 'One-word Ofsted judgments for schools scrapped' (England's government scraps single headline grades from 2 September 2024, following the death of head teacher Ruth Perry and a coroner's finding; schools to move to fuller report cards)"
     url: "https://www.itv.com/news/2024-09-01/one-word-ofsted-judgments-for-schools-scrapped-by-government"
-  - title: "Gov.om — Oman Authority for Quality Assurance of Education (the issuing body and its mandate; the page prints the shorter name as its title and the former, longer name in its management listing, and says nothing about a rename)"
+  - title: "Gov.om — Oman Authority for Quality Assurance of Education (the issuing body and its mandate; the page prints the shorter name as its title and the former, longer name in its management listing, and says nothing about a rename. The same management listing prints 'H.E Dr Jokha bint Abdullah Al Shukaili' against the role of Chief Executive Officer — 'bint' is a feminine form printed by the register, which is where the Arabic edition's الدكتورة and بنت were read from. Read 2026-11-08. The listing also prints 'Chairman of the board' against 'H.E Prof Rahma bint Ibrahim Al Mahrooqi', which is why a role noun is not read as a gender marker on either side)"
     url: "https://gov.om/en/authority-for-academic-accreditation-and-quality-assurance-of-education"
   - title: "Royal Decree 12/2026, issued 22 Rajab 1447 / 12 January 2026, Official Gazette 1630a of 13 January 2026 — Article I renames the Oman Authority for Academic Accreditation and Quality Assurance of Education as the Oman Authority for Quality Assurance of Education; Articles III and IV transfer professional licences and the national and international studies to it from the Ministry of Education, with the divisions' officers"
     url: "https://decree.om/2026/rd20260012/"

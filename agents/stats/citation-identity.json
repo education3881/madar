@@ -1,5 +1,5 @@
 {
- "observed": "2026-10-31",
+ "observed": "2026-11-08",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -734,6 +734,32 @@
     }
    ],
    "state": "script-mismatch"
+  },
+  {
+   "url": "https://gov.om/en/authority-for-academic-accreditation-and-quality-assurance-of-education",
+   "pieces": [
+    "2026-06-20-oman-school-performance-ratings:en"
+   ],
+   "observed": "2026-11-08",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html;charset=utf-8",
+   "written_in": "latin:4323",
+   "tokens": [
+    {
+     "token": "H.E Dr Jokha bint Abdullah Al Shukaili",
+     "verdict": "found"
+    },
+    {
+     "token": "Chairman of the board",
+     "verdict": "found"
+    },
+    {
+     "token": "H.E Prof Rahma bint Ibrahim Al Mahrooqi",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://hsrc.ac.za/press-releases/eee/department-of-basic-education-and-hsrc-release-timss-2019-grade-9-study/",
@@ -1690,14 +1716,18 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-08",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3450",
+   "written_in": "latin:3461",
    "tokens": [
     {
      "token": "HH Sayyid Theyazin launches National System for Evaluating School Performance",
+     "verdict": "found"
+    },
+    {
+     "token": "HH Sayyid Theyazin bin Haitham Al Said, Minister of Culture, Sports and Youth",
      "verdict": "found"
     },
     {
@@ -2768,14 +2798,26 @@
     "2026-05-27-uae-madrasa-tiktok:en",
     "2026-05-27-uae-madrasa-tiktok:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-08",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7524",
+   "written_in": "latin:7411",
    "tokens": [
     {
      "token": "Madrasa, TikTok to launch STEM feed in UAE showcasing largest Arabic educational library",
+     "verdict": "found"
+    },
+    {
+     "token": "Dr. Waleed Al Ali",
+     "verdict": "found"
+    },
+    {
+     "token": "Dr. Al Ali said",
+     "verdict": "found"
+    },
+    {
+     "token": "Dr. Al Ali noted",
      "verdict": "found"
     },
     {
@@ -4186,6 +4228,36 @@
    "ctype": ""
   },
   {
+   "url": "https://www.stomp.sg/trending-now/latest-batch-24-schools-adopt-full-subject-based-banding-2024",
+   "pieces": [
+    "2026-07-07-singapore-psle-sbb:en"
+   ],
+   "observed": "2026-11-08",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4630",
+   "tokens": [
+    {
+     "token": "Mrs Grace Chua, principal of Pasir Ris Secondary School",
+     "verdict": "found"
+    },
+    {
+     "token": "But she noted that students are no longer grouping themselves by academic ability",
+     "verdict": "found"
+    },
+    {
+     "token": "Mr Mohamed Ashiq",
+     "verdict": "found"
+    },
+    {
+     "token": "year head of upper secondary level",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://www.tandfonline.com/doi/full/10.1080/19439342.2020.1829000",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
@@ -4370,6 +4442,7 @@
   {
    "url": "https://www.undp.org/arab-states/press-releases/moslawis-celebrate-reopening-mosul-universitys-central-library-and-ninewa-federal-court-appeal",
    "pieces": [
+    "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
    "observed": "2026-10-26",

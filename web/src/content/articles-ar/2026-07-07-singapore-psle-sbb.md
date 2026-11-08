@@ -34,7 +34,7 @@ sources:
     url: "https://www.moe.gov.sg/news/speeches/20250211-speech-by-minister-chan-chun-sing-at-the-moe-x-nie-x-ips-lecture-from-foundations-to-frontiers-our-education-journey"
   - title: "مجلس الامتحانات والتقييم السنغافوري (Singapore Examinations and Assessment Board) — صفحة PSLE (الجهةُ التي تُجري الامتحان، وهي السجلُّ المقروء الذي يطبع الاسمَ كاملًا: «The Primary School Leaving Examination (PSLE) is an annual national examination that is taken by candidates at the end of their final year of primary school education, in Singapore.» قُرئ في النصّ المخدوم في 2026-10-29؛ صفحاتُ الوزارة نفسِها غيرُ مقروءةٍ بأيِّ عميلٍ متاحٍ هنا، فالاسمُ مأخوذٌ من المجلس الذي يضع الامتحان لا من الوزارة التي وضعت السياسة)"
     url: "https://www.seab.gov.sg/psle/"
-  - title: "ذا ستريتس تايمز (تانغ يي تشينغ)، ٩ يناير ٢٠٢٥، مُعادُ نشرِه على STOMP — الدفعةُ الأخيرة من ٢٤ مدرسةً تعتمد التصنيف الكامل القائم على المواد (المديرةُ غريس تشوا ورئيسُ السنة الدراسية محمد عاشق من مدرسة باسير ريس الثانوية؛ الحصصُ الزمنيةُ من عشرين دقيقة وإعادةُ تحجيم الصفوف)"
+  - title: "ذا ستريتس تايمز (تانغ يي تشينغ)، ٩ يناير ٢٠٢٥، مُعادُ نشرِه على STOMP — الدفعةُ الأخيرة من ٢٤ مدرسةً تعتمد التصنيف الكامل القائم على المواد (المديرةُ غريس تشوا ورئيسُ السنة الدراسية محمد عاشق من مدرسة باسير ريس الثانوية؛ يطبع السجلُّ الاسمَين بنفسه ‏Mrs Grace Chua, principal of Pasir Ris Secondary School‏ — ثُمَّ بعد جملتَين ‏But she noted‏ — و‏Mr Mohamed Ashiq, the school's year head of upper secondary level‏، ومنهما قرأت هذه الطبعةُ «السيدة» و«السيد»، لا من الاسمَين؛ قُرئ 2026-11-08؛ الحصصُ الزمنيةُ من عشرين دقيقة وإعادةُ تحجيم الصفوف)"
     url: "https://www.stomp.sg/trending-now/latest-batch-24-schools-adopt-full-subject-based-banding-2024"
 hero:
   src: "/stills/2026-07-07-singapore-psle-sbb.svg"
