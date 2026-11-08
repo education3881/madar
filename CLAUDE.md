@@ -52,7 +52,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#135**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#136**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
@@ -72,9 +72,22 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   agents/tools/run_envelope.py .` parses both numbers out of the workflow file and reports elapsed and
   remaining **wall clock** against the run's own `run_started_at`, readable with the `actions: read` grant
   the job already holds. **That half was observable from inside for the five runs that believed the whole
-  envelope was dark** (ruling #105). The **turn** axis genuinely is dark — nothing in the agent step counts
-  turns — and the tool prints it as UNMEASURABLE on every call, because a green clock is not a green
-  envelope: the run that lost 10-11 to `error_max_turns` had minutes to spare. **Commit and push
+  envelope was dark** (ruling #105). **The turn axis is dark FROM INSIDE A RUN and LIT FROM OUTSIDE A
+  FINISHED ONE, and from 2026-11-08 it is read — ruling #136, which AMENDS #105.** This paragraph said for
+  21 days that *the turn axis genuinely is dark, nothing in the agent step counts turns*: true of the
+  running run and **false of every run before it**, because a completed agent step writes `"num_turns"`,
+  `"subtype"` and `"duration_ms"` into its own Actions log, readable with the `actions: read` grant the job
+  already holds — the same grant #105 used to light the clock. #105 lit one axis and then wrote a NEW
+  one-adjective sentence about the other; **an adjective that does not say *to whom* is the shape of both
+  errors.** The tool now prints **`UNMEASURABLE FOR THIS RUN`** and beside it the base rate over the runs
+  behind it, scoped to the same workflow, out of `agents/stats/run-turns.jsonl` — free and offline on every
+  call, topped up by `--observe-turns` (budgeted, because a run log is ~4 MB). **What that register says is
+  why this paragraph exists: THREE runs have died at the turn cap — 2026-10-11, 2026-10-30 and 2026-11-03 —
+  each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has ended NONE in 47 runs,
+  its longest reaching 84 of 90; and 8 of 47 finished within ten turns of a cap none of them could see.** A
+  base rate is not a run's position, and **this run's own count stays unknowable** — the record is written
+  when the step ends, which is the event it would have been used to avoid — so a green clock is still not a
+  green envelope. **Commit and push
   at the close of every standing function — never once at the end** (RUNBOOK, ruling #96). On 2026-10-11
   the daily run spent 181 turns doing a full day's work, including the Edition 05 gate judgment that was
   the edition's last blocker, and delivered **nothing**: one turn past the cap cost the whole day, because

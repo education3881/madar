@@ -235,6 +235,171 @@ def _parse_iso(stamp: str):
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
+TURNS_REGISTER = Path("agents/stats/run-turns.jsonl")
+
+# THE TURN AXIS IS DARK FROM INSIDE A RUN AND LIT FROM OUTSIDE ONE (ruling #136).
+#
+# #105 found half this envelope observable and said the other half was not. That
+# was right about THIS run and wrong about every previous one. A completed run's
+# agent step writes a final result record into its own Actions log carrying
+# `"num_turns": N` and `"subtype"`, and that log is readable with the
+# `actions: read` grant the job already holds — so the number this run cannot
+# know about itself is on record for all 47 runs before it. Same move as #128:
+# no run can observe its own publication, so each run observes the previous
+# one's. Here no run can count its own turns, so each run reads the ones behind
+# it.
+#
+# WHAT THIS BUYS AND WHAT IT DOES NOT. It does not tell a run its position; a
+# base rate is not a measurement of you. It tells a run the SHAPE of the cap it
+# is working inside, which is what a planning decision actually needs and what
+# `UNMEASURABLE` withheld for 21 days while three runs died at it.
+#
+# COST, because this is called at every function close. The read is free: the
+# register is a file. Only `--observe-turns` touches the network, and it is
+# BUDGETED — one log zip is ~4 MB, so a run tops the register up by a few and
+# never backfills. Same split as #89 and #111: the expensive half writes the
+# chain of memory, the cheap half reads it.
+def read_turns(root: Path, workflow: str | None):
+    path = root / TURNS_REGISTER
+    rows = []
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rows.append(json.loads(line))
+            except ValueError:
+                continue
+    if workflow:
+        rows = [r for r in rows if r.get("workflow") == workflow]
+    return [r for r in rows if isinstance(r.get("num_turns"), int)]
+
+
+def turn_base_rate(rows, cap, timeout_minutes=None):
+    """What the cap has done to the runs on record. Never a claim about this one.
+
+    EVERY FIGURE HERE IS DERIVED FROM `rows`, and that sentence is the whole
+    discipline of this tool rather than a nicety. The first draft of this
+    function printed `the clock has never killed a run; this axis has killed
+    three` and `35 to 50 min of 90 unspent` as PROSE — two literals true of the
+    47 runs on record on 2026-11-08 — and a synthetic two-row register in the
+    proof harness printed `1 hit the cap` directly above `this axis has killed
+    three`. That is precisely the defect the 2026-11-01 review found in this
+    same file: *a hardcoded literal inside `run_envelope.py`, the instrument
+    built on the principle that recording a number is not measuring it.* Found
+    by the bite, one reading after writing it.
+    """
+    if not rows:
+        return None
+    vals = sorted(r["num_turns"] for r in rows)
+    n = len(vals)
+    med = vals[n // 2] if n % 2 else (vals[n // 2 - 1] + vals[n // 2]) / 2
+    at_cap = [r for r in rows if cap is not None and r["num_turns"] >= cap]
+    near = [r for r in rows if cap is not None and cap - 10 <= r["num_turns"] < cap]
+    # How much wall clock the cap-killed runs had left, derived from their own
+    # recorded durations against the timeout parsed from the workflow file.
+    spare = [timeout_minutes - r["duration_min"]
+             for r in at_cap
+             if timeout_minutes and isinstance(r.get("duration_min"), int)]
+    # Did the measurable axis ever end a run? A row whose duration reached the
+    # timeout is a clock kill. Derived, so it can become true without an edit.
+    clock_kills = [r["date"] for r in rows
+                   if timeout_minutes and isinstance(r.get("duration_min"), int)
+                   and r["duration_min"] >= timeout_minutes]
+    return {
+        "n": n, "median": med, "max": vals[-1], "min": vals[0],
+        "at_cap": len(at_cap), "within_10": len(near),
+        "at_cap_dates": [r["date"] for r in at_cap],
+        "at_cap_spare_min": (min(spare), max(spare)) if spare else None,
+        "clock_kills": clock_kills,
+        "longest_run_min": max((r["duration_min"] for r in rows
+                                if isinstance(r.get("duration_min"), int)),
+                               default=None),
+    }
+
+
+def observe_turns(root: Path, budget: int) -> int:
+    """Top the register up from the Actions logs of runs it does not hold.
+
+    The only network half of this tool. It asks `gh` for completed runs of both
+    scheduled workflows, skips every run already on record, and for at most
+    `budget` of the remainder downloads the run log and reads `num_turns` and
+    `subtype` out of the agent step's final result record. The log member is
+    named for the job (`0_run.txt` for the daily, `0_review.txt` for the
+    weekly), so the extractor reads whichever member is present rather than
+    assuming one — the first cut of this measurement assumed `0_run.txt` and
+    silently returned NA for all seven weekly runs, which looked exactly like
+    seven runs that had never reported a turn count.
+    """
+    import subprocess
+    path = root / TURNS_REGISTER
+    have = {r["run_id"] for r in read_turns(root, None) if "run_id" in r}
+    wanted = []
+    for wf in ("madar-daily.yml", "madar-weekly.yml"):
+        try:
+            out = subprocess.run(
+                ["gh", "run", "list", "--workflow", wf, "--limit", "20",
+                 "--json", "databaseId,conclusion,createdAt,status"],
+                capture_output=True, text=True, timeout=120, check=True).stdout
+        except Exception as exc:                       # noqa: BLE001
+            print(f"REFUSED run_envelope --observe-turns — `gh run list` for "
+                  f"{wf} failed: {exc}")
+            return 4
+        for r in json.loads(out):
+            if r.get("status") == "completed" and r["databaseId"] not in have:
+                wanted.append((r["createdAt"][:10], r["databaseId"],
+                               r.get("conclusion"), wf))
+    wanted.sort(reverse=True)
+    if not wanted:
+        print("OK run_envelope --observe-turns — the register already holds "
+              f"every completed run `gh` reports ({len(have)} on record).")
+        return 0
+    print(f"run_envelope --observe-turns — {len(wanted)} run(s) not on record, "
+          f"fetching at most {budget} (a log is ~4 MB, so no run backfills)")
+    added = 0
+    for date, rid, concl, wf in wanted[:max(0, budget)]:
+        try:
+            blob = subprocess.run(
+                ["gh", "api", f"repos/{{owner}}/{{repo}}/actions/runs/{rid}/logs"],
+                capture_output=True, timeout=300, check=True).stdout
+            import io, zipfile
+            zf = zipfile.ZipFile(io.BytesIO(blob))
+            member = next((m for m in zf.namelist()
+                           if m.endswith(("0_run.txt", "0_review.txt"))), None)
+            if member is None:
+                print(f"  {date} run {rid} — no agent-step log member; SKIPPED")
+                continue
+            text = zf.read(member).decode("utf-8", "replace")
+            turns = re.findall(r'"num_turns":\s*(\d+)', text)
+            sub = re.findall(r'"subtype":\s*"([a-z_]+)"', text)
+            dur = re.findall(r'"duration_ms":\s*(\d+)', text)
+            if not turns:
+                print(f"  {date} run {rid} — no num_turns in the log; SKIPPED")
+                continue
+            row = {"date": date, "run_id": rid, "workflow": wf,
+                   "conclusion": concl, "num_turns": int(turns[-1]),
+                   "duration_min": int(dur[-1]) // 60000 if dur else None,
+                   "subtype": sub[-1] if sub else None,
+                   "observed_at": datetime.now(timezone.utc)
+                                  .replace(microsecond=0).isoformat(),
+                   "observed_by": "run_envelope --observe-turns"}
+            with path.open("a", encoding="utf-8") as fh:
+                fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+            added += 1
+            print(f"  {date} run {rid} — num_turns {row['num_turns']}, "
+                  f"{row['subtype']}, {row['duration_min']} min")
+        except Exception as exc:                       # noqa: BLE001
+            print(f"  {date} run {rid} — fetch failed, left unrecorded: {exc}")
+    print(f"  appended ................... {added} row(s) to {TURNS_REGISTER}")
+    if len(wanted) > budget:
+        print(f"  still owed ................. {len(wanted) - budget} run(s), "
+              "which the next call picks up. A register topped up across runs "
+              "is #111's pacing: a gap because we were budgeted is an "
+              "observation about us, not about the world.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(add_help=True)
     ap.add_argument("root", nargs="?", default=".", help="repository root")
@@ -248,10 +413,19 @@ def main() -> int:
     ap.add_argument("--log", action="store_true",
                     help="append a line to agents/stats/run-envelope.jsonl")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--observe-turns", action="store_true",
+                    help="network: top the turn register up from the Actions "
+                         "log of runs it does not yet hold (budgeted)")
+    ap.add_argument("--observe-budget", type=int, default=3,
+                    help="how many run logs --observe-turns may fetch in one "
+                         "call; a log is ~4 MB, so no run backfills")
     args = ap.parse_args()
 
     root = Path(args.root).resolve()
     wf_path, timeout_minutes, max_turns, cron = parse_budget(root, args.workflow)
+
+    if args.observe_turns:
+        return observe_turns(root, args.observe_budget)
 
     if timeout_minutes is None:
         shown = wf_path.relative_to(root) if wf_path and wf_path.is_file() else (
@@ -294,6 +468,12 @@ def main() -> int:
                 "remaining_minutes": round(remaining, 2),
             }, ensure_ascii=False) + "\n")
 
+    # Scoped to THIS workflow, because the two have different shapes — the
+    # weekly review's median is 112 turns and the daily's is 140 — and a base
+    # rate pooled across both would be a number about neither.
+    rate = turn_base_rate(read_turns(root, wf_path.name), max_turns,
+                          timeout_minutes)
+
     record = {
         "workflow": str(wf_path.relative_to(root)),
         "started_at": started.replace(microsecond=0).isoformat(),
@@ -306,7 +486,8 @@ def main() -> int:
         "deadline_utc": datetime.fromtimestamp(deadline, timezone.utc)
                                 .replace(microsecond=0).isoformat(),
         "max_turns": max_turns,
-        "turn_axis": "UNMEASURABLE",
+        "turn_axis": "UNMEASURABLE FOR THIS RUN",
+        "turn_base_rate": rate,
         "verdict": "BANK NOW" if breached else "room remains",
     }
 
@@ -337,14 +518,46 @@ def main() -> int:
               f"(reserve {args.reserve_minutes:g})")
         print(f"  job is killed at ........... {record['deadline_utc']}")
         print()
-        print(f"  TURN AXIS .................. UNMEASURABLE. The cap is "
+        print(f"  TURN AXIS .................. UNMEASURABLE FOR THIS RUN. The cap is "
               f"--max-turns {max_turns if max_turns is not None else '<not found>'}, "
-              f"parsed from the same")
-        print("    file, and nothing inside the agent step counts turns — no file, no")
-        print("    variable, no API field. A healthy wall clock is NOT a healthy")
-        print("    envelope: the run that lost 10-11 to error_max_turns had minutes")
-        print("    to spare. Commit at the close of every standing function (#96)")
-        print("    regardless of what the number above says.")
+              f"parsed from the")
+        print("    same file, and nothing inside the agent step counts turns — no file,")
+        print("    no variable, no API field. That is a fact about THIS run only.")
+        if rate is None:
+            print("    And the base rate is UNREAD: no turn register on disk. Run")
+            print("    `run_envelope.py . --observe-turns` to start one (#136).")
+        else:
+            print(f"    MEASURED ON THE {rate['n']} RUNS BEFORE IT, from their own Actions")
+            print(f"    logs (#136): median {rate['median']:g}, range {rate['min']}–{rate['max']}, "
+                  f"and {rate['at_cap']} hit the cap")
+            if rate["at_cap_dates"]:
+                print(f"      and DIED there — {', '.join(rate['at_cap_dates'])}")
+                if rate["at_cap_spare_min"]:
+                    lo, hi = rate["at_cap_spare_min"]
+                    print(f"      with {lo:g} to {hi:g} min of {timeout_minutes:g} "
+                          "wall clock UNSPENT on each.")
+            print(f"    {rate['within_10']} more finished within 10 turns of it.")
+            if rate["clock_kills"]:
+                print(f"    The clock has ended {len(rate['clock_kills'])} run(s) "
+                      f"({', '.join(rate['clock_kills'])}); this axis has ended "
+                      f"{rate['at_cap']}.")
+            elif rate["longest_run_min"] is None:
+                # A register can hold turn counts and no durations; the clock
+                # claim is then UNREAD rather than false. Found by the bite,
+                # whose synthetic rows carried no `duration_min` and crashed
+                # the formatter — a tool that dies on a thin register is a tool
+                # that stops being called.
+                print("    Whether the clock has ever ended a run is UNREAD: no row on")
+                print(f"    record carries a duration. This axis has ended {rate['at_cap']}.")
+            else:
+                print(f"    The clock has ended NO run on record — the longest ran "
+                      f"{rate['longest_run_min']:g} of")
+                print(f"    {timeout_minutes:g} min — and this axis has ended "
+                      f"{rate['at_cap']}.")
+            print("    A base rate is NOT your position; it is the shape of the cap you")
+            print("    are working inside, which is what `UNMEASURABLE` withheld.")
+        print("    Commit at the close of every standing function (#96) regardless of")
+        print("    what either number says.")
         if breached:
             print()
             print("  The reserve is reached. Close the current function, commit and")
