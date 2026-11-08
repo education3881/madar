@@ -615,6 +615,70 @@ def limb_register(root):
                 findings.append("a family's membership list names #%d and the "
                                 "register ends at #%d" % (n, hi))
 
+    # LIMB 5 OF THE FIFTH HOME — a family states its size TWICE, and until
+    # 2026-11-08 nothing compared the two statements with each other.
+    #
+    # The loop above compares a membership list to the count written beside it
+    # inside the same declaration, which is one pair. A family ALSO states its
+    # size in its own opening clause — `standing at **FIFTY** today` — and that
+    # is a second, independent claim about the same population. Both were
+    # internally consistent and they disagreed by two on arrival at the
+    # 2026-11-08 consolidation: the bullet read FIFTY, correctly, having been
+    # incremented at the point of filing for #128 on 11-05 and #131 on 11-06,
+    # and the list of record read `forty-eight members` and enumerated
+    # forty-eight, ending at #127. That is ruling **#95**'s limb 3 — *a count
+    # incremented beside a list that was not appended to* — recurring two and
+    # three days after it was committed, and the drift had already happened the
+    # OTHER WAY one week earlier (2026-11-01: bullet FORTY-THREE against a list
+    # of forty-four). Two weeks, two directions, one place.
+    #
+    # Why neither was caught by anything here: this check read both numbers in
+    # the same pass and compared each to the register — the list to its own
+    # attached count, the ratio to §3's row total — and neither to the other.
+    # *A gate can hold two statements of one quantity and still assert only
+    # that each agrees with itself* (ruling **#135**). It is the same shape as
+    # #106 one turn in: not a pattern whose subject moved, but a comparison
+    # nobody wrote between two operands already in hand.
+    #
+    # The association is POSITIONAL and therefore exact, which is #113's method
+    # applied to a bullet: a membership list belongs to the family whose
+    # top-level `- **` bullet block encloses it, and a block ends where the next
+    # top-level bullet begins. No name matching, no list of families to keep in
+    # step with the document. A family that states its size once is silent here
+    # by construction, and that is correct rather than lenient: today exactly
+    # ONE family of nine states it twice, which is exactly the one that drifted
+    # twice. The others cannot drift this way because there is nothing to
+    # disagree with.
+    for m in re.finditer(r"standing at \*\*([A-Za-z][A-Za-z\- ]{2,30}?)\*\*", seg3):
+        bullet_starts = [b.start() for b in
+                         re.finditer(r"^- \*\*", seg3, re.M) if b.start() <= m.start()]
+        blk_start = bullet_starts[-1] if bullet_starts else 0
+        nxt = re.search(r"^- \*\*", seg3[m.end():], re.M)
+        blk_end = m.end() + nxt.start() if nxt else len(seg3)
+        block = seg3[blk_start:blk_end]
+        bullet_count = words_to_int(m.group(1))
+        if bullet_count is None:
+            findings.append("a family's opening clause says 'standing at %s' "
+                            "and '%s' is not a number word this check can read"
+                            % (m.group(1), m.group(1)))
+            continue
+        inner = membership_declarations(block)
+        if not inner:
+            print("  fifth home — a family states 'standing at %s' and declares "
+                  "no membership list in the same bullet, so the two-statement "
+                  "comparison is unavailable for it (printed, not failed)"
+                  % m.group(1))
+            continue
+        for d in inner:
+            listed = sorted(set(int(x) for x in re.findall(r"#(\d+)", d.group("run"))))
+            if bullet_count != len(listed):
+                findings.append(
+                    "a family states its size twice and the two disagree: its "
+                    "opening clause says 'standing at %s' (%d) and its own "
+                    "membership list enumerates %d, ending at #%d — #95 limb 3"
+                    % (m.group(1), bullet_count, len(listed),
+                       max(listed) if listed else 0))
+
     # THE SILENT-PASS GUARD, and it is limb 3 of #106. On 2026-10-18 the ratio
     # check was found to have had **zero live claims to read** for eleven days:
     # the only "X of Y rulings" string left in the families list is the literal
