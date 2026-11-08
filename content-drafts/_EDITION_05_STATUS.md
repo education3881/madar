@@ -1,5 +1,16 @@
 # Edition 05 — AFRICA · **CLOSED 2026-10-13.** The record, not the ledger.
 
+> **Superseded as the thing `CLAUDE.md` points at, 2026-11-08.** The live ledger is
+> [`_STANDING_LEDGER.md`](_STANDING_LEDGER.md), opened by applying issue #13's stated default (option B)
+> on the date it fell due. **Reconciled against disk at the 2026-11-08 weekly review and found true:** all
+> six pairs present in EN and AR, a pair verdict and a Verifier verdict on file for each, a hero still and
+> an og card for each, every flag `approved: true`; 44 EN and 44 AR in the corpus, **zero held pieces**;
+> the registry holds five editions all at `status: 'closed'` with `hasOpenEdition` false. No gate
+> dependency to re-check — nothing is railed into anything, there are no held pieces, and no flip is
+> contemplated. The one item still owed below is unchanged and nothing published is wrong while it waits.
+> **The standing prohibitions in this file are carried forward verbatim into the standing ledger**, where
+> they now bind pieces that are not an edition of anything.
+
 **Opened** 2026-09-06 (weekly review) · **frame set by the founder** 2026-08-11 (`_EDITION_05_PLAN.md`) ·
 **scope set at six** 2026-09-13 by a stated default the founder did not answer · **flipped and on `origin`
 2026-10-13**, twelve flags in one commit, after **71 held days**.

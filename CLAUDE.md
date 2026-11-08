@@ -10,13 +10,24 @@ Read on every run, in this order:
 1. `agents/CHARTER.md` — the operating mandate. The five standing functions.
 2. `agents/RUNBOOK.md` — the accumulated procedural rules. Long, and load-bearing.
 3. The most recent `agents/briefs/*.html` — yesterday's artefact, **not** today's state.
-4. `content-drafts/_EDITION_05_STATUS.md` — **the closed-edition record. Edition 05 flipped 2026-10-13
-   and there is no live edition.** The file is 5 KB: what shipped, the one item still owed, the standing
-   prohibitions, and a pointer. Its 194 KB working ledger was archived on 2026-10-16 under standing-queue
+4. `content-drafts/_STANDING_LEDGER.md` — **the live ledger, and there is no edition at all.** Opened
+   2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
+   fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
+   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
+   flight (`bahrain-bqa-five-cycles`, three cells open) and nothing has shipped since 2026-09-27. The
+   registry stays at five editions, all `closed`, `hasOpenEdition` false — **which is why B is the only
+   option the operation can execute without a word from him**, and it is the option its own
+   recommendation ranked third. Issue #13 stays open; a frame arriving later supersedes the file for
+   pieces after it (#41). `content-drafts/_EDITION_05_STATUS.md` is now **the closed-edition record** —
+   5 KB, read to answer a question about what happened, never to plan a day. Its 194 KB working ledger was archived on 2026-10-16 under standing-queue
    item 9, because this list had spent three days telling every run to read a shipped wave's history
    before planning. **Standing rule: a wave's status memo is reduced to its record in the flip commit's
-   week, and this line names whichever edition is open** — if that is a closed one, the line is stale
-   and the run that notices fixes it. **A dated section inside a working ledger is history, not state**
+   week, and this line names whichever ledger is LIVE** — a closed edition's memo, or an edition that
+   is open, or — from 2026-11-08 — the standing ledger when there is no edition at all; if the line
+   names anything but the live one it is stale and the run that notices fixes it. **The rule was
+   amended here on 2026-11-08 because it said *edition* and there is now none:** a rule that enumerates
+   the states its subject can be in is an enumeration too, and it cannot name a state it does not hold
+   (#57 / #70 pointed at a pointer). **A dated section inside a working ledger is history, not state**
    — read the Log and the newest `RECONCILED AGAINST DISK` block before planning from any section above
    them. A run on 2026-10-04 reported three closed items as open because it read the 09-27 section,
    which was eleven screens above the entry closing them.
