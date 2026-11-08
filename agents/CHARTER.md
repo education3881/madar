@@ -41,18 +41,37 @@ Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel
 
 | Cadence | Task | Cron | **Measured start** (Asia/Dubai) | What it covers |
 |---|---|---|---|---|
-| Daily | `madar-daily-operation` | `23 4 * * *` → 08:23 | **12:37 – 16:05, median ≈ 14:00** | The five standing functions + the brief, committed per function. |
-| Weekly | `madar-weekly-review` | `23 5 * * 0` → 09:23 Sun | **13:42 – 15:27, median ≈ 14:36** | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
+| Daily | `madar-daily-operation` | `23 4 * * *` → 08:23 | **12:37 – 16:32, median ≈ 14:19** | The five standing functions + the brief, committed per function. |
+| Weekly | `madar-weekly-review` | `23 5 * * 0` → 09:23 Sun | **13:42 – 16:00, median ≈ 14:53** | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
 
 **The measured column was added 2026-10-18 under ruling #107, and the two columns disagree by four to eight
 hours on purpose.** This table read *~08:00* and *Sun 09:00* from 2026-06-03 until that date. GitHub's
 scheduled events are best-effort and queue under load: across **all 38 scheduled runs since the 2026-09-15
 cron offset change, every one started between 4 h 14 m and 7 h 42 m after its cron — median 5 h 37 m, and
-not one within four hours.** **Re-measured at the 2026-11-01 weekly review, which this table names as the
-column's owner: the population is now 54 runs, the band 4 h 14 m to 7 h 43 m, the median 5 h 34 m, and
-still not one inside four hours.** The band and the median did not move in sixteen further runs, which is
-the strongest form the falsification has taken; what had drifted was the **population**, stale by sixteen
-in two homes — this paragraph and a hardcoded literal in `run_envelope.py` — for fourteen days. The offset change to `:23` was made on the theory that `:00` is the most
+not one within four hours.** **Re-measured at the 2026-11-08 weekly review: the population is 62 runs, the band
+4 h 14 m to 8 h 09 m, the median 5 h 48 m, and still NOT ONE inside four hours in sixty-two runs.** *(Per
+workflow: daily n=54, 4.23–8.15 h, median 5.94; weekly n=8, 4.32–6.61 h, median 5.50.)*
+
+**THE BAND MOVED THIS WEEK, AND IT MOVED THE DAY AFTER A REVIEW CALLED IT STABLE.** The 2026-11-01 review
+measured 54 runs at 4 h 14 m – 7 h 43 m, median 5 h 34 m, and wrote that *the band and the median did not
+move in sixteen further runs, which is the strongest form the falsification has taken*. **The 2026-11-02
+run came in at 8 h 09 m** — outside that ceiling, on the next calendar day. The median moved too, 5 h 34 m
+→ 5 h 48 m. Nothing is wrong with the 11-01 measurement; what is wrong is **keeping a measurement as
+prose**, which is the defect this paragraph has now had corrected at three consecutive reviews, each time
+in the same two homes: this paragraph and a hardcoded literal inside `run_envelope.py`.
+
+**So from 2026-11-08 the band is DERIVED and not recorded (ruling #136).**
+`run_envelope.py --observe-turns` re-measures it from `gh run list` — cheap, a run list rather than a log
+— writes `agents/stats/cron-band.json`, and every ordinary call reads that register **offline** and prints
+the band beside the run's own lateness. The cron minute is parsed from each workflow file, so a cron change
+moves the measurement by itself. The band's population is **every scheduled run since the offset change**
+and is deliberately kept separate from the 47-run turn register, whose population is *the runs whose logs
+could still be read* — pooling them would narrow the band to the runs whose evidence survived. **The only
+number this paragraph still owns is the human-readable Dubai clock-time column above**, and it is derived
+from the figures in this sentence. *A literal is a measurement that has stopped being taken.*
+
+The falsification of the `:23` theory is unaffected and is now stronger: **zero of sixty-two runs inside
+four hours.** The offset change to `:23` was made on the theory that `:00` is the most
 contended minute; the median after it is unchanged from the figure that prompted it, so the theory is
 falsified and **the cron is not a start time.** `madar-daily.yml`'s own header said in writing that this
 condition would mean exactly that, and no run evaluated it for 33 days, because the sentence lives in the

@@ -237,6 +237,39 @@ def _parse_iso(stamp: str):
 
 TURNS_REGISTER = Path("agents/stats/run-turns.jsonl")
 
+# THE CRON BAND IS A MEASUREMENT AND WAS BEING KEPT AS PROSE, in two homes, for
+# the third week running. The CHARTER's cadence table names the weekly review as
+# this column's owner; the 2026-11-01 review re-measured it (54 runs, 4.2–7.7 h,
+# median 5.6 h), moved both homes, and recorded that *the band did not move in
+# sixteen further runs, which is the strongest form the falsification has taken*
+# — and it was broken the NEXT DAY, by the 2026-11-02 run at 8.15 h. Seven days
+# later both homes were stale again. So the band is now DERIVED from a register
+# the same way #136 derives the turn base rate, and for the same reason: a
+# literal is a measurement that has stopped being taken.
+#
+# IT IS A DIFFERENT POPULATION FROM THE TURN REGISTER AND IS KEPT SEPARATE
+# DELIBERATELY. The band is *every scheduled run since the 2026-09-15 cron
+# offset change* — 62 today, read from `gh run list`, which is cheap. The turn
+# register holds the 47 whose agent-step logs could still be read. Pooling them
+# would silently narrow the band to the runs whose logs survived, and a
+# population that shrinks because evidence expired is #111's lesson: a gap
+# because we were budgeted is an observation about us, not about the world.
+BAND_REGISTER = Path("agents/stats/cron-band.json")
+OFFSET_CHANGE = "2026-09-15"
+
+
+def read_band(root: Path, workflow: str | None):
+    path = root / BAND_REGISTER
+    if not path.is_file():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
+    if workflow and workflow in data.get("per_workflow", {}):
+        return data["per_workflow"][workflow] | {"measured_at": data.get("measured_at")}
+    return data.get("all") | {"measured_at": data.get("measured_at")} if data.get("all") else None
+
 # THE TURN AXIS IS DARK FROM INSIDE A RUN AND LIT FROM OUTSIDE ONE (ruling #136).
 #
 # #105 found half this envelope observable and said the other half was not. That
@@ -319,6 +352,77 @@ def turn_base_rate(rows, cap, timeout_minutes=None):
     }
 
 
+def write_band(root: Path) -> None:
+    """Re-measure the cron band from `gh run list` and write it to disk.
+
+    Cheap — a run list, not a log — so it runs on every `--observe-turns` call
+    and the default read stays offline. The cron minute for each workflow is
+    parsed from the workflow file, never copied, so a cron change moves this
+    measurement by itself.
+    """
+    import subprocess
+    out = {"measured_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+           "offset_change": OFFSET_CHANGE, "per_workflow": {}}
+    pooled = []
+    for wf in ("madar-daily.yml", "madar-weekly.yml"):
+        wf_path, _, _, cron = parse_budget(root, wf)
+        if not cron:
+            continue
+        parts = cron.split()
+        try:
+            cm, ch = int(parts[0]), int(parts[1])
+        except (IndexError, ValueError):
+            continue
+        try:
+            raw = subprocess.run(
+                ["gh", "run", "list", "--workflow", wf, "--limit", "100",
+                 "--json", "databaseId,createdAt,event"],
+                capture_output=True, text=True, timeout=120, check=True).stdout
+        except Exception:                              # noqa: BLE001
+            continue
+        late = []
+        for r in json.loads(raw):
+            if r.get("event") != "schedule":
+                continue
+            if r["createdAt"][:10] < OFFSET_CHANGE:
+                continue
+            st = _parse_iso(r["createdAt"])
+            fire = st.replace(hour=ch, minute=cm, second=0, microsecond=0)
+            if fire > st:
+                fire -= timedelta(days=1)
+            late.append(((st - fire).total_seconds() / 3600.0, r["createdAt"][:10]))
+        if not late:
+            continue
+        late.sort()
+        vals = [x[0] for x in late]
+        n = len(vals)
+        out["per_workflow"][wf] = {
+            "cron": cron, "n": n,
+            "min_h": round(vals[0], 2), "max_h": round(vals[-1], 2),
+            "median_h": round(vals[n // 2] if n % 2
+                              else (vals[n // 2 - 1] + vals[n // 2]) / 2, 2),
+            "inside_four_hours": sum(1 for v in vals if v < 4.0),
+            "earliest_date": late[0][1], "latest_date": late[-1][1],
+        }
+        pooled.extend(late)
+    if pooled:
+        pooled.sort()
+        vals = [x[0] for x in pooled]
+        n = len(vals)
+        out["all"] = {"n": n, "min_h": round(vals[0], 2), "max_h": round(vals[-1], 2),
+                      "median_h": round(vals[n // 2] if n % 2
+                                        else (vals[n // 2 - 1] + vals[n // 2]) / 2, 2),
+                      "inside_four_hours": sum(1 for v in vals if v < 4.0),
+                      "earliest_date": pooled[0][1], "latest_date": pooled[-1][1]}
+        (root / BAND_REGISTER).write_text(
+            json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"  cron band re-measured ...... {n} scheduled run(s) since "
+              f"{OFFSET_CHANGE}: {out['all']['min_h']:g}–{out['all']['max_h']:g} h, "
+              f"median {out['all']['median_h']:g} h, "
+              f"{out['all']['inside_four_hours']} inside four hours "
+              f"→ {BAND_REGISTER}")
+
+
 def observe_turns(root: Path, budget: int) -> int:
     """Top the register up from the Actions logs of runs it does not hold.
 
@@ -354,6 +458,10 @@ def observe_turns(root: Path, budget: int) -> int:
     if not wanted:
         print("OK run_envelope --observe-turns — the register already holds "
               f"every completed run `gh` reports ({len(have)} on record).")
+        # The band is re-measured even when no turn row is owed: its population
+        # is every scheduled run, not every run whose log survived, so it moves
+        # on days this register does not.
+        write_band(root)
         return 0
     print(f"run_envelope --observe-turns — {len(wanted)} run(s) not on record, "
           f"fetching at most {budget} (a log is ~4 MB, so no run backfills)")
@@ -392,6 +500,7 @@ def observe_turns(root: Path, budget: int) -> int:
         except Exception as exc:                       # noqa: BLE001
             print(f"  {date} run {rid} — fetch failed, left unrecorded: {exc}")
     print(f"  appended ................... {added} row(s) to {TURNS_REGISTER}")
+    write_band(root)
     if len(wanted) > budget:
         print(f"  still owed ................. {len(wanted) - budget} run(s), "
               "which the next call picks up. A register topped up across runs "
@@ -507,11 +616,22 @@ def main() -> int:
                 print(f"  cron ....................... {cron}  →  "
                       f"{fire.strftime('%H:%M')}Z, so this run began "
                       f"{late/60:.1f} h late")
-                print("    Normal, measured, and nobody's fault: all 54 scheduled runs since the")
-                print("    2026-09-15 offset change began 4.2 to 7.7 h after their cron (median")
-                print("    5.6 h, re-measured 2026-11-01). A delay in this band is ordinary and is")
-                print("    NOT evidence of a missed run (#107). It does mean the day starts in the")
-                print("    Dubai afternoon, which is what the CHARTER's cadence table now says.")
+                band = read_band(root, None)
+                if band is None:
+                    print("    The band this is ordinary against is UNREAD: no cron-band")
+                    print("    register on disk. Run `--observe-turns` to measure it (#136).")
+                else:
+                    print(f"    Normal, measured, and nobody's fault: all {band['n']} scheduled runs")
+                    print(f"    since the {OFFSET_CHANGE} offset change began {band['min_h']:g} to "
+                          f"{band['max_h']:g} h after their")
+                    print(f"    cron (median {band['median_h']:g} h, "
+                          f"{band['inside_four_hours']} of {band['n']} inside four hours), "
+                          f"measured from the")
+                    print(f"    run list rather than recorded in prose — last re-measured "
+                          f"{(band.get('measured_at') or '?')[:10]}.")
+                    print("    A delay in this band is ordinary and is NOT evidence of a missed")
+                    print("    run (#107). It does mean the day starts in the Dubai afternoon,")
+                    print("    which is what the CHARTER's cadence table says.")
         print(f"  now ........................ {record['now']}")
         print(f"  elapsed .................... {elapsed:.1f} of {timeout_minutes} min")
         print(f"  remaining .................. {remaining:.1f} min "

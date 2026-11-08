@@ -27,6 +27,88 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
+## Weekly reconciliation — **2026-11-08 (weekly review).** Board **FORTY-EIGHT**, and last week's figure was wrong by three.
+
+**Counted by reading the rows, which is the only method this file accepts (#57):** **ONE DEFECT, FORTY-FOUR
+OPEN, THREE BLOCKED = 48.** The daily read 47 this morning and was right; this review raised **item 90** at
+OPEN's head, so the board closes the week at 48.
+
+### The board arithmetic reconciles to the row — once last week's number is corrected
+
+| | |
+|---|---|
+| Board on 2026-11-01, **reconstructed from today's rows** | **35** — 26 OPEN still live + 3 BLOCKED still live + 6 closed since, all raised before 11-01 |
+| Board the 2026-11-01 review **printed** | **32** — *"zero DEFECT, twenty-nine OPEN, three BLOCKED, counted by reading the rows"* |
+| Under by | **three**, in the OPEN bucket: 29 printed against **32** |
+| Forward from the true figure | 35 + **18** raised − **6** closed = **47**, which is exactly the daily's count this morning; +1 for item 90 = **48** |
+
+**The reconciliation closes to the row, and it only closes on 35.** That is the strongest available evidence
+that the error is last week's and not this week's: three independent numbers — today's row count, this
+week's raises and this week's closures — agree with 35 and none of them agrees with 32. **And it propagated.**
+The 11-01 rate table (*Raised 27, Closed 13, Net +14*) was computed from 18 → 32, so its net movement is
+understated by three; the figure travelled a full week before anything compared it to a row.
+
+**This is the third board mis-count in eight days and the second in two runs.** 2026-10-25 found fifteen of
+eighteen rows understating their own age; today's daily wrote 46 against a true 47 **in the same file that
+quotes #57 two paragraphs above it**, and caught itself; last week's review wrote 32 against a true 35 and
+**did not**, because nothing re-reads a board after the review that wrote it. *An arithmetic that is
+internally consistent is invisible, and the only thing that catches it is the population.*
+
+### Rates, and the breach date is PINNED BY A RAISE DATE rather than by the closure rate
+
+| Rate | This week (11-02 → 11-08) | Last week (10-26 → 11-01) |
+|---|---|---|
+| Raised | **19** (2.71/day) — 18 by the dailies, 1 by this review | 27 (3.86/day) |
+| Closed | **6** (0.86/day) | 13 (1.86/day) |
+| Net board movement | **+13** (35 → 48) | +14 (true 21 → 35) |
+| Date the oldest item reaches 28 days | **2026-11-29** | printed as 2026-11-11 — **and that date was impossible** |
+
+**Closures halved and the raise rate fell by a third.** Six closures against thirteen is the worst closure
+week since 10-18, and one of the seven days closed nothing at all. The cause is visible in the heads: five
+of this week's seven heads were **OPEN rows at exactly 15 days** and the other two were the DEFECT, so the
+board spent the week paying down 15-day-old questions one at a time while nineteen new rows landed on top.
+
+**The breach date, computed by the stated method and not carried.** Oldest-first, one closure per day from
+2026-11-09, no re-ordering: the first row still open on the day it turns 28 is **item 65**, closing
+2026-11-29 at exactly 28 days. *(Today's daily named item 67 and the same date; 67 is the third of the
+cohort and breaches at 30.)*
+
+**And the number is unmoved for the fifth consecutive restatement for a reason nobody has stated: it is
+pinned by a RAISE DATE, not by the closure rate.** Items **64 through 70 were all raised on 2026-11-01** —
+seven rows in one day — and 2026-11-01 + 28 = **2026-11-29**. No closure rate this operation can reach moves
+that date; the rate decides only **how many of the seven breach and by how much**. At one closure per day
+exactly one does (item 65, at 28); at this week's observed 0.86/day, **four of the seven breach**, the last
+at 36 days. *Restating that the breach date is "unmoved" reads as evidence the closure rate is adequate, and
+it is evidence of nothing at all.* **#116 requires this review to print the date as a claim about rates —
+so the honest claim is about the cohort: a seven-row single-day raise sets a cliff twenty-eight days out,
+and the only lever on the cliff is not raising seven rows in one day.**
+
+**Last week's 2026-11-11 was arithmetically impossible** and is withdrawn here rather than quietly dropped.
+It was computed as *board ÷ closure rate*, which yields a **steady-state age** (32 ÷ 1.86 ≈ 17 days), not the
+date a particular row crosses 28. For any row to be at 28 days on 2026-11-11 it would have to be 25 days old
+today, and **the oldest row on the whole board is item 22 at 21 days — and it is BLOCKED, so out of the
+ordering entirely.** Two methods have been circulating under one name; the oldest-first simulation is the
+one #116's wording supports, and it is the method of record from today.
+
+### BLOCKED — three rows, re-read here as this review is required to do, and never by the daily
+
+| # | What it needs | Age | Movement this week |
+|---|---|---|---|
+| **22** | A credential no identity here holds — **issue #7**, open **49 days** | **21 days** | **Still the most expensive row on the board, and this week it cost a brief again.** The 11-03 run died at the turn cap; the remedy for the envelope has been staged at `agents/patches/` since 10-11 and cannot be applied from here. **What changed is on our side, not his:** ruling #136 lit the turn axis from outside the run this morning, so the *measurement* no longer waits on the credential even though the *cap* still does. Nine staged patches now sit behind this issue. |
+| **45** | What the next piece is an edition of — **issue #13** | **12 days** | **CLOSABLE NEXT WEEK, and for the first time by us.** Its blocker's stated default fell due today and was applied: `_STANDING_LEDGER.md` is open, pieces ship as singles, and the row's question now has an operative answer even though the founder's half is untouched. **It stays BLOCKED this week** because the half that is genuinely his — the frame — is still open, and a row must not leave this bucket because a default papered over it. Re-read it at the 11-15 review against whether anything is still waiting on him. |
+| **32** | Permission to write to a third party on this publication's behalf — **issue #12** | **7 days** | Default applied 2026-11-04, three days late. Unchanged since. The window is still the moving part: 40 cited registers exist in exactly one copy and 12 already refuse us. |
+
+**All three are correctly out of the head ordering.** *An item whose closure the operation does not own is a
+request, and a request must not occupy a head somebody is obliged to take.* Item 22 at 21 days would have
+taken a head three times over under the retired rule, and each time the run would have spent a day on work
+it cannot finish.
+
+### Tomorrow's head
+
+**Item 85** — the board's only DEFECT, 2 days old, 22 of its 32 tokens still unread. It outranks all 44
+OPEN rows whatever their age (#116), exactly as today's and yesterday's boards both forecast. **If it closes,
+the head falls to item 37 at 17 days**, the oldest row in OPEN.
+
 ## Open — **FORTY-SEVEN items in THREE BUCKETS, reconciled against disk 2026-11-08**
 
 **2026-11-08 — THE DEFECT HEAD WAS TAKEN AS WRITTEN, IT CAME BACK ZERO WRONG, AND THE EVIDENCE TURNED OUT

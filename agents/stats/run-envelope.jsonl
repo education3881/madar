@@ -90,3 +90,4 @@
 {"run_id": "42478131627", "workflow": "madar-weekly.yml", "label": "weekly 2of5 turn axis", "at": "2026-11-08T12:22:42+00:00", "elapsed_minutes": 23.3, "timeout_minutes": 90, "remaining_minutes": 66.7}
 {"run_id": "42478131627", "workflow": "madar-weekly.yml", "label": "weekly 2of5 turn axis built", "at": "2026-11-08T12:26:25+00:00", "elapsed_minutes": 27.01, "timeout_minutes": 90, "remaining_minutes": 62.99}
 {"run_id": "42478131627", "workflow": "madar-weekly.yml", "label": "weekly 3of5 ledger and default", "at": "2026-11-08T12:29:33+00:00", "elapsed_minutes": 30.13, "timeout_minutes": 90, "remaining_minutes": 59.87}
+{"run_id": "42478131627", "workflow": "madar-weekly.yml", "label": "weekly 4of5 queue and rates", "at": "2026-11-08T12:34:11+00:00", "elapsed_minutes": 34.77, "timeout_minutes": 90, "remaining_minutes": 55.23}
