@@ -42,6 +42,22 @@ const ordered = [...editions].sort((a, b) => {
   return b.number - a.number;
 });
 
+// Pieces that belong to NO edition. Empty until 2026-11-09 and non-empty from
+// it: GitHub issue #13's stated default (option B) fell due 2026-11-08 in
+// silence, so from that date pieces ship as SINGLES against a standing
+// per-piece ledger, each on the day its own eight-cell gate closes. A single
+// carries no `edition` number — the schema has always declared the field
+// optional, and the grouping above skips a null — so the first one to ship
+// would have been reachable from both home pages, both browse surfaces, both
+// feeds and the sitemap, and from NO edition.
+//
+// That is not an orphan (the 08-17 rule is satisfied several times over) and
+// it is still a hole: this page is the archive, and from the first single it
+// stopped being an index of the corpus. DERIVED, never hand-listed — a list
+// that must equal "the current set of pieces outside the editions" is the
+// 2026-06-07 drift defect if anybody maintains it by hand.
+const singles = all.filter((p) => p.data.edition == null).slice().sort(byDateThenSlug);
+
 const blocks = ordered.map((e) => {
   const pieces = (byEdition.get(e.number) ?? [])
     .slice()
@@ -56,8 +72,10 @@ const blocks = ordered.map((e) => {
       <p class="kicker">The archive</p>
       <h1 class="editions__title">Editions</h1>
       <p class="editions__intro measure">
-        Madār publishes in monthly editions. Each one gathers the issue's pieces
-        under a single editorial question, in both languages.
+        Madār published in monthly editions through Edition 05, each gathering
+        the issue's pieces under a single editorial question, in both
+        languages. Pieces now ship singly, as each one's own gate closes; those
+        are gathered below, outside the editions.
       </p>
     </header>
 
@@ -137,6 +155,17 @@ const blocks = ordered.map((e) => {
       <p class="kicker">Standing pieces</p>
       <h2 id="standing-head" class="standing__title">Outside the editions</h2>
       <ul class="edition__pieces">
+        {singles.map((piece) => (
+          <li class="piece">
+            <a href={withBase(`/articles/${piece.id}/`)} class="piece__link">
+              <span class="piece__meta">
+                <span class="piece__country">{piece.data.country}</span>
+                <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+              </span>
+              <h3 class="piece__title">{piece.data.title}</h3>
+            </a>
+          </li>
+        ))}
         <li class="piece">
           <a href={withBase('/valence/')} class="piece__link">
             <span class="piece__meta">

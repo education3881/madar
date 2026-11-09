@@ -42,6 +42,14 @@ const ordered = [...editions].sort((a, b) => {
   return b.number - a.number;
 });
 
+// الموادُّ التي لا تنتمي إلى أيِّ إصدار — مُشتقَّةٌ لا مكتوبةٌ بِاليَد.
+// من 2026-11-09 تُنشَر الموادُّ مفردةً، كلٌّ يومَ تُغلَق بوّابتُها، بعد أن
+// حلَّ في 2026-11-08 أجلُ الافتراضِ المُعلَن في قضية #13 ولم يصل ردّ. والمادّةُ
+// المفردةُ لا تحمل رقمَ إصدار، والتجميعُ أعلاه يتخطّى القيمةَ الخالية، فكانت
+// ستُبلَغ من الصفحتَين الرئيسيتَين ومن التصفُّح ومن التغذيتَين ومن خريطة الموقع،
+// ومن لا إصدار. وهذه الصفحةُ هي الأرشيف، فلتكن أرشيفًا.
+const singles = all.filter((p) => p.data.edition == null).slice().sort(byDateThenSlug);
+
 const blocks = ordered.map((e) => {
   const pieces = (byEdition.get(e.number) ?? [])
     .slice()
@@ -56,8 +64,9 @@ const blocks = ordered.map((e) => {
       <p class="kicker" lang="ar" dir="rtl">الأرشيف</p>
       <h1 class="editions__title" lang="ar" dir="rtl">الإصدارات</h1>
       <p class="editions__intro measure" lang="ar" dir="rtl">
-        تَصدرُ «مدار» في إصداراتٍ شهريّة. يَجمعُ كلُّ إصدارٍ موادَّه تحت سؤالٍ
-        تحريريٍّ واحد، باللغتَين.
+        صدرَت «مدار» في إصداراتٍ شهريّةٍ حتى الإصدار الخامس، يَجمعُ كلُّ إصدارٍ
+        موادَّه تحت سؤالٍ تحريريٍّ واحد، باللغتَين. وتُنشَر الموادُّ الآن مفردةً،
+        كلٌّ يومَ تُغلَق بوّابتُها، ومَجمَعُها أدناه، خارجَ الإصدارات.
       </p>
     </header>
 
@@ -155,6 +164,17 @@ const blocks = ordered.map((e) => {
       <p class="kicker" lang="ar" dir="rtl">موادُّ دائمة</p>
       <h2 id="standing-head-ar" class="standing__title" lang="ar" dir="rtl">خارج الإصدارات</h2>
       <ul class="edition__pieces">
+        {singles.map((piece) => (
+          <li class="piece">
+            <a href={withBase(`/ar/articles/${piece.id}/`)} class="piece__link">
+              <span class="piece__meta">
+                <span class="piece__country" lang="ar" dir="rtl">{countryAr(piece.data.country)}</span>
+                <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+              </span>
+              <h3 class="piece__title" lang="ar" dir="rtl">{piece.data.title}</h3>
+            </a>
+          </li>
+        ))}
         <li class="piece">
           <a href={withBase('/valence/')} class="piece__link">
             <span class="piece__meta">
