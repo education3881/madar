@@ -63,7 +63,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#136**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#137**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
@@ -93,9 +93,19 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   errors.** The tool now prints **`UNMEASURABLE FOR THIS RUN`** and beside it the base rate over the runs
   behind it, scoped to the same workflow, out of `agents/stats/run-turns.jsonl` — free and offline on every
   call, topped up by `--observe-turns` (budgeted, because a run log is ~4 MB). **What that register says is
-  why this paragraph exists: THREE runs have died at the turn cap — 2026-10-11, 2026-10-30 and 2026-11-03 —
-  each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has ended NONE in 47 runs,
-  its longest reaching 84 of 90; and 8 of 47 finished within ten turns of a cap none of them could see.** A
+  why this paragraph exists: **FOUR** runs have died at the turn cap — 2026-10-11, 2026-10-30, 2026-11-03
+  and **2026-11-08** — each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has
+  ended NONE in 48 runs, its longest reaching 84 of 90.** *(This sentence read **THREE** and **47** for one
+  day. **The run that filed #136 became the fourth death** — 181 turns in 35 minutes, 55 unspent, the first
+  WEEKLY ever to hit the cap — and it died after four of its five function commits were already on
+  `origin`, so #96 cost it the fifth function rather than the week. **A literal is a measurement that has
+  stopped being taken, and this one stopped the moment it was written**; the derived tool beside it was
+  right, printing `3` correctly **scoped to `madar-daily.yml`**, and this unscoped prose was wrong.
+  Corrected 2026-11-09.)* **And the two axes are weakly coupled, which is a sharper statement than either
+  "dark" or "a base rate":** across all 48 runs the burn rate spans **1.82 to 5.37 turns per minute, a
+  2.9× spread**, and wall clock explains **42%** of the variance in turns (r = 0.65). The four cap deaths
+  burned at 3.62, 4.21, 5.17 and 5.17 against the survivors' median of **4.09** — *straddling it* — so
+  neither axis, nor the ratio between them, identifies a doomed run while it is still running. A
   base rate is not a run's position, and **this run's own count stays unknowable** — the record is written
   when the step ends, which is the event it would have been used to avoid — so a green clock is still not a
   green envelope. **Commit and push
