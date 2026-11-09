@@ -1785,6 +1785,174 @@
       "provenance": "NOT A QUANTITY — 2026-10-28. This is `#119`, a reference to this publication's OWN ruling register, inside an annotation that states why the ACARA CEO is reported in reported speech and not quoted: the release is served as a PDF and the extraction this runner can perform recovers the body prose but not the quotation marks or the opening words inside them, and ruling #119 holds that a quotation mark promises a NAMED form of the source. Second instance of the disposition licence a3 was written for, two days after `#86`. Same disposition on both editions' copies of the same annotation.",
       "lang_seen": "ar",
       "annotation": "بيان الهيئة (ACARA)، 5 أغسطس 2026 — «أحدث بيانات نابلان تُظهِر تحسُّنًا في مستويات الحساب الوطنية إلى جانب مجالاتٍ تحتاج انتباهًا مستمرًّا» (النتائجُ الوطنية 2026، قُرئت في 2026-10-28)"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "10",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "10",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "31",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "31",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "41",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "41",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "55",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "55",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "56",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "56",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "60",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "60",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "67",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "67",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "70",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "70",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "89",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "89",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "94",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "94",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09, Editor disposition 4. One cell of the Authority's per-cycle x per-grade table, counted from the data.gov.bh CSV export of 'Results of Government Schools Reviews' — the ENGLISH column read 2026-10-18, re-counted 2026-10-22 and 2026-10-23, and the ARABIC column counted independently by the Arabic Content Creator on 2026-11-05, the two counts agreeing cell for cell. It is annotation-only BY DESIGN and not by oversight: the body prints this cycle's SHARE at this grade and the annotation prints the count the share is arithmetic over, because the piece is a reading of a register and the percentages are ours while the counts are the Authority's. Every column and every row of the twenty closes - the five cycle totals give 202/206/207/128/139 and the four grade totals give 85/202/350/245, both summing to the 882 reviews the body states. Carried in BOTH editions after disposition 4; it was Arabic-only until that disposition, which is the asymmetry the Arabic Editor's Gate 4 raised.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "97",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09. The 140 monitoring-visit rows carry a THREE-band scale ((A) Sufficient Progress / (B) In Progress / (C) Insufficient Progress) and never the four numbered grades. This count is one band of that scale, read in the same CSV export. The body says in one sentence that monitoring visits are a different instrument on a different scale and sets them aside; the annotation carries the distribution that makes that sentence checkable rather than asserted. 97 + 23 + 20 = 140, and 882 + 140 = the 1,022 rows the body states.",
+      "lang_seen": "en",
+      "annotation": "data.gov.bh — 'Results of Government Schools Reviews', CSV export — the per-cycle grade counts carried in the annotation and the percentages carried in the body"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "97",
+      "provenance": "REGISTER'S OWN COUNT — 2026-11-09. The 140 monitoring-visit rows carry a THREE-band scale ((A) Sufficient Progress / (B) In Progress / (C) Insufficient Progress) and never the four numbered grades. This count is one band of that scale, read in the same CSV export. The body says in one sentence that monitoring visits are a different instrument on a different scale and sets them aside; the annotation carries the distribution that makes that sentence checkable rather than asserted. 97 + 23 + 20 = 140, and 882 + 140 = the 1,022 rows the body states.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "24-25",
+      "provenance": "NOT A QUANTITY — 2026-11-09. A fragment of a FILENAME in a URL this annotation prints in its own text: `Performance-Report-24-25-EN.pdf`, the English edition of the register whose Arabic edition this piece cites. The Arabic edition carries the other edition's URL so neither register is hidden from either reader (declared asymmetry, qa_pair_frontmatter). It is a path segment, not a figure about Bahrain.",
+      "lang_seen": "ar",
+      "annotation": "بوّابةُ البيانات المفتوحة البحرينية data.gov.bh — «نتائج أداء المدارس الحكومية» — عدادُ الدرجات بالدورة في الحاشية، والنِّسَبُ في المتن"
+    },
+    {
+      "slug": "2026-10-23-bahrain-bqa-five-cycles",
+      "token": "29",
+      "provenance": "NOT A QUANTITY — 2026-11-09. The day of a `Last-Modified` date the annotation states in Arabic words - الخميس 29 أكتوبر 2026 - for the Authority's Arabic open-data page. The ISO date licence does not reach a date written with an Arabic month name, which is the same blindness #117 clause 4 records for the Arabic future prefix, one licence over.",
+      "lang_seen": "ar",
+      "annotation": "هيئةُ جودة التعليم والتدريب — صفحةُ البيانات المفتوحة بالعربية"
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",

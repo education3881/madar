@@ -104,7 +104,7 @@ For every slug present in both `articles/` and `articles-ar/`:
 
 DECLARED ASYMMETRIES
 --------------------
-Three pairs legitimately cite different URLs, and each is an editorial decision
+Four pairs legitimately cite different URLs, and each is an editorial decision
 with a reason, so each is declared below by slug WITH ITS EXACT URL SETS. A
 declaration is not a blanket exemption: if a declared pair's asymmetry changes
 shape, the check fails and the declaration has to be re-earned. Same discipline
@@ -235,6 +235,25 @@ DECLARED = {
         "2022 against 1 Nov), so they are different documents and not the same URL "
         "localised. Plus one AR-only UN News Arabic interview, cited solely as the "
         "spelling register for a named human",
+    ),
+    "2026-10-23-bahrain-bqa-five-cycles": (
+        {"https://www.bqa.gov.bh/open-data/",
+         "https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-EN.pdf",
+         "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/"},
+        {"https://www.bqa.gov.bh/ar/open-data/",
+         "https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-AR.pdf",
+         "https://education3881.github.io/madar/ar/articles/2026-05-26-bahrain-bqa-public-grades/"},
+        "the Morocco shape three times over: THREE documents, each cited in each "
+        "edition's own first-party edition — the Authority's own open-data page in "
+        "Arabic and in English, its Performance Report 2024-25 in the Arabic and "
+        "English editions it publishes side by side on the same date, and this "
+        "publication's own predecessor piece in each language. The third is the "
+        "first self-citation in the corpus, and it is the one asymmetry here that "
+        "could not be anything else: our EN page and our AR page are different "
+        "documents by construction (#101's forced rendering reaching a SOURCE, "
+        "Arabic Editor's Gate 4 and Editor disposition 4, 2026-11-09). Each "
+        "edition's annotation carries the other edition's URL in its own text, so "
+        "neither register is hidden from either reader",
     ),
 }
 

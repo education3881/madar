@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-08",
+ "observed": "2026-11-09",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -521,6 +521,42 @@
      "token": "مركز تقييم وتعليم الطفل (CCET): شريكٌ عالميٌّ لِـ IDA في قلب الجزيرة العربية",
      "verdict": "script-mismatch",
      "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-05-26-bahrain-bqa-public-grades/",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:ar"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:5307",
+   "tokens": [
+    {
+     "token": "البحرين تُصدِر درجاتِ مدارسِها، بالاسم، في العَلَن",
+     "verdict": "absent"
+    }
+   ],
+   "state": "absent"
+  },
+  {
+   "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:en"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6400",
+   "tokens": [
+    {
+     "token": "Bahrain grades its schools, by name, in public",
+     "verdict": "found"
     }
    ],
    "state": "confirmed"
@@ -2295,6 +2331,47 @@
    "state": "absent"
   },
   {
+   "url": "https://www.bqa.gov.bh/ar/open-data/",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:ar"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:1209",
+   "tokens": [
+    {
+     "token": "نتائج أداء المدارس الحكومية",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-EN.pdf",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:en"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "application/pdf",
+   "state": "unreadable-format"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/wp-content/uploads/2026/06/Annual-report-2025-.pdf",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:en",
+    "2026-10-23-bahrain-bqa-five-cycles:ar"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "application/pdf",
+   "state": "unreadable-format"
+  },
+  {
    "url": "https://www.cairo.gov.eg/en/news/2026/august/3/education/",
    "pieces": [
     "2026-09-19-egypt-baccalaureate-published-first:en",
@@ -2449,6 +2526,45 @@
     }
    ],
    "state": "partial"
+  },
+  {
+   "url": "https://www.data.gov.bh/explore/dataset/01-results-of-government-schools-reviews-1/",
+   "pieces": [
+    "2026-10-23-bahrain-bqa-five-cycles:en",
+    "2026-10-23-bahrain-bqa-five-cycles:ar"
+   ],
+   "observed": "2026-11-09",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:1325",
+   "tokens": [
+    {
+     "token": "Results of Government Schools Reviews",
+     "verdict": "found"
+    },
+    {
+     "token": "نتائج أداء المدارس الحكومية",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "زيارة المتابعة 1",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "زيارة المتابعة 2",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "زيارة المتابعة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
   },
   {
    "url": "https://www.dha.com.tr/foto-galeri/bakan-tekin-deprem-bolgesinde-derslik-sayisini-yuzde-16-artirdik-2727188",
