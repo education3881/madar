@@ -5,7 +5,16 @@
 **Recon of record:** `content-drafts/recon/2026-10-18-bahrain-bqa-five-cycles-register.md`,
 **as corrected twice** by `content-drafts/recon/2026-10-22-bahrain-bqa-test1-recount.md`.
 **Working slug:** `2026-10-23-bahrain-bqa-five-cycles`
-**Status:** **CORRECTED 2026-11-07** on Editor disposition 3 (`content-drafts/verdicts/2026-11-07-bahrain-bqa-five-cycles-disposition-3.md`)
+**Status:** **CORRECTED 2026-11-09** on Editor disposition 4 (`content-drafts/verdicts/2026-11-09-bahrain-bqa-five-cycles-disposition-4.md`),
+raised by the Arabic Editor's Gate 4 §4: annotation 1's words *"per-cycle counts as tabulated above"*
+pointed at a draft table that is not served, while the **Arabic** annotation published all twenty of
+those counts plus the three monitoring counts — twenty-three published quantities on one side of the pair
+and none on the other (#114 + #42). The English annotation now carries them explicitly. **The pair is
+levelled UP to the edition that counted, never down to the edition that referred back** — cutting them
+from the Arabic would have deleted the only arithmetic proof this operation has had that an Arabic edition
+was composed rather than translated. The `edition:` field is also **struck** here: issue #13's default was
+applied 2026-11-08, the field is `z.number().int().positive().optional()`, and `/editions/` skips a null,
+so the correct value is its absence. · **CORRECTED 2026-11-07** on Editor disposition 3 (`content-drafts/verdicts/2026-11-07-bahrain-bqa-five-cycles-disposition-3.md`)
 — C4, the 76-school batch's whole four-grade shape (26 / 24 / 30 / 20) now stated **as the batch's**,
 with no cycle percentage in the same sentence or the next; C5, annotation 4 now says the shape was read
 in the **Arabic** edition of the report this piece cites in English, and why. · **CORRECTED 2026-11-05** on Editor disposition 2 — the four name-keyed populations are
@@ -192,7 +201,6 @@ only cycle in seventeen years in which `(4) Inadequate` is the **modal** verdict
 title: "Seventeen years of one regulator's own verdicts"
 dek: "Bahrain's quality authority has graded its government schools by name since 2009. Over all 882 reviews its most common verdict is Satisfactory — and its second most common is Inadequate."
 date: 2026-10-23
-edition: HELD — see verdict correction 2; there is no Edition 06 and the registry exports hasOpenEdition false. Blocked on founder issue #13, default 2026-11-08. Do NOT guess this field.
 country: Bahrain
 region: MENA
 level: K-12
@@ -323,7 +331,11 @@ can settle, because the register that would settle it is one nobody publishes an
    agreeing on it** — read in both languages 2026-11-05, one export per language from the portal's own
    v2.1 endpoint, row order identical on cycle and date;
    grade totals over the 882 reviews: `(3) Satisfactory` 350, `(4) Inadequate` 245, `(2) Good` 202,
-   `(1) Outstanding` 85; per-cycle counts as tabulated above; publication dates 2009-06 → 2026-04)
+   `(1) Outstanding` 85; by cycle, in that same `(1)/(2)/(3)/(4)` order — C1 202 reviews (7 / 60 / 94 /
+   41) published 2009-06 → 2011-05, C2 206 (14 / 48 / 89 / 55) 2012-02 → 2015-03, C3 207 (31 / 39 / 70 /
+   67) 2015-09 → 2019-04, C4 128 (10 / 25 / 41 / 52) 2019-06 → 2023-12, C5 139 (23 / 30 / 56 / 30)
+   2024-07 → 2026-04; and the 140 monitoring rows on their own three-band scale exclusively,
+   `(B) In Progress` 97, `(C) Insufficient Progress` 23, `(A) Sufficient Progress` 20)
    — `https://www.data.gov.bh/explore/dataset/01-results-of-government-schools-reviews-1/`
    **LICENCE: the portal prints `Licence unknown` and carries no licence statement. Counts are
    reported; the table is not reproduced, excerpted as a table, charted or embedded.**

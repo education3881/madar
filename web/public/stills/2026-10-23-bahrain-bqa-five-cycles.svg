@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="Five identical horizontal slabs stacked across a sand ground, each one ticked at the same four positions — five cycles of the same four-point scale. A faint grid of pale ink verticals stands behind them. On the fourth slab alone, the fourth tick is drawn in kiln orange and hangs below the slab instead of rising above it.">
+
+  <title>The Still · Bahrain — five rulers, four points, one that hangs down</title>
+  <desc>A composition for the second Bahrain piece. The predecessor's single regulatory slab, repeated
+  five times at identical length: the Authority's four-point scale carried unchanged across five review
+  cycles. Every slab carries the same four ticks in the same four places, because the four grade labels
+  are identical in all five cycles and whether the bar behind them was identical is not something the
+  register says. One mark differs: on the fourth slab the fourth tick is kiln orange and hangs below the
+  line — the one cycle in seventeen years in which the bottom grade was the most common verdict issued.
+  It is a pointer at a sentence in the body and carries NO magnitude. The slabs are deliberately equal in
+  length and the ticks deliberately equal in spacing: the source register prints `Licence unknown` and
+  carries no licence statement, so its counts may be reported and its table may not be reproduced,
+  excerpted, charted or embedded — and a still whose proportions encoded the distribution would be a
+  chart of it (Editor disposition 4, 2026-11-09).</desc>
+
+  <!-- Sand ground, as the predecessor piece. Same country, same family. -->
+  <rect x="0" y="0" width="1200" height="600" fill="#E8E2D0"/>
+
+  <!--
+    ============================================================
+    THE FACADE, carried from the predecessor still but pulled
+    back. There it was the subject; here it is the ground the
+    five rulers are laid across. Thirty-six ink hairlines,
+    paced evenly, opacity varied.
+    ============================================================
+  -->
+  <g id="facade" stroke="#0E1B2C" stroke-linecap="round" fill="none" stroke-width="1.0">
+    <path stroke-opacity="0.11" d="M 80 96 L 80 528"/>
+    <path stroke-opacity="0.14" d="M 110 96 L 110 528"/>
+    <path stroke-opacity="0.10" d="M 140 96 L 140 528"/>
+    <path stroke-opacity="0.15" d="M 170 96 L 170 528"/>
+    <path stroke-opacity="0.11" d="M 200 96 L 200 528"/>
+    <path stroke-opacity="0.13" d="M 230 96 L 230 528"/>
+    <path stroke-opacity="0.09" d="M 260 96 L 260 528"/>
+    <path stroke-opacity="0.14" d="M 290 96 L 290 528"/>
+    <path stroke-opacity="0.11" d="M 320 96 L 320 528"/>
+    <path stroke-opacity="0.16" d="M 350 96 L 350 528"/>
+    <path stroke-opacity="0.10" d="M 380 96 L 380 528"/>
+    <path stroke-opacity="0.13" d="M 410 96 L 410 528"/>
+    <path stroke-opacity="0.15" d="M 440 96 L 440 528"/>
+    <path stroke-opacity="0.11" d="M 470 96 L 470 528"/>
+    <path stroke-opacity="0.14" d="M 500 96 L 500 528"/>
+    <path stroke-opacity="0.10" d="M 530 96 L 530 528"/>
+    <path stroke-opacity="0.13" d="M 560 96 L 560 528"/>
+    <path stroke-opacity="0.16" d="M 590 96 L 590 528"/>
+    <path stroke-opacity="0.13" d="M 620 96 L 620 528"/>
+    <path stroke-opacity="0.10" d="M 650 96 L 650 528"/>
+    <path stroke-opacity="0.14" d="M 680 96 L 680 528"/>
+    <path stroke-opacity="0.11" d="M 710 96 L 710 528"/>
+    <path stroke-opacity="0.15" d="M 740 96 L 740 528"/>
+    <path stroke-opacity="0.10" d="M 770 96 L 770 528"/>
+    <path stroke-opacity="0.13" d="M 800 96 L 800 528"/>
+    <path stroke-opacity="0.14" d="M 830 96 L 830 528"/>
+    <path stroke-opacity="0.11" d="M 860 96 L 860 528"/>
+    <path stroke-opacity="0.10" d="M 890 96 L 890 528"/>
+    <path stroke-opacity="0.15" d="M 920 96 L 920 528"/>
+    <path stroke-opacity="0.13" d="M 950 96 L 950 528"/>
+    <path stroke-opacity="0.11" d="M 980 96 L 980 528"/>
+    <path stroke-opacity="0.14" d="M 1010 96 L 1010 528"/>
+    <path stroke-opacity="0.10" d="M 1040 96 L 1040 528"/>
+    <path stroke-opacity="0.13" d="M 1070 96 L 1070 528"/>
+    <path stroke-opacity="0.14" d="M 1100 96 L 1100 528"/>
+    <path stroke-opacity="0.11" d="M 1130 96 L 1130 528"/>
+  </g>
+
+  <!--
+    ============================================================
+    FIVE SLABS — the predecessor's regulatory line, five times.
+    Identical length, identical weight, identical terminals.
+    The equality is the argument: five cycles of verdicts under
+    four labels that never changed.
+    ============================================================
+  -->
+  <g id="slabs" fill="#0E1B2C">
+    <rect x="120" y="142" width="960" height="7"/>
+    <rect x="120" y="131" width="2" height="29"/>
+    <rect x="1078" y="131" width="2" height="29"/>
+
+    <rect x="120" y="232" width="960" height="7"/>
+    <rect x="120" y="221" width="2" height="29"/>
+    <rect x="1078" y="221" width="2" height="29"/>
+
+    <rect x="120" y="322" width="960" height="7"/>
+    <rect x="120" y="311" width="2" height="29"/>
+    <rect x="1078" y="311" width="2" height="29"/>
+
+    <rect x="120" y="412" width="960" height="7"/>
+    <rect x="120" y="401" width="2" height="29"/>
+    <rect x="1078" y="401" width="2" height="29"/>
+
+    <rect x="120" y="502" width="960" height="7"/>
+    <rect x="120" y="491" width="2" height="29"/>
+    <rect x="1078" y="491" width="2" height="29"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE FOUR POINTS — the same four tick positions on every
+    slab, rising above the line. Equal spacing, not weighted:
+    the register may be counted and may not be charted.
+    ============================================================
+  -->
+  <g id="points" fill="#0E1B2C" fill-opacity="0.82">
+    <rect x="215" y="128" width="2.2" height="14"/>
+    <rect x="474" y="128" width="2.2" height="14"/>
+    <rect x="724" y="128" width="2.2" height="14"/>
+    <rect x="983" y="128" width="2.2" height="14"/>
+
+    <rect x="215" y="218" width="2.2" height="14"/>
+    <rect x="474" y="218" width="2.2" height="14"/>
+    <rect x="724" y="218" width="2.2" height="14"/>
+    <rect x="983" y="218" width="2.2" height="14"/>
+
+    <rect x="215" y="308" width="2.2" height="14"/>
+    <rect x="474" y="308" width="2.2" height="14"/>
+    <rect x="724" y="308" width="2.2" height="14"/>
+    <rect x="983" y="308" width="2.2" height="14"/>
+
+    <rect x="215" y="398" width="2.2" height="14"/>
+    <rect x="474" y="398" width="2.2" height="14"/>
+    <rect x="724" y="398" width="2.2" height="14"/>
+
+    <rect x="215" y="488" width="2.2" height="14"/>
+    <rect x="474" y="488" width="2.2" height="14"/>
+    <rect x="724" y="488" width="2.2" height="14"/>
+    <rect x="983" y="488" width="2.2" height="14"/>
+  </g>
+
+  <!--
+    ============================================================
+    THE ONE MARK THAT DIFFERS. Fourth slab, fourth point, kiln
+    orange, hanging BELOW the line rather than rising above it.
+    A pointer at the body's finding — cycle four is the only one
+    of five in which the bottom grade was the modal verdict.
+    It encodes no magnitude and no percentage.
+    ============================================================
+  -->
+  <rect id="inverted" x="983" y="419" width="2.5" height="19" fill="#D94F2A"/>
+
+  <!--
+    ============================================================
+    BASELINE TICKED RULE — the macron motif, the publication's
+    signature gesture, same proportions as the wordmark's.
+    ============================================================
+  -->
+  <g id="baseline" stroke="#0E1B2C" stroke-width="1.3" stroke-linecap="square">
+    <line x1="540" y1="566" x2="660" y2="566"/>
+    <line x1="540" y1="560" x2="540" y2="574"/>
+    <line x1="660" y1="560" x2="660" y2="574"/>
+  </g>
+
+</svg>

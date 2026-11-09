@@ -9,7 +9,14 @@ draft:** `content-drafts/recon/2026-11-05-bahrain-bqa-arabic-register-read.md` (
 the CSV, counted independently) and `content-drafts/recon/2026-11-06-bahrain-bqa-arabic-register-second-read.md`
 (the Authority's own Arabic editions of sources 3 and 4).
 **Working slug:** `2026-10-23-bahrain-bqa-five-cycles` (the pair's slug; `englishVersion` below)
-**Status:** AR composition complete and handed to the **Arabic Editor** for Gate 4. `approved: false`.
+**Status:** **GATE 4 PASSED 2026-11-09** (`content-drafts/verdicts/2026-11-09-bahrain-bqa-five-cycles-arabic-gate.md`),
+with three binding corrections, two of them executed in this file: the `edition:` field **struck** (issue
+#13's default was applied 2026-11-08, the field is `z.number().optional()` and `/editions/` skips a null,
+so the correct value is its absence), and the **byte length struck from annotation 5** — the quotation was
+re-checked against the served bytes this morning and is exact, but the page serves 46,033 bytes today
+against the 45,656 recorded on 11-07, because commit `ffa3e0d` rewrote part of it. *A self-citation may
+not carry a byte length, because we are the party that changes those bytes.* The third correction is on
+the English side (Editor disposition 4). `approved: false` until the still, the og card and the flag.
 
 ---
 
@@ -77,7 +84,6 @@ Arabic page**, read in logical order out of HTML today.
 title: "سبعةَ عشرَ عامًا من أحكامِ الهيئةِ على مدارسِها"
 dek: "تُصدِرُ هيئةُ جودة التعليم والتدريب في البحرين درجاتِ مدارسِها الحكومية بالاسم منذ 2009. وفي 882 مراجعةً، أكثرُ أحكامِها تكرارًا «مرضٍ» — وثانيها «غير ملائم»."
 date: 2026-10-23
-edition: HELD — لا توجد نسخة 06، والسجلُّ يُصدِّر hasOpenEdition false. موقوفٌ على قرار المؤسِّس، قضية #13، الافتراضُ المعلَن 2026-11-08. لا يُخمَّن هذا الحقل.
 country: Bahrain
 region: MENA
 level: K-12
@@ -250,8 +256,11 @@ approved: false
    — `https://www.bqa.gov.bh/wp-content/uploads/2025/09/Performance-Report-24-25-AR.pdf`
 5. **مدار — «البحرين تُصدِر درجاتِ مدارسِها، بالاسم، في العَلَن»، 2026-05-26، النسخةُ العربية**
    (المقالةُ السابقةُ التي تُجيب هذه المادّةُ عن سؤالها الثاني الأصعب؛ والسؤالُ مُقتبَسٌ بنصِّه من
-   الصفحةِ المُخدَّمة، مقروءًا في 2026-11-07 عند HTTP 200 و45,656 بايتًا، في الترتيب المنطقيِّ من
-   HTML لا من استخراجِ PDF)
+   الصفحةِ المُخدَّمة، مقروءًا في 2026-11-07 ومُعادًا قراءتُه في 2026-11-09 عند HTTP 200، في
+   الترتيبِ المنطقيِّ من HTML لا من استخراجِ PDF، والاقتباسُ مُطابِقٌ حرفًا بحرفٍ في القراءتَين.
+   **ولا يُثبَت طولُ هذه الصفحةِ بالبايتات**: صفحةُ هذه المجلّةِ سجلٌّ تُحرِّره هذه المجلّةُ نفسُها،
+   وقد تحرَّك طولُها بين القراءتَين — فالمحمولُ عنها هو نصُّ الاقتباسِ المُتحقَّقُ منه، لا عددٌ
+   نُفسِدُه بعملِنا نحن)
    — `https://education3881.github.io/madar/ar/articles/2026-05-26-bahrain-bqa-public-grades/`
 
 ---

@@ -38,17 +38,24 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| `bahrain-bqa-five-cycles` — five cycles of public school grading | 2026-10-21 | 2026-10-23 | **2026-11-02** (+ dispositions 1–2 on 11-05, 3 on 11-07) | **2026-11-07** | — | **2026-11-03** (+ retrace 11-07) | — | — | **three: AR gate, still + og card, flag** |
+| `bahrain-bqa-five-cycles` — five cycles of public school grading | 2026-10-21 | 2026-10-23 | **2026-11-02** (+ dispositions 1–2 on 11-05, 3 on 11-07, **4 on 11-09**) | **2026-11-07** | **2026-11-09** | **2026-11-03** (+ retrace 11-07) | **2026-11-09** | — | **one: the flag** |
 
-**Read against disk on 2026-11-08, not against this table's own account of itself.** Verdict files are in
-`content-drafts/verdicts/`; the drafts are in `content-drafts/drafts/`. The piece is **not** in
-`web/src/content/` and must not be until all eight cells are filled.
+**Read against disk on 2026-11-09, not against this table's own account of itself.** Verdict files are in
+`content-drafts/verdicts/`; the drafts are in `content-drafts/drafts/`; the still is at
+`web/public/stills/2026-10-23-bahrain-bqa-five-cycles.svg` and the card at `web/public/og/…png`
+(1200×600, 1,849 bytes, rendered from the still by `web/scripts/make-og-card.mjs` and **looked at**, per
+2026-08-18). Both assets are safe on disk while the piece is held: `heldAssets.mjs` strips them from
+`dist` at the end of every build, so a held piece's subject is not served at a guessable URL.
 
-**Next action, and it is the Arabic Editor's:** the AR composition landed 2026-11-07, so the gate is the
-next cell and it is the only one with a dependency in front of it. The still and the og card have none and
-can run in parallel — which is the 2026-05-26 lesson (*the Designer is briefed when the Editor
-commissions, not when the Editor approves*), and it is the cell that shipped the Bahrain piece's
-predecessor without its hero still in 2026-06-10.
+**The piece is NOT in `web/src/content/` and must not be until all eight cells are filled.**
+
+**Next action, and it is the Manager's:** seven of eight cells are closed. The flag is the eighth and it
+moves only after the **publish gate in writing** — Editor and Arabic verdicts on file ✓, Verifier verdict
+on file ✓, hero still and share card on disk ✓, `astro build` clean, assertions green, held-slug leak
+zero. The flip commit carries the article text **and its assets together** (the 2026-06-14 rule), and
+this is the first piece in this publication's history that will ship with **no `edition:` field at all**
+— which needed no code change, because the schema has always declared it optional and `/editions/` skips
+a null (Arabic Editor's Gate 4 §3).
 
 ## Shipped as singles
 
