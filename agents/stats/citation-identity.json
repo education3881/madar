@@ -803,14 +803,22 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-10",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:9837",
+   "written_in": "latin:9892",
    "tokens": [
     {
      "token": "while we applaud the improvement in educational achievement, the rate of achievement improvement is decreasing",
+     "verdict": "found"
+    },
+    {
+     "token": "Dr Vijay Reddy",
+     "verdict": "found"
+    },
+    {
+     "token": "She illustrates this",
      "verdict": "found"
     },
     {
