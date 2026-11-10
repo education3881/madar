@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-09",
+ "observed": "2026-11-10",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -994,14 +994,19 @@
   {
    "url": "https://lanouvelletribune.info/2026/02/evaluation-des-systemes-educatifs-cotonou-accueille-latelier-international-du-pasec-2024/",
    "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-10",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2527",
+   "written_in": "latin:2582",
    "tokens": [
+    {
+     "token": "le secrétaire général de la Confemen",
+     "verdict": "found"
+    },
     {
      "token": "تقييمُ الأنظمة التعليمية: كوتونو تستضيف الورشةَ الدولية لباسيك 2024",
      "verdict": "script-mismatch",
@@ -1350,14 +1355,18 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-10",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8737",
+   "written_in": "latin:8565",
    "tokens": [
     {
      "token": "Assessment is no longer seen as a terminal act of evaluation but a continuous and inclusive process",
+     "verdict": "found"
+    },
+    {
+     "token": "Indrani Bhaduri is a professor as well as CEO and head of PARAKH NCERT",
      "verdict": "found"
     },
     {
@@ -2283,6 +2292,24 @@
    "state": "absent"
   },
   {
+   "url": "https://www.aucegypt.edu/news/stories/dean-shawki-egyptian-knowledge-bank-widen-research-education-opportunities",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en"
+   ],
+   "observed": "2026-11-10",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3786",
+   "tokens": [
+    {
+     "token": "Dr. Tarek Shawki",
+     "verdict": "absent"
+    }
+   ],
+   "state": "absent"
+  },
+  {
    "url": "https://www.beehive.govt.nz/release/details-ncea-replacement-confirmed",
    "pieces": [
     "2026-07-07-nz-ncea-corequisite:en",
@@ -2343,6 +2370,24 @@
    "tokens": [
     {
      "token": "نتائج أداء المدارس الحكومية",
+     "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.bqa.gov.bh/education-and-training-quality-authority-issues-the-performance-report-of-education-and-training-institutions-for-the-academic-year-2024-2025/",
+   "pieces": [
+    "2026-05-26-bahrain-bqa-public-grades:en"
+   ],
+   "observed": "2026-11-10",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4275",
+   "tokens": [
+    {
+     "token": "The Chief Executive added",
      "verdict": "found"
     }
    ],
@@ -2812,6 +2857,30 @@
     },
     {
      "token": "من البراغماتية إلى التخلّي: النقاشُ المعلَّق حول سيمسه",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.elsevier.com/hubs/egyptian-knowledge-bank",
+   "pieces": [
+    "2026-05-27-egypt-ekb-decade:en",
+    "2026-05-27-egypt-ekb-decade:ar"
+   ],
+   "observed": "2026-11-10",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:5010",
+   "tokens": [
+    {
+     "token": "Prof. Ayman Ashour, Minister of Higher Education, Egypt",
+     "verdict": "found"
+    },
+    {
+     "token": "الأستاذ الدكتور",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
@@ -4573,14 +4642,18 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-26",
+   "observed": "2026-11-10",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5258",
+   "written_in": "latin:5398",
    "tokens": [
     {
      "token": "A game-based learning tool for children in conflict areas wins UNESCO Prize for innovation in education",
+     "verdict": "found"
+    },
+    {
+     "token": "Dr. Aiman Badri, from Ahfad University for Women (AUW) in Khartoum",
      "verdict": "found"
     },
     {

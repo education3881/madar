@@ -14,7 +14,7 @@ related:
   - 2026-06-20-oman-school-performance-ratings
   - 2026-07-28-england-report-cards-first-term
 sources:
-  - title: "Education and Training Quality Authority (BQA) — Performance Report of Education and Training Institutions for the Academic Year 2024-2025 (announcement, 6 September 2025)"
+  - title: "Education and Training Quality Authority (BQA) — Performance Report of Education and Training Institutions for the Academic Year 2024-2025 (announcement, 6 September 2025) On the gender attributed to the named Chief Executive: this register prints 'Dr.' before her name and no pronoun anywhere on the page, its only other reference to her being 'The Chief Executive added', and 'Dr.' is neutral in English. So the Arabic edition's feminine الدكتورة is a determination this edition owns, dated 2026-11-10 and written down here as this edition's own rather than presented as a read. The single fetch that would settle it is the Authority's own Arabic announcement of the same report, which cannot print the title at all without choosing a gender."
     url: "https://www.bqa.gov.bh/education-and-training-quality-authority-issues-the-performance-report-of-education-and-training-institutions-for-the-academic-year-2024-2025/"
   - title: "BQA — Schools Performance directory (national school review reports, searchable by school name)"
     url: "https://www.bqa.gov.bh/institutions-performance/schools-performance/"

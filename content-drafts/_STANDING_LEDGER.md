@@ -38,30 +38,33 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| `bahrain-bqa-five-cycles` — five cycles of public school grading | 2026-10-21 | 2026-10-23 | **2026-11-02** (+ dispositions 1–2 on 11-05, 3 on 11-07, **4 on 11-09**) | **2026-11-07** | **2026-11-09** | **2026-11-03** (+ retrace 11-07) | **2026-11-09** | — | **one: the flag** |
+| — | — | — | — | — | — | — | — | — | **nothing in flight** |
 
-**Read against disk on 2026-11-09, not against this table's own account of itself.** Verdict files are in
-`content-drafts/verdicts/`; the drafts are in `content-drafts/drafts/`; the still is at
-`web/public/stills/2026-10-23-bahrain-bqa-five-cycles.svg` and the card at `web/public/og/…png`
-(1200×600, 1,849 bytes, rendered from the still by `web/scripts/make-og-card.mjs` and **looked at**, per
-2026-08-18). Both assets are safe on disk while the piece is held: `heldAssets.mjs` strips them from
-`dist` at the end of every build, so a held piece's subject is not served at a guessable URL.
+**Reconciled against disk 2026-11-10, and the row above is EMPTY for the first time since this file was
+opened.** `bahrain-bqa-five-cycles` filled its eighth cell on 2026-11-09 and moved to *Shipped as
+singles* below. **This is a state, not a gap, and the daily run must not read an empty table as a quiet
+day:** with no wave to fall back on, an empty in-flight row means the next piece needs the first cell —
+the Editor's brief, which needs the Researcher's recon first — and nothing downstream can advance until
+it exists. **Standing rule for this file, from today: the run that empties this table names the next
+commission's candidate in the same commit, or states plainly in the brief that it did not.** An empty
+pipeline that nobody names reads exactly like a pipeline between pieces, which is the 71-day shape option
+B was adopted to prevent, one scale down.
 
-**The piece is NOT in `web/src/content/` and must not be until all eight cells are filled.**
-
-**Next action, and it is the Manager's:** seven of eight cells are closed. The flag is the eighth and it
-moves only after the **publish gate in writing** — Editor and Arabic verdicts on file ✓, Verifier verdict
-on file ✓, hero still and share card on disk ✓, `astro build` clean, assertions green, held-slug leak
-zero. The flip commit carries the article text **and its assets together** (the 2026-06-14 rule), and
-this is the first piece in this publication's history that will ship with **no `edition:` field at all**
-— which needed no code change, because the schema has always declared it optional and `/editions/` skips
-a null (Arabic Editor's Gate 4 §3).
+**Named today, not commissioned:** the obvious successor is the question the Bahrain single closed on, and
+the operation does **not** yet have recon on it. Recon is the Researcher's and it precedes the Editor's
+brief; it is queued as the next content function's first action rather than improvised at the end of a run
+whose content function was spent on the board's head.
 
 ## Shipped as singles
 
 | Piece | Shipped | Note |
 |---|---|---|
-| — | — | Nothing yet. The first single will be the first piece this publication has shipped since **2026-09-27**, and the gap is named in every brief rather than smoothed. |
+| `2026-10-23-bahrain-bqa-five-cycles` — five cycles of public school grading | **2026-11-09** | The first single, and the first piece shipped since **2026-09-27** — a gap of **43 days**, named rather than smoothed. Also the first piece in this publication's history to ship with **no `edition:` field at all**, which needed no code change: the schema has always declared it optional and `/editions/` skips a null. Five gates bit on it before it could ship and every one was right. Corpus 45 EN and 45 AR. |
+
+**Assets of record:** still at `web/public/stills/2026-10-23-bahrain-bqa-five-cycles.svg`, card at
+`web/public/og/2026-10-23-bahrain-bqa-five-cycles.png` (1200×600, rendered by
+`web/scripts/make-og-card.mjs` and **looked at**, per 2026-08-18). `heldAssets.mjs` no longer strips
+either, the piece being approved.
 
 ## Standing prohibitions — these bind every piece here
 
@@ -91,7 +94,11 @@ A hand-off missing any of these is **returned unread** — the same teeth in eve
 - `acronyms expanded in the body: N, each expanded in sources[]: ☐` — #101
 - `editorial futures: N, each attributed to a dated register: ☐` — #117
 
-**Measured 2026-11-07 (`agents/tools/arabic_side_reach.py`, ruling #132): 0 of 44 published pairs carry
-the #86 line and 0 carry the #101 line**, because every published hand-off predates its rule — the 10-04
-second amendment's limb two, *a point-of-filing rule never reconciles backward*, on an obligation rather
-than a count. The first piece drafted under all five is the one in flight above.
+**Re-measured 2026-11-10 (`agents/tools/arabic_side_reach.py`): 1 of 45 published pairs carries the #86
+line and 1 carries the #101 line** — and it is the same pair, `2026-10-23-bahrain-bqa-five-cycles`, the
+first piece drafted under all five hand-off lines and now shipped. The figure was **0 of 44** when
+measured on 2026-11-07, because every published hand-off predates its rule — the 10-04 second amendment's
+limb two, *a point-of-filing rule never reconciles backward*, on an obligation rather than a count. **The
+step discontinuity is now visible in the register as one row**, which is what that limb asks for: the
+rule's start date is the first row that satisfies it, and the 44 rows before it are a known error with a
+known size.
