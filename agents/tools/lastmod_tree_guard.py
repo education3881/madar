@@ -198,7 +198,52 @@ def _print_report(rep: dict, axis: str) -> None:
           "unsupportable number being read as one of the other two.")
 
 
-def check(root: Path, axis: str) -> int | None:
+def dist_behind_head(root: Path, dist: Path) -> dict | None:
+    """LIMB 2, added 2026-11-10. None = dist was built at the current HEAD.
+
+    THE DEFECT THIS CLOSES, AND IT WAS COMMITTED BY THIS GUARD ITSELF.
+
+    Limb 1 above asks *is the working tree clean NOW*. On its own that is the
+    WRONG OPERAND, and a run on 2026-11-10 proved it at the cost of six
+    manufactured defects. The run edited nine served annotations, built `dist`,
+    wrote its logs, committed, and only then ran `qa_served_manifest --check`.
+    At comparison time the tree was spotless, so limb 1 allowed the comparison
+    — and every `<lastmod>` inside that `dist` had been resolved against a HEAD
+    one commit behind the one the guard was reading. Three of the nine pieces
+    came back as **SILENT CONTENT CHANGE**, which is the single direction
+    `qa_served_manifest` calls its assertion and the one no other instrument of
+    ours can see. Six pages, both editions, every one of them false. Rebuilding
+    from the identical committed tree returned CLEAN.
+
+    The question is never *is the tree clean* but *does `dist` contain what the
+    tree now contains*, and the cheapest exact operand for that is already on
+    disk in both tools: **HEAD's committer timestamp against `dist`'s newest
+    file mtime.** If a commit landed after the build, the build's git-derived
+    dates are stale by construction, whatever the tree looks like afterwards.
+
+    *A precondition that measures the wrong operand reads exactly like a
+    precondition that passed* — which is #35's bite-as-carefully-as-the-control
+    pointed at a guard instead of at an assertion, and 2026-11-10's third
+    wrong-unit finding in one run.
+    """
+    if not dist.is_dir():
+        raise GuardUnavailable(f"no build to judge: {dist} is not a directory")
+    stamps = [p.stat().st_mtime for p in dist.rglob("*") if p.is_file()]
+    if not stamps:
+        raise GuardUnavailable(f"no build to judge: {dist} holds no files")
+    built = max(stamps)
+    head_ts = int(_git(root, "log", "-1", "--format=%ct").strip())
+    if head_ts > built:
+        return {
+            "built": built,
+            "head_ts": head_ts,
+            "head": _git(root, "rev-parse", "--short", "HEAD").strip(),
+            "lag": head_ts - built,
+        }
+    return None
+
+
+def check(root: Path, axis: str, dist: Path | str | None = None) -> int | None:
     """None = the comparison is supportable. REFUSED = it is not, and said so."""
     try:
         rep = report(root)
@@ -208,15 +253,41 @@ def check(root: Path, axis: str) -> int | None:
         print("  Cannot-establish is refused exactly like dirty. An instrument "
               "that cannot check its own precondition has not passed it.")
         return REFUSED
-    if not rep["relevant"]:
-        if rep["held"]:
-            print(f"lastmod_tree_guard: clean in the resolver's read paths "
-                  f"({len(rep['chrome_globs'])} chrome glob(s), "
-                  f"{len(rep['content_dirs'])} content dir(s)) · "
-                  f"{len(rep['held'])} dirty held draft(s) excluded by design.")
-        return None
-    _print_report(rep, axis)
-    return REFUSED
+    if rep["relevant"]:
+        _print_report(rep, axis)
+        return REFUSED
+
+    # LIMB 2 — the tree being clean NOW says nothing about which commit the
+    # build's dates were resolved against. See dist_behind_head's header.
+    dpath = Path(dist) if dist is not None else root / "web" / "dist"
+    try:
+        behind = dist_behind_head(root, dpath)
+    except GuardUnavailable as e:
+        print(f"REFUSED({REFUSED}): the date axis of {axis} cannot be shown to "
+              f"be supportable — {e}")
+        print("  Cannot-establish is refused exactly like dirty.")
+        return REFUSED
+    if behind:
+        print(f"REFUSED({REFUSED}): {axis} compares a GIT-DERIVED <lastmod> "
+              f"against a build made BEFORE the current HEAD.")
+        print(f"  HEAD is {behind['head']}, committed {behind['lag']}s after "
+              f"the newest file in {dpath} was written.")
+        print("  Every date in that build was resolved against a HEAD one or "
+              "more commits behind this one, so a page whose content changed "
+              "in those commits carries a date that could not have moved. "
+              "Reported as SILENT CONTENT CHANGE, which is a manufactured "
+              "defect indistinguishable from a real one.")
+        print("  The repair is to rebuild from the committed tree, not to "
+              "weaken this limb. Exit 4 is neither drift (1) nor unreachable "
+              "(2): it is a refusal to form a verdict.")
+        return REFUSED
+
+    if rep["held"]:
+        print(f"lastmod_tree_guard: clean in the resolver's read paths "
+              f"({len(rep['chrome_globs'])} chrome glob(s), "
+              f"{len(rep['content_dirs'])} content dir(s)) · "
+              f"{len(rep['held'])} dirty held draft(s) excluded by design.")
+    return None
 
 
 if __name__ == "__main__":

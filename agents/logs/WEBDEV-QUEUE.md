@@ -109,7 +109,7 @@ it cannot finish.
 OPEN rows whatever their age (#116), exactly as today's and yesterday's boards both forecast. **If it closes,
 the head falls to item 37 at 17 days**, the oldest row in OPEN.
 
-## Open — **FIFTY-TWO items in THREE BUCKETS, reconciled against disk 2026-11-10**
+## Open — **FIFTY-THREE items in THREE BUCKETS, reconciled against disk 2026-11-10**
 
 **2026-11-10 — THE DEFECT HEAD WAS TAKEN AS WRITTEN AND IT CLOSED, AFTER ITS UNIT HAD TO BE CORRECTED
 TWICE BEFORE IT COULD BE TAKEN AT ALL.** The displacement line, in one sentence: **this run took item
@@ -132,11 +132,13 @@ cited register (Shawki, Baba-Moussa, Ashiamah, Reddy), eight declared as this ed
 settling fetch named, **zero wrong** across all nineteen, where #86's own sample of ten had found two.
 Filed as **ruling #138**. Full read in `agents/logs/qa-2026-11-10.md`.
 
-**Count line: FIFTY-TWO open — ZERO DEFECT, FORTY-NINE OPEN, THREE BLOCKED. ONE closed today (85), TWO
-opened** — **94**, the day's forward question, at OPEN's head, and **95**, `arabic_side_reach`'s two unit
-defects, raised from 85's closure rather than carried as a note. **Neither is a DEFECT** by #116's
-boundary: 94 is a coverage gap and a face judgment, and 95 names an instrument's wrong output rather than
-a wrong served byte. **Board UP ONE, 51 → 52, and the count is against the rows: 0 + 49 + 3 = 52.**
+**Count line: FIFTY-THREE open — ONE DEFECT, FORTY-NINE OPEN, THREE BLOCKED. ONE closed today (85),
+THREE opened** — **94**, the day's forward question, at OPEN's head; **95**, `arabic_side_reach`'s two
+unit defects, raised from 85's closure rather than carried as a note; and **96**, from the growth
+function, **the board's only DEFECT and therefore tomorrow's head.** 94 is a coverage gap and a face
+judgment and 95 names an instrument's wrong output rather than a wrong served byte, so neither is a
+DEFECT; **96 names 47 served sitemap entries that are wrong now, on every deploy**, and that is #116's
+boundary read straight. **Board UP TWO, 51 → 53, and the count is against the rows: 1 + 49 + 3 = 53.**
 
 **TWO COUNT ERRORS WERE ON THE BOARD ON ARRIVAL, AND BOTH WERE IN THE TABLES RATHER THAN IN THE PROSE.**
 **(i)** Rows 91, 92 and 93 were physically appended by the 11-09 run **to the DEFECT table**, carrying the
@@ -155,14 +157,19 @@ not move it and could not. **Seventh consecutive restatement, same meaning every
 how many of those seven breach, never when.**
 
 **Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 + 3 + 2 + 2 + 3 + 3 +
-**2** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + **1** · board 51 → **52**.
+**3** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + **1** · board 51 → **53**.
 
 ### Tomorrow's head
 
-**The DEFECT bucket is empty, so the head falls to the oldest OPEN: item 37, at 18 days.** Nothing on the
-board currently names a count of served or founder-facing artefacts that are wrong, which is a statement
-about the board and not about the publication (#116 ii) — and it has been falsified twice in sixteen days
-by a measurement rather than by a render.
+**Item 96** — the board's only DEFECT, raised today, **0 days**, naming 47 served sitemap entries that
+are wrong on every deploy. It outranks all 49 OPEN rows whatever their age (#116). **If it closes, the
+head falls to item 37 at 18 days**, the oldest row in OPEN.
+
+**Note what the DEFECT bucket did today, because it is the third falsification of its own emptiness in
+sixteen days.** It held item 85 at the open, emptied at 85's closure, and was re-occupied within the hour
+by item 96 — **not by a new regression but by a 65-day-old question that finally carried a number.** The
+bucket measures what the board can currently COUNT, never what the corpus currently IS (#116 ii), and
+every one of the three falsifications arrived by a measurement rather than by a render.
 
 ### The daily record for 2026-11-09 follows, unaltered.
 
@@ -1928,7 +1935,7 @@ first.** It has now been named twelve times and done zero; if it is displaced a 
 rule has failed in the specific way its own author predicted, and the 2026-10-11 review says so plainly
 rather than restating the rule a third time.
 
-### DEFECT — **EMPTY.** The head comes from here while any row stands (#116); with none standing it falls to the oldest OPEN.
+### DEFECT — **ONE item.** The head comes from here while any row stands (#116).
 
 *Emptied again 2026-11-10 by the closure of item 85, after three days occupied. **The row closed on its
 population and not on its count, and the two moved in opposite directions:** `arabic_side_reach` read
@@ -1939,8 +1946,15 @@ evidenced by their own register, eight declared as this edition's own with the s
 **zero wrong.** Ruling #138. The emptiness is a statement about the board, not about the corpus (#116
 ii), and it is worth saying twice in two weeks.*
 
+*RE-OCCUPIED THE SAME AFTERNOON, by item 96, and the two closures are the same lesson from opposite
+ends. Item 85 closed because its count was the wrong unit and rose while the work was done; item 96
+opens because a question this board has carried since 2026-09-06 **acquired a count** — 47 served
+sitemap entries wrong now, on every deploy — and #116's boundary is the artefact's and not a judgment.
+The bucket was empty for about one hour.*
+
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 96 | **47 served sitemap entries carry a `<lastmod>` with nothing behind them, on every deploy, and the change signal is 28% precise** — measured today by `qa_served_manifest --check` against the bytes the origin is actually serving: of 138 pages compared, **18** changed their rendered content and moved their date (correct), **47** moved their date with byte-identical content, **0** changed silently. The JSON-LD half has no complement to hide in: **100% of the 90 article pages claim a `dateModified` later than their `datePublished`, and 78 of them claim 2026-11-09**, which is the day the site CHROME changed; `2026-05-25-bo-teacher-chalk` tells every machine that reads it it was modified that day and its own bytes have not moved since May. **Cause:** `web/src/lib/sitemapLastmod.mjs` resolves `max(chrome, newest file under web/src/content/)`, which is provenance-derived and honest about being so. **This is the 2026-09-06 forward question, 65 days old, and it is entered as a DEFECT rather than a question because it has finally acquired a count.** The 09-06 review ruled it *a design question for the Web Developer, not a defect* — correctly, because the honest instrument did not exist; `qa_served_manifest` was built 2026-10-06 and the origin has carried a baseline manifest ever since. **The ask: an output-bounded date** — per-URL content hash across deploys, which the served manifest already computes — so a page's date moves when its own served bytes move and not when a template it depends on does. **The cost of not doing it is paid on the REAL changes**: a crawler that finds a `lastmod` unreliable stops believing it, so today's 18 genuine amendments are indistinguishable from outside from the 47 that are not. Measurable after the fix by the same instrument without anybody's permission: precision from **18 of 65 toward 18 of 18**. Full read in `agents/growth/2026-11-10-lastmod-precision-the-one-signal-we-own.md`. **Do this BEFORE any reader-facing amended-on notice** (named in that note and deliberately not built): a visible notice on top of a 28%-precise signal publishes the noise to readers too. | **[WD]** | **2026-11-10** | `qa_served_manifest --check` against the live origin, served bytes to served bytes, after the guard repair that made the comparison supportable | **47 served entries wrong NOW, every deploy** — and the 18 true signals are hidden among them |
 
 *Emptied 2026-10-31 by the closure of item 58 — the first time this bucket has stood at zero since #116
 created it on 2026-10-25. It does not mean the corpus is clean. It means no row currently NAMES a count of
