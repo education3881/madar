@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-11-10</title>
+<meta name="description" content="Manager to Founder daily brief for Tuesday 10 November 2026. Brief 126. The board's one defect closed, and it closed while its own count rose 69 percent - because the evidence a rule demands was being counted as a fresh case of the thing the rule forbids. Nineteen published claims about real people now carry their provenance, zero of them wrong." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  /* 2026-11-05, standing-queue item 78: this rule was `.push-block code` and it
+     made `display: block; white-space: pre` of EVERY code span in this block,
+     including an inline one inside a sentence. It was written for the founder
+     push command, which this block has not carried since the cloud cutover; on
+     2026-11-02 a commit hash in a lede rendered as a full-width dark box and
+     broke the sentence, and that run removed its span and left the rule. Scoped
+     to block code here, with an inline form beside it. One link of a chain of
+     122 copied templates (item 79) -- a repair reaches forward only. */
+  .push-block pre code, .push-block code.block {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .push-block code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: rgba(250, 250, 247, 0.10);
+    padding: 0.08em 0.32em;
+    border-radius: 2px;
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style></head><body><main class="container">  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 126
+      <strong>Tuesday 10 November 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">One thing falls due tomorrow &middot; <strong>issue&nbsp;#12</strong></div>
+    <p>
+      <strong>Yesterday&rsquo;s piece is live and served.</strong> The deploy is green on the tip of
+      <span class="mono">main</span> and the strand is <strong>0</strong> &mdash; everything the
+      operation has written is published. Nothing is waiting on a push.
+    </p>
+    <p>
+      <strong>Issue&nbsp;#12&rsquo;s default falls due tomorrow, 11 November.</strong> The question is
+      whether this operation may ask an archive to keep a copy of the registers it cites. The default is
+      <strong>B&prime;</strong> &mdash; <em>a register cited by a piece in the pipeline may be submitted
+      at the Verifier&rsquo;s verdict</em>. If tomorrow passes in silence we apply it and say so, and the
+      case is no longer hypothetical: the dataset <strong>every figure in yesterday&rsquo;s piece is
+      counted from has no snapshot anywhere</strong>, and under the current default we are forbidden to
+      make one. Nothing else waits on you.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">
+        The piece shipped, all five functions landed, and every commit is now served
+        <div class="day__date">2026-11-09 &middot; Monday &middot; <strong>five functions, six commits, deploy green, strand 0</strong></div>
+      </div>
+    </div>
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label">What ran, and what it left</div>
+        <div class="item__body">
+          <p>
+            A clean day. <em>Seventeen years of one regulator&rsquo;s own verdicts</em> shipped in both
+            editions &mdash; the first piece in forty-three days, the first single under the standing
+            ledger, the first in this publication&rsquo;s history with no edition number. Five functions,
+            five commits plus the close-of-run observation, brief 125. <strong>Verified this morning
+            rather than assumed:</strong> deploy <span class="mono">42627847629</span> is
+            <span class="mono">success</span> on <span class="mono">346f4540</span>, which is the tip of
+            <span class="mono">origin/main</span>. <strong>Strand 0.</strong> Yesterday&rsquo;s nine
+            unserved commits &mdash; four inherited from the failed weekly, five its own &mdash; are all
+            carried. No dark day, no gap to name.
+          </p>
+          <p>
+            <strong>One thing yesterday left broken, and it was the brief itself.</strong> Brief 125
+            carried a <strong>duplicated structural line</strong>: two <span class="mono">&lt;main&gt;</span>
+            elements, one of them never closed, and a stray <span class="mono">&lt;/style&gt;</span>. The
+            page you opened yesterday rendered inside <em>two</em> nested containers, so its column was
+            narrower than every other brief. <strong>This is 16 August&rsquo;s defect inverted</strong>
+            &mdash; that day the template <em>lost</em> its wrapper and two briefs rendered edge to edge
+            for two days; this time it gained a second one. Repaired today, and the gap it exposes is
+            named under <em>Brief</em> below.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">
+        The board&rsquo;s one defect closed &mdash; while its own count rose 69 per cent
+        <div class="day__date">2026-11-10 &middot; Tuesday &middot; <strong>five functions, five commits, build exit 0, all 39 gates green</strong></div>
+      </div>
+    </div>
+    <div class="day__items">
+
+      <div class="item">
+        <div class="item__label">Content &mdash; the queue head, and a count that moved the wrong way</div>
+        <div class="item__body">
+          <p>
+            <strong>The pipeline is empty for the first time since the ledger opened</strong>, and the
+            ledger now says so: yesterday&rsquo;s piece moved to <em>Shipped as singles</em>, the
+            in-flight table is blank, and a standing rule was added there &mdash; <em>the run that empties
+            this table names the next commission&rsquo;s candidate, or says in the brief that it did
+            not.</em> An unnamed empty pipeline reads exactly like a pipeline between pieces, which is the
+            seventy-one-day shape option&nbsp;B was adopted to prevent, one scale down. <strong>Today it
+            did not commission</strong>: the content function went to the board&rsquo;s head instead, and
+            that is said plainly rather than smoothed.
+          </p>
+          <p>
+            The head was <strong>item&nbsp;85</strong>, the one defect on a board of fifty-one:
+            <em>thirty-two gender determinations about named humans are served in fourteen Arabic pieces
+            and not one has evidence on file.</em> It had gone untaken for two days. <strong>It could not
+            be taken as written, because its count was wrong in a way no arithmetic would have
+            found.</strong>
+          </p>
+          <p>
+            The row said <strong>32</strong>. The instrument said <strong>39</strong> this morning. The
+            seven are not drift and nothing had been composed: the tool reads the body <em>and</em> the
+            annotation, and <strong>the provenance record our own rule demands is itself an Arabic
+            honorific beside a name.</strong> Repairing ten determinations yesterday <em>added</em> seven
+            to the population. By the close of today, after all nineteen were read, it printed
+            <strong>54</strong>. <strong>The count rose 69 per cent while the thing it was raised about
+            went to zero.</strong>
+          </p>
+          <p>
+            Second unit error, and it cost more: the row classified <em>channels by piece</em> where a
+            determination belongs to a <em>person</em>. Measured per person there are nineteen
+            determinations, not thirty-two tokens &mdash; and <strong>seven of the twelve outstanding had
+            no second channel at all, on pieces the row called both-channel.</strong> One piece carries
+            thirteen English masculine forms and none for the single human the Arabic edition genders.
+            One candidate was never a member: the <span lang="ar" dir="rtl">&#1575;&#1604;&#1588;&#1610;&#1582;</span>
+            in the Sheikh Saud bin Saqr Al Qasimi Foundation is an <strong>institution&rsquo;s own
+            name</strong>, not a claim about a living person.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Quality &mdash; nineteen of nineteen, zero wrong, and the registers are the story</div>
+        <div class="item__body">
+          <p>
+            All twelve remaining determinations were read against <strong>the register each
+            piece&rsquo;s own annotation names</strong>, and the result written into both editions.
+            <strong>Four evidenced &middot; eight not settled by their register &middot; zero
+            wrong</strong> &mdash; and across all nineteen now read, <strong>the error count is
+            zero</strong>, where our own earlier sample of ten had found two. <strong>Item&nbsp;85
+            closes.</strong>
+          </p>
+          <p>
+            <strong>The distribution is the finding, and the yield inverted overnight.</strong> Sunday got
+            eight of ten from Gulf and Omani registers that print <em>Sayyid</em>, <em>bin</em>,
+            <em>bint</em>, <em>Mrs</em> and <em>Mr</em>. Today got four of twelve from UNESCO, Elsevier,
+            Careers360, a research council and a bilingual authority&rsquo;s English page &mdash;
+            registers that write <em>Dr. X, Chief Executive</em> and no pronoun at all, <strong>by house
+            style, on purpose</strong>. Of the eight unsettled, five were answered by a register that is
+            silent and <strong>three were refused outright</strong>; a quarter of the population walls us.
+            And <strong>for three of the five silent ones the settling register is the owner&rsquo;s own
+            Arabic face, while we cited its English one</strong> &mdash; the evidence sits in the language
+            that cannot omit it, and we read the language that can.
+          </p>
+          <p>
+            <strong>The gate refused this work twice and was right twice.</strong> It demanded dated
+            readings for three registers my new quotations touched &mdash; correct, we do not publish a
+            quotation without one. Then it returned two tokens <strong>absent</strong>, both mine, both
+            the same shape: I had put quotation marks around two forms while saying in the same sentence
+            that the register does <em>not</em> print them. <strong>A quotation mark cannot carry a
+            negation</strong>, so an annotation correctly reporting an absence is byte-identical in kind
+            to one misattributing a quotation. Both unquoted, with the reason written at the point of
+            change.
+          </p>
+          <p>
+            <strong>Yesterday&rsquo;s forward question was tested before anything new was added, and its
+            premise was wrong in the useful direction.</strong> It asked whether <em>any</em> gate here
+            can tell a Mad&#257;r URL from anybody else&rsquo;s, and predicted none could. <strong>Exactly
+            one can</strong>, and it was built on 4 November &mdash; five days <em>before</em> the first
+            self-citation arrived &mdash; scoring our own origin as archived in this repository rather
+            than as a single live copy. The other three know our host only as a line in the user-agent
+            they send. So the repair is <strong>propagation, not invention</strong>, and the row is
+            narrowed rather than closed.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Growth &mdash; the one signal we own is 28 per cent precise</div>
+        <div class="item__body">
+          <p>
+            No tracker by design, so no return rate and <strong>no visitor number is reported or
+            estimated</strong>. What is left is the one signal that reaches a search engine on every
+            deploy and that we author end to end: <strong>the change date in our own sitemap</strong>.
+            Nobody had ever measured whether it is true. Measured today against the bytes the origin is
+            actually serving: of <strong>138 pages</strong>, <strong>18</strong> changed their content and
+            moved their date, <strong>47</strong> moved their date with byte-identical content, and
+            <strong>0</strong> changed silently. <strong>Of the 65 dates moving today, 47 have nothing
+            behind them.</strong>
+          </p>
+          <p>
+            The machine-readable half is worse because it has no complement to hide in:
+            <strong>all 90 article pages</strong> claim a modification date later than publication, and
+            <strong>78 claim yesterday</strong> &mdash; the day the site <em>chrome</em> changed. Our
+            25 May piece tells every machine that reads it that it was modified yesterday. Its bytes have
+            not moved since May.
+          </p>
+          <p>
+            <strong>Why that is growth and not housekeeping:</strong> a crawler that finds this date
+            unreliable stops believing it &mdash; so the cost is paid on the <em>real</em> changes.
+            Today&rsquo;s nine amended pieces are, from outside, eighteen true signals hiding among
+            forty-seven false ones. <strong>Raised as item&nbsp;96 and it takes tomorrow&rsquo;s
+            head.</strong> The 6 September review called this a design question rather than a defect, and
+            that was right then and is wrong now <strong>for one reason: the question has acquired a
+            count.</strong>
+          </p>
+          <p>
+            <strong>The reader&rsquo;s side of the same asymmetry is named and deliberately not
+            solved.</strong> The machine is told the piece changed; <strong>the reader is told
+            nothing</strong> &mdash; no article page carries a visible amended-on line in either edition.
+            In a publication that asks to be audited, that is worth fixing, and <em>not</em> on top of a
+            28-per-cent-precise signal, which would publish the noise to readers too. Order: item&nbsp;96
+            first, the notice after it.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Research &mdash; ruling 138, and this one hands over a detector</div>
+        <div class="item__body">
+          <p>
+            <strong>An instrument&rsquo;s unit is a claim, and it is a different claim from the one the
+            instrument is about.</strong> When the two diverge, every number it prints is well-formed,
+            self-consistent, and about something else. <strong>The cheap test is a direction: if the
+            number rises as the defect is repaired, the unit is wrong.</strong>
+          </p>
+          <p>
+            Four instances in one morning, from one queue row &mdash; tokens where the claim was
+            determinations; pieces where the claim was persons; a quoted string where the claim was the
+            sentence around it; and a fourth that cost six false findings. <strong>A precondition built
+            four weeks ago to refuse exactly one unsupportable comparison allowed it</strong>, because it
+            asks <em>is the tree clean now</em> when the question is <em>does the build contain what the
+            tree now contains</em>. It green-lit a report of six pages changing silently &mdash; the one
+            direction nothing else we own can see &mdash; and <strong>all six were manufactured.</strong>
+            A second limb was added and proved: one bite red, three controls.
+          </p>
+          <p>
+            <strong>What makes this worth a ruling rather than four notes:</strong> none of the four can be
+            caught by checking the arithmetic, and three cannot be caught by re-running them. Our standing
+            rule says <em>count against the population, never against yesterday&rsquo;s number</em>; it
+            was obeyed three times today and did not help, because <strong>the population itself was the
+            wrong set.</strong> The detector costs one comparison and nobody has to be clever to use it.
+          </p>
+          <p>
+            Five count homes moved plus the ratio on both sides, and &mdash; for the first time since that
+            obligation was written &mdash; <strong>the family&rsquo;s membership list moved in the same
+            commit as its count</strong>, because the gate built on Sunday to catch exactly that lapse
+            turned the build red within a minute of the number changing.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__label">Brief &mdash; and the check that renders 149 artefacts did not see this</div>
+        <div class="item__body">
+          <p>
+            Brief 126 is this page, written from yesterday&rsquo;s template <strong>after repairing
+            it</strong>. The duplicated wrapper described above was found by the ordinary act of copying
+            the template forward &mdash; not by any instrument. <strong>We render every founder-facing
+            artefact in a real browser and read every brief&rsquo;s title and description</strong>, and
+            both passed yesterday and would pass again: a doubled container is still a container, and a
+            narrower column is not a broken page. That gap is the one named for tomorrow, alongside the
+            day&rsquo;s forward question.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="stats">
+  <h3>Statistics &middot; as of 2026-11-10 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">45</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">45</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 16 &middot; Africa 11 &middot; Asia 7 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 45 &middot; access 41 &middot; value of teachers 31 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1 &middot; 35 -&gt; 2 &middot; 36 -&gt; 1 &middot; 38 -&gt; 2 &middot; 39 -&gt; 1 &middot; 43 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-10-23</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">
+        A defect takes the head on the day it was raised, and one default falls due
+        <div class="day__date">2026-11-11 &middot; Wednesday</div>
+      </div>
+    </div>
+    <div class="day__items">
+      <div class="item">
+        <div class="item__label">On deck</div>
+        <div class="item__body">
+          <p>
+            <strong>1 &middot; Issue&nbsp;#12&rsquo;s default falls due, and this one is yours.</strong>
+            May the operation ask an archive to keep a copy of the registers it cites? Default
+            <strong>B&prime;</strong>: submit a cited register at the Verifier&rsquo;s verdict, for pieces
+            in the pipeline. Silence tomorrow means we apply it and say so in the brief, because
+            <strong>a decision made by silence should be visible as one</strong>. The cost of not having
+            it is already concrete: the dataset every figure in yesterday&rsquo;s piece rests on exists in
+            one copy, and the window in which anything can be done about a register is exactly the window
+            in which it is still there.
+          </p>
+          <p>
+            <strong>2 &middot; Item&nbsp;96 takes the head</strong> &mdash; forty-seven served sitemap
+            entries that are wrong on every deploy. The repair is a date bounded by <em>output</em>
+            rather than by source provenance, and the measurement that proves it is already built and
+            needs nobody&rsquo;s permission: precision should go from eighteen of sixty-five toward
+            eighteen of eighteen, read off our own origin.
+          </p>
+          <p>
+            <strong>3 &middot; The forward question, and it has a face half the measurement cannot
+            settle.</strong> Nothing we own can tell a claim about <em>the world</em> from a claim about
+            <em>our own method</em> &mdash; and the second kind is now served to readers on nine pieces.
+            Today&rsquo;s provenance was read by our own instrument as twenty-two fresh cases of the thing
+            it was recording the cure for. So: measure how much served annotation is about our process
+            rather than about a register, and then <strong>decide</strong> whether a reader opening the
+            Ghana piece should find a sentence about how this desk settled a gender. Nobody has decided,
+            and today added twenty-two instances without deciding.
+          </p>
+          <p>
+            <strong>4 &middot; A well-formedness limb over the briefs</strong> (item&nbsp;97). Both
+            operands are on disk and nothing compares them: tag balance, one
+            <span class="mono">&lt;body&gt;</span>, one top-level <span class="mono">&lt;main&gt;</span>,
+            no nested container. Offline, no browser, and it would have caught brief 125 on the morning
+            it was written.
+          </p>
+          <p>
+            <strong>Also queued:</strong> the next commission needs recon before a brief, and the empty
+            pipeline is named rather than hidden; item&nbsp;95 gives the Arabic-side instrument a unit it
+            can defend; and the board stands at <strong>fifty-four</strong> &mdash; one defect, fifty
+            open, three blocked, counted against the rows. Two of the counts on it were wrong on arrival
+            this morning and both were in the tables rather than in the prose, which is the fifth
+            consecutive week that register has earned the same ruling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+</body>
+</html>
