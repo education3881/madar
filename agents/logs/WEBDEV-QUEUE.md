@@ -109,6 +109,57 @@ it cannot finish.
 OPEN rows whatever their age (#116), exactly as today's and yesterday's boards both forecast. **If it closes,
 the head falls to item 37 at 17 days**, the oldest row in OPEN.
 
+### Tomorrow's head
+
+**Item 98** — the board's only DEFECT, raised today, **0 days**: 90 served article pages claiming a
+`dateModified` their own bytes do not support. It outranks all 51 OPEN rows whatever their age (#116).
+**If it closes, the head falls to item 37 at 19 days**, the oldest row in OPEN.
+
+## Open — **FIFTY-FIVE items in THREE BUCKETS, reconciled against disk 2026-11-11**
+
+**2026-11-11 — THE DEFECT HEAD WAS TAKEN AS WRITTEN AND IT CLOSED ON THE HALF THAT IS NOT
+SELF-REFERENTIAL.** The displacement line, in one sentence: **this run took item 96** — *47 served sitemap
+entries carry a `<lastmod>` with nothing behind them, on every deploy* — raised 2026-11-10, **1 day**, the
+board's only DEFECT, so it outranked every OPEN row whatever its age — **and displaced items 97, 94, 95,
+93, 92, 91, 90, 89, 88, 87, 86, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67,
+66, 65, 64, 63, 62, 60, 57, 56, 55, 53, 52, 50, 48, 47, 46, 44, 41, 40, 39, 38 and 37.** The three BLOCKED
+rows (45, 22, 32) were not displaced. **Thirty-fifth selection in thirty-seven daily runs made by the
+rule, sixteenth under #116**, and the fourth consecutive head the DEFECT bucket routed away from age.
+Yesterday's board forecast this head by name and by bucket and was right about both — for the fourth day
+running.
+
+**ITEM 96 CLOSES AT 1 DAY, AND IT CLOSED ON THE SITEMAP AND NOT ON THE JSON-LD, FOR A STATED STRUCTURAL
+REASON.** `<lastmod>` lives in `sitemap-0.xml` and **not in the page's own bytes**, so a date derived from
+a content hash is not self-referential and the half is tractable. `dateModified` **is** in the page's
+bytes, so the same move there is a fixed point — date moves, bytes move, hash moves, date must move again,
+forever, on every page. That half is **item 98**, and it is a migration (the manifest's normaliser must
+exclude the self-referential fields, which invalidates every baseline on the origin until a deploy
+re-seeds it) rather than a branch left half-done. Measured on the built sitemap: **distinct `<lastmod>`
+dates across 138 URLs 2 → 17**, and **a one-sentence edit to one article body now moves ONE date where it
+moved 49.** Three red builds on the way, each one an existing gate written for something else catching
+this: a wall-clock stamp (48 URLs above `qa_lastmod`'s ceiling), a seed that **read its answer off the
+sitemap its own broken predecessor had produced** (the identical 48 URLs, the identical timestamp — the
+09-14 trap on a seeding path), and `/madar/valence/` seeded at the chrome ceiling when it is built from
+one file under `public/`. Full read in `agents/logs/qa-2026-11-11.md`.
+
+**Count line: FIFTY-FIVE open — ONE DEFECT, FIFTY-ONE OPEN, THREE BLOCKED. ONE closed today (96), TWO
+opened** — **98**, the JSON-LD half, **the board's only DEFECT and therefore tomorrow's head**; and
+**99**, the day's forward question, at OPEN's head. **98 is a DEFECT** by #116's boundary read straight:
+100% of the 90 served article pages claim a `dateModified` later than their `datePublished` and 78 claim
+2026-11-09, a day on which their own bytes did not move. **99 is not** — it is a measurement nobody has
+taken about a distinction nobody has defined, and the bytes it concerns are right. **Board UP ONE, 54 →
+55, and the count is against the rows: 1 + 51 + 3 = 55.**
+
+**The 28-day breach date is unmoved at 2026-11-29 and is still PINNED BY A RAISE DATE**, not by the
+closure rate: items 64–70 were all raised 2026-11-01. **Eighth consecutive restatement, same meaning every
+time: the rate decides how many of those seven breach, never when.**
+
+**Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 + 3 + 2 + 2 + 3 + 3 +
+4 + **2** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 1 + **1** · board 54 →
+**55**.
+
+### The daily record for 2026-11-10 follows, unaltered.
+
 ## Open — **FIFTY-FOUR items in THREE BUCKETS, reconciled against disk 2026-11-10**
 
 **2026-11-10 — THE DEFECT HEAD WAS TAKEN AS WRITTEN AND IT CLOSED, AFTER ITS UNIT HAD TO BE CORRECTED
@@ -1937,6 +1988,11 @@ rather than restating the rule a third time.
 
 ### DEFECT — **ONE item.** The head comes from here while any row stands (#116).
 
+*Re-occupied 2026-11-11 within minutes of item 96's closure, by item 98 — **the half of item 96 that is
+self-referential**. Second consecutive day this bucket has been emptied and refilled in the same run, and
+on both days the new occupant was already inside the old one rather than a fresh regression. The bucket
+measures what the board can currently COUNT, never what the corpus currently IS (#116 ii).*
+
 *Emptied again 2026-11-10 by the closure of item 85, after three days occupied. **The row closed on its
 population and not on its count, and the two moved in opposite directions:** `arabic_side_reach` read
 **32** tokens when the row was raised, **39** this morning and **54** at the close, because the
@@ -1954,7 +2010,7 @@ The bucket was empty for about one hour.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
-| 96 | **47 served sitemap entries carry a `<lastmod>` with nothing behind them, on every deploy, and the change signal is 28% precise** — measured today by `qa_served_manifest --check` against the bytes the origin is actually serving: of 138 pages compared, **18** changed their rendered content and moved their date (correct), **47** moved their date with byte-identical content, **0** changed silently. The JSON-LD half has no complement to hide in: **100% of the 90 article pages claim a `dateModified` later than their `datePublished`, and 78 of them claim 2026-11-09**, which is the day the site CHROME changed; `2026-05-25-bo-teacher-chalk` tells every machine that reads it it was modified that day and its own bytes have not moved since May. **Cause:** `web/src/lib/sitemapLastmod.mjs` resolves `max(chrome, newest file under web/src/content/)`, which is provenance-derived and honest about being so. **This is the 2026-09-06 forward question, 65 days old, and it is entered as a DEFECT rather than a question because it has finally acquired a count.** The 09-06 review ruled it *a design question for the Web Developer, not a defect* — correctly, because the honest instrument did not exist; `qa_served_manifest` was built 2026-10-06 and the origin has carried a baseline manifest ever since. **The ask: an output-bounded date** — per-URL content hash across deploys, which the served manifest already computes — so a page's date moves when its own served bytes move and not when a template it depends on does. **The cost of not doing it is paid on the REAL changes**: a crawler that finds a `lastmod` unreliable stops believing it, so today's 18 genuine amendments are indistinguishable from outside from the 47 that are not. Measurable after the fix by the same instrument without anybody's permission: precision from **18 of 65 toward 18 of 18**. Full read in `agents/growth/2026-11-10-lastmod-precision-the-one-signal-we-own.md`. **Do this BEFORE any reader-facing amended-on notice** (named in that note and deliberately not built): a visible notice on top of a 28%-precise signal publishes the noise to readers too. | **[WD]** | **2026-11-10** | `qa_served_manifest --check` against the live origin, served bytes to served bytes, after the guard repair that made the comparison supportable | **47 served entries wrong NOW, every deploy** — and the 18 true signals are hidden among them |
+| 98 | **Every one of the 90 served article pages claims a JSON-LD `dateModified` its own bytes do not support, and 78 of them name one day — 2026-11-09 — on which their bytes did not move** — the half of item 96 that could not be closed with it, and the reason is structural rather than budgetary. `<lastmod>` lives in `sitemap-0.xml`, outside the page, so deriving it from the page's `content_sha` is sound and shipped today. `dateModified` is **inside the page**, so deriving it the same way is a FIXED POINT: the date moves, the bytes move, the hash moves, the date must move again — on every page, on every deploy, without end. **The ask: `content_sha` must exclude the self-referential date fields before this half can be touched at all**, and that is a migration, not an edit — every baseline manifest on the origin is computed under the current normaliser, so the first deploy carrying a changed one makes `--check` incomparable until a deploy re-seeds it. `qa_served_manifest` already refuses to compare across schema versions, so the refusal exists; what does not exist is the re-seed path. **Sharpest single instance:** `2026-05-25-bo-teacher-chalk` tells every machine that reads it that it was modified 2026-11-09, and its own bytes have not moved since May. | **[WD]** | **2026-11-11** | measured 2026-11-10 by the growth function against the origin's served bytes; the sitemap half closed 2026-11-11 and this half was not touched | **90 served pages wrong NOW, every deploy** — and unlike the sitemap half there is no correct complement to hide among |
 
 *Emptied 2026-10-31 by the closure of item 58 — the first time this bucket has stood at zero since #116
 created it on 2026-10-25. It does not mean the corpus is clean. It means no row currently NAMES a count of
@@ -1979,6 +2035,7 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 99 | **The new served-date register records WHEN a page's bytes changed and can never record WHETHER the change was worth a crawler's attention — and today spent this publication's only discoverability signal on that distinction without defining it** — the day's forward question, entered at this block's head. Google's own definition is *the date of the last **significant** modification*, and the word has never been measured here. A corrected typo, a new paragraph of evidence, an Arabic honorific appended to one annotation under #86 clause 2, and a template whitespace change that survives the asset-hash normaliser all move `content_sha` identically and will now all move a date. **The ask: of the changes this register dates over the next month, how many move a byte a reader would notice?** First cut needs no oracle — diff the rendered TEXT content of two builds rather than the markup, and report the distribution of changed *visible characters* per dated change. **If most dated changes move zero visible characters, a 28%-precise signal has been replaced by a precise signal about the wrong thing**, which is ruling #138's unit test pointed at our own repair rather than at an instrument we inherited. Not a DEFECT: no served byte is known to be wrong, and the count is what this row would measure. | **[AE]** | **2026-11-11** (the daily's forward question) | not yet measured — the register opened today | nothing red, and nothing CAN go red, which is the item |
 | 97 | **A founder-facing artefact can be structurally malformed and pass every check we own, because the one that opens it in a browser asserts that content RENDERS and never that the document is WELL-FORMED** — found today by the ordinary act of copying the brief template forward, not by any instrument. Brief 125 carried a **duplicated `</style></head><body><main class="container">` line**: two `<main>` elements with one never closed, a second `<body>`, and a `</style>` with no opener. The founder's page rendered inside **two nested `.container` wrappers**, so its column was narrower than every other brief, and the document was invalid. `qa_artefact_render` rendered it at 1280px and asserted both its limbs green — correctly, because **a doubled container is still a container and a narrower column is not a broken page** — and `qa_brief_head` read its `<title>` and description and found both right. **This is 2026-08-16 inverted**: that day the template LOST its wrapper and two briefs rendered edge to edge for two days; this time it GAINED one. **The ask: a well-formedness limb over the 128 briefs and 21 reviews** — tag balance, exactly one `<body>`, exactly one top-level `<main>`, no nested `.container`, `<style>` open/close parity. Offline, no browser, and the whole corpus is on disk. **Both operands exist and nothing compares them** (#89's movement). Brief 125 was repaired in the same run that found it, so no founder-facing artefact is wrong **now** and this is OPEN rather than a DEFECT — but it stood for one day and nothing could have told us. | **[AE]** | **2026-11-10** | Observed directly: `<main>` nesting depth 2 with 1 unclosed at EOF, 2 `<body>`, 1 `<style>` against 2 `</style>`; both existing instruments green on the same file | nothing red — and nothing CAN go red, which is the item |
 | 94 | **Nothing this operation owns can tell a claim about the WORLD from a claim about this operation's own METHOD, and the second kind is now served to readers on nine pieces** — the day's forward question, entered at this block's head, and it is a measurement rather than a worry. The twenty-two provenance appends written today under #86 clause 2, plus eight on 11-08, were read by `arabic_side_reach` as **+22 new gender-committing tokens** (32 → 39 → 54) while the population they record fell to zero unevidenced. The tool was not wrong about the bytes: *«الدكتورة» هنا تحديدٌ تملكه هذه الطبعةُ وحدها* is, to any parse, an honorific beside a name. **The class is wider than one instrument** — the gender provenance, #137's byte-length and title observations, the `annotation == sentence` assurances and the archival dispositions all live inside `sources[]`, in the same field and the same grammar as the claims about somebody else's document that `sources[]` exists to carry. **The ask, in two parts, and the second is not a parse.** (1) Measure it: how many bytes of served annotation across the 90 files are about our own process rather than about a register, and is there a boundary the artefact itself supplies in #113's sense, or is this a class with no exact edge? (2) Then the face judgment no measurement can make: a reader opening the Ghana piece's Arabic annotation now reads a sentence about how this desk settled a gender. **Is that a feature of a publication that stands on named primary sources read in served text, or operational exhaust in reader-facing bytes?** Nobody has decided and today added twenty-two instances without deciding. | **[AE]** + Editor | **2026-11-10** (the daily's forward question) | Observed directly: the count moved 32 → 54 in the direction opposite to the work, measured three times in one run | nothing red — and nothing CAN go red, which is half the item |
 | 95 | **`arabic_side_reach` has two unit defects, both found by taking the row it was built to serve, and both are #123's shape — a probe wider than its subject** — raised from item 85's closure rather than carried forward as a note. **(a) It reads body PLUS frontmatter**, so the provenance #86 clause 2 *mandates* is counted as a fresh determination needing provenance; the count therefore rises as the defect is repaired, 32 → 39 → 54 across two runs, and the row it serves could never have closed on it. **(b) Bucket A's stated boundary is *an honorific states that the next token names a person*, and an eponymous institution defeats it**: `2026-06-10-rak-iqra-arabic-diglossia`'s الشيخ sits inside **مؤسسة الشيخ سعود بن صقر القاسمي**, the Foundation's own proper name, and was counted as a gender claim about a living person. One of 20 candidates was a false positive, so the honest population was **19**. **The ask: give the file a unit it can defend** — count *determinations about persons*, not honorific tokens; exclude a honorific that falls inside a named institution; and either exclude annotation prose that carries its own provenance clause or report body and annotation as two populations rather than one sum. **Not a DEFECT by #116's boundary**: no served byte is wrong, the instrument's own output is, and the file is a measurement that gates nothing. | **[AE]** | **2026-11-10** (from item 85's closure) | Measured three times in one run against the same corpus, and against a per-person hand count of 19 | nothing red — the file carries no `qa_` prefix and fails no build |

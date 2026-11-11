@@ -66,8 +66,46 @@
  * ---------------------------------------------------------------------------
  */
 
+/**
+ * OUTPUT-BOUNDED FROM 2026-11-11 (standing-queue item 96; ruling family of the
+ * 2026-09-06 forward question, 66 days old)
+ * ---------------------------------------------------------------------------
+ * Everything above this block describes a date derived from SOURCE PROVENANCE,
+ * and it was honest about being so. On 2026-11-10 the growth function measured
+ * what that costs, with `qa_served_manifest --check`, against the bytes the
+ * origin was actually serving: of 138 pages, **18** changed their rendered
+ * content and moved their date, **47** moved their date with byte-identical
+ * content, 0 changed silently. Precision 18 of 65 — **28%**. Every chrome
+ * commit moves all 138 dates, because `max(chrome, own file)` says it must.
+ *
+ * So the resolver now asks a register of SERVED BYTES first:
+ * `agents/stats/served-dates.json`, maintained by `agents/tools/served_dates.py`
+ * off `qa_served_manifest`'s own normalised `content_sha`. A page's date is the
+ * date that page's own rendered content last actually changed. Git provenance
+ * remains the fallback for a URL the register has never seen — which is exactly
+ * a page being served for the first time, where provenance is correct.
+ *
+ * WHY THIS IS NOT SELF-REFERENTIAL, AND WHERE IT WOULD BE
+ *
+ * `<lastmod>` lives in `sitemap-0.xml`, NOT in the page's own bytes, so the
+ * hash cannot see the date and the date can be derived from the hash. The
+ * JSON-LD `dateModified` IS in the page's bytes, so the same move there is a
+ * fixed point — date moves, bytes move, hash moves, date must move again, on
+ * every page forever. That half needs the manifest's normaliser to exclude the
+ * self-referential date fields, which invalidates every baseline on the origin
+ * until a deploy re-seeds it. It is a separate queue row, not a half-done
+ * branch here.
+ *
+ * THE HELD-FILE INVARIANT IS STRENGTHENED, NOT WEAKENED
+ *
+ * A held draft is not built, so it has no served bytes and therefore no
+ * register entry and no route — it cannot date anything by construction now,
+ * where before it had to be excluded by name. The 09-08 guard below stays in
+ * place for the provenance fallback, which still reads the content directory.
+ */
+
 import { execFileSync } from 'node:child_process';
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const git = (args) =>
@@ -191,6 +229,51 @@ export function heldContentFiles(repoRoot) {
   return held;
 }
 
+const DATE_REGISTER = 'agents/stats/served-dates.json';
+
+/**
+ * url path -> ISO date that page's own normalised served bytes last changed.
+ *
+ * FAIL-LOUD, same three-way split as the git guards above: a register that is
+ * ABSENT in CI is a regression (the deploy would silently fall back to the 28%
+ * -precise provenance date it was built to replace); absent anywhere else is a
+ * loud warning, so the tree stays buildable from a copy; and a register that is
+ * present but MALFORMED or EMPTY is always fatal, because an assertion that
+ * finds nothing to check has failed rather than passed.
+ */
+function servedDateMap(repoRoot) {
+  const path = join(repoRoot, DATE_REGISTER);
+  if (!existsSync(path)) {
+    const msg =
+      `sitemapLastmod: no served-date register at ${DATE_REGISTER}. Dates would ` +
+      'fall back to git provenance, which is the 28%-precise signal item 96 ' +
+      'exists to replace.';
+    if (process.env.CI) {
+      throw new Error(`${msg} Refusing to build in CI. Run served_dates.py --seed.`);
+    }
+    console.warn(`[sitemapLastmod] ${msg} (non-CI build — using provenance.)`);
+    return new Map();
+  }
+  let reg;
+  try {
+    reg = JSON.parse(readFileSync(path, 'utf8'));
+  } catch (err) {
+    throw new Error(`sitemapLastmod: ${DATE_REGISTER} does not parse (${err.message}).`);
+  }
+  const pages = reg && reg.pages;
+  if (!pages || Object.keys(pages).length === 0) {
+    throw new Error(
+      `sitemapLastmod: ${DATE_REGISTER} describes no page. A date register with ` +
+        'nothing in it is the 08-16 silent-pass trap, not a clean slate.'
+    );
+  }
+  const map = new Map();
+  for (const [url, entry] of Object.entries(pages)) {
+    if (entry && entry.changed_at) map.set(url, entry.changed_at);
+  }
+  return map;
+}
+
 /** repo-relative path -> ISO-8601 date of the most recent commit touching it. */
 function buildFileDateMap() {
   if (git(['rev-parse', '--is-shallow-repository']).trim() === 'true') {
@@ -275,6 +358,7 @@ export function createLastmodResolver() {
   const repoRoot = git(['rev-parse', '--show-toplevel']).trim();
   const held = heldContentFiles(repoRoot);
   const files = buildFileDateMap();
+  const servedDates = servedDateMap(repoRoot);
 
   let chrome = null;
   for (const [path, date] of files) {
@@ -298,6 +382,12 @@ export function createLastmodResolver() {
    * @returns {string|null} YYYY-MM-DD
    */
   return function lastmodFor(pathname) {
+    // THE REGISTER FIRST. A page that has been served before is dated by its own
+    // served bytes; provenance below is the fallback for one that has not.
+    const key = pathname.endsWith('/') ? pathname : `${pathname}/`;
+    const served = servedDates.get(key);
+    if (served) return iso(served);
+
     const p = pathname.replace(/^\/madar/, '').replace(/\/$/, '') || '/';
 
     let m;
