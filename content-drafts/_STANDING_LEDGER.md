@@ -38,10 +38,31 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — | — | **nothing in flight** |
+| **Ofsted — the cohort frozen by rule** (working title; no slug yet) | — | — | — | — | — | — | — | — | **all eight — recon done 2026-11-11, cell 1 is next** |
 
-**Reconciled against disk 2026-11-10, and the row above is EMPTY for the first time since this file was
-opened.** `bahrain-bqa-five-cycles` filled its eighth cell on 2026-11-09 and moved to *Shipped as
+**Reconciled against disk 2026-11-11. The table is no longer empty, and what fills it is a candidate with
+recon on file rather than a piece in production** — the distinction is kept in the *Open cells* column on
+purpose, because a row here with eight open cells is a commission decision waiting for the Editor, not a
+draft. Recon at `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`: **candidate 1
+(KHDA Dubai) PARKED on register access**, measured — `web.khda.gov.ae` serves its leaf certificate with no
+intermediate, so the chain cannot be built by any client that verifies one, and `www.khda.gov.ae` 302s to
+that same host; **candidate 2 (Ofsted, England) PROCEED**, because the regulator exempted outstanding
+schools from routine inspection from May 2012, lifted the exemption in November 2020, re-graded the frozen
+cohort and printed the yield beside the stock in one release — *"Only 17% of previously exempt schools that
+had a graded inspection this year remained outstanding"* against *"Eighty-eight per cent of all schools are
+good or outstanding."* **That is the Bahrain single's closing question answered by a regulator's own
+arithmetic**, and the recon's contribution is that the piece's claim *the register that would settle it is
+one nobody publishes anywhere* is false.
+
+**Three reads are owed before the Editor's brief, and they are named in the recon rather than left to the
+drafter:** the newest `state-funded-schools-inspections-and-outcomes` release for a current stock figure
+(the one read is *as at 31 August 2022* and the piece is read in the reader's present, #117), Ofsted's
+first-party account of the September 2024 removal of single-word overall judgements (a second instrument
+change on the same register), and the Editor's call on whether an England candidate needs a Gulf register
+to carry it or whether `bahrain-bqa-five-cycles` is a sufficient anchor **inside our own corpus** — which
+would be the first time a single leans on a published predecessor that way.
+
+**The 2026-11-10 note below is superseded by the paragraph above and kept for the record.** `bahrain-bqa-five-cycles` filled its eighth cell on 2026-11-09 and moved to *Shipped as
 singles* below. **This is a state, not a gap, and the daily run must not read an empty table as a quiet
 day:** with no wave to fall back on, an empty in-flight row means the next piece needs the first cell —
 the Editor's brief, which needs the Researcher's recon first — and nothing downstream can advance until
