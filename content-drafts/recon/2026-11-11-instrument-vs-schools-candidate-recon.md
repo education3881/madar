@@ -19,7 +19,11 @@ That last clause is a claim about the world, and it is the thing recon exists to
 it is wrong in a useful way:** one regulator does publish the register, because one regulator ran the
 natural experiment on itself and then printed both sides of it.
 
-## Candidate 1 — KHDA Dubai. PARKED, and not on editorial grounds.
+## Candidate 1 — KHDA Dubai. ~~PARKED~~ **UN-PARKED the same run — the park was WRONG (ruling #139).**
+
+> **Correction, 2026-11-11, by the research function two hours after this section was written.** The park below is withdrawn. The failure it rests on is a **`tls-chain`** failure, which this operation ruled on **2026-10-01 (#80)** and which is **not an access failure**: the host sends only its leaf certificate and publishes the intermediate at the CA Issuers address printed inside that leaf, so Chrome, Edge and Safari complete the chain and show the reader nothing, while Python, curl and openssl do not. Tested the way #80 tested `parliament.gov.zm`: the leaf's AIA names `http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt`, and `openssl verify -untrusted inter.pem leaf.pem` returns **`leaf.pem: OK`**. The certificate is valid **2 June 2026 → 18 December 2026**. **The register is served, the certificate is sound, and every reader we have can read it — only our client could not.** This section even wrote the browser half down and parked the candidate anyway, because the bucket that holds the distinction fires on URLs already cited and park-or-proceed is decided here, before anything is cited. Ruling **#139**. KHDA returns to the candidate pool with its access objection withdrawn; it is still not commissioned, because Ofsted is the better frame on its merits and not because KHDA was unreadable. The measurement below stands as a measurement and is **struck as a verdict**.
+
+### The original section follows, unaltered, because a withdrawn verdict is kept visible as one.
 
 The obvious successor on shape: Dubai's Knowledge and Human Development Authority has published per-school
 inspection ratings since 2008-09, changed its framework in 2015-16, and re-inspects the same schools year

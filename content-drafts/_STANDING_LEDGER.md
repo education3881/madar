@@ -43,10 +43,8 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 **Reconciled against disk 2026-11-11. The table is no longer empty, and what fills it is a candidate with
 recon on file rather than a piece in production** — the distinction is kept in the *Open cells* column on
 purpose, because a row here with eight open cells is a commission decision waiting for the Editor, not a
-draft. Recon at `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`: **candidate 1
-(KHDA Dubai) PARKED on register access**, measured — `web.khda.gov.ae` serves its leaf certificate with no
-intermediate, so the chain cannot be built by any client that verifies one, and `www.khda.gov.ae` 302s to
-that same host; **candidate 2 (Ofsted, England) PROCEED**, because the regulator exempted outstanding
+draft. Recon at `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`: **candidate 1 (KHDA Dubai) parked and then UN-PARKED the same run, the park being wrong — ruling #139**, measured — `web.khda.gov.ae` serves its leaf certificate with no
+intermediate, so the chain cannot be built by any client that verifies one — **and that is a `tls-chain` condition, which #80 ruled on 2026-10-01 is NOT an access failure**: the leaf's own AIA address yields an intermediate against which it verifies `OK`, valid to 18 December 2026, so every browser reads the register and only our client cannot; **candidate 2 (Ofsted, England) PROCEED**, because the regulator exempted outstanding
 schools from routine inspection from May 2012, lifted the exemption in November 2020, re-graded the frozen
 cohort and printed the yield beside the stock in one release — *"Only 17% of previously exempt schools that
 had a graded inspection this year remained outstanding"* against *"Eighty-eight per cent of all schools are
