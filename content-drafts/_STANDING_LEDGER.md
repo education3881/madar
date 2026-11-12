@@ -30,6 +30,28 @@ rather than per wave. Eight cells, and a piece ships when all eight are filled:
 5. Arabic Editor's gate · 6. Verifier verdict · 7. Hero still + og card · 8. `approved: true` in both
 editions, in one commit with its assets (the 2026-06-14 rule)
 
+**THE RAIL STEP, ADDED 2026-11-12 BY THE GROWTH FUNCTION — cell 1 names the forward edges and cell 8
+writes them.** Standing-queue item 72 measured the defect and then said in writing that the useful half
+is the half that stops it regenerating: *a rail is curated when a piece is written, and at that moment
+only the older pieces exist, so every follow-up can point back and none can point forward, and nothing
+ever goes back.* 149 edges, 22 still backward after the 11-07 Editor pass. The fix is two lines in this
+gate rather than another sweep:
+
+- **Cell 1 (the Editor's brief) names the pieces this one follows up** — by slug, under *Cross-link* —
+  and states that the **forward** edge into each of them is owed.
+- **Cell 8 adds those forward edges to the older pieces' `related:` in the SAME commit as the flip**,
+  both editions, capped at the proven maximum of 6 rails per piece. A flip that adds a backward rail and
+  no forward one is incomplete in the same way a piece without its hero still is incomplete
+  (the 2026-06-14 rule, applied to the graph instead of to the assets).
+
+*Why here and not in a template file: there is no commission template any more. Editions closed, the
+eight cells in this file ARE the template, and a step written anywhere else is a step nobody is told to
+read (`CLAUDE.md`'s own rule about a binding queue nobody is told to read).* The first instance is on
+disk the same day: `2026-11-12-england-ofsted-exempt-cohort-brief.md` names both Bahrain pieces and the
+forward edges owed to them. **This closes item 72's regeneration half only** — the 22 declined backward
+edges stay open, their judgment expiring when a later piece turns one of those comparisons into a real
+follow-up.
+
 **The Verifier's verdict is scheduled the run after the pair verdict** (2026-09-06) and **drafter ≠
 verifier is structural** — neither is relaxed by the absence of a wave. The ceiling stays **one fresh piece
 per day at most**, and the standing rule holds: **quality over slot, hold rather than ship thin.**
