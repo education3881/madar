@@ -38,12 +38,27 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **Ofsted — the cohort frozen by rule** (working title; no slug yet) | — | — | — | — | — | — | — | — | **all eight — recon done 2026-11-11, cell 1 is next** |
+| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | — | — | — | — | — | — | — | **seven — cell 1 FILLED, and cell 2 is GATED** |
 
-**Reconciled against disk 2026-11-11. The table is no longer empty, and what fills it is a candidate with
-recon on file rather than a piece in production** — the distinction is kept in the *Open cells* column on
-purpose, because a row here with eight open cells is a commission decision waiting for the Editor, not a
-draft. Recon at `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`: **candidate 1 (KHDA Dubai) parked and then UN-PARKED the same run, the park being wrong — ruling #139**, measured — `web.khda.gov.ae` serves its leaf certificate with no
+**Reconciled against disk 2026-11-12. CELL 1 IS FILLED and the row is a commission rather than a
+candidate:** the Editor's brief is at `content-drafts/briefs/2026-11-12-england-ofsted-exempt-cohort-brief.md`,
+written off the 11-11 recon plus today's two owed reads (`content-drafts/recon/2026-11-12-ofsted-the-two-owed-reads.md`).
+**Cell 2 does not open on the calendar, it opens on a gate:** the brief carries two open gates — the
+operational voice (the Saudi bar: no named, operational, recent voice, no draft) and the dated first-party
+read of the September 2024 removal of single-word overall judgements — and **drafting may not start until
+gate 1 resolves or the piece is parked.** That is stated here and not only in the brief, because a row
+reading *seven open cells* otherwise looks like six days of ordinary work queued behind it.
+
+**What today's reads changed, recorded because it is the frame and not a detail.** The 11-11 recon
+proceeded on a regulator that answered the Bahrain single's closing question with a cohort frozen by rule.
+That stands. What the reads add is that the regulator has since **removed the overall grade entirely** —
+`State-funded schools inspections and outcomes as at 31 August 2026`, published **2026-11-10**, two days
+before this commission, is the first release of a framework in effect from **10 November 2025** — and
+tells parents in its own voice that *"the new grades can't be compared to the old ones."* The piece is
+commissioned on that pair: the measurement exists exactly once, and the instrument that produced it has
+been replaced by its own author.
+
+**The 2026-11-11 note below is superseded in its *candidate* reading and kept for the record.** Recon at `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`: **candidate 1 (KHDA Dubai) parked and then UN-PARKED the same run, the park being wrong — ruling #139**, measured — `web.khda.gov.ae` serves its leaf certificate with no
 intermediate, so the chain cannot be built by any client that verifies one — **and that is a `tls-chain` condition, which #80 ruled on 2026-10-01 is NOT an access failure**: the leaf's own AIA address yields an intermediate against which it verifies `OK`, valid to 18 December 2026, so every browser reads the register and only our client cannot; **candidate 2 (Ofsted, England) PROCEED**, because the regulator exempted outstanding
 schools from routine inspection from May 2012, lifted the exemption in November 2020, re-graded the frozen
 cohort and printed the yield beside the stock in one release — *"Only 17% of previously exempt schools that
