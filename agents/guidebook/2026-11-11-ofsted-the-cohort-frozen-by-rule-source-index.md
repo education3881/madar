@@ -57,3 +57,77 @@ Quoted as the register prints it:
 action. The sibling candidate (KHDA Dubai) is in the pool with its access objection **withdrawn** —
 see ruling **#139**: it was parked this morning on a `tls-chain` failure that is not an access failure,
 and its certificate verifies OK against the intermediate its own leaf names.
+
+---
+
+## ADDENDUM 2026-11-12 — two of the three owed reads TAKEN, and the index's frame changed
+
+Both reads are first-party, read in served text today, and they move this index from *a regulator that
+answered the question* to *a regulator that answered it and then replaced the instrument*.
+
+### Register 3 — `State-funded schools inspections and outcomes as at 31 August 2026`
+
+Ofsted, Official Statistics, **published 10 November 2026** — two days before the commission. Main
+findings read at
+`gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2026/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2026`.
+
+What it gives, quoted as printed:
+
+- *"This official statistics release covers the first year of the renewed education inspection framework
+  (EIF), which came into effect on 10 November 2025."* · *"These statistics are published as official
+  statistics in development."*
+- *"There are currently 21,957 state-funded schools. Forty-six per cent of these are maintained by local
+  authorities and 54% are academies and free schools."*
+- *"Between 10 November 2025 and 31 August 2026, we have carried out 3,262 inspections, of which 3,188
+  were full inspections."*
+- **Two self-disqualifications of its own grade profile as a stock figure:** *"The 3,188 full inspections
+  carried out represent only 15% of all state-funded schools, so the grade profile is not representative
+  of all schools."* · *"As we inspect lower-performing schools more often than high-performing schools,
+  the mix of schools inspected in any single year is not typically representative of all schools."*
+- **Its only bridge to the old series, and it is about the inspected cohort rather than the stock:**
+  *"Of the 3,187 schools that received a full inspection this year, 17% were graded 'requires improvement'
+  or 'inadequate' for overall effectiveness at their previous full inspection. This 17% compares with 10%
+  of all 21,879 schools being graded 'requires improvement' or 'inadequate' at their most recent
+  inspection in August 2024, and an estimate of 8% in August 2025."*
+- Graded *'expected standard' or better*: **90%** inclusion · **78%** curriculum and teaching · **72%**
+  achievement · **84%** attendance and behaviour · **95%** personal development and wellbeing · **85%**
+  leadership and governance. *"The most common grade was 'expected standard': between 53% and 62% of
+  schools received this grade across the 8 evaluation areas."*
+- *"Data for the previous version of the framework remain available."*
+
+**There is no `good or outstanding` percentage in this release, and there cannot be one.** The 88% the
+2022 release printed is a statement in a unit this register has stopped producing.
+
+### Register 4 — `Understanding Ofsted report cards and grades`
+
+Ofsted guidance for parents, **published 1 December 2025, last updated 2 November 2026**, read at
+`gov.uk/guidance/understanding-ofsted-report-cards-and-grades`.
+
+- *"The main change is that we no longer give one overall judgement, such as 'good', 'outstanding' or
+  'requires improvement'."*
+- The scale as printed: *"'exceptional' · 'strong standard' · 'expected standard' · 'needs attention' ·
+  'urgent improvement'"*, plus *"We also tell you whether safeguarding responsibilities are 'met' or
+  'not met'."*
+- **The sentence this index exists to carry:** *"It's important to understand that the new grades can't
+  be compared to the old ones: this is a different approach to inspection and a new way of reporting to
+  you."*
+
+### THE TRAP, recorded at index level so no drafter has to find it
+
+**Two different 17%s, four years apart, both Ofsted, both about inspected schools, meaning opposite
+things.** 2022: *previously exempt schools that **remained outstanding***. 2026: *this year's inspected
+schools that had been **requires improvement or inadequate** at their previous full inspection.* Both are
+correctly cited, so a numeral check passes and the collision lands in the reader's head. **Every "17%"
+carries its year, its direction and its denominator, or it does not go in.**
+
+### What is still owed
+
+**Read 2 is only half taken.** The guidance page describes the current state in the present tense as at 2
+November 2026 and **does not date** the removal of single-word judgements. A body may say *Ofsted no
+longer gives one overall judgement* and **may not print "September 2024"** until the dated first-party
+announcement is read. Neither page states *why* the overall grade was removed; the policy reasoning is the
+Department for Education's and is not in either register read here.
+
+**Read 1 is complete.** Read 3 — the Editor's call on whether an England candidate needs a Gulf register
+— was taken on 2026-11-12: the Bahrain single is a sufficient anchor inside our own corpus, and the cost
+is stated in the commission brief.
