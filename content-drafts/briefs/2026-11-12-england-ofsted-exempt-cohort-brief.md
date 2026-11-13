@@ -1,7 +1,10 @@
 # Editorial brief — the cohort England froze by rule, and the instrument it then replaced
 
 **Commissioned:** 2026-11-12 (Manager, for the Editor, off `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md` and today's addendum `2026-11-12-ofsted-the-two-owed-reads.md`)
-**Status:** **CELL 1 OF EIGHT FILLED.** Commissioned, not drafting. The next cell is the EN draft, and it does not open until open gate 1 below is resolved or the piece is parked.
+**Status:** **CELL 1 OF EIGHT FILLED, AND BOTH OPEN GATES RESOLVED 2026-11-13 — CELL 2 IS OPEN.** The EN
+draft may start. See `content-drafts/recon/2026-11-13-ofsted-the-two-gates-resolved.md` for both register
+reads; the gate section at the foot of this brief is amended in place rather than rewritten, so the bar
+each gate was set at is still readable beside what cleared it.
 **Slot:** no edition. Ships as a **single** the day its own eight-cell gate closes (`content-drafts/_STANDING_LEDGER.md`, opened 2026-11-08 under issue #13's applied default).
 **Working title (provisional):** *The cohort that was frozen by rule*
 **Proposed slug:** `2026-11-12-england-ofsted-exempt-cohort`
@@ -115,7 +118,31 @@ regulator**, not another grievance against it:
 4. **And our own piece carries the cost.** The Bahrain single's closing clause was wrong. It is corrected
    in the body of this piece, in our own name, with the date it was published.
 
-## The two open gates — resolve before drafting, or park
+## The two open gates — **BOTH RESOLVED 2026-11-13.** The bars are left standing below, with what cleared each
+
+**Gate 1 CLEARED.** Ofsted's own release *Hundreds of formerly outstanding schools reinspected*, 22
+November 2022, prints *"Ofsted's Chief Inspector, Amanda Spielman, said:"* and then puts her on the
+record about this cohort and this policy — *"The exemption was a policy founded on the hope that high
+standards, once achieved, would never drop, and that freedom from inspection might drive them even
+higher"* and *"These outcomes show that removing a school from scrutiny does not make it better."* The
+operator of the instrument the piece is about, inside the 2021–26 dateline. The union voices on the same
+story are **representative, not operational**, and are not carried.
+
+**Gate 2 CLEARED, and it corrected this brief.** The removal was announced by the **Department for
+Education** on **2 September 2024** — *"Single headline grades for schools will be scrapped with
+immediate effect"* — not by the regulator. The body may now print the date, **attributed to the
+Department**, and **may not attribute the removal to Ofsted**. The 10 November 2025 framework is the
+regulator's own act; the 2 September 2024 grade removal is the Department's. Two instrument changes,
+two owners, fourteen months apart.
+
+**Gender read CLEARED and this brief's assumption about it was wrong.** The sentence below says English
+registers carry pronouns. The release the voice comes from carries **none** for her. It is settled on a
+second first-party register, Ofsted's own speech page, whose standfirst prints *"Ofsted's Chief Inspector
+reflects on **her** first speech at the Festival of Education"* — so the hand-off line is `named humans —
+gender read from register: 1 of 1`, a read under #86 clause 1 and not a declaration under clause 2. The
+trap, named: her own text says *"His Majesty's Chief Inspector"*, and that **His** is the monarch's.
+
+### The bars as they were set on 2026-11-12, unaltered
 
 1. **The operational voice.** The Saudi bar holds without exception: **no named, operational, recent voice,
    no draft.** Nothing in either register read so far is one — the 2026 release names a statistician

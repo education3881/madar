@@ -60,7 +60,33 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | — | — | — | — | — | — | — | **seven — cell 1 FILLED, and cell 2 is GATED** |
+| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | — | — | — | — | — | — | — | **seven — cell 1 FILLED, and cell 2 is OPEN from 2026-11-13** |
+
+**Reconciled against disk 2026-11-13. BOTH OPEN GATES RESOLVED AND CELL 2 OPENS.** The 11-12 row said
+cell 2 opens on a gate and not on the calendar. The gate opened today, from two first-party reads
+recorded at `content-drafts/recon/2026-11-13-ofsted-the-two-gates-resolved.md`:
+
+- **Gate 1, the operational voice** — Ofsted's own release of **22 November 2022** puts *Ofsted's Chief
+  Inspector, Amanda Spielman* on the record about this exact cohort: *"The exemption was a policy founded
+  on the hope that high standards, once achieved, would never drop"* and *"These outcomes show that
+  removing a school from scrutiny does not make it better."* The Saudi bar is met by the operator of the
+  instrument, inside the 2021–26 dateline. The union voices on the same story are representative rather
+  than operational and are **not** carried.
+- **Gate 2, the dated removal** — and it **corrected the commission**. The September 2024 removal of
+  single-word overall judgements is the **Department for Education's** act, announced **2 September 2024**
+  as *"scrapped with immediate effect"*, not the regulator's. The piece's frame — *the instrument has been
+  replaced by its own author* — now has to say **which** author: the 10 November 2025 framework is
+  Ofsted's own, the 2 September 2024 grade removal is the Department's. Two changes, two owners, fourteen
+  months apart.
+- **The gender read is a READ and not a declaration**, settled on Ofsted's own standfirst — *"Ofsted's
+  Chief Inspector reflects on **her** first speech"* — after the release the voice comes from turned out
+  to carry no pronoun at all, against the brief's own assumption that English registers carry them.
+
+**Drafting is the next content function's first action.** It was not started today: the ceiling is one
+fresh piece per day and this run's content slot was spent opening the gate that forbade drafting. *Named
+rather than implied, so an unstarted draft does not read like a quiet day.*
+
+**The 2026-11-12 note below is superseded in its GATED reading and kept for the record.**
 
 **Reconciled against disk 2026-11-12. CELL 1 IS FILLED and the row is a commission rather than a
 candidate:** the Editor's brief is at `content-drafts/briefs/2026-11-12-england-ofsted-exempt-cohort-brief.md`,
