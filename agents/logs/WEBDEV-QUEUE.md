@@ -121,6 +121,71 @@ the head falls to item 37 at 17 days**, the oldest row in OPEN.
 acronym their own `sources[]` does not evidence (`PARAKH`, `NIK`, `ACARA`). It outranks all 52 OPEN rows
 whatever their age (#116). **If it closes, the head falls to item 38**, the oldest row in OPEN.
 
+### Tomorrow's head
+
+**Item 38** — the DEFECT bucket is **EMPTY** again, so the head is the oldest row in OPEN: *the ruler is
+measured where it is made of digits*, raised **2026-10-24**, **21 days** tomorrow. It is the row that has
+sat longest on this board since item 37 closed yesterday, and it is now the second consecutive day the
+head is set by age rather than by a count of broken bytes.
+
+## Open — **FIFTY-SIX items in THREE BUCKETS, reconciled against disk 2026-11-13**
+
+**2026-11-13 — THE HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN FOR THE SECOND CONSECUTIVE RUN, AND THIS TIME
+THE COUNT HELD — AND WAS AN UNDERCOUNT.** The displacement line, in one sentence: this run took **item
+100**, the board's only DEFECT, raised 2026-11-12 and **1 day** old — *three served EN pieces expand an
+acronym their own `sources[]` does not evidence* — and **displaced items 101, 99, 98, 97, 95, 94, 93, 92,
+91, 90, 89, 88, 87, 86, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65,
+64, 63, 62, 60, 57, 56, 55, 53, 52, 50, 48, 47, 46, 44, 41, 40, 39 and 38.** The three BLOCKED rows (45,
+22, 32) were not displaced. **Thirty-seventh selection in thirty-nine daily runs made by the rule,
+eighteenth under #116.** Item 101 — yesterday's forward question, which entered at OPEN's head this
+morning — was displaced on its first day, by the very mechanism it was raised to question. That is #116
+working as written: a DEFECT outranks a question whatever its freshness.
+
+**ITEM 100 CLOSES AT 1 DAY, AND ITS COUNT WAS RIGHT ABOUT ITS INSTRUMENT RATHER THAN ABOUT THE CORPUS.**
+Re-measured first, per yesterday's lesson: all three EN bodies still expand an acronym whose words their
+own annotations do not carry — PARAKH 1 of 6, ACARA 1 of 4, NIK 1 of 3. **And a fourth defective body was
+found that the row could not name:** the Arabic edition of `2026-07-07-india-parakh-hpc` expands PARAKH
+into Arabic in its body and carries none of those words in its own annotations either. The row said
+*three served EN pieces* because the detector that wrote it reads Latin-script acronyms, and #113 records
+**0 anchors across all 45 Arabic bodies by construction** — so *a row inherits its instrument's blind
+spot along with its count.* The true population was **4 bodies across 3 pieces** and all four are
+repaired.
+
+**THE REPAIR TOOK #101 CLAUSE 1'S FIRST BRANCH IN ALL FOUR CASES, BECAUSE EVERY BODY WAS ALREADY RIGHT.**
+Three first-party reads were taken for the register's own printed wording (clause 4): PARAKH's own About
+block prints the expansion **twice and not identically** — with and without the comma after *Review* — and
+the body carries the form the register's body text prints; ACARA's front page prints its full name three
+times; and NIK's English-language site names itself **Supreme Audit Office** in its logo and its footer and
+prints **The Supreme Audit Office (NIK)** in its own headline. **The cited `/prs` page expands PARAKH
+nowhere**, which is why the annotation was silent — *the annotation could not carry a name the register we
+cited does not print.* No body changed, no register was added (that would have reddened
+`qa_claim_registers --check` until a budgeted emit ran), and `qa_acronym_evidence` now reads **14 of 14**.
+
+**NIK's case was a question #101 could not answer and ruling #141 now does.** The row recorded that NIK is
+*Najwyższa Izba Kontroli* and that the body prints a translation, so clause 1's first branch *may be
+unreachable in principle*. It is reachable, and the reason is that **the pairing is the owner's and not
+ours**: the test for a cross-language acronym is not whether the letters spell the name — they cannot —
+but whether the institution itself prints the two together. Filed as **#141** with five binding clauses.
+
+**Count line: FIFTY-SIX open — ZERO DEFECT, FIFTY-THREE OPEN, THREE BLOCKED. ONE closed today (100), ONE
+opened** — **102**, the day's forward question, at OPEN's head. **Board FLAT at 56, and the count is
+against the rows: 0 + 53 + 3 = 56.** The DEFECT bucket is empty for the second time since #116 created it,
+and it means the same thing it meant on 2026-10-31: no row currently *names* a count of served or
+founder-facing artefacts that are wrong, which is a statement about the board and not about the
+publication.
+
+**The 28-day breach date is unmoved at 2026-11-29 and is still PINNED BY A RAISE DATE**, not by the
+closure rate: items 64–70 were all raised 2026-11-01. **Tenth consecutive restatement, same meaning every
+time.** Today's closure was item 100, raised the day before yesterday — the second consecutive day the
+rule has handed out a head that was never going to breach, because #116 orders by bucket before it orders
+by age and a fresh DEFECT is still a DEFECT.
+
+**Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 + 3 + 2 + 2 + 3 + 3 +
+4 + 2 + 2 + **1** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 1 + 1 + 1 + **1** ·
+board 56 → **56**.
+
+### The daily record for 2026-11-12 follows, unaltered.
+
 ## Open — **FIFTY-SIX items in THREE BUCKETS, reconciled against disk 2026-11-12**
 
 **2026-11-12 — THE PRINTED HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN, AND THE RULE THEN POINTED
@@ -2084,7 +2149,11 @@ The bucket was empty for about one hour.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
-| 100 | **Three served EN pieces expand an acronym their own `sources[]` does not evidence, which is #101's own defect class 103 days after #101 earned it, on pieces the shipped gate returns NOTHING for** — surfaced by item 37's closure measurement rather than by the gate, and handed over rather than repaired by the instrument that found them (the 09-27 split, and item 35's precedent). `2026-07-07-india-parakh-hpc` expands **PARAKH** as *Performance Assessment, Review and Analysis of Knowledge for Holistic Development* and its annotations carry none of `Performance`, `Review`, `Analysis`, `Knowledge`, `Development`. `2026-07-16-australia-naplan-reset` expands **ACARA** as *the Australian Curriculum, Assessment and Reporting Authority* and carries none of `Curriculum`, `Assessment`, `Authority`. `2026-07-07-poland-ukrainian-students` expands **NIK** as *The Supreme Audit Office* and carries neither `Supreme` nor `Office` — **and this third one is a question #101 does not yet answer**, because NIK is *Najwyższa Izba Kontroli* and the body prints a TRANSLATION of the name rather than its expansion, so clause 1's first branch may be unreachable in principle for a non-English register. **The ask: three first-party reads for the register's own printed wording (#101 clause 4), then either the annotation carries it or the body keeps the acronym (clause 1's two branches, both of which #120 found necessary) — in BOTH editions, and the Arabic cannot carry the Latin token at all, so the AR repair is a composition decision and not a copy.** | **[WD]** + Editor + Arabic Editor | **2026-11-12** | hand-read against each piece's full frontmatter block today, after a 66.7%-precise detector located the candidates; the three are the residue that survived the read | **3 served EN pieces wrong NOW**, in both of #101's channels — the body says a name no annotation of ours evidences |
+
+*Emptied again 2026-11-13 by the closure of item 100 — the second time this bucket has stood at zero
+since #116 created it, and the first time it has been emptied by a row that was raised, taken and closed
+inside two days. It does not mean the corpus is clean; it means no row currently NAMES a count of served
+or founder-facing artefacts that are wrong.*
 
 *Emptied 2026-10-31 by the closure of item 58 — the first time this bucket has stood at zero since #116
 created it on 2026-10-25. It does not mean the corpus is clean. It means no row currently NAMES a count of
@@ -2096,7 +2165,7 @@ currently founder-facing, that are **wrong, broken or unevidenced**. A question 
 because the count is what it would measure. Ordered by age; ages are `today − Raised` and are not written
 down (#116).*
 
-### OPEN — **FIFTY items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **FIFTY-THREE items.** Ordered by age. The forward question enters at this block's head.
 
 *Rows 91, 92 and 93 were physically appended to the DEFECT table by the 2026-11-09 run and carried the
 word OPEN in their `Blocks` cell instead of a bucket. **Moved here 2026-11-10 by the run that noticed.**
@@ -2109,6 +2178,7 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 102 | **The annotation-figure register is twice as Arabic as this corpus is, and nothing has asked whether that is a fact about the Arabic edition or about our instruments' licences** — the day's forward question, entered at this block's head per the one-queue rule. The corpus is exactly symmetric, **45 EN bodies and 45 AR bodies**, and the register's TRACED rows are not: **33 Arabic against 17 English**, a 2:1 skew over a 1:1 population. One mechanism for part of it was found today and it is a property of the instrument, not of the edition: `qa_annotation_figures` silently excuses an ISO date like `2026-11-13` and **cannot read the same date written with an Arabic month name**, so the identical sentence is clean in English and a build failure in Arabic, cleared only by a human writing a register row. That has now happened **twice for one cause** — `2026-10-23-bahrain-bqa-five-cycles` token `29` on 2026-11-09 and `2026-07-07-india-parakh-hpc` token `١٣` today — and nothing connected the two until the second one was written. **The ask: of the 33 Arabic rows, how many exist because the Arabic annotation says something the English one does not (a finding about the publication), and how many because a licence written against a Latin-script or ISO form cannot recognise its Arabic equivalent (a finding about us)?** **Second limb, the cheap half:** the licences are enumerated in one tool's header, so walk them and ask of each whether it has an Arabic form — #57 pointed at a set of EXEMPTIONS rather than at a count, because *an exemption list is an enumeration too, and it cannot excuse a form it cannot recognise.* **Not a DEFECT:** no served byte is known to be wrong, and the count is what this row would measure. | **[AE]** | **2026-11-13** (the daily's forward question) | the 2:1 skew counted off the register's own traced rows today; one of the two causes demonstrated on a live build failure | nothing red — the rows are correct, and the cost is a human's hand on every one of them |
 | 101 | **A queue row's count is a number from the day it was raised, and nothing re-measures it before the row is taken — so this board cannot tell a row that is still true from a row something else already fixed** — the day's forward question, entered at this block's head per the one-queue rule, **and it is not a hypothesis: it happened this morning.** Item 98 was printed as the head with *90 served pages wrong* and its true count was **0**, because the commit that raised it closed it. The head then fell through to item 37 and the rule selected a different row than the board forecast — the first time in seventeen #116 selections. That was caught by one run choosing to re-measure, which is a habit and not a property. **The ask: over the 56 rows now on the board, how many carry a count that no longer holds, and is there a cheap mechanical re-measure for any class of them?** First cut needs no new instrument — every row whose evidence cell names a number AND a tool is a row whose tool can be re-run, and the rows that name a number and no tool are the ones that can never be re-measured cheaply, which is itself the answer for that class. **Second limb is #93's:** the output is a re-measure order, not a gate, because a board that reds is a board nobody can clear. | **[AE]** | **2026-11-12** (the daily's forward question) | One instance found today, on the printed head, by measuring before taking | nothing red — the rows are prose, and the item is that the prose is load-bearing |
 | 98 | **The served-date register's own write changes the input the register reads, so today's fixed point is luck rather than construction** — **NARROWED AND RE-BUCKETED 2026-11-12 from a DEFECT reading *90 served article pages claim a `dateModified` their own bytes do not support*. That count measured ZERO this morning:** 90 pages carry the field, all 90 agree with the register's date for their own URL, 0 disagree, and `qa_served_manifest --check` is CLEAN against the live origin at 138 pages with 0 unbacked dates. `dateModified` was already resolved by `lastmodFor`, so item 96's repair moved it in the same build it moved the sitemap's — **the row's stated precondition was falsified by the commit that wrote it**, and the sharpest instance it named, `bo-teacher-chalk` *"telling every machine it was modified 2026-11-09"*, serves 2026-06-14 in both homes today. **What survives is a hazard, proved on the artefact:** changing ONLY the `dateModified` value moves `content_sha` (`4b0a6ca8` → `4049c4ae`) and does not move it under a date-blind operand. So the first run that runs `--update`, rebuilds and pushes without re-updating leaves the register describing the pre-rebuild bytes, and the NEXT run stamps a date with nothing behind it on exactly the pages that really changed — item 96's defect through the one door item 96 left open. **The ask: make the manifest's normaliser blind to the self-referential date fields, bump its schema so cross-schema comparison keeps refusing, and build the RE-BASE path that does not exist — `content_sha` recomputed in place with `changed_at` untouched, plus a normaliser identity in the register so `--update` refuses to churn 138 dates silently.** The migration is not a precondition for the repair; it IS the repair. | **[WD]** | **2026-11-11** | re-measured 2026-11-12 on the built corpus and against the live origin; the self-reference proved by injection on a real served page | nothing red — the 90 dates are right today, which is why this is OPEN and not DEFECT (#116's boundary read straight) |
 | 99 | **The new served-date register records WHEN a page's bytes changed and can never record WHETHER the change was worth a crawler's attention — and today spent this publication's only discoverability signal on that distinction without defining it** — the day's forward question, entered at this block's head. Google's own definition is *the date of the last **significant** modification*, and the word has never been measured here. A corrected typo, a new paragraph of evidence, an Arabic honorific appended to one annotation under #86 clause 2, and a template whitespace change that survives the asset-hash normaliser all move `content_sha` identically and will now all move a date. **The ask: of the changes this register dates over the next month, how many move a byte a reader would notice?** First cut needs no oracle — diff the rendered TEXT content of two builds rather than the markup, and report the distribution of changed *visible characters* per dated change. **If most dated changes move zero visible characters, a 28%-precise signal has been replaced by a precise signal about the wrong thing**, which is ruling #138's unit test pointed at our own repair rather than at an instrument we inherited. Not a DEFECT: no served byte is known to be wrong, and the count is what this row would measure. | **[AE]** | **2026-11-11** (the daily's forward question) | not yet measured — the register opened today | nothing red, and nothing CAN go red, which is the item |
@@ -2208,6 +2278,7 @@ changed the file first → exit 1; control restored → exit 0. Full read in `ag
 
 | Item | Raised | Closed | How |
 |---|---|---|---|
+| **Four served bodies expand an acronym their own `sources[]` does not evidence** (was DEFECT item 100) — three EN plus one AR the row could not name | **2026-11-12** | **2026-11-13** | **Today's daily run, from the DEFECT head at 1 day.** Re-measured before it was taken — the second consecutive run to do so, and the first time the count HELD. It was also an undercount: the AR edition of the India piece expands PARAKH into Arabic and evidences none of it, invisible to a detector #113 records as reading 0 anchors across all 45 Arabic bodies by construction. Three first-party reads taken for the register's own printed wording (#101 clause 4); **every body was already right**, so all four repairs took clause 1's first branch — the annotation now carries the name. PARAKH's own page prints the expansion twice and not identically; the `/prs` page we cite prints it nowhere, which is why the annotation was silent. NIK's cross-language case earned **ruling #141**. `qa_acronym_evidence` 14 of 14. |
 | **The acronym gate can see one eighth of its own defect class** (was open item 37) — ruling #140; the answer is that the class has an outside boundary which locates and cannot classify, so the second half is a measurement and never a gate | **2026-10-23** (the daily's forward question) | **2026-11-12** | **Today's daily run, from the OPEN head at 20 days** — reached because the printed DEFECT head was re-measured first and came back at zero. Two runs had declared this row's predecessor UNACTIONABLE AS SPECIFIED and this one was specified as a fork; **neither tine was the answer.** 127 tokens partitioned five ways over the approved EN corpus, 15 candidates hand-read at 66.7% precision, three real #101 findings surfaced and handed over as item 100, and the tool's reach now printed rather than quoted. |
 
 **2026-11-07 — item 36 CLOSED at 15 days, from the OPEN head, as `agents/tools/arabic_side_reach.py`

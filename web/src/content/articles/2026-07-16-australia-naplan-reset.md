@@ -15,7 +15,7 @@ related:
 contains_composites: false
 arabicVersion: 2026-07-16-australia-naplan-reset
 sources:
-  - title: "ACARA media release, 10 February 2023 — 'NAPLAN proficiency standards' (the reset: four proficiency levels — Exceeding, Strong, Developing, Needs additional support — replace the ten-band scale and the 2008 national minimum standard; standards set as 'challenging but reasonable' and validated by panels of teachers; the time series restarts at 2023; testing moves to March)"
+  - title: "Australian Curriculum, Assessment and Reporting Authority (ACARA), the full name read on the authority's own front page 2026-11-13, where it is printed three times as The Australian Curriculum, Assessment and Reporting Authority (ACARA) — media release, 10 February 2023 — 'NAPLAN proficiency standards' (the reset: four proficiency levels — Exceeding, Strong, Developing, Needs additional support — replace the ten-band scale and the 2008 national minimum standard; standards set as 'challenging but reasonable' and validated by panels of teachers; the time series restarts at 2023; testing moves to March)"
     url: "https://www.acara.edu.au/docs/default-source/media-releases/naplan-proficiency-standards-media-release-2023-02-10.pdf"
   - title: "ACARA media release, 23 August 2023 — the first national results on the new scale (roughly 65% of students at Strong or Exceeding and about one in ten at Needs additional support; Year 9 writing at 58.0% meeting; on average about one in three Indigenous students at Needs additional support; then-CEO David de Carvalho's statement on expectations set at a higher level)"
     url: "https://www.acara.edu.au/docs/default-source/media-releases/naplan-national-results-release-media-release-23.08.23.pdf"

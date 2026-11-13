@@ -1953,6 +1953,13 @@
       "provenance": "NOT A QUANTITY — 2026-11-09. The day of a `Last-Modified` date the annotation states in Arabic words - الخميس 29 أكتوبر 2026 - for the Authority's Arabic open-data page. The ISO date licence does not reach a date written with an Arabic month name, which is the same blindness #117 clause 4 records for the Arabic future prefix, one licence over.",
       "lang_seen": "ar",
       "annotation": "هيئةُ جودة التعليم والتدريب — صفحةُ البيانات المفتوحة بالعربية"
+    },
+    {
+      "slug": "2026-07-07-india-parakh-hpc",
+      "token": "١٣",
+      "provenance": "NOT A QUANTITY — 2026-11-13. The day of the read-date this annotation states in Arabic words — ١٣ نوفمبر ٢٠٢٦ — recording when PARAKH's own About block was read for the expansion this repair added under #101 clause 1. The ISO date licence does not reach a date written with an Arabic month name, which is the SECOND row this register has carried for that one blindness (the first is `2026-10-23-bahrain-bqa-five-cycles` token `29`, 2026-11-09) and the same shape #117 clause 4 records for the Arabic future prefix, one licence over.",
+      "lang_seen": "ar",
+      "annotation": "باراكه (PARAKH) — «تقييمُ الأداء ومراجعتُه وتحليلُ المعرفة للتنمية الشمولية» — التوسعةُ من صفحة الجهة نفسها"
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",
