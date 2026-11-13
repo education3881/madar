@@ -290,6 +290,48 @@ def cmd_seed(repo: Path, dist: Path) -> int:
     return 0
 
 
+def stamp_for(repo: Path, path: str, head: str, chrome: str | None) -> str:
+    """The date a moved page's bytes CHANGED — not the date they were observed.
+
+    THIS COST A BUILD TOO, AND IT IS THE SECOND HALF OF `head_date`'s LESSON.
+    `head_date` was right to refuse the wall clock and wrong about WHICH commit:
+    it stamped every moved page with HEAD's timestamp, and under ruling #96 a run
+    commits at the close of every standing function, so HEAD is routinely a
+    commit that touched no served byte at all. On 2026-11-13 — the register's
+    FIRST contact with a real content change — four pages moved at the `1of5`
+    commit (12:30:20Z, which touched approved content) and were stamped with the
+    `2of5` commit (12:34:02Z, which touched only `agents/` and
+    `content-drafts/`). `qa_lastmod` red on all four: its ceiling is the newest
+    commit touching an approved or chrome file, and HEAD was 3m42s above it.
+
+    The ceiling was not the thing that was wrong. Attributing a change to a
+    commit that did not make it was. So a moved page is stamped with the newest
+    commit touching ITS OWN source file, falling back to the chrome when it has
+    none, and bounded above by HEAD:
+
+        min(head, max(own source file's last commit, chrome))
+
+    Both limbs of the max are, by construction, at or below `qa_lastmod`'s own
+    ceiling — `max(newest approved content, newest chrome)` — because an article's
+    own file IS one of the approved files. The register therefore cannot put a
+    date above the ceiling that governs it, and it stays output-bounded in the
+    half that was ever the point: WHICH pages moved. *The register's contribution
+    is the selection, never the clock; provenance was always right about when and
+    only ever wrong about who.*
+    """
+    cands = []
+    src = source_file_for(path)
+    if src:
+        d = git_date(repo, src)
+        if d:
+            cands.append(d)
+    if chrome:
+        cands.append(chrome)
+    if not cands:
+        return head
+    return min(head, max(cands))
+
+
 def cmd_update(repo: Path, dist: Path) -> int:
     reg = load(repo)
     if reg is None:
@@ -299,17 +341,19 @@ def cmd_update(repo: Path, dist: Path) -> int:
     if cur is None:
         return rc
     stamp = head_date(repo)
+    chrome = chrome_ceiling(repo)
     pages = reg["pages"]
     moved, added, removed = [], [], sorted(set(pages) - set(cur))
     for path, sha in sorted(cur.items()):
         e = pages.get(path)
+        at = stamp_for(repo, path, stamp, chrome)
         if e is None:
-            pages[path] = {"content_sha": sha, "changed_at": stamp,
+            pages[path] = {"content_sha": sha, "changed_at": at,
                            "seeded": False, "seeded_from": "first-served"}
             added.append(path)
         elif e["content_sha"] != sha:
             e["content_sha"] = sha
-            e["changed_at"] = stamp
+            e["changed_at"] = at
             e["seeded"] = False
             e.pop("seeded_from", None)
             moved.append(path)

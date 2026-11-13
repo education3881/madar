@@ -159,10 +159,9 @@
    "seeded_from": "web/src/content/articles-ar/2026-07-07-gaza-education-continuity.md"
   },
   "/madar/ar/articles/2026-07-07-india-parakh-hpc/": {
-   "changed_at": "2026-11-10T12:59:43Z",
-   "content_sha": "cf5e514b8f31400edf31d58b2e1f186c77ce99384c1c2c19f06d999957e79700",
-   "seeded": true,
-   "seeded_from": "web/src/content/articles-ar/2026-07-07-india-parakh-hpc.md"
+   "changed_at": "2026-11-13T12:30:20Z",
+   "content_sha": "5fc0fe9c58abd7b3d6276c1f9532229d8421bf7e7f28e30512820ed48297d4b9",
+   "seeded": false
   },
   "/madar/ar/articles/2026-07-07-lebanon-crisis-schooling/": {
    "changed_at": "2026-10-14T09:51:17Z",
@@ -561,10 +560,9 @@
    "seeded_from": "web/src/content/articles/2026-07-07-gaza-education-continuity.md"
   },
   "/madar/articles/2026-07-07-india-parakh-hpc/": {
-   "changed_at": "2026-11-10T12:59:43Z",
-   "content_sha": "71836dbc177254dde77ba8361ec2a7236a22b26ec4c6e6214775142328811fa9",
-   "seeded": true,
-   "seeded_from": "web/src/content/articles/2026-07-07-india-parakh-hpc.md"
+   "changed_at": "2026-11-13T12:30:20Z",
+   "content_sha": "5a8f599880130bd277e1cc422c15733752371d131bb42b77cefbc8947c65722f",
+   "seeded": false
   },
   "/madar/articles/2026-07-07-lebanon-crisis-schooling/": {
    "changed_at": "2026-10-14T09:51:17Z",
@@ -585,10 +583,9 @@
    "seeded_from": "web/src/content/articles/2026-07-07-nz-ncea-corequisite.md"
   },
   "/madar/articles/2026-07-07-poland-ukrainian-students/": {
-   "changed_at": "2026-07-07T23:54:12+04:00",
-   "content_sha": "5fd0487b0af9d441588de85c41d2fd0d466e3b3ab5d89308476bdff6b462028b",
-   "seeded": true,
-   "seeded_from": "web/src/content/articles/2026-07-07-poland-ukrainian-students.md"
+   "changed_at": "2026-11-13T12:30:20Z",
+   "content_sha": "8bcd4ff9b394eb9df8ba5d15989bc44ada989772e1b9e5c40bbdacee016f610c",
+   "seeded": false
   },
   "/madar/articles/2026-07-07-rohingya-myanmar-curriculum/": {
    "changed_at": "2026-10-14T09:51:17Z",
@@ -639,10 +636,9 @@
    "seeded_from": "web/src/content/articles/2026-07-07-yemen-teacher-pay-continuity.md"
   },
   "/madar/articles/2026-07-16-australia-naplan-reset/": {
-   "changed_at": "2026-10-28T11:07:26Z",
-   "content_sha": "f43f2aff6267068a321100a13c05e7c4dcfdea65dd6b4594e291c54d4ffd5f05",
-   "seeded": true,
-   "seeded_from": "web/src/content/articles/2026-07-16-australia-naplan-reset.md"
+   "changed_at": "2026-11-13T12:30:20Z",
+   "content_sha": "26ffdac2f5dfa0d7a56dbe17f37c5e39eed3fa63452a260242759e17be6c8b58",
+   "seeded": false
   },
   "/madar/articles/2026-07-28-england-report-cards-first-term/": {
    "changed_at": "2026-10-30T11:28:22Z",
@@ -831,5 +827,6 @@
    "seeded_from": "web/public/valence/index.html"
   }
  },
- "schema": "madar-served-dates/1"
+ "schema": "madar-served-dates/1",
+ "updated_at": "2026-11-13T12:34:02Z"
 }
