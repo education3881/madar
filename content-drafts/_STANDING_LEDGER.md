@@ -165,6 +165,7 @@ ground.
   prints** (#86 clause 1 as amended by **#134**), never off how a name sounds; where no register carries
   it, the determination is declared in the annotation as this edition's own, with its date (#86 clause 2).
 - An **acronym** is expanded in the body only if `sources[]` expands it (#101).
+- Where an acronym and a name are in **different languages**, the pair may be printed only if the **institution itself prints both together** in the body's language, and the annotation carries the owner's pairing in the owner's words with its register and date (**#141**). A translation is never silently promoted to an expansion; where the owner prints no name in our language, the body keeps the acronym.
 
 ## The hand-off lines a draft cannot reach the Editor without
 
@@ -174,6 +175,7 @@ A hand-off missing any of these is **returned unread** — the same teeth in eve
 - `annotation == sentence` per leaned-on source — 2026-09-13
 - `named humans — gender read from register: N of M` — #86
 - `acronyms expanded in the body: N, each expanded in sources[]: ☐` — #101
+- `cross-language pairs: M, each printed together by the owner: ☐` — **#141**
 - `editorial futures: N, each attributed to a dated register: ☐` — #117
 
 **Re-measured 2026-11-10 (`agents/tools/arabic_side_reach.py`): 1 of 45 published pairs carries the #86
