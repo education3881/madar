@@ -60,7 +60,47 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | — | — | — | — | — | — | — | **seven — cell 1 FILLED, and cell 2 is OPEN from 2026-11-13** |
+| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14** | — | — | — | — | — | — | **six — cells 1 and 2 FILLED; cell 3, the Editor's five-test verdict, is the next content function's first action** |
+
+**Reconciled against disk 2026-11-14. CELL 2 IS FILLED, AND COMPOSING FROM THE OPEN REGISTERS CORRECTED
+THE BRIEF FOUR TIMES.** The EN draft is at `content-drafts/drafts/2026-11-14-england-ofsted-exempt-cohort.md`,
+3,678 words of envelope, with all five registers re-opened and read in served text at compose time per
+the 2026-09-13 rule. **Four corrections, and the second is the piece's spine:**
+
+- **The brief's headline quotation is not in the register it is attributed to.** The brief prints *"Only
+  17% of previously exempt schools that had a graded inspection this year remained outstanding"*; the
+  statistical release prints *"In 2021/22, we inspected nearly 500 schools that were previously exempt"*
+  and *"Of these, 17% retained their outstanding grade, while 21% were judged requires improvement or
+  inadequate."* The brief's summary carries a **denominator error**: nearly 500 were inspected, **367**
+  had graded inspections (Figure 3: 263 primary, 104 secondary), and the percentages sit on the 367.
+- **THE 17% COLLISION IS INSIDE 2022, not between 2022 and 2026.** Guardrail 2 warned about two 17%s four
+  years apart. There is a **third**, and the first two are **fourteen weeks apart in one cohort from one
+  regulator**: the statistical release's 17% is the share **retaining outstanding**; the 22 November 2022
+  news release's is the share **rated requires improvement** (*"around a fifth were rated requires
+  improvement (17%) or inadequate (4%)"*). Near-opposites, both correctly cited, and **no numeric check
+  this operation owns could tell them apart.** The body therefore prints no bare *17%* anywhere.
+- **The two registers' arithmetic does not close and the piece does not close it.** The news release says
+  *"over 80% (308) … did not retain the outstanding grade"*; 17% of 367 is about 62, and 308 + 62 is 370.
+  Under *no composite of rulers* (#29/#30) each figure is reported as its own register printed it.
+- **A claim that arrived from a SEARCH SUMMARY and not from a register is struck** — that the
+  Department's announcement states the change is not retrospective. The register was asked directly and
+  **carries no such sentence**. That is **#41 catching its own defect on the way into a draft** rather
+  than at a verdict, which is the margin #49 says is the right one. Two further brief sentences (the 88%
+  trend since 2019, and safeguarding as *"met"/"not met"*) were not confirmed today and are not in the
+  body.
+
+**The gender read is a READ, 1 of 1**, and the hand-off line carries it: the 22 November 2022 release
+introduces *"Ofsted's Chief Inspector, Amanda Spielman, said:"* and — confirmed by asking the page
+directly today — carries **no third-person pronoun and no gendered title for her anywhere**. The feminine
+comes from Ofsted's own speech standfirst, *"reflects on **her** first speech"*. The trap is named for the
+Arabic composer: her own texts print *"His Majesty's Chief Inspector"* and that **His** is the monarch's.
+
+**Cell 3 is the Editor's five-test verdict and it is the next content function's first action**, named
+rather than implied. The draft leaves **three calls open for the Editor** that the drafter does not own:
+the title, whether the struck retrospectivity claim belongs in the body, and whether the Bahrain
+self-correction should open the piece instead of closing it.
+
+**The 2026-11-13 note below is superseded in its CELL-2-OPEN reading and kept for the record.**
 
 **Reconciled against disk 2026-11-13. BOTH OPEN GATES RESOLVED AND CELL 2 OPENS.** The 11-12 row said
 cell 2 opens on a gate and not on the calendar. The gate opened today, from two first-party reads
