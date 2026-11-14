@@ -413,6 +413,57 @@ def cmd_check(repo: Path, dist: Path | None) -> int:
     print(f"  opened ...................... {reg.get('opened')}")
     print(f"  last updated ................ {reg.get('updated_at', '— never')}")
 
+    # THE DECLARED ERROR, GIVEN ITS SIZE AND ITS DIRECTION (growth, 2026-11-14).
+    # The 10-04 second amendment's limb two: "an unreconciled start is a known error
+    # with a known size, and writing it down costs one clause."  This register opened
+    # 2026-11-11 with every entry seeded, and until today the size of that error lived
+    # in a growth note rather than in the instrument.  A literal is a measurement that
+    # has stopped being taken, so it is derived here on every call instead.
+    if seeded:
+        by_src = {}
+        for e in pages.values():
+            if e.get("seeded"):
+                src = e.get("seeded_from") or "(unrecorded)"
+                kind = ("the global chrome ceiling" if src.startswith("chrome-")
+                        else "the page's own source file" if src.startswith("web/src/content/")
+                        else "a static file under web/public" if src.startswith("web/public/")
+                        else "unrecorded")
+                by_src.setdefault(kind, []).append(e)
+        print("\n  THE DECLARED ERROR — its size, and its direction, which is ONE-SIDED")
+        for kind in sorted(by_src, key=lambda k: -len(by_src[k])):
+            group = by_src[kind]
+            dates = sorted({e["changed_at"][:10] for e in group})
+            span = dates[0] if len(dates) == 1 else "%s .. %s over %d dates" % (
+                dates[0], dates[-1], len(dates))
+            print("  %3d seeded from %-30s %s" % (len(group), kind, span))
+        ceil_n = len(by_src.get("the global chrome ceiling", []))
+        own_n = len(by_src.get("the page's own source file", []))
+        print("  THE ERROR IS TWO-SIDED, AND THE TWO COHORTS ERR IN OPPOSITE DIRECTIONS.")
+        print("    `--seed` takes an article page's date from its OWN source file alone")
+        print("    (`git_date(source_file_for(path))`) and falls back to the global chrome")
+        print("    ceiling only where no source file maps. So:")
+        print("  %3d own-source seeds are TOO EARLY -- a LOWER bound." % own_n)
+        print("      This chrome is INLINED, so a chrome commit really does move an")
+        print("      article page's served bytes; a seed reading 2026-06-14 under a")
+        print("      ceiling of 2026-11-09 is claiming less freshness than the page has.")
+        print("  %3d chrome-ceiling seeds are TOO LATE -- an UPPER bound." % ceil_n)
+        print("      Their date is a fact about the whole SITE, not about the page: one")
+        print("      ceiling shared by every one of them, so a page nothing touched reads")
+        print("      as freshly changed.")
+        print("  THE HARMFUL HALF IS THE SMALLER ONE, AND IT IS THE WRONG PAGES.")
+        print("    Under-claiming costs nothing with a crawler -- it discounts a date that")
+        print("    moves without cause, never one that lags. So the %d too-early article" % own_n)
+        print("    seeds are safe and the %d too-late seeds are not, and those %d are the" % (ceil_n, ceil_n))
+        print("    home pages, the Arabic home, About and the Editions pages -- the pages")
+        print("    a crawler visits most often. Measured, not assumed: this block read the")
+        print("    direction BACKWARDS for all %d article seeds when it was first written" % own_n)
+        print("    on 2026-11-14, before the seeding code was read instead of remembered.")
+        print("  NOT REPAIRABLE BY MEASUREMENT, ONLY BY TIME: a page's true last-change")
+        print("    date is unknowable from ONE observation of its bytes, so a seed clears")
+        print("    when that page really changes and never before. The number to watch is")
+        print("    `output-bounded`, which only rises, and no reader-facing \'amended on\'")
+        print("    line may rest on a seeded entry.")
+
     if dist is None:
         return 0
     cur, rc = pages_from_dist(dist)

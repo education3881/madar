@@ -139,7 +139,7 @@ within the raising commit**, which is the rung the 10-25 selection reached for t
 items 40 and 41 immediately behind it. A run that disagrees with that reading should say so and take 40
 or 41 instead; what it must not do is treat the tie as a licence to choose by interest.
 
-## Open — **FIFTY-EIGHT items in THREE BUCKETS, reconciled against disk 2026-11-14**
+## Open — **FIFTY-NINE items in THREE BUCKETS, reconciled against disk 2026-11-14**
 
 **2026-11-14 — THE HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN FOR THE THIRD CONSECUTIVE RUN, AND THIS TIME
 THE ROW'S OWN FOUNDING INSTANCE WAS GONE.** The displacement line, in one sentence: this run took **item
@@ -183,10 +183,10 @@ evidence for absence. **So the fork the row itself offered is settled by measure
 a gate**, and the ground is #140's rather than #93's — an instrument returning *no answer* is correct,
 and this one's answers would be *wrong*.
 
-**Count line: FIFTY-EIGHT open — ZERO DEFECT, FIFTY-FIVE OPEN, THREE BLOCKED. ONE closed today (38),
-THREE opened** — **103** (the gateable provenance tier, handed over), **104** (the Verifier's residue, 82
-world-claims counted), **105** (the day's forward question), at OPEN's head. **Board 56 → 58, and the
-count is against the rows: 0 + 55 + 3 = 58.** The DEFECT bucket is empty for the **third consecutive
+**Count line: FIFTY-NINE open — ZERO DEFECT, FIFTY-SIX OPEN, THREE BLOCKED. ONE closed today (38),
+FOUR opened** — **103** (the gateable provenance tier, handed over), **104** (the Verifier's residue, 82
+world-claims counted), **105** (the day's forward question) and **106** (growth, the register's harmful seed cohort), at OPEN's head. **Board 56 → 59, and the
+count is against the rows: 0 + 56 + 3 = 59.** The DEFECT bucket is empty for the **third consecutive
 day** — the longest it has stood at zero since #116 created it — and it still means what it meant on
 10-31 and on 11-13: no row currently *names* a count of served or founder-facing artefacts that are
 wrong, which is a statement about the board and not about the publication.
@@ -198,8 +198,8 @@ item 38 at 21 days against items 100 (1 day) and 37 (20 days) — so the run of 
 to breach is broken.
 
 **Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 + 3 + 2 + 2 + 3 + 3 +
-4 + 2 + 2 + 1 + **3** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 1 + 1 + 1 + 1
-+ **1** · board 56 → **58**.
+4 + 2 + 2 + 1 + **4** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 1 + 1 + 1 + 1
++ **1** · board 56 → **59**.
 
 ### The daily record for 2026-11-13 follows, unaltered.
 
@@ -2259,7 +2259,7 @@ currently founder-facing, that are **wrong, broken or unevidenced**. A question 
 because the count is what it would measure. Ordered by age; ages are `today − Raised` and are not written
 down (#116).*
 
-### OPEN — **FIFTY-FIVE items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **FIFTY-SIX items.** Ordered by age. The forward question enters at this block's head.
 
 *Rows 91, 92 and 93 were physically appended to the DEFECT table by the 2026-11-09 run and carried the
 word OPEN in their `Blocks` cell instead of a bucket. **Moved here 2026-11-10 by the run that noticed.**
@@ -2272,6 +2272,7 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 106 | **The 47 chrome-ceiling seeds in the served-dates register are the harmful half of its declared error, and they are the pages a crawler visits most** — re-base them against each page's own inputs rather than against the global chrome ceiling. Measured 2026-11-14: the register's 134 seeded entries are **two cohorts erring in opposite directions**. The 86 own-source seeds are **too EARLY** (a lower bound: chrome is inlined here, so a chrome commit really does move an article page's bytes, and a seed reading 2026-06-14 under a 2026-11-09 ceiling under-claims) and under-claiming **costs nothing** with a crawler. The 47 chrome-ceiling seeds are **too LATE** (an upper bound: one ceiling shared by all 47, so a page nothing touched reads as freshly changed) and they are the English home, the Arabic home, About and both Editions pages. An index page depends on the content collection plus the chrome, which is **narrower** than *any chrome file* — so a re-base is available in principle and is a design change to a side-effecting tool, queued rather than improvised at the end of a run. **OPEN and not DEFECT**: a seeded entry is a declared error that the register itself flags and prints, so no byte is claiming something the artefact denies. | **[WD]** | **2026-11-14** (growth) | `served_dates.py --check`, which now derives the partition and both directions on every call instead of carrying them in a growth note | **nothing red — the harmful half of a declared error, 47 of 138 pages** |
 | 105 | **A citation's REMOVAL is invisible to every gate in the set, because no register says which sentence leans on which source** — the day's forward question, entered at this block's head per the one-queue rule. Item 38's own history turned on this and nothing noticed: the Oman annotation was repaired on 2026-10-16 by **adding** a second citation, the Royal Decree that carries the rename with its gazette number, and no instrument observed that the piece's claim had acquired an instrument. The complement is the defect. Delete that Royal Decree citation tomorrow and the body's rename sentence stands unevidenced while **every gate passes**: `qa_pair_frontmatter` because parity is a floor (#86), `qa_body_links` because it asserts that a declared source renders and never that a claim has one, `qa_annotation_figures` because #114's licence (a) excuses a bare year, and today's own measurement would report one fewer annotation and call it a smaller population. **Test before adding anything new:** is the body→source edge derivable at all from what the artefact supplies, or is `related:`-style explicit declaration the only honest form — and if the latter, what is the cost of a 45-piece retrofit against the cost of the class? | **[AE]** | **2026-11-14** (the daily's forward question) | Named from inside item 38's closure: the measurement partitions what annotations assert and is structurally blind to what they stop asserting | **nothing red — a question, and the fourth consecutive one whose subject is an absence** |
 | 104 | **Sixty-three named-human, thirteen hedge, three rename and three mandate claims in served annotations, each a claim about the WORLD and none reachable by any instrument** — the residue of item 38, handed to the **Verifier** with its population already counted rather than left as a question. These are the classes item 38 expected an instrument to take; the measurement in `annotation_claims.py` establishes that none of them has a boundary the artefact supplies, so the work is a read and not a gate. The unit is the claim and the method is the register: each is settled by re-opening the register and quoting the owner, exactly as #141 settled the cross-language pair. Order by leverage, not by age: the 3 renames and 3 mandates are institutional identity claims that propagate into every later piece citing the same body, and the 63 named-human rows are already partly discharged by #138's provenance sweep. | **Verifier** | **2026-11-14** (from item 38's close) | Counted by `annotation_claims.py` over all 714 served annotations in both editions | **nothing red — the bytes are right as far as anything we own can see, which is the row's point** |
 | 103 | **The offline tier of the self-specifying provenance claim is gateable and is NOT gated, and the open design question is whether a per-claim boundary can be synthesised at all** — the positive residue of item 38, and a class item 38 did not name. 39 of 714 annotations print a **method and its value together** (`sha256 d6b62bda…`, `HTTP 200`, `Last-Modified 2026-08-16`, a byte length, a dated fetch), 86 instances, which is **#113's criterion met by a different artefact**: a sha256 states which function over which bytes, so the claim specifies its own test. Measured today at **zero violations** over all 39, and proved both ways with the injection asserted to have changed the file first — **and bite 3 did not bite**, because one `HTTP 404` beside a surviving `HTTP 200` in the same annotation is invisible to a limb that can only ask *all statuses >= 400*, and it must ask that, since an annotation legitimately records a dead register beside a live one. **The annotation is not the claim's boundary.** Not wired, on purpose: zero bite today and all 39 instances written since 2026-10-23, so a gate would guard a convention rather than enforce one. Handed over rather than squeezed into the end of a run (2026-11-13's practice on item 97). | **[AE]** | **2026-11-14** (from item 38's close) | `annotation_claims.py`, control and bite on a /tmp copy | **nothing red — zero violations in the population it would assert over** |
