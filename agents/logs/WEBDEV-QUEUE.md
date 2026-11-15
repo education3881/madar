@@ -139,6 +139,77 @@ within the raising commit**, which is the rung the 10-25 selection reached for t
 items 40 and 41 immediately behind it. A run that disagrees with that reading should say so and take 40
 or 41 instead; what it must not do is treat the tie as a licence to choose by interest.
 
+### Tomorrow's head
+
+**Item 107** — the board's only DEFECT, raised today, **0 days**: 56 served Latin runs across 10 Arabic
+article pages rendering upright since 2026-10-25. It outranks all 57 OPEN rows whatever their age
+(#116), including the two 21-day rows left behind by today's tie. **The bucket refilled on the same day
+it was read as empty for a fourth time** — and not from a regression: the defect has been served for 21
+days and was found by re-measuring a 21-day-old row's own named instance. *The DEFECT bucket measures
+what the board can currently COUNT, never what the corpus currently IS* (#116 ii), for the fifth
+statement in three weeks and the first where the gap is measured in weeks of serving rather than hours
+of bookkeeping.
+
+## Open — **SIXTY-ONE items in THREE BUCKETS, reconciled against disk 2026-11-15**
+
+**2026-11-15 — THE HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN FOR THE FOURTH CONSECUTIVE RUN, AND THIS
+TIME THE ROW'S OWN FOUNDING INSTANCE HAD DOUBLED.** The displacement line, in one sentence: this run
+took **item 39**, one of three rows tied at **21 days** in OPEN with the DEFECT bucket empty — *the two
+reductions item 20 named that are face judgments* — and **displaced items 106, 105, 104, 103, 102, 101,
+99, 98, 97, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72,
+71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 60, 57, 56, 55, 53, 52, 50, 48, 47, 46 and 44** — fifty-three
+rows, every one younger — **plus items 40 and 41, which are not younger and were displaced by raise
+order inside one commit**, the tiebreak's last surviving rung. The three BLOCKED rows (45, 22, 32) were
+not displaced. **Thirty-ninth selection in forty-one daily runs made by the rule, twentieth under
+#116**, and the first three-way tie this board has handed out since 2026-10-25.
+
+**ITEM 39 CLOSES AT 21 DAYS BY DELIVERING ITS JUDGMENT, AND BOTH HALVES CAME BACK DIFFERENT FROM THE
+WAY THEY WERE ASKED.** The row priced two families and asked whether to drop one. **Neither is
+droppable** — Newsreader Italic paints **982** characters on the English home page and Cormorant
+**1,507** on the Editions page — so *drop a family* is a corpus-wide verb aimed at a per-page quantity,
+which is item 25's defect (#117) and item 38's (#142) for the third time in three weeks. What the
+numbers select is a **`(page, family)` pair**, and the selector is a column the build has been printing
+all along: **bytes per painted character**, 13 to 33,736 on today's probe. The two pairs it selects are
+handed over as **item 108** with their numbers: Cormorant on the Arabic edition (71,376 bytes for five
+characters, ≈4.85 MB) and Cormorant latin-ext corpus-wide (**33,736 bytes for one macron**, the `ā` of
+`Madār`, one code point past the end of the latin cut).
+
+**THE SECOND HALF ASKED WHAT TO ADD AND THE ANSWER WAS THAT SOMETHING HAD BEEN TAKEN AWAY.** *What
+replaces italic emphasis in Arabic* — **nothing**, and that is now a standing prohibition in
+`_STANDING_LEDGER.md` rather than a question a fourth run re-opens: Arabic has no italic convention and
+emphasis is carried by syntax and by the register's own «  ». But the row's population was **12 article
+pages and both home pages** and the true figure is **23 article pages and the Arabic home — 195 `<em>`
+elements, 139 of them Arabic-bearing and 6,396 characters**. The 12 was a true number about a different
+thing: pages the 10-25 census watched *fetch* `amiri-italic-400-arabic.woff2`. **And the other 56 runs
+are Latin** — `Nature`, `Elsevier`, `Kurikulum Merdeka`, `Lan fɔ lan` — de-slanted for 21 days by a rule
+that says *a page* where it means *a script*. That is **item 107, the board's only DEFECT**, and no
+CSS-only repair exists for it: every one sets computed `font-style: italic` on an element that may hold
+either script, which reds `qa_font_payload` limb 1 on 139 Arabic runs, **correctly**.
+
+**Count line: SIXTY-ONE open — ONE DEFECT, FIFTY-SEVEN OPEN, THREE BLOCKED. ONE closed today (39),
+THREE opened** — **107** (the de-slanted Latin runs, the board's only DEFECT and therefore tomorrow's
+head), **108** (the two `(page, family)` pairs, at OPEN's head) and **109** (the day's forward question,
+at OPEN's head). **Board 59 → 61, and the count is against the rows: 1 + 57 + 3 = 61.** The DEFECT
+bucket's four-day emptiness ends on a defect that was already 21 days old, which is the strongest form
+#116 ii has taken: *an empty DEFECT bucket is a statement about the board and never about the
+publication.*
+
+**A heading correction, found because today's run had to write in that block.** `### DEFECT` read
+**ONE item** on 11-13 and 11-14 while the table under it held **zero rows**. It changed no head — the
+bucket is read from its rows — but it is *a count in a heading maintained by nobody* (2026-09-20) inside
+the file that quotes the rule, and nothing would have caught it if today's defect had not needed the
+table.
+
+**The 28-day breach date is unmoved at 2026-11-29 and is still PINNED BY A RAISE DATE**, not by the
+closure rate: items 64–70 were all raised 2026-11-01. **Twelfth consecutive restatement.** Today's
+closure is the second in a row at 21 days.
+
+**Rates, carried and moved by today:** raised 3 + 3 + 4 + 4 + 4 + 4 + 5 + 2 + 1 + 4 + 3 + 2 + 2 + 3 + 3
++ 4 + 2 + 2 + 1 + 4 + **3** · closed 1 + 2 + 1 + 2 + 2 + 3 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 1 + 1 +
+1 + 1 + 1 + **1** · board 59 → **61**.
+
+### The daily record for 2026-11-14 follows, unaltered.
+
 ## Open — **FIFTY-NINE items in THREE BUCKETS, reconciled against disk 2026-11-14**
 
 **2026-11-14 — THE HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN FOR THE THIRD CONSECUTIVE RUN, AND THIS TIME
@@ -2211,7 +2282,7 @@ first.** It has now been named twelve times and done zero; if it is displaced a 
 rule has failed in the specific way its own author predicted, and the 2026-10-11 review says so plainly
 rather than restating the rule a third time.
 
-### DEFECT — **ONE item.** The head comes from here while any row stands (#116).
+### DEFECT — **ONE item.** The head comes from here while any row stands (#116). *(This header read **ONE** on 2026-11-13 and 2026-11-14 while the table below it held **zero** rows — a count in a heading maintained by nobody, 2026-09-20 exactly, inside the file that quotes it. It changed no head, the bucket being read from its rows. Corrected 2026-11-15 by the run that refilled it, which is the only reason anybody looked.)*
 
 *Re-tenanted 2026-11-12 WITHOUT A CLOSURE, which is new. Item 98 did not close and was not fixed: its
 population was **re-measured at 0** and it left this bucket for OPEN under #116's own boundary, while
@@ -2243,6 +2314,7 @@ The bucket was empty for about one hour.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 107 | **Fifty-six served Latin runs across ten Arabic article pages lost their italic on 2026-10-25 and have rendered upright for 21 days** — journal titles (`Nature`, `Britannica`, `Elsevier`, `Scopus AI`, `ScienceDirect AI`), institutions (`Common Sense Networks`, `Poynter`), programme names (`Kurikulum Merdeka`, `Kurikulum 2013`) and foreign-language quotations (`Bukanlah tentang Kurikulum Baru.`, `Lan fɔ lan`, `pembelajaran mendalam`). **#115 is right and its ENFORCEMENT is over-broad:** `[dir="rtl"] em, i, cite { font-style: normal }` is a statement about a **page** doing the work of a fact about a **script**, and the two coincide only while every emphasised run on an Arabic page is Arabic — 56 of 195 are not. Italic there is not decoration, it is disambiguation, and it is the Latin script's own convention, not an import. **No gate can see it and none is wrong:** `qa_font_payload` limb 1 asks whether a run *containing an Arabic code point* is slanted and these contain none. **And no CSS-only repair exists** — any of them sets computed `font-style: italic` on an element that may hold either script, which reds limb 1 on 139 Arabic runs, correctly, because computed style is the only thing CSS can be asked about. The repair is in the markup: the Arabic composer marks a foreign-language run with `lang` (which `qa_a11y_lang`'s family has wanted since 2026-09-13) and the stylesheet keys `:lang()` off it. Ten **published** pieces, so it goes through the Arabic Editor's gate. | **[WD]** + Arabic Editor | **2026-11-15** (from item 39's re-measurement) | Counted over served `dist` inside `.body-main`, partitioning every `<em>` by whether its own text carries an Arabic code point: 24 pages, 195 elements, 139 Arabic-bearing, **56 with no Arabic at all across 10 pages** | **56 served runs on 10 served pages, wrong now** |
 
 *Emptied again 2026-11-13 by the closure of item 100 — the second time this bucket has stood at zero
 since #116 created it, and the first time it has been emptied by a row that was raised, taken and closed
@@ -2259,7 +2331,7 @@ currently founder-facing, that are **wrong, broken or unevidenced**. A question 
 because the count is what it would measure. Ordered by age; ages are `today − Raised` and are not written
 down (#116).*
 
-### OPEN — **FIFTY-SIX items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **FIFTY-SEVEN items.** Ordered by age. The forward question enters at this block's head.
 
 *Rows 91, 92 and 93 were physically appended to the DEFECT table by the 2026-11-09 run and carried the
 word OPEN in their `Blocks` cell instead of a bucket. **Moved here 2026-11-10 by the run that noticed.**
@@ -2272,6 +2344,8 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 109 | **Every instrument we own asks a yes/no question OF AN ELEMENT, and none can report that an element is MIXED** — the day's forward question, entered at this block's head per the one-queue rule. Today's defect (item 107) is not a property of a page or of an element but of a **boundary inside one element**: a single `<em>` holding two scripts, with a per-script property decided for all of its text by a rule correct for only part of it. `qa_arabic_shaping` and `qa_arabic_joining` read Arabic-bearing elements, `qa_a11y_lang` reads a declared `lang` against the string under it, `qa_font_payload` partitions runs by whether they contain an Arabic code point — four instruments, four yes/no questions, **no vocabulary for *both***. **The ask:** how many served elements in this corpus carry more than one script, and in how many of those is a per-script property — font, style, direction, digit set, `lang` — being decided for the whole by a rule true of a part? The 56 runs found today are only the instances that happen to sit inside an `<em>`. **Test it before adding anything new.** | **[AE]** | **2026-11-15** (the daily's forward question) | Named from a defect the whole gate set was silent on, and silent correctly | nothing red — a question, and the first whose unit is smaller than an element |
+| 108 | **The two `(page, family)` pairs item 39's judgment selected, handed over with their numbers instead of as an opinion.** **(1) Cormorant Garamond on the 68 Arabic pages: 71,376 bytes to paint the five characters of `Madār` in the footer** — 37,640 for four and 33,736 for one — ≈ **4.85 MB across the Arabic edition**, 24% of the Arabic home page's whole font payload. The Arabic edition's typographic identity is carried by `مدار` beside it and by Amiri throughout; the romanisation is a secondary lockup. **This one IS a face judgment and it is the Designer's**, which is why item 39 handed it over rather than taking it. **(2) `cormorant-garamond-normal-400-600var-latin-ext.woff2`, 33,736 bytes for ONE painted character on every page that prints `Madār` in the display face, both editions** — the character is `ā`, U+0101, and Cormorant's latin cut ends at U+00FF, so one macron past the boundary pulls a whole subset. **Not a face judgment at all**: it is a subsetting question for `build_font_bundle.py`, which mirrors Google's carve verbatim and has no mechanism to merge or restrict one. ≈ 3.8 MB corpus-wide and the cheapest reduction on this board. | **[WD]** + Designer | **2026-11-15** (from item 39's close) | `qa_font_payload`'s server-log probe on today's build, both editions; the b/char column is printed on every build | nothing red — a measured cost, not a wrong byte |
 | 106 | **The 47 chrome-ceiling seeds in the served-dates register are the harmful half of its declared error, and they are the pages a crawler visits most** — re-base them against each page's own inputs rather than against the global chrome ceiling. Measured 2026-11-14: the register's 134 seeded entries are **two cohorts erring in opposite directions**. The 86 own-source seeds are **too EARLY** (a lower bound: chrome is inlined here, so a chrome commit really does move an article page's bytes, and a seed reading 2026-06-14 under a 2026-11-09 ceiling under-claims) and under-claiming **costs nothing** with a crawler. The 47 chrome-ceiling seeds are **too LATE** (an upper bound: one ceiling shared by all 47, so a page nothing touched reads as freshly changed) and they are the English home, the Arabic home, About and both Editions pages. An index page depends on the content collection plus the chrome, which is **narrower** than *any chrome file* — so a re-base is available in principle and is a design change to a side-effecting tool, queued rather than improvised at the end of a run. **OPEN and not DEFECT**: a seeded entry is a declared error that the register itself flags and prints, so no byte is claiming something the artefact denies. | **[WD]** | **2026-11-14** (growth) | `served_dates.py --check`, which now derives the partition and both directions on every call instead of carrying them in a growth note | **nothing red — the harmful half of a declared error, 47 of 138 pages** |
 | 105 | **A citation's REMOVAL is invisible to every gate in the set, because no register says which sentence leans on which source** — the day's forward question, entered at this block's head per the one-queue rule. Item 38's own history turned on this and nothing noticed: the Oman annotation was repaired on 2026-10-16 by **adding** a second citation, the Royal Decree that carries the rename with its gazette number, and no instrument observed that the piece's claim had acquired an instrument. The complement is the defect. Delete that Royal Decree citation tomorrow and the body's rename sentence stands unevidenced while **every gate passes**: `qa_pair_frontmatter` because parity is a floor (#86), `qa_body_links` because it asserts that a declared source renders and never that a claim has one, `qa_annotation_figures` because #114's licence (a) excuses a bare year, and today's own measurement would report one fewer annotation and call it a smaller population. **Test before adding anything new:** is the body→source edge derivable at all from what the artefact supplies, or is `related:`-style explicit declaration the only honest form — and if the latter, what is the cost of a 45-piece retrofit against the cost of the class? | **[AE]** | **2026-11-14** (the daily's forward question) | Named from inside item 38's closure: the measurement partitions what annotations assert and is structurally blind to what they stop asserting | **nothing red — a question, and the fourth consecutive one whose subject is an absence** |
 | 104 | **Sixty-three named-human, thirteen hedge, three rename and three mandate claims in served annotations, each a claim about the WORLD and none reachable by any instrument** — the residue of item 38, handed to the **Verifier** with its population already counted rather than left as a question. These are the classes item 38 expected an instrument to take; the measurement in `annotation_claims.py` establishes that none of them has a boundary the artefact supplies, so the work is a read and not a gate. The unit is the claim and the method is the register: each is settled by re-opening the register and quoting the owner, exactly as #141 settled the cross-language pair. Order by leverage, not by age: the 3 renames and 3 mandates are institutional identity claims that propagate into every later piece citing the same body, and the 63 named-human rows are already partly discharged by #138's provenance sweep. | **Verifier** | **2026-11-14** (from item 38's close) | Counted by `annotation_claims.py` over all 714 served annotations in both editions | **nothing red — the bytes are right as far as anything we own can see, which is the row's point** |
@@ -2325,7 +2399,6 @@ the DEFECT block is empty.*
 | 47 | **The only overflow gate this operation owns reads the artefacts, never the publication — and it reads them at exactly one width** — the day's forward question, entered at the head per the one-queue rule, and it inverts the rule that created its subject. `qa_artefact_render` is the **only** tool of the thirty-nine that measures overflow at all: `scrollWidth`/`clientWidth` appear in no other file in `agents/tools/`. Its scope is `agents/briefs` and `agents/reviews`. **So the 134 pages a reader is served — two scripts, one of them RTL, with the longest unbreakable tokens in the corpus sitting in `<code>` inside article bodies — have never been checked for overflow at any viewport width.** The 2026-08-23 perimeter rule was written to ADD the founder-facing artefacts to a perimeter that already covered `dist`; for this property the relation is the other way round, and nobody noticed because the rule's sentence reads as an extension. Second limb, cheaper and sharper: `VIEWPORT = 1280`, one number, and **an assertion with a parameter is an assertion about that parameter's value** — a layout correct at 1280 and broken at 390 is invisible to the gate promoted today, and the founder opens the brief on whatever is in his hand. Measure both before building anything: how many of the 134 served pages overflow at 1280, and how many of the 136 artefacts overflow at 390. | **[AE]** | **2026-10-27** | Enumerated by grepping `scrollWidth`/`clientWidth` across all thirty-nine tools (one hit, one file) and reading `VIEWPORT` in that file | nothing red today, and that is the point: no instrument can turn it red |
 | 46 | **Nothing gates `copyrightYear`, the field that replaced the build clock on all 134 pages today** — raised by the growth function in the run that created its subject, exactly as item 44 was yesterday, and **the two should be closed by one instrument rather than two.** Today's growth action replaced `new Date().getFullYear()` in `SiteFooter.astro` with a year derived from `createLastmodResolver()`, so the served byte is now a fact about the tree instead of about the machine's clock. 134 of 134 pages carry it and 0 disagree with the sitemap's own date for `/` — **a measurement, not an assertion.** The general form, which is what makes it one item with item 44 and not two: **every date a template emits is derived from the tree, and none from the clock.** A build-clock date is the one claim no comparison this operation owns can ever catch, because it agrees with itself across any two builds run in the same period. | **[AE]** | **2026-10-27** | `copyrightYear()` evaluated against `createLastmodResolver()('/')` in node; footer markup diffed byte-for-byte across the before and after builds | nothing red — it is a gap in coverage, not a defect in bytes |
 | 44 | **Nothing gates `dateModified`, the field that was missing from all 88 article pages until today** — raised by the growth function in the run that added it, because *a check nobody wires is a habit* (09-13) and **88 of 88 is a measurement, not an assertion.** Today's growth action wired `articleJsonLd` to `createLastmodResolver()`, the sitemap's own git-derived resolver, so the two channels now agree on all 88 URLs and disagree on none; a future template edit can drop the field silently and no build goes red. The cheap assertion belongs in **`qa_date_identity`**, which already owns the date-identity question and already gates: *every article page in `dist` carries a `dateModified`, it is ≥ that page's `datePublished`, and it equals the sitemap `<lastmod>` for the same URL.* Note the precondition — `lastmod_tree_guard.py` exists precisely because a git-derived date must not be compared against a working-tree build, so the third limb needs the guard the two existing lastmod instruments already share (exit 4 = REFUSED), and it is the reason this is a queue row rather than a line added this afternoon. | [AE] | **2026-10-26** | Measured in `dist` after the change: 88 of 88 carrying the field, 0 disagreeing with the sitemap, and the EN/AR `rak-iqra` split (10-26 against 10-25) proving the field discriminates | nothing red — the field is present on every page today and no gate would notice it leaving |
-| 39 | **The two reductions item 20 named that are FACE JUDGMENTS, now with numbers against them** — the half of item 20 that was never an instrument's to take. **(a) Drop a family.** The corpus census of 2026-10-25 prices each one: `newsreader-italic` reaches **all 68 EN pages at 146,872 bytes and paints 196 characters on an article** — 9.99 MB across the corpus, 28.2% of an English article's payload, for the dek and one footer line; `cormorant-garamond` reaches **133 of 134 pages** across normal and latin-ext for 8.85 MB, and on an Arabic page it costs **71,376 bytes to render the five characters of `Madār`** in the footer. **(b) What replaces italic emphasis in Arabic.** Resetting the slant (#115) followed the house's own two precedents exactly — `[dir="rtl"] .pullquote` and the 10-17 strapline fix, both of which reset and neither of which substituted anything — but the Arabic edition now carries no visual mark where the English carries italic, on 12 article pages and both home pages. Arabic does not slant; it is not true that Arabic does not emphasise. **Neither (a) nor (b) is a byte question and that is why they are here**: the numbers are now settled and the judgment is not. | **[WD]** + Designer | **2026-10-25** (from item 20's close) | Measured over all 134 served pages by server-log probe, both editions, in `agents/growth/2026-10-25-corpus-font-transfer-census.md` | nothing red — it is the open item a **reader** can feel, inherited from item 20 |
 | 40 | **89 painted Arabic runs carry a font stack that names no bundled family covering Arabic** — found by standing assertion 39 on its first sweep and printed rather than asserted, because a floor above today's reality reds every build (#93). Every Arabic date, kicker, section label, nav item and the Arabic footer rights line is painted by **whatever Arabic font the reader's machine happens to have**, not by this publication's. The cause is one rule whose own comment shows the case was never considered: `[dir="rtl"] .uppercase, .kicker, .mono { font-family: var(--font-mono) }`, commented *"Mono / uppercase Latin labels stay Latin even on the Arabic page."* **The labels are not Latin.** They are Arabic, set in a stack with no Arabic in it — so the Arabic edition's chrome renders differently on every device, and nothing has ever looked. It costs no bytes, which is exactly why no byte measurement would ever have found it. **This is the 2026-10-17 defect's own family** (a face declared for text it cannot paint) with the opposite price tag: that one cost 146,872 bytes and this one costs none. | **[WD]** + Designer + Arabic Editor | **2026-10-25** (from assertion 39's first sweep) | Read out of the layout engine on six served pages, both editions; the count is printed by `qa_font_payload` on every build | nothing red by design — the limb is measured and not asserted, and says so |
 | 41 | **Which of our gating assertions read a SAMPLE rather than a population, and how many instances live outside each sample?** — the day's forward question, entered at the head per the one-queue rule, and **it is not a hypothesis: it was measured within twelve hours of being written as a caveat.** `qa_font_payload` shipped this morning with a header saying its six-page set is a sample and a defect living outside it is outside the gate. By the afternoon the corpus census had found **twelve live instances of the very defect the gate had just been built for**, on pages the gate does not load. The question generalises immediately and nobody has ever asked it: **`qa_render` shoots 4 targets of 134, `qa_arabic_shaping` and `qa_arabic_joining` read a chosen set, `qa_feed_direction` reads one feed item, `qa_artefact_render` renders all 127 artefacts** — one of those five is a population and four are samples, and **not one of them states its coverage as a fraction.** The first cut needs no new tool: for each Chrome-driven assertion, print `N of M` beside its verdict, the way `qa_bridge_coverage` prints 2.3% instead of implying 100%. The second cut is the hard one — for each sample, run the same check over the population **once**, by hand, and record how many instances were outside. *A green sample reads exactly like a green population, and six rulings about enumeration all asked what a check looked at rather than how much of it.* | **[AE]** | **2026-10-25** (the daily's forward question) | Named from twelve live defects the day's own new gate could not see, measured rather than hypothesised | nothing red — it is the item that asks how much of its subject each of our instruments actually loads |
 
@@ -2341,6 +2414,39 @@ the DEFECT block is empty.*
 | 22 | **The turn axis is still dark, and the failure report still cannot tell two causes apart** — the half of item 11 that needs a credential no identity here holds. `--max-turns 180` is unobservable from inside the agent step: no file, no variable, no API field. The remedy is staged at `agents/patches/2026-10-11-run-envelope-and-checkpoints.md` and has been since 10-11. **Also still owed and still cheap: the `run-failure` issue the workflow files carries neither `subtype` nor `num_turns`**, so #9 and #10 have different causes and identical titles — which is how 10-10 diagnosed 10-11 before it happened. Split out of item 11 at its closure so a half nobody here can reach stops riding along inside an item marked done. | **[AE]** + founder | **2026-10-18** (from item 11's close) | **issue #7** — the `workflows` permission, open since 2026-09-20 (**35 days**); remedy staged at `agents/patches/2026-10-11-run-envelope-and-checkpoints.md` since 10-11 |
 | 32 | **Forty cited registers exist in exactly one copy and nobody has asked an archive to keep them** — the half of item 15 that is an ACTION rather than an instrument. Of 205 registers answered, 40 hold no snapshot anywhere; 28 are readable today and 12 already refuse us. The window in which anything can be done about a register is exactly the window in which the document is still there, and `archive.org/save` is one request per URL. **Deliberately not performed in the run that found it:** it is an outbound write to a third-party service on behalf of this publication, which this operation has never done, and a growth function should not quietly be the first. The decision wanted is narrow — *may the operation ask a public archive to snapshot a public URL we already cite* — and the recommendation is yes, with the URLs listed in the growth note. **AMENDED 2026-10-24, AND NOT IN THIS ITEM'S FAVOUR: its first five URLs were executed without authority.** The 10-24 growth function submitted all 28 live-only registers to Save Page Now; 5 were accepted and confirmed, 23 were refused by rate-limiting. **The run read this item for its subject and not for its owner cell**, which reads *founder*, and brief 110 had told him in writing that nothing would be sent until he said so. Named in `agents/growth/2026-10-24-item-32-five-registers-now-exist-twice.md` and in brief 111; **GitHub issue #12 opened**, stating what was sent before the question was asked, with a default of *option B, the 23 named only*, on **2026-11-01** — B rather than A because a run that oversteps should not inherit a standing authority as the consequence. The remaining 23 are held. *An item's owner cell is part of its specification.* | **[WD]** + founder | **2026-10-21** (growth, from item 15's close) | **issue #12** — may the operation ask an archive to keep our citations; stated default **2026-11-01** |
 ## Closed
+
+**2026-11-15 — item 39 CLOSED at 21 days, from the OPEN head with the DEFECT bucket empty for a fourth
+day, by DELIVERING THE JUDGMENT IT ASKED FOR — and the row's third named instance had DOUBLED under
+re-measurement.** Full working in `agents/logs/qa-2026-11-15.md`. Taken by raise order out of a
+three-way tie at 21 days (items 39, 40, 41, one commit `461b2c7`), exactly as yesterday's close wrote
+it down.
+
+**#142's first application, and it bit in the opposite direction from the ruling that earned it.** Item
+38's named instance had been repaired before the row existed; item 39's had grown. Instances 1 and 2
+reproduce to three significant figures and to the byte — `newsreader-italic` 146,872 bytes for 196
+characters on an English article (28.2% of the page), `cormorant-garamond` 71,376 bytes for the five
+characters of `Madār` on an Arabic page. Instance 3 said *12 article pages and both home pages*; the
+true population is **23 article pages and the Arabic home, 195 `<em>` elements, 139 of them Arabic**.
+The 12 was a true number about something else — pages the 10-25 census saw *fetch* the Arabic italic
+face — carried across as the population of an editorial question.
+
+**(a) Drop a family — NO, and the unit is wrong.** Newsreader Italic paints 982 characters on the
+English home page and Cormorant 1,507 on the Editions page; neither family is dead weight. What the
+numbers select is a **`(page, family)` pair**, and the selector is a column the build already prints:
+**bytes per painted character**, spanning 13 to 33,736 on today's probe. *A family is scoped off a page
+where it paints fewer characters than it costs kilobytes.* The two pairs that rule selects are queue
+item 108.
+
+**(b) What replaces italic emphasis in Arabic — NOTHING, and that is a rule rather than a gap.** Arabic
+has no italic convention; emphasis is carried by syntax and by the register's own «  », which the Arabic
+Content Creator already uses. Written into `_STANDING_LEDGER.md`'s standing prohibitions in the same
+commit, so a fourth run does not have to decide it again. **And the question's premise was wrong in the
+useful direction:** it assumed the Arabic edition had lost a mark it should get back, and
+re-measurement found 56 Latin runs that lost a mark which was never Arabic's — queue item 107, the
+board's only DEFECT. *A question about what to add found something that should never have been taken
+away.*
+
+
 
 **2026-11-14 — item 38 CLOSED at 21 days, from the OPEN head with the DEFECT bucket empty for a third
 day, as a MEASURED NEGATIVE RESULT (ruling #142) — and the row's founding instance had been repaired

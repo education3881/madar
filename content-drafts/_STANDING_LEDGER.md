@@ -205,6 +205,16 @@ ground.
   prints** (#86 clause 1 as amended by **#134**), never off how a name sounds; where no register carries
   it, the determination is declared in the annotation as this edition's own, with its date (#86 clause 2).
 - An **acronym** is expanded in the body only if `sources[]` expands it (#101).
+- **Emphasis in the Arabic edition is carried by SYNTAX and by the register's own «  », and nothing
+  visual replaces italic (settled 2026-11-15, standing-queue item 39).** Arabic typography has no italic
+  convention — the same fact as *tracking is never applied to Arabic* (2026-08-18 clause 4) — and the
+  house had said so three times as three point fixes (`[dir="rtl"] .pullquote`, the 10-17 strapline,
+  #115), which is why the question kept returning as though it were open. It is not open: a slant, a
+  tracking change or a weight shift would each be an import from a script that is not this one. **The
+  converse binds too, and it is where the rule was being broken:** a run of **Latin** text inside an
+  Arabic body keeps the Latin script's own conventions, italic included, because a journal title or a
+  foreign-language phrase marks itself the way its own script marks it. The composer marks such a run
+  with its `lang`, which the accessibility family has wanted since 2026-09-13.
 - Where an acronym and a name are in **different languages**, the pair may be printed only if the **institution itself prints both together** in the body's language, and the annotation carries the owner's pairing in the owner's words with its register and date (**#141**). A translation is never silently promoted to an expansion; where the owner prints no name in our language, the body keeps the acronym.
 
 ## The hand-off lines a draft cannot reach the Editor without
