@@ -1,689 +1,689 @@
 {
- "note": "Per-URL date of the last change to the page's own normalised served bytes. Seeded estimates carry seeded:true and are a declared known error \u2014 see agents/tools/served_dates.py.",
+ "note": "Per-URL date of the last change to the page's own normalised served bytes. Seeded estimates carry seeded:true and are a declared known error — see agents/tools/served_dates.py.",
  "opened": "2026-11-11T12:00:30Z",
  "pages": {
   "/madar/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "9e6eddde877bc409ea983356c44f1df237d766ad1e364ab8f235e95a3fa99f1a",
    "seeded": false
   },
   "/madar/about/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "e91c458c125a6a846884b04b94339ceea9ef9a3e91f0b4a0d693c31c16075e4a",
    "seeded": false
   },
   "/madar/ar/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "843faf1881a4efabbf106bd125e66f621b40e8f864b4337136a7932a25ff443d",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-25-bo-teacher-chalk/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "810ba192e6b3e2567a389be5c3048da0c286cf501c81dcc21b31f12e7d675776",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-26-bahrain-bqa-public-grades/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "942ac24c657d5925576de3636c56196990b23c0dde9fe9ca714c837e14e000c0",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-27-egypt-ekb-decade/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "77e6884089b894e5387a6b048f87b2c4637606ad7a2dc8a0e912470d26527ca6",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-27-uae-madrasa-tiktok/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3f6f65a4fd65c87c50da414afdf3b7060f9331296e0622b54a17e1fddb318caf",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-28-ghana-cbe-curriculum/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "7deb260bcaac8b7f820fba4d253f107889cc771cae16f70d876e602e8f60e840",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-28-iraq-mosul-library/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "f65092f5d2f835052eab87e7530ca537c13f6835a36e8fc7ad52fdd9f6e993cd",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-28-kuwait-ccet-arabic-tests/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "ee3d9a76bb47a1fbb2e3f5f427f2f11bbd95f83d92960105bc51e1ab522409ac",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-31-indonesia-permen-13-coding-ai/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "56ca0c58c85ebcbb078f720df5d8ddc687c689f619519556db9edefa6ce65ac5",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-31-qatar-humanity-spark-strategy/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "98b29a4c94dd3af4289f498545db6b1dc414478c1b98a579e7a0ecb623f7d2db",
    "seeded": false
   },
   "/madar/ar/articles/2026-05-31-uruguay-eduia-lab-ceibal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "8a0f8166fc0d3563cb8213ef6949d88bd50d939f08f6f40cfabe1cd2655625b5",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-08-sierra-leone-tsc-teacher-matching/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1e1f65f7619a9a9432b020c6f3cb8c180e2fbc1337d41a879bbe8dfd484772d3",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-10-rak-iqra-arabic-diglossia/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3774d843b45829c8ec8384812b4195ec093e76f9a5e0c3fb55cb0cf47ea80cbf",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-16-vietnam-tuition-free-public-school/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "73a6ec765a3a83d43f5f31383cf84600f628324e4f82e72995479d3f05b41894",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-17-korea-aidt-reversal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "4846f95d894b2778a1b7be1c4bd3f050367d2e516358b0005b4c0d46a0f9b214",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-18-egypt-npda-arabic-literacy/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "4777a40d8a3a4abfeac6c0f44875461a7e63751f67f1ed804fe2c1aa5ab07213",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-19-philippines-mtb-mle-reversal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "52f494f04994c960a5817816d22470bf7b704700dc48df648b1c19387396e272",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-20-oman-school-performance-ratings/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "62c82f97810b1e0f8d4e1769809a7f320664d02b59f6c86d9117e2594e62056d",
    "seeded": false
   },
   "/madar/ar/articles/2026-06-25-brazil-crianca-alfabetizada/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "af3183ee5c5cbfa200b448d7670bf27b8c9fde1a07aaf12f667d76bee808f30a",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-04-kenya-cbe-grade10-pathways/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "a7f1f248b227ae8a5083ac0bc70811f5f5937eb9a5566c7f78f7a84af70b1846",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-06-morocco-ecoles-pionnieres/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "41e99be58792c933d4d7eccf789c579024813991ab2a10b4a210083f3ba1e874",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-chad-sudanese-refugee-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "48f605ee40152f2bb43e9f6e9bd9fbfdd875fab6e4fdc200ff84d44aabe6dd44",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-chile-simce-return/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "6cb3d52dde43745aaebf49f36bb8d033dae20ef4434a46a8f720eae4ab48ff66",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-gaza-education-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "cb6e413221cd21600e71bb6307c47c07b129b732577d6e31daef9a62be09ac3c",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-india-parakh-hpc/": {
-   "changed_at": "2026-11-13T12:30:20Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "fbcf9059d4d2f6e99ea0ea2ddcacaf8bb19cd6c0caa9e9f98823998cfd8efba9",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-lebanon-crisis-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "7e929752b7037bba086758c3c673b4b86e1cdad6821a1055848883aef726dcf4",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-netherlands-doorstroomtoets/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "dfbdbe679725037b8c92620155cf971b45f7faa69fa45750a68c64c885bf7d48",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-nz-ncea-corequisite/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "48d75abec10f51b354562a46836806a54b99fd22c57365fe1a92c317fb5450b5",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-poland-ukrainian-students/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "4597c40e8e6a3d0011268965707bdf0ede16fe2d2796e23ec7c9a4e34f66cc8b",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-rohingya-myanmar-curriculum/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "933371ae5179b1a9f6ecf9a2bd97e8d4233e54fddb8f4d02cdb3485943ee3ea6",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-singapore-psle-sbb/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "5d49cf9e11409de2a7c3738f34bdd5e2ab7df1362f0a012bdb59e25f0d76e743",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-sudan-exam-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "33aa08ebe1e793e28adac2653d4dcbeec0abcff61b4d3d4516bc23e42ba7b059",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-syria-certificate-recognition/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3b45705b089f6abe97c52fbed5ec76f73b2d22767bdc7069cc4029462ad3e343",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-turkiye-earthquake-school-recovery/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d5113c1300531b161d7bd5ff4c1fa7e927bb095c7306e62276b9a9f76ffcf69b",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-ukraine-wartime-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "0eaa885edeb2bf7367107172c755b8b71f2b4106ec1cf2af9560166d095330e9",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-us-naep-honesty-gap/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "b5fd980e65ad4ac6e80c09eb03ca26f412b47fe1f61165556b7e42bb7cba5e8b",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-07-yemen-teacher-pay-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "710b8a9c2f872f7dc04cb9e6804fe0ee52993897f4676d1450b538ef593c8c54",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-16-australia-naplan-reset/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "9e5615365fbe8c9874a149cd894ac82d2989c4f05ace4ab38900a31569d082bc",
    "seeded": false
   },
   "/madar/ar/articles/2026-07-28-england-report-cards-first-term/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "8f8097bf9216484d58dc6b195a6c12167f1d7659a7dd4ab7353d246461efb71d",
    "seeded": false
   },
   "/madar/ar/articles/2026-08-25-zambia-free-education-act/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "611f3b87fb1a8aafe324f2235f385bb370dc048b1c17d250fd1a43ee1148b91a",
    "seeded": false
   },
   "/madar/ar/articles/2026-08-28-sierra-leone-sleic-outcomes/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "99b64779608ae8c252f5a06e07507782c42a872003ffcc5dfbda12e54195e274",
    "seeded": false
   },
   "/madar/ar/articles/2026-09-01-sudan-cant-wait-to-learn/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "4bd9d6c111d5c53fe3252c68c9f3d9a7768461d6666649adedf38273180f0a01",
    "seeded": false
   },
   "/madar/ar/articles/2026-09-14-africa-best-system-ruler/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "5258e6bd02ac1879c09111d082c802e41fe0a9b45d674043f5d1f1204591041f",
    "seeded": false
   },
   "/madar/ar/articles/2026-09-19-egypt-baccalaureate-published-first/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "ca0d16fcc6b7f468ec706bf23fcf2a7cc014cc37b5b15eee26b3cc3dfd66bdba",
    "seeded": false
   },
   "/madar/ar/articles/2026-09-27-rwanda-teacher-certification/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "c624849cfc191fd15d5b273eba422ab1a4fdb6f4d74e7c40c49a051d69c67f60",
    "seeded": false
   },
   "/madar/ar/articles/2026-10-23-bahrain-bqa-five-cycles/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "fdc9c8520253e5d8e930b5419dfd40bc1e4202e129b6234dac41c096798723e8",
    "seeded": false
   },
   "/madar/ar/browse/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "6306f41515f179ee1e56c399fc4e448f64dc25807bcec2788cf67ebfff542163",
    "seeded": false
   },
   "/madar/ar/browse/country/bahrain/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "78779720c273a2e2740aee0d916f041203ee835f83a1d94370e291020191d446",
    "seeded": false
   },
   "/madar/ar/browse/country/egypt/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "c5c4b48112404212f781f0bb612c52202256d880bd2bed1b44e493067da66a0c",
    "seeded": false
   },
   "/madar/ar/browse/country/sierra-leone/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "0b438c51ff6d5e7c15425ebfa3cc3c12e161b1ecd89d001d0649ddca7906afe4",
    "seeded": false
   },
   "/madar/ar/browse/country/sudan/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "2cd511cc758d901db8fcc1eeaa6f7da59e4691d97746230b06a705cec0d1a96a",
    "seeded": false
   },
   "/madar/ar/browse/country/united-arab-emirates/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d199ef41af1b3f595fd6fee24a759167929812b596217df3588e1a8618c87cc1",
    "seeded": false
   },
   "/madar/ar/browse/region/africa/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "8e2651eb3a1dc50ce971d8c68de65e7877f9a947c175d84da6f9477ec6ef5c2f",
    "seeded": false
   },
   "/madar/ar/browse/region/asia/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "7c3e9db49ee9d430e8c449dfc55fefe6b81291206a9e8150c3a3f0c9f9b6ef9e",
    "seeded": false
   },
   "/madar/ar/browse/region/europe/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "b0f0756fdc39e0b7cb14e342684649584846483975f1168a673600cd254e38c1",
    "seeded": false
   },
   "/madar/ar/browse/region/latam-caribbean/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "cf4e5723febf9d6067f54c6e3f0683e686de58ba380058e48531be28ab242e0d",
    "seeded": false
   },
   "/madar/ar/browse/region/mena/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "87e4942c064c7f0d06e3bd2e66dd09e1bf3c33350d48f3b597d412331a0c9479",
    "seeded": false
   },
   "/madar/ar/browse/region/n-america/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "93b6a351b40f60d782c18cc853701e1bde64c3f656484afae32dd6b70f400b1b",
    "seeded": false
   },
   "/madar/ar/browse/region/oceania/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1751c083b2ee1839f457e20f9b5c562ba0e79c93d594171b616658b759f647d4",
    "seeded": false
   },
   "/madar/ar/browse/topic/ai-readiness/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "36b54de1421fbb793b1cd3472ff29ad7908c4e2226ed2789ebefe3ded58b73f9",
    "seeded": false
   },
   "/madar/ar/browse/topic/ece-access/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "038adff24c1dfc420a52d84e4373c782c78482536756bc500b15b379250cd182",
    "seeded": false
   },
   "/madar/ar/browse/topic/education-for-displaced-children/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "124e9d12c3ddc73ba18cfa55e645443427f633ba39673e2c54850614adf40b7d",
    "seeded": false
   },
   "/madar/ar/browse/topic/female-education/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "50bbab721445c089f266945a6a9e43f2df136f0dfd14c2943913ebadebbeabf1",
    "seeded": false
   },
   "/madar/ar/browse/topic/language-and-heritage-preservation/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "9de24c043d5ff579d8816f537f0f9f8e09362a7cc341912284c53e798d6ef5c8",
    "seeded": false
   },
   "/madar/ar/browse/topic/national-identity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1c595d35ca8c17aeffbc1a54956c431b224702300652db14ac6d38edcf240787",
    "seeded": false
   },
   "/madar/ar/browse/topic/student-wellbeing/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "752623adb4ccf971271a5f05063e5a5f8ffb62fbaa2ca842bcff6425aef7e5c5",
    "seeded": false
   },
   "/madar/ar/browse/topic/sustainability/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "aa8bb8f97fb6915acf0055e1c29825c609374317aeac2c33a63dde3c32f6103a",
    "seeded": false
   },
   "/madar/ar/editions/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "7e65850214dd21138742c80c5ee53cf42729530c1c7c3f1cc561f79d680dc747",
    "seeded": false
   },
   "/madar/articles/2026-05-25-bo-teacher-chalk/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3aa6bd109696434f2aeacf22b24b9fa2768d98cdbbb14c803c4fa76111c68b1a",
    "seeded": false
   },
   "/madar/articles/2026-05-26-bahrain-bqa-public-grades/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "de81e826f91f54901794ee7f12ac9f72660020c909c2496bedcd63d7611a60ae",
    "seeded": false
   },
   "/madar/articles/2026-05-27-egypt-ekb-decade/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "18871ebb44767e8b51c176f6cd5cf3b072601b81f7fc6f9df03658c4804846f3",
    "seeded": false
   },
   "/madar/articles/2026-05-27-uae-madrasa-tiktok/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "cce1016c1ee3cabf282bc1f413ee68600d5c608205c93ad1ff5f5b46466c151c",
    "seeded": false
   },
   "/madar/articles/2026-05-28-ghana-cbe-curriculum/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d0e7027a98fd3b8c30c47492157798d21202795ccc0c1b5384bed247666e053c",
    "seeded": false
   },
   "/madar/articles/2026-05-28-iraq-mosul-library/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "f2b970a56ed1b8a5c27919254211e2ea2378282c4141e52b6f320ec328e7b731",
    "seeded": false
   },
   "/madar/articles/2026-05-28-kuwait-ccet-arabic-tests/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "ab5fc689cccc91ee576b2e96f51dfb2e4ad966646d3a99a1279494dab2d5ef00",
    "seeded": false
   },
   "/madar/articles/2026-05-31-indonesia-permen-13-coding-ai/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d18e6e088431bca67c3547ed1623b6d157ed520dd7070b2c4b7d504bbc8f7d0e",
    "seeded": false
   },
   "/madar/articles/2026-05-31-qatar-humanity-spark-strategy/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "91d0856951102d366390f5c16f22351e8a840c011eb07483c2bd0c964cbb2028",
    "seeded": false
   },
   "/madar/articles/2026-05-31-uruguay-eduia-lab-ceibal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "492678f9e1db9f1b923c3017bebe7895ba91cfddb0090f0aa2448ea5b83275c6",
    "seeded": false
   },
   "/madar/articles/2026-06-08-sierra-leone-tsc-teacher-matching/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "a0eafd0466bd2baa746992881d5826fbd63221e915de042b0c642d3ec9e92b8c",
    "seeded": false
   },
   "/madar/articles/2026-06-10-rak-iqra-arabic-diglossia/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "b8e981ab7f4ce56f56ae6458e2b6738135e02d80f7338a6bbf5781501ef2f79b",
    "seeded": false
   },
   "/madar/articles/2026-06-16-vietnam-tuition-free-public-school/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "45ece08de5f46a8140ee424091cd086123811c96dba1760881d875f2c8011a30",
    "seeded": false
   },
   "/madar/articles/2026-06-17-korea-aidt-reversal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "689fdbe0bbc3ff845001176f07933d8192155c76e564eb377030da05f9b49c4c",
    "seeded": false
   },
   "/madar/articles/2026-06-18-egypt-npda-arabic-literacy/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "22856b70db5d881b111f44529726562c71439714fba30b3e2c57c2ad6270ff6d",
    "seeded": false
   },
   "/madar/articles/2026-06-19-philippines-mtb-mle-reversal/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3ddc3c0d3edb0396ece7bc275a3c389c77607fbe77a6e3de8b1efc197b6caddd",
    "seeded": false
   },
   "/madar/articles/2026-06-20-oman-school-performance-ratings/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3adf2426588a01cbf475e8b517488662dc7b14e91ddf388e70838efd9c802af9",
    "seeded": false
   },
   "/madar/articles/2026-06-25-brazil-crianca-alfabetizada/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "06ee8f9a1631c42b025153155776bcdc50aba32b5ad38951cadcaacddc2f80e4",
    "seeded": false
   },
   "/madar/articles/2026-07-04-kenya-cbe-grade10-pathways/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "604ba492038e9f54f2918e2c59be335c2c43edd58049154a97eb71aaf0404449",
    "seeded": false
   },
   "/madar/articles/2026-07-06-morocco-ecoles-pionnieres/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "80274278de710b5c166a53739906e6cbb9cdafa3c1cf50e56d4fabe4eaab79e8",
    "seeded": false
   },
   "/madar/articles/2026-07-07-chad-sudanese-refugee-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "14a6e2806e63bddb4ae24c76ece90f81cb243193048fae43e1b77fa1fa56dc39",
    "seeded": false
   },
   "/madar/articles/2026-07-07-chile-simce-return/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "96cacc8ff87c558da4b16fb22f824044d61d98e27966900456f738b41f9f7d1a",
    "seeded": false
   },
   "/madar/articles/2026-07-07-gaza-education-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "15d47983a0844a9ce73a0d622f4c5382ab479672a3574ecf1d2b5f4cb45c977d",
    "seeded": false
   },
   "/madar/articles/2026-07-07-india-parakh-hpc/": {
-   "changed_at": "2026-11-13T12:30:20Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1782eb46a84f66bf576e8d72f88a05d1e47f55a1e10e84b4574b7ecf8a3f6725",
    "seeded": false
   },
   "/madar/articles/2026-07-07-lebanon-crisis-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1bd3ace5cc022562b9166288d0470b726441985d3fb20e889bc5470e28b3b8be",
    "seeded": false
   },
   "/madar/articles/2026-07-07-netherlands-doorstroomtoets/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3df847e8504bcea3136bab08522f25ae56a29f547a4812a3a1517d2c7934232a",
    "seeded": false
   },
   "/madar/articles/2026-07-07-nz-ncea-corequisite/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "cff37c78dd5327bbaf5166d9bc3ed95d1bb3be7ec3924f0886fd563beb804f65",
    "seeded": false
   },
   "/madar/articles/2026-07-07-poland-ukrainian-students/": {
-   "changed_at": "2026-11-13T12:30:20Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "135b80cca3fc08048c541302e904b923764dc588ac7e9ab86987dd8b67b24569",
    "seeded": false
   },
   "/madar/articles/2026-07-07-rohingya-myanmar-curriculum/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "54a52e087c8b8fefdcfecb5ab743e164223f83bf729424c51aff9b781fd6d9c4",
    "seeded": false
   },
   "/madar/articles/2026-07-07-singapore-psle-sbb/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d5602e6b2a52581c98150121db1ee9005b6ef8b56fe4c984dda94cc1bb6e62de",
    "seeded": false
   },
   "/madar/articles/2026-07-07-sudan-exam-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "014f210a81476533bcb260565b5ceb1da5b57fe0af570d8dd749ff4faf5586b2",
    "seeded": false
   },
   "/madar/articles/2026-07-07-syria-certificate-recognition/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "22f26ebf359875b61476f29349b6b3f53bed43f59f6f25825adbc234d340b9e4",
    "seeded": false
   },
   "/madar/articles/2026-07-07-turkiye-earthquake-school-recovery/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "63047bc1bbf17af25550d7bbc5b11c53a7f5dea6b1751e4c02e97310ba226d66",
    "seeded": false
   },
   "/madar/articles/2026-07-07-ukraine-wartime-schooling/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "69f7b11c3343eb8eb0750f0f6863e474c73d96de97b687d7be0cee7861a65c02",
    "seeded": false
   },
   "/madar/articles/2026-07-07-us-naep-honesty-gap/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "5e2cbf2e8ba544c13c8c6bab39027161e5e980a45a9fe5e11537300ad265190d",
    "seeded": false
   },
   "/madar/articles/2026-07-07-yemen-teacher-pay-continuity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "388c3fff9c88d43653fbffdbf890123b154e81e81580b1e08acd9258cd4e166d",
    "seeded": false
   },
   "/madar/articles/2026-07-16-australia-naplan-reset/": {
-   "changed_at": "2026-11-13T12:30:20Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "1f3c090c3cdefd6f04a29ee8f99938eaf3779ce3fb7325e324710f2578abeaa8",
    "seeded": false
   },
   "/madar/articles/2026-07-28-england-report-cards-first-term/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "738404b1f1400a408d351668f9eaca3b2bbe9a7cab502cbbdc8d3aba168a0ed1",
    "seeded": false
   },
   "/madar/articles/2026-08-25-zambia-free-education-act/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "bf80da0355676117a7b6af494f78697a7485a5c583c9503229bde1a2b6a18ff0",
    "seeded": false
   },
   "/madar/articles/2026-08-28-sierra-leone-sleic-outcomes/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "41ca9f745997f87c68d7e9914e7c839bafabe70cf3913042c2323091c8da7c9f",
    "seeded": false
   },
   "/madar/articles/2026-09-01-sudan-cant-wait-to-learn/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "93868a334b0929b3687deef9cbcefc4a26661d62c3684591e3aaf1804354fb56",
    "seeded": false
   },
   "/madar/articles/2026-09-14-africa-best-system-ruler/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "fdb08ecb42bdeaf6797130bb241c54d42a203e9fa04074481784e23649894a6f",
    "seeded": false
   },
   "/madar/articles/2026-09-19-egypt-baccalaureate-published-first/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "3ed4e8f91c1dff6dd41a88a1fca40208570358195d0fb3780306e527fec2779e",
    "seeded": false
   },
   "/madar/articles/2026-09-27-rwanda-teacher-certification/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "96528179ad8250ebcc8025f1e2fbc27092cb3106f2c8184444e99d64e1ebbfa0",
    "seeded": false
   },
   "/madar/articles/2026-10-23-bahrain-bqa-five-cycles/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "f32957c5174d29cb11c16dec3682a19263867ae02932159f4838413cc7df7d2a",
    "seeded": false
   },
   "/madar/browse/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "bb3523e513f55d1a5a34d7b69a824c2ba5d352abcd8a19c1176e54315da261ec",
    "seeded": false
   },
   "/madar/browse/country/bahrain/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "6753287ac235a3e47bf393d51176be43a0483a82344aa6afe28d48978f1218eb",
    "seeded": false
   },
   "/madar/browse/country/egypt/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "fa64f269767c02e7fa53af92c6a1628e7a3aca1ab576d7440dd89d031e0ad690",
    "seeded": false
   },
   "/madar/browse/country/sierra-leone/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "49202a49f3eb6e15c527e97e9293d079ffe77b6431d67993a908f47cac2d0111",
    "seeded": false
   },
   "/madar/browse/country/sudan/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "b2ad53fcfc7d2517f956ad89968f982be3bf74ea62fb4cff8d1b2c2a5be6abb6",
    "seeded": false
   },
   "/madar/browse/country/united-arab-emirates/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "893b9df8318586026af4b03877b41a93de7692b73637a039baa71a75c332b4de",
    "seeded": false
   },
   "/madar/browse/region/africa/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "171da1e15ed004c16dbb7aa40c84182fd37616c4affe1701d9a44136455a2ca6",
    "seeded": false
   },
   "/madar/browse/region/asia/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "f7fb3c586d70fdc64bdcbe77aba9ca2aabc5ecad6f65204a1779d7ed813b79c4",
    "seeded": false
   },
   "/madar/browse/region/europe/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "073237a5ee6c0f5a472e6c9ef99e891a2e92bdf11b57ed3bbdc987180d99049b",
    "seeded": false
   },
   "/madar/browse/region/latam-caribbean/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "eda3d0e2beb28740b468fb6160245ebf94db1692d45eac2a8aab385a77a08712",
    "seeded": false
   },
   "/madar/browse/region/mena/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "d210c2fb1a6e12a0ec7b093b1971a58e516eff3d2843b06c40283662f6ce3514",
    "seeded": false
   },
   "/madar/browse/region/n-america/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "83bc3ada8a1103c010b0fc9dd0cbe6f7932b5d8a4214f427bf61e0feced90396",
    "seeded": false
   },
   "/madar/browse/region/oceania/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "a277365b2f482d8957bba1e0d5c97c49d4a26cca432822cdecb4cffe91823d7c",
    "seeded": false
   },
   "/madar/browse/topic/ai-readiness/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "675424aa26f6947868a2582969a779361e270d9038cda3e6828ad25ec18d15bd",
    "seeded": false
   },
   "/madar/browse/topic/ece-access/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "5fd07d4f29f32110a5edf72711ab4d5b44f3e0f42532e33f858739641b675186",
    "seeded": false
   },
   "/madar/browse/topic/education-for-displaced-children/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "532af6ac52e897eac1b4357f493ce9ba4d32067fb87fb69d0fc773ec0630f408",
    "seeded": false
   },
   "/madar/browse/topic/female-education/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "34a9f17e494022407f7ba96cd561352f2c1f0500ff9970a54ab3fc3f05bfaf76",
    "seeded": false
   },
   "/madar/browse/topic/language-and-heritage-preservation/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "67a82636da4c0f40d2c38a81910d24736a85c1fb70b7f79fc03ff0089353d344",
    "seeded": false
   },
   "/madar/browse/topic/national-identity/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "e65ad5afeb1df19d2c7e1156077a980a99496f0ad994bc83d42888e3eebf618f",
    "seeded": false
   },
   "/madar/browse/topic/student-wellbeing/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "c399b568b639e4d205622cf3601d4f233a68d39a60855f74fd2dbdc39efbfad8",
    "seeded": false
   },
   "/madar/browse/topic/sustainability/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "32fb5abe328a595d130fd02e6ca544c552ba59e999f8372dcbc37244981c3aee",
    "seeded": false
   },
   "/madar/editions/": {
-   "changed_at": "2026-11-11T12:17:26Z",
+   "changed_at": "2026-11-15T12:26:07Z",
    "content_sha": "e2d3c3d7c53dbbe1cfba35f6ab44ea02be74c9f0f067e13d2fa4e72c9e2349a9",
    "seeded": false
   },
@@ -695,5 +695,6 @@
   }
  },
  "schema": "madar-served-dates/1",
- "updated_at": "2026-11-15T12:17:14Z"
+ "updated_at": "2026-11-15T12:32:28Z",
+ "restamped_2026_11_15": "137 non-seeded entries re-stamped by recomputing served_dates.stamp_for against the CORRECT chrome ceiling. --update had run at 12:17Z against a working tree whose chrome change was not yet committed, so stamp_for returned min(head, chrome) with chrome still at the 2026-11-11 commit and wrote a date FOUR DAYS BEFORE the change it was recording. --update cannot self-correct: it re-stamps only when a sha differs, and the shas were already current. No date was invented here; the tool's own function was re-run with the inputs it should have had."
 }
