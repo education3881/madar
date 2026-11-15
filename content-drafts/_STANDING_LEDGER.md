@@ -60,7 +60,44 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (working title) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14** | — | — | — | — | — | — | **six — cells 1 and 2 FILLED; cell 3, the Editor's five-test verdict, is the next content function's first action** |
+| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14** | **judged 2026-11-15 — RETURNED on Test 3** | — | — | — | — | — | **six — cells 1 and 2 FILLED; cell 3 JUDGED AND STILL OPEN: the verdict is on file and it is a return, so the cell does not fill. One revision pass owed, then Tests 4 and 5** |
+
+**Reconciled against disk 2026-11-15. CELL 3 IS JUDGED AND IT IS A RETURN, SO THE CELL DOES NOT FILL —
+AND TEST 1 WAS RE-VERIFIED RATHER THAN ACCEPTED.** Verdict at
+`content-drafts/verdicts/2026-11-15-england-ofsted-exempt-cohort.md`.
+
+- **Test 1 PASS, re-verified against the bytes the registers are serving today.** All eight citations
+  fetched: six first-party registers at **200**, both Madār predecessors at **200**, and **35 of 35
+  quoted tokens present verbatim** — #112's method applied *before* publication instead of after it.
+  Every unquoted figure checked in its register's own table: Figure 3's **263 / 104 / 367**, Figure 1's
+  **21,725 / 18 / 70 / 9 / 3**, register 5's six evaluation areas and five grade names, register 4's two
+  dates. **§A4's strike is confirmed in the strongest form available: the word *retrospective* occurs
+  nowhere in either register that could have carried it.**
+- **And Figure 3 is sharper than §A2 knew.** The two seventeens are not fourteen weeks apart in two
+  registers; the statistical release's own row for all previously exempt schools reads **367 · 17
+  outstanding · 62 good · 17 requires improvement · 4 inadequate** — **one table, one row, four columns
+  apart.** The draft's refusal to print a bare *17%* is necessity, not caution.
+- **Two Test 1 defects of ARTEFACT, neither an error of fact.** Source 6 carries **no URL** — it is the
+  only register cited for a property of the *page* rather than for a claim in the body, so the drafter's
+  habit of writing the address beside the claim had no claim to attach it to, and the slug is not
+  reconstructible from the title. Supplied by the Editor, fetched, 200. And the **dek is not in the
+  draft at all**: the hand-off reports `dek: 188/200` for a string that appears nowhere, which is a
+  measurement with no artefact under it. Required on the revision; the Editor does not write it.
+- **Test 2 PASS.** **Test 3 FAILS and the draft is RETURNED.** The reader does not know by paragraph two
+  why this is in front of them in November 2026. The answer is in the piece and it is a long way down —
+  the instrument has been withdrawn and replaced, so the 2022 re-measurement is the only one that will
+  ever exist, and the first release under the replacement landed **10 November 2026, five days ago**.
+  The remedy is a move, not a rewrite; nothing is re-reported.
+- **Tests 4 and 5 were NOT JUDGED**, because the protocol says a verdict does not progress past a failed
+  test. Said plainly rather than quietly skipped: *a list of five ticks with two unexamined reads exactly
+  like a full read.*
+- **The drafter's three open calls are decided** so the revision is one pass: the title is **kept** (a
+  *thirteen years* title would drop the word *average*, and a title cannot carry a qualifier); the struck
+  retrospectivity claim **stays out of the body** and remains published in the annotation, which is
+  served (#114); and the Bahrain correction **stays last**, with its closing sentence to name the date of
+  the clause it corrects.
+
+**The 2026-11-14 note below is superseded in its CELL-3-OPEN reading and kept for the record.**
 
 **Reconciled against disk 2026-11-14. CELL 2 IS FILLED, AND COMPOSING FROM THE OPEN REGISTERS CORRECTED
 THE BRIEF FOUR TIMES.** The EN draft is at `content-drafts/drafts/2026-11-14-england-ofsted-exempt-cohort.md`,
