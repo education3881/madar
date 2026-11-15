@@ -62,6 +62,60 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 |---|---|---|---|---|---|---|---|---|---|
 | **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14** | **judged 2026-11-15 — RETURNED on Test 3** | — | — | — | — | — | **six — cells 1 and 2 FILLED; cell 3 JUDGED AND STILL OPEN: the verdict is on file and it is a return, so the cell does not fill. One revision pass owed, then Tests 4 and 5** |
 
+**WEEKLY RECONCILIATION — 2026-11-15, by the weekly review, against disk rather than against this file's
+own account of itself.** Every number below was counted; none was carried.
+
+| Reconciled | Found on disk |
+|---|---|
+| Served corpus | **45 EN and 45 AR**, 100% parity, **zero** `approved: false` in either edition |
+| Assets | a hero still and an og card for **every** served slug; the three extras are VALENCE's pair and the brand card, which are chrome and not pieces |
+| Registry | **five** editions, all `status: 'closed'`; the sixth `'current'` a grep finds is the TypeScript union on line 25, not a row. `hasOpenEdition` derived and **false** |
+| The one piece that shipped this fortnight | `bahrain-bqa-five-cycles`, **2026-11-09**, with all eight cells on disk: Editor verdict 11-02, Verifier verdict 11-03, three dispositions, a verification retrace 11-07, Arabic gate 11-09 |
+| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **six cells open** — cells 1 and 2 filled, cell 3 judged 2026-11-15 and still open on a Test 3 return |
+| Edition 05's closed record | owes **one** item, unchanged: the SLEIC *Final Learning Report 2026* citation upgrade, walled by rendering and not dead (#70). Nothing published is wrong while it waits |
+
+**THE FIRST SINGLE SHIPPED AND THE LEDGER WORKED, WHICH IS THE FORTNIGHT'S ONE EDITORIAL FACT.** Issue
+#13's default was applied on 2026-11-08 and a piece reached readers on **2026-11-09** — the first in
+**forty-three days**, and the first ever to ship against a per-piece gate rather than a wave. Edition 05's
+71 held days did not recur, and the thing that replaced them was a nine-day gate on one piece. Said
+plainly: **B is still the option this operation's own recommendation ranked third, and it shipped.**
+
+**And `CLAUDE.md` described this ledger wrongly for six of those days — ruling #144, filed in this review's
+consolidation.** Its item 4 read *one row is in flight (`bahrain-bqa-five-cycles`, three cells open) and
+nothing has shipped since 2026-09-27* from 11-09 to 11-15, under a standing rule whose predicate is this
+file's **name**. The name was right the whole time. Corrected, and the rule widened from its noun to its
+sentence; the full working is in the ruling. **The lesson for this file specifically: a ledger is read
+through whatever points at it, and the pointer was stale while the ledger was true.**
+
+### The served-tense mandate, executed on #117's scope — and the scope has a gap this fortnight exposed
+
+The window is *every editorial future in the SERVED corpus whose date has arrived since the last review.*
+The 11-08 review executed 11-02 → 11-08 and found one in-window date string, shielded. This review
+executed **11-09 → 11-15** over both editions:
+
+* **33 in-window date strings across both editions, and every one is a READ DATE** — *read 2026-11-10*,
+  *re-read 2026-11-09*, *this register refused the re-read on 2026-11-10* — past-tense records of our own
+  reading, which is the opposite of an editorial future. **Zero unshielded futures.**
+* **31 future-verb sentences on dates that arrived earlier**, swept again across all 45 EN pieces, and all
+  31 are shielded in the three ways #117 enumerated: inside a quotation, inside a `sources[]` annotation,
+  or attributed to a dated register (*the emirate's May 2026 announcement put Iqra into…*, *Ofsted's own
+  12 June 2026 update put the change from September 2026*).
+* The Arabic half is **printed and not asserted** per #117 clause 4: **591** bound-prefix candidates
+  (`سـ` homographic with ordinary nouns) across the 45 Arabic pieces. A string match cannot separate
+  them, and a check reporting zero for Arabic reports its own blindness.
+
+**THE GAP, NAMED AND MEASURED AT ZERO.** #117's clause selects on **when a date arrived**. The exposure is
+created by **when a page started being served**. `bahrain-bqa-five-cycles` entered the served corpus on
+**2026-11-09** carrying its entire future-date population at once — dates that arrived in October, before
+any review's window, on a page no reader could load until the ninth. **No review has ever read them under
+this clause, and none ever will, because the arrival filter can only see the sliver that arrives inside a
+window.** Measured this morning: the piece carries **four** future-verb sentences in its body, all
+rhetorical (*this piece will not write it as one*), **zero** dated editorial futures — so the exposure is
+real in principle and **zero in fact today**. That makes it a coverage question and not a DEFECT under
+#116's boundary, and it is raised as a standing-queue row rather than patched here. *It is #143 and #144's
+shape a third time in one morning: the enforcement's selector is a date and the fact's unit is a
+publication event.*
+
 **Reconciled against disk 2026-11-15. CELL 3 IS JUDGED AND IT IS A RETURN, SO THE CELL DOES NOT FILL —
 AND TEST 1 WAS RE-VERIFIED RATHER THAN ACCEPTED.** Verdict at
 `content-drafts/verdicts/2026-11-15-england-ofsted-exempt-cohort.md`.
