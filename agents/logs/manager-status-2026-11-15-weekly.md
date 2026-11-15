@@ -77,3 +77,17 @@ green beside it:**
   with **item 116** (the 98,232-byte macron) behind it.
 * **2026-11-22 weekly owes:** the 11-08 consolidation's archive roll; the fourth-bucket amendment, now two
   weeks overdue; and the bet above, read as item 117.
+
+## Close-of-run observation, banked rather than assumed
+
+**Strand at the close: 4** — this review's own four function commits, on `main` and not yet carried by any
+successful deploy. Last successful deploy `a9f495f` (today's daily, 12:38Z). `madar-weekly.yml`'s
+*publish what the review pushed* step runs **after** the agent step and is `if: success()`, so **this run
+cannot observe its own publication** (#71, assertion 42's founding point), and if it dies before that step
+these four commits sit unserved exactly as the 11-08 review's four did for twenty-five hours. The one-line
+repair is staged at `agents/patches/2026-11-04-publish-step-must-not-depend-on-the-run.md`, behind issue
+#7 at 56 days. **The next run reads the strand and says whether it went to zero.**
+
+Envelope at the close: well inside the 90 wall-clock minutes, turn axis `UNMEASURABLE FOR THIS RUN` on
+every call beside a base rate now standing at 55 runs. Delivery staged per #96 across four commits; the
+11-08 review is why nothing was saved for the end.
