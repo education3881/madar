@@ -14,7 +14,15 @@ Read on every run, in this order:
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
-   flight (`bahrain-bqa-five-cycles`, three cells open) and nothing has shipped since 2026-09-27. The
+   flight — `2026-11-12-england-ofsted-exempt-cohort`, **six cells open**, cell 3 JUDGED on 2026-11-15 and
+   STILL OPEN because the verdict is a RETURN on Test 3 — and **the last piece to ship was
+   `bahrain-bqa-five-cycles` on 2026-11-09**, the first in forty-three days. *(This sentence read `one row
+   in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
+   **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote
+   the correct state into other artefacts. Corrected at the 2026-11-15 weekly review, and it is **ruling
+   #144**: the standing rule below has its predicate on the ledger's NAME, the named file never stopped
+   being live, so the rule stayed green over a sentence whose other three claims had gone wrong. A
+   maintenance rule attached to a sentence licenses the whole sentence.)* The
    registry stays at five editions, all `closed`, `hasOpenEdition` false — **which is why B is the only
    option the operation can execute without a word from him**, and it is the option its own
    recommendation ranked third. Issue #13 stays open; a frame arriving later supersedes the file for
@@ -24,7 +32,13 @@ Read on every run, in this order:
    before planning. **Standing rule: a wave's status memo is reduced to its record in the flip commit's
    week, and this line names whichever ledger is LIVE** — a closed edition's memo, or an edition that
    is open, or — from 2026-11-08 — the standing ledger when there is no edition at all; if the line
-   names anything but the live one it is stale and the run that notices fixes it. **The rule was
+   names anything but the live one it is stale and the run that notices fixes it. **WIDENED FROM ITS NOUN
+   TO ITS SENTENCE ON 2026-11-15 UNDER #144:** this line owes three things, not one — the **live ledger's
+   name**, its **current in-flight row with its open-cell count**, and the **date and slug of the last
+   piece to ship** — and a run that finds any one of the three wrong fixes all three. The ship date is
+   derivable from disk (the newest `date:` among `approved: true` articles) and the in-flight row is prose
+   no schema pins, so this is **not gated** (#93): a gate on the derivable half alone would print green on
+   the clause that was already right, which is the defect it would exist to catch. **The rule was
    amended here on 2026-11-08 because it said *edition* and there is now none:** a rule that enumerates
    the states its subject can be in is an enumeration too, and it cannot name a state it does not hold
    (#57 / #70 pointed at a pointer). **A dated section inside a working ledger is history, not state**
@@ -63,7 +77,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#143**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#144**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
