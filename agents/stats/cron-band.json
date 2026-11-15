@@ -1,33 +1,33 @@
 {
-  "measured_at": "2026-11-09T12:59:08+00:00",
+  "measured_at": "2026-11-15T13:08:22+00:00",
   "offset_change": "2026-09-15",
   "per_workflow": {
     "madar-daily.yml": {
       "cron": "23 4 * * *",
-      "n": 55,
+      "n": 61,
       "min_h": 4.23,
       "max_h": 8.58,
-      "median_h": 6.04,
+      "median_h": 6.23,
       "inside_four_hours": 0,
       "earliest_date": "2026-10-17",
       "latest_date": "2026-11-09"
     },
     "madar-weekly.yml": {
       "cron": "23 5 * * 0",
-      "n": 8,
+      "n": 9,
       "min_h": 4.32,
-      "max_h": 6.61,
-      "median_h": 5.5,
+      "max_h": 7.45,
+      "median_h": 5.78,
       "inside_four_hours": 0,
       "earliest_date": "2026-10-18",
-      "latest_date": "2026-11-08"
+      "latest_date": "2026-11-15"
     }
   },
   "all": {
-    "n": 63,
+    "n": 70,
     "min_h": 4.23,
     "max_h": 8.58,
-    "median_h": 5.83,
+    "median_h": 6.16,
     "inside_four_hours": 0,
     "earliest_date": "2026-10-17",
     "latest_date": "2026-11-09"

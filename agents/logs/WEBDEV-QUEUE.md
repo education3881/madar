@@ -27,6 +27,98 @@ answerable by looking rather than by arguing — **and one week later it answere
 **The rule: an item raised for the Web Developer is written here in the same run that
 raises it.** An item that lives only in a QA log is not queued; it is mentioned.
 
+## Weekly reconciliation — **2026-11-15 (weekly review).** Board **SIXTY-FIVE**, the fortnight raised 42 against 15 closed, and **the 28-day mark was reached TODAY by the one row the ordering was amended to exclude.**
+
+**Counted by reading the rows, which is the only method this file accepts (#57):** on arrival **ONE DEFECT,
+FIFTY-EIGHT OPEN, THREE BLOCKED = 62**, against a count line at the head of this file reading **SIXTY-ONE**.
+This review raises three rows (113, 114, 115) at OPEN's head, so the board closes at **65**.
+
+**The stale line is the fifth instance this morning of one shape, which makes it a rate and not an anecdote.**
+Yesterday's close wrote *Board at the close 62 against the rows* in its own commit subject and moved the three
+bucket headers — DEFECT **ONE**, OPEN **FIFTY-EIGHT**, BLOCKED **THREE**, all three correct — and left the
+summary line above them at 61. **A count in a heading is maintained by nobody unless somebody is named**
+(2026-09-20), and here the three headings had a named maintainer and the line that adds them up did not.
+
+### The fortnight, honestly counted — and it covers TWO weeks because the 11-08 review's fifth commit never landed
+
+| Rate | Fortnight (11-02 → 11-15) | Week two (11-09 → 11-15) | Week one (11-02 → 11-08) |
+|---|---|---|---|
+| Raised | **42** (3.00/day) | 22 (3.14/day) | 20 (2.86/day) |
+| Closed | **15** (1.07/day) | 8 (1.14/day) | 7 (1.00/day) |
+| Net board movement | **+27** (35 → 62) | +14 (48 → 62) | +13 (35 → 48) |
+| Head closures | **11** of 14 run-days | 6 | 5 |
+| …of which **OPEN** heads | **8** (0.57/day) | 4 | 4 |
+| …of which **DEFECT** heads | 3 | 2 | 1 |
+| Non-head closures | 4 | 2 | 2 |
+
+**Method, stated because this number was wrong at each of the last two reviews:** the board was counted by
+reading the three bucket tables — 62 rows, no duplicates, every row carrying a `Raised` date. Raises were
+derived from the item numbers, the highest row on 2026-11-01 being **70** and the highest today **112**, so 42
+rows were raised; closures as `raised − net`. It closes on the row: 35 + 42 − 15 = **62**, and three
+independent figures agree. *Counted against the population, never against yesterday's number.*
+
+### THE 28-DAY MARK WAS REACHED TODAY, AND BY THE ROW NO ORDERING HERE CAN TOUCH
+
+**Item 22 is 28 days old today** — raised 2026-10-18, BLOCKED behind GitHub issue **#7**, which is **56 days
+open**. The 2026-10-04 rule chose three displacements as a threshold *"short enough that nothing reaches 28
+days."* **Something has.** And #116 was right to put BLOCKED out of the head ordering entirely — *an item whose
+closure the operation does not own is a request, and a request must not occupy a head somebody is obliged to
+take* — so no head-taking rule could ever have reached this row, and reaching it would have cost a day either
+way. Both statements are true at once, and what is wrong is the sentence: **the guarantee was about a bucket
+and it was written about the board.** Fifth instance this morning of the shape ruling **#144** names and #143
+named yesterday: *the enforcement's selector is narrower than the claim's unit, and its green light covers the
+difference.* Binding restatement from today: **the 28-day guarantee is a claim about the OPEN bucket only. The
+BLOCKED bucket has no age guarantee at all** — what it has is a weekly re-read and an issue number.
+
+### The breach date in OPEN is 2026-11-24 by item 47, five days closer — and the rate that moved is not the one this table used to print
+
+| | |
+|---|---|
+| Oldest OPEN row | **items 40 and 41 at 21 days** (raised 2026-10-25, tied, separable only by raise order) |
+| First OPEN row to reach 28 days | **2026-11-24, item 47** (raised 2026-10-27) — nine days out |
+| Last week's figure | **2026-11-29, item 65** — so it moved **five days closer** |
+| Rows ahead of item 47 | four — items 40, 41, 44, 46 |
+| Simulated OPEN-head closures by 11-24 | **4.0** against the **5** needed, with 11-16's head already owed to DEFECT item 107 |
+
+**Why it moved, and it is not that closures fell.** Closures *rose* — 15 this fortnight against the 6 the 11-08
+review measured. What the breach date depends on is **the OPEN head's throughput, which is lower than the
+board's closure rate and was never the number this table printed**: of 15 closures only **8** came from the
+OPEN head. Three head-days went to DEFECT rows, which pre-empt the head by design, and four closures were
+taken off-head by the growth and content functions — and **an off-head closure does not follow age order, so
+it does not pay down the oldest row.** 0.57 OPEN-head closures per day is the rate that sets this date, against
+the 1.07 the board closes at. Last week's 11-29 figure assumed the fifteen rows older than item 64 would clear;
+at the OPEN-head rate actually observed, four of them do.
+
+**Stated as #116 requires — as a claim about a rate, with the rate named:** raise **3.00/day**, close
+**1.07/day**, **OPEN-head close 0.57/day**, so the board grows at **+1.93/day** with its oldest OPEN row
+ageing faster than the head can reach it. **The honest reading is the measurement working rather than the
+operation failing.** Forty-two raises in a fortnight is what five standing functions and forty-two assertions
+produce when they are pointed at a corpus. The 11-01 review's candidate amendment — *a bucket for rows nobody
+intends to close soon* — is now two weeks overdue and is **named here as the amendment due at the 2026-11-22
+review**, one ordering change per week being #116's own lesson. It is not made today, because this review has
+already restated one guarantee.
+
+### BLOCKED — three rows, re-read here as this review is required to do, and never by the daily
+
+| # | What it needs | Age | Movement this fortnight |
+|---|---|---|---|
+| 22 | A credential no identity here holds — **issue #7**, 56 days | **28 days** | **It reached the threshold today, and it cost a publication artefact again.** The 11-08 weekly died at the turn cap — 181 turns, 55 of 90 wall-clock minutes unspent, the first weekly ever to hit it — so `agents/reviews/` holds no 11-08 file and issue **#16** records the failure. **Nine staged patches** now sit behind this credential. #136 lit the measurement on 11-08, so the operation can read the cap it cannot raise: the register went 47 → **55 rows** this morning and the base rate prints on every `run_envelope` call. *The measurement no longer waits on the credential. The cap still does.* |
+| 32 | Permission to write to a third party on our behalf — **issue #12**, 22 days | 25 days | Default **B applied 2026-11-04** and **B-prime applied 2026-11-11**, both in silence, both recorded in the issue. The row stays BLOCKED because the half that is an ACTION — asking an archive to keep forty single-copy registers — still needs the word. The window that matters is exactly the window in which those registers are still there. |
+| 45 | What the next piece is an edition of — **issue #13**, 21 days | 19 days | **The default was applied 2026-11-08 and a piece shipped 2026-11-09**, the first in forty-three days. The row stays here, correctly: *a row must not leave this bucket because a default papered over it.* What is his is still his — options A and C both need a frame and only he can set one. |
+
+All three are correctly out of the head ordering. **What changed this fortnight is that one of them aged past
+the number this file was built to prevent, and nothing here could notice** — because the threshold is read by
+the head-selection rule, and the head-selection rule cannot see this bucket.
+
+### Tomorrow's head
+
+**Item 107**, the board's only DEFECT, raised 2026-11-15 at 0 days, outranking all sixty-one OPEN rows whatever
+their age (#116). It is taken as written unless a younger DEFECT lands first. The three rows raised at OPEN's
+head today — **113**, **114**, **115** — sit behind it and ahead of items 40 and 41, which is the one-queue
+rule's intended shape and also the reason the OPEN head's throughput is what it is.
+
+### The daily record for 2026-11-15 follows, unaltered.
+
 ## Weekly reconciliation — **2026-11-08 (weekly review).** Board **FORTY-EIGHT**, and last week's figure was wrong by three.
 
 **Counted by reading the rows, which is the only method this file accepts (#57):** **ONE DEFECT, FORTY-FOUR
@@ -150,7 +242,7 @@ what the board can currently COUNT, never what the corpus currently IS* (#116 ii
 statement in three weeks and the first where the gap is measured in weeks of serving rather than hours
 of bookkeeping.
 
-## Open — **SIXTY-ONE items in THREE BUCKETS, reconciled against disk 2026-11-15**
+## Open — **SIXTY-FIVE items in THREE BUCKETS, reconciled against disk 2026-11-15 at the WEEKLY REVIEW** — *and it read **SIXTY-ONE** against **62** rows when this review opened*
 
 **2026-11-15 — THE HEAD WAS RE-MEASURED BEFORE IT WAS TAKEN FOR THE FOURTH CONSECUTIVE RUN, AND THIS
 TIME THE ROW'S OWN FOUNDING INSTANCE HAD DOUBLED.** The displacement line, in one sentence: this run
@@ -2337,7 +2429,7 @@ currently founder-facing, that are **wrong, broken or unevidenced**. A question 
 because the count is what it would measure. Ordered by age; ages are `today − Raised` and are not written
 down (#116).*
 
-### OPEN — **FIFTY-EIGHT items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **SIXTY-ONE items.** Ordered by age. The forward question enters at this block's head.
 
 *Rows 91, 92 and 93 were physically appended to the DEFECT table by the 2026-11-09 run and carried the
 word OPEN in their `Blocks` cell instead of a bucket. **Moved here 2026-11-10 by the run that noticed.**
@@ -2350,6 +2442,9 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 115 | **The CHARTER's cadence table recomputes a human-readable clock by hand out of a machine-readable band — derive it or delete it.** #136 made the cron band a derived register (`agents/stats/cron-band.json`, re-measured by `--observe-turns`, read offline on every call) and left the table's *Measured start (Asia/Dubai)* column as prose computed from it **by hand**. The derivation therefore stops one step short of the number a human actually reads, and that column was stale by **18 minutes on the daily median and 26 on its ceiling** when this review re-measured — under the green light of a register that was perfectly current. **This is ruling #144 pointed at the CHARTER**: the maintenance rule's predicate is the band, the column beside it is not in the predicate, and the paragraph's own sentence *the only number this paragraph still owns is the human-readable clock column* names the exposure without closing it. Two candidate repairs and they are not equivalent: (a) `run_envelope.py` prints the Dubai clock band itself, and the table cites the tool instead of restating it — which makes the table unreadable without running something; (b) the column is **deleted** and the paragraph says *run the tool*, which costs a reader the one number they came for. **Decide which before building either**, and the deciding question is who reads this table and whether they have a shell. | **[AE]** | **2026-11-15** (weekly review) | Measured against `cron-band.json` as re-derived this morning: 70 runs, 4.23–8.58 h, median 6.16 h, so daily 12:37–16:58 median 14:37 and weekly 13:42–16:50 median 15:10, against a table reading 12:37–16:32 / 14:19 and 13:42–16:00 / 14:53. | nothing red — the band itself is derived and correct; the defect is one hand-computed column beside it, now corrected by hand for the third consecutive week |
+| 114 | **#117's served-tense clause selects on when a DATE arrived; the exposure is created by when a PAGE started being served, and a piece shipping between reviews brings its whole future-date population at once.** The weekly mandate reads *every editorial future in the served corpus whose date has arrived since the last review.* `bahrain-bqa-five-cycles` entered the served corpus on **2026-11-09** carrying dates that arrived in **October** — before any review's window, on a page no reader could load until the ninth — so **no review has read them under this clause and none ever will**, because the arrival filter can only ever see the sliver that arrives inside a window. Measured this morning at **zero**: that piece carries four future-verb body sentences, all rhetorical (*this piece will not write it as one*), and **no dated editorial future at all** — so this is a coverage question and **not a DEFECT** under #116's boundary, the bytes being right. The fix is a second trigger beside the date one: **a piece's first served day puts its whole future-date population into the next review's window, once.** Cheap, because the ship date is on disk. | **[WD]** + Editor | **2026-11-15** (weekly review) | 33 in-window date strings across both editions this fortnight, every one a READ date; 31 future-verb sentences on earlier-arrived dates, all 31 shielded by #117's three mechanisms; the newly served piece scanned in full and returning zero. | nothing red now — a clause whose blind spot is exactly one piece wide per ship, and the operation ships again as soon as cell 3 clears |
+| 113 | **#144's forward question — this operation has written maintenance rules into prose in at least four places; for each, what is the rule's predicate and which claims in its sentence can the predicate NOT falsify?** The four known homes: `CLAUDE.md` item 4 (*this line names whichever ledger is LIVE* — predicate the ledger's **name**, repaired today after six days of a wrong in-flight row and a wrong last-ship date beside it); `CLAUDE.md` item 5 (*a binding queue nobody is told to read is the same defect as a count nobody is named to maintain* — predicate unclear, and the paragraph carries live board claims); the CHARTER's cadence table (*the weekly review owns this column and re-measures it* — predicate the column, and item 115 is what it left out); and the RUNBOOK's point-of-filing rule (*a filing run moves FOUR counts* — predicate an enumeration, which #95 limb 1 already had to extend to a conditional fifth). **The deliverable is not a gate, it is a table**: one row per rule, its predicate in one clause, and the claims sharing its sentence that the predicate cannot reach. A gate would be premature and probably impossible, which is the ruling's own finding (#93). | **[AE]** | **2026-11-15** (weekly review, from ruling #144 at OPEN's head per the one-queue rule) | The founding instance measured: `CLAUDE.md` item 4 wrong for six days with its own rule green beside it, and four further instances of the same shape found the same morning — this file's turn-death literals, the queue's summary count line, the CHARTER's clock column, and the 28-day guarantee's bucket-versus-board scope. | nothing red — but the shape has a measured rate of five in one morning, which is what moves it from anecdote to row |
 | 112 | **`served_dates --update` is the THIRD instrument that compares a git-derived date against a WORKING-TREE build, and it is the one `lastmod_tree_guard.py` does not guard** — found at the close of 2026-11-15 by the run that had just caused the defect. The precondition was built on 2026-10-15 closing item 8, *shared by the two instruments that compare a `<lastmod>`*, and exits **4 = REFUSED** on exactly this condition. `served_dates.py` was written on 2026-11-11 and is the third; nobody wired it, because an enumeration written when there were two cannot cover a member that did not exist yet (**#57/#70**). **The cost, measured:** `--update` ran at 12:17Z against a tree whose chrome change was not yet committed, so `stamp_for` returned `min(head, chrome)` with `chrome` still at the 2026-11-11 commit and **wrote 137 pages a date FOUR DAYS BEFORE the change it was recording**. **And it cannot self-correct**: `--update` re-stamps only where a sha differs and the shas were already current, so the wrong date is durable. Corrected the same run by re-running the tool's own `stamp_for` with the inputs it should have had; `qa_lastmod` then PASSES at 138 URLs with the newest reading **2026-11-15T12:26:07Z**, the chrome commit. **Two limbs:** (a) wire the guard, or refuse inside `--update` when any `CHROME_GLOBS` path is dirty; (b) the ordering rule a run needs either way — **`--update` runs AFTER the commit that changed the bytes, never before** — which is #96's commit-per-function cadence acquiring a dependency nobody had noticed. **Not a DEFECT:** the 137 dates are correct on disk now and the sitemap serves them. | **[AE]** | **2026-11-15** (close-of-run verification) | The wrong dates read off the register, the right ones recomputed from `chrome_ceiling` after the commit, and the whole thing confirmed by `qa_lastmod` moving from 2026-11-13 to 2026-11-15 | nothing red now — a durable mis-date that the instrument cannot notice or repair |
 | 111 | **What should a NEW page's seed be in the served-dates register?** — the design residue of item 106, which closed **by event rather than by design** on 2026-11-15. Item 106 named 47 chrome-ceiling seeds as the harmful, too-late half of the declared error; a chrome change that afternoon moved 137 of 138 pages' served bytes and replaced every one of them with a real observation, taking the register from **134 seeded to 1**. **Nothing was fixed — the world moved under the measurement**, and the code that produced the 47 is unchanged, so the next page this publication serves is seeded by it. The question is narrower than item 106's and it is the hard half: a page's true last-change date is **unknowable from one observation of its bytes**, the global chrome ceiling is an over-claim, and the page's own source file is an under-claim — so what is the honest seed, and should a seeded entry be allowed to reach `<lastmod>` at all before it has been observed twice? **Second limb, cosmetic:** `--check`'s derived error block now narrates two cohorts of size zero at length, which is the tool correctly describing an empty set and reading oddly. | **[WD]** | **2026-11-15** (from item 106's close) | The collapse measured by `served_dates --update`: 137 moved, 0 new, 0 dropped, seeded 134 → 1 | nothing red — the 47 are observations now; the mechanism is not |
 | 110 | **The footer wordmark's macron is decomposed on purpose and NOTHING ASSERTS IT** — the guard for today's growth change, named in the same run that made it. `Madār` (a + U+0304) in `SiteFooter.astro` and `SiteHeader.astro` saves **33,736 bytes on every page whose only display-face accent is the one in our own name**, because U+0101 falls one code point past the end of Cormorant Garamond's `latin` range while U+0304 sits inside it. The component carries nine lines of comment ending *do not "correct" this to `ā`* — **and a comment is a habit, not a gate** (2026-09-13). A future edit types the precomposed form and the bytes come back silently on all of them, with `qa_font_payload` printing the regression in a column that is MEASURED, NOT ASSERTED. The cheap limb is one line: no served document may paint U+0101 in a run whose computed stack heads with the display family. | **[AE]** | **2026-11-15** (from the growth change) | The saving measured before and after by `qa_font_payload`'s own probe; the absence of a guard established by reading the gate's asserted limbs | nothing red today — a regression nothing would catch tomorrow |

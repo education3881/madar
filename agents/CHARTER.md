@@ -41,8 +41,8 @@ Write the daily brief (Yesterday / Today / Tomorrow) in the site's look and feel
 
 | Cadence | Task | Cron | **Measured start** (Asia/Dubai) | What it covers |
 |---|---|---|---|---|
-| Daily | `madar-daily-operation` | `23 4 * * *` → 08:23 | **12:37 – 16:32, median ≈ 14:19** | The five standing functions + the brief, committed per function. |
-| Weekly | `madar-weekly-review` | `23 5 * * 0` → 09:23 Sun | **13:42 – 16:00, median ≈ 14:53** | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
+| Daily | `madar-daily-operation` | `23 4 * * *` → 08:23 | **12:37 – 16:58, median ≈ 14:37** | The five standing functions + the brief, committed per function. |
+| Weekly | `madar-weekly-review` | `23 5 * * 0` → 09:23 Sun | **13:42 – 16:50, median ≈ 15:10** | Traffic report, quality retrospective, knowledge consolidation, and the team-expansion decision. |
 
 **The measured column was added 2026-10-18 under ruling #107, and the two columns disagree by four to eight
 hours on purpose.** This table read *~08:00* and *Sun 09:00* from 2026-06-03 until that date. GitHub's
@@ -70,6 +70,24 @@ could still be read* — pooling them would narrow the band to the runs whose ev
 number this paragraph still owns is the human-readable Dubai clock-time column above**, and it is derived
 from the figures in this sentence. *A literal is a measurement that has stopped being taken.*
 
+
+**2026-11-15 (weekly review) — the derived band needed NO EDIT for the first time, and the one column it does
+not cover was stale in exactly the way this paragraph predicts.** `--observe-turns` re-measured from
+`gh run list` without a word of prose being maintained: **70 scheduled runs, 4.23–8.58 h, median 6.16 h, and
+still ZERO inside four hours** *(daily n=61, 4.23–8.58 h, median 6.23; weekly n=9, 4.32–7.45 h, median 5.78)*.
+The figures in the paragraph above are now the **dated record of the 11-08 reading** and are correct as that;
+the live band is `agents/stats/cron-band.json` and no run has to trust a sentence for it. **And the ceiling
+moved for the third consecutive week, again on the day after the review that measured it:** 11-01 measured
+7 h 43 m → **11-02 came in at 8 h 09 m**; 11-08 measured 8 h 09 m → **11-09 came in at 8 h 35 m**. The median
+has climbed 5 h 34 m → 5 h 48 m → **6 h 16 m** across three readings. That is a distribution drifting later
+rather than sampling noise, and the consequence is operational rather than alarming: the daily now opens around
+**14:37 Dubai** and its 90-minute envelope closes around 16:07, so nothing scheduled against a Dubai afternoon
+is safe — and nothing ever was. **The clock column above moved by 18 and 26 minutes on this reading**, because
+#136 derived the *hours-late* band and left the *clock time* as prose computed from it by hand, so **the
+derivation stopped one step short of the number a human actually reads.** That is **#144** applied to this
+table: the derived register is a maintenance rule whose predicate is the band, and the column beside it sat
+unmaintained under its green light. Queued as standing-queue item **115** — derive the clock column or delete
+it; a human-readable figure recomputed by hand out of a machine-readable one is the worst of both.
 The falsification of the `:23` theory is unaffected and is now stronger: **zero of sixty-two runs inside
 four hours.** The offset change to `:23` was made on the theory that `:00` is the most
 contended minute; the median after it is unchanged from the figure that prompted it, so the theory is
