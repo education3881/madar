@@ -1,0 +1,446 @@
+{
+ "qa_css_tokens": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.1,
+  "status": "STABLE"
+ },
+ "qa_render": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 310.6,
+  "status": "STABLE"
+ },
+ "qa_arabic_shaping": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 55.3,
+  "status": "STABLE"
+ },
+ "qa_arabic_joining": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 34.9,
+  "status": "STABLE"
+ },
+ "qa_stable_order": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 4.1,
+  "status": "STABLE"
+ },
+ "qa_date_identity": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.0,
+  "status": "STABLE"
+ },
+ "qa_feed_enclosures": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.2,
+  "status": "STABLE"
+ },
+ "qa_feed_direction": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 11.3,
+  "status": "STABLE"
+ },
+ "qa_chrome_links": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 3.0,
+  "status": "STABLE"
+ },
+ "qa_third_party_origins": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 4.0,
+  "status": "STABLE"
+ },
+ "qa_census": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 42.0,
+  "status": "STABLE"
+ },
+ "qa_packet_figures": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.3,
+  "status": "STABLE"
+ },
+ "qa_pair_frontmatter": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.4,
+  "status": "STABLE"
+ },
+ "qa_patch_queue": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.8,
+  "status": "STABLE"
+ },
+ "qa_served_manifest": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.1,
+  "status": "STABLE"
+ },
+ "qa_register_shape": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 2.5,
+  "status": "STABLE"
+ },
+ "qa_bridge_coverage": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.3,
+  "status": "STABLE"
+ },
+ "qa_artefact_render": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 53.8,
+  "status": "STABLE"
+ },
+ "qa_composition": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.7,
+  "status": "STABLE"
+ },
+ "qa_claim_registers": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.1,
+  "status": "STABLE"
+ },
+ "qa_citation_identity": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.9,
+  "status": "STABLE"
+ },
+ "qa_acronym_evidence": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 39.7,
+  "status": "STABLE"
+ },
+ "qa_annotation_figures": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.5,
+  "status": "STABLE"
+ },
+ "qa_font_payload": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 2,
+  "secs": 56.4,
+  "status": "DISAGREES"
+ },
+ "qa_brief_head": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.8,
+  "status": "STABLE"
+ },
+ "qa_selector_coverage": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 18.9,
+  "status": "STABLE"
+ },
+ "qa_prior_publication": {
+  "group": "postbuild",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.9,
+  "status": "STABLE"
+ },
+ "qa_dist_input": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.3,
+  "status": "STABLE"
+ },
+ "qa_robots": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.2,
+  "status": "STABLE"
+ },
+ "qa_hreflang_clusters": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.6,
+  "status": "STABLE"
+ },
+ "qa_body_links": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   2
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.4,
+  "status": "STABLE"
+ },
+ "qa_lastmod": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 5.4,
+  "status": "STABLE"
+ },
+ "qa_held_assets": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   2
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.4,
+  "status": "STABLE"
+ },
+ "qa_reachability": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 1.1,
+  "status": "STABLE"
+ },
+ "qa_jsonld": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.7,
+  "status": "STABLE"
+ },
+ "qa_a11y_lang": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 4.2,
+  "status": "STABLE"
+ },
+ "qa_ar_language": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.6,
+  "status": "STABLE"
+ },
+ "qa_consumer_surface": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.7,
+  "status": "STABLE"
+ },
+ "qa_geo_fields": {
+  "group": "build-job",
+  "n": 10,
+  "exit_codes": [
+   0
+  ],
+  "distinct_exit": 1,
+  "distinct_output": 1,
+  "secs": 0.4,
+  "status": "STABLE"
+ },
+ "qa_live_drift": {
+  "group": "non-gating",
+  "status": "NOT MEASURED",
+  "reason": "reads the origin or a third party, not this tree"
+ },
+ "qa_sources_alive": {
+  "group": "non-gating",
+  "status": "NOT MEASURED",
+  "reason": "reads the origin or a third party, not this tree"
+ },
+ "qa_feed_validators": {
+  "group": "non-gating",
+  "status": "NOT MEASURED",
+  "reason": "reads the origin or a third party, not this tree"
+ }
+}
