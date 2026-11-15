@@ -65,7 +65,17 @@ const copy = {
 
     <div class="site-footer__cell site-footer__cell--mark">
       <a href={copy.homeHref} class="site-footer__mark" aria-label="Madār — home">
-        <span class="mark-latin" lang="en">Madār</span>
+        {/* `Madār` is a + U+0304 COMBINING MACRON, NOT the precomposed U+0101, and the
+            decomposition is DELIBERATE and measured. This span is the only text on most pages set
+            in the display face, and U+0101 falls one code point past the end of Cormorant
+            Garamond's `latin` unicode-range (which stops at U+00FF), so a precomposed macron
+            selects the `latin-ext` face and the browser fetches 33,736 bytes to paint ONE
+            character. U+0304 is listed inside the `latin` range, so the decomposed form is painted
+            by a file the page already has. Measured 2026-11-15 by server-log probe: Arabic home
+            295,628 -> 261,892 bytes, English article 521,408 -> 487,672, -33,736 each, and the
+            rendering is pixel-identical at 88px over 154,000 pixels against three controls.
+            Do not "correct" this to ā. Standing-queue item 108, limb 2. */}
+        <span class="mark-latin" lang="en">Madār</span>
         <span aria-hidden="true" class="mark-divider">·</span>
         <span class="mark-arabic" lang="ar" dir="rtl">مدار</span>
       </a>
