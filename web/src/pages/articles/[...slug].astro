@@ -361,7 +361,16 @@ const ogCard = piece.data.hero?.src
   }
   /* The dagger footnote at the end of Piece A sits in an emphasized paragraph */
   .body-main :global(em) { font-style: italic; }
-  .body-main :global(p > em:only-child) {
+  /* KEYED ON A CLASS THE BUILD WRITES, NOT ON `:only-child` (ruling #146).
+     This rule meant *a paragraph that IS an emphasised run*. `:only-child`
+     counts element children and ignores text nodes, so it could not tell
+     that paragraph apart from one holding a single inline phrase: measured
+     2026-11-16 at 87 inline phrases of 166 matches across 41 served pages,
+     50 English and 37 Arabic, each served display:block at 10.5px in muted
+     grey with a 25.5px gap opening mid-sentence. The boundary compares an
+     element's text with its parent's, which CSS cannot do and the build
+     can: src/lib/footnoteParagraphs.mjs. Standing-queue item 118. */
+  .body-main :global(p.footnote-para > em) {
     display: block;
     font-family: var(--font-mono);
     font-style: normal;

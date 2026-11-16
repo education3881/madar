@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { createLastmodResolver } from './src/lib/sitemapLastmod.mjs';
 import { withholdHeldAssets } from './src/lib/heldAssets.mjs';
+import { footnoteParagraphs } from './src/lib/footnoteParagraphs.mjs';
 
 // Resolved once at config load. Throws loudly on a shallow clone or an empty
 // git map rather than emitting a sitemap with no lastmod (see the module head).
@@ -49,6 +50,17 @@ export default defineConfig({
     // See src/lib/heldAssets.mjs.
     withholdHeldAssets(),
   ],
+  // A paragraph that IS an emphasised run is marked `.footnote-para` at build
+  // time, so the footnote rule in both article templates can stop guessing at
+  // it with `p > em:only-child`. `:only-child` ignores text nodes, so an inline
+  // phrase in running prose was indistinguishable from a whole-paragraph note:
+  // 87 of 166 matches across 41 served pages, both editions, served as
+  // block-level muted footnotes mid-sentence. The boundary is a comparison
+  // between an element's text and its parent's, which CSS cannot make and the
+  // build can. Ruling #146; src/lib/footnoteParagraphs.mjs carries the working.
+  markdown: {
+    rehypePlugins: [footnoteParagraphs],
+  },
   site: 'https://education3881.github.io',
   base: '/madar',
   trailingSlash: 'ignore',

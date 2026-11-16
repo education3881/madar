@@ -324,7 +324,15 @@ const ogCard = piece.data.hero?.src
      constraint about a script should not have to win a specificity fight; it
      should be stated in the template that is about that script. */
   .body-main :global(em) { font-style: normal; }
-  .body-main :global(p > em:only-child) {
+  /* KEYED ON A CLASS THE BUILD WRITES, NOT ON `:only-child` (ruling #146).
+     The comment above says the sibling rule below *already knew* Arabic is
+     not slanted. It did — and it was also silently converting 37 Arabic and
+     Latin inline phrases on this template's pages into block-level muted
+     footnotes, because `:only-child` ignores text nodes and so cannot tell
+     a paragraph that IS an emphasised run from one that merely CONTAINS
+     one. 87 across both editions, 41 served pages, verified in a browser.
+     See src/lib/footnoteParagraphs.mjs; standing-queue item 118. */
+  .body-main :global(p.footnote-para > em) {
     display: block;
     font-family: var(--font-arabic);
     font-style: normal;
