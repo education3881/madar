@@ -458,6 +458,37 @@ hr.rule {
   font-style: normal;
 }
 
+/* …AND THE RULE ABOVE IS ABOUT A SCRIPT, SO IT MAY NOT BE ENFORCED ABOUT A PAGE.
+   Ruling #115 is right and its enforcement was over-broad for 22 days: the
+   selector `[dir="rtl"] em` is a statement about a PAGE doing the work of a
+   fact about a SCRIPT, and the two coincide only while every emphasised run on
+   an Arabic page is Arabic. Measured 2026-11-16 over served `dist`: 193 such
+   elements, 137 Arabic-bearing and **56 carrying no Arabic code point at all**
+   across ten published pieces — journal titles, foreign-language terms,
+   transliterations. Italic there is not decoration; it is the Latin script's
+   own disambiguation, and de-slanting it deleted a mark the English edition of
+   the same piece still carries (standing-queue item 107).
+   CSS cannot read the script of a text node — it selects elements, and a script
+   lives inside one — so the carrier is an explicit `lang` that the ARABIC
+   COMPOSER writes on the run, which `qa_a11y_lang`'s family has wanted since
+   2026-09-13. The declaration is a read, never a guess: `kri` because our own
+   English body calls the phrase a Krio one, `ar-Latn` for a transliterated
+   Arabic name, `id`/`es`/`vi` from the register's own language.
+   SAFE BY ASSERTION RATHER THAN BY HOPE: this rule can only slant a run its
+   composer has declared foreign, and `qa_font_payload` limb 1 fails the build
+   on any slanted run containing an Arabic code point — so the one thing this
+   re-slant must never do is the one thing a gate already forbids. Ruling #145.
+   Narrowed to `em` alone at the point of writing, by its own gate: the first
+   draft of this rule carried `i[lang]` and `cite[lang]` beside it for symmetry
+   with the de-slanting rule above, and `qa_selector_coverage` failed the build
+   on both — markdown emits `<em>` and this corpus contains no `<i>` or `<cite>`
+   in a body at all. They are deleted rather than registered as CONDITIONAL,
+   because a conditional branch is a template's untaken path and no template has
+   this one. Three selectors written, one evidenced, and the gate said which. */
+[dir="rtl"] .body-main em[lang] {
+  font-style: italic;
+}
+
 /* ===================================================================== */
 /* RESPONSIVE COLLAPSE                                                    */
 /* ===================================================================== */
