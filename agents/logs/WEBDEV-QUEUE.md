@@ -243,7 +243,7 @@ what the board can currently COUNT, never what the corpus currently IS* (#116 ii
 statement in three weeks and the first where the gap is measured in weeks of serving rather than hours
 of bookkeeping.
 
-## Open — **SEVENTY items in THREE BUCKETS, reconciled against disk 2026-11-16**
+## Open — **SEVENTY-ONE items in THREE BUCKETS, reconciled against disk 2026-11-16**
 
 **2026-11-16 — THE HEAD WAS TAKEN FROM THE DEFECT BUCKET BY RAISE ORDER, AND THE FOUR RUNS IT COULD NOT
 REPAIR WERE WORTH MORE THAN THE FIFTY-TWO IT COULD.** This run took **item 107**, the older of two DEFECT
@@ -280,9 +280,14 @@ the boundary **out of the stylesheet and into the build** (`src/lib/footnotePara
 first rehype plugin), because the boundary compares an element's text with its parent's and **CSS cannot
 make that comparison.** Raised and closed as **item 118**; ruling **#146**.
 
-**Count line: SEVENTY open — ONE DEFECT, SIXTY-SIX OPEN, THREE BLOCKED. TWO closed (107, 118), FIVE
-raised (118 closed the same day, 119, 120, 121, 122).** Board 67 → **70, counted against the rows:
-1 + 66 + 3 = 70.** Item **116** is the DEFECT bucket's only remaining tenant and is **tomorrow's head**.
+**Count line: SEVENTY-ONE open — ONE DEFECT, SIXTY-SEVEN OPEN, THREE BLOCKED. TWO closed (107, 118), SIX
+raised (118 closed the same day, 119, 120, 121, 122, 123).** Board 67 → **71, counted against the rows:
+1 + 67 + 3 = 71.** *(This line read **70 / SIXTY-SIX / FIVE** for the length of one commit, because item
+123 was named in the QA log's addendum and given no row. **An item that lives only in a QA log is not
+queued; it is mentioned** — this file's own opening rule, broken in this file, by the run that quoted it
+three functions earlier. Caught by counting the rows before writing the total, which is the only method
+this file accepts (#57), and the arithmetic that would have agreed with itself is exactly the arithmetic
+#57 forbids.)* Item **116** is the DEFECT bucket's only remaining tenant and is **tomorrow's head**.
 
 ### Tomorrow's head
 
@@ -2486,7 +2491,7 @@ currently founder-facing, that are **wrong, broken or unevidenced**. A question 
 because the count is what it would measure. Ordered by age; ages are `today − Raised` and are not written
 down (#116).*
 
-### OPEN — **SIXTY-SIX items.** Ordered by age. The forward question enters at this block's head.
+### OPEN — **SIXTY-SEVEN items.** Ordered by age. The forward question enters at this block's head.
 
 *Rows 91, 92 and 93 were physically appended to the DEFECT table by the 2026-11-09 run and carried the
 word OPEN in their `Blocks` cell instead of a bucket. **Moved here 2026-11-10 by the run that noticed.**
@@ -2499,6 +2504,7 @@ the DEFECT block is empty.*
 
 | # | Item | Owner | Raised | Verified how | Blocks |
 |---|---|---|---|---|---|
+| 123 | **`qa_render`'s TARGETS is a fixed probe set of four pages and a card, and nothing anywhere says so where a run making a change would read it.** Raised by #147 clause 2: a bite injected into `ar/articles/2026-07-04-kenya-cbe-grade10-pathways` returned **byte-identical band figures and exit 0**, because the AR article target is `bo-teacher-chalk`. The sha256 check #35 requires ran, passed, and **proved the wrong thing** — a mis-aimed bite is indistinguishable in the output from a passing control. The same blindness has a second cost already measured today: `qa_font_payload` probes six fixed pages and **none of the six this run changed was among them**, so the gate could not see its own change's byte cost until the probe was re-pointed by hand (#145's cost table; item 39's *cost is a `(page, family)` pair*). **Two limbs:** (1) every assertion with a fixed probe set declares that fact in its own CLEAN line, so a run reads *4 pages of 138 sampled* rather than inferring population from a green; (2) the proof harness aims a bite **by reading the target list**, never by choosing a representative instance. Limb 1 is the cheap half and it is where the next instance is prevented. | **[AE]** | **2026-11-16** | Observed directly: a changed artefact, a passing gate, and a target list that does not contain it | OPEN — a measurement reports a narrower population than a reader assumes |
 | 121 | **For how many of this stylesheet's 402 asserted selectors does the set of elements it MATCHES differ from the set its own comment or name says it is ABOUT?** Today's forward question, and today's defect is why it is asked. The footnote defect was not found by a gate — it was found because a different repair lost a specificity fight and the matching rules were then enumerated by hand in a browser. `qa_selector_coverage` asks whether a selector reaches *a* page and answered **yes** for `p > em:only-child`, correctly, on all 166 matches — **79 it was written for and 87 it was silently wrong about.** A selector that matches too much is indistinguishable, to every instrument this operation owns, from a selector that matches exactly right. `:only-child`, `:first-child`, `em`, `[dir]` are each a **proxy for an authorial category** (a footnote, a standfirst, a script, a page), and the gap between proxy and category is where both of today's defects lived, in opposite directions: #115's selector was wider than its FACT, the footnote selector wider than its INTENT. Measurable form: per selector, the count it matches against the count its comment claims — **and a selector whose comment makes no countable claim is its own finding**, because a rule nobody can falsify is a rule nobody is maintaining (#144 pointed at CSS). | **[AE]** | **2026-11-16** | Not yet measured; the question is the row | OPEN — the day's forward question, at this block's head |
 | 122 | **Twenty-four Latin runs on four Arabic pages carry asterisks the English edition of the same piece does not, and they are a script-boundary marker rather than emphasis.** `*Nature*`, `*Britannica*`, `*Cambridge*`, `*Elsevier*` ×4, `*Scopus AI*`, `*ScienceDirect AI*`, `*Reaxys Predictive Retrosynthesis*`, `*Common Sense Networks*` ×2, `*Poynter*` ×2, one Indonesian clause, and the nine `*«…»*` English quotations on `rwanda-teacher-certification`. The English bodies print every one of them plain. The composer used markdown's only inline device to mark a Latin run inside Arabic prose, because a script boundary needs a visible edge and markdown offers nothing else; in English there is no boundary, so there are no asterisks. **The judgment is whether a redundant marker should be carried at all** — a Latin run inside Arabic prose is already visibly bounded by being Latin — and it is the Arabic Editor's, not the Web Developer's. Item 107's prescription cannot reach these: tagging them `lang="en"` and slanting them would make the Arabic edition italicise company names the English edition sets upright, **a new EN/AR disagreement created by the repair**, which is the one outcome #86's method exists to prevent. Four published pieces. | **Arabic Editor** + [WD] | **2026-11-16** | Each of the 24 compared against the same token in the English edition of the same piece over served `dist`; 0 of 24 italic in English | OPEN — the bytes are not wrong, the device is undecided |
 | 120 | **A build cache reported on a pipeline change it never ran, and the correct fix read as a failed one.** After widening the rehype plugin's boundary from *text* to *prose*, `npm run build` reported **the same 33 marked pages** as the build before it and the sign-off was still unmarked — the predicate was right and **Astro's content cache had served the previous build's markdown output, because a rehype-plugin change does not invalidate it.** `rm -rf node_modules/.astro .astro dist` and the count went 33 → **49**. The hazard is general and is this operation's own shape: every gate in `postbuild` reads `dist`, and `dist` can be a faithful report on a tree the build did not process. CI is safe today only because it checks out clean — **which means the condition is invisible exactly where runs are developed and live where nobody is looking.** Wants either a cache-key that includes the markdown pipeline's own files or a build-time refusal, and it is the same family as item 112's `--update`-before-commit: *an instrument reading a tree the repository does not yet describe.* | **[WD]** | **2026-11-16** | Observed directly: identical 33-page count across two builds whose plugin predicate differed, then 49 after clearing the cache | OPEN — no served artefact is wrong; a measurement was |
