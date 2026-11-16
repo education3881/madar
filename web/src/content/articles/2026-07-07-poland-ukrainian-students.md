@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-06-16-vietnam-tuition-free-public-school
   - 2026-07-04-kenya-cbe-grade10-pathways
+  - 2026-07-07-ukraine-wartime-schooling
 contains_composites: false
 arabicVersion: 2026-07-07-poland-ukrainian-students
 sources:

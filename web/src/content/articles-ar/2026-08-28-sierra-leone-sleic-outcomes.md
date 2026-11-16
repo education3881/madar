@@ -14,6 +14,7 @@ related:
   - 2026-07-28-england-report-cards-first-term
   - 2026-09-14-africa-best-system-ruler
   - 2026-09-27-rwanda-teacher-certification
+  - 2026-09-01-sudan-cant-wait-to-learn
 contains_composites: false
 englishVersion: 2026-08-28-sierra-leone-sleic-outcomes
 sources:

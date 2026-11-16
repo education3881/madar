@@ -14,6 +14,7 @@ related:
   - 2026-06-25-brazil-crianca-alfabetizada
   - 2026-07-06-morocco-ecoles-pionnieres
   - 2026-09-19-egypt-baccalaureate-published-first
+  - 2026-06-19-philippines-mtb-mle-reversal
 contains_composites: false
 arabicVersion: 2026-06-18-egypt-npda-arabic-literacy
 sources:

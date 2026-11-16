@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-07-28-england-report-cards-first-term
   - 2026-06-25-brazil-crianca-alfabetizada
+  - 2026-07-07-singapore-psle-sbb
 contains_composites: false
 arabicVersion: 2026-07-07-india-parakh-hpc
 sources:

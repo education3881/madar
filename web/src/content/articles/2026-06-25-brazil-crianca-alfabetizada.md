@@ -14,6 +14,7 @@ related:
   - 2026-07-04-kenya-cbe-grade10-pathways
   - 2026-07-07-chile-simce-return
   - 2026-09-27-rwanda-teacher-certification
+  - 2026-07-07-india-parakh-hpc
 contains_composites: false
 arabicVersion: 2026-06-25-brazil-crianca-alfabetizada
 sources:

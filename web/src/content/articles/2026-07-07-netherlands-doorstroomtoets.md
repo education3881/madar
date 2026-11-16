@@ -12,6 +12,7 @@ related:
   - 2026-07-07-us-naep-honesty-gap
   - 2026-07-07-singapore-psle-sbb
   - 2026-06-20-oman-school-performance-ratings
+  - 2026-07-28-england-report-cards-first-term
 contains_composites: false
 arabicVersion: 2026-07-07-netherlands-doorstroomtoets
 sources:

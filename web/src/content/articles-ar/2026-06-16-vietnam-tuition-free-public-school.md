@@ -13,6 +13,8 @@ related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-05-25-bo-teacher-chalk
   - 2026-08-25-zambia-free-education-act
+  - 2026-07-07-lebanon-crisis-schooling
+  - 2026-07-07-poland-ukrainian-students
 contains_composites: false
 englishVersion: 2026-06-16-vietnam-tuition-free-public-school
 sources:

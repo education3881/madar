@@ -235,10 +235,44 @@ BAND = 900
 BAND_INK_FLOOR = 0.006
 
 
+def band_tops(height):
+    """Band origins, every band a FULL `BAND` rows, the last one anchored at the bottom.
+
+    EVERY BAND MUST BE THE SAME HEIGHT OR THE FLOOR IS NOT A COMPARISON (2026-11-16).
+    `range(0, height, BAND)` leaves a remainder band of `height % BAND` rows, and that
+    remainder was judged against `BAND_INK_FLOOR`, which is calibrated on 900-row
+    screenfuls. A page's last rows are its footer's bottom padding and are *legitimately*
+    blank, so whether this assertion fires was decided by `height % BAND` — a number that
+    is not a property of the page's correctness. It bit twice in one run on 2026-11-16:
+    a 130-row remainder on the English article and a **50-row remainder reading ink
+    exactly 0.0000** on the Arabic one, both after ordinary, correct content changes
+    moved the page height. The second was the proof, because nothing was wrong with
+    that page at all: it had gained four `related:` rails.
+
+    The last band is therefore anchored at `height - BAND` instead of being a remainder.
+    It OVERLAPS its predecessor, deliberately — these are measurement windows and not a
+    partition, and the bottom of a page deserves a full screenful of scrutiny rather than
+    whatever is left over. A genuinely blank page-bottom still fires: it is the bite below.
+
+    Said plainly, because this run's own earlier commit overstated it: the remainder band
+    DID fire on a real defect this morning (a sign-off that had lost its footnote styling)
+    and it did not *find* it — it fired because the page got shorter, and a tripwire that
+    answers "did the height change" is not an instrument for "is the page right". The
+    defect was found by reading a count. Keeping the artefact because it once coincided
+    with a defect is how a gate becomes a habit.
+    """
+    if height <= BAND:
+        return [0]
+    tops = list(range(0, height - BAND + 1, BAND))
+    if tops[-1] + BAND < height:
+        tops.append(height - BAND)
+    return tops
+
+
 def band_rows(width, height, pixels):
     """Per-BAND ink/dark/accent fractions, top to bottom. The position the count lost."""
     rows = []
-    for top in range(0, height, BAND):
+    for top in band_tops(height):
         band = pixels[top * width : (top + BAND) * width]
         n = len(band)
         if not n:

@@ -13,6 +13,7 @@ related:
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-06-17-korea-aidt-reversal
   - 2026-07-07-rohingya-myanmar-curriculum
+  - 2026-05-28-ghana-cbe-curriculum
 contains_composites: false
 arabicVersion: 2026-06-19-philippines-mtb-mle-reversal
 sources:

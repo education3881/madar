@@ -10,6 +10,8 @@ themes: [value of teachers, ECE access, government-led programs]
 type: short
 related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
+  - 2026-07-07-chad-sudanese-refugee-schooling
+  - 2026-06-16-vietnam-tuition-free-public-school
 contains_composites: true
 englishVersion: 2026-05-25-bo-teacher-chalk
 sources:

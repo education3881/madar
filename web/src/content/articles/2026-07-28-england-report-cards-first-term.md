@@ -13,6 +13,8 @@ related:
   - 2026-07-07-us-naep-honesty-gap
   - 2026-07-07-netherlands-doorstroomtoets
   - 2026-08-28-sierra-leone-sleic-outcomes
+  - 2026-10-23-bahrain-bqa-five-cycles
+  - 2026-07-07-india-parakh-hpc
 contains_composites: false
 arabicVersion: 2026-07-28-england-report-cards-first-term
 sources:

@@ -12,6 +12,9 @@ related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-06-25-brazil-crianca-alfabetizada
   - 2026-08-25-zambia-free-education-act
+  - 2026-07-07-poland-ukrainian-students
+  - 2026-07-07-syria-certificate-recognition
+  - 2026-05-28-ghana-cbe-curriculum
 contains_composites: false
 arabicVersion: 2026-07-04-kenya-cbe-grade10-pathways
 sources:
