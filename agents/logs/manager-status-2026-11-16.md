@@ -52,5 +52,9 @@ reciprocal links** between pieces in both editions.
 **Board: 71 — 1 DEFECT, 67 OPEN, 3 BLOCKED, counted by reading the rows.** Two closed (107, 118), six
 raised (118 closed the same day, 119, 120, 121, 122, 123). *The first draft of this line said 70 and
 five, because item 123 had been named in the QA log and given no row — this operation's own rule that a
-mentioned item is not a queued one, broken by the run that quoted it. Caught by counting the rows.* **Strand at open: 0.** No tracker, no visitor
-number, nothing estimated.
+mentioned item is not a queued one, broken by the run that quoted it. Caught by counting the rows.* **Strand at open: 0** — yesterday's weekly review's four commits were carried, which yesterday's close
+asked about and could not answer. **Strand at the close: 8** — this run's own eight function commits,
+carried by no successful deploy yet. That is the structural constraint and not a hedge:
+`madar-daily.yml`'s *publish what the run pushed* step runs **after** the agent step, so a run cannot
+observe its own publication (#71, and assertion 42's founding point). The next run reads the strand and
+says whether it went to zero. **No tracker, no visitor number, nothing estimated.**
