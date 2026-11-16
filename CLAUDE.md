@@ -14,9 +14,10 @@ Read on every run, in this order:
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
-   flight — `2026-11-12-england-ofsted-exempt-cohort`, **six cells open**, cell 3 JUDGED on 2026-11-15 and
-   STILL OPEN because the verdict is a RETURN on Test 3 — and **the last piece to ship was
-   `bahrain-bqa-five-cycles` on 2026-11-09**, the first in forty-three days. *(This sentence read `one row
+   flight — `2026-11-12-england-ofsted-exempt-cohort`, **five cells open** as of 2026-11-16, cell 3
+   FILLED that day on an APPROVE across all five tests after a one-pass revision of the 11-15 Test 3
+   return — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**, the first in
+   forty-three days. *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
    **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote
    the correct state into other artefacts. Corrected at the 2026-11-15 weekly review, and it is **ruling
@@ -109,16 +110,19 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   call, topped up by `--observe-turns` (budgeted, because a run log is ~4 MB). **What that register says is
   why this paragraph exists: **FOUR** runs have died at the turn cap — 2026-10-11, 2026-10-30, 2026-11-03
   and **2026-11-08** — each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has
-  ended NONE in 48 runs, its longest reaching 84 of 90.** *(This sentence read **THREE** and **47** for one
+  ended NONE in 55 runs, its longest reaching 84 of 90 — the figures in this sentence READ from
+  `agents/stats/run-turns.jsonl` on 2026-11-16 at 55 rows, not remembered.** *(This sentence read **THREE** and **47** for one
   day. **The run that filed #136 became the fourth death** — 181 turns in 35 minutes, 55 unspent, the first
   WEEKLY ever to hit the cap — and it died after four of its five function commits were already on
   `origin`, so #96 cost it the fifth function rather than the week. **A literal is a measurement that has
   stopped being taken, and this one stopped the moment it was written**; the derived tool beside it was
   right, printing `3` correctly **scoped to `madar-daily.yml`**, and this unscoped prose was wrong.
   Corrected 2026-11-09.)* **And the two axes are weakly coupled, which is a sharper statement than either
-  "dark" or "a base rate":** across all 48 runs the burn rate spans **1.82 to 5.37 turns per minute, a
-  2.9× spread**, and wall clock explains **42%** of the variance in turns (r = 0.65). The four cap deaths
-  burned at 3.62, 4.21, 5.17 and 5.17 against the survivors' median of **4.09** — *straddling it* — so
+  "dark" or "a base rate":** across all **55** runs (re-derived 2026-11-16, the 48-run reading having
+  gone stale in seven runs exactly as this paragraph's own lesson predicts) the burn rate spans **1.82 to
+  5.37 turns per minute, a 2.9× spread**, and wall clock explains **41%** of the variance in turns
+  (r = 0.64). The four cap deaths burned at 3.62, 4.21, 5.17 and 5.17 against the survivors' median of
+  **3.95** — *straddling it, one below and three above* — so
   neither axis, nor the ratio between them, identifies a doomed run while it is still running. A
   base rate is not a run's position, and **this run's own count stays unknowable** — the record is written
   when the step ends, which is the event it would have been used to avoid — so a green clock is still not a

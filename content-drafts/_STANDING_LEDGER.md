@@ -60,7 +60,7 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14** | **judged 2026-11-15 — RETURNED on Test 3** | — | — | — | — | — | **six — cells 1 and 2 FILLED; cell 3 JUDGED AND STILL OPEN: the verdict is on file and it is a return, so the cell does not fill. One revision pass owed, then Tests 4 and 5** |
+| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16** | **FILLED 2026-11-16 — APPROVE on all five tests** | — | — | — | — | — | **five — cells 1, 2 and 3 FILLED. Cell 4 (AR composition) is the next content function's first action** |
 
 **WEEKLY RECONCILIATION — 2026-11-15, by the weekly review, against disk rather than against this file's
 own account of itself.** Every number below was counted; none was carried.
@@ -71,7 +71,7 @@ own account of itself.** Every number below was counted; none was carried.
 | Assets | a hero still and an og card for **every** served slug; the three extras are VALENCE's pair and the brand card, which are chrome and not pieces |
 | Registry | **five** editions, all `status: 'closed'`; the sixth `'current'` a grep finds is the TypeScript union on line 25, not a row. `hasOpenEdition` derived and **false** |
 | The one piece that shipped this fortnight | `bahrain-bqa-five-cycles`, **2026-11-09**, with all eight cells on disk: Editor verdict 11-02, Verifier verdict 11-03, three dispositions, a verification retrace 11-07, Arabic gate 11-09 |
-| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **six cells open** — cells 1 and 2 filled, cell 3 judged 2026-11-15 and still open on a Test 3 return |
+| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **five cells open** as of 2026-11-16 — cells 1, 2 and 3 filled, all five tests read, APPROVE |
 | Edition 05's closed record | owes **one** item, unchanged: the SLEIC *Final Learning Report 2026* citation upgrade, walled by rendering and not dead (#70). Nothing published is wrong while it waits |
 
 **THE FIRST SINGLE SHIPPED AND THE LEDGER WORKED, WHICH IS THE FORTNIGHT'S ONE EDITORIAL FACT.** Issue
@@ -115,6 +115,45 @@ real in principle and **zero in fact today**. That makes it a coverage question 
 #116's boundary, and it is raised as a standing-queue row rather than patched here. *It is #143 and #144's
 shape a third time in one morning: the enforcement's selector is a date and the fact's unit is a
 publication event.*
+
+**Reconciled against disk 2026-11-16. CELL 3 FILLS, AND ALL FIVE TESTS HAVE NOW BEEN READ.** Revision
+verdict at `content-drafts/verdicts/2026-11-16-england-ofsted-exempt-cohort-tests-3-4-5.md`.
+
+- **Test 3 PASSES and the remedy was a MOVE, executed as one.** The why-now is paragraph three — the
+  2 September 2024 / 10 November 2025 / 10 November 2026 sequence landing on the regulator's own
+  sentence to parents, *"the new grades can't be compared to the old ones"* — built entirely from
+  sentences already in the draft. Nothing re-reported, no register re-read. **And it carries no relative
+  date**, which is #117 honoured at compose time in the one place in a piece where the pull toward *six
+  days ago* is strongest.
+- **Test 4 PASSES on a structural reason rather than on the absence of a slip. No school is named
+  anywhere in 3,700 words** — the cohort is 367 schools and not one is put on the record as having lost
+  a grade, which is this subject's whole dignity exposure. The only named human is Amanda Spielman, in
+  office. What earns it is *What the frozen cohort does and does not prove*, which states **before** the
+  conclusion that the cohort holds the grade constant and **not the school**.
+- **Test 5 PASSES with ONE REQUIRED AMENDMENT, and the amendment is the day's editorial finding.** The
+  brief's rail named two Bahrain pieces and **missed `2026-07-28-england-report-cards-first-term`** —
+  *The verdict, taken apart* — **the same regulator and the same replacement instrument**, covering
+  England's first term with no overall grade. That is the second half of this piece's own why-now, and
+  we published it in July. A rail step that enumerates the pieces a commission follows up **is an
+  enumeration, and it was missing a member** (#57 / #70). The rail gains a third edge in the brief; the
+  one owed sentence was written into the body the same run as **revision 2**.
+- **No instrument of ours could have found it.** `qa_body_links` resolves the rails a piece *declares*
+  and can no more see a rail never declared than the 2026-08-17 orphan sweep could see a page nothing
+  pointed at. **A missing cross-link is the orphan defect at the level of the ARGUMENT rather than of
+  the site graph**, and the only reader who can find one is a reader who knows the whole corpus. The
+  RAIL STEP added on 2026-11-12 closed item 72's *regeneration* half; this is the half it does not
+  reach — **the step makes a commission name its predecessors and cannot check that it named them
+  all.**
+- **Both 11-15 artefact defects discharged:** the dek is written out at **198/200** code points, counted
+  by counting rather than by reading the claim, and source 6's URL is pasted from the verdict rather
+  than re-found. Both optional items executed too — §A2 sharpened with the Figure 3 row (**367 · 17%
+  outstanding · 62% good · 17% requires improvement · 4% inadequate**, one row, four columns apart, so
+  the body's refusal to print a bare *17%* is **necessity and not caution**), and the correction's
+  closing sentence now names the date of the clause it corrects.
+- **No flag moved and the corpus is unchanged at 45 EN / 45 AR.** Cell 4 is the next content function's
+  first action, and the Verifier's verdict is scheduled the run after the pair verdict (2026-09-06).
+
+**The 2026-11-15 note below is superseded in its CELL-3-OPEN reading and kept for the record.**
 
 **Reconciled against disk 2026-11-15. CELL 3 IS JUDGED AND IT IS A RETURN, SO THE CELL DOES NOT FILL —
 AND TEST 1 WAS RE-VERIFIED RATHER THAN ACCEPTED.** Verdict at

@@ -172,9 +172,18 @@ decline the gendered role noun (#86), and this piece's names are likely to be un
 3. **The inconvenient half** — points 1–4 above in the body, and point 4 by name.
 4. **Dignity** — the previously exempt schools are not a punchline for having been exempt; the exemption
    was policy, not their choice, and a school re-graded good is a good school.
-5. **Cross-link** — `related:` to `2026-10-23-bahrain-bqa-five-cycles` and
-   `2026-05-26-bahrain-bqa-public-grades`, **and the forward edges added to those two in the same commit**
-   (standing-queue item 72: a rail that only points backwards is the defect).
+5. **Cross-link** — `related:` to `2026-10-23-bahrain-bqa-five-cycles`,
+   `2026-05-26-bahrain-bqa-public-grades` **and `2026-07-28-england-report-cards-first-term`**, **and the
+   forward edges added to all three in the same commit** (standing-queue item 72: a rail that only points
+   backwards is the defect).
+   **THE THIRD EDGE WAS ADDED 2026-11-16 BY THE EDITOR'S TEST 5 VERDICT, AND IT IS THE NEAREST
+   NEIGHBOUR THIS PIECE HAS.** This brief named two Bahrain pieces and missed *The verdict, taken apart*
+   — **the same regulator, the same replacement instrument**, covering England's first term with no
+   overall grade. It is the second half of this piece's own why-now and it was published by us in July.
+   A rail step that enumerates the pieces a commission follows up is itself an enumeration, and it was
+   missing a member (#57 / #70). *No instrument could have found it: `qa_body_links` resolves the rails
+   that are declared and cannot see one that was never declared — the 2026-08-17 orphan defect, at the
+   level of the argument instead of the site graph.*
 
 ## Hand-off lines this draft cannot reach the Editor without
 

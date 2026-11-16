@@ -5,6 +5,30 @@
 **Recon of record:** `content-drafts/recon/2026-11-11-instrument-vs-schools-candidate-recon.md`,
 `2026-11-12-ofsted-the-two-owed-reads.md`, `2026-11-13-ofsted-the-two-gates-resolved.md`.
 **Working slug:** `2026-11-12-england-ofsted-exempt-cohort`
+**Title:** The cohort that was frozen by rule  ·  **34**/100 code points
+**REVISION 2 — 2026-11-16**, against the Editor's Test 5 amendment of the same day
+(`content-drafts/verdicts/2026-11-16-england-ofsted-exempt-cohort-tests-3-4-5.md`): the one owed
+sentence placing our own **28 July 2026** reading of the replacement beside its first annual release,
+written into *The first year of the new instrument*. It names a piece of ours and a date and asserts
+nothing new.
+
+**Dek**, written out in full as the Editor required on the revision — `198`/200 code points, counted at
+compose and not at the gate (2026-07-27):
+
+> England stopped routinely inspecting its outstanding schools for eight years, then went back in. Of
+> the 367 re-graded, 17% kept the grade - and the ruler that measured them has since been withdrawn.
+**REVISION 1 — 2026-11-16**, against the Editor's RETURN of 2026-11-15
+(`content-drafts/verdicts/2026-11-15-england-ofsted-exempt-cohort.md`). **Five changes, no re-reporting
+and no register re-read** — every sentence the revision needed was already in the document:
+**(1)** the Test 3 remedy, the why-now **moved** into the opening as paragraph three, built from the two
+sentences the verdict named (the 2 September 2024 / 10 November 2025 / 10 November 2026 sequence and the
+regulator's *"can't be compared to the old ones"*), with the existing *one number this publication has
+been looking for* sentence left exactly where it was, per the verdict; **(2)** the **dek written out**
+beside its count, 198/200; **(3)** source 6's **URL** pasted from the verdict; **(4)** the correction's
+closing sentence now **names the date of the clause it corrects**; **(5)** §A2 sharpened with the Figure
+3 row. **No relative date is used in the body** — the why-now is carried by dated registers rather than
+by *"last week"*, because a served tense expires and the piece is read in the reader's present (#117).
+
 **Status:** **CELL 2 OF EIGHT FILLED.** Both commission gates cleared 2026-11-13; this is the draft they
 licensed. `approved: false`. Editor's five-test verdict, Arabic composition, Arabic gate, Verifier
 verdict, still and og card all still owed.
@@ -41,6 +65,13 @@ Both are correctly cited; both are Ofsted's; they are near-opposites. **No numer
 owns could catch a confusion between them**, which is guardrail 2's point, and the body therefore prints
 **no bare "17%" anywhere**. Each carries its register, its direction and its denominator in the same
 sentence.
+
+**Sharpened on the 11-15 verdict's reading, and it is sharper than this section knew.** The two
+seventeens are not merely fourteen weeks apart in two registers — the statistical release's own row for
+all previously exempt schools reads **367 · 17% outstanding · 62% good · 17% requires improvement · 4%
+inadequate**. **One table, one row, four columns apart**, and the two values are identical. The body's
+refusal to print a bare *17%* is therefore necessity and not caution: a reader who met the figure
+undescribed could not recover which column it came from, and neither could we.
 
 **A3 · The two registers' arithmetic does not close, and this piece does not close it.** The news release
 says **"over 80% (308) of these schools that had a graded inspection last year did not retain the
@@ -116,6 +147,16 @@ primary and secondary schools were exempt from routine inspection."** It kept a 
 policy ended: **"In November 2020, the government lifted its exemption."** The regulator's news release
 of 22 November 2022 gives the stock at both ends: **"There were 3,900 outstanding primary and secondary
 schools when the exemption was introduced,"** and **"3,400 were outstanding when it ended."**
+
+And the ruler has since been taken away, which is why this is in front of a reader now. On
+**2 September 2024** the Department for Education scrapped single headline grades **"with immediate
+effect"**. Fourteen months later, on **10 November 2025**, the regulator's own renewed inspection
+framework came into force, with five scale names in place of the old grades. On **10 November 2026**
+Ofsted published the first annual release under it — and the regulator's guidance for parents states the
+consequence in its own words: **"It's important to understand that the new grades can't be compared to
+the old ones."** So the 2021/22 re-measurement of the exempt cohort is the only one that will ever exist
+on that scale. Both halves of that are set out below, with their registers; the point of putting them
+here is that everything which follows is a reading of a measurement that cannot be repeated.
 
 What the exemption produced, without meaning to, is a cohort whose grade was **held constant by rule**
 while the world around it moved. Then the rule was lifted and the regulator went back in with the
@@ -227,6 +268,12 @@ produced them: **"The 3,188 full inspections carried out represent only 15% of a
 "so the grade profile is not representative of all schools."** The release also labels itself:
 **"These statistics are published as official statistics in development."**
 
+This publication has already read the replacement once, from the other end. *The verdict, taken apart*
+(28 July 2026) covered England's **first term** without a single overall grade — six areas, five
+colours, no one word — before any annual figures existed. What 10 November 2026 adds is not the
+instrument but its first year of output, and the two readings belong together: one piece watched the
+grade being withdrawn, this one measures what the old grade had managed to say before it went.
+
 So the measurement England now publishes is a year's inspections, correctly described as a year's
 inspections, on a scale whose owner says it does not join the previous one. The eight-year freeze has
 been measured exactly once, and the instrument that measured it has since been withdrawn by its
@@ -242,7 +289,8 @@ nobody publishes anywhere."*
 That clause is wrong, and this is where it is corrected. One regulator does publish it — not because it
 set out to, but because a policy froze a cohort for eight years and then the policy ended. The
 measurement exists once, in England, for 367 schools, in a release from 2022, on a scale that no longer
-exists.
+exists. **The clause being corrected is the closing clause of our piece of 9 November 2026**, and it
+stays published there: a correction supersedes, it does not resurrect (#41).
 
 ---
 
@@ -299,7 +347,11 @@ exists.
    `content-drafts/recon/2026-11-13-ofsted-the-two-gates-resolved.md`). Standfirst: *"Ofsted's Chief
    Inspector reflects on **her** first speech at the Festival of Education."* Cited solely as the
    register the gender determination is read from, under #86 clause 1. **Also recorded and not chased:**
-   her `gov.uk` person page now returns 404.
+   her `gov.uk` person page now returns 404. **URL supplied by the Editor on the 11-15 verdict and pasted
+   rather than re-found** — the slug is not reconstructible from the title, and `url: z.string().url()`
+   in `web/src/content.config.ts` would otherwise have fired at the build, which is a ruler arriving at
+   the backstop (2026-07-27).
+   `https://www.gov.uk/government/speeches/amanda-spielmans-last-speech-at-the-wellington-festival-of-education`
 7. **Madār — *Bahrain, five cycles of the BQA's own grades*, published 2026-11-09.** The predecessor
    whose closing clause this piece corrects in our own name.
    `https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/`
