@@ -1,6 +1,6 @@
 ---
 import { withBase } from '../lib/urls';
-import { currentEdition } from '../lib/editions';
+import { currentEdition, hasOpenEdition } from '../lib/editions';
 import { copyrightYear } from '../lib/copyrightYear.mjs';
 
 interface Props {
@@ -19,7 +19,7 @@ const edNumAr = currentEdition.number.toLocaleString('ar-EG', { minimumIntegerDi
 
 const copy = {
   en: {
-    issue: `Edition ${edNum} · ${year}`,
+    issue: `${hasOpenEdition ? 'Edition' : 'Latest edition'} ${edNum} · ${year}`,
     /* the `a`+U+0304 COMBINING MACRON in `Madār` is DELIBERATE, not a typo: the precomposed
        U+0101 falls outside every bundled face's `latin` unicode-range, so painting it fetches a
        whole `latin-ext` file for ONE character. U+0304 is listed inside `latin`, which the page
@@ -40,7 +40,7 @@ const copy = {
     rssHref: withBase('/rss.xml'),
   },
   ar: {
-    issue: `الإصدار ${edNumAr} · ${year.toLocaleString('ar-EG', { useGrouping: false })}`,
+    issue: `${hasOpenEdition ? 'الإصدار' : 'أحدث إصدار'} ${edNumAr} · ${year.toLocaleString('ar-EG', { useGrouping: false })}`,
     rights: `© ${year} مدار — منشور تحريري مستقل.`,
     closing: 'صُنع رغمًا عن الظروف، لا بفضلها.',
     rss: 'RSS',

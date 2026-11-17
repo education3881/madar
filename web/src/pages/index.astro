@@ -58,6 +58,15 @@ const secondary = editionPieces.filter((p) => p && p.id !== lead?.id);
 // Derived framing strings from the registry — no hardcoded issue label.
 const edNum = String(currentEdition.number).padStart(2, '0');
 const edLabel = `Edition ${edNum}`;
+/* PAGE-LEVEL framing is not the same string as the EDITION BLOCK's framing, and conflating them is
+   how this page spent 2026-11-08 to 2026-11-17 telling every search engine it WAS Edition 05 while
+   the newest piece it lists belongs to no edition at all. `editions.ts` says in its own comment
+   `Read hasOpenEdition before labelling it` - three call sites below do, and the <title> did not.
+   Inside the edition section `edLabel` stays right: that block IS Edition 05. Growth, 2026-11-17. */
+const edPageLabel = hasOpenEdition ? edLabel : `Latest edition ${edNum}`;
+const homeTitle = hasOpenEdition
+  ? `Mad\u0101r \u00b7 \u0645\u062f\u0627\u0631 \u2014 Edition ${edNum}`
+  : 'Mad\u0101r \u00b7 \u0645\u062f\u0627\u0631 \u2014 Education, unhurried, in two languages';
 
 // Previous (closed) editions, newest first, for the browse strip.
 const previousEditions = editions
@@ -101,13 +110,13 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
 }
 ---
 
-<Base title={`Madār · مدار — Edition ${edNum}`} lang="en" noHeader={true} ogImage="/og/brand-card.png" alternate={{ en: '/', ar: '/ar/' }} jsonLd={publisherNodes()}>
+<Base title={homeTitle} lang="en" noHeader={true} ogImage="/og/brand-card.png" alternate={{ en: '/', ar: '/ar/' }} jsonLd={publisherNodes()}>
 
   {/* ============== TOP UTILITY BAR ============== */}
   <div class="top-bar">
     <div class="top-bar__inner container">
       <div class="top-bar__left">
-        {edLabel} · {currentEdition.periodEn} <span lang="ar" dir="rtl">· مدار</span>
+        {edPageLabel} · {currentEdition.periodEn} <span lang="ar" dir="rtl">· مدار</span>
       </div>
       <div class="top-bar__right">
         <span class="top-bar__meta">A research instrument</span>

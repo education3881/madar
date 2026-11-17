@@ -75,6 +75,9 @@ const issueExcerpts: { ar: string; en: string }[] = [];
 const editionPieces = sortedAr.filter((p) => p.data.edition === currentEdition.number);
 const edNum = String(currentEdition.number).padStart(2, '0');
 const edLabelAr = `الإصدار ${currentEdition.number}`;
+/* إطار الصفحة ليس إطار قسم الإصدار. داخل القسم `edLabelAr` صحيح؛ على مستوى الصفحة لا.
+   Growth, 2026-11-17 — والعنوان العربي لم يكن يدّعي إصدارًا أساسًا، فالنسختان كانتا متعارضتين. */
+const edPageLabelAr = hasOpenEdition ? edLabelAr : `أحدث إصدار ${currentEdition.number}`;
 
 const previousEditions = editions
   .filter((e) => e.status === 'closed')
@@ -90,7 +93,7 @@ function editionPieceCount(n: number): number {
   <div class="top-bar">
     <div class="top-bar__inner container">
       <div class="top-bar__left">
-        <span lang="ar" dir="rtl">{edLabelAr} · {currentEdition.periodAr} · مدار</span>
+        <span lang="ar" dir="rtl">{edPageLabelAr} · {currentEdition.periodAr} · مدار</span>
       </div>
       <div class="top-bar__right">
         <span class="top-bar__lang">
