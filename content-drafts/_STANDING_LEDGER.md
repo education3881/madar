@@ -60,7 +60,7 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16** | **FILLED 2026-11-16 — APPROVE on all five tests** | — | — | — | — | — | **five — cells 1, 2 and 3 FILLED. Cell 4 (AR composition) is the next content function's first action** |
+| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16** | **FILLED 2026-11-16 — APPROVE on all five tests** | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk, **one correction owed to the Editor** | — | — | — | — | **four — cells 1, 2, 3 and 4 FILLED. Cell 5 (the Arabic Editor's gate) is the next content function's first action, and it carries TWO items the composition handed up: the eleven-rendering grade vocabulary, and the editorial future the EN pair's hand-off line 6 records as zero** |
 
 **WEEKLY RECONCILIATION — 2026-11-15, by the weekly review, against disk rather than against this file's
 own account of itself.** Every number below was counted; none was carried.
@@ -71,7 +71,7 @@ own account of itself.** Every number below was counted; none was carried.
 | Assets | a hero still and an og card for **every** served slug; the three extras are VALENCE's pair and the brand card, which are chrome and not pieces |
 | Registry | **five** editions, all `status: 'closed'`; the sixth `'current'` a grep finds is the TypeScript union on line 25, not a row. `hasOpenEdition` derived and **false** |
 | The one piece that shipped this fortnight | `bahrain-bqa-five-cycles`, **2026-11-09**, with all eight cells on disk: Editor verdict 11-02, Verifier verdict 11-03, three dispositions, a verification retrace 11-07, Arabic gate 11-09 |
-| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **five cells open** as of 2026-11-16 — cells 1, 2 and 3 filled, all five tests read, APPROVE |
+| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **four cells open** as of 2026-11-17 — cells 1 to 4 filled; the AR composition landed 11-17 |
 | Edition 05's closed record | owes **one** item, unchanged: the SLEIC *Final Learning Report 2026* citation upgrade, walled by rendering and not dead (#70). Nothing published is wrong while it waits |
 
 **THE FIRST SINGLE SHIPPED AND THE LEDGER WORKED, WHICH IS THE FORTNIGHT'S ONE EDITORIAL FACT.** Issue

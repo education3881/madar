@@ -14,10 +14,10 @@ Read on every run, in this order:
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
-   flight — `2026-11-12-england-ofsted-exempt-cohort`, **five cells open** as of 2026-11-16, cell 3
-   FILLED that day on an APPROVE across all five tests after a one-pass revision of the 11-15 Test 3
-   return — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**, the first in
-   forty-three days. *(This sentence read `one row
+   flight — `2026-11-12-england-ofsted-exempt-cohort`, **four cells open** as of 2026-11-17, cell 4
+   (the Arabic composition) FILLED that day, which leaves the Arabic Editor's gate as the next content
+   function's first action — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**,
+   the first in forty-three days. *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
    **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote
    the correct state into other artefacts. Corrected at the 2026-11-15 weekly review, and it is **ruling
@@ -37,8 +37,15 @@ Read on every run, in this order:
    TO ITS SENTENCE ON 2026-11-15 UNDER #144:** this line owes three things, not one — the **live ledger's
    name**, its **current in-flight row with its open-cell count**, and the **date and slug of the last
    piece to ship** — and a run that finds any one of the three wrong fixes all three. The ship date is
-   derivable from disk (the newest `date:` among `approved: true` articles) and the in-flight row is prose
-   no schema pins, so this is **not gated** (#93): a gate on the derivable half alone would print green on
+   derivable but **not from frontmatter** — it is the commit that introduced `approved: true`
+   (`git log -S'approved: true' --diff-filter=AM -- <file>`), which returns **2026-11-09** for
+   `bahrain-bqa-five-cycles`. *(This clause read `the newest `date:` among `approved: true` articles`
+   until 2026-11-17, and that derivation returns **2026-10-23** for the same piece — the DATELINE,
+   seventeen days before it shipped, because `date:` is an editorial field and shipping is a git event.
+   The derivation names the right SLUG and the wrong DATE, which is why nobody caught it: the clause was
+   checked by recognising the piece, never by reading the number it produced. #144's own shape one
+   sentence further in — the maintenance rule ran green over a wrong PREDICATE.)* The in-flight row is
+   prose no schema pins, so this is **not gated** (#93): a gate on the derivable half alone would print green on
    the clause that was already right, which is the defect it would exist to catch. **The rule was
    amended here on 2026-11-08 because it said *edition* and there is now none:** a rule that enumerates
    the states its subject can be in is an enumeration too, and it cannot name a state it does not hold
