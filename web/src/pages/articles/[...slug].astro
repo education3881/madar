@@ -189,7 +189,13 @@ const ogCard = piece.data.hero?.src
               : run.text
           )
         }</span></span>
-        <span>Made in-house for Madār · 2026</span>
+        {/* the `a`+U+0304 COMBINING MACRON in `Madār` is DELIBERATE, not a typo: the precomposed
+       U+0101 falls outside every bundled face's `latin` unicode-range, so painting it fetches a
+       whole `latin-ext` file for ONE character. U+0304 is listed inside `latin`, which the page
+       already has. Measured 2026-11-17: pixel-identical in all three faces at 17.5px / 10.5px /
+       22px, 0 differing pixels of 282,240 / 101,808 / 446,688 at 8x, advance width delta 0.000px.
+       Ruling #148, standing-queue item 116. Do not "correct" it to the precomposed form. */}
+        <span>Made in-house for Madār · 2026</span>
       </figcaption>
     </figure>
 

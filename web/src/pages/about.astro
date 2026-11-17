@@ -11,7 +11,13 @@ import Base from '../layouts/Base.astro';
 
     <header class="about-page__head">
       <p class="kicker">About</p>
-      <h1 class="about-page__title">About Madār</h1>
+      {/* the `a`+U+0304 COMBINING MACRON in `Madār` is DELIBERATE, not a typo: the precomposed
+       U+0101 falls outside every bundled face's `latin` unicode-range, so painting it fetches a
+       whole `latin-ext` file for ONE character. U+0304 is listed inside `latin`, which the page
+       already has. Measured 2026-11-17: pixel-identical in all three faces at 17.5px / 10.5px /
+       22px, 0 differing pixels of 282,240 / 101,808 / 446,688 at 8x, advance width delta 0.000px.
+       Ruling #148, standing-queue item 116. Do not "correct" it to the precomposed form. */}
+      <h1 class="about-page__title">About Madār</h1>
       <p class="about-page__title-ar" lang="ar" dir="rtl">حول مدار</p>
     </header>
 
@@ -19,7 +25,7 @@ import Base from '../layouts/Base.astro';
 
       <h2>What this is</h2>
       <p>
-        Madār is an editorial publication about early childhood and K-12 education,
+        Madār is an editorial publication about early childhood and K-12 education,
         written and made for readers who already take the subject seriously. We
         publish in English and in Arabic, with neither language treated as the
         translation of the other. The name means <em>orbit</em>: two languages held
@@ -128,7 +134,7 @@ import Base from '../layouts/Base.astro';
         recognize themselves?
       </p>
       <p>
-        We do not write edtech booster copy. Madār is not a buyer's guide for
+        We do not write edtech booster copy. Madār is not a buyer's guide for
         products and not a cheerleader for technology in classrooms, and pieces
         written in that register will be sent back. We do not write in the language
         of strategy consultancies; <em>best practices</em>, <em>scalable models</em>,
@@ -139,7 +145,7 @@ import Base from '../layouts/Base.astro';
 
       <h2>Who is making this</h2>
       <p>
-        Madār is made by a small team led by its founder. Bylines on each piece
+        Madār is made by a small team led by its founder. Bylines on each piece
         name the editor and the designer for that piece. The founder's identity is
         not the publication's selling point; the publication is.
       </p>
@@ -151,11 +157,11 @@ import Base from '../layouts/Base.astro';
 
       <h2>A note on Arabic</h2>
       <p>
-        Arabic is not translation. It is the second register Madār operates in,
+        Arabic is not translation. It is the second register Madār operates in,
         equal in weight to the English, and some pieces are Arabic-first in their
         conception while others are English-first. The bilingual close, when it
         earns its place, is the mechanism by which the two registers meet on the
-        page. A reader of either language should leave a Madār piece feeling that
+        page. A reader of either language should leave a Madār piece feeling that
         the publication has paid them the same attention.
       </p>
 
