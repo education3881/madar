@@ -291,6 +291,20 @@ derived count in Arabic is four constructions with the adjective agreeing in eac
 eight forms where English needs `n === 1`. Three branches are exercised and grammatical in the served
 bytes; the dual is written and unexercised and fires on the next flip.
 
+**ITEM 124 RE-SAMPLED ON TODAY'S TREE AND THE SAMPLE CANNOT CLEAR IT — WHICH IS THE RESULT, NOT A
+DISAPPOINTMENT.** Five further readings of `qa_font_payload` against an unchanged `dist`: **5 CLEAN, 0
+red.** It is recorded as a **fresh sample and not pooled with the 11 prior readings**, because today's run
+changed both operands — the stylesheet the gate loads and the gate's own Arabic range — so pooling would
+count two trees as one population (#57). **And 0 of 5 does not clear the row.** Under the row's own measured
+rate of ~18%, five consecutive clean readings happen **37% of the time**, and the 95% upper bound given 0 of
+5 is **45%** — so this sample is consistent with everything from zero to worse than the row claims. *A
+sample that cannot distinguish two hypotheses is reporting its own power, not a result.* **The row stays
+OPEN at its measured rate**, and what it still needs is a fix to the race rather than more readings of it:
+at 18% in the deploy's build job, that is a deploy skipped about one push in five, which is 2026-10-20's
+two-day outage fired by a coin. Named for the third consecutive day and **not promoted** — today's head was
+24 days old and this row is 2 — but it is the strongest candidate on the board for a deliberate break of
+oldest-first, and the run that breaks it does so in writing.
+
 **CLOSE-OF-RUN VERIFICATION — AND ITEM 98'S CHURN REPRODUCED AT THE IDENTICAL SIZE, WHICH IS A SHARPER
 STATEMENT THAN YESTERDAY'S.** Final build from the committed tree, HEAD equal to `origin` and a clean
 working tree: **exit 0**, all 27 postbuild assertions and all 12 build-job gates green,
