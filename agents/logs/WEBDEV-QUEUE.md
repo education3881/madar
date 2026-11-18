@@ -2750,6 +2750,8 @@ already half-answered.
 
 ### The row as it stood, kept because a closure should be readable against its own claim
 
+| # | Item | Owner | Raised | Verified how | Blocks |
+|---|---|---|---|---|---|
 | 40 | **89 painted Arabic runs carry a font stack that names no bundled family covering Arabic** — found by standing assertion 39 on its first sweep and printed rather than asserted, because a floor above today's reality reds every build (#93). Every Arabic date, kicker, section label, nav item and the Arabic footer rights line is painted by **whatever Arabic font the reader's machine happens to have**, not by this publication's. The cause is one rule whose own comment shows the case was never considered: `[dir="rtl"] .uppercase, .kicker, .mono { font-family: var(--font-mono) }`, commented *"Mono / uppercase Latin labels stay Latin even on the Arabic page."* **The labels are not Latin.** They are Arabic, set in a stack with no Arabic in it — so the Arabic edition's chrome renders differently on every device, and nothing has ever looked. It costs no bytes, which is exactly why no byte measurement would ever have found it. **This is the 2026-10-17 defect's own family** (a face declared for text it cannot paint) with the opposite price tag: that one cost 146,872 bytes and this one costs none. | **[WD]** + Designer + Arabic Editor | **2026-10-25** (from assertion 39's first sweep) | Read out of the layout engine on six served pages, both editions; the count is printed by `qa_font_payload` on every build | nothing red by design — the limb is measured and not asserted, and says so |
 
 

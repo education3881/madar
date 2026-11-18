@@ -125,11 +125,18 @@ acronym nobody expands is #101's subject.
 **5 · `cross-language pairs: 0, each printed together by the owner: n/a`** (#141). No cross-language
 acronym in this piece; every register is English and the institution's own.
 
-**6 · `editorial futures: 0, each attributed to a dated register: n/a`** (#117). The body contains no
-editorial future at all. Every verb about the new framework is in the register's own present or past,
-and every date that has arrived carries the register that announced it. **Deliberate:** the obvious
-sentence — *the report card will replace the single grade* — is a future the Department announced in
-September 2024 and this publication has not re-read, so it is not written.
+**6 · `editorial futures: 1, each attributed to a dated register: ☑`** (#117). **CORRECTED 2026-11-18 BY
+THE ARABIC EDITOR'S GATE; THIS LINE READ `0` AND THE BODY CARRIED ONE.** The sentence was *"the 2021/22
+re-measurement of the exempt cohort is **the only one that will ever exist** on that scale"* — a claim
+about all future time, ours and no register's. Nothing caught it here for four days because **English
+futurity rides an auxiliary and reads as ordinary prose**; the Arabic composer could not set the verb
+without deciding whether to attach the bound prefix `سـ`, wrote it, saw it, and sent the finding back.
+Repaired in both editions on the same disposition: the comparability claim is attributed to the guidance
+that makes it — *published 1 December 2025, last updated 2 November 2026* — and the body now says the
+re-measurement **has no counterpart** on that scale, which is true today and stays true. Ruling **#149**.
+**Still deliberate, and unchanged:** the obvious *other* future — *the report card will replace the single
+grade* — is one the Department announced in September 2024 and this publication has not re-read, so it is
+still not written.
 
 ---
 
@@ -154,8 +161,9 @@ effect"**. Fourteen months later, on **10 November 2025**, the regulator's own r
 framework came into force, with five scale names in place of the old grades. On **10 November 2026**
 Ofsted published the first annual release under it — and the regulator's guidance for parents states the
 consequence in its own words: **"It's important to understand that the new grades can't be compared to
-the old ones."** So the 2021/22 re-measurement of the exempt cohort is the only one that will ever exist
-on that scale. Both halves of that are set out below, with their registers; the point of putting them
+the old ones."** That guidance was published **1 December 2025** and last updated **2 November 2026**. So
+the 2021/22 re-measurement of the exempt cohort has no counterpart on that scale.
+Both halves of that are set out below, with their registers; the point of putting them
 here is that everything which follows is a reading of a measurement that cannot be repeated.
 
 What the exemption produced, without meaning to, is a cohort whose grade was **held constant by rule**

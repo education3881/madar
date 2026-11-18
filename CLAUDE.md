@@ -14,9 +14,9 @@ Read on every run, in this order:
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
-   flight — `2026-11-12-england-ofsted-exempt-cohort`, **four cells open** as of 2026-11-17, cell 4
-   (the Arabic composition) FILLED that day, which leaves the Arabic Editor's gate as the next content
-   function's first action — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**,
+   flight — `2026-11-12-england-ofsted-exempt-cohort`, **three cells open** as of 2026-11-18, cell 5
+   (the Arabic Editor's gate) FILLED that day on an APPROVE, which leaves the **Verifier's verdict** as the
+   next content function's first action — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**,
    the first in forty-three days. *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
    **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote

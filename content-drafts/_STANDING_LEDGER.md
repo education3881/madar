@@ -60,7 +60,53 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16** | **FILLED 2026-11-16 — APPROVE on all five tests** | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk, **one correction owed to the Editor** | — | — | — | — | **four — cells 1, 2, 3 and 4 FILLED. Cell 5 (the Arabic Editor's gate) is the next content function's first action, and it carries TWO items the composition handed up: the eleven-rendering grade vocabulary, and the editorial future the EN pair's hand-off line 6 records as zero** |
+| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16**, **rev 3 2026-11-18** (the #117 repair the Arabic gate sent back) | **FILLED 2026-11-16 — APPROVE on all five tests**; line 6 **corrected 2026-11-18** from `editorial futures: 0` to `1` | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk | **FILLED 2026-11-18 — APPROVE.** `content-drafts/verdicts/2026-11-18-england-ofsted-exempt-cohort-arabic-gate.md`. Eleven grade renderings judged as a set and approved as words, with **condition A** on cell 8; transliteration and the gender chain verified 1 of 1; the EN editorial future repaired in both editions today | — | — | — | **three — cells 6, 7 and 8. Cell 6 (the Verifier) is the next content function's first action** and is handed one thing by name: the EN body was repaired AFTER its five-test APPROVE, so the trace reads the repaired sentence. Cell 8 carries **two conditions** from the Arabic gate — (A) the eleven renderings declared in the served Arabic `sources[]` as this edition's own, dated, because the hand-off is not served and the annotation is (#86 clause 2 / #114), naming the two strings a DIFFERENT regulator publishes in Arabic on `2026-10-23-bahrain-bqa-five-cycles`; (B) sources 3 and 4 marked SINGLE-CHANNEL — plus the rail step's forward edges into `2026-07-28-england-report-cards-first-term` and both Bahrain pieces |
+
+**Reconciled against disk 2026-11-18. CELL 5 FILLS ON AN APPROVE, AND THE GATE'S OWN FINDING IS THAT A
+COMPOSED GRADE NAME READS EXACTLY LIKE A QUOTED ONE.** Verdict at
+`content-drafts/verdicts/2026-11-18-england-ofsted-exempt-cohort-arabic-gate.md`.
+
+- **Transliteration and the gender chain: VERIFIED, 1 of 1.** أماندا سبيلمان, feminine, read off Ofsted's
+  own speech-page standfirst (*"reflects on **her** first speech"*) and **not** off her own texts' *"His
+  Majesty's Chief Inspector"*, where the *His* is the monarch's. The 2026-10-04 error in its original
+  shape, met and declined by the composer before the gate could reach it.
+- **The eleven renderings are APPROVED AS WORDS, and the gate's addition came from reading them against the
+  CORPUS rather than against the piece.** Two of the eleven — **غير ملائم** and **جيد** — are already in
+  our served Arabic text on `2026-10-23-bahrain-bqa-five-cycles`, where they are **the BQA's own published
+  Arabic grade names**, read out of the Bahraini portal's own Arabic CSV. So one string now stands in this
+  corpus with two opposite evidential statuses: a **quotation** on one piece and a **composition** on the
+  other, indistinguishable in the served text, and only one of them challengeable against a register.
+  **That is #101 one level down — a composed grade name is a quotation with its evidence removed**, and
+  worse than an acronym because it reads like a quotation.
+- **The words were NOT changed, on an evidential reason rather than an aesthetic one.** `غير ملائم` is the
+  only Arabic bottom-grade name this publication has ever served and it arrived from a regulator; coining
+  a second one to dodge the collision would make this edition less consistent with its own corpus in order
+  to look more careful. The two scales differ where it would matter (*مرضٍ* and *يحتاج إلى تحسين* are each
+  unique to one instrument) and the two colliding labels sit at the same rank on both — recorded as a
+  convenience, not as a justification.
+- **CONDITION A ON CELL 8, and it is the one a hand-off cannot discharge.** #86 clause 2 requires an
+  undeclinable determination to be written into the **annotation**, with its date. The eleven are declared
+  in the composition's hand-off, and **the hand-off is not served while the annotation is** (#114). Cell 8
+  does not close until the Arabic `sources[]` carries the eleven as this edition's own, dated 2026-11-17,
+  naming Ofsted's non-publication in Arabic as the reason, and naming the two Bahrain collisions.
+- **THE EDITORIAL FUTURE IS REPAIRED IN BOTH EDITIONS TODAY, AND THE ENGLISH IS THE ONE THAT WAS WRONG.**
+  The EN body read *"the only one that will ever exist on that scale"* — a claim about all future time,
+  ours and no register's — while its hand-off line 6 reported `editorial futures: 0`. It had passed the
+  Editor's five tests and three earlier reads. Both editions now attribute the comparability claim to the
+  guidance that makes it, *published 1 December 2025, last updated 2 November 2026*, and say the
+  re-measurement **has no counterpart** on that scale. Line 6 corrected to `1`. **Ruling #149's first
+  independent confirmation on a second artefact:** a matcher reporting zero Arabic futures reports its own
+  blindness, and a *composer* cannot set the verb without deciding whether the prefix attaches.
+- **Two registers are SINGLE-CHANNEL and cell 8 must say so** (condition B): sources 3 and 4 were not
+  re-opened by the Arabic desk and carry the English compose-time read of 11-14. Stated by the composer
+  rather than discovered by the gate.
+- **The three questions the composing desk said it does not own are all answered**, including *do not name
+  the minister*: naming a human in Arabic forces a gender determination and no first-party pronoun for her
+  was read, so *بقرار الوزيرة* stands (#86 clause 1 forbids reading it off the name).
+- **No flag moved and the corpus is unchanged at 45 EN / 45 AR.** Cell 6, the Verifier's verdict, is the
+  next content function's first action, scheduled the run after the pair verdict (2026-09-06).
+
+**The 2026-11-16 note below is superseded in its CELL-4-OPEN reading and kept for the record.**
 
 **WEEKLY RECONCILIATION — 2026-11-15, by the weekly review, against disk rather than against this file's
 own account of itself.** Every number below was counted; none was carried.
@@ -71,7 +117,7 @@ own account of itself.** Every number below was counted; none was carried.
 | Assets | a hero still and an og card for **every** served slug; the three extras are VALENCE's pair and the brand card, which are chrome and not pieces |
 | Registry | **five** editions, all `status: 'closed'`; the sixth `'current'` a grep finds is the TypeScript union on line 25, not a row. `hasOpenEdition` derived and **false** |
 | The one piece that shipped this fortnight | `bahrain-bqa-five-cycles`, **2026-11-09**, with all eight cells on disk: Editor verdict 11-02, Verifier verdict 11-03, three dispositions, a verification retrace 11-07, Arabic gate 11-09 |
-| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **four cells open** as of 2026-11-17 — cells 1 to 4 filled; the AR composition landed 11-17 |
+| In flight | **one row**, `2026-11-12-england-ofsted-exempt-cohort`, **three cells open** as of 2026-11-18 — cells 1 to 5 filled; the AR composition landed 11-17 and the Arabic Editor's gate APPROVED 11-18 |
 | Edition 05's closed record | owes **one** item, unchanged: the SLEIC *Final Learning Report 2026* citation upgrade, walled by rendering and not dead (#70). Nothing published is wrong while it waits |
 
 **THE FIRST SINGLE SHIPPED AND THE LEDGER WORKED, WHICH IS THE FORTNIGHT'S ONE EDITORIAL FACT.** Issue
