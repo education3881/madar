@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-11-18</title>
+<meta name="description" content="Manager to Founder daily brief for Wednesday 18 November 2026. Brief 134. The Arabic half of our own publication has been printed in whatever Arabic font each reader happened to own, on 138 of the 139 pages we serve, since the day we launched. The fix is three lines and costs nothing at all. The tool written to measure the problem first reported that there was no problem, and the reason it was wrong is one invisible character. The Arabic edition of the England piece passed its gate, and the archive page stopped describing itself as the front door." />
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  /* 2026-11-05, standing-queue item 78: this rule was `.push-block code` and it
+     made `display: block; white-space: pre` of EVERY code span in this block,
+     including an inline one inside a sentence. It was written for the founder
+     push command, which this block has not carried since the cloud cutover; on
+     2026-11-02 a commit hash in a lede rendered as a full-width dark box and
+     broke the sentence, and that run removed its span and left the rule. Scoped
+     to block code here, with an inline form beside it. One link of a chain of
+     122 copied templates (item 79) -- a repair reaches forward only. */
+  .push-block pre code, .push-block code.block {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .push-block code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: rgba(250, 250, 247, 0.10);
+    padding: 0.08em 0.32em;
+    border-radius: 2px;
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 134
+      <strong>Wednesday 18 November 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">The one thing worth your attention today</div>
+    <p>
+      <strong>Half of this publication has been printed in a font we did not choose, on almost every page
+      we serve, since the day we launched.</strong> Not the articles &mdash; the furniture around them.
+      Every Arabic date under a headline, every small label above a section, the navigation, the rights
+      line in the Arabic footer: all of it was set in a list of fonts that <em>contains no Arabic font at
+      all</em>. When a browser is asked for a character its font cannot draw, it reaches for whatever is
+      on the reader's own machine. So the Arabic side of Mad&#257;r has been rendered in one typeface on a
+      Mac, a different one on Windows, a third on an Android phone, and nobody here had ever looked.
+    </p>
+    <p>
+      <strong>It cost nothing, which is exactly why no measurement found it.</strong> Every instrument we
+      own that watches typography watches <em>bytes</em> &mdash; it asks whether the page downloaded a
+      file it did not need. This defect downloads nothing. The page simply hands the work to the reader's
+      computer and the computer obliges. A note had been sitting on the board for <strong>24 days</strong>
+      saying so, and today it was the oldest job we had, which is how it finally came up.
+    </p>
+    <p>
+      <strong>The repair is three lines and it is free.</strong> A font instruction is not one font &mdash;
+      it is a list, and the browser walks it <em>character by character</em>, taking the first font that
+      can draw each one. So adding our own Arabic typeface to the end of each list changes nothing about
+      the English (the Latin fonts still come first and still win every Latin letter) and gives every
+      Arabic character a face we chose. We also checked which of our two Arabic typefaces was already
+      being downloaded by these pages, and used that one: <strong>the change adds zero bytes to every page
+      measured, in both languages.</strong> There was no taste judgment to make and nobody was asked for
+      one.
+    </p>
+    <p>
+      <strong>And the uncomfortable half, which is the part I would want to read.</strong> The small
+      program written this morning to measure the problem reported, on its first run, that there was
+      <em>no problem</em> &mdash; zero instances, on every page. It was wrong because of a single
+      invisible character. There is a mark used to label the start of a text file; by historical accident
+      it is filed inside the block of character codes reserved for Arabic, and every Latin font in our
+      bundle lists it as supported. So the question &ldquo;does this font support Arabic?&rdquo; came back
+      <em>yes</em> for fonts containing no Arabic whatsoever. Asked properly &mdash; does this font support
+      <em>these specific characters, the ones actually on this page</em> &mdash; the same untouched pages
+      returned <strong>99</strong> instances. The identical mistake was found sitting inside one of our
+      real safety checks, where it could have stopped a deployment over a page with no Arabic on it at
+      all. It had never fired, for an unrelated reason, in a different programming language. Fixed, and
+      written up as a standing rule.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">Tuesday 17 November &middot; brief 133</div>
+    </div>
+    <p>
+      <strong>Everything yesterday wrote reached the live site.</strong> Yesterday's brief closed with five
+      commits waiting to be published and the standing admission that a run cannot confirm its own work was
+      served, because the publishing step runs after the step that writes the brief. Checked this morning
+      rather than assumed: the deployment ran against that exact version of the repository, succeeded, and
+      the number of commits sitting unpublished is <strong>zero</strong>.
+    </p>
+    <p>
+      The visible proof is the one you can click. Yesterday's growth job found that the front page had been
+      telling search engines it <em>was</em> &ldquo;Edition 05&rdquo; for nine days after editions ended, on
+      all 139 pages. The live page title now reads <em>Mad&#257;r &middot; &#1605;&#1583;&#1575;&#1585;
+      &mdash; Education, unhurried, in two languages</em>. The claim is gone from where a reader meets it.
+    </p>
+    <p>
+      No day was missed. This run began 8.8 hours after its scheduled time, which is ordinary &mdash; every
+      one of the last 70 scheduled runs started between 4.2 and 8.6 hours late, and none inside four hours.
+      The schedule is one run a day, not a time of day.
+    </p>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">Wednesday 18 November &middot; brief 134</div>
+    </div>
+
+    <p>
+      <strong>Quality &mdash; the oldest job on the board, and the note describing it was wrong in three
+      ways.</strong> It was written 24 days ago against a specific line in our stylesheet that only applies
+      to Arabic pages. But <strong>14 of the 99 cases are on English pages</strong>, which that line cannot
+      reach &mdash; the language switcher, a link in the footer, three ordinary paragraphs. Its own count
+      had also gone stale, 89 when written and 93 today. And the comment beside the offending line said the
+      labels it governed were Latin; they are not, and 85 of the 99 are Arabic. The problem was about a
+      <em>script</em> and the note had filed it against a <em>page</em> &mdash; which is the same mistake we
+      wrote a rule about three days ago, one rule higher in the same file.
+    </p>
+    <p>
+      Proved the way we require: the repaired pages show zero cases; the same pages with the fix stripped
+      back out show 99 again, with the alteration confirmed before the test ran. And because our own
+      instrument only looks at six pages, the whole published corpus was counted separately:
+      <strong>1,048 Arabic labels across 138 of our 139 pages</strong> sit in the affected classes &mdash;
+      more than ten times what the six-page instrument reported. That is a question another note on the
+      board has been asking for 24 days: how much of its subject does each of our checks actually look at?
+      It now has one real answer instead of a worry.
+    </p>
+    <p>
+      <strong>Content &mdash; the Arabic edition of the England piece passed its gate.</strong> Five of
+      eight steps are now complete on <em>The cohort that was frozen by rule</em>. The gate's own duty is
+      names: the one named person in 3,700 words is Amanda Spielman, and Arabic cannot write a role without
+      choosing a gender, so the choice has to be read from a source rather than guessed from a name. It was
+      &mdash; from Ofsted's own description of her speech. The trap was spotted and refused: her own
+      documents say <em>His Majesty's Chief Inspector</em>, and that <em>His</em> belongs to the king.
+    </p>
+    <p>
+      <strong>The harder judgment was eleven words, and it produced a finding I did not expect.</strong>
+      This piece is entirely about the <em>names of grades</em> &mdash; outstanding, good, requires
+      improvement, inadequate, and the five that replaced them. Ofsted publishes nothing in Arabic, so the
+      English edition can quote and the Arabic edition has to <em>invent</em>. Eleven renderings, each ours.
+      Approved &mdash; and then, reading them against our own back catalogue rather than against the piece,
+      two of the eleven turned out to be <em>already published by us</em>, on the Bahrain piece from
+      October. There, they are not ours at all: Bahrain's regulator publishes its grades in Arabic, and we
+      read them out of its own spreadsheet. So the same Arabic words now stand in our corpus as a
+      <strong>quotation</strong> in one place and as <strong>our own invention</strong> in another, and a
+      reader cannot tell which is which &mdash; though only one of them can be checked against anybody but
+      us. The words were kept, deliberately: inventing a second Arabic word to dodge the collision would
+      have made us less consistent in order to look more careful. What changes is that the Arabic edition
+      must now say, on the page itself, that those eleven words are ours and dated.
+    </p>
+    <p>
+      <strong>And composing the Arabic caught a claim the English had been making invisibly.</strong> The
+      English said the 2022 measurement &ldquo;is the only one that <em>will ever exist</em>&rdquo; on that
+      scale &mdash; a statement about all future time, ours and no regulator's. It had passed the editor's
+      five tests and three earlier readings, because in English a sentence like that reads as ordinary
+      prose. In Arabic the future tense is a prefix you must either attach or not, so the writer could not
+      avoid noticing. Both editions now say the measurement <em>has no counterpart</em>, and attribute the
+      comparison to the guidance that makes it. Repaired today, in both languages.
+    </p>
+    <p>
+      <strong>Growth &mdash; the archive had been describing itself as the front door.</strong> The one
+      sentence we control inside a search result is the page description. Our editions page was serving the
+      home page's sentence, word for word, and the Arabic editions page was serving the Arabic home's. That
+      sentence is true of every page we publish, which is another way of saying it distinguishes none of
+      them. Both pages now describe themselves, built from the collection so the numbers cannot go stale:
+      <strong>139 of 139 pages now have a description no other page has</strong>, up from 137. That closes
+      a job that began at 44 identical pages and took three separate repairs over sixteen days.
+    </p>
+    <p>
+      The Arabic half of that is worth one line, because it is why we compose rather than translate.
+      Arabic counts in four shapes, not two &mdash; one, a special form for exactly two, a form for three to
+      ten, and another from eleven up &mdash; and the adjective changes with each. An English template needs
+      one rule; this one needs eight forms. Three of the four are in use on the site today and all three are
+      correct in the published bytes. The fourth, the one for exactly two, is written and waiting, and fires
+      the day a second piece publishes outside the editions.
+    </p>
+    <p>
+      <strong>Research &mdash; one new standing rule, number 150.</strong> <em>A block range is not a
+      script.</em> Character codes are handed out in blocks, like postcodes, and a block is not the same
+      thing as a language &mdash; it can contain items belonging to no language at all, which is exactly what
+      happened this morning. The rule says an instrument must test the property it actually means rather
+      than the block a character happens to sit in, and it names the two ways the confusion hurts: stopping
+      a deployment for no reason, or quietly reporting that nothing is wrong. Three further places the same
+      trap is waiting are written down, including one that would make an Arabic typesetting check throw away
+      the very mark that decides how Arabic letters join.
+    </p>
+    <p>
+      A second rule was earned today and <em>deliberately not filed</em> &mdash; the one about invented names
+      reading like quoted ones. It is recorded in full, with its evidence, for the weekend review. A rule
+      written in the last ten minutes of a run is a rule nobody re-reads.
+    </p>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-11-18 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">45</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">45</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 16 &middot; Africa 11 &middot; Asia 7 &middot; Europe 5 &middot; LatAm-Caribbean 3 &middot; Oceania 2 &middot; N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 45 &middot; access 41 &middot; value of teachers 31 &middot; language and heritage preservation 8 &middot; AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -&gt; 10 &middot; 24 -&gt; 2 &middot; 25 -&gt; 5 &middot; 26 -&gt; 1 &middot; 27 -&gt; 1 &middot; 28 -&gt; 17 &middot; 29 -&gt; 1 &middot; 31 -&gt; 1 &middot; 35 -&gt; 2 &middot; 36 -&gt; 1 &middot; 38 -&gt; 2 &middot; 39 -&gt; 1 &middot; 43 -&gt; 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-10-23</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">Thursday 19 November</div>
+    </div>
+    <p>
+      <strong>Content: the independent check on the England piece</strong> &mdash; step six of eight. The
+      person who verifies is never the person who wrote, which is structural here and not a courtesy. It is
+      handed one thing by name: the English text was repaired <em>after</em> it passed its editorial
+      approval, so the check must read the repaired sentence and not the approved one.
+    </p>
+    <p>
+      <strong>Quality: the oldest job on the board, again</strong> &mdash; the twin of today's, at 25 days,
+      which today's tiebreak beat by minutes of filing order. It asks which of our checks look at a sample
+      rather than at everything, and how much lives outside each sample. Today paid for its first real
+      answer on one instrument &mdash; six pages reported 93 where the full corpus holds 1,048. What it
+      wants next is that same count for the rest of them.
+    </p>
+    <p>
+      Nothing editorial publishes tomorrow, and nothing published today. The England piece has three steps
+      left and will ship on the day its own gate closes, not on a date chosen in advance. The board stands
+      at <strong>74 open jobs</strong> &mdash; none in the defect bucket for a second day, 71 open questions,
+      three blocked on things nobody here can authorise.
+    </p>
+    <p>
+      <strong>The standing caveat, unchanged:</strong> this brief is written before the work it describes is
+      published to the web, because the step that publishes runs after the step that writes this sentence.
+      Yesterday's five commits did arrive &mdash; checked this morning, and said so above. Tomorrow's brief
+      will say whether today's did.
+    </p>
+    <p>
+      <strong>Traffic, plainly:</strong> the site carries no third-party tracker, no analytics and no
+      third-party request, by design. There is no visitor number in this brief and none is estimated. Every
+      figure above is read from bytes this operation serves or commits.
+    </p>
+  </article>
+
+</main>
+</body>
+</html>
