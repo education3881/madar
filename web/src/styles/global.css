@@ -33,9 +33,32 @@
   --color-muted:      rgba(14, 27, 44, 0.62);
 
   /* ---------- Type families ---------- */
-  --font-display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, "Times New Roman", serif;
-  --font-body:    "Newsreader", "GT Sectra Text", "Charter", Georgia, "Times New Roman", serif;
-  --font-mono:    "JetBrains Mono", "IBM Plex Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  /* EVERY LATIN STACK ENDS IN THE BUNDLED ARABIC FACE, AND THE REASON IS THAT A
+     FONT STACK IS THE ONE SCRIPT TEST CSS CAN ACTUALLY MAKE. Standing-queue
+     item 40: 99 painted Arabic runs across 8 served pages were set in stacks
+     with no Arabic family in them at all — every Arabic listing date, kicker,
+     section label, nav item, the Arabic footer rights line, and three bare
+     paragraphs — so they were painted by whatever Arabic font the reader's
+     machine happened to hold, differently on every device, and nothing had
+     ever looked. The row blamed `[dir="rtl"] .mono` below; that rule is a
+     cause and not the cause. 14 of the 99 are on ENGLISH pages, where no
+     `[dir="rtl"]` selector can reach, and six classes are neither mono nor
+     uppercase. The defect is about a SCRIPT and the row located it in a rule
+     about a PAGE — ruling #145's exact shape, one rule further up.
+     #145 had to carry an authored `lang` on each run, because `font-style` is
+     an element-level property and an element has no per-character behaviour.
+     `font-family` does: matching walks the list PER CHARACTER, so a Latin
+     letter still takes JetBrains Mono or Newsreader and only a code point no
+     earlier family covers reaches Amiri. The list is therefore a script test
+     that needs no authoring discipline and cannot be forgotten on a new run.
+     AMIRI RATHER THAN CAIRO IS DECIDED MECHANICALLY, NOT BY TASTE (#148):
+     `amiri-normal-400-arabic.woff2` is ALREADY fetched by all 8 probed pages
+     in both editions, so this costs ZERO new bytes, while Cairo's Arabic
+     subset is on no English page and would add 30,896 bytes to each one.
+     Measured 2026-11-18, before and after, on the same 8 pages. */
+  --font-display: "Cormorant Garamond", "GT Sectra", "Charter", Georgia, "Times New Roman", "Amiri", serif;
+  --font-body:    "Newsreader", "GT Sectra Text", "Charter", Georgia, "Times New Roman", "Amiri", serif;
+  --font-mono:    "JetBrains Mono", "IBM Plex Mono", "ABC Diatype Mono", ui-monospace, "SF Mono", Menlo, "Amiri", monospace;
   --font-arabic:       "Amiri", "Greta Arabic", "Geeza Pro", "Damascus", "Noto Naskh Arabic", serif;
   --font-arabic-display: "Cairo", "Greta Arabic", "Amiri", "Geeza Pro", serif;
 
@@ -435,7 +458,17 @@ hr.rule {
 [dir="rtl"] .kicker,
 [dir="rtl"] .mono {
   /* Mono / uppercase Latin labels stay Latin even on the Arabic page;
-     the publication's labels are bilingual but the field-note codes are roman. */
+     the publication's labels are bilingual but the field-note codes are roman.
+     THE COMMENT ABOVE IS THE ORIGINAL AND IT WAS WRONG ABOUT ITS OWN SUBJECT:
+     *the labels are not Latin.* 85 of the 99 runs standing-queue item 40
+     measured were Arabic text arriving here — every Arabic listing date and
+     kicker — and reaching a stack that held no Arabic family. The rule is kept,
+     because the roman field-note codes it was written for are real and do
+     belong in mono; what was missing is the tail of `--font-mono`, which now
+     ends in Amiri, so a character this stack cannot paint is painted by the
+     publication's own Arabic face instead of by the reader's machine. Fixed at
+     the token and not here on purpose: the other 14 runs are on ENGLISH pages
+     and no `[dir="rtl"]` rule can see them. Item 40, 2026-11-18. */
   font-family: var(--font-mono);
 }
 

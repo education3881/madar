@@ -123,8 +123,24 @@ BROWSERS = ("google-chrome-stable", "google-chrome", "chromium-browser", "chromi
 # The Arabic blocks a published page of this publication can carry. Presentation
 # forms are included because a copy-pasted register can carry them even though
 # this operation composes in the base block.
+#
+# THE UPPER BOUND IS 0xFEFC AND IT READ 0xFEFF UNTIL 2026-11-18. A BLOCK RANGE
+# IS NOT A SCRIPT. Arabic Presentation Forms-B ends at U+FEFF, but U+FEFF is the
+# zero-width no-break space — the byte-order mark — and it is a format character,
+# not an Arabic letter. Every Latin subset in `madar-fonts.css` lists U+FEFF in
+# its own `unicode-range`, so treating it as Arabic has two costs and they point
+# in opposite directions: limb 1 would RED THE BUILD on a slanted run whose only
+# "Arabic" is a BOM, and the uncovered-stack measurement would call a Latin
+# subset an Arabic-covering family and drop a genuinely uncovered run out of its
+# own count. Both were LATENT and neither had fired: the probe's own text filter
+# is JavaScript `\s`, which includes U+FEFF, so the character is dropped before
+# it can reach `r["c"]` — the gate was correct by a line written for a different
+# reason, in a different language, eleven days earlier. Found 2026-11-18 by a
+# hand probe for standing-queue item 40 that made exactly this mistake at the
+# range level and printed a 99-instance defect as ZERO. U+FEFD and U+FEFE are
+# unassigned, so FEFC is the last Arabic code point in the block.
 ARABIC_RANGES = ((0x0600, 0x06FF), (0x0750, 0x077F), (0x08A0, 0x08FF),
-                 (0xFB50, 0xFDFF), (0xFE70, 0xFEFF))
+                 (0xFB50, 0xFDFF), (0xFE70, 0xFEFC))
 
 PAGES = [
     ("EN home", "index.html"),
@@ -412,9 +428,17 @@ def main() -> int:
     if uncovered:
         print("\n  MEASURED, NOT ASSERTED — %d painted Arabic run(s) whose own declared font "
               "stack names no bundled family that covers Arabic, so a system font paints them. "
-              "Not a gate today because the publication does this DELIBERATELY for mono and "
-              "uppercase labels (`[dir=\"rtl\"] .mono`, global.css) and a floor above today's "
-              "reality reds every build (#93's ratio reasoning)." % len(uncovered))
+              "THIS FIGURE WAS 93 FROM 2026-10-25 TO 2026-11-18 AND IS NOW EXPECTED TO BE ZERO: "
+              "standing-queue item 40 closed by ending every Latin stack in `global.css` with "
+              "the bundled Arabic face, so font matching — which walks the list PER CHARACTER — "
+              "routes any code point the Latin families cannot paint to Amiri, at a measured "
+              "cost of +0 bytes on 8 pages in both editions. The line this message used to "
+              "carry, that the publication did this DELIBERATELY for mono and uppercase labels, "
+              "was never true: 85 of the 93 were Arabic dates and kickers and 14 were on "
+              "ENGLISH pages, which no `[dir=\"rtl\"]` rule can reach. Still not asserted, "
+              "because the gate reads 6 pages of 138 (item 123) and a floor is a claim about "
+              "the population (#93); a NON-ZERO figure here is now a regression to read, not a "
+              "tolerance to accept." % len(uncovered))
         for label, el, fam, n, x in uncovered[:12]:
             print("      %-12s %-26s stack-head=%-18s %3d chars  %s" % (label, el, fam, n, x))
         if len(uncovered) > 12:
