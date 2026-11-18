@@ -291,6 +291,33 @@ derived count in Arabic is four constructions with the adjective agreeing in eac
 eight forms where English needs `n === 1`. Three branches are exercised and grammatical in the served
 bytes; the dual is written and unexercised and fires on the next flip.
 
+**CLOSE-OF-RUN VERIFICATION — AND ITEM 98'S CHURN REPRODUCED AT THE IDENTICAL SIZE, WHICH IS A SHARPER
+STATEMENT THAN YESTERDAY'S.** Final build from the committed tree, HEAD equal to `origin` and a clean
+working tree: **exit 0**, all 27 postbuild assertions and all 12 build-job gates green,
+`qa_artefact_render` **159 of 159** with today's brief included, `qa_brief_head` CLEAN across 136 briefs and
+22 reviews, `qa_register_shape` CLEAN, `qa_font_payload` CLEAN with its `93 painted Arabic run(s)` block
+**gone**. The lastmod ordering rule was EXECUTED rather than quoted and the guard ran FIRST:
+`lastmod_tree_guard` **SUPPORTABLE**. Then `served_dates --update` moved **88** pages, because today's font
+token changed the stylesheet every page loads; then a rebuild, because the register is read at build time;
+`qa_lastmod` **PASS at 138 URLs**, newest 2026-11-18T13:35:33Z against the ceiling.
+
+**AND `--check` PRINTED 90 PAGES AGAIN — THE SAME NUMBER AS 2026-11-17, TO THE PAGE.** Yesterday this
+arrived as item 98's self-reference observed naturally for the first time, with a size. Today it returns at
+**exactly the same size**, and that upgrades it from an observation to a **deterministic property with a
+fixed magnitude**: the rebuild the ordering rule REQUIRES stamps a new `dateModified` on every article page,
+`dateModified` is resolved FROM this register, and **90 is 45 EN + 45 AR — the entire article corpus, not a
+subset of affected pages.** It cannot be a sample, because every article page carries the field. So the
+churn loop's size is pinned to the article count and will read 90 on every run that updates the register and
+then rebuilds, 91 the day a piece ships, until the self-reference is broken rather than re-measured. The run
+**DECLINED to re-update** — re-updating records the post-rebuild bytes and the next rebuild moves them
+again, a loop with no fixed point — and recorded the number here. *A hazard proved by injection is a
+hypothesis about the artefact; the same hazard met twice at the same size by following your own procedure is
+a measurement of it.*
+
+**Strand at the close: FIVE** — this run's own function commits, the publish step running after the agent
+step, so no run can observe its own publication. **Board 74 counted against the rows twice: 0 DEFECT,
+71 OPEN, 3 BLOCKED.**
+
 ### Tomorrow's head
 
 **Item 41, at 25 days** — the oldest OPEN row, and the twin this morning's tiebreak beat on raise order.
