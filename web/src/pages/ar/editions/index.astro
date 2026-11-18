@@ -56,9 +56,39 @@ const blocks = ordered.map((e) => {
     .sort(byDateThenSlug);
   return { e, pieces };
 });
+
+// ---------------------------------------------------------------------------
+// وصفُ هذه الصفحةِ نفسِها — آخرُ أربعِ صفحاتٍ في البند 76 من قائمة الانتظار
+// (وظيفةُ النموّ، 2026-11-18). كانت 44 صفحةً من 134 تُعرِّفُ نفسَها بالجملةِ
+// نفسِها؛ أُغلِقَ نصفُ اللغةِ الخاطئةِ في 11-03 ونصفُ صفحاتِ التصنيفِ في 11-05،
+// وبقيَت أربعُ صفحاتٍ في زوجَين: هذه الصفحةُ كانت تُخدِّمُ وصفَ الصفحةِ الرئيسةِ
+// العربيةِ حرفًا بحرف، لأنّ القالبَ لا يُمرِّرُ وصفًا و`Base.astro` يحملُ واحدًا
+// افتراضيًّا. والصفحةُ الرئيسةُ والأرشيفُ ليسا وعدًا واحدًا.
+//
+// مُشتَقٌّ لا مكتوبٌ بيدٍ (2026-06-07). **والعددُ المُشتَقُّ بالعربيةِ أربعُ
+// صِيَغٍ لا صيغةً واحدة**: المفردُ عند الواحد، والمثنّى عند الاثنَين، وجمعُ
+// القلّةِ المجرورُ من ثلاثةٍ إلى عشرة، والمفردُ المنصوبُ من أحدَ عشرَ صعودًا —
+// والصفةُ تُطابِقُ المعدودَ في كلِّ واحدةٍ منها، فـ`إصداران مُغلقان` لا
+// `إصدارانِ مُغلقة`. هذه هي صياغةُ الإطارِ التي كان البندُ 76 لا يزال يطلبُ
+// بوّابةَ المحرّرِ العربيِّ عليها، وقد مرّت اليوم. والأرقامُ هندية-عربيّة عبر
+// 'ar-EG'، وهي الوسمُ الذي تستخدمه هذه النسخةُ في كلِّ صفحةٍ أخرى.
+// ---------------------------------------------------------------------------
+const arNum = new Intl.NumberFormat('ar-EG');
+const countAr = (n: number, one: string, two: string, few: string, many: string) =>
+  n === 1 ? one
+  : n === 2 ? two
+  : n <= 10 ? `${arNum.format(n)} ${few}`
+  : `${arNum.format(n)} ${many}`;
+const piecesAr = (n: number) => countAr(n, 'مادة واحدة', 'مادتان', 'مواد', 'مادة');
+const closedCount = editions.filter((e) => e.status === 'closed').length;
+const editionsAr = closedCount === editions.length
+  ? countAr(closedCount, 'إصدار واحد مُغلق', 'إصداران مُغلقان', 'إصدارات مُغلقة', 'إصدارًا مُغلقًا')
+  : countAr(editions.length, 'إصدار واحد', 'إصداران', 'إصدارات', 'إصدارًا');
+const inEditions = all.length - singles.length;
+const description = `أرشيف مدار: ${piecesAr(inEditions)} في ${editionsAr}، و${piecesAr(singles.length)} خارجها. التعليم المبكر والتعليم العام، مقروءة من مصادر أولية مُسمّاة، بالعربية والإنجليزية.`;
 ---
 
-<Base title="الإصدارات · مدار" lang="ar" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
+<Base title="الإصدارات · مدار" description={description} lang="ar" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
   <article class="editions container">
     <header class="editions__head">
       <p class="kicker" lang="ar" dir="rtl">الأرشيف</p>

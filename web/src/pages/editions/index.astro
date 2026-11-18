@@ -64,9 +64,37 @@ const blocks = ordered.map((e) => {
     .sort(byDateThenSlug);
   return { e, pieces };
 });
+
+// ---------------------------------------------------------------------------
+// This page's own `<meta name="description">` — the last four pages of
+// standing-queue item 76 (Growth, 2026-11-18).
+//
+// The row began at 44 of 134 served pages describing themselves identically.
+// The wrong-language half closed 11-03, the facet half 11-05 (32 pages, 32
+// derived strings), and what was left was exactly FOUR pages in TWO pairs:
+// `/editions/` served the English home's description and `/ar/editions/` served
+// the Arabic home's, because neither template passed one and `Base.astro` holds
+// a single default. 137 distinct over 139 served pages.
+//
+// A home and an archive are not the same promise. A reader who reaches a search
+// result for this page is being offered the corpus arranged by edition, and the
+// one sentence we control in that result said "an editorial publication on
+// early childhood and K-12 education" — true of every page we serve.
+//
+// DERIVED, never hand-written (2026-06-07). The two populations are counted
+// separately on purpose: pieces gathered in editions, and pieces that belong to
+// no edition because issue #13's default made them singles from 2026-11-08.
+// ---------------------------------------------------------------------------
+const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+const closedEditions = editions.filter((e) => e.status === 'closed').length;
+const editionPhrase = closedEditions === editions.length
+  ? plural(closedEditions, 'closed monthly edition', 'closed monthly editions')
+  : plural(editions.length, 'monthly edition', 'monthly editions');
+const inEditions = all.length - singles.length;
+const description = `Madār's archive: ${plural(inEditions, 'piece', 'pieces')} in ${editionPhrase}, and ${plural(singles.length, 'piece', 'pieces')} outside them. Early-childhood and K-12 education, read from named primary sources in English and Arabic.`;
 ---
 
-<Base title="Editions · Madār" lang="en" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
+<Base title="Editions · Madār" description={description} lang="en" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
   <article class="editions container">
     <header class="editions__head">
       <p class="kicker">The archive</p>
