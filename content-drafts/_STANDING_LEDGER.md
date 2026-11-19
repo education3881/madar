@@ -60,7 +60,60 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16**, **rev 3 2026-11-18** (the #117 repair the Arabic gate sent back) | **FILLED 2026-11-16 — APPROVE on all five tests**; line 6 **corrected 2026-11-18** from `editorial futures: 0` to `1` | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk | **FILLED 2026-11-18 — APPROVE.** `content-drafts/verdicts/2026-11-18-england-ofsted-exempt-cohort-arabic-gate.md`. Eleven grade renderings judged as a set and approved as words, with **condition A** on cell 8; transliteration and the gender chain verified 1 of 1; the EN editorial future repaired in both editions today | — | — | — | **three — cells 6, 7 and 8. Cell 6 (the Verifier) is the next content function's first action** and is handed one thing by name: the EN body was repaired AFTER its five-test APPROVE, so the trace reads the repaired sentence. Cell 8 carries **two conditions** from the Arabic gate — (A) the eleven renderings declared in the served Arabic `sources[]` as this edition's own, dated, because the hand-off is not served and the annotation is (#86 clause 2 / #114), naming the two strings a DIFFERENT regulator publishes in Arabic on `2026-10-23-bahrain-bqa-five-cycles`; (B) sources 3 and 4 marked SINGLE-CHANNEL — plus the rail step's forward edges into `2026-07-28-england-report-cards-first-term` and both Bahrain pieces |
+| **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16**, **rev 3 2026-11-18** (the #117 repair the Arabic gate sent back) | **FILLED 2026-11-16 — APPROVE on all five tests**; line 6 **corrected 2026-11-18** from `editorial futures: 0` to `1` | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk | **FILLED 2026-11-18 — APPROVE.** `content-drafts/verdicts/2026-11-18-england-ofsted-exempt-cohort-arabic-gate.md`. Eleven grade renderings judged as a set and approved as words, with **condition A** on cell 8; transliteration and the gender chain verified 1 of 1; the EN editorial future repaired in both editions today | **FILLED 2026-11-19 — PASS WITH FOUR ITEMS.** `content-drafts/verdicts/2026-11-19-england-ofsted-exempt-cohort-verification.md`. The body traces clean; four of the five registers were re-opened independently today and every load-bearing figure and quoted sentence is present verbatim, register 4 declared as not re-fetched. The four items are in the APPARATUS and are bound to cell 8 | — | — | **two — cells 7 and 8. Cell 7 (the hero still and og card) is the next content function's first action**, and cell 8 now carries **six conditions — two from the Arabic gate and four from the Verifier** — (A) the eleven renderings declared in the served Arabic `sources[]` as this edition's own, dated, because the hand-off is not served and the annotation is (#86 clause 2 / #114), naming the two strings a DIFFERENT regulator publishes in Arabic on `2026-10-23-bahrain-bqa-five-cycles`; (B) sources 3 and 4 marked SINGLE-CHANNEL; and from the Verifier (C) §A1 rewritten, (D) §A4's first two strikes withdrawn, (E) **source 5's annotation repaired, which is the one of the four that is SERVED (#114)**, (F) hand-off line 1 corrected to `dek: 198/200` — plus the rail step's forward edges into `2026-07-28-england-report-cards-first-term` and both Bahrain pieces |
+
+**Reconciled against disk 2026-11-19. CELL 6 FILLS ON A PASS WITH FOUR ITEMS, AND THREE OF THE FOUR ARE
+ONE DEFECT: A FAILED RETRIEVAL RECORDED AS THE REGISTER'S SILENCE.** Verdict at
+`content-drafts/verdicts/2026-11-19-england-ofsted-exempt-cohort-verification.md`.
+
+- **The body traces clean, and that is the headline.** Four of the five first-party registers were
+  re-opened today **independently of the drafter**, read as served text rather than through a summariser,
+  and **every load-bearing figure and every quoted sentence is present verbatim** — the 367 / 263 / 104
+  Figure 3 row, the two seventeens in their opposite directions, 3,900 and 3,400, the thirteen-year
+  average, 21,957 / 3,262 / 3,188, the 99% safeguarding sentence and the 15% disqualification.
+  **Register 4 was NOT re-fetched and the verdict says so**, because a verification that does not name
+  what it skipped is a verification whose coverage is assumed — which is this morning's item 41 arriving
+  at the editorial desk on the day it closed at the instrument desk.
+- **THREE OF §A's FOUR COMPOSE-TIME CORRECTIONS ARE WRONG, ALL IN ONE DIRECTION.** §A1 states that the
+  statistical release *"does not contain"* the sentence *"Only 17% of previously exempt schools that had a
+  graded inspection this year remained outstanding."* **It is in that release's own Key findings, verbatim**
+  — and with it falls §A1's second limb, the claimed *denominator error*: the register **names** the
+  graded-inspection denominator in the same sentence, which is the denominator the body correctly uses.
+  §A4 strikes two further sentences as unconfirmed and **both are in their registers**, one of them the
+  sentence immediately following a sentence the body quotes.
+- **The class, and it is #101 moved one step earlier.** A drafter's failure to find is indistinguishable,
+  in the written record, from the register's failure to print — all three were written as facts about
+  Ofsted and all three are facts about a search. **A positive claim about a register can be re-checked by
+  anybody who opens it; a negative claim can be re-checked only by somebody who already suspects it**,
+  the test for *this is not here* being the same unsuccessful search that produced the claim. Nothing we
+  own has a limb for a string we said was ABSENT.
+- **The fourth correction is RIGHT, which is what makes the other three legible.** The Department's
+  2 September 2024 page states nothing about retrospectivity — `retrospectiv` verified absent in its
+  served text today. One correct strike beside three incorrect ones, written in the same hour by the same
+  method. #41 working exactly as written.
+- **ONE OF THE FOUR ITEMS REACHES A READER.** Source 5's annotation is **served** while a hand-off is not
+  (#114), and it currently reads *"Not carried, because it was not read"* about wording the register does
+  carry — true about our reading, misleading about Ofsted. Condition E on cell 8.
+- **The cap line is wrong by a transposed digit inside the rule that exists to stop exactly this.**
+  Hand-off line 1 reads `dek: 188/200`; the dek is **198**. Both are under the cap so nothing could have
+  shipped wrong — what is damaged is the ruler, because the 2026-07-27 amendment made the recorded count a
+  returned-unread condition so the cap would be measured at the desk and not at the backstop. Raised as
+  queue item **133**: the count is derivable from the draft and the hand-off line asserts it, so it is
+  gateable and is currently gated by goodwill.
+- **The named human is verified and her provenance is NECESSARY, not belt-and-braces.** Register 2 carries
+  *"Ofsted's Chief Inspector, Amanda Spielman, said:"* and, read whole today, **no third-person pronoun and
+  no gendered title for her anywhere on it** — so the feminine genuinely cannot be read there, and
+  register 5's standfirst is the only channel. The Arabic gate reached this independently on 11-18.
+- **And the verifier nearly filed a fabricated finding against that very sentence.** The first pass
+  reported the attribution ABSENT because the page sets its apostrophe as **U+2019** and the needle
+  carried U+0027. A matcher wrong about a character class manufactured an absence — ruling **#150** and
+  item 129's forward question, met in the wild one day old, at the editorial desk. It is the same trap as
+  items 1–3, committed by the verifier against the drafter instead of by the drafter against the register,
+  **which is why those three are filed as a class and not as carelessness.**
+- **No flag moved and the corpus is unchanged at 45 EN / 45 AR.** Cell 7, the hero still and og card, is
+  the next content function's first action.
+
+**The 2026-11-18 note below is superseded in its CELL-6-OPEN reading and kept for the record.**
 
 **Reconciled against disk 2026-11-18. CELL 5 FILLS ON AN APPROVE, AND THE GATE'S OWN FINDING IS THAT A
 COMPOSED GRADE NAME READS EXACTLY LIKE A QUOTED ONE.** Verdict at
