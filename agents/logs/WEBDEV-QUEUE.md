@@ -312,6 +312,36 @@ four raised (131, 132 by the quality function, 133 by the content function, 134 
 reading the three bucket tables and not against yesterday's total (#57)** — 0 + 73 + 3, no duplicates,
 every row carrying a `Raised` date. It arrived at 74 and closes at 76.
 
+**CLOSE-OF-RUN VERIFICATION — AND ITEM 98'S CHURN RETURNED AT 90 FOR THE THIRD CONSECUTIVE DAY, WHICH
+TURNS A PROPERTY INTO A CONSTANT.** Final build from the committed tree, HEAD equal to `origin` and a
+clean working tree: **exit 0**, all 27 postbuild assertions and all 12 build-job gates green via
+`build_job_gates`, `qa_patch_queue` **39 of 42 gating counted in both homes** (unmoved, correctly —
+`sample_coverage.py` carries no `qa_` prefix), `qa_artefact_render` **160 of 160** with today's brief
+included, `qa_brief_head` CLEAN across 137 briefs and 22 reviews, `qa_register_shape` CLEAN,
+`qa_composition` 139 documents, `qa_selector_coverage` 359 of 402, `qa_jsonld` CLEAN at 138 pages after
+the citation-graph change. The lastmod ordering rule was EXECUTED rather than quoted and the guard ran
+FIRST: `lastmod_tree_guard` **SUPPORTABLE**. Then `served_dates --update` moved **80** pages, because
+today's growth change rewrote the JSON-LD block on every article page; a second `--update` on the same
+build moved **0**, which is the register's own idempotence confirmed rather than assumed. Then a rebuild,
+because the register is read at build time; `qa_lastmod` **PASS at 138 URLs**, newest
+2026-11-19T13:44:09Z against the ceiling.
+
+**AND `--check` PRINTED 90 PAGES AGAIN — THE THIRD READING AT EXACTLY THE SAME NUMBER.** 2026-11-17
+observed it naturally for the first time with a size; 2026-11-18 met it again at 90 and upgraded it from
+an observation to a deterministic property with a fixed magnitude; **today is the third, and three
+readings at one value is no longer a property with a magnitude but a CONSTANT with a known cause.** The
+rebuild the ordering rule REQUIRES stamps a new `dateModified` on every article page, `dateModified`
+resolves FROM this register, and **90 is 45 EN + 45 AR — the entire article corpus.** It will read 90 on
+every run that updates the register and then rebuilds, 91 the day a piece ships, until the self-reference
+is broken rather than re-measured. The run **DECLINED to re-update** for the third day, on the same
+reasoning: re-updating records the post-rebuild bytes and the next rebuild moves them again, a loop with
+no fixed point. *A hazard met three times at one size by following your own documented procedure in the
+documented order has stopped being a finding and become a specification of the defect.*
+
+**Strand at the close: FIVE** — this run's own function commits, the publish step running after the agent
+step, so no run can observe its own publication. **Board 76 counted against the rows twice: 0 DEFECT,
+73 OPEN, 3 BLOCKED.**
+
 ### Tomorrow's head
 
 **Item 44, at 25 days on the day it is taken** (raised 2026-10-26) — the oldest OPEN row once 41 is gone: *nothing gates `dateModified`, the field

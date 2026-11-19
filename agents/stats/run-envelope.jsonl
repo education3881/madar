@@ -105,3 +105,4 @@
 {"run_id": "43715861675", "workflow": "madar-weekly.yml", "label": "weekly-1of4-consolidation", "at": "2026-11-15T13:05:19+00:00", "elapsed_minutes": 15.12, "timeout_minutes": 90, "remaining_minutes": 74.88}
 {"run_id": "43715861675", "workflow": "madar-weekly.yml", "label": "weekly-3of4-queue", "at": "2026-11-15T13:13:49+00:00", "elapsed_minutes": 23.62, "timeout_minutes": 90, "remaining_minutes": 66.38}
 {"run_id": "43715861675", "workflow": "madar-weekly.yml", "label": "weekly-4of4-bet-and-review", "at": "2026-11-15T13:33:36+00:00", "elapsed_minutes": 43.41, "timeout_minutes": 90, "remaining_minutes": 46.59}
+{"run_id": "44532581507", "workflow": "madar-daily.yml", "label": "close", "at": "2026-11-19T13:53:47+00:00", "elapsed_minutes": 32.71, "timeout_minutes": 90, "remaining_minutes": 57.29}
