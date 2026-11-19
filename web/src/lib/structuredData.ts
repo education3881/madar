@@ -241,11 +241,41 @@ export function articleJsonLd(input: ArticleNodeInput) {
     about: { '@type': 'Place', name: input.country },
     keywords: input.themes.join(', '),
     // The point of the whole exercise: the bibliography, machine-readable.
-    citation: input.sources.map((s) => ({
-      '@type': 'CreativeWork',
-      name: s.title,
-      url: s.url,
-    })),
+    //
+    // 2026-11-19, GROWTH, standing-queue item 87. This block emitted
+    // `name: s.title` for every source, and `s.title` is OUR WHOLE ANNOTATION
+    // about the document rather than the document's name: median 274
+    // characters, longest 3,237, and 663 of 714 over the 110 characters at
+    // which a consumer stops showing a title. A machine was being told that a
+    // press release is TITLED with our commentary on why we opened it. That is
+    // the 2026-08-18 share-card defect one surface over and strictly worse — a
+    // promise that resolves, renders and says the WRONG THING cannot 404, so
+    // nothing can notice.
+    //
+    // The one-line repair item 87 proposed was measured and REFUSED there:
+    // cutting at the first ' (' improves 503 entries and DAMAGES 163, because
+    // a parenthesis is as often part of a name as the start of a gloss
+    // ('Free Quality School Education (FQSE)'). Re-measured 2026-11-19 with a
+    // narrower rule and it got worse, not better.
+    //
+    // So the fix is structural rather than a cut, and schema.org already draws
+    // the line we need: `name` is a NAME and `description` is prose about the
+    // thing. The annotation moves to `description`, where long text is
+    // legitimate, and `name` is emitted ONLY where the drafter MARKED a
+    // document name — a quoted or italicised span, which is a boundary the
+    // ARTEFACT supplies rather than one this builder has to guess (#113).
+    // 120 of 714 entries carry one, median 62 characters. The other 594 get
+    // url + description and no name at all, because telling a consumer nothing
+    // about a title is strictly better than telling it something false.
+    citation: input.sources.map((s) => {
+      const name = markedName(s.title);
+      return {
+        '@type': 'CreativeWork',
+        ...(name ? { name } : {}),
+        description: s.title,
+        url: s.url,
+      };
+    }),
     ...(input.translationPath
       ? { workTranslation: { '@id': `${absolute(input.translationPath)}#article` } }
       : {}),
@@ -254,6 +284,51 @@ export function articleJsonLd(input: ArticleNodeInput) {
     // publisher and isPartOf at the same Organization node.
     isPartOf: { '@id': SITE_ID },
   };
+}
+
+/**
+ * The document name a drafter MARKED inside a source annotation, or null.
+ *
+ * Standing-queue item 87, 2026-11-19. Three conventions are in use across both
+ * editions and all three mark the same thing — the register's own title:
+ * single quotes (straight or curly), double quotes (straight or curly), and
+ * markdown emphasis. Whichever appears FIRST within the annotation's opening
+ * 400 characters is taken, because a later quoted span is a quotation FROM the
+ * register rather than the register's name — which is the distinction
+ * `qa_citation_identity` (#112) exists to work on, from the other side.
+ *
+ * Deliberately returns null rather than guessing. An unmarked annotation has no
+ * boundary this builder can supply, and 594 of 714 go unnamed today.
+ */
+function markedName(annotation: string): string | null {
+  // Window measured rather than chosen, 2026-11-19. A marked span is ambiguous
+  // between the register's TITLE and a QUOTATION FROM it — #112 found 529
+  // quoted tokens over 218 registers in these same annotations, so quotations
+  // are the MAJORITY of marked spans in the corpus as a whole. What separates
+  // them is position: a title sits immediately after the publisher, a quotation
+  // sits later in the gloss. Measured across all 714 entries, the first marked
+  // span within the opening N characters yields 191 names at N=400, 163 at 200,
+  // 120 at 120 and 75 at 90 — and hand-sampling twelve at N=120 returned twelve
+  // genuine document titles, where N=400 returned a courtroom quotation among
+  // them. 120 is taken: PRECISION OVER RECALL, because a false title is the
+  // defect this whole change exists to remove and no title is merely a silence.
+  const head = annotation.slice(0, 120);
+  // The delimiters must be QUOTE MARKS and not POSSESSIVE APOSTROPHES, and the
+  // difference is positional rather than in the character: U+2019 is the same
+  // code point in `the release's own words` as in `'Results of Government
+  // Schools Reviews'`. An opening mark is preceded by the start of the string,
+  // a space or an opening bracket; a closing mark is followed by the end, a
+  // space or punctuation — never by a letter. Written this way because the
+  // first version of this function was NOT, and the measurement caught it
+  // naming a citation `s founding figure On the gender attributed to…`, a span
+  // running from one possessive to the next. Third firing in one day of the
+  // family ruling #150 names: a matcher wrong about a character class.
+  const m = head.match(
+    /(?:^|[\s(\[\u2014-])[\u2018']([^\u2019'\n]{6,160})[\u2019'](?=$|[\s,.;:)\]\u2014])|(?:^|[\s(\[\u2014-])[\u201c"]([^\u201d"\n]{6,160})[\u201d"](?=$|[\s,.;:)\]\u2014])|(?:^|[\s(\[\u2014-])\*([^*\n]{6,160})\*(?=$|[\s,.;:)\]\u2014])/,
+  );
+  if (!m) return null;
+  const name = (m[1] ?? m[2] ?? m[3] ?? '').trim();
+  return name.length >= 6 ? name : null;
 }
 
 /**
