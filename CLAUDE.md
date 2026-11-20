@@ -161,14 +161,14 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
 |---|---|
 | `web/` | The Astro site. `src/content/articles` (EN) and `articles-ar` (AR). |
 | `agents/` | CHARTER, RUNBOOK, guidebook (rulings), briefs, logs, growth notes, tools. |
-| `agents/tools/` | **Forty-two** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own) and `run_envelope.py` (added 2026-10-18 closing standing-queue item 11 — **where this run stands against the envelope in the two lines above**, parsed from the workflow file and never copied, with the wall clock measured from `run_started_at` and the **turn axis printed as UNMEASURABLE** so a healthy clock cannot be read as a healthy envelope; exits 0 / 3 = BANK NOW / 2 = cannot measure / 4 = REFUSED, and `--log` accumulates each function's cost in `agents/stats/run-envelope.jsonl`) and `served_dates.py` (added 2026-11-11 closing standing-queue item 96's sitemap half — **the register that makes `<lastmod>` output-bounded**, one row per URL holding the date that page's own normalised served bytes last changed, read by `sitemapLastmod.mjs` in preference to git provenance; it is a **register maintainer and a measurement, not an assertion** — no `qa_` prefix, outside the counting glob, so no count in this file moves — and its `--check` half asserts well-formedness offline while printing register staleness rather than gating it, because a build that reds until a side-effecting tool is re-run would red the deploy job where nobody can re-run it). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py`, `qa_feed_direction.py` and `qa_font_payload.py`, which need a headless Chrome, and `qa_claim_registers.py`, whose gated `--check` half is offline and deterministic while its ungated `--emit` half asks an archive about every register this publication cites. |
+| `agents/tools/` | **Forty-three** standing QA assertions plus `madar_stats.py`, `build_font_bundle.py` (a generator) and `lastmod_tree_guard.py` (a **precondition** shared by the two instruments that compare a `<lastmod>`, added 2026-10-15 closing standing-queue item 8 — it refuses a comparison between a git-derived date and a working-tree build, exit **4 = REFUSED**, and it is not an assertion because the count globs `qa_*.py` and a precondition fails no build on its own) and `run_envelope.py` (added 2026-10-18 closing standing-queue item 11 — **where this run stands against the envelope in the two lines above**, parsed from the workflow file and never copied, with the wall clock measured from `run_started_at` and the **turn axis printed as UNMEASURABLE** so a healthy clock cannot be read as a healthy envelope; exits 0 / 3 = BANK NOW / 2 = cannot measure / 4 = REFUSED, and `--log` accumulates each function's cost in `agents/stats/run-envelope.jsonl`) and `served_dates.py` (added 2026-11-11 closing standing-queue item 96's sitemap half — **the register that makes `<lastmod>` output-bounded**, one row per URL holding the date that page's own normalised served bytes last changed, read by `sitemapLastmod.mjs` in preference to git provenance; it is a **register maintainer and a measurement, not an assertion** — no `qa_` prefix, outside the counting glob, so no count in this file moves — and its `--check` half asserts well-formedness offline while printing register staleness rather than gating it, because a build that reds until a side-effecting tool is re-run would red the deploy job where nobody can re-run it). Python 3, no deps — except `qa_render.py`, `qa_arabic_shaping.py`, `qa_arabic_joining.py`, `qa_feed_direction.py` and `qa_font_payload.py`, which need a headless Chrome, and `qa_claim_registers.py`, whose gated `--check` half is offline and deterministic while its ungated `--emit` half asks an archive about every register this publication cites. |
 | `content-drafts/` | Recon, commissions, verdicts, edition status memos. Not published. |
 | `.github/workflows/` | Deploy (`astro-pages.yml`) and the autonomous runs. |
 
 ## Build and QA
 
 ```bash
-cd web && npm ci && npm run build            # must exit 0; the TWENTY-SEVEN postbuild gates run here
+cd web && npm ci && npm run build            # must exit 0; the TWENTY-EIGHT postbuild gates run here
 cd web && npm run gates                      # the TWELVE workflow build steps, alone (postbuild runs them too)
 python3 agents/tools/qa_pair_frontmatter.py .     # reads SOURCE files, held pieces included
 python3 agents/tools/qa_patch_queue.py .         # prints the whole gate register, derived
@@ -176,15 +176,15 @@ python3 agents/tools/madar_stats.py --log        # regenerates the brief's stats
 ```
 
 **`npm run build` is TWO-THIRDS of the gate set, and a green postbuild reads exactly like a green deploy.**
-Twelve of the thirty-eight gating assertions are steps in `astro-pages.yml`'s build job and run nowhere
-else; `npm run build` runs the other twenty-seven. **On 2026-10-20 that cost a day of publication**: the growth
+Twelve of the forty gating assertions are steps in `astro-pages.yml`'s build job and run nowhere
+else; `npm run build` runs the other twenty-eight. **On 2026-10-20 that cost a day of publication**: the growth
 function shipped 80 dangling JSON-LD `@id`s, `qa_jsonld` failed the build job, deploy and verify were
 skipped, and the origin served the 10-19 build for two days while five commits sat on `main`. The run
 built four times and called the gates green. `npm run gates` →
 `agents/tools/build_job_gates.py` closes it: it parses the twelve out of the workflow file and runs
 them, derived rather than copied — **and the line above it in this file said eleven, because a list in
 prose is maintained by nobody.** It is a **runner, not an assertion** (the count globs `qa_*.py`, so the
-register still reads 42 / 12 / 27 / **39 of 42** — these twelve always gated the deploy; what changed is
+register still reads 43 / 12 / 28 / **40 of 43** — these twelve always gated the deploy; what changed is
 where they can be *reached*), and **it is wired into `postbuild`**, closing standing-queue item 30 the
 same afternoon it opened: a runner somebody must remember is 2026-09-13's *a habit, not a gate*. The cost
 was assumed and then measured — **twelve gates in 1.88 s, a full build with all thirty-two in 32 s** —
@@ -192,11 +192,11 @@ and proved by **re-injecting the 10-20 regression**, which now turns `npm run bu
 where it exited 0 four times that day. **From 2026-10-21 a green local build is the deploy's own gate
 set**, so the second command below is a diagnostic rather than a duty.
 
-Use `npm run build`, not `npx astro build`: **twenty-seven** of the forty-two assertions
+Use `npm run build`, not `npx astro build`: **twenty-eight** of the forty-three assertions
 (`qa_css_tokens`, `qa_render`, `qa_arabic_shaping`, `qa_arabic_joining`, `qa_stable_order`,
 `qa_date_identity`, `qa_feed_enclosures`, `qa_feed_direction`, `qa_chrome_links`, `qa_census`,
 `qa_packet_figures`, `qa_pair_frontmatter`, `qa_patch_queue`, `qa_served_manifest`, `qa_register_shape`,
-`qa_third_party_origins`, `qa_bridge_coverage`, `qa_artefact_render`, `qa_composition`, `qa_claim_registers`, `qa_citation_identity`, `qa_acronym_evidence`, `qa_annotation_figures`, `qa_font_payload`, `qa_brief_head`, `qa_selector_coverage`, `qa_prior_publication`) are gated from `postbuild` in `web/package.json`,
+`qa_third_party_origins`, `qa_bridge_coverage`, `qa_artefact_render`, `qa_composition`, `qa_claim_registers`, `qa_citation_identity`, `qa_acronym_evidence`, `qa_annotation_figures`, `qa_font_payload`, `qa_brief_head`, `qa_selector_coverage`, `qa_prior_publication`, `qa_emitted_dates`) are gated from `postbuild` in `web/package.json`,
 because an autonomous run is refused write access to `.github/workflows/**`. **`qa_packet_figures`
 is the first gate that is not handed `dist`** — it takes the repository root, because a
 distribution caption is never built; it is in `postbuild` because that is where a gate this
@@ -208,9 +208,9 @@ files (issue #6, default C applied 2026-09-20).
 `lastmod` resolver reads file dates out of git history and fails loudly — correctly —
 in a shallow clone. This bit us once already; do not "fix" it by weakening the guard.
 
-`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, twenty-seven more
+`.github/workflows/astro-pages.yml` runs twelve assertions as build steps, twenty-eight more
 arrive through `postbuild`, and then a `verify` job byte-compares the published
-artifact against the live origin. **39 of the 42 gate the deploy**; of the three that do
+artifact against the live origin. **40 of the 43 gate the deploy**; of the three that do
 not, two (`qa_live_drift` — the `verify` byte-compare is strictly stronger;
 `qa_sources_alive` — someone else's 404 is not our build's failure) say why in the
 workflow file. **The third, `qa_feed_validators` (added 2026-09-24), is the first whose
@@ -219,7 +219,7 @@ identity cannot write `.github/workflows/**`, so its reason lives in the tool's 
 and the one-line patch is staged at `agents/patches/` — **one home for the patch queue, moved
 there 2026-09-27** when the weekly review found the queue split across two directories with
 this file naming one and issue #7 naming the other. Applying that patch makes it
-**40 of 42**. A green run means the bytes are actually served, not merely built.
+**41 of 43**. A green run means the bytes are actually served, not merely built.
 
 **A staged patch is frozen prose about a moving count (2026-09-27).** The queued issue-#6
 patch sat unapplied for seven days asserting *21 assertions, 19 gating, seven from
@@ -234,7 +234,31 @@ below. They moved that day with assertion 27, `qa_patch_queue`, at the point of 
 25 of 28 gating, all three derived by `qa_patch_queue` rather than counted by hand. `qa_pair_frontmatter`
 is the **second** gate not handed `dist` and the second to read `web/src/content/**` directly, because a
 held piece is not built and the six held pieces are what the next flip commit serves (ruling #81).
-**They moved again on 2026-11-05 with assertion 42, `qa_prior_publication` (ruling #128, standing-queue
+**They moved again on 2026-11-20 with assertion 43, `qa_emitted_dates` (ruling #152, standing-queue items
+44 AND 46 closed together at 25 and 24 days, by one instrument because item 44 asked in writing for one)** —
+**twenty-eight** `postbuild` entries, **forty-three** tools, **40 of 43 gating**, all three derived by
+`qa_patch_queue` rather than counted by hand. **It is the first assertion whose subject is where a served
+value was READ FROM rather than what it says**, and the first to carry a limb that no comparison of bytes
+could ever carry. Item 46 wrote the design brief into its own row: a build-clock date **agrees with itself
+across any two builds run in the same period**, so every instrument this operation owns — all of which put
+one byte beside another — is structurally blind to it, and on 1 January every page silently carries a wrong
+year with nothing changing. So limbs 1–4 compare two emitted channels (`dateModified` present by NAME
+against the approved corpus, at or after its own `datePublished`, equal to the sitemap `<lastmod>` for its
+own URL; one copyright year across all 138 served documents, equal to the sitemap's own date for the site
+root) and **limb 5 reads `web/src/**` and asserts the clock is not consulted at all** — zero-argument
+`new Date()`, bare `new Date`, `Date.now()`, against a declared exemption list that is **empty**. That is
+`qa_selector_coverage`'s direction — *read the specification, not only the artefact* — pointed at time
+instead of at markup. **Item 44's prescribed precondition was EVALUATED rather than quoted and found
+unnecessary:** `lastmod_tree_guard` protects a comparison with one provenance-derived operand and one made
+of bytes on disk, and every comparison here has **two date operands emitted by one build**, which a dirty
+tree moves together — this file reads git not at all, and there is no `subprocess` import in it. Eight
+bites red and five controls green, including two controls that must stay silent (`new Date(x)` is a parse,
+and a clock read inside a comment is prose). **And limb 5's first run reported the one file in the
+repository written to document the fix**: `copyrightYear.mjs` line 8, inside the block comment explaining
+why the clock read was removed, because the first draft stripped `//` and nothing else. *In a codebase whose
+convention is to write the reason beside every repair, the answer to 2026-09-14's question — where else does
+this string legitimately appear? — is always "in the prose about the defect."*
+**Previously moved on 2026-11-05 with assertion 42, `qa_prior_publication` (ruling #128, standing-queue
 item 31 closed at 15 days, the oldest row on a board that had no DEFECT open)** — **twenty-seven**
 `postbuild` entries, **forty-two** tools, **39 of 42 gating**, all three derived by `qa_patch_queue`
 rather than counted by hand. **It is the first assertion whose subject is whether this operation's work
