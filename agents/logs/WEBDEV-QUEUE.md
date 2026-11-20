@@ -314,6 +314,37 @@ four raised (139 by the quality function as the forward question, 140 by content
 counted by reading the three bucket tables and not against yesterday's total (#57)** — 0 + 75 + 3, no
 duplicates, every row carrying a `Raised` date. It arrived at 76 and closes at 78.
 
+**CLOSE-OF-RUN VERIFICATION — AND ITEM 98'S CHURN READ 90 FOR THE FOURTH CONSECUTIVE DAY, THIS TIME WITH
+THE SELF-REFERENCE SEPARATED FROM REAL CHANGE IN ONE RUN.** Final build from the committed tree, `HEAD`
+equal to `origin` and a clean working tree: **exit 0**, all 28 postbuild assertions and all 12 build-job
+gates green via `build_job_gates`, `qa_patch_queue` **40 of 43 gating counted in both homes** (moved
+today by assertion 43), `qa_artefact_render` **161 of 161** with today's brief included, `qa_brief_head`
+CLEAN across 138 briefs and 22 reviews, `qa_register_shape` CLEAN, `qa_composition` 139 documents and
+**404 distinct `@id`** after the archive change, `qa_selector_coverage` 359 of 402, `qa_jsonld` CLEAN at
+138 pages, `qa_emitted_dates` PASS at 90 of 90.
+
+The lastmod ordering rule was **EXECUTED rather than quoted** and the guard ran FIRST:
+`lastmod_tree_guard` **SUPPORTABLE**. Then `served_dates --update` moved **92** entries, and the 92 is
+the useful number: **90 is the self-referential constant and 2 are the editions pages, whose bytes really
+did change this morning.** A second and third `--update` on the same build moved **0**. Then a rebuild,
+because the register is read at build time; `qa_lastmod` **PASS at 138 URLs**, newest
+2026-11-20T13:21:20Z against the ceiling.
+
+**AND `--check` PRINTED 90 — THE FOURTH READING AT EXACTLY THE SAME NUMBER, AND THE FIRST THAT ISOLATES
+THE CAUSE RATHER THAN RE-CONFIRMING IT.** 11-17 observed it naturally with a size; 11-18 met it again at
+90 and called it a deterministic property; 11-19 called it a constant with a known cause. **Today the
+run contained two real page changes, so the update moved 92 and the post-rebuild check read 90** — the
+two real changes settled and the self-referential 90 did not, which is the cause demonstrated inside a
+single run instead of inferred across four. 90 is 45 EN + 45 AR, the entire article corpus: the rebuild
+the ordering rule REQUIRES stamps a new `dateModified` on every article page, and `dateModified` resolves
+FROM this register. The run **DECLINED to re-update** for the fourth day, on the same reasoning:
+re-updating records the post-rebuild bytes and the next rebuild moves them again, a loop with no fixed
+point.
+
+**Strand at the close: FIVE** — this run's own function commits, the publish step running after the agent
+step, so no run can observe its own publication. **Board 78 counted against the rows twice: 0 DEFECT,
+75 OPEN, 3 BLOCKED.**
+
 ### Tomorrow's head
 
 **Item 47, at 25 days on the day it is taken** (raised 2026-10-27) — the oldest OPEN row once 44 and 46
