@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 600"
+     preserveAspectRatio="xMidYMid slice"
+     role="img"
+     aria-label="A long graduated measuring edge lies across a paper-cream page in ink line only. Its left span carries evenly paced graduations; its middle span runs on as a bare line with no graduations at all, bracketed beneath by a dashed span; its right span resumes with graduations at twice the pitch and then the edge simply stops, capped and cut. Set apart to the right, with an empty gap between them and no line joining the two, a second shorter edge is turned a few degrees out of true and carries six graduations hanging below it instead of standing above, with two separate short strokes set further apart again. One kiln-orange mark, the only warm mark on the page, has come away from the first edge at the point where its graduations resume and lies below it, slightly adrift.">
+
+  <title>The Still · England — the span with no graduations, and the edge that does not join</title>
+  <desc>A composition for the England piece. Paper-cream ground, pure line, no fills, tone carried by
+  stroke opacity alone.
+
+  The object is the regulator's own instrument, drawn once. Its left span is graduated and in use. Its
+  middle span is drawn as a continuous line with NO graduations: the eight years in which the
+  best-graded schools were not routinely inspected, which is a span of time that was still running and
+  still being reported on while nothing in it was being measured. The dashed bracket beneath that span
+  marks it as a span rather than as a gap in the drawing. The right span resumes at twice the pitch —
+  the regulator went back in and inspected a great many of them in one year — and then the edge stops,
+  capped: the overall grade stopped being awarded.
+
+  The second edge is a DIFFERENT instrument and the composition refuses to join them. It is turned out
+  of true, its six graduations hang below its line rather than standing above it, and two further
+  strokes sit apart from the six. Nothing connects it to the first edge and the gap between them is
+  empty, because the regulator has said in writing that the new grades cannot be compared to the old
+  ones. Six graduations because the renewed framework grades six core evaluation areas; two separate
+  strokes because safeguarding is reported apart from them, as met or not met.
+
+  The one kiln-orange mark is a single graduation that has come away from the first edge at the point
+  where measurement resumed, lying below the line and slightly adrift. It is a pointer at a sentence in
+  the body and carries NO magnitude.
+
+  NOTHING IN THIS STILL ENCODES A PROPORTION. The graduation pitches are set by the pen and not by any
+  published figure; the two spans are not to scale against each other; neither edge is a scale of
+  grades and no mark stands for a percentage. The piece's own first guardrail is that there is no
+  composite of the two rulers and the piece may not build one — a still whose proportions encoded
+  either distribution would be a chart of it, and a still that set the two edges on one axis would be
+  the composite the Editor refused.</desc>
+
+  <rect x="0" y="0" width="1200" height="600" fill="#FAFAF7"/>
+
+  <!-- THE FIRST EDGE. One instrument, three spans, drawn as one line. -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 150 316.0 L 900 316.0"/>
+    <!-- left span: graduated and in use (11 graduations) -->
+    <path stroke-width="1.6" stroke-opacity="0.72" d="M 150 316.0 L 150 288.0 M 178 316.0 L 178 300.0 M 206 316.0 L 206 300.0 M 234 316.0 L 234 300.0 M 262 316.0 L 262 300.0 M 290 316.0 L 290 288.0 M 318 316.0 L 318 300.0 M 346 316.0 L 346 300.0 M 374 316.0 L 374 300.0 M 402 316.0 L 402 300.0 M 430 316.0 L 430 288.0"/>
+    <!-- MIDDLE SPAN, 430 to 700: NO graduations. The line runs on and nothing is read off it. -->
+    <!-- right span: resumed at twice the pitch (15 graduations) -->
+    <path stroke-width="1.6" stroke-opacity="0.72" d="M 700 316.0 L 700 288.0 M 714 316.0 L 714 300.0 M 728 316.0 L 728 300.0 M 742 316.0 L 742 300.0 M 756 316.0 L 756 300.0 M 770 316.0 L 770 288.0 M 784 316.0 L 784 300.0 M 798 316.0 L 798 300.0 M 812 316.0 L 812 300.0 M 826 316.0 L 826 300.0 M 840 316.0 L 840 288.0 M 854 316.0 L 854 300.0 M 868 316.0 L 868 300.0 M 882 316.0 L 882 300.0 M 896 316.0 L 896 300.0"/>
+    <!-- the cap. The edge stops; it does not taper and it does not continue. -->
+    <path stroke-width="3.2" stroke-opacity="0.95" d="M 900 288.0 L 900 344.0"/>
+    <path stroke-width="1.2" stroke-opacity="0.30" d="M 150 294.0 L 150 338.0"/>
+  </g>
+
+  <!-- The bracket beneath the ungraduated span. A span, not a hole in the drawing. -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.34">
+    <path stroke-width="1.4" stroke-dasharray="9 9" d="M 430 390.0 L 672 390.0"/>
+    <path stroke-width="1.4" d="M 430 378.0 L 430 402.0 M 672 378.0 L 672 402.0"/>
+  </g>
+
+  <!-- THE SECOND EDGE. Different instrument, out of true, reading downward.
+       No line joins it to the first and the gap between them is empty. -->
+  <g fill="none" stroke="#1A2B3C" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="3.0" stroke-opacity="0.92" d="M 952.0 246.0 L 1091.1 230.2"/>
+    <path stroke-width="1.6" stroke-opacity="0.70" d="M 963.6 244.7 L 965.7 263.6 M 986.8 242.0 L 988.9 260.9 M 1010.0 239.4 L 1012.9 265.2 M 1033.1 236.8 L 1035.3 255.6 M 1056.3 234.1 L 1058.5 253.0 M 1079.5 231.5 L 1081.7 250.4"/>
+    <!-- reported apart from the six: two strokes, set away and lower -->
+    <path stroke-width="1.6" stroke-opacity="0.55" d="M 982 342.0 L 982 368.0 M 1016 342.0 L 1016 368.0"/>
+  </g>
+
+  <!-- THE ONE WARM MARK. A graduation come away from the edge where measurement
+       resumed, lying below it and adrift. One mark, no magnitude. -->
+  <g fill="none" stroke="#C75B39" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="6" stroke-opacity="0.12" d="M 706 342.0 L 720 372.0"/>
+    <path stroke-width="2.8" stroke-opacity="0.96" d="M 706 342.0 L 720 372.0"/>
+  </g>
+</svg>
