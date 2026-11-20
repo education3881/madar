@@ -5,6 +5,7 @@ import { withBase } from '../../lib/urls';
 import { byDateThenSlug } from '../../lib/order';
 import { editions, getEdition } from '../../lib/editions';
 import { inlineCover } from '../../lib/inlineCover';
+import { collectionJsonLd } from '../../lib/structuredData';
 
 // ---------------------------------------------------------------------------
 // Editions index (EN) — groups the approved corpus by `edition` and renders
@@ -91,10 +92,34 @@ const editionPhrase = closedEditions === editions.length
   ? plural(closedEditions, 'closed monthly edition', 'closed monthly editions')
   : plural(editions.length, 'monthly edition', 'monthly editions');
 const inEditions = all.length - singles.length;
+// ---------------------------------------------------------------------------
+// THIS PAGE'S STRUCTURED DATA — added 2026-11-20 by the growth function.
+//
+// Until today the two editions pages served **45 article links each and emitted
+// NO JSON-LD at all** — no CollectionPage, no ItemList, and not even the
+// Organization and WebSite nodes that every other page on this site carries —
+// because neither template passed `jsonLd` to `Base.astro`. Every browse facet,
+// including ones listing two pieces, has carried a full CollectionPage since
+// 2026-10-20. **The archive — the one surface that lists the whole corpus — was
+// the only listing page a machine could read nothing from.**
+//
+// The list is DERIVED from the same arrays the page renders, in the same order
+// (2026-06-07): editions in render order with their own sorted pieces, then the
+// singles, then the standing instrument. A hand-kept list here would be wrong
+// the first day a piece shipped.
+// ---------------------------------------------------------------------------
+const listItems = [
+  ...blocks.flatMap(({ pieces }) =>
+    pieces.map((piece) => ({ name: piece.data.title, path: withBase(`/articles/${piece.id}/`) })),
+  ),
+  ...singles.map((piece) => ({ name: piece.data.title, path: withBase(`/articles/${piece.id}/`) })),
+  { name: 'VALENCE — The Chemistry of Education', path: withBase('/valence/') },
+];
+
 const description = `Madār's archive: ${plural(inEditions, 'piece', 'pieces')} in ${editionPhrase}, and ${plural(singles.length, 'piece', 'pieces')} outside them. Early-childhood and K-12 education, read from named primary sources in English and Arabic.`;
 ---
 
-<Base title="Editions · Madār" description={description} lang="en" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
+<Base title="Editions · Madār" description={description} lang="en" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }} jsonLd={collectionJsonLd({ lang: 'en', path: withBase('/editions/'), name: 'Editions', items: listItems, isFacet: false, hub: { path: withBase('/editions/'), label: 'Editions' }, order: null })}>
   <article class="editions container">
     <header class="editions__head">
       <p class="kicker">The archive</p>

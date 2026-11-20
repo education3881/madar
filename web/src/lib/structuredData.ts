@@ -366,14 +366,42 @@ export interface CollectionNodeInput {
   items: { name: string; path: string }[];
   /** False for the /browse/ hub itself, which has no parent facet. */
   isFacet: boolean;
+  /**
+   * The crumb between the site root and this page. Defaults to Browse, which
+   * is where every caller lived until 2026-11-20.
+   *
+   * Added by the growth function that gave the two EDITIONS pages their first
+   * structured data: they serve 45 article links each and emitted NO JSON-LD at
+   * all — not a CollectionPage, not an ItemList, not even the Organization and
+   * WebSite nodes every other page on the site carries — because neither
+   * template passed `jsonLd` to `Base.astro`. The archive is not under Browse,
+   * so a trail hardcoded to Browse would have been a crumb to the wrong parent,
+   * which this function's own header already says is worse than no crumb.
+   */
+  hub?: { path: string; label: string };
+  /**
+   * `itemListOrder`, or `null` to OMIT it.
+   *
+   * Defaults to descending, which is true of every browse facet: one list, one
+   * key, newest first. It is NOT true of the editions page, whose order is
+   * edition-grouped and then date-ordered inside each group — neither ascending
+   * nor descending, and schema.org offers no third value that is honest here.
+   * An `ItemList` whose members carry explicit `position` values is well defined
+   * without the property, so the archive omits it rather than asserting an order
+   * it does not have. *A field that resolves and parses and says the wrong thing
+   * cannot fail* — yesterday's citation-name defect, one property over.
+   */
+  order?: 'descending' | null;
 }
 
 export function collectionJsonLd(input: CollectionNodeInput) {
   const ar = input.lang === 'ar';
   const url = absolute(input.path);
   const home = absolute(ar ? `${BASE}/ar/` : `${BASE}/`);
-  const hub = absolute(ar ? `${BASE}/ar/browse/` : `${BASE}/browse/`);
-  const browseLabel = ar ? 'تصفّح' : 'Browse';
+  const hub = input.hub
+    ? absolute(input.hub.path)
+    : absolute(ar ? `${BASE}/ar/browse/` : `${BASE}/browse/`);
+  const browseLabel = input.hub ? input.hub.label : ar ? 'تصفّح' : 'Browse';
 
   const trail: Record<string, unknown>[] = [
     { '@type': 'ListItem', position: 1, name: ar ? 'مدار' : 'Madār', item: home },
@@ -404,7 +432,9 @@ export function collectionJsonLd(input: CollectionNodeInput) {
       mainEntity: {
         '@type': 'ItemList',
         '@id': `${url}#itemlist`,
-        itemListOrder: 'https://schema.org/ItemListOrderDescending',
+        ...(input.order === null
+          ? {}
+          : { itemListOrder: 'https://schema.org/ItemListOrderDescending' }),
         numberOfItems: input.items.length,
         itemListElement: input.items.map((it, i) => ({
           '@type': 'ListItem',

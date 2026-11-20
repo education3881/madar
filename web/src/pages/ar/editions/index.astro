@@ -6,6 +6,7 @@ import { byDateThenSlug } from '../../../lib/order';
 import { editions } from '../../../lib/editions';
 import { inlineCover } from '../../../lib/inlineCover';
 import { countryAr } from '../../../lib/i18n-geo';
+import { collectionJsonLd } from '../../../lib/structuredData';
 
 // ---------------------------------------------------------------------------
 // Editions index (AR, RTL) — mirror of the English page over the Arabic
@@ -85,10 +86,29 @@ const editionsAr = closedCount === editions.length
   ? countAr(closedCount, 'إصدار واحد مُغلق', 'إصداران مُغلقان', 'إصدارات مُغلقة', 'إصدارًا مُغلقًا')
   : countAr(editions.length, 'إصدار واحد', 'إصداران', 'إصدارات', 'إصدارًا');
 const inEditions = all.length - singles.length;
+// ---------------------------------------------------------------------------
+// THIS PAGE'S STRUCTURED DATA — added 2026-11-20 by the growth function, in the
+// same commit as the English side. See the English template for the measurement:
+// both editions pages served 45 article links each and emitted NO JSON-LD at
+// all, while every browse facet has carried a CollectionPage since 2026-10-20.
+//
+// The Arabic title is the one that goes into the Arabic list, because this list
+// describes THIS page. VALENCE's name stays Latin on both sides, as the row
+// itself renders it — the instrument's text is English and the Arabic row says
+// so in its own note.
+// ---------------------------------------------------------------------------
+const listItems = [
+  ...blocks.flatMap(({ pieces }) =>
+    pieces.map((piece) => ({ name: piece.data.title, path: withBase(`/ar/articles/${piece.id}/`) })),
+  ),
+  ...singles.map((piece) => ({ name: piece.data.title, path: withBase(`/ar/articles/${piece.id}/`) })),
+  { name: 'VALENCE — The Chemistry of Education', path: withBase('/valence/') },
+];
+
 const description = `أرشيف مدار: ${piecesAr(inEditions)} في ${editionsAr}، و${piecesAr(singles.length)} خارجها. التعليم المبكر والتعليم العام، مقروءة من مصادر أولية مُسمّاة، بالعربية والإنجليزية.`;
 ---
 
-<Base title="الإصدارات · مدار" description={description} lang="ar" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }}>
+<Base title="الإصدارات · مدار" description={description} lang="ar" ogImage="/og/brand-card.png" alternate={{ en: '/editions/', ar: '/ar/editions/' }} jsonLd={collectionJsonLd({ lang: 'ar', path: withBase('/ar/editions/'), name: 'الإصدارات', items: listItems, isFacet: false, hub: { path: withBase('/ar/editions/'), label: 'الإصدارات' }, order: null })}>
   <article class="editions container">
     <header class="editions__head">
       <p class="kicker" lang="ar" dir="rtl">الأرشيف</p>
