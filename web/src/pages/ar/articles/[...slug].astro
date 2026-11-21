@@ -95,6 +95,10 @@ const ogCard = piece.data.hero?.src
     // ruling (#33) that fixed the visible chrome binds the machine-readable
     // description of an Arabic page.
     country: countryAr(piece.data.country),
+    // Every member through the SAME display map as the primary (#33): an
+    // Arabic page's machine-readable `about` must not drop into English for
+    // members four and five of a list whose first member is in Arabic.
+    countries: piece.data.countries?.map(countryAr),
     themes: piece.data.themes.map(themeAr),
     cardPath: ogCard,
     sources: piece.data.sources,

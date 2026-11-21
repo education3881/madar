@@ -139,6 +139,29 @@ export interface ArticleNodeInput {
   dateModified?: string | null;
   lang: 'en' | 'ar';
   country: string;
+  /**
+   * 2026-11-21, GROWTH, standing-queue item 142. The full country set of a
+   * continental piece, in the piece's own order, already carried in
+   * frontmatter since 2026-09-14 and ALREADY ASSERTED to contain `country`
+   * by `qa_geo_fields`. It is passed here because `about` emitted a single
+   * `Place` for `country` alone, so `2026-09-14-africa-best-system-ruler`
+   * told every machine that reads JSON-LD it was about **Mauritius** while
+   * its body measures five countries: four country claims served in a body
+   * and invisible to anything that parses.
+   *
+   * Why an ARRAY over `countries` and not a second field beside `about`:
+   * schema.org's `about` is the thing the work is about, and a piece about
+   * four rulers across five countries is about all five. A second property
+   * would be a new vocabulary this publication invented; an array is the one
+   * schema.org already has. Omitted entirely when the piece declares no
+   * `countries`, so a single-country piece's output is byte-identical to
+   * what it was before this change.
+   *
+   * This is 2026-11-19's finding one property over, in the same direction:
+   * a field that is RIGHT and does not carry what the page already knows
+   * cannot ever fail, so nothing could notice it.
+   */
+  countries?: string[];
   themes: string[];
   /** Absolute or base-prefixed path to the raster share card. */
   cardPath?: string;
@@ -238,7 +261,14 @@ export function articleJsonLd(input: ArticleNodeInput) {
           },
         }
       : {}),
-    about: { '@type': 'Place', name: input.country },
+    // `about` is the full country set when the piece declares one, in the
+    // piece's own order, and the single primary otherwise (item 142). The
+    // `countries` array is asserted by `qa_geo_fields` to contain `country`,
+    // so the primary is never dropped by taking this branch.
+    about:
+      input.countries && input.countries.length > 1
+        ? input.countries.map((c) => ({ '@type': 'Place', name: c }))
+        : { '@type': 'Place', name: input.country },
     keywords: input.themes.join(', '),
     // The point of the whole exercise: the bibliography, machine-readable.
     //
