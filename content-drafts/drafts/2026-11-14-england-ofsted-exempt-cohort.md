@@ -29,7 +29,7 @@ closing sentence now **names the date of the clause it corrects**; **(5)** §A2 
 3 row. **No relative date is used in the body** — the why-now is carried by dated registers rather than
 by *"last week"*, because a served tense expires and the piece is read in the reader's present (#117).
 
-**Status:** **CELL 2 OF EIGHT FILLED.** Both commission gates cleared 2026-11-13; this is the draft they
+**Status:** **ALL EIGHT CELLS FILLED — SHIPPED 2026-11-21** as `web/src/content/articles/2026-11-12-england-ofsted-exempt-cohort.md` and its Arabic pair, `approved: true`, with the hero still, the og card and the three forward rails in the same commit. *(This line read "CELL 2 OF EIGHT FILLED" from 2026-11-14.)* Original status follows: **CELL 2 OF EIGHT FILLED.** Both commission gates cleared 2026-11-13; this is the draft they
 licensed. `approved: false`. Editor's five-test verdict, Arabic composition, Arabic gate, Verifier
 verdict, still and og card all still owed.
 
@@ -43,14 +43,32 @@ a correction that has already cost a cycle.
 
 ## §A — WHAT THE COMPOSE-TIME RE-READ CORRECTED, AND ONE OF THEM IS THE PIECE'S SPINE
 
-**A1 · The brief's headline quotation is not in the register it is attributed to.** The brief's spine
-item 3 prints *"Only 17% of previously exempt schools that had a graded inspection this year remained
-outstanding."* The statistical release does not contain that sentence. What it prints is **"In 2021/22,
-we inspected nearly 500 schools that were previously exempt."** and **"Of these, 17% retained their
-outstanding grade, while 21% were judged requires improvement or inadequate."** The brief's version is a
-summary, and it is a summary with a **denominator error inside it**: *nearly 500* schools were inspected
-and **367** had graded inspections (Figure 3: 263 primary, 104 secondary). The body uses the register's
-own two sentences and states which denominator each percentage sits on.
+**A1 · REWRITTEN 2026-11-21 UNDER THE VERIFIER'S ITEM 1 (cell-8 condition C). BOTH OF THIS
+SECTION'S ORIGINAL LIMBS WERE WRONG, AND WHAT IT CORRECTLY REPORTED WAS THE BRIEF'S COMPRESSION AND NOT
+THE REGISTER'S SILENCE.** The brief's spine item 3 prints *"Only 17% of previously exempt schools that
+had a graded inspection this year remained outstanding."* **That sentence is in the statistical release,
+verbatim, in its own Key findings block** — re-opened by the Verifier on 2026-11-19 and read there:
+*"Eighty-eight per cent of all schools are good or outstanding. Only 17% of previously exempt schools
+that had a graded inspection this year remained outstanding. Seventy per cent of schools previously
+judged to require improvement improved…"* The original §A1 said the release *"does not contain that
+sentence."* It does.
+
+**And the second limb falls with the first.** §A1 claimed the brief's version carried a *denominator
+error*. It carries none: the register's own sentence **states its denominator explicitly** — *previously
+exempt schools that had a graded inspection this year* — and that is exactly the denominator the body
+uses. **So the body's sentence is right and this section's stated reason for it being right was wrong**,
+which is the more expensive of the two failures, because the reason is what the next drafter reuses.
+
+**What survives, and it is a smaller and truer claim.** The release prints the figure in two places with
+two shapes: the narrative pair — **"In 2021/22, we inspected nearly 500 schools that were previously
+exempt."** and **"Of these, 17% retained their outstanding grade, while 21% were judged requires
+improvement or inadequate."** — where *"these"* resolves across a sentence boundary to *nearly 500*
+while the percentages are the graded group's; and the Key findings sentence, which attaches the
+denominator to the figure in one clause. **367** had graded inspections (Figure 3: 263 primary, 104
+secondary). The body uses the narrative pair **and** states which denominator each percentage sits on,
+and its warrant for doing so is the Key findings sentence rather than any gap in the register. *(What
+this correction is an instance of: a drafter's failure to find is indistinguishable, in the written
+record, from the register's failure to print — ruling #151, filed 2026-11-19.)*
 
 **A2 · THE 17% COLLISION IS WORSE THAN THE BRIEF KNEW, AND IT IS INSIDE 2022.** Guardrail 2 warns about
 two 17%s, one from 2022 and one from 2026. There is a **third**, and the first two are **fourteen weeks
@@ -80,21 +98,48 @@ outstanding grade."** The statistical release's 17% of 367 is about 62 schools, 
 reports each register's own figures **attributed to that register** and makes no joint statement, and it
 says in the body that it declines to.
 
-**A4 · Two sentences the brief carries were not confirmed and are therefore not in the body.** The brief
-has the 88% *"increased from 86% in August 2021, and had been stable at 86% since 2019"*, and
-safeguarding reported as *"'met' or 'not met'"*. Neither appeared in what was read today. The 2026
-release prints **"Safeguarding standards were met in 99% of full inspections."** and that is what the
-body uses. **And one claim that reached this draft from a search summary rather than a register is
-struck outright**: that the Department's announcement states the change is not retrospective. The
-register **does not say so** — asked directly, the page carries no such sentence. That is ruling #41
-catching its own defect in the act, on the way into a draft rather than at a verdict.
+**A4 · THE FIRST TWO STRIKES ARE WITHDRAWN 2026-11-21 UNDER THE VERIFIER'S ITEMS 2 AND 3 (cell-8
+condition D). THE THIRD STANDS, AND IT IS THE ONE THAT MAKES THE OTHER TWO LEGIBLE.**
+
+**Strike 1 — WITHDRAWN.** This section reported the brief's *"increased from 86% in August 2021, and had
+been stable at 86% since 2019"* as unconfirmed. **The register prints it, in the same paragraph as the
+88% the body quotes, as the next sentence:** *"Overall, 88% of all state-funded schools were judged good
+or outstanding at their most recent inspection. The proportion has increased from 86% in August 2021,
+and had been stable at 86% since 2019."* The body carries the first of the two and not the second, which
+is a choice about scope. It is **not** a register's silence, and source 1's annotation now says which it
+is.
+
+**Strike 2 — WITHDRAWN.** This section reported the brief's *"'met' or 'not met'"* safeguarding wording
+as not appearing. **The 2026 release carries both halves:** *"Safeguarding standards were met in 99% of
+full inspections. In the 18 schools (0.6%) where safeguarding standards were not met…"* The body uses
+the 99% sentence and is correct; what was wrong is **source 5's annotation**, which is served while this
+hand-off is not (#114), and which read *"Not carried, because it was not read"* about wording the
+register does carry. **Repaired in both editions in the flip commit** — it now states what the register
+carries in both directions and what this piece chose not to use.
+
+**Strike 3 — STANDS, verified absent twice.** The claim that reached this draft from a search summary
+rather than a register — that the Department's announcement states the change is not retrospective —
+**is struck**: the page carries no such sentence, asked directly on 2026-11-14 and again by the Verifier
+on 2026-11-19. That is ruling #41 working exactly as written, on the way into a draft rather than at a
+verdict.
+
+**Why all three are recorded here rather than quietly fixed.** One correct strike was written in the
+same hour, by the same person, with the same method, as two incorrect ones, and **nothing on the page
+distinguished it from them** — which is ruling **#151**'s whole subject: a negative claim about a
+register can be re-checked only by somebody who already suspects it, because its only test is the same
+unsuccessful search that produced it.
 
 ---
 
 ## HAND-OFF LINES — the Editor returns this unread if any is missing
 
 **1 · Caps (2026-07-27), counted at compose and not at the gate.**
-`dek: 188/200 · title: 34/100` (code points). The first dek came out at **215** and the second at **202**;
+`dek: 198/200 · title: 34/100` (code points). **CORRECTED 2026-11-21 under the Verifier's item 4
+(cell-8 condition F); this line read `188` and the dek is `198`, a transposed digit inside the rule that
+exists to stop exactly this.** Both figures are under the cap, so nothing could have shipped wrong — what
+was damaged is the ruler, because the 2026-07-27 amendment made the recorded count a returned-unread
+condition precisely so the cap would be measured at the desk and not at the backstop. Queue item 133 asks
+for the count to be gated, the count being derivable from the draft and currently asserted by goodwill. The first dek came out at **215** and the second at **202**;
 both were cut before anything left the drafter's hand. Fifth consecutive piece where the ruler did its
 work at the desk rather than at the build.
 

@@ -12,7 +12,7 @@ related:
   - 2026-06-20-oman-school-performance-ratings
   - 2026-07-07-us-naep-honesty-gap
   - 2026-07-07-netherlands-doorstroomtoets
-  - 2026-08-28-sierra-leone-sleic-outcomes
+  - 2026-11-12-england-ofsted-exempt-cohort
   - 2026-10-23-bahrain-bqa-five-cycles
   - 2026-07-07-india-parakh-hpc
 contains_composites: false

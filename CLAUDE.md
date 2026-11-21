@@ -13,11 +13,14 @@ Read on every run, in this order:
 4. `content-drafts/_STANDING_LEDGER.md` — **the live ledger, and there is no edition at all.** Opened
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
-   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. One row is in
-   flight — `2026-11-12-england-ofsted-exempt-cohort`, **two cells open** as of 2026-11-19, cell 6
-   (the Verifier's verdict) FILLED that day on a PASS WITH FOUR ITEMS, which leaves the **hero still and
-   og card** as the next content function's first action — and **the last piece to ship was `bahrain-bqa-five-cycles` on 2026-11-09**,
-   the first in forty-three days. *(This sentence read `one row
+   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **NOTHING IS IN
+   FLIGHT**, for the first time since this ledger opened: `2026-11-12-england-ofsted-exempt-cohort` closed
+   its eighth and last cell and **SHIPPED on 2026-11-21**, the first single ever shipped against this
+   ledger and the first piece in twelve days. So **the last piece to ship was
+   `2026-11-12-england-ofsted-exempt-cohort` on 2026-11-21**, and the next content function's first action
+   is **cell 1 on a new piece** — there is no row to advance. *(Derivation of the ship date, per the rule
+   below: `git log -S'approved: true' --diff-filter=AM -- <file>`, never `date:`, which is the dateline
+   2026-11-12 and nine days early.)* *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
    **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote
    the correct state into other artefacts. Corrected at the 2026-11-15 weekly review, and it is **ruling

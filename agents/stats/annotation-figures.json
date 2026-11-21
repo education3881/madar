@@ -1960,6 +1960,46 @@
       "provenance": "NOT A QUANTITY — 2026-11-13. The day of the read-date this annotation states in Arabic words — ١٣ نوفمبر ٢٠٢٦ — recording when PARAKH's own About block was read for the expansion this repair added under #101 clause 1. The ISO date licence does not reach a date written with an Arabic month name, which is the SECOND row this register has carried for that one blindness (the first is `2026-10-23-bahrain-bqa-five-cycles` token `29`, 2026-11-09) and the same shape #117 clause 4 records for the Arabic future prefix, one licence over.",
       "lang_seen": "ar",
       "annotation": "باراكه (PARAKH) — «تقييمُ الأداء ومراجعتُه وتحليلُ المعرفة للتنمية الشمولية» — التوسعةُ من صفحة الجهة نفسها"
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "64",
+      "provenance": "Register 1's own interval sentence pair. The body prints 'Sixty-four per cent of all schools have not had a graded inspection in the last five academic years' as WORDS, which is the register's own spelling of it; the annotation records the same figure as a numeral. Read in served text 2026-11-14, re-opened by the Verifier 2026-11-19."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "86",
+      "provenance": "The 88% series' two earlier values — 'The proportion has increased from 86% in August 2021, and had been stable at 86% since 2019' — in register 1, verbatim. DELIBERATELY NOT IN THE BODY: the Verifier's item 2 (2026-11-19) withdrew the draft's claim that this sentence was absent from the register, and the annotation now records what the register carries and what this piece chose not to use. Annotation-only on purpose, which is exactly the population #114 exists to reach."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "0.6",
+      "provenance": "'In the 18 schools (0.6%) where safeguarding standards were not met', register 5, verbatim, read 2026-11-19. DELIBERATELY NOT IN THE BODY: the body carries the 99% half only, and the annotation states both directions so the omission is a visible editorial choice rather than an implied silence in the register (the Verifier's item 3, condition E on cell 8)."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "404",
+      "provenance": "An HTTP status code, not a quantity about the world: Amanda Spielman's gov.uk person page returns 404, recorded and not chased. No body can print it and no register reports it as a figure; it is an observation about a fetch."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "0027",
+      "provenance": "A Unicode code point (U+0027), not a quantity: the apostrophe register 6 serves, against the U+2019 register 2 serves. Recorded because a needle carrying the wrong one manufactures an absence (ruling #150), and this piece met that trap twice."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "150",
+      "provenance": "A ruling number (#150), not a quantity."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "151",
+      "provenance": "A ruling number (#151), not a quantity."
+    },
+    {
+      "slug": "2026-11-12-england-ofsted-exempt-cohort",
+      "token": "114",
+      "provenance": "A ruling number (#114) — this gate's own founding ruling, cited in the annotation that explains why source 5's wording was repaired."
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",

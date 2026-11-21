@@ -58,6 +58,44 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 ## In flight
 
+**NOTHING IS IN FLIGHT. The row that stood here shipped today.**
+
+| Piece | Shipped | Cells |
+|---|---|---|
+| **The cohort that was frozen by rule** · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-21** | **EIGHT OF EIGHT** |
+
+**Reconciled against disk 2026-11-21. CELL 8 FILLS AND THE PIECE SHIPS — the first single ever shipped
+against this ledger, and the first piece to ship in twelve days.** Publish gate in writing at
+`agents/logs/2026-11-21-publish-gate.md`.
+
+- **Both editions are `approved: true`** at `web/src/content/articles/2026-11-12-england-ofsted-exempt-cohort.md`
+  and `web/src/content/articles-ar/2026-11-12-england-ofsted-exempt-cohort.md`, with the hero still and the
+  og card copied from `design-assets/` into `web/public/` **in the same commit as the text** (2026-06-14).
+  Corpus **45 EN / 45 AR → 46 / 46**, parity 100%.
+- **All six conditions discharged by name** — (A) the eleven grade renderings declared in the SERVED Arabic
+  annotation as this edition's own, dated 2026-11-17, naming the two strings a *different* regulator
+  publishes in Arabic on the Bahrain piece; (B) sources 3 and 4 marked SINGLE-CHANNEL in both editions;
+  (C) §A1 rewritten; (D) §A4's first two strikes withdrawn and the third kept; (E) source 5's annotation
+  repaired, the one of the four that reaches a reader (#114); (F) the cap line corrected to `dek: 198/200`.
+- **THE RAIL STEP'S FIRST INSTANCE AT CELL 8, AND IT HIT THE CAP.** Two forward edges went in at 3 → 4
+  rails. The third, into `2026-07-28-england-report-cards-first-term`, had **no slot: that page already
+  carried 6, the proven maximum.** `2026-08-28-sierra-leone-sleic-outcomes` was displaced for it, in both
+  editions, because it is the only one of that page's six rails about *pupil examination outcomes* rather
+  than about an instrument that grades schools — and the new piece is the same country, the same regulator
+  and the direct counterpart. **The rail step as written does not say what happens at the cap**, and now
+  there is a worked instance: *displace with the reason written down, never silently decline.* Queue item
+  raised today.
+- **EVERY QUOTED SPAN IN BOTH EDITIONS WAS READ AGAINST ITS REGISTER'S OWN BYTES BEFORE THE FLIP, AND SIX
+  DEFECTS CAME BACK — FIVE OF THEM WRITTEN THIS MORNING.** 65 of 65 EN body spans and 34 of 34 Latin
+  annotation tokens are now byte-identical. Four of the six were apostrophes and nested quotes: the
+  registers serve U+2019 and U+2018/U+2019 where our fresh annotations carried U+0027 and straight doubles
+  — **ruling #150's fourth firing and its first inside a served annotation.** One was our own markdown
+  `**her**` sitting *inside* a quotation, which makes a quotation of nobody's bytes. One was a title whose
+  own page lower-cases *state-funded* where its predecessor capitalises it. *The compose-time discipline
+  arrived at the gate, which is the margin 2026-07-27 says is the wrong one — and it arrived because the
+  two citation gates had no row for a new piece and correctly failed the build rather than narrowing.*
+
+
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
 | **The cohort that was frozen by rule** (title CONFIRMED 2026-11-15) · slug `2026-11-12-england-ofsted-exempt-cohort` | **2026-11-12** | **2026-11-14**, rev 1 and rev 2 **2026-11-16**, **rev 3 2026-11-18** (the #117 repair the Arabic gate sent back) | **FILLED 2026-11-16 — APPROVE on all five tests**; line 6 **corrected 2026-11-18** from `editorial futures: 0` to `1` | **FILLED 2026-11-17** — `content-drafts/drafts/2026-11-17-england-ofsted-exempt-cohort-ar.md`, three registers re-opened by the Arabic desk | **FILLED 2026-11-18 — APPROVE.** `content-drafts/verdicts/2026-11-18-england-ofsted-exempt-cohort-arabic-gate.md`. Eleven grade renderings judged as a set and approved as words, with **condition A** on cell 8; transliteration and the gender chain verified 1 of 1; the EN editorial future repaired in both editions today | **FILLED 2026-11-19 — PASS WITH FOUR ITEMS.** `content-drafts/verdicts/2026-11-19-england-ofsted-exempt-cohort-verification.md`. The body traces clean; four of the five registers were re-opened independently today and every load-bearing figure and quoted sentence is present verbatim, register 4 declared as not re-fetched. The four items are in the APPARATUS and are bound to cell 8 | **FILLED 2026-11-20.** `design-assets/stills/2026-11-12-england-ofsted-exempt-cohort.svg` (1200×600, paper-cream, two palette tokens, no fills, no text) and `design-assets/og/2026-11-12-england-ofsted-exempt-cohort.png` (1200×600, 7,800 b, rasterised from the still). Brief and delivery record: `content-drafts/briefs/2026-11-20-england-ofsted-exempt-cohort-hero-brief.md`. **Both STAGED at `design-assets/` and NOT in `web/public/`** — see the note below; cell 8 copies them across in the flip commit (2026-06-14) | — | **ONE — cell 8 only**, and cell 8 now carries **six conditions — two from the Arabic gate and four from the Verifier** — (A) the eleven renderings declared in the served Arabic `sources[]` as this edition's own, dated, because the hand-off is not served and the annotation is (#86 clause 2 / #114), naming the two strings a DIFFERENT regulator publishes in Arabic on `2026-10-23-bahrain-bqa-five-cycles`; (B) sources 3 and 4 marked SINGLE-CHANNEL; and from the Verifier (C) §A1 rewritten, (D) §A4's first two strikes withdrawn, (E) **source 5's annotation repaired, which is the one of the four that is SERVED (#114)**, (F) hand-off line 1 corrected to `dek: 198/200` — plus the rail step's forward edges into `2026-07-28-england-report-cards-first-term` and both Bahrain pieces |

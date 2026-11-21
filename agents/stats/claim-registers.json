@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-09",
+ "observed": "2026-11-21",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -7,9 +7,9 @@
     "2026-05-28-kuwait-ccet-arabic-tests:en",
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "snapshot": "2025-02-11",
+   "snapshot": "2026-10-24",
    "archive_note": "200",
    "state": "archived"
   },
@@ -19,7 +19,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-10-04",
    "archive_note": "200",
@@ -31,7 +31,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-05-17",
    "archive_note": "200",
@@ -43,7 +43,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-30",
    "archive_note": "200",
@@ -55,7 +55,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-08-31",
    "archive_note": "200",
@@ -82,7 +82,7 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-04-24",
    "archive_note": "200",
@@ -94,7 +94,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-02-06",
    "archive_note": "200",
@@ -106,7 +106,7 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-08-09",
    "archive_note": "200",
@@ -118,13 +118,11 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "archived",
-   "snapshot": "2026-10-24"
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://aujourdhui.ma/societe/ecoles-pionnieres-un-programme-structurant-pour-ameliorer-lapprentissage-et-la-maitrise-des-acquis",
@@ -132,7 +130,7 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-10-09",
    "archive_note": "200",
@@ -144,11 +142,12 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": true,
-   "snapshot": "2025-09-12",
-   "archive_note": "200",
-   "state": "archived"
+   "observed": "2026-11-21",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://blogs.worldbank.org/en/education",
@@ -168,9 +167,9 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "snapshot": "2026-06-09",
+   "snapshot": "2026-07-21",
    "archive_note": "200",
    "state": "archived"
   },
@@ -192,13 +191,11 @@
     "2026-05-28-kuwait-ccet-arabic-tests:en",
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "archived",
-   "snapshot": "2026-10-24"
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://ceibal.edu.uy/en/",
@@ -206,7 +203,7 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-05-09",
    "archive_note": "200",
@@ -218,7 +215,7 @@
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-27",
    "archive_note": "200",
@@ -230,13 +227,11 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "archived",
-   "snapshot": "2026-10-24"
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://dashboard.parakh.ncert.gov.in/en/dashboard/IND",
@@ -244,7 +239,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-10-18",
    "archive_note": "200",
@@ -256,7 +251,7 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-08-11",
    "archive_note": "200",
@@ -268,7 +263,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-26",
    "archive_note": "200",
@@ -280,7 +275,7 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-05-18",
    "archive_note": "200",
@@ -292,7 +287,7 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-05-17",
    "archive_note": "200",
@@ -304,13 +299,11 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "archived",
-   "snapshot": "2026-10-24"
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://documents1.worldbank.org/curated/en/099063025153091285/txt/P175036-162a07a4-674d-464b-84e2-e7bbf6926acd.txt",
@@ -318,13 +311,11 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "archive_note": "200 — snapshot REQUESTED by this operation 2026-10-24 under standing-queue item 32, not found",
-   "origin": 200,
-   "origin_note": "GET",
-   "state": "archived",
-   "snapshot": "2026-10-24"
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://documents1.worldbank.org/curated/en/099090524085540633/pdf/P179209-b0057b3a-fd8c-476a-a1c6-271b276117ff.pdf",
@@ -332,7 +323,7 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2025-08-01",
    "archive_note": "200",
@@ -344,7 +335,7 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 403,
@@ -357,7 +348,7 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 403,
@@ -370,7 +361,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-09-18",
    "archive_note": "200",
@@ -382,7 +373,7 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-05-15",
    "archive_note": "200",
@@ -394,7 +385,7 @@
     "2026-05-28-kuwait-ccet-arabic-tests:en",
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-04-14",
    "archive_note": "200",
@@ -406,7 +397,7 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-13",
    "archive_note": "200",
@@ -418,7 +409,7 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-01-18",
    "archive_note": "200",
@@ -430,7 +421,7 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-11",
    "archive_note": "200",
@@ -451,9 +442,24 @@
   {
    "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
    "pieces": [
-    "2026-10-23-bahrain-bqa-five-cycles:en"
+    "2026-10-23-bahrain-bqa-five-cycles:en",
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
    "observed": "2026-11-09",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
+   "url": "https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -466,7 +472,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-10-14",
    "archive_note": "200",
@@ -480,7 +486,7 @@
     "2026-06-10-rak-iqra-arabic-diglossia:ar",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-03-08",
    "archive_note": "200",
@@ -492,7 +498,7 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-08-09",
    "archive_note": "200",
@@ -504,12 +510,11 @@
     "2026-06-16-vietnam-tuition-free-public-school:en",
     "2026-06-16-vietnam-tuition-free-public-school:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "live-only"
+   "observed": "2026-11-21",
+   "archived": true,
+   "snapshot": "2026-10-24",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://en.tempo.co/read/1931371/new-minister-abdul-muti-indicates-review-of-merdeka-curriculum",
@@ -517,7 +522,7 @@
     "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2024-11-09",
    "archive_note": "200",
@@ -529,9 +534,9 @@
     "2026-06-16-vietnam-tuition-free-public-school:en",
     "2026-06-16-vietnam-tuition-free-public-school:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
-   "snapshot": "2025-10-11",
+   "snapshot": "2026-08-10",
    "archive_note": "200",
    "state": "archived"
   },
@@ -541,7 +546,7 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-21",
    "archived": true,
    "snapshot": "2026-10-14",
    "archive_note": "200",
@@ -2720,6 +2725,17 @@
    "state": "archived"
   },
   {
+   "url": "https://www.gov.uk/government/news/hundreds-of-formerly-outstanding-schools-reinspected",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
    "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
    "pieces": [
     "2026-07-28-england-report-cards-first-term:en",
@@ -2730,6 +2746,17 @@
    "snapshot": "2026-10-02",
    "archive_note": "200",
    "state": "archived"
+  },
+  {
+   "url": "https://www.gov.uk/government/news/single-headline-ofsted-grades-scrapped-in-landmark-school-reform",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
   },
   {
    "url": "https://www.gov.uk/government/publications/education-inspection-framework/education-inspection-framework-for-use-from-november-2025",
@@ -2791,6 +2818,50 @@
    "origin": 200,
    "origin_note": "HEAD",
    "state": "live-only"
+  },
+  {
+   "url": "https://www.gov.uk/government/speeches/amanda-spielmans-last-speech-at-the-wellington-festival-of-education",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2022/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2022",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2026/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2026",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.gov.uk/guidance/understanding-ofsted-report-cards-and-grades",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
   },
   {
    "url": "https://www.iicba.unesco.org/en/zambia",

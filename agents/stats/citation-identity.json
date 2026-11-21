@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-10",
+ "observed": "2026-11-21",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -546,20 +546,46 @@
   {
    "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
    "pieces": [
-    "2026-10-23-bahrain-bqa-five-cycles:en"
+    "2026-10-23-bahrain-bqa-five-cycles:en",
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-09",
+   "observed": "2026-11-21",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6400",
+   "written_in": "latin:6897",
    "tokens": [
     {
      "token": "Bahrain grades its schools, by name, in public",
      "verdict": "found"
+    },
+    {
+     "token": "البحرين تُصنِّف مدارسَها، بالاسم، علنًا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
     }
    ],
    "state": "confirmed"
+  },
+  {
+   "url": "https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:10922",
+   "tokens": [
+    {
+     "token": "سبعةَ عشرَ عامًا من أحكامِ جهةٍ منظِّمةٍ واحدة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "script-mismatch"
   },
   {
    "url": "https://educationinspection.blog.gov.uk/2026/06/12/what-you-need-to-know-about-the-september-2026-updates-to-education-inspections/",
@@ -3081,6 +3107,70 @@
    "state": "confirmed"
   },
   {
+   "url": "https://www.gov.uk/government/news/hundreds-of-formerly-outstanding-schools-reinspected",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:4620",
+   "tokens": [
+    {
+     "token": "Hundreds of formerly outstanding schools reinspected",
+     "verdict": "found"
+    },
+    {
+     "token": "over 80% (308) of these schools that had a graded inspection last year did not retain the outstanding grade",
+     "verdict": "found"
+    },
+    {
+     "token": "around a fifth were rated requires improvement (17%) or inadequate (4%)",
+     "verdict": "found"
+    },
+    {
+     "token": "The average for schools inspected last year was 13 years",
+     "verdict": "found"
+    },
+    {
+     "token": "Ofsted’s Chief Inspector, Amanda Spielman, said",
+     "verdict": "found"
+    },
+    {
+     "token": "مئاتُ المدارس المُتميّزة سابقًا يُعاد تفتيشُها",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "Ofsted's Chief Inspector, Amanda Spielman, said",
+     "verdict": "absent"
+    },
+    {
+     "token": "أكثرُ من 80% (308) من هذه المدارس التي خضعت لتفتيشٍ مُصنَّفٍ العامَ الماضي لم تحافظ على تصنيفِ التميُّز",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "نحوُ الخُمس صُنِّفت بأنها تحتاج إلى تحسين (17%) أو غير ملائمة (4%)",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "المتوسطُ للمدارس المُفتَّشة العامَ الماضي كان 13 عامًا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "تحتاج إلى تحسين",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "partial"
+  },
+  {
    "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
    "pieces": [
     "2026-07-28-england-report-cards-first-term:en",
@@ -3098,6 +3188,48 @@
     },
     {
      "token": "أوفستد يؤكّد تغييراتِ تفتيش التعليم ويكشف بطاقاتِ التقرير الجديدة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.gov.uk/government/news/single-headline-ofsted-grades-scrapped-in-landmark-school-reform",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:7690",
+   "tokens": [
+    {
+     "token": "Single headline Ofsted grades scrapped in landmark school reform",
+     "verdict": "found"
+    },
+    {
+     "token": "Single headline grades for schools will be scrapped with immediate effect",
+     "verdict": "found"
+    },
+    {
+     "token": "Reductive single headline grades fail to provide a fair and accurate assessment",
+     "verdict": "found"
+    },
+    {
+     "token": "إلغاءُ درجاتِ أوفستد المُجمَلة الواحدة في إصلاحٍ مدرسيٍّ فارق",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "ستُلغى الدرجاتُ المُجمَلةُ الواحدةُ للمدارس بأثرٍ فوري",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "الدرجاتُ المُجمَلةُ الواحدةُ التبسيطيةُ تَفشل في تقديم تقييمٍ عادلٍ ودقيق",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
@@ -3293,6 +3425,240 @@
     {
      "token": "The data will not be used to make grading decisions",
      "verdict": "found"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.gov.uk/government/speeches/amanda-spielmans-last-speech-at-the-wellington-festival-of-education",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:16493",
+   "tokens": [
+    {
+     "token": "Ofsted's Chief Inspector reflects on her first speech at the Festival of Education",
+     "verdict": "found"
+    },
+    {
+     "token": "Ofsted's Chief Inspector reflects on **her** first speech at the Festival of Education",
+     "verdict": "absent"
+    },
+    {
+     "token": "this is my last speech as His Majesty's Chief Inspector",
+     "verdict": "absent"
+    }
+   ],
+   "state": "partial"
+  },
+  {
+   "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2022/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2022",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:18212",
+   "tokens": [
+    {
+     "token": "Main findings: State-funded schools inspections and outcomes as at 31 August 2022",
+     "verdict": "found"
+    },
+    {
+     "token": "Updated 15 December 2022",
+     "verdict": "found"
+    },
+    {
+     "token": "Of these, 17% retained their outstanding grade, while 21% were judged requires improvement or inadequate",
+     "verdict": "found"
+    },
+    {
+     "token": "Overall, 88% of all state-funded schools were judged good or outstanding at their most recent inspection",
+     "verdict": "found"
+    },
+    {
+     "token": "Only 17% of previously exempt schools that had a graded inspection this year remained outstanding",
+     "verdict": "found"
+    },
+    {
+     "token": "The proportion has increased from 86% in August 2021, and had been stable at 86% since 2019",
+     "verdict": "found"
+    },
+    {
+     "token": "النتائجُ الرئيسة: تفتيشاتُ المدارس المُموَّلة حكوميًّا ونتائجُها حتى 31 أغسطس 2022",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "من هذه، حافظت 17% على تصنيفها المُتميّز، في حين صُنِّفت 21% بأنها تحتاج إلى تحسين أو غير ملائمة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "إجمالًا، 88% من كلِّ المدارس المُموَّلة حكوميًّا صُنِّفت جيدةً أو مُتميّزةً في آخرِ تفتيشٍ لها",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "النتائجِ الرئيسة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "سبعةَ عشرَ عامًا من أحكامِ جهةٍ منظِّمةٍ واحدة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2026/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2026",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:14760",
+   "tokens": [
+    {
+     "token": "Main findings: State-funded schools inspections and outcomes as at 31 August 2026",
+     "verdict": "found"
+    },
+    {
+     "token": "There are currently 21,957 state-funded schools",
+     "verdict": "found"
+    },
+    {
+     "token": "Between 10 November 2025 and 31 August 2026, we have carried out 3,262 inspections, of which 3,188 were full inspections",
+     "verdict": "found"
+    },
+    {
+     "token": "which came into effect on 10 November 2025",
+     "verdict": "found"
+    },
+    {
+     "token": "Safeguarding standards were met in 99% of full inspections",
+     "verdict": "found"
+    },
+    {
+     "token": "The 3,188 full inspections carried out represent only 15% of all state-funded schools",
+     "verdict": "found"
+    },
+    {
+     "token": "so the grade profile is not representative of all schools",
+     "verdict": "found"
+    },
+    {
+     "token": "These statistics are published as official statistics in development",
+     "verdict": "found"
+    },
+    {
+     "token": "In the 18 schools (0.6%) where safeguarding standards were not met",
+     "verdict": "found"
+    },
+    {
+     "token": "النتائجُ الرئيسة: تفتيشاتُ المدارس المُموَّلة حكوميًّا ونتائجُها حتى 31 أغسطس 2026",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "يوجد حاليًّا 21,957 مدرسةً مُموَّلةً حكوميًّا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "بين 10 نوفمبر 2025 و31 أغسطس 2026، أجرينا 3,262 تفتيشًا، منها 3,188 تفتيشًا كاملًا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "الذي دخل حيّزَ النفاذ في 10 نوفمبر 2025",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "استُوفيت معاييرُ حماية الطفل في 99% من التفتيشات الكاملة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "التفتيشاتُ الكاملةُ الـ3,188 تمثِّل 15% فقط من كلِّ المدارس المُموَّلة حكوميًّا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "لذا فإنّ مِلَفَّ الدرجات ليس مُمثِّلًا لكلِّ المدارس",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "تُنشَر هذه الإحصاءاتُ كإحصاءاتٍ رسميةٍ قيد التطوير",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "في المدارس الثماني عشرة (0.6%) التي لم تُستوفَ فيها معاييرُ حماية الطفل",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://www.gov.uk/guidance/understanding-ofsted-report-cards-and-grades",
+   "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
+    "2026-11-12-england-ofsted-exempt-cohort:ar"
+   ],
+   "observed": "2026-11-21",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:6859",
+   "tokens": [
+    {
+     "token": "Understanding Ofsted report cards and grades",
+     "verdict": "found"
+    },
+    {
+     "token": "designed our new-look report cards with parents and carers in mind",
+     "verdict": "found"
+    },
+    {
+     "token": "requires improvement",
+     "verdict": "found"
+    },
+    {
+     "token": "فهمُ بطاقاتِ تقارير أوفستد ودرجاتِها",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "التغييرُ الرئيسُ هو أننا لم نَعُد نُعطي حُكمًا إجماليًّا واحدًا، مثل جيد أو مُتميّز أو يحتاج إلى تحسين",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "من المهمِّ إدراكُ أنّ الدرجاتَ الجديدةَ لا يمكن مقارنتُها بالقديمة",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    },
+    {
+     "token": "صمَّمنا بطاقاتِ التقارير الجديدةَ واضعين الآباءَ والأمهاتَ ومُقدِّمي الرعاية في الحسبان",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
     }
    ],
    "state": "confirmed"
