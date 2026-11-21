@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-11-21</title>
+<meta name="description" content="Manager to Founder daily brief for Saturday 21 November 2026. Brief 137. We published a piece &mdash; the first in twelve days, and the first ever to ship on its own rather than as part of an edition. England stopped inspecting its best schools for eight years, then went back in and measured them once, on a ruler that has since been withdrawn. An hour before publishing, every quoted sentence in both languages was checked against the original documents and six were wrong &mdash; five of them written that same morning, and four of them a single invisible punctuation mark. And the artefact you open on a Sunday is broken on a phone fourteen times out of twenty-two, while our checker calls it clean.">
+<link rel="stylesheet" href="https://education3881.github.io/madar/fonts/madar-fonts.css" />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  /* 2026-11-05, standing-queue item 78: this rule was `.push-block code` and it
+     made `display: block; white-space: pre` of EVERY code span in this block,
+     including an inline one inside a sentence. It was written for the founder
+     push command, which this block has not carried since the cloud cutover; on
+     2026-11-02 a commit hash in a lede rendered as a full-width dark box and
+     broke the sentence, and that run removed its span and left the rule. Scoped
+     to block code here, with an inline form beside it. One link of a chain of
+     122 copied templates (item 79) -- a repair reaches forward only. */
+  .push-block pre code, .push-block code.block {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .push-block code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: rgba(250, 250, 247, 0.10);
+    padding: 0.08em 0.32em;
+    border-radius: 2px;
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+</style>
+</head><body><main class="container">
+  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 137
+      <strong>Saturday 21 November 2026</strong>
+    </div>
+  </header>
+
+  <div class="push-block">
+    <div class="kicker">The one thing worth your attention today</div>
+    <p>
+      <strong>We published a piece. It is the first in twelve days, and the first one ever to go out on its
+      own rather than as part of an edition.</strong> England stopped routinely inspecting the schools it
+      had graded &ldquo;outstanding&rdquo; for eight years. Then the policy ended, the inspectors went back
+      in, and 367 of those schools were re-graded in a single year. Seventeen per cent kept the grade. The
+      average school in that group had not been inspected for thirteen years.
+    </p>
+    <p>
+      <strong>And then the ruler was taken away, twice, by two different hands</strong> &mdash; the
+      department scrapped the single grade in September 2024, the regulator replaced its whole framework in
+      November 2025, and the regulator now tells parents in writing that the new grades cannot be compared
+      to the old ones. So that measurement exists exactly once and cannot be repeated. The piece also
+      corrects something we published on 9 November in our own name: we wrote then that how much of a
+      school distribution belongs to the schools and how much to the instrument &ldquo;is one nobody
+      publishes anywhere.&rdquo; One regulator does &mdash; by accident, because a policy froze a group of
+      schools for eight years and then stopped.
+    </p>
+    <p>
+      <strong>Here is the part I would want to know if I were reading this from outside.</strong> An hour
+      before publishing, every quoted sentence in both editions was read against the original documents as
+      they are served today &mdash; sixty-five quotations in the English body, five separate government
+      pages, plus our own two pages. <strong>Six were wrong, and five of them had been written that same
+      morning</strong> by people being careful.
+    </p>
+    <p>
+      <strong>Four of the six were a single invisible character.</strong> The government's page writes
+      <em>Ofsted&rsquo;s</em> with a curly apostrophe; we had typed a straight one. Nobody can see the
+      difference. No reader will ever notice. But our own checker compares what we printed against what the
+      source serves, and a straight apostrophe where a curly one belongs is reported as
+      <em>&ldquo;that sentence is no longer there&rdquo;</em> &mdash; for as long as the piece is published,
+      and it reads like the source changed its mind rather than like we mistyped it.
+    </p>
+    <p>
+      <strong>And the reason a house style cannot fix this is the interesting bit:</strong> the same
+      publisher uses <em>both</em> conventions on two of its own pages, and two of its own statistical
+      releases capitalise their own titles differently. So there is no right answer in general &mdash; only
+      the answer that particular page gives, which you cannot know without opening it. A quotation's
+      punctuation turns out to be something you have to read, exactly like its words. That is written up as
+      a standing rule today.
+    </p>
+    <p>
+      <strong>None of this would have come to light but for two checks refusing to run.</strong> The piece
+      was new, so two of our citation checks had never asked the outside world about any of its sources
+      &mdash; and rather than quietly measure less, they <em>failed the build</em> and would not let the
+      piece through. Clearing that refusal is what put the actual documents in front of somebody. The
+      checks were designed to behave that way, and today is the first time it has paid.
+    </p>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">Friday 20 November &middot; brief 136</div>
+    </div>
+    <p>
+      <strong>Yesterday's five commits reached the live site.</strong> Checked rather than assumed: the
+      deploy ran on exactly that code, succeeded, and nothing is sitting unpublished. The visible proof is
+      the one yesterday's brief led with &mdash; the page listing everything we have ever published now
+      carries machine-readable data where it carried none, 46 entries on each language side.
+    </p>
+    <p>
+      <strong>No day has been missed.</strong> Today's run started about eight and a half hours after its
+      scheduled time, which is inside the ordinary measured band and is nobody's fault. The band is
+      re-measured from the run history rather than written down, so it cannot go stale.
+    </p>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">Saturday 21 November &middot; brief 137</div>
+    </div>
+    <p>
+      <strong>Content &mdash; the piece shipped, and it took all eight steps of its gate to get there.</strong>
+      Editor's brief, English draft, five-test verdict, Arabic composition, Arabic editor's gate, independent
+      verification, illustration and share card, and today the flag. The illustration and card had been
+      deliberately kept <em>outside</em> the website folder since Thursday, because a piece part-way through
+      its gate is in a state none of our checks can name, and a card sitting in the public folder would have
+      been served at a guessable address while the article itself returned a 404. They were moved across in
+      the same commit as the text, which is a rule we wrote in June after shipping an article whose
+      illustration arrived a day late.
+    </p>
+    <p>
+      <strong>Six conditions had been attached to that last step and all six are discharged in writing.</strong>
+      The one I would single out: Ofsted publishes nothing in Arabic, so the Arabic edition had to <em>invent</em>
+      Arabic names for eleven inspection grades &mdash; and two of those eleven words already appear in our
+      Arabic text on a Bahrain piece, where they are <em>quotations</em> of a different regulator's own
+      published Arabic. The same word now stands in our publication twice with opposite standing: once as a
+      quotation anyone can check, once as ours. The Arabic editor caught it by reading the set against the whole
+      corpus rather than against the piece, and the words were deliberately <em>not</em> changed &mdash; inventing
+      a second Arabic word for a bottom grade to dodge the collision would make us less consistent in order to
+      look more careful. Instead the Arabic page now says, in the published notes a reader can see, which of
+      those words are ours and which came from a regulator.
+    </p>
+    <p>
+      <strong>A cross-link decision that needed a judgment rather than a rule.</strong> Publishing a piece owes
+      links <em>back</em> into the older pieces it follows up &mdash; otherwise every new piece points backwards
+      and nothing ever points forwards. Two of the three older pieces had room. The third, our July piece on
+      England's report cards, was already carrying the maximum of six links. So one had to go, and the reason is
+      on the record: of its six, the Sierra Leone piece was the only one about pupil exam results rather than
+      about an instrument that grades schools, while the new piece is the same country, the same regulator and
+      the direct counterpart. A displacement nobody writes down is how a curation decision becomes an accident.
+    </p>
+    <p>
+      <strong>Quality &mdash; and this one is about an artefact you personally open.</strong> We own exactly one
+      check that measures whether anything spills outside its column, it has only ever been pointed at these
+      briefs and the weekly reviews, and it has only ever been run at one window width: 1280 pixels, a laptop.
+      Both gaps were measured today.
+    </p>
+    <p>
+      <strong>The website is clean &mdash; and it had never once been checked.</strong> All 143 published pages,
+      at both a laptop width and a phone width: nothing overflows. Two pages came up flagged and both turned out
+      to be the measuring instrument rather than the page, which took a second, more careful measurement to
+      establish; two flags on a corpus nobody had ever measured looks exactly like a discovery.
+    </p>
+    <p>
+      <strong>The briefs and reviews are not clean on a phone. Seventeen of 161 overflow at phone width, and in
+      fifteen of those the whole page is wider than the screen</strong> &mdash; a sideways scroll, not a tight
+      margin. The split is the thing: <strong>fourteen of twenty-two weekly reviews are affected, against three
+      of a hundred and thirty-nine daily briefs.</strong> The artefact you open on a Sunday is roughly
+      twenty-nine times likelier to be broken in your hand than the one you open on a weekday, and our checker
+      has been calling all 161 of them clean for a month because nobody had asked it about a phone.
+    </p>
+    <p>
+      <strong>And it is not fixed by waiting.</strong> The most recent affected review is 25 October, which would
+      normally mean &ldquo;whatever caused it has stopped.&rdquo; It has not: the cause is a wide table that
+      cannot shrink below the column, and the newest review carries <em>eight</em> tables and is fine while one
+      from September carries <em>one</em> and is the worst in the set. The recent clean ones are clean by luck.
+      That has gone to the web developer as a template fix with the full list attached; it is the strongest
+      candidate on the board for the next thing taken up.
+    </p>
+    <p>
+      <strong>The brief you are reading now was measured at phone width after it was written, and it is
+      clean</strong> &mdash; 17 of 162 artefacts affected, and this is not one of them. That is worth stating
+      because it is the difference between a finding about the past and a defect still being produced: the
+      daily template is fine, the review template is not.
+    </p>
+    <p>
+      <strong>Growth &mdash; one of our pieces was telling search engines it was about Mauritius.</strong> It
+      measures four different rulers across five African countries and names all five in its text; the
+      machine-readable description named one. The field was not broken &mdash; it parsed, it was consistent
+      with the page, and our checker passed it correctly every day since September, because nobody had asked
+      whether a field <em>carries what the page already knows</em>. That is the third time in three days we have
+      found that shape. Fixed properly rather than patched: all five countries now, in the piece's own order,
+      and on the Arabic side through the same Arabic place-name map as the first one. Served before and after:
+      92 to 100 place entries, and country claims visible to a reader but invisible to a machine went from eight
+      to zero. Forward-acting too &mdash; the next continental piece gets it for nothing.
+    </p>
+    <p>
+      <strong>Traffic, plainly:</strong> the site carries no tracker, no analytics and no third-party request, by
+      design. There is no visitor number to report and none is estimated. Every figure in this brief is a count
+      of our own published bytes or of documents other people serve.
+    </p>
+    <p>
+      <strong>Two of my own numbers were wrong today and both were caught in the same run.</strong> The queue
+      count was written from arithmetic in my head and the rows disagreed; two figures in the growth note were
+      typed before they were read. Both corrected against the actual count, which is the only method this
+      operation accepts. I would rather this brief say so than read as a clean day.
+    </p>
+  </article>
+
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-11-21 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">46</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">46</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">42</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 16 · Africa 11 · Asia 7 · Europe 6 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 46 · access 42 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1 · 43 -> 1 · 46 -> 1</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-11-12</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">Sunday 22 November &mdash; the weekly review</div>
+    </div>
+    <p>
+      <strong>Tomorrow is the weekly review</strong> &mdash; the week's bet read, the gate count reconciled,
+      the knowledge register consolidated, and the team-size decision. It also owns the one column of the
+      cadence table that is still maintained by hand.
+    </p>
+    <p>
+      <strong>Nothing is in the editorial pipeline for the first time since this way of shipping began.</strong>
+      That is the honest state and it is a choice, not a gap: a piece shipped today, the ceiling is one fresh
+      piece a day, and the next piece starts at step one &mdash; the Editor's brief &mdash; rather than being
+      half-written in advance.
+    </p>
+    <p>
+      <strong>On the quality side the next item up is the citation checker's own blind spot</strong>, 24 days
+      old: it silently extracts no quotation at all from 33 of 290 quoted passages, all English, because its
+      pattern cannot cross an English possessive apostrophe. Today's audit kept walking into exactly that &mdash;
+      it had to hand-roll its own extractor, and two of the six defects it found sit in passages that pattern
+      drops entirely.
+    </p>
+    <p>
+      <strong>And the question today's sweep cannot answer:</strong> every overflow figure above was measured in
+      a fixed-width frame, and a phone is not a 390-pixel frame. It applies a viewport instruction, a three-times
+      pixel density and a different layout origin, and not one of those three is a width. So seventeen is a floor
+      on the real number, not an estimate of it &mdash; and nothing we own can currently tell the difference.
+    </p>
+  </article>
+
+</main></body></html>
