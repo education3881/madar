@@ -92,6 +92,36 @@ EXPIRED WHILE THE PARK ITSELF HELD.**
 - **No percentages are authorised** until owed read 3 lands, because a share of a subset read as a share of
   a sector is #111's defect.
 
+**RECONCILED AGAINST DISK AT THE 2026-11-22 WEEKLY REVIEW, and the ledger was true on arrival.** Brief
+and recon on disk for `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`; **no draft, no article file, no
+still** — cell 1 of eight filled, seven open, and cell 2 correctly still shut behind owed read 1. Corpus
+**46 EN / 46 AR**, parity 100%, **`approved: false` count ZERO in both editions** — so the flag sweep is
+in all-approved mode (2026-08-09's inversion) and the positive checks are the live ones.
+`qa_pair_frontmatter` CLEAN with its three declared asymmetries unchanged.
+
+**THE FORWARD-DATE MANDATE WAS EXECUTED AND IT FOUND NOTHING IN ITS OWN WINDOW, WHICH IS THE FINDING.**
+#117 clause 3 scopes the review to *every editorial future in the SERVED corpus whose date has arrived
+since the last review.* Seventeen dates landed in the 11-15 → 11-22 window and **all seventeen are this
+operation's own provenance timestamps** — *read in served text 2026-11-14*, *re-opened 2026-11-19* — past
+tense by construction, and #117 says so itself: *the date is not the defect, the verb is.* Zero futures.
+
+A corpus-wide pass over all 46 EN pieces then returned **16 forward-verb sentences with an arrived date
+target, 15 shielded** by a quotation, a dated attributive frame or an open horizon, and **one unshielded**:
+`2026-07-07-sudan-exam-continuity` — *"The 2026 results, as of this writing, are not yet announced; when
+they come, they will be the third audited line in the war-time register."* **Its target carries no date at
+all, which is exactly why four reviews of a date-keyed window never saw it.** Repaired in both editions in
+this run, per #117 clause 1 — *the results had not been announced when this piece was published on 7 July
+2026* — and the world-read is queued separately as item **154**, because an announcement correctly
+labelled as an announcement is not a measurement. The rescope of the mandate itself is item **155**, with a
+ruling recorded as owed to the 2026-11-29 consolidation rather than filed on this envelope.
+
+**And the pair disagreed again, in the direction #117 named on `rak-iqra`:** the English committed — *when
+they come, they **will be*** — and the Arabic did not: *فإذا صدرتْ كانت*, a conditional perfective,
+unmarked for tense and **still true on the day it was read**. English futurity is obligatory where
+Arabic's is optional, so the edition that was not forced is the one that had not gone wrong. The Arabic
+repair keeps that edition's own unmarked construction rather than mirroring the English, because a
+composed edition is not a translation.
+
 **THE PIECE BELOW SHIPPED ON 2026-11-21 AND WAS NOT SERVED TO A READER UNTIL 2026-11-22.** The 11-21 run
 banked all five function commits to `origin` and then died at `error_max_turns` (181 turns, 43 of 90
 minutes), and `madar-daily.yml`'s publish step carries `if: success()` — so no deploy was dispatched, and

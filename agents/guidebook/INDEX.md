@@ -833,6 +833,18 @@ review's roll was found in last week's artefact. The two cycles live here are no
    a ruling *should* have joined a counted family and did not. **#156 is the nearer half of the same
    problem** — before the gate can ask whether a family's membership is complete it has to be able to read
    the membership at all, and this week it could read two of nine.
+6. **A RULING IS EARNED AND DELIBERATELY NOT FILED, recorded here so it is not lost — proposed family:
+   assertion discipline, which would take it SIXTY-THREE → SIXTY-FOUR.** **#117 clause 3's forward-date
+   mandate is keyed on a STATED date, so an editorial future carrying no date can never enter its window,
+   and that is the half of the class that actually expires.** Executed this morning: 17 dates arrived in
+   the window and all 17 were this operation's own provenance timestamps; the one unshielded editorial
+   future in the served corpus — `2026-07-07-sudan-exam-continuity`, *"as of this writing, are not yet
+   announced"* — has **no date at all**, which is why four reviews of a date-keyed window never reached
+   it. That is **#57 and #70 pointed at #117**: a mandate's selector is narrower than its class, and its
+   green light covers the difference — which is also **#143**'s unit argument and **#156**'s own shape,
+   one desk over, on a *rule* instead of on a *gate*. Standing-queue item **155**. *Filed as owed rather
+   than as a number for the same reason #155 was last week: a ruling written in the last twenty minutes of
+   an envelope is a ruling nobody re-reads (#96's reasoning applied to prose).*
 
 *The **2026-11-08** consolidation section was rolled verbatim to [`ARCHIVE-2026-11-02_2026-11-08-consolidation-section.md`](ARCHIVE-2026-11-02_2026-11-08-consolidation-section.md) at the 2026-11-22 review under the two-cycle rule. It was found by reading the 11-15 section's own owed list, which is where the 11-08 consolidation decided such obligations belong — the third consecutive roll located that way rather than by reading a review HTML.*
 
