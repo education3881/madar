@@ -1,0 +1,72 @@
+{
+ "documents": 143,
+ "threshold": 5,
+ "corpus_payload_bytes": 54903800,
+ "waste_bytes": 3989640,
+ "waste_fetches": 54,
+ "pages_affected": 48,
+ "dead_fetches": 0,
+ "by_face": {
+  "cairo-normal-400-700var-latin.woff2": 405840,
+  "jetbrains-mono-normal-400-500var-latin-ext.woff2": 23248,
+  "amiri-italic-400-latin-ext.woff2": 10532,
+  "amiri-normal-400-latin-ext.woff2": 20888,
+  "amiri-normal-700-latin.woff2": 20300,
+  "cairo-normal-400-700var-arabic.woff2": 61792,
+  "newsreader-italic-400-500var-latin.woff2": 146872,
+  "newsreader-italic-400-500var-latin-ext.woff2": 191080,
+  "newsreader-normal-400-600var-latin-ext.woff2": 692864,
+  "newsreader-italic-400-500var-vietnamese.woff2": 27904,
+  "amiri-normal-400-arabic.woff2": 2388320
+ },
+ "worst_pages": [
+  [
+   "/browse/region/europe/index.html",
+   195168
+  ],
+  [
+   "/articles/2026-05-25-bo-teacher-chalk/index.html",
+   193772
+  ],
+  [
+   "/ar/browse/index.html",
+   146872
+  ],
+  [
+   "/browse/country/bahrain/index.html",
+   108560
+  ],
+  [
+   "/browse/country/egypt/index.html",
+   108560
+  ],
+  [
+   "/browse/country/sierra-leone/index.html",
+   108560
+  ],
+  [
+   "/browse/country/sudan/index.html",
+   108560
+  ],
+  [
+   "/browse/country/united-arab-emirates/index.html",
+   108560
+  ],
+  [
+   "/browse/country/united-kingdom/index.html",
+   108560
+  ],
+  [
+   "/browse/index.html",
+   108560
+  ],
+  [
+   "/browse/region/africa/index.html",
+   108560
+  ],
+  [
+   "/browse/region/asia/index.html",
+   108560
+  ]
+ ]
+}

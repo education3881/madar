@@ -119,21 +119,35 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   errors.** The tool now prints **`UNMEASURABLE FOR THIS RUN`** and beside it the base rate over the runs
   behind it, scoped to the same workflow, out of `agents/stats/run-turns.jsonl` — free and offline on every
   call, topped up by `--observe-turns` (budgeted, because a run log is ~4 MB). **What that register says is
-  why this paragraph exists: **FOUR** runs have died at the turn cap — 2026-10-11, 2026-10-30, 2026-11-03
-  and **2026-11-08** — each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has
-  ended NONE in 55 runs, its longest reaching 84 of 90 — the figures in this sentence READ from
-  `agents/stats/run-turns.jsonl` on 2026-11-16 at 55 rows, not remembered.** *(This sentence read **THREE** and **47** for one
+  why this paragraph exists: **FIVE** runs have died at the turn cap — 2026-10-11, 2026-10-30, 2026-11-03,
+  **2026-11-08** and **2026-11-21** — each with 40 to 55 of its 90 wall-clock minutes UNSPENT; the measurable axis has
+  ended NONE in 58 runs, its longest reaching 84 of 90 — the figures in this sentence READ from
+  `agents/stats/run-turns.jsonl` on 2026-11-22 at 58 rows, not remembered.** *(**THIRD CORRECTION OF THIS
+  LITERAL IN FOURTEEN DAYS**, and the gap is getting shorter: it read **THREE** and **47** until 2026-11-09,
+  **FOUR** and **55** until 2026-11-22, and the weekly review has now had to move it at two consecutive
+  reviews. **The fifth death is the one that changes what this paragraph MEANS, not just its number.** On
+  2026-11-21 the daily run banked **all five** function commits to `origin` and then died at 181 turns in
+  43 minutes — so #96 worked exactly as designed and the day was still not published, because
+  `madar-daily.yml`'s step 9 `publish what the run pushed` carries `if: success()` and a capped run skips
+  it. Both editions of `2026-11-12-england-ofsted-exempt-cohort` returned **404** for a day while brief 137
+  told the founder the piece had shipped. **#96's guarantee ends at `origin`, and the reader is one step
+  further out than that** — so *commit at the close of every function* buys back the work and buys back
+  nothing of the publication. The one-line repair has been staged at
+  `agents/patches/2026-11-04-publish-step-must-not-depend-on-the-run.md` since 2026-11-04, behind issue #7.
+  This sentence read **THREE** and **47** for one
   day. **The run that filed #136 became the fourth death** — 181 turns in 35 minutes, 55 unspent, the first
   WEEKLY ever to hit the cap — and it died after four of its five function commits were already on
   `origin`, so #96 cost it the fifth function rather than the week. **A literal is a measurement that has
   stopped being taken, and this one stopped the moment it was written**; the derived tool beside it was
   right, printing `3` correctly **scoped to `madar-daily.yml`**, and this unscoped prose was wrong.
   Corrected 2026-11-09.)* **And the two axes are weakly coupled, which is a sharper statement than either
-  "dark" or "a base rate":** across all **55** runs (re-derived 2026-11-16, the 48-run reading having
-  gone stale in seven runs exactly as this paragraph's own lesson predicts) the burn rate spans **1.82 to
+  "dark" or "a base rate":** across all **58** runs (re-derived 2026-11-22, the 55-run reading having
+  gone stale in three runs exactly as this paragraph's own lesson predicts) the burn rate spans **1.82 to
   5.37 turns per minute, a 2.9× spread**, and wall clock explains **41%** of the variance in turns
-  (r = 0.64). The four cap deaths burned at 3.62, 4.21, 5.17 and 5.17 against the survivors' median of
-  **3.95** — *straddling it, one below and three above* — so
+  (r = 0.64) — **all four of those figures unmoved by three more runs, which is the first time any reading
+  here has held.** The five cap deaths burned at 3.62, 4.21, 5.17, 5.17 and 4.21 against the survivors' median of
+  **3.95** — *one below it and FOUR above, so the straddle is thinner than the 55-run reading made it look
+  and it is still a straddle* — so
   neither axis, nor the ratio between them, identifies a doomed run while it is still running. A
   base rate is not a run's position, and **this run's own count stays unknowable** — the record is written
   when the step ends, which is the event it would have been used to avoid — so a green clock is still not a
