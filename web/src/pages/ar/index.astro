@@ -180,7 +180,15 @@ function editionPieceCount(n: number): number {
     <section class="prev-editions container">
       <div class="prev-editions__head">
         <span class="prev-editions__label" lang="ar" dir="rtl">إصدارات سابقة</span>
+        {/* TWO routes, not one (Growth, 2026-11-22) — the mirror of the English
+            home, and for the same reason: both homes carry their own masthead
+            instead of SiteHeader, so they were the only two served pages with no
+            link to the archive. The label uses the Arabic browse page's own
+            words. */}
+        <span class="prev-editions__routes">
         <a class="prev-editions__browse" href={withBase('/ar/editions/')} lang="ar" dir="rtl">تصفّح كل الإصدارات ←</a>
+          <a class="prev-editions__browse" href={withBase('/ar/browse/')} lang="ar" dir="rtl">الأرشيف كاملًا ←</a>
+        </span>
       </div>
       <ul class="prev-editions__grid">
         {previousEditions.map((ed) => {
@@ -408,6 +416,12 @@ function editionPieceCount(n: number): number {
     align-items: baseline;
     gap: 1rem;
     margin-block-end: 1.75rem;
+  }
+  .prev-editions__routes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.55rem 1.3rem;
   }
   .prev-editions__label {
     font-family: var(--font-arabic-display);

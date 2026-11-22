@@ -279,7 +279,21 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     <section class="prev-editions container">
       <div class="prev-editions__head">
         <span class="prev-editions__label">Previous editions</span>
-        <a class="prev-editions__browse" href={withBase('/editions/')}>Browse all editions →</a>
+        {/* TWO routes, not one (Growth, 2026-11-22). This strip was the front
+            door's only link into the corpus beyond the six pieces above it, and
+            it pointed exclusively at /editions/ — so a reader who arrived here
+            looking for EVERYTHING was offered a chronology of five closed
+            editions. Since 2026-11-08 pieces ship as singles and belong to no
+            edition, which makes "all editions" a smaller set than "all pieces"
+            and shrinking. /browse/ is the archive and it is in the site nav on
+            every one of the 140 other served pages; both homes use their own
+            masthead instead of SiteHeader, so both were the only two pages
+            without it. Label kept short on purpose: this strip is a flex row
+            and the served corpus measures 0 overflowing boxes at 390px. */}
+        <span class="prev-editions__routes">
+          <a class="prev-editions__browse" href={withBase('/editions/')}>Browse all editions →</a>
+          <a class="prev-editions__browse" href={withBase('/browse/')}>Every published piece →</a>
+        </span>
       </div>
       <ul class="prev-editions__grid">
         {previousEditions.map((ed) => {
@@ -745,6 +759,12 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
     align-items: baseline;
     gap: 1rem;
     margin-block-end: 1.75rem;
+  }
+  .prev-editions__routes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.55rem 1.3rem;
   }
   .prev-editions__label {
     font-family: var(--font-mono);
