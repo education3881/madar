@@ -215,6 +215,28 @@
     letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
     display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
   }
+
+  /* ---- Mobile repair, standing-queue item 144, applied 2026-11-22 ----------------
+     Measured before this rule: 17 of 162 founder-facing artefacts overflowed a
+     390px viewport, 14 of them weekly reviews — 63.6% of the artefact the founder
+     opens on a Sunday, against 2.2% of the briefs. The mechanism is not an
+     overflowing descendant: a table or an unbreakable token sets a min-content
+     width wider than the column, and an element whose min-content width exceeds
+     its column GROWS ITS OWN BOX instead of overflowing it, so the leaf probe
+     reports nothing and the document scrolls sideways. Applied to all 162
+     artefacts rather than to the 17, because two recent reviews were clean by
+     luck (narrow tables) rather than by construction, and because there is no
+     template: every artefact carries its own copy of this stylesheet, so the copy
+     a future run inherits has to be the fixed one. */
+  @media (max-width: 640px) {
+    table { table-layout: fixed; width: 100%; max-width: 100%; }
+    th, td, td.n, th.n { overflow-wrap: anywhere; word-break: break-word; white-space: normal;
+                         padding-left: 0.35rem; padding-right: 0.35rem; }
+    pre, code { white-space: pre-wrap; overflow-wrap: anywhere; }
+    p, li, dd, dt, a, blockquote, figcaption, h1, h2, h3, h4 { overflow-wrap: anywhere; }
+    .statgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    [class*="grid"], [class*="grid"] > *, [class*="stat"], [class*="stat"] > * { min-width: 0; }
+  }
 </style></head><body><main class="container">  <header class="masthead">
     <div class="masthead__brand">
       Mad<span class="macron">&#257;</span>r

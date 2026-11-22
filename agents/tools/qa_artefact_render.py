@@ -90,6 +90,17 @@ import tempfile
 import threading
 
 VIEWPORT = 1280          # the width every brief render inspection in the record used
+VIEWPORTS = (1280, 390)  # BOTH ASSERTED from 2026-11-22 (queue item 144 closed).
+                         # 390 is an iPhone-class CSS viewport. An assertion with a
+                         # parameter is an assertion about that parameter's value
+                         # (item 47): limb B was green on all 161 artefacts at 1280
+                         # on 2026-11-21 while SEVENTEEN of them overflowed at 390,
+                         # fourteen of those the weekly review -- the artefact the
+                         # founder opens on a Sunday, 63.6% of them broken on the
+                         # device he opens it on. All seventeen were repaired in the
+                         # run that added this width, so the floor is AT today's
+                         # reality and not above it (#93), exactly as 2026-10-27's
+                         # repair of the 25 made this limb gateable at 1280.
 IFRAME_HEIGHT = 3000
 TEXT_FLOOR = 0.90        # share of the source's visible text the render must carry
 OVERFLOW_TOL = 2         # px; sub-pixel rounding in a 1280-wide layout is not a defect
@@ -345,10 +356,10 @@ def serve(root, harness_bytes):
     return httpd
 
 
-def run_probe(browser, root, urls):
+def run_probe(browser, root, urls, width=VIEWPORT):
     harness = (
         HARNESS.replace("__TARGETS__", json.dumps(urls))
-        .replace("__VIEWPORT__", str(VIEWPORT))
+        .replace("__VIEWPORT__", str(width))
         .replace("__IFH__", str(IFRAME_HEIGHT))
         .replace("__TOL__", str(OVERFLOW_TOL))
     )
@@ -365,7 +376,7 @@ def run_probe(browser, root, urls):
                     "--hide-scrollbars",
                     f"--user-data-dir={profile}",
                     "--virtual-time-budget=180000",
-                    "--window-size=%d,900" % VIEWPORT,
+                    "--window-size=%d,900" % width,
                     "--dump-dom",
                     f"http://127.0.0.1:{port}/__qa_harness__",
                 ],
@@ -425,17 +436,23 @@ def main():
         return 2
 
     urls = ["/" + str(p.relative_to(root)) for p in targets]
-    results = run_probe(browser, root, urls)
-    by_url = {r["url"]: r for r in results}
+    by_url = {}
+    for _w in VIEWPORTS:
+        for _r in run_probe(browser, root, urls, _w):
+            by_url[(_w, _r["url"])] = _r
 
     failures = []
     overflowing = []
     tails_ok = overflow_ok = 0
     worst = []
     tail_ratios = []
-    for p in targets:
+    # Limb A is a property of the DOCUMENT and is the same at every width, so it is
+    # asserted once, at the widest; limb B is a property of the LAYOUT and is
+    # asserted at each width in VIEWPORTS. Asserting A twice would double every
+    # tail failure and make the count disagree with the corpus (#57).
+    for VIEWPORT, p in [(w, t) for w in VIEWPORTS for t in targets]:
         url = "/" + str(p.relative_to(root))
-        r = by_url.get(url)
+        r = by_url.get((VIEWPORT, url))
         rel = str(p.relative_to(root))
         if r is None or r.get("error"):
             failures.append((rel, "NOT MEASURED", r.get("error") if r else "missing"))
@@ -445,11 +462,13 @@ def main():
         # Two oracles, both direct. A comment node carrying a closing tag means
         # markup was swallowed; a render that lost a share of the source's own
         # visible text means content was deleted rather than merely restyled.
-        src_len = len(source_text(p))
+        src_len = len(source_text(p)) if VIEWPORT == VIEWPORTS[0] else 0
         got_len = r.get("textLen", 0)
         ratio = (got_len / src_len) if src_len else 1.0
-        swallowed = r.get("comments", 0)
-        if swallowed or ratio < TEXT_FLOOR:
+        swallowed = r.get("comments", 0) if VIEWPORT == VIEWPORTS[0] else 0
+        if VIEWPORT != VIEWPORTS[0]:
+            pass                      # limb A is width-invariant; asserted once
+        elif swallowed or ratio < TEXT_FLOOR:
             why = []
             if swallowed:
                 why.append("%d comment node(s) in the rendered DOM carry a closing "
@@ -460,7 +479,7 @@ def main():
                            % (got_len, src_len, ratio * 100, TEXT_FLOOR * 100,
                               re.sub(r"\s+", " ", r.get("tail", ""))[-48:]))
             failures.append((rel, "TAIL NOT RENDERED", " · ".join(why)))
-        else:
+        elif VIEWPORT == VIEWPORTS[0]:
             tails_ok += 1
             tail_ratios.append((ratio, rel))
 
@@ -477,8 +496,8 @@ def main():
                 bits.append("<%s%s> overflows its %dpx box by %dpx: %r"
                             % (o["tag"], ("." + o["cls"].split()[0]) if o["cls"] else "",
                                o["client"], o["over"], o["text"][:48]))
-            worst.append((max([doc_over] + [o["over"] for o in over]), rel))
-            overflowing.append((rel, " · ".join(bits), baselined))
+            worst.append((max([doc_over] + [o["over"] for o in over]), "%s @%dpx" % (rel, VIEWPORT)))
+            overflowing.append(("%s @%dpx" % (rel, VIEWPORT), " · ".join(bits), baselined))
             # 2026-10-27: limb B gates. The baseline is empty, so `baselined` is
             # False for every artefact and the branch is kept only so that a
             # future run which needs to excuse one does it by NAMING it here
@@ -497,15 +516,16 @@ def main():
     fixed = sorted((OVERFLOW_BASELINE & measured) - {o[0] for o in overflowing})
 
     if args.report:
-        print("qa_artefact_render --report · %d artefacts rendered at %dpx"
-              % (len(targets), VIEWPORT))
+        print("qa_artefact_render --report · %d artefacts rendered at %s"
+              % (len(targets), " and ".join("%dpx" % w for w in VIEWPORTS)))
         print("  A  tail renders .......... %d of %d  (asserted)" % (tails_ok, len(targets)))
         if tail_ratios:
             lo, lorel = min(tail_ratios)
             print("     thinnest margin ...... %.1f%% of source text, floor %.0f%%  %s"
                   % (lo * 100, TEXT_FLOOR * 100, lorel))
-        print("  B  nothing overflows ..... %d of %d  (ASSERTED from 2026-10-27; baseline empty)"
-              % (overflow_ok, len(targets)))
+        print("  B  nothing overflows ..... %d of %d renders  (ASSERTED at %s; baseline empty)"
+              % (overflow_ok, len(targets) * len(VIEWPORTS),
+                 " and ".join("%dpx" % w for w in VIEWPORTS)))
         for sev, rel in sorted(worst, reverse=True)[:12]:
             print("     worst overflow ....... %6dpx  %s" % (sev, rel))
         for rel, kind, detail in failures[:40]:
@@ -528,12 +548,19 @@ def main():
         print("  without breaking any markup.")
         return 1
 
-    print("OK qa_artefact_render — %d founder-facing artefacts rendered at %dpx in a "
-          "real browser" % (len(targets), VIEWPORT))
+    print("OK qa_artefact_render — %d founder-facing artefacts rendered at %s in a "
+          "real browser" % (len(targets),
+                            " and ".join("%dpx" % w for w in VIEWPORTS)))
     print("  A  tail renders .......... %d of %d · ASSERTED on all, nothing excused "
           "(the 2026-10-12 bite)" % (tails_ok, len(targets)))
-    print("  B  nothing overflows ..... %d of %d · ASSERTED from 2026-10-27, "
-          "baseline EMPTY" % (overflow_ok, len(targets)))
+    print("  B  nothing overflows ..... %d of %d renders · ASSERTED from 2026-10-27 at "
+          "1280px and from 2026-11-22 at 390px, baseline EMPTY"
+          % (overflow_ok, len(targets) * len(VIEWPORTS)))
+    print("       The SEVENTEEN artefacts this limb could not see at 1280 were found")
+    print("       at 390 by `overflow_population.py` on 2026-11-21 (item 144) and all")
+    print("       seventeen were repaired on 2026-11-22, in every one of the 162")
+    print("       artefacts rather than in the 17, because two recent reviews were")
+    print("       clean by luck and there is no template to fix once.")
     print("       The 25 historical artefacts this limb found on 2026-10-19 were all")
     print("       repaired on 2026-10-27 (queue item 27), so the floor is now AT")
     print("       today's reality rather than above it and the limb gates.")
