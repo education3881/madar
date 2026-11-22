@@ -58,7 +58,52 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 ## In flight
 
-**NOTHING IS IN FLIGHT. The row that stood here shipped today.**
+**ONE ROW IN FLIGHT. CELL 1 OF EIGHT FILLED TODAY, AND SEVEN CELLS ARE OPEN.**
+
+| Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
+|---|---|---|---|---|---|---|---|---|---|
+| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md` | — **and it does not open until owed read 1 lands**, because the UAE Unified School Inspection Framework can move the subject | — | — | — | — | — | — | **SEVEN** |
+
+**Reconciled against disk 2026-11-22. CELL 1 FILLS ON A NEW SINGLE, AND THE FIRST CANDIDATE'S PARK REASON
+EXPIRED WHILE THE PARK ITSELF HELD.**
+
+- **The pool had one banked entry and it is parked again for a different reason.** KHDA Dubai went back
+  into the pool on 2026-11-11 under ruling #139, its TLS objection withdrawn on the merits. Measured today:
+  the host has **rotated its certificate** to a GlobalSign Atlas R46 DV TLS CA 2026 Q4 chain that sends the
+  intermediate and verifies `OK` — so the condition #139 was filed about **expired on its own, eleven days
+  later**. And the register is still unreadable: `web.khda.gov.ae` now answers every client we own with
+  **HTTP 200 and a 954-byte Imperva/Incapsula block page**, and `WebFetch` returns no text at all. *A
+  park's reason has a shelf life and the park does not inherit it — a park is re-measured when it is
+  reached, never read.* Queue row raised, because `qa_sources_alive` scores a WAF block as ALIVE: it is a
+  **200**.
+- **The commission is ADEK, Abu Dhabi**, and the spine is a unit this corpus has not used. Both Bahrain
+  pieces and the England single asked how much of a published distribution's movement belongs to the
+  schools and how much to the instrument; England answered it in the **scale's** unit. This register asks it
+  in the **cadence's**: *23 private schools advanced from Acceptable to Good in one academic year* against
+  *Irtiqa'a inspections are conducted biennially*, forty lines apart on one page, reconciled nowhere.
+- **Both language faces were read in served text, and they disagree about a CATEGORY.** The English
+  separates a six-point **scale** of grades from six core **standards** of what is graded; the Arabic calls
+  both **معايير**, and both sets number six. The figures agree exactly — 13 / 51 / 93 / 42 / 5 — which is what
+  makes the wording legible as a finding rather than an error. Standing-queue item 81 live, as editorial
+  material.
+- **Four reads are owed before the draft and they are named in the brief**, not left to the drafter (#101,
+  #151): the national framework (gates cell 2), a prior-year distribution, ADEK's own private-school count
+  to settle whether 204 is the population, and whether per-school ratings are published.
+- **No percentages are authorised** until owed read 3 lands, because a share of a subset read as a share of
+  a sector is #111's defect.
+
+**THE PIECE BELOW SHIPPED ON 2026-11-21 AND WAS NOT SERVED TO A READER UNTIL 2026-11-22.** The 11-21 run
+banked all five function commits to `origin` and then died at `error_max_turns` (181 turns, 43 of 90
+minutes), and `madar-daily.yml`'s publish step carries `if: success()` — so no deploy was dispatched, and
+the live origin served the 11-20 build with both editions of this piece 404ing for a day while brief 137
+told the founder it had shipped. **Shipped and served are different events and this ledger records the
+first one** (CLAUDE.md's standing derivation: the commit that introduced `approved: true`). The strand was
+observed rather than assumed — `qa_prior_publication --observe`, 5 commits — and the day's publication
+rides on **this** run's push. Standing-queue item 77, third daily instance.
+
+**The 2026-11-21 note below stands unaltered.**
+
+**NOTHING WAS IN FLIGHT AT THE 2026-11-21 CLOSE. The row that stood here shipped that day.**
 
 | Piece | Shipped | Cells |
 |---|---|---|

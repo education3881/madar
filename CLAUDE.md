@@ -13,12 +13,13 @@ Read on every run, in this order:
 4. `content-drafts/_STANDING_LEDGER.md` — **the live ledger, and there is no edition at all.** Opened
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
-   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **NOTHING IS IN
-   FLIGHT**, for the first time since this ledger opened: `2026-11-12-england-ofsted-exempt-cohort` closed
-   its eighth and last cell and **SHIPPED on 2026-11-21**, the first single ever shipped against this
-   ledger and the first piece in twelve days. So **the last piece to ship was
-   `2026-11-12-england-ofsted-exempt-cohort` on 2026-11-21**, and the next content function's first action
-   is **cell 1 on a new piece** — there is no row to advance. *(Derivation of the ship date, per the rule
+   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **ONE ROW IS IN
+   FLIGHT**: `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`, cell 1 filled 2026-11-22, **SEVEN cells open**,
+   and **cell 2 does not open until owed read 1 lands** (the UAE Unified School Inspection Framework can
+   move the subject). So **the last piece to ship was `2026-11-12-england-ofsted-exempt-cohort` on
+   2026-11-21** — and it was **not SERVED to a reader until 2026-11-22**, because the 11-21 run banked all
+   five commits and then died at the turn cap, and the publish step carries `if: success()` (queue item 77,
+   third daily instance). **Shipped and served are different events; this line records the first.** *(Derivation of the ship date, per the rule
    below: `git log -S'approved: true' --diff-filter=AM -- <file>`, never `date:`, which is the dateline
    2026-11-12 and nine days early.)* *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
