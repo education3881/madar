@@ -66,3 +66,30 @@ shipped under it.
 **No traffic figure is estimated anywhere.** The site carries no third-party tracker by design.
 
 — Manager, 2026-11-23
+
+---
+
+## Close-of-run verification — 2026-11-23, 25 minutes of 90 spent
+
+| | |
+|---|---|
+| Functions delivered | **5 of 5**, each committed at its own close (#96) |
+| Commits on `origin` | **5** — `4747f62` · `761af43` · `2796ca3` · `a160407` · `c125a36` |
+| `HEAD` == `origin/main` | **yes**, `c125a36` |
+| Working tree | **clean** |
+| Build | `npm run build` **exit 0**, 28 postbuild gates + all 12 build-job gates green |
+| Corpus | 46 EN / 46 AR · parity 100% · `approved: false` zero · 142 served documents |
+| Gate register | **43 tools · 12 build-job · 28 postbuild · 40 of 43 gating** — derived by `qa_patch_queue`, unmoved today (item 48 is a repair, not a new assertion) |
+| Ruling register | **#1–#157**, contiguous, asserted by `qa_register_shape` across all four homes |
+| Board | **88** counted from rows: 0 DEFECT · 84 OPEN · 4 BLOCKED |
+| Founder-facing artefacts | **165 of 165** render clean at 1280px **and** 390px |
+
+**This run cannot observe its own publication, and that is structural rather than an omission (#128).**
+Every gate runs inside the agent step; `madar-daily.yml` step 9 dispatches the deploy *after* that step
+ends. So what is verified here is that the work is **on `origin`** — which is where #96's guarantee ends,
+and the reader is one step further out than that. The next run reads the deploy's conclusion and the strand
+with `qa_prior_publication --observe` before it builds, as this one did.
+
+**`served_dates --update` was declined for the second consecutive day, with the reason in the QA log §7:**
+it reports 90 pages changed on a day when **zero** served sources moved, so updating would stamp 90 URLs
+with a date nothing earned.
