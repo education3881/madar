@@ -117,7 +117,22 @@ UA = "Madar-QA/1.0 (+https://education3881.github.io/madar/)"
 # (1 EN), escaped double (4 EN). Curly double is listed because the house style
 # allows it and a future piece may carry it; it is not a guess about the past.
 QUOTE_PATTERNS = (
-    ("straight-single", re.compile(r"(?<![A-Za-z])'([^'‘’]{10,260})'(?![A-Za-z])")),
+    # STRICT APOSTROPHE RULE, shipped 2026-11-23 closing standing-queue item 48.
+    # The first version's character class excluded `'` outright, so a match could
+    # not cross an English POSSESSIVE apostrophe and the result was not a declined
+    # token but NO token: `'South Korea's AI textbooks fail'`, `'Nation's Report
+    # Card'`, `'Can't Wait to Learn'` were all invisible, and the row then reported
+    # fewer quoted entries for the piece without reporting that it could not read
+    # them. A `'` is an apostrophe exactly when a letter stands on BOTH sides of
+    # it; anywhere else it is a quotation mark. Measured over the corpus on the day
+    # it shipped: 338 -> 372 straight-single tokens, +34, with ZERO regressions
+    # against the 338. A looser rule (any FOLLOWING letter) recovers 34 as well and
+    # mis-splits two nested quotations, so it is not taken. 0 Arabic spans are
+    # affected in either direction, guillemets having no such ambiguity and Arabic
+    # no possessive apostrophe - the first instrument defect here that was
+    # English-only.
+    ("straight-single", re.compile(
+        r"(?<![A-Za-z])'((?:[^'‘’]|(?<=[A-Za-z])'(?=[A-Za-z])){10,260})'(?![A-Za-z])")),
     ("curly-single", re.compile(r"‘([^‘’]{10,260})’")),
     ("curly-double", re.compile(r"“([^“”]{10,260})”")),
     ("guillemet", re.compile(r"«\s*([^«»]{10,260}?)\s*»")),
@@ -208,6 +223,24 @@ def token_script(token: str) -> str:
 STOP_TOKENS = {
     "the ministry", "the commission", "the authority", "the department",
     "ministry of education", "the government", "basic education",
+    # THE ANNOTATOR'S OWN ASIDE - the false-positive class the strict apostrophe
+    # rule had to name before it could ship (item 48's own condition, and #93's
+    # floor: an instrument may not report a measurement it cannot license).
+    # A quoted span inside `sources[]` is normally a claim about SOMEBODY ELSE'S
+    # bytes, which is the whole premise of this instrument. This one is not: it is
+    # the Researcher speaking about the citation, in quotation marks, inside the
+    # annotation - a claim about nobody's bytes, which no fetch of any register
+    # could ever confirm or refute. It is excluded by NAME and with its reason,
+    # never by a heuristic, because the only thing that distinguishes it from a
+    # real quotation is what it is ABOUT, and no pattern can read that.
+    # NOTE THE SPELLING, AND IT IS THE SECOND FINDING OF THIS REPAIR: this set is
+    # compared against the NORMALISED key, not against the annotation's own bytes,
+    # and `norm()` deletes the apostrophe. Written in the artefact's spelling
+    # (`index's`) the entry matches nothing and the token count does not move -
+    # which reads exactly like a correct exclusion. 2026-09-14's second trap, on
+    # the exclusion side: assert that the exclusion CHANGED the measurement before
+    # believing it did.
+    "the date is the indexs, not the articles",
 }
 BINARY_HINTS = (".pdf", ".xlsx", ".xls", ".docx", ".doc", ".zip", ".ppt", ".pptx")
 

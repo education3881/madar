@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-21",
+ "observed": "2026-11-23",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -106,11 +106,11 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3961",
+   "written_in": "latin:4599",
    "tokens": [
     {
      "token": "signaled his intent to personally monitor daily enrollment numbers",
@@ -118,6 +118,10 @@
     },
     {
      "token": "This is not persuasion. This is coercion masquerading as awareness-raising",
+     "verdict": "absent"
+    },
+    {
+     "token": "We're seeing students who prefer the old system pushed out—transferred to distant schools or less-equipped facilities",
      "verdict": "absent"
     },
     {
@@ -205,6 +209,7 @@
   {
    "url": "https://aujourdhui.ma/societe/ecoles-pionnieres-un-programme-structurant-pour-ameliorer-lapprentissage-et-la-maitrise-des-acquis",
    "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
    "observed": "2026-10-28",
@@ -224,6 +229,7 @@
   {
    "url": "https://blog.aare.edu.au/naplan-results-havent-collapsed-but-media-interpretations-have/",
    "pieces": [
+    "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
    "observed": "2026-10-28",
@@ -351,15 +357,19 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5857",
+   "written_in": "latin:6012",
    "tokens": [
     {
      "token": "Egyptian education ministry secures IBO approval for new baccalaureate curricula ahead of 183-day academic year",
      "verdict": "found"
+    },
+    {
+     "token": "the International Baccalaureate Organization's (IBO) approval of the second-year curricula",
+     "verdict": "absent"
     },
     {
      "token": "up from 116 in previous years",
@@ -389,7 +399,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "confirmed"
+   "state": "partial"
   },
   {
    "url": "https://databankfiles.worldbank.org/public/ddpext_download/hci/HCI_2pager_MUS.pdf",
@@ -571,6 +581,7 @@
   {
    "url": "https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/",
    "pieces": [
+    "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
    "observed": "2026-11-21",
@@ -666,6 +677,7 @@
   {
    "url": "https://en.tempo.co/read/1931371/new-minister-abdul-muti-indicates-review-of-merdeka-curriculum",
    "pieces": [
+    "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
    "observed": "2026-10-28",
@@ -1031,12 +1043,20 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-11-10",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2582",
+   "written_in": "latin:2528",
    "tokens": [
+    {
+     "token": "Évaluation des systèmes éducatifs : Cotonou accueille l'atelier international du Pasec 2024",
+     "verdict": "absent"
+    },
+    {
+     "token": "Dèwanou Avodagbe a souligné l'attente suscitée par les résultats, dont la publication est annoncée pour le dernier trime",
+     "verdict": "absent"
+    },
     {
      "token": "le secrétaire général de la Confemen",
      "verdict": "found"
@@ -1045,10 +1065,6 @@
      "token": "تقييمُ الأنظمة التعليمية: كوتونو تستضيف الورشةَ الدولية لباسيك 2024",
      "verdict": "script-mismatch",
      "token_script": "arabic"
-    },
-    {
-     "token": "Dèwanou Avodagbe a souligné l'attente suscitée par les résultats, dont la publication est annoncée pour le dernier trime",
-     "verdict": "absent"
     },
     {
      "token": "le directeur de cabinet du ministre béninois des enseignements maternel et primaire",
@@ -1095,6 +1111,7 @@
   {
    "url": "https://lematin.ma/enseignement/ecoles-pionnieres-ce-quil-faut-savoir-sur-le-programme-et-son-evolution/231959",
    "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
    "observed": "2026-10-28",
@@ -1114,6 +1131,7 @@
   {
    "url": "https://lematin.ma/societe/ecoles-pionnieres-les-parents-sinquietent-le-ministere-rassure/310142",
    "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
    "observed": "2026-10-28",
@@ -1133,6 +1151,7 @@
   {
    "url": "https://luminosfund.org/blog/a-curriculum-refresh-strengthening-ghanas-cbe-program/",
    "pieces": [
+    "2026-05-28-ghana-cbe-curriculum:en",
     "2026-05-28-ghana-cbe-curriculum:ar"
    ],
    "observed": "2026-10-28",
@@ -1208,6 +1227,7 @@
   {
    "url": "https://medias24.com/2025/12/04/ecoles-pionnieres-2-415-etablissements-publics-labellises-pour-lannee-2025-2026-liste-1589295",
    "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
    "observed": "2026-10-28",
@@ -1267,6 +1287,7 @@
   {
    "url": "https://nation.africa/kenya/news/education/grade-10-20-000-learners-jostle-for-500-slots-at-alliance-kenya-high-and-mang-u-5311888",
    "pieces": [
+    "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
    "observed": "2026-10-28",
@@ -1377,7 +1398,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -1389,15 +1410,19 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-11-10",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8565",
+   "written_in": "latin:8667",
    "tokens": [
     {
      "token": "Assessment is no longer seen as a terminal act of evaluation but a continuous and inclusive process",
      "verdict": "found"
+    },
+    {
+     "token": "tracks the learner's progress across cognitive, socio-emotional, and psychomotor domains",
+     "verdict": "absent"
     },
     {
      "token": "Indrani Bhaduri is a professor as well as CEO and head of PARAKH NCERT",
@@ -1414,14 +1439,14 @@
      "token_script": "arabic"
     }
    ],
-   "state": "confirmed"
+   "state": "partial"
   },
   {
    "url": "https://news.un.org/ar/interview/2024/01/1127972",
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -1468,11 +1493,11 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "cyrillic:10785",
+   "written_in": "cyrillic:10796",
    "tokens": [
     {
      "token": "School Offline",
@@ -1493,7 +1518,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -1517,7 +1542,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
@@ -1535,11 +1560,11 @@
    "pieces": [
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-22",
-   "status": 401,
+   "observed": "2026-11-23",
+   "status": 404,
    "note": "HTTPError",
    "ctype": "",
-   "state": "walled"
+   "state": "dead"
   },
   {
    "url": "https://restofworld.org/2025/south-korea-ai-textbook/",
@@ -1547,15 +1572,19 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8162",
+   "written_in": "latin:8247",
    "tokens": [
     {
      "token": "AI-powered textbooks fail to make the grade in South Korea",
      "verdict": "found"
+    },
+    {
+     "token": "South Korea's AI textbooks fail after rushed rollout",
+     "verdict": "absent"
     },
     {
      "token": "everything was rushed",
@@ -1577,7 +1606,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "confirmed"
+   "state": "partial"
   },
   {
    "url": "https://sana.sy/education/2425127/",
@@ -1585,11 +1614,11 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:4275",
+   "written_in": "arabic:4513",
    "tokens": [
     {
      "token": "وزارة التربية توقف الامتحان المتمم لمعادلة الشهادات الأجنبية للطلاب السوريين لعامين",
@@ -1604,7 +1633,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-23",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2208,6 +2237,7 @@
   {
    "url": "https://www.aljazeera.com/features/2026/4/8/yemens-teachers-pushed-to-the-brink-as-salaries-collapse",
    "pieces": [
+    "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
    "observed": "2026-10-22",
@@ -2793,6 +2823,7 @@
   {
    "url": "https://www.egypttoday.com/Article/1/147316/PM-reviews-UNICEF-study-on-Egypt%E2%80%99s-education-reform-efforts",
    "pieces": [
+    "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
    "observed": "2026-10-22",
@@ -3050,6 +3081,7 @@
   {
    "url": "https://www.globalpartnership.org/blog/pasecs-contribution-measuring-how-much-children-are-learning",
    "pieces": [
+    "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
    "observed": "2026-10-22",
@@ -3862,6 +3894,7 @@
   {
    "url": "https://www.learningpassport.org/stories/sudans-19-million-learners-are-facing-worlds-worst-education-crisis",
    "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
    "observed": "2026-10-22",
@@ -4205,6 +4238,7 @@
   {
    "url": "https://www.moe.gov.sg/news/press-releases/20251125-release-of-2025-psle-results",
    "pieces": [
+    "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
    "observed": "2026-10-22",
@@ -4248,6 +4282,17 @@
    "note": "HTTPError",
    "ctype": "",
    "state": "walled"
+  },
+  {
+   "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+   "pieces": [
+    "2026-07-07-us-naep-honesty-gap:en"
+   ],
+   "observed": "2026-11-23",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
   },
   {
    "url": "https://www.nieuwsbrievenminocw.nl/actueel/nieuws/2025/06/12/tijdpad-doorstroomtoets-en-overgang-po-vo-schooljaar-2025---2026-vastgesteld",
@@ -4414,6 +4459,17 @@
    "note": "URLError",
    "ctype": "",
    "state": "unreached"
+  },
+  {
+   "url": "https://www.pbs.org/newshour/world/some-of-ukraines-children-start-school-in-underground-classrooms-to-avoid-russian-bombs",
+   "pieces": [
+    "2026-07-07-ukraine-wartime-schooling:en"
+   ],
+   "observed": "2026-11-23",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
   },
   {
    "url": "https://www.philstar.com/headlines/2025/07/05/2455702/deped-use-both-english-filipino-teach-k-3",
@@ -4819,6 +4875,7 @@
   {
    "url": "https://www.tandfonline.com/doi/full/10.1080/19439342.2020.1829000",
    "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
    "observed": "2026-10-26",
@@ -5413,6 +5470,7 @@
   {
    "url": "https://www.unicef.org/sudan/stories/sudan-cant-wait-learn",
    "pieces": [
+    "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
    "observed": "2026-10-27",
@@ -5619,6 +5677,7 @@
   {
    "url": "https://www.worldbank.org/en/news/feature/2026/05/21/morocco-s-pioneer-schools-advancing-improved-student-learning",
    "pieces": [
+    "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
    "observed": "2026-10-27",
