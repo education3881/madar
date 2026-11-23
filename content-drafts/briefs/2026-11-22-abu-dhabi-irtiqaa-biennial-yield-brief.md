@@ -1,7 +1,7 @@
 # Editorial brief — twenty-three schools moved in a year, on a ruler that runs every two
 
 **Commissioned:** 2026-11-22 (Manager, for the Editor, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`)
-**Status:** **CELL 1 OF EIGHT FILLED. CELL 2 (the EN draft) IS OPEN**, and it does not open until owed read 1 below is done, because that read can move the subject.
+**Status:** **CELL 1 OF EIGHT FILLED. CELL 2 (the EN draft) IS NOW WRITABLE AND NOT YET WRITTEN** — owed read 1 landed 2026-11-23 and **moved the subject**. Read `content-drafts/recon/2026-11-23-abu-dhabi-irtiqaa-owed-read-1-national-framework.md` BEFORE this brief: it corrects this brief's angle sentence, its *inconvenient half* and its owed-read 1 premise, and it adds four prohibitions. **Re-briefed, not bent** — the commission holds and the unit moved from *biennial versus one year* to **typical versus reserved**.
 **Slot:** no edition. Ships as a **single** the day its own eight-cell gate closes (`content-drafts/_STANDING_LEDGER.md`, opened 2026-11-08 under issue #13's applied default).
 **Working title (provisional, NOT confirmed):** *Twenty-three schools moved in a year, on a ruler that runs every two*
 **Proposed slug:** `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`

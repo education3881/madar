@@ -58,11 +58,59 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 ## In flight
 
-**ONE ROW IN FLIGHT. CELL 1 OF EIGHT FILLED TODAY, AND SEVEN CELLS ARE OPEN.**
+**ONE ROW IN FLIGHT. CELL 1 OF EIGHT FILLED, SEVEN CELLS STILL UNFILLED — AND CELL 2'S GATE LIFTED ON 2026-11-23 WHEN OWED READ 1 LANDED.**
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md` | — **and it does not open until owed read 1 lands**, because the UAE Unified School Inspection Framework can move the subject | — | — | — | — | — | — | **SEVEN** |
+| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`, re-briefed 2026-11-23 | — **GATE LIFTED 2026-11-23**: owed read 1 landed (`content-drafts/recon/2026-11-23-abu-dhabi-irtiqaa-owed-read-1-national-framework.md`) and **moved the subject**, as the brief said it could. Cell 2 is now writable and is not yet written. | — | — | — | — | — | — | **SEVEN** |
+
+**RECONCILED AGAINST DISK 2026-11-23. OWED READ 1 LANDED, CELL 2'S GATE LIFTED, AND THE READ MOVED THE
+SUBJECT IN THE DIRECTION THE BRIEF COULD NOT PREDICT — IT FALSIFIED ITS OWN PREMISE FIRST.**
+
+- **The read's premise was wrong before any finding.** The brief commissioned owed read 1 as *the UAE
+  Unified School Inspection Framework, first-party from the **Ministry of Education***. ADEK's own
+  **School Quality Assurance Policy v1.1** cites it in its References under **four** owners — KHDA,
+  ACTVET, ADEK **and** MoE, jointly — so the Ministry is one of four named authors and not the
+  publisher. The piece may no longer write *the Ministry's framework*, and *national* is replaced by the
+  joint authorship, which is a weaker and truer claim. *An owed read can be answered and still correct the
+  question that commissioned it.*
+- **The cadence carries a hedge the news page drops, and this is the piece's new spine.** The policy:
+  *"The typical inspection cycle for a School is 2 years. **ADEK reserves the right to conduct any type of
+  inspection or visit at its discretion.**"* The 01 Oct 2025 news page: *"Irtiqa'a inspections are
+  conducted biennially"* — flat, no hedge, no discretion clause. **Same owner, two registers, and the
+  stronger claim is on the page a parent reads.** That is **#49's shape pointed at a cadence instead of a
+  superlative**, and the spine moves from *biennial versus one year* to **typical versus reserved**.
+- **The brief's own inconvenient half is HALF-FALSIFIED, which is the expensive half of the read.** The
+  brief told the drafter to look first and hardest for *mandatory follow-up inspections for schools at
+  Acceptable or lower*, because that sentence would dissolve the spine. **It is not in the register.** The
+  follow-through visit is *at ADEK's discretion*, keyed to *recommendations* rather than to a band, and
+  nowhere mandatory. **Four visit types exist and only one issues a rating** — monitoring is
+  *readiness*, thematic is *policymaking*, follow-through is *recommendations*, and only an *ADEK
+  Inspection* produces the *School Performance Report specifying their inspection rating*. So the spine
+  survives, in a **third** unit: not how a biennial ruler yields annual movement, but **what a parent can
+  know about why their own school was measured again** — answer, from the regulator's own policy, *at
+  ADEK's discretion*.
+- **The entry cadence is exact and it was not in the brief at all:** *"Schools shall be subject to ADEK
+  inspections in their **third year of operations and every 2 years thereafter**."* A 204-school
+  distribution is therefore a snapshot of schools standing at **different points in their own cycles**, a
+  sentence the piece can write from this register and could not write from the news page.
+- **Four new prohibitions are added to the commission** (recon addendum, § *What is now FORBIDDEN*):
+  *biennially* is never written unhedged; no visit type is called an inspection; *national* is replaced by
+  the joint authorship; and **no claim that the 23 were re-inspected**, because nothing read says how they
+  were measured twice — the register *permits* it by discretion and *reports* it nowhere.
+- **The framework's own bytes stay unreadable from here, and that limitation goes into the piece rather
+  than around it.** The framework is published by KHDA, whose origin answers every client we own with a
+  **200 and a 954-byte Imperva block page** (measured 2026-11-22). The policy that cites, defines and dates
+  it is the nearest first-party register, and the piece says so.
+- **Cell 2 is now writable and is NOT yet written.** Seven cells remain unfilled. The ceiling holds at one
+  fresh piece per day and the draft was deliberately not started on this envelope — a draft composed
+  with the register open (#101, 2026-09-13) is not a thing to begin with twenty minutes left, and *quality
+  over slot* is the standing rule. **Owed reads 2, 3 and 4 remain open**, and **percentages of 204 stay
+  forbidden** until read 3 lands.
+- **No aggregator was read for any quotation.** The search engine offered The National, Gulf News and
+  Khaleej Times first; none was opened for a figure and none is cited (#41).
+
+### The daily record for 2026-11-22 follows, unaltered.
 
 **Reconciled against disk 2026-11-22. CELL 1 FILLS ON A NEW SINGLE, AND THE FIRST CANDIDATE'S PARK REASON
 EXPIRED WHILE THE PARK ITSELF HELD.**
