@@ -58,11 +58,52 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 ## In flight
 
-**ONE ROW IN FLIGHT. CELL 1 OF EIGHT FILLED, SEVEN CELLS STILL UNFILLED — AND CELL 2'S GATE LIFTED ON 2026-11-23 WHEN OWED READ 1 LANDED.**
+**ONE ROW IN FLIGHT. CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — THE EN DRAFT WAS WRITTEN ON 2026-11-24, THE DAY AFTER ITS GATE LIFTED.**
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`, re-briefed 2026-11-23 | — **GATE LIFTED 2026-11-23**: owed read 1 landed (`content-drafts/recon/2026-11-23-abu-dhabi-irtiqaa-owed-read-1-national-framework.md`) and **moved the subject**, as the brief said it could. Cell 2 is now writable and is not yet written. | — | — | — | — | — | — | **SEVEN** |
+| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`, re-briefed 2026-11-23 | **FILLED 2026-11-24** — `content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, composed with both registers re-opened in served text by the drafter that day; **25 of 25 quoted spans byte-compared by script**, dek 187/200, title 47/100, all six hand-off lines present. Awaiting the Editor's five-test verdict. | — | — | — | — | — | — | **SIX** |
+
+**RECONCILED AGAINST DISK 2026-11-24. CELL 2 FILLED, AND THE DRAFTER'S OWN RE-READ OF THE REGISTERS
+ANSWERED AN OWED READ AND CORRECTED THE RECON THAT COMMISSIONED IT.**
+
+- **Cell 2 is FILLED.** `content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, EN first
+  pass, written with both registers fetched to disk and open in front of the drafter (#101, 2026-09-13) —
+  register 1's HTML body (128,722 bytes, HTTP 200) and register 2's PDF (288,836 bytes, HTTP 200). **Every
+  one of the 25 quoted spans in the body was byte-compared against those bytes by script** before the
+  hand-off was written, which is #153 executed rather than promised. Six cells remain: Editor verdict, AR
+  composition, Arabic Editor's gate, Verifier verdict, still + og card, flag.
+- **OWED READ 4 IS ANSWERED, from a register already in hand rather than from a new fetch.** The policy read
+  on 2026-11-23 for owed read 1 contains the answer to owed read 4, two pages further on, and the 11-23
+  read did not reach it: *"Schools shall publish their inspection rating on their website and make these
+  available to parents of all students studying at the school,"* and separately *"ADEK reserves the right to
+  publish inspection ratings and/or reports on its website and other relevant government websites."* **A
+  duty on the school, a right for the regulator** — so the distribution's members are checkable, and the
+  piece's closing sentence is built on it. *An owed read is a question about the world, not about a
+  document, so it can be closed by a document already read for something else.*
+- **The same page carries the appeal window and the factual-accuracy draft**, neither of which was in any
+  previous read: a school *"shall receive a draft inspection report after inspections to check for factual
+  inaccuracies"* and then *"ha[s] 10 working days to appeal the result."* A published distribution is a
+  post-appeal artefact, and the draft says so.
+- **The 11-23 addendum's bracketed repair of the cadence quotation is CORRECTED, and it is today's ruling.**
+  The addendum rendered the sentence as *Th[e] t[ypical] i[nspection] c[ycle]*, the convention for letters an
+  editor restores to a damaged text. Nothing was damaged: the PDF's text layer positions those letters with
+  spaces between them, and it also writes the possessive apostrophe as the octal escape `\222`, 31 times in
+  this document. The correction is written into the draft's **annotation**, because the annotation is served
+  and a recon file is not (#114).
+- **Owed reads 2 and 3 remain open, and the draft states in writing why it does not wait for them.** Read 2
+  (a prior-year distribution) was commissioned to give the yield a second endpoint and the 11-23 re-brief
+  moved the spine off the yield, so it is no longer load-bearing. Read 3 (ADEK's own school count) gates
+  percentages, and **the draft writes no percentage of 204 anywhere**. Both calls are handed to the Editor
+  as open questions rather than taken by the drafter.
+- **The title is WITHDRAWN by the drafter.** *Twenty-three schools moved in a year, on a ruler that runs
+  every two* argues the unit the re-brief retired. *The cycle is typical, and the right is reserved* is
+  recommended with its reason; the Editor owns the call.
+- **`2026-07-06-morocco-ecoles-pionnieres` was deliberately not railed** into this piece, though it would
+  have closed standing-queue item 158's measurement. This piece is not a follow-up to it, and a rail
+  invented to improve a census is a graph that reads better than the publication it describes.
+
+### The daily record for 2026-11-23 follows, unaltered.
 
 **RECONCILED AGAINST DISK 2026-11-23. OWED READ 1 LANDED, CELL 2'S GATE LIFTED, AND THE READ MOVED THE
 SUBJECT IN THE DIRECTION THE BRIEF COULD NOT PREDICT — IT FALSIFIED ITS OWN PREMISE FIRST.**

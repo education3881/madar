@@ -14,10 +14,13 @@ Read on every run, in this order:
    2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
    fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **ONE ROW IS IN
-   FLIGHT**: `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`, cell 1 filled 2026-11-22, **SEVEN cells still unfilled**,
-   and **cell 2's gate LIFTED 2026-11-23 when owed read 1 landed** — it moved the subject, as the brief
-   said it could, and it falsified its own premise first (the framework is a FOUR-authority document, not a
-   Ministry one). Cell 2 is writable and not yet written. So **the last piece to ship was `2026-11-12-england-ofsted-exempt-cohort` on
+   FLIGHT**: `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`, cells 1 and 2 filled, **SIX cells still unfilled** —
+   the brief on 2026-11-22 and **the EN draft on 2026-11-24**, the day after its gate lifted
+   (`content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, with the Editor, 25 of 25 quoted
+   spans byte-compared by script). Owed read 1 had moved the subject on 11-23 and falsified its own premise
+   first (the framework is a FOUR-authority document, not a Ministry one); **owed read 4 was answered on
+   11-24 out of that same register**, two pages past where the 11-23 read stopped. Reads 2 and 3 stay open
+   and the draft states in writing why it does not wait for them. So **the last piece to ship was `2026-11-12-england-ofsted-exempt-cohort` on
    2026-11-21** — and it was **not SERVED to a reader until 2026-11-22**, because the 11-21 run banked all
    five commits and then died at the turn cap, and the publish step carries `if: success()` (queue item 77,
    third daily instance). **Shipped and served are different events; this line records the first.** *(Derivation of the ship date, per the rule

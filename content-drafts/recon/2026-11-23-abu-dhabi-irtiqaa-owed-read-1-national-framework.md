@@ -45,8 +45,17 @@ were not read for any figure and are not cited.
 
 **1. The cadence carries a hedge the news page drops.**
 
-> "Th[e] t[ypical] i[nspection] c[ycle] for a School is **2 years**. **ADEK reserves the right to conduct
+> "The typical inspection cycle for a School is **2 years**. **ADEK reserves the right to conduct
 > any type of inspection or visit at its discretion.**"
+
+**CORRECTED 2026-11-24 — the square brackets above were wrong and the error was in this file, not in the
+document.** This read first rendered the sentence as *Th[e] t[ypical] i[nspection] c[ycle]*, which is the
+convention for letters an editor has **restored to a damaged text**. Nothing was damaged. The PDF's text
+layer positions those letters with a space between them (`Th e t ypical i nspection c ycle`), exactly as it
+writes `Version 1. 1` and `follow - through`, and a reader of the page sees none of it. The quotation above
+is the sentence as the page sets it. The drafter's independent re-read on 2026-11-24 also found that this
+document writes its possessive apostrophe as the octal escape `\222`, **31 times**, which cost one of the
+draft's 25 quoted spans a failed byte-comparison until the escapes were decoded. See today's ruling.
 
 The word is **typical**, and the very next sentence reserves discretion. The 01 Oct 2025 news page states
 it flatly — *"Irtiqa'a inspections are conducted biennially"* — with no hedge and no discretion clause.
@@ -117,14 +126,14 @@ holds.
 4. **No claim that 23 schools were re-inspected.** Nothing read says how the 23 were measured twice. The
    register permits it by discretion and reports it nowhere.
 
-## Owed reads remaining — THREE, and one has been reduced
+## Owed reads remaining — **TWO as of 2026-11-24** (THREE when this file was written, and one of them was already answered inside this same register)
 
 | # | Read | State after today |
 |---|---|---|
 | 1 | The UAE School Inspection Framework | **DONE.** Read via ADEK's own policy, which cites it, defines it, and names its four owners. The framework document itself is published by KHDA, whose origin answers every client we own with a **200 and a 954-byte Imperva block page** (measured 2026-11-22, standing ledger), so the framework's own bytes are unreadable from here and the policy that cites it is the nearest first-party register. **That limitation is written into the piece, not around it.** |
 | 2 | A prior-year ADEK distribution | Open. Still gates the second endpoint of the yield. |
 | 3 | ADEK's private-school count | Open. **Percentages of 204 stay forbidden** (guardrail 3). |
-| 4 | Whether per-school ratings are published | Open — and sharpened: the policy says a school receives its own School Performance Report. Whether ADEK *publishes* it is the open half. |
+| 4 | Whether per-school ratings are published | **ANSWERED 2026-11-24, out of THIS register, two pages past where this read stopped.** *"Schools shall publish their inspection rating on their website and make these available to parents of all students studying at the school"* — a duty on the school. And *"ADEK reserves the right to publish inspection ratings and/or reports on its website and other relevant government websites"* — a right, not a duty, for the regulator. The open half this row named is therefore answered in the weaker direction, and the duty nobody had looked for is the stronger finding. *An owed read can be closed by a document already read for something else, which is an argument for reading a register to its end rather than to the question.* |
 
 ## The Arabic face of this register was NOT read, and that is declared
 
