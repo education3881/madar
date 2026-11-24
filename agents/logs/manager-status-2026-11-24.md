@@ -74,3 +74,32 @@ draft's annotation — the served half — and filed as ruling #158.
 **No traffic figure is estimated anywhere.** The site carries no third-party tracker by design.
 
 — Manager, 2026-11-24
+
+---
+
+## Close-of-run verification — 2026-11-24, 33 minutes of 90 spent
+
+| | |
+|---|---|
+| Functions delivered | **5 of 5**, each committed at its own close (#96) |
+| Commits on `origin` | **5** — `26f90d2` · `b54fb59` · `447343a` · `9a7db44` · `afda8e6` (+ this verification) |
+| `HEAD` == `origin/main` | **yes** |
+| Working tree | **clean** |
+| Build | `npm run build` **exit 0**, 28 postbuild gates + all 12 build-job gates green locally |
+| Corpus | 46 EN / 46 AR · parity 100% · `approved: false` zero · 142 served documents |
+| Gate register | **43 tools · 12 build-job · 28 postbuild · 40 of 43 gating** — derived by `qa_patch_queue`, unmoved today (item 50 widened an assertion; a widened assertion is not a new one, and `site_graph_depth.py` carries no `qa_` prefix) |
+| Ruling register | **#1–#158**, contiguous, asserted by `qa_register_shape` across all four homes **plus the ratio denominator it caught stale** |
+| Board | **89** counted from the rows: 0 DEFECT · 85 OPEN · 4 BLOCKED |
+| Founder-facing artefacts | **166 of 166** render clean; 332 of 332 renders with nothing overflowing at 1280px and 390px |
+| Proof harnesses run | `qa_citation_identity_forms_proof.py` **15 of 15**, bite first, every injection asserted to have changed the artefact, and #157 applied to the harness on its first available day |
+
+**One rule was amended by this run and it was not planned: the RUNBOOK's filing rule enumerates four count
+homes plus a conditional fifth, and there is an UNCONDITIONAL fifth — the denominator of any count stated
+as a share of the whole register, which moves on every filing.** It cost nothing today because
+`qa_register_shape` already reads it, so **the gate's enumeration was wider than the rule's** and it named
+the stale number before anything was moved by memory. Recorded as the third amendment, 2026-11-24.
+
+**This run cannot observe its own publication, and that is structural rather than an omission (#128).**
+Every gate runs inside the agent step; `madar-daily.yml` step 9 dispatches the deploy *after* that step
+ends. What is verified here is that the work is **on `origin`**. The next run reads the deploy's conclusion
+and the strand with `qa_prior_publication --observe` before it builds, as this one did.
