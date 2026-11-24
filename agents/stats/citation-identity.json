@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-23",
+ "observed": "2026-11-24",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -7,15 +7,28 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:9000",
+   "written_in": "latin:8997",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Taxa de alfabetização era de 49,3% no Brasil em 2023, diz Inep",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "معدّل الإلمام بالقراءة كان 49.3٪ في البرازيل عام 2023، بحسب INEP",
@@ -31,15 +44,26 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6494",
+   "written_in": "latin:6491",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Brasil atinge 59,2% de crianças alfabetizadas em 2024",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title"
+     ],
+     "standing": "warning"
     },
     {
      "token": "البرازيل تبلغ 59.2٪ من الأطفال المُلِمّين بالقراءة في 2024",
@@ -55,15 +79,28 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
    "written_in": "latin:9340",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Brasil bate meta de alfabetização na idade certa para 2025, atingindo 66%. Em 2023, era 56%",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "البرازيل تبلغ هدف الإلمام بالقراءة في السنّ المناسبة لعام 2025 ببلوغها 66٪. وفي 2023 كانت 56٪",
@@ -79,23 +116,39 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html",
    "written_in": "latin:6959",
+   "forms_read": [
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Rwanda: Teachers With Secondary Education Given Five Years to Attain A1 Diploma",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title"
+     ],
+     "standing": "warning"
     },
     {
      "token": "The announcement was made on Thursday, August 20, by State Minister for Education Claudette Irere during the release of ",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "We have put in place a five-year period to give teachers an opportunity to upgrade their qualifications",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -106,15 +159,23 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4599",
+   "written_in": "latin:4703",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "signaled his intent to personally monitor daily enrollment numbers",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "This is not persuasion. This is coercion masquerading as awareness-raising",
@@ -126,7 +187,10 @@
     },
     {
      "token": "a student-friendly model with fewer subjects, multiple assessment opportunities, and less pressure than the high-stakes ",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "أشار إلى عزمه متابعة أعداد الالتحاق اليومية بنفسه",
@@ -157,15 +221,29 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:4079",
+   "written_in": "arabic:4132",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "مدارس الريادة، نموذج تعليمي حديث",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "standing": "evidence"
     }
    ],
    "state": "confirmed"
@@ -276,15 +354,30 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
    "written_in": "latin:6823",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "From parallel systems to inclusion: Integrating refugee students into the national education system in Chad",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "من الأنظمة الموازية إلى الدمج: إدماج الطلاب اللاجئين في نظام التعليم الوطني في تشاد",
@@ -300,19 +393,38 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
    "written_in": "latin:8836",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Teachers are leading an AI revolution in Korean classrooms",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "has allocated approximately $0.74 billion for three years (2024–2026) specifically for teacher training",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "المعلّمون يقودون ثورةَ ذكاءٍ اصطناعيٍّ في الصفوف الكورية",
@@ -333,15 +445,27 @@
     "2026-05-28-iraq-mosul-library:en",
     "2026-05-28-iraq-mosul-library:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:3611",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Restoring and modernizing the Mosul University Library",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "استعادة وتحديث مكتبة جامعة الموصل",
@@ -357,15 +481,30 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6012",
+   "written_in": "latin:6117",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Egyptian education ministry secures IBO approval for new baccalaureate curricula ahead of 183-day academic year",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "the International Baccalaureate Organization's (IBO) approval of the second-year curricula",
@@ -373,15 +512,24 @@
     },
     {
      "token": "up from 116 in previous years",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "have committed to",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "United Nations reports",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "standing": "running-text"
     },
     {
      "token": "وزارة التعليم المصرية تؤمِّن موافقة منظمة البكالوريا الدولية على مناهج البكالوريا الجديدة قبل عامٍ دراسيٍّ من 183 يومًا",
@@ -443,15 +591,25 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:15832",
+   "written_in": "latin:15854",
+   "forms_read": [
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Obowiązek szkolny dla dzieci z Ukrainy. Co się zmieni od 1 września?",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "og:title",
+     "forms": [
+      "og:title"
+     ],
+     "standing": "warning"
     },
     {
      "token": "الإلزام المدرسي لأطفال أوكرانيا: ما الذي يتغير من 1 سبتمبر؟",
@@ -517,15 +675,30 @@
     "2026-05-28-kuwait-ccet-arabic-tests:en",
     "2026-05-28-kuwait-ccet-arabic-tests:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7896",
+   "written_in": "latin:7909",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "The Center for Child Evaluation & Teaching (CCET): An IDA Global Partner in the Heart of Arabia!",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "مركز تقييم وتعليم الطفل (CCET): شريكٌ عالميٌّ لِـ IDA في قلب الجزيرة العربية",
@@ -560,15 +733,30 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6897",
+   "written_in": "latin:6944",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Bahrain grades its schools, by name, in public",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "standing": "evidence"
     },
     {
      "token": "البحرين تُصنِّف مدارسَها، بالاسم، علنًا",
@@ -604,19 +792,38 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7631",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "What you need to know about the September 2026 updates to education inspections",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "never pre-determines the grades",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "ما تحتاج معرفته عن تحديثات سبتمبر 2026 لتفتيش التعليم",
@@ -632,15 +839,30 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4540",
+   "written_in": "latin:4505",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "How the Gap Between Spoken and Written Arabic Shapes Early Literacy in Egypt",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "كيف تُشكّل الفجوةُ بين العربية المنطوقة والمكتوبة القرائيةَ المبكرة في مصر",
@@ -692,15 +914,27 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
-   "written_in": "latin:1860",
+   "written_in": "latin:1845",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "AI Digital Textbooks for 2025 to Realize Personalized Education for All",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title"
+     ],
+     "h1_served": true,
+     "standing": "warning"
     },
     {
      "token": "الكتب المدرسية الرقمية بالذكاء الاصطناعي لعام 2025 لتحقيق تعليمٍ مخصَّصٍ للجميع",
@@ -728,15 +962,31 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6414",
+   "written_in": "latin:6338",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Kharkiv opens 7 underground schools, converts metro stations into classrooms",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "خاركيف تفتتح 7 مدارس تحت الأرض وتحوِّل محطات مترو إلى صفوف",
@@ -752,15 +1002,28 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7259",
+   "written_in": "latin:7092",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Background analysis for an SCUK published blog",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "warning"
     },
     {
      "token": "تحليلٌ خلفيٌّ لتدوينةٍ نشرتها SCUK",
@@ -814,23 +1077,41 @@
    "pieces": [
     "2026-06-20-oman-school-performance-ratings:en"
    ],
-   "observed": "2026-11-08",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
    "written_in": "latin:4323",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "H.E Dr Jokha bint Abdullah Al Shukaili",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Chairman of the board",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "H.E Prof Rahma bint Ibrahim Al Mahrooqi",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -841,23 +1122,41 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-11-10",
+   "observed": "2026-11-24",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:9892",
+   "written_in": "latin:9896",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "while we applaud the improvement in educational achievement, the rate of achievement improvement is decreasing",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Dr Vijay Reddy",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "She illustrates this",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "بينما نُشيد بالتحسُّن في التحصيل التعليمي، فإنَّ معدَّلَ تحسُّن التحصيل آخذٌ في التناقص",

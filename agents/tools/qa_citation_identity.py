@@ -364,6 +364,161 @@ def fetch(url: str, timeout: float = 25.0) -> dict:
         return {"status": None, "ctype": "", "raw": b"", "note": type(exc).__name__}
 
 
+# ------------------------------------------------------- WHICH FORM did it match
+#
+# STANDING-QUEUE ITEM 50, raised 2026-10-28 as the day's forward question, taken
+# 2026-11-24 as the oldest OPEN row on a board with no DEFECT open (27 days).
+#
+# The row's finding, and it was measured rather than hypothesised: FOUR
+# instruments of ours ask whether a quoted string is IN a document and none asks
+# whether it is the string the document LEADS WITH. `restofworld.org` serves both
+# `South Korea's AI textbooks fail after rushed rollout` (its <title>) and
+# `AI-powered textbooks fail to make the grade in South Korea` (its <h1>), and
+# BOTH are in the document. So a substring search over served text confirms a
+# <title>-derived quotation forever and would have confirmed the wrong one of
+# those two. #119 says a quotation mark promises a NAMED FORM; this instrument
+# flattened every document to text before comparing and so could not tell the
+# forms apart.
+#
+# The fix needs no network, which is why the row called it the first cut: the
+# forms are in the bytes this tool ALREADY FETCHES, and only `served_text()` was
+# throwing them away by stripping the tags before anybody looked.
+#
+# THE STANDING, PER FORM, AND IT IS A HIERARCHY RATHER THAN A LIST:
+#   body        the token is in running text and in no headline form - the
+#               ordinary case for a quotation from a SENTENCE, and the strongest
+#               evidence this tool can get, because nothing else on the page
+#               could have produced it.
+#   h1          EVIDENCE. The form the document itself leads with.
+#   title       WARNING. A tab's string, written for a tab, and routinely not
+#               the headline the page prints.
+#   og:title    WARNING. Written for somebody else's card, by a plugin, and the
+#               form most likely to carry a publisher's house suffix.
+#   headline    WARNING. JSON-LD, written for a crawler.
+#   slug        COUNTERFEIT. A token that matches only the de-slugified URL path
+#               is a token we recovered from the ADDRESS of the document, and the
+#               address is ours to read, not theirs to print.
+#
+# PRINTED AND NOT ASSERTED, for the reason the `absent` bucket is printed: the
+# form a register leads with belongs to the register's publisher, a `title`-only
+# match is a warning about OUR annotation and not a defect in their document, and
+# the repair - re-open the register and re-quote its own leading form - runs
+# through a human read. Gating it would red the build on somebody else's CMS
+# (#93, and the same reasoning `qa_claim_registers` gives for its network half).
+# WHAT IS ASSERTED is one thing and it is in our lane: a `found` token in a row
+# observed on or after FORM_EPOCH must CARRY its form, so an emit that silently
+# stops recording forms fails the build instead of narrowing the measurement in
+# silence (#89's purchase, third reuse).
+
+FORM_EPOCH = "2026-11-24"   # the day the field shipped. Rows observed before it
+# are NOT reconciled backward and the count of them is printed on every check -
+# a point-of-filing rule fixes a count's future and leaves a step discontinuity
+# where it was written, so the step is declared rather than discovered later
+# (2026-10-04 second amendment, limb 2).
+
+FORM_STANDING = {"h1": "evidence", "body": "running-text", "title": "warning",
+                 "og:title": "warning", "headline": "warning", "slug": "COUNTERFEIT"}
+
+_H1 = re.compile(r"(?is)<h1\b[^>]*>(.*?)</h1>")
+_TITLE = re.compile(r"(?is)<title\b[^>]*>(.*?)</title>")
+_OG = re.compile(r"""(?is)<meta[^>]+(?:property|name)\s*=\s*["']og:title["'][^>]*>""")
+# QUOTE-AWARE ON PURPOSE, and it was found by being wrong on OUR OWN pages within
+# an hour of shipping. The first version read `content\s*=\s*["'](.*?)["']`, which
+# stops at the first quote character of EITHER kind — so an og:title containing a
+# literal apostrophe inside a double-quoted attribute was truncated at the
+# apostrophe, and `The teacher in Bo who still uses last term's chalk` was read as
+# `The teacher in Bo who still uses last term`. It under-reads the form rather than
+# over-reading it, so the failure mode is a token credited to a weaker form than
+# the one that actually carries it — the exact error this limb exists to stop. The
+# attribute's own opening quote is captured and the same character is required to
+# close it.
+_CONTENT = re.compile(r"""(?is)content\s*=\s*("|')(.*?)\1""")
+_JSONLD = re.compile(r'(?is)"headline"\s*:\s*"((?:[^"\\]|\\.){3,300})"')
+_INNER_TAGS = re.compile(r"(?s)<[^>]+>")
+
+
+def _plain(fragment: str) -> str:
+    return WS.sub(" ", html.unescape(_INNER_TAGS.sub(" ", fragment))).strip()
+
+
+def headline_forms(raw: bytes, ctype: str, url: str) -> dict[str, list[str]]:
+    """The document's own statements of its own name, read from the BYTES.
+
+    Not from `served_text()`: that strips every tag, which is exactly the step
+    that makes all forms indistinguishable. Each form may legitimately appear
+    more than once (two <h1>s, a per-section JSON-LD block), so every form holds
+    a LIST and a token is credited to the form if it matches any member - a
+    document with two <h1>s has two things it leads with, and choosing one of
+    them would be this tool inventing the answer."""
+    forms: dict[str, list[str]] = {}
+    if "html" in (ctype or "") or b"<html" in raw[:4000].lower():
+        body = raw.decode("utf-8", "replace")
+        h1s = [_plain(x) for x in _H1.findall(body)]
+        if any(h1s):
+            forms["h1"] = [x for x in h1s if x]
+        titles = [_plain(x) for x in _TITLE.findall(body)]
+        if any(titles):
+            forms["title"] = [x for x in titles if x]
+        ogs = []
+        for tag in _OG.findall(body):
+            m = _CONTENT.search(tag)
+            if m and _plain(m.group(2)):
+                ogs.append(_plain(m.group(2)))
+        if ogs:
+            forms["og:title"] = ogs
+        heads = [_plain(x.encode().decode("unicode_escape", "replace"))
+                 if "\\u" in x else _plain(x) for x in _JSONLD.findall(body)]
+        if any(heads):
+            forms["headline"] = [x for x in heads if x]
+    # The slug is a form of the headline that the PUBLISHER wrote and the ADDRESS
+    # carries, and it is the one form that is present even when the body is not.
+    path = urllib.parse.urlsplit(url).path.rstrip("/").rsplit("/", 1)[-1]
+    slug = re.sub(r"\.(html?|php|aspx?)$", "", path)
+    slug = re.sub(r"[-_+]+", " ", urllib.parse.unquote(slug)).strip()
+    if len(slug) >= 14:
+        forms["slug"] = [slug]
+    return forms
+
+
+def standing_of(form: str, forms: dict[str, list[str]]) -> str:
+    """What a form's match is WORTH, which is not a property of the form alone.
+
+    THE THIRD STATE WAS FOUND BY THE FIRST READING AND SHIPPED THE SAME HOUR.
+    Of the first 20 tokens classified, 3 matched a form other than the <h1> — and
+    2 of those 3 documents serve NO <h1> AT ALL (`allafrica.com`,
+    `demagog.org.pl`). Calling those a warning about our annotation would be a
+    confident wrong reading: we cannot have quoted the wrong form on a document
+    that declares only one. The warning is about US; this is about THEM, and a
+    bucket that cannot tell them apart would hand a human a list in which two of
+    every three entries are the instrument's own limit (#57/#70 — an enumeration
+    cannot report a distinction it cannot hold, which is this corpus's most
+    expensive single lesson).
+    """
+    base = FORM_STANDING[form]
+    if base == "warning" and "h1" not in forms:
+        return "warning-no-h1-served"
+    return base
+
+
+def classify_form(token: str, is_ar: bool, forms: dict[str, list[str]]) -> tuple[str, list[str]]:
+    """Which of the document's own name-forms carries this token.
+
+    Order is the hierarchy above, best first, so the reported form is the
+    STRONGEST standing the token can claim - a token in both the <h1> and the
+    <title> is evidence, not a warning. `body` is returned when the token is in
+    the served text and in none of the forms, and it is deliberately ranked
+    second rather than last: a sentence quoted from a document's prose is the
+    ordinary, healthy case this instrument was built for."""
+    needle = norm(token, is_ar)
+    hits = [name for name in ("h1", "title", "og:title", "headline", "slug")
+            if any(needle in norm(v, is_ar) for v in forms.get(name, []))]
+    if not hits:
+        return "body", []
+    for name in ("h1", "title", "og:title", "headline", "slug"):
+        if name in hits:
+            return name, hits
+
+
 def compare(url: str, tokens: list[dict], got: dict) -> dict:
     """One register, one dated reading. The verdict per token, then the row."""
     status = got.get("status")
@@ -387,6 +542,8 @@ def compare(url: str, tokens: list[dict], got: dict) -> dict:
     script, chars = dominant_script(text)
     row["written_in"] = f"{script}:{chars}"
     doc = {True: norm(text, True), False: norm(text, False)}
+    forms = headline_forms(got["raw"], got["ctype"], url)
+    row["forms_read"] = sorted(forms)
     verdicts = []
     for tok in tokens:
         if tok["script"] != script:
@@ -395,8 +552,25 @@ def compare(url: str, tokens: list[dict], got: dict) -> dict:
             continue
         is_ar = script == "arabic"
         needle = norm(tok["token"], is_ar)
-        verdicts.append({"token": tok["token"][:120],
-                         "verdict": "found" if needle in doc[is_ar] else "absent"})
+        if needle not in doc[is_ar]:
+            # A token absent from the served TEXT may still sit in a form the
+            # text never carries - an og:title or a JSON-LD headline is in the
+            # <head> and `served_text()` keeps it, but a slug is in the address
+            # and nothing in the body holds it. So the forms are consulted here
+            # too, and a token found ONLY in the slug is reported as the
+            # counterfeit it is rather than as an absence.
+            form, hits = classify_form(tok["token"], is_ar, forms)
+            if form == "body":
+                verdicts.append({"token": tok["token"][:120], "verdict": "absent"})
+            else:
+                verdicts.append({"token": tok["token"][:120], "verdict": "found",
+                                 "form": form, "forms": hits, "h1_served": "h1" in forms,
+                                 "standing": standing_of(form, forms)})
+            continue
+        form, hits = classify_form(tok["token"], is_ar, forms)
+        verdicts.append({"token": tok["token"][:120], "verdict": "found",
+                         "form": form, "forms": hits, "h1_served": "h1" in forms,
+                         "standing": standing_of(form, forms)})
     row["tokens"] = verdicts
     kinds = {v["verdict"] for v in verdicts}
     if "found" in kinds:
@@ -430,6 +604,14 @@ def emit(root: pathlib.Path, budget: int, spacing: float, stale_days: int) -> in
             "confirmed", "partial", "absent", "script-absent"
         ):
             return True  # the annotation gained or lost a quotation since we asked
+        # ITEM 50: a row whose confirmed token carries no FORM is owed, because the
+        # form is read from the bytes and the bytes are not on file. This is #111's
+        # top-up pattern rather than a backfill: the budget paces it across runs,
+        # and a row re-read for its form is also re-read for its identity, so
+        # nothing is spent on a weaker reading than the one the row already had.
+        if any(v.get("verdict") == "found" and "form" not in v
+               for v in row.get("tokens", [])):
+            return True
         return str(row.get("observed", "")) < cutoff
 
     queue = [u for u in sorted(registers) if owed(u)][:budget]
@@ -473,11 +655,57 @@ def emit(root: pathlib.Path, budget: int, spacing: float, stale_days: int) -> in
     return 0
 
 
+def form_census(rows: list[dict]) -> tuple[collections.Counter, list[tuple[str, dict]]]:
+    """Which of its own name-forms does each confirmed quotation sit in."""
+    counts = collections.Counter()
+    flagged: list[tuple[str, dict]] = []
+    for r in rows:
+        for v in r.get("tokens", []):
+            if v.get("verdict") != "found":
+                continue
+            form = v.get("form", "unrecorded")
+            counts[form] += 1
+            if form in ("title", "og:title", "headline", "slug"):
+                flagged.append((r["url"], v))
+            # DERIVED from the row's own `forms_read`, never read off the stored
+            # `standing` string, because the standing was written by whichever
+            # version of this tool took the reading and the forms list is the
+            # observation itself (#75: a number that lives in two places is
+            # asserted from the one that is evidence).
+            if FORM_STANDING.get(form) == "warning" and "h1" not in r.get("forms_read", []):
+                counts["_no_h1"] += 1
+    return counts, flagged
+
+
+def print_form_census(rows: list[dict]) -> None:
+    counts, flagged = form_census(rows)
+    total = sum(counts.values())
+    if not total:
+        return
+    print(f"\n  WHICH FORM DID IT MATCH — {total} confirmed token(s), item 50 (PRINTED, NOT ASSERTED):")
+    total -= counts["_no_h1"]
+    for form in ("body", "h1", "title", "og:title", "headline", "slug", "unrecorded"):
+        if counts[form]:
+            print(f"    {form:<12} {counts[form]:>4}   {FORM_STANDING.get(form, 'predates the field')}")
+    if counts["_no_h1"]:
+        print(f"    {'(of which)':<12} {counts['_no_h1']:>4}   matched a non-h1 form on a document that "
+              "serves NO <h1> — the instrument's limit, not our defect")
+    if flagged:
+        print(f"\n  {len(flagged)} token(s) confirmed ONLY by a form that is not the document's <h1> —")
+        print("  a candidate list for a re-quote, not a defect list; the form belongs to their publisher:")
+        for url, v in sorted(flagged, key=lambda x: x[0])[:12]:
+            print(f"    {v['form']:<9} {v.get('standing',''):<21} {url[:74]}")
+            print(f"        {v['token'][:92]}")
+        if len(flagged) > 12:
+            print(f"    … and {len(flagged) - 12} more")
+
+
 def report(ordered: list[dict], registers: dict[str, dict]) -> None:
     buckets = collections.Counter(r.get("state") for r in ordered)
     print(f"  {len(ordered)} rows on file")
     for state, n in buckets.most_common():
         print(f"  {state:<20} {n:>4}")
+    print_form_census(ordered)
     missing = [r for r in ordered if r.get("state") in ("absent", "partial")]
     if missing:
         print("\n  QUOTATIONS NOT FOUND IN THE SERVED TEXT — a candidate list, not a defect list:")
@@ -538,6 +766,35 @@ def check(root: pathlib.Path) -> int:
     print(f"  CANDIDATE LIST, NOT ASSERTED: {buckets['absent'] + buckets['partial']} register(s) of "
           f"{len(answered)} asked no longer serve a quotation we attributed to them. Four causes, one "
           "of them ours; only a human read separates them, so this fails nothing.")
+
+    # ---- ITEM 50's GATED LIMB: a form recorded, or the field has stopped working.
+    # In our lane and therefore gated, where the form's STANDING is not (#93): if a
+    # future emit drops the field, every `found` token silently loses the one thing
+    # that distinguishes an <h1> from a tab's string, and the census above would
+    # keep printing a smaller total with no sign that anything had changed.
+    formless, pre_epoch, post_epoch = [], 0, 0
+    for u, r in rows.items():
+        found = [v for v in r.get("tokens", []) if v.get("verdict") == "found"]
+        if not found:
+            continue
+        if str(r.get("observed", "")) < FORM_EPOCH:
+            pre_epoch += 1
+            continue
+        post_epoch += 1
+        if any("form" not in v for v in found):
+            formless.append(u)
+    print(f"  item 50 — {post_epoch} row(s) observed on or after {FORM_EPOCH} carry a confirmed "
+          f"token and must record its form; {pre_epoch} row(s) predate the field and are DECLARED "
+          "rather than reconciled backward, their forms arriving as each row's reading comes due")
+    print_form_census([r for r in rows.values() if r["url"] in registers])
+
+    if formless:
+        print(f"\nFAIL qa_citation_identity — {len(formless)} row(s) observed on or after "
+              f"{FORM_EPOCH} hold a `found` token with no recorded form:")
+        for u in formless[:8]:
+            print(f"  {u[:110]}")
+        print("Run: python3 agents/tools/qa_citation_identity.py . --emit")
+        return 1
 
     if missing or malformed:
         if missing:
