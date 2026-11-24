@@ -1,0 +1,72 @@
+{
+ "en": {
+  "reached": 92,
+  "histogram": {
+   "1": 6,
+   "2": 46,
+   "3": 40
+  },
+  "deepest": [
+   [
+    "ar/articles/2026-05-25-bo-teacher-chalk",
+    3
+   ],
+   [
+    "ar/articles/2026-05-26-bahrain-bqa-public-grades",
+    3
+   ],
+   [
+    "ar/articles/2026-05-27-egypt-ekb-decade",
+    3
+   ],
+   [
+    "ar/articles/2026-05-27-uae-madrasa-tiktok",
+    3
+   ],
+   [
+    "ar/articles/2026-05-28-ghana-cbe-curriculum",
+    3
+   ],
+   [
+    "ar/articles/2026-05-28-iraq-mosul-library",
+    3
+   ]
+  ],
+  "unreached": []
+ },
+ "ar": {
+  "reached": 92,
+  "histogram": {
+   "1": 6,
+   "2": 46,
+   "3": 40
+  },
+  "deepest": [
+   [
+    "articles/2026-05-25-bo-teacher-chalk",
+    3
+   ],
+   [
+    "articles/2026-05-26-bahrain-bqa-public-grades",
+    3
+   ],
+   [
+    "articles/2026-05-27-egypt-ekb-decade",
+    3
+   ],
+   [
+    "articles/2026-05-27-uae-madrasa-tiktok",
+    3
+   ],
+   [
+    "articles/2026-05-28-ghana-cbe-curriculum",
+    3
+   ],
+   [
+    "articles/2026-05-28-iraq-mosul-library",
+    3
+   ]
+  ],
+  "unreached": []
+ }
+}
