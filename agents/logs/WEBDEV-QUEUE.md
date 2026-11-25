@@ -3250,7 +3250,19 @@ the DEFECT block is empty.*
 ### Tomorrow's head
 
 **Items 53 and 55 are TIED at 27 days** (both raised 2026-10-29) and #116's second rung separates them by
-raise order, so **the head is item 53**, with 55 behind it. **They reach 28 days tomorrow, 2026-11-26, and
+raise order, so **the head is item 53**, with 55 behind it.
+
+**A WARNING FOR THE RUN THAT TAKES IT, written today so it does not cost that run its head.** Item 53 asks
+for a visually-hidden utility class the house does not own. **Shipping one would manufacture the defect
+`qa_selector_coverage` was built to find**: the row says in its own words that *item 49 was closed by a
+candidate that needs none of this*, so a class added today matches nothing, and a rule that matches nothing
+is LATENT residue — assertion 41's partition would file it beside the eleven already there, and item 64
+exists because *an orphaned rule is an unfiled defect report about the markup* (#118). **The row may be
+closeable only by re-specification**: either a page that needs the class arrives first, or the house writes
+the *convention* (which of the three implementations, and why) without shipping the rule, which is a
+Designer artefact rather than a stylesheet edit — and the row already says the decision is the
+Designer's. Noticed by the run that was holding the head next to it; **not decided here**, because
+re-specifying a row from outside its own head is how an item's owner cell gets ignored (the 10-24 lesson). **They reach 28 days tomorrow, 2026-11-26, and
 there is no OPEN-head closure today to hold the guarantee** — today's head was item 52 and the one action
 its row prescribes is a re-test, which was executed in full and returned the same answer four ways, so the
 row was re-bucketed to BLOCKED rather than closed. **That is not a closure and this file will not call it
