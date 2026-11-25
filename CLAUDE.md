@@ -16,8 +16,10 @@ Read on every run, in this order:
    on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **ONE ROW IS IN
    FLIGHT**: `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`, cells 1 and 2 filled, **SIX cells still unfilled** —
    the brief on 2026-11-22 and **the EN draft on 2026-11-24**, the day after its gate lifted
-   (`content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, with the Editor, 25 of 25 quoted
-   spans byte-compared by script). Owed read 1 had moved the subject on 11-23 and falsified its own premise
+   (`content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, **cell 3 attempted and
+   RETURNED WITH NOTES on 2026-11-25** — the Editor's independent re-run confirmed **24 of 25** quoted
+   spans against a hand-off reading 25 of 25, which is ruling #159, and re-opened owed read 1 in its
+   first-party form because the register the draft called unreachable is being served). Owed read 1 had moved the subject on 11-23 and falsified its own premise
    first (the framework is a FOUR-authority document, not a Ministry one); **owed read 4 was answered on
    11-24 out of that same register**, two pages past where the 11-23 read stopped. Reads 2 and 3 stay open
    and the draft states in writing why it does not wait for them. So **the last piece to ship was `2026-11-12-england-ofsted-exempt-cohort` on
@@ -93,7 +95,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   assertions enforce this; do not weaken them.
 - **A figure is cited as read.** Never composed from a pattern, never averaged across
   registers, never carried from a search summary. See the ruling register in
-  `agents/guidebook/INDEX.md` — currently **#1–#158**, and binding. **This range is
+  `agents/guidebook/INDEX.md` — currently **#1–#159**, and binding. **This range is
   ASSERTED, not remembered:** standing assertion 30, `qa_register_shape`, derives it from
   §3's own rows and fails the build when this sentence disagrees with them. Do not hand-edit
   it to match a memory; file the ruling and let the gate tell you the number.
