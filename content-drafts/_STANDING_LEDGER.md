@@ -58,11 +58,58 @@ per day at most**, and the standing rule holds: **quality over slot, hold rather
 
 ## In flight
 
-**ONE ROW IN FLIGHT. CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — THE EN DRAFT WAS WRITTEN ON 2026-11-24, THE DAY AFTER ITS GATE LIFTED.**
+**ONE ROW IN FLIGHT. CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — AND CELL 3 WAS ATTEMPTED ON 2026-11-25 AND RETURNED WITH NOTES.**
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|
-| **Twenty-three schools moved in a year, on a ruler that runs every two** (title PROVISIONAL) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`, re-briefed 2026-11-23 | **FILLED 2026-11-24** — `content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, composed with both registers re-opened in served text by the drafter that day; **25 of 25 quoted spans byte-compared by script**, dek 187/200, title 47/100, all six hand-off lines present. Awaiting the Editor's five-test verdict. | — | — | — | — | — | — | **SIX** |
+| **The cycle is typical, and the right is reserved** (title TAKEN by the Editor 2026-11-25) · slug `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | **FILLED 2026-11-22** — `content-drafts/briefs/2026-11-22-abu-dhabi-irtiqaa-biennial-yield-brief.md`, off `content-drafts/recon/2026-11-22-abu-dhabi-irtiqaa-candidate-recon.md`, re-briefed 2026-11-23 | **FILLED 2026-11-24** — `content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, composed with both registers re-opened in served text by the drafter that day; **25 of 25 quoted spans byte-compared by script**, dek 187/200, title 47/100, all six hand-off lines present. Awaiting the revision the 11-25 verdict requires. | **ATTEMPTED 2026-11-25, RETURNED WITH NOTES** — `content-drafts/verdicts/2026-11-25-abu-dhabi-irtiqaa-biennial-yield.md`. Tests 1, 2 and 3 PASS, **Test 4 FAILS on the half that exists**, Test 5 not judged per protocol. Four repairs required before cell 4 opens | — | — | — | — | — | **SIX** |
+
+**RECONCILED AGAINST DISK 2026-11-25. CELL 3 ATTEMPTED AND RETURNED, AND THE EDITOR'S OWN TEST-1 RE-RUN
+FOUND THAT THE ONE REGISTER THIS PIECE DECLINED TO READ IS BEING SERVED TO THIS RUNNER.**
+
+- **Cell 3 is NOT filled.** `content-drafts/verdicts/2026-11-25-abu-dhabi-irtiqaa-biennial-yield.md`.
+  **Tests 1, 2 and 3 PASS; Test 4 FAILS on the half of it that exists; Test 5 was not judged**, because the
+  rubric's protocol stops at the first failure and this verdict does not pretend otherwise. The title is
+  **taken**: *The cycle is typical, and the right is reserved*, the drafter's recommendation with the
+  drafter's reason.
+- **Test 1 was re-verified rather than accepted, and the drafter's count does not reproduce: 24 of 25, not
+  25 of 25.** Both registers were re-fetched by the Editor at the byte counts the draft declares (128,722
+  HTML / 288,836 PDF, both 200) and every `*"…"*` span in the body was compared by script against the text
+  those bytes serve. One span, *"ha[s] 10 working days to appeal the result"*, is **not in the register in
+  any form** — the policy's verb is **have** — and the piece's own annotation 2 already carries the
+  register's form, so the body is the half that moves. The repair is to set the host sentence in the plural
+  and delete the bracket.
+- **The difference between 24 and 25 is a MISSING LEDGER, and it is today's ruling.** Over the 25 spans the
+  Editor's run needed: PDF text-layer spacing on **15** (declared at length in the draft), terminal
+  punctuation substituted on **6** (not declared), sentence-initial case folded on **3** (not declared) and
+  **a word changed on 1** (declared, with brackets — and it is the defect). The first three are invisible to
+  a reader and legitimate; the fourth is the only one that changes what a register is reported to have said.
+  **A bare `N of N` cannot distinguish them**, so the hand-off line now carries its normalisations and the
+  figure that has to be zero.
+- **THE LARGEST FINDING: `web.khda.gov.ae` is not blocking this runner today, and the UAE School Inspection
+  Framework itself is in hand.** The draft says KHDA's origin answers every client we own with *a 200 and a
+  954-byte block page, measured on 2026-11-22* — honestly measured, with the Incapsula body quoted in the
+  11-22 recon. Four entry points were re-measured today and **none reproduces it**; the framework PDF
+  answers **200, 2,511,203 bytes, 130 pages**, located through a domain-restricted search and then read in
+  its own served bytes (#41). It defines **Good as the *expected* level and Acceptable as the *minimum***,
+  where ADEK's news page calls Good the minimum; and *biennial* occurs **0** times in 285,892 extracted
+  characters, so **the cadence is ADEK's own word and not the framework's**. Neither finding can be used
+  yet: **the document's edition is not established** — its title carries no *Unified*, no edition statement
+  survives in the text layer, and the only date is an upload timestamp in the filename.
+- **So owed read 1 is RE-OPENED in its first-party form.** It was correctly closed *by substitution* on
+  11-23, and the substitution rested on an access failure that has since lifted. The 11-22 recon wrote the
+  governing rule one paragraph below its own measurement — *a park's reason has a shelf life, and the park
+  does not inherit it* — and then gave the shelf life no date and named nobody to re-read it. Handed to the
+  standing queue rather than patched here.
+- **Owed reads 2 and 3 stay open and the Editor adopts the drafter's call to ship without them**, because
+  the piece makes no claim that needs them: read 2's second endpoint stopped being load-bearing at the
+  re-brief, and read 3 gates percentages the piece does not write. **That is a different sentence from *they
+  do not matter*.**
+- **The Very Weak paragraph stays** (#151), and the house-formula risk is weighed and cleared: the decisive
+  difference from the two Bahrain pieces and the England piece is that this piece's finding is a
+  **disagreement between two registers with one owner**, which none of the three had.
+
+### The daily record for 2026-11-24 follows, unaltered.
 
 **RECONCILED AGAINST DISK 2026-11-24. CELL 2 FILLED, AND THE DRAFTER'S OWN RE-READ OF THE REGISTERS
 ANSWERED AN OWED READ AND CORRECTED THE RECON THAT COMMISSIONED IT.**
