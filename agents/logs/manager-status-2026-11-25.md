@@ -34,6 +34,12 @@ corpus stands at 46 EN / 46 AR, 100% parity, 42 countries, latest dateline 2026-
 5. **Brief 141** and this status, with the stats panel regenerated deterministically between Today and
    Tomorrow.
 
+6. **Research (second increment, unplanned and time-boxed) — the framework read BANKED by the Researcher**
+   at `content-drafts/recon/2026-11-25-uae-school-inspection-framework-first-party-read.md`, on the day the
+   access window was open rather than tomorrow. Six-level definitions and six standards verbatim,
+   extraction declared per #158, `biennial` at **0** occurrences, and an explicit **prohibition** on
+   comparing the document to ADEK's 2025 claims until its edition is established.
+
 ## Held, and why
 
 - **The ADEK single is held at cell 3** on the Editor's verdict. Four repairs; three are a line each. Held
@@ -46,8 +52,10 @@ corpus stands at 46 EN / 46 AR, 100% parity, 42 countries, latest dateline 2026-
 
 ## Queued
 
-- **Tomorrow:** the three one-line repairs, the framework read and its edition question, and item 53 as
-  the head.
+- **Tomorrow:** the three one-line repairs, **the framework's edition question** (the read itself is
+  banked), and item 53 as the head — with a warning already written on that row, because closing it as
+  specified would ship a stylesheet rule that matches nothing and manufacture the residue assertion 41 was
+  built to find.
 - **Board: 86 OPEN · 0 DEFECT · 5 BLOCKED = 91**, counted from the rows. Raised: **161** (the declination
   class no instrument can see) and **162** (the normalisation ledger at the hand-off). Nothing closed.
 - **Corrected in state and not in record:** `25 of 25` was printed in four places on 11-24. The ledger row

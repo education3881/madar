@@ -96,6 +96,17 @@ FOUND THAT THE ONE REGISTER THIS PIECE DECLINED TO READ IS BEING SERVED TO THIS 
   characters, so **the cadence is ADEK's own word and not the framework's**. Neither finding can be used
   yet: **the document's edition is not established** — its title carries no *Unified*, no edition statement
   survives in the text layer, and the only date is an upload timestamp in the filename.
+- **AND THE READ WAS BANKED THE SAME DAY, BY THE RESEARCHER AND NOT BY THE DRAFTER** —
+  `content-drafts/recon/2026-11-25-uae-school-inspection-framework-first-party-read.md`. **Deliberately
+  taken on the day the window was open rather than left for tomorrow**: an access window has a shelf life
+  exactly as a park's reason does, and this one is three days old. The file is a source index, not a draft:
+  it declares the extraction first (#158 — this document breaks ligatures, `de ned` for *defined*), records
+  the six-level definitions and the six standards verbatim, records that **`biennial` occurs 0 times in
+  285,892 extracted characters**, and **prohibits** any comparison against ADEK's 2025 claims until the
+  edition question is settled, because the document carries **no edition statement, no publication year and
+  no authority name at all** — `KHDA`, `ADEK`, `ACTVET` and `Ministry of Education` are each 0 occurrences
+  inside it. The drafter re-opens the register at compose time regardless (#101); a banked read licenses no
+  quotation.
 - **So owed read 1 is RE-OPENED in its first-party form.** It was correctly closed *by substitution* on
   11-23, and the substitution rested on an access failure that has since lifted. The 11-22 recon wrote the
   governing rule one paragraph below its own measurement — *a park's reason has a shelf life, and the park
