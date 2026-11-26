@@ -119,3 +119,10 @@ week and ship it as Ed10's first piece. Until then it is parked and costs no run
 Every non-negotiable in `CLAUDE.md`: figures cited as read, held pieces invisible, the Editor is the
 filter, Arabic is composed, no invented traffic. A piece that fails its gate is held, and the day's ship
 comes from the next piece in flight. That is why three must always be in flight.
+
+## Housekeeping owed by the next daily run (this session could not write to the GitHub API)
+
+- Close issue **#13** with a comment linking this file: the founder answered it on 2026-11-26.
+- Comment on issue **#7**: the publish-step patch (`agents/patches/2026-11-04-...`) was applied on
+  2026-11-26 in both run workflows, so retire that patch file. The feed-cache patch is still open.
+- Comment on issue **#17** (the 21 Nov failure) and close it, since its cause is addressed.
