@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. Two faint uprights stand close together on the right, and between them three short strokes climb from left to right, one above another, each beginning and ending in a small open circle. The lowest of the three is drawn in warm kiln-orange. A third faint upright stands far away on the left with no line attached to it, and the wide space between it and the others is empty.">
+  <title>The Still · Jordan, PISA 2025 · three averages on one short interval</title>
+  <desc>A composition for Edition 06's second piece. Paper-cream ground, pure line, no fills, tone carried
+  by stroke opacity alone. The two close uprights are 2022 and 2025, the only two rounds any register read
+  for the piece puts a Jordanian figure on. The three climbing strokes are the three averages Jordan's own
+  centre reported — science, mathematics and reading, highest to lowest — each drawn between those two
+  uprights and nowhere else, to the vertical scale the figures give. The orange stroke is reading, the
+  lowest of the three and the one both named officials called the work ahead. The far upright on the left is
+  an earlier round. Nothing joins it to anything, and the space between is left blank, because no register
+  read for this piece prints a Jordanian figure there.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+  <line x1="250" y1="236" x2="250" y2="444" stroke="#1F2E44" stroke-width="1.2" opacity="0.18"/>
+  <line x1="620" y1="188" x2="620" y2="458" stroke="#1F2E44" stroke-width="1" opacity="0.22"/>
+  <line x1="950" y1="188" x2="950" y2="458" stroke="#1F2E44" stroke-width="1" opacity="0.22"/>
+  <line x1="620" y1="320" x2="950" y2="213" stroke="#1F2E44" stroke-width="2.0" stroke-linecap="round" opacity="0.92"/>
+  <line x1="620" y1="367" x2="950" y2="277" stroke="#1F2E44" stroke-width="1.7" stroke-linecap="round" opacity="0.8"/>
+  <line x1="620" y1="430" x2="950" y2="360" stroke="#D94F2A" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+  <circle cx="620" cy="320" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="950" cy="213" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.92"/>
+  <circle cx="620" cy="367" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.72"/>
+  <circle cx="950" cy="277" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.8"/>
+  <circle cx="620" cy="430" r="5.4" fill="#FAFAF7" stroke="#D94F2A" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="950" cy="360" r="5.6" fill="#FAFAF7" stroke="#D94F2A" stroke-width="1.8" opacity="1"/>
+</svg>
