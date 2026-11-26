@@ -14,6 +14,16 @@ Run it after verifying state exactly as the daily run does — `git log`, local 
 `origin/main`, `git status`, the live site, the last deploy run. Convert the runner's
 UTC date to **Asia/Dubai** before dating anything.
 
+## FOUNDER DIRECTIVE, 2026-11-26. This comes before everything below.
+
+Read `content-drafts/_EDITIONS_06_10_PLAN.md`. The review's first three jobs, in order:
+1. **Count the week's pieces shipped** (both languages, on `origin`, served) against the plan: one a day,
+   six per edition. A short week is named in the first paragraph.
+2. **Close the week's edition and open the next** in `web/src/lib/editions.ts` and the ledger, and confirm
+   the next edition's slate (9+ candidates, primaries read) and its cover and hero batch are ready.
+3. **Team:** if the week shipped fewer than six, add the persona or run the bottleneck needs. No asking.
+Everything else in this file (guidebook consolidation, gate counts, patch re-reads) gets what time is left.
+
 ## What the review must produce
 
 1. **The week, honestly counted.** Run days, dark days, pushes landed, pieces shipped,

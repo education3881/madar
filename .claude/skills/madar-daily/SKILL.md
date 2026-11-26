@@ -21,6 +21,21 @@ the operation has paid for. Both are binding.
 
 ---
 
+## FOUNDER DIRECTIVE, 2026-11-26. Read this before Step 1. It overrides anything below that conflicts.
+
+Vini set the next five editions and the throughput: **at least one piece ships every day, at least six
+pieces per edition, one edition per week.** The plan, the calendar and the time budget are in
+`content-drafts/_EDITIONS_06_10_PLAN.md`. Read it first, before the CHARTER and the RUNBOOK.
+
+- **Content runs FIRST and takes at least 70% of the run.** Ship before you build anything.
+- **No new assertion, no new tool, no standing-queue work** unless a served page is wrong now (DEFECT).
+- The research increment is the next edition's slate recon. A numbered ruling only when a verdict earns one.
+- Growth may be one line. The brief is one screen and leads with pieces shipped and the edition count.
+- Issue #13 is answered by the plan. Do not open founder-decision issues about these editions.
+- A second workflow, `madar-content.yml`, runs the content pipeline twice a day. Keep the ledger true for it.
+
+---
+
 ## STEP 1 — Verify state. Non-negotiable, before any plan.
 
 **Never plan a day off a brief. The brief is yesterday's artefact, not today's state.**
@@ -46,8 +61,8 @@ Today's date comes from the runner, which is **UTC**. The operation's calendar i
 Advance the editorial pipeline. Either ship or compose a piece that clears the Editor's
 five-test rubric, or move research forward so a piece is measurably closer. **Quality
 over slot** — hold rather than ship thin — but the pipeline must *visibly* advance.
-Throughput: at most one fresh piece per day plus N translations. Override-mode (more
-than one fresh piece) only when source recon on every candidate precedes any drafting.
+Throughput (founder directive 2026-11-26): at least one piece SHIPS per day, with three or more in
+flight. Recon for every candidate precedes its drafting, which the plan's slate rule already gives.
 
 Arabic is **composition, not translation**. The Arabic Editor verifies every named-human
 transliteration and approves before any Arabic ships.

@@ -41,7 +41,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     permissions:
       contents: write      # the run commits and pushes its own work
       issues: write        # founder-decision issues, and failure reports
@@ -124,7 +124,7 @@ jobs:
           # operate without. TodoWrite is dropped: it is not load-bearing and I am
           # not certain enough of the name to risk an invalid entry taking the
           # whole list down with it.
-          claude_args: '--model claude-opus-5 --max-turns 180 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
+          claude_args: '--model claude-opus-5 --max-turns 400 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
           # Diagnosis, not decoration. Both failed attempts printed "full output
           # hidden for security" and pointed here. Until this run is proved green
           # twice, an unreadable failure costs more than the output is worth — the
@@ -184,8 +184,10 @@ jobs:
       # It fires only when the origin actually moved. A run that held everything —
       # which is the correct outcome on plenty of days — publishes nothing and
       # should not spend a deploy proving it.
+      # 2026-11-26 founder directive: always(), applying agents/patches/2026-11-04-publish-step-must-not-depend-on-the-run.md.
+      # The body already dispatches only when the origin moved, and the deploy has its own gates.
       - name: publish what the run pushed
-        if: success()
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

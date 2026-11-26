@@ -30,7 +30,7 @@ concurrency:
 jobs:
   review:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     permissions:
       contents: write
       issues: write
@@ -81,7 +81,7 @@ jobs:
             ${{ inputs.note }}
           # Single line and the same tool grant as the daily run — see the comment
           # in madar-daily.yml for why the multi-line form was abandoned.
-          claude_args: '--model claude-opus-5 --max-turns 180 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
+          claude_args: '--model claude-opus-5 --max-turns 400 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"'
           show_full_output: true
 
       - name: put the review in the run summary
@@ -109,8 +109,9 @@ jobs:
 
       # See madar-daily.yml for why this is here and why it is a workflow step
       # rather than something the review is trusted to remember (issue #6).
+      # 2026-11-26 founder directive: always(), the step body already checks the origin moved.
       - name: publish what the review pushed
-        if: success()
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

@@ -1,5 +1,11 @@
 # Madār (مدار) — repository guide for Claude
 
+> **FOUNDER DIRECTIVE, 2026-11-26. Read `content-drafts/_EDITIONS_06_10_PLAN.md` FIRST.** Editions 06
+> (PISA) to 10 (UAE, Abu Dhabi focus) are set, one per week, six pieces minimum each, and at least one
+> piece ships every day. It answers issue #13 and supersedes the "no edition" state in item 4 below.
+> Content comes first in every run. The runs' envelope is now 400 turns and 180 minutes, and the publish
+> step runs even after an overrun. `madar-content.yml` adds two content-only runs a day.
+
 This repository **is** the publication and **is** the operation. There is no state
 outside it: the editorial charter, the operating rules, the accumulated rulings, the
 content in both languages, the QA tools and the daily briefs all live here. A run that
@@ -109,7 +115,7 @@ translated. Nothing ships without clearing the Editor's five-test rubric in writ
   any work — and on 2026-10-09 that cost took the whole run.)*
 
 - **The run has an envelope, and it can see itself approaching HALF of it.** `madar-daily.yml` and
-  `madar-weekly.yml` pass **`--max-turns 180`** and set **`timeout-minutes: 90`**. Both numbers live in
+  `madar-weekly.yml` pass **`--max-turns 400`** and set **`timeout-minutes: 180`** (raised 2026-11-26). Both numbers live in
   `.github/workflows/**`, which this identity cannot write, so they are recorded here — **and recording a
   number is not measuring it.** From 2026-10-18 the measurable half is measured: `python3
   agents/tools/run_envelope.py .` parses both numbers out of the workflow file and reports elapsed and
