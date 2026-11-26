@@ -65,8 +65,26 @@ the day its own gate closes, tagged `edition: 6`. Slate: `content-drafts/recon/2
 | # | Piece | Brief | EN | Editor | AR | AR gate | Verifier | Still + og | Flag |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **Three lists of risers** · `2026-11-26-pisa-2025-three-lists-of-risers` | 2026-11-26 | 2026-11-26 | PASS 2026-11-26, three notes closed in-run | 2026-11-26 | APPROVED 2026-11-26 | 2026-11-26, seven corrections applied | 2026-11-26 | **SHIPPED 2026-11-26** |
+| 2 | **Jordan counts from 2022** · `2026-11-26-jordan-pisa-2025-counts-from-2022` | 2026-11-26 | 2026-11-26 | PASS 2026-11-26, two notes closed in-run | 2026-11-26 | APPROVED 2026-11-26 | 2026-11-26, five corrections applied | 2026-11-26 | **SHIPPED 2026-11-26** |
 
-**Count: Ed06 1 of 6 shipped** (target 7).
+**Count: Ed06 2 of 6 shipped** (target 7). **Both shipped on 2026-11-26**, which is the directive's floor met
+twice on its first day and not a licence to bank ahead: the ceiling of one fresh piece per day is suspended
+only while the slate's recon precedes every draft, which it does (`content-drafts/recon/2026-11-26-ed06-pisa-2025-first-party-read.md`,
+nine candidates read before any was commissioned — the CHARTER's own override condition).
+
+**Slate candidates still unused, with the register each still owes.** Candidates 2, 3, 4, 5 and 9 are
+OECD-wide and `docs/10_geo_scope.md` forbids a piece about the institution rather than about an in-scope
+geography, so each of them needs a geography before it can be commissioned. Candidates 6, 7 and 8 are
+country-anchored and each needs a national register this runner could not reach on 2026-11-26:
+`edu.gov.qa` and `moe.gov.jo` do not answer, `etec.gov.sa` redirects, and no OECD country note is linked
+from any register in hand. **`moe.gov.ae` DOES answer this runner** (checked 2026-11-26), which is the one
+open door on that list, and it belongs to Edition 10's subject rather than this one.
+
+**Reachability, recorded because it changed twice in one day.** `www.oecd.org` returns **403** to this
+runner. The Internet Archive's snapshots of all three OECD registers were fetched **direct from the cloud
+runner** on 2026-11-26, byte-identical to the morning's banked read — so the recon's note that this
+workspace's tunnel to `web.archive.org` closes mid-exchange is **not true of this runner today**. A register
+called unreachable yesterday is re-tested before it is called unreachable again (#159's family).
 
 **The Abu Dhabi row below moves to Edition 10** (UAE, Abu Dhabi focus, 28 December to 3 January) by the
 same directive. Its four repairs are made in the Ed10 lead-in week. Until then it is parked and costs no run
@@ -74,7 +92,16 @@ time. Its cells are unchanged and its record below stands.
 
 ## In flight
 
-**ONE ROW IN FLIGHT. CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — AND CELL 3 WAS ATTEMPTED ON 2026-11-25 AND RETURNED WITH NOTES.**
+**NOTHING IS IN FLIGHT AS OF 2026-11-26, AND THAT IS THE DAY'S ONE REAL DEFECT.** Both Edition 06 pieces
+closed all eight cells and shipped on the day they were commissioned, so the board is empty behind them. The
+plan requires **three or more pieces in flight at all times** precisely so a day cannot depend on a piece
+composed that morning, and two days have now been run the other way. **The next content run's first act is
+to open cell 1 on two Edition 06 candidates**, which costs an Editor's brief each and no drafting.
+
+The one row below is **PARKED to Edition 10** by the founder directive of 2026-11-26 and is deliberately not
+counted as in flight: it costs no run time until the Ed10 lead-in week of 28 December.
+
+**PARKED ROW (Edition 10). CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — AND CELL 3 WAS ATTEMPTED ON 2026-11-25 AND RETURNED WITH NOTES.**
 
 | Piece | Brief | EN draft | Editor verdict | AR | AR gate | Verifier | Still + og | Flag | Open cells |
 |---|---|---|---|---|---|---|---|---|---|

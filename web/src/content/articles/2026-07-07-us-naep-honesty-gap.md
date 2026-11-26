@@ -14,6 +14,7 @@ related:
   - 2026-07-07-netherlands-doorstroomtoets
   - 2026-07-16-australia-naplan-reset
   - 2026-07-28-england-report-cards-first-term
+  - 2026-11-26-jordan-pisa-2025-counts-from-2022
 
 contains_composites: false
 arabicVersion: 2026-07-07-us-naep-honesty-gap

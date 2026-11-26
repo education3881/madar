@@ -16,34 +16,40 @@ Read on every run, in this order:
 1. `agents/CHARTER.md` — the operating mandate. The five standing functions.
 2. `agents/RUNBOOK.md` — the accumulated procedural rules. Long, and load-bearing.
 3. The most recent `agents/briefs/*.html` — yesterday's artefact, **not** today's state.
-4. `content-drafts/_STANDING_LEDGER.md` — **the live ledger, and there is no edition at all.** Opened
-   2026-11-08 by applying GitHub issue #13's stated default (option B) on the date it fell due, after
-   fourteen days with no reply: **pieces now ship as singles against a standing per-piece ledger**, each
-   on the day its own eight-cell gate closes, so Edition 05's 71 held days cannot recur. **ONE ROW IS IN
-   FLIGHT**: `2026-11-22-abu-dhabi-irtiqaa-biennial-yield`, cells 1 and 2 filled, **SIX cells still unfilled** —
-   the brief on 2026-11-22 and **the EN draft on 2026-11-24**, the day after its gate lifted
-   (`content-drafts/drafts/2026-11-24-abu-dhabi-irtiqaa-biennial-yield.md`, **cell 3 attempted and
-   RETURNED WITH NOTES on 2026-11-25** — the Editor's independent re-run confirmed **24 of 25** quoted
-   spans against a hand-off reading 25 of 25, which is ruling #159, and re-opened owed read 1 in its
-   first-party form because the register the draft called unreachable is being served). Owed read 1 had moved the subject on 11-23 and falsified its own premise
-   first (the framework is a FOUR-authority document, not a Ministry one); **owed read 4 was answered on
-   11-24 out of that same register**, two pages past where the 11-23 read stopped. Reads 2 and 3 stay open
-   and the draft states in writing why it does not wait for them. So **the last piece to ship was `2026-11-12-england-ofsted-exempt-cohort` on
-   2026-11-21** — and it was **not SERVED to a reader until 2026-11-22**, because the 11-21 run banked all
-   five commits and then died at the turn cap, and the publish step carries `if: success()` (queue item 77,
-   third daily instance). **Shipped and served are different events; this line records the first.** *(Derivation of the ship date, per the rule
-   below: `git log -S'approved: true' --diff-filter=AM -- <file>`, never `date:`, which is the dateline
-   2026-11-12 and nine days early.)* *(This sentence read `one row
+4. `content-drafts/_STANDING_LEDGER.md` — **still the live ledger, and from 2026-11-26 it carries an
+   EDITION again.** The founder directive of 2026-11-26 (`content-drafts/_EDITIONS_06_10_PLAN.md`, read
+   first) sets Editions 06 to 10, one a week, six pieces minimum each, one shipped every day. **It answers
+   issue #13 and supersedes the "no edition at all" state this line held from 2026-11-08**, when option B
+   was applied by silence. What B bought is kept: a piece ships **the day its own eight-cell gate closes**,
+   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **NOTHING IS IN
+   FLIGHT**: both Edition 06 pieces closed all eight cells and shipped on 2026-11-26, and the board behind
+   them is empty against a plan that requires three in flight — the next content run opens cell 1 on two
+   candidates before anything else. The one remaining row,
+   `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` (cells 1 and 2 filled, **SIX unfilled**, cell 3 attempted
+   and RETURNED WITH NOTES on 2026-11-25 — the Editor's independent re-run confirmed **24 of 25** quoted
+   spans against a hand-off reading 25 of 25, which is ruling #159), is **PARKED to Edition 10** by the same
+   directive and costs no run time until 28 December. So **the last piece to ship was
+   `2026-11-26-jordan-pisa-2025-counts-from-2022` on 2026-11-26**, Edition 06's second, beside
+   `2026-11-26-pisa-2025-three-lists-of-risers` the same day — **the first day this publication has ever
+   shipped two pieces, and the directive's floor is one.** *(Derivation of the ship date, per the rule
+   below: `git log -S'approved: true' --diff-filter=AM -- <file>`, never `date:`.)* *(The previous reading
+   of this clause — `2026-11-12-england-ofsted-exempt-cohort` shipped 2026-11-21 and not SERVED until
+   2026-11-22 — is now history and is correct as that. Its cause is closed: the publish step's `if:
+   success()` became `if: always()` in all three run workflows on 2026-11-26, applying
+   `agents/patches/2026-11-04-publish-step-must-not-depend-on-the-run.md`, which is retired from the patch
+   queue in the same commit as this sentence.)* *(This sentence read `one row
    in flight (bahrain-bqa-five-cycles, three cells open) and nothing has shipped since 2026-09-27` for the
    **six days after that piece shipped**, and six daily runs read it on mornings when four of them wrote
    the correct state into other artefacts. Corrected at the 2026-11-15 weekly review, and it is **ruling
    #144**: the standing rule below has its predicate on the ledger's NAME, the named file never stopped
    being live, so the rule stayed green over a sentence whose other three claims had gone wrong. A
    maintenance rule attached to a sentence licenses the whole sentence.)* The
-   registry stays at five editions, all `closed`, `hasOpenEdition` false — **which is why B is the only
-   option the operation can execute without a word from him**, and it is the option its own
-   recommendation ranked third. Issue #13 stays open; a frame arriving later supersedes the file for
-   pieces after it (#41). `content-drafts/_EDITION_05_STATUS.md` is now **the closed-edition record** —
+   registry is **six editions in `web/src/lib/editions.ts`, Edition 06 `current` and `hasOpenEdition` TRUE**
+   since 2026-11-26. *(It read five, all `closed`, `hasOpenEdition` false from 2026-10-13, and that was the
+   whole argument for option B — B was the only option the operation could execute without a word from him,
+   and it was the option its own recommendation ranked third. The founder has now set the frame, so the
+   argument is spent rather than wrong.)* **Issue #13 is answered and closed**, by the plan file and on
+   2026-11-26; a frame arriving later still supersedes the file for pieces after it (#41). `content-drafts/_EDITION_05_STATUS.md` is now **the closed-edition record** —
    5 KB, read to answer a question about what happened, never to plan a day. Its 194 KB working ledger was archived on 2026-10-16 under standing-queue
    item 9, because this list had spent three days telling every run to read a shipped wave's history
    before planning. **Standing rule: a wave's status memo is reduced to its record in the flip commit's

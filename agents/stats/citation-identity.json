@@ -827,6 +827,47 @@
    "state": "script-mismatch"
   },
   {
+   "url": "https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
+   "pieces": [
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
+   ],
+   "observed": "2026-11-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:9776",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "Three lists of risers",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
+     "token": "ثلاث قوائم للصاعدين",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://educationinspection.blog.gov.uk/2026/06/12/what-you-need-to-know-about-the-september-2026-updates-to-education-inspections/",
    "pieces": [
     "2026-07-28-england-report-cards-first-term:en",
@@ -1377,15 +1418,29 @@
    "pieces": [
     "2026-05-31-indonesia-permen-13-coding-ai:en"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8184",
+   "written_in": "latin:8130",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Permendikdasmen 11/2025 dan 13/2025, Dasar Sinkronisasi Kurikulum dan Beban Kerja Guru",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     }
    ],
    "state": "confirmed"
@@ -1396,11 +1451,18 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2528",
+   "written_in": "latin:2530",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Évaluation des systèmes éducatifs : Cotonou accueille l'atelier international du Pasec 2024",
@@ -1412,7 +1474,11 @@
     },
     {
      "token": "le secrétaire général de la Confemen",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "تقييمُ الأنظمة التعليمية: كوتونو تستضيف الورشةَ الدولية لباسيك 2024",
@@ -1421,7 +1487,11 @@
     },
     {
      "token": "le directeur de cabinet du ministre béninois des enseignements maternel et primaire",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "partial"
@@ -1432,31 +1502,55 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "arabic:16158",
+   "forms_read": [
+    "h1",
+    "title"
+   ],
    "tokens": [
     {
      "token": "مع مراعاة الأحكام المنصوص عليها في الفصل الأول من هذا الباب، يكون نظام البكالوريا نظامًا اختياريًا مجانيًا يتقدم إليه من",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "ينشر هذا القانون فى الجريدة الرسمية، ويُعمل به اعتبارًا من العام الدراسي التالى لتاريخ نشره",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "صدر برئاسة الجمهورية فى 19 صفر سنة 1447هـ (الموافق 13 أغسطس سنة 2025م)",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "ورسوم التقدم لها والتي لا تزيد على ألف جنيه",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "للمادة الواحدة فى المرة الواحدة",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -1519,19 +1613,36 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5372",
+   "written_in": "latin:6078",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Parliament approves new education bill amid inequality fears",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "seeks to introduce a new optional baccalaureate certificate system without abolishing the existing Thanaweya Amma struct",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "يسعى إلى استحداث نظام شهادة بكالوريا اختيارية جديد دون إلغاء بنية الثانوية العامة القائمة",
@@ -1763,15 +1874,26 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8667",
+   "written_in": "latin:8653",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Assessment is no longer seen as a terminal act of evaluation but a continuous and inclusive process",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "tracks the learner's progress across cognitive, socio-emotional, and psychomotor domains",
@@ -1779,7 +1901,11 @@
     },
     {
      "token": "Indrani Bhaduri is a professor as well as CEO and head of PARAKH NCERT",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "لم يَعُدْ يُنظَر إلى التقييم بوصفه فعلًا نهائيًّا للتقويم، بل عمليةً مستمرّةً وشاملة",
@@ -1799,15 +1925,25 @@
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "arabic:8874",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "يُطلَق عليها اسم مكانّا (مكاننا) باللغة العربية",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -1818,19 +1954,45 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:10579",
+   "written_in": "latin:10606",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "truth and transparency",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "Oklahoma board raises rigor to restore ‘truth and transparency’ to student testing",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "الصدق والشفافية",
@@ -1895,15 +2057,26 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:2677",
+   "forms_read": [
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "ÖSYM deprem bölgesindeki adaylardan KPSS başvuru ücreti almayacak",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title"
+     ],
+     "h1_served": false,
+     "standing": "warning-no-h1-served"
     }
    ],
    "state": "confirmed"
@@ -1925,15 +2098,30 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:8247",
+   "written_in": "latin:8241",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "AI-powered textbooks fail to make the grade in South Korea",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "South Korea's AI textbooks fail after rushed rollout",
@@ -1941,7 +2129,11 @@
     },
     {
      "token": "everything was rushed",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "الكتب المدرسية المدعومة بالذكاء الاصطناعي تُخفِق في بلوغ المستوى في كوريا الجنوبية",
@@ -1967,15 +2159,28 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-11-23",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:4513",
+   "written_in": "arabic:4565",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "وزارة التربية توقف الامتحان المتمم لمعادلة الشهادات الأجنبية للطلاب السوريين لعامين",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     }
    ],
    "state": "confirmed"
@@ -1998,7 +2203,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2010,7 +2215,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2022,7 +2227,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2034,7 +2239,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2046,7 +2251,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -2058,27 +2263,50 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:21282",
+   "written_in": "arabic:21291",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "لا يجوز التحويل منه أو إليه من أنظمة التعليم الثانوي الأخرى أثناء سنوات الدراسة",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "معادلة لشهادة الثانوية العامة",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "بما لا يجاوز مائتي جنيه",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "200 – 400 جنيه",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -2089,11 +2317,16 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:1129",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Arrangements to LGS and YKS exam content and to school attendance in the earthquake region",
@@ -2112,11 +2345,18 @@
    "pieces": [
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:1379",
+   "written_in": "latin:1357",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "سوريا هي الوطن",
@@ -2132,7 +2372,7 @@
     "2026-05-31-uruguay-eduia-lab-ceibal:en",
     "2026-05-31-uruguay-eduia-lab-ceibal:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -2144,11 +2384,17 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6497",
+   "written_in": "latin:6237",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "WISE 12 unveils global speaker lineup for Humanity.io summit in Doha",
@@ -2156,7 +2402,11 @@
     },
     {
      "token": "Humanity.io: Human Values at the Heart of Education",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "WISE 12 يَكشف عن قائمة المتحدِّثين العالميَّة لِقمَّة Humanity.io في الدوحة",
@@ -2177,19 +2427,38 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-11-08",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3461",
+   "written_in": "latin:3448",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "HH Sayyid Theyazin launches National System for Evaluating School Performance",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "HH Sayyid Theyazin bin Haitham Al Said, Minister of Culture, Sports and Youth",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "السيد ذي يزن يُدشّن النظام الوطني لتقويم أداء المدارس",
@@ -2205,15 +2474,30 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:1318",
+   "written_in": "latin:1346",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Omani Academic Accreditation Authority to announce outcome of school performance on 7 January",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "الهيئة العُمانية للاعتماد الأكاديمي تُعلن نتائج تقويم أداء المدارس في 7 يناير",
@@ -2229,7 +2513,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -2241,22 +2525,36 @@
     "2026-06-08-sierra-leone-tsc-teacher-matching:en",
     "2026-06-08-sierra-leone-tsc-teacher-matching:ar"
    ],
-   "observed": "2026-10-29",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html",
    "written_in": "latin:727",
+   "forms_read": [
+    "h1",
+    "title"
+   ],
    "tokens": [
     {
-     "token": "Teacher Management Information System · Sierra Leone",
-     "verdict": "absent"
+     "token": "Teacher Management Information System",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "Bringing together teachers, trainers, government and the public",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
-   "state": "partial"
+   "state": "confirmed"
   },
   {
    "url": "https://tuoitre.vn/duoc-mien-hoc-phi-hoc-sinh-phai-dong-nhung-khoan-nao-20250311144712508.htm",
@@ -2264,15 +2562,31 @@
     "2026-06-16-vietnam-tuition-free-public-school:en",
     "2026-06-16-vietnam-tuition-free-public-school:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7106",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Được miễn học phí, học sinh phải đóng những khoản nào?",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "أُعفي الطلاب من الرسوم — فأيّ مبالغ يبقى عليهم دفعها؟",
@@ -2287,11 +2601,18 @@
    "pieces": [
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html",
-   "written_in": "latin:14970",
+   "written_in": "latin:14733",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "نحو 80 ألف طفل",
@@ -2307,15 +2628,37 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:6011",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Le PASEC 2024 sera la dernière évaluation internationale",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
+     "token": "Avant 2030 qui est le point final de l'ODD4",
+     "verdict": "absent"
+    },
+    {
+     "token": "Quel est l'accent mis sur 2030 ?",
+     "verdict": "absent"
     },
     {
      "token": "باسيك 2024 سيكون آخرَ تقييمٍ دولي",
@@ -2333,7 +2676,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "confirmed"
+   "state": "partial"
   },
   {
    "url": "https://web.archive.org/web/20250721184835/https://www.eipr.org/en/press/2025/07/educational-law-amendments-perpetuate-social-inequality-and-increase-burdens-families",
@@ -2341,39 +2684,75 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7857",
+   "forms_read": [
+    "h1",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Educational law amendments perpetuate social inequality and increase burdens on families",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "referred to parliament just days before the end of the current parliamentary term, without serious societal dialogue",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "shall not be less than two hundred pounds and not more than two thousand pounds",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "the fees prescribed in the old law were not less than 10 pounds and not more than 20 pounds",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "the share of the top 10% of students in highest-income households from spending on education in 2019-2020 was more than ",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "more than a third of Egyptians suffer from poverty and extreme poverty",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "the state has not adhered to these percentages to date",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "تعديلات الحكومة لقانون التعليم تكرِّس التفاوت الاجتماعي وتزيد الأعباء على الأسر",
@@ -4648,6 +5027,18 @@
    "ctype": ""
   },
   {
+   "url": "https://www.nchrd.gov.jo/News_PISA_2025.aspx",
+   "pieces": [
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
+   ],
+   "observed": "2026-11-26",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
+  },
+  {
    "url": "https://www.nieuwsbrievenminocw.nl/actueel/nieuws/2025/06/12/tijdpad-doorstroomtoets-en-overgang-po-vo-schooljaar-2025---2026-vastgesteld",
    "pieces": [
     "2026-07-07-netherlands-doorstroomtoets:en",
@@ -4703,7 +5094,9 @@
   {
    "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
    "pieces": [
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar"
    ],
    "observed": "2026-11-26",
@@ -4715,7 +5108,9 @@
   {
    "url": "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html",
    "pieces": [
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar"
    ],
    "observed": "2026-11-26",
@@ -4727,7 +5122,9 @@
   {
    "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html",
    "pieces": [
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar"
    ],
    "observed": "2026-11-26",

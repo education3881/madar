@@ -17,9 +17,9 @@ arabicVersion: 2026-11-26-jordan-pisa-2025-counts-from-2022
 sources:
   - title: "National Center for Human Resources Development (Jordan) - 'اعلان نتائج دراسة البرنامج الدولي لتقييم الطلبة-بيزا (PISA 2025)' ('Announcement of the results of the Programme for International Student Assessment - PISA 2025'), news notice, read in served text 2026-11-26 directly from nchrd.gov.jo, which answers this runner. Every Jordanian figure in this piece is from this notice and from no other register: the press conference on 'Tuesday 8/9/2026' and the four posts it lists as attending; the three national averages, science 375 to 407, mathematics 361 to 388 and reading 342 to 363; the government-school averages, 365 to 400, 353 to 382 and 332 to 358; the sample of 8,290 students from 276 schools across the Ministry, private education, UNRWA and military culture; the statistical-significance statement; the two narrowed gaps, boys' and girls' schools and rural and badia schools; the King Abdullah II Schools for Excellence comparison; 'the seventh round of the study, in which 91 countries took part'; and every quoted statement by Dr Abdullah Ababneh, Dr Imad Ababneh and Dr Azmi Mahafzah. The notice names the ministry twice and in two forms - 'the Ministry of Education and Human Development' in its first line and 'the Ministry of Education and Human Resources Development' thereafter - and both are reproduced where they appear. Its word for the third domain is القرائية, literacy, which is the domain PISA assesses as reading; it is rendered as reading throughout and the register's own word is recorded here. The notice gives no venue and prints no rank. Translations from the Arabic are this publication's own and the Arabic edition carries the statements as the register prints them."
     url: "https://www.nchrd.gov.jo/News_PISA_2025.aspx"
-  - title: "OECD - 'PISA 2025 Results (Volume I)', full-report page (read in served text 2026-11-26 from the Internet Archive's snapshot of 16 November 2026, because oecd.org refuses this runner's direct requests with 403; the refusal was not routed around, and the snapshot was re-fetched and re-hashed today against the read banked on the same date). The sentence that names Jordan: 'Within the OECD, science scores rose in Costa Rica, the Slovak Republic, Türkiye and the United Kingdom. Among non-OECD members, scores also went up in Cambodia, El Salvador, Georgia, Jordan, Mongolia, Montenegro, the Philippines, Saudi Arabia, Thailand, the United Arab Emirates, Uruguay and Uzbekistan.' That sentence carries no period in its own words. Also 'the unprecedented drop in performance recorded in PISA 2022' and 'The weakening of performance predates the COVID-19 pandemic in many countries, pointing to deeper and more persistent challenges within education systems.' Jordan appears nowhere else in this register except its site-wide country navigation."
+  - title: "OECD - 'PISA 2025 Results (Volume I)', full-report page (read in served text 2026-11-26 from the Internet Archive's snapshot of 16 November 2026, because oecd.org refuses this runner's direct requests; the refusal was not routed around, and the snapshot was re-fetched and re-hashed today against the read banked on the same date). The sentence that names Jordan: 'Within the OECD, science scores rose in Costa Rica, the Slovak Republic, Türkiye and the United Kingdom. Among non-OECD members, scores also went up in Cambodia, El Salvador, Georgia, Jordan, Mongolia, Montenegro, the Philippines, Saudi Arabia, Thailand, the United Arab Emirates, Uruguay and Uzbekistan.' That sentence carries no period in its own words. Also 'the unprecedented drop in performance recorded in PISA 2022' and 'The weakening of performance predates the COVID-19 pandemic in many countries, pointing to deeper and more persistent challenges within education systems.' Jordan appears nowhere else in this register except its site-wide country navigation."
     url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html"
-  - title: "OECD - 'PISA 2025: Students' reading and mathematics performance declined sharply across the OECD', press release, 8 September 2026 (read in served text 2026-11-26 from the Internet Archive's snapshot of 15 November 2026, for the same reason). The two ten-year improver lists Jordan is not named on - 'Between 2015 and 2025, some education systems improved performance in contrast to broader trends' and the systems that 'increased their share of top performers while reducing their share of low performers in science' - and the OECD-wide equity sentence, that the 85-point science gap narrowed 'largely because advantaged students performed less well rather than improvements among disadvantaged students'. Also '760 000 students across 91 countries and economies' and the 2027 publication schedule, 'Further PISA analysis will follow in 2027', with the Foreign Language Assessment in April and the full Learning in the Digital World results in May. Jordan is not named in this register."
+  - title: "OECD - 'PISA 2025: Students' reading and mathematics performance declined sharply across the OECD', press release, 8 September 2026 (read in served text 2026-11-26 from the Internet Archive's snapshot of 15 November 2026, for the same reason). The two ten-year improver lists Jordan is not named on - 'Between 2015 and 2025, some education systems improved performance in contrast to broader trends' and the systems that 'increased their share of top performers while reducing their share of low performers in science' - and the OECD-wide equity sentence, that the science gap between advantaged and disadvantaged students narrowed 'largely because advantaged students performed less well rather than improvements among disadvantaged students'. Also the 2027 publication schedule, 'Further PISA analysis will follow in 2027', with the Foreign Language Assessment in April and the full Learning in the Digital World results in May. Jordan is not named in this register."
     url: "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html"
   - title: "OECD - Secretary-General Mathias Cormann's speech at the international launch of PISA 2025, 8 September 2026 (read in served text 2026-11-26 from the Internet Archive's snapshot of 15 November 2026, for the same reason). The register that dates the list Jordan is on: 'Since 2022, science scores went up in Costa Rica, Slovakia, Türkiye and the United Kingdom - and in 12 other countries and economies.' The page carries 'Check against delivery', so it is the text as prepared and is cited as that. Jordan is not named in it."
     url: "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html"
@@ -47,7 +47,7 @@ to 407 points**, mathematics **from 361 to 388**, and reading **from 342 to 363*
 the improvement **"is statistically significant in the three fields, and indicates a clear recovery after
 the decline seen in the 2022 round's results."**
 
-It gives a second set for the public sector alone. Across government schools, science rose **from 365 to
+It gives a second set for government schools alone. Across them, science rose **from 365 to
 400** points, mathematics **from 353 to 382**, and reading **from 332 to 358**. The centre's president, Dr
 Abdullah Ababneh, said that the improvement government schools recorded — **"including the schools of the
 Ministry of Education and Human Resources Development and the military culture schools"** — was **"the
@@ -66,7 +66,7 @@ the participating Arab countries that have data available for comparison."** Nei
 a count, a list or a named comparison set, and neither is addressed in any of the three OECD registers read
 for this piece. They are carried here as what the centre's president said, which is all they are so far.
 
-Two gaps are reported as having closed. **"The gap between the performance of boys' schools and girls'
+Two gaps are reported as having narrowed. **"The gap between the performance of boys' schools and girls'
 schools, and likewise between rural schools and badia schools, narrowed clearly in the 2025 round."** And
 one school category is singled out: the performance of students at the King Abdullah II Schools for
 Excellence was, in the centre's words, **"the highest among the educational categories in Jordan, exceeding
@@ -124,8 +124,8 @@ documents themselves.
 
 **Where Jordan stood before 2022.** No register read here prints a Jordanian figure for 2018, or 2015, or
 any earlier round. Jordan's absence from the OECD's 2015-to-2025 improver list is a fact about that list and
-about science; it is not a statement that Jordan is below its 2015 level, and nothing here supports saying
-so in either direction. The OECD's country-level tables and country notes are where that lives, and they
+about science. It is not a statement that Jordan is below its 2015 level, and nothing here supports
+saying so in either direction. The OECD's country-level tables and country notes are where that lives, and they
 were not read for this piece.
 
 **How Jordan's averages sit against anyone else's.** The Volume I page prints OECD averages for 2025 and
@@ -134,8 +134,8 @@ states, across samples and participation sets whose comparability is not establi
 The one comparison in Jordan's notice is the centre's own, about one school category, and it is carried here
 as the centre's statement rather than as a measurement of Jordan.
 
-**Which way the two narrowed gaps closed.** A gap between two groups can close because the lower group rose
-or because the higher one fell. Jordan's centre reports the boys'/girls' and rural/badia school gaps
+**Which way the two gaps narrowed.** A gap between two groups can narrow because the lower group rose or
+because the higher one fell. Jordan's centre reports the boys'/girls' and rural/badia school gaps
 narrowing and does not say which. The OECD, reporting its own narrowed gap across OECD countries, does say:
 it narrowed **"largely because advantaged students performed less well rather than improvements among
 disadvantaged students."** These are two different gaps in two different populations, and the OECD's answer
@@ -148,8 +148,10 @@ no rounds.
 
 ## Reading is the sentence both men ended on
 
-Reading went from 342 to 363, the lowest of the three averages the centre reports, and it is the subject
-both named officials put at the top of the next stage rather than the bottom of the good news.
+Reading went from 342 to 363, and it is the subject both named officials put at the top of the next stage
+rather than into the good news. PISA reports its three domains on three separate scales, so this piece does
+not rank Jordan's three averages against one another. It does not need to. The two men say which domain they
+are worried about.
 
 Dr Abdullah Ababneh **"stressed the importance of placing reading at the focus of attention, as the key to
 learning."** Dr Azmi Mahafzah said that **"the biggest challenge in the coming stage lies in the field of
@@ -157,12 +159,12 @@ reading,"** and that the ministry **"is working on a more comprehensive strategy
 improve students' skills in it."** The strategy is not described further in the notice, and no document for
 it is cited there, so there is nothing yet to read.
 
-That is a ministry naming its weakest subject on the day its results improved, which is a more useful thing
-to put in a brief than a rank. On ranks the centre is careful too: Dr Imad Ababneh said the 2025 results
+That is a ministry naming its own priority on the day its results improved, which is a more useful thing to
+put in a brief than a rank. The centre prints no rank at all: Dr Imad Ababneh said the 2025 results
 **"showed Jordan's position advancing on the ladder of participating countries, numbering 91"** — an
 advance, with no position printed on either side of it.
 
-Dr Mahafzah added the caution that any ministry reporting a two-round gain owes its readers: that
+Dr Mahafzah added one more caution, and it is the one a two-round gain most needs beside it:
 **"developing the educational process needs a long time for its effects to appear in improving students'
 results."** He said the factors behind the improvement were **"the school environment, teacher training,
 and curriculum development."**
@@ -172,7 +174,7 @@ and curriculum development."**
 Two documents, and both are promised rather than published. The OECD said on 8 September that **"further
 PISA analysis will follow in 2027"**, with the Foreign Language Assessment results in April and the full
 Learning in the Digital World results and analysis in May. Jordan's own earlier results are published as
-national reports by the same centre, which carries a *PISA* section and a 2022 results document; a reading
+national reports by the same centre, which carries a *PISA* section and a 2022 results document. A reading
 of Jordan across rounds belongs in that register, not in a press notice.
 
 Until then, what can be said about Jordan and PISA 2025 is what its own centre said on the day: three
