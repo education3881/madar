@@ -293,6 +293,13 @@ function kickerFor(piece: typeof sorted[number], i: number): string {
         <span class="prev-editions__routes">
           <a class="prev-editions__browse" href={withBase('/editions/')}>Browse all editions →</a>
           <a class="prev-editions__browse" href={withBase('/browse/')}>Every published piece →</a>
+          {/* 2026-11-26: /map/ shipped this morning and SiteHeader carries it on all 77
+              other pages. The two home pages draw their own masthead, so they were again
+              the only two pages without a new chrome route — the same gap this strip was
+              built to close for /browse/, repeating on the next route added. Reuses
+              .prev-editions__browse rather than a new class, so the selector register
+              does not move. */}
+          <a class="prev-editions__browse" href={withBase('/map/')}>The atlas, by country →</a>
         </span>
       </div>
       <ul class="prev-editions__grid">

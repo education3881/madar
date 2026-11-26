@@ -188,6 +188,9 @@ function editionPieceCount(n: number): number {
         <span class="prev-editions__routes">
         <a class="prev-editions__browse" href={withBase('/ar/editions/')} lang="ar" dir="rtl">تصفّح كل الإصدارات ←</a>
           <a class="prev-editions__browse" href={withBase('/ar/browse/')} lang="ar" dir="rtl">الأرشيف كاملًا ←</a>
+          {/* 2026-11-26: see the English home page's note. /ar/map/ shipped this morning
+              and the two home pages were the only pages without the route. */}
+          <a class="prev-editions__browse" href={withBase('/ar/map/')} lang="ar" dir="rtl">الأطلس، بحسب البلد ←</a>
         </span>
       </div>
       <ul class="prev-editions__grid">
