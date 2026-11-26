@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Brief &middot; Mad&#257;r &middot; 2026-11-26</title>
+<meta name="description" content="Manager to Founder daily brief for Thursday 26 November 2026. Brief 142. Two pieces shipped in one day for the first time, so Edition 06 stands at two of six on the day it opened. The second is Jordan, whose national centre reported its PISA averages up in all three subjects against 2022 while the OECD names Jordan once, in science, on the same clock. Because that register is in Arabic, the Arabic edition is the only one in which every quotation can be checked at all, which is the reverse of everything this operation had written down, and it is ruling 160. The founder directive is executed: content first, issues 13, 16 and 17 closed, and two patches retired." />
+<style>
+  :root {
+    --color-paper:  #FAFAF7;
+    --color-ink:    #0E1B2C;
+    --color-orange: #D94F2A;
+    --color-sage:   #7A8471;
+    --color-sand:   #E8E2D0;
+    --color-rule:       rgba(14, 27, 44, 0.18);
+    --color-rule-soft:  rgba(14, 27, 44, 0.08);
+    --color-muted:      rgba(14, 27, 44, 0.62);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Newsreader", Georgia, serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --fs-h1:        clamp(32px, 4.0vw, 52px);
+    --fs-h2:        clamp(22px, 2.0vw, 28px);
+    --fs-dek:       clamp(17px, 1.4vw, 20px);
+    --fs-body:      18px;
+    --fs-caption:   11px;
+    --fs-kicker:    10.5px;
+    --container-max: 1100px;
+    --container-pad: 2rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 17px; }
+  @media (min-width: 1100px) { html { font-size: 18px; } }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.62;
+    font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    opacity: 0.035; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.10  0 0 0 0 0.17  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  main { position: relative; z-index: 1; }
+  .container { max-width: var(--container-max); margin-inline: auto; padding-inline: var(--container-pad); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; letter-spacing: -0.012em; line-height: 1.1; }
+  h1 { font-size: var(--fs-h1); letter-spacing: -0.018em; line-height: 1.05; }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 0.9em; }
+  a { color: var(--color-ink); text-decoration-color: var(--color-rule); }
+  a:hover { text-decoration-color: var(--color-orange); }
+
+  .kicker {
+    font-family: var(--font-mono); font-size: var(--fs-kicker);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange); font-weight: 500;
+  }
+  .mono { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.02em; color: var(--color-sage); }
+  .muted { color: var(--color-muted); }
+
+  .masthead {
+    padding-block: 1.75rem 0.75rem;
+    border-bottom: 1px solid var(--color-rule);
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+  }
+  .masthead__brand {
+    font-family: var(--font-display); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--color-ink);
+  }
+  .masthead__brand .macron { color: var(--color-orange); }
+  .masthead__date {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    text-align: right;
+  }
+  .masthead__date strong { color: var(--color-ink); display: block; font-weight: 500; margin-top: 0.2rem; }
+
+  .lede { margin-bottom: 3.5rem; }
+  .lede h1 { margin: 0.75rem 0 0.5rem; max-width: 32ch; }
+  .lede .dek {
+    font-family: var(--font-display); font-style: italic;
+    font-size: var(--fs-dek); line-height: 1.45;
+    color: var(--color-muted); max-width: 40rem;
+  }
+
+  .day {
+    padding-block: 2rem;
+    border-top: 1px solid var(--color-ink);
+    margin-bottom: 1rem;
+  }
+  .day__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+  }
+  .day__beat {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--color-orange);
+    padding-top: 0.4rem;
+    white-space: nowrap;
+  }
+  .day__title h2 {
+    font-size: clamp(28px, 2.8vw, 38px); line-height: 1.05;
+    letter-spacing: -0.018em;
+  }
+  .day__date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.04em; color: var(--color-sage);
+    margin-top: 0.3rem;
+  }
+
+  .stream { margin-top: 1rem; max-width: 42rem; }
+  .item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-rule-soft);
+  }
+  .item:last-child { border-bottom: none; }
+  .item__label {
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-sage); margin-bottom: 0.35rem;
+  }
+  .item__label.status-shipped { color: var(--color-orange); }
+  .item__label.status-running { color: var(--color-ink); }
+  .item__label.status-fixed  { color: var(--color-orange); }
+  .item__label.status-parked { color: var(--color-sage); }
+  .item__body { color: var(--color-ink); }
+  .item__note {
+    margin-top: 0.4rem;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--color-sage); line-height: 1.6;
+  }
+
+  .flag {
+    background: var(--color-sand);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .flag .kicker { color: var(--color-ink); }
+  .flag p { margin: 0.5rem 0 0; }
+
+  .push-block {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  .push-block .kicker { color: var(--color-orange); }
+  /* 2026-10-24: the first link any brief has ever carried rendered INVISIBLE —
+     `a` is var(--color-ink) and this block's background is ink. No brief in 111
+     had used an <a> inside it, so the default had never been exercised. Found by
+     looking at the rendered page (08-23), not by any gate. */
+  .push-block a { color: var(--color-paper); text-decoration-color: var(--color-orange); }
+  .push-block a:hover { text-decoration-color: var(--color-paper); }
+  .push-block p { margin: 0.5rem 0 0.75rem; }
+  /* 2026-11-05, standing-queue item 78: this rule was `.push-block code` and it
+     made `display: block; white-space: pre` of EVERY code span in this block,
+     including an inline one inside a sentence. It was written for the founder
+     push command, which this block has not carried since the cloud cutover; on
+     2026-11-02 a commit hash in a lede rendered as a full-width dark box and
+     broke the sentence, and that run removed its span and left the rule. Scoped
+     to block code here, with an inline form beside it. One link of a chain of
+     122 copied templates (item 79) -- a repair reaches forward only. */
+  .push-block pre code, .push-block code.block {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: rgba(250, 250, 247, 0.08);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-paper);
+    overflow-x: auto;
+    white-space: pre;
+    border-inline-start: 2px solid var(--color-orange);
+  }
+  .push-block code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: rgba(250, 250, 247, 0.10);
+    padding: 0.08em 0.32em;
+    border-radius: 2px;
+  }
+
+  /* Statistics panel (standing) */
+  .stats { border-top: 1px solid var(--color-ink); padding-block: 2rem; margin-bottom: 1rem; }
+  .stats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem; }
+  .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem; }
+  @media (max-width: 640px){ .stats__grid { grid-template-columns: repeat(2,1fr); } }
+  .stat { border-inline-start: 2px solid var(--color-orange); padding-inline-start: 0.75rem; }
+  .stat__n { display:block; font-family: var(--font-display); font-size: 2rem; line-height:1; color: var(--color-ink); }
+  .stat__l { display:block; font-family: var(--font-mono); font-size: 10px; letter-spacing:0.08em; text-transform:uppercase; color: var(--color-sage); margin-top:0.3rem; }
+  .stats__rows { font-size: 0.95rem; line-height: 1.9; }
+  .stats__k { font-family: var(--font-mono); font-size: 10px; letter-spacing:0.1em; text-transform:uppercase; color: var(--color-orange); margin-inline-end: 0.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-sage);
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+
+  /* ---- Mobile repair, standing-queue item 144, applied 2026-11-22 ----------------
+     Measured before this rule: 17 of 162 founder-facing artefacts overflowed a
+     390px viewport, 14 of them weekly reviews — 63.6% of the artefact the founder
+     opens on a Sunday, against 2.2% of the briefs. The mechanism is not an
+     overflowing descendant: a table or an unbreakable token sets a min-content
+     width wider than the column, and an element whose min-content width exceeds
+     its column GROWS ITS OWN BOX instead of overflowing it, so the leaf probe
+     reports nothing and the document scrolls sideways. Applied to all 162
+     artefacts rather than to the 17, because two recent reviews were clean by
+     luck (narrow tables) rather than by construction, and because there is no
+     template: every artefact carries its own copy of this stylesheet, so the copy
+     a future run inherits has to be the fixed one. */
+  @media (max-width: 640px) {
+    table { table-layout: fixed; width: 100%; max-width: 100%; }
+    th, td, td.n, th.n { overflow-wrap: anywhere; word-break: break-word; white-space: normal;
+                         padding-left: 0.35rem; padding-right: 0.35rem; }
+    pre, code { white-space: pre-wrap; overflow-wrap: anywhere; }
+    p, li, dd, dt, a, blockquote, figcaption, h1, h2, h3, h4 { overflow-wrap: anywhere; }
+    .statgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    [class*="grid"], [class*="grid"] > *, [class*="stat"], [class*="stat"] > * { min-width: 0; }
+  }
+</style></head><body><main class="container">  <header class="masthead">
+    <div class="masthead__brand">
+      Mad<span class="macron">&#257;</span>r
+      <span lang="ar" dir="rtl" style="font-family:'Amiri',serif;">&middot; &#1605;&#1583;&#1575;&#1585;</span>
+    </div>
+    <div class="masthead__date">
+      Daily brief &middot; No. 142
+      <strong>Thursday 26 November 2026</strong>
+    </div>
+  </header>
+
+  <section class="lede">
+  <div class="push-block">
+    <div class="kicker">Pieces shipped today &middot; Edition 06: 2 of 6</div>
+    <p>
+      <strong>Two pieces shipped on 26 November, which this publication has never done in one day.</strong>
+      <em>Three lists of risers</em> opened Edition 06 this morning. <em>Jordan counts from 2022</em> closed
+      all eight gate cells this afternoon. Both in English and Arabic, both served, both with their hero
+      still and share card. Your floor is one a day and the edition&rsquo;s floor is six by 6 December.
+    </p>
+    <p>
+      <strong>The Jordan piece found something the operation had written down backwards.</strong> Its
+      primary register is Jordan&rsquo;s national PISA centre, and that register is in Arabic. So the Arabic
+      edition quotes it in Arabic and quotes the OECD in English, and <strong>every one of its 29 quotations
+      is a byte beside a byte</strong>. The English edition has to translate, and <strong>19 of its 27
+      quoted spans are outside the reach of every instrument we own</strong>. Four rulings already call the
+      Arabic edition our second verification channel and all four were written from English sources. The
+      incapacity is not a property of Arabic. It is a property of the source&rsquo;s language, and our
+      instruments will always name the wrong edition. That is ruling 160.
+    </p>
+    <p>
+      Your directive is executed as written: content ran first and took the run, no new assertion and no new
+      tool were built, the issue housekeeping is done, and growth is one repair rather than a bet.
+    </p>
+  </div>
+  </section>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Yesterday</div>
+      <div class="day__title">Wednesday 25 November &middot; brief 141</div>
+    </div>
+    <p>
+      The Abu Dhabi piece came back from the Editor rather than going through, the queue&rsquo;s oldest row
+      was re-tested four ways and moved to blocked, seventy outbound citations were probed with zero dead,
+      and ruling 159 was filed. No piece shipped and the brief said so. Runs on 21, 22 (the weekly review),
+      23, 24, 25 and today &mdash; <strong>no dark day</strong>.
+    </p>
+    <p>
+      <strong>That piece is now parked to Edition 10</strong> by your directive, which puts the UAE in the
+      week of 28 December. Its four repairs happen in that lead-in week. Until then it costs no run time,
+      and nothing in it is lost.
+    </p>
+  </article>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Today</div>
+      <div class="day__title">Thursday 26 November &middot; brief 142</div>
+    </div>
+    <p>
+      <strong>Content &mdash; piece 2 of Edition 06, commissioned, drafted, judged, composed, gated, verified
+      and shipped in one run.</strong> <em>Jordan counts from 2022</em>: the national centre reported science
+      375 to 407, mathematics 361 to 388 and reading 342 to 363, each against 2022, all three called
+      statistically significant. The OECD names Jordan in exactly one sentence, on its three-year science
+      list, and on neither of its ten-year lists. Both registers are measuring the same interval; on
+      mathematics and reading the OECD says nothing at all, and silence about a subject is not a
+      contradiction of it. The piece says three times what it does not know, including the one its own
+      officials would most like it to assume.
+    </p>
+    <p>
+      <strong>Five corrections before it shipped, and two were only visible because there are two
+      editions.</strong> The English said two gaps had <em>closed</em> where the register says they
+      <em>narrowed</em> &mdash; the Arabic had it right all along. And both editions ranked Jordan&rsquo;s
+      three averages against each other, which is meaningless: PISA scales each subject separately, so 363 in
+      reading is not &ldquo;lower&rdquo; than 407 in science. Both now say so and rest the paragraph on what
+      the two named officials actually said, which is that reading is the work ahead.
+    </p>
+    <p>
+      <strong>Quality &mdash; the build is green and four reds preceded it, every one a real obligation the
+      piece created.</strong> Two new cited registers needed observation rows. Six annotation figures were
+      printed in no body. And twenty home-page selectors started matching, because an edition with two pieces
+      takes a template branch an edition with one does not &mdash; their own register entries said
+      <em>strike these the day they match</em>, and this was that day. <strong>The gate predicted its own
+      next state and was right.</strong> Yesterday&rsquo;s forward question is answered, uncomfortably: a
+      sentence we wrote this morning saying a source was unreachable was false by this afternoon, and today
+      produced five refusals in four distinct shapes &mdash; 403, no response at all, a 504, and
+      <strong>a perfectly healthy 200 whose served bytes do not contain the thing we came to read</strong>.
+      Only the first of those four is something any instrument we own can classify.
+    </p>
+    <p>
+      <strong>Growth &mdash; one repair, found by measuring rather than by looking.</strong> The one-click
+      slots on the front door turned over for the first time in eight weeks: they now hold today&rsquo;s two
+      pieces in both languages instead of a wave that closed in October. Nothing in the corpus is deeper than
+      two clicks and nothing is unreachable, across all 96 article pages. <strong>And the atlas you shipped
+      this morning was missing from the only two pages that matter</strong> &mdash; the home pages draw their
+      own navigation instead of the shared header, so 77 pages linked <code>/map/</code> and the front door
+      did not. Fixed in both languages. That is the third time this exact gap has appeared, and the real fix
+      is for the home pages to stop having a second navigation.
+    </p>
+    <p>
+      <strong>Research &mdash; ruling 160 and a source index.</strong> The ruling is in the lede. The index
+      is Jordan&rsquo;s national PISA centre written up for every future Jordanian piece: its three
+      officials with confirmed transliterations and the warning that two of them share a surname, the
+      unread 2022 results PDF where a reading across rounds lives, and six cautions a drafter has to carry.
+    </p>
+    <p>
+      <strong>Housekeeping, owed by this run and done.</strong> Issue 13 closed &mdash; your plan answers it.
+      Issue 17 and issue 16 closed &mdash; both were runs that died at the turn cap and both causes are fixed
+      by your 400-turn envelope and the publish step that no longer depends on the run. Issue 7 commented
+      and left open: its publish-step patch landed and is retired, and the feed-cache patch has not. A second
+      patch was retired as <em>superseded rather than applied</em> &mdash; it asked for a 260-turn cap, and
+      leaving it on the board would have told a future run to lower 400.
+    </p>
+  </article>
+
+  <div class="container">
+<div class="stats">
+  <h3>Statistics &middot; as of 2026-11-26 &middot; published (live) corpus</h3>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n">48</span><span class="stat__l">English pieces</span></div>
+    <div class="stat"><span class="stat__n">48</span><span class="stat__l">Arabic pieces</span></div>
+    <div class="stat"><span class="stat__n">100%</span><span class="stat__l">AR/EN parity</span></div>
+    <div class="stat"><span class="stat__n">45</span><span class="stat__l">Countries covered</span></div>
+  </div>
+  <div class="stats__rows">
+    <div><span class="stats__k">By region</span> MENA 17 · Africa 11 · Asia 7 · Europe 7 · LatAm-Caribbean 3 · Oceania 2 · N-America 1</div>
+    <div><span class="stats__k">Top themes</span> government-led programs 48 · access 42 · value of teachers 31 · language and heritage preservation 8 · AI-readiness 6</div>
+    <div><span class="stats__k">Pieces per ISO week</span> 22 -> 10 · 24 -> 2 · 25 -> 5 · 26 -> 1 · 27 -> 1 · 28 -> 17 · 29 -> 1 · 31 -> 1 · 35 -> 2 · 36 -> 1 · 38 -> 2 · 39 -> 1 · 43 -> 1 · 46 -> 1 · 48 -> 2</div>
+    <div><span class="stats__k">Cadence</span> first 2026-05-25 &middot; latest 2026-11-26</div>
+    <div><span class="stats__k">Traffic</span> site: no tracker, no analytics and no third-party request, by design &middot; Substack: pending launch &middot; shares: manual (weekly)</div>
+  </div>
+</div>
+  </div>
+
+  <article class="day">
+    <div class="day__head">
+      <div class="day__beat">Tomorrow</div>
+      <div class="day__title">Friday 27 November &middot; on deck</div>
+    </div>
+    <p>
+      <strong>Piece 3 of Edition 06, and the board is the problem rather than the piece.</strong> Two
+      candidates are commissioned at cell 1 &mdash; Qatar, which is on two of the three lists and absent from
+      the third, and the UAE, which is on all three. <strong>Both are blocked at the drafting cell on the
+      same thing:</strong> every remaining country-anchored candidate needs a national register this runner
+      cannot read in served text. Qatar&rsquo;s ministry does not answer at all. Saudi Arabia&rsquo;s and the
+      UAE&rsquo;s answer and then render their news in JavaScript, so the served bytes carry no PISA text. No
+      OECD country note is linked from any register we hold, and the archive&rsquo;s own index query times
+      out. Every remaining OECD-wide candidate is blocked instead by the geography rule: an international
+      organisation is a source, and a piece has to be about a place.
+    </p>
+    <p>
+      So tomorrow&rsquo;s first hour goes to opening one of those two registers by another route, and the
+      ship comes from whichever opens. <strong>Three in flight is your standing requirement and we were at
+      zero behind today&rsquo;s two ships</strong>, which is the one thing today got wrong: both pieces were
+      composed on the morning they shipped, and a day run that way has no slack in it.
+    </p>
+    <p>
+      <strong>One decision is still yours and it cost something real today.</strong> Fifteen of the Jordan
+      piece&rsquo;s figures rest on a single page that no archive holds a copy of. Asking archive.org to keep
+      one is what issue 12 is about, and that issue&rsquo;s own default says no new URL is sent until you
+      say so &mdash; so we did not send it, and the register records it as never asked. One of the 375
+      sources we cite is already gone and 48 more exist in exactly one copy. Under a plan that ships a piece
+      a day for five weeks, that population grows faster than it ever has. The recommendation has not
+      changed and no new deadline is attached to it.
+    </p>
+    <p>
+      <strong>And the forward question the next run tests before adding anything:</strong> both of
+      today&rsquo;s coverage gates are satisfied by a row that says <em>not yet asked</em> &mdash; which is
+      what the Jordan piece&rsquo;s spine carries tonight. A coverage assertion is satisfied by the record of
+      an absence as fully as by the record of a presence. So: of the 375 rows on file, how many say never
+      asked, never reachable, or asked and refused &mdash; and what share of this corpus&rsquo;s figures rest
+      on one of those alone? Nobody has ever looked.
+    </p>
+  </article>
+
+  <p style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-sage);border-top:1px solid var(--color-ink);padding-top:1.25rem;margin-top:2.5rem;">
+    Traffic &middot; the site carries no third-party tracker, no analytics and no third-party request, by
+    design. No visitor number is estimated anywhere in this brief. What is measured above is the shape of the
+    site graph and the health of the sources this publication points a reader at &mdash; both ours to read
+    without anyone&rsquo;s permission.
+  </p>
+
+</main></body></html>
