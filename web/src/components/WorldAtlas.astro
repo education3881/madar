@@ -1,0 +1,537 @@
+---
+// WorldAtlas — the interactive country map at /map/ and /ar/map/ (2026-11-26).
+//
+// The founder asked for "a very beautiful interactive map that shows the number of
+// articles per country, where you can click a country and see the filtered list."
+//
+// HOW IT STAYS INSIDE THE HOUSE RULES
+// * Nothing is fetched from a map service. Every country is an inline SVG path,
+//   projected once by agents/tools/build_world_map.mjs into src/data/world-map.json
+//   (Natural Earth, public domain). qa_third_party_origins stays green by construction.
+// * Counts are DERIVED from the approved collection at build time, through
+//   countriesOf(), the same function the browse pages count with, so the map and
+//   /browse/ cannot disagree about a country. Held pieces never reach this file.
+// * Without JavaScript the page is still complete: the full list of pieces is
+//   served, every piece is a link, and the map is a picture. The script only
+//   filters what is already there.
+// * Only countries Madār has covered are named or interactive. Every other shape
+//   is unlabelled land, so the map signals posture by what it covers and names
+//   nothing else.
+// * Every selector below matches markup that exists at build time
+//   (qa_selector_coverage): the selected state is styled through
+//   [aria-pressed="true"], which the "All countries" chip carries from the start.
+import atlas from '../data/world-map.json';
+import { withBase } from '../lib/urls';
+import { byDateThenSlug, byKeyAsc, byArabicKeyAsc } from '../lib/order';
+import { countriesOf, facetSlug } from '../lib/taxonomy';
+import { countryAr } from '../lib/i18n-geo';
+
+interface Props {
+  lang: 'en' | 'ar';
+  pieces: any[];
+}
+const { lang, pieces } = Astro.props;
+const ar = lang === 'ar';
+
+// Frontmatter name -> Natural Earth name, where the two differ. A country whose
+// name is in neither list still appears in the chip row and the list below; it
+// just has no shape to click, and the build says so.
+const ATLAS_NAME: Record<string, string> = {
+  'Türkiye': 'Turkey',
+  'United States': 'United States of America',
+  'Czech Republic': 'Czechia',
+  'DR Congo': 'Dem. Rep. Congo',
+  'Democratic Republic of the Congo': 'Dem. Rep. Congo',
+  'Dominican Republic': 'Dominican Rep.',
+  'Central African Republic': 'Central African Rep.',
+  'South Sudan': 'S. Sudan',
+  'Equatorial Guinea': 'Eq. Guinea',
+  'Bosnia and Herzegovina': 'Bosnia and Herz.',
+  'Solomon Islands': 'Solomon Is.',
+  'Eswatini': 'eSwatini',
+  'Ivory Coast': "Côte d'Ivoire",
+};
+
+const arNum = new Intl.NumberFormat('ar-EG');
+const enNum = new Intl.NumberFormat('en-US');
+const num = (n: number) => (ar ? arNum.format(n) : enNum.format(n));
+const countAr = (n: number, one: string, two: string, few: string, many: string) =>
+  n === 1 ? one : n === 2 ? two : n <= 10 ? `${arNum.format(n)} ${few}` : `${arNum.format(n)} ${many}`;
+const piecesLabel = (n: number) =>
+  ar ? countAr(n, 'مادة واحدة', 'مادتان', 'مواد', 'مادة') : `${enNum.format(n)} ${n === 1 ? 'piece' : 'pieces'}`;
+const countriesLabel = (n: number) =>
+  ar ? countAr(n, 'بلد واحد', 'بلدان', 'بلدان', 'بلدًا') : `${enNum.format(n)} ${n === 1 ? 'country' : 'countries'}`;
+const tierOf = (n: number) => (n >= 3 ? '3' : String(n));
+
+// ---- derive the counts --------------------------------------------------------
+const listed = pieces.slice().sort(byDateThenSlug);
+const counts = new Map<string, number>();
+for (const p of listed) for (const c of countriesOf(p)) counts.set(c, (counts.get(c) ?? 0) + 1);
+
+type Covered = { key: string; slug: string; label: string; count: number };
+const covered: Covered[] = [...counts.entries()].map(([key, count]) => ({
+  key,
+  slug: facetSlug(key),
+  label: ar ? countryAr(key) : key,
+  count,
+}));
+covered.sort((a, b) => b.count - a.count || (ar ? byArabicKeyAsc(a.label, b.label) : byKeyAsc(a.label, b.label)));
+
+const byAtlasName = new Map(covered.map((c) => [ATLAS_NAME[c.key] ?? c.key, c]));
+const shapes = atlas.countries.map((s) => ({ ...s, hit: byAtlasName.get(s.name) }));
+const drawn = new Set(shapes.filter((s) => s.hit).map((s) => s.hit!.key));
+const unshaped = covered.filter((c) => !drawn.has(c.key));
+if (unshaped.length) {
+  console.warn(`[WorldAtlas] no map shape for: ${unshaped.map((c) => c.key).join(', ')} (add it to ATLAS_NAME)`);
+}
+// Covered shapes are drawn last so their outline sits above their neighbours'.
+shapes.sort((a, b) => Number(Boolean(a.hit)) - Number(Boolean(b.hit)));
+const dots = shapes.filter((s) => s.hit && s.small);
+
+const total = listed.length;
+const nCountries = covered.length;
+const articleHref = (id: string) => withBase(ar ? `/ar/articles/${id}/` : `/articles/${id}/`);
+const dateFormatter = new Intl.DateTimeFormat(ar ? 'ar-EG' : 'en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  // Ruling #60: pinned to the zone the frontmatter date was parsed in.
+  timeZone: 'UTC',
+});
+
+const t = ar
+  ? {
+      kicker: 'الأطلس',
+      title: 'أين قرأ مدار',
+      intro: `${piecesLabel(total)} في ${countriesLabel(nCountries)}، كلٌّ منها مقروء من مصادر أولية مُسمّاة. اختر بلدًا على الخريطة أو من القائمة تحتها لترى ما نشرناه عنه.`,
+      mapLabel: 'خريطة العالم، وعليها البلدان التي نشر مدار عنها',
+      legend: ['مادة واحدة', 'مادتان', 'ثلاث مواد فأكثر'],
+      note: 'حدود البلدان من «ناتشورال إيرث» مبسّطة، وهي للاسترشاد فقط.',
+      all: 'كل البلدان',
+      allHead: 'كل المواد',
+      chipsLabel: 'اختر بلدًا',
+    }
+  : {
+      kicker: 'The atlas',
+      title: 'Where Madār has read',
+      intro: `${piecesLabel(total)} across ${countriesLabel(nCountries)}, each read from named primary sources. Choose a country on the map, or from the list below it, to see what we have published there.`,
+      mapLabel: 'World map showing the countries Madār has published on',
+      legend: ['1 piece', '2 pieces', '3 or more'],
+      note: 'Country shapes from Natural Earth, simplified. Shown for orientation only.',
+      all: 'All countries',
+      allHead: 'All pieces',
+      chipsLabel: 'Choose a country',
+    };
+---
+
+<section class="atlas" data-atlas data-all-head={t.allHead} data-all-count={piecesLabel(total)}>
+  <header class="atlas__head">
+    <p class="kicker">{t.kicker}</p>
+    <h1 class="atlas__title">{t.title}</h1>
+    <p class="atlas__intro measure">{t.intro}</p>
+  </header>
+
+  <figure class="atlas__figure">
+    <div class="atlas__frame">
+      <svg
+        class="atlas__map"
+        viewBox={`0 0 ${atlas.width} ${atlas.height}`}
+        role="group"
+        aria-label={t.mapLabel}
+        dir="ltr"
+      >
+        <path class="atlas__grid" d={atlas.graticule} aria-hidden="true" />
+        <g class="atlas__land">
+          {shapes.map((s) =>
+            s.hit ? (
+              <path
+                class="atlas__c"
+                d={s.d}
+                data-country={s.hit.slug}
+                data-tier={tierOf(s.hit.count)}
+                data-label={s.hit.label}
+                data-count-label={piecesLabel(s.hit.count)}
+                tabindex="0"
+                role="button"
+                aria-pressed="false"
+                aria-label={`${s.hit.label}, ${piecesLabel(s.hit.count)}`}
+              />
+            ) : (
+              <path class="atlas__x" d={s.d} aria-hidden="true" />
+            )
+          )}
+        </g>
+        <g class="atlas__dots" aria-hidden="true">
+          {dots.map((s) => (
+            <circle
+              class="atlas__dot"
+              cx={s.cx}
+              cy={s.cy}
+              r="4.5"
+              data-country={s.hit!.slug}
+              data-tier={tierOf(s.hit!.count)}
+              data-label={s.hit!.label}
+              data-count-label={piecesLabel(s.hit!.count)}
+              aria-pressed="false"
+            />
+          ))}
+        </g>
+      </svg>
+      <div class="atlas__tip" hidden aria-hidden="true">
+        <span class="atlas__tipname"></span>
+        <span class="atlas__tipcount"></span>
+      </div>
+    </div>
+    <figcaption class="atlas__caption">
+      <ul class="atlas__legend">
+        {t.legend.map((label, i) => (
+          <li>
+            <svg class="atlas__swatch" viewBox="0 0 14 14" aria-hidden="true">
+              <rect class="atlas__c" x="0.5" y="0.5" width="13" height="13" data-tier={String(i + 1)} />
+            </svg>
+            {label}
+          </li>
+        ))}
+      </ul>
+      <span class="atlas__note">{t.note}</span>
+    </figcaption>
+  </figure>
+
+  <nav class="atlas__chips" aria-label={t.chipsLabel}>
+    <button type="button" class="chip" data-country="" data-label={t.allHead} data-count-label={piecesLabel(total)} aria-pressed="true">
+      <span class="chip__name">{t.all}</span>
+      <span class="chip__count">{num(nCountries)}</span>
+    </button>
+    {covered.map((c) => (
+      <button type="button" class="chip" data-country={c.slug} data-label={c.label} data-count-label={piecesLabel(c.count)} aria-pressed="false">
+        <span class="chip__name">{c.label}</span>
+        <span class="chip__count">{num(c.count)}</span>
+      </button>
+    ))}
+  </nav>
+
+  <div class="atlas__results">
+    <h2 class="atlas__listhead" aria-live="polite">
+      <span class="atlas__listname">{t.allHead}</span>
+      <span class="atlas__listcount">{piecesLabel(total)}</span>
+    </h2>
+    <ul class="atlas__pieces">
+      {listed.map((piece) => (
+        <li class="piece" data-countries={countriesOf(piece).map(facetSlug).join(' ')}>
+          <a href={articleHref(piece.id)} class="piece__link">
+            <span class="piece__meta">
+              <span class="piece__country">{ar ? countryAr(piece.data.country) : piece.data.country}</span>
+              <span class="piece__date">{dateFormatter.format(piece.data.date)}</span>
+            </span>
+            <h3 class="piece__title">{piece.data.title}</h3>
+            {piece.data.dek && <p class="piece__dek">{piece.data.dek}</p>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<script>
+  // Filters what the page already serves. No data is fetched.
+  for (const root of document.querySelectorAll<HTMLElement>('[data-atlas]')) {
+    const frame = root.querySelector<HTMLElement>('.atlas__frame')!;
+    const tip = root.querySelector<HTMLElement>('.atlas__tip')!;
+    const tipName = root.querySelector<HTMLElement>('.atlas__tipname')!;
+    const tipCount = root.querySelector<HTMLElement>('.atlas__tipcount')!;
+    const listName = root.querySelector<HTMLElement>('.atlas__listname')!;
+    const listCount = root.querySelector<HTMLElement>('.atlas__listcount')!;
+    const results = root.querySelector<HTMLElement>('.atlas__results')!;
+    const items = [...root.querySelectorAll<HTMLElement>('.atlas__pieces > li')];
+    const controls = [...root.querySelectorAll<Element>('[data-country]')];
+    let current = '';
+
+    const select = (slug: string, scroll: boolean) => {
+      current = slug;
+      for (const el of controls) {
+        el.setAttribute('aria-pressed', String((el.getAttribute('data-country') ?? '') === slug));
+      }
+      for (const li of items) {
+        li.hidden = slug !== '' && !(li.dataset.countries ?? '').split(' ').includes(slug);
+      }
+      const chip = root.querySelector<HTMLElement>(`.chip[data-country="${slug}"]`);
+      listName.textContent = chip?.dataset.label ?? root.dataset.allHead ?? '';
+      listCount.textContent = chip?.dataset.countLabel ?? root.dataset.allCount ?? '';
+      const hash = slug ? `#${slug}` : ' ';
+      history.replaceState(null, '', hash === ' ' ? location.pathname + location.search : hash);
+      if (scroll && slug) {
+        const top = results.getBoundingClientRect().top;
+        if (top > window.innerHeight * 0.75) results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    root.addEventListener('click', (e) => {
+      const el = (e.target as Element).closest('[data-country]');
+      if (!el || !root.contains(el)) return;
+      const slug = el.getAttribute('data-country') ?? '';
+      const fromMap = el.closest('svg') !== null;
+      select(fromMap && slug === current ? '' : slug, fromMap);
+    });
+    root.addEventListener('keydown', (e) => {
+      const el = (e.target as Element).closest('path[data-country]');
+      if (!el || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault();
+      const slug = el.getAttribute('data-country') ?? '';
+      select(slug === current ? '' : slug, true);
+    });
+
+    const showTip = (el: Element, x: number, y: number) => {
+      tipName.textContent = el.getAttribute('data-label');
+      tipCount.textContent = el.getAttribute('data-count-label');
+      const box = frame.getBoundingClientRect();
+      tip.style.left = `${Math.min(Math.max(x - box.left, 60), box.width - 60)}px`;
+      tip.style.top = `${y - box.top}px`;
+      tip.hidden = false;
+    };
+    frame.addEventListener('pointermove', (e) => {
+      const el = (e.target as Element).closest('svg [data-country]');
+      if (el && e.pointerType !== 'touch') showTip(el, e.clientX, e.clientY);
+      else tip.hidden = true;
+    });
+    frame.addEventListener('pointerleave', () => (tip.hidden = true));
+    frame.addEventListener('focusin', (e) => {
+      const el = (e.target as Element).closest('path[data-country]');
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      showTip(el, r.left + r.width / 2, r.top + r.height / 2);
+    });
+    frame.addEventListener('focusout', () => (tip.hidden = true));
+
+    const fromHash = decodeURIComponent(location.hash.slice(1));
+    if (fromHash && root.querySelector(`.chip[data-country="${CSS.escape(fromHash)}"]`)) select(fromHash, false);
+  }
+</script>
+
+<style>
+  .atlas { padding-block: var(--space-lg) var(--space-2xl); }
+  .atlas__head {
+    padding-block: var(--space-xl) var(--space-lg);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--space-lg);
+  }
+  .atlas__title { margin-block-start: var(--space-sm); }
+  .atlas__intro {
+    margin-block-start: var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--fs-dek);
+    line-height: var(--lh-dek);
+    font-style: italic;
+    color: var(--color-muted);
+  }
+
+  /* ---- the map ---- */
+  .atlas__figure { margin: 0 0 var(--space-lg); }
+  .atlas__frame {
+    position: relative;
+    background: var(--color-paper);
+    border-block: 1px solid var(--color-rule-soft);
+    padding-block: var(--space-md);
+  }
+  .atlas__map { display: block; width: 100%; height: auto; overflow: hidden; }
+  .atlas__grid { fill: none; stroke: var(--color-rule-soft); stroke-width: 0.6; }
+  .atlas__x {
+    fill: var(--color-sand);
+    stroke: var(--color-paper);
+    stroke-width: 0.5;
+    stroke-linejoin: round;
+  }
+  .atlas__c {
+    fill: var(--color-orange);
+    stroke: var(--color-paper);
+    stroke-width: 0.6;
+    stroke-linejoin: round;
+    cursor: pointer;
+    outline: none;
+    transition: fill 160ms ease, fill-opacity 160ms ease, stroke 160ms ease;
+  }
+  .atlas [data-tier="1"] { fill-opacity: 0.42; }
+  .atlas [data-tier="2"] { fill-opacity: 0.7; }
+  .atlas [data-tier="3"] { fill-opacity: 1; }
+  .atlas__c:hover,
+  .atlas__c:focus-visible { fill-opacity: 1; stroke: var(--color-ink); stroke-width: 1; }
+  .atlas__dot {
+    fill: var(--color-orange);
+    stroke: var(--color-paper);
+    stroke-width: 1.4;
+    cursor: pointer;
+  }
+  .atlas__dot:hover { stroke: var(--color-ink); }
+
+  /* The selected state. ONE rule for the chips and the shapes: `fill` paints the
+     SVG, `background` and `color` paint the button, and each ignores the
+     properties that do not apply to it. The "All countries" chip carries
+     aria-pressed="true" in the served markup, so the rule matches at build time. */
+  .atlas [aria-pressed="true"] {
+    fill: var(--color-ink);
+    fill-opacity: 1;
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  .atlas__tip {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 14px));
+    pointer-events: none;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 0.45rem 0.7rem 0.5rem;
+    border-radius: 2px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    box-shadow: 0 6px 18px var(--color-rule);
+  }
+  /* `display: flex` above would otherwise override the hidden attribute. */
+  .atlas__tip[hidden] { display: none; }
+  .atlas__tipname { font-family: var(--font-display); font-size: 18px; line-height: 1.1; }
+  .atlas__tipcount {
+    font-family: var(--font-mono);
+    font-size: var(--fs-caption);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .atlas__caption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    margin-block-start: 0.85rem;
+    font-family: var(--font-mono);
+    font-size: var(--fs-caption);
+    letter-spacing: 0.06em;
+    color: var(--color-muted);
+  }
+  .atlas__legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+  }
+  .atlas__legend li { display: inline-flex; align-items: center; gap: 0.45rem; }
+  .atlas__swatch { width: 13px; height: 13px; display: block; }
+  .atlas__note { font-style: normal; }
+
+  /* ---- the chips ---- */
+  .atlas__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.6rem;
+    padding-block: var(--space-md) var(--space-lg);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--space-xl);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font: inherit;
+    color: var(--color-ink);
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    padding: 0.38rem 0.65rem;
+    cursor: pointer;
+    transition: border-color 140ms ease, color 140ms ease, background 140ms ease;
+  }
+  .chip:hover { border-color: var(--color-orange); color: var(--color-orange); }
+  .chip:focus-visible { outline: 2px solid var(--color-orange); outline-offset: 2px; }
+  .chip__name { font-family: var(--font-body); font-size: 15px; }
+  .chip__count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+  }
+
+  /* ---- the filtered list ---- */
+  .atlas__listhead {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-block-end: var(--space-lg);
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+  }
+  .atlas__listcount {
+    font-family: var(--font-mono);
+    font-size: var(--fs-caption);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-orange);
+  }
+  .atlas__pieces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+  .piece__link { display: block; text-decoration: none; color: var(--color-ink); }
+  .piece__meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .piece__country { color: var(--color-orange); font-weight: 500; }
+  .piece__date { opacity: 0.55; }
+  .piece__title {
+    margin-block: 0.5rem 0;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: -0.008em;
+  }
+  .piece__dek {
+    margin-block-start: 0.45rem;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--color-muted);
+  }
+  .piece__link:hover .piece__title { color: var(--color-orange); }
+
+  /* ---- Arabic ---- */
+  :global([dir="rtl"]) .atlas__tipname,
+  :global([dir="rtl"]) .atlas__listhead,
+  :global([dir="rtl"]) .piece__title { font-family: var(--font-arabic-display); }
+  :global([dir="rtl"]) .chip__name,
+  :global([dir="rtl"]) .piece__dek,
+  :global([dir="rtl"]) .atlas__intro { font-family: var(--font-arabic); font-style: normal; }
+  :global([dir="rtl"]) .atlas__tipcount,
+  :global([dir="rtl"]) .atlas__listcount,
+  :global([dir="rtl"]) .piece__meta,
+  :global([dir="rtl"]) .atlas__caption { letter-spacing: 0; text-transform: none; }
+
+  @media (max-width: 720px) {
+    .atlas__pieces { grid-template-columns: 1fr; gap: 1.5rem; }
+    .atlas__frame { margin-inline: calc(var(--space-md) * -1); }
+    /* On a phone the chip wall pushed the list two screens down. One row that
+       scrolls sideways keeps the filtered list directly under the map. */
+    .atlas__chips {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin-inline: calc(var(--space-md) * -1);
+      padding-inline: var(--space-md);
+    }
+    .chip { flex: none; }
+  }
+</style>

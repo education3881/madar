@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import WorldAtlas from '../../components/WorldAtlas.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/urls';
+import { byDateThenSlug } from '../../lib/order';
+import { countriesOf } from '../../lib/taxonomy';
+import { collectionJsonLd } from '../../lib/structuredData';
+
+// الأطلس (AR), added 2026-11-26. Derived from the Arabic collection, so the
+// hreflang pair with /map/ is reciprocal without either page listing the other.
+const all = (await getCollection('articles-ar', ({ data }) => data.approved !== false)).slice().sort(byDateThenSlug);
+const nCountries = new Set(all.flatMap((p) => countriesOf(p as any))).size;
+const arNum = new Intl.NumberFormat('ar-EG');
+const countAr = (n: number, one: string, two: string, few: string, many: string) =>
+  n === 1 ? one : n === 2 ? two : n <= 10 ? `${arNum.format(n)} ${few}` : `${arNum.format(n)} ${many}`;
+const description = `خريطة لكل مواد مدار بحسب البلد: ${countAr(all.length, 'مادة واحدة', 'مادتان', 'مواد', 'مادة')} في ${countAr(nCountries, 'بلد واحد', 'بلدان', 'بلدان', 'بلدًا')}، عن التعليم المبكر والتعليم العام، مقروءة من مصادر أولية مُسمّاة، بالعربية والإنجليزية.`;
+const jsonLd = collectionJsonLd({
+  lang: 'ar',
+  path: withBase('/ar/map/'),
+  name: 'الأطلس',
+  isFacet: false,
+  hub: { path: withBase('/ar/map/'), label: 'الأطلس' },
+  items: all.map((p) => ({ name: p.data.title, path: withBase(`/ar/articles/${p.id}/`) })),
+});
+---
+
+<Base title="الأطلس · مدار" description={description} lang="ar" ogImage="/og/brand-card.png" alternate={{ en: '/map/', ar: '/ar/map/' }} jsonLd={jsonLd}>
+  <div class="container" lang="ar" dir="rtl">
+    <WorldAtlas lang="ar" pieces={all} />
+  </div>
+</Base>

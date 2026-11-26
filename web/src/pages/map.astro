@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import WorldAtlas from '../components/WorldAtlas.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../lib/urls';
+import { byDateThenSlug } from '../lib/order';
+import { countriesOf } from '../lib/taxonomy';
+import { collectionJsonLd } from '../lib/structuredData';
+
+// The atlas (EN), added 2026-11-26 on the founder's request. The map and its
+// filtered list are derived from the approved collection; see WorldAtlas.astro.
+const all = (await getCollection('articles', ({ data }) => data.approved !== false)).slice().sort(byDateThenSlug);
+const nCountries = new Set(all.flatMap((p) => countriesOf(p as any))).size;
+const description = `A map of every Madār piece by country: ${all.length} pieces across ${nCountries} countries, early-childhood and K-12 education read from named primary sources in English and Arabic.`;
+const jsonLd = collectionJsonLd({
+  lang: 'en',
+  path: withBase('/map/'),
+  name: 'The atlas',
+  isFacet: false,
+  hub: { path: withBase('/map/'), label: 'The atlas' },
+  items: all.map((p) => ({ name: p.data.title, path: withBase(`/articles/${p.id}/`) })),
+});
+---
+
+<Base title="The atlas · Madār" description={description} lang="en" ogImage="/og/brand-card.png" alternate={{ en: '/map/', ar: '/ar/map/' }} jsonLd={jsonLd}>
+  <div class="container">
+    <WorldAtlas lang="en" pieces={all} />
+  </div>
+</Base>

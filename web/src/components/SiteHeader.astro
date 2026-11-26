@@ -38,8 +38,8 @@ const otherLangHref = withBase(lang === 'ar' ? '/' : '/ar/');
 const otherLangLabel = lang === 'ar' ? 'English' : 'العربية';
 
 const nav = {
-  en: { latest: 'Latest', editions: 'Editions', browse: 'Browse', about: 'About', newsletter: 'Newsletter' },
-  ar: { latest: 'الأحدث', editions: 'الإصدارات', browse: 'تصفّح', about: 'عن المنشور', newsletter: 'النشرة' },
+  en: { latest: 'Latest', editions: 'Editions', browse: 'Browse', map: 'Map', about: 'About', newsletter: 'Newsletter' },
+  ar: { latest: 'الأحدث', editions: 'الإصدارات', browse: 'تصفّح', map: 'الخريطة', about: 'عن المنشور', newsletter: 'النشرة' },
 }[lang];
 
 // Arabic has no standalone About page yet (commissioned 2026-08-16); the AR
@@ -54,6 +54,8 @@ const editionsHref = withBase(lang === 'ar' ? '/ar/editions/' : '/editions/');
 // home nav on purpose: the reader who wants more of a subject is the one who
 // has just finished a piece about it.
 const browseHref = withBase(lang === 'ar' ? '/ar/browse/' : '/browse/');
+// The atlas (2026-11-26): the map of every piece by country, in both navs.
+const mapHref = withBase(lang === 'ar' ? '/ar/map/' : '/map/');
 ---
 
 <header class={`site-header site-header--${variant}`} data-lang={lang}>
@@ -83,6 +85,7 @@ const browseHref = withBase(lang === 'ar' ? '/ar/browse/' : '/browse/');
         <a href={homeHref} class="uppercase">{nav.latest}</a>
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
         <a href={browseHref} class="uppercase">{nav.browse}</a>
+        <a href={mapHref} class="uppercase">{nav.map}</a>
         <a href={aboutHref} class="uppercase">{nav.about}</a>
         <span class="site-nav__sep" aria-hidden="true">·</span>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
@@ -93,6 +96,7 @@ const browseHref = withBase(lang === 'ar' ? '/ar/browse/' : '/browse/');
       <nav class="site-nav site-nav--article" aria-label={lang === 'ar' ? 'تنقّل' : 'Navigation'}>
         <a href={editionsHref} class="uppercase">{nav.editions}</a>
         <a href={browseHref} class="uppercase">{nav.browse}</a>
+        <a href={mapHref} class="uppercase">{nav.map}</a>
         <a href={otherLangHref} class="uppercase" hreflang={lang === 'ar' ? 'en' : 'ar'} lang={lang === 'ar' ? 'en' : 'ar'}>{otherLangLabel}</a>
       </nav>
     )}
