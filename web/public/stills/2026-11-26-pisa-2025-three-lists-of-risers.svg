@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Three horizontal rules in ink on a paper-cream page, one above another. The top rule is short and starts late, from its own small upright tick; the two beneath it are long and start together far to the left, each from its own tick. All three end on one faint shared upright. Small open circles sit along each rule, many on the short top rule, fewer on the middle one and only five on the lowest. Four circles line up vertically through all three rules and are joined by faint upright threads. One circle on the middle rule, the only warm kiln-orange mark on the page, has a partner on the rule below it and none on the short rule above it, where the line runs empty.">
+  <title>The Still · PISA 2025 · three lists of risers on three clocks</title>
+  <desc>A composition for the first Edition 06 piece. Paper-cream ground, pure line, no fills, tone carried
+  by stroke opacity alone. The three rules are the OECD's three lists of risers, drawn on one time scale from
+  2015 at the left ticks to 2025 at the faint shared upright. The top rule is the list dated since 2022: it
+  starts seven tenths of the way along because it covers three years, and it carries sixteen circles. The
+  middle rule is the eleven systems whose science average rose between 2015 and 2025. The lowest is the five
+  that cut their share of low performers and grew their share of top performers over the decade. The threads
+  join the four systems named on all three lists. The orange circle is the one system named on both long
+  lists and absent from the short one. The short rule above it runs empty, drawn without comment because the
+  registers give none.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+  <line x1="1030" y1="196" x2="1030" y2="404" stroke="#1F2E44" stroke-width="1" opacity="0.22"/>
+  <line x1="830" y1="237" x2="830" y2="362" stroke="#1F2E44" stroke-width="0.9" opacity="0.28"/>
+  <line x1="878" y1="237" x2="878" y2="362" stroke="#1F2E44" stroke-width="0.9" opacity="0.28"/>
+  <line x1="926" y1="237" x2="926" y2="362" stroke="#1F2E44" stroke-width="0.9" opacity="0.28"/>
+  <line x1="974" y1="237" x2="974" y2="362" stroke="#1F2E44" stroke-width="0.9" opacity="0.28"/>
+  <line x1="1006" y1="306" x2="1006" y2="362" stroke="#1F2E44" stroke-width="0.9" opacity="0.28"/>
+  <line x1="784" y1="232" x2="1030" y2="232" stroke="#1F2E44" stroke-width="2.0" stroke-linecap="round" opacity="0.92"/>
+  <line x1="784" y1="218" x2="784" y2="246" stroke="#1F2E44" stroke-width="1.6" stroke-linecap="round" opacity="0.92"/>
+  <line x1="210" y1="300" x2="1030" y2="300" stroke="#1F2E44" stroke-width="2.0" stroke-linecap="round" opacity="0.92"/>
+  <line x1="210" y1="286" x2="210" y2="314" stroke="#1F2E44" stroke-width="1.6" stroke-linecap="round" opacity="0.92"/>
+  <line x1="210" y1="368" x2="1030" y2="368" stroke="#1F2E44" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+  <line x1="210" y1="354" x2="210" y2="382" stroke="#1F2E44" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="792" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="804" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="816" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="844" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="856" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="868" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="892" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="904" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="914" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="940" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="952" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="962" cy="232" r="4.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="830" cy="232" r="4.6" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="878" cy="232" r="4.6" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="926" cy="232" r="4.6" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="974" cy="232" r="4.6" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="300" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="390" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="478" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="566" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="652" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="730" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.6"/>
+  <circle cx="830" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="878" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="926" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="974" cy="300" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="1006" cy="300" r="5.6" fill="#FAFAF7" stroke="#D94F2A" stroke-width="1.8" opacity="1"/>
+  <circle cx="830" cy="368" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="878" cy="368" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="926" cy="368" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="974" cy="368" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="1006" cy="368" r="5.2" fill="#FAFAF7" stroke="#1F2E44" stroke-width="1.4" opacity="0.85"/>
+</svg>

@@ -179,10 +179,107 @@ REGISTER = {
         "pages/index.astro masthead wordmark fallback, same shape"),
     ".masthead__fallback[data-astro-cid-*]": ("CONDITIONAL",
         "pages/ar/index.astro masthead wordmark fallback, same shape"),
-    ".edition__tag[data-astro-cid-*]": ("CONDITIONAL",
-        "the 'Current' tag on the editions index, emitted only when an edition is "
-        "open. No edition is open since Edition 05 closed 2026-10-13, and the "
-        "status flag was corrected to match on 2026-10-31 (item 62)"),
+    # Struck 2026-11-26: .edition__tag now matches, because Edition 06 is open.
+    ".also[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".also__grid[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".also__head[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".also__label-ar[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".also__label[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".also__meta[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".current-edition[data-astro-cid-*] .secondary__title[data-astro-cid-*] a[data-astro-cid-*]:hover": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".current-edition[data-astro-cid-*] .secondary__type[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__body[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__byline[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__country[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__dek[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__meta[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__thumb[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__thumb[data-astro-cid-*] img[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__title[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__title[data-astro-cid-*] a[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__title[data-astro-cid-*] a[data-astro-cid-*]:hover": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
+    ".secondary__type[data-astro-cid-*]": ("CONDITIONAL",
+        "the home page's current-edition block draws the lead piece first, then secondary pieces and an "
+        "also-in-this-edition row only when the open edition holds more than one piece. Edition 06 opened "
+        "2026-11-26 with its first piece, so the branch is untaken until its second ships. Strike these "
+        "entries the day LIMB 2 says they match (founder directive, weekly editions)"),
     ".edition__empty[data-astro-cid-*]": ("CONDITIONAL",
         "the empty-state line for an edition registry row with no pieces; every "
         "row has pieces"),

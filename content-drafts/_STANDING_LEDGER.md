@@ -56,6 +56,22 @@ follow-up.
 verifier is structural** — neither is relaxed by the absence of a wave. The ceiling stays **one fresh piece
 per day at most**, and the standing rule holds: **quality over slot, hold rather than ship thin.**
 
+## Edition 06 (PISA, globally) · 26 November to 6 December 2026 · founder directive of 2026-11-26
+
+**The live frame from 2026-11-26.** `content-drafts/_EDITIONS_06_10_PLAN.md` sets Editions 06 to 10, one a
+week, six pieces minimum each, one shipped every day. The eight cells below are unchanged. Each piece ships
+the day its own gate closes, tagged `edition: 6`. Slate: `content-drafts/recon/2026-11-26-ed06-pisa-2025-first-party-read.md`.
+
+| # | Piece | Brief | EN | Editor | AR | AR gate | Verifier | Still + og | Flag |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Three lists of risers** · `2026-11-26-pisa-2025-three-lists-of-risers` | 2026-11-26 | 2026-11-26 | PASS 2026-11-26, three notes closed in-run | 2026-11-26 | APPROVED 2026-11-26 | 2026-11-26, seven corrections applied | 2026-11-26 | **SHIPPED 2026-11-26** |
+
+**Count: Ed06 1 of 6 shipped** (target 7).
+
+**The Abu Dhabi row below moves to Edition 10** (UAE, Abu Dhabi focus, 28 December to 3 January) by the
+same directive. Its four repairs are made in the Ed10 lead-in week. Until then it is parked and costs no run
+time. Its cells are unchanged and its record below stands.
+
 ## In flight
 
 **ONE ROW IN FLIGHT. CELLS 1 AND 2 OF EIGHT FILLED, SIX CELLS STILL UNFILLED — AND CELL 3 WAS ATTEMPTED ON 2026-11-25 AND RETURNED WITH NOTES.**

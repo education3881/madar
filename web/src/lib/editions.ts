@@ -106,6 +106,21 @@ export const editions: Edition[] = [
     // edition is: GitHub issue #13, stated default 2026-11-08.
     status: 'closed',
   },
+  // Ed06 (founder directive, 2026-11-26): the first WEEKLY edition. Editions 06
+  // to 10 run one a week, so the period label is the edition's own date span
+  // rather than a month. Opened the day its first piece shipped.
+  {
+    number: 6,
+    periodEn: '26 November – 6 December 2026',
+    periodAr: '٢٦ نوفمبر – ٦ ديسمبر ٢٠٢٦',
+    themeEn: 'PISA 2025, read system by system, with every claim carrying its own span of years.',
+    themeAr: 'بيزا ٢٠٢٥، نظامًا نظامًا، وكلُّ قولٍ يحمل مدّته من السنين.',
+    ground: '#ECEDF3',
+    accent: '#3D4F8F',
+    motif: 'throughline',
+    cover: 'edition-06.svg',
+    status: 'current',
+  },
 ];
 
 /**

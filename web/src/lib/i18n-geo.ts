@@ -97,6 +97,8 @@ export const COUNTRY_AR: Record<string, string> = {
   Seychelles: 'سيشل',
   Tunisia: 'تونس',
   Jordan: 'الأردن',
+  Montenegro: 'الجبل الأسود',
+  Slovakia: 'سلوفاكيا',
   'Saudi Arabia': 'السعودية',
 };
 
@@ -134,6 +136,7 @@ export const THEME_AR: Record<string, string> = {
   'government-led programs': 'برامج تقودها الحكومات',
   'inspiring stories': 'قصص مُلهِمة',
   'language and heritage preservation': 'صون اللغة والتراث',
+  'learning outcomes': 'نواتج التعلّم',
   'national identity': 'الهوية الوطنية',
   'parent-led projects': 'مبادرات يقودها الأهل',
   'student wellbeing': 'عافية الطلبة',

@@ -15,6 +15,7 @@ related:
   - 2026-09-01-sudan-cant-wait-to-learn
   - 2026-09-27-rwanda-teacher-certification
   - 2026-09-19-egypt-baccalaureate-published-first
+  - 2026-11-26-pisa-2025-three-lists-of-risers
 contains_composites: false
 arabicVersion: 2026-09-14-africa-best-system-ruler
 sources:

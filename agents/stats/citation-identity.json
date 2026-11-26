@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-24",
+ "observed": "2026-11-26",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -767,6 +767,46 @@
    "state": "confirmed"
   },
   {
+   "url": "https://education3881.github.io/madar/articles/2026-09-14-africa-best-system-ruler/",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:21490",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "Four rulers, four crowns, and one about to be re-read",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
+     "token": "أربع مساطر وأربعة تيجان، وواحدة توشك أن تُقرأ من جديد",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/",
    "pieces": [
     "2026-11-12-england-ofsted-exempt-cohort:en",
@@ -878,23 +918,11 @@
     "2026-06-19-philippines-mtb-mle-reversal:en",
     "2026-06-19-philippines-mtb-mle-reversal:ar"
    ],
-   "observed": "2026-10-26",
-   "status": 200,
-   "note": "",
-   "ctype": "text/html",
-   "written_in": "latin:6165",
-   "tokens": [
-    {
-     "token": "An Act Discontinuing the Use of the Mother Tongue as Medium of Instruction from Kindergarten to Grade 3",
-     "verdict": "absent"
-    },
-    {
-     "token": "قانونٌ بوقف استعمال اللغة الأمّ وسيلةً للتعليم من رياض الأطفال إلى الصف الثالث",
-     "verdict": "script-mismatch",
-     "token_script": "arabic"
-    }
-   ],
-   "state": "absent"
+   "observed": "2026-11-26",
+   "status": 403,
+   "note": "HTTPError",
+   "ctype": "",
+   "state": "walled"
   },
   {
    "url": "https://en.tempo.co/read/1931371/new-minister-abdul-muti-indicates-review-of-merdeka-curriculum",
@@ -1215,15 +1243,27 @@
     "2026-07-07-sudan-exam-continuity:en",
     "2026-07-07-sudan-exam-continuity:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:9452",
+   "forms_read": [
+    "h1",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Resilience in Crisis: Sudan National Secondary School Exams Amidst Conflict",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "الصمود في الأزمة: امتحانات الشهادة الثانوية السودانية وسط النزاع",
@@ -1251,15 +1291,29 @@
     "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-26",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6637",
+   "written_in": "latin:6527",
+   "forms_read": [
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Indonesia Introduces AI and Coding to 59,000 Schools Nationwide",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": false,
+     "standing": "warning-no-h1-served"
     },
     {
      "token": "إندونيسيا تُدخل الذكاء الاصطناعي والبرمجة في 59,000 مدرسة على المستوى الوطني",
@@ -4645,6 +4699,42 @@
     }
    ],
    "state": "confirmed"
+  },
+  {
+   "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
+  },
+  {
+   "url": "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
+  },
+  {
+   "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
   },
   {
    "url": "https://www.omanobserver.om/article/1161960/oman/education/national-system-to-evaluate-performance-of-schools",

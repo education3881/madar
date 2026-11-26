@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-21",
+ "observed": "2026-11-26",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -454,6 +454,19 @@
    "state": "ours-git-archived"
   },
   {
+   "url": "https://education3881.github.io/madar/articles/2026-09-14-africa-best-system-ruler/",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-10-23-bahrain-bqa-five-cycles/",
    "pieces": [
     "2026-11-12-england-ofsted-exempt-cohort:en",
@@ -558,7 +571,7 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-07-19",
    "archive_note": "200",
@@ -570,7 +583,7 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-05-19",
    "archive_note": "200",
@@ -582,7 +595,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2025-12-12",
    "archive_note": "200",
@@ -594,7 +607,7 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2025-08-28",
    "archive_note": "200",
@@ -606,7 +619,7 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -634,12 +647,11 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": false,
-   "archive_note": "no snapshot",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "live-only"
+   "observed": "2026-11-26",
+   "archived": true,
+   "snapshot": "2026-11-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://gna.org.gh/2026/03/cea-launches-revised-curriculum-for-out-of-school-children/",
@@ -647,7 +659,7 @@
     "2026-05-28-ghana-cbe-curriculum:en",
     "2026-05-28-ghana-cbe-curriculum:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-04-01",
    "archive_note": "200",
@@ -659,7 +671,7 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-04-14",
    "archive_note": "200",
@@ -671,7 +683,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-04-07",
    "archive_note": "200",
@@ -3423,6 +3435,28 @@
    "state": "archived"
   },
   {
+   "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
+   "url": "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
+  },
+  {
    "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/philippines_a0882a2d-en.html",
    "pieces": [
     "2026-06-19-philippines-mtb-mle-reversal:en",
@@ -3433,6 +3467,17 @@
    "snapshot": "2026-10-19",
    "archive_note": "200",
    "state": "archived"
+  },
+  {
+   "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html",
+   "pieces": [
+    "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+   ],
+   "observed": "2026-11-26",
+   "archived": null,
+   "archive_note": "not yet asked",
+   "state": "archive-unknown"
   },
   {
    "url": "https://www.omanobserver.om/article/1161960/oman/education/national-system-to-evaluate-performance-of-schools",
