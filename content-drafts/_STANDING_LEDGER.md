@@ -92,11 +92,24 @@ time. Its cells are unchanged and its record below stands.
 
 ## In flight
 
-**NOTHING IS IN FLIGHT AS OF 2026-11-26, AND THAT IS THE DAY'S ONE REAL DEFECT.** Both Edition 06 pieces
-closed all eight cells and shipped on the day they were commissioned, so the board is empty behind them. The
-plan requires **three or more pieces in flight at all times** precisely so a day cannot depend on a piece
-composed that morning, and two days have now been run the other way. **The next content run's first act is
-to open cell 1 on two Edition 06 candidates**, which costs an Editor's brief each and no drafting.
+**TWO ROWS IN FLIGHT AT CELL 1, OPENED 2026-11-26 BY THE RUN THAT SHIPPED PIECE 2**, because the board was
+empty behind the two ships and the plan requires **three or more in flight at all times** precisely so a day
+cannot depend on a piece composed that morning. Both are commissioned and **both are blocked at cell 2 on
+purpose**, each with its blocker named in its own brief:
+
+| Piece | Cell 1 | Blocked at cell 2 on |
+|---|---|---|
+| **Qatar, on two lists of three** · `2026-11-26-qatar-pisa-2025-two-of-three` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-qatar-pisa-2025-two-of-three-brief.md` | a Qatari first-party register OR the OECD's Qatar country note, read in served text. The recon's prohibition is absolute: nothing may be said about Qatar's 2022-to-2025 change without one of them. |
+| **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-uae-pisa-2025-all-three-lists-brief.md` | a first-party UAE statement on PISA 2025, read in served text. Moves to Edition 10 if the answering register turns out to be an Abu Dhabi one. |
+
+**The blocker is one blocker and it is measured.** Every remaining country-anchored candidate on the Ed06
+slate needs a national register this runner cannot read in served text — `edu.gov.qa` does not answer,
+`etec.gov.sa` and `moe.gov.ae` answer but render their news in JavaScript so the served bytes carry no PISA
+text, WAM's search is the same shape, no OECD country note is linked from any register in hand, and a
+Wayback CDX domain query for `pisa-2025` URLs returned 504 twice. Every remaining OECD-wide candidate is
+blocked instead by `docs/10_geo_scope.md`: an international organisation is a source, and the piece must be
+about an in-scope geography rather than about the institution. **The full table is in the Qatar brief and is
+not copied a second time.**
 
 The one row below is **PARKED to Edition 10** by the founder directive of 2026-11-26 and is deliberately not
 counted as in flight: it costs no run time until the Ed10 lead-in week of 28 December.
