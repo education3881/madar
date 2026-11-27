@@ -93,6 +93,16 @@ time. Its cells are unchanged and its record below stands.
 
 ## In flight
 
+> **WHERE A CELL-2 DRAFT LIVES, ADDED 2026-11-27 AFTER THE GATE CAUGHT IT.** A drafted piece stays in
+> `content-drafts/drafts/` until its Arabic twin exists. It does **not** go into
+> `web/src/content/articles/` at cell 2. `qa_pair_frontmatter` reads SOURCE files, held pieces included
+> (#81), so an English file with no Arabic twin is a build failure — and a build failure on `main` is a
+> failed **deploy**, which means the day's already-shipped piece stops being served. That is 2026-10-20's
+> defect reached through a new door: the cost of a half-finished draft in the content collection is paid
+> by a piece that is finished. Today the gate caught it locally before the commit, which is the only
+> reason this is a note and not an incident.
+
+
 **TWO ROWS IN FLIGHT AT CELL 1, OPENED 2026-11-26 BY THE RUN THAT SHIPPED PIECE 2**, because the board was
 empty behind the two ships and the plan requires **three or more in flight at all times** precisely so a day
 cannot depend on a piece composed that morning. Both are commissioned and **both are blocked at cell 2 on
@@ -100,7 +110,7 @@ purpose**, each with its blocker named in its own brief:
 
 | Piece | Cell 1 | Blocked at cell 2 on |
 |---|---|---|
-| **Qatar, on two lists of three** · `2026-11-26-qatar-pisa-2025-two-of-three` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-qatar-pisa-2025-two-of-three-brief.md` | ~~a Qatari first-party register OR the OECD's Qatar country note~~ — **UNBLOCKED 2026-11-27.** Chapter 2 of *PISA 2025 Results (Volume I)*, Table I.2.6, prints Qatar's 2022-to-2025 change: **science +2, reading −1, mathematics +2**, science mean **434**. Banked at `content-drafts/recon/2026-11-27-ed06-oecd-volume-i-chapter-2.md`. **Cell 2 is the next content run's first job.** |
+| **Qatar, on two lists of three** · `2026-11-26-qatar-pisa-2025-two-of-three` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-qatar-pisa-2025-two-of-three-brief.md` | ~~a Qatari first-party register OR the OECD's Qatar country note~~ — **UNBLOCKED 2026-11-27.** Chapter 2 of *PISA 2025 Results (Volume I)*, Table I.2.6, prints Qatar's 2022-to-2025 change: **science +2, reading −1, mathematics +2**, science mean **434**. Banked at `content-drafts/recon/2026-11-27-ed06-oecd-volume-i-chapter-2.md`. **CELL 2 FILLED 2026-11-27**, same run: `content-drafts/drafts/2026-11-26-qatar-pisa-2025-two-of-three.md`, 1,157 words, seven quoted spans all verbatim against served bytes, working title *Qatar's decade and its three years*. **Cell 3, the Editor's five-test verdict, is the next content run's first job**, and it owes two judgments in writing: the title change from the commissioned one, and the length, which is 143 words under the brief's floor because the register supports no more. |
 | **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-uae-pisa-2025-all-three-lists-brief.md` | ~~a first-party UAE statement on PISA 2025~~ — **UNBLOCKED 2026-11-27** on the same chapter: UAE **science +26, reading +15, mathematics +21**, science mean **458**, and one of the eight that rose in all three. A first-party UAE statement is still owed and no longer required; `moe.gov.ae` answers 302 and renders its news in JavaScript. Moves to Edition 10 if the answering register turns out to be an Abu Dhabi one. |
 
 **THE BLOCKER WAS LIFTED ON 2026-11-27, AND NOT BY A DOOR OPENING.** `www.oecd.org` still answers 403,
