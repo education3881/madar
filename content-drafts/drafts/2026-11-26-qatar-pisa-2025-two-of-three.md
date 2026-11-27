@@ -89,7 +89,7 @@ arithmetic difference between two of them. On that measure Qatar reads **19 in s
 12 in mathematics**, all three positive, which is why Qatar is on the release's ten-year list and why
 *Three lists of risers* found it there. The OECD average-35 row of the same table, on the same fitted
 decennial measure, reads **−7, −27 and −24**. The front page of the report puts the science half of that in
-score points: *"OECD average science scores fell from 489 to 482 points between 2015 and 2025."*
+score points: *"OECD average science scores fell from 489 to 482 points between 2015 and 2025"* — the register's sentence continues past that comma, and the rest of it is about non-OECD participants.
 
 The decade's other Qatari fact is a membership of five. The chapter names them — **"Only five
 countries/economies, Montenegro, Qatar, the Slovak Republic, Türkiye and the United Arab Emirates"** —
