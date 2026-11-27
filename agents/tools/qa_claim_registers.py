@@ -182,6 +182,21 @@ def archive_state(url: str) -> dict:
             payload = json.loads(r.read().decode("utf-8", "replace"))
     except Exception as exc:  # the archive is allowed to be down
         return {"archived": None, "archive_note": f"{type(exc).__name__}"}
+    # THE ARCHIVE ANSWERS 200 AND SAYS IT FAILED, IN THE BODY (2026-11-27).
+    # `archived_snapshots: {}` with an `error` key beside it is the availability
+    # endpoint reporting its OWN timeout, not a statement that nothing is archived.
+    # Read as "no snapshot" it becomes a fact about the world, and because a
+    # definite False DOES overwrite (only `archive-unknown` is protected below),
+    # it erases a positive observation that cost a request to make.  Four rows
+    # were destroyed that way in one emit before this was caught; all four pages
+    # have many snapshots, which the CDX index shows plainly.  #111 already says
+    # it for throttling: a row that reads unknown because we were throttled is an
+    # observation about US, not about the world.  A timeout is the same event
+    # wearing a 200.
+    err = payload.get("error")
+    if err:
+        code = err.get("code") if isinstance(err, dict) else str(err)
+        return {"archived": None, "archive_note": f"archive error: {code}"}
     snap = (payload.get("archived_snapshots") or {}).get("closest") or {}
     if not snap.get("available"):
         return {"archived": False, "archive_note": "no snapshot"}

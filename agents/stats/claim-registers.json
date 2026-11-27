@@ -454,6 +454,7 @@
   {
    "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
    "pieces": [
+    "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-27",
@@ -519,6 +520,7 @@
    "url": "https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
+    "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
    ],
@@ -2182,7 +2184,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-11-10",
    "archive_note": "200",
@@ -2194,7 +2196,7 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-07-12",
    "archive_note": "200",
@@ -2206,7 +2208,7 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 403,
@@ -2219,7 +2221,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-11",
    "archive_note": "200",
@@ -2231,9 +2233,9 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-03-16",
+   "snapshot": "2026-07-20",
    "archive_note": "200",
    "state": "archived"
   },
@@ -2243,7 +2245,7 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-02-11",
    "archive_note": "200",
@@ -2255,7 +2257,7 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-08-12",
    "archive_note": "200",
@@ -2267,7 +2269,7 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-02-11",
    "archive_note": "200",
@@ -2290,7 +2292,7 @@
     "2026-05-26-bahrain-bqa-public-grades:en",
     "2026-05-26-bahrain-bqa-public-grades:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2303,7 +2305,7 @@
     "2026-05-26-bahrain-bqa-public-grades:en",
     "2026-05-26-bahrain-bqa-public-grades:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-12-31",
    "archive_note": "200",
@@ -2338,7 +2340,7 @@
     "2026-05-26-bahrain-bqa-public-grades:en",
     "2026-05-26-bahrain-bqa-public-grades:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2351,7 +2353,7 @@
     "2026-05-26-bahrain-bqa-public-grades:en",
     "2026-05-26-bahrain-bqa-public-grades:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-01-18",
    "archive_note": "200",
@@ -2399,7 +2401,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2424,7 +2426,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-09",
    "archive_note": "200",
@@ -2436,7 +2438,7 @@
     "2026-07-06-morocco-ecoles-pionnieres:en",
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2449,7 +2451,7 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-09-22",
    "archive_note": "200",
@@ -2461,7 +2463,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-11",
    "archive_note": "200",
@@ -2486,7 +2488,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-09-26",
    "archive_note": "200",
@@ -2510,7 +2512,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-08-03",
    "archive_note": "200",
@@ -2522,7 +2524,7 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-07-11",
    "archive_note": "200",
@@ -2534,7 +2536,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-15",
    "archive_note": "200",
@@ -2546,7 +2548,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2559,7 +2561,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2572,7 +2574,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-15",
    "archive_note": "200",
@@ -2584,7 +2586,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2597,7 +2599,7 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-15",
    "archive_note": "200",
@@ -2609,7 +2611,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-08-12",
    "archive_note": "200",
@@ -2621,7 +2623,7 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-11",
    "archive_note": "200",
@@ -2633,7 +2635,7 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2646,7 +2648,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-08",
    "archive_note": "200",
@@ -2658,7 +2660,7 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2016-11-19",
    "archive_note": "200",
@@ -2670,9 +2672,9 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-08-24",
+   "snapshot": "2026-10-19",
    "archive_note": "200",
    "state": "archived"
   },
@@ -2694,7 +2696,7 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-09-22",
    "archive_note": "200",
@@ -2706,7 +2708,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2719,7 +2721,7 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-08-07",
    "archive_note": "200",
@@ -2733,9 +2735,9 @@
     "2026-06-10-rak-iqra-arabic-diglossia:ar",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2025-12-31",
+   "snapshot": "2026-07-20",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3525,9 +3527,11 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3540,9 +3544,11 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3567,9 +3573,11 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3580,7 +3588,9 @@
   {
    "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html",
    "pieces": [
+    "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-27",
