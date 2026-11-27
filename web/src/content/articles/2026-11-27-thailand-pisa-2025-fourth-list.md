@@ -31,7 +31,7 @@ sources:
     url: "https://education3881.github.io/madar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/"
 hero:
   src: "/stills/2026-11-27-thailand-pisa-2025-fourth-list.svg"
-  alt: "A paper-cream page in ink. A wide faint rectangle holds sixteen small open circles in two rows. Eight of them, scattered through both rows, are filled solid, and one of the eight is drawn in warm kiln-orange. Below the rectangle a single short stroke climbs from left to right, and two longer strokes beside it fall away."
+  alt: "A paper-cream page in ink. A wide faint rectangle holds sixteen small open circles in two rows; eight of them, scattered through both rows, are filled solid, and one of the eight is filled in warm kiln-orange. Below the rectangle stand nine thin uprights of unequal height, rising from one baseline, with a faint horizontal rule drawn across them at the height of the shortest. The last upright is drawn in warm kiln-orange and stands third-tallest of the nine."
   caption: "سكون · The Still · PISA 2025"
 approved: false
 ---
