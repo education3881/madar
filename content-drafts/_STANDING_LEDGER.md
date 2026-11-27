@@ -67,8 +67,9 @@ the day its own gate closes, tagged `edition: 6`. Slate: `content-drafts/recon/2
 | 1 | **Three lists of risers** · `2026-11-26-pisa-2025-three-lists-of-risers` | 2026-11-26 | 2026-11-26 | PASS 2026-11-26, three notes closed in-run | 2026-11-26 | APPROVED 2026-11-26 | 2026-11-26, seven corrections applied | 2026-11-26 | **SHIPPED 2026-11-26** |
 | 2 | **Jordan counts from 2022** · `2026-11-26-jordan-pisa-2025-counts-from-2022` | 2026-11-26 | 2026-11-26 | PASS 2026-11-26, two notes closed in-run | 2026-11-26 | APPROVED 2026-11-26 | 2026-11-26, five corrections applied | 2026-11-26 | **SHIPPED 2026-11-26** |
 | 3 | **Thailand's fourth list** · `2026-11-27-thailand-pisa-2025-fourth-list` | 2026-11-27 | 2026-11-27 | PASS 2026-11-27, two notes closed in-run | 2026-11-27 | APPROVED 2026-11-27 | 2026-11-27, three corrections applied | 2026-11-27 | **SHIPPED 2026-11-27** |
+| 4 | **Qatar's decade and its three years** · `2026-11-26-qatar-pisa-2025-two-of-three` | 2026-11-26 | 2026-11-27 | PASS 2026-11-27, eight repairs closed in-run | 2026-11-27 | APPROVED 2026-11-27 | 2026-11-27, VERIFIED with no correction and zero residue | 2026-11-27 | **SHIPPED 2026-11-27** |
 
-**Count: Ed06 3 of 6 shipped** (target 7). **Two shipped on 2026-11-26 and one on 2026-11-27**, so the directive's floor of one a day has been met on both days the edition has existed. **Piece 3 was found by giving a blocked candidate a geography rather than by waiting for a register.** The slate recorded candidates 2, 3, 4, 5 and 9 as OECD-wide and therefore blocked by `docs/10_geo_scope.md`; that is a statement that they are UNANCHORED, not that they are blocked, and Thailand — in scope on the Asia open list, and a national PISA centre whose register answers this runner directly — anchored one of them in a single morning. The two rows below stay blocked on the registers they name, and the lesson generalises to them: the next content run looks for an in-scope geography with a reachable national centre before it re-tests a closed door. The 2026-11-26 note that both 11-26 ships were the directive's floor met
+**Count: Ed06 4 of 6 shipped** (target 7). **Two shipped on 2026-11-26 and TWO on 2026-11-27**, so the directive's floor of one a day has been met on both days the edition has existed, and exceeded on both. *(11-27's two: `thailand-pisa-2025-fourth-list` by the content run in the morning, `qatar-pisa-2025-two-of-three` by the daily run in the afternoon — **the first day this publication has shipped two pieces that was not an edition's opening day**.)* **Two pieces remain to the floor and ten days of window remain.** **Piece 3 was found by giving a blocked candidate a geography rather than by waiting for a register.** The slate recorded candidates 2, 3, 4, 5 and 9 as OECD-wide and therefore blocked by `docs/10_geo_scope.md`; that is a statement that they are UNANCHORED, not that they are blocked, and Thailand — in scope on the Asia open list, and a national PISA centre whose register answers this runner directly — anchored one of them in a single morning. The two rows below stay blocked on the registers they name, and the lesson generalises to them: the next content run looks for an in-scope geography with a reachable national centre before it re-tests a closed door. The 2026-11-26 note that both 11-26 ships were the directive's floor met
 twice on its first day and not a licence to bank ahead: the ceiling of one fresh piece per day is suspended
 only while the slate's recon precedes every draft, which it does (`content-drafts/recon/2026-11-26-ed06-pisa-2025-first-party-read.md`,
 nine candidates read before any was commissioned — the CHARTER's own override condition).
@@ -102,6 +103,23 @@ time. Its cells are unchanged and its record below stands.
 > by a piece that is finished. Today the gate caught it locally before the commit, which is the only
 > reason this is a note and not an incident.
 
+
+**BOARD AT THE CLOSE OF 2026-11-27: THREE ROWS IN FLIGHT, WHICH IS THE PLAN'S FLOOR MET FOR THE FIRST TIME.**
+The Qatar row below **shipped this afternoon** and left the board at two, so a third was commissioned in the
+same run rather than left for tomorrow — the plan requires three or more in flight precisely so a day cannot
+depend on a piece composed that morning.
+
+| Row | Cell | Next job |
+|---|---|---|
+| **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **1 of 8**, unblocked, and its brief **re-briefed 2026-11-27** with the register parsed rather than banked | **cell 2, the EN draft.** The angle moved: the UAE's fitted decennial trend in **reading is −6** against a three-year change of **+15**, so the commission is no longer *a system on all three lists* but *a system on all three lists whose own ten-year reading line disagrees* |
+| **Saudi Arabia, where the two clocks disagree** · `2026-11-27-saudi-pisa-2025-two-clocks-disagree` | **1 of 8**, filed 2026-11-27, **not blocked** | **cell 2, the EN draft.** Science up on both clocks; reading **+5** against 2022 and **−18** on the decennial trend. The first piece in this edition that can state the edition's thesis inside **one country and one subject** |
+| *(parked)* `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | 2 of 8, cell 3 returned with notes | **Edition 10 lead-in week, 28 December.** Costs no run time until then |
+
+**Every register the two live rows need is already read, hashed and indexed** at
+`agents/guidebook/2026-11-27-oecd-pisa-2025-volume-i-chapter-2-source-index.md`, with the five tables, what
+each is for, and the four cautions that follow. Neither row is blocked on a door.
+
+**THE RECORD OF HOW THESE TWO ROWS WERE OPENED FOLLOWS, UNALTERED.**
 
 **TWO ROWS IN FLIGHT AT CELL 1, OPENED 2026-11-26 BY THE RUN THAT SHIPPED PIECE 2**, because the board was
 empty behind the two ships and the plan requires **three or more in flight at all times** precisely so a day

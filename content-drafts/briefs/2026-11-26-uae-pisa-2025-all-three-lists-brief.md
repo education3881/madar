@@ -39,3 +39,46 @@ Follows up `2026-11-26-pisa-2025-three-lists-of-risers`, `2026-05-27-uae-madrasa
 
 ## Length
 1,300 to 1,800 words when it is writable. Dek at most 200 code points, measured at compose.
+
+---
+
+## ADDENDUM, 2026-11-27 (daily run) — the register is read, and it carries a second finding the brief did not ask for
+
+**Cell 2 is unblocked and the figures are now re-derived rather than banked.** Chapter 2 of *PISA 2025
+Results (Volume I)* was parsed independently in this run, by a script that takes a table caption and a system
+name and returns the row — no reading of any prior note. What it returns for the UAE:
+
+| Table | UAE row |
+|---|---|
+| **I.2.6**, change 2022 → 2025 | science **+26**, reading **+15**, mathematics **+21** |
+| **I.2.9**, fitted decennial trend since 2015 | science **18**, reading **−6**, mathematics **20** |
+| **I.2.8**, change 2022 → 2025 in shares | low performers **−10.0** pp, top performers **+1.7** pp |
+| **I.2.1**, science mean 2025 | **458** (OECD average 482, from I.2.3 and the front page's note 1) |
+
+**The second finding, and it is the piece's spine rather than a decoration.** The brief commissioned this
+row as *the UAE on all three lists* — a system that rose in all three subjects since 2022 and is on the
+decade's science list and on the both-ends list. **Its fitted decennial trend in reading is −6.** So the UAE
+is a system whose reading is up fifteen points against 2022 and whose ten-year reading line slopes the wrong
+way, in the same chapter, in two tables one screen apart.
+
+That is **not** the same piece as Qatar's. Qatar is a decade of movement and three flat years; the UAE is
+three strong years inside a decade that is only strong in two subjects of three. The two pieces are the same
+method on opposite arrangements, which is why both belong in this edition and why neither may borrow the
+other's sentence.
+
+**Carried from the Verifier's verdict on the Qatar piece, which found it and refused to print it there**,
+because printing it on Qatar's page would have been the comparison across two questions that Qatar's own
+brief prohibits. It is the finding *here*.
+
+## What this addendum changes in the commission
+
+- **The angle moves** from *the UAE is on all three lists* to *the UAE is on all three lists, and its own
+  ten-year reading line disagrees*. The first is a membership; the second is a question.
+- **A first-party UAE register is still owed and still not required.** `moe.gov.ae` answers 302 and renders
+  its news in JavaScript. **Re-test before repeating that sentence** (#159's family).
+- **The Edition 10 clause stands:** if the answering register turns out to be an Abu Dhabi one, this row
+  moves to Edition 10 unchanged.
+- **Prohibition added:** never set 18 against 26, or −6 against +15, as though they were one measurement.
+  The decennial figures are a fitted trend and the three-year figures are a difference between two rounds.
+  The piece says that in prose before it prints the second pair.
+- Source index for every table and caution: `agents/guidebook/2026-11-27-oecd-pisa-2025-volume-i-chapter-2-source-index.md`.
