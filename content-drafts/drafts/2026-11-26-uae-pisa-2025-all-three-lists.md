@@ -31,8 +31,15 @@ related:
 systems three times, in three lists, on three clocks, and the United Arab Emirates is on all three of them.
 That was a membership, and a membership is where a piece starts rather than where it ends.
 
-Read in the release's own performance chapter, the UAE turns out to be on more lists than three. It is on
-every list in that chapter a system can be on — and one number in the same chapter does not join.
+All three lists were re-opened in served text for this piece rather than carried across from that one. They
+hold. The press release's decade list of eleven: **"Science performance rose in Lithuania, the Slovak
+Republic, Türkiye, the Dominican Republic, Georgia, Macao (China), Montenegro, Qatar, Thailand, the United
+Arab Emirates, and Uruguay."** The both-ends list of five, below. And the front page's list of systems
+**"bucking the trend"**. Four systems are on all three — Türkiye, the Slovak Republic, Montenegro and the
+UAE — and the UAE is the only one of the four in this publication's own region.
+
+Read in the release's own performance chapter, the UAE is on every list a system can be on — and one
+number in the same chapter does not join.
 
 ## What the three years say
 
@@ -45,8 +52,8 @@ Three positive figures where the OECD's own average is negative in all three. Th
 unusual that is: it writes that **"it is equally relevant to note that eight countries and economies
 improved their performance in all three subjects."** This publication counted the rows of that table in the
 chapter's served bytes — **twelve** systems carry a positive figure in all three columns, the UAE among
-them. Twelve is our count of the rows; eight is the chapter's word, and the difference is a thing this
-piece has to leave open, for the reason in the section below.
+them. Twelve is our count of the rows; eight is the chapter's word, and the difference is left
+open for the reason below.
 
 ## Both ends, on both clocks — which is the part that is not a membership
 
@@ -56,8 +63,7 @@ percentage points, and the UAE's row reads **−10.0** and **+1.7**. The OECD av
 **−0.3**. Percentage points are not score points, and no figure from Table I.2.8 is set beside one from
 Table I.2.6 here.
 
-What makes those two numbers more than a row is that the chapter names the systems in prose, in a passage
-that is itself about statistical significance: **"The share of top performers in science did not change
+What makes those two numbers more than a row is that the chapter names the systems in prose, in a passage itself about statistical significance: **"The share of top performers in science did not change
 significantly in the majority of systems (61), increased in 7 systems and decreased in 7 systems."** Then it
 names the group that moved at both ends over the three years: **"By contrast, in Jordan, Uzbekistan,
 Montenegro, Saudi Arabia, Türkiye, the United Arab Emirates and the United Kingdom, the share of low
@@ -69,6 +75,15 @@ countries/economies, Montenegro, Qatar, the Slovak Republic, Türkiye and the Un
 register prints a doubled comma here, so the sentence is quoted split rather than with the artefact —
 **"were able to simultaneously reduce their shares of low-performing students and increase their shares of
 top-performing students over the past decade."**
+
+The release says that second thing three times, in three registers, and not identically. The press release
+prints the list with **no period attached to its own sentence**: **"Türkiye, the Slovak Republic, Montenegro,
+Qatar and the United Arab Emirates increased their share of top performers while reducing their share of low
+performers in science."** What dates it is the launch speech of **Mathias Cormann**, the OECD's
+Secretary-General, given on 8 September 2026 on a page that carries *"Check against delivery"*: **"Over the
+past decade, Türkiye, the United Arab Emirates, Montenegro, Qatar and Slovakia all cut their share of low
+performers and grew their share of top performers at the same time."** The same five systems — and the
+speech names the fifth **Slovakia** where the chapter and the press release both name it the Slovak Republic.
 
 **Seven systems over three years, five over the decade, and the UAE is in both.** That is the finding this
 piece exists for, and it is not what the brief commissioned. Being on two lists is ordinary; being on the
@@ -117,9 +132,9 @@ science"**, gives the UAE's 2025 science mean as **458**; the chapter's Table I.
 that same overall mean, prints it beside the **OECD average of 482**.
 
 Table I.2.1's other column is the company the measurement puts a system in — the systems whose mean is not
-statistically different from it. **For the UAE that column holds one system: Viet Nam**, at 457. Most rows in
-that table name five, seven or ten. A band of one is a narrow place to stand, and it is a statement about
-one subject in one year rather than about any direction of travel.
+statistically different from it. **For the UAE that column holds one system: Viet Nam**, at 457. A band of one
+is a narrow place to stand, and it is a statement about one subject in one year rather than a
+direction of travel.
 
 ## What the register will not let this piece say
 
@@ -129,9 +144,6 @@ authority.** Table I.2.6 sorts every cell into one of three categories and the l
 to one of the three is carried by **the colour of the cell**, and a colour does not survive into served
 text. That is why the twelve-against-eight gap above is left open: eight of the twelve improved in all three
 subjects on the OECD's test, four did not, and which four is not readable from what this register serves.
-
-Where the chapter does make a significance claim in prose, this piece quotes the prose — which is why the
-two both-ends lists are reported in the register's own sentences and the score-point tables are not.
 
 ## The context the chapter attaches
 
@@ -167,12 +179,12 @@ emirate's own instrument are not touched here; that subject is Edition 10's.
 
 ## Drafter's hand-off
 
-`dek: 193/200 · title: 37/100` · **body 1,637 words**, inside the brief's 1,300 to 1,800 — all three measured
-by script against the FINAL text, after the Saudi row spent four passes correcting a hand-off count written
-against a body that then changed under it.
+`dek: 193/200 · title: 37/100` · **body 1,800 words** after the Editor's repairs, inside the brief's 1,300
+to 1,800 — all three measured by script against the FINAL text, after the Saudi row spent four passes
+correcting a hand-off count written against a body that then changed under it.
 
-**Quoted spans: 18 of 18 verbatim against served bytes**, re-fetched and re-hashed in this run — **17 exact,
-1 whitespace-only, 0 punctuation substituted, 0 sentence-initial case folded, and 0 WORDS CHANGED**, which is
+**Quoted spans: 23 of 23 verbatim against served bytes** over FOUR registers after the Editor's repairs
+(18 of 18 over two at first hand-off) — **22 exact, 1 whitespace-only, 0 punctuation substituted, 0 sentence-initial case folded, and 0 WORDS CHANGED**, which is
 the figure that has to be zero. No span carries a bracketed restoration. Normalisations declared (#159):
 non-breaking space to space, curly quotes and apostrophes to straight, non-breaking hyphen and en and em
 dashes to hyphen, whitespace collapsed; **terminal punctuation NOT normalised**.
