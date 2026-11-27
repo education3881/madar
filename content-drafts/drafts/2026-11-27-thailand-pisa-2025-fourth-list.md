@@ -59,6 +59,12 @@ Slovak Republic, Türkiye and the United Kingdom. Among non-OECD members, scores
 Salvador, Georgia, Jordan, Mongolia, Montenegro, the Philippines, Saudi Arabia, Thailand, the United Arab
 Emirates, Uruguay and Uzbekistan."** Four OECD members and twelve others.
 
+That sentence carries no period of its own. Its clock comes from somewhere else in the launch: the speech of
+the OECD's Secretary-General, Mathias Cormann, which the page marks **"Check against delivery"** and which
+counts the same list. **"Since 2022, science scores went up in Costa Rica, Slovakia, Türkiye and the United
+Kingdom – and in 12 other countries and economies."** Four and twelve, over three years. Without that
+sentence the sixteen have no span, and the comparison this piece makes would not be available at all.
+
 Every one of the institute's eight names is on that list of sixteen. Set the two side by side and the
 arithmetic is the finding: of the sixteen systems whose **science** average rose in three years, **eight**
 rose in science, mathematics and reading together — exactly half. The other eight — Costa Rica, the Slovak
