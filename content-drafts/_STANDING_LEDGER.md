@@ -123,6 +123,9 @@ time. Its cells are unchanged and its record below stands.
 
 
 **BOARD AT THE CLOSE OF 2026-11-27: THREE ROWS IN FLIGHT, WHICH IS THE PLAN'S FLOOR MET FOR THE FIRST TIME.**
+*(Updated by the evening content run of 2026-11-27, which took the Saudi row from cell 1 to cell 2. The two
+live rows now sit at DIFFERENT cells — Saudi at 2, the UAE at 1 — which is the plan's "three or more in
+flight, at different cells" holding rather than three rows stacked on one cell.)*
 The Qatar row below **shipped this afternoon** and left the board at two, so a third was commissioned in the
 same run rather than left for tomorrow — the plan requires three or more in flight precisely so a day cannot
 depend on a piece composed that morning.
@@ -130,7 +133,7 @@ depend on a piece composed that morning.
 | Row | Cell | Next job |
 |---|---|---|
 | **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **1 of 8**, unblocked, and its brief **re-briefed 2026-11-27** with the register parsed rather than banked | **cell 2, the EN draft.** The angle moved: the UAE's fitted decennial trend in **reading is −6** against a three-year change of **+15**, so the commission is no longer *a system on all three lists* but *a system on all three lists whose own ten-year reading line disagrees* |
-| **Saudi Arabia, where the two clocks disagree** · `2026-11-27-saudi-pisa-2025-two-clocks-disagree` | **1 of 8**, filed 2026-11-27, **not blocked** | **cell 2, the EN draft.** Science up on both clocks; reading **+5** against 2022 and **−18** on the decennial trend. The first piece in this edition that can state the edition's thesis inside **one country and one subject** |
+| **Saudi Arabia, where the two clocks disagree** · `2026-11-27-saudi-pisa-2025-two-clocks-disagree` | **2 of 8**, cell 2 FILLED 2026-11-27 by the content run — `content-drafts/drafts/2026-11-27-saudi-pisa-2025-two-clocks-disagree.md`, 1,799 words, **26 of 26 quoted spans verbatim** against both registers re-fetched and re-hashed in that run | **cell 3, the Editor's five-test verdict.** Six cells remain. The drafter recommends the title *Saudi Arabia's reading, up five and down eighteen* and leaves the call; two judgments are handed up, named in the draft's hand-off — whether a COUNT of a register's rows is inside *cited as read* (the piece prints **twelve** all-positive rows beside the chapter's own word **eight**), and a correction to the brief's phrase *the since-2022 science list*, which carries no period at all |
 | *(parked)* `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` | 2 of 8, cell 3 returned with notes | **Edition 10 lead-in week, 28 December.** Costs no run time until then |
 
 **Every register the two live rows need is already read, hashed and indexed** at
