@@ -68,6 +68,7 @@ export const COUNTRY_AR: Record<string, string> = {
   'South Korea': 'كوريا الجنوبية',
   Sudan: 'السودان',
   Syria: 'سوريا',
+  Thailand: 'تايلاند',
   // Endonym, per the state's own 2022 request to the UN; the Arabic register
   // has always used تركيا, which is unaffected by the Latin-script change.
   'Türkiye': 'تركيا',
