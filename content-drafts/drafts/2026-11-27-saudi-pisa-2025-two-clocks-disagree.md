@@ -28,16 +28,15 @@ related:
 ---
 
 Edition 06 has been written around one habit: before reading a list of improving school systems, find out
-what clock it runs on. *Three lists of risers* found the OECD naming improvers three times on three
-different spans; *Thailand's fourth list* found a system on a list nobody had checked; *Qatar's decade and
+what clock it runs on. *Three lists of risers* found the OECD naming improvers three times on three spans; *Thailand's fourth list* found a system on a list nobody had checked; *Qatar's decade and
 its three years* found a system on the decade's lists and absent from the three-year one.
 
-Saudi Arabia is the case where the clocks need neither two countries nor two lists to disagree. They
-disagree inside one country, in one subject, in one chapter.
+Saudi Arabia is the case where the clocks need neither two countries nor two lists. They disagree inside
+one country, in one subject, in one chapter.
 
 ## The two numbers
 
-Chapter 2 of *PISA 2025 Results (Volume I)* carries both of the measurements the OECD makes of change.
+Chapter 2 of *PISA 2025 Results (Volume I)* carries both of the clocks this piece is about.
 
 The first is **Table I.2.6, "Change between 2022 and 2025 in mean performance in science, reading and
 mathematics"**, whose own note reads **"Only countries and economies that can compare PISA 2022 and PISA
@@ -55,20 +54,19 @@ chapter, both about Saudi Arabia.
 
 ## Why that is not a contradiction, and what it is instead
 
-The two tables are not two readings of one ruler but two instruments, and the chapter defines the second
-in its own notes: **"The average decennial trend is the average change, per 10-year period, between PISA
+The two tables are not two readings of one ruler but two instruments, and the chapter defines the second: **"The average decennial trend is the average change, per 10-year period, between PISA
 2015 and PISA 2025, calculated by a linear regression."** It adds that it **"is only computed for
 countries with comparable data in at least three PISA assessments over the period considered."**
 
-A regression line fitted through at least three cycles can slope downwards while the last two points of
-the series sit above the one before them. Nothing in that makes either number wrong. **What it does make
+A regression line fitted through at least three cycles can slope downwards while the series' last two
+points sit above the one before them. Nothing in that makes either number wrong. **What it does make
 wrong is any sentence that sets the two against each other.** This piece does not subtract 5 from −18,
 does not describe +5 as a recovery of part of −18, and does not say one is larger than the other. 23 and
 37 are not on one ruler either.
 
-The chapter says as much about its own averages: the decade's trend is negative in all three subjects,
-and **"the recent stability in science performance masks a sustained,
-long-term decline."** That is the OECD describing a three-year figure and a ten-year figure pointing
+The chapter says as much about its own averages. Over **"the most recent decade (2015-2025)"** the trend
+is negative in all three core subjects on average across 35 OECD countries with available data, and
+**"the recent stability in science performance masks a sustained, long-term decline."** That is the OECD describing a three-year figure and a ten-year figure pointing
 different ways as a thing to be expected rather than resolved.
 
 ## The reason it matters here more than anywhere else
@@ -80,17 +78,18 @@ wrong table still gets the right sign.
 Reading is the one subject where the sign changes with the table. And reading is the one subject for which
 this chapter prints nothing else at all.
 
-That is a property of the register. Chapter 2 has fourteen numbered tables, and
-every one that reports a *level* reports science: Table I.2.1 ranks systems by their science mean,
-**"Comparing countries and economies on the science competency subscales"** gives Saudi Arabia's overall
-science mean as **413** against an **OECD average of 482**, and the rest count low and top performers in
-science, science by socio-economic quarter, science by gender. Reading appears in two of the fourteen,
-Tables I.2.6 and I.2.9, and in both only as a *change*.
+That is a property of the register. Chapter 2 has fourteen numbered tables and not one of them prints a
+reading mean for any system. Every table that reports a *level* reports science: Table I.2.1 ranks systems
+by their science mean, **"Comparing countries and economies on the science competency subscales"** gives
+Saudi Arabia's overall science mean as **413** against an **OECD average of 482**, and the rest count low
+and top performers in science, science by socio-economic quarter, science by gender. Reading is in four of
+the fourteen and never as a level: a correlation coefficient in Table I.2.5, a yearly learning gain for ten
+named systems in Table I.2.7 — Saudi Arabia is not one of the ten — and a *change* in Tables I.2.6 and
+I.2.9.
 
 So the chapter never says what Saudi Arabian 15-year-olds scored in reading in 2025. It says only that the
-figure moved **+5** since 2022 and **−18** per ten years — the whole of what this register reports about
-reading in this country, with opposite signs. There is no third statement to break the tie, and this piece
-does not invent one.
+figure moved **+5** since 2022 and **−18** per ten years — the whole of what it reports about reading here,
+with opposite signs. There is no third statement to break the tie, and this piece does not invent one.
 
 The report's front page gives only the cohort Saudi Arabia is counted in, over the decade:
 **"Average reading scores fell from 489 to 461 points across OECD countries and from 428 to 412 points
@@ -105,8 +104,8 @@ performers"**, both in percentage points, and Saudi Arabia's row reads **−13.0
 average-35 row reads **1.2** and **−0.3**. Percentage points are not score points, and no figure from
 Table I.2.8 is set beside one from Table I.2.6.
 
-Here the chapter does something it does not do for the score tables: it names the systems in prose, in a
-passage that is explicitly about significance — **"The share of top performers in science did not change
+Here the chapter does what it does not do for the score tables: it names the systems in prose, in a passage
+explicitly about significance — **"The share of top performers in science did not change
 significantly in the majority of systems (61), increased in 7 systems and decreased in 7 systems."** Then
 it names the group that moved at both ends: **"By contrast, in Jordan,
 Uzbekistan, Montenegro, Saudi Arabia, Türkiye, the United Arab Emirates and the United Kingdom, the share
@@ -125,13 +124,12 @@ list and not the three-year one. One question, two clocks, two memberships that 
 
 ## Eight, or twelve
 
-One thing in this chapter cannot be resolved from the text it serves, and the honest course is to say so
-rather than pick a number.
+One thing in this chapter cannot be resolved from the text it serves, and the honest course is to say so.
 
 Discussing Table I.2.6, the chapter writes that **"it is equally relevant to note that eight countries and
 economies improved their performance in all three subjects."** This publication counted the table's own
 rows in the served bytes of the capture named below: **twelve** systems carry a positive figure in all
-three columns, Saudi Arabia among them. Twelve is our count of the rows. Eight is the chapter's word.
+three columns, Saudi Arabia among them. Twelve is our count. Eight is the chapter's word.
 
 The gap is not a mistake in either place. Table I.2.6 sorts every cell into one of three categories, and
 the legend names them in words — **"Positive change"**, **"Non-significant change"**, **"Negative
@@ -152,34 +150,30 @@ Rica, the Slovak Republic, Türkiye and the United Kingdom. Among non-OECD membe
 Cambodia, El Salvador, Georgia, Jordan, Mongolia, Montenegro, the Philippines, Saudi Arabia, Thailand, the
 United Arab Emirates, Uruguay and Uzbekistan."**
 
-That sentence carries no period of its own. The page around it is dated throughout: the phrase
-**"between 2015 and 2025"** occurs five times on it, attached to averages in all three subjects, and it
-says **"Science, the main focus of PISA 2025, has been comparatively resilient over the
-past decade."** A reader would take the list as the
-decade's. The passage sits above the signature of **Mathias Cormann**, the OECD's Secretary-General.
+That sentence carries no period of its own. The page around it is dated throughout: **"between 2015 and
+2025"** occurs five times on it, attached to averages in all three subjects, and it says **"Science, the
+main focus of PISA 2025, has been comparatively resilient over the past decade."** A reader would take the
+list as the decade's. It sits above the signature of **Mathias Cormann**, the OECD's Secretary-General.
 
 For Saudi Arabia and science the missing date costs nothing: science is positive on both clocks, so the
 membership holds whichever one the list was built on. That defence is subject-specific. Had the same
 undated sentence been written about reading it would have been unreadable — one clock says +5, the other
 −18, and the sentence would not say which it meant.
 
-## The context the chapter attaches
+## The one disaggregation
 
-Chapter 2 names Saudi Arabia twice more, and both are qualifiers rather than results. It reports the
-country among systems where more than a quarter of students report deprivation of either kind —
-**"as in Brunei Darussalam, El Salvador, Lebanon, Saudi Arabia and Thailand"** — in a passage on material
-and social deprivation. And on girls at the bottom of the science scale it reports
-that **"In Jordan, Montenegro, Saudi Arabia and Thailand, the share of girls scoring below Level 2 in
-science decreased by more than 10 percentage points"** between 2022 and 2025: science, in percentage
-points, over three years, the only disaggregation of a Saudi figure the chapter prints.
+Chapter 2 disaggregates a Saudi figure exactly once, and it is science rather than reading: **"In Jordan,
+Montenegro, Saudi Arabia and Thailand, the share of girls scoring below Level 2 in science decreased by
+more than 10 percentage points"** between 2022 and 2025 — percentage points, over three years, and not
+comparable with any score-point change above.
 
 ## What is still owed
 
 No Saudi first-party register on PISA 2025 has been read for this piece, and the doors were re-tested on
 2026-11-27 rather than quoted. `etec.gov.sa` answers this runner: a redirect to
 `etec.gov.sa/en/home`, then **200 with 484,741 bytes**, in which the string `pisa` does not occur. Its
-`sitemap.xml` answers **200 with 1,896 bytes**, listing about twenty institutional pages, all on the host
-`www.etec.gov.sa`, which does not resolve from here. `moe.gov.sa/en` answers **200 with 468,623 bytes**,
+`sitemap.xml` answers **200 with 1,896 bytes**, listing **29 URLs, 28 of them distinct**, every one on the
+host `www.etec.gov.sa`, which does not resolve from here at all. `moe.gov.sa/en` answers **200 with 468,623 bytes**,
 and `pisa` does not occur there either. Both render their news through JavaScript, so their served bytes carry
 no PISA text.
 
@@ -192,9 +186,9 @@ publishes its reading of PISA 2025, that will be a different piece, and this one
 
 `dek: 195/200 · title: 49/100`
 
-**Quoted spans: 26 of 26 verbatim against served bytes, re-fetched and re-hashed in this run.**
-*(The pre-draft span list ran to 28; two spans fell out in the cuts that brought the body under the brief's
-cap, and the figure in this line is the count re-run against the FINAL body rather than the one carried
+**Quoted spans: 25 of 25 verbatim against served bytes, re-fetched and re-hashed in this run.**
+*(The pre-draft span list ran to 28; three spans fell out in the cuts that brought the body under the
+brief's cap, and the figure in this line is the count re-run against the FINAL body rather than the one carried
 forward from the list — a hand-off count taken before the last edit is a count of a document nobody will
 read.)*
 Normalisations applied by the comparison script, declared because a normalisation hides the class of
@@ -238,7 +232,7 @@ register's own script rather than translating it, exactly as the Qatar piece did
    should decide whether a count of a register's rows is inside the *cited as read* rule or outside it.
    The drafter's view: it is inside it, because the rows were read in full in served text and the count is
    printed beside the register's own different word rather than in place of it.
-2. **Length: 1799 words**, inside the brief's 1,300 to 1,800. *(The first pass came in at 2,062 and was cut
+2. **Length: 1777 words**, inside the brief's 1,300 to 1,800. *(The first pass came in at 2,062 and was cut
    in four passes. The count in this line is measured by script at hand-off, not estimated: an earlier
    draft of this very line claimed 1,520 while the body stood at 2,062, which is a hand-off figure that
    agreed with nothing.)*
