@@ -57,15 +57,42 @@ first time this edition a cell-3 warning has caught something at cell 5 instead 
 forgotten. *A finding that two registers name one country differently is destroyed by a composition that is
 internally consistent, which is exactly what a careful composer is trying to produce.*
 
-**Next, named so the next run does not re-derive it.** **Cell 6 on both rows, the Verifier, and it is the
-first job.** Both Arabic gates name what is owed, including the one hard part: the second channel must be
+**Where the board actually closed.** The run went on past the paragraph above and took a third row from
+nothing to **cell 3**: `2026-11-27-uzbekistan-pisa-2025-only-in-students` was commissioned, drafted and
+judged in this run — **PASS with no repair to the body, the first draft in this edition to need none.** So
+the board closes at **three rows whose next cells are 6, 6 and 4**, which is the plan's floor and its *at
+different cells* clause both met, and **no two rows blocked on the same rule.** Edition 06 is **4 of 6
+shipped with two pairs one cell from the flag**, assets on disk, pairs held at `approved: false`, build
+exit 0 on all forty gates, tree clean, nothing unpushed.
+
+**Why the run stopped there and not at the envelope.** 60 of 180 wall-clock minutes were spent, so the
+envelope was not the binding constraint — **the standing rule that quality beats slot was.** The next cell
+available was a third Arabic composition, and two had already been composed and gated in this run. The
+ledger's own ceiling is *one fresh piece per day at most*, suspended only while recon precedes every draft;
+three fresh English drafts were written tonight, and the third was the one whose brief this same run also
+wrote. **That is the edge of what the ceiling permits, and a third Arabic composition written tired at the
+end of it is precisely what *hold rather than ship thin* exists to prevent.** Recorded rather than
+presented as an envelope limit, because the two are different reasons and only one of them is a judgment.
+
+**One debt booked against the edition, not against a piece.** Three Edition 06 pieces carry Mathias Cormann
+as their named human and two carry none. The Uzbekistan verdict books it: **the seventh piece may not be
+commissioned without a named human from a reachable register that is not the OECD's launch apparatus**, and
+if none can be reached the Editor would rather the edition stop at its floor of six than close with one
+voice in it. The weakness was named at the Saudi desk this morning and again at the UAE desk this evening;
+*naming it a third time without acting is how a weakness becomes a house style.*
+
+**Next, named so the next run does not re-derive it.** **Cell 6 on both the Saudi and UAE rows, the
+Verifier, and it is the first job.** Both Arabic gates name what is owed, including the one hard part: the second channel must be
 **found rather than assumed**, because `www.oecd.org` answers this runner 403 and was re-tested twice today,
 so re-reading the same Internet Archive bytes a third time is not an independent re-trace and the Verifier
 says so in writing if no second channel exists. The UAE row's sharpest sentence is a claim about **four
 other systems**, not only its own, and the four-list intersection is this desk's computation and not any
 register's sentence; both need tracing. Then cell 8 on both, which ships Edition 06 to **6 of 6**. Then the
-Uzbekistan row's cell 2, whose first job is to test an Uzbek first-party register by its **link set** and
-not its front door.
+Uzbekistan row's **cell 4**, the Arabic composition — its cell 2 and cell 3 are done, its Uzbek doors are
+tested (`gov.uz/oz/edu` 200 with no `pisa`, four of its own paths followed and none carrying `pisa`,
+`stat.uz` 403, `pisa.uz` unresolved), and its verdict names two things the composer must not do: an absence
+from a table must not read as a zero in Arabic, and the register's own asterisk on Albania stays
+uninterpreted.
 
 **One finding about our own shipped work, named here and NOT filed, because a content run files no queue
 rows.** The Qatar and Thailand source rows cite the press release and the launch speech as *"snapshot of 15
