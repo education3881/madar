@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-26",
+ "observed": "2026-11-27",
  "registers": [
   {
    "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2025-04/taxa-de-alfabetizacao-era-de-493-no-brasil-em-2023-diz-inep",
@@ -727,6 +727,74 @@
    "state": "absent"
   },
   {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:9055",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "الأردن يَعُدّ من 2022",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "arabic:6875",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "ثلاث قوائم للصاعدين",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
    "pieces": [
     "2026-10-23-bahrain-bqa-five-cycles:en",
@@ -827,9 +895,44 @@
    "state": "script-mismatch"
   },
   {
+   "url": "https://education3881.github.io/madar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en"
+   ],
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:12599",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "Jordan counts from 2022",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    }
+   ],
+   "state": "confirmed"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
    ],
    "observed": "2026-11-26",
@@ -2093,6 +2196,98 @@
    "state": "dead"
   },
   {
+   "url": "https://pisathailand.ipst.ac.th/news-23/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:884",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "ผลการประเมิน PISA 2025",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
+     "token": "PISA 2025 assessment results",
+     "verdict": "absent"
+    },
+    {
+     "token": "สหรัฐอาหรับเอมิเรสต์",
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
+    },
+    {
+     "token": "สหรัฐอาหรับเอมิเรตส์",
+     "verdict": "absent"
+    },
+    {
+     "token": "نتائج تقييم بيزا 2025",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "partial"
+  },
+  {
+   "url": "https://pisathailand.ipst.ac.th/pisa-results/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:488",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "ผลคะแนนการอ่าน คณิตศาสตร์ และวิทยาศาสตร์ ของประเทศไทยในโปรแกรม PISA",
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
+    },
+    {
+     "token": "Thailand's reading, mathematics and science scores in the PISA programme",
+     "verdict": "absent"
+    },
+    {
+     "token": "درجات تايلاند في القراءة والرياضيات والعلوم في برنامج بيزا",
+     "verdict": "script-mismatch",
+     "token_script": "arabic"
+    }
+   ],
+   "state": "partial"
+  },
+  {
    "url": "https://restofworld.org/2025/south-korea-ai-textbook/",
    "pieces": [
     "2026-06-17-korea-aidt-reversal:en",
@@ -2798,11 +2993,17 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5555",
+   "written_in": "latin:5488",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Minister Tekin on the classroom-count target in the earthquake region",
@@ -2822,11 +3023,17 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3616",
+   "written_in": "latin:3815",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "A new school built in Hatay in place of the one demolished after quake damage",
@@ -2845,7 +3052,7 @@
    "pieces": [
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -2868,7 +3075,7 @@
    "pieces": [
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -2880,7 +3087,7 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -2892,19 +3099,31 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-26",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:3375",
+   "written_in": "latin:3340",
+   "forms_read": [
+    "h1",
+    "title"
+   ],
    "tokens": [
     {
      "token": "August 2026 (published)",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Dates are indicative only and may change due to data availability",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "أغسطس 2026 (نُشِر)",
@@ -2925,19 +3144,36 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6100",
+   "written_in": "latin:6130",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Sayın Mustafa MASATLI",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "warning"
     },
     {
      "token": "evli ve 3 çocuk babası olup, iyi derecede İngilizce bilmektedir",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -2948,15 +3184,38 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4468",
+   "written_in": "latin:3895",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
+     "token": "Hatay'da Depremin Ardından Yeni Eğitim Öğretim Yılı Başladı",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
      "token": "254 okulun tamamlanarak yeniden eğitime kazandırıldığını, 47 okulun yapımının ise devam ettiğini",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "بدأ العامُ الدراسي الجديد في هاتاي بعد الزلزال",
@@ -2972,19 +3231,36 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:9746",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
+    {
+     "token": "Yemen's teachers pushed to the brink as salaries collapse",
+     "verdict": "found",
+     "form": "slug",
+     "forms": [
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "COUNTERFEIT"
+    },
     {
      "token": "معلمو اليمن يُدفَعون إلى الحافة مع انهيار الرواتب",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
    ],
-   "state": "script-mismatch"
+   "state": "confirmed"
   },
   {
    "url": "https://www.alkhaleej.ae/2026-08-17/%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA/%D9%85%D8%AD%D8%B7%D8%A7%D8%AA/%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-2026-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%AA%D8%B9%D9%84%D9%86-%D9%85%D9%81%D8%A7%D8%AC%D8%A3%D8%A9-%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A7%D9%84%D8%B5%D9%81-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1",
@@ -2992,7 +3268,7 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -3004,23 +3280,41 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-29",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5152",
+   "written_in": "latin:5174",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Piloted in Ras Al Khaimah",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "now being evaluated by J-PAL MENA to guide future scale-up and policy impact",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Twice-weekly sessions in KG2 or Grade 1 classrooms",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -3031,19 +3325,33 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6057",
+   "written_in": "latin:6108",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Parity between the baccalaureate tracks and their corresponding secondary school streams has been taken into account to ",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Details of the various tracks in the baccalaureate, as well as the secondary school streams, and the faculties and unive",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "روعيت المناظرة بين مسارات البكالوريا وما يقابلها من شعب الثانوية العامة لضمان عدالة الاختيار",
@@ -3064,11 +3372,17 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "arabic:4128",
+   "written_in": "arabic:3961",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Between «excellence» and «the need for rapid intervention»: what do the results of evaluating 58 government and private ",
@@ -3111,15 +3425,29 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7256",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Details of NCEA replacement confirmed",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "تأكيدُ تفاصيل بديل NCEA",
@@ -3135,11 +3463,17 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:6746",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Surge in NCEA numeracy, literacy results",
@@ -3158,15 +3492,24 @@
    "pieces": [
     "2026-10-23-bahrain-bqa-five-cycles:ar"
    ],
-   "observed": "2026-11-09",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "arabic:1209",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "نتائج أداء المدارس الحكومية",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -3176,15 +3519,26 @@
    "pieces": [
     "2026-05-26-bahrain-bqa-public-grades:en"
    ],
-   "observed": "2026-11-10",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:4275",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "The Chief Executive added",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -3218,31 +3572,55 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5423",
+   "written_in": "latin:5347",
+   "forms_read": [
+    "h1",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Source: Al-Ahram Gate",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "University admissions for Baccalaureate graduates will follow the same coordination system applied to Thanaweya Amma stu",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "The proportion of university seats allocated to Egyptian Baccalaureate students will correspond to their share based on ",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "cooperation agreement",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "to establish a framework for reviewing curricula, implementing quality standards, and aligning the Egyptian Baccalaureat",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "المصدر: بوابة الأهرام",
@@ -3278,7 +3656,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -3290,11 +3668,18 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:10488",
+   "written_in": "latin:10328",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "In Gaza, an exam signals a return of hope",
@@ -3314,27 +3699,55 @@
     "2026-09-19-egypt-baccalaureate-published-first:en",
     "2026-09-19-egypt-baccalaureate-published-first:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:5918",
+   "written_in": "latin:6135",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Egypt overhauls education system for 25 million students, shifting focus to skills and new Baccalaureate",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "Education for Future Readiness in a Rapidly Changing World",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "shifting its focus from whether children are in schools to whether effective learning is occurring in the classroom",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "a structural and philosophical shift aimed at moving learning away from exam pressure towards mastery, applied knowledge",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "If we evaluate memorisation only, we teach memorisation. Evaluating thinking, application, and communication teaches stu",
@@ -3374,15 +3787,30 @@
     "2026-10-23-bahrain-bqa-five-cycles:en",
     "2026-10-23-bahrain-bqa-five-cycles:ar"
    ],
-   "observed": "2026-11-09",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:1325",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Results of Government Schools Reviews",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "نتائج أداء المدارس الحكومية",
@@ -3413,11 +3841,18 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4169",
+   "written_in": "latin:4213",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Minister Tekin: we have increased classroom numbers in the earthquake region by 16 percent",
@@ -3437,7 +3872,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "application/pdf",
@@ -5096,8 +5531,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "state": "not-yet-asked",
@@ -5110,8 +5547,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "state": "not-yet-asked",
@@ -5124,8 +5563,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "state": "not-yet-asked",

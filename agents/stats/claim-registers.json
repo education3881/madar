@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-26",
+ "observed": "2026-11-27",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -440,6 +440,30 @@
    "state": "ours-git-archived"
   },
   {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
    "pieces": [
     "2026-10-23-bahrain-bqa-five-cycles:en",
@@ -480,9 +504,22 @@
    "state": "ours-git-archived"
   },
   {
+   "url": "https://education3881.github.io/madar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en"
+   ],
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
    ],
    "observed": "2026-11-26",
@@ -1184,12 +1221,12 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
-   "origin": 403,
+   "origin": 200,
    "origin_note": "GET",
-   "state": "walled-no-snapshot"
+   "state": "live-only"
   },
   {
    "url": "https://nation.africa/kenya/news/education/tsc-senior-school-roll-out-has-shortage-of-58-590-teachers-5286098",
@@ -1197,7 +1234,7 @@
     "2026-07-04-kenya-cbe-grade10-pathways:en",
     "2026-07-04-kenya-cbe-grade10-pathways:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-12-28",
    "archive_note": "200",
@@ -1209,7 +1246,7 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-05-21",
    "archive_note": "200",
@@ -1221,9 +1258,9 @@
     "2026-07-07-nz-ncea-corequisite:en",
     "2026-07-07-nz-ncea-corequisite:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-03-09",
+   "snapshot": "2026-07-17",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1233,7 +1270,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2024-05-06",
    "archive_note": "200",
@@ -1245,11 +1282,12 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": true,
-   "snapshot": "2026-04-05",
-   "archive_note": "200",
-   "state": "archived"
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://news.careers360.com/nep-2025-5-years-parakh-ncert-board-exams-assessment-report-national-education-policy-holistic-progress-card-learning-ceo",
@@ -1257,7 +1295,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-08-24",
    "archive_note": "200",
@@ -1269,7 +1307,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-04-19",
    "archive_note": "200",
@@ -1280,9 +1318,9 @@
    "pieces": [
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2025-02-09",
+   "snapshot": "2026-08-12",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1292,7 +1330,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-09",
    "archive_note": "200",
@@ -1304,11 +1342,12 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
-   "archived": true,
-   "snapshot": "2026-09-09",
-   "archive_note": "200",
-   "state": "archived"
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://oko.press/800-plus-dzieci-z-ukrainy-polska-szkola",
@@ -1316,9 +1355,9 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-03-16",
+   "snapshot": "2026-08-10",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1328,7 +1367,7 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-04-26",
    "archive_note": "200",
@@ -1340,7 +1379,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -1353,7 +1392,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -1366,7 +1405,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-09-12",
    "archive_note": "200",
@@ -1378,7 +1417,7 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-07-30",
    "archive_note": "200",
@@ -1390,9 +1429,34 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-05-09",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://pisathailand.ipst.ac.th/news-23/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
+  },
+  {
+   "url": "https://pisathailand.ipst.ac.th/pisa-results/",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
+   "archived": true,
+   "snapshot": "2026-06-07",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1402,9 +1466,9 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-02-16",
+   "snapshot": "2026-07-15",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1414,7 +1478,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-04-05",
    "archive_note": "200",
@@ -1426,7 +1490,7 @@
     "2026-07-07-yemen-teacher-pay-continuity:en",
     "2026-07-07-yemen-teacher-pay-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-29",
    "archive_note": "200",
@@ -1438,9 +1502,9 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-10-13",
+   "snapshot": "2026-11-09",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1450,7 +1514,7 @@
     "2026-07-07-sudan-exam-continuity:en",
     "2026-07-07-sudan-exam-continuity:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-10-08",
    "archive_note": "200",
@@ -1462,7 +1526,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-04-03",
    "archive_note": "200",
@@ -1474,7 +1538,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2025-10-26",
    "archive_note": "200",
@@ -1486,7 +1550,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-04-21",
    "archive_note": "200",
@@ -1498,7 +1562,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-22",
    "archive_note": "200",
@@ -1510,7 +1574,7 @@
     "2026-07-07-syria-certificate-recognition:en",
     "2026-07-07-syria-certificate-recognition:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-07-26",
    "archive_note": "200",
@@ -1522,7 +1586,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-26",
    "archive_note": "200",
@@ -1534,7 +1598,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-06",
    "archive_note": "200",
@@ -1546,7 +1610,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-06-16",
    "archive_note": "200",
@@ -1558,7 +1622,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-03-10",
    "archive_note": "200",
@@ -1570,7 +1634,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
    "snapshot": "2026-08-03",
    "archive_note": "200",
@@ -1582,9 +1646,9 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": true,
-   "snapshot": "2026-06-11",
+   "snapshot": "2026-10-29",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1594,7 +1658,7 @@
     "2026-07-07-netherlands-doorstroomtoets:en",
     "2026-07-07-netherlands-doorstroomtoets:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-27",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -3461,8 +3525,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "archived": null,
@@ -3474,8 +3540,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "archived": null,
@@ -3499,8 +3567,10 @@
    "pieces": [
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
-    "2026-11-26-pisa-2025-three-lists-of-risers:ar"
+    "2026-11-26-pisa-2025-three-lists-of-risers:ar",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
    "archived": null,

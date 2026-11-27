@@ -255,6 +255,23 @@ DECLARED = {
         "edition's annotation carries the other edition's URL in its own text, so "
         "neither register is hidden from either reader",
     ),
+    "2026-11-27-thailand-pisa-2025-fourth-list": (
+        {"https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
+         "https://education3881.github.io/madar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/"},
+        {"https://education3881.github.io/madar/ar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
+         "https://education3881.github.io/madar/ar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/"},
+        "the Bahrain declaration's third limb, twice: two self-citations, each "
+        "edition pointing at the other edition of the SAME piece in the reader's "
+        "own language, which is why the sets are the same two slugs under two "
+        "route prefixes and nothing else. Declared rather than flattened because "
+        "an Arabic reader following a source link should land on the Arabic "
+        "edition. NOTE FOR THE WEEKLY REVIEW: the corpus now holds two "
+        "conventions for self-citation — this pair and the Bahrain pair cite "
+        "per-language, while '2026-11-26-jordan-pisa-2025-counts-from-2022', one "
+        "day older and in this same edition, cites the EN URL from both editions "
+        "and so raises no asymmetry at all. Both pass this gate; only one can be "
+        "the house rule",
+    ),
 }
 
 # Fields that are facts about the piece, not about the language it is in.

@@ -13,6 +13,7 @@ related:
   - 2026-09-14-africa-best-system-ruler
   - 2026-10-23-bahrain-bqa-five-cycles
   - 2026-11-26-jordan-pisa-2025-counts-from-2022
+  - 2026-11-27-thailand-pisa-2025-fourth-list
 contains_composites: false
 englishVersion: 2026-11-26-pisa-2025-three-lists-of-risers
 sources:

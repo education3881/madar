@@ -13,6 +13,7 @@ related:
   - 2026-07-28-england-report-cards-first-term
   - 2026-11-12-england-ofsted-exempt-cohort
   - 2026-11-26-jordan-pisa-2025-counts-from-2022
+  - 2026-11-27-thailand-pisa-2025-fourth-list
 contains_composites: false
 arabicVersion: 2026-10-23-bahrain-bqa-five-cycles
 sources:

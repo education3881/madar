@@ -2000,6 +2000,61 @@
       "slug": "2026-11-12-england-ofsted-exempt-cohort",
       "token": "114",
       "provenance": "A ruling number (#114) — this gate's own founding ruling, cited in the annotation that explains why source 5's wording was repaired."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "434",
+      "provenance": "Thailand's average on the PISA 2025 science sub-competency 'evaluate and design scientific enquiry, and interpret data and evidence scientifically', read in served text 2026-11-27 from IPST's PISA 2025 notice (pisathailand.ipst.ac.th/news-23/): «นักเรียนไทยมีคะแนนเฉลี่ยสมรรถนะด้านการออกแบบและประเมินกระบวนการสืบเสาะหาความรู้ทางวิทยาศาสตร์ และการแปลความหมายข้อมูลและใช้ประจักษ์พยานในเชิงวิทยาศาสตร์อย่างมีวิจารณญาณ 434 คะแนน». Annotation-only by the Editor's decision: the body reports the three domain averages, and the sub-competency split sits one layer below the claim the piece makes."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "428",
+      "provenance": "Thailand's average on the PISA 2025 science sub-competency 'explain phenomena scientifically', from the same clause of the same notice: «ซึ่งมีคะแนนเฉลี่ยเท่ากับ 428 และ 429 คะแนน». Annotation-only for the same reason as 434; its sibling 429 is matched in the body only because the nine-round table happens to print 429 for 2003 science, which is a different measurement and is why this entry names the clause."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "14",
+      "provenance": "The OECD-wide reading fall between PISA 2022 and PISA 2025 as IPST reports it: «กลุ่มประเทศสมาชิก OECD มีคะแนนเฉลี่ยด้านการอ่านและคณิตศาสตร์ลดลงอย่างมีนัยสำคัญทางสถิติ คือ ลดลง 14 และ 9 คะแนน». Deliberately kept OUT of the body by the brief's own prohibition: no OECD register read for this piece carries this figure, so it is recorded as the institute's reporting and not printed as the OECD's."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "2569",
+      "provenance": "The Buddhist-era year the register dates itself with, 8 กันยายน 2569. It appears in the annotation precisely to show the conversion the body prints as 8 September 2026; no Buddhist-era year reaches either body."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "2568",
+      "provenance": "The Buddhist-era year of the test administration, สิงหาคม 2568, converted in both bodies to August 2025. Same reason as 2569."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "2570",
+      "provenance": "The Buddhist-era year the register promises the self-regulated-learning results in, พ.ศ. 2570, converted in both bodies to 2027. Same reason as 2569."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "73,730",
+      "provenance": "Byte count of IPST's nine-cycle score workbook as downloaded by this run on 2026-11-27 and re-downloaded by the Verifier to the same size and the same sha256. A measurement this operation made of a register, not a figure the register prints."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "403",
+      "provenance": "The HTTP status www.oecd.org returned to this runner on 2026-11-27, measured twice in the run. Recorded so a reader knows why three OECD registers were read from the Internet Archive and not from the OECD."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "1,614,913",
+      "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD's PISA 2025 Volume I full-report page, measured by this run on 2026-11-27 and identical to the read banked in content-drafts/recon/2026-11-26-ed06-pisa-2025-first-party-read.md. A measurement of the register, not a figure in it."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "1,468,371",
+      "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD's PISA 2025 press release, measured by this run on 2026-11-27 and identical to the banked read. Same kind of figure as 1,614,913."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "1,464,823",
+      "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD Secretary-General's launch speech, measured by this run on 2026-11-27 and identical to the banked read. Same kind of figure as 1,614,913."
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",
