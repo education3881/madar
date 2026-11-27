@@ -37,8 +37,14 @@ exactly half.
 Thailand's own numbers are the second half of the piece, and they do two things at once. Measured against
 2022, every one of them is up: science by 23 points, mathematics and reading by 13 each. Measured against
 Thailand's own nine rounds since 2000 — the institute's own published series — its 2025 science average is
-its **second-highest ever** and its 2025 mathematics and reading averages are its **second-lowest ever**.
-One year, three rises, two of them from the system's own floor. The register says so itself: the trend since
+its **third-highest** and its 2025 mathematics and reading averages are its **second-lowest**, each above
+only 2022. One year, three rises, two of them from the system's own floor.
+
+> **Corrected in cell 2, and recorded rather than quietly fixed.** This paragraph read *second-highest ever*
+> for science when the brief was filed, which is what the rise of 23 points felt like. Counted against the
+> register's own nine rows, 432 is behind **2012 (444) and 2000 (436)**, so it is the third of nine.
+> Ruling #57's shape, inside one run: the claim was checked against an impression of the series instead of
+> against the series. The draft counts all three domains with the rows in front of it. The register says so itself: the trend since
 2000 in mathematics and reading is downward, and in science it is statistically unchanged.
 
 ## Registers
