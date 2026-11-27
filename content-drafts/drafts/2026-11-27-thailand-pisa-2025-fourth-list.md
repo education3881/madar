@@ -123,7 +123,8 @@ that has not moved is the shape of this result, and the register prints both hal
 ## How many students clear the bar
 
 PISA also reports proficiency levels, six of them, and for science, mathematics and reading **level 2** is
-the one the OECD treats as the floor for using a skill in real life. **59%** of Thai students reached level 2
+the one the institute
+describes as the baseline level, where a student can use the skill and the knowledge in real life. **59%** of Thai students reached level 2
 or above in science, against **74%** across OECD countries. In mathematics and in reading the Thai share is
 **41%** in each, against **65%** and **69%**. In the highest-scoring systems — the institute names the four
 Chinese provinces, Singapore, Estonia, Japan, Chinese Taipei and Korea — more than **85%** clear it in

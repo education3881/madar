@@ -16,11 +16,13 @@ routed around.
 
 | register | read how | bytes | sha256 (first 16) |
 |---|---|---|---|
-| R5 IPST PISA 2025 notice | **direct**, `pisathailand.ipst.ac.th` | 184,426 | `8edbc1b1783c3e3b` |
+| R5 IPST PISA 2025 notice | **direct**, `pisathailand.ipst.ac.th` | **185,102** | `8edbc1b1783c3e3b` |
 | R6 IPST nine-cycle score series | **direct** download, xlsx | 73,730 | `2c46edde2ac56f37` |
 | R1 OECD press release | Archive snapshot 2026-11-15, re-fetched today | 1,468,371 | `096bb651ddbda014` |
 | R2 OECD Volume I full-report page | Archive snapshot 2026-11-16, re-fetched today | 1,614,913 | `01b2bd4aa78bf802` |
 | R3 OECD launch speech | Archive snapshot 2026-11-15, re-fetched today | 1,464,823 | `33b350b2803a4906` |
+
+**R5's byte count in that table is the Verifier's, not the Editor's.** This row first read 184,426, which is the byte count of the institute's **home page** — the fetch made one call earlier in the same directory. The hash was right and the page was right; the size was carried from the file next to it. Corrected to 185,102 at cell 6, and left visible here because a figure taken from the adjacent fetch is the cheapest error in this run to make and the hardest to see: every other column of the row was correct.
 
 All three OECD figures are **byte-identical to the read banked on 2026-11-26**, which is #101's requirement
 satisfied by re-fetching rather than by trusting the bank.
