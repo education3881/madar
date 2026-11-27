@@ -109,3 +109,55 @@ unaffected.
 - **Whether the other seven of the eight would confirm their own entries.** One does — Jordan, in Arabic,
   on the same day, which is why that paragraph is in the piece. The other six are named and not
   characterised.
+
+---
+
+## ADDENDUM, same run, two hours after the flip: CORRECTION 4, and it is the piece's frame
+
+**The piece shipped saying the OECD's registers do not carry the eight-country finding. They do.** It is
+in Chapter 2 of *PISA 2025 Results (Volume I)* — **"as shown in Table I.2.6, it is equally relevant to
+note that eight countries and economies improved their performance in all three subjects"** — and
+Table I.2.6 prints the 2022-to-2025 change in science, reading and mathematics for every system that can
+be compared in all three.
+
+**How it was found, because the how is the lesson.** After the flip this run went looking for a register
+to unblock the two rows in flight, and read the link list inside the Volume I full-report page we have
+been citing since 2026-11-26. It links twenty chapter pages of the same report. The Internet Archive holds
+snapshots of them. Nobody had opened one. **The register that answered the question was one link inside a
+register we had already read, banked and hashed three times.** A register is not a page; it is a document,
+and we had been reading its front door.
+
+**What was wrong and what was right.** The published claim was that the sentence appears in none of *the
+three OECD registers read for this edition* — literally true, and it was carrying an implication the piece
+then made explicit in its own words: *a count the international release does not carry*. That implication
+is false. What survives, re-checked against the chapter's served text: the OECD **counts** eight and
+**does not name them** in that chapter; the names and the significance condition are IPST's; the eight
+derivable from the table's ranking are the eight IPST names, in the same order; and the three registers
+this edition opened with carry neither the count nor the names, which is why piece 1 found three lists.
+
+**Applied in both editions in one commit**: a new section that quotes the chapter, prints Table I.2.6's
+nine relevant rows, and sets Saudi Arabia's +23, +5, +1 immediately above Thailand's +23, +13, +13 as the
+near-miss that shows what the list tests; a rewritten paragraph where the false implication stood; new
+deks in both languages; the chapter added as a fifth register in both annotations with its hash, its byte
+count and its own source line.
+
+**And the correction brought a corroboration the piece did not have an hour ago.** Thailand's three
+changes in the OECD's table are **+23 science, +13 reading, +13 mathematics** — the three figures IPST
+states in prose, now printed by a second register in another country. Correction 2 of this verdict was
+about an attribution the register does not make; this one hands the piece something stronger than the
+claim it replaced.
+
+**Normalisation ledger (#159) for the new span.** The chapter's served text renders the link as
+*"Table I.2.6 ,"* with a space before the comma, a markup artefact of the anchor; the body prints
+*"Table I.2.6,"*. Whitespace only, **words changed: 0**, and the clause from *it is equally relevant* to
+*all three subjects* is verbatim.
+
+**Length.** The EN body goes from 1,558 to 1,953 words, over the brief's 1,800 ceiling by 153. Allowed on
+the Editor's own authority and recorded rather than trimmed: the words bought are a register, a table and
+a near-miss row, and a length ceiling is guidance where the non-negotiables are not.
+
+**What this does NOT change.** Every figure verified in sections 2 and 3 above stands; the nine-round
+table, the subset arithmetic and the two equity sentences are untouched. **And the eight-name list is
+still the institute's**: the chapter's cell colours are not in the served text, so which rises are
+statistically significant cannot be read out of the OECD register we hold, and the piece says so in the
+annotation.

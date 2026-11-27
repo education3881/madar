@@ -100,8 +100,17 @@ purpose**, each with its blocker named in its own brief:
 
 | Piece | Cell 1 | Blocked at cell 2 on |
 |---|---|---|
-| **Qatar, on two lists of three** · `2026-11-26-qatar-pisa-2025-two-of-three` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-qatar-pisa-2025-two-of-three-brief.md` | a Qatari first-party register OR the OECD's Qatar country note, read in served text. The recon's prohibition is absolute: nothing may be said about Qatar's 2022-to-2025 change without one of them. |
-| **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-uae-pisa-2025-all-three-lists-brief.md` | a first-party UAE statement on PISA 2025, read in served text. Moves to Edition 10 if the answering register turns out to be an Abu Dhabi one. |
+| **Qatar, on two lists of three** · `2026-11-26-qatar-pisa-2025-two-of-three` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-qatar-pisa-2025-two-of-three-brief.md` | ~~a Qatari first-party register OR the OECD's Qatar country note~~ — **UNBLOCKED 2026-11-27.** Chapter 2 of *PISA 2025 Results (Volume I)*, Table I.2.6, prints Qatar's 2022-to-2025 change: **science +2, reading −1, mathematics +2**, science mean **434**. Banked at `content-drafts/recon/2026-11-27-ed06-oecd-volume-i-chapter-2.md`. **Cell 2 is the next content run's first job.** |
+| **The UAE on all three lists** · `2026-11-26-uae-pisa-2025-all-three-lists` | **FILLED 2026-11-26** — `content-drafts/briefs/2026-11-26-uae-pisa-2025-all-three-lists-brief.md` | ~~a first-party UAE statement on PISA 2025~~ — **UNBLOCKED 2026-11-27** on the same chapter: UAE **science +26, reading +15, mathematics +21**, science mean **458**, and one of the eight that rose in all three. A first-party UAE statement is still owed and no longer required; `moe.gov.ae` answers 302 and renders its news in JavaScript. Moves to Edition 10 if the answering register turns out to be an Abu Dhabi one. |
+
+**THE BLOCKER WAS LIFTED ON 2026-11-27, AND NOT BY A DOOR OPENING.** `www.oecd.org` still answers 403,
+`edu.gov.qa` and `etec.gov.sa` still do not answer at all, and both were re-tested today (#159's family).
+What changed is that somebody read the **link set of a register already in hand**: the Volume I
+full-report page links twenty chapter pages of the same report, the Internet Archive holds them, and
+Chapter 2 carries Table I.2.6, every comparable system's 2022-to-2025 change in all three subjects. **A
+register is a document, not a page, and this operation had been reading its front door since the edition
+opened.** The paragraph below is kept as it was written on 2026-11-26 because it is an accurate record of
+a measurement that was correct about every door it tested and wrong about what it concluded.
 
 **The blocker is one blocker and it is measured.** Every remaining country-anchored candidate on the Ed06
 slate needs a national register this runner cannot read in served text — `edu.gov.qa` does not answer,

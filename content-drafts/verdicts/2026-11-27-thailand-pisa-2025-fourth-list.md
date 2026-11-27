@@ -130,3 +130,21 @@ gate, which also owes the Arabic rendering of the institute's name and of Thaila
 whose first job is to re-count R6's nine rows **independently of this verdict's reading of them**, because
 note 2 is precisely the error a second reader catches; cell 7, the hero still and the share card; cell 8,
 the flip with the three forward rails.
+
+---
+
+## POSTSCRIPT, same run, after the flip
+
+**Test 1 is re-opened and re-passed on five registers instead of four.** Chapter 2 of *PISA 2025 Results
+(Volume I)* was reached on 2026-11-27 from a link inside the Volume I full-report page this edition has
+cited since it opened, and it carries the count of eight that the piece had described as absent from the
+OECD's own registers. The correction is written up in full in the Verifier's verdict as **correction 4**;
+both editions carry a new section, a new dek and a fifth register.
+
+**What the Editor got wrong, stated as the Editor's own error and not the Verifier's catch.** This desk
+read three OECD registers because three were banked, and wrote *none of the three carries it* — a true
+sentence about our reading that the next paragraph turned into a claim about the OECD. **A register's
+front page is not the register.** The brief's prohibition list had eleven entries and none of them said
+*do not infer an absence from the registers you happen to hold*; it does now, by example.
+
+**Length.** 1,953 words against the brief's 1,800 ceiling. Allowed here, recorded rather than trimmed.

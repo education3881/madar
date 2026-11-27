@@ -2239,10 +2239,6 @@
      "standing": "running-text"
     },
     {
-     "token": "สหรัฐอาหรับเอมิเรตส์",
-     "verdict": "absent"
-    },
-    {
      "token": "نتائج تقييم بيزا 2025",
      "verdict": "script-mismatch",
      "token_script": "arabic"
@@ -3884,11 +3880,15 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2892",
+   "written_in": "latin:2932",
+   "forms_read": [
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Challenge Accepted: Six Key Takeaways from the Sierra Leone Education Innovation Challenge Year 3 Results",
@@ -3896,7 +3896,11 @@
     },
     {
      "token": "SLEIC does not definitely prove that outcomes-based financing is a better way to fund education",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": false,
+     "standing": "running-text"
     },
     {
      "token": "التحدّي مقبول: ستُّ خلاصاتٍ من نتائج السنة الثالثة لتحدّي الابتكار التعليمي في سيراليون",
@@ -3912,15 +3916,25 @@
     "2026-08-28-sierra-leone-sleic-outcomes:en",
     "2026-08-28-sierra-leone-sleic-outcomes:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4680",
+   "written_in": "latin:4720",
+   "forms_read": [
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Learning What Works: Closing SLEIC",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title"
+     ],
+     "h1_served": false,
+     "standing": "warning-no-h1-served"
     },
     {
      "token": "تعلُّمُ ما ينفع: إسدالُ الستار على SLEIC",
@@ -3929,7 +3943,11 @@
     },
     {
      "token": "her opening remarks",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": false,
+     "standing": "running-text"
     },
     {
      "token": "كبير مسؤولي التعليم",
@@ -3944,15 +3962,25 @@
    "pieces": [
     "2026-08-28-sierra-leone-sleic-outcomes:en"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:6325",
+   "written_in": "latin:6365",
+   "forms_read": [
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Outcomes, delivered",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title"
+     ],
+     "h1_served": false,
+     "standing": "warning-no-h1-served"
     }
    ],
    "state": "confirmed"
@@ -3962,15 +3990,30 @@
    "pieces": [
     "2026-07-07-us-naep-honesty-gap:en"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
-   "written_in": "latin:11755",
+   "written_in": "latin:11468",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Fewer subjects, students, data points: Feds to scale back NAEP",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     }
    ],
    "state": "confirmed"
@@ -3981,11 +4024,45 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-22",
-   "status": 403,
-   "note": "HTTPError",
-   "ctype": "",
-   "state": "walled"
+   "observed": "2026-11-27",
+   "status": 200,
+   "note": "",
+   "ctype": "text/html; charset=utf-8",
+   "written_in": "latin:3676",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
+   "tokens": [
+    {
+     "token": "EU EOM Election Observation Update",
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
+    },
+    {
+     "token": "On 14 August 2026, the day after elections, the Electoral Commission Zambia (ECZ) suspended the counting and announcemen",
+     "verdict": "absent"
+    },
+    {
+     "token": "The ECZ declared preliminary presidential results shortly before 03:00, in the middle of the night on 18 August",
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
+    }
+   ],
+   "state": "partial"
   },
   {
    "url": "https://www.egypttoday.com/Article/1/147316/PM-reviews-UNICEF-study-on-Egypt%E2%80%99s-education-reform-efforts",
@@ -3993,19 +4070,29 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7646",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
+    {
+     "token": "PM reviews UNICEF study on Egypt's education reform efforts",
+     "verdict": "absent"
+    },
     {
      "token": "رئيسُ الوزراء يستعرض دراسةَ اليونيسف لجهود إصلاح التعليم في مصر",
      "verdict": "script-mismatch",
      "token_script": "arabic"
     }
    ],
-   "state": "script-mismatch"
+   "state": "absent"
   },
   {
    "url": "https://www.ei-ie.org/en/item/32239:teacher-remuneration-during-emergencies-just-wages-for-public-school-teachers-in-lebanon",
@@ -4013,19 +4100,36 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:4450",
+   "written_in": "latin:4340",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Teacher Remuneration During Emergencies: Just Wages for Public School Teachers in Lebanon",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "warning"
     },
     {
      "token": "Public education teachers",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "أجور المعلمين في أوقات الطوارئ: أجور عادلة لمعلمي المدارس الرسمية في لبنان",
@@ -4046,27 +4150,54 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:2431",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "NOTICE OF VALIDLY NOMINATED CANDIDATES FOR THE 2026 PARLIAMENTARY ELECTIONS",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "The polls shall take place on Thursday, 13th August 2026 between 06:00 hrs and 18:00 hrs",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "General Election Results",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "shall take place",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -4077,15 +4208,31 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html",
-   "written_in": "latin:5766",
+   "written_in": "latin:5848",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Del pragmatismo a la renuncia: el debate pendiente sobre el SIMCE",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "من البراغماتية إلى التخلّي: النقاشُ المعلَّق حول سيمسه",
@@ -4101,15 +4248,26 @@
     "2026-05-27-egypt-ekb-decade:en",
     "2026-05-27-egypt-ekb-decade:ar"
    ],
-   "observed": "2026-11-10",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:5010",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Prof. Ayman Ashour, Minister of Higher Education, Egypt",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "الأستاذ الدكتور",
@@ -4124,15 +4282,25 @@
    "pieces": [
     "2026-07-07-chile-simce-return:en"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:2690",
+   "written_in": "latin:2770",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "brecha crítica",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -4143,15 +4311,32 @@
     "2026-07-07-gaza-education-continuity:en",
     "2026-07-07-gaza-education-continuity:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:9393",
+   "written_in": "latin:8388",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Gaza students sit exams in tents as nearly all schools lie in ruins",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "طلاب غزة يؤدون الامتحانات في خيام فيما تكاد كل المدارس تكون أنقاضًا",
@@ -4167,15 +4352,30 @@
     "2026-06-18-egypt-npda-arabic-literacy:en",
     "2026-06-18-egypt-npda-arabic-literacy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
-   "written_in": "latin:59304",
+   "written_in": "latin:59437",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Arabic diglossia: advocating for a non-deficit model",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "الازدواجية في العربية: الدعوةُ إلى نموذجٍ غير قائمٍ على العجز",
@@ -4191,7 +4391,7 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -4203,7 +4403,7 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -4215,27 +4415,50 @@
     "2026-05-27-uae-madrasa-tiktok:en",
     "2026-05-27-uae-madrasa-tiktok:ar"
    ],
-   "observed": "2026-11-08",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
-   "written_in": "latin:7411",
+   "written_in": "latin:7542",
+   "forms_read": [
+    "h1",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Madrasa, TikTok to launch STEM feed in UAE showcasing largest Arabic educational library",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "Dr. Waleed Al Ali",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Dr. Al Ali said",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Dr. Al Ali noted",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "مدرسة و TikTok تُطلقان خلاصة STEM في الإمارات تستعرض أكبر مكتبة تعليمية باللغة العربية",
@@ -4251,7 +4474,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 403,
    "note": "HTTPError",
    "ctype": "",
@@ -4287,15 +4510,28 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html;charset=utf-8",
    "written_in": "latin:6067",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Uczniowie z Ukrainy w polskich szkołach — nowe rozwiązania prawne",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "title",
+     "forms": [
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "warning"
     },
     {
      "token": "تلاميذ من أوكرانيا في المدارس البولندية: حلول قانونية جديدة",
@@ -4311,40 +4547,69 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:4620",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Hundreds of formerly outstanding schools reinspected",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "over 80% (308) of these schools that had a graded inspection last year did not retain the outstanding grade",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "around a fifth were rated requires improvement (17%) or inadequate (4%)",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "The average for schools inspected last year was 13 years",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Ofsted’s Chief Inspector, Amanda Spielman, said",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "مئاتُ المدارس المُتميّزة سابقًا يُعاد تفتيشُها",
      "verdict": "script-mismatch",
      "token_script": "arabic"
-    },
-    {
-     "token": "Ofsted's Chief Inspector, Amanda Spielman, said",
-     "verdict": "absent"
     },
     {
      "token": "أكثرُ من 80% (308) من هذه المدارس التي خضعت لتفتيشٍ مُصنَّفٍ العامَ الماضي لم تحافظ على تصنيفِ التميُّز",
@@ -4367,7 +4632,7 @@
      "token_script": "arabic"
     }
    ],
-   "state": "partial"
+   "state": "confirmed"
   },
   {
    "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
@@ -4375,15 +4640,31 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:14052",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Ofsted confirms changes to education inspection and unveils new-look report cards",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "أوفستد يؤكّد تغييراتِ تفتيش التعليم ويكشف بطاقاتِ التقرير الجديدة",
@@ -4399,23 +4680,48 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7690",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Single headline Ofsted grades scrapped in landmark school reform",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title",
+      "headline",
+      "slug"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "Single headline grades for schools will be scrapped with immediate effect",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Reductive single headline grades fail to provide a fair and accurate assessment",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "إلغاءُ درجاتِ أوفستد المُجمَلة الواحدة في إصلاحٍ مدرسيٍّ فارق",
@@ -4441,11 +4747,17 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:15769",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Education inspection framework (for use from November 2025)",
@@ -4470,15 +4782,26 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-30",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:3571",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "insights from the first 4 waves of surveys, covering inspections from January 2026 onwards that were published before th",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "تقييمُ نهج أوفستد المُجدَّد في تفتيش التعليم: موجزُ النتائج الأوّليّة",
@@ -4493,11 +4816,17 @@
    "pieces": [
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-22",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:5511",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "تقييمٌ مستقلٌّ لنهج أوفستد المُجدَّد في تفتيش التعليم: مرجعياتُ العمل",
@@ -4513,55 +4842,109 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-30",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:22161",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Considering the context of schools in challenging circumstances: an analysis of similar schools data",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "the similar schools measure was not available during our 2025/26 inspections",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "nearly 3,300 inspections, which represents just 15% of state-funded schools",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "nearly 3,200 full inspections where we graded achievement",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "similar schools data supports conclusions that inspectors were already reaching",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "the outcomes of inspections carried out in a single year are not representative of the school population as a whole",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "more than 3 times that of London",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Both regions have fairly similar numbers of pupils and proportions of pupils eligible for FSM",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "two thirds (65%) of schools said the same",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Less than half (47%) of secondary schools agreed that their inspection was tailored to their context",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "This shows that Ofsted still has work to do",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "مراعاةُ سياق المدارس في الظروف الصعبة: تحليلٌ لبيانات المدارس المتشابهة",
@@ -4570,11 +4953,19 @@
     },
     {
      "token": "just 15% of state-funded schools",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "supports conclusions that inspectors were already reaching",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -4585,31 +4976,61 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-30",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:7541",
+   "forms_read": [
+    "h1",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Similar schools model for attainment: overview",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "h1",
+     "forms": [
+      "h1",
+      "title",
+      "og:title"
+     ],
+     "h1_served": true,
+     "standing": "evidence"
     },
     {
      "token": "a list of 50 similar schools for each mainstream primary and secondary school",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "a scaled, neighbourhood-level measure of income deprivation that affects children",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "a measure that captures progression to higher education",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "Ofsted will include similar schools information in its inspection data summary reports ( IDSRs ) from September 2026. Th",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
      "token": "نموذج المدارس المتشابهة للتحصيل: نظرة عامة",
@@ -4623,7 +5044,11 @@
     },
     {
      "token": "The data will not be used to make grading decisions",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
    "state": "confirmed"
@@ -4634,26 +5059,37 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
+   "observed": "2026-11-27",
    "status": 200,
    "note": "",
    "ctype": "text/html; charset=utf-8",
    "written_in": "latin:16493",
+   "forms_read": [
+    "h1",
+    "headline",
+    "og:title",
+    "slug",
+    "title"
+   ],
    "tokens": [
     {
      "token": "Ofsted's Chief Inspector reflects on her first speech at the Festival of Education",
-     "verdict": "found"
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     },
     {
-     "token": "Ofsted's Chief Inspector reflects on **her** first speech at the Festival of Education",
-     "verdict": "absent"
-    },
-    {
-     "token": "this is my last speech as His Majesty's Chief Inspector",
-     "verdict": "absent"
+     "token": "this is my last speech as His Majesty’s Chief Inspector",
+     "verdict": "found",
+     "form": "body",
+     "forms": [],
+     "h1_served": true,
+     "standing": "running-text"
     }
    ],
-   "state": "partial"
+   "state": "confirmed"
   },
   {
    "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2022/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2022",
@@ -5569,6 +6005,18 @@
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
+   "state": "not-yet-asked",
+   "status": null,
+   "note": "",
+   "ctype": ""
+  },
+  {
+   "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html",
+   "pieces": [
+    "2026-11-27-thailand-pisa-2025-fourth-list:en",
+    "2026-11-27-thailand-pisa-2025-fourth-list:ar"
+   ],
+   "observed": "2026-11-27",
    "state": "not-yet-asked",
    "status": null,
    "note": "",

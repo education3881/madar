@@ -1,6 +1,6 @@
 ---
 title: "Thailand's fourth list"
-dek: "Thailand's national PISA centre printed a list the OECD's own release does not: eight systems up in all three subjects since 2022. All eight sit inside one OECD list, and they are exactly half of it."
+dek: "Thailand's national PISA centre names the eight systems that rose in all three subjects since 2022. The OECD counts eight too, one level inside its report, and names none of them."
 date: 2026-11-27
 country: Thailand
 region: Asia
@@ -21,6 +21,8 @@ sources:
     url: "https://pisathailand.ipst.ac.th/pisa-results/"
   - title: "OECD - 'PISA 2025 Results (Volume I)', full-report page (read in served text 2026-11-27 from the Internet Archive's snapshot of 16 November 2026, because oecd.org answers this runner with 403; the refusal was not routed around, and the snapshot was re-fetched and re-hashed today against the read banked on 2026-11-26 - 1,614,913 bytes, sha256 01b2bd4aa78bf802d18db53846a544b48e849927264cbe383f603a269187b0cd, byte-identical). The sixteen-name list this piece sets the eight against: 'Within the OECD, science scores rose in Costa Rica, the Slovak Republic, Türkiye and the United Kingdom. Among non-OECD members, scores also went up in Cambodia, El Salvador, Georgia, Jordan, Mongolia, Montenegro, the Philippines, Saudi Arabia, Thailand, the United Arab Emirates, Uruguay and Uzbekistan.' Also the OECD 2025 averages, science 482, mathematics 463 and reading 461, and 'Following the unprecedented drop in performance recorded in PISA 2022, learning outcomes have largely stagnated or continued to decline in many countries.' This register names no list of systems rising in all three subjects; the phrase 'all three subjects' appears in it only for low performers."
     url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html"
+  - title: "OECD - 'PISA 2025 Results (Volume I)', Chapter 2, 'Student performance in PISA 2025', chapter page of the full report (read in served text 2026-11-27 from the Internet Archive's snapshot of 4 November 2026, because oecd.org answers this runner with 403; 2,426,000 bytes, sha256 e5a429b011ff90e5676417dda3cf5358b2f72b940ee068fae3faa96a6f068a71. This is the register that counts the eight: 'as shown in Table I.2.6, it is equally relevant to note that eight countries and economies improved their performance in all three subjects.' Table I.2.6, 'Change between 2022 and 2025 in mean performance in science, reading and mathematics', supplies every change figure in this piece's second table - Georgia 38, 10 and 26; Cambodia 35, 18 and 29; Jordan 32, 20 and 26; Montenegro 32, 13 and 5; the United Arab Emirates 26, 15 and 21; Saudi Arabia 23, 5 and 1; Thailand 23, 13 and 13; Turkiye 18, 16 and 8; the Philippines 17, 20 and 16 - in the table's own column order, science then reading then mathematics, and in its own ranking by the change in science. The table's note states that only countries and economies that can compare PISA 2022 and PISA 2025 in all three subjects are shown, and it marks positive, non-significant and negative changes by cell colour rather than in words, so which of the rises are statistically significant cannot be read out of the served text; the eight are named by IPST and counted here. The chapter's own source line for the table is 'OECD, PISA 2025 Database, Tables I.B1.2a.36, I.B1.2a.37 and I.B1.2a.38'. This chapter was NOT among the three OECD registers banked for Edition 06 on 2026-11-26; it was reached on 2026-11-27 from a link inside the Volume I full-report page, and the piece's framing was corrected the same hour."
+    url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html"
   - title: "OECD - 'PISA 2025: Students' reading and mathematics performance declined sharply across the OECD', press release, 8 September 2026 (read in served text 2026-11-27 from the Internet Archive's snapshot of 15 November 2026, for the same reason; 1,468,371 bytes, sha256 096bb651ddbda01432c64263718fced2b978a5be3ac26bf8b92766bb671166a5, byte-identical to the banked read). The ten-year list Thailand is also named on: 'Between 2015 and 2025, some education systems improved performance in contrast to broader trends. Science performance rose in Lithuania, the Slovak Republic, Türkiye, the Dominican Republic, Georgia, Macao (China), Montenegro, Qatar, Thailand, the United Arab Emirates, and Uruguay.' And the OECD-wide equity sentence this piece sets beside IPST's: 'Across OECD countries, advantaged students scored 85 points higher in science than disadvantaged students. The gap narrowed between 2022 and 2025, but largely because advantaged students performed less well rather than improvements among disadvantaged students.' This register names no list of systems rising in all three subjects either."
     url: "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html"
   - title: "OECD - Secretary-General Mathias Cormann's speech at the international launch of PISA 2025, 8 September 2026 (read in served text 2026-11-27 from the Internet Archive's snapshot of 15 November 2026, for the same reason; 1,464,823 bytes, sha256 33b350b2803a4906ef0d1974475b9de3c72f0d7bab70308a080014f5b2e323a9, byte-identical to the banked read). The register that dates the sixteen-name list: 'Since 2022, science scores went up in Costa Rica, Slovakia, Türkiye and the United Kingdom - and in 12 other countries and economies.' The page carries 'Check against delivery', so it is the text as prepared and is cited as that. It is the third of the three OECD registers read for this edition, and the third that names no all-three-subject list."
@@ -39,11 +41,45 @@ approved: true
 PISA 2025 was launched globally on Tuesday 8 September 2026. The same afternoon, in a conference room at a
 Bangkok hotel, Thailand's results were announced by the Institute for the Promotion of Teaching Science and
 Technology — IPST, the body that runs PISA in Thailand as the national centre. The notice IPST published
-carries a sentence that none of the three OECD registers read for this edition carries.
+carries a sentence that none of the three OECD registers this edition opened with carries.
 
 In the institute's own words, translated: **"there are 8 countries and economies whose average scores in all
 three domains rose from PISA 2022 with statistical significance, namely: Georgia, Cambodia, Jordan,
 Montenegro, the United Arab Emirates, Thailand, Türkiye and the Philippines."**
+
+## The OECD counts the same eight and does not name them
+
+That number is not the institute's own finding, and this piece said so before it went looking: the OECD
+reaches eight as well. It does it in Chapter 2 of *PISA 2025 Results (Volume I)*, a chapter page of the
+full report rather than anything in the launch — **"as shown in Table I.2.6, it is equally relevant to note
+that eight countries and economies improved their performance in all three subjects."** The chapter does
+not list them there. What it prints is the table: every system that can be compared between PISA 2022 and
+PISA 2025 in all three subjects, with its three changes, ranked by the change in science, and with the
+significant rises, the significant falls and the non-significant moves distinguished by the colour of the
+cell rather than by any word a reader can quote.
+
+So the two registers divide the work. **The OECD counts the eight and colours them; the institute names
+them.** Read the table against the institute's sentence and the eight are the same eight, in the same
+order the table ranks them:
+
+| | Science | Reading | Mathematics |
+|---|---|---|---|
+| Georgia | +38 | +10 | +26 |
+| Cambodia | +35 | +18 | +29 |
+| Jordan | +32 | +20 | +26 |
+| Montenegro | +32 | +13 | +5 |
+| United Arab Emirates | +26 | +15 | +21 |
+| **Thailand** | **+23** | **+13** | **+13** |
+| Türkiye | +18 | +16 | +8 |
+| The Philippines | +17 | +20 | +16 |
+
+The row immediately above Thailand's in the OECD's own ranking is **Saudi Arabia, at +23, +5 and +1** — the
+same rise in science as Thailand, and not one of the eight. That is the whole of what the eight-name list
+tests, visible in one row: all three subjects, and each rise large enough to be called a rise.
+
+Thailand's three figures in that table are the three the institute states in its own prose. **Two registers,
+one in Bangkok and one in Paris, print the same three numbers for Thailand**, which is the strongest form
+a figure in this publication can take and is rarer than it should be.
 
 ## A fourth list, and where it sits
 
@@ -71,10 +107,12 @@ rose in science, mathematics and reading together — exactly half. The other ei
 Republic, the United Kingdom, El Salvador, Mongolia, Saudi Arabia, Uruguay and Uzbekistan — are on the
 science list and not on this one.
 
-The OECD did not omit this list. It asked three questions about science and answered them, and a question
-nobody asked is not a question avoided. What is true is narrower and more useful: **a national centre
-reporting its own results published a count that the international release does not carry**, and a reader
-who wants the all-three-subject reading of PISA 2025 currently has to get it from one of the eight.
+The OECD did not omit this list, and the record now shows exactly where it lives. The release, the Volume I
+full-report page and the launch speech ask three questions about science and answer them; the count of
+eight is one level in, in a chapter of the report, and the names are in neither. **A reader who wants the
+all-three-subject reading of PISA 2025 can get the number from the OECD and the names from a national
+centre**, and until today this edition had only the first three registers and therefore only three lists.
+That is a fact about what we had read, which is why this piece names all five registers it stands on.
 
 One of the eight is Jordan. On the same day, in Arabic, Jordan's National Center for Human Resources
 Development reported its own three averages up against 2022 and called the improvement **"statistically

@@ -2055,6 +2055,11 @@
       "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
       "token": "1,464,823",
       "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD Secretary-General's launch speech, measured by this run on 2026-11-27 and identical to the banked read. Same kind of figure as 1,614,913."
+    },
+    {
+      "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
+      "token": "2,426,000",
+      "provenance": "Byte count of the Internet Archive snapshot of Chapter 2 of PISA 2025 Results (Volume I), measured by this run on 2026-11-27 when the chapter was reached from a link inside the Volume I full-report page. A measurement this operation made of a register, of the same kind as the three snapshot sizes already registered for this piece."
     }
   ],
   "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",

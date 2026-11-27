@@ -23,11 +23,12 @@ Read on every run, in this order:
    was applied by silence. What B bought is kept: a piece ships **the day its own eight-cell gate closes**,
    tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **TWO ROWS ARE IN FLIGHT, BOTH AT
    CELL 1 OF EIGHT, SEVEN CELLS OPEN EACH** — `2026-11-26-qatar-pisa-2025-two-of-three` and
-   `2026-11-26-uae-pisa-2025-all-three-lists`, commissioned 2026-11-26 and both blocked at cell 2 on a
-   national register this runner cannot read in served text. The plan requires three, so the board is one
-   short, and the next content run opens cell 1 on a third **by anchoring an OECD-wide slate candidate in
-   an in-scope geography whose own national centre answers** — which is how 2026-11-27's piece was found —
-   rather than by re-testing a closed door. The one remaining row,
+   `2026-11-26-uae-pisa-2025-all-three-lists`, commissioned 2026-11-26, blocked at cell 2 until
+   2026-11-27 and **UNBLOCKED that afternoon** by Chapter 2 of the OECD's Volume I — a page linked from
+   inside a register this edition had already read, hashed and re-hashed three times, which prints every
+   comparable system's 2022-to-2025 change in all three subjects (`content-drafts/recon/2026-11-27-ed06-oecd-volume-i-chapter-2.md`).
+   **A register is a document, not a page.** Cell 2 on Qatar is the next content run's first job. The plan
+   requires three in flight, so the board is still one short. The one remaining row,
    `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` (cells 1 and 2 filled, **SIX unfilled**, cell 3 attempted
    and RETURNED WITH NOTES on 2026-11-25 — the Editor's independent re-run confirmed **24 of 25** quoted
    spans against a hand-off reading 25 of 25, which is ruling #159), is **PARKED to Edition 10** by the same

@@ -83,3 +83,27 @@ OECD's own registers do not carry. The two equity sentences keep their two inter
   nine rows as the English one; whether IPST's own columns are right is IPST's to answer.
 - **Cell 6.** The Verifier reads next and re-counts the nine rows independently, which is where the English
   Editor's note 2 would have been caught had it survived.
+
+---
+
+## POSTSCRIPT, same run, after the flip
+
+The Arabic edition carries the same correction as the English: a new section quoting Chapter 2 of
+*PISA 2025 Results (Volume I)*, the nine rows of Table I.2.6 in a second Arabic table, the Saudi near-miss
+row, a new dek and a fifth register in the annotation. Re-gated on the three things this desk owes:
+
+1. **The English span stays English inside the Arabic prose**, per the convention piece 1 set — the
+   chapter's sentence and the table's source line are quoted in their own language and were re-checked
+   verbatim against the served snapshot.
+2. **Figures re-counted as multisets across the two editions after the edit.** No substantive divergence;
+   the only differences remain the ones Arabic grammar requires.
+3. **Country names in the new table reuse the forms already established** — جورجيا، كمبوديا، الأردن،
+   الجبل الأسود، الإمارات العربية المتحدة، تايلاند، تركيا، الفلبّين، السعودية — so no system acquires a
+   second spelling inside one piece or across the edition.
+
+**And the finding in section 1 of this gate survives the correction and is sharpened by it.** The register
+in a third language still leaves both editions equally uncheckable by span-matching; what the new chapter
+adds is a register in **English**, which the Arabic edition quotes in English and the English edition
+quotes natively — so this one piece now carries all three cases at once: a Thai register neither edition
+can span-match, an English register both can, and an Arabic register (the Jordan corroboration) only the
+Arabic edition can.
