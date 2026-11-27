@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. Two faint rectangles of identical size stand side by side with an empty gap between them, and one thin horizontal rule runs through both near their lower edge. Inside the left rectangle three tall thin uprights rise well above the rule, the tallest first. Inside the right rectangle three much shorter uprights sit almost on it: the first and third rise barely above it, the first drawn in warm kiln-orange, and the middle one drops a short way below it.">
+  <title>The Still · Qatar, PISA 2025 · two clocks on one ruler</title>
+  <desc>A composition for Edition 06's fourth piece. Paper-cream ground, pure line, tone carried by stroke
+  opacity alone, no fills. The two rectangles are the same size on purpose: they are two measurements of one
+  country drawn to one vertical scale, fourteen pixels to the score point, from one shared zero rule. The
+  left rectangle is the decade — Qatar's fitted decennial trend in Table I.2.9 of PISA 2025 Results
+  (Volume I), nineteen in science, eighteen in reading and twelve in mathematics, all three well above zero.
+  The right rectangle is the three years — Qatar's change between 2022 and 2025 in Table I.2.6, two in
+  science, minus one in reading and two in mathematics, which on the same ruler is almost nothing, and the
+  reading upright is the one that crosses below the rule. The orange upright is the two points of science
+  over three years, the single figure that reconciles Qatar's presence on two of the release's improver
+  lists with its absence from the third. The gap between the rectangles is left empty because a decade is
+  not three years and this piece does not subtract one from the other. Nothing in the drawing asserts
+  statistical significance: the register carries that in cell colour and a colour is not in served text.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <rect x="200" y="140" width="360" height="330" fill="none" stroke="#1F2E44" stroke-width="1.2" opacity="0.2"/>
+  <rect x="640" y="140" width="360" height="330" fill="none" stroke="#1F2E44" stroke-width="1.2" opacity="0.2"/>
+
+  <line x1="290" y1="430" x2="290" y2="164" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.88"/>
+  <line x1="380" y1="430" x2="380" y2="178" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+  <line x1="470" y1="430" x2="470" y2="262" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+
+  <line x1="730" y1="430" x2="730" y2="402" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+  <line x1="820" y1="430" x2="820" y2="444" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+  <line x1="910" y1="430" x2="910" y2="402" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+
+  <line x1="180" y1="430" x2="1020" y2="430" stroke="#1F2E44" stroke-width="1.4" opacity="0.26"/>
+</svg>

@@ -27,9 +27,9 @@ sources:
     url: "https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/"
 hero:
   src: "/stills/2026-11-26-qatar-pisa-2025-two-of-three.svg"
-  alt: "Pending. The Designer draws this still at cell 7 and the alt text is regenerated from the drawing's own aria-label."
+  alt: "A paper-cream page in ink. Two faint rectangles of identical size stand side by side with an empty gap between them, and one thin horizontal rule runs through both near their lower edge. Inside the left rectangle three tall thin uprights rise well above the rule, the tallest first. Inside the right rectangle three much shorter uprights sit almost on it: the first and third rise barely above it, the first drawn in warm kiln-orange, and the middle one drops a short way below it."
   caption: "سكون · The Still · PISA 2025"
-approved: false
+approved: true
 ---
 
 Edition 06 opened with a count. *Three lists of risers*, published on 26 November, found that the OECD's

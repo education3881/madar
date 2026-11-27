@@ -2070,6 +2070,101 @@
    "slug": "2026-11-27-thailand-pisa-2025-fourth-list",
    "token": "51",
    "provenance": "Not a quantity. It is the minutes field of the capture timestamp 14 November 2026 16:51:29 UTC, which identifies the Internet Archive capture this annotation cites, read from the archive's own resolved URL by the daily run on 2026-11-27. Registered rather than removed because a capture cited without its own timestamp is the defect ruling #161 was filed for."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "403",
+   "provenance": "HTTP status code. `www.oecd.org` refuses this runner with 403, re-tested twice on 2026-11-27, and the refusal was not routed around — which is why every OECD register on this piece is read from the Internet Archive. Not a quantity about education."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "2,426,000",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261104162528 of Chapter 2 of PISA 2025 Results (Volume I), measured by the daily run on 2026-11-27 and byte-identical to the read banked on 2026-11-26."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "2,544,478",
+   "provenance": "Decompressed byte count of the Wayback PLAYBACK page wrapping the SAME capture, printed to name the object the cited figure is not — one capture has three objects and only the raw decompressed one is the document the OECD served. Ruling #161."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "1,614,913",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261114165129 of the Volume I full-report page, re-fetched twice on 2026-11-27 and identical both times."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "1,634,885",
+   "provenance": "Decompressed byte count of the Wayback playback page wrapping capture 20261116235912 of the same URL, printed for the same reason as 2,544,478. Ruling #161."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "1,468,371",
+   "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD PISA 2025 press release, measured on 2026-11-27 and identical to the banked read."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "1,464,823",
+   "provenance": "Decompressed byte count of the Internet Archive snapshot of the OECD Secretary-General's launch speech, measured on 2026-11-27 and identical to the banked read."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "16",
+   "provenance": "Not a quantity. The hours field of a capture timestamp — 2026-11-04 16:25:28 UTC and 2026-11-14 16:51:29 UTC — which is how a capture is identified under ruling #161."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "51",
+   "provenance": "Not a quantity. The minutes field of capture timestamp 2026-11-14 16:51:29 UTC."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "29",
+   "provenance": "Not a quantity. The seconds field of capture timestamp 2026-11-14 16:51:29 UTC."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "28",
+   "provenance": "Not a quantity. The seconds field of capture timestamp 2026-11-04 16:25:28 UTC."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "2, -1",
+   "provenance": "Qatar's row in Table I.2.6 of the chapter, science then reading then mathematics: 2, -1, 2. Printed in the body of both editions; the comma-joined pair is an artefact of how the annotation lists the row, and the figures themselves are traced in the Verifier's verdict."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "3, -14",
+   "provenance": "The OECD average-35 row of Table I.2.6: -3, -14, -9. Printed in the body of both editions."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "7, -27",
+   "provenance": "The OECD average-35 row of Table I.2.9 on the fitted decennial measure: -7, -27, -24. Printed in the body of both editions."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "436",
+   "provenance": "From the Volume I full-report page's own note 1, quoted in the annotation: non-OECD participants' science mean remained broadly stable at 436 and 437 points. Kept out of the body deliberately — this piece is about Qatar and the OECD average, and the non-OECD aggregate is neither."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "437",
+   "provenance": "The second half of the same note-1 figure, 436 and 437 points for non-OECD participants. Kept out of the body for the same reason."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "161",
+   "provenance": "A ruling number, not a measurement: ruling #161, a capture is identified by its own timestamp, filed 2026-11-27 by the run that composed this piece."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "86",
+   "provenance": "A ruling number, not a measurement: ruling #86 clause 1, a named human's gender is read off the register's own pronoun or gendered title."
+  },
+  {
+   "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
+   "token": "134",
+   "provenance": "A ruling number, not a measurement: ruling #134, which amends #86 clause 1."
   }
  ],
  "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",

@@ -255,6 +255,23 @@ DECLARED = {
         "edition's annotation carries the other edition's URL in its own text, so "
         "neither register is hidden from either reader",
     ),
+    "2026-11-26-qatar-pisa-2025-two-of-three": (
+        {"https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/"},
+        {"https://education3881.github.io/madar/ar/articles/2026-11-26-pisa-2025-three-lists-of-risers/"},
+        "one self-citation, each edition pointing at the other edition of the SAME "
+        "piece in the reader's own language. THE HOUSE RULE IS SETTLED HERE, "
+        "2026-11-27, because the Thailand entry above asked for it in writing and "
+        "this is the fourth instance: a self-citation is cited PER LANGUAGE. An "
+        "Arabic reader following a source link lands on the Arabic edition, which "
+        "is the whole argument, and it is the convention two of the three prior "
+        "pairs already use. '2026-11-26-jordan-pisa-2025-counts-from-2022' cites "
+        "the EN URL from both editions and is the odd one out; it is left as it "
+        "shipped rather than rewritten, because a convention settled today fixes "
+        "the future and does not reconcile backward (2026-10-04 second amendment, "
+        "limb two), and the step is recorded here instead of being smoothed away. "
+        "The weekly review may overturn the choice; what it may not do is leave "
+        "two conventions running unnamed",
+    ),
     "2026-11-27-thailand-pisa-2025-fourth-list": (
         {"https://education3881.github.io/madar/articles/2026-11-26-pisa-2025-three-lists-of-risers/",
          "https://education3881.github.io/madar/articles/2026-11-26-jordan-pisa-2025-counts-from-2022/"},
