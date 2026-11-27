@@ -186,11 +186,12 @@ publishes its reading of PISA 2025, that will be a different piece, and this one
 
 `dek: 195/200 · title: 49/100`
 
-**Quoted spans: 25 of 25 verbatim against served bytes, re-fetched and re-hashed in this run.**
-*(The pre-draft span list ran to 28; three spans fell out in the cuts that brought the body under the
-brief's cap, and the figure in this line is the count re-run against the FINAL body rather than the one carried
-forward from the list — a hand-off count taken before the last edit is a count of a document nobody will
-read.)*
+**Quoted spans: 26 of 26 verbatim against served bytes, re-fetched and re-hashed in this run.**
+*(This line was wrong three times before it was right - 28, then 26, then 25 - because each time it was
+written against a body that then changed under it, by the cuts that brought the piece under the brief's cap
+and by the Editor's own repairs. It is now re-derived against the FINAL body by script. The lesson is the
+one the Qatar row learned about provenance: a hand-off count taken before the last edit is a count of a
+document nobody will read.)*
 Normalisations applied by the comparison script, declared because a normalisation hides the class of
 difference it folds (#159): non-breaking space to space, curly quotation marks and apostrophes to straight,
 non-breaking hyphen and en and em dashes to hyphen, runs of whitespace collapsed. **Terminal punctuation was
