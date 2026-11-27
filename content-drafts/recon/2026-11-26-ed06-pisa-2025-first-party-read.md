@@ -95,3 +95,45 @@ compose time (#101).
 | 7 | The UAE on every list | The one Gulf system on all three lists | R1, R2, R3 | MoE UAE / ADEK public PISA statement, country note |
 | 8 | Cambodia's 35 points | 35 points in three years | R3 | Cambodia country note, MoEYS statement |
 | 9 | Two-thirds and a half | Computational problem solving with and without the basics | R1, R3 | LDW chapter (full results May 2027, so careful tense) |
+
+---
+
+## CORRECTION, 2026-11-27, at the Editor's desk — R2's provenance triple, and the method that reproduces it
+
+**The banked row for R2 (the Volume I full-report page) named a snapshot of 16 November 2026 and the sha256
+`01b2bd4aa78bf802…`. Neither is reproducible, and the byte count beside them belongs to a different
+capture.** Re-measured today, twice, from this runner:
+
+| What was asked for | What the archive returns | Bytes | sha256 (first 16) |
+|---|---|---|---|
+| `/web/20261116id_/…` | capture **20261116235912** | 1,634,885 | `766441db01c15257` |
+| capture **20261114165129** | itself | **1,614,913** | `1c3018b4d17e205b` |
+| capture 20261112193517 | itself | 1,618,973 | `1e6eb36b054625a2` |
+| capture 20261113171658 | itself | 1,635,393 | `ebd980ecda49fdee` |
+
+So the **byte count 1,614,913 was right** and is the **14 November** capture's; the date recorded was the
+date *asked for*, not the capture's own, and the hash reproduces from no capture of this page. The repair is
+in both editions of `2026-11-27-thailand-pisa-2025-fourth-list`, which had already shipped carrying it, and
+in the Qatar draft.
+
+**Two method facts that caused it, written down so the next run spends nothing on them.**
+
+1. **A Wayback request without a full fourteen-digit timestamp is resolved to the nearest capture, and which
+   capture that is changes as the archive indexes more of them.** `…/web/20261116id_/` resolved to the
+   11-14 capture when the read was banked and resolves to the 11-16 capture today. **Cite the capture's own
+   timestamp, never the one you asked for.**
+2. **One capture has three byte counts, because it has three objects.** For Chapter 2:
+
+   | Object | How fetched | Bytes |
+   |---|---|---|
+   | playback page (toolbar injected, URLs rewritten) | `/web/<ts>/…` | 2,544,478 |
+   | raw snapshot as stored (gzip) | `/web/<ts>id_/…` | 279,017 |
+   | **raw snapshot decompressed — the document the OECD served** | `/web/<ts>id_/…` then `gunzip` | **2,426,000** |
+
+   The third is the one the house cites, and it is the one that reproduced R1, R3 and R8 to the byte today.
+   The first two are different objects and will never match it. *(`curl --compressed` on the raw path gives a
+   fourth number, 2,420,884, and is not the house method.)*
+
+**The transferable rule, filed as ruling #161:** a provenance triple is *capture timestamp + object + hash*,
+and a triple that names only a date has named a moving target. The figures here are re-derivable by anyone
+with this file and a shell, which is what the old row was not.
