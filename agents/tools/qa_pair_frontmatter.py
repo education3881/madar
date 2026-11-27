@@ -289,6 +289,20 @@ DECLARED = {
         "and so raises no asymmetry at all. Both pass this gate; only one can be "
         "the house rule",
     ),
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree": (
+        {"https://education3881.github.io/madar/articles/2026-11-26-qatar-pisa-2025-two-of-three/"},
+        {"https://education3881.github.io/madar/ar/articles/2026-11-26-qatar-pisa-2025-two-of-three/"},
+        "one self-citation, each edition pointing at the other edition of the SAME "
+        "piece in the reader's own language. This is the FIRST pair commissioned "
+        "after the house rule was settled in the Qatar entry above on 2026-11-27, "
+        "so it is the first instance where per-language was the convention being "
+        "FOLLOWED rather than the convention being chosen - and it needed no "
+        "argument, which is what a settled rule is supposed to cost. The two "
+        "first-party Saudi doors (etec.gov.sa, moe.gov.sa) are cited from ONE row "
+        "at one URL in both editions, because a reachability measurement is a fact "
+        "about this runner and not about either language, so it raises no asymmetry "
+        "to declare",
+    ),
 }
 
 # Fields that are facts about the piece, not about the language it is in.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. Two faint rectangles of identical size stand side by side with an empty gap between them, and one thin horizontal rule runs through both. Inside each rectangle three thin uprights stand on the rule. In the left rectangle all three rise above it, the first tallest and the third barely clearing it. In the right rectangle the first and third rise much higher, while the middle upright is the only line in the drawing that falls below the rule, dropping well beneath it. The two middle uprights, one short above the rule and one long below it, are drawn in warm kiln-orange.">
+  <title>The Still · Saudi Arabia, PISA 2025 · one subject, two clocks, two signs</title>
+  <desc>A composition for Edition 06's fifth piece. Paper-cream ground, pure line, tone carried by stroke
+  opacity alone, no fills. The two rectangles are the same size on purpose: they are two measurements of one
+  country drawn to one vertical scale, 5.2 pixels to the score point, from one shared zero rule. The left
+  rectangle is the three years — Saudi Arabia's change between 2022 and 2025 in Table I.2.6 of PISA 2025
+  Results (Volume I), twenty-three in science, five in reading and one in mathematics, all three above zero.
+  The right rectangle is the decade — the fitted average decennial trend in Table I.2.9, thirty-seven in
+  science, minus eighteen in reading and twenty-five in mathematics. Science and mathematics stand above the
+  rule in both rectangles, which is why a reader who picks up the wrong table still reads their sign
+  correctly. Reading is the exception and it is the only line in the drawing that crosses the rule: five
+  above it on one clock, eighteen below it on the other. Both reading uprights carry the orange because they
+  are one subject measured twice, and the orange is the whole of the piece. The gap between the rectangles is
+  left empty because a three-year difference is not a fitted decennial trend and this piece does not subtract
+  one from the other. Nothing in the drawing asserts statistical significance: the register carries that in
+  cell colour and a colour is not in served text.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <rect x="200" y="140" width="360" height="350" fill="none" stroke="#1F2E44" stroke-width="1.2" opacity="0.2"/>
+  <rect x="640" y="140" width="360" height="350" fill="none" stroke="#1F2E44" stroke-width="1.2" opacity="0.2"/>
+
+  <line x1="290" y1="360" x2="290" y2="240" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.88"/>
+  <line x1="380" y1="360" x2="380" y2="334" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+  <line x1="470" y1="360" x2="470" y2="355" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+
+  <line x1="730" y1="360" x2="730" y2="168" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.88"/>
+  <line x1="820" y1="360" x2="820" y2="454" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+  <line x1="910" y1="360" x2="910" y2="230" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+
+  <line x1="180" y1="360" x2="1020" y2="360" stroke="#1F2E44" stroke-width="1.4" opacity="0.26"/>
+</svg>
