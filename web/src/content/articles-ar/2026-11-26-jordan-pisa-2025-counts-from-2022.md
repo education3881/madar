@@ -13,6 +13,7 @@ related:
   - 2026-07-07-us-naep-honesty-gap
   - 2026-10-23-bahrain-bqa-five-cycles
   - 2026-11-27-thailand-pisa-2025-fourth-list
+  - 2026-11-26-qatar-pisa-2025-two-of-three
 contains_composites: false
 englishVersion: 2026-11-26-jordan-pisa-2025-counts-from-2022
 sources:

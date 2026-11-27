@@ -12,6 +12,7 @@ related:
   - 2026-11-26-pisa-2025-three-lists-of-risers
   - 2026-11-27-thailand-pisa-2025-fourth-list
   - 2026-05-31-qatar-humanity-spark-strategy
+  - 2026-11-26-jordan-pisa-2025-counts-from-2022
 contains_composites: false
 englishVersion: 2026-11-26-qatar-pisa-2025-two-of-three
 sources:

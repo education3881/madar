@@ -44,6 +44,24 @@ gate rather than another sweep:
   no forward one is incomplete in the same way a piece without its hero still is incomplete
   (the 2026-06-14 rule, applied to the graph instead of to the assets).
 
+**AMENDED 2026-11-27 BY THE GROWTH FUNCTION — CELL 1 CANNOT NAME A PIECE THAT DOES NOT EXIST YET, SO CELL 8
+DERIVES THE LIST INSTEAD OF READING IT.** The rule above has cell 1 name the forward edges owed and cell 8
+write them. That works only when nothing ships between the two cells. **Under the founder directive
+something ships every day**, so a piece whose gate spans even one day is commissioned against a board that
+has changed by the time it flips. Measured today on the first piece it could happen to:
+`2026-11-26-qatar-pisa-2025-two-of-three` was commissioned on 11-26 and shipped on 11-27; between those two
+dates `2026-11-27-thailand-pisa-2025-fourth-list` shipped; Qatar's `related:` points **at** Thailand and
+cell 1's list could not name Thailand, so the forward edge back was never owed and never written. **Three of
+Edition 06's twelve ordered pairs had no direct rail, and two of the three were that one cause.**
+
+**Binding: at cell 8 the forward edges are derived from the piece's OWN FINAL `related:`, not from cell 1's
+list.** Every slug the shipping piece points at gets the reciprocal edge in the same commit, both editions,
+cap 6. Cell 1's list stays — it is how the Editor states intent and it is what the drafter writes toward —
+but it is a floor, not the specification. *Item 72's diagnosis was that a rail is curated when a piece is
+written and only the older pieces exist; the fix written on 11-12 moved the curation to cell 8 and kept
+reading the list made at cell 1, so it inherited the same horizon one step further along.* Edition 06 now
+stands at **0 of 12 ordered pairs without a rail**, re-measured after the repair.
+
 *Why here and not in a template file: there is no commission template any more. Editions closed, the
 eight cells in this file ARE the template, and a step written anywhere else is a step nobody is told to
 read (`CLAUDE.md`'s own rule about a binding queue nobody is told to read).* The first instance is on
