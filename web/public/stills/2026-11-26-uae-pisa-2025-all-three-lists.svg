@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. One long thin horizontal rule runs across the middle of the page. Six small circles of the same size sit centred on the rule, evenly spaced. The first five are filled solid with ink. The sixth, at the right-hand end, is an open ring with no fill, and from it alone a short vertical line descends below the rule in warm kiln-orange, stopping well short of the lower edge.">
+  <title>The Still · the UAE, PISA 2025 · five memberships and one line</title>
+  <desc>A composition for Edition 06's fourth piece. Paper-cream ground, pure line, tone carried by stroke
+  opacity alone. The rule is zero. The six marks are the six statements PISA 2025 Results (Volume I) and its
+  press apparatus make about the United Arab Emirates, drawn at one size because each is one membership and
+  none is larger than another: the press release's decade science list of eleven, the decade's both-ends list
+  of five, the full-report page's list of systems bucking the trend, the twelve rows of Table I.2.6 positive
+  in all three subjects, and the three-year both-ends list of seven. Five are filled because the UAE is on
+  them. The sixth is drawn as an open ring and is the only mark in the drawing that is not filled: the
+  fitted average decennial trend in reading in Table I.2.9, minus six. The orange stem below the rule is
+  that minus six, and it is drawn short on purpose — it is the smallest of the three negative decennial
+  reading trends among the five systems the chapter credits with moving both ends of the distribution over
+  the decade, and a drawing that made it dramatic would be arguing something the register does not. Nothing
+  here asserts statistical significance: the register carries that in cell colour and a colour is not in
+  served text.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <line x1="180" y1="320" x2="1020" y2="320" stroke="#1F2E44" stroke-width="1.4" opacity="0.26"/>
+
+  <circle cx="280" cy="320" r="9" fill="#1F2E44" opacity="0.82"/>
+  <circle cx="420" cy="320" r="9" fill="#1F2E44" opacity="0.82"/>
+  <circle cx="560" cy="320" r="9" fill="#1F2E44" opacity="0.82"/>
+  <circle cx="700" cy="320" r="9" fill="#1F2E44" opacity="0.82"/>
+  <circle cx="840" cy="320" r="9" fill="#1F2E44" opacity="0.82"/>
+
+  <circle cx="980" cy="320" r="9" fill="none" stroke="#1F2E44" stroke-width="1.8" opacity="0.72"/>
+  <line x1="980" y1="332" x2="980" y2="396" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+</svg>

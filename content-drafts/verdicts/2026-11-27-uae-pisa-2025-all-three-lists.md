@@ -91,7 +91,11 @@ the press release and the speech as *"snapshot of 15 November 2026"* — a **dat
 **capture's own fourteen-digit timestamp**. The timestamps are `20261115232402` and `20261115135355`, now on
 file here. Those two rows are under-specified against the ruling they were written to satisfy, and the
 chapter and full-report rows in the same frontmatter do carry timestamps, so this is a partial application
-rather than a missed one. **Handed to the standing queue, not patched into shipped pieces by a content run.**
+rather than a missed one. **NAMED HERE FOR THE STANDING QUEUE AND NOT FILED, because a content run files no queue rows** — the
+wording of this sentence was corrected at this desk from *handed to the standing queue*, which would have
+been a claim that something had been done. It is recorded in this verdict, in the ledger row and in this
+run's close log, which are the three places the next daily run reads. Nor is it patched into the shipped
+pieces by a content run.
 
 ## Test 2 — Specificity. PASS.
 
