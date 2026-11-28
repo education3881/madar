@@ -39,8 +39,8 @@ and then:
 
 **Both sentences are false, and the second is the piece's title, dek, finding and hero still.** All fourteen
 tables of Chapter 2 were parsed in full from the re-fetched capture and every cell reading `Uzbekistan` was
-enumerated. Uzbekistan appears in **seven** of the fourteen, and **two of the seven print a change in score
-points**:
+enumerated. Uzbekistan appears in **eight** of the fourteen — I.2.1, I.2.3, I.2.4, I.2.8,
+I.2.10, I.2.11, I.2.12 and I.2.13 — and **two of the eight print a change in score points**:
 
 | Table | Title, as the chapter prints it | Uzbekistan's row | Unit |
 |---|---|---|---|
@@ -96,7 +96,7 @@ other plus the piece's own subject. Neither *two* nor *all three* has a referent
 
 ## ITEM 3 — PRINTED, not failed. Three tables of Uzbek figures the piece does not use.
 
-Recorded so the repair is not re-researched at the next cell. Beyond the seven cells found, Uzbekistan also
+Recorded so the repair is not re-researched at the next cell. Beyond the cells the piece uses, Uzbekistan also
 has rows in **I.2.4** (computational problem solving, mean **402**, company Jordan, Brazil, Argentina, El
 Salvador) and **I.2.11** (low and top performers by national quarter of socio-economic status, **−47.5** and
 **−49.2** percentage points, **+0.4** and **+0.5**). Neither is needed for the repaired spine and both are
