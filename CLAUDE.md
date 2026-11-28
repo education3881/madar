@@ -21,13 +21,18 @@ Read on every run, in this order:
    first) sets Editions 06 to 10, one a week, six pieces minimum each, one shipped every day. **It answers
    issue #13 and supersedes the "no edition at all" state this line held from 2026-11-08**, when option B
    was applied by silence. What B bought is kept: a piece ships **the day its own eight-cell gate closes**,
-   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **TWO ROWS ARE IN FLIGHT, AT CELLS 6
-   AND 3 OF EIGHT — TWO CELLS OPEN AND FIVE CELLS OPEN** — `2026-11-27-saudi-pisa-2025-two-clocks-disagree`
-   (cells 1 to 5 and 7 filled; **6 and 8 open**, the Verifier's verdict being the next job by the
-   run-after-the-pair-verdict rule) and `2026-11-27-uzbekistan-pisa-2025-only-in-students` (cells 1, 2 and 3
-   filled; **4 to 8 open**, the AR composition next). **The plan requires three in flight, so the board is
-   one short**, and the Editor's standing condition governs the third: the seventh piece of this edition may
-   not be commissioned without a named human from a reachable non-OECD register. The one remaining row,
+   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **THREE ROWS ARE IN FLIGHT, AT CELLS 7, 7 AND
+   6 OF EIGHT — ONE CELL OPEN, ONE CELL OPEN AND TWO CELLS OPEN** —
+   `2026-11-27-saudi-pisa-2025-two-clocks-disagree` (**cell 8 only**, and it is HELD FOR 2026-11-29 by a
+   decision recorded in the ledger with its reasoning, which the next run applies rather than re-takes),
+   `2026-11-27-uzbekistan-pisa-2025-only-in-students` (**cell 8 only, and it flips BEHIND Saudi**, because
+   its `related:` rail names the held Saudi slug and an approved rail on an unserved slug reds
+   `qa_body_links`; its cell 6 closed on 2026-11-28 after a **FAIL WITH ITEMS on the piece's central
+   claim** — ruling **#162** — a spine repair in both editions and a re-verification PASS), and
+   `2026-11-28-uruguay-pisa-2025-own-account` (**cells 6 and 8 open**, the Verifier's verdict next by the
+   run-after-the-pair-verdict rule). **The plan's floor of three in flight is met**, and the Editor's
+   standing condition still governs any fourth: no further piece of this edition is commissioned without a
+   named human from a reachable non-OECD register. The one remaining row,
    `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` (cells 1 and 2 filled, **SIX unfilled**, cell 3 attempted
    and RETURNED WITH NOTES on 2026-11-25 — the Editor's independent re-run confirmed **24 of 25** quoted
    spans against a hand-off reading 25 of 25, which is ruling #159), is **PARKED to Edition 10** by the same
@@ -37,7 +42,14 @@ Read on every run, in this order:
    and `2026-11-26-jordan-pisa-2025-counts-from-2022` and `2026-11-26-pisa-2025-three-lists-of-risers` on
    2026-11-26 — **so the directive's floor of one a day has been met on all three days this edition has
    existed, and exceeded on two of them.** Edition 06 stands at **5 of 6**, one short of the floor with
-   eight days of window left. *(This clause read `TWO ROWS AT CELL 1, SEVEN CELLS OPEN EACH` and
+   eight days of window left — **and the fifth ship was on `main` at 03:01 UTC on 2026-11-28 and NOT SERVED
+   until 14:0x, because the content run's closing commit red the build on `main`** (one stray `|` in a
+   ledger table row, `qa_register_shape` correctly red, deploy and verify skipped, strand **14 commits**).
+   The daily run repaired it in one character and pushed. *The plan's own definition of shipped is
+   `approved: true` in both editions AND on origin with the deploy green, so a floor met on `main` is not a
+   floor met; and the thing that took a shipped piece off the origin was a sentence about a held one.*
+   **Binding from 2026-11-28: a run that edits a hand-maintained table runs `python3
+   agents/tools/qa_register_shape.py .` before it commits** — 1,087 files in under two seconds. *(This clause read `TWO ROWS AT CELL 1, SEVEN CELLS OPEN EACH` and
    `the last piece to ship was thailand on 2026-11-27`, Ed06 `3 of 6`, until 2026-11-28 — **wrong on all
    three of the things this sentence owes, after a day on which the ledger beside it was updated four times
    and this file not once.** The widening of 2026-11-15 under #144 was written precisely for this, and the
