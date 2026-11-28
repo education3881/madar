@@ -116,8 +116,8 @@ offers none.**
 
 ## The caution the chapter attaches to exactly this kind of figure
 
-Chapter 2 carries a passage about who sits the test, and it is the one qualifier a reader of a 46-point fall
-has to have. PISA coverage — the share of a country's 15-year-olds eligible to be sampled — has risen in
+Chapter 2 carries a passage about who sits the test, and it is the one qualifier a reader of a fall of 46.1
+**percentage** points has to have. PISA coverage — the share of a country's 15-year-olds eligible to be sampled — has risen in
 many systems, and the chapter says **"this expansion in education opportunities makes it more difficult to
 interpret how mean scores in PISA have changed over time."** It states the mechanism plainly:
 **"Typically, as populations that had previously been excluded gain access to higher levels of schooling, a
@@ -186,6 +186,16 @@ instruction not to reach for the launch speech a fourth time.
 equally checkable and the Arabic must quote each span in the register's own script.
 
 `editorial futures: 0` — the closing sentence names no date (#117).
+
+**REPAIR MADE AT CELL 4, BY THE ARABIC COMPOSER, 2026-11-28.** The body read *"a reader of a
+**46-point fall**"* — in a piece whose single argument is that percentage points are not score points, and
+where "point" unqualified means a score point to every PISA reader. The figure is 46.1 **percentage**
+points. Cell 3 passed the body with no repair and its figure-by-figure re-check correctly classified 46.1 as
+a percentage point; what neither gate was looking at was a hyphenated adjective that had dropped the unit
+word. **It surfaced at composition because Arabic cannot elide the unit**: `هبوطٍ مقدارُه 46.1` forces the
+composer to write `نقطةً مئوية` or to leave a bare number, and the choice makes the omission visible. Same
+family as #160 and #86 — the forced edition is the better channel for the claim its grammar will not let it
+skip. Repaired in the English body and named in the Arabic with its unit.
 
 **Open questions for the Editor:**
 
