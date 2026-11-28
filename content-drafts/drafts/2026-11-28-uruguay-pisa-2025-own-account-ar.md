@@ -3,7 +3,7 @@ title: "أوروغواي طبعت الرقم الذي لم يطبعه التقر
 dek: "لا يعطي فصلُ الأداء في تقرير المنظمة متوسّطًا في القراءة لأيّ نظام. وتقريرُ أوروغواي التنفيذيّ، الصادر في الشهر نفسِه، يعطي متوسّطَها: 423.2. وحيث يلتقي الحسابان يتّفقان."
 date: 2026-11-28
 country: Uruguay
-region: Latin America
+region: LatAm-Caribbean
 level: K-12
 themes: [learning outcomes, government-led programs]
 type: curated

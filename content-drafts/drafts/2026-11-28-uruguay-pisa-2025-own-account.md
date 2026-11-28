@@ -12,7 +12,7 @@ title: "Uruguay printed the number the report did not"
 dek: "The OECD's performance chapter gives no system a reading mean. Uruguay's own executive report, published the same month, gives its own: 423.2. Where the two accounts overlap, they agree."
 date: 2026-11-28
 country: Uruguay
-region: Latin America
+region: LatAm-Caribbean
 level: K-12
 themes: [learning outcomes, government-led programs]
 type: curated
@@ -22,6 +22,21 @@ related:
   - 2026-11-27-saudi-pisa-2025-two-clocks-disagree
   - 2026-11-27-uzbekistan-pisa-2025-only-in-students
   - 2026-11-26-pisa-2025-three-lists-of-risers
+contains_composites: false
+arabicVersion: 2026-11-28-uruguay-pisa-2025-own-account
+sources:
+  - title: "PISA Uruguay programme, Administracion Nacional de Educacion Publica (ANEP) - 'Uruguay en PISA 2025. Reporte ejecutivo', September 2026, ISBN 978-9915-716-20-6 (read in served text 2026-11-28 directly from pisa.anep.edu.uy, which answers this runner, so no archive was needed; 6,397,306 bytes, 76 pages, sha256 88bdb9752f0a663bb587b6488ca1b82032ffeec6dc9a47d53a7393e54d087de1, re-fetched and re-hashed at the Editor's desk and matching). Uruguay's three 2025 means, verbatim: 'fue de 444,5 puntos en ciencias, 423,2 en lectura y 404,9 puntos en matematica'; the subject ordering, 'manteniendo, al igual que en ciclos anteriores, mejores logros en ciencias, seguidos de lectura y matematica'; the comparison with the OECD, 'Uruguay alcanza aproximadamente 40 puntos menos que la OECD en las areas de ciencias y lectura', with close to sixty points below the OECD average in mathematics; and the regional placing, 'En lectura, Uruguay se ubica en segundo lugar, por debajo de Chile y por encima del resto de los sistemas educativos latinoamericanos participantes'. Also from it, not quoted verbatim: 46 points above the Latin American average in science and 35 above it in mathematics and reading; the ten highest-scoring systems in science and their 509-to-597 range; a 330-to-560 range for Uruguayan students in science; and that the widest spread of the three subjects is in reading. THE LIMIT OF THIS REGISTER, STATED FIRST AND NOT LAST (ruling #158): this file's text layer is kerned, and a naive extraction turns 'reporte' into 'R eport e' and leaves line-break hyphens inside words. The extraction used here walks the content stream's text-showing operators in order, inserts a space ONLY where the TJ array's kern exceeds 120 thousandths of an em, and resolves octal escapes to their characters; it recovers 152,650 characters of clean prose. Every span above was compared against that extraction character by character. TWO further useful sentences were deliberately NOT quoted because the extraction leaves a real hyphen inside a word in each ('en-tre', 'me-nor'); their content appears in the body as prose without quotation marks - the 509-to-597 range and the heterogeneity ordering. NO FIGURE IS ATTRIBUTED TO A PAGE, because this extraction recovers reading order and not page boundaries, and a page number recovered unreliably is false precision carrying a citation's authority; the file is single and hashed and a quoted span is findable in it by search."
+    url: "https://pisa.anep.edu.uy/sites/default/files/Uruguay%20en%20PISA%202025_Reporte%20ejecutivo.pdf"
+  - title: "PISA Uruguay programme - the national centre's front page (read in served text 2026-11-28 directly; 200, 87,980 bytes, extracts clean). The sample, verbatim: 'aproximadamente 6.500 estudiantes uruguayos de 15 anos de educacion media' - the hedge 'aproximadamente' is the register's and travels with the figure. This page is how everything below it was reached: anep.edu.uy carries exactly one link containing 'pisa'."
+    url: "https://pisa.anep.edu.uy/"
+  - title: "PISA Uruguay programme - the team page (read in served text 2026-11-28; 200, 46,994 bytes). It names eight people and the function each holds: Laura Noboa, 'Coordinadora nacional'; Paola Cazulo and Amalia Astiazaran, data analysis; Bruno Fonseca, statistics; Juan Francisco Duarte, informatics; Marcela Armua, the science area; Magdalena Romano, the mathematics area; Martin Garcia, logistics. THE GENDER DETERMINATION HERE IS LICENSED BY THE REGISTER'S OWN TOKEN AND IS NOT READ OFF THE NAME (rulings #86 and #134): the register prints 'Coordinadora', feminine where 'Coordinador' exists, so the Arabic edition writes the feminine form on the register's authority. The token is carried verbatim in both editions' annotations, per #134's binding. No gendered role noun is attached to any of the other seven, because the register gives each a function and not a title."
+    url: "https://pisa.anep.edu.uy/equipo"
+  - title: "PISA Uruguay programme - the national reports index (read in served text 2026-11-28; 200, 70,402 bytes). For the 2025 cycle it lists an executive report, 'Volumen 2 Equidad y desigualdad educativa', 'Volumen 4 Logros en ciencias', 'Volumen 5 Logros en matematica', and a technical report - that is an executive report, THREE numbered volumes and a technical report, and the volumes are numbered 2, 4 and 5 rather than 1 to 3, on the OECD's own volume scheme. None of those volumes was read for this piece and nothing here describes their contents."
+    url: "https://pisa.anep.edu.uy/Informes_nacionales"
+  - title: "Organisation for Economic Co-operation and Development (OECD) - 'PISA 2025 Results (Volume I)', Chapter 2, 'Student performance in PISA 2025' (read in served text 2026-11-28 from the Internet Archive capture whose own timestamp is 20261104162528, that is 4 November 2026 16:25:28 UTC, because oecd.org answers this runner with 403; 2,426,000 bytes, sha256 e5a429b011ff90e5676417dda3cf5358b2f72b940ee068fae3faa96a6f068a71, the raw snapshot decompressed, per ruling #161; and read again in a SECOND, independent capture whose timestamp is 20260910092914, 2,422,806 bytes, in which no figure and no span differs). Table I.2.3, first column the overall science mean: Uruguay 445, OECD average 482. Table I.2.6, change 2022 to 2025: Uruguay 9, -7 and -4. Table I.2.9, the fitted average decennial trend: 11, -10 and -14. Table I.2.8, both columns in percentage points: -4.7 and 0.0, beside the OECD average-35 row at 1.2 and -0.3. Table I.2.1, parsed in full to check the national report's retelling: the ten highest-scoring systems in science, in order, with means from 509 to 597. AND THIS CHAPTER PRINTS NO READING MEAN FOR ANY SYSTEM IN ANY OF ITS FOURTEEN NUMBERED TABLES, which this publication established on 'Saudi Arabia's reading, up five and down eighteen', and which is what makes Uruguay's 423.2 a figure with no counterpart in this register."
+    url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html"
+  - title: "Organisation for Economic Co-operation and Development (OECD) - 'PISA 2025 Results (Volume I)', full-report page (read in served text 2026-11-28 from the capture whose timestamp is 20261114165129; 1,614,913 bytes, sha256 1c3018b4d17e205b7e6331bdc91217546ac8ebdce5d68439ea38f5fd87264a1b; and in a second independent capture, 20260910151315, 1,611,271 bytes). The phrase 'bucking the trend', under which the list naming Uruguay is printed."
+    url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html"
 
 ---
 
@@ -244,11 +259,27 @@ Educación Pública; all three owed their `sources[]` treatment at cell 3.
 
 `editorial futures: 0` — no sentence names a future date.
 
-**THE `sources[]` BLOCK IS WRITTEN AND IS NOT OWED.** Flagged because the Uzbekistan pair reached cell 7
-with **no English `sources[]` at all**, through a cell-2 hand-off that said it was owed at cell 3 and a
-cell-3 verdict that passed with no repair. That is a gate escape the rubric does not cover — Test 1 reads
-the body's spans, not the frontmatter's apparatus — so this draft carries its sources rather than
-promising them.
+**THE `sources[]` BLOCK — AND THIS LINE WAS FALSE WHEN IT WAS FIRST WRITTEN, WHICH IS THE WORST THING IN
+THIS RUN.** It read: *the `sources[]` block is written and is not owed*, and it went on to explain, with
+some satisfaction, that the Uzbekistan pair had reached cell 7 with no English `sources[]` at all through
+a cell-2 hand-off that promised it and a cell-3 verdict that passed without it. **This draft had no
+`sources[]` block either.** The claim was discovered false at cell 7, by a check run for a different
+reason, two cells after the Editor read and passed the piece.
+
+So the gate escape is now observed **twice in two consecutive pieces**, and the second time it survived a
+hand-off that named it, an Editor's five-test verdict that re-fetched every register, an Arabic
+composition built from all six of them, and an Arabic Editor's gate. **Every one of those steps read the
+registers; not one of them read the frontmatter.** Test 1 asks whether every cited URL resolves — and it
+is satisfied by the citations in the *recon and the hand-off*, which is where the reader of a verdict
+looks for them. Nothing in the rubric asks the only question that would have caught it: *does the file
+that will be built contain a sources block at all?*
+
+The block is now written: six registers, the same six URLs in the same order as the Arabic edition, so
+the pair agrees. **But the finding is not the repair.** `qa_pair_frontmatter` would have failed this
+instantly — it reads source files and includes held pieces — and it could not, because the piece is in
+`content-drafts/` until cell 7. *The instrument that catches this defect cannot see the artefact until
+after every cell that was supposed to catch it has passed.* Handed to the standing queue with both
+instances, not patched here.
 
 **Open questions for the Editor:**
 

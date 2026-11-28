@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. Three thin uprights stand side by side on one horizontal rule, the tallest at the right and the shortest at the left, and the three are close in height. Above the head of the tallest upright alone stand two small identical marks side by side, one in ink and one in warm kiln-orange, the same size as each other and at exactly the same height. Above the heads of the other two uprights there is nothing at all.">
+  <title>The Still · Uruguay, PISA 2025 · three means, and the one that has a second author</title>
+  <desc>A composition for Edition 06's seventh piece. Paper-cream ground, pure line, tone carried by
+  stroke opacity alone, no fills. The three uprights are Uruguay's own 2025 means as its national
+  executive report prints them - science 444.5, reading 423.2, mathematics 404.9 - drawn from a true zero
+  rule at 0.85 pixels to the score point. They are close in height because the three figures are close,
+  and the drawing does not truncate its baseline to make a difference look larger than the register
+  reports: the piece is not about the distance between these three numbers. The two small marks above the
+  science upright are the two accounts of that one figure, the OECD's Table I.2.3 at 445 and Uruguay's own
+  report at 444.5. They are drawn the same size and at exactly the same height because at this scale they
+  are the same number, which is the piece's finding and not a convenience: one is a rounding of the other.
+  One mark is ink and one is orange because there are two authors, not because there are two values.
+  Above the reading and mathematics uprights there is nothing, and the emptiness is the rest of the piece:
+  Chapter 2 of PISA 2025 Results (Volume I) prints no reading mean and no mathematics mean for any system
+  in any of its fourteen numbered tables, so those two figures have one author and no second mark can be
+  drawn over them. Nothing in the drawing asserts statistical significance, and no change figure appears
+  in it at all - every quantity here is a level.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <line x1="612" y1="118" x2="630" y2="118" stroke="#1F2E44" stroke-width="3" stroke-linecap="round" opacity="0.88"/>
+  <line x1="650" y1="118" x2="668" y2="118" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+
+  <line x1="400" y1="520" x2="400" y2="176" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.74"/>
+  <line x1="520" y1="520" x2="520" y2="160" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="640" y1="520" x2="640" y2="142" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.88"/>
+
+  <line x1="240" y1="520" x2="960" y2="520" stroke="#1F2E44" stroke-width="1.4" opacity="0.26"/>
+</svg>
