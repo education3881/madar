@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A paper-cream page in ink. One long thin horizontal rule runs across the middle of the page. Below it two thin uprights hang down: the right-hand one, in warm kiln-orange, descends more than twice as far as the one to its left, which is drawn in ink and stops at about half the depth. At the far left a third mark rises above the rule by a distance barely greater than the rule's own thickness. To the right of the uprights two empty rectangles of identical size stand on the rule, with thin dotted borders and nothing at all inside them.">
+  <title>The Still · Uzbekistan, PISA 2025 · the largest fall, and the two tables with no row for it</title>
+  <desc>A composition for Edition 06's sixth piece. Paper-cream ground, pure line, tone carried by stroke
+  opacity alone, no fills. Everything below the rule is drawn to one vertical scale, 5 pixels to the
+  percentage point, from one shared zero rule. The long orange upright is Uzbekistan's change in the share
+  of low performers in science between 2022 and 2025 in Table I.2.8 of PISA 2025 Results (Volume I), minus
+  forty-six point one percentage points, the largest movement anywhere in that table. The ink upright to its
+  left is Cambodia at minus twenty-two point one, the next largest reduction and less than half as deep,
+  drawn so the orange is read against the only thing in the release that can give it a size. The small mark
+  rising above the rule at the far left is the OECD average-35 at plus one point two: the organisation's own
+  average share of low performers went up over the same three years, and at this scale that fact is six
+  pixels tall, which is the proportion the piece is about. The two empty rectangles are Table I.2.6 and
+  Table I.2.9, the report's two score-point instruments. They are drawn the same size as each other,
+  bounded, standing on the same zero rule, and completely empty, because Uzbekistan has no row in either:
+  a table that works by subtraction needs two comparable points and a fitted trend needs at least three.
+  They are dotted rather than solid because an absence is a statement about the instrument and not a
+  measurement of the country. No upright crosses the rule and no quantity here is a score point; the unit
+  is the percentage point throughout, which is the whole of the piece. Nothing in the drawing asserts
+  statistical significance: the register carries that in cell colour and a colour is not in served text.</desc>
+  <rect width="1200" height="600" fill="#FAFAF7"/>
+
+  <rect x="610" y="175" width="105" height="125" fill="none" stroke="#1F2E44" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.22"/>
+  <rect x="775" y="175" width="105" height="125" fill="none" stroke="#1F2E44" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.22"/>
+
+  <line x1="250" y1="300" x2="250" y2="294" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
+  <line x1="350" y1="300" x2="350" y2="410" stroke="#1F2E44" stroke-width="2.6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="470" y1="300" x2="470" y2="530" stroke="#D94F2A" stroke-width="3" stroke-linecap="round" opacity="1"/>
+
+  <line x1="200" y1="300" x2="1000" y2="300" stroke="#1F2E44" stroke-width="1.4" opacity="0.26"/>
+</svg>

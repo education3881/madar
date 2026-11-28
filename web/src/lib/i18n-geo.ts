@@ -77,6 +77,7 @@ export const COUNTRY_AR: Record<string, string> = {
   'United Kingdom': 'المملكة المتحدة',
   'United States': 'الولايات المتحدة',
   Uruguay: 'الأوروغواي',
+  Uzbekistan: 'أوزبكستان',
   Vietnam: 'فيتنام',
   Yemen: 'اليمن',
 
