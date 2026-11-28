@@ -13,6 +13,7 @@ related:
   - 2026-11-26-jordan-pisa-2025-counts-from-2022
   - 2026-10-23-bahrain-bqa-five-cycles
   - 2026-11-26-qatar-pisa-2025-two-of-three
+  - 2026-11-27-saudi-pisa-2025-two-clocks-disagree
 contains_composites: false
 arabicVersion: 2026-11-27-thailand-pisa-2025-fourth-list
 sources:

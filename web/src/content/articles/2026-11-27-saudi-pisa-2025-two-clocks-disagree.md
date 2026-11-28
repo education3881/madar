@@ -28,7 +28,7 @@ hero:
   src: "/stills/2026-11-27-saudi-pisa-2025-two-clocks-disagree.svg"
   alt: "A paper-cream page in ink. Two faint rectangles of identical size stand side by side with an empty gap between them, and one thin horizontal rule runs through both. Inside each rectangle three thin uprights stand on the rule. In the left rectangle all three rise above it, the first tallest and the third barely clearing it. In the right rectangle the first and third rise much higher, while the middle upright is the only line in the drawing that falls below the rule, dropping well beneath it. The two middle uprights, one short above the rule and one long below it, are drawn in warm kiln-orange."
   caption: "سكون · The Still · PISA 2025"
-approved: false
+approved: true
 ---
 
 Edition 06 has been written around one habit: before reading a list of improving school systems, find out

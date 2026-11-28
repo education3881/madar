@@ -465,6 +465,18 @@
    "state": "ours-git-archived"
   },
   {
+   "url": "https://education3881.github.io/madar/ar/articles/2026-11-26-qatar-pisa-2025-two-of-three/",
+   "pieces": [
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:ar"
+   ],
+   "observed": "2026-11-28",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
    "url": "https://education3881.github.io/madar/articles/2026-05-26-bahrain-bqa-public-grades/",
    "pieces": [
     "2026-10-23-bahrain-bqa-five-cycles:en",
@@ -525,6 +537,18 @@
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
    ],
    "observed": "2026-11-26",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "ours-git-archived"
+  },
+  {
+   "url": "https://education3881.github.io/madar/articles/2026-11-26-qatar-pisa-2025-two-of-three/",
+   "pieces": [
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:en"
+   ],
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -650,6 +674,18 @@
    "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2025-12-12",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://etec.gov.sa/en/home",
+   "pieces": [
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:en",
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:ar"
+   ],
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-16",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3208,9 +3244,9 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-05-15",
+   "snapshot": "2026-11-03",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3219,7 +3255,7 @@
    "pieces": [
     "2026-07-06-morocco-ecoles-pionnieres:en"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-05-20",
    "archive_note": "200",
@@ -3231,7 +3267,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-03-07",
    "archive_note": "200",
@@ -3243,7 +3279,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-10-09",
    "archive_note": "200",
@@ -3255,7 +3291,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-08-14",
    "archive_note": "200",
@@ -3267,7 +3303,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-03-16",
    "archive_note": "200",
@@ -3279,7 +3315,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2023-01-30",
    "archive_note": "200",
@@ -3291,7 +3327,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-11-15",
    "archive_note": "200",
@@ -3303,7 +3339,7 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-09-04",
    "archive_note": "200",
@@ -3315,9 +3351,9 @@
     "2026-09-27-rwanda-teacher-certification:en",
     "2026-09-27-rwanda-teacher-certification:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-09-04",
+   "snapshot": "2026-10-25",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3327,7 +3363,7 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -3340,9 +3376,9 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-03-08",
+   "snapshot": "2026-07-15",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3352,9 +3388,9 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-03-11",
+   "snapshot": "2026-07-14",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3364,7 +3400,7 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2023-01-30",
    "archive_note": "200",
@@ -3376,7 +3412,7 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-15",
    "archive_note": "200",
@@ -3388,9 +3424,9 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-04-16",
+   "snapshot": "2026-08-08",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3400,9 +3436,9 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-07-10",
+   "snapshot": "2026-07-17",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3412,7 +3448,7 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 202,
@@ -3425,7 +3461,7 @@
     "2026-07-07-singapore-psle-sbb:en",
     "2026-07-07-singapore-psle-sbb:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-10-14",
    "archive_note": "200",
@@ -3437,7 +3473,7 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-07",
    "archive_note": "200",
@@ -3449,9 +3485,9 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-10-21",
+   "snapshot": "2026-10-31",
    "archive_note": "200",
    "state": "archived"
   },
@@ -3474,10 +3510,12 @@
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar"
    ],
-   "observed": "2026-11-26",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.nic.gov.sd/news/details/13",
@@ -3554,10 +3592,11 @@
     "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
-   "observed": "2026-11-26",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html",
@@ -3573,10 +3612,11 @@
     "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
-   "observed": "2026-11-26",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-15",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/philippines_a0882a2d-en.html",
@@ -3597,32 +3637,38 @@
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-26-uae-pisa-2025-all-three-lists:en",
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-26-uae-pisa-2025-all-three-lists:ar",
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
-   "observed": "2026-11-26",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-16",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html",
    "pieces": [
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
     "2026-11-26-uae-pisa-2025-all-three-lists:en",
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
     "2026-11-26-uae-pisa-2025-all-three-lists:ar",
+    "2026-11-27-saudi-pisa-2025-two-clocks-disagree:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
-   "observed": "2026-11-27",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-04",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.omanobserver.om/article/1161960/oman/education/national-system-to-evaluate-performance-of-schools",

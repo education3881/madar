@@ -143,8 +143,16 @@ time. Its cells are unchanged and its record below stands.
 > reason this is a note and not an incident.
 
 
-**BOARD AT THE CLOSE OF THE 2026-11-28 DAILY RUN: THREE ROWS IN FLIGHT, TWO OF THEM ONE CELL FROM THE FLAG
-AND ORDERED, AND THE DAY'S SHIP WAS NOT SERVED UNTIL THE DAILY RUN REPAIRED THE BUILD.**
+**BOARD AT THE CLOSE OF THE 2026-11-28 DAILY RUN: THREE ROWS IN FLIGHT, ALL THREE AT 7 OF 8, ALL THREE ONE
+CELL FROM THE FLAG, AND THEIR ORDER FIXED BY THE CORPUS RATHER THAN CHOSEN — SAUDI, THEN UZBEKISTAN, THEN
+URUGUAY. THAT IS THE STRONGEST BOARD THIS PUBLICATION HAS EVER CARRIED, AND THE DAY'S SHIP WAS NOT SERVED
+UNTIL THIS RUN REPAIRED THE BUILD.**
+
+*The order is derived, not preferred: Uzbekistan's `related:` rail names the held Saudi slug and Uruguay's
+names both held slugs, so flipping any of them out of order would put an approved page's forward rail on a
+slug the build does not serve and `qa_body_links` would red the deploy. **Three consecutive days of the
+directive's floor are therefore covered without a single new commission** — and the Editor's standing
+condition still governs any fourth.*
 
 | Row | Cells filled | Next job |
 |---|---|---|
