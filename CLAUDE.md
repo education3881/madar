@@ -21,28 +21,29 @@ Read on every run, in this order:
    first) sets Editions 06 to 10, one a week, six pieces minimum each, one shipped every day. **It answers
    issue #13 and supersedes the "no edition at all" state this line held from 2026-11-08**, when option B
    was applied by silence. What B bought is kept: a piece ships **the day its own eight-cell gate closes**,
-   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **THREE ROWS ARE IN FLIGHT, AT CELLS 7, 7 AND
-   6 OF EIGHT — ONE CELL OPEN, ONE CELL OPEN AND TWO CELLS OPEN** —
-   `2026-11-27-saudi-pisa-2025-two-clocks-disagree` (**cell 8 only**, and it is HELD FOR 2026-11-29 by a
-   decision recorded in the ledger with its reasoning, which the next run applies rather than re-takes),
-   `2026-11-27-uzbekistan-pisa-2025-only-in-students` (**cell 8 only, and it flips BEHIND Saudi**, because
-   its `related:` rail names the held Saudi slug and an approved rail on an unserved slug reds
-   `qa_body_links`; its cell 6 closed on 2026-11-28 after a **FAIL WITH ITEMS on the piece's central
-   claim** — ruling **#162** — a spine repair in both editions and a re-verification PASS), and
-   `2026-11-28-uruguay-pisa-2025-own-account` (**cells 6 and 8 open**, the Verifier's verdict next by the
-   run-after-the-pair-verdict rule). **The plan's floor of three in flight is met**, and the Editor's
-   standing condition still governs any fourth: no further piece of this edition is commissioned without a
-   named human from a reachable non-OECD register. The one remaining row,
+   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **TWO ROWS ARE IN FLIGHT, BOTH AT 7 OF 8 — ONE CELL
+   OPEN EACH, AND THEIR ORDER IS FIXED BY THE CORPUS** —
+   `2026-11-27-uzbekistan-pisa-2025-only-in-students` **first, for 2026-11-29** (cell 6 closed 2026-11-28
+   after a **FAIL WITH ITEMS on the piece's central claim**, ruling **#162**, a spine repair in both
+   editions and a re-verification PASS), then `2026-11-28-uruguay-pisa-2025-own-account` (cell 6 closed
+   2026-11-28, **PASS with two corrections**, all four Uruguayan registers re-fetched DIRECTLY and all four
+   reproduced). **The order is derived and not chosen:** Uruguay's `related:` rail names the Uzbekistan slug,
+   so flipping Uruguay first would put an approved page's forward rail on a slug the build does not serve
+   and `qa_body_links` would red the deploy. **The plan's floor of three in flight is NOT met — the board is
+   one short**, because Saudi flipped; the Editor's standing condition governs the third: no further piece of
+   this edition is commissioned without a named human from a reachable non-OECD register. The one remaining row,
    `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` (cells 1 and 2 filled, **SIX unfilled**, cell 3 attempted
    and RETURNED WITH NOTES on 2026-11-25 — the Editor's independent re-run confirmed **24 of 25** quoted
    spans against a hand-off reading 25 of 25, which is ruling #159), is **PARKED to Edition 10** by the same
    directive and costs no run time until 28 December. So **the last piece to ship was
-   `2026-11-26-uae-pisa-2025-all-three-lists` on 2026-11-28**, Edition 06's fifth, after
+   `2026-11-27-saudi-pisa-2025-two-clocks-disagree` on 2026-11-28**, Edition 06's sixth and its floor,
+   flipped by the daily run after `2026-11-26-uae-pisa-2025-all-three-lists` the same day — **two pieces
+   served on 2026-11-28** — and after
    `2026-11-27-thailand-pisa-2025-fourth-list` and `2026-11-26-qatar-pisa-2025-two-of-three` on 2026-11-27
    and `2026-11-26-jordan-pisa-2025-counts-from-2022` and `2026-11-26-pisa-2025-three-lists-of-risers` on
    2026-11-26 — **so the directive's floor of one a day has been met on all three days this edition has
-   existed, and exceeded on two of them.** Edition 06 stands at **5 of 6**, one short of the floor with
-   eight days of window left — **and the fifth ship was on `main` at 03:01 UTC on 2026-11-28 and NOT SERVED
+   existed, and exceeded on two of them.** Edition 06 stands at **6 of 6 — THE DIRECTIVE'S FLOOR, MET ON
+   2026-11-28 WITH EIGHT DAYS OF WINDOW LEFT** against a target of seven — **and the fifth ship was on `main` at 03:01 UTC on 2026-11-28 and NOT SERVED
    until 14:0x, because the content run's closing commit red the build on `main`** (one stray `|` in a
    ledger table row, `qa_register_shape` correctly red, deploy and verify skipped, strand **14 commits**).
    The daily run repaired it in one character and pushed. *The plan's own definition of shipped is

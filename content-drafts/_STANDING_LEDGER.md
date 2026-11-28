@@ -87,8 +87,9 @@ the day its own gate closes, tagged `edition: 6`. Slate: `content-drafts/recon/2
 | 3 | **Thailand's fourth list** · `2026-11-27-thailand-pisa-2025-fourth-list` | 2026-11-27 | 2026-11-27 | PASS 2026-11-27, two notes closed in-run | 2026-11-27 | APPROVED 2026-11-27 | 2026-11-27, three corrections applied | 2026-11-27 | **SHIPPED 2026-11-27** |
 | 4 | **Qatar's decade and its three years** · `2026-11-26-qatar-pisa-2025-two-of-three` | 2026-11-26 | 2026-11-27 | PASS 2026-11-27, eight repairs closed in-run | 2026-11-27 | APPROVED 2026-11-27 | 2026-11-27, VERIFIED with no correction and zero residue | 2026-11-27 | **SHIPPED 2026-11-27** |
 | 5 | **The UAE is on every list but one line** · `2026-11-26-uae-pisa-2025-all-three-lists` | 2026-11-26 | 2026-11-27 | PASS 2026-11-27 | 2026-11-27 | APPROVED 2026-11-27, five corrections | 2026-11-28, VERIFIED with FIVE corrections, all applied in-run | 2026-11-27 | **SHIPPED 2026-11-28** |
+| 6 | **Saudi Arabia's reading, up five and down eighteen** · `2026-11-27-saudi-pisa-2025-two-clocks-disagree` | 2026-11-27 | 2026-11-27 | PASS 2026-11-27 | 2026-11-27 | APPROVED 2026-11-27 | 2026-11-28, VERIFIED with two corrections, both applied in-run | 2026-11-27 | **SHIPPED 2026-11-28** |
 
-**Count: Ed06 5 of 6 shipped** (target 7). **Two shipped on 2026-11-26, TWO on 2026-11-27, and ONE on
+**Count: Ed06 6 of 6 shipped — THE FOUNDER DIRECTIVE'S FLOOR, MET ON 2026-11-28 WITH EIGHT DAYS OF WINDOW LEFT** (target 7). **Two shipped on 2026-11-26, TWO on 2026-11-27, and ONE on
 2026-11-28**, so the directive's floor of one a day has been met on all three days the edition has existed
 and exceeded on two of them — **and 2026-11-28's was met on `main` at 03:01 UTC and not SERVED until the
 daily run repaired the build nearly eleven hours later**, which is named here rather than absorbed because
@@ -143,10 +144,27 @@ time. Its cells are unchanged and its record below stands.
 > reason this is a note and not an incident.
 
 
-**BOARD AT THE CLOSE OF THE 2026-11-28 DAILY RUN: THREE ROWS IN FLIGHT, ALL THREE AT 7 OF 8, ALL THREE ONE
-CELL FROM THE FLAG, AND THEIR ORDER FIXED BY THE CORPUS RATHER THAN CHOSEN — SAUDI, THEN UZBEKISTAN, THEN
-URUGUAY. THAT IS THE STRONGEST BOARD THIS PUBLICATION HAS EVER CARRIED, AND THE DAY'S SHIP WAS NOT SERVED
-UNTIL THIS RUN REPAIRED THE BUILD.**
+**BOARD AT THE CLOSE OF THE 2026-11-28 DAILY RUN: SAUDI SHIPPED, AND TWO ROWS REMAIN AT 7 OF 8 IN A FIXED
+ORDER — UZBEKISTAN, THEN URUGUAY. EDITION 06 IS AT ITS FLOOR OF SIX WITH EIGHT DAYS OF WINDOW LEFT, AND THE
+NEXT TWO DAYS ARE COVERED WITHOUT A NEW COMMISSION.**
+
+*Two pieces reached readers on 2026-11-28: the UAE piece, which had been on `main` since 03:01Z and
+**unserved** because the content run's own closing commit red the build, and Saudi Arabia, flipped by this
+run after its cell 6 closed in the morning.*
+
+**THE 2026-11-27 HOLD WAS LIFTED, AND THE REASON IS THAT ITS PREMISE DIED THREE HOURS AFTER IT WAS
+WRITTEN.** The hold's recorded reasoning was that *the only other row in flight is Uzbekistan at cell 4 —
+five cells from the flag … so no run tomorrow could ship it.* The same content run then took Uzbekistan to
+cells 5 and 7 and Uruguay from cell 1 to cell 7, and this run closed both their cell 6s. **The guarantee
+the hold was buying is now bought twice over**, so holding a third gate-ready piece would be hoarding it,
+and the plan's default governs: *each piece ships the day its own gate closes.* **A recorded decision is
+not re-decided; it is applied to the state it names — and this one named a state that no longer exists.**
+The full argument is in `content-drafts/verdicts/2026-11-28-saudi-pisa-2025-two-clocks-disagree-publish-gate.md`.
+
+*The order of the two that remain is derived, not preferred: Uzbekistan's `related:` rail names the (now
+approved) Saudi slug and Uruguay's names both Saudi and Uzbekistan, so flipping Uruguay before Uzbekistan
+would put an approved page's forward rail on a slug the build does not serve and `qa_body_links` would red
+the deploy.*
 
 *The order is derived, not preferred: Uzbekistan's `related:` rail names the held Saudi slug and Uruguay's
 names both held slugs, so flipping any of them out of order would put an approved page's forward rail on a
@@ -156,8 +174,8 @@ condition still governs any fourth.*
 
 | Row | Cells filled | Next job |
 |---|---|---|
-| `2026-11-27-saudi-pisa-2025-two-clocks-disagree` | **7 of 8** | **cell 8, 2026-11-29**, held on purpose by the decision recorded in its own row below. Not re-decided by this run |
-| `2026-11-27-uzbekistan-pisa-2025-only-in-students` | **7 of 8** | **cell 8, BEHIND SAUDI.** Cell 6 closed 2026-11-28 after a **FAIL WITH ITEMS on the piece's central claim**, a spine repair in both editions and a re-verification PASS. Its `related:` rail names the held Saudi slug, so it cannot flip first |
+| ~~`2026-11-27-saudi-pisa-2025-two-clocks-disagree`~~ | **8 of 8** | **SHIPPED 2026-11-28** as *Saudi Arabia's reading, up five and down eighteen*, Edition 06's sixth and its floor. Gate: `content-drafts/verdicts/2026-11-28-saudi-pisa-2025-two-clocks-disagree-publish-gate.md` |
+| `2026-11-27-uzbekistan-pisa-2025-only-in-students` | **7 of 8** | **cell 8, FIRST IN THE ORDER — 2026-11-29. Its rail is now unblocked, Saudi having shipped.** Cell 6 closed 2026-11-28 after a **FAIL WITH ITEMS on the piece's central claim**, a spine repair in both editions and a re-verification PASS. Its `related:` rail names the held Saudi slug, so it cannot flip first |
 | `2026-11-28-uruguay-pisa-2025-own-account` | **7 of 8** | **cell 8 ONLY, and it flips THIRD.** Cell 6 filled 2026-11-28 by the daily run — **PASS with two corrections, both applied in-run** (`content-drafts/verdicts/2026-11-28-uruguay-pisa-2025-own-account-verification.md`). **All four Uruguayan registers re-fetched DIRECTLY and all four reproduced**, the 6,397,306-byte executive PDF to its declared sha256 — the first Ed06 piece verified without an archive in the loop. EN 6 of 6 register spans verbatim, AR 7 of 8 plus five correctly-identified own-title spans. The two clocks confirmed exactly (I.2.6 9 / −7 / −4 and I.2.9 11 / −10 / −14), the top-ten corroboration confirmed to the same ten systems in the same order with endpoints 509 and 597, and the chapter's no-reading-mean claim **upheld against all fourteen tables parsed**. The two corrections: **a stale citation of OUR OWN Uzbekistan title, falsified three hours after composition by this run's own repair of that piece** (queue item 169 — a title quoted in a body is the one claim in this corpus with no checker), and **a claim that Uruguay numbers its volumes to the OECD's scheme**, which the piece's own cited index falsifies one section lower by numbering the 2022 cycle 1, 2, 3, 4, 6, 7, 8 against a five-volume OECD set. Its `related:` rail names **two** held slugs, so the corpus fixes the order of all three: **Saudi, then Uzbekistan, then Uruguay** |
 
 **WHAT THE DAILY RUN FOUND FIRST, AND IT IS THE DAY'S DEFECT.** The content run's own closing commit
