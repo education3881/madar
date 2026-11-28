@@ -52,7 +52,14 @@ named human from a reachable non-OECD register, or this edition stops where it i
 
 ## Queued for tomorrow (Sunday — the weekly review also runs)
 1. **Uzbekistan cell 8**, then **Uruguay** on 11-30 → Edition 06 at 8, two above its floor.
-2. **A third commission** under the Editor's standing condition, or the board stays at two.
+2. **A third commission** under the Editor's standing condition. **Eleven doors were measured for it today
+   and no commission was made** — `content-drafts/recon/2026-11-28-ed06-seventh-piece-door-test.md`. The
+   condition stopped a commission rather than slowed one, which is what it is for. **Two doors are open and
+   unwalked and the next step is named in order:** `eec.mn` (Mongolia's Education Evaluation Centre, 200,
+   574,232 bytes, no `pisa` on the front page but the link set unwalked) then
+   `kemendikdasmen.go.id` (Indonesia). The painful miss is **`naec.ge`**, which answers 200 and is an
+   AngularJS wall — 436 characters of served text — while Georgia is second only to Uzbekistan in the
+   score-point table.
 3. **For the weekly review, handed up rather than answered inside a flip commit:** the edition's opener is
    at six forward rails and the convention caps it there. Saudi's fourth reciprocal edge was **declined and
    recorded** rather than granted or displaced, because a displacement rule invented at a flip is a policy
