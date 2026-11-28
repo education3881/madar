@@ -143,3 +143,39 @@ verdict, measured from the re-fetched capture, so no cell needs to re-open a reg
 **The hero still survives the repair and should not be redrawn.** Its two dotted empty rectangles are
 Tables I.2.6 and I.2.9, which are empty for Uzbekistan — the one thing in the piece that item 1 does not
 touch. What changes is what the piece says they mean.
+
+---
+
+# RE-VERIFICATION OF THE REPAIRED SPINE — 2026-11-28, same run. RESULT: PASS. Cell 6 CLOSED.
+
+The Editor returned the piece with the spine inverted rather than parked
+(`2026-11-28-uzbekistan-pisa-2025-only-in-students-editor-disposition.md`). Re-verified against the same
+two independently re-fetched captures, whose hashes are in the table at the top of this file and were
+reproduced in this run.
+
+| Row | Result |
+|---|---|
+| Item 1's claim removed | **yes** — no sentence in either edition now says the chapter prints no score-point change for Uzbekistan |
+| The replacing figures | **I.2.12** girls +85, boys +80, gap −5; **I.2.10** disadvantaged +85, advantaged +87, gap +2 — each re-read from the parsed table in the re-fetched capture, both editions agreeing with it |
+| The two population counts | **I.2.12 holds 76 entries** (next after Uzbekistan: Georgia +38, Cambodia +37); **I.2.10 holds 74** (next: Georgia +55) — both re-derived by independent parse, both marked in `sources[]` as this publication's own count and not attributed to the OECD |
+| **OECD average-35** in I.2.12 | −2 girls, −3 boys — confirmed |
+| The mechanism claim | confirmed from the notes themselves: I.2.6 *"in all three subjects"*, I.2.9 *"at least two previous assessments"*, I.2.10 and I.2.12 *"can compare PISA 2022 and PISA 2025 results"* with no subject condition |
+| The negative claim's scope, now written down | `sources[]` in both editions names every table carrying an `Uzbekistan` cell — I.2.1, I.2.3, I.2.4, I.2.8, I.2.10, I.2.11, I.2.12, I.2.13, **eight of fourteen** — so the claim *no single all-student figure is printed* now ships with the enumeration that makes it checkable. This is the repair item 1 actually needed |
+| Item 2's count | corrected in both editions: one other system (Jordan), absent from I.2.9 only; the other five present; Uzbekistan alone absent from both |
+| Quotation channel after the repair | **EN 18 of 18** quoted spans verbatim (was 15), **AR 19 of 19** (was 16) — the three new strings in each are the two table titles and the shared note |
+| dek / title caps | EN title 59/100, dek **198**/200; AR title 43/100, dek **183**/200 — counted at compose, not at the gate |
+| Arabic gate on the changed passages | APPROVED with three corrections, recorded in the disposition |
+| Guardrails (#19) | unchanged and still carried; the repair **adds** one — that an absence from a table is not an absence from the unit |
+| Flag state (#18) | `approved: false` in both editions. **Unchanged, deliberately** |
+| Assets | still and og card untouched and still true; see the disposition for why the still is not redrawn |
+
+**Cell 6 is closed and cell 8 is the only cell left. The piece does not flip today**, and the reason is
+not the repair: its `related:` rail names `2026-11-27-saudi-pisa-2025-two-clocks-disagree`, which is still
+held, and a flip would put an approved page's rail on a slug the build does not serve. **Saudi flips first,
+on 2026-11-29 by the decision recorded in the ledger, and this piece flips behind it.** That ordering is
+now a fact about the corpus rather than a preference, and it is written into the ledger row.
+
+**What this verdict cost and what it bought.** It is the first verification in this edition to fail on its
+piece's central claim, and the first to fail on something no instrument this operation owns could reach: a
+negative claim, every figure in it correct, every quotation verbatim, falsified only by reading the tables
+the sentence did not enumerate. Filed as **ruling #162**.
