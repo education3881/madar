@@ -1,6 +1,6 @@
 ---
 title: "أكبرُ هبوطٍ في الإصدار، في الوحدة الوحيدة التي سجّلته"
-dek: "خفضت أوزبكستان حصّةَ المتدنّين في العلوم 46.1 نقطةً مئوية، وهي أكبرُ حركةٍ في الإصدار. ولا يطبع التقريرُ لها تغيّرًا بنقاط الدرجات: تلك الآلةُ تحتاج ماضيًا."
+dek: "خفضت أوزبكستان حصّةَ المتدنّين في العلوم بمقدار 46.1 نقطةٍ مئوية، وهي أكبرُ حركةٍ في الإصدار. ولا يطبع التقريرُ لها تغيّرًا بنقاط الدرجات: تلك الآلةُ تحتاج ماضيًا."
 date: 2026-11-27
 country: Uzbekistan
 region: Asia
@@ -28,7 +28,7 @@ hero:
 approved: false
 ---
 
-أمضت الطبعةُ السادسة أسبوعًا على عادةٍ واحدة: قبل قراءة قائمةٍ بأنظمةٍ مدرسيّةٍ متحسّنة، اسأل على أيّ
+أمضت الطبعةُ السادسة أسبوعًا في اتّباع عادةٍ واحدة: قبل قراءة قائمةٍ بأنظمةٍ مدرسيّةٍ متحسّنة، اسأل على أيّ
 ساعةٍ تجري. وقد سُئل ذلك عن أربعة أنظمة. وهذه المادةُ عن نظامٍ السؤالُ فيه ليس أيَّ ساعةٍ، بل **أيَّ
 وحدة** — لأنّ إصدارَ بيزا 2025 يقيس حركةَ أوزبكستان في واحدةٍ من وحدتيه لا في كلتيهما، والتي يقيس بها هي
 التي لا يكاد أحدٌ يقتبسها.
@@ -40,7 +40,7 @@ approved: false
 أوزبكستان فيه **−46.1** و**+0.5**، كلاهما بالنقاط المئوية.
 
 والرقمُ الأوّل أكبرُ حركةٍ في الجدول. وتاليتُها في الخفض **كمبوديا عند −22.1**، أقلُّ من نصفه. وصفُّ
-**«OECD average-35»** يقرأ **1.2** و**−0.3** — أي أنّ حصّةَ المنظمة نفسِها من المتدنّين في العلوم
+**«OECD average-35»** فيه **1.2** و**−0.3** — أي أنّ حصّةَ المنظمة نفسِها من المتدنّين في العلوم
 *ارتفعت* في السنوات الثلاث عينها.
 
 ويُعطي الفصلُ المجتمعَ الذي تقع فيه هذه الأرقام: **«the share of low performers remained unchanged in many
@@ -54,8 +54,7 @@ United Kingdom, the share of low performers decreased while the share of top per
 
 ## الغيابان
 
-وكلُّ ما تقدّم معدودٌ بالطلّاب. أمّا وحدةُ الإصدار الأخرى فنقطةُ الدرجة، ولها جدولان. **وأوزبكستان في
-واحدٍ منهما لا.**
+وكلُّ ما تقدّم معدودٌ بالطلّاب. أمّا وحدةُ الإصدار الأخرى فنقطةُ الدرجة، ولها جدولان. **وليست أوزبكستان في أيٍّ منهما.**
 
 **فالجدول I.2.6**، الذي يطبع تغيّرَ متوسّط الأداء بين 2022 و2025، يقول في حاشيته إنّه لا يعرض إلّا
 **«Only countries and economies that can compare PISA 2022 and PISA 2025 results in all three subjects are
@@ -80,7 +79,7 @@ Thailand, the United Arab Emirates, Uruguay and Uzbekistan.»**
 الدرجات في أيٍّ من الجدولين اللذين يحملان مثلَه. وقد يكون القولُ صحيحًا — لا تنازعه هذه المادةُ ولا تملك
 ما تنازعه به — لكن **مَن أراد الرقمَ الذي خلفه لم يجده في هذا التقرير**، ولا شيءَ في الصفحة يقول ذلك.
 
-وهذه هي الملاحظةُ بتمامها، ويُحسُن ضبطُ ما هي وما ليست. ليست خطأً. هي فُرجةٌ بين الوحدة التي يتكلّم بها
+وهذه هي الملاحظةُ بتمامها، ويُحسُن ضبطُ ما هي وما ليست. ليست خطأً. هي فجوةٌ بين الوحدة التي يتكلّم بها
 الملخَّصُ والوحدة التي نُشر بها الدليلُ تحته.
 
 ## موضعُ النظام
@@ -115,7 +114,7 @@ points»**.
 ## التحذيرُ الذي يُلحقه الفصلُ بهذا النوع من الأرقام بالضبط
 
 ويحمل الفصلُ الثاني موضعًا عن مَن يجلس للاختبار، وهو التحفُّظُ الذي لا يستغني عنه قارئُ هبوطٍ مقدارُه
-46.1 نقطةً مئوية. فتغطيةُ بيزا — حصّةُ مَن هم في الخامسةَ عشرةَ في بلدٍ ممّن يجوز اختيارُهم في العيّنة — ارتفعت في
+46.1 نقطةً مئوية. فتغطيةُ بيزا — حصّةُ مَن هم في الخامسةَ عشرةَ في بلدٍ ويجوز اختيارُهم في العيّنة — ارتفعت في
 أنظمةٍ كثيرة، والفصلُ يقول إنّ **«this expansion in education opportunities makes it more difficult to
 interpret how mean scores in PISA have changed over time.»** ويذكر الآليّةَ صريحةً:
 **«Typically, as populations that had previously been excluded gain access to higher levels of schooling, a
@@ -199,7 +198,7 @@ because the Arabic Editor at cell 5 should know that this pair's unit discipline
 composition rather than inherited clean.
 
 **Owed at cell 5 (the Arabic Editor's gate), stated so the gate is a confirmation and not a rescue:**
-the eleven-name company list in *موضعُ النظام* is rendered in Arabic by convention for each name
+the ten-name company list in *موضعُ النظام* is rendered in Arabic by convention for each name
 (بروناي دار السلام, موريشيوس, الجبل الأسود) while the register prints them in Latin — these are country
 names in running Arabic prose, not quoted spans, and none is inside guillemets; the Albanian asterisk is
 carried as the register's own mark and explicitly left uninterpreted in both editions; and
