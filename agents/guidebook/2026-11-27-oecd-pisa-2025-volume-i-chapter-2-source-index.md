@@ -35,6 +35,32 @@ http://web.archive.org/web/20261104162528id_/https://www.oecd.org/en/publication
 | **I.2.8** | *Change between 2022 and 2025 in low- and top performers in science* | two columns, *"Change in percentage of low performers"* and *"…top performers"* | the unit is **percentage points**, and it is not comparable with I.2.6's score points |
 | **I.2.9** | *Trends in mean performance … since 2015*, subtitled *"Based on average decennial trend"* | a trend **fitted across cycles**, not the difference between two of them | never set against I.2.6 as if one ruler |
 
+| **I.2.10** | *Change between 2022 and 2025 in the socio-economic gap in science performance* | the three-year change in **score points** for *Disadvantaged students*, *Advantaged students* and the *Socio-economic gap* between them | **a score-point change table that most readers never reach.** 74 entries. Its note asks only *"Only countries and economies that can compare PISA 2022 and PISA 2025 results are shown."* — **no subject condition**, so its population is WIDER than I.2.6's |
+| **I.2.11** | *Change between 2022 and 2025 in low and top performers in science, by national quarter of socio-economic status* | the same two shares as I.2.8, split by bottom and top national quarter | **percentage points**, 74 entries, and not comparable with I.2.10 one row above it despite the near-identical caption |
+| **I.2.12** | *Change between 2022 and 2025 in mean performance in science, by gender* | the three-year change in **score points** for *Girls*, *Boys* and the *Gender gap (Boys - Girls)* | **the second score-point change table with the wide population.** 76 entries, same note as I.2.10, OECD average-35 at -2 / -3. **This is the table that answers *did the score go up* for a system I.2.6 excludes** |
+| **I.2.13** | *Change between 2022 and 2025 in low- and top performers in science, by gender* | I.2.8 split four ways: low performers girls then boys, top performers girls then boys | **percentage points**, column order read off the header row and never assumed |
+
+**THE GATING RULE THIS CHAPTER RUNS ON, AND IT IS THE INDEX'S MOST LOAD-BEARING LINE — added 2026-11-28
+under ruling #162.** The chapter has **four** tables that report a change in score points, and they fall
+into two populations with different gates:
+
+- **I.2.6 and I.2.9 print the change WHOLE** — one figure for all students — and are gated on something
+  other than the subject: I.2.6 on comparability *"in all three subjects"*, I.2.9 on *"at least two
+  previous assessments among PISA 2015, PISA 2018 and PISA 2022"*.
+- **I.2.10 and I.2.12 print the same change SPLIT** — by socio-economic status and by gender — and are
+  gated only on 2022 and 2025 being comparable at all.
+
+**So a system can be comparable in science, absent from both whole-change tables, and present in both
+split ones.** Uzbekistan is exactly that: no row in I.2.6 or I.2.9, and **+85 / +80 score points in
+I.2.12** and **+85 / +87 in I.2.10**, the largest row in each. Any piece about a system missing from I.2.6
+**must check I.2.10 and I.2.12 before saying the chapter prints no score-point change for it.** The
+Uzbekistan draft did not, shipped the claim into its title and dek, and was caught at cell 6.
+
+**The enumeration, for any future piece that needs it.** Every cell reading a country name was listed
+across all fourteen numbered tables. For Uzbekistan the answer is **eight of fourteen** — I.2.1, I.2.3,
+I.2.4, I.2.8, I.2.10, I.2.11, I.2.12, I.2.13 — and the route is thirty seconds of parsing. **For a piece
+whose spine is an absence, that sweep is the verification** (#162 clause 3).
+
 Also present: I.2.2 (proficiency levels described), I.2.4 (computational problem solving), I.2.5
 (within-country correlation across domains), I.2.7 (yearly learning gain, ten systems), Figure I.2.5
 (average change in science for low and high achievers 2022-2025), and 112 distinct table and figure captions
