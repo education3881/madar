@@ -3,12 +3,12 @@
 **Slug** `2026-11-28-uruguay-pisa-2025-own-account` · **Drafted** 2026-11-28 by Content Creator II
 (comparative and Latin America) · **Brief** `content-drafts/briefs/2026-11-28-uruguay-pisa-2025-own-account-brief.md`
 
-**Title RECOMMENDED, not taken:** *Uruguay printed the number the report would not*. A rejected
+**Title TAKEN BY THE EDITOR 2026-11-28, one word changed:** *Uruguay printed the number the report did not*. The drafter recommended *would not*. A rejected
 alternative is in the hand-off.
 
 ---
 
-title: "Uruguay printed the number the report would not"
+title: "Uruguay printed the number the report did not"
 dek: "The OECD's performance chapter gives no system a reading mean. Uruguay's own executive report, published the same month, gives its own: 423.2. Where the two accounts overlap, they agree."
 date: 2026-11-28
 country: Uruguay
@@ -31,9 +31,11 @@ part, and *The largest fall in the release* in full: each closes by naming the d
 reporting that no national authority's own reading of PISA 2025 could be read in served text. The
 sentence has become a fixture.
 
-Uruguay is the sixth, and it breaks the pattern. Its national PISA programme has published **four volumes
-and a technical report** on PISA 2025, dated **September 2026** — the same month the OECD launched the
-results — and they answer this runner at **200**.
+Uruguay is the sixth, and it breaks the pattern. Its national PISA programme has published **an executive
+report, three volumes and a technical report** on PISA 2025, dated **September 2026** — the same month the
+OECD launched the results — and they answer this runner at **200**. The volumes are numbered **2, 4 and
+5**, not 1 to 3: Uruguay has numbered its national volumes to the OECD's own volume scheme, so the two
+report sets are meant to be read against each other.
 
 So for the first time this edition can do the thing it has been describing the absence of: put the OECD's
 account of a country beside that country's account of itself, both read in served text, and say where
@@ -68,7 +70,10 @@ Uruguay's reading moved **−7** between 2022 and 2025 and **−10** per ten yea
 trend. It will not tell them what Uruguayan fifteen-year-olds actually scored.
 
 Uruguay's own report does, in the same sentence as the science figure, without comment, as though it were
-the ordinary thing to publish. It also records the order the three subjects fall in and says it is not
+the ordinary thing to publish. The report is the work of the PISA Uruguay programme of the
+**Administración Nacional de Educación Pública**, whose national coordinator is **Laura Noboa**, and whose
+own page names eight people with the function each holds — data analysis, statistics, the science area,
+the mathematics area. The figure has an address. It also records the order the three subjects fall in and says it is not
 new: **"manteniendo, al igual que en ciclos anteriores, mejores logros en ciencias, seguidos de lectura y
 matemática"** — science ahead, then reading, then mathematics, as in previous cycles.
 
@@ -142,11 +147,8 @@ publishes no level for.
 
 ## Who publishes this
 
-PISA Uruguay is a programme of the **Administración Nacional de Educación Pública**, and its national
-coordinator is **Laura Noboa**; the programme's own page names eight people and the function each holds,
-from data analysis to the science and mathematics areas. The 2025 cycle tested **"aproximadamente 6.500
-estudiantes uruguayos de 15 años de educación media"** — approximately 6,500 fifteen-year-olds in
-secondary education, the hedge being the register's.
+The 2025 cycle tested **"aproximadamente 6.500 estudiantes uruguayos de 15 años de educación media"** —
+approximately 6,500 fifteen-year-olds in secondary education, the hedge being the register's.
 
 That is a small thing to be able to write, and this edition has not been able to write it once in five
 pieces. Every figure in the other five is the OECD's, correctly read and honestly fenced, and every one
@@ -159,10 +161,10 @@ equity, on science achievement and on mathematics achievement were not read for 
 the technical report. Nothing above characterises what is in them.
 
 **And the executive report is cited by page rather than quoted at length, for a reason that is about us
-and not about Uruguay.** Its text layer is kerned and the extraction this office can perform breaks words
-across it — *reporte* comes out as `R eport e`, and hyphenated line breaks survive into the text as real
-hyphens. Six spans were quoted above and each was verified character by character against a re-extraction
-whose method is declared in the annotation; two further sentences that would have been useful carry an
+and not about Uruguay.** Its text layer is kerned, and a plain extraction breaks words across it —
+*reporte* comes out as `R eport e`, and hyphenated line breaks survive into the text as real hyphens. Six
+spans were quoted above and each was verified character by character against a re-extraction whose method
+is set out in this piece's sources; two further sentences that would have been useful carry an
 extraction hyphen inside a word and are therefore **not quoted here at all**, because a quotation that
 reproduces our own tooling's damage is a claim about our tooling.
 
