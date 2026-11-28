@@ -21,22 +21,29 @@ Read on every run, in this order:
    first) sets Editions 06 to 10, one a week, six pieces minimum each, one shipped every day. **It answers
    issue #13 and supersedes the "no edition at all" state this line held from 2026-11-08**, when option B
    was applied by silence. What B bought is kept: a piece ships **the day its own eight-cell gate closes**,
-   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **TWO ROWS ARE IN FLIGHT, BOTH AT
-   CELL 1 OF EIGHT, SEVEN CELLS OPEN EACH** — `2026-11-26-qatar-pisa-2025-two-of-three` and
-   `2026-11-26-uae-pisa-2025-all-three-lists`, commissioned 2026-11-26, blocked at cell 2 until
-   2026-11-27 and **UNBLOCKED that afternoon** by Chapter 2 of the OECD's Volume I — a page linked from
-   inside a register this edition had already read, hashed and re-hashed three times, which prints every
-   comparable system's 2022-to-2025 change in all three subjects (`content-drafts/recon/2026-11-27-ed06-oecd-volume-i-chapter-2.md`).
-   **A register is a document, not a page.** Cell 2 on Qatar is the next content run's first job. The plan
-   requires three in flight, so the board is still one short. The one remaining row,
+   tagged `edition: N`, with no wave flip, so Edition 05's 71 held days cannot recur. **TWO ROWS ARE IN FLIGHT, AT CELLS 6
+   AND 3 OF EIGHT — TWO CELLS OPEN AND FIVE CELLS OPEN** — `2026-11-27-saudi-pisa-2025-two-clocks-disagree`
+   (cells 1 to 5 and 7 filled; **6 and 8 open**, the Verifier's verdict being the next job by the
+   run-after-the-pair-verdict rule) and `2026-11-27-uzbekistan-pisa-2025-only-in-students` (cells 1, 2 and 3
+   filled; **4 to 8 open**, the AR composition next). **The plan requires three in flight, so the board is
+   one short**, and the Editor's standing condition governs the third: the seventh piece of this edition may
+   not be commissioned without a named human from a reachable non-OECD register. The one remaining row,
    `2026-11-22-abu-dhabi-irtiqaa-biennial-yield` (cells 1 and 2 filled, **SIX unfilled**, cell 3 attempted
    and RETURNED WITH NOTES on 2026-11-25 — the Editor's independent re-run confirmed **24 of 25** quoted
    spans against a hand-off reading 25 of 25, which is ruling #159), is **PARKED to Edition 10** by the same
    directive and costs no run time until 28 December. So **the last piece to ship was
-   `2026-11-27-thailand-pisa-2025-fourth-list` on 2026-11-27**, Edition 06's third, after
-   `2026-11-26-jordan-pisa-2025-counts-from-2022` and `2026-11-26-pisa-2025-three-lists-of-risers` on
-   2026-11-26 — **which was the first day this publication has ever shipped two pieces, and the
-   directive's floor is one.** Edition 06 stands at **3 of 6**. *(Derivation of the ship date, per the rule
+   `2026-11-26-uae-pisa-2025-all-three-lists` on 2026-11-28**, Edition 06's fifth, after
+   `2026-11-27-thailand-pisa-2025-fourth-list` and `2026-11-26-qatar-pisa-2025-two-of-three` on 2026-11-27
+   and `2026-11-26-jordan-pisa-2025-counts-from-2022` and `2026-11-26-pisa-2025-three-lists-of-risers` on
+   2026-11-26 — **so the directive's floor of one a day has been met on all three days this edition has
+   existed, and exceeded on two of them.** Edition 06 stands at **5 of 6**, one short of the floor with
+   eight days of window left. *(This clause read `TWO ROWS AT CELL 1, SEVEN CELLS OPEN EACH` and
+   `the last piece to ship was thailand on 2026-11-27`, Ed06 `3 of 6`, until 2026-11-28 — **wrong on all
+   three of the things this sentence owes, after a day on which the ledger beside it was updated four times
+   and this file not once.** The widening of 2026-11-15 under #144 was written precisely for this, and the
+   first time the three-part predicate went stale together it went stale in the one file every run reads
+   first. The content run of 2026-11-28 fixed all three, which is what the rule says the run that notices
+   does.)* *(Derivation of the ship date, per the rule
    below: `git log -S'approved: true' --diff-filter=AM -- <file>`, never `date:`.)* *(The previous reading
    of this clause — `2026-11-12-england-ofsted-exempt-cohort` shipped 2026-11-21 and not SERVED until
    2026-11-22 — is now history and is correct as that. Its cause is closed: the publish step's `if:

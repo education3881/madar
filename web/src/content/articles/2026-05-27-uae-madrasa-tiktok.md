@@ -11,6 +11,7 @@ type: curated
 related:
   - 2026-06-10-rak-iqra-arabic-diglossia
   - 2026-05-28-kuwait-ccet-arabic-tests
+  - 2026-11-26-uae-pisa-2025-all-three-lists
 arabicVersion: 2026-05-27-uae-madrasa-tiktok
 sources:
   - title: "Madrasa — platform homepage (bilingual Arabic / English; self-description as free Arabic-language K-12 STEM video platform under Mohammed bin Rashid Al Maktoum Global Initiatives)"

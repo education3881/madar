@@ -1,5 +1,5 @@
 {
- "observed": "2026-11-27",
+ "observed": "2026-11-28",
  "registers": [
   {
    "url": "http://www.ccetkuwait.org",
@@ -179,9 +179,9 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-28",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2026-10-16",
+   "snapshot": "2026-11-10",
    "archive_note": "200",
    "state": "archived"
   },
@@ -1091,6 +1091,18 @@
    "observed": "2026-11-26",
    "archived": true,
    "snapshot": "2026-07-03",
+   "archive_note": "200",
+   "state": "archived"
+  },
+  {
+   "url": "https://moe.gov.ae/en/pages/home.aspx",
+   "pieces": [
+    "2026-11-26-uae-pisa-2025-all-three-lists:en",
+    "2026-11-26-uae-pisa-2025-all-three-lists:ar"
+   ],
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-10",
    "archive_note": "200",
    "state": "archived"
   },
@@ -2026,12 +2038,11 @@
     "2026-07-16-australia-naplan-reset:en",
     "2026-07-16-australia-naplan-reset:ar"
    ],
-   "observed": "2026-10-28",
-   "archived": false,
-   "archive_note": "no snapshot",
-   "origin": 200,
-   "origin_note": "HEAD",
-   "state": "live-only"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-08-12",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.acara.edu.au/docs/default-source/media-releases/naplan-national-results-release-media-release-23.08.23.pdf",
@@ -2317,7 +2328,7 @@
     "2026-05-26-bahrain-bqa-public-grades:en",
     "2026-05-26-bahrain-bqa-public-grades:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-01-01",
    "archive_note": "200",
@@ -2414,7 +2425,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2024-11-08",
    "archive_note": "200",
@@ -2500,7 +2511,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-05-30",
    "archive_note": "200",
@@ -2684,7 +2695,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-18",
    "archive_note": "200",
@@ -2747,7 +2758,7 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-02-23",
    "archive_note": "200",
@@ -2759,7 +2770,7 @@
     "2026-05-31-qatar-humanity-spark-strategy:en",
     "2026-05-31-qatar-humanity-spark-strategy:ar"
    ],
-   "observed": "2026-10-21",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2024-09-24",
    "archive_note": "200",
@@ -2771,7 +2782,7 @@
     "2026-05-27-uae-madrasa-tiktok:en",
     "2026-05-27-uae-madrasa-tiktok:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-07-26",
    "archive_note": "200",
@@ -2783,7 +2794,7 @@
     "2026-09-14-africa-best-system-ruler:en",
     "2026-09-14-africa-best-system-ruler:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-03-23",
    "archive_note": "200",
@@ -2795,7 +2806,7 @@
     "2026-06-25-brazil-crianca-alfabetizada:en",
     "2026-06-25-brazil-crianca-alfabetizada:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-03-26",
    "archive_note": "200",
@@ -2807,7 +2818,7 @@
     "2026-07-07-poland-ukrainian-students:en",
     "2026-07-07-poland-ukrainian-students:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-03-07",
    "archive_note": "200",
@@ -2819,10 +2830,11 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-04-21",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/news/ofsted-confirms-changes-to-education-inspection-and-unveils-new-look-report-cards",
@@ -2830,7 +2842,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-10-02",
    "archive_note": "200",
@@ -2842,10 +2854,11 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-11-01",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/publications/education-inspection-framework/education-inspection-framework-for-use-from-november-2025",
@@ -2853,7 +2866,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-05-18",
    "archive_note": "200",
@@ -2877,7 +2890,7 @@
     "2026-07-28-england-report-cards-first-term:en",
     "2026-07-28-england-report-cards-first-term:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-22",
    "archive_note": "200",
@@ -2914,10 +2927,11 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-03-08",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2022/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2022",
@@ -2925,10 +2939,11 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-10-02",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.gov.uk/government/statistics/state-funded-schools-inspections-and-outcomes-as-at-31-august-2026/main-findings-state-funded-schools-inspections-and-outcomes-as-at-31-august-2026",
@@ -2936,10 +2951,12 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": false,
+   "archive_note": "no snapshot",
+   "origin": 200,
+   "origin_note": "HEAD",
+   "state": "live-only"
   },
   {
    "url": "https://www.gov.uk/guidance/understanding-ofsted-report-cards-and-grades",
@@ -2947,10 +2964,11 @@
     "2026-11-12-england-ofsted-exempt-cohort:en",
     "2026-11-12-england-ofsted-exempt-cohort:ar"
    ],
-   "observed": "2026-11-21",
-   "archived": null,
-   "archive_note": "not yet asked",
-   "state": "archive-unknown"
+   "observed": "2026-11-28",
+   "archived": true,
+   "snapshot": "2026-10-25",
+   "archive_note": "200",
+   "state": "archived"
   },
   {
    "url": "https://www.iicba.unesco.org/en/zambia",
@@ -2958,7 +2976,7 @@
     "2026-08-25-zambia-free-education-act:en",
     "2026-08-25-zambia-free-education-act:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-09-02",
    "archive_note": "200",
@@ -2970,7 +2988,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -2983,9 +3001,9 @@
     "2026-07-07-india-parakh-hpc:en",
     "2026-07-07-india-parakh-hpc:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
-   "snapshot": "2025-09-13",
+   "snapshot": "2026-08-09",
    "archive_note": "200",
    "state": "archived"
   },
@@ -2995,7 +3013,7 @@
     "2026-07-07-chad-sudanese-refugee-schooling:en",
     "2026-07-07-chad-sudanese-refugee-schooling:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -3008,7 +3026,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-11-14",
    "archive_note": "200",
@@ -3020,7 +3038,7 @@
     "2026-06-20-oman-school-performance-ratings:en",
     "2026-06-20-oman-school-performance-ratings:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-05-10",
    "archive_note": "200",
@@ -3032,7 +3050,7 @@
     "2026-07-07-us-naep-honesty-gap:en",
     "2026-07-07-us-naep-honesty-gap:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-05-21",
    "archive_note": "200",
@@ -3044,7 +3062,7 @@
     "2026-05-31-indonesia-permen-13-coding-ai:en",
     "2026-05-31-indonesia-permen-13-coding-ai:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -3057,7 +3075,7 @@
     "2026-06-10-rak-iqra-arabic-diglossia:en",
     "2026-06-10-rak-iqra-arabic-diglossia:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-12",
    "archive_note": "200",
@@ -3069,7 +3087,7 @@
     "2026-07-07-ukraine-wartime-schooling:en",
     "2026-07-07-ukraine-wartime-schooling:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": false,
    "archive_note": "no snapshot",
    "origin": 200,
@@ -3082,7 +3100,7 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-09-20",
    "archive_note": "200",
@@ -3094,7 +3112,7 @@
     "2026-06-17-korea-aidt-reversal:en",
     "2026-06-17-korea-aidt-reversal:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-10-21",
    "archive_note": "200",
@@ -3106,7 +3124,7 @@
     "2026-07-07-chile-simce-return:en",
     "2026-07-07-chile-simce-return:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-06-10",
    "archive_note": "200",
@@ -3118,7 +3136,7 @@
     "2026-09-01-sudan-cant-wait-to-learn:en",
     "2026-09-01-sudan-cant-wait-to-learn:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-09-04",
    "archive_note": "200",
@@ -3143,7 +3161,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-09-08",
    "archive_note": "200",
@@ -3155,7 +3173,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2024-08-13",
    "archive_note": "200",
@@ -3167,7 +3185,7 @@
     "2026-07-07-turkiye-earthquake-school-recovery:en",
     "2026-07-07-turkiye-earthquake-school-recovery:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2025-07-24",
    "archive_note": "200",
@@ -3179,7 +3197,7 @@
     "2026-07-07-lebanon-crisis-schooling:en",
     "2026-07-07-lebanon-crisis-schooling:ar"
    ],
-   "observed": "2026-10-27",
+   "observed": "2026-11-28",
    "archived": true,
    "snapshot": "2026-10-03",
    "archive_note": "200",
@@ -3528,10 +3546,12 @@
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
+    "2026-11-26-uae-pisa-2025-all-three-lists:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
+    "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3545,10 +3565,12 @@
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
+    "2026-11-26-uae-pisa-2025-all-three-lists:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
+    "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3574,10 +3596,12 @@
     "2026-11-26-jordan-pisa-2025-counts-from-2022:en",
     "2026-11-26-pisa-2025-three-lists-of-risers:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
+    "2026-11-26-uae-pisa-2025-all-three-lists:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-jordan-pisa-2025-counts-from-2022:ar",
     "2026-11-26-pisa-2025-three-lists-of-risers:ar",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
+    "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-26",
@@ -3589,8 +3613,10 @@
    "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html",
    "pieces": [
     "2026-11-26-qatar-pisa-2025-two-of-three:en",
+    "2026-11-26-uae-pisa-2025-all-three-lists:en",
     "2026-11-27-thailand-pisa-2025-fourth-list:en",
     "2026-11-26-qatar-pisa-2025-two-of-three:ar",
+    "2026-11-26-uae-pisa-2025-all-three-lists:ar",
     "2026-11-27-thailand-pisa-2025-fourth-list:ar"
    ],
    "observed": "2026-11-27",

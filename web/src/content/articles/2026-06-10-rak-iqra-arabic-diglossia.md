@@ -14,6 +14,7 @@ related:
   - 2026-06-08-sierra-leone-tsc-teacher-matching
   - 2026-06-18-egypt-npda-arabic-literacy
   - 2026-06-19-philippines-mtb-mle-reversal
+  - 2026-11-26-uae-pisa-2025-all-three-lists
 
 contains_composites: false
 arabicVersion: 2026-06-10-rak-iqra-arabic-diglossia

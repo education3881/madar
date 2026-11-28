@@ -30,7 +30,7 @@ hero:
   src: "/stills/2026-11-26-uae-pisa-2025-all-three-lists.svg"
   alt: "A paper-cream page in ink. One long thin horizontal rule runs across the middle of the page. Six small circles of the same size sit centred on the rule, evenly spaced. The first five are filled solid with ink. The sixth, at the right-hand end, is an open ring with no fill, and from it alone a short vertical line descends below the rule in warm kiln-orange, stopping well short of the lower edge."
   caption: "سكون · The Still · PISA 2025"
-approved: false
+approved: true
 ---
 
 *Three lists of risers* opened this edition by counting: the OECD's PISA 2025 release names improving

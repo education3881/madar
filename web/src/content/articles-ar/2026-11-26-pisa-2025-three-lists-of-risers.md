@@ -15,6 +15,7 @@ related:
   - 2026-11-26-jordan-pisa-2025-counts-from-2022
   - 2026-11-27-thailand-pisa-2025-fourth-list
   - 2026-11-26-qatar-pisa-2025-two-of-three
+  - 2026-11-26-uae-pisa-2025-all-three-lists
 contains_composites: false
 englishVersion: 2026-11-26-pisa-2025-three-lists-of-risers
 sources:

@@ -2165,6 +2165,91 @@
    "slug": "2026-11-26-qatar-pisa-2025-two-of-three",
    "token": "134",
    "provenance": "A ruling number, not a measurement: ruling #134, which amends #86 clause 1."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "403",
+   "provenance": "HTTP status code, not a quantity about education. `www.oecd.org` refuses this runner with 403, re-tested at the Verifier's gate on 2026-11-28 and refused again; the refusal was not routed around, which is why every OECD register on this piece is read from the Internet Archive."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "16",
+   "provenance": "Not a quantity. The hours field of a capture timestamp - 2026-11-04 16:25:28 UTC for Chapter 2 and 2026-11-14 16:51:29 UTC for the full-report page - which is how a capture is identified under ruling #161."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "28",
+   "provenance": "Not a quantity. The seconds field of capture timestamp 2026-11-04 16:25:28 UTC, the Chapter 2 capture. Re-fetched and re-measured independently at the Verifier's gate on 2026-11-28, which is the second channel this figure rests on."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "51",
+   "provenance": "Not a quantity. The minutes field of capture timestamp 2026-11-14 16:51:29 UTC, the full-report page capture."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "29",
+   "provenance": "Not a quantity. The seconds field of capture timestamp 2026-11-14 16:51:29 UTC, the full-report page capture."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "23",
+   "provenance": "Not a quantity. The hours field of capture timestamp 2026-11-15 23:24:02 UTC, the press release capture."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "53",
+   "provenance": "Not a quantity. The minutes field of capture timestamp 2026-11-15 13:53:55 UTC, the Cormann speech capture."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "2,426,000",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261104162528 of Chapter 2 of PISA 2025 Results (Volume I). Re-fetched at the Verifier's gate on 2026-11-28 and measured at 2,426,000 bytes, sha256 e5a429b011ff90e5676417dda3cf5358b2f72b940ee068fae3faa96a6f068a71, matching the figure the piece declares. The gzip member's own header independently declares the same uncompressed length, so the figure is checkable from the transfer without trusting the decompressor."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "1,614,913",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261114165129 of the Volume I full-report page. Re-fetched and re-hashed at the Verifier's gate on 2026-11-28 to sha256 1c3018b4d17e205b7e6331bdc91217546ac8ebdce5d68439ea38f5fd87264a1b, matching the declared triple."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "1,468,371",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261115232402 of the 8 September 2026 press release. Re-fetched and re-hashed at the Verifier's gate on 2026-11-28 to sha256 096bb651ddbda01432c64263718fced2b978a5be3ac26bf8b92766bb671166a5, matching the declared triple."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "1,464,823",
+   "provenance": "Decompressed byte count of Internet Archive capture 20261115135355 of the Cormann launch speech. Re-fetched and re-hashed at the Verifier's gate on 2026-11-28 to sha256 33b350b2803a4906ef0d1974475b9de3c72f0d7bab70308a080014f5b2e323a9, matching the declared triple."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "3, -14",
+   "provenance": "The OECD average-35 row of Table I.2.6, science then reading then mathematics: -3, -14, -9. Printed in the body of both editions; the comma-joined pair is an artefact of how the annotation lists the row, and the annotation writes it with an ASCII hyphen where the body writes a true minus sign, which is why an exact-match instrument cannot see that it is printed. Re-derived from the parsed table at the Verifier's gate on 2026-11-28, in both of two independent captures."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "18, -6",
+   "provenance": "The United Arab Emirates' row in Table I.2.9 on the fitted decennial measure, science then reading then mathematics: 18, -6, 20. Printed in the body of both editions, in the minus-sign form. Re-derived from the parsed table at the Verifier's gate on 2026-11-28, in both of two independent captures; -6 is the figure the whole piece turns on."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "7, -27",
+   "provenance": "The OECD average-35 row of Table I.2.9 on the fitted decennial measure: -7, -27, -24. Printed in the body of both editions, in the minus-sign form. Re-derived from the parsed table at the Verifier's gate on 2026-11-28, in both of two independent captures."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "161",
+   "provenance": "A ruling number, not a measurement: ruling #161, a capture is identified by its own timestamp. Filed 2026-11-27. This is the first piece whose four declared provenance triples all reproduced on an independent re-fetch, which is what the ruling exists to make checkable."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "86",
+   "provenance": "A ruling number, not a measurement: ruling #86 clause 1, a named human's gender is read off the register's own pronoun or gendered title and never off the name - and, where no register carries it, the determination is recorded in the annotation as this edition's own. This piece's fourth source note was corrected at the Verifier's gate on 2026-11-28 to do the second half, which it had not done."
+  },
+  {
+   "slug": "2026-11-26-uae-pisa-2025-all-three-lists",
+   "token": "134",
+   "provenance": "A ruling number, not a measurement: ruling #134, which amends #86 clause 1 by admitting a name's printed morphology as evidence. It does not reach this piece: `Mathias Cormann` carries no such morpheme, so there is no register licence for the gender the Arabic role noun forces."
   }
  ],
  "scope": "the WHOLE annotation title, not only its parentheticals. The narrow scope the item specified read 231 annotation-only quantities across 34 pieces; the whole title reads 430 across 40. The narrowing was found by a bite that changed the file and did not change the artefact the check measures.",
