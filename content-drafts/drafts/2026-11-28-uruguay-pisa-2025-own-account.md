@@ -42,15 +42,16 @@ sources:
 
 Five pieces of this edition have ended the same way. *Qatar's decade and its three years*, *The UAE is on
 every list but one line*, *Saudi Arabia's reading, up five and down eighteen*, *Thailand's fourth list* in
-part, and *The largest fall in the release* in full: each closes by naming the doors it knocked on and
+part, and *The largest movement in the chapter* in full: each closes by naming the doors it knocked on and
 reporting that no national authority's own reading of PISA 2025 could be read in served text. The
 sentence has become a fixture.
 
 Uruguay is the sixth, and it breaks the pattern. Its national PISA programme has published **an executive
 report, three volumes and a technical report** on PISA 2025, dated **September 2026** — the same month the
 OECD launched the results — and they answer this runner at **200**. The volumes are numbered **2, 4 and
-5**, not 1 to 3: Uruguay has numbered its national volumes to the OECD's own volume scheme, so the two
-report sets are meant to be read against each other.
+5**, not 1 to 3 — and the gaps are the programme's own habit rather than this cycle's accident: the same
+index numbers Uruguay's **2022** volumes **1, 2, 3, 4, 6, 7 and 8**. What the numbering means is not
+stated on any register this piece read, and it is not guessed at here.
 
 So for the first time this edition can do the thing it has been describing the absence of: put the OECD's
 account of a country beside that country's account of itself, both read in served text, and say where

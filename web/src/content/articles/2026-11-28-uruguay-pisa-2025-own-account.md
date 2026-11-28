@@ -23,7 +23,7 @@ sources:
     url: "https://pisa.anep.edu.uy/"
   - title: "PISA Uruguay programme - the team page (read in served text 2026-11-28; 200, 46,994 bytes). It names eight people and the function each holds: Laura Noboa, 'Coordinadora nacional'; Paola Cazulo and Amalia Astiazaran, data analysis; Bruno Fonseca, statistics; Juan Francisco Duarte, informatics; Marcela Armua, the science area; Magdalena Romano, the mathematics area; Martin Garcia, logistics. THE GENDER DETERMINATION HERE IS LICENSED BY THE REGISTER'S OWN TOKEN AND IS NOT READ OFF THE NAME (rulings #86 and #134): the register prints 'Coordinadora', feminine where 'Coordinador' exists, so the Arabic edition writes the feminine form on the register's authority. The token is carried verbatim in both editions' annotations, per #134's binding. No gendered role noun is attached to any of the other seven, because the register gives each a function and not a title."
     url: "https://pisa.anep.edu.uy/equipo"
-  - title: "PISA Uruguay programme - the national reports index (read in served text 2026-11-28; 200, 70,402 bytes). For the 2025 cycle it lists an executive report, 'Volumen 2 Equidad y desigualdad educativa', 'Volumen 4 Logros en ciencias', 'Volumen 5 Logros en matematica', and a technical report - that is an executive report, THREE numbered volumes and a technical report, and the volumes are numbered 2, 4 and 5 rather than 1 to 3, on the OECD's own volume scheme. None of those volumes was read for this piece and nothing here describes their contents."
+  - title: "PISA Uruguay programme - the national reports index (read in served text 2026-11-28; 200, 70,402 bytes). For the 2025 cycle it lists an executive report, 'Volumen 2 Equidad y desigualdad educativa', 'Volumen 4 Logros en ciencias', 'Volumen 5 Logros en matematica', and a technical report - and the same index lists the 2022 cycle's volumes as 1, 2, 3, 4, 6, 7 and 8, so the non-contiguous numbering is the programme's own practice across cycles and not a 2025 feature; no register read for this piece states what the numbers refer to - that is an executive report, THREE numbered volumes and a technical report, and the volumes are numbered 2, 4 and 5 rather than 1 to 3, on the OECD's own volume scheme. None of those volumes was read for this piece and nothing here describes their contents."
     url: "https://pisa.anep.edu.uy/Informes_nacionales"
   - title: "Organisation for Economic Co-operation and Development (OECD) - 'PISA 2025 Results (Volume I)', Chapter 2, 'Student performance in PISA 2025' (read in served text 2026-11-28 from the Internet Archive capture whose own timestamp is 20261104162528, that is 4 November 2026 16:25:28 UTC, because oecd.org answers this runner with 403; 2,426,000 bytes, sha256 e5a429b011ff90e5676417dda3cf5358b2f72b940ee068fae3faa96a6f068a71, the raw snapshot decompressed, per ruling #161; and read again in a SECOND, independent capture whose timestamp is 20260910092914, 2,422,806 bytes, in which no figure and no span differs). Table I.2.3, first column the overall science mean: Uruguay 445, OECD average 482. Table I.2.6, change 2022 to 2025: Uruguay 9, -7 and -4. Table I.2.9, the fitted average decennial trend: 11, -10 and -14. Table I.2.8, both columns in percentage points: -4.7 and 0.0, beside the OECD average-35 row at 1.2 and -0.3. Table I.2.1, parsed in full to check the national report's retelling: the ten highest-scoring systems in science, in order, with means from 509 to 597. AND THIS CHAPTER PRINTS NO READING MEAN FOR ANY SYSTEM IN ANY OF ITS FOURTEEN NUMBERED TABLES, which this publication established on 'Saudi Arabia's reading, up five and down eighteen', and which is what makes Uruguay's 423.2 a figure with no counterpart in this register."
     url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-performance-in-pisa-2025_23e075c2.html"
@@ -39,15 +39,16 @@ approved: false
 
 Five pieces of this edition have ended the same way. *Qatar's decade and its three years*, *The UAE is on
 every list but one line*, *Saudi Arabia's reading, up five and down eighteen*, *Thailand's fourth list* in
-part, and *The largest fall in the release* in full: each closes by naming the doors it knocked on and
+part, and *The largest movement in the chapter* in full: each closes by naming the doors it knocked on and
 reporting that no national authority's own reading of PISA 2025 could be read in served text. The
 sentence has become a fixture.
 
 Uruguay is the sixth, and it breaks the pattern. Its national PISA programme has published **an executive
 report, three volumes and a technical report** on PISA 2025, dated **September 2026** — the same month the
 OECD launched the results — and they answer this runner at **200**. The volumes are numbered **2, 4 and
-5**, not 1 to 3: Uruguay has numbered its national volumes to the OECD's own volume scheme, so the two
-report sets are meant to be read against each other.
+5**, not 1 to 3 — and the gaps are the programme's own habit rather than this cycle's accident: the same
+index numbers Uruguay's **2022** volumes **1, 2, 3, 4, 6, 7 and 8**. What the numbering means is not
+stated on any register this piece read, and it is not guessed at here.
 
 So for the first time this edition can do the thing it has been describing the absence of: put the OECD's
 account of a country beside that country's account of itself, both read in served text, and say where
